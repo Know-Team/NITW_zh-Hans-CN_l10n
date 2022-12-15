@@ -1,0 +1,718 @@
+title: EnterLevel_A1D1
+tags: 
+colorID: 2
+position: -13929,1776
+---
+<<sit>>
+<<irisIn 1 wait>>
+<<wait 4>>
+Mae: 这么说…… #line:9cb8af
+Mae: 你现在是在老大镐上班吗？ #line:f8cd3d
+Bea: 嗯。 #line:71f90f
+Mae: 他们是不是正在锻炼你，好让你接手这份家族产业呢？ #line:a64802
+Bea: “他们？" #line:55943e
+Mae: 嗯……就是你的父母啊。 #line:b94bd4
+Bea: …… #line:052193
+<<close>>
+<<wait 1>>
+<<stopCarAbruptly>>
+<<wait .5>>
+Bea: 嘿看我们到了。 #line:c38b04
+Mae: 可这儿离我家还差着几条街呢。 #line:61d7c8
+Bea: 出去。 #line:b01963
+Mae: 好吧！ #line:ce94a4
+Mae: 嗯……谢谢你送我。 #line:16f0f9
+Bea: 快下车。 #line:669296
+[[End_A1D1]]
+
+===
+title: EnterLevel_A1D3
+tags: 
+colorID: 2
+position: -13088,1780
+---
+<<sit>>
+<<if $after_party is 0>>
+	[[ToParty_A1D3]]
+<<elseif $after_party>>
+	[[BackFromParty_A1D3]]
+<<endif>>
+
+===
+title: End_A1D1
+tags: 
+colorID: 2
+position: -13930,2123
+---
+<<close>>
+<<set $night to 1>>
+<<fadeOut 1 0 0 0>>
+<<wait 1>>
+<<tell CarMode GetOut>>
+<<wait 2>>
+<<scene MaeHouse left>>
+===
+title: ToParty_A1D3
+tags: 
+colorID: 2
+position: -13364,2173
+---
+<<irisIn 1 wait>>
+<<wait 3>>
+<<rotateHead Mae 10 .5>>
+<<lookLeft Gregg>>
+Gregg: 嘿，梅，我觉得科尔可能会参加今晚的聚会！ #line:feda1f
+<<if $knows_cole_will_be_there is 1>>
+	[[ToParty_Knows]]
+<<else>>
+	[[ToParty_DoesntKnow]]
+<<endif>>
+
+===
+title: BackFromParty_A1D3
+tags: 
+colorID: 2
+position: -12747,2161
+---
+<<wait 1>>
+<<sit>>
+<<rotateHead Mae -10 .5>>
+<<lookOut Mae>>
+<<dilate Mae 1.2 1>>
+Mae: =_= #line:f4e428
+<<wait 1>>
+<<irisIn 1 wait>>
+Bea: 你要是真吐在了车里，你就得帮我清理干净…… #line:45c451
+[[（我向你道歉，碧娅。）|BackFromParty_Apology]] #line:6478b6
+[[（我真的感觉特别尴尬。）|BackFromParty_Embarrassed]] #line:b37820
+===
+title: ToParty_A1D3_End
+tags: 
+colorID: 2
+position: -13397,2818
+---
+<<set $night to 1>>
+<<close>>
+<<fadeOut 1>>
+<<wait 1>>
+<<tell CarMode GetOut>>
+<<wait 2>>
+<<scene PartyClearing>>
+===
+title: BackFromParty_A1D3_End
+tags: 
+colorID: 2
+position: -12658,5079
+---
+<<close>>
+<<fadeOut 1>>
+<<wait 1>>
+<<tell CarMode GetOut>>
+<<wait 2>>
+<<scene MaeRoom>>
+===
+title: ToParty_Knows
+tags: 
+colorID: 2
+position: -13561,2496
+---
+Mae: 是 啊，我 知 道。 =_= #line:e8effa
+Gregg: 天哪！真对不起。 #line:97a093
+Mae: 我才不在乎他去不去。 #line:3aa33d
+Angus:也许他根本不会去。 #line:3a0e84
+Bea: 行啊，那咱们就这么盼着吧。话说咱们到底在聊些什么啊。 #line:9198c3
+Gregg: 梅和科尔上初中的时候开始交往了。 #line:a40c06
+Mae: 是啊，但后来我俩没成。 #line:58f955
+Mae: 所以，咱们就别再提这事了。 =_= #line:fc86ba
+Bea: 提提呗。 #line:0b7c0f
+[[ToParty_A1D3_End]]
+===
+title: ToParty_DoesntKnow
+tags: 
+colorID: 2
+position: -13210,2494
+---
+<<dilate Mae .75 1>>
+<<lookOut Mae>>
+<<rotateHead Mae 0 .2>>
+Mae: 你 说 什 么？！ :o / \ #line:6b1cce
+Mae: 哦，老天。 \ / #line:17e0f7
+<<dilate Mae .9 1>>
+Bea: 你们说的科尔是谁啊？ #line:bae07a
+Angus:呃，还记得吗？他当年和咱们一起登上过校刊。 #line:d5e677
+Bea: 哦，那个科尔啊。对，我还记得他。 #line:44b8db
+Gregg: 梅和他当时还热恋过一阵儿呢。 #line:9c1122
+Bea: 是吗？哇哦。 #line:c6b4b3
+Bea: 他这人挺聪明的。 #line:6f8552
+Mae: =_= #line:6ec756
+<<lookLeft Mae>>
+<<dilate Mae 1 1>>
+<<lookLeft Gregg>>
+Mae: 我也挺聪明的啊！ #line:07c288
+Gregg: 是啊，哥们，你也很聪明。 :) #line:317d61
+Bea: 好吧，那就认为你也很聪明吧。 #line:a7f756
+[[ToParty_A1D3_End]]
+===
+title: BackFromParty_Apology
+tags: 
+colorID: 2
+position: -12902,2492
+---
+Mae: [wave]对不起，我真不记得发生什么了。[/wave] #line:dc2f90
+[[BackFromParty_2]]
+===
+title: BackFromParty_Embarrassed
+tags: 
+colorID: 2
+position: -12535,2500
+---
+Mae:[wave]碧……我感觉自己好……尴……尬…… [/wave] #line:c18c63
+[[BackFromParty_2]]
+===
+title: BackFromParty_2
+tags: 
+colorID: 2
+position: -12692,2814
+---
+Bea: 你就喝了三杯兑了水的啤酒， #line:22fb7e
+Bea: 接着就醉成了这这副德性。 #line:821639
+[[（你还记得咱俩以前关系有多铁吗？）|BackFromParty_BestFriends]] #line:4dede7
+[[（我还记得，在咱俩还小的时候，咱们一起出去溜达……）|BackFromParty_HungOutAsKids]] #line:65e763
+===
+title: BackFromParty_BestFriends
+tags: 
+colorID: 2
+position: -12904,3076
+---
+Mae: [wave]咱俩以前是……多铁的朋友啊，碧。而且，我还……是那么喜欢你。[/wave] #line:c055c5
+Bea: 你说的话我一句也没听懂。 #line:1cbab4
+[[BackFromParty_3]]
+===
+title: BackFromParty_3
+tags: 
+colorID: 2
+position: -12698,3371
+---
+Mae: [wave]还……记得你老叫我[speed=.5]梅梅吗？[/speed][/wave] #line:5f6ce6
+Mae: [wave]我老是叫你[speed=.5]碧……碧…… [/speed][/wave] #line:468aa8
+Bea: 哦，你说的是咱们大概十岁那会儿的事吧？ #line:dcb29f
+Bea: 不，我可没这么叫过。 #line:13d77d
+Mae: [wave]我还记得，咱俩还是童子军的时候，[/wave] #line:56b057
+Mae: [wave]有一次，咱们还抓到过一只乌……龟，还记得吗？？[/wave] #line:8187c8
+Bea: 当然记得。我们管它叫箱箱。但后来它死了。 #line:473688
+[[（为什么你对我总是这么刻薄啊？）|BackFromParty_WhySoMean]] #line:b8b64d
+[[（我觉得你总是在生我的气，讨厌我，这到底是为什么啊？）|BackFromParty_WhySoMad]] #line:62aa2a
+===
+title: BackFromParty_HungOutAsKids
+tags: 
+colorID: 2
+position: -12503,3089
+---
+Mae:[wave]我还记……得，咱们俩昂昂是……最好最好嗷嗷……的朋友。[/wave] #line:67347a
+[[BackFromParty_3]]
+===
+title: BackFromParty_WhySoMean
+tags: 
+colorID: 2
+position: -12886,3682
+---
+Mae: [wave][shake=.03]为……什 么 你 会|对 我 这 么|刻……薄？？？？[/all]o_o #line:cded09
+[[BackFromParty_4]]
+===
+title: BackFromParty_WhySoMad
+tags: 
+colorID: 2
+position: -12474,3679
+---
+Mae:[wave][shake=.03]为 什 么 你 总 是 那 么 讨 厌 我？？？？[/all] o_o #line:4d4ead
+[[BackFromParty_4]]
+===
+title: BackFromParty_4
+tags: 
+colorID: 2
+position: -12674,3982
+---
+Mae: *嗝*！ #line:590d83
+Mae: [wave]啊，老天。要是我真吐在车里了，你爸妈肯定会恨死我的。[/wave] =_= #line:adcfc4
+Mae: [wave]告诉……你老妈，我很抱歉。哦，她人多好啊～[/wave] #line:9a04c5
+Bea: 该 死，梅！ #line:abaa0d
+Mae: 你 说 啥？ o_o #line:a6f74e
+Bea: 我 妈 妈 已 经 去 世 了。 #line:da32ec
+Mae: 你 说 什 么？ :( #line:89dbc9
+Bea: 她 死 了。 #line:7adfd6
+Bea: 她 是 在 我 上 高 中 的 时 候 #line:9fdde2
+Bea: 因 为 癌 症 去 世 的。 #line:8f54cd
+Mae: [wave]哦，不……你妈妈她是个多……好的人啊！[/wave] #line:861cd2
+Mae: [wave]碧碧……，你……还好吗？[/wave] #line:3e01c9
+Bea: 你 怎 么 会 不 记 得 这 件 事 了 呢？ #line:32fb54
+Bea: 你 难 道 已 经 把 我 妈 妈 去 世 的 事 给 忘 了 吗？ #line:0b80c9
+[[（碧娅，我刚才完全断片儿了。对不起。）|BackFromParty_LapseOfMemory]] #line:0cc069
+[[（我为我刚才的所做所为道歉，对不起。）|BackFromParty_Mortified]] #line:d6142f
+===
+title: BackFromParty_LapseOfMemory
+tags: 
+colorID: 2
+position: -12873,4249
+---
+Mae: [wave]有些时候，我什么事都记不住。[/wave] #line:17a7bf
+Mae: [wave]我有时候连自己的身份证都会忘带。[/wave] #line:b7f84b
+[[BackFromParty_5]]
+===
+title: BackFromParty_Mortified
+tags: 
+colorID: 2
+position: -12458,4254
+---
+Mae: [wave]啊，碧，我简直就是个大混蛋！[/wave] #line:43aadc
+Mae: [wave]你会恨我吗？？？[/wave] #line:3e24a2
+[[BackFromParty_5]]
+===
+title: BackFromParty_5
+tags: 
+colorID: 2
+position: -12657,4580
+---
+Bea: 你 到 底 是 在 抽 什 么 疯 啊？ #line:98a390
+Bea: 过 去，你 人 又 聪 明！！！ #line:dfcc06
+Bea: 又 酷！！！ #line:ac0f28
+Bea: 还 很 会 和 人 聊 天！ #line:249225
+Mae: *吸鼻子*:o #line:3b2e58
+Bea: 你为什么要回来？ #line:a708fc
+Bea: 哦，是因为你觉得上大学一点用也没有吗？ #line:7f361f
+Bea: 还是因为你觉得离家远了干什么都不方便？ #line:c33112
+Bea: 还是因为你不在状态，没心情啊？ #line:54da99
+Mae: *吸鼻子* :( #line:0dfe66
+Bea: 曾经的我如果能有上大学的机会，干什么我都愿意。 #line:0cdb27
+Bea: 现在也一样。 #line:0792dc
+Bea: 如果这么做能让我也有大学上的话， #line:39d57f
+Bea: 我会一脚把你从车里给踹出去。 #line:e42eb4
+<<setAnimInt Mae crying 1>>
+Mae: [shake=.1]哇 哈 哈 哈 哈！[/shake] #line:4ee9d2
+<<close>>
+<<stopCarAbruptly>>
+Bea: 到地方了。从我车里滚出去。 #line:2e5fcb
+Mae: [size=1][shake=.2]啊 哈 哈，哈 哈 哈 哈 哈，啊 哈 哈！[/all] #line:27879e
+Bea: 哦，我的天。我来扶你进屋吧。 #line:775171
+[[BackFromParty_A1D3_End]]
+===
+title: InitLevel_A1D3
+tags: 
+colorID: 2
+position: -13082,1535
+---
+<<if $after_party is 0>>
+    <<setSpriteLayer Gregg TownsfolkBG>>
+<<else>>
+    <<hide Gregg>>
+    <<hide Angus>>
+<<endif>>
+
+<<setLookAtTalkingCharacters Mae 0>>
+<<setLookAtTalkingCharacters Bea 0>>
+<<setLookAtTalkingCharacters Gregg 0>>
+<<setLookAtTalkingCharacters Angus 0>>
+===
+title: InitLevel_A1D1
+tags: 
+colorID: 2
+position: -13943,1528
+---
+<<hide Gregg>>
+<<hide Angus>>
+===
+title: InitLevel_A2D3
+tags: 
+colorID: 3
+position: -11838,1615
+---
+<<if $bea_friendship_quest is 3>>
+    <<hide Gregg>>
+    <<hide Angus>>
+    <<setLookAtTalkingCharacters Mae 0>>
+    <<setLookAtTalkingCharacters Bea 0>>
+    <<setLookAtTalkingCharacters Gregg 0>>
+    <<setLookAtTalkingCharacters Angus 0>>
+<<endif>>
+===
+title: EnterLevel_A2D3
+tags: 
+colorID: 3
+position: -11869,1909
+---
+<<sit>>
+<<if $bea_friendship_quest is 3>>
+    [[BFQ3]]
+<<endif>>
+===
+title: BFQ3
+tags: 
+colorID: 3
+position: -11863,2280
+---
+<<irisIn 1 wait>>
+Mae: 真是太有意思啦！ #line:db1eea
+Bea: 是啊，买东西当然有意思啦， #line:73bafb
+Bea: 因为它能让你学会怎么去体会生活。 #line:dc0b9a
+Mae: 哈哈，你这段嘲讽对我无效。 #line:4575ee
+Mae: 买东西真是太～有～意～思啦！ #line:7cdcd1
+<<wait 3>>
+Bea: 呜呼。 #line:d01819
+<<close>>
+<<wait 1>>
+<<irisOut 1 wait>>
+<<tell CarMode GetOut>>
+<<wait 2>>
+<<scene BeaApartment>>
+===
+title: EnterLevel_A3D3
+tags: 
+colorID: 4
+position: -11001,1894
+---
+<<sit>>
+<<if $bea_friendship_quest is 4>>
+    [[BeaFQ4]]
+<<elseif $gregg_friendship_quest is 4>>
+    [[GreggFQ4]]
+<<endif>>
+===
+title: BeaFQ4
+tags: 
+colorID: 4
+position: -11106,2248
+---
+<<musicFadeOut 1>>
+<<irisIn 1 wait>>
+Mae: 话说，这是个什么样的聚会啊？ #line:c06dd6
+Bea: 唔…… #line:9eb0d5
+Bea: 我觉得，这应该算是个“杰基派对"吧。 #line:e0dc29
+Mae: “杰基派对"是什么？ #line:4b2f8d
+Bea: 你还记得杰基吗？ #line:74c75f
+    ->是啊，我记得她。她可讨厌我了。 #line:712259
+        Bea: 哦，那都是什么时候的事了。 #line:aab1df
+        Mae: 嗯哼。 #line:23899d
+    ->是啊，我记得她。她这人做事可认真了。 #line:a10e8e
+        Bea: 她对该认真的事向来都很认真。 #line:8fc866
+        Bea: 但她其实也是个蛮有趣的人。 #line:b4ab1c
+Mae: 她原来是不是自己成立过一个单人乐队啊？ #line:79417d
+Bea: 没错。 #line:01c09c
+Bea: 我记得是叫《天翻地覆》？ #line:75729f
+Mae: 就是那个T.W.O.G.T.H.乐队吗？|（Trans World Order Give Them Hell） #line:707bb4
+Bea: 是的。这个乐队可是相当赞的。 #line:ffee51
+Bea: 她的歌迷和粉丝也是相当相当的多。 #line:5afccc
+Mae: 哇，我被你的话给吸引住了。 #line:c6aab7
+<<wait 2>>
+Mae: Twogth。 #line:26053d
+Mae: 嘿，碧娅，喊出乐队的名字。 #line:91df7c
+Mae: 喊“Twogth"。 #line:8279a5
+Bea: Twogth。 #line:7e89f6
+<<lookOut Mae>>
+Mae: Twogth。 #line:042c49
+<<dilate Mae .75 1>>
+Mae: T w o o o o g t h。 #line:4ecc9f
+<<wait 2>>
+Bea: 不过，话说回来， #line:bc96f6
+<<dilate Mae 1 .25>>
+<<lookNearest Mae>>
+<<wait 1>>
+Bea: 这次咱们参加的只是个聚会，不是演唱会。 #line:de609d
+Bea: 而且，杰基邀请的人是我。 #line:ae8c90
+Mae: 你瞧瞧你！ #line:a0564d
+Mae: 老是参加一些秘密聚会之类的破活动。 #line:dcd960
+Bea: 梅，我参加的可都是公开的聚会和活动。 #line:cfefe1
+Mae: 好吧。可是没人邀请*我*参加啊。 #line:621908
+Bea: 好吧，那我来邀请你。现在，你的名字也在邀请名单上了。 #line:532da2
+Mae: 哟吼！ #line:62ef35
+Bea: 好了，咱们开车到那儿得用差不多一个半小时时间。所以…… #line:dbf70f
+Mae: 天哪，要去那么远。希望这次的聚会不会让我失望。 #line:64244f
+Bea: 杰基组织的聚会都很不错，所以大老远跑过去一点都不亏。 #line:9c7d82
+<<close>>
+<<fadeOut 1 wait>>
+<<scene BeaTown>>
+===
+title: EnterLevel_A2D1
+tags: demo2
+colorID: 3
+position: -12185,1943
+---
+<<sit>>
+<<if $bea_friendship_quest is 1>>
+    <<lookDown Mae>>
+    <<lookOut Bea>>
+    <<dilate Bea .75 .1>>
+    <<wait 1>>
+    <<irisIn 1 wait>>
+    Mae: 真高兴我没吐得满车都是。 #line:0ffeaf
+    Bea: 我也是。 #line:977681
+    Mae: 下次我再也不会去喝酒了。 #line:9b111f
+    Bea: 或者是下次你只要别那么紧张就行了。 #line:310058
+    <<lookAt Mae Bea>>
+    Mae: 但我不知道能不能把自己的心态调整好。 #line:f64e6b
+    Bea: 看得出来。 #line:9b7307
+    Mae: 我觉得，用术语来解释的话，这应该叫做“风险行为"。 #line:4ed73b
+    <<dilate Bea 1 .1>>
+    Bea: -_- #line:645f29
+    <<lookLeft Bea>>
+    Bea: ……你见过这样的人吗？ #line:09539f
+    Mae: 今晚和你一起出来感觉很不错，也很有效果。 #line:e1f502
+    Bea: …… #line:c544fa
+    ->…… #line:a3d1bc
+    ->一身轻松，毫无压力。 #line:6bda1e
+    Bea: 我真应该按小时计费才对。 #line:3c920e
+    Mae: 我手里只有口香糖。 #line:c5ae58
+    Bea: 我现在想听会儿收音机了。 #line:2f8028
+    <<close>>
+    <<playMusic bea_dance_in_car>>
+    <<close>>
+    <<wait 1>>
+    <<tell CarMode GetOut>>
+    <<wait 2>>
+    <<irisOut 1 wait>>
+    <<sectionTitle BeaFQ1Intro FortLucenneMall>>
+<<endif>>
+
+===
+title: InitLevel_A2D1
+tags: 
+colorID: 3
+position: -12150,1628
+---
+<<if $bea_friendship_quest is 1>>
+    <<hide Gregg>>
+    <<hide Angus>>
+    <<setLookAtTalkingCharacters Mae 0>>
+    <<setLookAtTalkingCharacters Bea 0>>
+    <<setLookAtTalkingCharacters Gregg 0>>
+    <<setLookAtTalkingCharacters Angus 0>>
+<<endif>>
+===
+title: InitLevel_A3D3
+tags: 
+colorID: 4
+position: -10967,1595
+---
+<<if $gregg_friendship_quest is 4>>
+    <<hide Bea>>
+    <<setLookAtTalkingCharacters Mae 0>>
+    <<setLookAtTalkingCharacters Bea 0>>
+    <<setLookAtTalkingCharacters Gregg 0>>
+    <<setLookAtTalkingCharacters Angus 0>>
+    <<warp Angus AngusDrive>>
+    <<warp Mae MaeBackSeat>>
+    <<warp Gregg GreggPassengerSeat>>
+    <<sit Gregg>>
+    <<setSpriteLayer Gregg FG1>>
+    <<setSpriteLayer Angus FG1>>
+    <<setSortingLayerName MainCast1>>
+<<elseif $bea_friendship_quest is 4>>
+    <<hide Gregg>>
+    <<hide Angus>>
+    <<setLookAtTalkingCharacters Mae 0>>
+    <<setLookAtTalkingCharacters Bea 0>>
+    <<setLookAtTalkingCharacters Gregg 0>>
+    <<setLookAtTalkingCharacters Angus 0>>
+<<endif>>
+===
+title: GreggFQ4
+tags: 
+colorID: 4
+position: -10842,2267
+---
+<<lookAt Mae Gregg>>
+<<musicFadeOut 1>>
+<<irisIn 1 wait>>
+Mae: 我亲过的人就这么多了。 #line:c62cd3
+Gregg: 一共就亲过两个人， #line:340691
+Gregg: 这应该算是…… #line:4e69b3
+Gregg: 应该算是亲过一个半人吧。 #line:e3b83f
+Mae: 随你怎么说吧。搞得好像你亲过更多人一样。 #line:6cefd7
+<<close>>
+<<wait 1>>
+<<lookAt Mae Angus>>
+<<wait 1>>
+<<lookNearest Mae>>
+Mae: 安格斯，一路上你都没怎么说话啊。 #line:622948
+Angus: …… #line:e4093e
+Angus: 抱歉。 #line:aa0d19
+Mae: 你还好吗？ #line:2f8398
+Angus: …… #line:d5a855
+<<lookAt Mae Gregg>>
+Gregg: 咱们要去吃薄饼啦！！！ #line:2c9f2f
+<<lookAt Mae Angus>>
+Angus: …… #line:b214ff
+<<close>>
+<<wait 2>>
+Mae: 嘿，安格斯。 #line:06d5bc
+Mae: 安格斯。 #line:db3098
+Mae: 嘿。 #line:18be2e
+Mae: 抓住那些薄饼。 #line:1560e2
+Mae: 安格斯。 #line:1f70b0
+<<close>>
+<<wait 2>>
+Mae: *咯咯咯*！ #line:eafd54
+Mae: “呼叫杰克逊医生……" #line:4d9e74
+<<close>>
+<<wait 1>>
+Mae: “……这里是福莱普·杰克逊医生……" #line:41e3e0
+Mae: “……请向我的肚子汇报情况……" #line:9a848c
+Angus: 行吧！薄 饼 行了吧！ #line:920f89
+Gregg: 嘿，老兄。 #line:8e9896
+Mae: 伙计，你怎么了？ #line:9666c1
+<<close>>
+<<wait 2>>
+<<tell CarMode FlatTire>>
+<<wait 2>>
+Angus: 真…… #line:c295c9
+Angus: 见…… #line:00b841
+Angus: 鬼！ #line:cdd87e
+Gregg: 哇哦，是车胎瘪了吗？ #line:5399bb
+Angus: 我把车停到路边去。 #line:2daf5e
+Mae: 不！我的多纳狼！ #line:617d7a
+Angus: 梅。 #line:165248
+<<close>>
+<<tell CarMode StopWithFlatTire>>
+<<wait 2>>
+Gregg: 咱们一块儿把车推过去吧。 #line:25c98d
+Angus: 好了，你们全都待在这儿。 #line:114e50
+<<close>>
+<<irisOut 1 wait>>
+<<scene Roadside>>
+===
+title: PreInitLevel
+tags: 
+colorID: 0
+position: -14388,1188
+---
+<<fadeIn 100000>>
+===
+title: InitLevel_A3D2
+tags: 
+colorID: 4
+position: -10401,1607
+---
+<<if $angus_investigation_quest>>
+    [[InitAngusIQ]]
+<<endif>>
+===
+title: InitAngusIQ
+tags: 
+colorID: 4
+position: -10130,1966
+---
+<<warp Angus AngusDrive>>
+<<hide Bea>>
+<<hide Gregg>>
+===
+title: InitLevel_A3D4
+tags: 
+colorID: 4
+position: -9791,1602
+---
+<<if $angus_investigation_quest>>
+    [[InitAngusIQ]]
+<<endif>>
+===
+title: EnterAngusIQ
+tags: 
+colorID: 4
+position: -10318,2699
+---
+<<sit>>
+<<irisIn 1 wait>>
+===
+title: EnterLevel_A3D2
+tags: 
+colorID: 4
+position: -10340,2302
+---
+<<if $angus_investigation_quest>>
+    <<if $did_angus_constellations>>
+        [[EnterAngusIQEnding]]
+    <<else>>
+        [[EnterAngusIQ]]
+    <<endif>>
+<<endif>>
+===
+title: EnterLevel_A3D4
+tags: 
+colorID: 4
+position: -9875,2311
+---
+<<if $angus_investigation_quest>>
+    <<if $did_angus_constellations>>
+        [[EnterAngusIQEnding]]
+    <<else>>
+        [[EnterAngusIQ]]
+    <<endif>>
+<<endif>>
+===
+title: EnterAngusIQEnding
+tags: 
+colorID: 4
+position: -9928,2693
+---
+<<sit>>
+<<irisIn 1 wait>>
+<<set $night to 1>>
+<<set $did_angus_investigation_quest to 1>>
+<<if $act is 3 and $day is 2>>
+    <<set $did_angus_investigation_quest_on_a3d2 to 1>>
+<<endif>>
+<<set $completed_investigation_quests += 1>>
+<<set $angus_investigation_quest to 0>>
+<<unlockDoodle AngusIQ>>
+<<unlockDoodle AngusPsychic>>
+Angus: *呼呼呼* #line:d3fe32
+Angus: *呼呼呼呼呼* #line:39c17e
+Mae: 大块头，你还好吗？ #line:26f63a
+Angus: 我还好。让我缓几分钟就好了。 #line:784104
+Angus: 我的恢复能力还是挺强的。 #line:424cfd
+Mae: 这么说，那就是它！它就是那个幽灵！ #line:24efa4
+Angus: 那也有可能*呼呼呼*是*呼呼呼*住在那儿的什么怪人。 #line:20505c
+Angus: 那也有可能是在林子里开派对的小孩。 #line:9a80b7
+Angus: 这就和你喝酒喝吐了的那次聚会差不多。 #line:5a1f30
+Mae: 呃。 #line:1f4907
+Angus: 那里离咱们今天去的地方也不算*太*远。 #line:e6eea1
+<<if $act is 3 and $day is 4>>
+    Mae: 为 什 么 就 没 人…… #line:b1c16d
+    <<close>>
+    //freakout animation and sound plays//
+    <<enableAnimator BeaCar>>
+    <<playAnimation Mae MaeFreakoutHeadRight>>
+    <<trigger BeaCar Freakout>>
+    <<wait 12>>
+    <<playAmbientSFX _AmbientSFX:mae_head_hurt 3>>
+    <<wait 3>>
+    Mae:{width=4} 啊 啊 啊 啊 啊！！！ #line:fc7790
+    Angus: 梅？ #line:998090
+    Mae:{width=4} 啊 啊 呃 啊 啊！ #line:01a8c7
+    Angus: 你怎么了？！？！？ #line:b731b2
+    Angus: 用我把车先停下来吗？ #line:4cb825
+    Mae: 呃，我的头……天呐……呃…… #line:33bcf1
+    Angus: 那好吧，我这就送你回家…… #line:77f1e0
+    Mae: 不 行！ #line:8e589a
+    Mae: 我得把……今晚的事……告诉大家…… #line:22406f
+    Angus: 你说什么呢？ #line:01f8f6
+    Mae: 咱们得把今晚发生的事告诉给大家。 #line:341d49
+    Mae: 咱们几个都要把今晚发生的事告诉给大家。 #line:a56dfb
+    <<fadeOut 1 wait>>
+    <<scene GreggAngusApartment>>
+<<else>>
+    //if A3D2//
+	Mae:{width=4} 呃啊啊啊啊啊！ #line:b802f1
+	Mae: 为 什 么 没 人 相 信 我 的 话 呢？ #line:212276
+    Angus: 梅，那是因为， #line:6c3796
+    Angus: 任何一种解释就要比你提到的 #line:9450c9
+    Angus: “幽灵"靠谱得多。 #line:906f82
+    Mae: 好吧，随便你怎么说吧。 #line:7c5dbb
+    <<wait 1>>
+    Mae: 对不起， #line:ce061d
+    Mae: 我刚才的脾气很不好， #line:bf560c
+	Mae: 我的头很疼， #line:06d5a2
+    Mae: 太可怕了。 #line:a0c6af
+    Angus: 没事了。 #line:32d78a
+    Angus: 都过去了。 #line:a16f1a
+	<<fadeOut 1 wait>>
+	<<scene MaeHouse left>>
+<<endif>>
+===

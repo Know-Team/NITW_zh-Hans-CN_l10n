@@ -1,0 +1,167 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 472,56
+---
+Bea: 好了，咱们到底在找什么啊？ #line:cef86c
+Mae: 我想用用这机器！ #line:033709
+Bea: 不行。 #line:670ad0
+Mae: 快 起 开！我 来 试 试！ #line:f8d456
+<<playAmbientSFX _AmbientSFX:mae_push_bea>>
+<<wait 1>>
+Bea: 哎 哟！ #line:564b90
+Bea: 天哪！梅！ #line:5f4ae5
+Mae: …… #line:b1c0b0
+Mae: 真对不起。 #line:25738d
+Bea: …… #line:8ab373
+Mae: 好好好好，这东西要怎么用呀？ #line:0bf3fc
+Bea: 嗯…… #line:af7624
+Bea: 第一步：看屏幕。 #line:af9508
+Bea: 第二步：移动镜头，查看剪报。 #line:a525a1
+Mae: 第三步：找幽灵。 #line:7d72cd
+Bea: 没错。 #line:fa02ac
+===
+title: Clue1
+tags: 
+colorID: 0
+position: 256,304
+---
+<<set $found_microfiche_clue_1 to 1>>
+<<tell AmbientSFX:found_clue Play>>
+<<wait 1>>
+Mae: 嘿～快来看啊。 #line:b9e2f6
+Bea: 嗯，好。 #line:6ae647
+Mae: 这看起来好像是……负鼠崖吧？ #line:a83703
+Bea: 让 我 看 看。 #line:7fc791
+Mae: 确实是负鼠崖。 #line:4986ef
+Bea: 是啊。这地方是在州立公园那边儿，对吧？ #line:9effaf
+Mae: 对。 #line:941bc9
+Bea: 你去过那儿吗？ #line:f03039
+Mae: 没去过！ #line:80aee3
+Mae: 那可得去看看！ #line:8d29d3
+Bea: 真头疼， #line:9caef8
+<<if $did_bea_friendship_quest_2>>
+    Bea: 那地方离米兰达夫人家好像只有一英里远。 #line:a1cf9d
+    Bea: 她家也在山上， #line:015b75
+    Bea: 她家堆的那些东西也都在山上。 #line:2a65d5
+    Mae: 好吧，我会尽可能远离所有地下室 #line:5035f1
+    Mae: 和所有丈夫的尸体的。 #line:97e5af
+    Bea: 同意。 #line:24ea18
+<<endif>>
+[[AdvanceClue]]
+===
+title: Clue2
+tags: 
+colorID: 0
+position: 498,311
+---
+<<set $found_microfiche_clue_2 to 1>>
+<<tell AmbientSFX:found_clue Play>>
+<<wait 1>>
+Mae: 哦，快看。 #line:32993f
+Bea: 我好像看见了铁锹的影子。 #line:acb9f2
+Bea: 墓地。这地方就交给我吧。 #line:e59b9f
+Mae: 要我说，如果你想找幽灵什么的， #line:45b6aa
+Mae: 就去那儿。那地方保证管够。 #line:848ad8
+Bea: 看起来，有人是在老墓区那块儿看见他的…… #line:758006
+Bea: 哦，太酷啦！他的墓就在那片地方！ #line:664040
+Bea: 我对这地方真的很有兴趣。 #line:03cbb7
+Mae: 那怎么样才能让你不感兴趣呢？ #line:61bcc4
+Mae: 这回可是真有特别危险的幽灵什么的！ #line:4509b7
+Bea: ……我很喜欢历史。 #line:aa2a16
+Mae: 你是喜欢幽灵和历史吧！ #line:c93adc
+Mae: 你还喜欢那些不是历史的历史！ #line:1af38f
+Bea: 哈哈哈，说得太好啦。 #line:5fa7cd
+[[AdvanceClue]]
+===
+title: Clue3
+tags: 
+colorID: 0
+position: 732,303
+---
+<<set $found_microfiche_clue_3 to 1>>
+<<tell AmbientSFX:found_clue Play>>
+<<wait 1>>
+Mae: 嘿，嘿，嘿。 #line:952db9
+Mae: 找到幽灵了。 #line:c3eb0e
+Bea: 历史协会？ #line:1839a2
+<<if $found_microfiche_clue_2>>
+	Mae: 那些不是历史的历史， #line:d1d39e
+	Mae: 都在这个存放历史的地方！ #line:7f79cc
+	Bea: 存放历史的地方？ #line:c98510
+<<endif>>
+Mae: 是啊。我还没去过呢！ #line:2e4cf2
+Bea: 你在学校的时候，难道没去过那儿吗？ #line:a938ac
+Mae: 我觉得，学校是故意在我不在的时候才组织大家去那儿的。 #line:53cd61
+Bea: 哦，他们肯定是在垒球事件之后才去的。 #line:3adca3
+Mae: 说的是啊。那段时间，我基本上就是看电视和接受治疗来着。 #line:1306d0
+Bea: 哇，这座老房子看起来还真挺酷的。 #line:e65bec
+Bea: 这以前会不会是矿主这类人的房子啊？ #line:6baa82
+Bea: 或者也有可能是铁路公司法人、钢铁厂厂长这类人的房子呢？ #line:b99c97
+Mae: 那是一座真的鬼屋！ #line:bd7b47
+Bea: 啊……不可能。 #line:b0653a
+Bea: 小学生一年四季都会到那儿去的。 #line:fb0db8
+Bea: 他们好像会在那儿参加艺术和手工的夏令营。 #line:3a7d81
+Mae: 哦，好吧。但这地方还是值得一探的。 #line:740e4c
+[[AdvanceClue]]
+===
+title: AdvanceClue
+tags: 
+colorID: 0
+position: 512,560
+---
+<<set $microfiche_clues += 1>>
+
+<<if $microfiche_clues is 3>>
+    <<set $microfiche_done to 1>>
+    Mae: 好了，咱们现在已经有三条线索了。 #line:8a8c0b
+    Mae: 咱们走吧。 #line:7cfbc8
+    Bea: “咱们走吧"？ #line:f86baf
+    Bea: 你都找完了吗？ #line:97d72d
+	->找完了。 #line:b44c01
+		Mae: 三条线索啊！咱们一共找到了三条线索！ #line:f56640
+		Bea: 你可算得上是个职业侦探了。 #line:41f6c2
+		Mae: 我，梅·博罗夫斯基，才是真正的幽灵神探。 #line:7bfbd9
+		Bea: 好了，好了，咱们走吧。 #line:e7ca2a
+		<<irisOut 1 wait>>
+        <<scene Library>>
+	->还没呢。咱们再来看看其他文章。 #line:35581d
+<<endif>>
+
+<<if $microfiche_clues >= 3>>
+    <<tell Microfiche CanExit>>
+<<endif>>
+===
+title: Tooth
+tags: 
+colorID: 0
+position: 1036,311
+---
+Mae: 哦，哇。这可没什么意思。 #line:59f5f7
+Mae: 太 棒 啦。 #line:e9f1b2
+Mae: 哈哈哈哈。 #line:26f55c
+Mae: 哦，天哪。 #line:65bb54
+<<set $knows_tooth to 1>>
+===
+title: NotClue
+tags: 
+colorID: 0
+position: -149,291
+---
+<<if $microfiche_not_clue is 0>>
+    Mae: 嗯……这条倒是挺有意思的，不过…… #line:2d8206
+    Bea: 是啊，不过就是没提到“幽灵"的事。 #line:07813f
+    <<set $microfiche_not_clue += 1>>
+<<elseif $microfiche_not_clue is 1>>
+    Bea: 这篇没有写“幽灵"的事。 #line:dde48f
+    Mae: 为什么你说“幽灵"的语气让我觉得，你根本就不相信我呢。 #line:e921d3
+    Bea: …… #line:589236
+    <<set $microfiche_not_clue += 1>>
+<<elseif $microfiche_not_clue is 2>>
+    Bea: 这条呢？ #line:d0bc25
+    Mae: 这条没有幽灵的事！ #line:ce609f
+    <<set $microfiche_not_clue += 1>>
+<<elseif $microfiche_not_clue is 3>>
+    Mae: 这条也没有幽灵的事…… #line:f69d26
+<<endif>>
+===

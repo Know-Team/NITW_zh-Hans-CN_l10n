@@ -1,0 +1,49 @@
+title: BossTooth
+tags: 
+colorID: 0
+position: 795,264
+---
+<<if $safe_combination is 0>>
+    <<if $tried_safe is 0>>
+        // checking it out for the first time, no safe combo tho
+        Mae: 咦，这儿有个保险箱。 #line:1e7a2b
+        Mae: 怎么才能把它打开呢？ #line:0dd224
+        Mae: …… #line:c3e5d3
+        Mae: 用炸药炸？ #line:9fbe3d
+        Mae: …… #line:9f2ae3
+        Mae: 这方法肯定不行。 #line:7a925c
+        <<set $tried_safe to 1>>
+    <<else>>
+        // repeated checking of the safe without the combo
+        Mae: 嗯……肯定有什么办法能把它打开…… #line:2e8f95
+    <<endif>>
+<<else>>
+    // opening the safe with the combination
+    Mae: 哦，等等。哈哈哈哈，我知道怎么打开了。 #line:ac3172
+    Mae: 向左转到45，然后向右转到100，再向左转到22，之后再向左转到90，最后向右转到15。 #line:fb6347
+    Mae: 哦，爷爷，真是太感谢了。 #line:ddae96
+    Mae: 啊哈……门开了。 #line:867fe3
+    <<wait 2>>
+    Mae: 我去，什么情况？ #line:e61f71
+    Mae: 这是一颗……看起来很有年头的牙吗？ #line:1ae8f5
+    Mae: 没错，这的确是一颗牙。 #line:5cc668
+    Mae: 爷爷居然把一颗牙……放在了地下室……的保险箱里。 #line:3f42e7
+    <<if $knows_tooth>>
+        // if mae found out about the tooth from the microfiche already
+        Mae: 哦，我勒个去。 #line:37a936
+        Mae: 这好像是 #line:db8836
+        Mae: 一颗从我爷爷上司嘴里打下来的牙…… #line:a59d06
+        Mae: 大概……是这么回事吧？ #line:2115da
+        Mae: 哦，我的老天。 #line:927901
+        Mae: 我要怎么处理这颗牙呢？？？？ #line:e91e35
+    <<else>>
+        // if mae has no idea what the tooth is
+        Mae: 呃啊！ #line:fd4e6b
+        Mae: 恐怕没人知道自己什么时候才需要一颗假牙。 #line:357dab
+        Mae: 小牙牙，以后咱俩就一起浪迹天涯吧。 #line:ad925e
+    <<endif>>
+    Mae: 这颗牙我收下了。 #line:9ceaf3
+    <<unlockDoodle Tooth>>
+    <<set $has_tooth to 1>>
+<<endif>>
+===

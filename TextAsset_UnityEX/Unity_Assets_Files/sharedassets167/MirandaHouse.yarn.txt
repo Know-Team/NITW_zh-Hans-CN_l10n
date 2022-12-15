@@ -1,0 +1,113 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 379,-184
+---
+<<if $bea_friendship_quest is 2>>
+    <<if $miranda_house is 0>>
+        <<warp Bea Bea1>>
+        <<warp Mae Mae1>>
+        <<warp Miranda Miranda1>>
+        [[Dialogue1]]
+    <<endif>>
+<<endif>>
+===
+title: Dialogue1
+tags: 
+colorID: 3
+position: 357,148
+---
+Miranda: 你们这么快就赶来了，真是太谢谢了。 #line:b47b8d
+Bea: 您不用客气。 #line:bed4e0
+Miranda: 就算是八百级火警的警报响了，|我还是能呼呼大睡。|但地下室的那个炉子实在是…… #line:fef898
+Bea: 我们会去检查一下的。 #line:0d41e4
+Miranda: 自从吉恩走了以后，|我实在是承受不了这个打击…… #line:b3dae1
+Bea: 我们非常理解您的感受。 #line:64df0f
+Miranda: 吉恩可是个特别善良体贴的人…… #line:5efe7e
+<<lookAt Bea Mae>>
+Mae: *嘿……“先别这么想"是什么意思啊？* #line:733f15
+Bea: 等一下。 #line:476e06
+<<lookRight Bea>>
+Miranda: ……那些人就这么把他从我身边给带走了，|我永远都不会原谅他们…… #line:b54d2a
+Bea: 唉，是啊。 #line:76e5d3
+Miranda: ……而且，我也不是没有好好对待他…… #line:9d7fd4
+Miranda: ……我上网查过资料了…… #line:90164d
+Miranda: ……更何况他也没有臭味什么的！ #line:f4db77
+Bea: ……继……续……听…… #line:2e3cfd
+Miranda: 你们不能因为我的丈夫去世了|就这么把他给带走啊！ #line:fb15f9
+<<lookAt Bea Mae>>
+Bea: 就是这样了。 #line:b63630
+Mae: 我的天哪。 #line:92fa90
+<<lookRight Bea>>
+Miranda: 他们就这么把他从沙发上给带走了。 #line:963d33
+Bea: 这是犯罪。 #line:071b70
+Mae: 是啊，这铁定是犯罪，鉴定完毕…… #line:7a7f7e
+Miranda: 他们就是因为没法再从我丈夫那儿收到税钱了，|所以才把他带走的，这就是原因。 #line:af40eb
+Miranda: 好了，我就不跟你们絮叨了。 #line:c88107
+//walk bea and mae to fridge//
+<<walk Miranda Miranda2>>
+<<flip Miranda 1>>
+<<walk Bea Bea2 -1>>
+Miranda: 正好你们在这儿，先过来看看我的冰箱吧！ #line:2b4afc
+Bea: 我们是按每半小时计时收费的。 #line:fac89c
+<<close>>
+===
+title: TriggerFridgeRepair
+tags: cut
+colorID: 3
+position: 727,134
+---
+<<set $miranda_house to 1>>
+Mae: 这买卖不错啊。 #line:7f7092
+[[Dialogue3]]
+===
+title: Dialogue3
+tags: 
+colorID: 3
+position: 731,422
+---
+Bea: 好的。您这台冰箱还挺不错的。它出什么毛病了？ #line:380b6f
+Miranda: 哦，这冰箱一点问题都没有。 #line:da9713
+Miranda: 我就是想告诉你们，|这是霜月冰箱厂生产的|第一批经典款冰箱。 #line:42151c
+Bea: 哇。 #line:1e98f4
+Miranda: 我和你们这么大的时候，这冰箱可流行啦。 #line:8f8561
+Miranda: 这么多年过去了，这冰箱还和刚买回来那会儿一样。|看着这冰箱，我就感觉自己还年轻着呢。 #line:ba1398
+Mae: 在我回到镇上的那天晚上，|我就在路上|见到过一台这样的冰箱。 #line:709971
+Miranda: 哦，是吗？你在哪儿见到的？ #line:0434a9
+Mae: 就在峡谷小溪里看见的。|它被扔在几根原木下面，|大头朝下。 #line:29e31d
+Miranda: …… #line:04e0b6
+<<close>>
+<<wait 2>>
+Bea: 打扰一下！您家的炉子在哪儿！ #line:3bcc50
+Miranda: 哦，对了。它就在地下室里。从这儿直走，就能到地下室了。 #line:07a6ab
+Bea: 好的。梅，咱们一块看看去。 #line:c17718
+<<close>>
+<<walk Mae Mae3>>
+<<walk Bea Bea3 -1>>
+<<waitForMove Bea>>
+[[Dialogue4]]
+===
+title: Dialogue4
+tags: 
+colorID: 3
+position: 755,683
+---
+Bea: 好了，我们得在下面待一会儿才能上来。 #line:76a5e6
+Bea: 您千万记住，别把我们锁在里面。 #line:108ebe
+Miranda: 你说什么？ #line:1f20bb
+Bea: 上回我们派人来过您家，结果您把那人锁在地下室里啦。 #line:cb4e07
+Miranda: 我敢打包票，根本没出过这种事。 #line:31118f
+Bea: 嗯。后来那个被您锁在地下室的员工给我打了电话。 #line:e526fa
+Miranda: 你们的人来的时候，我闻见他身上有酒味。 #line:e03457
+Bea: 哦，好吧。 #line:b800c6
+Mae: 看来你们的人被抓了个正着。 #line:abc6ba
+Bea: 可能是这样吧。 #line:f19721
+Bea: 好了，咱们下去吧！ #line:cbd666
+<<lookAt Mae Miranda>>
+Mae: 很高兴认识您！ #line:0b3ae5
+Miranda: 小姑娘，我根本就不认识你啊。 #line:44128a
+<<close>>
+<<irisOut 1 wait>>
+<<set $miranda_house to 2>>
+<<scene MirandaBasement>>
+===

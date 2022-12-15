@@ -1,0 +1,20 @@
+title: ExamineBoxes
+tags: 
+colorID: 0
+position: 539,260
+---
+<<if $dad_will_move_boxes is 1>>
+    Mae: 真是太好啦！老爸终于把这些箱子挪走啦。 #line:2268d5
+    Mae: 我真想爬到夹层里，然后找本书看。 #line:29dbe6
+    Mae: 就像以前一样。 #line:32f311
+<<elseif $knows_crawlspace_boxes is 0>>
+    Mae: 呃。 #line:7df15b
+    Mae: 话说，屋子的夹层什么时候被搞得这么乱啦？ #line:d611d1
+    Mae: 我在想，老爸会不会把这些箱子给挪走。 #line:9a12fb
+    <<set $knows_crawlspace_boxes to 1>>
+<<else>>
+    Mae: 哈哈，是啊。我敢说，这些箱子肯定是老爸堆在这儿的。 #line:52bffb
+    Mae: 老爸应该亲自把这些箱子挪走。 #line:ecfa12
+    Mae: 这样才合理嘛！ #line:26c23c
+<<endif>>
+===

@@ -1,0 +1,1106 @@
+title: EnterLevel_A1D1
+tags: 
+colorID: 0
+position: -211,528
+---
+[[OutsideDiner]]
+
+===
+title: OutsideDiner
+tags: 
+colorID: 0
+position: -208,858
+---
+<<if $diner is 1>>
+	Mae: 能回来真是太棒啦！ #line:243934
+	Gregg: 老妹儿，这样咱们就能天天出去玩啦！ #line:96a1c9
+    <<musicFadeOut 4>>
+	Angus: 哦，我的天哪！ #line:302f95
+    <<lookDirection Gregg .5 -.5>>
+    <<lookDirection Bea .25 -.75>>
+	Bea: WTF #line:545131
+	Mae: 那是个啥？ #line:522550
+    <<lookDirection Mae .6 -.4>>
+	Angus: 那是条胳膊吗？ #line:1f8313
+	Bea: 那确实是条胳膊。 #line:72d8ab
+	Gregg: 大 家 都 别 动！ #line:a38ff1
+	Gregg: 让 我 找 根 树 枝 来 戳 戳 它。 #line:c6e5c2
+	Mae: 我 先 来！！！ \o/ #line:777a38
+	<<fadeOut 1 wait>>
+	<<set $diner to 2>>
+	<<scene PawsModeSeveredArm>>
+<<elseif $diner is 2>>
+    <<fadeOutMusic .01>>
+    <<lookAt Gregg Molly>>
+    Mae: 嗨，莫莉姨妈！我们发现了一只胳膊！ #line:f265df
+    Molly: 好了，梅，请你先把树枝放下，然后离这只胳膊远点。 #line:4660ea
+    Mae: 好吧好吧！可千万别用泰瑟枪电我哦。 #line:167204
+    Molly: 这我可不敢保证。 #line:c26569
+    Gregg: 哦，好了，我觉得我和安格斯该回家了。 #line:145fa8
+    Gregg: 明天见，梅！ #line:27f362
+    Molly: 好了，我可不想看见你们其中有任何一个人是独自回家的。 #line:ae2c9b
+    Molly: 一定要结伴走才行。最近发生了一些不太好的事。 #line:dc9066
+    Bea: 警官，我可以开车把梅送回家。 #line:6679cf
+    Molly: 麻烦你了，碧娅。 #line:022a50
+    Mae: 是啊，谢了碧娅！咱们走起吧！ #line:694872
+    <<unlockDoodle Arm>>
+    <<if $found_tattoo>>
+        <<unlockDoodle ArmTattoo>>
+    <<endif>>
+	<<fadeOut 1 wait>>
+	<<set $diner to 3>>
+	<<scene BeaCar>>
+<<endif>>
+===
+title: Scout1
+tags: 
+colorID: 0
+position: 605,1103
+---
+[[Scouts]]
+===
+title: Scout2
+tags: 
+colorID: 0
+position: 911,1094
+---
+[[Scouts]]
+===
+title: Scouts
+tags: 
+colorID: 0
+position: 764,1431
+---
+<<if $scouts_sequence is 0>>
+    <<if $scouts is 0>>
+        <<set $scouts += 1>>
+        [[Scouts_00_00]]
+    <<elseif $scouts is 1>>
+        [[Scouts_00_01]]
+    <<endif>>
+<<elseif $scouts_sequence is 1>>
+    <<if $scouts is 0>>
+        <<set $scouts += 1>>
+        [[Scouts_01_00]]
+    <<elseif $scouts is 1>>
+        <<set $scouts += 1>>
+        <<set $scouts_done to 1>>
+        [[Scouts_01_01]]
+    <<endif>>
+<<endif>>
+===
+title: Scouts_00_00
+tags: 
+colorID: 0
+position: 408,1779
+---
+Scout1: 嗨！想买点曲奇吗？ #line:0665a7
+Scout2: 是啊，来买点曲奇吧！ #line:e20571
+Mae: 哈，以前我们经常会在春天的时候出来卖曲奇。 #line:8ec7c6
+Scout1: 我们现在也有秋日曲奇特卖哟！ #line:a79e31
+Scout2: 没错，你好像不太关心时事啊？ #line:a8cff6
+<<if $current_events is 1>>
+    Mae: 天哪！没错！我可一点都不关心时事！ #line:42dc6e
+<<endif>>
+<<set $current_events to 1>>
+Scout1: 现在就买9盒吧！ #line:66c440
+Scout2: 拜托啦！！！ #line:005e27
+Mae: 我可一分钱也没有。 #line:99773f
+Scout1: 那就赶快走吧，穷光蛋！ #line:f2909c
+===
+title: Scouts_00_01
+tags: 
+colorID: 0
+position: 691,1789
+---
+Scout1: 曲奇！卖曲奇咯！ #line:c4902c
+===
+title: Bargoers_A1D1
+tags: 
+colorID: 2
+position: -1084,1795
+---
+Bargoer1: 快五点了！该走人啦! #line:40c34f
+Bargoer2: 带上啤酒，一起去看熔炉队吧！ #line:742ccb
+<<set $bargoers_done to 1>>
+===
+title: Bargoers_A1D2
+tags: 
+colorID: 2
+position: -842,1793
+---
+Bargoer1: 最好再找点掩护！因为熔炉队要来啦！ #line:029f0f
+Bargoer2: 躲是没用的，熔炉队会找到你的！ #line:65fb32
+<<set $bargoers_done to 1>>
+===
+title: LeftSideBlocker
+tags: 
+colorID: 0
+position: 337,678
+---
+<<if $act is 1>>
+    <<if $day is 1>>
+        Mae: 我觉得在老驴生鲜旁边应该找不到格雷格。 #line:88f8c1
+        Mae: 最好去猎鹰小吃那儿看看。 #line:18f4ba
+    <<elseif $day is 2>>
+        Mae: 我只想让我的电脑快点恢复正常，我要上网啊。 #line:8da143
+        Mae: 把电脑修好可比去别的地方闲逛重要得多。 #line:3c330b
+    <<elseif $day is 3>>
+        Mae: 呃，我今天可没打算到镇子周围闲逛去。 #line:1d0ab2
+        Mae: 还有事要做呢。 #line:36f6b1
+    <<endif>>
+<<elseif $act is 2>>
+    <<if $day is 1>>
+        [[LeftSideBlocker_A2D1]]
+    <<endif>>
+<<endif>>
+===
+title: Bargoers_A2D1
+tags: 
+colorID: 3
+position: -1090,2039
+---
+Bargoer2: 熔炉队打得怎么样？ #line:bf9608
+Bargoer1: 昨晚蓝熊队被揍得落花流水！ #line:b61068
+Bargoer2: 打得好，打得好。 #line:16053a
+Bargoer1: 实在是个好赛季，老兄。 #line:83b085
+<<set $bargoers_done to 1>>
+===
+title: Scouts_01_00
+tags: 
+colorID: 0
+position: 964,1771
+---
+Scout1: 嘿！请 买 9 盒 秋 季 曲 奇 吧！ #line:b460d4
+Mae: 我可没钱！ #line:c8973b
+Scout2: 那就快走开，土包子！ #line:4ddfc0
+Scout1: 嘿，听着，我们可是童子军，明白吗？ #line:7c7bc5
+Scout2: 明白，然后呢？ #line:e93e5f
+Scout1: 童子军可不会叫别人土包子，好吗？ #line:51e1c9
+Scout2: 对，你说的没错。 #line:f8c3b8
+Scout1: 就算有人真是土包子， #line:0533fc
+Scout2: 我们童子军也要彬彬有礼地对待他们。 #line:e40182
+Mae: 你们两个可真是学到了特别宝贵的一课呢。 #line:1dd38d
+===
+title: Bargoers_A1D3
+tags: 
+colorID: 2
+position: -619,1793
+---
+Bargoer1: 熔炉队！熔炉队！向你袭来！ #line:b49c58
+Bargoer2: 你该怎么办？你该怎么办？ #line:a167ce
+<<set $bargoers_done to 1>>
+===
+title: Scouts_01_01
+tags: 
+colorID: 0
+position: 1233,1776
+---
+Scout2: 卖曲奇！帮帮童子军吧！别让我们在街上继续苦等了！ #line:acb2ff
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -662,418
+---
+<<if $act is 1 and $day is 1>>
+    <<if $diner is 1>>
+    	<<warp Player MaeDiner>>
+    	<<show Gregg>>
+    	<<show Bea>>
+    	<<show Angus>>
+    	<<warp Gregg GreggDiner>>
+    	<<warp Bea BeaDiner>>
+    	<<warp Angus AngusDiner>>
+        <<play TowneCentreMusic>>
+    <<elseif $diner is 2>>
+    	<<warp Player MaeArm>>
+    	<<show Gregg>>
+    	<<show Bea>>
+    	<<show Angus>>
+    	<<warp Gregg GreggArm>>
+    	<<warp Bea BeaArm>>
+    	<<warp Angus AngusArm>>
+        <<show Molly>>
+        <<flip Molly -1>>
+        <<warp Molly MollyArm>>
+        <<lookAt Molly Bea instant>>
+    <<endif>>
+<<endif>>
+
+<<if $act is 2 and $day is 1>>
+    <<hide Scout1>>
+    <<hide Scout2>>
+<<endif>>
+
+<<if $act is 2 and $day is 2>>
+    <<show CityCouncil>>
+<<else>>
+    <<hide CityCouncil>>
+<<endif>>
+
+<<if $demo2>>
+    <<show Pastor>>
+    <<show Bruce>>
+    <<setCanInteract Bruce 0>>
+<<else>>
+    <<hide Pastor>>
+    <<hide Bruce>>
+<<endif>>
+
+<<if $act is 3 and $day is 1 and $rooftop_hangout>>
+    <<cameraLookAt CameraRooftopHangout>>
+    <<warp Mae RooftopHangoutMae>>
+    <<warp Gregg RooftopHangoutGregg>>
+    <<warp Angus RooftopHangoutAngus>>
+    <<warp Bea RooftopHangoutBea>>
+<<endif>>
+
+<<if $act is 4 and $day is 3>>
+    <<hide Bargoer2>>
+<<endif>>
+
+<<if $act is 4 and $day is 3>>
+    <<show GarretRandell>>
+<<else>>
+    <<hide GarretRandell>>
+<<endif>>
+
+<<if $act is 2 and $day is 3>>
+    <<show CeeJay>>
+<<else>>
+    <<hide CeeJay>>
+<<endif>>
+
+<<if $act is 3 and $day is 3>>
+    <<show RyanBranch>>
+<<else>>
+    <<hide RyanBranch>>
+<<endif>>
+
+<<if $act is 2 and $day is 1>>
+    <<show KevinClark>>
+<<else>>
+    <<hide KevinClark>>
+<<endif>>
+
+<<if $act is 2 and $day is 2>>
+    <<show IlyaSobin>>
+<<else>>
+    <<hide IlyaSobin>>
+<<endif>>
+
+<<if $act is 3 and $day is 2>>
+    <<show DmitryGavriluk>>
+<<else>>
+    <<hide DmitryGavriluk>>
+<<endif>>
+
+<<if $act is 1 and $day is 3>>
+    <<show Shane>>
+<<else>>
+    <<hide Shane>>
+<<endif>>
+===
+title: OutsideVideoStore.1
+tags: demo2
+colorID: 0
+position: 1457,1058
+---
+Mae: 今天安格斯好像不上班吧。 #line:cb780d
+Mae: 不过谁还会去影像店呢？ #line:2c49f2
+Mae: 也就一些有怪癖的人会去影像店的成人专区吧。 #line:83989d
+Mae: 怪胎OS:我就是喜欢用老旧机器看低清有码小电影。 #line:c71aac
+===
+title: OutsideVideoStore.2
+tags: demo2
+colorID: 0
+position: 1664,1060
+---
+Mae: 剩下的我们这些当代人就用现代科技看片了。 #line:8c28f6
+<<set $outside_video_store_done to 1>>
+===
+title: SnackFalconPole.1
+tags: demo2
+colorID: 0
+position: 2001,1089
+---
+Mae: 爷爷之前给我讲过一个故事： #line:3f3f31
+Mae: 有一个水手在船快要沉的时候 #line:123818
+Mae: 爬上了一根船……杆…… #line:3647ab
+Mae: 结果船在完全沉没前撞到了礁石之类的东西上， #line:83eac1
+Mae: 然后，这个水手就在船杆上待了整整一个星期， #line:42d0e7
+Mae: 同时看着下面的鲨鱼绕着它转圈 #line:4b5649
+===
+title: SnackFalconPole.2
+tags: demo2
+colorID: 0
+position: 2247,1096
+---
+Mae: 桅杆！对，应该叫桅杆。 #line:c25c05
+Mae: 这比“船杆"好听多了。 #line:a0c4ce
+
+===
+title: SnackFalconPole.3
+tags: demo2
+colorID: 0
+position: 2466,1067
+---
+Mae: 那兄弟只能靠抓海鸟，喝雨水为生。 #line:c10dba
+Mae: 而且他还见到了海上的幽灵。 #line:018ff4
+Mae: 简直帅呆了。 #line:07cf7c
+<<set $snack_falcon_pole_done to 1>>
+===
+title: PreInitLevel_A1D1
+tags: 
+colorID: 0
+position: -232,251
+---
+<<if $diner is 2>>
+    <<destroy _TowneMusic>>
+<<endif>>
+===
+title: LeftSideBlocker_A2D1
+tags: demo2
+colorID: 0
+position: 611,668
+---
+Mae: 可以溜达着去看看废弃的老驴生鲜。 #line:c5d910
+Mae: …… #line:ec8ff7
+Mae: 我可不会走远路去看废弃的老驴生鲜。 #line:057d12
+===
+title: Pastabilities_Act2
+tags: 
+colorID: 3
+position: 1853,1395
+---
+Mae: 我勒个…… #line:a9555a
+Mae: 什么…… #line:dca6a5
+Mae: 不 会 吧！ #line:0c146a
+Mae: 别别别别别别别别这样啊！ #line:a331c9
+Mae: 美味意面馆居然关门啦！！！！ #line:2d6e82
+Mae: 再无外卖披萨可吃啦！ #line:84e99c
+Mae: 再无特惠促销啦！ #line:2dd5b2
+Mae: 再无有趣的生日派对可言啦。 #line:059d9b
+Mae: 这可算是自洪水以来 #line:a24538
+Mae: 这个镇遇到的最糟糕的事了。 #line:bfc65a
+->那个小小动物园 #line:ae6475
+    Mae: 谢天谢地，当时镇上所有的动物都游到了安全的地方。 #line:9537e0
+    Mae: 它们全都躲到了轮胎店的屋顶上。 #line:4eef22
+    Mae: 谁能想到，山羊居然会是游泳健将呢？ #line:2a46c3
+->有冰激淋的迷你高尔夫店 #line:9efaa0
+    Mae: 从前，每到夏夜， #line:e51f9d
+    Mae: 我们就会到这里来吃冰淇淋， #line:3251c1
+    Mae: 打迷你高尔夫。 #line:46cf9e
+    Mae: 可结果，所有的一切全都让洪水给冲走了。 #line:2bf509
+Mae: 所以，我现在真的好绝望啊。 #line:78c28c
+<<set $knows_pastabilities to 1>>
+<<set $pastabilities_act2_done to 1>>
+===
+title: Pastabilities_Act3
+tags: 
+colorID: 4
+position: 2103,1397
+---
+Mae: 哇哦～ #line:23edac
+Mae: 是有其他的店要搬进来了吗？ #line:f46f21
+Mae: 不过搬过来的很有可能是家又烂又无聊的店吧。 #line:7a4532
+Mae: 我好想你啊，我亲爱的披萨店。 #line:18e480
+<<set $pastabilities_act3_done to 1>>
+===
+title: Pastabilities_Act4
+tags: 
+colorID: 5
+position: 2361,1400
+---
+<<if $talked_to_dan_about_taco_buck is 1>>
+    Mae: 哇哦。 #line:83e261
+    Mae: 这是我们自己的塔可店诶！ #line:b038e0
+<<else>>
+    Mae: 卧 了 个 槽！！！！！ #line:a0aed2
+    Mae: 啊…… #line:cbcc73
+    Mae: 啊 啊 啊 啊 啊…… #line:3b8f53
+    Mae: 一 家 塔 可 店！！！！ #line:902b48
+<<endif>>
+Mae: 这真是镇子上久违的好事，上一次还是 #line:e4cb82
+->他们把蛇从食谱上抹去了！ #line:b15eda
+    Mae: 这里的原住民都很迷信 #line:6c41bb
+    Mae: 所以人们从山上一个宗教部落里 #line:e44be9
+    Mae: 请了一个教士。 #line:5f8c66
+    Mae: 教士来了后对蛇大声吼叫，想用这种办法驱赶蛇。 #line:10f648
+    Mae: 教士死后的第二天，人们就在附近设了陷阱。 #line:93c4e7
+    Mae: 没人知道这些蛇是从哪儿来的， #line:922786
+    Mae: 也没人知道它们为什么会来这儿。 #line:3126cb
+    Mae: 不过现在它们都走掉了。 #line:e82f87
+->我们终于有网了！ #line:e790f2
+    Mae: 两年前，我们用的还是网信鱼的网。 #line:7e12ea
+    Mae: 因为这儿的网络要比其他地方落后整整二十年， #line:121b9b
+    Mae: 所以要花三天时间才能下好一部电影， #line:08d0e1
+    Mae: 花一天时间才能加载出一张gif图。 #line:9f7b4a
+    Mae: 简直是生活在原始时代啊。 #line:dd8124
+Mae: 天哪。 #line:54067f
+Mae: 生活总是在向前踏步，嗯哼 #line:02f2a6
+<<wait 2>>
+Mae: 我滴个神！他们居然还有外卖呢！！！ #line:ce7cf5
+Mae: 我一定要吃点塔可饼。 #line:20145e
+<<set $pastabilities_act4_done to 1>>
+===
+title: ArmSpot.1
+tags: 
+colorID: 0
+position: 2941,748
+---
+Mae: 话说，那条胳膊到底是怎么跑到这儿来的…… #line:b1afc1
+Mae: 可能是有个人在街上乱跑，然后说： #line:d703ee
+Mae: “啊哦，我的胳膊掉咯！" #line:88a74e
+Mae: “我一会儿再回来把它捡走吧！" #line:28a542
+===
+title: ArmSpot.2
+tags: 
+colorID: 0
+position: 3195,737
+---
+Mae: 如果胳膊掉了或者是被切断的话， #line:88c552
+Mae: 人肯定就活不成了。 #line:b4e639
+Mae: 是啊，当然除非看了医生 #line:626172
+Mae: 只是把别人胳膊砍掉的话，能被叫做人身攻击吗？ #line:f32fea
+Mae: 我记得好像是另外一个词来着 #line:1f4f68
+Mae: “切手"事件  #line:7d35a2
+Mae: 你因犯切手罪被捕了！ #line:e43ac9
+===
+title: ArmSpot.3
+tags: 
+colorID: 0
+position: 3429,733
+---
+Mae: 无论是谁的手臂，他都可能死了 #line:62093f
+Mae: 不不不，是绝对死了 #line:ca0e47
+Mae: 除非我看到某个人走过来 #line:1219ef
+Mae: 他就只有一条胳膊。 #line:dafad8
+<<end>>
+===
+title: StatueLedge.1
+tags: 
+colorID: 0
+position: 2944,1005
+---
+Mae: 当当，现在看到的是一个喜欢雕像的男人 #line:fd059a
+Mae: 实在搞不懂为什么现在那么多人喜欢做自己的雕像 #line:b769ae
+Mae: 信自己就能保平安，知道吗。 #line:28f624
+Mae: 根本就用不着做雕像来安慰自己。 #line:6aa339
+===
+title: StatueLedge.2
+tags: 
+colorID: 0
+position: 3192,1008
+---
+Mae: 如果我要建一个雕像的话，我会把自己塑的很高很高 #line:caba5d
+<<end>>
+===
+title: HellMalt.1
+tags: 
+colorID: 0
+position: 2935,1236
+---
+Mae: 麦芽究竟是什么鬼东西？ #line:d42955
+<<end>>
+===
+title: FrontOfVideoStore.1
+tags: 
+colorID: 0
+position: 2933,1483
+---
+Mae: “又"？（too） #line:9e8cd9
+Mae: 这有点像“有两个"（two） #line:b4a817
+Mae: 或者“也是一个"（also） #line:face3d
+Mae: 我都不会犯这样的错误。 #line:909304
+===
+title: FrontOfVideoStore.2
+tags: 
+colorID: 0
+position: 3179,1485
+---
+Mae: 还有另一家影像站在哪呢？ #line:a5dac2
+<<end>>
+===
+title: Bargoers_A2D2
+tags: 
+colorID: 3
+position: -852,2045
+---
+Bargoer2: 下雨了，真冷啊。 #line:e25385
+Bargoer1: 熔炉队才不会抱怨这些呢。 #line:717451
+Bargoer2: 当然不会了……不管天气怎么样，熔炉队都不怕，他们还能照常比赛！ #line:796935
+Bargoer1: 无论是下雨还是艳阳天，永远都是熔炉队的“主场天"。 #line:a6613d
+<<set $bargoers_done to 1>>
+===
+title: Bargoers_A2D3
+tags: 
+colorID: 3
+position: -625,2039
+---
+Bargoer2: 又出太阳了，真是谢天谢地。 #line:5c3260
+Bargoer1: …… #line:9dbc2c
+Bargoer2: 你今天怎么不高兴啊？ #line:fd4f7e
+Bargoer1: 啊，没什么事。 #line:1b7af4
+Bargoer2: 嘿，嗯…… #line:de7b87
+Bargoer2: 熔炉队加油，嗯？ #line:0dc793
+Bargoer1: 没错，熔炉队加油！ #line:28b78c
+<<set $bargoers_done to 1>>
+===
+title: Bargoers_A2D4
+tags: 
+colorID: 3
+position: -389,2030
+---
+Bargoer2: 你要参加丰收节的活动吗？ #line:beebb0
+Bargoer1: 我才不去呢，我还要看比赛呢。 #line:e37c68
+Bargoer2: 今晚有比赛吗？ #line:2f65b0
+Bargoer1: 没有，不过我打算去看看我最喜欢的高光集锦。 #line:fd2af3
+Bargoer2: 你为什么不出来逛逛呢？这样多好啊。 #line:1dc65d
+Bargoer2: 又能舒活舒活筋骨，还能看看游行。 #line:74757f
+Bargoer1: …… #line:14f1e3
+Bargoer2: 看过比赛直播吗？ #line:4cec01
+Bargoer1: …… #line:862648
+Bargoer1: 没有，一次都没看过。 #line:b404a2
+Bargoer2: 来看看丰收节活动吧。也许有意想不到的惊喜哦。 #line:0001ac
+Bargoer1: …… #line:2dd608
+Bargoer1: 嗯，说得也对！ #line:a275b0
+Bargoer2: 好啊！熔炉队加油！ #line:261776
+Bargoer1: 熔炉队加油！加油！加油！ #line:2b105a
+<<set $bargoers_done to 1>>
+===
+title: Bargoers_A3D1
+tags: 
+colorID: 4
+position: -1099,2281
+---
+Bargoer2: 天又变潮了。 #line:984f6c
+Bargoer2: 真冷啊。 #line:03c297
+Bargoer1: 刚下过雨。 #line:4beb09
+Bargoer2: 嘿，嗯…… #line:1322e8
+Bargoer2: 为什么咱们还要站在外面呢？ #line:225bd6
+Bargoer1: 总得有人要守在这里啊。 #line:8dd911
+<<set $bargoers_done to 1>>
+===
+title: Bargoers_A3D2
+tags: 
+colorID: 4
+position: -861,2288
+---
+Bargoer2: 对了，你还没告诉我，那天你为什么不太开心呢… #line:98123d
+Bargoer1: 我什么事都得告诉你吗？ #line:e2ea90
+Bargoer2: 不不不，就问一下而已。 #line:d292b3
+Bargoer1: 哦，那去问别人吧。 #line:f0ed21
+Bargoer2: …… #line:79c6b4
+Bargoer1: …… #line:78ee2a
+<<set $bargoers_done to 1>>
+===
+title: Bargoers_A3D3
+tags: 
+colorID: 4
+position: -627,2277
+---
+Bargoer2: 于是我对她说：“梅布尔，别在桌子上，你下来！" #line:210341
+Bargoer1: 哈哈哈…… #line:467e9d
+Bargoer2: 结果她说：“你上来！" #line:64b9c0
+Bargoer1: 不可能吧 #line:ae9353
+Bargoer2: 真的。我们就在那张桌子上跳舞。还把大部分东西打碎了 #line:339e68
+Bargoer1: …… #line:cd3344
+Bargoer1: 可惜我看不到。 #line:d44e0e
+Bargoer2: 你可真该在现场的。 #line:f87dfd
+Bargoer1: 可惜我没办法在。 #line:4579bb
+<<set $bargoers_done to 1>>
+===
+title: Bargoers_A3D4
+tags: 
+colorID: 4
+position: -394,2264
+---
+Bargoer2: 好了，明天就乘船远航喽。 #line:3b3d89
+Bargoer1: 真没想到你找到新工作了。 #line:cd8f6a
+Bargoer2: 是啊，向着美好的未来。 #line:b662f7
+Bargoer1: …… #line:2a1759
+Bargoer1: 孩子们是不是都挺高兴的？ #line:9fb634
+Bargoer2: 是啊。虽然可能得适应一段时间，不过他们会喜欢的。 #line:ade23c
+Bargoer1: 哈哈。 #line:0a6cbb
+Bargoer2: 那…… #line:f1d61f
+Bargoer1: 嗯。 #line:e251d9
+Bargoer2: 嗯。 #line:439e48
+Bargoer1: …… #line:d6f385
+Bargoer2: …… #line:8049c6
+Bargoer2: 那咱们就再喊一次口号吧。 #line:312206
+Bargoer1: 没错，再喊一次。 #line:056cbf
+<<wait 1>>
+<<runNextLinesTogether 2>>
+Bargoer1: [shake=.05]熔炉队！|加油！加油！加油！[/shake] #line:f98ce6
+Bargoer2: [shake=.05]熔炉队！|加油！加油！加油！[/shake] #line:cf8fea
+<<wait .5>>
+Bargoer2: 真棒。 #line:cb589e
+<<set $bargoers_done to 1>>
+===
+title: Bargoers_A4D3
+tags: 
+colorID: 6
+position: -1098,2542
+---
+<<flip Bargoer1 -1>>
+Bargoer1: …… #line:eb6bbc
+Bargoer1: 你是谁啊？ #line:9ade7a
+Mae: 你难道没见过我吗？ #line:26d972
+Bargoer1: 没有啊。 #line:0091d8
+Mae: 嗯，可我注意到你了。 #line:5cd2fc
+Bargoer1: 这也不奇怪。 #line:0c3dd1
+Mae: 站在外面有点冷，是吧？ #line:a3ffa8
+Bargoer1: 可总得有人站在这儿啊。 #line:fb8754
+Bargoer1: …… #line:f3eea2
+Bargoer1: 嘿，你是熔炉队的粉丝吗？ #line:066d64
+->嗯……当然是了。 #line:216c87
+    Bargoer1: 噢，真的是吗？ #line:cc6343
+    Mae: 哈哈，当然……是真的啦！ #line:ce27a1
+    Bargoer1: 熔炉队加油。 #line:2d9979
+    Mae: 熔炉队加油。 :) #line:e5969e
+    Bargoer1: 熔炉队加油。 #line:5d11e3
+    Mae: :| #line:36332d
+->嗯……我不是。 #line:05714e
+    Bargoer1: 哦，那好吧。 #line:958812
+    Bargoer1: …… #line:e90b8e
+<<set $bargoers_done to 1>>
+===
+title: CeeJay
+tags: 
+colorID: 0
+position: 1789,1861
+---
+Mae: 嗨……你是CJ吗？|（全名为Cee Jay） #line:82a5a2
+CeeJay: 嗯？ #line:dff6d4
+Mae: 我上初中的时候，你好像已经上高中了。 #line:8da581
+CeeJay: 噢，嗯哼。 #line:f11471
+CeeJay: 我认识你吗？ #line:f040d9
+Mae: 你以前总是和汤姆·布拉姆维尔 #line:ad4ed8
+Mae: 在我家那条街上玩特别呆的游戏。 #line:a2d32f
+CeeJay: 哈哈，特别呆的游戏。 #line:f8a464
+CeeJay: 这事你记得还挺清楚。 #line:efe13a
+Mae: 你还住这儿吗？ #line:4111dd
+CeeJay: 不住了，我就是回来看看。 #line:6b2cd9
+Mae: 是为了玩以前那个游戏才回来的吗？ #line:df0368
+CeeJay: 那就是个DIY的角色扮演游戏罢了。 #line:6845c9
+Mae: 酷啊。 #line:e1c788
+CeeJay: 跟游戏无关，我就是回来看看家人。 #line:396f93
+CeeJay: 我丈夫明天开车回来。 #line:d1a48a
+Mae: 你现在干的是什么工作？ #line:44e7e3
+CeeJay: 律师。 #line:de6a8c
+Mae: 哦，哇哦。 #line:c15198
+Mae: 我可以问你几个和法律相关的问题吗？ #line:12634e
+CeeJay: 虽然我回来不是来办公事的， #line:2e9004
+CeeJay: 不过当然可以了。 #line:abc791
+	->抢劫银行最好的办法是什么？ #line:a774d7
+		CeeJay: 这可不是个合法的咨询 #line:ec64d0
+		Mae: 合法和法律一样吧？ #line:15ee95
+		CeeJay: 额 #line:e2fb84
+        Mae: 抢银行是犯罪，对吧？ #line:08cbe3
+		Mae: 罪犯是违抗法律的吧？ #line:52b04d
+		Mae: 这一切都是相关的。 #line:4b8b68
+		CeeJay: 我想大概就是……嗯……就带上面具和枪？ #line:a85adb
+		Mae: 嗯，这些都做好了。 #line:c359b9
+	->离开监狱的最好方法是什么？ #line:e90034
+		CeeJay: 好吧，具体情况具体分析，你懂吧…… #line:3a07d8
+		Mae: 比如从墙上挖个洞离开 #line:e24d10
+		Mae: 或者击晕一个守卫拿走他的裤子和身份卡 #line:68c619
+		Mae: 再比如……我不知道……引发一场暴乱什么的？ #line:bae7a6
+		CeeJay: 哈哈哈 #line:9933f1
+		Mae: *最好*的监狱帮派是哪个? #line:0f7d67
+		Mae: 如果*必须*让你选一个的话？ #line:6c9222
+CeeJay: 你要知道我们在法学院可不学这些。 #line:5eeef9
+Mae: 要是学不到有用的东西，那你上大学还有什么意义啊？ #line:012c79
+CeeJay: 法律可是很有用的。 #line:02e2f0
+Mae: 有用个PI，CJ！ #line:040d67
+<<wait 2>>
+Mae: 不好意思，总之欢迎回来，祝你看望愉快，拜 #line:c55b86
+CeeJay: 额，再见了。 #line:b63fae
+<<set $cee_jay_done to 1>>
+===
+title: IlyaSobin
+tags: 
+colorID: 0
+position: 1130,660
+---
+IlyaSobin: 你好，请问一下！ #line:266de6
+Mae: 怎么了？ #line:641d7a
+IlyaSobin: 请问纪念品商店在哪里？ #line:7edb3c
+Mae: 你已经走过了。 #line:94b80d
+IlyaSobin: 什么？ #line:5bf4ee
+Mae: 你有口音诶。 #line:a0aeba
+Mae: 你是从哪儿来的啊？ #line:7ea757
+IlyaSobin: 俄罗斯。 #line:74e195
+Mae: 你这一路都是怎么过来的？ #line:8324c3
+IlyaSobin: 我一路沿着大东岸落叶道走到这里来的。 #line:ba7b89
+->哦，哇哦，这一路感觉如何？ #line:d6de11
+    IlyaSobin: 虽然很不容易，但整体的感觉却很不错。 #line:a4a54d
+    Mae: 这条路好像能横穿六个州，是吧？ #line:04afa0
+    IlyaSobin: 这我没数过。 #line:da5244
+    Mae: 我可真想象不出走这么远的路是种什么画面。 #line:ca5354
+->你路上见到过野熊吗？ #line:3881fc
+    IlyaSobin: 目前还没见过。 #line:9a074b
+    Mae: 它们有时候可是会吃人的。 #line:a5f416
+    IlyaSobin: 不过你们这里的熊 #line:a455d2
+    IlyaSobin: 大多都在翻垃圾吃诶。 #line:98b701
+    Mae: 这话说的让我很没面子诶。 #line:a7d320
+IlyaSobin: 旅行指南上说，这里有一家商店，是吗？ #line:a4fb90
+Mae: 这里以前确实有一家商店，可早就搬走了。 #line:85f8b9
+Mae: 不过现在这里又新开了家猎鹰小吃！ #line:79016e
+IlyaSobin: 你知道我能在哪儿买到补给吗？ #line:7e87ed
+Mae: 我的意思是…… #line:387099
+Mae: 在猎鹰小吃就能买到补给啊，老兄。 #line:356a7c
+IlyaSobin: 我应该能在店里找到想买的东西吧…… #line:71d869
+Mae: 当然可以了，那里什么好东西都有。 #line:62629f
+IlyaSobin: 好东西也可能都是易变质腐烂的那种……嗯…… #line:1136d5
+Mae: 不是所有东西都会腐烂的？ #line:2bad13
+Mae: 我们每个人都会有死亡的那一天。 #line:a7ba2a
+Mae: 所有的一切也都会走向毁灭。 #line:e21951
+<<wait 2>>
+Mae: 不过它们应该也有卖格兰诺拉营养条吧 #line:32c085
+IlyaSobin: Spasibo！ #line:c5f6ea
+Mae: “spasibo"是什么意思？ #line:b1d11b
+IlyaSobin: 是“谢谢"的意思！ #line:642048
+Mae: 对哦～原来是俄语哦！ #line:7413d6
+<<set $ilya_sorbin_done to 1>>
+===
+title: DmitryGavriluk
+tags: 
+colorID: 0
+position: 1424,663
+---
+Mae: 我认识你吗？ #line:f6bb5e
+DmitryGavriluk: 不认识。 #line:aadcad
+Mae: 哦。 #line:29b384
+Mae: 你是格雷格的兄弟吗？ #line:4e7824
+Mae: 你和他兄弟长得很像诶。 #line:b6e314
+Mae: 可你又不是他那个酷酷的堂姐珍， #line:27d186
+Mae: 难道你是他别的兄弟吗？ #line:91e808
+DmitryGavriluk: 不是。 #line:8265a9
+Mae: 那你是谁啊？你来这儿又想干什么呀？ #line:f48ea3
+DmitryGavriluk: 我在找市政会。 #line:0acdc6
+Mae: 应该是“镇政会"才对，我们这儿是个镇。 #line:923fde
+DmitryGavriluk: 说得也是啊。 #line:949ba4
+Mae: 你为什么要找那地方啊？ #line:67252d
+DmitryGavriluk: 我想提议一个基础设施和市政服务管理计划。 #line:5ceed9
+Mae: 什么？ #line:5fb794
+DmitryGavriluk: 能够帮你们管理维护诸如除雪车和坏掉的消防栓之类的设施 #line:2ca485
+Mae: 是啊，有时候是会发生这样的事 #line:0e6c8d
+DmitryGavriluk: 我就是觉得我的计划会有帮助的。 #line:817255
+DmitryGavriluk: 也许吧，因为很多地方畏惧新事物。 #line:de24c0
+DmitryGavriluk: 他们就希望把一切保持原状，与世隔绝。 #line:05d9ce
+DmitryGavriluk: 这真让人泄气 #line:16301f
+Mae: 你看起来对这事相当投入，哈哈 #line:238455
+DmitryGavriluk: 这是我的工作，所以…… #line:6b443d
+Mae: 我也曾有个工作，我就是装捡杂货的， #line:0cceee
+Mae: 你能编些程序什么的让那份工作不那么糟糕吗？ #line:127ef5
+DmitryGavriluk: 好吧，很多岗位马上就都是机器人了，所以…… #line:71edee
+Mae: 老天，说的是啊，哈哈。 #line:8ece76
+<<wait 2>>
+Mae: 我想起来了！你是唐娜的堂兄！ #line:2f23e6
+DmitryGavriluk: 没错！ #line:5668ab
+Mae: 她还照顾过我呢。 #line:71e4c7
+DmitryGavriluk: 哦，哇，你是不是那个用锤子把鸟锤死的小孩啊？ #line:3eb8b5
+Mae: 那是个意外！那时候我才9岁！ #line:288128
+DmitryGavriluk: 哈哈哈。 #line:66330b
+Mae: 我当时以为那是香水什么的呢！ #line:25f375
+Mae: 我还以为那只鸟会喜欢呢！ #line:af38b8
+DmitryGavriluk: 好吧，毕竟那时候你才9岁嘛。 #line:f97924
+Mae: 它当时直接就死了。就…… #line:6f037d
+Mae: 嘎 一 下 子！砰 嗵 倒 在 了 地 上！ #line:595afb
+Mae: 然 后 就 死 翘 翘 了。 #line:ee187b
+DmitryGavriluk: 哈哈哈，我的老天哪。 #line:5e2732
+Mae: 好了，我得走了，祝好运哦。 #line:e71965
+DmitryGavriluk: 可别再随便杀生了！ #line:fc2244
+Mae: 这我可不敢保证。 #line:43e1f5
+<<set $dmitry_gavriluk_done to 1>>
+===
+title: KevinClark
+tags: 
+colorID: 0
+position: 1671,670
+---
+KevinClark: 嗨！ #line:2a9cb6
+Mae: 哈喽！嘿！ #line:df988a
+KevinClark: 咱们衣服的款式是一样的诶！ #line:cdc6fa
+KevinClark: 不过是相反的！ #line:aa11a7
+Mae: 嗯，是啊。好像是这样。 #line:cebe3a
+KevinClark: 你这T恤从哪来的？ #line:480295
+Mae: "哪来的?"  #line:b574cc
+KevinClark: 是啊，这是个牌子还是什么？ #line:2453f8
+Mae: 不是，这是我高中时候自己在家做的。 #line:448494
+Mae: 我只是单纯很喜欢这个符号。 #line:d3ac5a
+KevinClark: 这个符号代表“无"，对吧？ #line:5e467a
+Mae: 这我就不知道了。 #line:5de3b6
+Mae: 你的T恤是什么意思？ #line:d33708
+KevinClark: 这是上帝摔角联盟的秘密象征。 #line:3f986f
+Mae: 啊哈？那是个啥？ #line:1ce496
+KevinClark: 就是后院摔角，类似于《搏击俱乐部》。 #line:3bf92e
+Mae: 哇～哦～哦～！！！！！ #line:44f526
+Mae: 在哪里能看到？ #line:990310
+KevinClark: 这片土地的每一处。 #line:62c422
+KevinClark: 每一处后院，你懂的。 #line:2bfcfd
+Mae: 我怎么不知道这事？ #line:82a9db
+KevinClark: 这是个秘密。因为可能不合法吧。 #line:cc1510
+KevinClark: 打输住院，打赢坐牢嘛。 #line:69beb6
+Mae: 太强了，太强了。 #line:2e6899
+KevinClark: 就是这么强。 #line:4131b7
+Mae: 真棒，我什么时候得去看看。 #line:adb621
+KevinClark: 期待见到你哦！ #line:663e6f
+<<set $kevin_clark_done to 1>>
+===
+title: RyanBranch
+tags: 
+colorID: 0
+position: 1918,661
+---
+Mae: 哈喽！在这干嘛呢？ #line:bda107
+RyanBranch: 额，嗯哼。你又在这干嘛呢？ #line:b51191
+Mae: 我就住在这儿啊。 #line:9359da
+RyanBranch: 你就住楼顶上吗？ #line:7ffd8d
+Mae: *叹气*不啊，在镇子上。 #line:1ec068
+RyanBranch: 记住了。 #line:1a0ddb
+Mae: 你会掉下去摔死的。 #line:dfa260
+RyanBranch: 记住了。 #line:40a787
+Mae: …… #line:2d3663
+RyanBranch: 我在……我想从这里看看这个镇子。 #line:44b7fb
+Mae: 噢～好的。 #line:c7dc46
+RyanBranch: 想给镇中心画幅地图。 #line:c0103b
+Mae: 他们没有地图吗？ #line:e72151
+Mae: 比如他们会用卫星， #line:a0f3df
+Mae: 从外太空来画地图？ #line:4d90cf
+RyanBranch: 额，我喜欢自己来做。 #line:fa3421
+RyanBranch: 我做这事上瘾。 #line:54d4cd
+Mae: 我喜欢地图。地图上所有的一切都那么小！ #line:07ec91
+RyanBranch: 是吗？ #line:c80fbf
+<<if $did_gregg_investigation_quest>>
+	Mae: 历史协会有一幅超级巨大的镇子地图。 #line:dc01af
+	RyanBranch: 是吗？我从来都没去过那儿。 #line:b9e0b5
+	Mae: 嗯，小心点那儿的幽灵和那幅怪了吧唧的画。 #line:521ee7
+	Mae: 还有，晚上可千万别去那儿，也别到顶楼上去。 #line:1d61cd
+	<<wait 2>>
+	RyanBranch: 记住了。 #line:a92355
+<<endif>>
+Mae: 好了，小心点哦。 #line:c52422
+Mae: 我在这上面是因为我可是专业的。 #line:845542
+Mae: 我有特殊鞋子能上来。 #line:d02547
+RyanBranch: 好的，多谢关照。 #line:c13819
+Mae: 如果我在新闻上看到你把脊椎摔断了。 #line:5e87a5
+Mae: 你可别说我没警告过你啊。 #line:75d9d4
+RyanBranch: 我可能那时候什么都说不了了。 #line:9f5e61
+Mae: 哦，也对啊，这话在理。 #line:68dfef
+Mae: 祝你玩得愉快！ #line:210818
+<<set $ryan_branch_done to 1>>
+===
+title: NewspaperGuy
+tags: 
+colorID: 0
+position: 4127,726
+---
+<<if $met_newspaper_guy is 0>>
+    Mae: 嗨。 #line:e1c425
+    NewspaperGuy: 你在我家窗户外面干什么呢？ #line:f7d3c4
+    Mae: 我也不知道。 #line:6f4266
+    NewspaperGuy: 请你离开这儿。 #line:b12aba
+    Mae: 话说你在干啥呢？ #line:53aecd
+    NewspaperGuy: 看报纸。 #line:3f8611
+    <<set $met_newspaper_guy to 1>>
+<<endif>>
+
+Mae: 有什么新闻吗？ #line:43d5da
+<<if $act is 2 and $day is 1>>
+    NewspaperGuy: 马上就要下雨了。 #line:f394a8
+    Mae: 才怪。我回来以后就再没下过雨。今年是旱年。 #line:fef0e8
+    NewspaperGuy: 你说什么玩意？咱们这儿一个星期之前可刚下过暴雨！ #line:efae32
+    Mae: 噢，那时候我还没回来呢。 #line:f74133
+    NewspaperGuy: 好吧，那样的暴雨希望不要再下了。 #line:7d18df
+<<elseif $act is 2 and $day is 2>>
+    NewspaperGuy: 镇子上到处都是砸的坑。 #line:d8f2d4
+    Mae: 啊哦…… #line:7ba2d1
+    NewspaperGuy: 最近这些天，雨水肯定不会把镇子给淹了的。 #line:8b091d
+<<elseif $act is 2 and $day is 3>>
+    NewspaperGuy: Quanterax下个月就要关门了，店里最后24个员工也要下岗了。 #line:35190c
+    Mae: 那是什么地方啊？ #line:d1e0ef
+    NewspaperGuy: 那地方离布里德尔不远，主要卖一些和电脑相关的小物件。 #line:14e9e8
+    Mae: 哦，知道了。我认识一个人，他老妈就在那儿上班。 #line:267c07
+    NewspaperGuy: 那买卖虽然不大，但特累人。 #line:7921f8
+    Mae: 我在杂货店搬过货。 #line:d1b471
+    NewspaperGuy: 感觉怎么样？ #line:ac5dba
+    Mae: 你得把又沉又冷的大件货物放在最下面， #line:6b8220
+    Mae: 再把蔬菜水果放在中间， #line:97afc4
+    Mae: 最后把面包放最上面！ #line:ea3685
+    NewspaperGuy: 嗯，看来你还挺熟练的嘛！ #line:bad96b
+<<elseif $act is 2 and $day is 4>>
+    NewspaperGuy: 今年万圣节期间违法犯罪事件发生率有所下降。 #line:9a6b25
+    Mae: 什么才算违法行为啊？ #line:49e893
+    NewspaperGuy: 比如烧东西，搞破坏，参加异教活动什么的。 #line:1e6a46
+    Mae: 嗯，这都不算啥。 #line:e21fe2
+    NewspaperGuy: 你没参加什么异教活动吧？ #line:b75c8f
+    Mae: 我正想着把异教徒干的*所有*事都干一遍呢。 #line:a55999
+    NewspaperGuy: 你要敢干，我就敢报警。 #line:5efc57
+    Mae: 警察可拿妖魔鬼怪一点办法也没有。 #line:9f0823
+    NewspaperGuy: 切…… #line:055d2b
+<<elseif $act is 3 and $day is 1>>
+    NewspaperGuy: 有个傻姑娘从窗台掉到了街上，摔死了。 #line:a9201b
+    Mae: 当地有个脾气很不好的人被捣蛋鬼缠身了。 #line:de4e69
+    NewspaperGuy: 水中浮尸很难辨认，只能靠牙齿来辨认死者的身份。 #line:490967
+    Mae: 然后，这个人因为捣蛋鬼发出的怪声受到了惊吓，然后突发心脏病，挂了。 #line:012600
+    NewspaperGuy: 有证据表明，那个女孩是被人推下去的。 #line:c8667f
+    Mae: 好吧，好吧。 #line:8439e4
+<<elseif $act is 3 and $day is 2>>
+    NewspaperGuy: 今年感恩节期间薯类作物短缺。 #line:e86d07
+    Mae: 噢，我的妈呀。咱们可离不开这东西啊。 #line:baefcd
+    NewspaperGuy: 在东西还没被抢完之前，最好多囤点。 #line:6270b5
+    Mae: 会出现这种情况， #line:262099
+    Mae: 因为白薯什么的短缺， #line:2c0a75
+    Mae: 最后发生了骚乱。 #line:ec314d
+    NewspaperGuy: 真正的原因可比这个还糟。 #line:08b271
+<<elseif $act is 3 and $day is 3>>
+    NewspaperGuy: 有只郊狼跑进了布里德尔旁边的猎鹰快餐店里。 #line:451c2a
+    Mae: 它就这么……大摇大摆地走到店里去了？ #line:8c1f0d
+    NewspaperGuy: 对。然后它就跑进了放三明治的冰柜里。 #line:8ca6b5
+    Mae: 那头狼吃冰柜里的三明治没？ #line:60efeb
+    NewspaperGuy: 根据报道上写的，这只狼只是盯着收银员看来着。 #line:78e259
+    Mae: 够吓人的。 #line:efbdf7
+    NewspaperGuy: 郊狼这种动物的确很吓人。 #line:4f53a6
+<<elseif $act is 3 and $day is 4>>
+    NewspaperGuy: 今年鸟南飞的时间比平时要早。 #line:35666b
+    Mae: 为什么呢？ #line:8c51a3
+    NewspaperGuy: 它们能感觉到咱们感觉不到的东西。 #line:d792a1
+<<elseif $act is 4 and $day is 3>>
+    NewspaperGuy: 今年冬天肯定是这几年最冷的一次…… #line:c6f434
+    Mae: 它们是怎么知道的？ #line:98d561
+    NewspaperGuy: 额，未来会发生什么都是靠猜的。 #line:a51aeb
+<<endif>>
+
+<<set $newspaper_guy_done to 1>>
+===
+title: Shane
+tags: 
+colorID: 0
+position: 3746,1163
+---
+<<if $shane is 0>>
+    <<set $shane += 1>>
+    Shane: 嗨，你好啊！ #line:f9ed47
+    Mae: 嗯，嗨。 #line:d52a61
+    Mae: 你是谁啊？ #line:1cd105
+    Shane: 我叫威格斯！ #line:3851a2
+    Mae: 嗯，你好。 #line:51e799
+    Mae: 你是…… #line:1e1c88
+    Mae: 等下，这里有标识。 #line:39eab1
+    <<wait 1>>
+    Mae: 海军，是吗? #line:7645a6
+    Shane: 没错，女士。 #line:e1e901
+    Shane: 有想过未来加入海军吗？ #line:56caa3
+    Mae: 当海军去开船吗？ #line:88d788
+    Shane: 其实不仅如此，不过确实有船。 #line:13c3e8
+    ->我不太可能加入海军。 #line:5e1587
+    	Shane: 嗯，如果你会那什么就更好了，你懂的…… #line:e9476a
+    	Mae: 是……很会……游泳吗？ #line:f16ded
+    	Shane: 我本来是想说“寻找目标" #line:09116b
+    	Mae: 我人生有很多的目标！ #line:718f2a
+    	Mae: 我准备和我朋友出去玩。 #line:be2c10
+    	Mae: 然后玩各种游戏 #line:cea81d
+    	Mae: 还有在这里某处来场贝斯表演 #line:91b8b4
+    	Mae: 最后上床睡觉。 #line:04cc69
+    	Shane: 嗯，看来你都已经规划好了呀！ #line:924b39
+    	Mae: 没错。 #line:55792c
+    ->我能开潜水艇吗？ #line:f4e814
+		Shane: 这种可能性是有的哦！ #line:566ca3
+		<<wait 2>>
+		Mae: 嗯，我可以一个人做到的。 #line:2c773f
+		Mae: 回见啦！ #line:6f3e5f
+		Shane: 你知道，我不是有意打断你 #line:4fb47c
+		Mae: …… #line:cff6bf
+		Shane: 不过如果你可能是个 #line:1cce78
+		Shane: 缺少一点点目标的人？ #line:06bbc7
+		Shane: 那就是很多人参加海军的原因。 #line:821532
+		Mae: 是啊，不过我可有一大堆的目标呢。 #line:68509f
+		Mae: 比如，我要和朋友一起出去玩， #line:234b94
+		Mae: 弹贝斯，玩游戏，睡觉觉， #line:8a4c9d
+		<<wait 2>>
+		Mae: 等等等等。 #line:1342a5
+		Mae: 我准备也把“开潜水艇"加到我的愿望清单里…… #line:9e1ec7
+    Shane: 好啊，我也只是随便说说而已…… #line:2a1f12
+    Mae: 我准备走了。 #line:d438ff
+    Shane: 好的！祝你一切顺利！ #line:0deded
+<<elseif $shane is 1>>
+    <<set $shane_done to 1>>
+    Mae: 你是……本地人吗？ #line:b2469c
+    Shane: 不是，我住这附近。可我以前住这儿。 #line:926ccb
+    Mae: 征兵这事是你上司让你来的吗？ #line:633328
+    Mae: 所以你才从战舰上下来了，是吗？ #line:35546a
+    Shane: 每个岗位都很重要。再说，我现在干的活只是暂时的。 #line:03cf2d
+    Mae: 你去过的地方多吗？ #line:4d2c03
+    Shane: 哦，世界各地我都去过了。 #line:1accd1
+    Mae: 那你见到过鲨鱼吗？ #line:fad5e3
+    Shane: 见过，我见过鲨鱼。 #line:660c3c
+    Mae: 你见过的鲨鱼都很大吗？ #line:43f87d
+    Shane: 很大，特别大。 #line:834037
+    Mae: 以后你征兵的时候， #line:660376
+    Mae: 应该用鲨鱼来吸引大家的注意。 #line:08c824
+    Shane: 明白。 #line:ca2d44
+    Mae: 或者！你也别提和海军有关的任何事， #line:136237
+    Mae: 你应该多讲讲关于鲨鱼的事才对。 #line:f520dd
+    Mae: 比如说，和鲨鱼一起潜水， #line:42df28
+    Mae: 看鲨鱼， #line:c757d9
+    Mae: 骑鲨鱼什么的。 #line:e1e4fe
+    Mae: 你是在记我说的话吗？ #line:25705a
+    Shane: 我会向上级汇报的。 #line:aede28
+<<endif>>
+===
+title: GarretRandell
+tags: 
+colorID: 6
+position: -373,1327
+---
+<<lookAt Mae GarretRandell>>
+GarretRandell: 嗯，秋天马上就要结束了。 #line:ea3634
+Mae: 是啊。 #line:a64ee6
+Mae: …… #line:c51a89
+Mae: 我，额……好像没见过你。 #line:500edb
+GarretRandell: 我平时很少出门。 #line:06c256
+GarretRandell: 不过休息休息还是挺不错的。 #line:ab7348
+GarretRandell: 而且，我也不太喜欢比较热的天气。 #line:3ac9f3
+GarretRandell: 今天就挺凉快的。 #line:6a9b77
+Mae: 是～很～凉～快～ #line:d604c5
+<<wait 1>>
+GarretRandell: 有时候，我会到冷一点的地方，然后把胳膊露出来…… #line:534f26
+GarretRandell: 然后吹吹风， #line:def259
+GarretRandell: 这样能让我清醒一下。 #line:9d562b
+<<wait 1>>
+Mae: \o/ #line:b03e23
+<<wait 1>>
+Mae: 是这样吗？ #line:1c6180
+GarretRandell: 对。 #line:ff4be8
+GarretRandell: 你觉得管用吗？ #line:a19941
+->管用！ #line:5cf6ce
+    Mae: [size=.75]只不过有点……冷。准确地说，应该是太冷了。[/all] #line:0940a0
+    GarretRandell: 那肯定的。可不能吹太长时间。 #line:11aa6d
+    GarretRandell: 吹完风之后，你可以去喝杯咖啡、热巧克力什么的。 #line:74687c
+->没用，我还是热。 #line:51a9ff
+    GarretRandell: 嗯，也不能让自己感觉太冷，会着凉的。 #line:e9a840
+    GarretRandell: 让自己降降温就可以了。 #line:8bfe41
+    GarretRandell: 之后，你可以去喝杯咖啡或者热巧克力什么的。 #line:998e40
+Mae: 这就是生命的轮回啊。 #line:a0b850
+GarretRandell: 这感觉真的很惬意。 #line:794d0e
+Mae: 多惬意的轮回啊。 #line:9e235a
+Mae: 我的天哪， #line:0fe95c
+Mae: 你要不提这事，我都没觉得外面原来这么冷啊。 #line:952bbf
+GarretRandell: 下雪了。 #line:d0637c
+Mae: 我知道。 #line:d6c6ee
+GarretRandell: 抱歉。 #line:483a13
+Mae: 用不着道歉。 #line:aec8a5
+GarretRandell: 我是加拿大人，所以我得向你道歉。 #line:5f0fc4
+Mae: 我得把胳膊放下来了。 #line:c81068
+GarretRandell: 那就放吧。 #line:ec1de5
+Mae: _o_ #line:9e189e
+Mae: 我胳膊都不回血啦。 #line:e5458e
+GarretRandell: 好吧。 #line:fd0cd7
+Mae: 胳膊都麻啦。 #line:a1b8ba
+<<lookNearest Mae>>
+<<set $garret_randell_done to 1>>
+===

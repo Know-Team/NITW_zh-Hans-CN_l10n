@@ -1,0 +1,8 @@
+title: TryToPressButton
+tags: 
+colorID: 0
+position: 665,376
+---
+<<fadeOutMusic .1>>
+Gregg: 老兄！住手！快停下！ #line:96b811
+===

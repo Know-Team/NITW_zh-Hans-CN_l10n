@@ -1,0 +1,122 @@
+669
+Back
+返回
+670
+Bass String 3
+贝斯弦 3
+671
+On
+开启
+672
+Keyboard Mapping
+按键映射
+673
+Bass String 4
+贝斯弦 4
+674
+Exit
+退出
+675
+On
+开启
+676
+Up
+向上
+677
+SFX Volume
+音效音量
+678
+Bass String 1
+贝斯弦 1
+679
+Save & Quit to Title?
+保存并退出到标题界面？
+680
+Interact
+交互
+681
+Fullscreen
+全屏幕
+683
+Resolution
+分辨率
+684
+Extras
+额外内容
+685
+Clear Save File
+删除存档
+686
+Back
+返回
+687
+Press Key to Add/Remove\n5...
+输入一个按键\n来添加 / 删除映射\n5...
+688
+Down
+向下
+689
+Save & Quit to Title
+保存并退出到标题界面
+690
+Yes
+是
+691
+Bass String 2
+贝斯弦 2
+692
+Text Scroll Volume
+文本卷轴音量
+693
+Cancel
+取消
+694
+Right
+向右
+695
+Gamepad Rumble
+手柄震动
+696
+On
+开启
+697
+No
+否
+698
+Exit
+退出
+699
+Left
+向左
+700
+Press X to Continue
+按 X 以继续
+701
+Yes
+是
+702
+Menu
+菜单
+703
+Animated Text
+文本动画效果
+704
+Music Volume
+音乐音量
+705
+No
+否
+706
+Clear Save File？\n\n\n(Hold Yes for 3 Seconds to Erase)
+删除存档？\n\n\n(维持确认三秒以删除)
+707
+Jump
+跳跃
+708
+Options
+选项
+709
+Load Defaults
+恢复默认映射
+
+

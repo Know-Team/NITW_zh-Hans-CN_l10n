@@ -1,0 +1,621 @@
+title: EnterLevel
+tags: 
+colorID: 3
+position: -1545,1363
+---
+<<if $act is 2 and $day is 1>>
+    <<if $gregg_friendship_quest is 1>>
+        <<show Gregg>>
+        <<show SteveScriggins>>
+        <<setCanInteract Gregg 0>>
+        <<setCanInteract SteveScriggins 0>>
+        <<walk Gregg GreggWalkIn>>
+        <<walk Mae MaeWalkIn wait>>
+        <<playerCanRun 0>>
+        <<playerCanJump 0>>
+        [[Intro]]
+    <<endif>>
+<<elseif $act is 4 and $day is 3>>
+    [[LastDayScene]]
+<<else>>
+    <<set $wont_open_food_donkey_basement_door_1 to 0>>
+<<endif>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -1618,1131
+---
+<<hide Gregg>>
+<<hide SteveScriggins>>
+
+<<set $arcade_machine_1_done to 1>>
+<<set $arcade_machine_2_done to 1>>
+<<set $arcade_machine_3_done to 1>>
+===
+title: PickRobotMascot0
+tags: 
+colorID: 3
+position: -867,1849
+---
+Gregg: 哦耶，我就要这个机器小蛙蛙啦。 #line:cf2c6f
+SteveScriggins: 终于好了。该死的。 #line:ad000b
+Mae: 哦，你可闭嘴吧，史蒂夫。 #line:3c7574
+<<set $robot_head to 0>>
+[[ArcadeMachinePicked]]
+===
+title: PickRobotMascot1
+tags: 
+colorID: 3
+position: -600,1853
+---
+Gregg: 耶！我就选这个机器小猪啦！ #line:0f71f1
+SteveScriggins: 终于好了。该死的。 #line:6d10f5
+Mae: 哦，你可闭嘴吧，史蒂夫。 #line:55c353
+<<set $robot_head to 1>>
+[[ArcadeMachinePicked]]
+===
+title: PickRobotMascot2
+tags: 
+colorID: 3
+position: -322,1856
+---
+Gregg: 酷啊，这个机器小兔我要啦。 #line:dbed46
+SteveScriggins: 终于好了。该死的。 #line:5f8904
+Mae: 哦，可闭嘴吧，史蒂夫。 #line:003392
+
+<<set $robot_head to 2>>
+[[ArcadeMachinePicked]]
+===
+title: Gregg
+tags: 
+colorID: 3
+position: -653,933
+---
+<<if $gregg_friendship_quest_1 is 0>>
+    <<stopDialogue Gregg>>
+    [[CowHeadConvo]]
+<<elseif $gregg_friendship_quest_1 is 1>>
+    <<if $food_donkey_key_ring > 0>>
+        <<stopDialogue Gregg>>
+        [[DoorUnlock]]
+    <<elseif $gregg_fq1_look is 0>>
+        <<stopDialogue Gregg>>
+        [[DoorLocked]]
+    <<elseif $gregg_fq1_look is 1>>
+        <<set $gregg_fq1_look to 2>>
+        [[GreggLook1]]
+    <<elseif $gregg_fq1_look is 2>>
+        <<set $gregg_fq1_look to 3>>
+        <<setCanInteract Gregg 0>>
+        [[GreggLook2]]
+    <<endif>>
+<<elseif $gregg_friendship_quest_1 is 2>>
+    <<stopDialogue Gregg>>
+    Mae: 噢～我的天哪，原来是这些小家伙啊。 #line:03fc35
+    Mae: 以前它们被摆上货架的时候， #line:be955e
+    Mae: 我对它们真是又怕又爱。 #line:f18682
+    Mae: 它们会动的！ #line:74ff84
+    Gregg: 把它们拆了之后，看起来真的好小啊。 #line:7c8bc4
+        ->我不太确定，哥们儿，我觉得它们还是挺大的。 #line:c44eba
+            Mae: 天啊，它们当时被摆出来的时候真的特别大。 #line:9dfdc5
+        ->把咱们给拆了的话，看上去也会更小。 #line:1f9746
+            Gregg: 太对了。 #line:ab0e9f
+            Gregg: 我真希望你能被一斧子给剁了。 #line:c82c72
+            Mae: 我希望你能被一把钝斧子剁了。 #line:edc300
+            SteveScriggins: 你们俩可真够怪的。 #line:face10
+    Gregg: 好了，咱们选一个，然后把它偷走。 #line:d45b76
+    Mae: 这算是偷吗？ #line:4f805d
+    Gregg: 把这看成是偷比较棒。 #line:907dd1
+    Mae: 酷。 #line:70900d
+    <<close>>
+    <<wait .5>>
+    Gregg: 啊啊啊～～～ #line:dcc89d
+        ->你啊什么？ #line:699a9e
+        ->咋？ #line:e18767
+    Gregg: 啊啊啊啊啊～～～～～ #line:b35cc3
+        ->你没事吧？ #line:9ae45d
+        ->伙计，咋啦？ #line:2b4fb7
+    Gregg: {width=300}啊啊啊啊啊啊啊啊啊啊！！！ #line:3af4e2
+        ->伙 计！你 到 底 咋 啦！ #line:9c6b89
+        ->别 叫 了！！！ #line:2a09bd
+    Gregg: 我选不出！它们看起来都很棒！ #line:6939b7
+    SteveScriggins: 你只能挑一个，就这样。赶紧的。 #line:9f4197
+    Mae: 哦，让我来选！我来选！ :) #line:8b2667
+    <<close>>
+    <<run Gregg Gregg3 -1 wait>>
+    Gregg: 好，你来选吧。 #line:4a3753
+    Mae: :| #line:83366f
+    <<set $gregg_friendship_quest_1 to 3>>
+    <<set $robot_head_choice_enabled to 1>>
+<<elseif $gregg_friendship_quest_1 is 3>>
+    <<if $gregg_fq1_try_decide is 0>>
+        <<set $gregg_fq1_try_decide += 1>>
+        [[TryToDecide00]]
+    <<elseif $gregg_fq1_try_decide is 1>>
+        <<set $gregg_fq1_try_decide += 1>>
+        [[TryToDecide01]]
+    <<elseif $gregg_fq1_try_decide is 2>>
+        [[TryToDecide02]]
+    <<endif>>
+<<endif>>
+
+===
+title: ArcadeMachinePicked
+tags: 
+colorID: 3
+position: -607,2238
+---
+<<close>>
+<<wait 1>>
+SteveScriggins: 你们俩知道吗？我可不是空着手来的。 #line:539a13
+SteveScriggins: 再见了，姑娘们。 #line:3d5f3d
+<<close>>
+<<walk SteveScriggins SteveScriggins1>>
+Mae: 史～蒂～夫！？ #line:e0a430
+SteveScriggins: 死一边去吧，朋克仔！ #line:67a6f7
+SteveScriggins: 呜哈哈哈。 #line:8db583
+<<close>>
+<<wait 2>>
+<<hide SteveScriggins>>
+Gregg: 听他那口吻好像朋克仔不是什么好东西一样。 #line:1e46a1
+Mae: 我不在乎。 #line:c2da95
+Mae: 他就是个人渣加罪犯。反正我觉得他从来就不是什么好东西。 #line:9f6b9b
+Gregg: 嗯，没错。 #line:99b7af
+Mae: 你和他约好什么了？ #line:c3b499
+Gregg: 我当班的时候，他可以来店里随便偷东西。 #line:d25707
+Mae: 懂了吧？彻头彻尾的罪犯。 #line:c21299
+Gregg: 有人…… #line:93ec64
+<<close>>
+<<wait 1>>
+Mae: 咱们是不是该砸扇窗户啥的，好把这东西带出去啊？ #line:04f5b8
+<<close>>
+<<set $robot_crate to 1>>
+<<irisOut 1 wait>>
+<<scene CarryingRobotMascot>>
+===
+title: NotSure
+tags: 
+colorID: 3
+position: -318,1575
+---
+Gregg: 准备好了就告诉我一声。 #line:fa0d15
+===
+title: Intro
+tags: 
+colorID: 3
+position: -1896,1678
+---
+Mae: 哦，天啊。这什么味儿啊？ #line:f6e088
+SteveScriggins: 胶水味儿。 #line:fad0f9
+Mae: 哦不。那是- #line:5d7fae
+<<walk SteveScriggins SteveWalkIn>>
+SteveScriggins: [wave]姑娘们，你们好啊。[/wave] #line:abf7a2
+Mae: =_= #line:9ee1e3
+<<vo Mae dissapointed>>
+Mae: 呃啊。:( #line:904858
+Mae: 他喵的史蒂夫·斯克里金斯。 #line:ec28b5
+SteveScriggins: *噗噗噗噗噗！！* #line:fa65df
+Mae: 你那是发出了屁音吗？ #line:ac2c40
+SteveScriggins: 呜嘿嘿嘿。 #line:654f35
+SteveScriggins: 两位姑娘是迷路了还是怎么？ #line:d8ac7e
+Gregg: 史蒂夫，咱们可都约好了的。 #line:83a07b
+SteveScriggins: 我可没忘。 #line:551af9
+Gregg: 那么东西在哪儿呢？ #line:4af5c7
+SteveScriggins: 在后面放着呢。 #line:13520c
+Mae: 你知道的，我可记得你。 #line:250d22
+SteveScriggins: 我敢说[wave]没有人[/wave]不记得你。 #line:9470de
+    ->那老师告你了吗？ #line:53c672
+        Mae: 高低得在停车场把你打一顿吧？ #line:74925f
+        SteveScriggins: 哪个老师？ #line:b063c2
+        Mae: 就是那个长至夜假你锁在杂物间里的老师。 #line:1a29e0
+        SteveScriggins: 噗，那家伙现在连小一点的屋子都不敢进啦。 #line:6cb47f
+        SteveScriggins: 他一直都是个胆小鬼，就差个人让他明白这一点。 #line:c1cad9
+        Mae: …… O_O #line:72372f
+        Gregg: …… O_O #line:adb578
+    ->你来这儿干什么？ #line:27d830
+        SteveScriggins: 为了你妈。 #line:3d5d01
+        Mae: 真能耐啊史蒂夫。 #line:cfe2ef
+        SteveScriggins: 各种意义上的。 #line:1dd2cd
+        Mae: 酷。 #line:e105bb
+        SteveScriggins: 我就是你的新爹啦。 #line:d8d1c3
+        Mae: 史蒂夫，说真的，你和我妈肯定成不了。 #line:976352
+        SteveScriggins: 你是在挑战我吗？ #line:35ff2a
+Mae: o_o :| #line:a25e73
+Gregg: o_o #line:332935
+Gregg: 好了，好了， #line:6e68be
+Gregg: 咱们能说正事了吗？ #line:41c1e9
+<<close>>
+<<run SteveScriggins SteveScriggins1 -1>>
+<<run Gregg Gregg1>>
+<<wait 3>>
+<<setCanInteract Gregg 1>>
+<<runDialogue Gregg GreggScrigginsBG1>>
+
+===
+title: GetKeyRing
+tags: 
+colorID: 3
+position: 264,380
+---
+<<stopDialogue Gregg>>
+Mae: 怪不得这地方会关门， #line:df2ec4
+Mae: 这里遍地都是别人留下来的钥匙！ #line:ab556f
+Mae: 别介意。 #line:f2ee16
+<<fadeOutInternal 0>>
+<<playOneShot event:/food_donkey/key_pickup Mae>>
+<<wait 1>>
+<<set $food_donkey_key_ring to 1>>
+<<set $got_food_donkey_key_ring to 1>>
+<<setPlayerInteractLocator Gregg MaeDoorConvo>>
+<<warp Gregg GreggDoor2>>
+<<flip Gregg 1>>
+<<clearAltBodyRig Gregg>>
+<<setAnimInt Gregg kickingDoor 1>>
+<<setAnimInt SteveScriggins kickingDoor 1>>
+<<lookRight SteveScriggins>>
+<<warp Mae MaeFoundKey>>
+<<flip Mae 1>>
+<<freezePlayer>>
+<<fadeInInternal 1 wait>>
+->找到钥匙啦！ #line:67715d
+    <<close>>
+	<<wait 2>>
+	Mae: 伙计们？ #line:3477ef
+->我可是钥匙大师！ #line:42f95d
+	Mae: 让我来把你的屁股打开！ \o/ #line:0257c2
+	SteveScriggins: 嗯，我已经听说过这事啦！ #line:b50905
+Mae: _o_ #line:9aa625
+<<setCanInteract Gregg 1>>
+===
+title: RobotMascot0
+tags: 
+colorID: 3
+position: 118,1162
+---
+Mae: 哦，又提到这个梗了。 #line:6dbf9c
+Gregg: 我经常会做关于这个的梦。 #line:5475d3
+SteveScriggins: 是春梦吗？ #line:8665a2
+SteveScriggins: 可能吧。 #line:9ea776
+SteveScriggins: 这是你能做的最好的梦了。 #line:3de628
+SteveScriggins: 可能吧。 #line:6e4c27
+Mae: …… #line:6c1434
+Gregg: 青蛙会啪啪啪吗？ #line:906358
+Mae: 不会，因为它们是卵生的。 #line:49a952
+SteveScriggins: …… #line:dcb6a8
+SteveScriggins: 你们俩真是太太太无聊啦。 #line:8e1c7a
+<<set $robot_head_0_done to 1>>
+<<set $num_checked_out_robot_heads += 1>>
+
+<<if $num_checked_out_robot_heads is 2>>
+    [[Checked2ndRobotMascot]]
+<<endif>>
+===
+title: RobotMascot1
+tags: 
+colorID: 3
+position: 408,1165
+---
+Mae: 这小猪挺酷的。 #line:9bb4d4
+Gregg: 没错，确实不错。 #line:39c073
+Gregg: 他以前手里不是经常拿着几圈香肠之类的东西吗？ #line:f12c6b
+Mae: 是啊！那场面可是够血腥的！ #line:52eb57
+SteveScriggins: 吃着他的同类。 #line:1c45c6
+Mae: 有可能是“吃着她的同类"。 #line:dc9312
+SteveScriggins: 随你便吧，政治正确警察。 #line:cb2684
+Mae: 政治你大爷的正确。 #line:8c7d71
+Gregg: 好啦。 #line:41492b
+<<close>>
+<<wait .5>>
+Mae: 哥们儿，这可是头食肉猪啊。 #line:4da150
+Gregg: 食肉猪。 #line:b2bc85
+<<set $robot_head_1_done to 1>>
+<<set $num_checked_out_robot_heads += 1>>
+
+<<if $num_checked_out_robot_heads is 2>>
+    [[Checked2ndRobotMascot]]
+<<endif>>
+===
+title: RobotMascot2
+tags: 
+colorID: 3
+position: 655,1160
+---
+Mae: 天哪，我怎么不记得这些东西这么恐怖。 #line:17cc92
+Gregg: 他们对当时的你来说太高了，看不见他们的脸。 #line:a4e94e
+SteveScriggins: 那让我来看看你们两位姑娘的脸吧。 #line:e34b39
+SteveScriggins: 呜嘿嘿嘿。 #line:b5421a
+<<lookAt Mae SteveScriggins>>
+Mae: -_- #line:a87102
+Gregg: 我觉得这个还挺可爱的。 #line:34ea19
+SteveScriggins: 嗷，他还觉得这个可爱呢。 #line:0d2101
+Mae: 史蒂夫，你有毛病啊。 #line:6d6a65
+Mae: o_o #line:e5b1f0
+<<set $robot_head_2_done to 1>>
+<<set $num_checked_out_robot_heads += 1>>
+
+<<if $num_checked_out_robot_heads is 2>>
+    [[Checked2ndRobotMascot]]
+<<endif>>
+===
+title: Checked2ndRobotMascot
+tags: 
+colorID: 3
+position: 412,1539
+---
+SteveScriggins: 天啊。为什么要让她来选? #line:6a5cbc
+SteveScriggins: 怎么会这样？ #line:0cc1d4
+SteveScriggins: 给她一辈子她都选不出来！ #line:d79109
+Mae: :( \o/ #line:3ff5dc
+Mae: [shake=.05]斯 克 里 金 斯！不 爽 你 就 来 啃 我 的 屁 股 吧！[/shake] #line:e8e72d
+SteveScriggins: 你 说 什 么？！ #line:497d4d
+Mae: [shake=.05]你 会 因 为 把 脸 埋 在 我 屁 股 里[/shake] #line:7f2b56
+Mae: [shake=.05]缺 氧 [/shake] #line:a31f92
+Mae: [shake=.05]而 死 ！[/shake] #line:6a859b
+SteveScriggins: 我……我……啥？ #line:2b4f1d
+Gregg: 经典。 #line:a59bd1
+Mae: [shake=.05]没 错，史 蒂 夫！够 经 典 吧！[/shake] #line:58b520
+SteveScriggins: [shake=.05]哦，我 的 天 哪！咱 们 能 不 能 别 再 扯 这 个 啦！[/shake] #line:56728d
+Mae: :| _o_ #line:e04c44
+===
+title: DecisionPoint
+tags: 
+colorID: 3
+position: -610,1588
+---
+Mae: 好了宝贝们，我们就选…… #line:a60d14
+[[说真的，我还没想好呢…… |NotSure]] #line:a56e50
+<<if $robot_head_0_done is 1>>
+    [[青蛙头。|PickRobotMascot0]] #line:ba2903
+<<endif>>
+<<if $robot_head_1_done is 1>>
+    [[小猪头。|PickRobotMascot1]] #line:a002bf
+<<endif>>
+<<if $robot_head_2_done is 1>>
+    [[兔子头。|PickRobotMascot2]] #line:4b2b97
+<<endif>>
+===
+title: TryToDecide00
+tags: 
+colorID: 3
+position: -957,1288
+---
+Gregg: 呃……要选哪个呢？ #line:66664a
+Gregg: 我一遇到重要的事就选择困难。 #line:69516a
+Mae: 你给咱们挑初中舞会礼服的时候可一点问题都没有。 #line:75da50
+Gregg: 嗯，那倒是……这方面我倒很擅长。 #line:73bfd9
+Mae: 还记得提姆·惠特利是怎么开着拖拉机回家的吗？ #line:4d04d5
+Gregg: 绝对记得。 #line:bb0316
+Gregg: 那……你选好要哪个了吗？ #line:3ca941
+->伙计，再给我点时间。 #line:e17c53
+    Gregg: 呃，好吧。 #line:88a40e
+    Mae: 伙计，这事很重要吗？ #line:c5db25
+    Gregg: 这事很重要。 #line:372a1a
+    Mae: 那好吧，那咱们就严肃对待吧。 #line:834257
+    Gregg: 但我饿了。 #line:dc3eed
+    Mae: 啊啊啊，我也饿啦。 #line:f704b7
+    Gregg: 咱们还是等会吃比较好。 #line:23bfbd
+    Mae: 可能吧。 #line:8ef300
+    SteveScriggins: 我可有要去的地方，你们懂吗！ #line:622f69
+->选好了。 #line:bb5c3d
+    Gregg: 哦，酷啊。 #line:b1368f
+    [[DecisionPoint]]
+===
+title: TryToDecide01
+tags: 
+colorID: 3
+position: -621,1275
+---
+Gregg: 你想选哪个？ #line:6a0429
+->[shake=.05]再 多 给 我 几 秒。[/shake] #line:d2c879
+    Mae: \o/ #line:2806f2
+    <<dilate Mae .5 .25>>
+    Gregg: 老 兄，别 激 动。 #line:21f7d5
+    <<dilate Mae 1 .5>>
+    Mae: _o_ #line:15fa0d
+->嗯……好啦，我选好啦。 #line:5d67bc
+    Gregg: 好极啦。 #line:a8057f
+    [[DecisionPoint]]
+
+===
+title: TryToDecide02
+tags: 
+colorID: 3
+position: -339,1279
+---
+Gregg: 选好没？ #line:5a0765
+->没呢！ #line:c15a04
+->好啦！ #line:c49d0a
+    Gregg: 好 耶！ #line:3d3e24
+    [[DecisionPoint]]
+===
+title: GreggScrigginsBG1
+tags: 
+colorID: 3
+position: -308,360
+---
+Gregg: {emote=hotdog} #line:0fd3c9
+SteveScriggins: {emote=hotdog} #line:ee47fe
+[[GreggScrigginsBG1]]
+===
+title: CowHeadConvo
+tags: 
+colorID: 3
+position: -1149,1050
+---
+Gregg: 这东西还能用吗？ #line:94e75a
+SteveScriggins: 嗯。 #line:c1f56a
+SteveScriggins: 你认识贝丝·霍斯特德吗？ #line:07041a
+Gregg: 认识。 #line:7c6086
+SteveScriggins: 六个月之前，她来到这个地方。之后她发誓听见这玩意儿说话了。 #line:f4826c
+Gregg: 哇哦。 #line:9901fa
+SteveScriggins: 都不用试，我赌这玩意不会说话。 #line:8a8c34
+SteveScriggins: 不过赌多少我就不太确定了。 #line:84f2c5
+SteveScriggins: 你肯定认识贝丝。 #line:ac3deb
+Gregg: 差不多？ #line:6800f9
+SteveScriggins: 这里面有一堆胶水。 #line:c3cf18
+Gregg: 可能吧。 #line:1a7b84
+<<set $gregg_friendship_quest_1 to 1>>
+<<setInteractDir Gregg -1 0>>
+<<walk SteveScriggins SteveScrigginsDoor1 -1>>
+<<walk Gregg GreggDoor1>>
+<<runDialogue Gregg GreggScrigginsBG2>>
+===
+title: GreggScrigginsBG2
+tags: 
+colorID: 3
+position: -72,373
+---
+<<waitForMove SteveScriggins>>
+SteveScriggins: {emote=cloud_rain} #line:a4aa76
+<<close>>
+<<wait 1>>
+[[GreggScrigginsBG2]]
+===
+title: DoorLocked
+tags: 
+colorID: 3
+position: -1144,801
+---
+<<flip SteveScriggins -1>>
+SteveScriggins: [shake=.05]真 是 见 了 鬼 啦！！！[/shake] #line:f42503
+Mae: 怎么了？ #line:22597a
+SteveScriggins: 有人把这破门给锁啦！ #line:7c7633
+SteveScriggins: 见鬼！我敢保证，肯定是贝丝干的。 #line:5f6dd6
+SteveScriggins: 要么就是利维干的。 #line:bc8c87
+SteveScriggins: 要么就是火车上的垃圾把门堵上了。 #line:171a13
+Gregg: 所以说…… #line:433ee7
+SteveScriggins: 啊 啊 啊 啊 啊！ #line:08f274
+SteveScriggins: 他们最好没从这儿偷东西。 #line:35fe96
+Mae: ……在一个没锁门的…… #line:78631e
+Mae: ……废弃杂货店里…… #line:08fe8e
+Mae: 话说，门后面到底有什么啊？ #line:414a78
+SteveScriggins: 咱们应该把这门给炸开…… #line:53e27a
+Gregg: 或者我回去拿开锁工具。 #line:5dc5cc
+Mae: 我敢打赌，这地方肯定有钥匙什么的。 #line:a4ff55
+SteveScriggins: 随你怎么说啦。 #line:60fbb0
+<<flip SteveScriggins 1>>
+<<setAnimInt SteveScriggins kickingDoor 1>>
+<<close>>
+<<run Gregg GreggLook1>>
+<<wait 3>>
+<<stopMoving Gregg>>
+<<warp Gregg GreggLook1>>
+<<setAltBodyRig Gregg GreggRummageRig>>
+<<playerCanRun 1>>
+<<playerCanJump 1>>
+<<set $gregg_fq1_look to 1>>
+===
+title: GreggLook1
+tags: 
+colorID: 3
+position: -1108,506
+---
+Mae: 你干嘛呢？ #line:7b4f3d
+Gregg: 在找炸门的东西。 #line:1cdf49
+Mae: 酷，因为我更聪明，所以我在找钥匙。 #line:7e1e18
+Gregg: 嗯哼，我可要砸东西啦。 #line:78d044
+Mae: …… #line:d79326
+Mae: 该死。 #line:a242bf
+===
+title: GreggLook2
+tags: 
+colorID: 3
+position: -817,445
+---
+Gregg: 他们到底要用多少胶水啊？ #line:c14ced
+Mae: 伙计，要想生意做得好，就得把各方各面都给粘好才行。 #line:d53ad2
+Gregg: 额，可不是这么回事。 #line:7aa431
+Gregg: 你干什么呢？ #line:2f3d51
+Mae: 我去楼上的办公室看看。 #line:f5f106
+Gregg: 酷啊。你可别让玻璃片给切死啦。 #line:d7a334
+Mae: 这种死法也太蠢了吧。 #line:2c43c9
+Gregg: 这死法的确很蠢。 #line:bdc63d
+===
+title: DoorUnlock
+tags: temp
+colorID: 3
+position: -228,847
+---
+<<setPlayerInteractLocator Gregg>>
+Mae: 哟，你们两个大傻子，别再踹门啦，小心把腿给踢折啦。 #line:6ac77f
+Gregg: 我可不是傻子。 #line:9998a3
+Mae: 说得是啊，抱歉。嘿，那个傻子，还有格雷格，你们别踹啦。 #line:0d8b6d
+Mae: 我找到钥匙了。 #line:7d4d5f
+<<setAnimInt SteveScriggins kickingDoor 0>>
+<<setAnimInt Gregg kickingDoor 0>>
+<<walk Gregg GreggDoor1 1>>
+<<flip SteveScriggins -1>>
+<<lookNearest SteveScriggins>>
+SteveScriggins: 你在哪儿找到的？ #line:21d50a
+Mae: 就是在楼上的办公室里找到的。 #line:85ac05
+SteveScriggins: 难怪这地方会倒闭， #line:dd9132
+SteveScriggins: 他们居然把钥匙随处乱放！ #line:61ec2e
+Mae: 和我想的一样。 #line:081083
+<<walk SteveScriggins SteveScrigginsDoor2 1>>
+<<walk Mae GreggDoor2>>
+Mae: 咱们俩想说的话都一样，让我有点不爽啊。 #line:262410
+SteveScriggins: 我觉得还好吧。 #line:cc94e2
+<<lookRight Mae>>
+Mae:{emote=food_donkey_key} #line:e5558a
+<<fadeOutMusic 5>>
+<<close>>
+<<playOneShot event:/food_donkey/key_door Mae>>
+<<wait 1.1>>
+<<playOneShot event:/food_donkey/door_open Mae>>
+<<wait 1>>
+<<tell BasementDoor Unlock>>
+<<wait 1>>
+<<walk SteveScriggins SteveScriggins2>>
+<<wait 1.5>>
+<<setInteractDir Gregg 1 0>>
+<<lookNearestMae>>
+->咱们为什么要跟这家伙一起干坏事呀？ #line:5ee8c4
+	Gregg: 强盗可没办法选择搭档。 #line:fe058b
+	<<walk Gregg Gregg2 -1>>
+	Mae: 其实强盗还是能选的。 #line:3b160d
+	SteveScriggins: 我可听得见你们俩在说什么，知道吗？ #line:a09ff1
+->额，当初为什么会选史蒂夫一起啊？ #line:49924c
+	Gregg: 因为他能进得来。 #line:3b3c2e
+	<<walk Gregg Gregg2 -1>>
+	Mae: 什么能进得来？ #line:e58cdf
+	SteveScriggins: 是我把前门给打开的。 #line:23f714
+<<playMusic food_donkey_faces 3>>
+<<set $gregg_friendship_quest_1 to 2>>
+===
+title: LastDayScene
+tags: 
+colorID: 6
+position: -1420,1661
+---
+<<if $food_donkey_last_scene is 0>>
+    <<set $food_donkey_last_scene to 1>>
+    <<fadeIn 1>>
+    <<warp Mae MaeMallardRats1>>
+    <<run Mae MaeMallardRats2 wait>>
+    <<lookLeft Mae>>
+    Mae: :) \o/ [wave]我的小宝宝们！！！[/wave] #line:30eeae
+    <<lookUp Mae>>
+    Mae: 我的老鼠宝宝们…… #line:4b21af
+    <<lookNearest Mae>>
+    Mae: 好吧，你们已经不算小宝宝了。 #line:45b100
+    Mae: 你们做到啦！你们都自由啦！ #line:a1ab40
+    Mae: U_U 这真是个[wave]奇迹！[/wave] #line:cd174f
+    <<lookUp Mae>>
+    Mae: _o_ 让我好好享受一下这个时刻。 o_o #line:51e243
+    Mae: 不用理我…… #line:610c8d
+    <<fadeOut 2 wait>>
+<<else>>
+    <<fadeOut .0001 wait>>
+<<endif>>
+<<warp Mae MaeSitUpTop>>
+<<sit3>>
+<<lookNearest Mae>>
+<<setSortingLayerName PlayerBG5>>
+Mae: :) #line:a73b60
+<<wait .5>>
+<<fadeIn 2 wait>>
+<<waitForInteractOrJump>>
+<<fadeOut 2 wait>>
+<<scene Outskirts left>>
+===

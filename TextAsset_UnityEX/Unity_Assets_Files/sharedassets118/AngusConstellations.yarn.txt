@@ -1,0 +1,338 @@
+title: AllFinished
+tags: 
+colorID: 0
+position: 1806,562
+---
+Mae: 所以要出事了我们逃得了吧，对吗？ #line:29b1c3
+Angus: 在公园里？可能是吧。 #line:62ce4c
+Mae: 怪吓人的。 #line:8cb8df
+Angus: 我也不知道。反正这里很安全。 #line:e3cf9a
+Angus: 星星也很美。 #line:e60b3f
+Mae: 所以你压根不相信这世界上有鬼？ #line:86140d
+Angus: 对。我不相信世上有鬼，或神， #line:832333
+Angus: 或那些通灵之类的东西。 #line:d19f72
+Mae: 一点也不信吗？ #line:00ff21
+Angus: 我的意思是，又没有证据能证明这些东西的真实性。 #line:abfcaa
+Angus: 大家一直在找证据，却没有什么结果。 #line:66f361
+Mae: 你试过吗？ #line:a4bd7e
+Angus: 嗯，小时候试过。 #line:beb18b
+Mae: 说来听听。 #line:d64424
+<<close>>
+<<tell AngusConstellation:BirdPope MoveCamera>>
+<<wait 1.2>>
+AngusAsPope:{locator=popebubble}嗯……唔…… #line:5f9a21
+AngusAsPope:{locator=popebubble}我不知道关于这事我和你透露过多少， #line:bb5a74
+AngusAsPope:{locator=popebubble}也不知道格雷格跟你说过多少。 #line:409e45
+AngusAsPope:{locator=popebubble}总之，我小时候过得确实不怎么样。 #line:107c6f
+<<close>>
+<<tell AngusConstellation:Bell MoveCamera>>
+<<wait 1.2>>
+MaeAsBell: 嗯，我多少听说过这事。 #line:3bedef
+MaeAsBell: 那你小时候为什么过得不好啊？ #line:442fe3
+<<close>>
+<<tell AngusConstellation:Whale MoveCamera>>
+<<wait 1.2>>
+AngusAsWhale: 唔……因为我爸不怎么喜欢我。 #line:be3c59
+AngusAsWhale: 我妈也一样。 #line:39e85f
+AngusAsWhale: 而且…… #line:bfd8ef
+AngusAsWhale: 呃…… #line:111800
+<<close>>
+<<tell AngusConstellation:Cat MoveCamera>>
+<<wait 1.2>>
+MaeAsCat: 如果你不想说的话，不用勉强。 #line:37a3f3
+<<close>>
+<<tell AngusConstellation:Whale MoveCamera>>
+<<wait 1.2>>
+AngusAsWhale: 不，没事的。 #line:ac90e5
+AngusAsWhale: 唔，我爸他…… #line:e74835
+AngusAsWhale: 以前老是打我。 #line:d21611
+AngusAsWhale: 我妈甚至更糟…… #line:e25987
+AngusAsWhale: 她基本上没给我做过饭。 #line:f9a734
+AngusAsWhale: 这也是为什么我现在特喜欢做饭，哈哈…… #line:d01818
+<<close>>
+<<tell AngusConstellation:BirdPope MoveCamera>>
+<<wait 1.2>>
+AngusAsPope:{locator=popebubble}她喜欢把我扔进放餐具的壁橱里， #line:38f2bf
+AngusAsPope:{locator=popebubble}然后猛地一摔门， #line:c97eac
+AngusAsPope:{locator=popebubble}杂七杂八的玩意儿就都从架子上给震了下来，砸在我身上。 #line:908f94
+<<close>>
+<<tell AngusConstellation:Bell MoveCamera>>
+<<wait 1.2>>
+MaeAsBell: 哦，天呐，安格斯 #line:c25b1f
+MaeAsBell: 我从没听你提过这事。 #line:a6ebd1
+MaeAsBell: 这太糟了。 #line:61e8a4
+<<close>>
+<<tell AngusConstellation:BirdPope MoveCamera>>
+<<wait 1.2>>
+AngusAsPope:{locator=popebubble}有时候她会把我锁在里头一整天、 #line:325edb
+AngusAsPope:{locator=popebubble}或者一整夜。 #line:46dd04
+AngusAsPope:{locator=popebubble}于是我就想练习通灵， #line:47a496
+AngusAsPope:{locator=popebubble}那样我就能向邻居求救， #line:3a1161
+AngusAsPope:{locator=popebubble}或者直接把门弄开。 #line:1ae128
+AngusAsPope:{locator=popebubble}但结果你也能猜到， 根本没用。 #line:ad7790
+<<close>>
+<<tell AngusConstellation:Cat MoveCamera>>
+<<wait 1.2>>
+MaeAsCat: 这事你跟别人说过吗？ #line:bc4dd8
+<<close>>
+<<tell AngusConstellation:Whale MoveCamera>>
+<<wait 1.2>>
+AngusAsWhale: 从来没有。 #line:155a23
+AngusAsWhale: 我也不知道为什么。 #line:929514
+AngusAsWhale: 被这么对待之后我有点…… #line:44eeb8
+AngusAsWhale: 自责，不知道为什么。 #line:e957f8
+AngusAsWhale: 就好像是我做了件坏事？ #line:a5ebe1
+<<close>>
+<<tell AngusConstellation:Cat MoveCamera>>
+<<wait 1.2>>
+MaeAsCat: 你所谓的做了件坏事是指……被他们家暴？ #line:2604f2
+MaeAsCat: 安格斯，这根本就不是你的错。 #line:2f13c6
+MaeAsCat: 你当时只是个孩子啊！！！ #line:001702
+<<close>>
+<<tell AngusConstellation:BirdPope MoveCamera>>
+<<wait 1.2>>
+AngusAsPope:{locator=popebubble}噢别担心，现在我都想通了。 #line:3faad7
+AngusAsPope:{locator=popebubble}天啊，我真的想通了吗。 #line:d8b59e
+<<close>>
+<<tell AngusConstellation:Bell MoveCamera>>
+<<wait 1.2>>
+MaeAsBell: 有个问题：我能去揍他们一顿吗？ #line:505112
+MaeAsBell: 这事儿我在行，不会有他们好果子吃的。 #line:efc963
+<<close>>
+<<tell AngusConstellation:BirdPope MoveCamera>>
+<<wait 1.2>>
+AngusAsPope:{locator=popebubble}呃，这个么……我妈已经年纪大了。 #line:a2f55d
+AngusAsPope:{locator=popebubble}我……呃……时不时还得去看看她。 #line:7ba0de
+AngusAsPope:{locator=popebubble}我还有个哥哥，他在海外驻军。 #line:ac2ba7
+AngusAsPope:{locator=popebubble}我爸他大约十年前就离开这里了。 #line:397a5a
+AngusAsPope:{locator=popebubble}所以没人知道他现在身处何地、是死是活。 #line:9ecbd7
+AngusAsPope:{locator=popebubble}就算他还活着，我也不想知道他的事。 #line:b10d21
+<<close>>
+<<tell AngusConstellation:Bell MoveCamera>>
+<<wait 1.2>>
+MaeAsBell: 安格斯，我现在只想给你一个拥抱，永远不放开的那种。 #line:ef45eb
+<<close>>
+<<tell AngusConstellation:Whale MoveCamera>>
+<<wait 1.2>>
+AngusAsWhale: 哈哈，好啊。 #line:0757ec
+AngusAsWhale: 我已经比很多孩子幸运多了 #line:dbe491
+AngusAsWhale: 我只是很高兴我没有……对。 #line:2e00a1
+AngusAsWhale: 不管怎么说，关于你一开始问的问题- #line:db3ed1
+<<close>>
+<<tell AngusConstellation:BirdPope MoveCamera>>
+<<wait 1.2>>
+AngusAsPope:{locator=popebubble}我就是在那个壁橱里测试我的通灵能力 #line:2e21f6
+AngusAsPope:{locator=popebubble}这段经历催生了我对超自然事件和科学的浓厚兴趣。 #line:13e904
+AngusAsPope:{locator=popebubble}我在网上加入了一个怀疑论者的社区 #line:b8ae4f
+AngusAsPope:{locator=popebubble}然后差点就把我的人生糟蹋在那堆超自然破烂上了。 #line:5971d0
+AngusAsPope:{locator=popebubble}不过这件事让我学会了 #line:0e3f6a
+AngusAsPope:{locator=popebubble}如何区分轻重缓急，思考事物本质。 #line:c99f6a
+AngusAsPope:{locator=popebubble}不知道，我想这件事多少还是对我有帮助的。 #line:f44959
+<<close>>
+<<tell AngusConstellation:Whale MoveCamera>>
+<<wait 1.2>>
+AngusAsWhale: 因为当你被别人这么对待之后， #line:0a1e82
+AngusAsWhale: 你可能会因此伤害自己。 #line:a35b31
+AngusAsWhale: 不管怎么说，世界上没有鬼神。 #line:8c70cf
+<<close>>
+<<tell AngusConstellation:Bell MoveCamera>>
+<<wait 1.2>>
+MaeAsBell: 这么说的话…… #line:038b16
+MaeAsBell: 我倒觉得，如果我遇到那种事之后， #line:fbbddc
+MaeAsBell: 我很可能会*更*相信有神……或者其他类似的东西了。 #line:a50ede
+MaeAsBell: 那你有什么真正信仰的东西吗？ #line:67a22c
+<<close>>
+<<tell AngusConstellation:Whale MoveCamera>>
+<<wait 1.2>>
+AngusAsWhale: 嗯，有啊，比如说星座吧。 #line:fdf03d
+AngusAsWhale: 我并不是相信那儿真的有个鲸鱼， #line:2c2a30
+AngusAsWhale: 但我相信这些星星是真实存在的， #line:bc5495
+AngusAsWhale: 而鲸鱼是人们为其赋予的意象。 #line:ca936e
+<<close>>
+<<tell AngusConstellation:BirdPope MoveCamera>>
+<<wait 1.2>>
+AngusAsPope:{locator=popebubble}就好比……怎么说呢…… #line:d00115
+AngusAsPope:{locator=popebubble}我们很擅长给天上的星星连线。 #line:f947e8
+AngusAsPope:{locator=popebubble}我们是象形猎手，我们会把它们的形状揪出来 #line:f0c90d
+AngusAsPope:{locator=popebubble}并将我们的心意和智慧倾注于其中 #line:403e81
+AngusAsPope:{locator=popebubble}即使我们并非有意如此。 #line:d291bc
+AngusAsPope:{locator=popebubble}所以我信仰这冷漠的宇宙 #line:03f673
+AngusAsPope:{locator=popebubble}也信仰心怀热忱的人们。 #line:e647c6
+<<close>>
+<<tell AngusConstellation:Cat MoveCamera>>
+<<wait 1.2>>
+MaeAsCat: 象形猎手。 #line:863334
+MaeAsCat: 我感觉有很多人都不认为是自己找到了上帝 #line:0d62aa
+MaeAsCat: 而更像是上帝找到了他们 #line:a8d8be
+MaeAsCat: 比如，在他们有过和你一样糟心的经历之后 #line:89043f
+<<close>>
+<<tell AngusConstellation:Whale MoveCamera>>
+<<wait 1.2>>
+AngusAsWhale: 上帝可从没找到我 #line:2b9b3d
+AngusAsWhale: 在那个壁橱里可完完全全只有我一个人 #line:a61fa4
+AngusAsWhale: 可几年之后， #line:e06946
+AngusAsWhale: 格雷格找到了我。 #line:e75982
+AngusAsWhale: 所以...... #line:b75643
+AngusAsWhale: 那些星星高居深空，对我们冷眼旁观， #line:16ccc1
+AngusAsWhale: 但这个鲸鱼真的是酷毙了。 #line:d56ef3
+<<close>>
+<<tell AngusConstellation:Bell MoveCamera>>
+<<wait 1.2>>
+MaeAsBell: 安格斯，你真的是个很棒很聪明的人。 #line:ed3d91
+<<close>>
+<<tell AngusConstellation:BirdPope MoveCamera>>
+<<wait 1.2>>
+AngusAsPope:{locator=popebubble}我尽力了。 #line:cc9321
+AngusAsPope:{locator=popebubble}但我并不比别人强 #line:20d45c
+<<close>>
+<<set $did_angus_constellations to 1>>
+<<irisOut 1 wait>>
+<<scene PossumJump>>
+===
+title: BirdPope
+tags: 
+colorID: 0
+position: 757,198
+---
+<<tell LongPaw Hide>>
+Mae: 这是个教皇， #line:367798
+Mae: 他会喷火。 #line:4b617e
+Angus: 噢，这可是个真事， #line:ce971c
+Angus: 或者说，至少真有这么个人。 #line:acf5e1
+Mae: 卢贝罗。 #line:635893
+Mae: 教堂外边还有一座他的雕像呢。 #line:9f6a47
+Angus: 噢，我们从来没去过雕像那儿。 #line:7fe301
+    ->你家里人会去教堂做礼拜吗？ #line:071cc8
+        Angus: 基本上都是婚礼、葬礼、长至夜才会去 #line:a0db99
+        Mae: 我觉得前边两个应该不算。 #line:84e2f0
+        Mae: 这些可是*那种事* #line:32f156
+    ->你没有崇拜的圣徒吗？ #line:d1d82d
+        Angus: 没有。我家里人都对这些不感兴趣。 #line:3cc47e
+        Angus: 我崇拜的都是那些……呃……宇航员和作家。 #line:0be37c
+        Mae: 听上去很有趣啊。 #line:34b8b9
+        Angus: 嗯哼。 #line:ea75c3
+Mae: 我老妈现在在教堂工作。 #line:ede375
+Mae: 我从十四五岁开始就没再去过教堂了。 #line:415748
+Angus: 那她介意吗？ #line:b4b7db
+Mae: 她假装不介意。 #line:732a09
+[[Check]]
+===
+title: Bell
+tags: 
+colorID: 0
+position: 1006,183
+---
+<<tell LongPaw Hide>>
+Mae: 看，那是口钟。 #line:880c35
+Mae: 它中间还长了个眼睛 #line:bc3cbf
+Mae: 在看着你。 #line:4b709a
+Angus: 好吧，那是，呃…… #line:811a42
+Angus: 我懂这玩意看着有点像某些前卫摇滚的专辑封面…… #line:77bff3
+    ->我感觉只要这个钟一响，世界末日就要来了 #line:e6512b
+        Mae: 有道理诶，那它的声音一定会很大。 #line:14645a
+        Angus: 太空里可没有声音。 #line:edb89b
+        Angus: 我是说基本上没有。通常情况下没有吧。 #line:50d56b
+        Mae: 听着真挺吓人的，不知道为什么。 #line:288149
+        Angus: 好吧，至少这说明 #line:3eec9f
+        Angus: 我们不至于被一个钟给弄死。 #line:efc173
+    ->我觉得它看着你的时候，响那么一下你就死了 #line:2321d0
+        Angus: 好吧，靠。 #line:a9bf11
+        Angus: 它就高高挂在那上边，一直这样看着我们，对吧？ #line:99897c
+        Mae: 可恶。 #line:ade669
+[[Check]]
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 414,-55
+---
+<<tell LongPaw Hide>>
+Angus: 好了。快给我找些星座出来吧。 #line:2231f1
+Angus: 等下，你要说的这些星座是真的还是你编的？ #line:93489f
+Mae: 那些我记得的 #line:6f3928
+Mae: 或者说我梦见过的 #line:648c2c
+Mae: 呃。 #line:6664c4
+Angus: 随便啦。 #line:7f166b
+<<if $did_chazokov_star_visits > 0>>
+	Mae: 还记得查佐科夫老师吗？ #line:3b8a7d
+	Angus: 记得呀！他是咱们科学老师啊。 #line:07fd25
+	Mae: 他就住在山下区。他家房顶上还有个望远镜呢。 #line:04214f
+	Mae: 我还用它看过不少星星呢。 #line:f8a9e7
+	Angus: 那很不错。望远镜真的很酷。 #line:695b26
+	Angus: 真希望我能有个自己的望远镜。 #line:d485ca
+<<endif>>
+Mae: 好了，咱们来看看…… #line:b2a0c8
+<<tell LongPaw Show>>
+===
+title: Cat
+tags: 
+colorID: 0
+position: 1275,196
+---
+<<tell LongPaw Hide>>
+Mae: 这是只猫， #line:cce07f
+Mae: 他被箭射穿了， #line:28e94b
+Mae: 而且他还想抓住一颗钻石。 #line:9417ab
+Angus: 噢，我知道这个星座，可我忘了他叫什么了。 #line:3885b5
+Angus:他生活在……你还记得林中之神的传说吗？ #line:596918
+    ->记得呀！ #line:98c827
+        Mae: 我爷爷以前给我讲过阿丁娜的故事。 #line:fff0e3
+        Angus: 哦，是吗。 #line:4d7cd9
+    ->不记得了。 #line:7a3ad8
+        Angus: 啊，就是，有很多关于森林之神的传说 #line:3535ee
+        Angus: 其中一个是关于一个叫阿丁娜的人，和- #line:7d0768
+        Mae: 我想起来了！阿丁娜和冰湖！ #line:7c4876
+        Angus: 对，这是其中一个故事。 #line:6b7ea6
+Angus: 这只猫就是里面的人物 #line:19642d
+Angus: 他喜欢亮晶晶的玩意，擅长在林子里窜来窜去 #line:8102c1
+Angus: 偷起东西来更是得心应手 #line:785a4f
+Mae: 噢，是啊，我小时候还经常管他叫混蛋猫呢。 #line:45f651
+Angus: 嗯，后来他偷了某个国王的钻石，让箭射死了 #line:432fe2
+Angus: 但他身手太好了，他直接从自己身子里溜了出来。 #line:93056c
+Angus: 然后就获得永生之类的能力了。 #line:7259ff
+Mae: 哈。没啥意思。 #line:86d250
+Angus: 确实是。 #line:c843d2
+[[Check]]
+===
+title: Whale
+tags: 
+colorID: 0
+position: 1550,200
+---
+<<tell LongPaw Hide>>
+Mae: 这是头鲸鱼， #line:5a9ad5
+Mae: 整个世界都被它扛在背上。 #line:d21e1f
+Angus: 哇哦，还挺悲剧的。 #line:502bae
+    ->是啊。 #line:0cc545
+        Mae: 它身上可肩负着满满的责任啊。 #line:80b242
+        Angus: 这鲸鱼甘愿如此吗？？？ #line:437375
+        Mae: 我想它从一开始就是这个样子吧。 #line:7cf8f3
+        Angus: 唉唉唉。 #line:7f160b
+    ->为什么？ #line:08f5ca
+        Angus: 它为什么非得把全世界都扛在自己身上啊？ #line:7cf605
+        Angus: 就......这也太不公平了吧！ #line:4e9c06
+        Mae: 哈哈，是啊。 #line:61c392
+        Angus: 这实在令人伤感， #line:20d81c
+Angus: 你看完就会想，为什么人们要在天上弄这些星座。 #line:27ec1f
+Angus: 我是说，单指刚才这些。 #line:94699e
+Angus: 什么人能从这上边想到个鲸鱼，而且还觉得”它身上该扛点什么" #line:0666e9
+    ->我想，可能是因为鲸鱼的个头都很大吧。 #line:96585a
+        Angus: 但这只鲸鱼是在哪里洄游呢？ #line:1f4ea4
+        Mae: 在太空里！ #line:adf585
+        Angus: 我想，为了这事儿对古人发火，挺蠢的。 #line:d4b517
+    ->他们可不知道大地的全貌。 #line:10f6ea
+        Angus: 是啊，不过…… #line:5e12b1
+        Angus: 我可不会把我不认识的东西都给看做是鲸鱼。 #line:f231bf
+        Mae: 你可以从现在开始试试！ #line:e843b5
+[[Check]]
+===
+title: Check
+tags: 
+colorID: 0
+position: 1070,539
+---
+<<set $angus_constellations += 1>>
+<<if $angus_constellations < 4>>
+    <<tell LongPaw Show>>
+<<endif>>
+===

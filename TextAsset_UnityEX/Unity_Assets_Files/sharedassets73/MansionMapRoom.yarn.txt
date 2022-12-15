@@ -1,0 +1,229 @@
+title: Switch00
+tags: 
+colorID: 4
+position: -478,437
+---
+<<playOneShot event:/mansion/switch_on Mae>>
+<<trigger Map Button1>>
+<<set $map_switch_0_done to 1>>
+<<set $map_switches += 1>>
+Gregg: 哦，嘿，这不是我住的地方吗。 #line:1183d0
+Mae: 还有高速公路， #line:9db910
+Mae: 然而还没有猎豹鲜生。 #line:038f5b
+Gregg: 这地图肯定是很早以前的了。 #line:e9d9b6
+[[CheckSwitches]]
+===
+title: Switch01
+tags: 
+colorID: 4
+position: -258,439
+---
+<<playOneShot event:/mansion/switch_on Mae>>
+<<trigger Map Button2>>
+<<set $map_switch_1_done to 1>>
+<<set $map_switches += 1>>
+Mae: 这里是墓地。 #line:a58efa
+Gregg: 还有咱们现 在 待的这栋楼。 #line:d8d5eb
+Mae: 感觉有点恐怖啊。 #line:460d3d
+Mae: 就像是有人在监视咱们一样。 #line:fa2703
+[[CheckSwitches]]
+===
+title: Switch02
+tags: 
+colorID: 4
+position: -27,432
+---
+<<playOneShot event:/mansion/switch_on Mae>>
+<<trigger Map Button3>>
+<<set $map_switch_2_done to 1>>
+<<set $map_switches += 1>>
+Mae: 嘿，这是我家的位置！ #line:eac498
+Gregg: 哇哦，我敢说，这里面肯定住着一个迷你版的你。 #line:4cde74
+Mae: 哇哦，这可真…… #line:e42ab9
+Mae: 抱歉，这玩意儿让我感觉有点晕。 #line:7f0001
+Gregg: 我可是个危险人物。 #line:7364b4
+[[CheckSwitches]]
+===
+title: Switch03
+tags: 
+colorID: 4
+position: 197,449
+---
+<<playOneShot event:/mansion/switch_on Mae>>
+<<trigger Map Button4>>
+<<set $map_switch_3_done to 1>>
+<<set $map_switches += 1>>
+Gregg: 这里是我们亲爱的镇中心， #line:552caf
+Mae: 镇子的中心位置。 #line:312f34
+Gregg: 安静，别说话。 #line:c39ab7
+[[CheckSwitches]]
+===
+title: Switch04
+tags: 
+colorID: 4
+position: 426,453
+---
+<<playOneShot event:/mansion/switch_on Mae>>
+<<trigger Map Button5>>
+<<set $map_switch_4_done to 1>>
+<<set $map_switches += 1>>
+Mae: 哦，我觉得这里是原先的老驴生鲜。 #line:d67ee8
+Gregg: 还有那片树林。你提到的那个幽灵是不是就跑进这片树林里了？ #line:90f2b1
+Mae: 没错。 #line:4fc402
+Gregg: 作为一个死人，他倒是挺能瞎转悠。 #line:fc4a06
+Mae: 的确如此。 #line:97f1bf
+[[CheckSwitches]]
+===
+title: Statue
+tags: 
+colorID: 4
+position: 789,420
+---
+<<lookAt Mae Character>>
+<<lookAt Gregg Character>>
+<<trigger MansionRobot ComeToLife>>
+<<wait 4>>
+Mae: 啊，它还活着！ #line:c8961b
+Gregg: 妈呀，这玩意儿真是太难看啦。 #line:b22367
+Mae: 好吧，看来声音就是从这儿发出来的。 #line:953afe
+Gregg: 谜题已经解开了。 #line:2d4de5
+Gregg: 等等， #line:42785e
+Gregg: 不会吧， #line:c55875
+Gregg: 如果刚才的声音是这玩意儿发出来的，那就证明 #line:db8ff7
+Gregg: 在咱俩四处转悠的时候， #line:c54978
+Gregg: 有人就来过这儿。 #line:1595bf
+<<lookAt Mae Gregg>>
+<<lookAt Gregg Mae>>
+Mae: 哦…… #line:8274c0
+Mae: 见鬼。 #line:d4ede4
+Gregg: 好吧，看来咱俩该撤了。 #line:44aca5
+Mae: 不能撤！咱们还得找……证据呢！ #line:3206d9
+Gregg: 哦，你还想找证据吗？ #line:42f060
+Gregg: 老兄，咱们很有可能会被一帮……叫什么来着…… #line:a5789f
+Gregg: 用电击枪电晕过去或者怎么着的。 #line:d93aa4
+Mae: 是历史协会的员工。 #line:64c2d4
+Gregg: 随你怎么说吧。要是事情搞砸了，就让你背锅。 #line:e2de2d
+Mae: 好吧！ #line:5d0465
+Gregg: 就这么决定啦！ #line:097cf5
+<<wait 2>>
+Gregg: 姐们，对不起。 #line:c8f953
+Mae: 我也很对不起。 #line:c55f12
+Gregg: 我是绝对不会出卖你的。 #line:4b1897
+Mae: 我也不会的。 #line:9c66a8
+Gregg: 干坏事。 #line:d70254
+Mae: 干坏事。 #line:e32d78
+<<lookNearest Mae>>
+<<lookNearest Gregg>>
+<<set $mansion_checked_robot to 1>>
+[[CheckCanLeave]]
+===
+title: Toolbox
+tags: 
+colorID: 4
+position: 1134,426
+---
+<<lookAt Mae ToolboxCharacter>>
+<<lookAt Gregg ToolboxCharacter>>
+Mae: 嘿，快看！这儿有个工具箱！ #line:1397c4
+Gregg: 肯定是维修工修到一半就走了。 #line:b61c69
+Mae: 嘿，有一些钳子！ #line:3a9605
+Gregg: 哦，太棒了，太棒了。 #line:09a1c3
+Gregg: 我之前在想，咱们有可能永远都找不着这些钳子， #line:d2fe9c
+Gregg: 最后饿死在这儿。 #line:2558dc
+Mae: …… #line:9f8703
+Mae: 倒也不至于，早上肯定会有人来的。 #line:b4940c
+Gregg: 噢，也是。 #line:48edb4
+<<lookAt Gregg Mae>>
+<<lookAt Mae Gregg>>
+<<if $has_paperclip>>
+	Gregg: 好了，咱们拿到开锁的东西了。 #line:eb95a9
+	Gregg: 咱们去打开那个锁住的电梯，然后看看楼上有什么吧。 #line:6e545c
+	Mae: 我猜咱们上楼以后又会发现12部电梯。 #line:bc8bd1
+<<else>>
+	Gregg: 那么……咱们还需要一个曲别针。 #line:63169c
+	<<if $visited_mansion_office>>
+		Mae: 咱们去无聊的办公室， #line:137d75
+		Mae: 看能不能找得到无聊的曲别针。 #line:6a7d45
+		Mae: 不过大概只会又找到7部电梯。 #line:34dd8a
+	<<else>>
+		Mae: 我敢肯定，曲别针就放在这里的某 个 地 方 。 #line:d52ed9
+		Mae: 这里应该会有 #line:ca69b3
+		Mae: 办公室之类的吧？ #line:0f3cd5
+		Gregg: 嗯，而且办公室里面又还有9部电梯。 #line:3a535b
+	<<endif>>
+<<endif>>
+<<lookNearest Mae>>
+<<lookNearest Gregg>>
+<<set $has_pliers to 1>>
+[[CheckCanLeave]]
+===
+title: InitLevel
+tags: 
+colorID: 4
+position: -1021,399
+---
+<<generateFollowPoints Mae Gregg>>
+<<follow Gregg Mae>>
+<<setCanInteract Gregg 0>>
+<<flip Gregg -1>>
+<<flip Mae -1>>
+===
+title: CheckSwitches
+tags: 
+colorID: 0
+position: 26,747
+---
+<<if $map_switches is 1>>
+    <<tell _AmbientSFX:map_buzz_loop Play>>
+    Mae: 哦，等一下， #line:415ddb
+    Mae: 咱们现在是在地图室里。 #line:123c4e
+    Gregg: 好了，那么咱们得多加小心。 #line:8bb694
+    Mae: 好的。 #line:ea6013
+    Mae: 干坏事。 #line:71bc13
+    Gregg: 干坏事。 #line:ae1483
+<<endif>>
+<<if $map_switches >= 5 and $did_mansion_map_room_train is 0>>
+    <<set $did_mansion_map_room_train to 1>>
+    <<flipTo Mae CameraMap>>
+    <<flipTo Gregg CameraMap>>
+    <<close>>
+    <<lookAt Mae MapCharacter>>
+    <<lookAt Gregg MapCharacter>>
+    <<cameraLookAt CameraMap 2>>
+    <<fadeOutMusic 4>>
+    <<wait 4>>
+    <<playMusic mansion_train>>
+    <<trigger Map MapDance>>
+    <<wait 16>>
+    <<playOneShot event:/mansion/creepy_noise_inroom SfxNoise>>
+    <<trigger CornerLight Go>>
+    <<wait 5>>
+    <<lookNearest Mae>>
+    <<lookNearest Gregg>>
+    Mae: 那个恐怖的声音又出现了。 #line:f2bf9c
+    Gregg: 是从这间屋子里传出来的。 #line:f2cd11
+    <<cameraFollowPlayer 1>>
+    <<set $mansion_gotta_check_robot to 1>>
+<<endif>>
+===
+title: ExitLevel
+tags: 
+colorID: 4
+position: -819,631
+---
+//<<set $map_switch_0_done to 0>>
+//<<set $map_switch_1_done to 0>>
+//<<set $map_switch_2_done to 0>>
+//<<set $map_switch_3_done to 0>>
+//<<set $map_switch_4_done to 0>>
+//<<set $map_switches to 0>>
+===
+title: CheckCanLeave
+tags: 
+colorID: 0
+position: 984,722
+---
+<<if $mansion_checked_robot and $has_pliers>>
+    <<set $mansion_gotta_check_robot to 0>>
+<<endif>>
+===

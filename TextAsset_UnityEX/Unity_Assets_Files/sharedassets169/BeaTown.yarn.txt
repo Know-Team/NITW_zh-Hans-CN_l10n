@@ -1,0 +1,436 @@
+title: InitLevel
+tags: 
+colorID: 4
+position: 49,201
+---
+<<if $bea_town is 0>>
+    <<show Bea>>
+    <<hide CarGirl>>
+    <<hide CarDude>>
+    <<hide Collision:Right>>
+<<elseif $bea_town is 1>>
+    <<show Bea>>
+    <<warp Bea BeaEnd>>
+    <<sit Bea>>
+    <<flip Bea -1>>
+    <<show Jackie>>
+    <<warp Jackie JackieOut>>
+    <<flip Jackie 1>>
+    <<warp Mae MaeEnterFromParty>>
+    <<playerFace -1>>
+<<endif>>
+===
+title: EnterLevel
+tags: 
+colorID: 4
+position: 302,363
+---
+<<if $bea_town is 0>>
+    [[Dialogue1]]
+<<elseif $bea_town is 1>>
+<<endif>>
+===
+title: TriggerJackie
+tags: 
+colorID: 4
+position: 512,111
+---
+//autotriggers when you get within range//
+<<setAnimInt Jackie point 1>>
+<<setTalkAnimType Jackie 2>>
+Jackie: 你 干 了 什 么？ #line:9466a0
+Mae: 我还想问你呢！ #line:8c35a7
+Jackie: 你 到 底 是 怎 么 把 事 情 都 搞 砸 的！ #line:05da36
+Mae: :( #line:052395
+Jackie: 碧 娅 她 需 要 这 种 环 境 和 圈 子。 #line:53d74e
+Jackie: 现在天知道她跑哪儿去了！ #line:6f7e24
+Jackie: 她要是出了什么事…… #line:e1b38c
+Jackie: 我保证会亲自把你的牙都给打掉。 #line:5391f6
+Mae: 好吧好吧！天啊！ #line:089f8b
+Jackie: 好吧，我去街上找找她。 #line:a014ed
+Jackie: 你顺着河去找。 #line:77357d
+Jackie: 如果谁找到了她，一定要保证她的安全，然后咱们再到这儿会合。 #line:8cfaa5
+Mae: 好吧！哦，我天。好吧。 #line:50fcfd
+<<setAnimInt Jackie point 0>>
+<<close>>
+<<wait 1>>
+<<walk Jackie Jackie3 wait>>
+Jackie: 我们还在上学时，我就一直跟碧娅说，你是个混蛋。 #line:90f2f8
+Jackie: 我一直以为我的猜测是对的。 #line:709a3e
+Jackie: 我很高兴我的猜测就是对的。 #line:ae32cb
+<<close>>
+<<walk Jackie JackieOffRight>>
+<<wait 2>>
+<<lookLeft Mae>>
+Mae: :| #line:ee6474
+Mae: 好吧好吧好吧。 #line:33c2df
+Mae: 碧娅，你到底在哪儿啊？ #line:95cd44
+Mae: 对了，我可以到房顶上去啊。从房顶上走，很快就能到河边了。 #line:d7c4a0
+<<lookNearest Mae>>
+//you can now freerun and jump and stuff!//
+<<show Collision:Right>>
+===
+title: TriggerBeaEnd
+tags: 
+colorID: 4
+position: 1079,128
+---
+<<lookLeft Bea>>
+<<musicFadeOut 5>>
+Mae: 碧 娅！ #line:b6808a
+Mae: 原来你在这儿啊！ #line:ace097
+Mae: 你还好吗？ #line:24c6d1
+<<close>>
+<<wait 3>>
+Mae: 你刚才为什么要跑啊？ #line:a2ba94
+Mae: 这样太危险了！ #line:7774a2
+Mae: 你一个人在这种大学城里， #line:1e00b4
+Mae: 你甚至不知道该- #line:ca0038
+Bea: 这本来是我的聚会， #line:e05f36
+Bea: 这些聚会全都是我的。 #line:70c4d0
+Bea: 我来这儿参加这些聚会 #line:99cf79
+Bea: 每个月就两个小时 #line:fd2ff0
+Bea: 这样我才感觉自己像个正常人一样 #line:e41212
+    ->*这*能算得上正常吗？ #line:c77c51
+        Mae: 这聚会不过是一帮傻瓜躲在地下室里说说笑笑罢了！ #line:983bcd
+    ->你在聚会上就像个小丑一样，对谁都是强颜欢笑！ #line:fcedd0
+        Mae: 你这么做就是为了那些白痴吗？？？ #line:e2a129
+Mae: 再说了，大学这种地方烂透了。 #line:cc277b
+//remember on blocking to do yelling text effects for this//
+Bea: 哦，我 的 天 。|你 就 是 个|彻 头 彻 尾 的 混 蛋！ #line:220768
+Bea: 你永远都不会明白的。 #line:a79813
+Bea: 永远。 #line:7089d3
+Bea: 你知道，我睡觉的时候会干些什么吗？ #line:551a31
+Bea: 哈哈哈。说出来都感觉可悲。 #line:84857b
+Bea: 我会拼了命地想象自己上大学时的情景， #line:66a716
+Bea: 就像是疯了一样地在想象那些场景。 #line:76a758
+Bea: 要是哪天运气好，我就能在睡着后 #line:c85f90
+Bea: 梦见这一切。 #line:bfc9b4
+Bea: 那些东西我只有在梦中才能得到 #line:ccedc3
+Bea: 那些你根本不以为然的东西 #line:11fa3e
+Bea: 对我来说是奢望。 #line:6fd8cd
+    ->你明明*有*你自己的人生啊！ #line:93c303
+        Bea: 不，我没有。 #line:d09408
+        Bea: 我有的只是义务和责任， #line:6b6568
+        Bea: 我有的只是一成不变的计划和时间表。 #line:23a6ec
+    ->这也……太惨了吧。 #line:586443
+        Bea: 太他妈对了这就是很惨！ #line:716309
+Bea: 我妈妈死的时候 #line:e78609
+Bea: 我的人生也一道死了。 #line:676ed5
+Bea: 从那以后，我得全权接管生意 #line:631fa2
+Bea: 因为我爸彻底崩溃了 #line:8daef3
+Bea: 我妈妈的工资也都和她一起消失了 #line:35d69a
+Bea: 而且更糟的是， #line:a57deb
+Bea: 我们原先的房子，从小到大我一直住的那个房子， #line:015455
+Bea: 也没了。 #line:e2cd26
+Bea: 现在，我们房子里不知道是哪些烂人在住着 #line:6ed011
+Bea: 我爸的身体也越来越差了， #line:a2e4fc
+Bea: 而且我们只能挤在一间公寓里。 #line:93236b
+<<playMusic proximity 18>>
+Bea: 我所有曾经梦想的， #line:c57e53
+Bea: 远大而光明的未来 #line:540f2d
+Bea: 都伴随着一个又一个， #line:f8b72a
+Bea: 像今晚这样美梦破碎的时刻 #line:8df915
+Bea: 变得越来越渺小黯淡。 #line:e20b50
+Bea: 就凭你那该死的大脑瓜， #line:cc5d0b
+Bea: 是永远无法理解这些的。 #line:8c2acb
+    ->这不公平 #line:254370
+        Bea: 没有一件事是公平的！ #line:31fb0e
+        Bea: 所有的一切也都是不公平的！ #line:463981
+    ->我都不知道你经历了这种事！ #line:82aa6f
+        Bea: 怎 么 可 能 呢？！ #line:ae1f79
+        Bea: 你怎么会对这些事一无所知呢？！ #line:da5b04
+Bea: 我一直都在努力工作！ #line:b7aaed
+Bea: 我还要照顾我唯一的亲人 #line:5112f0
+Bea: 我的人生就从这些琐事中慢慢溜走了， #line:b805fa
+Bea: 而且我自己还被困在那家该死的五金店 #line:708669
+Bea: 和那该死的镇子里。 #line:dd01cc
+Bea: 我的人生 #line:416b35
+Bea: 就这么 #line:2c9be8
+<<wait 2>>
+Bea: 毁了。 #line:78aca9
+<<wait 2>>
+Mae: 你不是唯一一个被困在这儿的人 #line:a3d565
+Mae: 你知道的。 #line:8b8ac7
+Bea: 你丢弃了我永远也得不到的东西 #line:b0b5c4
+Bea: 所以，我……有点恨你。 #line:7b3253
+Bea: 在这件事上我很难一点都不恨你。 #line:6907d8
+    ->你对我那件事根本一无所知。 #line:945875
+        Bea: 说真的！ #line:cb0be8
+        Bea: 能有什么要我知道的？ #line:53c5db
+    ->你根本就不知道我为什么要退学回家。 #line:71c179
+        Bea: 哦，我敢说，你肯定会给我一个很不错的理由。 #line:a1b854
+Mae: 你就知道坐在这儿对我指指点点。 #line:f7d704
+Mae: 你之前有问过我哪怕是一句我离开学校的原因吗？ #line:d3c25b
+Bea: 有。我在你刚回来的头一天就问过你了。 #line:353c25
+Mae: 哦。 #line:fa4b60
+Mae: 对哦。 #line:78de96
+Bea: 所以你为什么退学？ #line:194313
+Mae: 我…… #line:e1dfb8
+<<close>>
+//walk Mae over and sit next to Bea on bench//
+<<walk Mae MaeWalkToSit wait>>
+<<toggleSitSwings Mae false>>
+<<sitInstant>>
+Mae: 我也不知道为什么。 #line:b1b7b3
+Mae: 我的脑子现在很乱， #line:8c0738
+Mae: 所以我接下来的话听起来可能会很扯。 #line:44693c
+Bea: 哦， #line:4621f8
+Bea: 你这话说的倒挺有内涵。 #line:a0fc7c
+Mae: 你可快把嘴闭上吧。 #line:3f67fa
+Mae: 这星期出了一大堆烂事， #line:a14c88
+Mae: 还有幽灵那破事。 #line:b94f5c
+Mae: 我还遇见了神！ #line:88c49d
+Mae: 他就是个大混蛋！ #line:d60405
+Bea: 啊哈。 #line:e4c3a9
+Bea: 啊 啊 啊。 #line:ed77f1
+<<wait 2>>
+<<cameraLookAt CameraRiver 8>>
+Mae: 所以，你看啊， #line:90cdec
+Mae: 咱们俩现在都被一堆烂事困住了。 #line:05cb5a
+Mae: 但我们和对方一起被困着。 #line:2d64db
+Bea: …… #line:764913
+Mae: 这总好过被和其他人困在一起，你说是不是？ #line:1a76c1
+Bea: …… #line:21a8ee
+Mae: 你听我说，我很抱歉。 #line:c88466
+Mae: 我为 #line:480166
+Mae: 刚才的事， #line:12c6c1
+Bea: 好了没事的。 #line:790377
+Mae: 其实，咱们俩就属于 #line:380496
+Mae: 那种关系又好、又患难与共的好朋友。 #line:1a6952
+Bea: 哈哈哈。 #line:5a3788
+Bea: 我的老天。 #line:2ee493
+<<wait 3>>
+Mae: 这条河叫什么名字啊？ #line:9042ba
+Bea: 红曲河。 #line:4e627d
+Bea: 因为这条河含铁量很高， #line:da5d1d
+Bea: 所以，河底和周围的岩石就都变成了橘红色。 #line:a51edf
+Mae: 对那些石头来说还真是够诡异的。 #line:bd5f8d
+Mae: 那些在地上的石头还保持着自己本来的颜色。 #line:d8345a
+Mae: 然后呢，河里的石头就会一直仰望着那些地面上的石头。 #line:9ec2e7
+Bea: 嗯。 #line:8ea6b0
+<<wait 3>>
+Mae: 所以…… #line:2b4a19
+Mae: 我来问一个现实点的问题： #line:b563fd
+Mae: 如果咱们俩没住在同一个镇子上， #line:e832ac
+Mae: 你觉得，咱们还能成朋友吗？ #line:328ab1
+Mae: 或者说如果咱俩在是在同一个童子军夏令营，那结果又会如何呢？ #line:02d8e8
+Mae: 这就像是……呃……就是这种情况……应该用哪个词形容来着？ #line:4c22cc
+Bea: 近似性？ #line:0f693c
+Mae: 对，就这个词。 #line:c1e2f7
+Bea: 我不知道。 #line:e0433a
+Bea: 我真的不知道。 #line:be546f
+Bea: 我觉得…… #line:8cfdcf
+Bea: 我这辈子一直都在追寻着那些我永远都追不上的东西， #line:dd93f6
+Bea: 它们在前面越跑越远。可我呢，却还在原地。 #line:c2f7ef
+Bea: …… #line:9becfa
+<<lookAt Bea Mae>>
+Bea: 我觉得现在“近似"能代表挺多东西的。 #line:ca7228
+Mae: 嗯哼。 #line:5d7948
+Mae: 机-印-近，似。 #line:1ac563
+<<if $did_bea_friendship_quest_2 = 1>>
+    Mae: 之前咱们就一起被困在过地下室里 #line:d8a272
+    Mae: 但这次， #line:b05a2f
+    Mae: 这次的“地下室" #line:d141ac
+    Mae: 我们管它叫人生。 #line:cf18f7
+    Bea: 谢了，这话倒是挺振奋人心的。 #line:38b43b
+<<endif>>
+<<wait 3>>
+Mae: 那你还想回去继续参加聚会吗？ #line:5402a1
+<<lookLeft Bea>>
+Bea: 不了。 #line:29ffea
+Mae: 等有时间，我们再去另一个！ #line:ebea70
+    ->我保证不会再搞砸了！ #line:7217e9
+        Bea: 好吧，既然你已经有过一次经验了。 #line:52ea0a
+        Bea: 那你就应该知道下次该怎么办了。 #line:def23e
+    ->我会学着和人好好说话的。 #line:af253f
+        Mae: 对随便哪个 #line:e3a5be
+        Mae: 你打算和他们好好说话的人。 #line:18a478
+        Bea: 噢，不错。谢了。 #line:0c8f4f
+Mae: 碧娅，其实你应该把那些都告诉我的。 #line:4eb509
+Bea: 说这些让人怪尴尬的。 #line:02273b
+Bea: 我的整个人生就处在尴尬中。 #line:da8140
+Mae: 碧娅，我现在绝对比你任何时候都要更尴尬。 #line:7800dd
+Mae: 你是我目前为止见到过的最坚强、最聪明的人。 #line:8e1667
+Bea: 是吗，谢谢。 #line:e7ec10
+Bea: 你也不像我说的那样，是个大笨蛋。 #line:1ed005
+Bea: 我知道，我有时候也很混蛋。 #line:7c6199
+Bea: 而你呢，却是个名副其实的……大好人。 #line:38982a
+Mae: 我承认。 #line:50e3c9
+<<lookAt Bea Mae>>
+<<if $did_bea_friendship_quest_1>>
+    Mae: 你知道卢塞纳堡的那个石雕鱼喷泉会说啥吗？ #line:98c03c
+    Bea: 啥？ #line:79b026
+    //remember size and shake//
+    Mae: 碧翠丝·桑特罗 #line:8d6b83
+    Mae: 咱们应该在回家的路买几个汉堡和几杯奶昔。 #line:7ca391
+    Bea: 哇哦。神谕啊。 #line:6beca4
+    Mae: 它是个挺不错的神，虽然是个假的。 #line:f455bf
+<<endif>>
+<<wait 3>>
+<<if $cool_party_girl>>
+	Mae: 坏啦！我没要到她联系方式！ #line:83f054
+	Bea: 你说谁啊？ #line:7ce3d5
+	Mae: 就是我在聚会上遇见的那个超级可爱的女生？！？！？ #line:8a597b
+	Mae: 我们还用一种很隐秘的方式握了手？ #line:e4bd1a
+	Bea: 你那是一种……委婉的表达吗？ #line:27da2a
+	Mae: 真该死。 #line:cd813a
+	Mae: 好吧，看来咱们得回去一趟。 #line:bf8db9
+<<endif>>
+Bea: 行了你。 #line:f295de
+Bea: 咱们还是回家吧。 #line:61615c
+Mae: 又是回家、回家。 #line:be32c2
+<<close>>
+<<fadeOut 1 wait>>
+<<unlockDoodle BeaFQ4>>
+<<if $cool_party_girl>>
+    <<unlockDoodle BeaPartyGirl>>
+<<endif>>
+<<set $night to 1>>
+<<set $did_bea_friendship_quest_4 to 1>>
+<<set $completed_bea_friendship_quests += 1>>
+<<unlockAchievement Best_Available_Friend>>
+<<scene MaeHouse left>>
+===
+title: Dialogue1
+tags: 
+colorID: 4
+position: 586,485
+---
+Mae: 我记得咱们当童子军的时候， #line:46a040
+Mae: 好像来过这儿。 #line:90c0ff
+Mae: 来看关于长至夜节的剧的。 #line:9cfd8c
+Bea: 是啊，我的确来过这儿。 #line:bc7f31
+Mae: 没错，从那以后，咱俩就成朋友了。 #line:e2f0b8
+    ->为什么你当时来和我说话啊？ #line:fc9d7c
+        Bea: 因为我是第一次到镇上来， #line:806e80
+        Bea: 而且你看上去很酷。 #line:8edeed
+        Mae: 就这原因？ #line:c0d0b3
+        Bea: 还因为你当时又聪明又有趣。 #line:c16bba
+        Mae: 我现在也一样。 #line:52714a
+        Bea: …… #line:cf62e0
+        Bea: 你应该明白我说的“有趣"是什么意思吧。 #line:32d952
+        Mae: 你一直都说我不聪明， #line:b9d26c
+        Mae: 这让我特别特别不爽。 #line:33f896
+        Bea: 不好意思啦，多数情况下我都是开玩笑的。 #line:98a982
+        Mae: “多数情况"？ #line:7e352d
+        Mae: 你也没聪明到哪儿去啊！ #line:9ff3fe
+        Bea: 我可是咱们班的毕业生代表呢！ #line:da527b
+        Mae: 说得就和这东西在现实生活中有什么用似的。 #line:9c9466
+        Bea: …… #line:6f46de
+        Mae: 抱歉。 #line:062b44
+        Bea: 抱歉。 #line:bacf80
+        <<wait 2>>
+    ->那部剧叫什么名字来着？ #line:a5aff7
+        Bea: 《大盗柯尔温》。只不过这部剧有点过时了，而且也挺冷门的。 #line:cef9b6
+        Bea: 主角是一只毛绒绒的小猫 #line:620e69
+        Bea: 住在丛林里 #line:594c42
+        Bea: 没人能找的到的那种地方。 #line:33e75d
+        Bea: 但后来，他从当地的一个国王那儿偷走了一颗钻石。 #line:e4b524
+        Bea: 或者别的什么。 #line:8133cf
+        Bea: 结果就让箭给射死了。 #line:429982
+        Mae: 哦，对，没错。 #line:e7eb62
+        Bea: 嗯哼。 #line:169f81
+        Bea: 这部剧还有下半部， #line:cfe3a5
+        Bea: 讲的是他变成鬼魂之后的故事。 #line:a14bcf
+        Bea: 但这半部从来就没公演过。 #line:8e0f06
+        Mae: 唉，可怜的幽灵猫。 #line:df640c
+Bea: 好了，咱们走吧。 #line:7c18f9
+<<close>>
+<<walk Mae Mae2>>
+<<walk Bea Bea2 wait>>
+Mae: 这事让我有点紧张。 #line:6df311
+Mae: 你离我近一点，好吗？ #line:9c22c0
+Bea: 这下面根本就没什么好害怕的，那只不过就是个聚会而已嘛。 #line:d4002f
+Mae: …… #line:0cfd03
+Mae: 现在让车给撞死还不算太晚。 #line:edc4a3
+<<lookRight Bea>>
+Bea: 嘿，杰 基！ #line:ab1bf1
+<<close>>
+<<flip Jackie -1>>
+<<walk Jackie Jackie2 wait>>
+Jackie: 嘿，碧！！！ #line:32ea05
+Jackie: 哦，真是怪了，这不是梅吗？ #line:317f0a
+Mae: o/ #line:ad80f5
+Mae: 嘿，杰基！ #line:578029
+Jackie: 你还把梅给带过来了。 #line:2aeaae
+Mae: _o_ #line:f3e194
+Bea: 是啊，把她带过来没关系吧？ #line:34d7b8
+Jackie: 没问题！有她在聚会肯定会很有意思的。 #line:41588b
+Jackie: 进来吧！这次的聚会可相当不错哦。 #line:52a1e0
+Mae: 聚会上有跳舞之类的项目吗？ #line:870ee0
+Jackie: 世界末日快到了，梅 #line:219e5b
+Jackie: *肯定*有跳舞的环节啊。 #line:d75962
+Bea: 不错 #line:8a95bb
+Mae: 好吧。 #line:e22e0c
+<<close>>
+<<flip Jackie 1>>
+<<walk Jackie ExitRight>>
+<<walk Bea ExitRight>>
+<<walk Mae ExitRight wait>>
+<<set $bea_town to 1>>
+<<irisOut 1 wait>>
+<<scene BeaParty>>
+===
+title: NeedToJumpOnCar
+tags: 
+colorID: 4
+position: 801,125
+---
+//there is a guy and a girl standing in front of the car you need to jump on//
+Mae: 嘿！躲开点！ #line:ed857b
+CarGirl: 你说什么？ #line:80e24f
+<<dilate Mae .85 .5>>
+Mae: 快躲开，你们这两个哥特笨蛋。 #line:a35139
+CarDude: 我们就不走。 #line:71c899
+Mae: 我 要 到 房 顶 上 去。 #line:9bb95b
+CarDude: 不许踩着我的车。 #line:0dab1e
+<<dilate Mae .75 .5>>
+Mae: 你 信 不 信，我 现 在 就 能 把 你 弄 死 在 这 披 萨 店 的 停 车 场 里！ #line:7e3730
+CarGirl: 你 冷 静 点！ #line:d98058
+Mae: 你 滚 远 点！ #line:3bd1c8
+CarGirl: 别 冲 我 喊 |“滚远点"！ #line:ff7f3b
+Mae: 别 冲 我 喊|“冷静点"！ #line:918d82
+CarDude: 离我的车远点！ #line:2bc366
+<<dilate Mae .65 .5>>
+Mae: :| #line:549489
+<<setAnimInt Mae nodding 1>>
+Mae: 你 要 是 再 不 离 你 那 破 车 远 点 的 话， #line:1c9089
+Mae: 我 就 开 着 它 从 你 那 破 脑 袋 上 轧 过 去 #line:10421c
+<<setAnimInt Mae nodding 0>>
+CarDude: 会开车吗你？ #line:03d13d
+Mae: \o/ #line:06524b
+Mae: 想 试 试 吗，|哥 们 儿？ #line:8f9763
+CarGirl: 我要报警了。 #line:81823a
+<<lookAt Mae CarDude>>
+<<close>>
+//she walks away to the right and down to the party//
+<<walk CarGirl ExitRight>>
+Mae: 你要是不马上 #line:5b0f52
+Mae: 把路让开， #line:87e57b
+Mae: 我就让你把这辆车全都吃下去。 #line:9d7aab
+Mae: 我说到做到。 #line:b48d73
+CarDude: 我倒要看看你敢不敢。 #line:01cc19
+<<setAnimInt CarDude point 1>>
+Mae: _o_ :( #line:08fcaf
+Mae: 上一个被我 #line:f0d38f
+Mae: 暴揍的人， #line:4c5c16
+Mae: 我可是把他揍得 #line:0140f6
+Mae: 特别，特别惨。 #line:954982
+<<trigger CarDude Jab>>
+CarDude: 说真的，我可要- #line:8f90a0
+<<dilate Mae 1 .5>>
+Mae: :| #line:ae454a
+Mae: 你可要干嘛？ #line:c9f26d
+<<wait 3>>
+<<setAnimInt CarDude point 0>>
+CarDude: 你猜怎么着？我可没时间跟你这儿废话。 #line:03794b
+<<setAnimint Mae headShaking 1>>
+Mae: 对，你还真没有。 #line:fd3600
+Mae: 滚。 #line:8e937e
+<<setAnimint Mae headShaking 0>>
+CarDude: 祝你把脊柱摔断。 #line:ed10c1
+<<lookNearest Mae>>
+//CarDude walks to the right and down to the party//
+<<walk CarDude ExitRight>>
+===

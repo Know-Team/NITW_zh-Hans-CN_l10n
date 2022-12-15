@@ -1,0 +1,202 @@
+title: JumpSitOnBridge
+tags: 
+colorID: 0
+position: 471,110
+---
+<<extraZoom -2 3>>
+<<waitForRabies>>
+===
+title: Rabies
+tags: 
+colorID: 0
+position: 769,119
+---
+<<setAnimBool Rabies hidden 1>>
+<<warp Rabies RabiesBridge>>
+<<set $saw_rabies_today to 1>>
+<<setAnimBool Rabies dropped 1>>
+<<wait 1.5>>
+
+<<lookAt Mae Rabies>>
+<<if $act is 4 and $day is 3>>
+    Mae: 嘿，狂犬。 #line:cf041b
+    <<wait 1>>
+    Mae: 我敢说，你这一生肯定很精彩。 #line:0cf970
+    Mae: 和你那些小伙伴一块儿玩。 #line:23964c
+    Mae: 我意思是，你可是个能人啊，你已经家喻户晓了。 #line:49655f
+    Mae: 你不仅能吃垃圾。 #line:3fae0f
+    Mae: 还能吃各种各样的害虫。 #line:4b7129
+    Mae: 老兄，我感觉， #line:8de8b2
+    Mae: 感觉很欣慰，因为你在这个世界上也有自己的一席之地。 #line:5339ca
+    <<wait 2>>
+    Mae: 好了，我得走了。 #line:fe7ded
+    Mae: 回头见，狂犬。 #line:0710f3
+    Mae: 保持冷静，保持活力。 #line:371471
+<<elseif $saw_rabies_times is 0>>
+    Mae: 哇哦！ #line:05410b
+    Mae: 嘿，狂犬！！！ #line:23c9f2
+    Mae: 谁才是小小垃圾王？？？ #line:62d7d5
+    Mae: 你。 #line:0d21eb
+    Mae: 狂犬，告诉我， #line:46a33b
+    Mae: 对于幽灵的事，你怎么看？ #line:ba9188
+    Mae: 这确实算个比较重要的事，对不？ #line:58017a
+    <<wait 2>>
+    Mae: 哦，是啊，你说到点子上了。 #line:44211a
+    Mae: 我感觉我还没想好如何去看待这件事 #line:47c9d1
+    Mae: 比起那个，我更加喜欢去*感受*它。 #line:bcf79e
+    Mae: 真希望大家能相信我的话。 #line:cb5ff2
+    <<wait 2>>
+    Mae: 谢谢了，狂犬。你的理解对我来说很重要。 #line:175d19
+    Mae: 你可真是个牛逼的负鼠，狂犬。 #line:cd9137
+    Mae: 好了，我撤啦！ #line:731826
+    Mae: 注意安全！别忘了吃垃圾噢！ #line:cdfab2
+    Mae: 也别忘了吃害虫！ #line:4f369f
+    <<set $saw_rabies_times += 1>>
+
+<<elseif $saw_rabies_times is 1>>
+    Mae: 嘿，狂犬。 #line:04f76d
+    Mae: 最近还好吗？ #line:cfe24d
+    <<wait 2>>
+    Mae: 听你这么说，我就放心了。 #line:11a5c2
+    <<wait 2>>
+    Mae: 以前在学校的时候，老师会要求我们写 #line:4412c5
+    Mae: 像“15年后，如果你会在……额……某一个地方，你会希望那会是哪儿？"之类的东西。 #line:7afba6
+    Mae: 这作业对我来说，简直就是小菜一碟， #line:c31be5
+    Mae: 因为我15岁时写下了我的答案 #line:dfb884
+    Mae: 至今我的选择还是没有变过 #line:cbaf0c
+    Mae: 只不过现在已经不是“15年后"了，现在是“20年后"了 #line:8fa5df
+    <<wait 2>>
+    Mae: 我会在一座农场里，或差不多这种地方。 #line:10ed8a
+    Mae: 但这不是那种有动物和麦子的农场 #line:1bf751
+    Mae: 可能种的是玉米吧？我喜欢玉米田。 #line:269566
+    Mae: 或许在这附近，或许是在像爱达荷州之类的地方。 #line:fde01c
+    Mae: 她也在那，我们俩一起在农场里，在我的想象中她是女孩子 #line:4a7e66
+    Mae: 我们可能已经结婚了......无所谓了，管爱达荷他们怎么过的。 #line:4a83e4
+    Mae: 我的老师以前曾写过“我觉得他们就是结婚了"。 #line:b00f7d
+    Mae: 但我是觉得，在法律之外的地方 #line:30ac35
+    Mae: 你不必专门去结婚，你们一直和对方在一起就够了。 #line:006e93
+    Mae: 随便吧。我想怎么定义就怎么定义。 #line:108793
+    Mae: 反正，我们一起出去一起闲逛一起干活。 #line:7914cf
+    Mae: 回家的时候，我们都疲惫不堪。 #line:8a4d0e
+    Mae: 你的脸就像是被风吹了一天似的。 #line:606797
+    Mae: 外面很冷很冷， #line:ed1258
+    Mae: 然后我们点披萨 #line:aeb6c1
+    Mae: 我的老师当时就说“爱达荷？一座农场？" #line:feb60f
+    Mae: 是啊，在我那个想象里有个镇子在附近的。 #line:5c5176
+    <<wait 1>>
+    Mae: 这可是个宏伟的想象图景。 #line:429eac
+    <<wait 1>>
+    Mae: 我们吃披萨时我玩着电脑游戏， #line:51ea97
+    Mae: 而她在干着一些活 #line:03a429
+    Mae: 她好像是在做木工活，或者她就是个铁匠什么的。 #line:f59c57
+    Mae: 所以，她的手特别粗糙。 #line:560515
+    Mae: 我的老师当时就问“她在客厅里作木工活和铁匠活？" #line:d64d38
+    Mae: 她有靴子但 #line:71b35c
+    Mae: 我的靴子是那种满是泥浆的 #line:fc3a8a
+    Mae: 而她的靴子却全因为工作、木材的剐蹭、火的炙烤 #line:88f145
+    Mae: 变得破旧不堪。 #line:83577c
+    Mae: 我们还从一座谷仓里找到了两只大猫咪和一只狗， #line:ecd82a
+    Mae: 然后，我们就收养了它们。 #line:c2fe2e
+    Mae: 我们会一起对着月亮嚎叫。 #line:bc18cb
+    <<wait 2>>
+    Mae: 这一段可是我从小的梦想之一， #line:422526
+    Mae: 就算不去嚎叫至少也得有猫和狗 #line:44116d
+    Mae: 不要小孩 #line:9728c8
+    Mae: 不要小孩 #line:7d7c0b
+    Mae: 不要小孩 #line:35b5b0
+    <<wait 2>>
+    Mae: 狂犬，你是怎么想的？ #line:9e9a36
+    Mae: 你想要小宝宝吗？ #line:316c14
+    Mae: 你有什么宏大的计划吗？ #line:4640fe
+    <<wait 2>>
+    Mae: hmmm，是啊，狂犬，说的是啊。 #line:fd4b6b
+    Mae: 好了，我走人啦！ #line:7273b9
+    Mae: 谢谢你和我打招呼！ #line:1b5074
+    Mae: 再见啦！注意安全！别忘了吃垃圾！ #line:e6b0e3
+    Mae: 也别忘了吃害虫！ #line:cd22a4
+    <<set $saw_rabies_times += 1>>
+
+<<endif>>
+
+<<wait 1>>
+<<setAnimBool Rabies dropped 0>>
+<<lookNearest Mae>>
+<<wait 1.5>>
+<<unlockAchievement RABIES!>>
+<<unlockDoodle Rabies1>>
+// note there is a matching extraZoom in the waitForRabies code
+<<extraZoom 0 3>>
+<<setSortingLayerName Player>>
+===
+title: FrontOfFarm.1
+tags: 
+colorID: 4
+position: 527,480
+---
+Mae: 开农场。 #line:629093
+Mae: 我也能开农场。 #line:54e5e3
+Mae: 如果我在镇上待的时间足够长， #line:c4e990
+Mae: 我就能熟悉农场的生活了。 #line:a48fd5
+===
+title: FrontOfFarm.2
+tags: 
+colorID: 4
+position: 794,474
+---
+Mae: 但在农场也有个问题， #line:e2cff4
+Mae: 就是动物的便便太多了。 #line:62ef01
+Mae: 这就像是，你根本没养一只动物， #line:455cb6
+Mae: 可你还是会发现有便便。 #line:1eaa2f
+Mae: 然后，你就得把所有的便便都给铲走。 #line:807d38
+Mae: 简直疯了。 #line:8dcded
+Mae: 便便之疯。 #line:c80ae3
+<<end>>
+===
+title: NearSignAct3.1
+tags: 
+colorID: 4
+position: 515,774
+---
+Mae: 沿着公路走几英里，然后在公路旁边， #line:9a0987
+Mae: 你就能看到大大小小的农场和随风起伏的田野。 #line:bae875
+Mae: 我很想念这个秋天里那迷宫一样的玉米田， #line:45aa19
+Mae: 也很想念布里德尔那座闹鬼的谷仓。 #line:b4e20a
+Mae: 等到明年，我也一样会想念这一切的。 #line:01a591
+Mae: 为了篝火和玉米热狗。 #line:c18d20
+===
+title: NearSignAct3.2
+tags: 
+colorID: 4
+position: 787,782
+---
+Mae: 但奇怪的是，镇子好像*嘭*地一下 #line:c72c68
+Mae: 就从这里 #line:c33753
+Mae: 消失了。 #line:6dae07
+Mae: 在这里某个地方， #line:4455c8
+Mae: 有一条 #line:ce626c
+Mae: 没人能看到的线。 #line:350361
+Mae: 但你可以把它摆到地图上， #line:f32445
+<<end>>
+===
+title: NearSignA4D3.1
+tags: 
+colorID: 6
+position: 519,1028
+---
+Mae: 然后幻想，我们这里还能不能再次成为一个发展迅猛的小镇。 #line:e2eb8c
+Mae: 昨天晚上， #line:b75ca7
+Mae: 那些人好像就被这种想法给蒙蔽了。 #line:101c8a
+Mae: 但这种想法其实也是挺美好的。 #line:cd49fa
+Mae: 如果真有神的话， #line:161077
+Mae: 我会问问他这个问题。 #line:455341
+Mae: 但我觉得他们得和别的神明战斗 #line:df76de
+Mae: 去和那些让这里奄奄一息的神明战斗。 #line:e853b4
+Mae: 我为我们所有人 #line:0eeb74
+Mae: 能在这个又破又蠢但又好的要死的镇上 #line:88e271
+Mae: 过着还凑合的生活 #line:73bca4
+Mae: 而感到骄傲。 #line:1ccd78
+<<wait 2>>
+Mae: 致负鼠泉。 #line:3750fa
+Mae: 致生活。 #line:e46170
+<<end>>
+===

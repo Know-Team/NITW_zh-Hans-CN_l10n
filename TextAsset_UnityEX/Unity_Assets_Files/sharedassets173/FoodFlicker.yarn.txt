@@ -1,0 +1,59 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: -120,288
+---
+Mae: 好，像这样站好。 #line:e4c9a4
+Gregg: 好 滴。 #line:8d4f35
+===
+title: GreggEat
+tags: 
+colorID: 0
+position: 276,266
+---
+Gregg: [shake=.05]不不不不不。[/shake] #line:21290d
+<<if $last_flicked_food_type is 1>>
+    Gregg: 我 喜 欢 洋 冲（葱）。 #line:6b9bb2
+<<endif>>
+===
+title: Miss
+tags: 
+colorID: 0
+position: 550,274
+---
+Gregg: 浪费饺子的罪魁祸首！ #line:dcaeaa
+===
+title: HitFace
+tags: 
+colorID: 0
+position: 827,282
+---
+<<if $last_flicked_food_type is 2>>
+    Gregg: [shake=.05]哦，我的天，辣辣辣！[/shake] #line:783858
+<<else>>
+    Gregg: [shake=.05]啊，我 的 脸！[/shake] #line:0d9b9e
+<<endif>>
+===
+title: End
+tags: 
+colorID: 0
+position: 1089,271
+---
+Mae: 没有波兰饺子啦！！！ #line:6f65eb
+Gregg: 该死。 #line:33bf0a
+<<close>>
+<<wait 1>>
+<<if $flicked_foods_mostly_hit_face>>
+    Gregg: 知道吗，有一堆饺子都直接砸在我脸上啦。 #line:d6951b
+    Mae: 对不起。 #line:3bf0c1
+<<elseif $flicked_food_mostly_eaten>>
+    Gregg: 大多数饺子都扔进我嘴里了，好开心。 #line:1f5350
+    Mae: 哈哈，是啊！ #line:836a7e
+<<else>>
+    Gregg: 很多饺子都掉地上了，好难过。 #line:19630e
+    Mae: 哦，格雷格，真对不起。 #line:14cec6
+<<endif>>
+<<set $did_food_flicker to 1>>
+<<irisOut 1 wait>>
+<<scene Diner>>
+===

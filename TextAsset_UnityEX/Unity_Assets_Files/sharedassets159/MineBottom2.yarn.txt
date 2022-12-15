@@ -1,0 +1,401 @@
+title: BossConversation
+tags: 
+colorID: 5
+position: 812,219
+---
+//walk mae into next room and stop//
+<<set $boss_convo to 1>>
+<<fadeOutInternal 1 wait>>
+<<warp Mae MaeBossConvo>>
+<<warp Gregg GreggBossConvo>>
+<<warp Bea BeaBossConvo>>
+<<warp Angus AngusBossConvo>>
+<<flip Gregg -1>>
+<<flip Angus -1>>
+<<flip Bea -1>>
+<<fadeInInternal 1 wait>>
+Mae: 我知道你就在这儿。 #line:95531a
+<<wait 4>>
+Mae: 出来说句话吧。 #line:35ab6a
+<<wait 2>>
+<<cameraLookAt BossCamCenter 3>>
+HeadMiner: 好吧，这样如何啊： #line:3672a0
+HeadMiner: 要是想死的话，你们就往前走一步试试。 #line:0ff9f8
+Bea: 你快出来吧！ #line:7a451c
+Gregg: 是啊，你个王八蛋。我们四个可比你要可怕五倍呢。 #line:d1c8cb
+<<close>>
+<<if $pentagram_quest>>
+	<<set $found_pentagrams += 1>>
+<<endif>>
+//next wait is just for dialogue as the animations happen//
+
+//playMineBottom2.lightsTurnOn//
+<<trigger MineBottom2 LightsTurnOn>>
+<<playOneShot event:/finale/lantern_light HeadMiner>>
+//holdonMineBottom2.lightsOn//
+<<wait 8>> 
+Eide: 他们在这儿啊！他们原来在这儿啊！ #line:d553d0
+Eide: 我要杀了他们！ #line:4ad601
+HeadMiner: 艾德，你可不能这么干。 #line:6abf34
+HeadMiner: 你现在已经失控了。 #line:b1d0ae
+Eide: 他……用……箭……射……我！ #line:853432
+HeadMiner: 不过，咱们也打了他们中的一个人。 #line:bc16b5
+HeadMiner: 几天前的那个晚上，咱们开枪打中了这个小姑娘。 #line:46a89a
+Miner1: 是的，很抱歉。 #line:46d252
+Mae: 你是在……道歉吗？ #line:444c0d
+Miner1: 是我不对，抱歉。 #line:c7f210
+Mae: 额，没事的。 #line:5f1527
+Mae: 子弹没打中我，所以…… #line:59d40a
+Mae: 等一下。我勒个……你们到底是谁啊？ #line:469e66
+HeadMiner: 我们就是一群尽自己努力 #line:1d8e54
+HeadMiner: 去保护小镇和镇上居民的老家伙。 #line:cbad07
+Mae: 那……那你们后来为什么想杀了我呢？ #line:fa884f
+Miner2: 杀了你？！ #line:66b9b6
+Miner1: 根本没人想杀你！ #line:ea1422
+HeadMiner: 你们每个人都是这个镇的一部分， #line:a7807c
+HeadMiner: 你们可能是家属，也可能是辛苦工作的人。 #line:05eb39
+Miner2: 都是为建设小镇出力的人！ #line:af7ee4
+Mae: 嗯，好吧。 #line:fc789e
+Mae: 那我们可以走了吗？ #line:ef10ce
+HeadMiner: 嗯，*他*把你们带到这儿来是有原因的。 #line:fd42eb
+HeadMiner: 在他发话前，你们是不能离开的。 #line:3efbae
+Mae: 好吧，*他*肩膀上已经中了一箭， #line:e25179
+Mae: 所以，我觉得他应该也说不了什么了。 #line:055250
+HeadMiner: …… #line:9e82ce
+Miner1: …… #line:f23b32
+HeadMiner: 等一下。这么说，你觉得艾德他…… #line:7ca5ae
+Mae: 就是他在丰收节那天绑架了那个孩子！ #line:8afbe0
+Mae: 不知道为什么，我的脑子里……老会闪现出他的样子！ #line:e9dd70
+Mae: 我感觉一直很累！头还一直疼！ #line:d6a5d4
+Mae: 他一直都在跟踪我……跟踪我们所有人！ #line:1a48a8
+Mae: 他…… #line:ab4cc7
+HeadMiner: 哦，小姑娘， #line:f3527a
+HeadMiner: 你根本就不知道这是什么地方，对吧？ #line:475c24
+<<playMusic boss_conversation 6>>
+Mae: 你说什么？ #line:2dc609
+//miner lights another lantern and we can see the hole now. Camera backs up a bit to show more blackness around.
+//Camera does some light blur/swimmy stuff for a second.//
+Mae: 哦，天啊。 #line:420f34
+<<cameraLookAt BossCamCenterLow 8>>
+<<close>>
+<<wait 1>>
+<<allSpeechBubblesToY 5>>
+<<extraZoom -5 8>>
+Mae: 我见到过这种场景， #line:e664cc
+Mae: 或者是，我……我有过这种感觉。 #line:2318c1
+HeadMiner: 20几年前， #line:5edb59
+HeadMiner: 是埃德·斯库德和吉姆·多尼发现了这个地方。 #line:4fa2d8
+HeadMiner: 在布里德尔附近的西部矿井封矿以后， #line:2ba925
+HeadMiner: 最后一任矿主维斯特·舒马赫 #line:4069f7
+HeadMiner: 在矿业公司关门的时候， #line:934427
+HeadMiner: 把自己名字的首字母和日期刻在了大门上。 #line:3afdc1
+HeadMiner: 后来，你们就有了这座名叫“古矿井"的矿井。 #line:799adc
+HeadMiner: 可这里并不适合开矿，这里只能算是一个有铜矿储备的大深坑罢了。 #line:1fe3b5
+HeadMiner: 在我们还没出生以前，这地方就已经荒废了。 #line:9acaca
+HeadMiner: 而且，这里离水源也太近了。 #line:cef1b3
+HeadMiner: 在第一批定居者来到这儿的时候， #line:4c5e7d
+HeadMiner: 这儿的水就已经被有毒物质污染了。 #line:68797c
+HeadMiner: 这口古泉以前就在我们头上的位置， #line:7459e3
+HeadMiner: 但后来，泉水干了。 #line:2249e6
+HeadMiner: 1992年前后，从西部矿井那儿来了几个人， #line:d8db32
+HeadMiner: 他们想到这里来挖私矿。 #line:5bc533
+HeadMiner: 所以就在这里修了一部新电梯，还把主坑道给清理干净了。 #line:6d7c49
+HeadMiner: 他们越挖越深，但一直都挖不到煤。 #line:72d500
+HeadMiner: 后来，埃德把这外面的岩壁给炸开了，这才发现了这个地方。 #line:a2e2b9
+HeadMiner: 然后，吉姆跳进了这个洞里， #line:b6c465
+HeadMiner: 可这个洞却是个无底洞。 #line:a825cc
+HeadMiner: 埃德在洞口向下喊吉姆， #line:54971f
+HeadMiner: 可他却没有回应。 #line:c7a65e
+HeadMiner: 但有人却听到了回应。 #line:3cf62f
+HeadMiner: 小姑娘，我知道， #line:7537b6
+HeadMiner: 你在梦里和在清醒的时候，都听到过那个声音。 #line:832e35
+HeadMiner: 就是那个声音带你来到这里的。 #line:2c55bd
+	->那……那个声音什么啊？ #line:72418c
+		HeadMiner: 那是黑羊发出的声音。 #line:b32c2b
+		HeadMiner: 不是普通的黑色， #line:38f3ac
+		HeadMiner: 是像宇宙一般虚无的黑。 #line:a804ee
+		HeadMiner: 现在，他就在这下面的洞里 #line:c11bb0
+		HeadMiner: 抬着头看着咱们呢。 #line:e2d277
+		HeadMiner: 他不会和你讲话， #line:50a38b
+		HeadMiner: 而是会对你……歌唱…… #line:acd5c5
+		Mae: 你们为什么要听一个地洞的指挥？ #line:c367a8
+	->那这个洞和你们、和我、和其他人到底有什么关系呢？ #line:d85a8c
+HeadMiner: 你要明白一件事： #line:bcd8f4
+HeadMiner: 当时，这里曾经历过世界末日一般的情况。 #line:abb786
+HeadMiner: 人们没了工作，我们的孩子也都离开了这里。 #line:a753b7
+HeadMiner: 政府只想要我们的选票，但对我们却毫不关心。 #line:8bb773
+HeadMiner: 他们只会颁布越来越多的规定，让我们去国外工作， #line:7e9f18
+HeadMiner: 把我们交的税都花在了那些懒人和移民身上， #line:577068
+HeadMiner: 可我们却要拼了命地工作。 #line:adb3fa
+Bea: 啊，又来了。 #line:3e9d63
+Bea: 见鬼，这些蠢话我都听得烦死了， #line:8163f4
+Bea: 你们这帮老傻缺。 #line:624bf1
+HeadMiner: 你发完牢骚了吗？ #line:f7fec1
+<<wait 2>>
+Bea: 嗯，发完了。 #line:d27195
+HeadMiner: 我们在教堂日夜祈祷。 #line:978d46
+HeadMiner: 但当埃德·斯库德再次回到这里，往洞里仔细聆听的时候， #line:d9dfdb
+HeadMiner: 他听到了回应。 #line:baf109
+	->哦，我的天……我觉得我知道…… #line:9f2c7b
+		HeadMiner: 是啊，他已经通过歌声告诉你了，对吧？ #line:7af2f5
+		Mae: 我……我…… #line:0a4439
+	->回应？ #line:2fa067
+HeadMiner: 埃德把这件事告诉给了一些居民，可他们都不相信。 #line:87fc7a
+HeadMiner: 但埃德的说服力很强， #line:eeb2f5
+HeadMiner: 而且，他身上还带着光晕。 #line:cb3240
+Mae: “光晕"？ #line:1015f1
+    Miner2: 就是指照在人身上的光， #line:0ea804
+    Miner2: 接触到它，就能对你产生影响。 #line:075950
+    Miner2: 有了它，你就能干很多事。 #line:478928
+    HeadMiner: 这我可从来都没见到过。 #line:e79e9f
+    HeadMiner: 但别人都说，埃德有穿墙的能力。 #line:95fe07
+    Mae: 好吧。 #line:a4598f
+HeadMiner: 埃德的能力是在他说服我们之后， #line:a75dcb
+HeadMiner: 在我们完成了那第一次和选中第一个人之后才出现的。 #line:91876b
+HeadMiner: 嗯…… #line:d1a65b
+HeadMiner: 这不光能让镇子屹立不倒， #line:2c056c
+HeadMiner: 而且还能让我们返老还童，有钱可赚。 #line:985d8b
+HeadMiner: 现在，我们的一些老成员也还都活着。 #line:b0a354
+    ->“选中"？ #line:c71d7a
+        HeadMiner: 我们选中的第一个人叫汤姆·特纳。但请你相信我，那个人就是个烂人， #line:2b0cf2
+        HeadMiner: 就是个人渣。 #line:2986b4
+        HeadMiner: 我们把他带到了这里， #line:fd26b7
+        HeadMiner: 丢下了洞。 #line:19f263
+        HeadMiner: 结果，到了第二个星期，山上就开遍了野花。 #line:fe58cc
+	->“第一次"？ #line:fb8f01
+		HeadMiner: 第一个被选中的人是由我们亲自送进洞里去的。 #line:f3d3c1
+		HeadMiner: 我们承认我们的所作所为。我当时也在场。 #line:20e244
+		Miner2: 我也在场。 #line:3456fb
+Bea: 你们把人扔进了洞里？ #line:9fcff6
+Mae: …… #line:40cd46
+Mae: 他们是在……喂那只黑羊…… #line:d94c50
+HeadMiner: 你们肯定不会相信，他有多么的饥饿。 #line:7e02a3
+HeadMiner: 差不多每隔几个月，他就会歌唱。 #line:08d873
+HeadMiner: 然后，我们就得派人去找新的人来喂他。 #line:917b48
+    ->那天晚上，你们就是在干这事吗？ #line:67df82
+        Miner1: 不是的。 #line:24d94b
+        HeadMiner: 那天晚上发生的事是我们的耻辱。 #line:d4b4b2
+        HeadMiner: 我们的一个成员坏了规矩， #line:f1a6b3
+        HeadMiner: 所以，他就得弥补自己的错误。 #line:9ba194
+        HeadMiner: 这种事很难办。 #line:98abb3
+    ->…… #line:465f51
+Mae: 我感觉不太舒服…… #line:845e22
+HeadMiner: 我们只会选败类丢下去。 #line:3715ef
+HeadMiner: 这是不变的规矩。 #line:6fd1c9
+HeadMiner: 只会选流浪汉、醉鬼和有前科的人。 #line:17b5f3
+Mae: 你们已经……哦，天哪……哦，不…… #line:9a43d3
+	->有多少人死在这里面了？？？ #line:da0628
+		HeadMiner: 哦，我觉得可能有…… #line:265865
+		Miner1: 大概死了30多，不到40个人。 #line:a66c29
+		Miner2: 死了39个人。 #line:ff2fbb
+		Miner2: 我是不是唯一一个还在记人数的人啊？ #line:293c86
+		HeadMiner: 现在我也记住了。我还以为，咱们都想忘了这事。 #line:f3d38f
+        Miner1: 我还没失去同情心，我的心还会觉得疼。 #line:a39d79
+        Miner2: 是啊，春天那会儿那个邋遢的小孩…… #line:049375
+        Gregg: 凯……凯……凯西？ #line:516c41
+	->凯西？ #line:d0c486
+HeadMiner: 他是哈特利家的孩子吗？ #line:0d1d82
+HeadMiner: 他能给社会带来的“贡献"， #line:6e0a16
+HeadMiner: 除了无数没见过亲生父亲的小孩子， #line:f05a29
+HeadMiner: 就是一串长长的犯罪记录。 #line:d75e7e
+HeadMiner: 所以，在这些悲剧发生之前， #line:ef33ad
+HeadMiner: 我们帮了他一个大忙。 #line:67895a
+Gregg: 是你们……杀……杀了……凯西吗？ :( #line:06bbe2
+Angus: 哦，我的老天啊。 #line:0e524e
+HeadMiner: 我们不会用“杀"这个字来形容这些事的。 #line:17fb63
+HeadMiner: 你们知道他和他兄弟一起工作的事吧？ #line:9b811c
+HeadMiner: 你们知道他兄弟出了什么事吗？ #line:15e282
+HeadMiner: 在他拖车里的“合法"实验室爆炸的时候，他兄弟被活活烧死了。 #line:29a7e8
+HeadMiner: 后来，人们只能穿着防护服来清理他的尸体。 #line:8b470a
+HeadMiner: 凯西未来也会走上他兄弟的道路。 #line:072c20
+Gregg: 是你们杀了凯西。 #line:c3a8d8
+HeadMiner: 难道你不觉得，我们是在帮他，同时也帮了整个镇一个大忙吗？ #line:befca1
+Mae: 哦，我的老天啊……原来凯西一直都在这里面。 #line:2b7be5
+Mae: 他的父母可都贴了寻人启事啊！ #line:62e34d
+HeadMiner: 他爸妈应该在他出事之前多关心关心他才对。 #line:a6aecf
+<<fadeOutMusic 1>>
+//play Gregg_bod_Crossbow_down2up and hold on Gregg_bod_crossbow_up//
+<<setAnimInt Gregg crossbow 2>>
+<<wait 1>>
+Gregg: :| #line:f270c4
+Gregg: 你 们 这 帮 人 里，到 底 是 谁 杀 的 他！！！ D: #line:8d54ee
+Bea: 格雷格…… #line:023c70
+Gregg: 他 是 我 朋 友！！！！ D: #line:6414f9
+<<setAnimInt Miner1 raiseRifle 1>>
+//miner1 raises rifle//
+Miner1: 好了，现在马上把弩扔到地上，不然我就开枪啦。 #line:19cd99
+Gregg: :) #line:501dbe
+Gregg: 呵呵…… #line:0dfe95
+Gregg: 要是我先射中你会怎么样呢？ #line:f963cd
+Gregg: 我一箭扎你眼睛里。 #line:419d8a
+Gregg: *砰* #line:b00fc9
+Gregg: *砰……* #line:8a2f14
+<<setAnimInt Miner2 raiseRifle 1>>
+//Miner2 raises rifle//
+Gregg: :| #line:653af9
+Angus: 你们还把枪带过来了？ #line:8ce7d3
+Miner2: 晚上在林子里是很危险的，这是为了自保。 #line:167341
+Gregg: 我……我…… #line:3941cf
+Miner1: 孩子，把弩扔到地上。 #line:b6cf35
+Miner1: 别浪费时间啦。 #line:e45a89
+Bea: 格雷格…… #line:1a4834
+<<wait 2>>
+Gregg: 去TMD。 #line:ac6de6
+//play Gregg_bod_Crossbow_drop//
+<<setAnimInt Gregg crossbow 1>>
+<<trigger Gregg DropCrossbow>>
+<<wait .5>>
+<<setAnimInt Gregg crossbow 0>>
+<<wait 2>>
+<<playMusic boss_conversation 6>>
+Mae: 你们就是群魔鬼。 #line:be5aab
+Mae: 这一切都…… #line:1cd4c8
+Mae: 这一切都是不应该发生的。 #line:305a0c
+//at this point we start mae’s cosmic tumble animation which is just some camera effects and some sprite overlays.
+//We prob wanna wait a few seconds for it to get going before we continue the convo//
+<<tell AmbientSFX:amb_cosmic_freakout Play3>>
+<<setAnimInt CosmicShit state 1>>
+<<extraZoom 0 20>>
+<<wait 3>>
+HeadMiner: 我们可不是什么魔鬼。 #line:617f7a
+HeadMiner: 我们这么做，是因为我们深爱着自己的家园。 #line:ffba8f
+HeadMiner: 只要我们继续做下去， #line:fec2b7
+HeadMiner: 负鼠泉就不会消失， #line:c423a5
+HeadMiner: 事情*就能*越变越好。 #line:a71c9d
+HeadMiner: 终有一天，这里的矿井会像以前一样繁忙。 #line:9b115b
+HeadMiner: 旧工厂的烟囱又冒出烟来。 #line:9f4008
+HeadMiner: 你们这些孩子是不会明白的…… #line:3b86e3
+HeadMiner: 我们失去了一切。 #line:6a3fe5
+HeadMiner: 过去，在这里工作你可以养家糊口，买房。 #line:c857a9
+HeadMiner: 现在，只能在杂货店里上货。 #line:40ba2b
+HeadMiner: 离开这儿的年轻人比留在这儿的人多很多……因为在这儿得不到一点机会。 #line:5de4a5
+HeadMiner: 老人们也都不在了，房子也都空了。 #line:5efb7c
+HeadMiner: 这些情况你们都见到过吗？ #line:7fc894
+HeadMiner: *家园*变成一片用木头和白灰堆起来的地方？ #line:6bcda5
+HeadMiner: *工作*变成破烂的纸盒或是地上的洞？ #line:8c452f
+HeadMiner: 可我们能改变这种情况。 #line:bd90e5
+HeadMiner: 我们能让镇子重新发展起来， #line:9f15ef
+HeadMiner: 让它不只是…… #line:cc5272
+//would be good to cut the track here to something clearer for the duration of mae’s speech here
+//and then go back to previous ambience//
+<<close>>
+<<wait 1>>
+<<allSpeechBubblesToX 0>>
+<<allSpeechBubblesToY 0>>
+<<fadeOutMusic 1>>
+Mae: 一具空壳。 #line:6e258c
+<<wait 6>>
+Mae: 我就要死在这儿了， #line:c51e57
+<<wait 2>>
+<<tell AmbientSFX:amb_cosmic_freakout FadeOut3>>
+<<setAnimInt CosmicShit state 0>>
+<<wait 3>>
+//cosmos stuff fades out, back to cave stuff//
+Mae: 为什么还要告诉我们这一切啊？ #line:5e4284
+HeadMiner: 因为我们已经老了， #line:8dcc4f
+HeadMiner: 身体也越来越差了。 #line:364622
+HeadMiner: 所以，我们需要新鲜血液， #line:88faaf
+HeadMiner: 这样，在我们死后，就有人来继承我们的事业了。 #line:1334a6
+Bea: 真的吗？你想说服我们来当继任者？ #line:52053b
+Bea: 你们这些人以前真的有当过矿工吗？ #line:505ceb
+Bea: 你们现在是有人破产了吗？ #line:df4e4e
+Bea: 还是说，这地方是个为那些怕死的狗屁大佬 #line:a4b46c
+Bea: 而建的化妆舞会形式的杀人俱乐部啊？ #line:7f0dfe
+<<wait 2>>
+HeadMiner: 这些都不重要。 #line:a488a2
+Bea: *哼* #line:89da07
+Bea: 这很重要。 #line:c216b7
+Angus: 这太糟了。 #line:2bd573
+Gregg: 太疯狂啦。 #line:0281e1
+	->我们为什么要帮你们？ #line:655242
+	->咱们为什么不报警呢？ #line:55a9f3
+		HeadMiner: 报警的话，你们能和警察……说什么呢？ #line:a90120
+		HeadMiner: 难道你们就说，在一座废弃的矿井里 #line:72ed3a
+        HeadMiner: 看见了几个认不出是谁的人， #line:5a23c4
+		HeadMiner: 还有一部用不了的电梯吗？ #line:0616a7
+		HeadMiner: 还是说，你们看见了一个……大洞呢？ #line:45cfe4
+		Mae: 那好吧，我们为什么要帮你们呢？ #line:c1d76a
+HeadMiner: 你还记得几年前的洪水吗？ #line:2480ce
+HeadMiner: 还记得2010年的暴风雪吗？ #line:2f032e
+HeadMiner: 如果没人来这儿干这些， #line:b777c5
+HeadMiner: 那这些事就会继续发生， #line:b9793a
+HeadMiner: 而且情况还会更糟： #line:4b018f
+HeadMiner: 工作会消失，年轻人也不会再回来了， #line:581559
+HeadMiner: 所有的一切都会荒废，负鼠泉也会慢慢不复存在。 #line:5cb74f
+HeadMiner: 不久之后，我们也都会故去。 #line:0d57f7
+HeadMiner: 这个镇也会荒废，最后变成荒地和树林。 #line:f20838
+Mae: 我……见到过这种情景。 #line:aeaf3b
+HeadMiner: 我知道你肯定见过。 #line:6b3bb5
+<<wait 3>>
+HeadMiner: 如果你想花点时间考虑一下的话，我是可以理解的。 #line:033cf5
+Bea: 那我们能走了吗？ #line:71ee3f
+HeadMiner: 你们想走就走吧，没人拦着你们。 #line:c87c94
+HeadMiner: 但记住一点，出了这里， #line:3b28f6
+HeadMiner: 虽然你们不知道我们是谁， #line:93e7f6
+HeadMiner: 可我们却知道你们都是谁。 #line:490c1f
+Eide: 我受了这么重的伤，结果就这么让他们走了，这也太不公平啦。 #line:4ee31d
+HeadMiner: 别说啦，艾德！ #line:5c3894
+Eide: 你根本就不知道他想要什么！你也不知道他到底是谁！ #line:c58b78
+HeadMiner: 艾德，我向上天发誓！ #line:4949ab
+Bea: 咱们走吧。 #line:9c3188
+Gregg: 是啊，咱们还是离开这儿吧。 #line:d40a9e
+HeadMiner: 孩子，把你的弩留下。 #line:9ce4c4
+Gregg: 你说什么玩意儿？为什么啊？ #line:53f320
+HeadMiner: 哼，虽然我可以编个瞎话骗骗你， #line:694bc4
+HeadMiner: 但说真的，我压根就信不过你。 #line:26f2ed
+Gregg: 好吧，随你怎么说吧。反正这弩也不怎么样。 #line:67e6f2
+HeadMiner: 呵呵呵。 #line:f614ce
+Mae: 伙计们，我……我走不动了。 #line:596538
+Angus: 我来背你。 #line:1401c8
+//<<close>>
+//angus walks up and throws mae on his back, piggy-back style//
+//<<walk Angus AngusPickUpMae wait>>
+//Angus: you good?
+//Mae: yeah.
+//<<walk Angus WalkOutRight>>
+//<<walk Gregg WalkOutRight>>
+//<<walk Bea WalkOutRight>>
+//<<wait 1>>
+<<fadeOut 1 wait>>
+<<wait 1>>
+<<scene MineBottom1>>
+===
+title: InitLevel
+tags: 
+colorID: 5
+position: 174,166
+---
+<<setCanInteract Bea 0>>
+<<setCanInteract Angus 0>>
+<<setCanInteract Gregg 0>>
+
+<<playerCanRun 0>>
+
+<<setAnimInt Gregg crossbow 1>>
+
+<<flip Mae -1>>
+<<groupFollow>>
+
+<<set $death_walk to 1>>
+<<playIdleAnimationPlayer>>
+===
+title: Intro
+tags: 
+colorID: 5
+position: 512,226
+---
+//in church room//
+Gregg: 噢噢噢噢噢，天哪！ #line:bf07af
+Bea: 这是什么地方啊？ #line:18729f
+Angus: 看起来好像是教堂之类的地方吧？ #line:cbf4e5
+Bea: 还像个……垃圾…… #line:11c554
+Mae: 哦，我的天…… #line:59f780
+Mae: 哦，我的天…… #line:5bbce1
+Bea: 怎么了？ #line:988c00
+Mae: 它就在这儿…… #line:055b5b
+Mae: 它就在这儿。 #line:8738f4
+Mae: 哦，天啊。 #line:47fd1d
+Gregg: 那是个什么东西啊？ #line:71b606
+Mae: 我也不知道，但它就在这儿， #line:b2806a
+Mae: 它……就在那边…… #line:db2acb
+===

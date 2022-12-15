@@ -1,0 +1,85 @@
+title: EnterLevel
+tags: 
+colorID: 4
+position: 514,315
+---
+
+===
+title: LeaveRoom
+tags: 
+colorID: 4
+position: 785,321
+---
+Mae: 好了，这儿没什么异样。 #line:65d03c
+Gregg: 甚至可以说是具有教育意义的东西。 #line:270701
+Mae: 我感觉咱俩好像变聪明啦。 #line:058399
+Gregg: 噢～姐们，我的脑袋已经够大了…… #line:fced9b
+Gregg: 都快要爆啦。 #line:c4a16e
+Mae: 你的脑袋如果真爆啦，我就把你的无头尸体留在这儿。 #line:912177
+Gregg: 哈哈哈，早上这儿的工作人员肯定会被吓懵的。 #line:8e5657
+Mae: 那 真 是 好 极 啦。 #line:051908
+Gregg: “哦，罗纳德，我要把这个房间打开了。" #line:94cc9e
+Mae:{width=8}“啊啊啊啊啊啊啊啊！" #line:416115
+Gregg: “嘿！这家伙的脑袋好像爆炸啦！" #line:8a32fb
+Mae: “罗纳德，把拖把拿过来，好吗？" #line:1ad139
+<<set $mansion_history_room_done to 1>>
+===
+title: LookAtThing
+tags: 
+colorID: 4
+position: 1083,322
+---
+Mae: 哦，嘿， #line:115863
+Mae: 负鼠泉大屠杀。 #line:08854f
+Gregg: 太棒了～ #line:54dca2
+Gregg: 你还记得这事吗？ #line:e11c0b
+    ->大概吧？ #line:ab592d
+        Mae: 那事挺酷的。 #line:2ded6c
+        Mae:好像关于工人大罢工， #line:f37d29
+        Mae: 当时群众全都加入进来。 #line:206908
+        Mae: 后来，即便那些当头儿的人派来了军队， #line:1dc68b
+        Mae: 矿工们还是团结一致、 #line:d0fec4
+        Mae: 绝不屈服。 #line:825295
+        Gregg: 是啊姐们，这是最棒的一段历史啦。 #line:0b14c2
+        Mae: 这件事还是会让我 #line:500655
+        Mae: 又自豪又气愤。 #line:ede885
+        Gregg: 姐们，那些权贵都不怎么样。 #line:beeea9
+        Mae: 他们都坏极啦。 #line:85cb77
+    ->不太记得了。 #line:1e6cd0
+        Gregg: 这里的一座旧矿井里曾经发生过一次大爆炸。 #line:63165d
+        Gregg: 但是这次事故本来是可以避免的。 #line:e9bcc2
+        Gregg: 这使得矿工们不仅仅感受到欺骗，他们的生命更是受到了威胁。 #line:70f298
+        Gregg: 于是他们开始了大罢工。 #line:c246d6
+        Gregg: 罢工持续了一段时间后， #line:25528a
+        Gregg: 其他矿井的工人乃至当地人都加入了罢工的队伍。 #line:d4d297
+        Gregg: 就像是在表达“你把我们所有人都惹毛了"一样。 #line:81ff6d
+        Mae: 太精彩啦。 #line:118450
+        Gregg: 是啊。后来，那些当头儿的人和镇长 #line:394297
+        Gregg: 派出了军队士兵之类的人？ #line:6628fa
+        Gregg: 也许因为他们都是一群混账东西吧？ #line:1ef52c
+        Gregg: 导火索发生在有个孩子朝其中一个士兵扔了块石头， #line:d2cb8f
+        Gregg: 结果士兵们就开枪了！ #line:58f3b9
+        Mae: 真TM该死！ #line:c496ae
+        Mae: 这件事是在哪儿发生的？ #line:74be83
+        Gregg: 镇子西北角。 #line:1074f7
+        Gregg: 那儿好像还有个地标吧。 #line:f1e3f1
+        Mae: 呃，真是太糟糕了啊。 #line:689241
+        Gregg: 权贵都不怎么样。 #line:55df18
+        Mae: 他们都坏透啦。 #line:16a8c2
+Mae: 真是怪了，咱们凭什么要尊敬 #line:a93564
+Mae: 那些当头儿的人。 #line:ba6f3f
+Mae: 就是所有的头儿。 #line:c8772f
+Mae: 甚至是那些坏头儿 #line:4925cd
+Gregg: 是啊，我可不想尊敬那种人。 #line:feeedb
+Mae: 不能更同意了 #line:0c9766
+<<set $mansion_history_room_will_leave to 1>>
+===
+title: InitLevel
+tags: 
+colorID: 4
+position: 261,310
+---
+<<playerFace 1>>
+<<follow Gregg Mae>>
+<<setCanInteract Gregg 0>>
+===

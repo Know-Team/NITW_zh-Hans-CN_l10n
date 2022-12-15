@@ -1,0 +1,932 @@
+title: Pole1_A0D0
+tags: demo
+colorID: 0
+position: -8847,-1879
+---
+Mae: {width=2,size=.8,align=middle,locator=Pole1}我还记得上初三那会儿， #line:57d47b
+Mae: {width=2,size=.8,align=middle,locator=Pole1}在我偷偷溜出家的时候，我可以从这儿看到汤姆·布拉姆维尔的卧室。 #line:00d99b
+<<wait .25>>
+Mae: {width=2,size=.8,align=middle,locator=Pole1,emote=butt,emoteAlign=middle}:\ #line:c0ed6e
+<<wait .25>>
+Mae: {width=2,size=.8,align=middle,locator=Pole1}是啊，这可是我亲眼所见。 :| #line:260c0f
+<<set $pole1_done to 1>>
+===
+title: Pole2_A0D0
+tags: demo
+colorID: 0
+position: -8185,-1888
+---
+Mae: {align=middle,nearestLocator}我可以从这儿跳到特维梅尔先生身上。 #line:8bd60a
+Mae: {align=middle,nearestLocator}这么做就能毫不费力地干掉他了。 #line:fe4205
+<<wait .25>>
+Mae: {align=middle,nearestLocator}特维梅尔，你的命可在我手里呢。 #line:2adb88
+<<end>>
+===
+title: OnTree_A0D0
+tags: demo
+colorID: 0
+position: -7090,-631
+---
+Penderson: {locator=Penderson2,align=middle}[size=.8]等一下，你干什么呢…… [/size] #line:f98601
+
+===
+title: OnYell_A0D0
+tags: demo
+colorID: 0
+position: -4558,-507
+---
+<<if $penderson is 0>>
+    <<set $penderson to 1>>
+    <<camera lookOffset .8 .25>>
+    Penderson: {size=1.4,locator=Penderson} [shake=.04]嘿！[color=aaaaaa]小孩儿！[/color][/shake] #line:08e192
+    Mae: 怎么了，潘德森先生？ #line:aea6b9
+    Penderson: {size=1.2,locator=Penderson}[shake=.04]你离我家房顶远一点！[/shake] #line:4ced07
+    Mae: 我不明白你在说什么。 #line:bb2d9a
+    Penderson: {locator=Penderson}我都看见啦。[stomp]你又踩[/stomp]我家的房顶[hop]又跳到[/hop]我家烟囱上。 #line:d3985f
+    [[好吧，好吧，我现在得走了…… |OnYellEnd]] #line:0dc153
+    [[你怎么回事儿啊，潘德森？|OnYellClimbers]] #line:1f8959
+<<endif>>
+
+
+===
+title: Penderson_A0D0
+tags: demo
+colorID: 0
+position: -7082,-926
+---
+Penderson: [size=.6]……你们就是些吃白食的垃圾哺乳动物……[/size] #line:9bd087
+
+===
+title: OnYellClimbers
+tags: demo
+colorID: 0
+position: -4330,-145
+---
+Penderson: 就应该让你们这些[speed=.5][color=aaaaaa]猫啊、松鼠啊、老鼠啊[/all]多交一笔税…… #line:41b9b4
+Penderson: {locator=Penderson,animation=Talk2}让你们这些爬上爬下的动物[speed=.4][color=aaaaaa]都来尝尝这滋味。[/all] #line:061a7b
+Mae: =_= o> #line:95cd30
+Mae: [speed=.4][size=.65]说得可真不错啊。[/all] #line:47cfc8
+Penderson: {width=3.5,locator=Penderson}你在电线上[speed=.75][color=aaaaaa]跑来跑去，[/all]破坏[speed=.75][color=aaaaaa]公共设施，[/all]可你却和别人一样，[speed=.75][color=aaaaaa]交同样多的[/all]税。[speed=.4][wave]这一点都不对！[/wave]  #line:1a77bc
+Mae: o_o _o_ #line:bab193
+Mae: 好吧，你听好了，我还年轻，路还长着呢。 #line:bd13aa
+<<addToJournal PendersonIsAWalkingReminder>>
+<<addToJournal TodoAvoidTorturePit>>
+[[OnYellEnd]]
+
+
+
+===
+title: OnWire_A0D0
+tags: demo
+colorID: 0
+position: -7076,-370
+---
+Penderson: {width=1,size=1,locator=PendersonWire} [shake=.04]嘿！[/shake]我刚说什么[color=aaaaaa]来着！！[/all]  #line:30f994
+
+===
+title: OnYellEnd
+tags: demo
+colorID: 0
+position: -4726,-149
+---
+Penderson: {locator=Penderson}还有，你回去告诉你那个狐狸朋友，我知道他都干过些什么事。 #line:15c8e0
+Mae: 你是说格雷格吗？ #line:b395eb
+Mae: 格雷格又怎么惹着你啦？ #line:1fbaf8
+Penderson: {locator=Penderson}[shake=.04]那只臭狐狸把我花园里的侏儒小人给偷走啦！！！[/shake] #line:31cac9
+Penderson: {locator=Penderson}我当时看见他就穿着那件翻毛小夹克和那双花哨的靴子翻过我家篱笆的。 #line:4a15f4
+Penderson: {locator=Penderson}这儿的人都认识他。 #line:f00545
+Mae: [speed=.5]大家都很喜欢格雷格，他就是个开心果。[/speed]=_= o> #line:27517f
+Penderson: {locator=Penderson}你告诉他，我可要报警了。 #line:adfc0e
+Penderson: {locator=Penderson}还有，要是我再看见你跑到电线上，我也会报警的！ #line:7e4b98
+Penderson: {locator=Penderson}你们这帮孩子…… #line:850565
+Mae: 是大人，我们已经是大人啦。现在我们可是世界的主人啦。 o_o _o_ #line:3f182e
+Penderson: {locator=Penderson,size=1.2,animation=Pah}[color=aaaaaa][shake=.04]我呸！[/all] #line:a2d8ef
+Mae: {size=1.2}[color=aaaaaa][shake=.04]我还呸你呢！[/all]:( \o/ #line:01d52e
+Mae: :| _o_ #line:25718b
+<<addToJournal TodoFindGregg>>
+<<addToJournal PendersonCops>>
+<<unlockDoodle FindGregg>>
+<<unlockDoodle Gnome>>
+<<unlockDoodle Penderson>>
+<<camera lookOffset 0 0>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -6865,-1486
+---
+<<set $taxi_stop to 0>>
+===
+title: Twigmeyer_A1D1
+tags: 
+colorID: 2
+position: -3275,-386
+---
+Mae: 你好啊，特维梅尔先生！ #line:058a33
+Twigmeyer: 是你吗，梅？ #line:9f0714
+[[当然是我了！|Twigmeyer_00_SureIs]] #line:7caad2
+[[当然不是了！|Twigmeyer_00_Nope]] #line:56ad2f
+===
+title: Twigmeyer_00_SureIs
+tags: 
+colorID: 2
+position: -3604,-101
+---
+Twigmeyer: 你这次就是来回家看看吗？ #line:05c41f
+Mae: 不，我回来常住了！ #line:6bc079
+Twigmeyer: 等下，你不用上学了吗？ #line:d77f6a
+[[不，学校已经被烧了。|Twigmeyer_00_ItBurnedDown]] #line:0bd0bf
+[[至少我不需要再上学了。|Twigmeyer_00_NotForMe]] #line:69bdb8
+===
+title: Twigmeyer_00_NotForMe
+tags: 
+colorID: 2
+position: -3389,210
+---
+Twigmeyer: 我总觉得你要么是个干大事的人， #line:24f824
+Twigmeyer: 要么就是个浑浑噩噩，能闲出毛的人。 #line:7f6cd8
+Mae: 闲出毛？ #line:4ed399
+Twigmeyer: 我就是这么想的。 #line:eab0e9
+Mae: [speed=.25]……[/all] #line:6788e6
+Mae: [speed=.25]……再见吧……[/all] #line:a309a1
+<<set $twigmeyer_done to 1>>
+===
+title: Twigmeyer_00_ItBurnedDown
+tags: 
+colorID: 2
+position: -3781,220
+---
+Twigmeyer: 我想就是你放火烧的学校。 #line:77dc63
+Mae: 特维梅尔先生，你这可属于无端指控。 #line:811137
+Twigmeyer: 我可没指控你。 #line:9d22e8
+Twigmeyer: 我只是想提醒一下你这个纵火犯，别把我家的草地给烧啦。 #line:43c5f0
+Mae: 这我可不敢保证哦～ #line:8ff3da
+<<set $twigmeyer_done to 1>>
+===
+title: Twigmeyer_00_Nope
+tags: 
+colorID: 2
+position: -2936,-82
+---
+Twigmeyer: 你个小东西看起来很像梅， #line:10432f
+Twigmeyer: 我猜，闻起来应该也很像梅。 #line:d8401e
+Mae: 我身上有味道？ #line:de870d
+Twigmeyer: 当你还是个小不点的时候， #line:f910be
+Twigmeyer: 苏珊就经常叫你小混球。 #line:af700d
+[[好吧，我就是那个小混球。|Twigmeyer_00_IWasADirtball]] #line:18dc4d
+[[我从来都不是什么小混球。|Twigmeyer_00_IWasNever]] #line:875539
+===
+title: Twigmeyer_00_IWasADirtball
+tags: 
+colorID: 2
+position: -3071,194
+---
+Twigmeyer: 我敢说，你还是那个小混球。 #line:9ef0f8
+Mae: 没错，我从生到死，这辈子都是100%纯钛合金小混球。 #line:3ce201
+Twigmeyer: 这就对了！ #line:4e92f9
+Mae: 再见啦，特维梅尔先生！ #line:cea924
+<<set $twigmeyer_done to 1>>
+===
+title: Twigmeyer_00_IWasNever
+tags: 
+colorID: 2
+position: -2691,181
+---
+Twigmeyer: 啊，梅，你真是我们的小混球啊。 #line:7cb069
+Mae: 成为小混球可是每个孩子的梦想哦！ #line:99fb58
+Twigmeyer: 哦？倒要看看你有没有这个福气。 #line:1c4828
+Mae: 好吧，你可以*期盼*明天还能见到我。 #line:009047
+Twigmeyer: 要是你想过来帮我整理草坪，那就请便。 #line:f6c61b
+Mae: 你会给报酬吗？ #line:cb24f5
+Twigmeyer: 快给我离开这儿，你个小混球。 #line:c3ca8d
+<<set $twigmeyer_done to 1>>
+===
+title: InitLevel_A1D1
+tags: 
+colorID: 2
+position: -6571,-1559
+---
+<<show Twigmeyer>>
+<<setAnimInt Twigmeyer raking 1>>
+===
+title: Construction
+tags: demo2
+colorID: 0
+position: -6598,-1226
+---
+Mae: 秋天真的来了。 #line:9dd5f6
+Mae: 所有道路施工都挤到了冬天前。 #line:ae1c9f
+Mae: 这搞得半个镇子都不通路。 #line:5ad7a0
+Mae: 除非你想多花20分钟时间 #line:29a6a9
+Mae: 绕远路。 #line:05ca88
+Mae: 我当然是不想绕远了。 #line:1b963f
+<<end>>
+===
+title: TwigmeyerDemo
+tags: demo
+colorID: 0
+position: -5782,-631
+---
+<<if $twigmeyer is 0>>
+    Mae: 嘿，特维梅尔先生！ #line:b4ed74
+    Twigmeyer: {align=middle,emote=rake,emoteAlign=middle} #line:515331
+    Mae: 那好吧！ #line:597a29
+    <<set $twigmeyer to 1>>
+<<else>>
+    Mae: 你就好好耙你的地吧，特维梅尔先生！ #line:09f820
+<<endif>>
+
+===
+title: InitLevel_A0D0
+tags: 
+colorID: 0
+position: -7074,-1569
+---
+<<show Penderson>>
+<<show Twigmeyer>>
+<<setAnimInt Twigmeyer raking 1>>
+===
+title: Penderson
+tags: 
+colorID: 0
+position: -6738,-501
+---
+<<if $act is 1 and $day is 0>>
+    [[PendersonDemo]]
+<<endif>>
+===
+title: Penderson_00_00
+tags: 
+colorID: 2
+position: -5007,879
+---
+Penderson: 嘿！小孩儿！ #line:49d832
+Mae: 我成年了。 #line:fac2d3
+Penderson: 你回来了，嗯？ #line:b25df0
+Mae: 是啊，潘德森先生。 #line:fb425a
+Penderson: 上学没坚持多久吧，嗯？ #line:05545b
+Mae: 是啊，潘德森先生。 #line:bfc899
+Penderson: 你找到工作了没？ #line:0af26d
+[[我回来才差不多24个小时。|BackFor24Hours]] #line:066f34
+[[找到了。我已经当选市长了。|ElectedMayor]] #line:03f42d
+===
+title: BackFor24Hours
+tags: 
+colorID: 2
+position: -5263,1169
+---
+Penderson: 很快就会是“才一个星期"， #line:a1f546
+Penderson: 然后是一个月， #line:5f12fe
+Penderson: 然后是你这一辈子。 #line:71e153
+Mae: 说得对，我剩下的时间还有很多很多呢。 =_= :) #line:152e5c
+<<wait 1>>
+Mae: o_o :| #line:2d4a14
+[[Penderson_00_00_End]]
+===
+title: ElectedMayor
+tags: 
+colorID: 2
+position: -4754,1164
+---
+Penderson: 哼，反正不可能比现任的更糟了。 #line:c08007
+Mae: 然后我已经下令，要把你的房子夷为平地了。 #line:839a13
+Penderson: 怎么，要把你以前没完成的工作做完？ #line:a73d21
+Mae: 希望你能喜欢树林里的生活！ #line:ece7d1
+Penderson: 那些鸡蛋把外墙塑料板的颜色都弄掉了。 #line:e46b3f
+Mae: 潘德森先生，你就去捡吃的，和动物交流吧！ #line:388e72
+Penderson: 小姑娘，说话注点意啊。 #line:ceeebd
+Mae: "小……呃……姑娘？" #line:1b2abf
+[[Penderson_00_00_End]]
+===
+title: Penderson_00_00_End
+tags: 
+colorID: 2
+position: -5020,1455
+---
+Penderson: 知道吗，人们都记得你是谁，大家都不会忘记你做过的那些事。 #line:564eff
+Penderson: 他们可能假装忘了。 #line:02bc6e
+Penderson: 但那也只是小镇礼节。 #line:b4d840
+Mae: 所以咱俩的对话也算是小镇礼仪吗？ #line:ce68c0
+Penderson: 孩子，你也就剩下这点儿小镇礼节的照顾了。 #line:66f89e
+Penderson: 你就等着瞧吧。 #line:ac4385
+Mae: 嗯，跟你聊天儿很有意思 #line:acb76d
+Mae: 不过我还得抓紧去浪费我的人生呢。 #line:bd46aa
+Penderson: 哼！ #line:e83574
+Mae: 哼！ #line:f272bf
+===
+title: PendersonDemo
+tags: demo
+colorID: 0
+position: -6748,-232
+---
+Penderson: [size=.6]……你们就是些吃白食的垃圾哺乳动物……[/size] #line:3679b1
+===
+title: TriggerMolly_A1D3
+tags: 
+colorID: 2
+position: -6038,-1267
+---
+<<set $trigger_molly to 0>>
+Molly: 嘿，梅。 #line:064b0e
+Mae: 什么事啊？ #line:8e67ec
+Molly: 我只是过来看看你在干什么而已。 #line:e3c439
+Mae: 为什么要这么做？ #line:46b2ce
+Molly: 我想说，那天晚上之后…… #line:b42db3
+Mae: 你为什么不能盼我点好呢？ #line:1387f1
+Molly: 梅，最近，这周围发生了很多事： #line:c78ca0
+Molly: 有时候镇里会出事，有时候铁轨附近会出事， #line:93fe8b
+Molly: 有时候山上也会出事…… #line:3672cd
+Molly: …… #line:4a9ecc
+Mae: 怎么了？ #line:2cb3de
+Molly: 我的工作是，确保像你一样的居民 #line:1d9d6b
+Molly: 永远不会遭遇像你那晚经历过的事。 #line:281a04
+[[可你根本就没做好你的本职工作。|NotDoingAVeryGoodJobOfIt]] #line:0719cc
+[["像你一样的居民"？|MollyA1D3_01]] #line:d34632
+===
+title: NotDoingAVeryGoodJobOfIt
+tags: 
+colorID: 2
+position: -6198,-967
+---
+Molly: 我工作做得可比你想象的要好很多。 #line:364614
+Mae: 我回来才不过三天，结果就亲眼见到了尸体残肢。 #line:478ae2
+Mae: 这事虽然没什么，可…… #line:1c8d6c
+Molly: 那是因为有很多事你都还没见过。昨晚，在阿纳附近的多蒂路， #line:c805a2
+Molly: 汤姆·詹宁斯昨晚开枪打中了他兄弟的肚子。 #line:6ce7f1
+Molly: 像你一样的居民没必要知道那片玉米地里到底发生了什么。 #line:20ebb7
+Mae: 我的天。 #line:3b0963
+[[MollyA1D3_01]]
+===
+title: MollyA1D3_01
+tags: 
+colorID: 2
+position: -5954,-945
+---
+Molly: 梅，你还是个孩子， #line:2ead73
+Molly: 还很天真， #line:a473d3
+Molly: 行为处事还很单纯。这样虽然很美好， #line:afa181
+Molly: 可世界却不是这样的。 #line:466a19
+Molly: 它并不是虚无飘渺的， #line:36eb9a
+Molly: 而是真实存在在你眼前的。 #line:58cffa
+Mae: 好吧，就因为我要参加一个聚会， #line:5eaee7
+Mae: 你就想把我抓起来是吗？ #line:59b7c7
+Molly: 梅，一定要注意安全。 #line:46ad83
+Molly: 我真心得不想看到你出任何事， #line:b9bfd2
+Molly: 也不想看到你出现在错误的时间和地点里。 #line:6ca03e
+Mae: …… #line:3b67a2
+Molly: 我想说的就这么多。 #line:0ee34d
+Mae: 可真晦气。 #line:9ee228
+Molly: 晚安，梅。 #line:dcbbcd
+<<close>>
+<<walk Molly MollyOffscreenLeft>>
+<<wait 4>>
+<<hide Molly>>
+<<unlockDoodle MollyA1D3>>
+===
+title: InitLevel_A1D2
+tags: 
+colorID: 2
+position: -6308,-1566
+---
+<<show Penderson>>
+===
+title: InitLevel_A1D3
+tags: 
+colorID: 2
+position: -6009,-1575
+---
+<<if $trigger_molly is 1>>
+    <<show Molly>>
+    <<setCanInteract Molly 0>>
+<<endif>>
+===
+title: InitLevel_A2D1
+tags: 
+colorID: 3
+position: -5699,-1585
+---
+<<if $demo2>>
+    <<show Twigmeyer>>
+    <<setAnimInt Twigmeyer raking 1>>
+    <<hide Penderson>>
+<<endif>>
+===
+title: InitLevel_A2D2
+tags: 
+colorID: 3
+position: -5417,-1589
+---
+
+===
+title: InitLevel_A2D3
+tags: 
+colorID: 3
+position: -5172,-1594
+---
+
+===
+title: InitLevel_A2D4
+tags: 
+colorID: 3
+position: -4905,-1599
+---
+
+===
+title: OnMoveForHarleys
+tags: 
+colorID: 0
+position: -6486,-966
+---
+<<if $harleys_ran_by is 0>>
+    <<set $harleys_ran_by to 1>>
+    <<show Harley1>>
+    <<show Harley2>>
+    <<show Harley3>>
+    <<warp Harley1 Harley1Start>>
+    <<warp Harley2 Harley2Start>>
+    <<warp Harley3 Harley3Start>>
+    <<flip Harley1 -1>>
+    <<flip Harley2 -1>>
+    <<flip Harley3 -1>>
+    <<setInteract Harley1 0>>
+    <<setInteract Harley2 0>>
+    <<setInteract Harley3 0>>
+    <<run Harley1 Harley1End>>
+    <<run Harley2 Harley2End>>
+    <<run Harley3 Harley3End>>
+    <<trackAllSpeechBubblesToCharacters 1>>
+    <<setSpriteLayer Harley1 CharacterFG>>
+    <<setSpriteLayer Harley2 CharacterFG>>
+    <<setSpriteLayer Harley3 CharacterFG>>
+    Harley1: 杀啊，杀啊，杀啊！ #line:3ce745
+    Harley3: FBI，不许动！ #line:f30f6d
+    <<trackAllSpeechBubblesToCharacters 0>>
+<<endif>>
+===
+title: OnMoveForPenderson
+tags: 
+colorID: 0
+position: -5004,589
+---
+<<set $penderson += 1>>
+<<set $penderson_done to 1>>
+[[Penderson_00_00]]
+===
+title: RightSide
+tags: demo
+colorID: 0
+position: -7106,-90
+---
+Mae: 我已经把昨晚去墓地的事忘得差不多了。 #line:d95fe0
+Mae: 我觉得，如果你想知道我们昨晚去墓地的全过程，就去问碧娅好了。 #line:1cde9f
+Mae: 但这话可没有一点拿碧娅老妈开玩笑的意思。 #line:a48fe6
+===
+title: ExitLevel
+tags: 
+colorID: 0
+position: -5906,-1927
+---
+<<if $scene_link_id != 99>>
+    <<set $mom_home to 0>>
+<<endif>>
+===
+title: PreInitLevel
+tags: 
+colorID: 0
+position: -6200,-2161
+---
+<<hide Molly>>
+<<hide Penderson>>
+<<hide Twigmeyer>>
+<<hide CopCar>>
+<<hide Dad>>
+
+
+===
+title: InitLevel_A3D4
+tags: 
+colorID: 4
+position: -4116,-1593
+---
+<<if $molly_done is 0>>
+    <<show CopCar>>
+    <<show Molly>>
+    <<setCanInteract Molly 0>>
+    <<warp Molly MollyLeft>>
+    <<flip Molly 1>>
+<<endif>>
+===
+title: TriggerMolly_A3D4
+tags: 
+colorID: 4
+position: -4116,-1302
+---
+<<playerFace -1>>
+Mae: =_= #line:987bf0
+Mae: 哦，我的天。 #line:d08bf3
+Mae: *你*到底想干嘛？ #line:299b20
+<<wait 3>>
+Molly: 梅，你也好啊。 #line:e51f03
+Mae: 嗯？ #line:8cbe3b
+Molly: 我想告诉你件事， #line:c74ef4
+Molly: 我们已经对你们几天前找到的那条胳膊做了检测。 #line:93b26b
+Mae: o_o #line:75fd71
+Mae: 哦，是吗？？？ #line:652c8b
+Molly: 是的。我想你会对这事比较感兴趣的。 #line:a0b93e
+Mae: 当然感兴趣啦！ #line:202fd1
+Molly: 胳膊的主人 #line:858ace
+Molly: 是一名中等身材的中年男人。 #line:158df9
+Molly: 胳膊是在他死后被人取下来的。 #line:cb41ab
+Mae: 哇哦。 #line:5fba78
+Mae: 那这就证明…… #line:3f5065
+Molly: 到目前为止，这只胳膊还证明不了什么。 #line:97114c
+Molly: 我只是觉得你很想知道这件事的发展罢了， #line:6dc399
+Molly: 因为你小时候一直都很喜欢侦探破案的故事。 #line:dc9c56
+Mae: 嗯，是啊，谢了。 #line:6ebca5
+Mae: 这个幽灵可真是麻烦啊。 #line:354fa4
+Molly: 你是在说幽灵吗？ #line:dcbb05
+Molly: 不管嫌疑人是谁，这件事都和幽灵一点关系也没有。 #line:03f148
+Mae: 是啊，是啊，没人相信我的话，这我知道。 #line:72f40c
+Molly: 梅，千万要小心。 #line:b0fd2c
+Molly: 最近出了不少怪事。 #line:ecb262
+Mae: 是啊，你不是已经告诉我了吗。 #line:f8367e
+Molly: 祝你今晚玩得开心，梅。 #line:34640a
+<<set $molly_done to 1>>
+===
+title: Pole1Act1.1
+tags: 
+colorID: 2
+position: -8994,-1077
+---
+Mae: 我还记得上初三那会儿， #line:598a46
+Mae: 在我偷偷溜出家的时候，我可以从这儿看到汤姆·布拉姆维尔的卧室。 #line:0aa39c
+<<wait .25>>
+Mae:{emote=butt} :\ #line:297dfe
+<<wait .25>>
+Mae: 是啊，这可是我亲眼所见。 :| #line:eea5c1
+<<end>>
+===
+title: Pole1Act2.1
+tags: demo2
+colorID: 3
+position: -8999,-834
+---
+Mae: 那一年发大水的时候，这根电线杆就让水给冲倒了。 #line:ed72bd
+Mae: 当时，我很害怕，害怕掉到水里的电线会把我们这一片的水都通了电。 #line:388fe4
+Mae: 后来，为了安全起见， #line:c64377
+Mae: 我一连几个星期都没敢洗澡， #line:1aa17c
+Mae: 也不敢开水龙头。 #line:4d1b8d
+===
+title: InitLevel_A4D3
+tags: 
+colorID: 6
+position: -3401,-1574
+---
+<<show Dad>>
+<<if $molly_done is 0>>
+    <<show Molly>>
+    <<warp Molly MollyLeft>>
+    <<flip Molly 1>>
+<<endif>>
+===
+title: Dad_A4D3_00
+tags: 
+colorID: 6
+position: -3574,-957
+---
+Mae: 嘿，老爸。 #line:500951
+Mae: 今天不用上班吗？ #line:7c5bd0
+Dad: 我和鲍勃说我今天不去了。 #line:a28d72
+Mae: :) #line:5e217f
+Mae: 真的？ #line:7ad8b2
+Dad: 假的。 #line:ca827e
+Mae: :| #line:b9abdd
+Dad: …… #line:6f9ca6
+Mae: 你还好吗？ #line:c51d8e
+Dad: 还好，一会儿就没事了。 #line:e8b175
+Dad: 我也没打算瞒这件事，其实我很讨厌这份工作。 #line:f48b3b
+Mae: 啊，为什么呀，老爸？ #line:a5f444
+Dad: 我挖过矿，做过玻璃工，还做过其他很多工作， #line:999000
+Dad: 但在现在这个地方……那些人根本就不会因为你的工作而尊敬你。 #line:e7156f
+Mae: 他们不尊敬您吗？ #line:25d9a8
+Dad: 工作应该是为了可以糊口， #line:43a1a2
+Dad: 工作应该是为了贴补家用， #line:3f27af
+Dad: 工作应该有正常的作息时间， #line:9d6b68
+Dad: 老板应该尊重员工， #line:a5d5f9
+Dad: 员工应该能够互相聊天， #line:854bd4
+Dad: 员工应该有属于自己的生活， #line:fcc38a
+Dad: 员工应该能过上吃饱穿暖的生活。 #line:ae21fa
+Dad: 你妈妈必须要去工作， #line:6f4041
+Dad: 可我想的是，能给你们娘儿俩留出属于自己的空闲时间， #line:bbc0ea
+Dad: 想让你妈妈她找到自己喜欢的事情， #line:cc9aaa
+Dad: 想让她有足够的时间和财力去做这些事。 #line:b6a714
+Dad: 这才是能让我感觉到快乐和欣慰的事。 #line:3421d6
+Dad: 现在，我只有继续工作，至少这样，才能让咱们一家继续交得起健康险， #line:a00bd9
+Dad: 才能留住咱们这座房子。 #line:cf1875
+<<if $did_germ_friendship_quest_3>>
+	Mae: 我有个朋友叫杰姆， #line:5f4e61
+	Mae: 他老爸在交通运输部工作。 #line:1c732b
+	Mae: 他老爸说，你想在猎豹鲜生建立一个工会。 #line:5a88ee
+	Dad: 他们开除你，就是因为你提出了这件事。 #line:773b3f
+	Mae: 这么做合法吗？ #line:318a0f
+	Dad: 有些时候，到底合不合法并不是很重要。 #line:35817d
+<<endif>>
+Mae: 那你还能做点什么吗？ #line:993228
+Dad: 我想说的是，咱们*确实*需要一个工会。 #line:28b439
+Dad: 可说起来容易，做起来难。 #line:0198f8
+Dad: 过去，不少矿井和工厂都设立过工会， #line:c477b2
+Dad: 至少还都持续了一段时间。 #line:cc8ecd
+Dad: 可现在…… #line:b417bc
+<<if $has_tooth and $knows_tooth>>
+	//if have tooth and know what tooth is <-variable set at microfiche if you see item//
+	Mae: 我找到了点东西想给你。 #line:6cffaf
+	Mae: 这是我在地下室里找到的。 #line:a99f16
+	Dad: 你是怎么进到地下室的？ #line:4c9e2f
+	Mae: 我是从夹层上的暗门进去的。 #line:e82fc9
+	Dad: 听起来感觉挺诡异的。 #line:5dfd04
+	Mae: 我在里面找到了这个…… #line:d9640c
+    Mae: :) #line:c9e7bc
+	Mae: 一颗牙。 #line:c6d8b9
+	Dad: 一个什么？ #line:b494db
+	Mae: 你知道这是什么牙吗？ #line:f53c5a
+	Dad: 不太……清楚。 #line:bc1edd
+	Dad: 你能确定吗？ #line:64cda3
+	Mae: 当然能了。爷爷肯定在很久以前就有这颗牙了。 #line:a4322a
+	Dad: 谢谢你……梅。 #line:f1e237
+	Dad: 哇哦，这颗牙看起来又新又亮啊， #line:a1e756
+	Dad: 就和当天刚拔下来一样。 #line:0d1b8f
+	Mae: 你可以当你上司的面拿出这颗牙，然后告诉他，吃屎去吧。 #line:e6cc87
+	Dad: 梅！ #line:9186d5
+	Mae: 抱歉。 #line:c4319e
+	Dad: 我会一直带着它的。 #line:9660a7
+	Mae: 你一定要带着它。 #line:19a003
+	Dad: 梅。 #line:a08431
+	Mae: 什么事？ #line:65cf2c
+	Dad: 要是我们都罢工不干了，你会加入我们，帮我们举标语吗？ #line:cc3e49
+	Mae: 老爸，我可是会喷火的。 #line:9a024d
+	Dad: 爱你，我的小猫咪。 #line:2eb904
+	Mae: 我晚点回来，老爸。 #line:6805f0
+    Mae: :| #line:b193f2
+    <<unlockAchievement Clock_Quest>>
+    <<set $did_clock_quest to 1>>
+<<else>>
+	//if don’t have tooth or know what it is//
+	Mae: 但请听好了，我今天晚上会回家吃晚饭的。 #line:8ca77f
+	Dad: 哇哦！今天是怎么了，太阳打西边出来了？ #line:1aed69
+	Mae: 老妈说，咱们可以自己做早饭。 #line:3d8eb6
+	Dad: 哦！听起来不错啊！ #line:d8f3b5
+	Mae: 我想说说我的……事。 #line:d9472b
+	Dad: 好啊。 #line:d13417
+	Mae: 可能咱们俩也可以一起来聊聊你的事，可以吗？ #line:8fc3da
+	Mae: 就像开一个大型……额……会议一样，怎么样？ #line:0482e3
+	Dad: 听起来真不错，我的小猫咪。 #line:22a212
+	Mae: 爱你，老爸。 #line:d39121
+	Dad: 我也爱你。 #line:6e9da6
+	Mae: 晚点见！ #line:dd4307
+<<endif>>
+===
+title: TwigmeyerDemo2
+tags: demo2
+colorID: 0
+position: -4630,-935
+---
+<<if $twigmeyer is 0>>
+    Mae: 嘿，特维梅尔先生。 #line:20bdd4
+    Twigmeyer: 你好啊。 #line:4a0f21
+    Mae: 额……在耙什么呢…… #line:e6708c
+    ->是在耙草吗？ #line:1d9459
+    ->什么都没耙吗？ #line:e98b12
+    Twigmeyer: 这草坪就和形形色色的人一样。 #line:457d87
+    Mae: 那树就和朋友一样，或者就和别的什么一样。 #line:dbe5c2
+    Twigmeyer: 好吧。 #line:7f99fc
+    <<set $twigmeyer to 1>>
+<<elseif $twigmeyer is 1>>
+    Mae: 等等，为什么你要把草坪比成人呢？ #line:19cfee
+    Twigmeyer: 因为这些年过去了，我们也像这草一样变老了， #line:65cafd
+    Twigmeyer: 能再见到对方的次数也不多了。 #line:d3d02f
+    Twigmeyer: 所以，我就到院子里种种花草，好好享受享受美好的时光了。 #line:0a238c
+    Mae: 哈。 #line:eac70f
+    Mae: 看来你和这块草坪的关系很不一般啊。 #line:9fec42
+    Twigmeyer: 嘿嘿，只要是我愿意，我和什么东西都能培养出感情。 #line:9ceef1
+    <<set $twigmeyer_done to 1>>
+<<endif>>
+
+===
+title: Pole1Act2.2
+tags: demo2
+colorID: 3
+position: -8743,-842
+---
+Mae: 我还记得，大水退了以后，你家的草坪漂到了我家院子里，在那儿待了两个星期， #line:8d78d2
+Mae: 就和一大片……尸体一样。 #line:540544
+Mae: 后来，又有人把它给搬了回去。 #line:dbd8e5
+Mae: 而且，晚上的时候，我还能从窗户里看见它。 #line:e1b9a3
+Mae: 不知道是什么原因，我老感觉这东西特别诡异。 #line:453016
+===
+title: Pole1Act2.3
+tags: demo2
+colorID: 3
+position: -8498,-853
+---
+Mae: 诡异的电线杆。 #line:01ea1c
+Mae: 亡灵朋友， #line:095f86
+Mae: 它就在牢笼之中注视着我。 #line:147e8b
+<<end>>
+===
+title: Penderson_A2D1
+tags: demo2
+colorID: 0
+position: -5656,-1266
+---
+Penderson: 呸！ #line:48d069
+Mae: 呸！ \o/ #line:5c557b
+Mae: _o_ #line:747a7c
+<<set $penderson_done to 1>>
+===
+title: InitLevel_A4D2
+tags: 
+colorID: 5
+position: -3685,-1571
+---
+<<hide Twigmeyer>>
+===
+title: Dad_A4D3
+tags: 
+colorID: 5
+position: -3328,-1299
+---
+<<if $dad is 0>>
+    <<set $dad += 1>>
+    [[Dad_A4D3_00]]
+<<elseif $dad is 1>>
+    <<set $dad += 1>>
+    [[Dad_A4D3_01]]
+<<else>>
+    [[Dad_A4D3_Loop]]
+<<endif>>
+===
+title: Dad_A4D3_Loop
+tags: 
+colorID: 6
+position: -2922,-985
+---
+Dad: 当-嗒-当-当 #line:6a3a19
+===
+title: Dad_A4D3_01
+tags: 
+colorID: 6
+position: -3295,-958
+---
+Mae: 顺便问一句，你在这儿干什么呢？ #line:d93320
+Dad: 我在提前给咱们长至夜的灯光秀做准备， #line:1a8399
+Dad: 所以，我就把灯都从壁橱里拿出来了， #line:6a1207
+Dad: 看看它们还能不能用。 #line:60544d
+Mae: 用我帮忙把它们都挂起来吗？？？？？ #line:f5bb4a
+Dad: 好啊，就让我们期待一下你的表现吧，毛手毛脚的小姑娘。 #line:d30915
+Mae: o> #line:3fa7d7
+Mae: 老爸。 #line:939a26
+Mae: _o_ #line:8c1699
+===
+title: Pole1Act3.1
+tags: 
+colorID: 4
+position: -8991,-593
+---
+Mae: 从这儿可以看见潘德森的房子。 #line:41e7b1
+Mae: 那就是个看别人受罪，自己偷着乐的老家伙。 #line:701223
+Mae: 就因为我之前在他家房顶上放了个M80(一种响炮)， #line:004614
+Mae: 所以弄得他一直都很讨厌我。 #line:362e25
+Mae: 我觉得，这就像积怨一样， #line:9a77b8
+Mae: 在很久以前就已经出现了。 #line:cc7b7e
+<<end>>
+===
+title: Pole1Act4.1
+tags: 
+colorID: 6
+position: -8995,-347
+---
+Mae: 哦，哇哦，卡里姆家新养了一只狗诶！ #line:43cfe9
+Mae: 嘿，狗狗们！ #line:805fe5
+Mae: 啊，她看见我啦！ #line:4e2d7c
+Mae: 我从这儿可以看见你！ #line:2f43ff
+Mae: 我会一直盯着你的！ #line:715e1b
+Mae: 所以[shake=.05]你要小心啦[shake]。 #line:1853ca
+Mae: 还有，要做一只乖狗狗。 #line:3a3139
+<<end>>
+===
+title: Twigmeyer_A2D1
+tags: 
+colorID: 2
+position: -2577,-396
+---
+Twigmeyer: 耙啊，耙啊，耙啊…… #line:99a772
+Mae: 耙啊，耙啊，耙啊？ #line:b7ada3
+Twigmeyer: 就要这么耙， #line:e32b28
+<<set $twigmeyer_done to 1>>
+===
+title: Twigmeyer_A2D3
+tags: 
+colorID: 3
+position: -2272,-389
+---
+Twigmeyer: 才能把这些该死的叶子弄干净！ #line:8b8678
+Mae: “他（它）们"应该离你家的院子远点。 #line:d2fe12
+Twigmeyer: 梅·博罗夫斯基，这些别有用意的话，你还是留着回家用去吧。 #line:621e5d
+Mae: 哈哈哈。 #line:9d6473
+<<set $twigmeyer_done to 1>>
+===
+title: Twigmeyer_A3D2
+tags: 
+colorID: 3
+position: -1958,-384
+---
+Twigmeyer: 刮的风可越来越冷了， #line:ea797c
+Twigmeyer: 落在我院子里的叶子也越来越多了。 #line:133b66
+Mae: 这有什么可大惊小怪的？ #line:22e92e
+Twigmeyer: 落叶会害了我的草的！！！！ #line:e6ee96
+Mae: 好吧，好吧！我的天！ #line:2c268e
+Twigmeyer: 气死我啦！！！ #line:406ce3
+<<set $twigmeyer_done to 1>>
+===
+title: Twigmeyer_A3D4
+tags: 
+colorID: 3
+position: -1686,-378
+---
+Twigmeyer: 梅，你还好吧？ #line:860097
+Mae: 是的，我还好。 #line:fbbd25
+Twigmeyer: 我对人有了一些理解。 #line:6be9fc
+Twigmeyer: 然后，我觉得你的理解是错的。 #line:a44702
+Mae: 好吧，我可不想让真相影响到你。 #line:5bafef
+Mae: 可你的理解也是错的。 #line:285e18
+Twigmeyer: 嗯，咱们走着瞧吧。 #line:1df9cb
+<<set $twigmeyer_done to 1>>
+===
+title: Twigmeyer_A4D3
+tags: 
+colorID: 6
+position: -1439,-371
+---
+Mae: 嘿，特维梅尔先生！ #line:0090e5
+Twigmeyer: 你好啊，梅！ #line:d905b7
+Twigmeyer: 看来你在努力往好的方向发展啊！ #line:cd7c93
+Mae: 啊，我很不爽。 #line:d8ada1
+Twigmeyer: 你一定要认真对待生活！ #line:a31905
+Twigmeyer: 因为生活不易，而且很容易就前功尽弃。 #line:36bc5f
+Mae: 不不不，我的生活一直都不怎么样。 #line:c3485c
+Twigmeyer: 呵呵，那可真是太好啦。 #line:c0b2f9
+<<set $twigmeyer_done to 1>>
+===
+title: TriggerMollyTop_A3D4
+tags: 
+colorID: 4
+position: -4388,-1319
+---
+<<set $trigger_molly to 0>>
+Molly: 梅！快从电线上下来！ #line:a2422d
+Mae: ……？ #line:8563a4
+<<fadeOut 1 wait>>
+<<jump>>
+<<warp Mae MaeByMollyA3D4>>
+<<clearJump>>
+<<waitForPlayerFallToGround>>
+<<playerFace -1>>
+<<playIdleAnimationPlayer>>
+<<fadeIn 1 wait>>
+[[TriggerMolly_A3D4]]
+===
+title: Molly_A4D3
+tags: 
+colorID: 6
+position: -2486,-1400
+---
+Mae: 嘿，你在这儿干嘛呢？ #line:3f59a7
+Molly: 梅，我在工作呢。 #line:6be4eb
+Mae: =_= #line:51e64f
+Mae: 当然是在工作了。 #line:9f01e6
+Molly: *叹气* #line:80dc27
+Mae: 怎么了？ #line:b26464
+Molly: 别提了。今天早上，我们接到了一大堆报警电话。 #line:7d2925
+Mae: o_o #line:6a34d2
+	->哦。 #line:000b03
+	->……都是关于什么的电话？ #line:dd897a
+		Molly: …… #line:f635b3
+<<wait 2>>
+Molly: 我问你个问题： #line:a19d1d
+Molly: 你有没有见过…… #line:2eac4b
+<<wait 2>>
+Molly: 算了。 #line:4d28f4
+Molly: 去忙你的事吧。 #line:19577d
+Mae: 好的，我这就走。 #line:0a0797
+Molly: 梅， #line:5a0ad4
+<<wait 2>>
+Mae: \o/ #line:467ae6
+Mae: 我已经提醒过你啦！ #line:4812c4
+Mae: _o_ #line:1475e9
+Molly: 一定要小心。 #line:a9e679
+Molly: 一定要……小心。 #line:d39410
+Mae: 好的，我的天。在你说这事之前，我根本就从来没想过这些！ #line:490003
+Molly: 梅！ #line:fa59fe
+Mae: 好了，好了，谢谢了，拜拜。 #line:39a054
+<<set $molly_done to 1>>
+===

@@ -1,0 +1,404 @@
+title: EnterLevel_A2D3
+tags: 
+colorID: 3
+position: 2910,9935
+---
+<<if $bea_friendship_quest_3 is 0>>
+    <<wait 1>>
+    <<walk Bea Bea1 wait>>
+    <<walk Mae Mae1 wait>>
+    [[Dinner]]
+<<elseif $bea_friendship_quest_3 is 1>>
+
+<<endif>>
+===
+title: AfterDinner
+tags: 
+colorID: 3
+position: 2888,10589
+---
+<<cameraLookAt CameraAfterDinner>>
+<<warp Mae MaeStool>>
+<<sit>>
+<<setSortingLayerName Player>>
+<<setSpriteLayer Bea Bea>>
+<<warp BeaDad BeaDadCouch>>
+<<sit BeaDad>>
+<<warp Bea BeaCouch>>
+<<sit Bea>>
+<<tell AmbientSFX:tv Play1>>
+<<lookAt Bea BeaDad>>
+<<lookRight BeaDad>>
+<<setSpriteLayer BeaDad BeaDad2>>
+<<irisIn 1 wait>>
+Bea: 嗯，我们已经把下月15号之前的款项全部付清了。 #line:e8c384
+BeaDad: 嗯，好。 #line:0f3290
+<<close>>
+<<wait 2>>
+BeaDad: 岩盐的事安排得怎么样了？ #line:21dd9b
+Bea: 嗯，应该没什么问题了。 #line:349e02
+BeaDad: 罗布还在开大货车吗？ #line:e9f0fe
+Bea: 据我所知还在开。 #line:04f987
+Bea: 好了，额，我还需要您签点东西。我已经把它们都放在吧台上了。 #line:2eb3f6
+BeaDad: 我应该一会儿就去。 #line:699861
+Bea: 请您一定要签。这几天咱们就得把钱发给人家了。 #line:bd7687
+BeaDad: 我用不着你来提醒我怎么做。 #line:00d1e5
+Bea: 我知道，可…… #line:06ecdf
+BeaDad: 不用提醒我了，碧翠丝。我问你，房契上写的是谁的名字？ #line:f6f489
+Bea: 写的是您的名字，爸。 #line:13de8b
+BeaDad: 那支票上写的又是谁的名字？ #line:c1b54a
+<<close>>
+<<wait 1>>
+<<lookRight Bea>>
+<<wait 1>>
+Bea: 也是您的名字。 #line:da84d7
+Mae: …… #line:7c2b52
+<<close>>
+<<wait 2>>
+<<if $grocery_quality is 1>>
+	BeaDad: 梅，晚饭做得不错嘛，很好吃。 #line:b3795f
+    <<unlockAchievement Bea_FQ3_Recipe>>
+<<elseif $grocery_quality is -1>>
+	BeaDad: 额，这顿晚饭可不怎么样啊。 #line:69714d
+<<endif>>
+BeaDad: 今晚熔炉队该出场啦。 #line:9acf12
+Bea: 那我先带着梅到我房间去玩了。 #line:f95e3f
+Mae: 嗯…… #line:bf5557
+BeaDad: 你们俩好好玩！ #line:95dfde
+BeaDad: 谢谢你给我们做的晚餐，梅！ #line:c2cb73
+Mae: 不用谢！ #line:6afaf1
+<<close>>
+<<setSpriteLayer BeaDad BeaDad>>
+<<setAnimInt Bea sitting 0>>
+<<warp Bea BeaCouch>>
+<<walk Bea BeaExitRight wait>>
+<<tell _AmbientSFX:bea_door_indoor Play>>
+<<cameraFollowPlayer 1>>
+<<set $bea_apartment_block_left to 1>>
+<<getUp>>
+<<fadeOutMusic 6>>
+===
+title: BeaDad
+tags: 
+colorID: 3
+position: 3211,10327
+---
+<<if $bea_friendship_quest_3 is 0>>
+    <<set $bea_dad_done to 1>>
+    Mae: 您喜欢熔炉队，是吗？ #line:261144
+    BeaDad: 你也是炉迷吗？ #line:c71ba2
+    ->我不是。 #line:82f748
+        BeaDad: 那你知道你错过了多少好东西吗！ #line:8f3989
+        Mae: 哦，相信我，我很清楚自己到底错过了多少精彩瞬间。 #line:0589f7
+        Mae: 但我爸妈可是熔炉队的忠实粉丝。 #line:3af4a2
+        BeaDad: 哈哈！你爸妈肯定把你培养得不错！那为什么你会不喜欢熔炉队呢？ #line:1e44d3
+        Mae: 我也不知道。 #line:de591e
+    ->我喜欢冰球。 #line:a7db15
+        BeaDad: 你喜欢冰球？噗…… #line:7d9fb2
+        Mae: 为什么不能喜欢冰球啊？ #line:282e1d
+        BeaDad: 冰球不就是一帮人满场拼了命地滑来滑去吗。 #line:bc4f3c
+        Mae: 还有，他们还会把对方打得屁滚尿流！ #line:b00d12
+        BeaDad: 诶，可冰球根本就提不起我的兴趣。 #line:04bde7
+        Mae: 不过……|能*预测*到的是，|每场比赛结束的时候，|肯定会有人受伤流血！ #line:0cf5be
+        BeaDad: 冰球这个项目完全没有体育精神可言。 #line:9c33f0
+        Mae: 我刚才说的那些，怎么就*没法*显示体育精神了呢？ #line:03a054
+        BeaDad: 呃...... #line:05c249
+<<else>>
+    <<if $grocery_quality is -1>>
+        <<if $grocery_meat is 1>>
+            BeaDad: ……这牛肉……可真不怎么样…… #line:cdc592
+        <<elseif $grocery_meat is 2>>
+            BeaDad: ……我再也不想吃到……这样的鸡肉…… #line:0fc460
+        <<elseif $grocery_meat is 3>>
+            BeaDad: ……这鱼做得真难吃…… #line:d7da6e
+        <<elseif $grocery_meat is 4>>
+            BeaDad: ……这猪肉……为什么能给做成这样啊？ #line:eaa6c3
+        <<endif>>
+    <<elseif $grocery_quality is 1>>
+        <<if $grocery_meat is 1>>
+            BeaDad: ……这牛肉真不错，谢谢你…… #line:e2b976
+        <<elseif $grocery_meat is 2>>
+            BeaDad: ……完美的鸡肉，太棒了…… #line:1d43cd
+        <<elseif $grocery_meat is 3>>
+            BeaDad: ……鱼很好吃……太好吃了…… #line:08c130
+        <<elseif $grocery_meat is 4>>
+            BeaDad: ……猪排……猪排……真是鲜美多汁啊…… #line:5015ce
+        <<endif>>
+    <<else>>
+        <<if $grocery_meat is 1>>
+            BeaDad: ……这牛肉的味道……一定错不了…… #line:e5b126
+        <<elseif $grocery_meat is 2>>
+            BeaDad: ……这顿饭上吃的鸡肉……就和老妈做的味道一样…… #line:2d2544
+        <<elseif $grocery_meat is 3>>
+            BeaDad: ……鱼啊鱼……它之前肯定也吃了不少鱼…… #line:042e54
+        <<elseif $grocery_meat is 4>>
+            BeaDad: ……猪肉还不错……还不错…… #line:8cb0ea
+        <<else>>
+            BeaDad: ……没有食物……什么都没有…… #line:d762ba
+        <<endif>>
+    <<endif>>
+    <<set $bea_dad_done to 1>>
+<<endif>>
+===
+title: Dinner
+tags: 
+colorID: 3
+position: 2899,10287
+---
+Bea: 晚饭时间到！ #line:52e3a5
+<<close>>
+<<irisOut 1 wait>>
+<<warp Mae MaeBehindCounter>>
+<<warp Bea BeaBehindCounter>>
+<<warp BeaDad BeaDadBehindCounter>>
+<<setSpriteLayer Bea BG2>>
+<<setSortingLayerName BG2>>
+<<setSpriteLayer BeaDad BG2>>
+<<sit Bea>>
+<<sit BeaDad>>
+<<sit>>
+<<lookDown Bea>>
+<<lookDown BeaDad>>
+<<lookDown Mae>>
+<<cameraLookAt CameraDinner>>
+<<playMusic bea_dinner>>
+<<irisIn 1 wait>>
+<<if $grocery_quality is -1>>
+    BeaDad: 嗯…… #line:4c671c
+    Bea: 好吧…… #line:b6e2a9
+    Mae: 怎么了？ #line:0e8cbe
+    Bea: 你想让我订份披萨吗？ #line:22d55b
+    BeaDad: 不用了，我还有三明治能吃。 #line:82023f
+    Bea: 那好吧。 #line:86d8e1
+    Mae: 唉，我是不是把晚饭给搞砸了？ #line:da5ed8
+    BeaDad: 的确搞砸了。不过，我觉得，咱们饿一顿也不会有什么问题的！ #line:b7ec90
+    BeaDad: 哈 哈 哈！！ #line:c5dd43
+    <<if $grocery_meat is 3 and $grocery_bakey_shakey is 1>>
+        BeaDad: 我感觉这鱼做得不太好。 #line:e8a80b
+        Mae: 我觉得鱼肉还可以，香酥脆也很好…… #line:189b6b
+    <<elseif $grocery_meat is 1 and $grocery_bakey_shakey is 1>>
+        BeaDad: 我觉得香酥脆还得和……其他食材搭配在一起才行。 #line:963ed8
+        Mae: 我以为……额……把两种不错的东西结合在一起…… #line:99872d
+        Mae: 没准就能做出更好的东西来？ #line:1e359a
+    <<elseif $grocery_meat is 1 and $grocery_box != 1>>
+        BeaDad: 我觉得，不应该把牛肉馅单独做成一道菜。 #line:cc1e40
+        Bea: 嗯，应该和其他原料搭配在一起才对。 #line:aebb78
+        Mae: 嗷…… #line:5c7b8e
+    <<elseif $grocery_meat is 3 and $grocery_canned_goods is 3>>
+        BeaDad: 我觉得有点不太舒服。 #line:fe9b22
+        Mae: 我想的是……鱼也很不错，鸡肉也很不错！ #line:f5bdeb
+        Bea: 不是这样的，不是的。 #line:b9930e
+        Mae: 哦，不。好吧。 #line:c81a4c
+        Mae: 比如你去炸鸡司令点一份7号套餐。 #line:b30713
+        Mae: 那 不 就 是 鸡 肉 配 鱼 肉 吗！ #line:932083
+        Bea: 是有鸡肉和鱼肉，但这两样东西是分开做的，而且还是炸过的。 #line:3b6a80
+        Mae: 呃啊。 #line:e4622c
+    <<elseif $grocery_meat is 2 and $grocery_bakey_shakey is 1 and $grocery_canned_goods is 3>>
+        Bea: 我知道你是什么思路了。 #line:65b37b
+        Bea: 配香酥脆。 #line:9f19e4
+        Mae: 鸡肉和奶油！ #line:3f23bb
+        Mae: 是奶油鸡肉！ #line:1fd8d0
+        Bea: 你还在考虑 #line:0dcf5d
+        Bea: 嘿，我该怎么改进这道菜。 #line:1a167f
+        Mae: 是啊，看来你明白我是怎么想的了。 #line:51a834
+    <<elseif $grocery_meat is 4 and $grocery_canned_goods is 3>>
+        BeaDad: 我觉得，猪肉和鸡肉不应该这么搭配。 #line:a63cf8
+        Mae: 噢，是这样吗？ #line:d54a77
+    <<elseif $grocery_meat is 1 and $grocery_canned_goods is 3>>
+        BeaDad: 我觉得，你要是在食谱大赛上做奶油牛肉配鸡汤的话， #line:6fe820
+        BeaDad: 肯定得不了奖。 #line:f92a68
+        Mae: 哦，拜托！我 保 证 是有这个配方的。 #line:f63128
+    <<endif>>
+    <<if $did_bea_friendship_quest_2 is 1>>
+        Mae: 我是不是什么都做不好啊？ #line:ea2063
+        Bea: 也不全是。你只是在修东西和琢磨做什么饭上不怎么样。 #line:1a31b1
+        Mae: 这两个可都是很重要的生活技能啊！ #line:7cc773
+    <<endif>>
+    Bea: 你喜欢这个吗？ #line:2b6370
+    Mae: 不喜欢。我同意，这实在是太糟了。 #line:15d901
+<<elseif $grocery_quality is 0>>
+    BeaDad:  这个还不错。 #line:49e71d
+    Mae: 谢谢！ #line:ef3262
+    Bea: 嗯，是啊，还不错。 #line:d20b58
+    Mae: 谢了。 #line:4c7a9d
+    BeaDad: 是啊，还可以。 #line:83bc9f
+    Mae: 谢谢？ #line:ea8b95
+    Bea: 梅，饭做得真不错。谢谢你。 #line:83f78d
+    Mae: 肉和碳水的搭配肯定错不了。 #line:36f5ae
+    BeaDad: 谢谢你，梅。 #line:d0a9b6
+    ->我超擅长做～饭的。 #line:059332
+        BeaDad: 饭做得很好。 #line:1dcfac
+        Bea: 是有时候做得还行。 #line:8ac959
+        Mae: 有时候？！？！？ #line:996009
+        Mae: 这 饭 做 得 真 是 绝 了。 #line:23c225
+        Bea: 明白，收到。 #line:d3223e
+        BeaDad: 嘿嘿嘿！ #line:3e732f
+    ->我不知道我提没提过这事， #line:96f2fe
+        Mae: 我在高中的时候，家政学这门课的成绩可好了。 #line:1c4ec3
+        Mae: 这件衬衣就是我自己做的！ #line:e7befc
+        BeaDad: 嘿，嘿，你能帮我补补裤子吗！ #line:9b3b1d
+        Mae: 补裤子有酬劳吗？ #line:9813bf
+        Bea: 爸，咱们可以去买新裤子啊。 #line:b80de5
+<<elseif $grocery_quality is 1>>
+    BeaDad: 嘿，这做的很不错。 #line:ce918c
+    Bea: 嗯，的确是……相当不错。 #line:c6f337
+    Mae: 谢谢啦！ #line:f001e0
+    <<if $grocery_meat is 1 and $grocery_bakey_shakey is 0 and $grocery_box is 1 and $grocery_canned_goods is 1>>
+        BeaDad: 我妈妈以前就会做牛肉芝士通心粉， #line:c43cb6
+        Bea: 真的很好吃。 #line:ae4d7a
+        Mae: 哪方面做得都很好！根本不费吹灰之力！ #line:d2f3d7
+        BeaDad: 蔬菜做得也很好，很有妈妈的味道。 #line:b88a4f
+        Mae: 可能我就是你老妈呢。 #line:725b2b
+        BeaDad: 你说什么？ #line:e46970
+        Bea: 你说什么？ #line:78f678
+        Mae: 我不知道啊，这事有点尴尬了。 #line:8e2f9d
+    <<elseif $grocery_meat is 4 and $grocery_box is 2 and $grocery_canned_goods is 2>>
+        BeaDad: 香酥脆猪排！ #line:b2414a
+        Mae: 我懂，我懂。 #line:691ff5
+        Mae: 我以前经常会把香脆酥刮下来， #line:a3ee20
+        Bea: 呃，不会吧。 #line:695f27
+        Mae: 然后*只吃它们*。 #line:97e78e
+    <<elseif $grocery_meat is 2 and $grocery_bakey_shakey is 0 and $grocery_canned_goods is 3 and $grocery_cooler is 1>>
+        BeaDad: 以前，在农场的时候， #line:e1f6db
+        BeaDad: 我奶奶就经常做鸡肉配小松饼！ #line:b48e4e
+        Bea: 我太奶奶还有农场？ #line:bb2c2d
+        Bea: 我一直以为他们有一家鞋店呢。 #line:e8e321
+        BeaDad: 额，到时候再和你细说。 #line:3d25a7
+    <<elseif $grocery_meat is 2 and $grocery_bakey_shakey is 1 and $grocery_box is 4 and $grocery_box is 3>>
+        BeaDad: 嗯，米饭土豆配烤鸡。 #line:14834c
+        Mae: 这玩意儿那么经典可不是没有原因的。 #line:bab535
+        Bea: 哦，是啊，我们对这个再熟悉不过了。 #line:886d4c
+        Mae: 我从来没说过要做什么异国风味！ #line:4a811e
+    <<elseif $grocery_meat is 3 and $grocery_bakey_shakey is 0 and $grocery_box is 1 and $grocery_cooler is 2>>
+        BeaDad: 鱼肉菠菜通心粉。 #line:d68816
+        BeaDad: 我小时候，人们就给当地教区送这道菜。 #line:d56843
+        BeaDad: 人们会在每个可能吃到鱼的节日里奉上此菜。 #line:230eea
+        Mae: 真的吗？ #line:abad33
+        Bea: 真的。 #line:fde2ed
+    <<endif>>
+    BeaDad: 以后每天晚上都应该让她来帮咱们选菜！ #line:950876
+    Bea: 那肯定不行，爸，咱们肯定会被糖给齁死的。 #line:902853
+    Mae: 不是这样的！ #line:7dc542
+    ->我还会做汉堡、墨西哥卷饼还有披萨！ #line:91d937
+        Bea: 嗯哼，那我们马上就要因这几道菜而死了。 #line:5c78bd
+        BeaDad: 比被糖齁死还惨。 #line:bf7fe9
+    ->我会煮饭，做汉堡，还会炖菜！ #line:20a0d6
+        BeaDad: 碧娅的妈妈以前也会做这些。 #line:3c3e1a
+        Bea: 哈哈，这话是冲着我说的。 #line:b103b5
+        BeaDad: 好吧，梅，碧娅的妈妈以前也会做这些。 #line:7e6b5f
+        Bea: 就算妈妈会做这些菜，我们晚上也吃不到。 #line:5e4e8a
+        BeaDad: 尤其是在霍克谷那一周之后，更是这样了。 #line:2129c1
+    ->我知道怎么打鸡蛋，还知道怎么做松饼！ #line:0b1821
+        BeaDad: 我喜欢香肠。 #line:1dfc86
+        Bea: 咱们不能每顿都吃成早饭。 #line:8fa00e
+    Mae: 我可以做份沙拉！ #line:d8880e
+    Bea: 老天。 #line:304013
+    BeaDad: 嘿嘿，梅，做沙拉，说的是啊！ #line:7fd404
+    BeaDad: 哈 哈 哈 哈 哈！！！ #line:69c316
+    <<if $did_bea_friendship_quest_2 is 1>>
+        Bea: 这可比你昨天晚上在地下室做的不知道什么东西强太多了。 #line:a68ba0
+        BeaDad: 你说什么？ #line:3a57e8
+        Bea: 没什么。 #line:3330ad
+    <<endif>>
+    Mae: 谢谢。我可是相当牛的。 #line:e00eef
+<<endif>>
+<<irisOut 1 wait>>
+[[AfterDinner]]
+===
+title: EnterLevel_A4D2
+tags: 
+colorID: 5
+position: 4878,9869
+---
+<<if $laptop_vignettes>>
+    <<playMusic laptop_vignettes 10>>
+    <<if $dom_friend_bea>>
+        [[DomFriendVignette]]
+    <<else>>
+        [[SubFriendVignette]]
+    <<endif>>
+<<endif>>
+===
+title: DomFriendVignette
+tags: 
+colorID: 5
+position: 4779,10208
+---
+<<cameraLookAt CameraVignetteStart 0>>
+<<cameraLookAt CameraVignetteEnd 30>>
+<<fadeIn 1 wait>>
+//fade in on bea, sitting in her living room doing bills as her dad is asleep on the couch. Mae chat continues in black box somewhere//
+MaeLaptop: 咱们谁都不希望这些事发生。 #line:af309d
+MaeLaptop: 而且，好像因为咱俩都很特别，所以，这些事并没有发生在咱们身上。 #line:7ae83e
+MaeLaptop: 你可以按自己想要的方式去努力， #line:ba0e3f
+MaeLaptop: 但整个宇宙依旧会按照它自己的模式运转。 #line:0c3e01
+MaeLaptop: 而且，我也不相信，咱们中的哪一个人就应该背负这一切。 #line:679494
+MaeLaptop: 这一切早在咱们出生很久之前就已经开始运作了， #line:79bb97
+MaeLaptop: 它运行的速度实在太快了，然后，你就陷进去了 #line:d7c564
+MaeLaptop: 所以，你就拼命想要抓住些什么东西。 #line:fd8b94
+MaeLaptop: 今晚，是你们把我从湍流之中救了回来， #line:957b65
+MaeLaptop: 并且，你们为了救我还差点杀死了那个人。 #line:c6adf7
+MaeLaptop: 别觉得我会对此无动于衷哈。 #line:e68683
+MaeLaptop: 哈 哈 哈 #line:e3ee01
+<<fadeOut 1 wait>>
+<<overrideLoadingScreenType Blank>>
+<<scene GreggAngusApartment>>
+===
+title: SubFriendVignette
+tags: 
+colorID: 5
+position: 5188,10233
+---
+<<cameraLookAt CameraVignetteStart 0>>
+<<cameraLookAt CameraVignetteEnd 30>>
+<<fadeIn 1 wait>>
+//fade in on bea, sitting in her living room doing bills as her dad is asleep on the couch.//
+MaeLaptop: 我能理解刚刚发生的事吗? #line:fe074a
+MaeLaptop: 我有点希望我不能。 #line:347c08
+MaeLaptop: 我只是希望这一切都会结束， #line:d746be
+MaeLaptop: 希望咱们所有人都能获得解脱。 #line:834d4a
+MaeLaptop: 我不希望咱们成为某个糟糕故事中的经历者。 #line:5e4706
+MaeLaptop: 我希望自己能变成巨人， #line:3b6ed1
+MaeLaptop: 然后把你们全都带走， #line:2276f1
+MaeLaptop: 把你们带到一个安全的地方。 #line:785033
+MaeLaptop: 抱歉，我又开始说胡话了。 #line:0a2878
+MaeLaptop: 我只是觉得， #line:6a77c2
+MaeLaptop: 一定会有逃离这一切的方法， #line:ded71c
+MaeLaptop: 或者是继续走下去的方法。 #line:f3598b
+//fade out. Fade in on germ in a parking lot. This will need to be a new scene//
+<<fadeOut 1 wait>>
+<<overrideLoadingScreenType Blank>>
+<<scene GermVignette>>
+===
+title: InitLevel_A2D3
+tags: 
+colorID: 3
+position: 2888,9703
+---
+<<if $bea_friendship_quest_3 is 1>>
+    <<set $bea_apartment_block_left to 0>>
+    <<set $night to 1>>
+    <<set $did_bea_friendship_quest_3 to 1>>
+    <<set $completed_bea_friendship_quests += 1>>
+    <<sit BeaDad>>
+    <<setAnimInt BeaDad sleeping 1>>
+    <<hide Bea>>
+    <<warp Mae MaeExitBeaRoom>>
+    <<playerFace -1>>
+    <<set $block_bea_room to 1>>
+    <<set $bea_dad_done to 0>>
+    <<tell AmbientSFX:tv Play1>>
+<<endif>>
+===
+title: InitLevel_A4D2
+tags: 
+colorID: 5
+position: 4885,9635
+---
+<<warp Bea BeaBehindCounter>>
+<<sit Bea>>
+<<setSpriteLayer Bea BG2>>
+<<hide BeaDad>>
+<<hide Mae>>
+<<setAnimInt Bea headSlant 1>>
+===

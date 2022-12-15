@@ -1,0 +1,72 @@
+title: Harleys
+tags: 
+colorID: 2
+position: 516,878
+---
+<<setInvolvedCharacters Mae Harley1 Harley2 Harley3>>
+<<if $harleys_sequence is 0>>
+    <<if $harleys is 0>>
+        <<set $harleys += 1>>
+        <<set $harleys_done to 1>>
+        [[Harleys_00_00]]
+    <<endif>>
+<<endif>>
+===
+title: Harley1
+tags: 
+colorID: 2
+position: 146,552
+---
+[[Harleys]]
+===
+title: Harley2
+tags: 
+colorID: 2
+position: 523,498
+---
+[[Harleys]]
+===
+title: Harley3
+tags: 
+colorID: 2
+position: 926,603
+---
+[[Harleys]]
+===
+title: Harleys_00_00
+tags: 
+colorID: 2
+position: 519,1205
+---
+Mae: 嘿，这不是哈雷帮的孩子们吗！你们在干嘛呢？ #line:1519db
+Harley2: 小乔，你被捕啦！ #line:2afbec
+Mae: 哦，哇哦，这帮孩子居然还在聊关于小乔的事？ #line:7c504d
+Harley3: 我们已经检验过你的DNA啦！ #line:c1f21a
+->话说，你们几个知道什么是DNA吗？ #line:2d8d78
+    Harley3: 当然知道啦！在处理犯罪事件的时候就用得上它。 #line:07ddfb
+    Harley2: DNA就像是身体的一部分，只不过它特别特别小。 #line:6d6dda
+    Harley1: 可幽灵没有身体啊。 #line:ecb1b2
+    Mae: 哈利，你说得对。哈利的话是对的。 #line:a71ec9
+    Harley3: 嘿，这位女士，你可不可以赶快走开啊？ #line:dadc58
+    Mae: 你们居然叫我“女士"？！ #line:c6a634
+->幽灵可没有DNA。 #line:c98ae7
+    Harley1: 没错，幽灵没有DNA。 #line:6058a8
+    Harley3: 嘿，这位女士，你能不能别打扰我们啊？ #line:ac8388
+    Harley2: 是啊，快走吧，女士。 #line:e89d66
+    Mae: 你们居然叫我“女士"？！ #line:eed325
+===
+title: Harley1InitLevel
+tags: 
+colorID: 0
+position: 858,139
+---
+<<if $act is 1 and $day is 1 and $Underhill is 1>>
+    <<show Harley1>>
+    <<show Harley2>>
+    <<show Harley3>>
+<<else>>
+    <<hide Harley1>>
+    <<hide Harley2>>
+    <<hide Harley3>>
+<<endif>>
+===

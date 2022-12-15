@@ -1,0 +1,2026 @@
+title: EnterLevel_A1D0
+tags: 
+colorID: 1
+position: -2503,485
+---
+<<if $dad_done is 0>>
+    <<fadeIn 3>>
+    <<playMusic come_home>>
+    <<destroy Collision:DoorAtNight>>
+    <<wait 6>>
+    <<tell _AmbientSFX:Door Play>>
+    <<wait 3>>
+    <<walk Mae EnterMaePositionForDadCouchTalk wait>>
+    <<set $door_blocker to 1>>
+    Mae: 当 当！|还 记 得 我 吗？ #line:b84625
+    Dad: 啊 啊 啊 啊 啊 啊！ #line:bd8966
+    Dad: 梅！你吓得我心脏病都要犯啦！ #line:1bc33d
+    Mae: 那 可 太 好 啦！/o\ #line:2c34f5
+    Dad: 你怎么回- #line:85bac5
+    <<wait 2>>
+    Dad: 噢噢噢噢！ #line:ab2e3d
+    Mae: _o_ #line:851230
+    Dad: 小梅，我们以为你要明晚才回来呢！ #line:bf195b
+    Mae: 你以为错了！ \o/ #line:01859c
+    Mae: _o_ #line:61a150
+    Dad: 你怎么回来的？ #line:3cf7f3
+    Mae: 当 然 是 走 回 来 的 了，在 被 抓 之 前…… #line:c93f3e
+    Mae: 被 我 那 个 商 场 保 安 姨 妈 给 抓 了。 :\ #line:c366f8
+    Dad: 哦，你有替我向茉莉问好吗？ #line:146607
+    Mae: 没！ :( #line:3fb751
+    Mae: 我 才 不 替 别 人 问 好 呢！ #line:1efd12
+    Mae: 去 她 喵 的 条 子！ #line:a229ba
+    Mae: 我 要 上 床 睡 觉 啦！ #line:a6c3e8
+    Mae: 我 的 床 还 在 吗？ :o #line:14cfed
+    Mae:还是说也要等到明晚才行？ #line:65941b
+     Dad: 啊，梅。能再听到你的声音真是太好了。 #line:4ef869
+    Mae: 晚 安 喽！ :| \o/ #line:f920c0
+    Mae: _o_ #line:c34560
+    <<set $dad_done to 1>>
+    <<unlockDoodle DadOlder>>
+<<endif>>
+===
+title: EnterLevel_A1D1
+tags: 
+colorID: 2
+position: -2155,503
+---
+
+===
+title: EnterLevel_A1D3
+tags: 
+colorID: 2
+position: -1426,551
+---
+<<if $party_prep is 1>>
+    <<walk Mae KitchenTalk wait>>
+    [[Dad_A1D3]]
+<<endif>>
+===
+title: EnterLevel_A2D1
+tags: 
+colorID: 3
+position: -870,533
+---
+
+
+===
+title: Dad_A2D1_0
+tags: 
+colorID: 3
+position: -1043,1136
+---
+Mae: 晚上好啊，老爸。 #line:fa9e48
+Dad: 听说你昨天晚上疯玩了一把！ #line:8458a5
+Mae: 我可没喝酒！ #line:9a93ac
+Dad:你这不是此地无银三百两嘛。 #line:0a17d9
+Mae: 说得是啊。 #line:367cf2
+Dad: 想听听我的万能解宿醉药配方嘛? #line:ca8f36
+Dad: 不喝酒就不会宿醉。 #line:2de65f
+Mae: 哇哦。等下，让我记个笔记。 #line:e14195
+Dad: 好好记下，这玩意很难理解的。 #line:61a62f
+<<unlockDoodle DadStillFunny>>
+===
+title: Dad_A2D1_1
+tags: 
+colorID: 3
+position: -914,1466
+---
+Dad: 所以今晚准备干什么去？ #line:8c9eec
+<<if $did_gregg_friendship_quest_1 is 1>>
+    Mae: emmm…… #line:3a3c42
+    Mae: 要去帮格雷格搬东西。 #line:126fa6
+    Dad: 瞧瞧你啊，真够朋友。 #line:c8a5ce
+    Dad: 帮着搬东西可是好朋友的标志行为。 #line:5ca061
+    Mae: 是啊，我们是最要好的朋友， #line:cd5084
+    Mae: 一向如此。 #line:ca0843
+    Mae: 所以我觉得我们的关系应该不只是会帮忙搬东西的那种朋友。 #line:171b68
+    Mae: 我真的，真的有些心痛。 #line:5a06c0
+    Dad: 有时候，你是会因为朋友而痛心的。 #line:f3953c
+<<elseif $did_bea_friendship_quest_1 is 1>>
+        Mae: 和碧娅出去玩了。 #line:a201fe
+        Dad: 玩得开心吗？ #line:c1d228
+        Mae: 还好。她有点……我也不知道该怎么说了。 #line:b9f378
+	Dad: ？ #line:353851
+        Mae: 她好像成长了。而且，成长了不少。 #line:44d735
+        Mae: 而且她的心情好像也……不太好？ #line:2c0d3d
+	Dad: 是啊，她经历了不少事。 #line:48f2af
+	Mae: 是啊。 #line:f1a725
+<<else>>
+    Mae: 友谊任务我一个都没接。 #line:aeb87c
+    Dad: 哈，好吧。某人有些不太对劲啊。 #line:c1933c
+<<endif>>
+
+===
+title: EnterLevel_A2D2
+tags: 
+colorID: 3
+position: -148,609
+---
+
+
+===
+title: InitLevel_A1D0
+tags: 
+colorID: 1
+position: -2515,252
+---
+<<hide Bea>>
+<<show Dad>>
+<<hide Mom>>
+<<sit Dad>>
+
+<<if $dad_done is 0>>
+    <<warp Mae MaeOutside>>
+<<endif>>
+===
+title: InitLevel_A1D1
+tags: 
+colorID: 2
+position: -2156,239
+---
+<<hide Bea>>
+<<if $night is 0>>
+	<<hide Dad>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+<<elseif $night is 1>>
+	<<show Dad>>
+    <<sit Dad>>
+	<<hide Mom>>
+<<endif>>
+
+<<if $night is 0>>
+    <<set $mom_stairs to 1>>
+
+    <<if $mom is 0>>
+        <<set $door_blocker to 1>>
+    <<else>>
+        <<set $door_blocker to 0>>
+    <<endif>>
+<<endif>>
+===
+title: InitLevel_A1D3
+tags: 
+colorID: 2
+position: -1402,264
+---
+<<if $party_prep is 1>>
+	<<show Mom>>
+    <<sit Mom>>
+	<<show Dad>>
+	<<hide Bea>>
+	<<warp Dad DadKitchen>>
+    <<setRigOffsetZ Dad 0>>
+    <<setSpriteLayer Dad DadFG0>>
+    <<setPlayerInteractLocator Dad KitchenTalk>>
+    <<setCanInteract Mom 0>>
+<<elseif $night is 0>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<elseif $night is 1>>
+	<<hide Mom>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<endif>>
+
+===
+title: InitLevel_A2D1
+tags: 
+colorID: 3
+position: -852,305
+---
+<<if $night is 0>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<else>>
+	<<hide Mom>>
+	<<show Dad>>
+    <<sit Dad>>
+	<<hide Bea>>
+<<endif>>
+
+<<if $night is 0>>
+    <<set $mom_stairs to 1>>
+
+    <<if $mom is 0>>
+        <<set $door_blocker to 1>>
+    <<else>>
+        <<set $door_blocker to 0>>
+    <<endif>>
+<<endif>>
+===
+title: InitLevel_A2D2
+tags: 
+colorID: 3
+position: -156,310
+---
+<<if $night is 0>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<else>>
+	<<hide Mom>>
+	<<show Dad>>
+    <<sit Dad>>
+	<<hide Bea>>
+<<endif>>
+===
+title: InitLevel_A1D2
+tags: 
+colorID: 2
+position: -1796,268
+---
+<<hide Bea>>
+<<if $night is 0>>
+    <<hide Dad>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+<<else>>
+    <<show Dad>>
+    <<sit Dad>>
+    <<hide Mom>>
+<<endif>>
+
+<<if $night is 0>>
+    <<set $mom_stairs to 1>>
+<<endif>>
+===
+title: Dad_A1D1_0
+tags: 
+colorID: 2
+position: -2383,1085
+---
+Dad: 嗨，小猫咪。 #line:66cdcf
+Mae: *哈……*（炸毛） #line:7a9ee2
+Dad: 听着梅，昨晚真的很抱歉。 #line:8bfdd0
+Dad: 我是真的以为你今晚才到家。 #line:bf2565
+[[没事的|Dad_A1D1_ItsOk]] #line:fa4405
+[[大概没事吧……|Dad_A1D1_ItsOkIGuess]] #line:2124f5
+===
+title: Dad_A1D1_ItsOk
+tags: 
+colorID: 2
+position: -2387,1327
+---
+Mae: 我从锯木场那边穿过了山谷。 #line:a7dc4f
+Mae: 差点就挂掉了。 #line:eb2719
+Dad: 什么？ #line:a11663
+Mae: 嗯，那些原木差点把我砸死。 #line:4e953d
+Mae: 这些事都是家常便饭啦。 #line:f48a25
+Dad: 好吧，我向你保证，我再也不会让你受困了。 #line:d39f3c
+[[Dad_A1D1_Continue]]
+===
+title: Dad_A1D1_Continue
+tags: 
+colorID: 2
+position: -2378,1552
+---
+Mae: 你看这样如何。 #line:805fba
+Mae: 不如我们假装我今晚才到家吧。 #line:db51c4
+Mae: 然后我们刚从汽车站回来。 #line:3ca052
+Dad: 重头开始？ #line:892ab6
+Mae: 没错。 #line:01f660
+Dad: 好的。 #line:771182
+Mae: 嘿，老爸。 #line:c25cb1
+Dad: 你好啊，梅 #line:d4d936
+Mae: 谢谢你来接我。 #line:dcbba4
+Dad: 欢迎回家，梅。 #line:fdb484
+Mae: 我想我得去睡了。 #line:0b8d5a
+Dad: 你回来累坏了吧。 #line:5b632d
+Dad: 晚安，小猫咪。 #line:571ec1
+<<unlockDoodle DadStillFunny>>
+===
+title: Dad_A1D1_ItsOkIGuess
+tags: 
+colorID: 2
+position: -2102,1317
+---
+Dad: 你知道的，我记性不好。 #line:017338
+Mae: 是啊，我知道。 #line:40aacf
+Mae: 我是说，您做得已经很不错了。 #line:4f2054
+Dad: 是啊，我还没忘怎么吃饭，怎么呼吸呢。 #line:55bc76
+Mae: 你记性确实不错，还记得怎么走路呢。 #line:de0a9b
+Dad: 都该给我发个金牌了。 #line:ed8a42
+[[Dad_A1D1_Continue]]
+===
+title: Dad_A1D1_1
+tags: 
+colorID: 2
+position: -2110,1087
+---
+Mae: 哦，对 啦！我 都 忘 了 跟 你 说 啦！ #line:d8e810
+Dad: 说什么啊？ #line:7f2de2
+Mae: 今 天 我 们 在 地 上 看 见 了 一 只 胳 膊！ #line:1fae59
+Dad: 我们还在假装现在是昨天吗？ #line:fad85f
+Mae: 不！我们当时从嘎嘣脆披萨店走出来就看见那边有只胳膊！ #line:120009
+Dad: 就像……一只胳膊吗？ #line:ae3e71
+Dad: 你说什么？ #line:534a41
+Mae: 之后那个商场保安姨妈来了，然后该怎样就怎样了！ #line:ce61c8
+Dad: 哦，我的老天。这也……太诡异了吧。 #line:3b7b6c
+Mae: 我还用棍子戳了它几下呢！ #line:257435
+Dad: 说真的，梅，别拿棍子去戳尸体。 #line:dee129
+Mae: 太晚喽！ #line:760504
+Dad: 哇哦。我得给莫莉发个邮件了。 #line:0b7183
+Mae: 好了，这回是真的晚安了！ #line:ff0b17
+
+===
+title: A1D3_PartyPrep
+tags: 
+colorID: 2
+position: -1335,1500
+---
+Mom: 嘿，宝贝！ #line:ce62c1
+Dad: 看看谁回来了！ #line:41726d
+Mae: 嗨，老爸老妈。 #line:dea1b4
+Mom: 我做了塔可。 #line:f897fe
+Dad: 等一下，是“我们"做了玉米卷饼。 #line:bbac7f
+Mae: 塔可吗？ #line:2a16dd
+Mom: 塔可哦！ #line:d1e12d
+Dad: 你要来点吗？ #line:2f4a74
+[[当然要。每天都要。三餐都要。|Mom_A1D3_IWantTacos]] #line:d9df46
+[[不了，等会我还要吃派对上的零食呢。|Mom_A1D3_NoGonnaSnackItUp]] #line:e4d797
+===
+title: Mom_A1D3_IWantTacos
+tags: 
+colorID: 2
+position: -1433,1860
+---
+Dad: 常吃塔可饼，亲情亲上亲。 #line:69194a
+Mae: …… #line:6f1187
+Mom: 亲爱的，这太…… #line:309aa3
+Dad: 怎么了？ #line:6806a4
+Mae:太蠢了，我要生气了。 #line:f8d0cd
+Dad: 怎么都冲我来了。 #line:e07a25
+Mom: 梅梅小宝贝儿，你的塔可上面要涂奶油吗？ #line:58bbfb
+Mae: 我…… #line:956aa3
+Mae: 想…… #line:c30bc8
+Mae: 全都要！！！ #line:610afa
+<<set $ate_tacos to 1>>
+<<close>>
+<<set $night to 1>>
+<<fadeOut 1 wait>>
+<<scene MaeRoom>>
+===
+title: Mom_A1D3_NoGonnaSnackItUp
+tags: 
+colorID: 2
+position: -1107,1851
+---
+Dad: 你是想说，吃零蛇吗？（snack 零食；snake 蛇） #line:1ba214
+Mom: 要小心蛇啊，宝贝儿。 #line:54715a
+Mae: 哎呀，那里有很多篝火和人的。 #line:60b161
+Mae: 蛇都会被吓跑的。 #line:e07964
+Dad: 蛇才不会跑呢，小猫崽。 #line:2aa048
+Mom: 你能够想象蛇还长着脚吗？ #line:daec44
+Mom: *瑟瑟发抖* #line:aeac1f
+Mae: 你说的那是蜥蜴吧，老妈。 #line:a8afb9
+Mom: 那你就小心蜥蜴。 #line:86e145
+Dad: 它们可会咬人。 #line:af6500
+<<close>>
+<<set $night to 1>>
+<<fadeOut 1 wait>>
+<<scene MaeRoom>>
+===
+title: InitLevel_A0D0
+tags: demo
+colorID: 2
+position: -2815,248
+---
+<<hide Bea>>
+<<hide Dad>>
+<<show Mom>>
+<<sit Mom>>
+===
+title: Clock
+tags: demo
+colorID: 0
+position: -848,-522
+---
+<<if $mae_house_clock is 0>>
+	[[ClockClock]]
+<<elseif $mae_house_clock is 1>>
+	[[ClockDuck]]
+<<elseif $mae_house_clock is 2>>
+	[[ClockOldCountry]]
+<<endif>>
+===
+title: ClockClock
+tags: demo
+colorID: 0
+position: -968,-89
+---
+Mae: {align=middle,locator=clock}这是太爷爷留下的钟。 #line:fdda7a
+Mae: {align=middle,locator=clock}他从原住地带过来的！ #line:87af80
+Mae: {align=middle,locator=clock}可惜它从来没走准过。 #line:001bd7
+<<set $mae_house_clock to 1>>
+
+===
+title: ClockOldCountry
+tags: demo
+colorID: 0
+position: -432,-462
+---
+Mae: {align=middle,locator=clock}这个屋里的有一些东西是从上一个家里带过来的。 #line:5c5816
+Mae: {align=middle,locator=clock}有这个钟，还有储藏室里的那个储物箱。 #line:88bbff
+Mae: {align=middle,locator=clock}还有那些在水泥时间后被埋在房子下面的东西。 #line:c000cb
+===
+title: ClockDuck
+tags: demo
+colorID: 0
+position: -634,-173
+---
+Mae: 这个玩意每个月都会乱响。 #line:62091b
+Mae: 小木鸭子向外跳，唧唧喳喳真诡异。 #line:568855
+Mae: {align=middle,locator=clock}每次都把我爹吓个半死。 #line:9a0ff6
+Mae: {align=middle,locator=clock}我以前还开玩笑说，是爷爷的鬼魂要来找他算账呢。 #line:b3f3be
+<<set $mae_house_clock to 2>>
+===
+title: Door1
+tags: demo
+colorID: 0
+position: -74,-676
+---
+<<if $mae_house_door_1 is 0>>
+	Mae: 现在不用去卫生间。 #line:1ba915
+	Mae: 只有要亲嘴的人才会刷牙呢。 #line:a99d9c
+	<<set $mae_house_door_1 to 1>>
+<<elseif $mae_house_door_1 is 1>>
+	Mae: 我好讨厌走下楼梯时发现有人在里面。 #line:a54e9c
+	Mae: 这让我感觉我狠狠践踏了他们的隐私权。 #line:3ad6c1
+	<<set $mae_house_door_1 to 2>>
+<<elseif $mae_house_door_1 is 2>>
+	Mae: 想去卫生间的时候我自然就会去了。 #line:91bf15
+	Mae: 但现在我不想去。 #line:a2ee82
+<<endif>>
+===
+title: Door2
+tags: demo
+colorID: 0
+position: 186,-625
+---
+<<if $mae_house_door_2 is 0>>
+	Mae: 我记得老爸老妈的房间我只进过一次。 #line:7da3ce
+	Mae: 等下，不对。 #line:eb439c
+	Mae: 怎么这种事我还记得？ #line:d590fb
+	<<set $mae_house_door_2 += 1>>
+<<elseif $mae_house_door_2 is 1>>
+	Mae: 他们有一个很渗人的裸体接吻的雕像 #line:5b0147
+	Mae: 就放在床尾的柜子上。 #line:ccb83a
+	Mae: 不。 #line:497686
+	<<set $mae_house_door_2 += 1>>
+<<elseif $mae_house_door_2 is 2>>
+	Mae: 老妈有一个外婆传给她的杉木箱子。 #line:b2f93b
+	Mae: 好像算是传家宝。 #line:aa6688
+	Mae: 我想，以前的时候，你应该把嫁妆放在这里头。 #line:e36902
+	Mae: 话说，嫁妆是个什么玩意呢？ #line:79f167
+	<<set $mae_house_door_2 += 1>>
+<<elseif $mae_house_door_2 is 3>>
+	Mae: 我还是把老爸老妈的房间的画面继续留在想象里吧。 #line:e0c10b
+<<endif>>
+
+===
+title: MomStairs_A0D0
+tags: demo
+colorID: 0
+position: -1630,-508
+---
+Mom: {align=middle,locator=momstairs} ……梅？ #line:fe284f
+Mae: 我在？ #line:cdf7b5
+Mom: {align=middle,locator=momstairs} 你要出门吗？ #line:e0c03b
+Mae: 对！ #line:7b6abd
+Mom: {align=middle,locator=momstairs} [wave]先到厨房来一下！[/wave] #line:293173
+===
+title: Dad_A1D1
+tags: 
+colorID: 2
+position: -2191,838
+---
+<<if $dad is 0>>
+	<<set $dad += 1>>
+	[[Dad_A1D1_0]]
+<<elseif $dad is 1>>
+	<<set $dad += 1>>
+	<<set $dad_done to 1>>
+	[[Dad_A1D1_1]]
+<<endif>>
+
+===
+title: Dad_A2D1
+tags: 
+colorID: 3
+position: -859,876
+---
+<<if $dad is 0>>
+	<<set $dad += 1>>
+	[[Dad_A2D1_0]]
+<<elseif $dad is 1>>
+	<<set $dad += 1>>
+	[[Dad_A2D1_1]]
+<<elseif $dad is 2>>
+    [[GarboCheck]]
+<<endif>>
+===
+title: Dad_A1D2
+tags: 
+colorID: 2
+position: -1771,812
+---
+<<if $dad is 0>>
+	<<set $dad += 1>>
+	[[Dad_A1D2_0]]
+<<elseif $dad is 1>>
+	<<set $dad += 1>>
+	<<set $dad_done to 1>>
+	[[Dad_A1D2_1]]
+<<endif>>
+===
+title: Dad_A1D2_0
+tags: 
+colorID: 2
+position: -1854,1103
+---
+Mae: 嘿，老爹。 #line:a8692e
+Dad: 什么嘛，这不是负鼠泉市长本人吗？ #line:2a7a45
+Dad: 今天干什么去了？ #line:e6fd1d
+Mae: 和安格斯一块儿玩了会儿。你还记得他吧？ #line:e169ca
+Dad: 哦，当然记得啦！我还蛮喜欢这孩子的。他脑袋挺灵光的。 #line:6ef5b0
+Dad: 我以前和他爸是同事。 #line:d4428c
+Dad: 我们失业之后他们家有一段时间很难过活。 #line:df4aa4
+Dad: 以前在酒吧里见过他…… #line:38d001
+Mae: 嗯。 #line:7e7109
+Dad: 我把酒戒了之后，就没怎么看见过他了。 #line:0233a5
+Dad: 我很好奇，他现在怎么样了。 #line:fb5aac
+<<set $dad_knows_angus to 1>>
+
+===
+title: Dad_A1D2_1
+tags: 
+colorID: 2
+position: -1609,1114
+---
+Dad: 关于那只断臂，调查有什么进展了吗？ #line:0f180a
+Mae: 据我所知还没有。 #line:4561e5
+Dad: 哈。好吧，在外面小心点。 #line:720477
+Mae: 没准我应该随身带个钉头锤或者铜指虎之类的东西。 #line:af22be
+Dad: 要是有人找你麻烦，然后又碰上你赤～膊上阵 #line:25daa0
+Dad: 那就太丢人了。 #line:4eba4f
+Mae: 不会啦，应该会没事的啦。 #line:87b1c6
+Dad: …… #line:5d4876
+Mae: 怎么了？ #line:c36882
+Dad: …… #line:d31ebe
+Mae: 哈 哈 哈 哈 哈，|好了，我懂了。 #line:2bdffd
+Dad: 赤～膊，没胳膊，嗯哼，懂了吗？ #line:e2acc6
+Mae: 我要睡觉去了。 #line:b463f4
+Dad: 晚安，小猫咪市长。 #line:d4b644
+Mae: 晚安！ #line:55b54e
+<<unlockDoodle DadStillFunny>>
+===
+title: Internal
+tags: demo
+colorID: 0
+position: -555,-1026
+---
+<<if $mae_room_internal is 0>>
+    Mae: {width=5}要是我再不从这儿出去的话我没准真的要 [speed=.7][color=999]把它连同我自己一起给烧了。[/all] #line:78ef14
+    <<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 1>>
+    Mae: {width=3}我敢打赌，这之前就有人干过这种事，出于 [color=999]政治原因。[/all] #line:0eca98
+    <<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 2>>
+    Mae: {width=3}我在想，要是我真把我和这房子一块给烧了， [speed=.7][color=999]这儿还会剩些什么？[/all] #line:df3fbf
+    <<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 3>>
+    Mae: {width=3}大概只会剩骨头，铜管 ，[speed=.7][color=999]还有厉鬼。[/all] #line:63e0cc
+    <<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 4>>
+    Mae: {width=3}“是啊，这可是块风水宝地" #line:8890a0
+    Mae: “但我听说啊，这里以前有过一栋房子，有个姑娘一把火给它给烧了。" #line:b94fbb
+    Mae: “[speed=.5][color=999]连她自己也一块给烧死了。[/all]" #line:388901
+    <<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 5>>
+    Mae: {width=3}“我们可是很喜欢跟潜在的买家提这件事的。"[/all] #line:f277a2
+    <<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 6>>
+    Mae: {width=3}“这里可满是鬼哭狼嚎啊。" #line:01346d
+    Mae: “[speed=.7][color=999]我是说，以前是这样的。"[/all] #line:7ad456
+    <<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 7>>
+    Mae: {width=3}事实上啊，她放火的那一个晚上， [speed=.7][color=999]和今晚，很像呢……[/all] #line:53d9a4
+    <<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 8>>
+    Mae: {width=3}所以，我还是 [wave]出去为妙。[/all] #line:b0554a
+    <<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 9>>
+    Mae: {align=top,furthestLocator,emote=maeburn,emoteAlign=middle} #line:33f8d1
+<<endif>>
+===
+title: Couch
+tags: 
+colorID: 0
+position: -3202,242
+---
+<<sit>>
+<<if $act > 0>>
+    <<if $night is 1>>
+        Dad: 你居然躺沙发上啦！ #line:a96141
+    <<endif>>
+<<endif>>
+<<waitForInteractOrJump>>
+===
+title: EnterLevel_A1D2
+tags: 
+colorID: 2
+position: -1748,545
+---
+
+===
+title: Dad_A1D3
+tags: 
+colorID: 2
+position: -1315,1134
+---
+[[A1D3_PartyPrep]]
+===
+title: InitLevel_A2D3
+tags: 
+colorID: 3
+position: 222,326
+---
+<<if $night is 0>>
+    <<if $mom_home > 0>>
+        <<setAnimInt Mom gloomy 1>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<else>>
+	<<hide Mom>>
+    <<show Dad>>
+    <<sit Dad>>
+	<<hide Bea>>
+<<endif>>
+===
+title: InitLevel_A2D4
+tags: 
+colorID: 3
+position: 541,340
+---
+<<if $night is 0>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<else>>
+	<<hide Mom>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<endif>>
+===
+title: InitLevel_A3D1
+tags: 
+colorID: 4
+position: 816,347
+---
+<<if $night is 0>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<else>>
+	<<hide Mom>>
+	<<show Dad>>
+    <<sit Dad>>
+	<<hide Bea>>
+<<endif>>
+
+<<if $night is 0>>
+    <<set $mom_stairs to 1>>
+
+    <<if $mom is 0>>
+        <<set $door_blocker to 1>>
+    <<else>>
+        <<set $door_blocker to 0>>
+    <<endif>>
+<<endif>>
+===
+title: InitLevel_A3D2
+tags: 
+colorID: 4
+position: 1314,344
+---
+<<if $night is 0>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<else>>
+	<<hide Mom>>
+	<<show Dad>>
+    <<sit Dad>>
+	<<hide Bea>>
+<<endif>>
+===
+title: InitLevel_A3D3
+tags: 
+colorID: 4
+position: 1922,344
+---
+<<if $night is 0>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<else>>
+	<<hide Mom>>
+	<<show Dad>>
+    <<sit Dad>>
+	<<hide Bea>>
+<<endif>>
+===
+title: InitLevel_A3D4
+tags: 
+colorID: 4
+position: 2336,346
+---
+<<if $night is 0>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<else>>
+	<<hide Mom>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<endif>>
+===
+title: GarboCheck
+tags: 
+colorID: 3
+position: -545,1699
+---
+<<if $knows_crawlspace_boxes and $mae_house_boxes_moved is 0>>
+    <<if $watched_tv_with_dad is 0>>
+        Mae: 嘿，老爸，可以把楼梯间里的箱子给挪走吗？ #line:0bf8f8
+        Dad: 哦，你最近有帮过我什么忙吗？ #line:9cc0f9
+        ->我这些天表现很好，做了回好女儿。 #line:dc903e
+        ->我这些天已经成了咱们家的骄傲。 #line:ca8494
+        Dad: 这可不算数。 #line:4e1bd9
+        Dad: 嗯，你想和我看会儿电视吗？ #line:a3e131
+    <<elseif $watched_tv_with_dad is 1>>
+        Mae: 嗯……那些箱子怎么办？就是堆在楼梯间的那些箱子？ #line:6504a3
+        Dad: 嗯，我正在想这个问题。 #line:71648a
+        Dad: 要和我看会儿电视吗？ #line:cacea9
+    <<else>>
+        <<set $dad_will_move_boxes to 1>>
+        Mae: 楼梯间的那些箱子怎么样了？ #line:bae66b
+        Dad: 啊，好吧。我会把它们挪走的。 #line:af6dff
+        Dad: 看电视吗？ #line:4645ef
+    <<endif>>
+<<else>>
+    Dad: 你想晚点再睡吗？ #line:8377c5
+<<endif>>
+[[好啊，晚点再睡。|YeahForALittleBit]] #line:b8023a
+[[不了，我要睡觉去了。|NawImHeadingToBed]] #line:5612b4
+===
+title: YeahForALittleBit
+tags: 
+colorID: 3
+position: -396,2059
+---
+<<set $dad_done to 1>>
+<<if $watched_tv_with_dad is 0>>
+    Dad: 快上来，我正在看《嘉宝和莫洛伊》呢。 #line:7c8930
+<<elseif $watched_tv_with_dad is 1>>
+    Dad: 时间刚刚好，《嘉宝和莫洛伊》要开始了。 #line:47cd7f
+<<endif>>
+
+<<if $player_y * 10 > -14>>
+    <<playerFallThrough wait>>
+<<endif>>
+<<walk Mae MaeCouch>>
+<<if $watched_tv_with_dad is 0>>
+    Mae: 好～耶～ #line:329928
+<<elseif $watched_tv_with_dad is 1>>
+    Mae: 嗷，挺好。 #line:0cb385
+<<endif>>
+<<close>>
+<<set $watched_tv_with_dad += 1>>
+<<waitForMove Mae>>
+<<cameraLookAt CameraTV 1>>
+<<sit>>
+<<tell TVOverlay Show>>
+<<wait 2>>
+<<if $act is 2 and $day is 1>>
+    [[GarboAndMalloy_A2D1]]
+<<elseif $act is 2 and $day is 2>>
+    [[GarboAndMalloy_A2D2]]
+<<elseif $act is 2 and $day is 3>>
+    [[GarboAndMalloy_A2D3]]
+<<else>>
+    [[EndTV]]
+<<endif>>
+===
+title: NawImHeadingToBed
+tags: 
+colorID: 3
+position: -635,2083
+---
+Dad:听着不错。 #line:194061
+<<set $dad_done to 1>>
+===
+title: Dad_A2D2_0
+tags: 
+colorID: 3
+position: -95,1330
+---
+Mae: 最近工作怎么样？ #line:5b5378
+Dad: 你懂的，比在玻璃厂好多啦！ #line:d0800b
+Mae: 是吗？ #line:599042
+Dad: 我啊，挖过矿，开过机器， #line:1a903c
+Dad: 可现在我的工作变成了切肉排 #line:79a304
+Dad: 和切意大利肉肠。 #line:420af1
+Dad: 我想说的是，这份工比起以前那些肯定是要轻松许多。 #line:d68f09
+Mae: 可您喜欢这工作吗？ #line:52ea43
+Dad: 只要有工资我就喜欢！ #line:70d00a
+Mae: 好吧。 #line:344e67
+Dad: 薪水是最香、最有油水的肉啦。 #line:d200fb
+<<unlockDoodle DadStillFunny>>
+===
+title: Dad_A2D2
+tags: 
+colorID: 3
+position: -350,920
+---
+<<if $dad is 0>>
+	<<set $dad += 1>>
+	[[Dad_A2D2_0]]
+<<elseif $dad is 1>>
+	<<set $dad += 1>>
+	[[Dad_A2D2_1]]
+<<elseif $dad is 2>>
+    [[GarboCheck]]
+<<endif>>
+===
+title: Dad_A2D2_1
+tags: 
+colorID: 3
+position: 144,1255
+---
+Dad: 今天晚上干什么去了？ #line:9e6505
+Mae: 哦，你懂的，就那些乱七八糟的事啦。 #line:53b8f4
+Mae: 我太累了。 #line:b3e734
+Mae: 感觉就像我做了一整天工一样。 #line:b76f8a
+Dad: 你知道吗，现在，能给你发工资的地方有很多。 #line:365dc5
+Mae: 哦，是真的吗？ #line:4f4fbf
+Dad: 是真的，人们都叫它“工作"。 #line:182831
+Mae: 哈。你是在用黑话逗我吧。 #line:66481a
+Dad: 这可是你工作了才学得到的黑话。 #line:30d513
+Mae: 好的，包袱抖出来了。 #line:f0b0ab
+===
+title: Dad_A2D3_0
+tags: 
+colorID: 3
+position: 332,956
+---
+Dad: 呜呼。 #line:078a89
+Mae: 怎么啦？ #line:43fbef
+Dad: 真是漫长的一天啊。 #line:245954
+Mae: 嗯，我这边也差不多。 #line:b472cd
+Dad: 社交活动展开得怎么样了？ #line:424ab1
+Mae: 这种事有时出奇的累人。 #line:35d7f5
+Dad: 是啊。所以我很少参加这种活动！ #line:8086c6
+<<if $did_bea_friendship_quest_3 is 1>>
+	Dad: 今晚做工的时候能见到你可真是太惊喜了 #line:9c64ed
+	Mae: 是啊！我都不敢相信，我居然都还没去探过班。 #line:84ab3c
+	Dad: 你有很长时间没回来过了。 #line:3306d7
+	Dad: 而且你也不经常到猎豹鲜生那儿去转悠。 #line:21407b
+	Mae: 谁说我不经常去了？ #line:a3a1c4
+	Dad: 不管怎么说，能见到你还是很开心的。 #line:1ab86f
+	Mae: 转悠……转悠…… #line:4e0dc9
+<<endif>>
+<<unlockDoodle DadStillFunny>>
+===
+title: Dad_A2D3_1
+tags: 
+colorID: 3
+position: 553,954
+---
+<<if $mom > 0 or $mom_church > 0>>
+	Mae: 你知道老妈今天是怎么了吗？ #line:3b78ec
+	Dad: 哦，她只是压力有点大而已。 #line:4330b7
+<<else>>
+	Mae: 你今天晚上压力好像也有点大呀。 #line:c20001
+	Dad: 是～啊～是有点大。 #line:50e18f
+	Mae: 我压力大是因为…… #line:0c10e7
+	Dad: 噢，不就是因为那些事嘛。 #line:cd5227
+<<endif>>
+Mae: 这回答也太含糊了吧。 #line:121a5f
+Dad: 哈哈，好吧。 #line:009480
+Dad: 我虽然不想把事说破， #line:968041
+Dad: 但成年以后，你会在生活中遇到各种莫名其妙的压力和负担。 #line:e8e56f
+Mae: 嗷，真倒霉。 #line:1108fa
+Mae: 我还以为出现压力的原因会很明显呢。 #line:f28cfa
+Dad: 哦，也不全是这样的，你说的那种情况你肯定也是会遇到的。 #line:cf9090
+Mae: 嗯。 #line:0092b0
+Dad: 所以一定要振作起来，丫头。这就是人生。 #line:1fb4ef
+Mae: 天哪，谢了，老爸。 #line:2d3971
+
+===
+title: Dad_A2D3
+tags: 
+colorID: 3
+position: 265,713
+---
+<<if $dad is 0>>
+	<<set $dad += 1>>
+	[[Dad_A2D3_0]]
+<<elseif $dad is 1>>
+	<<set $dad += 1>>
+	[[Dad_A2D3_1]]
+<<elseif $dad is 2>>
+    [[GarboCheck]]
+<<endif>>
+===
+title: Dad_A3D1_0
+tags: 
+colorID: 4
+position: 781,873
+---
+<<if $big_fight is 0>>
+    Mae: =_= #line:2fa54d
+	Mae: 呃啊。 #line:cc510e
+	Dad: 呃啊？ #line:dbde72
+	Mae: 感觉今晚过得好失败啊。 #line:288fb6
+	Dad: 噢，可怜的小梅。我能帮什么忙吗？ #line:53c8ef
+	Mae: 我…… #line:8c841c
+	Mae: 不用了。 #line:3536ee
+	Mae: 我也不知道。 #line:661d6e
+	Dad: 好吧，等你有头绪了，再跟我说吧。 #line:375853
+	Mae: 谢了，爸。 #line:0c32fb
+    Mae: o_o #line:560842
+<<else>>
+    Mae: =_= #line:b68556
+    Mae: 呃啊。 #line:ec24cd
+	Dad: 嗯，看来这句话还挺流行的。 #line:014790
+	Dad: 就这句“呃啊"。 #line:b0c080
+	Mae: 是啊。 #line:fac340
+	Dad: 话说回来……呃……昨天你和你妈吵了一架，是吗？ #line:390085
+	Mae: 对。 #line:65d96b
+	Dad: 我还以为你们俩感情很好呢。 #line:7bf69d
+    Mae: o_o #line:f32d0d
+        ->以前我们俩关系确实很好。 #line:8d4fbe
+            Mae: 但我们俩现在也好好谈过了。 #line:5a3732
+        ->现在我们俩感情也很好啊。 #line:c746a1
+            Mae: 只是有一点小摩擦而已啦。 #line:6382eb
+            Dad: 你们俩啊，简直就是一个模子刻出来的。 #line:de964c
+            Mae: 可能吧。 #line:06f609
+            Mae: 我可是继承了你的淡定和我妈那又聪明又混……的聪明劲儿啊。 #line:ad7bad
+    Dad: 我可不想再看到你们俩吵架啦。 #line:3b73e4
+    Mae: 没事了，我们已经和好了。 #line:a369d3
+    <<if $money_trouble is 1>>
+		Mae: 话说，咱家是不是出现财政危机了？ #line:4fbdb7
+        Dad: 什么？没有啊。咱们好得很呢。 #line:664765
+        Mae: 老爸。 #line:7ff416
+        Dad: 梅，咱们真没事。 #line:7caffd
+		Mae: 没关系的。我已经20了，能处理这些问题了。 #line:5771cb
+        Dad: 咱们没有问题要你来处理。 #line:036189
+        Mae: 好吧。 #line:54ef6d
+    <<endif>>
+<<endif>>
+===
+title: Dad_A3D1_1
+tags: 
+colorID: 4
+position: 1022,853
+---
+Mae: 今天晚上我只想倒头就睡。 #line:c7c352
+Dad: 这主意听着不错，丫头。这几天真是够累人的。 #line:f228b9
+===
+title: Dad_A3D1
+tags: 
+colorID: 4
+position: 843,617
+---
+<<if $dad is 0>>
+	<<set $dad += 1>>
+	[[Dad_A3D1_0]]
+<<elseif $dad is 1>>
+	<<set $dad += 1>>
+    <<set $dad_done to 1>>
+	[[Dad_A3D1_1]]
+<<endif>>
+===
+title: Dad_A3D2_0
+tags: 
+colorID: 4
+position: 1312,917
+---
+Mae: =_= #line:fa44da
+Mae: 哟，老爹。 #line:aef4d0
+Dad: 哟，是您老啊。 #line:0df9c9
+Dad: 你还好吗？ #line:5be292
+Mae: 还好。只是感觉今天晚上怪怪的。 #line:19893c
+Dad: 你看起来真的是累坏了。 #line:ffddec
+Mae: 是啊…… #line:7749e5
+Mae: o_o #line:5b9509
+===
+title: Dad_A3D2_1
+tags: 
+colorID: 4
+position: 1553,913
+---
+Dad: 老天呐。今晚全身上下好痛啊。 #line:146fb2
+Dad: 该买个靠垫什么的了。 #line:9538b1
+Dad: 话说你是怎么做到的？ #line:3824ef
+Mae: 做什么？ #line:1645b9
+Dad: 三天两头活蹦乱跳的，疯了似的。 #line:b98c75
+Mae: 我也不知道。我是说，我身材走样真挺严重的。 #line:69b725
+Mae: 我觉得我甚至都没有不走样的时候。 #line:849c12
+Dad: 我身材以前就挺好的，但那不过是工作的缘故。 #line:2c87e2
+Dad: 这份新工可不需要身体素质过硬。 #line:9fe9b2
+Mae: 是啊。 #line:685eab
+<<wait 2>>
+<<if $did_mom_friendship_quest is 1>>
+    Dad: 听说你和你妈今天探险去了？ #line:7219db
+    Mae: :) #line:785b87
+    Mae: 哈哈，没错。 #line:49f96a
+    Dad: 晚饭的时候，她从头到尾都在提这事。 #line:4cd2e5
+    Dad: 知道吗，你也得时不时地回家吃个晚饭才对。 #line:df086f
+    Mae: :| #line:f9c309
+    Mae: 好吧。 #line:c2b39b
+    Dad: 好吧？ #line:e79a9c
+    Mae: 好吧。 #line:a5eb96
+<<endif>>
+Dad: 那好吧，快去睡觉吧。 #line:d6142c
+Mae: 遵命。 #line:39d558
+===
+title: Dad_A3D2
+tags: 
+colorID: 4
+position: 1389,628
+---
+<<if $dad is 0>>
+	<<set $dad += 1>>
+	[[Dad_A3D2_0]]
+<<elseif $dad is 1>>
+	<<set $dad += 1>>
+    <<set $dad_done to 1>>
+	[[Dad_A3D2_1]]
+<<endif>>
+===
+title: Dad_A3D3_0
+tags: 
+colorID: 4
+position: 1983,845
+---
+<<toggleSitSwings Mae 0>>
+Mae: =_= #line:94b302
+Mae: 嗨。 #line:fde606
+Dad: 哈喽啊。 #line:5bd112
+Dad: 噢，哇哦。你还好吗？ #line:32ffee
+Mae: 不好。 #line:46d7cb
+Mae: o_o #line:6b9491
+<<close>>
+<<if $player_y * 10 > -14>>
+    <<playerFallThrough wait>>
+<<endif>>
+<<walk Mae MaeCouch>>
+<<waitForMove Mae>>
+<<cameraLookAt CameraTV 1>>
+<<sit>>
+Dad: 好吧， #line:cd01cc
+Dad: 出什么事了？ #line:e53344
+Mae: 我觉得这种事我说不出口。 #line:316d2b
+Dad: 有些时候你是不想说也得说的，小猫咪。 #line:adbd65
+Mae: 我希望我能说得出口。 #line:5a5946
+Dad: 那你为什么不说呢？ #line:ec3906
+    ->我也不知道。 #line:830142
+        Dad: 这种事有时候就是这样的 #line:1842fb
+        Dad: 但这可不是闭口不提这种事的好理由。n. #line:034ef5
+        Mae: 我明白。 #line:8d2419
+    ->该怎么说呢？ #line:f28656
+Mae: 就是 #line:963142
+Mae: 我一直都在做一些特奇怪的梦。 #line:fc903f
+Mae: 而且，我还一直感觉我见到了幽灵。 #line:fb5803
+Dad: 幽灵？ #line:50281b
+Mae: 我一直做这些天杀的噩梦 #line:b78818
+Mae: 它们感觉还很真实 #line:9b02de
+Mae: 我还有预感，有很不好的事要发生了 #line:e2d592
+Mae: 而我还在这附近瞎窜，干这些蠢事 #line:4f67cb
+Mae: 照这样下去会怎么样啊？ #line:a82f4f
+Mae: 我现在又是个什么样啊？ #line:ad71f4
+Mae: 我觉得今晚我还是有解决掉一些问题的 #line:cfec61
+Mae: 但就好像 #line:1436bf
+Mae: -_- :( #line:992ef6
+Mae: 每个人都和我走在不同的道路上 #line:31ee9f
+<<if $big_fight>>
+	Mae: 而且我还和老妈大吵了一架。 #line:59f255
+    Dad: 小猫咪，事情已经过去了。 #line:a135b8
+<<endif>>
+<<if $money_trouble>>
+	Mae: 这些甚至都还没算上财政危机的事。 #line:21bfb0
+	Dad: 是啊。 #line:7fbcb0
+    Dad: 财政危机让不管什么东西都变得更糟了。这我明白。 #line:9752ab
+    Mae: 我还什么忙都帮不上 #line:dc53dc
+    Mae: 我都不知道我能不能打得下去工 #line:e345cb
+    Mae: 也不知道我一个人该怎么过活 #line:72b4a9
+<<endif>>
+Mae: 还有……还有……还有…… #line:fe2294
+Dad: 嘘……小猫咪。 #line:b79a46
+Dad: 深呼吸。 #line:47549d
+Mae: 好的，好的，好的。 #line:6e7c87
+Mae: o_o :( #line:baa145
+<<wait 4>>
+Dad: 为什么不先去睡会儿呢？ #line:17c094
+Mae: …… #line:8c2280
+Mae: 我能在楼下再多待一会儿吗？ #line:c6f827
+<<wait 3>>
+Dad: 你想待多久，就待多久。 #line:5a4c8f
+Mae: :| #line:c6c573
+<<close>>
+<<wait 2>>
+[[GarboAndMalloy_A3D3]]
+===
+title: PreInitLevel
+tags: 
+colorID: 0
+position: -2996,0
+---
+<<if $night is 0>>
+    <<play MaeHouseMusic>>
+<<else>>
+    <<musicFadeOut 4>>
+<<endif>>
+===
+title: InitMaeHouseFromGreggAngusApartment
+tags: 
+colorID: 0
+position: -2528,16
+---
+<<playerFace -1>>
+===
+title: MomStairs
+tags: 
+colorID: 0
+position: -3049,563
+---
+<<set $mom_stairs to 0>>
+
+<<if $act is 1 and $day is 1>>
+    Mom: 宝贝儿？ #line:f67413
+    Mae: 嗯？ #line:358f82
+    Mom: 出门前先到厨房来一下！ #line:51695a
+    Mae: 好！ #line:a95b57
+<<elseif $act is 1 and $day is 2>>
+    Mom: 嘿，宝贝。 #line:dabc28
+    Mae: 嗯？ #line:e9ad3d
+    Mom: 过来打个招呼。 #line:dd2ae9
+<<elseif $act is 2 and $day is 1>>
+    [[MomStairsA2D1]]
+<<elseif $act is 3 and $day is 1>>
+    Mom: 嘿，宝贝。 #line:62e327
+    Mae: 什么事？ #line:78fb80
+    Mom: 过来打个招呼好不好？ #line:e39823
+<<elseif $act is 4 and $day is 2>>
+    Mom: 你昨天昏过去啦！快过来聊聊。 #line:9ea87b
+<<elseif $act is 4 and $day is 3>>
+    Mom: 梅，小宝贝？是你吗？ #line:be229c
+    Mae: 是我！ #line:fd156b
+    Mom: 要是你想过来聊两句的话， #line:d0fc84
+    Mom: 我就在厨房里等你…… #line:983e34
+<<endif>>
+===
+title: EndTV
+tags: 
+colorID: 3
+position: -444,2458
+---
+<<close>>
+<<tell TVOverlay to Hide>>
+<<wait 2>>
+<<cameraFollowPlayer 1>>
+===
+title: GarboAndMalloy_A2D2
+tags: 
+colorID: 3
+position: -23,2079
+---
+<<animate TV Logo>>
+<<tell _AmbientSFX:GarboAndMalloy Play>>
+<<wait 5.5>>
+//======================================
+<<animate TV MalloyTalk>>
+TV: 啊啊啊，这不是吗。 #line:7bcec6
+<<animate TV GarboTalk>>
+TV: 大伙也知道咱哥几个就爱聊政治的 #line:0066f1
+<<animate TV MalloyTalk>>
+TV: 那你倒聊啊！快点啊！ #line:4b034d
+<<animate TV GarboTalk>>
+TV: 那书上写的那些个新法规您听说了吗？ #line:614191
+<<animate TV GarboTalk>>
+TV: 关于网上公开传播盗版影片，这事您有了解吗？ #line:72c9a6
+<<animate TV MalloyTalk>>
+TV: 有。 #line:80f050
+<<animate TV GarboTalk>>
+TV: 让抓着少说得在牢里蹲十年呢！ #line:26fb19
+<<animate TV MalloyTalk>>
+TV: 好家伙！要换以前，被判个十年可真不是个容易的事，我试过呢！ #line:a9de4d
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV GarboStare>>
+<<wait 2>>
+<<animate TV GarboTalk>>
+TV: 他还在试呢，大家伙！ #line:237c98
+<<animate TV MalloyTalk>>
+TV: 你说，这传播盗版影片，传那种一级谋杀案的片子 #line:fe6dab
+<<animate TV MalloyTalk>>
+TV: 会不会比那种传大宗盗窃案片子的，在牢里会更有名望啊？ #line:43bdbd
+<<animate TV GarboTalk>>
+TV: 嘿，莫洛伊，您知道我对这个规定是怎么看的吗？ #line:08d37e
+<<animate TV MalloyTalk>>
+TV: 怎么看？ #line:490b91
+<<animate TV GarboTalk>>
+TV: ……“啪啪打脸！" #line:e06198
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV MalloyLaugh>>
+<<wait 2>>
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV MalloyStare>>
+<<wait 2>>
+<<animate TV MalloyTalk>>
+TV: 下面请欣赏：愚蠢的三明治！ #line:cb14fd
+//======================================
+<<animate TV Static>>
+<<wait 3>>
+[[EndTV]]
+===
+title: GarboAndMalloy_A2D1
+tags: 
+colorID: 3
+position: -43,1803
+---
+<<animate TV Logo>>
+<<tell _AmbientSFX:GarboAndMalloy Play>>
+<<wait 5.5>>
+//======================================
+<<animate TV GarboTalk>>
+TV: 大家伙，欢迎回来！ #line:c3454a
+<<animate TV MalloyTalk>>
+TV: 今晚可真是见了鬼了。 #line:e13728
+<<animate TV GarboTalk>>
+TV: 快跟大伙说说呗，莫洛伊。 #line:532564
+<<animate TV MalloyTalk>>
+TV: 得，嘉宝。 #line:0926ee
+<<animate TV GarboTalk>>
+TV: 你有没有感受到，咱们呐，就要大祸临头了？ #line:1dc2ab
+<<animate TV MalloyTalk>>
+TV: 可不是，每晚录节目的时候不都是大祸临头！ #line:639f74
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV GarboStare>>
+<<wait 2>>
+<<animate TV MalloyTalk>>
+TV: 你迷信吗，嘉宝？ #line:e08544
+<<animate TV GarboTalk>>
+TV: 我早就不信那玩意了！ #line:b096fe
+<<animate TV MalloyTalk>>
+TV: 什么情况！ #line:c6798f
+<<animate TV GarboTalk>>
+TV: 我刚把我身上带的镜子都给砸了 #line:381273
+<<animate TV GarboTalk>>
+TV: 现在我转运啦，再也不用看见镜子里那个傻逼了！ #line:a291c6
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV GarboLaugh>>
+<<wait 2>>
+<<animate TV MalloyTalk>>
+TV: 那确实，可我们怎么办？ #line:346f83
+<<animate TV GarboTalk>>
+TV: 什-？“啪啪打脸！" #line:63585b
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV MalloyLaugh>>
+<<wait 2>>
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV GarboLaugh>>
+<<wait 2>>
+<<animate TV MalloyTalk>>
+TV: 接下来请欣赏：我和嘉宝入邪教！ #line:ffada8
+//======================================
+<<animate TV Static>>
+<<wait 3>>
+[[EndTV]]
+===
+title: GarboAndMalloy_A2D3
+tags: 
+colorID: 3
+position: -16,2317
+---
+<<animate TV Logo>>
+<<tell _AmbientSFX:GarboAndMalloy Play>>
+<<wait 5.5>>
+//======================================
+<<animate TV GarboTalk>>
+TV: 我们回来了！ #line:d40c2d
+<<animate TV GarboTalk>>
+TV: 今儿晚上人有够多的啊！ #line:3ffff7
+<<animate TV MalloyTalk>>
+TV: 我们俩啊，说什么都不会离开太长时间的，大家伙！ #line:ba84da
+<<animate TV MalloyTalk>>
+TV: 话说回来嘉宝！ #line:765818
+<<animate TV GarboTalk>>
+TV: 嘛呢莫洛伊？ #line:d63e52
+<<animate TV MalloyTalk>>
+TV: 我们的粉丝让我想起来咱早些年那会的那些观众 #line:3ed27f
+<<animate TV GarboTalk>>
+TV: 你这么说我就不乐意了。我也没见他们火气冲天，喝得不省人事的啊。 #line:1759a3
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV GarboStare>>
+<<wait 2>>
+<<animate TV GarboTalk>>
+TV: 至少大部分人没有。 #line:411f33
+<<animate TV MalloyTalk>>
+TV: 不不不，我说的那些还要更往前点，那些美好的回忆 #line:65b695
+<<animate TV MalloyTalk>>
+TV: 你回想一下，聚光灯的那种温度，即兴演出的那种紧张得发抖的感觉 #line:e782e9
+<<animate TV GarboTalk>>
+TV: 还有别人拿啤酒罐砸你头的那种，温柔的响声！ #line:45d523
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV GarboLaugh>>
+<<wait 2>>
+<<animate TV MalloyTalk>>
+TV: 那会儿啊，过小日子还轻松得很！ #line:cf78fa
+<<animate TV GarboTalk>>
+TV: 你觉得我们相比以前有变轻松吗？ #line:8bb135
+<<animate TV MalloyTalk>>
+TV: 那你肯定是有啊……你的腹肌这不是变轻松了吗 #line:2decc2
+<<animate TV GarboTalk>>
+TV: “啪啪打脸！" #line:aaedac
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV GarboStare>>
+<<wait 2>>
+<<animate TV GarboTalk>>
+TV: 莫洛伊，这公司有规定，不能搞人身攻击！ #line:96fe6b
+<<animate TV MalloyTalk>>
+TV: 哦，我可不怕，我身上可没有地方要我以之为耻，嘉宝。 #line:e0d9bf
+<<animate TV GarboTalk>>
+TV: 这是怎么一回事呢，莫洛伊？ #line:941f58
+<<animate TV MalloyTalk>>
+TV: 因为我就是你说的那种，无耻之人！ #line:82818f
+<<playOneShot event:/bus_station/tv_applause TV>>
+<<animate TV MalloyStare>>
+<<wait 2>>
+<<playOneShot event:/bus_station/tv_applause TV>>
+<<animate TV GarboLaugh>>
+<<wait 2>>
+<<animate TV MalloyTalk>>
+TV: 接下来请欣赏：我和嘉宝当律师！ #line:ade683
+//======================================
+<<animate TV Static>>
+<<wait 3>>
+[[EndTV]]
+===
+title: Picture_A1D1
+tags: 
+colorID: 2
+position: -3823,-1153
+---
+Mae: {align=middle,locator=picture,width=2}我当时可真可爱。我们那会可都真可爱。:) #line:2052d8
+Mae: {align=middle,locator=picture} 我们全家都很可爱。 #line:bd7153
+Mae: {align=middle,locator=picture}我们得搞个旅行真人秀。就叫可爱的博罗夫斯基一家吧。:| #line:6afd37
+<<set $mae_house_picture_done to 1>>
+===
+title: Picture_A1D3
+tags: 
+colorID: 2
+position: -3824,-913
+---
+Mae: 又到家了。 #line:f3ee7d
+Mae: 在这里，大伙都知道我叫什么 #line:b339d9
+Mae: 我妈叫什么 #line:349ec0
+Mae: 我爸叫什么 #line:9b4981
+Mae: 还知道当年我把那个小孩打到进医院的事。 #line:4fcff3
+<<set $mae_house_picture_done to 1>>
+===
+title: Picture_A3D1
+tags: 
+colorID: 4
+position: -3334,-1154
+---
+Mae: 嗯哼。 #line:8489bd
+Mae: 大概我们看着都比以前要老上许多了。 #line:292f1e
+Mae: 太怪了，挑选我们的某一个瞬间 #line:d037df
+Mae: 然后让它变得像是 #line:4c80cc
+Mae: 我们的官方版本。 #line:c3a2bd
+<<set $mae_house_picture_done to 1>>
+===
+title: Picture_A2D4
+tags: 
+colorID: 3
+position: -3584,-920
+---
+Mae: 在那以后我是绝对还会长大一点。 #line:aa30a4
+Mae: 长高一点 #line:4f706a
+Mae: 长宽……两点。 #line:be6db3
+Mae: 爷爷以前说过，我“下盘很稳"。 #line:8938e2
+<<wait 2>>
+Mae: 管他呢。我现在不也还是*下盘很稳*。 #line:927b65
+<<set $mae_house_picture_done to 1>>
+===
+title: Picture_A2D1
+tags: demo2 
+colorID: 3
+position: -3587,-1149
+---
+Mae: 午安，我们。 #line:f41b8b
+<<set $mae_house_picture_done to 1>>
+===
+title: HarfestExit
+tags: 
+colorID: 3
+position: 532,610
+---
+<<playerFace -1>>
+Mae: 哈喽？ #line:72cd3e
+Mae: 嗯哼。他们没准早就出去了。 #line:a18f19
+<<close>>
+<<unlockDoodle Halloween>>
+<<playerFace 1>>
+<<walk Mae DoorExit>>
+<<irisOut 1 wait>>
+<<sectionTitle Harfest TowneCentreEast_Harfest left>>
+===
+title: GarboAndMalloy_A3D3
+tags: 
+colorID: 4
+position: 1965,1122
+---
+<<close>>
+<<tell TVOverlay Show>>
+<<wait 2>>
+<<animate TV Logo>>
+<<wait 5.5>>
+//========================
+<<animate TV GarboTalk>>
+TV: 莫洛伊。 #line:b3bb5a
+<<animate TV MalloyTalk>>
+TV: 嘉宝。 #line:822616
+<<animate TV GarboTalk>>
+TV: 你有没有想过，就是，人死后的生活会是什么样的？ #line:7b8092
+<<animate TV MalloyTalk>>
+TV: 谁有心思想那个，我连活着的生活都快过不下去了！ #line:6ba27b
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV MalloyLaugh>>
+<<wait 2>>
+<<animate TV MalloyTalk>>
+TV: 怎么突然问这个，嘉宝？你是觉得这举头三尺有神明在看着吗？ #line:c351cb
+<<animate TV GarboTalk>>
+TV: 嘿，我就单指望这个点，能有几个人在看咱们！ #line:4e49b1
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV MalloyLaugh>>
+<<wait 2>>
+<<playOneShot event:/bus_station/tv_applause TV>>
+<<animate TV GarboStare>>
+<<wait 2>>
+<<animate TV MalloyTalk>>
+TV: 这可是个难题啊，嘉宝 #line:d7ee3e
+<<animate TV GarboTalk>>
+TV: 不能再难了，莫洛伊！ #line:b29882
+<<animate TV MalloyTalk>>
+TV: 你会经常去教堂吗，嘉宝？ #line:05a952
+<<animate TV GarboTalk>>
+TV: 别提啦，我上次去教堂的时候-他们还没创教呢！ #line:2f7b24
+<<playOneShot event:/bus_station/tv_laughter_applause TV>>
+<<animate TV MalloyLaugh>>
+<<wait 2>>
+<<animate TV MalloyTalk>>
+TV: 你这不是越扯越离谱了吗！ #line:5738b4
+<<animate TV GarboTalk>>
+TV: “好，所以我们一致同意，世界上有神，对吧？" #line:0e726e
+<<animate TV MalloyTalk>>
+TV: “我们开始吃百味餐吧！" #line:b1edf4
+<<animate TV MalloyTalk>>
+TV: 不吃百味餐的教堂，那能叫教堂吗！ #line:b571d8
+<<animate TV GarboTalk>>
+TV: 你能自己办一个不吃的，莫洛伊。 #line:df5acf
+<<animate TV GarboTalk>>
+TV: 但这 #line:169ada
+<<animate TV GarboTalk>>
+TV: 也太 #line:d502c0
+//Malloy stares for 2 seconds
+<<animate TV MalloyStare>>
+<<wait 2>>
+<<animate TV GarboTalk>>
+TV: “啪啪打脸！" #line:c6965d
+<<playOneShot event:/bus_station/tv_cheering TV>>
+<<animate TV MalloyLaugh>>
+<<wait 2>>
+<<animate TV GarboLaugh>>
+<<wait 2>>
+<<animate TV MalloyLaugh>>
+<<wait 2>>
+<<animate TV GarboStare>>
+<<wait 2>>
+<<animate TV MalloyTalk>>
+TV: 接下来请欣赏：我和嘉宝的通灵记！ #line:c31e3f
+//========================
+<<animate TV Static>>
+<<wait 3>>
+[[EndTV]]
+===
+title: Dad_A3D3
+tags: 
+colorID: 4
+position: 1983,594
+---
+<<if $dad is 0>>
+	<<set $dad += 1>>
+    <<set $dad_done to 1>>
+	[[Dad_A3D3_0]]
+<<endif>>
+===
+title: InitLevel_A4D2
+tags: 
+colorID: 5
+position: 2986,357
+---
+<<if $night is 0>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<else>>
+	<<hide Mom>>
+	<<hide Bea>>
+<<endif>>
+
+<<if $night is 0>>
+    <<set $mom_stairs to 1>>
+
+    <<if $mom is 0>>
+        <<set $door_blocker to 1>>
+    <<else>>
+        <<set $door_blocker to 0>>
+    <<endif>>
+<<endif>>
+===
+title: InitLevel_A4D3
+tags: 
+colorID: 5
+position: 3258,368
+---
+<<if $night is 0>>
+    <<if $mom_home > 0>>
+        <<sit Mom>>
+    <<else>>
+        <<hide Mom>>
+    <<endif>>
+	<<hide Dad>>
+	<<hide Bea>>
+<<else>>
+	<<hide Mom>>
+	<<hide Bea>>
+<<endif>>
+
+<<if $night is 0>>
+    <<set $mom_stairs to 1>>
+
+    <<if $mom is 0>>
+        <<set $door_blocker to 1>>
+    <<else>>
+        <<set $door_blocker to 0>>
+    <<endif>>
+<<endif>>
+===
+title: MomStairsA2D1
+tags: demo2
+colorID: 0
+position: -2790,568
+---
+Mom: 梅？ #line:7b3670
+Mae: 嗯哼？ #line:190a5a
+Mom: 过来打个招呼！ #line:e0b858
+Mae: 好！ #line:17e307
+===
+title: BirdCage_A1D2
+tags: 
+colorID: 2
+position: -3471,-2424
+---
+Mae:呃，我一直不太喜欢这个鸟。 #line:a19f92
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: BirdCage_A1D3
+tags: 
+colorID: 2
+position: -3485,-2200
+---
+Mae:嘿，小鸟！我回来啦！！！！ #line:a388fd
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: BirdCage_A1D1
+tags: 
+colorID: 2
+position: -3479,-2659
+---
+Mae: 这鸟是怎么活到现在的？ :\ #line:c789af
+Mae: o_o :| #line:bc9575
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: BirdCage_A2D1
+tags: 
+colorID: 3
+position: -3240,-2652
+---
+Mae: 晚上好，小鸟。 #line:3c8776
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: BirdCage_A2D2
+tags: 
+colorID: 3
+position: -3255,-2417
+---
+Mae: 你待在里面都会想些什么呢？ #line:174b0a
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: BirdCage_A2D3
+tags: 
+colorID: 3
+position: -3251,-2201
+---
+Mae: 你也没见过别的鸟，不知道你会不会鸟语。 #line:f95456
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: BirdCage_A2D4
+tags: 
+colorID: 3
+position: -3255,-1960
+---
+Mae: 嘿，臭鸟。 #line:0bd63c
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: BirdCage_A3D1
+tags: 
+colorID: 4
+position: -3010,-2640
+---
+Mae: 你好像 #line:e18090
+Mae: 每天都是这个样吧？ #line:de7c57
+Mae: 你的鸟生有什么意义啊？ #line:ec7ff8
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: BirdCage_A3D2
+tags: 
+colorID: 4
+position: -3004,-2417
+---
+Mae: 嘿，小鸟。 #line:0dc589
+Mae: 很抱歉，我对你的态度一直都很粗鲁。 #line:4e5e59
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: BirdCage_A3D3
+tags: 
+colorID: 4
+position: -3007,-2197
+---
+Mae: 小鸟啊， #line:21521a
+Mae: 我多少能理解你了。 #line:e0f276
+Mae: 你被死死的困在笼子里。 #line:fa2b29
+Mae: 我该放你出来。 #line:9e2cc2
+<<wait 2>>
+Mae: 还是算了。 #line:41f0c0
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: BirdCage_A3D4
+tags: 
+colorID: 4
+position: -3002,-1963
+---
+Mae: 嘿，小鸟。 #line:ff5abb
+Mae: 现在事态变得 #line:309cb2
+Mae: 有点紧急了。 #line:64f027
+Mae: 鸟儿啊，请向你的神祈祷，让它们保佑我吧。 #line:5cb081
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: BirdCage_A4D3
+tags: 
+colorID: 6
+position: -2736,-2612
+---
+Mae: 鸟儿啊，等到了感恩节，我们就会把你给吃了。 #line:e8b0ff
+<<set $mae_house_bird_cage_done to 1>>
+===
+title: Picture_A3D4
+tags: 
+colorID: 4
+position: -3343,-915
+---
+Mae: …… #line:4a26a1
+Mae: …… #line:550e99
+Mae: 天哪。 #line:d1f66a
+Mae: 感觉我回到家之后已经过了好多年了。 #line:c1c570
+Mae:然后又看到了这张照片。 #line:9a92d8
+<<set $mae_house_picture_done to 1>>
+===
+title: Picture_A4D3
+tags: 
+colorID: 6
+position: -3092,-1146
+---
+Mae: 老天爷。 #line:0e30e5
+Mae: 墙上挂的是我们的照片啊。 #line:cad5d4
+Mae: 不过是……我们罢了。 #line:38d590
+Mae: 我们和我们的家 #line:e96af3
+<<wait 2>>
+Mae: 我说不出这是什么感觉。 #line:c2a284
+Mae: 但我今天是不会流眼泪的。 #line:cf5d26
+<<set $mae_house_picture_done to 1>>
+===
+title: CheckForSafeCombination
+tags: 
+colorID: 0
+position: -1418,-2813
+---
+<<if $safe_combination is 0>>
+    <<set $safe_combination to 1>>
+Mae: 哦，嗯 #line:d12dab
+    Mae: 貌似…… #line:fe061b
+    Mae: 这书的封套里写了点东西…… #line:ec31aa
+    Mae: 左45，右100，左22，右15。 #line:c590a0
+    Mae: 这好像是…… #line:3ef91b
+    Mae: 到底会是什么呢？ #line:545771
+<<endif>>
+===
+title: BookshelfAct1.1
+tags: 
+colorID: 2
+position: -1942,-2432
+---
+Mae: 爷爷把他那箱鬼故事留给我的时候，感觉真的太棒了。 #line:c9fd74
+Mae: 不知道为什么它们最后被放到这里来了。 #line:427374
+Mae: 《威戈斯博利的末日》。 #line:f66dad
+Mae: 《精致的尸骸》。 #line:d41c2a
+Mae: 《黑魔·史蒂文森》。 #line:192959
+Mae: 《死灵猫·卷一》。 #line:21b59a
+Mae: 《鲨鱼女》。 #line:08da5a
+Mae: 《绞架山之鼬》。 #line:ed2054
+===
+title: BookshelfAct1.2
+tags: 
+colorID: 2
+position: -1943,-2205
+---
+Mae: 老妈收藏了一大堆恐怖惊悚类的书， #line:d0fb7e
+Mae: 写的都是关于可怕暴行和遭受悲惨命运的孩子。 #line:bb46af
+Mae: 爸妈房间里那个又旧又吓人的书架上放的全是这些书。 #line:412e0d
+Mae: 哦，看来老妈的其中一本书从书架上溜到这儿来了。 #line:d4aa19
+Mae: …… #line:d5a804
+Mae: “我们连马都没有放过" #line:95f9ab
+Mae: “19世纪80年代，一个家庭耸人听闻的农庄生活" #line:5e2e17
+Mae:天呐，老妈。 #line:44ef10
+===
+title: BookshelfAct1.3
+tags: 
+colorID: 2
+position: -1941,-1981
+---
+Mae: 嘿，快看呀，老爸的一些书也在这儿呢。 #line:bad7fe
+Mae: 《北美的雀类》 #line:7d630e
+Mae: 《山雀的世界》 #line:6786dc
+Mae: 《白头翁全解：三卷本》 #line:6a910c
+Mae: 《猫头鹰真神奇！》 #line:558599
+Mae: 《狡诈之鹤》 #line:5ec17e
+Mae: …… #line:fda557
+Mae: ……白头翁是什么鬼？ #line:16aabc
+<<end>>
+===
+title: BookshelfAct2.1
+tags: 
+colorID: 3
+position: -1679,-2421
+---
+Mae: 这个书架就跟爷爷的灵魂一样 #line:281559
+Mae: 在角落里不停游荡。 #line:6edba0
+Mae: 或许那不是他的灵魂。 #line:67b54d
+Mae: 那也有可能是他的尸骨。 #line:3c467a
+Mae: =_= :( #line:2f6dab
+Mae: 呃，好吧，我都把自己整得有点伤感了。 #line:cd16ed
+Mae: 我为啥要到这儿来呢？ #line:280674
+Mae: :| o_o #line:b8dd2f
+<<unlockDoodle GrandadComeBackToLife>>
+[[CheckForSafeCombination]]
+===
+title: BookshelfAct2.2
+tags: 
+colorID: 3
+position: -1674,-2196
+---
+Mae: 哦，对啦！ #line:399912
+Mae: 让我来找找…… -_- #line:571c32
+Mae: 它到底在哪儿…… #line:98a457
+Mae: …… #line:fa8847
+Mae: …… #line:7dae04
+Mae: o_o #line:fd4542
+Mae: 哦，找到了，在这儿。 #line:7b26b9
+Mae: 《浮空岛及其他故事集》。 #line:1cc1cc
+Mae: 爷爷讲这本故事的时候基本不看着读。 #line:962fdf
+Mae: 他每次，都几乎是，把它给背出来了。 #line:7c1801
+Mae: 在这基础上再加以改编。 #line:4e0e09
+Mae: 小时候他经常这么哄我入睡。 #line:584b94
+Mae: …… #line:a70559
+Mae: -_- :) #line:61d1e2
+Mae:我想你了，老头子。 #line:543a23
+Mae: :| o_o #line:1a99c0
+===
+title: BookshelfAct2.3
+tags: 
+colorID: 3
+position: -1671,-1971
+---
+Mae: 《浮空岛》。 #line:a5a6c7
+Mae: 天呐。 #line:031505
+Mae: 看来我真的老了。 #line:4b2304
+<<end>>
+===
+title: BookshelfAct3.1
+tags: 
+colorID: 4
+position: -1444,-2425
+---
+Mae: 这儿这儿这儿有没有什么侦探小说什么？ #line:7f0133
+Mae: 噢当然了。当然有了。 #line:50246e
+[[CheckForSafeCombination]]
+===
+title: BookshelfAct3.2
+tags: 
+colorID: 4
+position: -1446,-2199
+---
+Mae: 那我们有没有-关于幽灵一类的书呢？ #line:e2ec5a
+Mae: 就是关于现实中的鬼怪那种？ #line:0df97e
+Mae: 我们有没有-关于疯子的书呢？ #line:d89c21
+===
+title: BookshelfAct3.3
+tags: 
+colorID: 4
+position: -1446,-1981
+---
+Mae: 没有，太好了。 #line:02f7a4
+Mae: 搞搞研究是好事。 #line:ab034a
+Mae: 直面难题， #line:669f3d
+Mae: 你是不会输的，梅。 #line:227cb3
+Mae: 说真的，你离成功 #line:6642d4
+Mae: 已经不远了。 #line:1494d4
+<<end>>
+===
+title: BookshelfAct4.1
+tags: 
+colorID: 6
+position: -1172,-2401
+---
+Mae: 我应该 #line:30fd48
+Mae: 再找几本书重看一遍。 #line:3358fe
+Mae: 我有的是时间， #line:c91c0f
+Mae: 而且舒服的季节马上就要到了。 #line:d4a51c
+===
+title: BookshelfAct4.2
+tags: 
+colorID: 6
+position: -1168,-2180
+---
+Mae:《超越宇宙面纱之形》。 #line:c99759
+Mae: 好，就选这本吧。 #line:52ea36
+===
+title: BookshelfAct4.3
+tags: 
+colorID: 6
+position: -1176,-1952
+---
+Mae: 我来看看封底都写了什么。 #line:89a7c6
+Mae: 出版于1937年， #line:642b76
+Mae: 对于哥特式怪奇小说来讲 #line:13c2ee
+Mae: 《超越宇宙面纱之形》既是起点，也是高峰。 #line:2ca8d9
+Mae: 它影响了一大批20及21世纪的恐怖小说、 #line:712f0e
+Mae: 科幻小说 #line:8c3e9b
+Mae: 及低俗文学。 #line:432e1d
+Mae:《超形》绝对会让你不禁思考 #line:6ece9b
+Mae: 此时此刻 #line:5e09c4
+Mae: 夜空与你之间 #line:d4680f
+Mae: 到底有多远的距离。 #line:fed1d8
+Mae: 酷啊。 #line:6b3bf6
+<<end>>
+===
+title: GrandfatherClockAct1.1
+tags: 
+colorID: 2
+position: -1935,-1565
+---
+Mae: {align=middle,locator=clock}当时带过来的东西还藏在这屋里。 #line:44ce1d
+Mae: {align=middle,locator=clock}有这个钟，还有储存室里的那个洗衣桶。 #line:dfc2f1
+Mae: {align=middle,locator=clock}还有些在封上水泥后就埋在了房子下面。 #line:2e7563
+===
+title: GrandfatherClockAct1.2
+tags: 
+colorID: 2
+position: -1945,-1344
+---
+Mae: 这个玩意每个月都会从里头瞎蹦出来。 #line:161453
+Mae: 小木鸭子从里跳，唧唧喳喳真诡异。 #line:d69296
+Mae: {align=middle,locator=clock}每次都把我爹吓个半死。 #line:89d927
+Mae: {align=middle,locator=clock}我以前还开玩笑说，是爷爷的鬼魂要来找他算账呢。 #line:9cfbe5
+<<end>>
+===
+title: GrandfatherClockAct2.1
+tags: 
+colorID: 3
+position: -1678,-1561
+---
+Mae: {align=middle,locator=clock}天哪，这玩意儿好大啊。 #line:ee0f23
+Mae: {align=middle,locator=clock}好怪啊，为什么这种超大的钟现在 #line:ad4d30
+Mae: {align=middle,locator=clock}变得好像奢侈品一样 #line:6891ec
+Mae: {align=middle,locator=clock}互联网和能看时间的屏幕真的改变了不少东西。 #line:d1b274
+Mae: {align=middle,locator=clock}从那时起，这种大物件就只有一个用处了。 #line:2aa4b9
+Mae: {align=middle,locator=clock}它们就好比是…… #line:2f5a6d
+Mae: {locator=clock}一个身份证明。 #line:3bb163
+===
+title: GrandfatherClockAct2.2
+tags: 
+colorID: 3
+position: -1671,-1340
+---
+Mae: {align=middle,locator=clock}话说这东西到底有多老了？ #line:deac3c
+<<end>>
+===
+title: GrandfatherClockAct3.1
+tags: 
+colorID: 4
+position: -1430,-1558
+---
+Mae: {align=middle,locator=clock}楼下那个好的新时钟会不会 #line:a64329
+Mae: {align=middle,locator=clock}觉得楼上这个钟很吓人。 #line:4c65c6
+Mae: {align=middle,locator=clock}楼上那个很大只的老东西 #line:342dde
+Mae: {align=middle,locator=clock}它和你很像，但又不同。它超大，超吓人的！ #line:a174fd
+Mae: {align=middle,locator=clock}晚上还会发出怪声呢～ #line:80e07d
+===
+title: GrandfatherClockAct3.2
+tags: 
+colorID: 4
+position: -1424,-1336
+---
+Mae: {align=middle,locator=clock}嗷，其实我不觉得这个很吓人。 #line:952a24
+Mae: {align=middle,locator=clock}它是爷爷的一部分。 #line:aabb21
+Mae: {align=middle,locator=clock}我们得多来点这个。 #line:8d02f5
+<<end>>
+===
+title: GrandfatherClockAct4.1
+tags: 
+colorID: 6
+position: -1182,-1565
+---
+Mae: {align=middle,locator=clock}嘿，老爷子的时钟。 #line:417b50
+===
+title: GrandfatherClockAct4.2
+tags: 
+colorID: 6
+position: -1178,-1353
+---
+Mae: {align=middle,locator=clock}嘿，老爷子。 #line:ef5217
+<<end>>
+===

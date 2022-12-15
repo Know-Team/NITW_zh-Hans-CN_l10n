@@ -1,0 +1,219 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: -436,157
+---
+<<if $did_angus_constellations is 0>>
+    [[Enter00]]
+<<else>>
+    [[Enter01]]
+<<endif>>
+===
+title: CliffEdge
+tags: 
+colorID: 0
+position: 205,178
+---
+Mae: 哇哦，咱们已经爬这么高啦， #line:568927
+Mae: 真有点高处不胜寒的感觉啊！ #line:45b623
+Mae: 从这儿完全看不到咱们镇。 #line:9b625b
+Angus: 镇子在咱们南边，就在那座不知道叫什么的山后面。 #line:20bd72
+<<close>>
+<<walk Mae MaeLog wait>>
+<<warpSit>>
+<<allSpeechBubblesToY 2.6>>
+Mae: 现在该怎么办呢？难道咱们就在这儿干等着，看会发生什么事吗？ #line:4cdcd3
+Angus: 别问我！你可是这方面的专家。 #line:068b9c
+Mae: 我觉得，咱们还是在这儿等吧，看看会发生什么。 #line:cfc122
+<<close>>
+<<wait 4>>
+Angus: 今晚天气真好。 #line:3e3560
+Mae: 是啊。 #line:4e7b6c
+Mae: 上学那会儿，我根本就看不见几颗星星。 #line:e04444
+Mae: 这让我挺郁闷的。 #line:fbe298
+Angus: 哦，是啊。星星在山上看才美呢。 #line:c5718a
+Mae: 我希望也能和你一样认识那么多星座。 #line:80a0b2
+Angus: 什么？ #line:bbfcfd
+Mae: 你知道所有星座的名字和它们的故事。 #line:82a7ea
+Angus: 如果是这样就好了。我可记不住所有的星座的名字和故事，除非…… #line:09044a
+Angus: 那个星座是不是很像一口钟？ #line:39ad59
+Mae: 不像。一点儿也不像。 #line:1453cd
+Mae: 还记得长至夜那天，咱们一起坐在篝火旁的事吗？ #line:3832a4
+Mae: 当时，咱们就坐在一起找星座来着。 #line:1ceec3
+Mae: 你还告诉我们所有星座的名字来着，记得吗？？？ #line:52a860
+Angus: 我不记得有这事。 #line:6d75e6
+Mae: 噢，哇哦。也可能那只是我的一个梦之类的。 #line:b11e9f
+Mae: 天，那天的事我现在都忘得差不多了。 #line:26735a
+Angus: 我挺想知道，你都梦见了哪些不存在的星座和故事。 #line:87751e
+Mae: 好吧，你就迁就我一下，顺着我的话说吧。 #line:d1e581
+Mae: 我来找星座的位置，你来给我讲讲它们的故事。 #line:70f896
+Angus: 那好吧。 #line:b39b18
+//aperture out//
+<<close>>
+<<wait 1>>
+<<allSpeechBubblesToY 0>>
+<<irisOut 1 wait>>
+<<scene AngusConstellations>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -685,134
+---
+<<flip Angus -1>>
+<<playerFace -1>>
+<<setCanInteract Angus 0>>
+
+<<if $did_angus_constellations>>
+    <<warp Mae MaeLog>>
+    <<warp Angus AngusLog>>
+    <<warpSit>>
+    <<sit Angus>>
+<<else>>
+    <<warp Mae MaeOffRight>>
+    <<warp Angus AngusOffRight>>
+    <<hide Eide>>
+<<endif>>
+===
+title: Graves
+tags: 
+colorID: 0
+position: -115,167
+---
+Mae: 这里是墓地吗？ #line:eab297
+Angus: 是的，这些墓都是关于……我记不清了。 #line:0e9269
+Angus: 这些坟墓都和负鼠泉大屠杀有关系。 #line:89e253
+Angus: 好像是罢工之类的事， #line:b0b9ed
+Angus: 当时，矿工和国民警卫队之间发生了冲突，可能和这件事有关。 #line:654d77
+Angus: 这件事好像是发生在一百多年前。 #line:704d96
+Mae: 那为什么这些坟墓会在这个地方呢？ #line:178772
+Angus: 我觉得，埋在这儿的可能不是什么好人。 #line:e12f42
+Angus: 当时一些参加罢工的矿工 #line:b0c73f
+Angus: 不想把这些人埋在镇子里。 #line:963573
+Mae: 哦，是吗。 #line:98f9ef
+Angus: 这里应该还有几座古墓， #line:11b77a
+Angus: 它们的历史好像可以追溯到殖民时期。 #line:f803af
+Angus: 我猜，这附近应该就有片墓地。 #line:0b0108
+Mae: 好吧， #line:89dc10
+Mae: 好可怕啊。 #line:97f813
+Angus: 额，那些只不过就是一堆骨头和遗骸罢了。 #line:8b6b6b
+Mae: 还有远古鲨鱼的遗骸！！！ #line:87ec56
+Angus: 所以，你也知道了，没什么可害怕的。 #line:267cb8
+<<close>>
+//Angus walks up to the log and sits down. You can wander until you go and talk to him//
+<<walkAndSit Angus AngusLog>>
+===
+title: Enter01
+tags: 
+colorID: 0
+position: -288,498
+---
+<<allSpeechBubblesToY 2.6>>
+Angus: 的确没什么可怕的。 #line:dcfaad
+Mae: 没错。 #line:ea1e16
+Mae: 我以后一定得多到这儿来才行。 #line:8c6804
+Angus: 哈哈哈， #line:9b7160
+Angus: 是啊。 #line:61989e
+<<toggleSitSwings Mae false>>
+<<musicFadeOut 8>>
+<<playAmbientSFX _AmbientSFX:amb_ibon 8>>
+Angus: 别去看那边的人。 #line:1ff00a
+Mae: 什么人啊？ #line:7a2ca3
+Angus: 咱们身后的树林里 #line:6afb53
+<<cameraLookAt CameraEide 8>>
+Angus: 有人。 #line:e91340
+Mae: 卧槽。 #line:949784
+Mae: 见鬼。 #line:74ef00
+Mae: 那人看起来什么模样？ #line:994853
+Angus: 长得很高，还穿着一件奇怪的外套， #line:7af752
+Angus: 和工作服差不多。 #line:959306
+Mae: 哦，我的老天。 #line:1c2609
+Mae: 就是那个幽灵！ #line:5382c9
+Angus: 我更担心那是个活人 #line:3fe902
+Angus: 正站在树林里盯着咱们。 #line:5661f1
+Mae: 哦，天哪，天哪。 #line:4b28aa
+Angus: 没事的， #line:602412
+Angus: 用不着害怕， #line:10531b
+Angus: 听我指挥就行。 #line:a4758a
+<<close>>
+<<wait 1>>
+<<allSpeechBubblesToY 0>>
+//angus stands up and turns around//
+<<walk Angus AngusTurnAround wait>>
+Angus: 嘿，你好啊， #line:a178a7
+<<close>>
+<<wait 2>>
+Angus: 你也是来远足的吗？ #line:583d0a
+Angus: 今晚天气不错。 #line:a377e6
+<<close>>
+<<wait 2>>
+Angus: 那人……没有……回话…… #line:7b59de
+Mae: 这说明对方对咱们有些敌意，是吗？ #line:267b2a
+Angus: 绝对有些敌意。 #line:24eb13
+<<close>>
+<<jump>>
+<<wait 1>>
+<<walk Mae MaeTurnAround>>
+Mae: 嘿！！！ #line:47a757
+Mae: 我 知 道 你 干 过 的 那 些 事！！！ #line:e399d5
+Angus: 梅，别…… #line:19268c
+Mae: 我 看 见 你 啦！！！ #line:9b07ef
+Angus: 好了，现在咱们该准备跑路啦。 #line:ff88c7
+Angus: 咱们得赶快跑到车那儿去。 #line:ab68c9
+Mae: 那你的哮喘怎么办啊？ #line:93fde8
+//angus does inhaler animation//
+Angus: 我带吸入器啦， #line:c97d02
+Angus: 而且还带了个质量不错的。 #line:5e4a92
+Angus: 不管是人是鬼，都别想拦住我。 #line:732109
+Mae: 好好好，咱们走。 #line:2849b4
+Angus: 深呼吸。 #line:90c9e3
+Angus: 吸气。 #line:eb20d3
+Angus: 呼气。 #line:055243
+Angus: 好了。 #line:2e7431
+<<run Angus AngusOffRight>>
+//Angus begins running to the right.//
+// next plays as he runs until he gets offscreen
+<<alwaysUseWaitTime 1>>
+<<waitTime .5>>
+Angus:{width=4}啊 嗷 嗷 嗷 嗷 嗷！！！ #line:4c97be
+//After half a second Mae starts running right behind him.
+<<run Mae MaeOffRight>>
+<<cameraLookAt CameraGraves 12>>
+//The camera follows them until it stops on the graves.
+<<wait 9>>
+//They run offscreen.
+<<wait 6>>
+//It’s quiet.
+<<wait 4>>
+//After several seconds Eide across the screen through the trees
+//and the screen cuts to black//
+<<trigger EideRun Run>>
+<<wait 2.16>>
+<<alwaysUseWaitTime 0>>
+<<fadeOut .0001 wait>>
+<<wait 4>>
+<<scene BeaCar>>
+===
+title: Enter00
+tags: 
+colorID: 0
+position: -578,483
+---
+<<hide Collision:Right>>
+<<walk Angus AngusInFromRight>>
+<<walk Mae MaeInFromRight>>
+<<fadeOutMusic 3>>
+<<waitForMove Angus>>
+<<wait 1>>
+Mae: 好吧。 #line:3bd83e
+Mae: 这才叫远足。 #line:fced1f
+Angus: 如果我还是11岁的话，爬起来就能轻松很多。 #line:1e029c
+Angus: 这一路上，咱们是不是已经走过三座门了？ #line:7c2473
+Mae: 我忘了数啦。 #line:dbdda6
+Angus: 奇怪，这些门以前都是开着的啊。 #line:b77e3f
+Mae: 嗯。 #line:49f30d
+Mae: 准备好继续爬了没？ #line:419621
+Angus: 离山顶已经不远了，一会儿就能到了。 #line:4042c1
+<<walk Angus AngusGraves 1>>
+<<show Collision:Right>>
+===

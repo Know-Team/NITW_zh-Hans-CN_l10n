@@ -1,0 +1,61 @@
+title: PamphletHarfest
+tags: 
+colorID: 0
+position: 220,270
+---
+MaePaws: 哦，天呐！丰收节马上就要到啦。 #line:3474bc
+MaePaws: 我得准备一套好看的衣服才行。 #line:3f83d2
+MaePaws: 丰收节上，可以吃到南瓜派和玉米糖。 #line:ea7b3b
+MaePaws: 还可以骑一骑摇摇晃晃的假马。 #line:9d2396
+MaePaws: 还能想往谁身上吐就往谁身上吐。 #line:a5e112
+MaePaws: ……哦，对了， #line:7934b0
+<<set $pamphlet_harfest_done to 1>>
+===
+title: PamphletCasey
+tags: 
+colorID: 0
+position: -30,209
+---
+MaePaws: 凯西知道所有的这些事。 #line:9c9aa3
+MaePaws: 我真心希望，大家能接受凯西坐上火车离开这里的事实。 #line:a36977
+MaePaws: 他也不是第一个突然消失在人们视线里的人了。 #line:505171
+MaePaws: 希望他现在一切安好。 #line:81aa53
+<<set $pamphlet_casey_done to 1>>
+===
+title: PamphletMap
+tags: 
+colorID: 0
+position: 471,243
+---
+MaePaws: 如果这张地图可以画得不像游乐园地图那样的话， #line:39ce97
+MaePaws: 我就敢说，我从这里可以看到自己家的位置。 #line:e40b49
+MaePaws: 这里是煤矿王国！ #line:ceb254
+MaePaws: 参观一下已经废弃了的老驴生鲜！ #line:ccf583
+MaePaws: 坐一坐有史以来最差劲的大巴！ #line:36b46a
+<<set $pamphlet_map_done to 1>>
+===
+title: YarnBall
+tags: demo2
+colorID: 0
+position: 723,216
+---
+MaePaws: 好吧，这简直是上天的恩赐。是谁把球留在这儿的？ #line:444008
+<<set $yarn_ball_done to 1>>
+===
+title: YarnBallBounce
+tags: demo2
+colorID: 0
+position: 961,199
+---
+MaePaws: 哦，天啊，这个球在弹来弹去的。 #line:7c1e04
+<<set $yarn_ball_bounce_done to 1>>
+===
+title: PamphletCasey_A4D3
+tags: 
+colorID: 0
+position: -62,454
+---
+MaePaws: 凯西…… #line:6ab919
+MaePaws: …… #line:a9701e
+<<set $pamphlet_casey_done to 1>>
+===

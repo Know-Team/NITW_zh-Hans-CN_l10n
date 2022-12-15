@@ -1,0 +1,127 @@
+title: Trigger
+tags: 
+colorID: 0
+position: 371,228
+---
+<<playMusic cat_god 10>>
+Mae: 你好？ #line:617119
+<<close>>
+<<wait 4>>
+Mae: 你会说话吗？ #line:abb223
+CatGod: 吾能言。 #line:7e9b95
+Mae: 不知怎么的，你是我回家以来第一个想好好聊聊的对象。 #line:08a27c
+<<close>>
+<<wait 4>>
+Mae: 你是……神吗？ #line:544736
+CatGod: 非也…… #line:0f206f
+Mae: 噢。 #line:52f1ad
+<<close>>
+<<wait 2>>
+Mae: 所以， #line:110df2
+CatGod: 方才，几个凡人前来 #line:d1c652
+CatGod: 问吾是否为神 #line:e20d2b
+CatGod: 吾问何为神 #line:80720d
+CatGod: 他们回答了吾 #line:3ac4ac
+CatGod: 而他们所谓的神，却并非是吾 #line:ec8ecf
+CatGod: 他们的神并不存在 #line:335e0f
+->嗯，你确实看不见神 #line:08accd
+	CatGod: 你们只看得见你们希望看见的事物，凡人 #line:ec83da
+->嗯，我猜信仰这玩意就是得这样才会起作用的吧? #line:11b5f0
+	CatGod: 凡人们试图解读信仰 #line:597117
+	CatGod: 而片刻之前，一切才刚刚开始 #line:413c34
+	CatGod: 而吾就在此，不论现在还是未来 #line:d3c5f9
+	CatGod: 所谓神明，无处可藏 #line:dc50a2
+Mae: …… #line:ff78f8
+Mae: 话说我在这儿干什么来着？ #line:11809d
+CatGod: 你是个丑陋的存在 #line:218285
+Mae: 不对，我是说，我来*这儿*到底是干啥来着？ #line:632300
+Mae: 你是什么？另外那些巨形生物又是什么？ #line:00e9f5
+Mae: 我是见鬼了吗？ #line:2d454d
+Mae: 好像全世界几乎都…… #line:e764b2
+Mae: 我以为我在一列火车上，但实际上这是个小镇？ #line:ef5d89
+Mae: 这些都太…… #line:549554
+Mae:呃。我忘了要说什么了。 #line:edcc03
+<<close>>
+<<wait 2>>
+Mae: 好吧，那…… #line:ad50b3
+CatGod: 一群巨兽在沙漠穿行 #line:20b41d
+CatGod: 攀爬到半空中 #line:361d5f
+CatGod: 此时他们流下一滴泪珠 #line:64b96d
+CatGod: 现在他们走了 #line:081e7c
+CatGod: 而你就来到此地 #line:403260
+->什么？ #line:c0f98a
+->一滴……眼泪？ #line:525915
+	CatGod: 他们用蹄子 #line:dd4fcc
+	CatGod: 制作泪珠 #line:e3036c
+CatGod: 平凡的生命从空中飘过 #line:0b2d7b
+CatGod: 他们在时空和生命的回响中漂流 #line:87d756
+CatGod: 并向吾询问神的诸事 #line:f062e7
+Mae: 我的头好疼。 #line:9d9ad4
+CatGod: 吾有事要告知你，凡人 #line:0eefdb
+CatGod: 你已经快远游至海了 #line:9495bd
+CatGod: 再往前都是些盲目而可憎的玩意 #line:f267fe
+CatGod: 现在吾就让你好好看看 #line:e8cb49
+<<close>>
+<<playMusic unknowable 6>>
+//flash to horrifying things//
+<<trigger AstralAct3Day2 BeyondThings>> 
+<<wait 9>>
+<<fadeOutMusic 3>>
+<<wait 3>>
+<<playMusic cat_god 10>>
+Mae: 啊啊啊…… #line:f27b40
+Mae: 噢，天。噢，老天。 #line:bb6ef4
+CatGod: 他们失明了，但你已被他们注意到 #line:98af44
+CatGod: 你正离他们越来越近 #line:795b10
+CatGod: 此后，你将永不复还 #line:1d6510
+CatGod: 吾向半空攀爬 #line:90d58a
+CatGod: 合上了天穹 #line:61f820
+->为什么？ #line:9a3186
+	CatGod: 跟凡夫俗子说话真累 #line:a57f7c
+	CatGod: 关于神的话题，吾说累了 #line:535d41
+->合上天穹？ #line:5d1910
+	CatGod: 没错。 #line:e1db21
+Mae: 好吧…… #line:6b8cfb
+CatGod: 还有一件事， #line:21b069
+CatGod: 在万物的中心，都有一个洞， #line:7d30fe
+CatGod: 不断扩张的洞 #line:f44127
+CatGod: 吾可以看见它，在众星之间 #line:d32159
+CatGod: 它就要来了 #line:1a108e
+CatGod: 你将无处可逃， #line:b6716f
+CatGod: 你将被世界遗忘， #line:cea4a2
+CatGod: 世界也将被遗忘， #line:008e51
+CatGod: 没有什么会再将其记起 #line:d18390
+CatGod: 就连宇宙之外的也一样 #line:2b8a50
+CatGod: 除了那洞 #line:071802
+Mae: 所以……这些事情有意义吗？ #line:63ec68
+CatGod: 这个问题不值得回答。 #line:f0c28d
+->我的家会怎么样呢？我的朋友们会怎么样？ #line:d12326
+	CatGod: 他们离死不远了 #line:211db5
+	CatGod: 尘归尘、土归土 #line:83e7b0
+->那秋天的那些树呢？那些落叶会怎么样？ #line:77a1a2
+	CatGod: 只是存在罢了，别无他意 #line:543324
+CatGod: 你是原子组成的 #line:6c5437
+//begin blurry fade to black//
+CatGod: 而你的原子可并不关心你的存在 #line:3add4e
+CatGod: 你的原子，是一种怪物般的存在 #line:fe9968
+Mae: 那天杀的我怎么会在这里？为什么被选中来了解这些东西的偏偏是我？ #line:fce248
+Mae: 这到底是什么情况？ #line:99265f
+CatGod: 凡人，你并不是被选中的 #line:551cbe
+CatGod: 可没人选你 #line:33f5a3
+CatGod: 此事也不会有任何结果 #line:034f0c
+CatGod: 我们不会再见了 #line:a547d5
+//fully black now//
+CatGod: 世界正将你遗忘 #line:02c14c
+CatGod: 而吾将把你铭记 #line:6decf6
+CatGod: 但并非是因为吾在意 #line:e3194f
+CatGod: 世界的起始只在片刻之前 #line:1b7a0e
+CatGod: 世界的终结只在片刻之后 #line:fefbd3
+CatGod: 我们还没来得及遗忘 #line:fb74aa
+CatGod: 就已经记不得了 #line:777671
+CatGod: 别了，凡人 #line:e97d11
+<<close>>
+<<fadeOutMusic 5>>
+<<fadeOut 5 wait>>
+<<wait 5>>
+<<endDay>>
+===

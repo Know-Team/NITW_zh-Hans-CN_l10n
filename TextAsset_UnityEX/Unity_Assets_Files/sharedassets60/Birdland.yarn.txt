@@ -1,0 +1,523 @@
+title: Scriggins_A3D1_old
+tags: 
+colorID: 0
+position: -31,702
+---
+Mae: 哦，老天，你在这儿干什么呢？ #line:f8d187
+SteveScriggins: 这墙上可有不少铜呢。 #line:623796
+Mae: 这到底是什么地方啊？ #line:7143a7
+SteveScriggins: 负鼠泉第一次通网的时候 #line:e01985
+SteveScriggins: 信号就是从这儿发出来的。 #line:2ce4c0
+Mae: 哇哦。 #line:5969ad
+SteveScriggins: 只不过现在这栋楼已经废了。 #line:f5ad41
+===
+title: Scriggins_A3D2_old
+tags: 
+colorID: 0
+position: 196,758
+---
+Mae: 话说，你这么做有什么好处吗？ #line:ae01ba
+SteveScriggins: 我可以把这堆东西按斤卖出去。 #line:c5f2a6
+SteveScriggins: 而且我已经找到买家了。 #line:ff2747
+Mae: “你已经找到买家了"？ #line:9f4d0a
+===
+title: Scriggins_A3D4_old
+tags: 
+colorID: 0
+position: 649,1066
+---
+Mae: 嘿，呆头。 #line:18472f
+SteveScriggins: 我今儿的心情可很不好。 #line:31166f
+Mae: 好吧，其实我正打算走呢。 #line:4ed0a2
+===
+title: Scriggins_A3D3_old
+tags: 
+colorID: 0
+position: 394,909
+---
+Mae: 我记得你有个兄弟是搞爆破的？ #line:80bc95
+SteveScriggins: 是啊，他还有自己的团队呢。 #line:9206f7
+Mae: 那为什么你干的是这活儿？ #line:55d727
+SteveScriggins: 他有他的工作，我有我的工作。 #line:2f8668
+Mae: 这就是你的工作？ #line:5a4891
+SteveScriggins: 哦，老天，闭嘴吧。 #line:500acf
+===
+title: Sadie_A3D3_old
+tags: 
+colorID: 0
+position: 844,689
+---
+Mae: 这地方以前还挺像回事的，是吧？ #line:cc54db
+Sadie: 那可不是嘛，绝对很像回事。 #line:a18520
+Mae: 哇哦。 #line:68cbe9
+Sadie: 就是那个以星界模式出场的乐队，他们是常驻乐队 #line:aae5cc
+Sadie: 但那都是很久以前的事了。 #line:c14f07
+Mae: 嗯。 #line:7cf63a
+Sadie: 可到了最后，这地方和乐队全都变得有些怪怪的。 #line:4436d6
+Sadie: 80年代的时候，这地方就关了。 #line:ac4127
+Sadie: 他们一直都在商量重新开张的事。 #line:5139f0
+Sadie: 但现在这地方的所有人也不知道跑到哪儿去了。 #line:c79b14
+Sadie: 这整个地方就被遗弃在这儿了， #line:284a1b
+Sadie: 最后就变成了全负鼠泉最大的鸟窝。 #line:575e89
+===
+title: Sadie_A3D2_old
+tags: 
+colorID: 0
+position: 1075,628
+---
+Mae: 这么说，你也会演奏(insert instrument)吗？ #line:8dfd0a
+Sadie: 当然。 #line:23315a
+Mae: 为什么是在这儿？ #line:0affb6
+Sadie: 从我十四岁开始就一直在这里演奏，差不多就你这么大的时候。 #line:a41ab5
+Mae: 我 2 0 岁 了 ！！！！ #line:1e53bc
+Sadie: 噢。好吧。 #line:a168b5
+Sadie: 然后 (life experiences that seemed like the end of everything) #line:2e2a91
+Sadie: 我下班之后又开始来这儿了。 #line:2e7bce
+Mae: 挺伤感的。 #line:a7cd69
+Sadie: 不，其实也没那么伤感。 #line:068bb9
+===
+title: SteveScriggins
+tags: 
+colorID: 4
+position: -294,671
+---
+<<if $steve_scriggins_birdland_sequence is 0>>
+    <<if $did_gregg_friendship_quest_1>>
+    	Mae: 哟，是史蒂夫呀。 #line:3bd972
+    	SteveScriggins: 你想干什么？ #line:09d567
+    <<else>>
+    	SteveScriggins: 你想干什么？ #line:518685
+    	Mae: 靠。 #line:3414e7
+    	Mae: 史蒂夫？史蒂夫·斯克里金斯？ #line:d02a86
+    	SteveScriggins: 嘿，我记得你。 #line:4678df
+    	Mae: 嗯……呃……我也记得你。 #line:0ed40b
+    <<endif>>
+    Mae: 你干什么呢？ #line:1c3e52
+    SteveScriggins: 干兼职呢。 #line:741b46
+    Mae: 那你本职工作是什么啊？ #line:d3f2e2
+    SteveScriggins: 我在我兄弟的工程队里干活。 #line:a2ed6e
+    Mae: 那你兼职又干什么啊？ #line:3e88ae
+    SteveScriggins: 掉在那边地上的是什么东西？ #line:20bbe5
+    SteveScriggins: 那些可都是铜啊。 #line:574c67
+    SteveScriggins: 这整栋楼里可有不少铜物件呢， #line:f96bac
+    SteveScriggins: 而且还都是没人用的东西。 #line:c65dda
+    Mae: 这么说你的兼职就是 #line:1eca7e
+    Mae: 把墙上的管子都拆掉？ #line:afee86
+    SteveScriggins: 还有电线。我还会拿走点电线什么的。 #line:1532d7
+    Mae: 还有-？ #line:496c1a
+    SteveScriggins: 天哪，你学得还挺快嘛。 #line:5cc7c9
+    SteveScriggins: 你 就 负 责 把 这 些 东 西 给 卖 了 吧。 #line:fe5791
+    Mae: 这真的不算个正经工作。 #line:d6dd2c
+    SteveScriggins: 老天，这当然不算。 #line:47ee80
+    SteveScriggins: 咱们得把管子从墙上弄下来， #line:8a4a24
+    SteveScriggins: 有些时候还得把管子锯短了才行。 #line:0de515
+    Mae: 哦，好吧。 #line:43d0ec
+    SteveScriggins: 还得把电线外面的塑料皮剥掉， #line:dca1e0
+    SteveScriggins: 然后按照不同的品质，再把这些东西进行分类， #line:73b33a
+    SteveScriggins: 因为不少人还挺挑的，都想买到A级的优等货。 #line:b46e72
+    Mae: 嗯，这还挺有意思的。 #line:015bd6
+    SteveScriggins: 这地方还有不少其他东西呢。你也可以去其他类似这种地儿的地方去找。 #line:2bccc2
+    SteveScriggins: 说不定能找到门把手之类的东西。 #line:a83d65
+    Mae: 我要走了，以后再聊吧。 #line:c5c922
+    SteveScriggins: …… #line:65abad
+    <<set $steve_scriggins_birdland_sequence += 1>>
+<<elseif $steve_scriggins_birdland_sequence is 1>>
+    Mae: 你那个不算正经工作的工作怎么样了？ #line:5ef681
+    SteveScriggins: 话说，甭管是什么工作， #line:595f47
+    SteveScriggins: 请问，你自己有工作了吗？ #line:8d3a1f
+    Mae: 听着，我才刚回来没几天，所以 #line:accbb3
+    SteveScriggins: 那你*有过*工作吗？ #line:fdbdf6
+        ->我上大学的时候，在杂货店装过几天货。 #line:9d6d1c
+            SteveScriggins: “几天"是多长时间？ #line:537fce
+            Mae: …… #line:545738
+            Mae: 两个月？ #line:b4711a
+            SteveScriggins: *哼* #line:4f745c
+            Mae: 怎么了？ #line:027574
+            SteveScriggins: 怎么了？那工作对你来说太难了是吗？ #line:b3b34e
+            Mae: 呃，那拜拜了，史蒂夫。 #line:aaaf08
+        ->其实，我已经有工作了，还是个经理呢。 #line:34fb9d
+            SteveScriggins: 那你负责管理什么啊？ #line:57f5e1
+            Mae: 我管理我自己在看到你脸的时候忍住别吐！ #line:829e36
+            Mae: 嘿嘿嘿…… #line:7e3c0b
+            SteveScriggins: 真有意思。 #line:1948f7
+            Mae: 看来你听明白了。 #line:5e614f
+            SteveScriggins: 我确实听明白了。 #line:a9c3f0
+    <<set $steve_scriggins_birdland_sequence += 1>>
+<<elseif $steve_scriggins_birdland_sequence is 2>>
+    Mae: 嘿，史提夫。史提夫·斯克根儿斯。 #line:3d81e1
+    SteveScriggins: 嗯嗯嗯…… #line:32f83b
+    Mae: 还从墙上扒垃圾呢？ #line:099804
+    SteveScriggins: 嗯。 #line:a9cac3
+    Mae: 太太太太太蠢了 #line:c24571
+    SteveScriggins: 天哪快闭上你的嘴吧。 #line:02a7f2
+    SteveScriggins: 你就*不停*地唠叨 #line:32322b
+    SteveScriggins: 你到底为什么老来这边转悠？ #line:a88b18
+    SteveScriggins: 咱们又不是朋友。 #line:bfacd4
+    SteveScriggins: 还有为什么你总找我聊？ #line:d2970c
+    SteveScriggins: 我和你一样是个混蛋？ #line:7720ab
+    Mae: 史蒂夫，你*就是*混蛋。 #line:964b48
+    SteveScriggins: 咱们俩是不是有什么过节啊？ #line:5af2c3
+    Mae: 以前在学校的时候，你就是个恶霸！ #line:f1a0b9
+    Mae: 你让别人都没好日子过！ #line:9a752b
+    Mae: 这么多年过去了，现在你居然…… #line:6cfe93
+    Mae: 居然还拆别人房子里的东西，然后当废品去卖钱？ #line:91905e
+    Mae: 你这不就是在毁咱们的镇子吗？ #line:0322d3
+    SteveScriggins: 行了你好歇歇了 #line:1774e0
+    SteveScriggins: 你知道吗，镇上任何一个人能记住你的唯一原因， #line:abfefe
+    SteveScriggins: 就是因为你之前差点把一个孩子给杀了，我说的对不对？ #line:27cc2b
+    SteveScriggins: 他的脸现在还七零八落的！ #line:aad7c3
+    SteveScriggins: 这种事我可*从来*都没干过 #line:8285f4
+    SteveScriggins: 还有，你和格雷格把各种东西砸烂 #line:937d65
+    SteveScriggins: 只为了找点乐子 #line:3ad5c7
+    SteveScriggins: 再说了，要不是因为我没钱，你觉得我会来这种地方吗？ #line:0b6fa0
+        ->我…… #line:901d9d
+        ->呃 #line:31f2d8
+    SteveScriggins: 你就像我那侄女一样，没脑子的巨婴 #line:1bbd58
+    SteveScriggins: 每天干的事就是到处闲逛，毁东西。 #line:31d03b
+    SteveScriggins: 当然了，我也知道别人是怎么说我的。 #line:831fcb
+    SteveScriggins: 没错，我之前可能是做过一些坏事， #line:1283cb
+    SteveScriggins: 但至少*我*敢承认那些事是我干的。 #line:49dc16
+    SteveScriggins: 你比我好不到哪儿去。 #line:1c0532
+    SteveScriggins: 你就是太在意自己，太自恋了。 #line:2829cc
+    SteveScriggins: 要不然就是因为你太蠢了。 #line:2bfe46
+    SteveScriggins: 我也说不上来具体的。 #line:4fc743
+    SteveScriggins: 反正我也不在乎。 #line:e36f5c
+    Mae: 好吧，我觉得…… #line:ea8642
+    SteveScriggins: 闭。嘴。 #line:fb1603
+    SteveScriggins: 别考验我的耐性，好吗？ #line:6b3af0
+    SteveScriggins: 要是有人状态像我现在这样，可千万得离他远点，听明白了吗？ #line:8c7085
+    Mae: 哈。 #line:93d2f9
+    Mae: 否则会怎么样？ #line:81c02b
+    Mae: 否则你他喵的能怎样，史蒂夫？ #line:3d506f
+    SteveScriggins: …… #line:b92913
+    Mae: …… #line:a782b0
+    SteveScriggins: 从这儿离开。我要工作了。 #line:c21294
+    SteveScriggins: 还有别再回来了。 #line:1039dc
+    <<set $steve_scriggins_threat to 1>>
+    <<set $steve_scriggins_birdland_sequence += 1>>
+<<endif>>
+
+<<set $steve_scriggins_done to 1>>
+===
+title: Sadie
+tags: temp
+colorID: 4
+position: -296,427
+---
+<<if $did_birdland_quest and $act is 3 and $day is 4>>
+	Mae: 嘿！ #line:eaf74e
+	Sadie: 嘿。 #line:f10dd7
+    <<startInteractingWithPlayer Saleem>>
+	Saleem: 你好啊。 #line:7b1938
+	Mae: 你们俩终于在一起演奏了？ #line:01d416
+	Sadie: 是啊，哈哈。 #line:b26250
+    Saleem: 孩子，谢谢你，让我俩凑到了一起。 #line:81f7c4
+    Mae: 哈哈，哇哦。 #line:92aa1d
+    Mae: …… #line:b07246
+    Mae: …… #line:761a9e
+    Mae: 哈。 #line:6ef4fb
+    Sadie: 怎么了？ #line:b6d5d0
+	Mae: 我只是觉得…… #line:728a54
+	Mae: 我做了件好事。 #line:003f53
+	Mae: 就好比，我想出了个计划，然后又按照计划做了件好事。 #line:8ccdbf
+	Saleem: 这有什么好奇怪的吗？ #line:8ddc99
+	Mae: 我觉得我每天都在介入各种各样的事 #line:4f7741
+	Mae: 介绍你们俩认识就好像是…… #line:649ce0
+	Mae: 我*打算*去帮助两个陌生人。而我真的那么做了。 #line:4c6f32
+	Mae: 现在呢，你们俩就可以一起演奏了， #line:3eed91
+	Mae: 然后爱上彼此…… #line:c976ed
+	Sadie: 你说啥？不可能。 #line:6e76e5
+	Saleem: 我的婚姻观可是一夫一妻制。 #line:1d3750
+	Sadie: 我可不想乱搞， #line:ae2102
+    Sadie: 而且，我平时的精力基本都花在我儿子身上了。 #line:189c91
+	Mae: 哦， #line:1c5edc
+	Mae: 我是不是把这事描述得太怪了？ #line:40c40d
+	Saleem: 没错，是很怪。 #line:9b5ba5
+	Sadie: 是相当怪。 #line:1704c9
+    Mae: 该死。 #line:00c5c8
+    <<unlockDoodle BirdlandComplete>>
+    <<stopInteractingWithPlayer Saleem>>
+    <<set $birdland_can_interact_posters to 1>>
+    <<unlockAchievement Finish_Birdland_Quest>>
+<<else>>
+	<<if $sadie_sequence is 0>>
+		Mae: 嗯，你好。 #line:562cf6
+		Sadie: 你好。 #line:81acb4
+        Mae: 我叫梅。 #line:63ecf0
+        Sadie: 我叫赛迪。 #line:ce0b09
+        Mae: 你在这上面干什么呢？ #line:21b8fb
+        Sadie: *你*又在这上面干什么啊？ #line:30c60a
+            ->探险 #line:40c263
+                Sadie: 我也一样，然后就发现这儿了。 #line:10afb5
+            ->我说……这需要理由吗？ #line:080692
+                Sadie: 不需要。 #line:9779c5
+        Sadie: 你知道吗， #line:9a0d6d
+        Sadie: 这是整个镇上唯一一个舞台。 #line:957fae
+            ->你经常上台表演吗？ #line:7b8bff
+                Sadie: 没有，至少很久很久都没有过了。 #line:747a60
+            ->你说得不对！ #line:d9aca4
+                Mae: 我和我朋友前不久还在五金店演过出呢！ #line:33b071
+                Mae: 我们还把柜台当舞台用呢！ #line:888baf
+                Sadie: 好吧，不管怎么说，这里还是镇上唯一一个舞台 #line:6afb9d
+                Sadie: 只作为舞台使用的舞台。 #line:ffa2c6
+        Mae: 看样子已经有很长时间没人来这儿演出了。 #line:05f660
+        Sadie: 是啊，已经有几十年没人来过这儿了。 #line:3248ea
+        Mae: 那你想 #line:d8b38e
+        Mae: 在这儿演点什么吗？ #line:6cb9e0
+        Sadie: 哦，我觉得不会有人再来这儿演出了， #line:68951f
+        Sadie: 至少最近不会。 #line:f89ba7
+        Sadie: 这地方又没电，又不安全， #line:a1c2f7
+        Sadie: 还全是老鼠和鸽子。 #line:cdbffd
+        Mae: 除了没有电，其他地方和镇上大多数地方也差不多。 #line:42ecd5
+        Sadie: 哈哈哈。 #line:627ca6
+        Sadie: 说的是啊。 #line:e5753a
+		<<set $sadie_sequence += 1>>
+	<<elseif $sadie_sequence is 1>>
+		Mae: 嗨，又见面了。 #line:719e43
+		Sadie: 是你啊，孩子。 #line:e69c1e
+		Mae: 我已经20岁了。 #line:7ba554
+		Sadie: 我已经38了，所以你就是个孩子。 #line:afac7e
+		Mae: 好吧。 #line:1feda7
+		Mae: 你是怎么找到这个地方的？ #line:ed4846
+        Sadie: 其实，我小时候就知道有这么个地儿了。 #line:52e8e0
+        Sadie: 但最近，我才敢壮着胆子进来。 #line:a47f4b
+        Mae: 为什么呢？ #line:de8657
+        Sadie: 因为青春已经一去不复返了， #line:5c07b4
+        Sadie: 而且这地方随时都有塌了的可能。 #line:4d1a35
+        Sadie: 当你到了人生的某个阶段， #line:4770ae
+        Sadie: 你会发现“第一次的体验"越来越少 #line:53ed2a
+        Sadie: 而“永不会再有的体验"越来越多 #line:b4f56c
+        Sadie: 我不知道怎么描述 #line:a4e024
+        Mae: 我明白你是什么意思。 #line:33f73e
+        Sadie: 不，你不明白。 #line:f2eae5
+		<<set $sadie_sequence += 1>>
+	<<elseif $sadie_sequence is 2>>
+		Mae: 你有工作吗？ #line:438aab
+		Sadie: 以前有。 #line:39a6a1
+        Sadie: 可后来遇到了点麻烦，所以我就失业了。 #line:e4ec1f
+        Sadie: 现在，我就和我父母 #line:93d32d
+        Sadie: 和孩子一起住。 #line:d5c86f
+        Sadie: 所以现在我还算是有了点自己的时间。 #line:9bb8df
+        Mae: 说真的，咱俩的情况差不多， #line:110e68
+        Mae: 只是我没孩子而已。 #line:ce7cde
+        Sadie: 世界可真小啊。 #line:7d7967
+		<<set $sadie_sequence += 1>>
+	<<endif>>
+
+	<<if $sadie_saleem_sequence is 0 and $saleem_sequence is 1>>
+		Mae: 这话蛮有趣。 #line:14f2d3
+		Sadie: 什么意思？ #line:fb57d1
+		Mae: 我在去教堂的路上遇见过一个人， #line:d56f61
+        Mae: 他也是一个人在那儿， #line:7ff604
+		Mae: 一个人玩乐器。 #line:63060d
+		Sadie: 世界可真小啊。 #line:fdd58d
+		Mae: 嘿嘿。是啊…… #line:a589ec
+		Mae: 应该这么说才对：这镇子可真小啊。 #line:2b3a7a
+		Sadie: 这倒是。 #line:25db82
+		Mae: 回头见。 #line:b3714e
+		<<set $sadie_saleem_sequence += 1>>
+	<<elseif $sadie_saleem_sequence is 1 and $saleem_sequence is 2>>	
+		Mae: 你知道那个老一个人在镇子上待着的人吗？ #line:19da5a
+		Sadie: 什么人？ #line:cbdf81
+		Mae: 就是我跟你提过的那个人，记得吗？ #line:b9befd
+		Sadie: 当然记得。 #line:873219
+		Mae: 他一个人好像很孤独寂寞， #line:e0c791
+        Mae: 你好像也和他一样。 #line:e40c63
+        Sadie: 嗯…… #line:8c7545
+        Mae: 所以，你们俩可以在一起演奏啊！ #line:a39b11
+        Sadie: 额…… #line:b8dc2a
+        Mae: 这事让我这么一说，是不是让人感觉怪怪的？ #line:ead83c
+        Sadie: 没有，一点都不怪。 #line:84c663
+        Sadie: 他是玩什么乐器的？ #line:b7c473
+        Mae: 小提琴？民谣提琴？这两种琴是一样的吗？ #line:c3b4fa
+		Sadie: 嗯，好吧。 #line:c4a468
+        Sadie: 如果那个人不是个变态之类的的话， #line:aed811
+		Sadie: 等下次你见到他时就告诉他，让他过来一趟。 #line:8a3551
+		Mae: 他看着不像个变态。 #line:094633
+		Sadie: 好吧，反正我会准备好家伙的，以防万一。 #line:7d9087
+		<<set $will_complete_birdland_quest to 1>>
+		<<set $sadie_saleem_sequence += 1>>
+    <<elseif $saleem_sadie_sequence is 1 and $sadie_sequence is 2>>
+        Mae: 我在去教堂的路上遇见一个人， #line:51a20d
+        Mae: 他也是自己一个人， #line:9bd5d3
+		Mae: 在那儿玩乐器。 #line:4ae33f
+		Sadie: 世界可真小啊。 #line:6a96eb
+		Mae: 我把你的事告诉他了。 #line:e12f9f
+        Mae: “孤独的人啊， #line:a2743f
+        Mae: 快来这里演奏吧。" #line:d85572
+		Sadie: 哦，好吧。 #line:57910f
+		Mae: 没准你们俩可以在一起演奏呢？？？？ #line:cf0fe9
+        Sadie: 你真的有了解过那个人吗？ #line:5e9053
+        Mae: 可以肯定他不是个杀人犯。 #line:f901a7
+        <<wait 2>>
+        Mae: 反正我是这么觉得的。 #line:4f44a7
+        Sadie: 嗯，好吧……谢谢？ #line:a1e6c2
+        <<set $will_complete_birdland_quest to 1>>
+		<<set $saleem_sadie_sequence += 1>>
+	<<endif>>
+<<endif>>
+
+<<set $sadie_done to 1>>
+===
+title: InitLevel_A3D2
+tags: 
+colorID: 4
+position: -8,-25
+---
+<<hide Saleem>>
+===
+title: InitLevel_A3D3
+tags: 
+colorID: 4
+position: 292,-25
+---
+<<hide Saleem>>
+===
+title: InitLevel_A3D4
+tags: 
+colorID: 4
+position: 565,-21
+---
+<<if $did_birdland_quest>>
+    <<show Saleem>>
+    <<setCanInteract Saleem 0>>
+<<else>>
+    <<hide Saleem>>
+<<endif>>
+===
+title: InteractPosters
+tags: 
+colorID: 4
+position: -12,459
+---
+//this interaction is enabled only after talking to them after their quest is completed//
+<<startInteractingWithPlayer Sadie>>
+<<startInteractingWithPlayer Saleem>>
+Mae: 之前这里没有这些东西吧。 #line:28b2b0
+Sadie: 对，之前是不在这儿！这些是我在后台找到的。 #line:8f19ea
+Saleem: 居然还和新的一样，真是难以置信。 #line:f16ed5
+Saleem: 这些东西到现在也得有个六七十年了吧？ #line:1a1ce4
+Mae: “初代深谷咆哮者"。 #line:270b64
+Sadie: 你试试连说三遍，而且要快说。 #line:89cbae
+    ->深谷咆哮者 #line:b27488
+    	Mae: 深谷咆哮者呃。 #line:49532a
+    ->深谷咆哮者、深谷咆哮者 #line:04248e
+    	Mae: 深谷咆哮者呃、深谷包哮者。 #line:f81dce
+    ->深谷咆哮者、深谷咆哮者、深谷咆哮者 #line:afc6c9
+		Mae: 深谷咆哮者呃、深谷包哮者、森鼓包哮者儿。 #line:58323d
+Saleem: *咳咳* #line:e3a4a2
+Saleem: 深-谷-咆-哮-者。 #line:f8b303
+Sadie: D. H. H.。 #line:5d2e60
+Mae: 这些人是谁啊？ #line:37a2d6
+Saleem: 天哪，孩子，你住在这儿多久了？ #line:10caf9
+	->我一直都住这儿啊！ #line:d11df2
+		Saleem: 好吧，这样的话，你就没什么可解释的了。 #line:f48f5a
+	->我才20岁。 #line:d8d0bc
+		Sadie: 你看起来可够小的。 #line:27f964
+		Sadie: 等你以后就会感谢他们了。 #line:d9986d
+Saleem: 深谷咆哮者呃——真该死。 #line:8a05ae
+Mae: 哈 哈。 #line:688e0f
+Saleem: D.H.H.以前是深谷县最早成立的一支伴舞乐队。 #line:af436f
+Sadie: 这里就是他们的音乐俱乐部。 #line:eaafe1
+Sadie: 乐队一共有四名成员：小提琴手、萨克斯手、大号手和手风琴手。 #line:174abe
+Saleem: 他们演奏过波尔卡舞曲、华尔兹舞曲，还有一些老歌。 #line:aedca6
+Saleem: 他们从20年代一直活跃到了40年代。 #line:893682
+Saleem: 这个乐队和咱们镇一起经历了很多困难。 #line:14fc79
+Saleem: 从60年代开始，他们的歌就出现在了阿巴拉契亚音乐选集里。 #line:2de4f2
+Sadie: 是啊，这在咱们镇的历史上可算得上是浓墨重彩的一笔。 #line:aa9969
+->他们后来怎么样了？ #line:699783
+	Sadie: 哦，是啊， #line:5c13b3
+	Sadie: 后来就发生了怪事。 #line:28aa88
+->这个地方后来怎么样了？ #line:48f179
+	Sadie: 后来，人们在树林里找到了乐队的四个成员。 #line:d24625
+	Sadie: 在那之后，这地方的所有者就一直在换。 #line:aa8784
+	Mae: “被找到"？“在树林里"？ #line:87ccac
+	Sadie: 哦，是啊。呃…… #line:0069a2
+	Sadie: 所以说，这件事很诡异。 #line:56d1ab
+Saleem: 后来，这四个人也变得很奇怪。 #line:796bf9
+Sadie: 或者说是，变得很虔诚？ #line:a1db43
+    ->变得很奇怪？ #line:5282a9
+        Saleem: 没错。他们当时说，自己灵魂出窍了， #line:1264ad
+        Saleem: 然后，他们还给经过那里的鬼魂演奏来着。 #line:fd8afd
+        Mae: 哼嗯。 #line:a9c13b
+        Saleem: 大家都只是觉得他们是在胡思乱想、异想天开罢了。可是…… #line:7b2712
+    ->虔诚？ #line:52c570
+        Sadie: 是啊，后来，他们就一直在说什么 #line:1fee38
+        Sadie: 他们在给众神演奏的话。 #line:be44f0
+        Sadie: 但是，是给那种无人问津的神？ #line:8d7260
+        Sadie: 而且，他们还有过灵魂出窍的经历。 #line:2030eb
+Saleem: 谁知道呢。再说，他们也都不年轻了。 #line:5ab54d
+Mae: 真诡异。 #line:79ed5d
+Sadie: 后来，他们就不到这儿来了。 #line:4f1a42
+Sadie: 最后，他们就开始到树林里去演奏了。 #line:05143c
+Sadie: 在他们……自制的舞台上 #line:88e0c5
+Saleem: 至少大家是这么认为的。 #line:6ad974
+Saleem: 1949年11月，人们在树林里发现了他们四个人的尸体， #line:3c5b83
+Saleem: 他们就这么曝尸在这荒郊野岭里啦！ #line:7280f0
+Saleem: 而且，他们的尸体居然还和乐器冻在了一起！ #line:0397e1
+Sadie: 在运尸体的时候，人们还要把他们的尸体从地上铲起来才行。 #line:7aee0b
+Saleem: 这真是负鼠泉历史上最操蛋的事之一。 #line:9aca4f
+Mae: 我勒个去。 #line:1b6e37
+Sadie: 话说，你怎么会没听说过这件事呢？ #line:4d8464
+Mae: 我没听过。可这事真…… #line:ee9aba
+Mae: 我…… #line:9ab328
+Mae: 没什么。毕竟这世界很大，也很诡异。 #line:9c9f50
+Saleem: 自从这四个人走了以后，这个地方还能留下来的时日就不多了。 #line:3483d7
+Saleem: 但是现在，上帝啊，这么久以来的第一次！ #line:655cb0
+Saleem: 看来粟皮蜂舞厅又能听见那久违的乐曲啦！ #line:664375
+Sadie: 哈哈哈。 #line:495145
+Saleem: 座无虚席！鸽子们倒是真懂欣赏啊！ #line:d86719
+Mae: 这倒是挺让我欣慰的。 #line:9dbdae
+Sadie: 趁咱们各方面都还不错的时候，一定要多留住一些让人快乐的事。 #line:ae8d6b
+Saleem: 没错，咱们一起努力吧。 #line:37bd29
+Sadie: 其实，这地方还能再好好利用下。 #line:378305
+Saleem: 是啊，把这儿当作演出的地方只是这栋楼的用途之一而已， #line:15c89f
+Saleem: 因为这儿还有这么多空地儿呢！ #line:9cdec2
+<<stopInteractingWithPlayer Saleem>>
+<<stopInteractingWithPlayer Sadie>>
+<<set $birdland_interact_posters_done to 1>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 373,216
+---
+<<setSpriteLayer Saleem BG1>>
+<<setSpriteLayer Sadie BG1>>
+<<unlockDoodle Birdland>>
+===
+title: LottaBirds
+tags: 
+colorID: 0
+position: 804,223
+---
+Mae: 我靠，这儿有这么多鸟！ #line:ed24e3
+<<end>>
+===
+title: PeopleUsedToComeHere
+tags: 
+colorID: 0
+position: 1052,220
+---
+Mae: 哇哦。 #line:6d8982
+Mae: 以前， #line:33b594
+Mae: 大家经常会到这儿来。 #line:694849
+<<end>>
+===
+title: Pentagram
+tags: temp
+colorID: 4
+position: -347,141
+---
+<<if $pentagram_quest>>
+    Mae: 哇哦，是五芒星啊。 #line:56b789
+    Mae: 这可没法证明任何事，怪小孩们。 #line:a07291
+    <<wait 2>>
+    Mae: 不过的确挺吓人。 #line:8a687e
+    <<set $found_pentagrams += 1>>
+    <<unlockPentagramDoodle>>
+<<else>>
+    Mae: 嗯，五芒星。 #line:0ee235
+<<endif>>
+<<set $birdland_pentagram_done to 1>>
+===

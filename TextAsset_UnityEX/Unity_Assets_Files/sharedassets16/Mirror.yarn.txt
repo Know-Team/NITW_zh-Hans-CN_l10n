@@ -1,0 +1,338 @@
+title: EnterLevel_A1D3
+tags: 
+colorID: 0
+position: -1182,281
+---
+<<fadeOut 0.00001>>
+<<lookOut Mae instant>>
+Mae: o> #line:f0bfdb
+<<wait .5>>
+<<irisIn .5>>
+Mae: 看着还行。 #line:330b7e
+[[天啊，这件衣服显得我好胖，嗯？|Roundness]] #line:8d01f3
+[[我的脸好丑啊。别人看了我这张脸，肯定会做噩梦的。|WorstFace]] #line:30f4d3
+===
+title: Roundness
+tags: 
+colorID: 0
+position: -1543,539
+---
+<<closeOldSpeechBubbles>>
+<<lookDown Mae>>
+<<wait 1>>
+<<newSpeechBubble>>
+Mae:{locator=Left}衣服上这个零的标志|也起不到显瘦的作用。 _o_ #line:c7ba63
+<<closeOldSpeechBubbles>>
+<<newSpeechBubble>>
+[[{locator=Right}没事的，姐们儿。长得丰满一点也挺好的。|RoundIsOK]] #line:09007e
+[[{locator=Right}我不能再见什么吃什么了。|NeedToStopEatingEverything]] #line:93de69
+===
+title: NeedToStopEatingEverything
+tags: 
+colorID: 0
+position: -1298,878
+---
+<<set $eat_everything_i_see to 1>>
+<<closeOldSpeechBubbles>>
+Mae: 呃，梅，还是别这么折磨自己了。 :\ #line:3a7e82
+Mae: 至少今晚别这么干。 #line:ad6b6f
+Mae: 等到明天，再开始狂做仰卧起坐。 :) #line:b561c8
+Mae: 然后再去慢慢适应甘蓝这些东西的奇怪味道。 #line:a3493e
+Mae: 最后所有事都会皆大欢喜的。 #line:2e1863
+[[YouCanDoThis]]
+===
+title: RoundIsOK
+tags: 
+colorID: 0
+position: -1667,925
+---
+<<set $body_posi to 1>>
+<<closeOldSpeechBubbles>>
+Mae: <o> #line:687f68
+Mae: 就像网上说的一样，我属于那种对自己的身材比较有自信的人。 :) #line:8d0e78
+Mae: 我就是我，根本不用开瘦身和美颜。 #line:47ccfc
+<<lookOut Mae>>
+Mae: _o_ #line:dfcdcf
+Mae: 没人能否定这一点。:| #line:d2beb1
+[[YouCanDoThis]]
+===
+title: WorstFace
+tags: 
+colorID: 0
+position: -778,540
+---
+<<newSpeechBubble>>
+<<rotateHead Mae -10 .5>>
+Mae:{locator=Left}老天，|感觉好糟。 _o_ #line:6fba56
+<<closeOldSpeechBubbles>>
+<<newSpeechBubble>>
+[[{locator=Right}看看我这双傻大眼。我这双“噩梦之眼"。|MyNightmareEyes]] #line:909eb3
+[[{locator=Right}我的耳朵可真糟心，看了它保证能让你连做好几天噩梦。|MyNightmareEar]] #line:d1a9db
+===
+title: MyNightmareEyes
+tags: 
+colorID: 0
+position: -905,870
+---
+<<closeOldSpeechBubbles>>
+<<dilate Mae .75 1>>
+Mae: [speed=.5][shake=.03][color=DF3912]“噩梦之眼"[/all]，这名字用来当恐怖片的片名应该会很不错。  o_o :| #line:f51895
+Mae: 噩梦之眼就在你家窗外注视着你。 #line:7aa260
+<<dilate Mae .5 .1>>
+<<rotateHead Mae 10 1>>
+Mae: [speed=.2][shake=.03][color=DF3912]你会领教到它的厉害的。[/all] #line:51394b
+Mae: o_o #line:5ec453
+<<dilate Mae 1 3>>
+<<set $nightmare_eyes to 1>>
+[[YouCanDoThis]]
+===
+title: MyNightmareEar
+tags: 
+colorID: 0
+position: -544,882
+---
+<<closeOldSpeechBubble>>
+Mae: =_= #line:01712e
+Mae: 啊，是啊，你真应该好好去看看那条把我耳朵弄成这样的狗。 #line:42a6ec
+<<set $dog_bite_dead to 1>>
+Mae: 哦，等下，你再也见不到它了，因为它早就已经挂啦！ #line:1f2861
+Mae: 狗可不像人一样，能活这么长！ #line:59d4ce
+<<rotateHead Mae 10 1>>
+<<dilate Mae .5 3>>
+Mae:把我的耳朵当作烟叶放进烟管，然后抽吧，狗子！\o/ o_o #line:a2ef20
+Mae: [wave]用你的骷髅唇，抽啊！[/wave] #line:6b26f0
+<<dilate Mae 1 3>>
+[[YouCanDoThis]]
+
+===
+title: YouCanDoThis
+tags: 
+colorID: 0
+position: -1103,1444
+---
+<<rotateHead Mae 0 .7>>
+<<lookOut Mae>>
+Mae: o_o :| _o_ #line:7c95d9
+Mae: 你没问题的，大伙儿都很喜欢你。 #line:bc19c0
+<<newSpeechBubble>>
+[[{locator=Left}很明显，大伙儿都不喜欢你。|PeopleDontLikeYou]] #line:246469
+[[{locator=Left}很明显，你并不喜欢其他人。|YouDontLikePeople]] #line:2c81a9
+===
+title: PeopleDontLikeYou
+tags: 
+colorID: 0
+position: -1279,1813
+---
+<<set $people_dont_like to 1>>
+<<newSpeechBubble>>
+<<closeOldSpeechBubbles>>
+Mae:{locator=Right}我在大学里没朋友！ #line:79a581
+Mae: 一个朋友也没有。 #line:3a5c82
+Mae: 其实，错也不在别人身上。 :\ #line:b477fb
+Mae: 事情有点…… #line:5b30dc
+Mae: …… #line:5614de
+Mae: 随他的便吧。 =_= :| #line:5e45d0
+[[ColeCheck]]
+===
+title: YouDontLikePeople
+tags: 
+colorID: 0
+position: -922,1821
+---
+<<set $you_dont_like to 1>>
+<<newSpeechBubble>>
+<<closeOldSpeechBubbles>>
+Mae:{locator=Right} 我在网上看见过一个测试： #line:07723e
+Mae: 最能让你感觉到幸福的时候， #line:70f7d2
+Mae: 就是大家都很喜欢你， #line:7359a8
+Mae: 但却基本不理你的时候。 #line:b4502f
+Mae: 当然，他们来给你送吃的的情况除外…… #line:136970
+Mae: 这可不代表你可以一个人窝在屋里， #line:aacb60
+Mae: 然后等人来给你送饭。 #line:b57408
+Mae: 梅啊梅，隐士就是这么炼成的。 #line:fe169d
+Mae: 然后呢，这些隐士就会在寒冬腊月里孤零零地死去。 #line:f69eef
+Mae: 在死之前，他们还在等着那些他们压根就不想见的朋友来给他们送披萨呢。 #line:2392ed
+[[ColeCheck]]
+===
+title: ColeCheck
+tags: 
+colorID: 0
+position: -1038,2183
+---
+<<if $knows_cole_will_be_there is 1>>
+	[[ColeWillBeThere]]
+<<else>>
+	[[WhatAreYouGonnaSay]]
+<<endif>>
+
+===
+title: ColeWillBeThere
+tags: 
+colorID: 0
+position: -1345,2517
+---
+Mae: 谁会在乎科尔到底会不会来啊？ #line:dce9c9
+Mae: 那个混蛋。 =_= #line:6adac4
+[[他现在可能正在学校里忙得不可开交吧，或者在别的什么地方忙吧。|HesProbablyUpAtSchool]] #line:6ca9ad
+[[高中那年的毕业舞会就是个全方位的错误|PromWasAMistake]] #line:4e6869
+===
+title: HesProbablyUpAtSchool
+tags: 
+colorID: 0
+position: -1542,2876
+---
+Mae: 学习超努力，德智体全优。 o_o #line:b42ac6
+<<lookUp Mae>>
+Mae: 没准他压根就没想到过我。 #line:761d7a
+Mae: 不过这也挺好的。因为说实话，我根本就不在乎。 #line:e1d233
+<<lookOut Mae>>
+Mae: 但我还是得求求某位碰巧路过的神仙，希望他今晚千万不要出现。 #line:2e3d9f
+Mae: 不管是哪个神，我都求求您了。 #line:2f83a5
+<<set $whatever_god to 1>>
+Mae: 保佑我吧，可千万别让科尔参加今晚的聚会。 #line:851377
+[[Cole_2]]
+===
+title: PromWasAMistake
+tags: 
+colorID: 0
+position: -1194,2850
+---
+<<lookRight Mae>>
+Mae: 比如，当年舞会上那件裙子。 #line:e9d81d
+Mae: 那时站在那个鲜花拱门下边拍的那张照片。 #line:3a099a
+Mae: 俩人跳舞的时间还没傻站着的长。 #line:978f61
+Mae: 悠着点，不准接触。不准拥吻。 #line:42447f
+<<set $no_smooches to 1>>
+<<lookOut Mae>>
+Mae: 我很庆幸，我已经不是小孩儿了。 #line:38cbef
+[[Cole_2]]
+===
+title: Cole_2
+tags: 
+colorID: 0
+position: -1331,3150
+---
+<<if $ate_tacos is 1>>
+    <<newSpeechBubble>>
+	Mae:{locator=Left} 我嘴里还有塔可的味儿呢。 #line:e72f7e
+    <<closeAllSpeechBubbles>>
+<<endif>>
+Mae:{locator=Right} 这也太尴尬了吧。 #line:09b3fa
+[[WhatAreYouGonnaSay]]
+
+===
+title: WhatAreYouGonnaSay
+tags: 
+colorID: 0
+position: -1022,3404
+---
+<<closeAllSpeechBubbles>>
+Mae:{locator=Left}好了好了，到时候你想和别人说点什么呢？ o_o #line:3bfdbe
+Mae: 你多擅长和人打交道呀。|你可是交际大师啊。 :) #line:1368f6
+Mae: o/ #line:0d707a
+<<newSpeechBubble>>
+<<dilate Mae .5 3>>
+[[{locator=Right}[wave]“嗨，我叫梅！近来可好啊？"[/wave]|HowsItGoing]] #line:2b55d3
+[[{locator=Right}[wave]“哦，嘿，我叫梅！您贵姓？"[/wave]|WhatsYourName]] #line:778dd4
+[[{locator=Right}[wave]“嗨！我叫梅！我这星期刚从大学正式退学啦！"[/wave]|IDroppedOut]] #line:19a577
+===
+title: HowsItGoing
+tags: 
+colorID: 0
+position: -1289,3828
+---
+<<set $hows_it_going to 1>>
+<<closeOldSpeechBubbles>>
+Mae: “真的假的啊？这也太牛了吧！" #line:3258e2
+Mae: “当然是真的啦！好了，待会儿见！" #line:ca379d
+<<dilate Mae 1 3>>
+Mae: 嗯，很好。这话听着还挺正常的。:| _o_ #line:8420c2
+Mae: 没人敢说你是个怪人。 #line:0748b8
+Mae: 而且晚上那么暗，大家伙看起来都是一个样。 #line:9ce91c
+Mae:我很确信这是啪啪啪的唯一、必要条件。 #line:4b5ae3
+<<close>>
+[[ThisIsHopeless]]
+===
+title: WhatsYourName
+tags: 
+colorID: 0
+position: -1008,3826
+---
+<<set $whats_your_name to 1>>
+<<closeOldSpeechBubbles>>
+Mae: “噢，我感觉以前在哪儿见过你……" #line:56a5ce
+Mae: “那时候咱们好像还是男女朋友呢。 #line:8d32e4
+Mae: 咱们还和街上的小混混干过架呢， #line:2111c3
+Mae: 最后，咱们就用铁链和垃圾桶把那些人打了个落花流水。" #line:6335df
+<<dilate Mae 1 3>>
+[[ThisIsHopeless]]
+===
+title: IDroppedOut
+tags: 
+colorID: 0
+position: -685,3796
+---
+<<set $dropout_week to 1>>
+<<closeOldSpeechBubbles>>
+Mae: “可现在呢，我又跑到了树林子里！ #line:7f5c33
+Mae: 跑到树林里喝起了大酒！" \o/ #line:8e3d27
+<<set $you_dont_like to 1>>
+<<dilate Mae 1 3>>
+Mae: _o_ #line:11bb14
+Mae: 老天，照这么下去，我岂不是又要变成隐士了。 :\ #line:4f7012
+[[ThisIsHopeless]]
+===
+title: ThisIsHopeless
+tags: 
+colorID: 0
+position: -992,4160
+---
+<<closeAllSpeechBubbles>>
+<<wait 2>>
+Mae: =_= :( _o_ #line:d5fbff
+<<wait 2>>
+Mae: 真是没救了。 #line:7856e2
+Mae: 快把我推出去，让垃圾车把我当废品收了吧。 #line:038806
+<<close>>
+<<wait 1>>
+<<lookLeft Mae>>
+Mae: 哦，我滴个天，他们马上就要到啦！ o_o :| #line:588a4e
+<<lookOut Mae>>
+Mae: 祝你好运了，丫头。 #line:863a5b
+<<newSpeechBubble>>
+Mae:{locator=Left}我才不需要什么运气呢。 =_= :) #line:2bad37
+<<closeOldSpeechBubble>>
+Mae:{locator=Left}因为我有好运制造机， #line:d10166
+Mae:{locator=Left}所以我自己就能制造出好运来。 o_o :| #line:746db3
+<<closeAllSpeechBubbles>>
+<<fadeOut 1 wait>>
+<<sectionTitle TheParty BeaCar>>
+===
+title: EnterLevel_A2D4
+tags: 
+colorID: 0
+position: -129,271
+---
+<<fadeOut 0.00001>>
+<<lookOut Mae instant>>
+<<set $night to 1>>
+Mae: o> #line:cd68a3
+<<wait .5>>
+<<irisIn .5>>
+Mae: 嗷，都是些很普通的衣服诶。 #line:d96871
+Mae: 嗷，好了好了，是时候换上衣服去吓人了。 #line:311529
+<<close>>
+<<irisOut .5 wait>>
+Mae: _o_ #line:7b843f
+<<set $harfest_costume to 1>>
+<<playIdleAnimationPlayer>>
+<<close>>
+<<wait 1>>
+<<irisIn .5 wait>>
+Mae: 太～妙～啦～。 #line:2c39f1
+Mae: 女 巫 之 刃|！！！！ #line:a11765
+<<close>>
+<<set $mirror_done to 1>>
+<<irisOut 1 wait>>
+<<scene MaeRoom>>
+===

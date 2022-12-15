@@ -1,0 +1,952 @@
+title: Bill_A1D3
+tags: 
+colorID: 2
+position: -677,9063
+---
+Bea: 没错，比尔，把这个写在工时表上。 #line:fc0976
+Bill: 她可不会喜欢这个的。 #line:99274c
+Bea: 我才不在乎她喜欢不喜欢。 #line:5c6640
+Bea: 这是她的错，简单明了。 #line:9aef14
+Bea: 这可算加班了，得加钱。 #line:619372
+Bill: 好吧！ #line:fdf482
+<<close>>
+<<flip Bill -1>>
+<<walk Bill BillExit>>
+<<walk Player CentreTalkFront wait>>
+[[嗨，碧娅！|Bea_A1D3_Hey]] #line:605875
+[[刚才发生什么了？|Bea_A1D3_WhatWasThat]] #line:0c5e3e
+===
+title: Bea_A1D3_WhatWasThat
+tags: 
+colorID: 2
+position: -557,9351
+---
+<<flip Bea 1>>
+<<walk Bea RegisterMed wait>>
+<<lookAt Bea RegisterLook>>
+Bea: 呃，别问了。 #line:521916
+Bea: 米兰达夫人已经把我们的工作人员锁在她地下室两次了。 #line:2159d4
+Mae: 为什么啊？ #line:274165
+<<lookAt Bea Player>>
+Bea: 因为她年纪大了，老忘事。 #line:03187b
+Bea: 可能给她开个账单，她下次就能记住了。 #line:4a6424
+[[Bea_A1D3_2]]
+===
+title: Bea_A1D3_Hey
+tags: 
+colorID: 2
+position: -781,9342
+---
+<<lookAt Bea Player>>
+Bea: 嗨。 #line:5a5ec0
+Mae: 工作怎么样？ #line:4a1bd9
+<<flip Bea 1>>
+<<walk Bea RegisterMed>>
+<<lookAt Bea RegisterLook>>
+Bea: 快到月底了，鸭梨山大啊。 #line:92acf5
+Bea: 我还得准备订购冬天要卖的货物。 #line:e9a364
+Bea: 所以，我还得找一两个工人，然后给他们点辛苦费， #line:242f9f
+Bea: 让他们把车上的货都卸下来。 #line:1ee1b8
+Bea: 因为光靠我自己可没法把一整车岩盐都卸下来。 #line:4dbb59
+[[Bea_A1D3_2]]
+===
+title: Bea_A1D3_2
+tags: 
+colorID: 2
+position: -672,9646
+---
+Mae: 嗯哼。 #line:9302a5
+<<lookAt Bea Player>>
+Bea: 来这儿有何贵干啊？ #line:8d8e87
+Mae: 呃，格雷格让我来问问你，今晚的派对，能不能麻烦你开车送我们一下呀？ #line:4ee84e
+Mae: 你知道的，就在州立公园那里。所以能帮我们一下吗？ #line:00a839
+Bea: 好在你把具体位置跟我说清楚了， #line:d1fa3e
+Bea: 不然我还真不知道， #line:5fb535
+你指的是 #line:493d92
+Bea: 在咱们负鼠泉的晚上， #line:1b453a
+Bea: 举办的几十个聚会中的哪个呐。 #line:1b70d5
+Mae: ……你这是在讽刺谁吗？ -_- #line:ac1f4d
+<<close>>
+<<flip Bea -1>>
+<<walk Bea BeaMid wait>>
+<<lookAt Bea Player>>
+Bea: 我可以送你们过去。 #line:ccb61e
+Mae: o_o :) 太棒了！谢谢！ #line:ff37e4
+Bea: 我们晚上八点半会准时到你家门口等你。 #line:ae9f9c
+Bea: 到时候可别磨蹭，不然就不带你去了。 #line:2c8c55
+Mae: 好滴！ :| #line:d06ae4
+Bea: 回家的时候可别迷路了。 #line:879b1b
+Mae: 我知道我住哪里。 #line:209627
+Bea: 我是认真的。赶快回家准备去吧。 #line:e1ef42
+Mae: 好啦，好啦！我这就走，天哪。 #line:d6487f
+<<unlockDoodle Bea1>>
+<<set $mom_done to 0>>
+<<set $party_prep to 1>>
+<<set $bea_can_drive to 1>>
+<<set $bill_done to 1>>
+<<set $trigger_molly to 1>>
+<<set $bea_done to 1>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -1456,8201
+---
+<<setSpriteLayer Bea BG1>>
+<<flip Bea -1>>
+
+<<if $act is 2 and $day is 3>>
+    <<show Germ>>
+    <<setSpriteLayer Germ BG6>>
+<<else>>
+    <<hide Germ>>
+<<endif>>
+
+<<if $act is 1 and $day is 3>>
+    <<if $bill_done is 0>>
+        <<show Bill>>
+    <<endif>>
+<<endif>>
+===
+title: A2D3_00
+tags: 
+colorID: 3
+position: -1252,9222
+---
+<<if $bea_day_intro is 0>>
+    <<set $bea_day_intro to 1>>
+    Bea: 嗨，梅。 #line:efe594
+    Mae: 今天生意如何啊？ #line:671a2e
+    Bea: 今天我的小命差点都不保了。 #line:7f41ab
+    Bea: 不过我命硬，没死成。 #line:9dff80
+    Bea: 情况大概就是这样。 #line:e54726
+    Mae: 感觉你压力山大啊，到底遇到什么事了？ #line:dabdf8
+    Bea: 呃，我还是说说最头疼的事吧。 #line:d996fd
+    Bea: 明天，我们要在店里表演丰收节舞台剧。我的天，这剧直的是蠢到爆啊。 #line:ad9e10
+    Mae:{width=8} 哇噢噢噢噢噢噢噢噢噢噢噢噢。 #line:d18b5e
+    Bea: 嗯哼，我下次再也不揽这事了。 #line:91c6c8
+    Mae: 今天晚上你打算干嘛？ #line:ab4ab6
+    Bea: 呃，没想法。 #line:ec34c4
+    Bea: 我已经累扁了。 #line:bfd5df
+    Bea: 生活中各种乱七八糟的事情已经够累人了。 #line:eb3906
+    Bea: 我还得自己干三个人的活儿，外加管理这家店 #line:e3f64a
+    Bea: 虽然整个店就我一个人，可这店还不是我的。 #line:ee4092
+    Mae: 啊，奇怪。我还觉得这家店怎么说也该是你的了。 #line:6e7aef
+    Bea: 你可以那么觉得。 #line:4a3efd
+    Bea: 但是它确实不归我，我还是死了算了。 #line:5bbe06
+    Bea: 你就直接用这店里的材料和工具 #line:c8f4d6
+    Bea: 给我做上一副棺材 #line:01de3d
+    Bea: 然后随便找个地方把我埋了吧。 #line:b4b6f0
+    Mae: 天哪。你也太极端了吧。 #line:45133a
+    Bea: 啊啊啊啊啊啊啊啊啊。 #line:f0ed69
+    Bea: 不管怎么说，我今晚什么都不想干。 #line:a5f9c9
+    Mae: 我也可以什么都不干！ #line:54a3b5
+    Bea: …… #line:280981
+    Bea: 随你便。 #line:5478df
+<<endif>>
+
+Bea: 我们要准备走了吗？ #line:1dd7ce
+->还没好呢！我有点别的事要忙。 #line:89f3dc
+    Bea: 好的。 #line:7216ce
+->咱们走吧！ #line:c280bd
+    [[GermShowsUp]]
+===
+title: GermShowsUp
+tags: 
+colorID: 3
+position: -1313,9484
+---
+<<close>>
+<<set $bea_friendship_quest to 3>>
+<<walk Germ GermComeOut wait>>
+Germ: 嗨，碧娅。 #line:07b422
+Germ: 嗨，梅。 #line:4de71f
+<<close>>
+<<flip Bea -1>>
+Bea: 嗨，杰姆！ #line:2efc23
+Mae:嘿，老兄。 #line:e6a12b
+Bea: 杰姆正在帮我把收银台下面的东西挪出来。 #line:13c0fa
+<<close>>
+<<flip Germ -1>>
+<<walk Germ GermExitBack wait>>
+Bea: 那个。 #line:ef8f06
+Bea: 今天我想早点下班，然后去买点东西。想和我一起去吗？ #line:69a127
+Mae: 当然想了！ #line:25ea41
+<<close>>
+<<flip Bea 1>>
+<<walk Bea BeaOffRightBack wait>>
+<<warp Bea BeaOffRight>>
+<<flip Bea -1>>
+<<setSpriteLayer Bea BeaFQ>>
+<<walk Bea BeaBeforeExitLeft wait>>
+Bea: 咱们走吧？ #line:f86340
+<<close>>
+<<trackAllSpeechBubblesToCharacters 1>>
+<<flip Germ 1>>
+<<walk Germ GermRightBack>>
+<<wait .5>>
+Germ:{width=3}你们这儿的锤子可真不少！ #line:b21725
+Germ: 我的妈呀，还有这么多各式各样的钉子诶！ #line:77b234
+<<close>>
+Mae: 哈哈，好吧。 #line:897e71
+Bea: 他就像是童话故事里的角色， #line:70261e
+Bea: 然后突然跑到了现实生活里。 #line:bfea88
+<<close>>
+<<irisOut 1 wait>>
+<<sectionTitle BeaFQ3Intro HamPanther>>
+===
+title: A2D1_00
+tags: 
+colorID: 3
+position: -1851,9120
+---
+Mae: 嘿，碧娅。 #line:0ce03e
+Bea: 哟吼～ #line:13fede
+Mae: 昨晚真对不起啊。 #line:caa951
+Mae: 我吃了点感冒药，脑袋迷迷糊糊的。 #line:3e4bc3
+Mae: 我真不知道当时自己在胡思乱想些什么。 #line:61eff4
+Bea: 我为我说过的话道歉。 #line:3d5c1e
+Mae: 其实吧，我都没什么印象了。 #line:c4d820
+Mae: 就别管了。 #line:18fa6b
+Bea: 酒精万岁！ #line:d46a42
+Mae: 最新小镇标语。 #line:3b2ea4
+===
+title: A2D1_01
+tags: 
+colorID: 3
+position: -2125,9323
+---
+Mae: 等下要来乐队排练吗？ #line:2206f4
+Bea: 哈哈。好啊。 #line:8e5442
+Mae: 真没想到乐队居然还在。 #line:f805b7
+Mae: 我们高中那时候甚至都算不上是一个乐队。 #line:90a371
+Bea: 是啊，不过挺有意思的。可以和安格斯一起玩。 #line:b2b477
+Mae: 那你最后是因为什么原因才加入乐队的啊？ #line:851e1e
+Bea: 自从凯西离开镇子以后，安格斯就告诉我说，格雷格变得特别伤心。 #line:8fc642
+Bea: 所以呢，我就自愿当上了乐队的新鼓手。 #line:479781
+Mae: 好吧，“鼓手"。 #line:cf460a
+Mae: 碧娅，那只是个笔记本，根本就不是鼓。 #line:3933e8
+Bea: 没错，梅，那确实是个笔记本，不是鼓，你说得没错。 #line:e480a2
+===
+title: A2D1_02
+tags: 
+colorID: 3
+position: -2392,9531
+---
+Bea: 咱们待会儿再见吧，我还有事要忙。 #line:71eec0
+<<set $bea_done to 1>>
+===
+title: Bea_Act2
+tags: 
+colorID: 3
+position: -1533,8878
+---
+<<if $day is 1>>
+    <<if $bea is 0>>
+        <<set $bea += 1>>
+        [[A2D1_00]]
+    <<elseif $bea is 1>>
+        <<set $bea += 1>>
+        [[A2D1_01]]
+    <<elseif $bea is 2>>
+        <<set $bea += 1>>
+        [[A2D1_02]]
+    <<endif>>
+<<elseif $day is 2>>
+    <<if $bea is 0>>
+        [[A2D2_00]]
+    <<endif>>
+<<elseif $day is 3>>
+    <<if $bea is 0>>
+        [[A2D3_00]]
+    <<endif>>
+<<elseif $day is 4>>
+    <<if $bea is 0>>
+        [[A2D4_00]]
+    <<endif>>
+<<endif>>
+===
+title: Bea
+tags: 
+colorID: 3
+position: -630,8416
+---
+<<if $act is 2>>
+    [[Bea_Act2]]
+<<elseif $act is 3>>
+    [[Bea_Act3]]
+<<endif>>
+===
+title: A2D2_00
+tags: 
+colorID: 3
+position: -1556,9158
+---
+<<if $bea_day_intro is 0>>
+    <<set $bea_day_intro to 1>>
+    Mae: 嘿嘿嘿，小碧碧。 #line:bc3ce2
+    Bea: 嘿，梅。 #line:fd551f
+    Mae: 今天怎么样啊？ #line:da7f98
+    Bea: 有一大堆岩盐等着我们搬呢。 #line:7eebe8
+    Bea: 今年送得还挺早。 #line:e09dd5
+    Bea: 还运过来了*一大堆*雪铲…… #line:35d3c5
+    Bea: 供货商一般不会出这样的岔子，这时候可用不上雪铲。 #line:d09195
+    Mae: 也许供货商是天气法师？ #line:4fc718
+    Bea: 好吧，这个想法挺有意思的。 #line:3d04bb
+    Bea: 那么你有事吗？ #line:bb94c8
+    Mae: 今晚想出去玩玩吗？？？ #line:80c74a
+    Bea: 呃。我还在工作呢。 #line:e60f40
+    Bea: 你想不想过来 #line:47c376
+    Bea: 帮个忙什么的。 #line:140aa2
+    Mae: 噢，我还想着我们可以一起去亨威克那里玩噗噗车呢。 #line:89cf8d
+    Bea: 梅，这…… #line:df8c0b
+    Bea: 这主意还真不赖…… #line:2803e7
+    Bea: 不过抱歉了，我还有一堆活儿呢。 #line:85249f
+    Mae: 额唔，天哪，到底是什么活儿？ #line:ad3ead
+    Bea: 检查账单、租金、食品、药品之类的东西。 #line:eeb9b6
+<<endif>>
+Bea: 所以你要不要来帮忙？ #line:797cdd
+->我今天还有不少事要做呢。 #line:f3cd7f
+    Bea: 好吧！ #line:856cb7
+->咱们走吧！ #line:c49a37
+    <<set $bea_friendship_quest to 2>>
+    <<irisOut 1 wait>>
+    <<sectionTitle BeaFQ2Intro MirandaYard>>
+===
+title: EnterLevel_A2D4
+tags: 
+colorID: 3
+position: -209,8829
+---
+<<if $harfest_costume is 1>>
+    [[EnterHarfest]]
+<<endif>>
+===
+title: EnterHarfest
+tags: 
+colorID: 3
+position: -179,9092
+---
+<<playAmbientSFX _AmbientSFX:play_pre_audience>>
+Mae: 嘿嘿嘿。 #line:f7894e
+Bea: …… #line:d8fdb6
+Mae: 干嘛呢？ #line:7335c9
+<<wait 2>>
+Bea: 认真的吗？ #line:734522
+Mae: :) #line:2250e3
+<<wait 2>>
+Bea: 我们正在准备今年丰收节的演出。 #line:301ab3
+Mae: 哦，是吗，挺好的。 #line:ba3866
+Mae: 老大镐的丰收节现场直播诶！ #line:36f236
+Mae: :| #line:db69e6
+Mae: 演出什么时候开始啊？ #line:9af17e
+Bea: 嗯……我觉得……十分钟之后就该开始了吧。 #line:57c1fc
+Mae: “你觉得"？ #line:cd5432
+Bea: 呃，这简直就是噩梦啊。 #line:63cc2a
+Bea: 我当初为什么要接这活啊？ #line:e3040b
+Bea: 商会可欠了我一个大人情。 #line:5cbe48
+Mae: 老天，我可听着呢。 #line:8f045a
+Bea: …… #line:4868d6
+Bea: …… #line:84a32a
+Mae: 怎么了？ #line:fe29e8
+Bea: 好了，有件事要你帮忙……你的台词不多…… #line:66722b
+Mae: 你说啥？！ #line:0d8cf7
+Bea: 我已经缺席了3次啦！ #line:11f677
+Mae: 为什么呀？ #line:48dffa
+Bea: 因 为 我 们 干 的 所 有 这 些 事 都 蠢 到 家 啦，而 且 也 没 人 会 在 意 这 些 的！！！ #line:9ea9d4
+Mae: 碧娅…… #line:fb4e90
+Bea: 拜托啦，这其实挺有意思的！ #line:b03a36
+Mae: 碧娅。 #line:1f9399
+Bea: 怎么了？ #line:4a216b
+Mae: 我会帮你的。 #line:8bf53a
+Mae: 我小时候就已经把台词记得滚瓜烂熟了。 #line:f5c6eb
+Bea: 记熟了也没用，这部剧两年时间就改了六次。 #line:f871e3
+Bea: 改得越来越不靠谱了。 #line:c86f62
+Bea: 现在也就剩百分之二十的内容是符合史实的了。 #line:38bae7
+Bea: 剩下百分之八十都是瞎编的。 #line:5512e0
+->现在这部剧讲的是不是全是假历史啊？ #line:876299
+    Bea: 这部剧好像……是被改坏了， #line:c29dfb
+    Bea: 改得一点都不忠于原作了。 #line:5d4c72
+->好吧，这事可够怪的。 #line:07a01e
+Bea: 开始的时候还好，可后来就……随便吧。 #line:2d7635
+Bea: 你还有五分钟时间看台词。 #line:0cea08
+Mae: 噗，我可以临场发挥啊。 #line:015c62
+Bea: 梅，求你了，千万别临场发挥。 #line:49d514
+Mae: 好吧。 #line:0aa559
+<<fadeOut 1 wait>>
+<<stopAmbientSFX _AmbientSFX:play_pre_audience>>
+<<show Bill>>
+<<setSpriteLayer Bill BG2>>
+<<set $bill_hat to 1>>
+<<playerUpdateFallDuringInteract 1>>
+[[PlayScene1]]
+===
+title: PlayScene1
+tags: 
+colorID: 3
+position: 161,9023
+---
+<<tell _AmbientSFX:amb_play Play1>>
+<<tell HarfestPlayWatchers Show>>
+<<cameraLookAt HarfestCamHigh 0>>
+<<warp Mae CounterOffRight>>
+<<warp Dan CounterOffLeft2>>
+<<warp Bill CounterOffLeft>>
+<<warp Bea BeaCounter>>
+<<show Dan>>
+<<setAnimInt Dan harfestIdle 1>>
+<<fadeIn 1 wait>>
+<<cameraLookAt HarfestCamLow 6>>
+//organ fanfare as camera descends from ceiling//
+<<playOneShot event:/music/harfest_organ_00>>
+<<wait 7>>
+<<walk Dan DanCounter wait>>
+<<walk Bill BillCounter wait>>
+//will do actual stage blocking after dialogue is in//
+<<wait 1>>
+<<dilate Bea .75 10>>
+<<lookOut Bea>>
+Bea: 哦！我看不到你们！ #line:acd1f8
+Bea: 难道你们是鬼魂吗？ #line:bc48a6
+Bea: 你们到这儿来， #line:bc7b5b
+Bea: 是为了听负鼠泉建成的传说吗？ #line:7bbfe0
+<<tell HarfestPlayWatchers Happy>>
+<<wait 3>>
+<<dilate Bea 1 10>>
+<<lookLeft Bea>>
+Bea: 穿过历史的迷雾， #line:44ffdb
+Bea: 我回到了1793年。然后，我看到了两位疲惫不堪的毛皮猎人。 #line:286657
+//dan enters//
+Dan: 约翰兄弟！ #line:1e3a53
+//bill enters//
+Bill: 怎么了，史蒂文兄弟！ #line:a650e0
+Dan: 我在高处看见了一道山谷， #line:f4d9b3
+Dan: 山谷里有棵大枯树， #line:f5a396
+Dan: 树旁边……啊，有口泉！ #line:5e280c
+Bill: 史蒂文兄弟，上天真是在保佑咱们啊。 #line:77dfc0
+Bill: 说真的， #line:e592d7
+Bill: 带着这三百张河狸皮，还走了这么多难走的路， #line:901dbc
+Bill: 我早就已经口干舌燥啦。 #line:d48bf5
+Dan: 哦，好兄弟，那咱们就快点赶路吧！ #line:77f692
+<<close>>
+<<walk Mae MaeCounter wait>>
+<<shuffleNextOptions>>
+->喂！过路的！能不能给我这穷老太太点面包吃啊？ #line:7216ac
+    <<tell HarfestPlayWatchers Happy>>
+    <<set $play_correct_responses += 1>>
+->喂！过路的！能不能帮帮我这个老太太啊？ #line:108719
+    Mae: 啊，请帮帮我。 #line:7016fb
+    Bea: 什么情……？ #line:aafcfb
+    <<lookForward Mae>>
+    <<playOneShot event:/music/harfest_organ_mistake>>
+    <<tell HarfestPlayWatchers Grumble>>
+    <<shuffleNextOptions>>
+    ->哦，不，为了不让自己变老，所以，我就给自己做了一张假皮！ #line:e5a2fb
+        Bea: 呃，这两名旅行者并不明白这句话的意思。 #line:8f5299
+    ->我曾经也是个漂亮姑娘。我得吃东西才能恢复青春。 #line:a27f9b
+        Bea: …… #line:94994a
+    <<tell HarfestPlayWatchers Grumble>>
+<<lookForward Mae>>
+//witchy organ riff//
+<<playOneShot event:/music/harfest_organ_01>>
+<<wait 5>>
+<<lookNearest Mae>>
+Bill: 枯槁女巫！ #line:0eb94a
+Dan: 她的相貌简直是不忍直视啊！ #line:5ba171
+Mae: 你们这两个小伙子心可真冷， #line:551e29
+Mae: 你们就不能从那三百张河狸皮里抽出一张给我， #line:cc665e
+Mae: 让我暖暖身子啊！ #line:eb1c63
+<<shuffleNextOptions>>
+->我诅咒你，还有你， #line:572cf4
+    Mae: 我诅咒你们今晚都会死。 #line:6515c9
+    <<tell HarfestPlayWatchers Happy>>
+    <<set $play_correct_responses += 1>>
+    Dan: 我好害怕啊！ #line:c3b7e2
+    Bill: 史蒂文兄弟，冷静。 #line:07511d
+    Bill: 我冒险跑进山里， #line:9c0e02
+    Bill: 可不是为了和老巫婆争论问题来的！ #line:e2612e
+->你这小伙儿可真是又粗鲁又无礼啊。 #line:f13fe0
+    <<playOneShot event:/music/harfest_organ_mistake>>
+    <<tell HarfestPlayWatchers Grumble>>
+    Bill: …… #line:3ed334
+    Mae: 你要为你的无礼付出代价！ #line:347a56
+    Dan: 我感觉……不太……舒服！ #line:da93be
+    Bea: 唔。 #line:21bb14
+    <<lookForward Mae>>
+    <<shuffleNextOptions>>
+    ->你所受的惩罚便是诅咒， #line:6dbae7
+        <<tell HarfestPlayWatchers Happy>>
+        <<set $play_correct_responses += 1>>
+        Mae: 就在今晚！ #line:039830
+        Mae: 你，还有你，你们逃不掉的！ #line:d2cbcc
+        Bea: *呼呼* #line:da92db
+    ->你所受的惩罚便是一次残酷的考验！ #line:4f760a
+        <<tell HarfestPlayWatchers Grumble>>
+        <<playOneShot event:/music/harfest_organ_mistake>>
+        Bea: 啥…… #line:dd3320
+        <<lookForward Mae>>
+        Mae: 你们必须回到自己的小镇去…… #line:a1cfc2
+        Bill: 嗯…… #line:778262
+        Mae: 把教堂墓地里最老的坟挖开…… #line:ee1206
+        Dan: 呃…… #line:e555e0
+        Mae: ……然后亲一口埋在里面的人！ #line:bb5f89
+        Bill: 什么？ #line:fc62ef
+        Bea: 这些不过是女巫在说笑而已， #line:914566
+        Bea: 她只是为了吓唬这两个旅行者罢了！ #line:9ed818
+        Bea: 但实际上，她在那晚给这两个人下了死亡诅咒！ #line:25025d
+<<lookForward Mae>>
+Mae: 咿 嘻 嘻 嘻嘻嘻～！ #line:0a525c
+<<lookNearest Mae>>
+Mae: 我诞生自丰收之夜的月下， #line:2cf60d
+Mae: 我诞生自这片森林之中。 #line:27e210
+Mae: 你们都会死在这月光之下的！ #line:6d0696
+Dan: 约翰兄弟，我害怕极啦！ #line:e95e69
+Bill: 史蒂文兄弟，坚定你的信念！ #line:d3482d
+Bill: 难道你就这么相信这老妖婆的瞎话吗？ #line:51d3f4
+Bill: 快来帮我把这三百张河狸皮搬走。 #line:bb347c
+Bea: ……但鲜为人知的是， #line:9dacbe
+Bea: 女巫的诅咒…… #line:0463b6
+Bea: 并 非 只 是 耸 人 听 闻。 #line:f91243
+<<close>>
+//spooky organ end of act theme//
+<<playOneShot event:/music/harfest_organ_02>>
+<<tell HarfestPlayWatchers Happy>>
+<<playOneShot event:/harfest/play_applause>>
+<<cameraLookAt HarfestCamHigh 11>>
+<<wait 11.5>>
+<<fadeOut 1 wait>>
+[[PlayScene2]]
+===
+title: PlayScene2
+tags: 
+colorID: 3
+position: 439,9034
+---
+<<warp Mae CounterOffRight>>
+<<warp Gregg CounterOffLeft>>
+<<warp Dan CounterOffLeft>>
+<<warp Bill CounterOffLeft>>
+<<fadeIn 1 wait>>
+//OH NO! Organ theme//
+<<cameraLookAt HarfestCamLow 6>>
+<<playOneShot event:/music/harfest_organ_03>>
+<<wait 4>>
+<<walk Dan DanCounter wait>>
+Dan: 救命！救命啊！ #line:b427dd
+Dan: 谁来帮帮我这个倒霉的旅行者啊？！ #line:de41ba
+<<close>>
+<<walk Gregg GreggCounter wait>>
+<<lookLeft Gregg>>
+Gregg: 啊……嗯？ #line:f40fba
+Gregg: 啊，这位先生，我以星星和月亮之名， #line:f22ac6
+Gregg: 请问，您遇到什么麻烦了吗？ #line:39235d
+<<close>>
+<<walk Mae MaeCounter wait>>
+Mae: 这里也有你的戏份？ #line:3d9c55
+<<lookRight Gregg>>
+Gregg: 没错。 #line:35f35b
+<<lookLeft Gregg>>
+Dan: 啊 啊 啊！！女 巫 来 啦！！！ #line:4e5be7
+Mae: 是我。 #line:3d4214
+Dan: 朋友，我向你保证， #line:962cf0
+Dan: 今天，这可怕的老妖婆 #line:9ee76b
+Dan: 居然诅咒我和我兄弟去死！ #line:bc86cd
+Gregg: 真让人心痛啊！ #line:ba066e
+Dan: 我们是在枯树下的泉水旁边宿的营。 #line:318629
+Dan: 我朋友的尸体现在就和那三百张河狸皮一样， #line:b9d1af
+Dan: 冷冰冰地躺在地上！ #line:dd9bc7
+Gregg: 哦！这太让人寒心啦！！！ #line:de5458
+<<lookRight Gregg>>
+Mae: 呃 呵 呵 呵呵呵！！！ #line:05c683
+<<shuffleNextOptions>>
+->我已经给这口泉下了诅咒！ #line:9bcd6b
+    Mae: 喝了这泉水的人都会死掉！ #line:d3d062
+    <<lookLeft Gregg>>
+    <<tell HarfestPlayWatchers Happy>>
+    <<set $play_correct_responses += 1>>
+    Dan: 啊 啊 啊！我 要 不 行 啦！ #line:24dfc9
+    Dan: 史蒂文兄弟，我来找你啦！！！ #line:e24ebf
+->诅咒你们这两个无礼的年轻人！ #line:f4dcf1
+    <<tell HarfestPlayWatchers Grumble>>
+    <<playOneShot event:/music/harfest_organ_mistake>>
+    Gregg: 台词不是这…… #line:91bba5
+    Dan: 嗯…… #line:b56b21
+    Bea: …… #line:16f123
+    <<lookLeft Gregg>>
+    Dan: 她给这口泉下了诅咒。我马上就要死啦！！！ #line:c773c0
+//dan falls behind counter//
+<<setAnimInt Dan die 1>>
+<<wait 2>>
+Mae: 哇哦。 #line:f13554
+<<lookRight Gregg>>
+Gregg: 我也不行啦，我也喝了泉水！ #line:4e72e6
+Mae: 格雷格，别把我一个人留在台上。 #line:1be6f2
+Gregg: 拜拜—— #line:94418d
+//gregg falls behind counter//
+<<setAnimInt Gregg die 1>>
+<<wait 2>>
+Bea: 可即便如此， #line:65eb71
+Bea: 诅咒对鲜血的渴望…… #line:ce6815
+Bea: ……依 然 无 法 得 到 满 足！！！ #line:e18098
+//spooky organ end of act theme//
+<<close>>
+<<playOneShot event:/music/harfest_organ_04>>
+<<tell HarfestPlayWatchers Happy>>
+<<playOneShot event:/harfest/play_applause>>
+<<cameraLookAt HarfestCamHigh 7.5>>
+<<wait 7.5>>
+<<fadeOut 1 wait>>
+<<warp Gregg CounterOffLeft>>
+[[PlayScene3]]
+===
+title: PlayScene3
+tags: 
+colorID: 3
+position: 689,9037
+---
+<<warp Mae CounterOffRight>>
+<<warp Bea BeaCounter>>
+<<warp Dan DanCounter>>
+<<warp Bill BillCounter>>
+<<show Bill>>
+<<set $bill_hat to 1>>
+<<setAnimInt Dan die 0>>
+<<fadeIn 1 wait>>
+//THINGS ARE SPOOKY ORGAN RIFF//
+<<cameraLookAt HarfestCamLow 8.5>>
+<<playOneShot event:/music/harfest_organ_05>>
+<<wait 8.5>>
+Bea: 凝视着他们！|凝视这些灵魂！ #line:290b42
+Bill: 兄弟，咱们现在已经变成鬼魂啦！ #line:c38e08
+Bill: 啊！那三百只河狸的鬼魂一直都在用谴责的眼神盯着我， #line:8372a7
+Bill: 这简直是折磨啊！ #line:fbe73f
+Dan: 看样子，死在这地方的人， #line:ac3282
+Dan: 好像永远都离不开这里啦！ #line:7dc333
+Bill: 那个女巫知道自己都干了些什么吗？ #line:c66f93
+<<close>>
+<<walk Dan CounterOffLeft>>
+<<walk Bill CounterOffLeft>>
+<<walk Bea CounterOffLeft>>
+<<wait 4>>
+<<walk Mae MaeCounter2 wait>>
+<<wait 3>>
+<<warp Janitor CounterOffRight>>
+<<shuffleNextOptions>>
+Mae: 啊……嗯…… #line:42e97f
+Mae: ……见鬼…… #line:619604
+<<wait 3>>
+Bea:{locator=LeftSide} “对于…… #line:8ed56d
+->对于“鬼魂究竟是什么"这个问题， #line:6b6af0
+    Mae: 他们难道不是在曾经热热闹闹， #line:6ddba2
+    Mae: 可现在却冷冷清清的地方徘徊游荡的生物吗？ #line:3b806c
+    Janitor: 一旦有鬼魂在某地游荡，此处还会如最初那样平静吗？ #line:2f8cb9
+->对于已经明确了自己人生之路的人来说， #line:706f3f
+    Mae: 每条路都自有它的终点。 #line:f5ac65
+    Bea:{locator=LeftSide} 好吧……？ #line:737f9c
+    Janitor: 但每条路所通向的地方都是未知的。 #line:b56df9
+<<close>>
+<<walk Janitor JanitorCounter wait>>
+Mae: 是你！ #line:01df52
+Mae: 你是公交车站的那个人！ #line:0f86c5
+Janitor: 年轻的女巫啊！ #line:2541e0
+Janitor: 我是林中之神！ #line:8f4813
+Mae: 啊……没想到你会来…… #line:fbf2fa
+Janitor: 森林之神就是我。 #line:625414
+Mae: 所以呢…… #line:3cbfa5
+Janitor: 女巫啊，你已经在这世上胡作非为了很久啦。 #line:223239
+Janitor: 我要将你放逐到异域， #line:762895
+Janitor: 让你在无尽的黑夜中游荡！ #line:44be06
+<<shuffleNextOptions>>
+->哦，我的天……你是怎么知道的…… #line:ffe900
+->我……你说什么？ #line:215b22
+Janitor: 年轻的女巫啊，让我来告诉你一些人生的智慧： #line:01eb62
+Janitor: 我们在夜晚时分来到树林之中， #line:38fbf9
+Janitor: 我们既是一切的起点，也是一切的终点。 #line:ee1eb7
+Janitor: 但这些却并不是故事的全部。 #line:d885d5
+<<close>>
+<<wait 2>>
+Mae: …… #line:087ae7
+Mae: …… #line:f643a7
+<<close>>
+<<lookRight Bea>>
+<<warp Bea BeaBehindCounter>>
+<<walk Bea BeaAboveCounter wait>>
+Bea: *该 你 说 词 啦* #line:5a291f
+<<close>>
+<<walk Bea BeaBehindCounter wait>>
+<<shuffleNextOptions>>
+<<lookAt Mae Janitor>>
+->林中之神啊，你在这儿可一点法力也没有！ #line:e26d18
+    <<tell HarfestPlayWatchers Happy>>
+    <<set $play_correct_responses += 1>>
+    Janitor: 可现在，你的末日已经到了。 #line:1e0a38
+    Mae: 啊 啊 啊！！！我的邪恶之力！ #line:2e6d5d
+    Janitor: 嘘，年轻的女巫。 #line:90e6e3
+    Janitor: 现在， #line:c349c5
+    Janitor: 你所熟知的世界已经终结了。 #line:537952
+    Janitor: 而且，谁会知道， #line:2650b4
+    Janitor: 未来的世界中还会出现哪些谎言呢？ #line:44fbe1
+->你为什么知道那么多关于我的事？ #line:599400
+    <<tell HarfestPlayWatchers Grumble>>
+    <<playOneShot event:/music/harfest_organ_mistake>>
+    Janitor: 年轻的女巫，因为我的年龄和这片森林相仿， #line:a91581
+    Janitor: 所以我比你更了解你自己。 #line:8bf353
+Mae: 哇。 #line:c1a89a
+Janitor: 在你离开时，一定要当心， #line:58c681
+Janitor: 因为这里会有鬼魂出没。 #line:a86755
+<<lookNearest Mae>>
+//bill and dan both say WOOOOOO!!!//
+<<runNextLinesTogether 2>>
+Bill:{locator=LeftSide} [wave]呜呜呜！！！[/wave] #line:ded394
+Dan:{locator=LeftSide2} [wave]呜呜呜！！！[/wave] #line:640c1f
+Janitor: 保重。 #line:bee150
+<<close>>
+<<walk Janitor CounterOffLeft>>
+<<wait 3>>
+//walk janitor off//
+//walk bill and dan off//
+//spooky organ end of act theme//
+<<cameraLookAt HarfestCamHigh 6>>
+<<playOneShot event:/music/harfest_organ_06>>
+<<tell HarfestPlayWatchers Happy>>
+<<playOneShot event:/harfest/play_applause>>
+<<wait 5>>
+<<fadeOut 1 wait>>
+[[PlayScene4]]
+===
+title: PlayScene4
+tags: 
+colorID: 3
+position: 964,9003
+---
+<<warp Mae MaeCounter>>
+<<warp Dan DanCounter>>
+<<warp Gregg GreggCounter>>
+<<warp Bill BillCounter>>
+<<warp Janitor CounterOffRight>>
+<<hide Janitor>>
+<<warp Bea BeaCounter>>
+<<setAnimInt Gregg die 0>>
+<<setAnimInt Dan harfestIdle 2>>
+<<cameraLookAt HarfestCamLow 0>>
+<<lookLeft Bea>>
+<<fadeIn 1 wait>>
+Bea: 在此之后，我们便有了丰收节。 #line:bc3eb8
+Bea: 在万圣节这天， #line:99c32e
+Bea: 我们缅怀在这一年里逝去的人们。 #line:c79b0e
+Bea: 也会会狂欢庆祝负鼠泉的建立！ #line:211e93
+Dan: 作为幽灵镇长，我要在此宣布！ #line:bf2799
+Bill: 因为河狸的数量在缩减。 #line:8a0049
+Bill: 所以，咱们镇现在出口最多的商品是玉米和南瓜！ #line:079a9d
+Gregg: 咱们这儿以前可是经济重镇啊！ #line:81b18c
+<<shuffleNextOptions>>
+->咿 嘻 嘻 嘻嘻嘻！！！ #line:43007f
+    Mae: 实际上，邪恶女巫的传说 #line:8cea0a
+    Mae: 是由数百年来的迫害演变而来的。而这些迫害则是由…… #line:326ef7
+->在我诅咒你们所有人之前，都赶快离开这儿吧！！！！ #line:403ae1
+    Bea: 哦，不，各位观众！！！ #line:825088
+Bea: 以上就是我们的表演！ #line:9555cc
+<<lookOut Mae>>
+<<lookOut Gregg>>
+<<dilate Bea .75 10>>
+<<lookOut Bea>>
+Bea: 大家离开的时候请当心， #line:330585
+Bea: 因为谁知道，会有什么东西躲在黑暗之中伺机而动呢？ #line:394912
+Bea: 此外，请在大家离场时， #line:9b8345
+Bea: 自行领取由负鼠泉商会发放的宣传册！ #line:911284
+Bea: 大家一起来支持咱们镇的地～方～事～业吧！！！！ #line:5bd9f9
+<<close>>
+<<tell HarfestPlayWatchers HappyForever>>
+<<cameraLookAt HarfestCamHigh 11>>
+//organ fanfare as camera ascends toceiling//
+<<playOneShot event:/music/harfest_organ_07>>
+<<playOneShot event:/harfest/play_applause>>
+<<wait 11>>
+<<set $did_harfest_play to 1>>
+<<fadeOut 1 wait>>
+<<set $bill_hat to 0>>
+<<scene TowneCentreEast_Harfest>>
+===
+title: Bea_Act3
+tags: 
+colorID: 4
+position: 1661,8712
+---
+<<if $day is 1>>
+    <<if $bea is 0>>
+        [[A3D1_00]]
+    <<endif>>
+<<elseif $day is 2>>
+    <<if $bea is 0>>
+        [[A3D2_00]]
+    <<endif>>
+<<elseif $day is 3>>
+    <<if $bea is 0>>
+        [[A3D3_00]]
+    <<endif>>
+<<elseif $day is 4>>
+    <<if $bea is 0>>
+        [[A3D4_00]]
+    <<endif>>
+<<endif>>
+===
+title: A3D1_00
+tags: 
+colorID: 4
+position: 1227,9070
+---
+Mae: 嗨～碧娅。 #line:e3d519
+Bea: 嘿，呃…… #line:e11968
+Bea: 昨晚的事还得谢谢你。 #line:945afd
+Bea: 我欠你一个人情。 #line:cbfe4d
+Mae: 不用那么客气。再说了，昨天晚上也挺好玩的。 #line:a879a7
+Mae: 昨晚晚些时候，我遇到了件怪事。 #line:3c035f
+Bea: 怎么回事呀？ #line:f7c3c4
+Mae: 我觉得还是以后再告诉你吧。 #line:791cb7
+Mae: 我现在还在整理思路。 #line:ea3542
+Bea: 那好吧。到时候一定要告诉我是怎么回事。 #line:83156c
+Mae: 好的。 #line:a7227e
+Bea: 今天是不是该排练了？ #line:78f3cc
+Mae: 对啊。我正找格雷格呢。 #line:2317ce
+Bea: 想找到他应该没什么难度。 #line:d4efda
+Mae: 当然没什么难度啦，现在他不就在猎鹰小吃待着呢嘛。 #line:2f3d67
+Bea: 我真搞不懂，那家伙到底是怎么保住工作的。 #line:1c471d
+Bea: 他老是偷东西，还靠毁东西取乐， #line:6eb7b8
+Bea: 上班的时候还想走就走。 #line:2ea899
+Mae: 格雷格是按照他自己的规则行事的。 #line:390a8c
+Bea: 这感觉更像是，整个世界都在按他的规则运行。 #line:23457e
+Mae: 哇哦。 #line:cf93b6
+Bea: 我都不知道这话到底是什么意思。 #line:166f9a
+Mae: 哇哦，哇哦，哇哦。 #line:acbbd0
+<<set $bea_done to 1>>
+===
+title: InvestigationQuest
+tags: 
+colorID: 4
+position: 1542,9662
+---
+<<close>>
+<<irisOut 1 wait>>
+<<sectionTitle BeaIQ BeaIQGraveyard>>
+===
+title: A3D3_00
+tags: 
+colorID: 4
+position: 1763,9091
+---
+<<if $bea_day_intro is 0>>
+    <<set $bea_day_intro to 1>>
+    Mae: 嗨，碧娅。 #line:4de664
+    Bea: 嘿。 #line:830ee3
+    Mae: 你还好吗？你看起来没什么精神啊。 #line:c68f48
+    Bea: 哦，我没事。 #line:f3e1bd
+    Bea: 我是在为一堆乱七八糟的事发愁呢。 #line:c2ab59
+    Mae: 你想说说吗？ #line:13bfb4
+    Bea: 不想。 #line:58edce
+    Mae: 那好吧。 #line:885f88
+<<endif>>
+
+Bea: 哦，对了，今天你打算干点什么呢？ #line:bd433b
+->我只想在镇子里逛逛罢了。 #line:1754d1
+    Bea: 祝你逛得开心！ #line:803705
+->你想干*什么*，我就干什么！ #line:82f99a
+    [[FriendshipQuest]]
+===
+title: A3D4_00
+tags: 
+colorID: 4
+position: 2155,9119
+---
+<<if $bea_day_intro is 0>>
+    <<set $bea_day_intro to 1>>
+    Bea: 哇哦！ #line:ddc7e7
+    Mae: 哇哦！ #line:27e3bb
+    Bea: 老姐，你没事吧？ #line:cdc4e1
+    Mae: 没事，我觉得应该没什么事，挺好的。 #line:1f2166
+    Mae: 我就是感觉很累，这几天头还一直疼。 #line:e51b33
+    Bea: 你应该回家多休息休息。 #line:c763d5
+    Bea: 我想你在躺平这方面应该挺有天赋的。 #line:10e391
+    Mae: 不用，我没事。 #line:1d655b
+    Mae: 找点事干就没事了。 #line:fe9c20
+    Bea: 关于“幽灵"这玩意，你是怎么想的？ #line:9bde00
+        ->“幽灵"这玩意？ #line:c74715
+            Bea: 不好意思，是“幽灵"，没玩意。 #line:5d7f1c
+            Mae: 谢啦。 #line:531320
+            Mae: 我觉得这事可不怎么样。 #line:790eaf
+        ->不太好。 #line:69d23b
+    Mae: 自从出了那件事以后，每天早上我都没精神。 #line:c44dcc
+    Mae: 而且，我还觉得，好像有什么人就躲在我脑子里， #line:0aa078
+    Mae: 弄得我的头都要炸啦。 #line:6278b9
+    Bea: 这情况可不好啊。 #line:6dcd05
+    Mae: 一点都不好。 #line:8c4642
+    Bea: 嗯。 #line:cd657f
+<<endif>>
+
+<<if $did_bea_investigation_quest is 0>>
+    Bea: 你还想去墓地调查调查吗？ #line:345d97
+    ->不想……今天我不想去了。 #line:467499
+        Bea: 好吧。你想去的话，就跟我说一声！ #line:e1ea5e
+    ->当然想啦。咱们走吧。 #line:48ef6a
+        [[InvestigationQuest]]
+<<else>>
+    <<set $bea_done to 1>>
+<<endif>>
+===
+title: A3D2_00
+tags: 
+colorID: 4
+position: 1470,9089
+---
+<<if $bea_day_intro is 0>>
+    <<set $bea_day_intro to 1>>
+    Mae: 嗨，碧娅！ #line:4821a2
+    Bea: 嗨，梅。 #line:35186b
+    Bea: 我想把这地方全都给烧啦。 #line:655d02
+    Mae: 哦，那就太棒啦！ #line:914773
+    Mae: 可这么干，能有什么结果吗？ #line:fab5e4
+    Bea: 真这么干的话，我们就能拿到保险金了。 #line:e9df43
+    Bea: 然后呢， #line:619efa
+    Bea: 我就不用再干这份工作了。 #line:a01e34
+    Mae: 可你要是被抓了该怎么办？ #line:54b8d5
+    Mae: 我看过一个节目，讲的就是有个人因为放火最后被抓了。 #line:51757f
+    Bea: …… #line:f46362
+    Bea: 那你就为了我，把这儿给烧了吧。 #line:a0f2d7
+    Mae: 哦，那太酷啦！ #line:0f8733
+    Mae: 可我要是进了局子该怎么办啊？ #line:53ef58
+    Bea: 不会的，因为你没有犯罪动机！ #line:5be1a9
+    Bea: 所以，没人会怀疑你的！ #line:beb025
+    Mae: 这么说，你是不是工作上遇到什么麻烦啦？ #line:f90a3f
+    Bea: 啊啊啊。 #line:ae1faf
+    <<wait 2>>
+    Mae: 好了，我会帮你把这儿给烧了的。 #line:b20864
+    Bea: 求你了，千万别烧。 #line:bbc7ce
+    Mae: 好吧。 #line:5cbd0d
+<<endif>>
+
+Bea: 你想去墓地看看吗？ #line:9662a0
+    ->不想……今天我不想去了。 #line:6f9838
+        Bea: 好吧。你要是想去的话，就告诉我一声！ #line:94a001
+    ->当然想啦。咱们走吧。 #line:9ab105
+        [[InvestigationQuest]]
+===
+title: FriendshipQuest
+tags: 
+colorID: 4
+position: 1854,9650
+---
+<<if $dom_friend_bea is 0>>
+    Bea: 那好吧。我现在还有事要忙。 #line:7dbf0f
+    Bea: 格雷格和安格斯今晚把我的车借走了， #line:5aca82
+    Bea: 所以我哪儿也去不了了。 #line:a987cc
+    Mae: 哦，那好吧。 #line:f6b357
+    Bea: 我在想，他们会干什么去呢？ #line:b2d186
+    Bea: 他们肯定是有想去的地方。 #line:a96a50
+    <<wait 2>>
+    Bea: 可我却哪儿也去不了。 #line:e16f21
+<<else>>
+    <<close>>
+    <<set $bea_friendship_quest to 4>>
+    <<irisOut 1 wait>>
+    <<sectionTitle BeaFQ4Intro BeaCar>>
+<<endif>>
+===

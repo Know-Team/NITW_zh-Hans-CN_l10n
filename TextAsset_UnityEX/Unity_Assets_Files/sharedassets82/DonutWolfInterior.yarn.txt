@@ -1,0 +1,190 @@
+title: EnterLevel
+tags: 
+colorID: 4
+position: -210,935
+---
+<<if $bathroom_mirror is 0>>
+    [[FQ4Intro]]
+<<endif>>
+===
+title: FQ4Intro
+tags: 
+colorID: 4
+position: 171,988
+---
+Mae: :) #line:cb425d
+Gregg: :) #line:77a674
+Mae: 真可惜你没被鲨鱼咬掉半截身子。 #line:cadbd5
+Gregg: 真可惜你没被连环杀人犯杀掉。 #line:319826
+Mae: 真可惜你没开始嗑药。 #line:48241d
+Mae: 然后因此而死。 #line:8fda41
+Gregg: 话说，不久前我们还真的磕了点。 #line:f98295
+Mae: 真可惜你没因磕过量而死。 #line:7e0581
+Angus: 行了你们俩闹够了吗？ #line:bb9a45
+Gregg: :| #line:efcec0
+<<close>>
+<<walk Mae MaeEnter>>
+<<walk Gregg GreggEnter>>
+<<walk Angus AngusEnter>>
+<<waitForMove Mae>>
+Mae: 终 于 到 啦！ #line:f2bbae
+Angus: 嗯，我们到了。 #line:19e2ac
+Gregg: 啊，太 好 啦！ #line:dda161
+Gregg: 咱 们 到 多 纳 狼 啦。 #line:36d635
+Mae: \o/ #line:738da9
+Mae: 嗷呜呜～ #line:3366b1
+Mae: _o_ #line:96775b
+Angus: 嗯哼。 #line:f34827
+<<close>>
+<<cameraLookAt CameraDWCashier 4>>
+<<walk Mae MaeCounter>>
+<<walk Gregg GreggCounter>>
+<<walk Angus AngusCounter>>
+<<waitForMove Mae>>
+<<playerFace -1>>
+DWCashier: 欢迎光临多纳狼餐厅。 #line:f98bef
+DWCashier: 本店招牌菜是战车之轮，今日特色餐品是尖叫枫糖薄饼。 #line:d29a19
+DWCashier: 您今天想品尝一下战车之轮吗？ #line:0e1125
+<<lookAt Gregg Mae>>
+Mae: 你好。 :) =_= <o> #line:0d5868
+Mae: 你们店的甜甜圈最棒啦。 #line:4b21ac
+<<lookAt Gregg DWCashier>>
+DWCashier: 谢谢您，女士。 #line:a642b6
+<<lookAt Gregg Angus>>
+Angus: 我们要六个发疯甜甜圈。 #line:cf1456
+Gregg: 嘿，老兄， #line:fc2a88
+Gregg: 咱们应该点一份战车之轮。 #line:0fa07b
+Angus: 战车之轮我们上次就点过了…… #line:173ce2
+<<lookAt Gregg Mae>>
+Mae: 我想点一份龙舌兰鸡尾酒蛋糕！ o_o #line:30bf3b
+<<lookAt Gregg DWCashier>>
+DWCashier: 不好意思，我们的龙舌兰鸡尾酒蛋糕已经卖完了。 #line:b2d83c
+<<lookAt Gregg Mae>>
+Mae: 卖 完 啦？！ :( _o_ #line:5f9467
+Mae: 怎 么 会 卖 完 了 呢！？！？ \o/ #line:9c3a76
+Mae: 我 来 你 们 店 的|主 要 原 因 就 是 为 了|吃 这 个 蛋 糕！！！！ #line:58b748
+Angus: 你就点吧。 #line:f9f360
+Gregg: …… #line:548961
+Mae: _o_ #line:d86112
+<<lookAt Gregg Angus>>
+Angus: 好吧再来六个战车之轮。 #line:e582fc
+<<lookAt Gregg DWCashier>>
+DWCashier: 需要加风味酱吗？ #line:ca121d
+<<lookAt Gregg Angus>>
+Angus: 不用。 #line:ac1489
+<<lookAt Gregg Mae>>
+Mae: -_- :| #line:c28ba5
+Mae: 好吧，好吧。我要…… #line:3247db
+->六个战车之轮。 #line:191b06
+    Mae: 不要风味酱。 o_o #line:ba6895
+    Mae: 上回我加过一次这个酱， #line:639156
+    Mae: 结果我一晚上都没睡着，还把整个屋子都打扫了一遍。 #line:7eef33
+    <<set $donut_set_doom to 0>>
+->六个末日甜甜圈。 #line:1a338f
+    Mae: 这个是新推出的吗？ o_o #line:55e146
+    <<lookAt Gregg DWCashier>>
+    DWCashier: 限量款，女士。 #line:7099ab
+    <<lookAt Gregg Mae>>
+Mae: 是吗，那它们很快就会更限量了。 #line:cf2011
+    Mae: 还有，*不*加酱。 #line:be22fe
+    Mae: 上一次我加过这个酱， #line:b97b69
+    Mae: 结果我一晚上都没睡着，而且还在我家后院挖了一个洞。 #line:a57ec3
+    Mae: 到了早上， #line:66e0c9
+    Mae: 大家才在洞底找到了呼呼大睡的我。 #line:efc1ed
+    <<if $pentagram_quest>>
+        <<set $found_pentagrams += 1>>
+        <<unlockPentagramDoodle>>
+    <<endif>>
+    <<set $donut_set_doom to 1>>
+<<lookAt Gregg DWCashier>>
+DWCashier: 好的，女士。 #line:aa8fcf
+<<lookAt Gregg Angus>>
+Angus: 我们要在这吃吗？ #line:bde9f5
+<<lookAt Gregg Mae>>
+Mae: 可以吧，随便。 #line:2c84c8
+Gregg: 嗯…… #line:24991e
+Gregg: 成，就在这儿吃吧！ #line:6283d0
+<<lookAt Gregg Angus>>
+Angus: 好，我去找个座。 #line:4bf994
+<<lookAt Gregg Mae>>
+<<close>>
+<<walk Angus AngusOffscreen>>
+<<wait 3>>
+<<lookAt Gregg Mae>>
+Mae: 我要去趟洗手间。 #line:8039c5
+Gress: ……好…… #line:e245b3
+<<close>>
+//Mae walks over to the bathroom. Camera stays on Gregg as she walks away. Poor Gregg. Or… poor Gregg???//
+//<<setCameraMode Stationary>>
+<<toggleCameraControlEnabled 0>>
+<<walk Mae MaeBathroom>>
+<<wait 3>>
+Gregg: 好有趣。 #line:4d4645
+<<close>>
+<<wait 1>>
+<<fadeOut 1 wait>>
+<<scene BathroomMirror>>
+
+===
+title: InitLevel
+tags: 
+colorID: 4
+position: -176,662
+---
+<<setCanInteract Gregg 0>>
+<<setCanInteract Angus 0>>
+
+<<if $bathroom_mirror is 0>>
+    //characters start offscreen to the left and start walking in to some locators by the door//
+    <<hide Collision:Left>>
+<<else>>
+    <<warp Mae MaeBathroom>>
+    <<warp Angus AngusSit>>
+    <<sit7 Angus>>
+    <<warp Gregg GreggSit>>
+    <<sit Gregg>>
+    <<setSpriteLayer Gregg BG3>>
+    <<setSpriteLayer Angus BG3>>
+    <<flip Angus -1>>
+<<endif>>
+===
+title: SitDown
+tags: 
+colorID: 4
+position: 449,791
+---
+<<fadeOut 1 wait>>
+<<warp Mae MaeSit>>
+<<sit>>
+<<setSortingLayerName BG3>>
+<<wait .1>>
+<<fadeIn 1 wait>>
+<<wait 4>>
+Mae: 那…… :) #line:08c208
+<<wait 3>>
+Mae: =_= #line:903a59
+Mae: 你们俩最近怎么样……？ #line:568137
+<<wait 2>>
+Mae: 有没有什么新鲜事？ #line:c12b64
+Mae: 或者是，你们懂的， #line:e3ae01
+Mae: 最近发生的这些事。 #line:e24cd4
+<<wait 2>>
+Mae: o_o :| #line:9b2c96
+Mae: 幽灵之类的事。 #line:4de3b5
+Mae: 对。 #line:cc653d
+Mae: 这倒新鲜。 #line:47339d
+<<wait 3>>
+Mae: 嘿，安格斯，今晚你是怎么借到碧娅的车的？ #line:370049
+Angus: 她今天要去镇子外面参加一个派对， #line:a0523e
+Angus: 可我感觉她很紧张，很害怕。 #line:f4f61f
+Mae: 原来如此。 #line:f324d9
+Angus: 我和格雷格本来*应该*做点什么的。 #line:90b916
+Mae: 咱们应该做的就是吃饭！ #line:42b15f
+<<wait 3>>
+Angus: 咱们还是吃饭吧。 #line:502522
+Gregg: 是啊，开吃吧。 #line:a64942
+Mae: 哟吼！ :) #line:9f06d0
+<<close>>
+<<irisOut 1 wait>>
+<<scene PawsModeDonutWolfGreggAngus>>
+===

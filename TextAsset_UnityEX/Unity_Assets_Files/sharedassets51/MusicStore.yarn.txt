@@ -1,0 +1,125 @@
+title: EnterLevel_A2D1
+tags: demo2
+colorID: 3
+position: 479,-30
+---
+<<if $bea_friendship_quest is 1>>
+    <<setCanInteract Bea 0>>
+    <<if $fort_lucenne_mall < 3>>
+        <<show Bea>>
+    <<else>>
+        <<hide Bea>>
+    <<endif>>
+<<endif>>
+
+<<if $fort_lucenne_mall < 3 and $did_music_store is 0>>
+    <<warp Mae MaeOffRight>>
+    <<set $did_music_store_intro to 1>>
+    Bea: 嗯，这里应该还不错。 #line:5f8959
+    <<walk Mae MaeCounter>>
+    Mae: 我在想，是什么…… #line:3c8486
+    <<close>>
+    Mae: \o/ :( #line:257319
+    <<lookUp Mae>>
+    Mae: 哦，拜 托！ #line:6c90cb
+    <<lookNearest Mae>>
+    Mae: 柜台居然没人！ #line:bf9211
+    <<walk Bea BeaCounter>>
+    Bea: 哦，哇哦。 #line:ccaa6f
+    Mae: o> #line:16efc5
+    Mae: [wave]你 好？！|有 人 吗？！[/wave] #line:d1cede
+    <<waitForMove Bea>>
+    <<walk Bea BeaTalk2>>
+    Mae: 天哪。 #line:e49d26
+    Mae: :| #line:596732
+    Bea: 这地方已经废弃了。 #line:f03736
+    Mae: _o_ #line:6a28b1
+    Bea: 这就和没落的国家差不多。 #line:bf53ed
+    <<set $failed_state_joke to 1>>
+    <<walk Mae MaeTalk2>>
+    Mae: 这是什么意思？ #line:610695
+    Bea: 意思就是，你虽然建立起了一个国家，但这个国家却没法正常运作。 #line:dac943
+    <<lookRight Mae>>
+    Mae: 这么说……这就和咱们的国家一样吗？ #line:2c1a2b
+    Mae: :) =_= #line:627f7c
+    Bea: 没 错～ #line:3d6ae8
+    Mae: o> #line:c36599
+    Mae: [hop]没 错。[/hop] #line:e25cfb
+    Mae: o_o :| _o_ #line:0657f9
+    <<generateFollowPoints Mae Bea>>
+    <<follow Bea Mae>>
+<<endif>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 190,-35
+---
+
+
+===
+title: ThatSong
+tags: demo2
+colorID: 0
+position: 823,260
+---
+<<if $fort_lucenne_mall < 3>>
+    Mae: 哦，嘿，这不就是那个乐队吗。 #line:8c270a
+    Bea: 哪个乐队？ #line:1ed580
+    Mae: 你懂的…… #line:08e275
+    Mae: 你肯定记得这首歌。 #line:70a6ab
+    Mae: 当时，这歌的MV我可是单曲循环过无数次啊。 #line:3a4e2b
+    Bea: 说真的，我真不知道你说的是什么。 #line:59e98a
+    Mae: 那个MV里出现过一匹特奇怪的马。 #line:12cf32
+    Mae: {emote=horse_stand} #line:ccb230
+    Bea: 哦，对了，我想起来了。MV里确实有一匹特别奇怪的马。 #line:03dbb7
+    Mae: 哦，我的天，是啊。那匹马才是这部MV的灵魂。 #line:f1f6cc
+    Mae: {emote=horse_dance1} #line:32d191
+    Bea: 我想起来了。 #line:6c3a21
+    Mae: {emote=horse_dance2} #line:0c3eff
+    Bea: 没错，咱俩肯定都还记着这部MV。 #line:a84ba8
+    Mae: 没错！ #line:76cfa2
+<<else>>
+    Mae: 我自己一个人转转。 #line:47e033
+<<endif>>
+<<end>>
+===
+title: EmptyRacks
+tags: demo2
+colorID: 0
+position: 544,469
+---
+<<if $fort_lucenne_mall < 3>>
+    Bea: 我 的 老 天 啊。 #line:8da6b7
+    Bea: 真是一片狼藉啊。 #line:e78cd9
+    Mae: 咱们来看看这儿还剩点什么。 #line:45615c
+        ->《末日怪物卡车》。 #line:51e4b0
+            Bea: 哇哦，这歌我的确听过。 #line:c4cc64
+            Bea: 我当时只是为了弄明白歌名到底是什么意思才听的。 #line:256370
+            Mae: 封面上印的是一辆改装卡车，这和我叔叔的那辆车很像。 #line:c82532
+            Mae: 但这辆车也不太一样，它居然燃烧着从一条龙的脸上飞过。 #line:9a4139
+            Bea: 看来是变得更高级了。 #line:81668d
+        ->《派对女孩：在录制超嗨混音版时的疯狂演奏》。 #line:3f3776
+            Bea: 天哪，真有意思。 #line:ab89bb
+            Mae: 那是什么意思啊？ #line:948d6a
+            Bea: 意思就是，有个人参加了校园之夜的活动，她因此变得很嗨。 #line:2dbdf6
+            Mae: 那人是不是嗑药了？ #line:201ca6
+            Bea: 那人的确是嗑药了。 #line:413cde
+<<else>>
+    Mae: 让我来看看这个。 #line:bd8ab1
+<<endif>>
+<<end>>
+===
+title: LetsGo
+tags: demo2
+colorID: 0
+position: 1122,494
+---
+Bea: 好了，咱们该走了。 #line:b750c3
+Bea: 我在这儿感受到了一个国家的没落。 #line:b7cf80
+Mae: 哦，老天，说的是啊。 #line:d3624e
+Mae: 即便是这些红极一时的涂鸦也都已经衰落了。 #line:1daf06
+Bea: 时光流逝，这些涂鸦最后也就成为了过往。 #line:1c90a4
+Mae: 哦，好吧，咱们走吧。 #line:fbea1f
+<<end>>
+===

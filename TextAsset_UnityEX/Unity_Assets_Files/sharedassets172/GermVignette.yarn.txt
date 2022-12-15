@@ -1,0 +1,22 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 4383,6216
+---
+<<playMusic laptop_vignettes 10>>
+<<cameraLookAt CameraLocator 0>>
+<<extraZoom -4 10>>
+<<fadeIn 1 wait>>
+MaeLaptop: 杰姆老兄， #line:6f8f4a
+MaeLaptop: 你连聊天软件都不用。 #line:37d890
+MaeLaptop: 但我猜，无论你在何处，都能接收到我的信息。 #line:18734c
+<<if $did_germ_friendship_quest_3>>
+	MaeLaptop: 你或许是我认识的人里最与世隔绝的一个， #line:15ab64
+	MaeLaptop: 但你又是那个最无拘无束的人。 #line:e315c5
+    MaeLaptop: 所以，老兄，这也算是各种不幸中少有的一件幸事了。 #line:0f3f3b
+<<endif>>
+<<set $laptop_vignettes to 1>>
+<<fadeOut 1 wait>>
+<<overrideLoadingScreenType Blank>>
+<<scene Laptop>>
+===

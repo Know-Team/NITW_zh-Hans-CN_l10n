@@ -1,0 +1,74 @@
+title: Zapped
+tags: 
+colorID: 0
+position: 527,187
+---
+Mae: {width=4}呀 啊 啊 啊 啊 啊！！！！！！ #line:84f7d0
+<<irisOut 1 wait>>
+<<scene PawsModeBatteryConnect>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: -308,202
+---
+[[ClearedGarbage]]
+===
+title: ClearedGarbage
+tags: 
+colorID: 0
+position: 27,303
+---
+Mae: 呃，这什么味啊。 #line:87ebf3
+Gregg: 旧机器都是这个味。 #line:b82384
+Mae: 我不是那个意思……我是觉得……这里面好像住着什么东西似的。 #line:413b08
+<<close>>
+<<tell BatteryClampPaws ShowGreggClamp>>
+<<wait 2>>
+GreggClamp: 嘿。 #line:a00482
+GreggClamp: 我想到个办法。 #line:32fc88
+GreggClamp: 你看问题能不能别这么消极悲观啊。 #line:ece9dd
+<<close>>
+<<tell BatteryClampPaws ShowMaeClamp>>
+<<wait 1>>
+MaeClamp: 那你为什么不去啃自己的脖子呀？ #line:4d3253
+GreggClamp: 这根本就办不到嘛。 #line:f2a9ee
+GreggClamp: 我可是认真的。 #line:764332
+GreggClamp: 一点不开玩笑。 #line:7dbcb1
+MaeClamp: 哦！那好吧！ #line:6559b2
+MaeClamp: 嗯，别太在意我刚才的话！ #line:d0555b
+MaeClamp: 你刚才也看见了，今天晚上我已经死过一次了。 #line:fee1f6
+MaeClamp: 但也没什么大不了的嘛！！！！ #line:909ba2
+GreggClamp: 你当时有什么感觉？ #line:24f6f4
+<<setOptionsCharacter MaeClamp>>
+->我感觉我见到了一条鲨鱼。 #line:6e2409
+	MaeClamp: 它告诉了我一些很重要的事。 #line:4f03dc
+	GreggClamp: 都有什么事？ #line:bfa4fe
+	MaeClamp: 我记不起来了。 #line:a023c2
+	GreggClamp: 可能那些事没那么重要吧。 #line:9a0472
+	MaeClamp: 对。 #line:118251
+->我尝到了牙齿填料的味道， #line:f3ff98
+	MaeClamp: 我还感觉这些填料……在叮铃铃地响。 #line:e73197
+	GreggClamp: 叮铃铃地响？ #line:342232
+	MaeClamp: 就像是有很多小铃铛 #line:a559f5
+	MaeClamp: 在我脑子里叮叮叮地响一样。 #line:75c330
+	GreggClamp: 哇。 #line:728929
+	MaeClamp: 嗯哼。 #line:67b2bc
+GreggClamp: 好，那咱们开始干正事吧！ #line:d001d5
+GreggClamp: 开干！！！ #line:22420e
+<<close>>
+<<setOptionsCharacter Mae>>
+<<bigPawCaptureReturnToPosition>>
+<<tell BatteryClampPaws GreggClamp>>
+<<wait 3>>
+===
+title: Connected
+tags: 
+colorID: 0
+position: 247,406
+---
+<<wait 2>>
+<<set $gregg_friendship_quest_2 to 3>>
+<<irisOut 1 wait>>
+<<scene GreggAngusApartment>>
+===

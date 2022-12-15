@@ -1,0 +1,429 @@
+title: InitLevel_A0D0
+tags: 
+colorID: 0
+position: -3430,4541
+---
+<<set $night to 1>>
+<<trigger Gregg Sit>>
+<<warp Gregg GreggSit Sit>>
+<<playerFace -1>>
+<<hide Angus>>
+===
+title: Intro
+tags: 
+colorID: 0
+position: -3438,5018
+---
+<<hide Angus>>
+<<sit>>
+<<if $gnome_tossed is 0>>
+	Gregg:{locator=left} “格诺梅奥"（侏儒小人）？ #line:00595e
+	Mae:{locator=right,width=1.5}卢修斯·冯·格诺梅奥教授。 #line:0705fc
+	Mae:{locator=right,width=1.5} 他是个吸血鬼和科学家。 #line:51329d
+	Mae:{locator=right,width=1.5}他发明了鲜血火箭。 #line:a9a5e8
+	Gregg:{locator=left,width=2}哇哦，你居然还给他加了一段背景介绍。 #line:7010f1
+	Mae:{locator=right,width=2}别这么说，他说不定在听着呢。 #line:f63e19
+	Gregg:{locator=left,width=2}…… #line:0021a4
+	[[Hub]]
+<<else>>
+	Gregg:{locator=left,width=1}……我好想念格诺梅先生啊。 #line:2f7a34
+	Gregg:{locator=left,width=1}唉…… #line:1c5a23
+	Mae:{locator=right,width=1.5}我还给他起了名字。 #line:c9a830
+	Mae:{locator=right,width=1.5}卢修斯·冯·格诺梅奥教授。 :) #line:355f10
+    Mae: :| #line:86524d
+	Gregg:{locator=left,width=1}总之，一切顺利。 #line:c2163a
+	[[Hub]]
+<<endif>>
+===
+title: Hub
+tags: 
+colorID: 0
+position: -3438,5278
+---
+[[有一首女巫之刃的歌写的是关于井的， 你还记得吗？|Well]] #line:5584e1
+[[所以你和安格斯真的要走吗？|Leaving]] #line:b421c2
+
+===
+title: Well
+tags: 
+colorID: 0
+position: -2920,5490
+---
+Gregg: D: #line:9c9e18
+Gregg:{align=middle,locator=left}对啊。是那首[shake=.1]嗒-嗒-咚咚嚓[/shake]的歌吗？ #line:5b4e87
+Gregg: :| #line:140cf9
+Gregg:{locator=left,width=2}那首歌相当洗脑。 #line:30c9e6
+Mae:{locator=right,width=1.5}里面有一句歌词是这么唱的： #line:ad45d9
+Mae:{locator=right,width=1.5}"[wave]在万物中心，[/wave] #line:ccbe93
+Mae:{locator=right,width=1.5}[wave]都有一个极寒[/wave] #line:eb9aa0
+Mae:{locator=right,width=2.5}[wave]和极暗的洞[/wave]"。 #line:0eafa7
+Gregg: D: #line:373c19
+Gregg:{locator=left}[shake=.2]嗒-嗒-咚咚嚓！！！[/shake] #line:75af87
+Gregg: :| #line:53566e
+Mae:{locator=right,width=3}我以前还以为这首歌不过写了个拽女巫罢了。 #line:14e819
+[[但有一天晚上，我居然做了一个关于它的梦。|Dream]] #line:ac60d0
+[[但现在对这首歌我只感到很难过。|Sad]] #line:a6fbee
+===
+title: Leaving
+tags: 
+colorID: 0
+position: -3770,5528
+---
+Gregg:{locator=left,width=1}梅，我们必须 #line:48f981
+Gregg:{locator=left,width=2}我已经受够这破镇子了。 #line:04aa4a
+Gregg:{locator=left,width=3}而且，安格斯得尽可能远离日光。 #line:514ad6
+Mae:{locator=right,width=2}你知道光明湾也有太阳的，对吧？ #line:0869fb
+Gregg:{locator=left,width=2}梅，光明湾那儿有很多很多家多纳狼， #line:866cd0
+Gregg:{locator=left,width=1}还有朋克摇滚演唱 #line:ddb93f
+Gregg:{locator=left,width=2}还有，那儿的人也不都是嗜枪如命的神经病。 #line:98c78f
+[[光明湾那里的人也是可以持枪啊。|Guns]] #line:cb1e41
+[[你也*有*枪啊！咱们还用它崩过你那台旧电视呢！|TV]] #line:3d828f
+
+
+
+
+
+===
+title: Dream
+tags: 
+colorID: 0
+position: -2756,5794
+---
+Gregg:{locator=left,width=1}什么样的梦？ #line:6c8671
+Mae:{locator=right,width=3}当时，我站在一片田野中间，身边就是这口井。 #line:1d0ac5
+Mae:{locator=right,width=1.5}而且，当时还下着雨，雾蒙蒙的。 #line:0cfd04
+Gregg:{locator=left,width=1.5}嗯哼？ #line:9662d0
+Mae:{locator=right,width=1.5}我一直都想离那口井远一点， #line:685e9b
+Mae:{locator=right,width=3}可我只要一动，就会滑到淤泥里，结果反而离那口井越来越近。 #line:c39bff
+Gregg:{locator=left,width=1}该死。 #line:f054d6
+Mae:{locator=right,width=1.5}所以，我只能站在原地， #line:6cb39d
+Mae:{locator=right,width=1.5}一动不动。 #line:2212d0
+Gregg:{locator=left,width=1}听着挺恐怖的啊，哥们。 #line:4c5eb6
+Mae:{locator=right,width=1.5}最糟的是， #line:8afd0f
+Mae:{locator=right,width=2}还有什么东西就在井深处。 #line:fb831b
+Mae:{locator=right,width=1.5}从里面仰视着我。 #line:013833
+<<wait= 1>>
+Gregg:{locator=left,width=3}谢了哥们，我今晚肯定也得做噩梦了。 #line:6a77ff
+[[Entro]]
+===
+title: TV
+tags: 
+colorID: 0
+position: -3576,5803
+---
+Gregg:{locator=left,width=2}那把猎枪是我爸送给我的。 #line:e7d64f
+Gregg:{locator=left,width=1}那可不算数。 #line:3af038
+Mae:{locator=right,width=1.5}你想离开镇子这件事，你老爸是怎么想的？ #line:f6b988
+Gregg:{locator=left,width=1}我不知道。 #line:14bebd
+Gregg:{locator=left,width=3}他什么时候都对我太好，所以，我反而不知道他真实的想法。 #line:f85655
+Mae:{locator=right,width=1.5}嘿，格雷格？ #line:19f684
+Gregg:{locator=left,width=2}嗯？ #line:33f660
+Mae:{locator=right,width=3}你要是走了，我会很难过的，你个混蛋。 #line:1cba82
+Gregg:{locator=left,width=2}我知道。 #line:e15600
+[[Entro]]
+
+
+
+
+
+===
+title: Sad
+tags: 
+colorID: 0
+position: -3292,5798
+---
+Gregg:{locator=left,width=1}可是为什么呢？ #line:53c0d4
+Mae:{locator=right,width=1.5}因为你要是走了，我就感觉自己好像是掉进了一个很深很深的洞里， :\ #line:887e45
+Mae:{locator=right,width=1.5}我想爬也爬不出来。 #line:d360a2
+Gregg:{locator=left,width=3}你是在怕有人把你扔进井里吗？ #line:c4fde5
+Mae:{locator=right,width=1.5}不是的。 :| #line:e41439
+Gregg:{locator=left,width=2}但我肯定会把你踹进去的。 #line:7de851
+Gregg: D: #line:3ba96a
+Gregg:{locator=left,width=5}[size=1.8][shake=.2]嗒-嗒-咚咚嚓！！！[/shake][/size] #line:77cba2
+Gregg: :| #line:1b5a32
+[[Entro]]
+
+
+
+
+
+===
+title: Guns
+tags: 
+colorID: 0
+position: -4074,5826
+---
+Gregg:{locator=left,width=3}梅，我叔叔家的客厅里有八把不同的枪，就在沙发旁边放着。 #line:d17fd6
+Mae:{locator=right,width=1.5}哇，是真的吗？ #line:1dcbf8
+Gregg:{locator=left,width=2}是啊我感觉他就等着FBI上门呢。 #line:a78688
+Mae:{locator=right,width=1.5}那也是为了他的八把枪吧？ #line:13bf20
+Gregg:{locator=left,width=3}他可是我们的最后一道防线。 #line:a048d5
+Gregg:{locator=left,width=3}嘿，还记得吗，初三的时候，咱俩从网上学了做炸弹的方法，然后咱们也做了一个。 #line:365bc3
+Mae:{locator=right,width=2}对，那次爆炸的威力超大！你的眉毛都烧没啦！ #line:833c05
+Gregg:{locator=left,width=2}要是当时再多放了那么一点汽油，我的下半生都会戴着超酷的墨镜了 #line:4b13a7
+Gregg:{locator=left,width=3}为了遮住我那被炸得不成样了的焦黑空洞眼窝子。 #line:46e742
+Mae:{locator=right,width=1.5}嘿，格雷格？ #line:08fbe9
+Gregg:{locator=left,width=2}嗯？ #line:31439e
+Mae:{locator=right,width=3}你要是走了，我会很难过的，你个混蛋。 #line:c88962
+Gregg:{locator=left,width=2}我知道。 #line:2163c0
+[[Entro]]
+===
+title: Entro
+tags: 
+colorID: 0
+position: -3368,6296
+---
+Mae: :( #line:ab78d3
+Mae:{locator=right,width=2}我就是会很……伤心。还有生气。 #line:47c14d
+Gregg:{locator=left,width=2}是啊我懂，哥们儿。 #line:9a324b
+Mae:{locator=right,width=3}我回来了，可所有人都已经有了别的计划。 #line:697486
+Mae:{locator=right,width=3}我只是想留住一些东西 #line:cd79c3
+Mae:{locator=right,width=3}就好像是…… #line:8fb347
+Mae:{locator=right,width=3}所有事物都在走向结局，我却还想索取更多。 #line:c8fa81
+Gregg:{locator=left,width=3}梅，我们不可能在这儿住一辈子。 #line:a07139
+Mae:{locator=right,width=3}……:| #line:b127bd
+<<wait .5>>
+Mae:{locator=right,width=1}这我知道。 #line:098c2e
+<<if $gnome_tossed is 0>>
+Gregg:{locator=left}那你、我和他该怎么办？ #line:4fcbee
+Mae:{locator=right,width=1.5}卢修斯·冯·格诺梅奥教授。 #line:3bb4c5
+Gregg:{locator=left,width=3}那你、我和教授一起到猎鹰快餐后面去砸灯管怎么样？ #line:b93c2f
+Mae:{locator=right,width=2}当然……可以了？ #line:0de48a
+Gregg:{locator=left,width=3}克里斯汀把库房的钥匙给了我， #line:94fdf9
+Gregg:{locator=left,width=3}这就表示，你可以砸个痛快啦，算我请你的！ #line:fe9e1a
+Mae:{locator=right,width=2}像这样的夜晚我到了六十岁也不会忘。 #line:0c409c
+Gregg:{locator=left,width=3}我还偷了不少打火机油，咱们可以烧点大家伙啦！ #line:eecb4c
+Mae:{locator=right,width=4}[size=1.2][shake=.03]嗷嗷嗷嗷嗷！[/shake][/size] #line:e66965
+[[End]]
+<<else>>
+Gregg:{locator=left,width=3}知道吗，克里斯汀把库房的钥匙给了我。 #line:d49314
+Gregg:{locator=left,width=3}这就表示，咱们有免费砸东西的福利啦！ #line:6fa2dd
+Mae:{locator=right,width=2}我希望那个玩具小人还能和咱们在一起。 #line:2a0345
+Gregg:{locator=left,width=3}梅，有些事情你就是得放手。 #line:e36c3b
+Mae:{locator=right,width=1}…… #line:c2f177
+Mae:{locator=right,width=1}是啊。 #line:d4172e
+Gregg:{locator=left,width=3}快来，咱们去偷我老板的东西去吧。我老板可信任我了。 #line:9aa762
+Mae:{locator=right,width=2}像这样的夜晚我六十岁也不会忘。 #line:c05dc5
+Gregg:{locator=left,width=3}我还偷了不少打火机油，咱们就可以烧点大家伙啦！ #line:9182b8
+Mae:{locator=right,width=4}[size=1.2][shake=.03]嗷嗷嗷嗷嗷！[/shake][/size] #line:ad42ae
+[[End]]
+<<endif>>
+
+
+
+
+
+
+
+===
+title: End
+tags: 
+colorID: 0
+position: -3440,6614
+---
+<<fadeOut 2 wait>>
+<<sectionTitle End ShowJournalDoodles>>
+===
+title: EnterLevel_A0D0
+tags: 
+colorID: 0
+position: -3432,4788
+---
+[[Intro]]
+
+===
+title: EnterLevel_A3D3
+tags: 
+colorID: 4
+position: -2460,4820
+---
+Mae: =_= :( #line:d30f41
+<<sit>>
+<<wait 2>>
+Mae: 呃。 #line:2afa77
+Mae: 这颜色可真怪。 #line:eb76e4
+Gregg: 吐出来的东西一般都不是这个色儿。 #line:18cc9d
+Angus: 这好像是 #line:325d13
+Angus: 混合色。 #line:dd0572
+Gregg: 梅，你还好吗？ #line:8b9f54
+    ->我没事。不，我有事。呃。 #line:2acb99
+    ->我的肠胃不是太好。 #line:7a9fb3
+        Gregg: 是啊，你可吐了……不少。 #line:b06e8e
+        Mae: 我一看见婴儿吃的东西、 #line:abf623
+        Mae: 南瓜瓤、 #line:aed121
+        Mae: 啤酒 #line:7ae8f8
+        Mae: 或者一大堆甜甜圈 #line:205818
+        Mae: 就会恶心。 #line:143fc9
+        Gregg: 我从来都不会吐的。 #line:57ba99
+Mae: 我嘴里里的味道就像破碎的幻想。 #line:d80a5b
+<<wait 3>>
+Mae: 你们俩简直要气死我了。 #line:e70ca5
+Gregg: 为什么啊？ #line:287738
+Mae: 我讨厌尴尬的事。 o_o #line:ee3e0b
+Mae: 我是不是毁了你们的生活还是怎么？ #line:4c758d
+Mae: 你们就告诉我，我到底有没有。 #line:3aa6a6
+    ->安格斯，你不喜欢我了吗？ #line:1a309d
+        Angus: 你说什么呢？ #line:f3f64d
+        Angus: 不不不，梅。我还是挺喜欢你的。 #line:b1c0e3
+        Mae: 那为什么你后来表现得那么奇怪？ #line:81758d
+    ->格雷格，是我把事情弄得很奇怪吗？ #line:4ada38
+        Gregg: 不是！ #line:645512
+        Angus: …… #line:d740d4
+        Gregg: 有点吧？ #line:955d58
+Angus: 嗯，那…… #line:32d260
+<<lookAt Gregg Angus>>
+Gregg: 安格斯，我来说吧。 #line:cf5581
+Angus: 谢谢了，亲爱的。 #line:3777c8
+<<lookAt Gregg Mae>>
+Gregg: 梅，你还记得我叔叔吗？ #line:f32e8b
+Gregg: 你还记得他那座离布里德尔和州界都不远的绵羊农场吗？ #line:de187c
+Mae: 有点印象。 :| #line:de91b6
+Gregg: 我差不多八岁的时候，我爸妈变得开始讨厌我了。 #line:64550a
+Gregg: 所以，夏天的时候，他们就把我送到那儿住了一个月。 #line:22e827
+Gregg: 然后，我就整天跟在他身边。 #line:86df1c
+    ->绵羊很酷。 #line:30df18
+        Mae: 我以前有一只叫戈登的毛绒玩具羊。 #line:d3d280
+    ->绵羊很不错的。 #line:095ea5
+        Mae: 我以前就养过一只。 #line:91a0e9
+Gregg: 羊都特别蠢。 #line:3e5cbd
+Gregg: 有一次下午，在吃晚饭前，我叔叔把我留在了羊圈旁边。 #line:3a7342
+Gregg: 后来，不知道是什么原因，我把羊圈的门给打开了。 #line:25c1f3
+    ->为什么？ #line:f4b9e4
+        Gregg: 我也不知道。 #line:cf2c71
+        Gregg: 小孩就和羊一样， #line:6b36dd
+        Gregg: 都很蠢。 #line:fc0cd2
+        Mae: 的确是这样。 #line:b39abc
+    ->后来那些羊是什么反应？ #line:09ab2c
+Gregg: 后来，羊群见状，撒腿就往羊圈外面跑。 #line:97e68d
+Gregg: 然后，我就开始追羊，我当时就 #line:a344ad
+Gregg: 真 是 群 笨 羊！ #line:60cd21
+<<lookAt Gregg Angus>>
+Angus: 你已经努力了，宝贝。 #line:98689a
+<<lookAt Gregg Mae>>
+Gregg: 它们穿过草场， #line:10c9da
+Gregg: 然后，它们就跑进了树林里。 #line:a09cac
+Gregg: 山坡上堆满了羊， #line:24d650
+Gregg: 而且那些羊还在朝州界方向跑过去。 #line:809c2f
+Mae: 哦……哦，不…… #line:5b8fe4
+Mae: 后来怎么样了？ #line:274a41
+Gregg: 有四只羊让货车给撞了， #line:538ac5
+Gregg: 一些羊又跑回了山坡上。 #line:e5425b
+Gregg: 但有三只羊爬过了山坡， #line:7d9c2d
+Gregg: 之后又跑到了另一边， #line:dca0a1
+Gregg: 然后，它们就……站在那儿不动了。 #line:775958
+Gregg: 我后来沿着路赶到了山坡下面， #line:87ba6d
+Gregg: 发现那儿全是羊的内脏和残肢。 #line:423f9c
+Mae: *嗝呃* #line:35ae13
+Gregg: 再后来，我站在原地，看着已经跑到州界另一边的羊群。 #line:f3658f
+Gregg: 我拼命挥着手， #line:b52234
+Gregg: 有两只羊又跑了回来，但之后被*另一辆*卡车给撞了。 #line:602d89
+    ->我的天。 #line:f7981f
+    ->有卡车停下来了吗？ #line:e4df66
+        Gregg: 根 本 没 人 停 车！ #line:78a30d
+        Mae: 这么做应该是违法的吧。 #line:a905bd
+Gregg: 可还有一只羊 #line:dbd3df
+Gregg: 从山坡的另一边跑了下去， #line:1066f5
+Gregg: 然后跑进了树林里。 #line:ce345a
+Gregg: 之后就再也没人见到过它了。 #line:bd06fe
+Mae: 我的老天啊，伙计。 #line:77ca61
+    ->嘿，你的纹身！ #line:9528a1
+        Gregg: 是啊。 #line:995085
+        Mae: 哈哈，我明白它是什么意思了。 #line:7f37a3
+    ->这件事之后，又发生了什么？ #line:6c09f6
+        Gregg: 我哭着跑回了农场， #line:376ef4
+        Gregg: 然后我叔叔打了我一顿。 #line:94331b
+        Mae: 哦，不。 #line:92616a
+        Gregg: 真的。 #line:45afe1
+        Gregg: 不久之后，我叔叔因为一些法律问题， #line:cdc7dc
+        Gregg: 最后也搬走了。 #line:c3b85e
+Mae: 你可真是太惨了。 #line:fe11d7
+Mae: 羊也好惨啊。 #line:0642ec
+Gregg: 可如果我是羊的话，我也会逃走的。 #line:d54f33
+Gregg: 而且，我想成为那只最后逃走了的羊。 #line:e21464
+Gregg: 我也想安格斯和我一起逃走。 #line:8047ba
+Gregg: 我，有点对不起那些羊。 #line:ac5e8e
+Gregg: 但，你能懂吗……所有发生的这些事，都对不起我们。 #line:c0c090
+Mae: 这有点…… #line:5dd2a1
+Gregg: 这一点从来没人否认过， #line:ae689a
+Gregg: 也没有人想告诉你不要离开这里。 #line:6cff77
+Gregg: 是啊，成为镇上唯一的同性恋烂透了。 #line:c76b8f
+Mae: 我也算一个！ #line:997e5d
+Gregg: 你已经离开过一次了！ #line:77d14e
+Mae: 可我…… #line:46ea9e
+Mae: 又回来了。 #line:536d33
+Gregg: 我是不会再待下去的。*我们*也不会再待下去的。 #line:a04e6d
+Mae: 我想也是。 #line:be6547
+Gregg: 还有我很爱安格斯。 #line:e82a13
+<<lookAt Gregg Angus>>
+Angus: 我爱你们两个。 #line:ef62dd
+Angus: 当然了，方式不同。 #line:34f5fb
+<<lookAt Gregg Mae>>
+Mae: 还好你说清楚了。 #line:9035b6
+Gregg: 我们俩已经有了一个计划。现在，我们正在为实现这个计划拼命努力。 #line:56a1f5
+<<lookAt Gregg Angus>>
+Angus: 两个人，用最多的时间，拿最少的工资。 #line:c39531
+Gregg: 我必须要成长起来，哪怕是一点点也行。 #line:e3c583
+Gregg: 我*确实*已经成长了。 #line:92219f
+<<lookAt Gregg Mae>>
+<<wait 2>>
+Gregg: 梅。你得放手让我改变。 #line:e780cf
+<<wait 4>>
+<<lookAt Gregg Angus>>
+Angus: 我为我之前的粗鲁行为道歉。 #line:4bf1d5
+<<lookAt Gregg Mae>>
+Mae: 没关系的。 #line:fe6489
+<<wait 3>>
+Mae: 还记得咱们当时差点把学校给烧了的事吗？ #line:a531ac
+Gregg: :) #line:e3263c
+Gregg: 哈哈，是啊，当然记得。 #line:f55902
+Mae: :) #line:fc8fba
+Mae: 咱们当时用烟花，然后把学生会的布告*呼*地一下给点着啦！ #line:67e637
+Gregg: 老天，那天晚上可真是太过瘾啦。 #line:2fad30
+Gregg: 咱们用洒水器里水把自己沾湿， #line:b7105d
+Gregg: 然后横穿了整个停车场， #line:59ea9d
+Gregg: 咱俩都快笑翻了。 #line:2248ec
+Mae: 哈哈，哦，我的天，是啊。 #line:02cb01
+Gregg: :| #line:f85b52
+<<wait 3>>
+Mae: :| #line:fca72f
+Mae: 那可能是我这辈子过得最开心的一个夜晚了。 #line:1b134e
+Gregg: 那是最美妙的经历之一， #line:b29454
+Gregg: 小孩们现在还在谈论这件事呢。 #line:1fcbbf
+Gregg: 伙计，那个夜晚永垂不朽啊。 #line:500787
+Mae: 是啊， #line:b05ed1
+Mae: 至少咱们也是一段传说了。 #line:fbaa44
+Gregg: 永远。 #line:f438a7
+<<wait 3>>
+Mae: :\ #line:5265e6
+Mae: 好吧，今天晚上彻底搞砸了。 #line:2bca70
+Angus: 我很抱歉。 #line:972087
+Mae: :) #line:d5cdd4
+Mae: 哈哈，安格斯，你就别再道歉了。 #line:aa3756
+Gregg: 我也很抱歉。 #line:564d04
+Mae: 没事的。 #line:98d1e0
+Mae: 我有个主意。 #line:3382a7
+Gregg: 哦，是吗？ #line:a76fe1
+Mae: 你想不想干票大的？ #line:42adbb
+<<lookAt Gregg Angus>>
+Mae: 安格斯，这次你可以跟我们一起， #line:f189b0
+Mae: 咱们一起干坏事。 #line:4ff2c5
+Angus: 我…… #line:98c6eb
+<<wait 2>>
+Angus: 好吧。 #line:606cb8
+Gregg: 啊，船长，搞事船长。 #line:c25c06
+Mae: 出发。 #line:b8a0f4
+<<close>>
+<<irisOut 1 wait>>
+<<scene RoadsideClearing>>
+===
+title: InitLevel_A3D3
+tags: 
+colorID: 4
+position: -2466,4581
+---
+//Mae and Gregg and sitting basically where they were in the demo,
+//with Angus on the far side of Gregg//
+<<sit Gregg>>
+<<sit Angus>>
+<<hide GardenGnome>>
+===

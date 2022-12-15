@@ -1,0 +1,697 @@
+title: EnterLevel
+tags: 
+colorID: 4
+position: 152,-552
+---
+<<setCanInteract Gregg 0>>
+
+<<if $gregg_iq_mansion is 0>>
+    <<follow Gregg Mae 1>>
+    <<set $gregg_iq_mansion to 1>>
+    [[BasementIntro]]
+<<else>>
+    <<warp Gregg Mae>>
+    <<follow Gregg Mae 1>>
+<<endif>>
+===
+title: Locked00
+tags: elevator8-9
+colorID: 4
+position: 1472,-44
+---
+<<if $mansion_cellar_door_done>>
+    [[ItsLocked]]
+<<elseif $mansion_checked_locked_elevator>>
+    Gregg: 我来看看咱们能不能从后门出去！ #line:4809b0
+<<elseif $has_paperclip and $has_pliers>>
+    Gregg: 好的，只需要把这个锁撬开…… #line:56083d
+    <<close>>
+    <<castToSurface Gregg 0>>
+    <<run Gregg GreggLockPick2 wait>>
+    <<flip Gregg -1>>
+    <<setAnimBool Gregg lockPicking 1>>
+    Gregg: ……但得摸黑开锁才行…… #line:833104
+    Mae: 天，真抱歉。 #line:f1d8d9
+    Gregg: 没事，我…… #line:749b19
+    <<close>>
+    <<cameraLookAt CameraElevatorGoingBack 2>>
+    <<wait 1>>
+    <<playOneShot event:/mansion/elevator_bell BasementElevatorSFX>>
+    <<wait 1>>
+    Mae: 见 鬼。 #line:a338f2
+    Gregg: 我继续开锁， #line:cf67ad
+    Gregg: 你去看看咱们能不能从后门出去。 #line:7f4d90
+    <<close>>
+    <<cameraFollowPlayer 1>>
+    <<stopFollowing Gregg>>
+    <<createLocatorAt Mae MaeByElevator8>>
+    <<set $mansion_checked_locked_elevator to 1>>
+<<else>>
+    Mae: 门锁上啦！ #line:31b641
+    Gregg: 该 死！ #line:57a453
+<<endif>>
+
+===
+title: Locked01
+tags: 
+colorID: 4
+position: 1748,-56
+---
+<<if $has_paperclip and $has_pliers>>
+    <<set $mansion_unlock_01 to 1>>
+    Mae: 好了，准备好了吗？ #line:194063
+    Gregg: 那是当然。 #line:588a62
+    Gregg: 准备开干。 #line:ec05d8
+    Gregg: 没准某一天， #line:33b2b7
+    Gregg: 我会用这个技能 #line:d2dd34
+    Gregg: 从县监狱越狱呢？ #line:cf97ba
+    Mae: 伙计，你会因为什么事进监狱啊？ #line:721695
+    Gregg: 说真的，可能就会因为撬锁这事进监狱。 #line:b843d5
+    <<close>>
+    <<castToSurface Gregg 0>>
+    <<walk Gregg GreggLockPick1 wait>>
+    <<flip Gregg -1>>
+    <<setAnimBool Gregg lockPicking true>>
+    <<wait 1>>
+    <<playOneShot event:/mansion/footsteps_01>>
+    <<wait 5>>
+    Mae: 啊，伙计…… #line:0ef83f
+    Mae: 你得快点了。 #line:20b199
+    Gregg: 怎么了？ #line:c7754e
+    <<playMusic spooky_mansion_intense 10>>
+    Mae: 有人来了。 #line:592fdd
+    Mae: 他们就在楼下的走廊里…… #line:5c4041
+    Gregg: 卧槽，好的。我会弄好…… #line:71dd9e
+    <<close>>
+    <<wait 2>>
+    <<playOneShot event:/mansion/footsteps_02>>
+    <<wait 2>>
+    <<playOneShot event:/mansion/elevator_bell SceneLink4>>
+    <<cameraLookAt CameraToElevator4 3>>
+    Mae: 哦，天啊。 #line:1930d0
+    Mae: 呃，伙计， #line:e77413
+    Mae: 电梯。 #line:98096c
+    Gregg: 该死。 #line:a845e7
+    Gregg: 真TM该死！ #line:dc9613
+    Mae: 快 点 啊！！！ #line:a8a71d
+    <<cameraFollowPlayer 3>>
+    <<setAnimBool Gregg lockPicking false>>
+    Gregg: 我打开啦！ #line:214592
+    <<close>>
+    <<tell SceneLink6 Open>>
+    <<wait 1>>
+    Mae: 快 走！！！ #line:27ccca
+    //they get in and they zoom down to the basement//
+    <<tell SceneLink6 Activate>>
+<<elseif $has_paperclip>>
+    Mae: 好好好，找到曲别针了。 #line:c357fa
+    Gregg: 只需要再找个钳子就行。 #line:18bb24
+<<elseif $has_pliers>>
+    Mae: 好好好，找到钳子了。 #line:8cc8e7
+    Gregg: 只需要再找一根曲别针就行。 #line:2bf730
+<<elseif $looking_for_lockpick>>
+    Gregg: 咱们需要一根曲别针和一个钳子来当作案工具。 #line:8e534c
+<<endif>>
+===
+title: Elevator
+tags: 
+colorID: 4
+position: 2000,-59
+---
+->往上走！ #line:4769be
+    <<set $elevator_choice to 0>>
+->往下走！ #line:f18de1
+    <<set $elevator_choice to 1>>
+===
+title: Office
+tags: 
+colorID: 4
+position: 2385,-549
+---
+Mae: 哈，这是间办公室。 #line:7bbc3a
+Gregg: 太没劲了。 #line:0363e2
+Mae: 有什么有意思的东西吗？ #line:d9a628
+Gregg: 这里只有办公用品。 #line:92e06d
+Gregg: 这儿有个日历。 #line:1d1a2f
+Mae: 这些日历上的画面看起来像是廊桥。 #line:f73494
+Gregg: 那边那个日历上印着著名的灾难事件。 #line:99598e
+Mae: 这张桌子的主人肯定很酷， #line:7c8c69
+Mae: 但另一张桌子的主人就很无聊。 #line:222c60
+Gregg: 我在想，他们俩会不会是朋友。 #line:43cb8d
+Gregg: 我的意思是，你和同事不一定会变成朋友。 #line:d99daa
+Mae: 嗯，对啊。 #line:4858aa
+Gregg: 可能这间办公室也没那么无聊嘛。 #line:103359
+Mae: 不不不，我觉得这里无聊得要死。 #line:3a2d8e
+<<set $mansion_office_done to 1>>
+<<set $visited_mansion_office to 1>>
+===
+title: PaperClip
+tags: 
+colorID: 4
+position: 2541,-1
+---
+Mae: 找 到 啦！ #line:de3d42
+<<if $has_pliers>>
+	Gregg: 好的，咱们拿到需要的东西了。 #line:452217
+	Gregg: 咱们去开把电梯门，然后看看楼上有什么。 #line:eed9d3
+	Mae: 我猜，那里又会有12部电梯吧。 #line:f9c7fb
+<<else>>
+	Mae: 好吧，不过我觉得这应该是比较容易找到的那个吧。 #line:115365
+	Gregg: 是啊……钳子可有点不好找啊。 #line:d8a808
+	Mae: 嗯…… #line:8d2706
+	Mae: 好了，咱们回上面去吧。 #line:0b2f85
+<<endif>>
+<<set $has_paperclip to 1>>
+===
+title: Office00
+tags: 
+colorID: 4
+position: 2845,-45
+---
+Mae: 口香糖！ #line:2721c5
+<<set $office_00_done to 1>>
+===
+title: Office01
+tags: 
+colorID: 4
+position: 3078,-38
+---
+Mae: 便签纸！ #line:a2b77d
+<<set $office_01_done to 1>>
+===
+title: Office02
+tags: 
+colorID: 4
+position: 3337,-26
+---
+Mae: 大头针！ #line:890f23
+<<set $office_02_done to 1>>
+===
+title: Office03
+tags: 
+colorID: 4
+position: 3579,-29
+---
+Mae: 手机充电器！ #line:365ec0
+<<set $office_03_done to 1>>
+===
+title: Office04
+tags: 
+colorID: 4
+position: 3821,-38
+---
+Mae: 那些草裙舞女孩玩偶中的一个！ #line:f17398
+<<set $office_04_done to 1>>
+===
+title: Office05
+tags: 
+colorID: 4
+position: 4069,-32
+---
+Mae: 几个小破孩的照片！ #line:953268
+<<set $office_05_done to 1>>
+===
+title: Office06
+tags: 
+colorID: 4
+position: 4319,-34
+---
+Mae: 一只破猎狗的照片！ #line:d34ab3
+<<set $office_06_done to 1>>
+===
+title: Office07
+tags: 
+colorID: 4
+position: 4555,-35
+---
+Mae: 多纳狼餐厅的收据！ #line:a6e9d0
+Mae: 上战车，基佬。 #line:a6e604
+<<set $office_07_done to 1>>
+===
+title: Office08
+tags: 
+colorID: 4
+position: 4812,-28
+---
+Mae: 大订书机！ #line:41446d
+<<set $office_08_done to 1>>
+===
+title: Locked01b
+tags: 
+colorID: 4
+position: 1747,-268
+---
+Mae: 锁上啦！ #line:2aacd7
+Gregg: 呃。 #line:c6b5f4
+===
+title: WeirdArt
+tags: 
+colorID: 4
+position: 2284,272
+---
+Mae: 我的天。 #line:933c05
+Mae: 这*到底*是什么地方？ #line:1d4db7
+Gregg: 这里是禁区。 #line:edcf26
+<<close>>
+<<cameraLookAt WeirdArt 3>>
+<<lookAt Mae WeirdArtCharacter>>
+<<lookAt Gregg WeirdArtCharacter>>
+<<wait 2>>
+<<playAmbientSFX _AmbientSFX:amb_ibon 8>>
+Mae: 他们是准备在这里开个什么古怪艺术博物馆吗？ #line:c64f70
+Gregg: 这是个糟糕的艺术品。 #line:3f2611
+Mae: 这件东西很诡异啊。 #line:7aa909
+Gregg: 姐们，这叫艺术。 #line:7fd741
+Mae: 我勒个…… #line:6ae7a9
+Mae: 不，这看起来很熟悉啊， #line:75dd0c
+Mae: 我是怎么知道这个的？ #line:647a5a
+<<close>>
+// elevator sound! it's going down
+<<playAmbientSFX _AmbientSFX:elevator_run_other>>
+<<fadeOutAmbientSFX _AmbientSFX:elevator_run_other 10>>
+<<lookLeft Gregg>>
+<<wait 3>>
+Gregg: MD，姐们！ #line:02f868
+Gregg: 电梯！ #line:604e73
+Mae: 我为什么会认识这幅画？ #line:111239
+<<close>>
+<<flip Gregg -1>>
+<<run Gregg OffLeft>>
+<<wait 1>>
+Gregg: 姐 们！快 啊！！！ #line:ed9f3b
+<<close>>
+<<wait 2>>
+// window breaking sound
+<<playAmbientSFX _AmbientSFX:window_smash>>
+<<wait 3>>
+Gregg: 电 梯 就 要 上 来 啦！！！ #line:e51ab8
+<<playAmbientSFX _AmbientSFX:elevator_run_other 10>>
+<<wait 2>>
+
+<<set $mansion_wall_left_top_done to 1>>
+<<stopFollowing Gregg>>
+<<run Mae OffLeft>>
+
+<<fadeOutMusic 2>>
+<<wait 1>>
+<<irisOut 1 wait>>
+<<scene MansionFireEscape -1>>
+===
+title: BasementIntro
+tags: bikeCrash
+colorID: 4
+position: 405,-370
+---
+//Mae and Gregg are laying on the floor, having fallen down the stairs//
+Gregg: 该 死 的 #line:d3990d
+Gregg: 猫 头 鹰！ #line:9def13
+Mae: 你没事吧？ #line:322f34
+Gregg: 我觉得没什么事。 #line:7cffe7
+Gregg: 那真是太悬啦！ #line:6ec1b5
+Mae: 我都不知道，猫头鹰的攻击方式居然是那样的！ #line:6466db
+Mae: 它到底想干什么啊？ #line:708cb5
+//Gregg: You ok?
+//Mae: Hurt my knee falling off the bike.
+//Mae: reeeeally looking forward to all the stairs we’re gonna have to climb in here...
+//Gregg: Alright well.
+//both get up//
+<<wait 2>>
+<<lookRight Mae>>
+<<wait 1>>
+Mae: 所以，咱们现在在地下室里了。 #line:dc421c
+<<lookNearest Mae>>
+Gregg: 顺便问一句，咱们到底要找什么啊？ #line:36eeaa
+Mae: 我读到的东西说，有时晚上还待在这儿的人， #line:09d149
+Mae: 会在一个叫什么地图室的地方， #line:e6bb6f
+Mae: 和一些禁区， #line:05c0fb
+Mae: 听到奇怪的声音？ #line:042726
+Gregg: 严格来说，这整一栋楼都是禁入区域。 #line:a941b6
+Mae: 确实，伙计，你说得对。 #line:7b4290
+
+===
+title: BetweenElevators
+tags: 
+colorID: 4
+position: 1204,-526
+---
+<<set $looked_between_elevators to 1>>
+Gregg: 姐们，那是不是……有两部电梯啊？ #line:9ce589
+Gregg: 看起来，还挺新的。 #line:98593d
+Gregg: 而且还锁上了。 #line:1dabd2
+Mae: 天哪。这地方估计全是电梯。 #line:497d64
+Gregg: 真是怪了，为什么这儿要弄两部电梯呢？ #line:a6f189
+Mae: 一部是给幽灵用的，另一部是给正常人用的。 #line:c0ef8a
+Gregg: 幽灵私人屋顶派对。 #line:5752f1
+Mae: 还附带一个幽灵专用游泳池。 #line:288a62
+Gregg: 我希望你会被电梯压扁。 #line:baa1ea
+Mae: 我希望你的脑袋会卡在门里， #line:96aa5b
+Mae: 然后被夹掉。 #line:58d0c7
+Gregg: 我希望你会顺着电梯井掉下去。 #line:223f5c
+Mae: 我希望你被困在一个又黑， #line:955279
+Mae: 又都是水， #line:c2a76b
+Mae: 还有一只愤怒鲨鱼的电梯里。 #line:9fbf15
+Gregg: 我勒个去，姐们，这也太…… #line:28c0b0
+Gregg: *颤抖* #line:254c86
+===
+title: Stairs
+tags: 
+colorID: 4
+position: 1488,-490
+---
+Mae: “为保险起见，现已关闭" #line:03d45c
+Gregg: “注意：楼梯禁止攀爬" #line:b017b0
+Mae: “本楼梯为本建筑原有设施， #line:ffb1a5
+Mae: 现阶段无法使用。" #line:08fabc
+Gregg: “无法使用的"楼梯，到底是个什么鬼？ #line:74b6cf
+Mae: 那么，咱们应该…… #line:c44486
+Gregg: 悬空漂浮上去吗？ #line:bbeb21
+Mae: 哈。 #line:624f19
+<<set $mansion_stairs_done to 1>>
+===
+title: Elevator1-2
+tags: 
+colorID: 4
+position: 2002,-325
+---
+<<if $looked_between_elevators>>
+	Mae: 哦，快看。 #line:22af4f
+	Gregg: 三号电梯。 #line:410b9b
+	Mae: 而且看来这扇门没锁。 #line:b6e07b
+	Gregg: 姐们，这里真是遍地是电梯啊。 #line:bc7e26
+	Mae: 说的是啊，够怪的。 #line:586aa2
+<<else>>
+	Mae: 嘿，这儿有个电梯。 #line:74e80e
+	Gregg: 不错。 #line:7bb01b
+	Mae: 坐电梯可比走楼梯容易多了。 #line:c1a5f2
+<<endif>>
+<<set $elevator_1_2_done to 1>>
+===
+title: SecondFloor
+tags: 
+colorID: 4
+position: 1801,-533
+---
+<<walk Mae MaeWalkOut1 wait>>
+<<wait 3>>
+Mae: 你要往前走吗？ #line:fa9a7b
+Gregg: *你*要往前走吗？ #line:c794d1
+Mae: 为什么让我先走？ #line:6a9f2b
+Gregg: 因为是你说要来捉幽灵的啊！ #line:42a2a0
+Mae: 那好吧。 #line:c794d4
+Gregg: ……反正幽灵也不是真的…… #line:46adb2
+Mae: 你说什么？ #line:242b2d
+<<fadeOutMusic 2>>
+Mae: 老兄，你…… #line:7c461c
+<<wait 1>>
+<<playOneShot event:/mansion/muffled_thump CreepyNoise1>>
+//interrupted by distant creepy noise (does it close the text window when it happens?). This noise is the animatronic guy upstairs (RUNNING GREGG THEME!) but we don’t know that yet, so it’s this distant muffled indistinct voice/thump that is spooky. Not like a scream or anything, just like a WMMWAAHMMWWAAAMUHHMUHH voice and then a BUMP. Shouldn’t come off as robotic until we’re in the same room as it, which will be in the Map Room//
+<<wait 2>>
+Mae: …… #line:7564b0
+Gregg: 这 #line:778d4a
+Gregg: TM #line:e6558b
+Gregg: 是什么鬼？ #line:15f0ee
+Mae: 我也不知道。 #line:42277e
+Mae: 这儿有人吗？ #line:db3a3c
+Gregg: 不可能！灯没亮，门还都锁着，也没有车子停在外面！ #line:199ab1
+Mae: 好吧。那…… #line:972f95
+Gregg: 你想回去了吗？ #line:e11099
+->你带着你的刀了吗？ #line:c16ee8
+	Gregg: 带了。 #line:540f76
+	Mae: 那就好。 #line:a99010
+	Gregg: 等等，你是想让我去捅谁吗？！ #line:7247d3
+	Gregg: 这就是现在的计划吗？！ #line:282eb9
+	Mae: 不是。我只是想以防万一。 #line:d414b7
+	Mae: 我是说， #line:61c0b0
+->不想。 #line:01ec9e
+	Mae: 而且，无论如何 #line:e72e4b
+Mae: 反正地下室的门在我们进来后也锁住了。 #line:844239
+Gregg: 哦，是啊，见鬼。 #line:7fe3ef
+Mae: 得再找一条出去的路才行。 #line:a07275
+Gregg: 等等，让我先把这事给记下来： #line:6c0c3b
+Gregg: 地图室、禁区、找一条出去的路。 #line:623748
+Mae: 事情有点复杂啊。 #line:21c24d
+Gregg: 干坏事。 #line:dd20ac
+Mae: 干坏事。 #line:60996a
+<<playMusic spooky_mansion>>
+===
+title: FirstFloor
+tags: 
+colorID: 4
+position: 959,-547
+---
+<<stopMoving Mae>>
+<<stopFollowing Gregg>>
+<<warp Gregg GreggFirstFloor>>
+<<warp Mae MaeFirstFloor>>
+<<flip Mae -1>>
+<<flip Gregg -1>>
+<<follow Gregg Mae>>
+<<fadeInInternal 1 wait>>
+<<set $mansion_floor_chunk to 1>>
+Gregg: 这里看起来真够空旷的。 #line:9ab7fd
+Mae: 还很黑。 #line:fb1299
+Gregg: 嘿，手电筒哪儿去了？ #line:351fe9
+Mae: 糟糕， #line:e61e0f
+Mae: 我把它掉在外面了。 #line:5db7b1
+Gregg: 哦，姐们。 #line:bd26aa
+Mae: 刚 才 可 有 一 只 猫 头 鹰 在 抓 你 啊！！！！ #line:8bec82
+Gregg: 那好吧。 #line:836b89
+Gregg: 反正我也看得见。 #line:93960b
+Mae: 我也是。咱们四处看看吧。 #line:fd2985
+<<set $mansion_basement_done to 1>>
+<<playMusic spooky_mansion>>
+===
+title: Attic
+tags: 
+colorID: 4
+position: 2013,266
+---
+<<castToSurface Gregg 1>>
+<<fadeOutMusic 10>>
+<<walk Mae MaeWalkOut4 wait>>
+Mae: 这里有一部能从地下室到阁楼的电梯， #line:ddeefa
+Mae: 而且还是直达电梯。 #line:a5fa33
+Mae: 到底是什么狗屁情况啊？ #line:20279b
+Gregg: 快，咱们得找一条逃出去的路。 #line:477513
+<<close>>
+<<createLocatorAt Gregg GreggReturn>>
+<<stopFollowing Gregg>>
+//Gregg runs to the left, waits for a sec and then runs back to you//
+<<run Gregg OffLeft wait>>
+<<playAmbientSFX _AmbientSFX:attic_window_locked>>
+<<wait 1>>
+<<run Gregg GreggRunBack wait>>
+Gregg: 我 找 着 一 扇 窗 户！ #line:2770e9
+Gregg: 我 觉 得 这 儿 应 该 有 个 消 防 梯 才 对！ #line:1fb0e5
+Gregg: 可窗户打不开…… #line:db6d8d
+//you are free to run into the weird room//
+<<generateFollowPoints Mae Gregg>>
+<<follow Gregg Mae>>
+===
+title: OfficeForLockpick
+tags: 
+colorID: 4
+position: 2676,-556
+---
+<<walk Mae MaeWalkOut2 wait>>
+Mae: 其他人去奇怪的捉鬼冒险时， #line:96fbb9
+Mae: 他们都忙着找，那种，很酷的东西…… #line:72fb6f
+<<if $did_bea_investigation_quest>>
+	Mae: 我想，昨天晚上我发现了一具很古老的骷髅尸体…… #line:27a0a5
+	Gregg: 是吗，姐们。 #line:1815e1
+	Gregg: 至少咱们还没碰见任何死人。 #line:8852a8
+<<endif>>
+//muffled soft noise below//
+Gregg: 就这样。 #line:9f6617
+Mae: 是啊，咱们去找曲别针吧。 #line:968a74
+===
+title: Elevator3
+tags: 
+colorID: 4
+position: 2241,-307
+---
+<<fadeOutMusic 5>>
+<<if $looked_between_elevators>>
+	Mae: 我去，这是四号电梯吗？ #line:e0e1f0
+	Gregg: 这怎么可能？ #line:e06689
+	Gregg: 为什么会这样啊？ #line:c26b78
+	Mae: 我爷爷现在肯定会抱怨，收的那些税都干嘛用了。 #line:a4473e
+<<else>>
+	Mae: 嘿……又有一部电梯吗？ #line:dbd3a6
+	Gregg: 哈，真是怪了。 #line:095874
+<<endif>>
+<<close>>
+<<playOneShot event:/mansion/creepy_noise_02 CreepyNoise2>>
+<<wait 3>>
+Mae: 啊 啊 啊！ #line:155601
+Gregg: 这可……不太妙啊。 #line:c4933e
+Mae: 这可能是 #line:38d042
+Mae: 有人把手机留在这儿了，而且还……呃…… #line:e18e14
+Gregg: 没准是这样。 #line:40823e
+Mae: 很有可能。 #line:1e8817
+Gregg: 对，有这种可能。 #line:620fab
+Mae: 干坏事。 #line:faf28a
+Gregg: 干坏事。 #line:63b736
+<<set $elevator_3_done to 1>>
+<<playMusic spooky_mansion>>
+===
+title: Elevator6-7
+tags: 
+colorID: 4
+position: 2485,-315
+---
+<<if $looked_between_elevators>>
+	Gregg: 你是在逗我吗？ #line:44c5f4
+	Mae: 五号电梯。 #line:c822f3
+<<else>>
+	Mae: 他们这儿的…… #line:262487
+	Mae: 他们这儿的电梯可真不少啊。 #line:deb1c7
+	Gregg: 太怪了吧。 #line:2b0533
+<<endif>>
+Gregg: 嗯。 #line:f625bc
+Gregg: 门锁住了。 #line:bbc67c
+Mae: 我觉得，咱们如果不撬锁的话，就只能到这么高了。所以…… #line:c706af
+Gregg: 哎 呀，该 死！ #line:3ccd25
+Mae: 你是在逗我吗？ #line:587305
+Gregg: 我把开锁工具落在外面了。 #line:80c190
+Mae: 你是在*逗*我吗？ #line:909eae
+Gregg: 我 当 时 可 是 被 一 只 猫 头 鹰 给 袭 击 啦！！！ #line:cb3b8e
+<<wait 2>>
+Mae: 好吧。 #line:aec6dd
+Mae: 对不起。 #line:b58007
+Mae: 那你能用其他东西临时代替一下吗？ #line:488388
+Gregg: 嗯。我需要钳子…… #line:126554
+Gregg: 还有…… #line:5bac81
+Gregg: 你有曲别针吗？ #line:9e9575
+Mae: 啊，没有。现在哪还有地球人会随身带着曲别针啊？ #line:053c1e
+<<if $visited_office>>
+	Mae: 嘿！我敢打赌，办公室里肯定能找到曲别针！ #line:7d5127
+	Gregg: 我敢说，办公室里的人肯定会用纸， #line:fabb31
+    Gregg: 所以他们肯定也需要别住这堆破纸的。 #line:e7a543
+	Mae: 不错，不错，不错。 #line:a797e2
+<<else>>
+	Gregg: 这儿没人。 #line:8a3d96
+<<endif>>
+Mae: 行吧，先让我捋一捋现在的情况…… #line:e7d383
+Gregg: 好你说吧。 #line:195bbc
+Mae: 地图室、禁区、找一条出去的路、找钳子、找曲别针。 #line:6d29f1
+<<fadeOutMusic 5>>
+Gregg: 我觉得应该就这些了。 #line:3e9987
+Mae: 这 也 太 蠢 了 吧！！！ #line:06f2d4
+Mae: 这就像是在工作啊！这不就是在工作嘛！ #line:08e8d2
+<<close>>
+<<playOneShot event:/mansion/creepy_noise SfxMuffledThump>>
+<<wait 3>>
+Gregg: 你听见那声儿了吗？ #line:bda139
+Mae: 我听见了…… #line:e07b03
+Mae: 那可不像是人发出的声音啊。 #line:334483
+Gregg: 说的是啊。我完全不知道那是个什么玩意。 #line:2e357b
+Mae: 好吧，咱们快点走吧。 #line:5f7db1
+<<set $looking_for_lockpick to 1>>
+<<playMusic spooky_mansion>>
+===
+title: Basement
+tags: 
+colorID: 4
+position: 2247,-50
+---
+<<castToSurface Gregg 1>>
+<<walk Mae MaeWalkOut3 wait>>
+Mae: MD，咱们是不是又回地下室了？ #line:f1f15a
+Gregg: 哦，好吧。 #line:a9a0e0
+<<if $looked_between_elevators>>
+	Mae: 哦，嘿！那部电梯原来通到这里？ #line:7460e4
+	Gregg: 这个电梯。 #line:a064b7
+<<else>>
+	Mae: 见鬼，我进来的时候竟然没注意到这部电梯？ #line:251b73
+	Gregg: 哈，那边还有一部电梯。 #line:195fda
+<<endif>>
+Mae: 是啊，那…… #line:859e53
+Gregg: 这也太不科学了吧。 #line:4bd439
+Mae: 这部电梯会不会 #line:5b1216
+Mae: 是给地图室送东西的货梯啊？ #line:78b9c6
+Mae: 然后……这儿的人不想走楼梯，所以去坐另一部电梯…… #line:4a1a73
+Mae: 可就算是这样…… #line:15cc60
+Gregg: 姐们，这里所有的事都太离谱啦。 #line:83503b
+<<close>>
+<<lookUp Gregg>>
+<<wait 1>>
+<<lookUp Mae>>
+<<wait 2>>
+Gregg: 看样子，不管那是什么东西，都没有跟着咱们下来啊。 #line:990a8c
+<<lookRight Mae>>
+Mae: 你刚才是说了“什么东西"，而不是“什么人"啊？ #line:2e1ce9
+<<lookNearest Gregg>>
+Gregg: 应该是“什么人"才对。 #line:c2db95
+Mae: 你现在也信有幽灵这么回事了？ #line:c37a36
+Gregg: 幽灵可不会坐电梯。 #line:f5b66b
+Mae: 为什么？照你这么说，幽灵走楼梯就可以， #line:e6660e
+Mae: 但坐电梯就不成吗？ #line:4a0ac2
+Gregg: …… #line:e07db0
+Gregg: 那我有个问题： #line:7e8ca5
+//camera pans over to other elevator//
+<<lookLeft Mae>>
+<<cameraLookAt CameraOtherElevator 2>>
+Gregg: 那个坐电梯的人或者东西又到哪儿去了？ #line:547430
+<<close>>
+<<wait 2>>
+<<lookRight Mae>>
+Mae: 好吧。 #line:4331b0
+Gregg: 干坏事吗？ #line:dcc9ff
+Mae: 当然干了。 #line:4e9c8b
+<<lookNearest Mae>>
+<<cameraFollowPlayer 1>>
+// delete SceneLink for elevator
+<<destroy SceneLink7>>
+===
+title: AutoStairs
+tags: 
+colorID: 4
+position: 673,-557
+---
+Mae: 好。 #line:886d28
+Gregg: 咱们走着。 #line:35da50
+<<close>>
+<<walk Mae MaeUpStairs>>
+<<fadeOutInternal 1 wait>>
+[[FirstFloor]]
+===
+title: ItsLocked
+tags: 
+colorID: 4
+position: 1543,202
+---
+<<set $mansion_unlock_00 to 1>>
+Mae: 锁住啦！！！！有什么东西把它给锁上啦！！ #line:4f8a32
+Gregg: 应该是有什么*人*锁上的。 #line:c32056
+Mae: 咱们还能回楼上吗？ #line:b023aa
+Mae: 肯定不行。咱们只会被…… #line:97f70b
+Mae: 那个不知道是什么的东西追得团团转的。 #line:809161
+Gregg: 应该是“什么人"才对吧。 #line:560255
+Mae: 伙 计。 #line:56922d
+<<close>>
+<<generateFollowPoints Mae Gregg>>
+<<follow Gregg Mae>>
+//other elevator is now returning//
+Gregg: 还……有…… #line:68c474
+<<setAnimBool Gregg lockPicking 0>>
+Gregg: 好啦！ #line:e74b9d
+<<tell SceneLink8 Open>>
+Mae: 但我们不知道这部电梯会通向哪里呀。 #line:fe30bd
+Gregg: 有什么更好的主意吗？ #line:e020ab
+Mae: 伙 计，很明显，我可没有。 #line:63f14d
+<<fadeOutMusic 6>>
+<<tell SceneLink8 Activate>>
+===
+title: CellarDoor
+tags: 
+colorID: 4
+position: 1256,204
+---
+<<playAmbientSFX _AmbientSFX:basement_door_locked>>
+<<wait 2>>
+Mae: 被卡住啦！ #line:751cde
+Mae: 咱们要完蛋啦！ #line:9bd10a
+Gregg: 我在弄呢，在弄呢！ #line:4c85cb
+<<set $mansion_cellar_door_done to 1>>
+===

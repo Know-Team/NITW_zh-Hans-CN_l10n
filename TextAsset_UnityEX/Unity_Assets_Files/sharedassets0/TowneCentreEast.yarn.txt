@@ -1,0 +1,1289 @@
+title: Monument.1
+tags: 
+colorID: 0
+position: 27126,-6230
+---
+Mae:{locator=monument}我猜，这上面应该会有我曾叔祖父的名字。 #line:58b61d
+Mae:{locator=monument}嗯，找到了。安塞尔姆·博罗夫斯基。 #line:a3079f
+<<wait .25>>
+Mae:{locator=monument}“安塞尔姆"？ #line:38a5cc
+Mae:{locator=monument}就算在他还活着的时候，他也是个悲剧人物。 #line:00c67e
+===
+title: Monument.2
+tags: 
+colorID: 0
+position: 27366,-6209
+---
+Mae:{locator=monument}总会有一只负鼠在上面的，是的，总会有一只负鼠的。 #line:9be2ef
+===
+title: Monument.3
+tags: 
+colorID: 0
+position: 27652,-6155
+---
+Mae:{locator=monument}我们大家都很喜欢负鼠泉的战争纪念碑。 #line:09feae
+Mae:{locator=monument}在负鼠泉老区，就有两座很古老的雕像和纪念碑。 #line:90c430
+Mae:{locator=monument}镇上总共有三座。 #line:bb922b
+Mae:{locator=monument}我猜，人们又在皮尔山上建了一座新的纪念碑。 #line:4446dd
+Mae:{locator=monument}在负鼠崖旁边还有一座雕像，但那座雕像的样子实在太恐怖了。 #line:29938e
+Mae:{locator=monument}在那次我们意想不到的派对之后，我就再也没去过那儿了。 #line:d8270b
+<<end>>
+===
+title: VeryTopAct2
+tags: 
+colorID: 3
+position: 26072,-7221
+---
+Mae: 很多年以前，我还想着，自己到了20岁就爬不了这么高了。 #line:60d1cf
+Mae: 小梅梅，该展示一下你的身手了。 #line:af0110
+Mae: …… #line:3b5e17
+<<unlockDoodle RoofcatIsCorrect>>
+<<end>>
+===
+title: Windmill
+tags: demo2
+colorID: 0
+position: 27868,-6471
+---
+Mae: 我觉得，这些可能是气象站吧？ #line:d433ba
+Mae: 应该是那些先锋童子军做的这玩意，估计是他们是球踢腻了， #line:23c9f1
+Mae: 要不就是他们没在好好学习 [wave]怎 么 长 大 成 人[/wave]。 #line:70c096
+Mae: 这些其实就是迷你版的风车罢了。 #line:1107b1
+<<set $windmill_done to 1>>
+===
+title: BlockedEast
+tags: 
+colorID: 0
+position: 27195,-6480
+---
+<<if $act is 0 or $demo2>>
+    [[BlockedEast_Demo2]]
+<<else>>
+    Mae: 我的老天， #line:adb5ee
+    Mae: 还有我没见过的天气吗？ #line:058d85
+    Mae: 真是逗了。 #line:d006bb
+    Mae: 哦，好吧，我可没打算去教堂。 #line:232c49
+    <<unlockDoodle FallingApart>>
+<<endif>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 28717,-8564
+---
+<<setCanInteract Donna 0>>
+
+<<if $act is 0 and $day is 0>>
+	<<show Donna>>
+	<<show Gregg>>
+    Gregg: =_= #line:2c6d68
+	<<trigger Gregg Sit ShowGnome>>
+	<<warp Gregg GreggRoof Sit>>
+    <<setPlayerInteractLocator Gregg GreggRoofTalk>>
+    <<setCanInteract Donna 1>>
+    <<hide Lori>>
+    <<hide TZEmployee1>>
+    <<hide TZEmployee2>>
+    <<show Bruce>>
+<<else>>
+    <<hide Gregg>>
+    <<hide Bruce>>
+<<endif>>
+
+<<if $act is 1 and $day is 2>>
+    <<show PoleWorker>>
+<<else>>
+    <<hide PoleWorker>>
+<<endif>>
+
+<<if $act is 1 and $day is 3>>
+    <<show PoleWorker>>
+<<else>>
+    <<hide PoleWorker>>
+<<endif>>
+
+<<if $act is 2 and $day is 1 and $demo2>>
+    //<<sit Bea>>
+<<endif>>
+
+<<if $act is 2 and $day is 4>>
+    <<show Molly>>
+<<else>>
+    <<hide Molly>>
+<<endif>>
+
+<<if $act is 2 and $day is 4 and $towne_centre_east_city_council_a2d4_done is 0>>
+    <<show Council1>>
+    <<show Council2>>
+    <<show Council3>>
+    <<show Council4>>
+
+    <<setSpriteLayer Council1 CityCouncil1FG>>
+    <<setSpriteLayer Council2 CityCouncil2FG>>
+    <<setSpriteLayer Council3 CityCouncil3FG>>
+    <<setSpriteLayer Council4 CityCouncil4FG>>
+<<else>>
+    <<hide Council1>>
+    <<hide Council2>>
+    <<hide Council3>>
+    <<hide Council4>>
+<<endif>>
+
+<<set $taxi_stop to 1>>
+
+<<if $demo2>>
+    <<show Bea>>
+<<else>>
+    <<hide Bea>>
+<<endif>>
+
+<<if $act is 3 and $day >= 2 and $did_birdland_quest is 0>>
+    <<show Saleem>>
+<<else>>
+    <<hide Saleem>>
+<<endif>>
+
+<<if $act is 4 and $day is 3 and $janitor_done is 0>>
+    <<show Janitor>>
+<<else>>
+    <<hide Janitor>>
+<<endif>>
+
+<<hide Donna>>
+<<hide TZEmployee2>>
+<<hide TZEmployee1>>
+
+<<if $act is 1 and $day is 1>>
+    <<show Donna>>
+    <<show TZEmployee2>>
+<<elseif $act is 1 and $day is 2>>
+    <<show TZEmployee2>>
+<<elseif $act is 1 and $day is 3>>
+    <<show Donna>>
+    <<show TZEmployee1>>
+    <<show TZEmployee2>>
+<<elseif $act is 2 and $day is 1>>
+    <<show Donna>>
+    <<show TZEmployee2>>
+<<elseif $act is 2 and $day is 2>>
+    <<show TZEmployee1>>
+<<elseif $act is 2 and $day is 3>>
+    // no one outside
+<<elseif $act is 2 and $day is 4>>
+    <<show TZEmployee1>>
+    <<show TZEmployee2>>
+<<elseif $act is 3 and $day is 1>>
+    <<show Donna>>
+    <<show TZEmployee1>>
+    <<show TZEmployee2>>
+<<elseif $act is 3 and $day is 2>>
+    <<show TZEmployee1>>
+    <<show TZEmployee2>>
+<<elseif $act is 3 and $day is 3>>
+    <<show TZEmployee2>>
+<<elseif $act is 3 and $day is 4>>
+    // no one outside
+<<elseif $act is 4 and $day is 3>>
+    <<show Donna>>
+    <<show TZEmployee1>>
+    <<show TZEmployee2>>
+<<endif>>
+===
+title: Travis
+tags: 
+colorID: 3
+position: 27227,-6772
+---
+<<if $act is 2 and $day is 1>>
+	Travis: 梅，你可真水啊。 #line:f484d3
+	Mae: …… #line:db3f7c
+	Travis: 没错，你肯定听见我说什么了。 #line:f51788
+	Mae: …… #line:f86705
+	Travis: 你这人可真水啊。 #line:15d320
+	Mae: 你这人最烂啦。 #line:d67bdd
+	<<set $travis to 1>>
+<<elseif $act is 2 and $day is 2>>
+	<<if $travis < 20>>
+		Travis: 车抛锚了。 #line:7ad657
+		Mae: 如果你不是个人渣的话…… #line:46a076
+		Travis: 等会儿，怎么回事啊？这东西是从哪儿跑过来的啊？ #line:9bf366
+		<<set $travis to 20>>
+	<<elseif $travis is 20>>
+		Mae: 可能，这就是……“包应"吧。 #line:1d96cd
+		Travis: 你是说“报应"吗？ #line:f328e7
+		Mae: 不……不……你可别。哦。 #line:53af8f
+		<<set $travis to 21>>
+	<<elseif $travis is 21>>
+		Travis: 好吧，这可真是太好啦。 #line:af7283
+	<<endif>>
+<<endif>>
+
+===
+title: CautionSign
+tags: 
+colorID: 0
+position: 27818,-6778
+---
+Mae: 注意：请勿跳上路灯， #line:c44b09
+Mae: 请勿在电线上奔跑， #line:8ec0c5
+Mae: 请勿在楼顶间跳跃， #line:fc58ae
+Mae: 你会丧命的。 #line:84b1a7
+Mae: 多谢提醒！ #line:8f21e1
+===
+title: Gregg_A0D0
+tags: demo
+colorID: 0
+position: 28594,-6813
+---
+<<camera lookOffset 0 0>>
+<<camera lookZoom -1>>
+[[GreggRoof]]
+===
+title: GreggRoof
+tags: demo
+colorID: 0
+position: 28955,-6475
+---
+Mae: 嗯……所以出什么事了？ #line:cf3f5f
+Gregg: 我当时偷偷溜到了电梯里， #line:a602db
+Gregg: 可在我准备出来的时候，身后的窗户突然关上了。 #line:6c7039
+Mae: 伙计，你为啥要爬到这上面来啊？ #line:32f63a
+Mae: 你可不适合在房顶之间跳来跳去的。 #line:d0c5a3
+Gregg: 我感觉今天不在状态。 #line:f6b77b
+Gregg: 所以，我才想要从楼顶往下扔点什么。 #line:4e889d
+<<wait .25>>
+Gregg: 哦，对了，我还偷了一个花园小矮人。 #line:ffa80d
+Mae: 你放假一天就只有这点收获吗？ #line:7d3522
+Gregg: 可能吧。 #line:cfb37f
+<<close>>
+<<wait .5>>
+Mae: 我刚刚在想， #line:f93fd2
+Mae: 如果我在浴室里自焚，那会是一幅怎样的场面。 #line:ad2144
+Gregg: 好吧。 :| o_o #line:9d04d5
+Mae: 我一直在想，我变成鬼之后，肯定会在这个镇上永远游荡下去的。 #line:fb1532
+Mae: 然后把镇上所有人都吓跑。 #line:53a293
+Gregg: 哦，姐们儿，如果是我，我肯定会把每个人的屁股都咬一遍。 #line:b10785
+Gregg: 那些人肯定会说：我勒个去，是谁咬了我屁股一口？？？ #line:62f831
+Gregg: [shake=.04]啊 嗷，咬 你 屁 股！！！！！[/shake] D: #line:dc657f
+Gregg: :| #line:639e94
+Mae: 我刚才在想，我要永远待在这儿， #line:aaa099
+Mae: 或者永远待在其他什么地方。 #line:22d2ac
+Mae: 就像个吸血鬼一样。 #line:2a4aa0
+Gregg: 要是我会在某个地方游荡的话，我不知道那个地方会不会是负鼠泉。 #line:210c97
+Gregg: 这个镇简直烂透啦，而且这个镇本身就和吸血鬼一样。 #line:c35e37
+Gregg: 告诉你吧： #line:f4d0c9
+Gregg: 你现在就下去，然后再坐电梯上来，之后我再进电梯， #line:9dfb5e
+Gregg: 然后咱们就能借碧娅的车去多纳狼了。 #line:511df5
+Mae: 我不知道能不能借到车……我和碧娅其实不…… #line:d5e3ff
+Gregg: 没事的，我和安格斯就总能借得到。 #line:28b487
+[[GreggRoofGnomeDecision]]
+
+===
+title: GreggRoofGnomeDecision
+tags: demo
+colorID: 0
+position: 29314,-6420
+---
+Mae: 老伙计，你想把这个侏儒小人给扔下去吗？ #line:9c86c6
+Gregg: 我也不知道。你觉得呢？ #line:20404a
+[[伙计，别扔。今天晚上他还得和咱们一起开派对去呢。|GreggRoofNoToss]] #line:3f0569
+[[这不很明显吗，这根本就不成问题。|GreggRoofToss]] #line:290447
+
+===
+title: GreggRoofToss
+tags: demo
+colorID: 0
+position: 29643,-6469
+---
+<<close>>
+<<musicFadeOut 4>>
+<<mood Gregg Neutral>>
+<<trigger Gregg ThrowGnome>>
+<<wait 3.9>>
+<<trigger Gregg HideGnome>>
+<<playSound CarSounds GnomeHit>>
+<<shake 0.05 0.05 2>>
+<<wait .5>>
+<<playSound CarSounds Alarm loop>>
+<<wait 1.5>>
+Gregg: 好，就这么办。我感觉舒服多了。 #line:766ba4
+Mae: 那就好，伙计。 #line:00c75b
+Gregg: 咱们现在能从楼顶上下去了吗？ #line:7d296e
+Mae: 兄弟我是不会让你就这么沉沦下去的。 #line:bffd2f
+Gregg: 嘿，臭猫，你想不想去多纳狼啊？ -_- #line:c18e98
+Mae: {width=4}[shake=.06]嗷嗷嗷嗷嗷！！！！[/shake] \o/ #line:0a79d8
+Gregg: [shake=.04]那 就 快 上 战 车！[/shake] D: \o/ #line:fe600d
+Mae: [shake=.04]向 甜 甜 圈 地 狱 前 进！！！！[/shake] \o/ :D #line:a9de67
+<<fadeOutSounds CarSounds 4>>
+<<set $gnome_tossed to 1>>
+<<musicFadeOut 2>>
+<<fadeOut 2 wait>>
+<<sectionTitle LaterAtTheDonutWolf PawsModeDonutWolf01>>
+
+===
+title: GreggRoofNoToss
+tags: demo
+colorID: 0
+position: 29464,-6126
+---
+Gregg: 侏儒小老弟，你可走大运啦。 #line:162b13
+Mae: 别再说啦。去多纳狼吧。 #line:5946bb
+Gregg: 已经准备就绪啦！ #line:ab22d7
+Mae: {width=4}[shake=.06]嗷嗷嗷嗷嗷！！！！[/shake] \o/ :) #line:4d60a3
+<<set $gnome_tossed to 0>>
+<<musicFadeOut 2>>
+<<fadeOut 2 wait>>
+<<sectionTitle LaterAtTheDonutWolf PawsModeDonutWolf01>>
+===
+title: TZEmployeeAuto
+tags: 
+colorID: 0
+position: 28086,-6227
+---
+<<set $tz_employees_done to 1>>
+<<if $act is 1 and $day is 1>>
+    [[TZAutoA1D1]]
+<<elseif $act is 1 and $day is 2>>
+    // doing nothing
+<<elseif $act is 1 and $day is 3>>
+    [[TZAutoA1D3]]
+<<elseif $act is 2 and $day is 1>>
+    [[TZAutoA2D1]]
+<<elseif $act is 2 and $day is 2>>
+    // doing nothing
+<<elseif $act is 2 and $day is 3>>
+    // no one outside
+<<elseif $act is 2 and $day is 4>>
+    [[TZEmployeeEmoticonLoop2]]
+<<elseif $act is 3 and $day is 1>>
+    [[TZAutoA3D1]]
+<<elseif $act is 3 and $day is 2>>
+    [[TZEmployeeEmoticonLoop2]]
+<<elseif $act is 3 and $day is 4>>
+    // no one outside
+<<elseif $act is 4 and $day is 3>>
+    [[TZAutoA4D3]]
+<<endif>>
+===
+title: TZEmployeeEmoticonLoop
+tags: demo2
+colorID: 0
+position: 28539,-6275
+---
+TZEmployee2:{emote=coffee} #line:eed221
+Donna:{emote=cigarette} #line:8091f7
+[[TZEmployeeEmoticonLoop]]
+===
+title: PoleWorker_00_00
+tags: 
+colorID: 2
+position: 27843,-7167
+---
+Mae: 你在上面干什么呢？ #line:f813b5
+PoleWorker: 前几天的风暴把路灯给弄坏了， #line:000cfb
+PoleWorker: 可灯坏了对那些往路灯上跳的白痴根本没什么影响。 #line:fe6afe
+Mae: 啊哦，尴尬。 #line:6152d7
+PoleWorker: 把这话也告诉给其他孩子。 #line:b25b45
+Mae: 其他？我可不是孩子，我是个大人了。 #line:98ba19
+PoleWorker: 哦嚯嚯，我可不这么觉得。 #line:da110d
+PoleWorker: 大人要么有工作要么有其他的事儿要干。 #line:6c4f35
+Mae: 哼。 #line:a4f4be
+PoleWorker: 不管怎么说，你就告诉其他孩子，别再往灯上跳了。 #line:84f644
+PoleWorker: 这样说不定会要了他们和其他人的命的！ #line:a91201
+===
+title: PoleWorker
+tags: 
+colorID: 2
+position: 28007,-7476
+---
+<<if $pole_worker_sequence is 0>>
+    <<if $pole_worker is 0>>
+        <<set $pole_worker += 1>>
+        [[PoleWorker_00_00]]
+    <<elseif $pole_worker is 1>>
+        <<set $pole_worker += 1>>
+        <<set $pole_worker_done to 1>>
+        [[PoleWorker_00_01]]
+    <<endif>>
+<<endif>>
+===
+title: PoleWorker_00_01
+tags: 
+colorID: 2
+position: 28223,-7187
+---
+Mae: 你知道他们什么时候修这台阶吗？ #line:3e2570
+Mae: 我还急着去教堂呢。 #line:32ca45
+PoleWorker: 我觉得，明天吧。 #line:a59986
+Mae: 那就好，吸血鬼最怕神圣之地了。 #line:78a49e
+PoleWorker: 我怎么没看见这附近有吸血鬼啊。 #line:d6f386
+PoleWorker: 你指的可能是政府吧。 #line:e0ae5c
+PoleWorker: 他们就会压榨咱们！ #line:af7334
+Mae: 大叔，你把我的故事给抢了。 #line:ba3a68
+Mae: 我要走了。 #line:841cfd
+PoleWorker: 孩子，一定要留神那些吸血鬼啊。 #line:269930
+Mae: 我 不 是 孩 子！！！！ #line:fa4dd6
+===
+title: SeeGregg
+tags: 
+colorID: 0
+position: 29095,-6966
+---
+<<camera extraLookOffset 0 2>>
+<<alwaysLookAt Mae Gregg>>
+<<wait .25>>
+Mae: o/ #line:d67925
+<<lookAt Gregg Mae>>
+Mae: 嘿，格雷格！ #line:f10a55
+Mae: _o_ #line:a16998
+Gregg: {medianLocator,align=middle}嘿，梅梅。 #line:d1eba7
+Mae: 伙计，你在这儿干什么呢？ #line:653e87
+Gregg: {medianLocator,align=middle}我被锁在门外面啦。 #line:00c232
+Mae: 好吧，我来也。坚持住。 #line:0ca798
+<<addToJournal GreggStuckOnRoof>>
+<<unlockDoodle Gnome 2>>
+<<camera extraLookOffset 0 0>>
+===
+title: Bruce
+tags: 
+colorID: 0
+position: 28794,-7126
+---
+<<if $bruce is 0>>
+    Mae: 嗯……您好。您怎么了？ #line:d103e5
+    Bruce: …… #line:75e9bf
+    Mae: 您住在这附近吗？ #line:75fd93
+    Bruce: 不是。 #line:05fea8
+    Mae: 那您是搭火车来这儿的吗？ #line:1d6966
+    Bruce: 我有点不舒服，所以就在这儿下车了。可大伙儿都知道，千万别在负鼠泉停留。 #line:590a40
+    Mae: 那您知道吗，我们这儿对流浪者的政策可是很严格的。 #line:d5d703
+    Bruce: 我们从镇上经过的时候，有人连气都不敢喘一下。 #line:2a4989
+    Mae: 额，嗯哼？那您在这儿干什么呢？ #line:3b33ee
+    Bruce: 睡觉。我想离街远一点。 #line:6de505
+    Mae: 那肯定不暖和吧。 #line:a64b50
+    Bruce: 镇子西面更冷。所以，最好还是待在镇子东面地势比较高的地方。 #line:4ef33a
+    Mae: 那好吧，我们……我要去…… #line:0a1c6f
+    Bruce: 等太阳一落山，我就得到铁道那儿去了，然后随便爬上一辆能离开这儿的车。 #line:5bd29d
+    Bruce: 但说真的，我还是很害怕，不敢离开这里。 #line:f83329
+    Mae: 怕什么啊？ #line:16eb2d
+    Bruce: 我记得有这么句话：“别在负鼠泉下车。" #line:836928
+    Bruce: 可我却在这儿下了车。我摊上大事啦。 #line:d7af93
+    Mae: 所以你到底怕的是什么啊？ #line:58c686
+    Bruce: …… #line:3139c8
+    Mae: 嘿，伙计，我可告诉你，你想不想到这儿来转悠我管不着， #line:3f378d
+    Mae: 但要是你敢偷东西，或者把谁家的宠物什么的给吃了，那我可就得管管啦。 #line:78985f
+    Mae: 我的意思是，嘿，咱们的日子都不好过，而且…… #line:fbafa2
+    Bruce: 我不想再和你废话了， #line:93263a
+    Bruce: 请你快点离开吧。 #line:6ab524
+    <<set $bruce to 1>>
+<<elseif $bruce is 1>>
+    Bruce: …… #line:59f8c7
+<<endif>>
+===
+title: Pee
+tags: 
+colorID: 0
+position: 28510,-7352
+---
+Mae: 我觉得他可能是把尿给憋回去了。 #line:fdc5de
+Mae: 我肯定是有什么地方误会他了。 #line:2993d6
+===
+title: Teen1_Demo
+tags: demo
+colorID: 0
+position: 27507,-7042
+---
+<<if $towne_centre_east_teen_1 is 0>>
+	Mae: 你们好啊！ #line:0d60a8
+	<<set $towne_centre_east_teen_1 += 1>>
+    <<set $towne_centre_east_teen_1_walk_away to 1>>
+<<elseif $towne_centre_east_teen_1 is 1>>
+	Mae: 你们还都在上高中，对吧？ #line:bfe93f
+	Teen3: 算是吧。 #line:e06f9e
+	Mae: 我的天，我和格雷格以前可在那地方放过一次火！ :) #line:337b91
+	Teen1: 可你们也没把学校给烧干净啊。 #line:d94eda
+	Mae: :| #line:5fa79c
+    Mae: 确实没烧干净。可我是想说…… #line:d3f0d9
+	Teen2: 这么说，故事的结局就是，你们没能把学校全都给烧了。 #line:0f0c84
+	Teen1: 烧学校这事其实很简单的。 #line:33146d
+	Teen3: 你瞧瞧我们，虽然我们也没能把学校给烧干净。 #line:3826c8
+	Teen2: 但你也看见了，我们可没吹牛。 #line:1560de
+	Mae: 我也没吹牛啊！ :( #line:4c8f45
+	Teen1: 好吧，好吧。你想干什么？ #line:a2cd9b
+	Mae: 我什么都不想干！天啊！ #line:aca9fc
+    Mae: :| #line:a57a6d
+	<<unlockDoodle Teens 1>>
+	<<addToJournal TeensAreTheWorst>>
+	<<set $towne_centre_east_teen_1 += 1>>
+<<elseif $towne_centre_east_teen_1 is 2>>
+	Teen1: {emote=pentagram} #line:418e2f
+	<<set $towne_centre_east_teen_1 += 1>>
+<<elseif $towne_centre_east_teen_1 is 3>>
+	Teen1: {emote=crossbones} #line:13ef18
+	<<set $towne_centre_east_teen_1 += 1>>
+<<elseif $towne_centre_east_teen_1 is 4>>
+	Teen1: {emote=heartbreak} #line:3529c2
+	<<set $towne_centre_east_teen_1 to 2>>
+<<endif>>
+===
+title: Teen1
+tags: 
+colorID: 0
+position: 27515,-7345
+---
+<<if $act is 0 and $day is 0>>
+    [[Teen1_Demo]]
+<<endif>>
+===
+title: Teen1WalkAway
+tags: 
+colorID: 0
+position: 27117,-7105
+---
+Teen1: 哟，你认识格雷格，是吗？ #line:1c7cc0
+Mae: 他是我好朋友。 #line:9e7b39
+Teen2: [wave]嗷。[/wave] #line:de45fb
+Teen3: 老兄，安静点。 #line:da1f27
+Teen1: 嗯，我觉得他好像是被困在房顶上了。 #line:1e0070
+Mae: 等等，你说什么？ #line:fa3c14
+Teen2: 嗯，我感觉他可能是到了楼顶之后，又被锁在外面了。 #line:0c7801
+Teen3: 他看起来好像很难过。 #line:cf886a
+Teen1: 我本来想打电话告诉我妈，然后让她给消防队打电话的，可…… #line:cd700b
+Mae: 他为什么会在楼顶上呢？ #line:586b85
+Teen2: 噗，我哪知道，我又不是他的[color=EC4D67][wave]好朋友[/all]。 #line:7a3a1c
+Teen3: 你真是个混蛋。 #line:e2d758
+<<addToJournal TodoGetGreggOffRoof>>
+<<unlockDoodle FindGregg>>
+<<set $towne_centre_east_teen_1_walk_away to 2>>
+===
+title: SteveScriggins
+tags: demo
+colorID: 0
+position: 29798,-7336
+---
+<<if $steve_scriggins is 0>>
+    SteveScriggins: {width=2}哈，我都不知道你[color=999999]回来了。[/all] #line:9b4983
+    [[我的天，有人知道我回来了吗？{width=1.5}|ScrigginsDoesEveryoneKnow]] #line:c3709f
+    [[我认识你吗？{width=.7}|ScrigginsDoIKnowYou]] #line:5b4461
+<<elseif $steve_scriggins is 1>>
+    [[ScrigginsLoop]]
+<<endif>>
+===
+title: ScrigginsLoop
+tags: demo
+colorID: 0
+position: 30208,-7332
+---
+SteveScriggins: 你手上有铜物件吗？ #line:ac432c
+===
+title: ScrigginsDoesEveryoneKnow
+tags: demo
+colorID: 0
+position: 29706,-7040
+---
+SteveScriggins: 退学也不是什么丢脸的事，退学妹。 ¯\_(<U+30C4>)_/¯ #line:1ce8e0
+Mae: 哦，老天，你是史蒂夫·斯克里金斯。 #line:7b4aaf
+Mae: 我都不知道你居然还在镇上呢。 #line:8d7567
+SteveScriggins: 当然在啦，我现在就在镇上收铜呢。 #line:72cfbf
+Mae: 好吧。 #line:75a460
+SteveScriggins: 每到周末，我们都会到我兄弟家后面的田里点上堆火， #line:aa74d3
+SteveScriggins: 然后把不是铜的东西全都给烧掉。 #line:87e1c3
+Mae: 嗯。 #line:e926a4
+SteveScriggins: 因为这些东西，火的温度可都要比平时高出差不多十倍呢。 #line:e3d6c0
+Mae: …… #line:4b4260
+SteveScriggins: 这时候，你要是靠近的话，小命肯定就没啦！ #line:c24eb4
+SteveScriggins: 你应该时不常地过来看看！ #line:0c3741
+Mae: 不用了。 #line:8e6c2c
+SteveScriggins: 那好吧。 #line:928d90
+<<set $steve_scriggins to 1>>
+<<addToJournal ScrigginsCopper>>
+===
+title: ScrigginsDoIKnowYou
+tags: demo
+colorID: 0
+position: 30032,-7039
+---
+SteveScriggins: 记住我的名字，我叫史蒂夫·斯克里金斯。 #line:d31df2
+Mae: 我……我不太确定能记得住…… #line:ba2173
+SteveScriggins: 那你应该还记得我把那个[color=999999]老师[/color]锁起来的事吧…… #line:7f3722
+Mae: ……你把他锁在了杂物间里…… #line:358b61
+SteveScriggins: 锁 在 了 [color=999999]杂 物 间 [/color]里！ #line:3d7c06
+Mae: ……他是在圣诞节假期之前被你锁起来的。他整整被关了…… #line:5f4aa4
+SteveScriggins: [wave]两 个 星 期！[/wave] #line:4b4dda
+Mae: 他是靠吃西班牙语练习本，喝胶水才活下来的。 :\ #line:334180
+SteveScriggins: [shake=.05]没 错，他 就 是 这 么 活 下 来 的！[/shake] #line:a1e8cf
+Mae: :| #line:e6338a
+<<addToJournal ScrigginsDumb>>
+<<unlockDoodle Scriggins 1>>
+<<set $steve_scriggins to 1>>
+[[你为什么要这么做？|ScrigginsWhyDidYouDoThat]] #line:270390
+[[他吃了那些东西难道没死吗？|ScrigginsDidntHeDie]] #line:09c670
+===
+title: ScrigginsWhyDidYouDoThat
+tags: demo
+colorID: 0
+position: 29874,-6734
+---
+SteveScriggins: ¯\_(<U+30C4>)_/¯ #line:923790
+SteveScriggins: 我就是[color=999999][wave]灾难的化身！[/all] #line:7b8553
+===
+title: ScrigginsDidntHeDie
+tags: demo
+colorID: 0
+position: 30187,-6703
+---
+SteveScriggins: 没。他的死因是因为走路掉到了没井盖的下水道里！ #line:94d268
+Mae: 老天啊，是真的吗？ #line:503d14
+SteveScriggins: 死得简直太精彩啦！ #line:9cdd44
+Mae: 哇哦，是啊。死得真是太精彩啦。 #line:51f03e
+SteveScriggins: 这倒给了我不少启发。我可以学学他的死法，或者我应该在和警察的火拼里死去。 #line:f14ae3
+Mae: 这两种死法都不难办到。 #line:f68a6e
+SteveScriggins: ……[wave]死 得 简 直[/wave] [color=999999]太精彩啦……[/color] #line:8fc11c
+===
+title: BlockedWest
+tags: 
+colorID: 0
+position: 26943,-6475
+---
+<<if $blocked_west is 0>>
+    Mae: 我上个星期见到了一只特别怪的负鼠。我直到现在还是觉得很害怕。 #line:2a2fbe
+    Mae: 我可以在安格斯上班的时候去找他，也可以去一趟猎鹰快餐。可我也不确定该去哪儿。 #line:b418c8
+    Mae: 他们都在那儿， #line:a11f59
+    Mae: 和负鼠待在一起呢。 #line:bf8562
+    <<set $blocked_west += 1>>
+<<else>>
+    Mae: 还有什么事会比空空的派对屋更让人失落的呢？ #line:7207ed
+    Mae: 我太难过了，一步也不想往前走了。 #line:169976
+<<endif>>
+===
+title: TriggerSeenEnough_A2D4
+tags: 
+colorID: 3
+position: 29042,-7354
+---
+Mae: 噢！！！真是太棒啦，太有丰收节的节味儿啦！！！ #line:f51f56
+Mae: 丰收节应该算是不太吓人版的万圣节吧？ #line:f64867
+Mae: 随便啦！ #line:d2be0f
+Mae: 我要回家为今晚的活动好好准备准备啦！！！！ #line:37ed5f
+Mae: 我现在就可以回去准备…… #line:0040bf
+Mae: 或者再在外边逛逛…… #line:411c3d
+Mae: 感受一下丰收节的气息…… #line:3ae27b
+Mae: 好，等我逛完了，就马上回家。 #line:854d93
+<<set $harfest_prep to 1>>
+===
+title: TriggerCityCouncil_A2D4
+tags: 
+colorID: 3
+position: 29165,-7724
+---
+<<if $towne_centre_east_city_council_a2d4 is 0>>
+    <<set $towne_centre_east_city_council_a2d4 to 1>>
+    Council2: 那个摩天轮就和噩梦一样。 #line:c018a9
+    Council3: 谢啦，科琳。你这话对我们倒是挺有帮助的。 #line:63a036
+    Council1: 有什么问题吗？ #line:65be21
+    Council2: 我可不信你能在一天之内把这个大机器装好，然后再给拆下来。 #line:85f499
+    Council1: 这就叫挑战自我！咱们丰收节的时候可创过不少次纪录啦！ #line:fbf9bd
+    Council4: 没错，从84年开始就这样啦。 #line:60f551
+    Council3: 这可能就是在提醒咱们，别再创什么纪录了。 #line:e9a75f
+    Council4: 你 闭 嘴 吧，安 德 鲁。 #line:d961e0
+    Council2: 好了，各位，咱们都各退一步，冷静冷静。 #line:a741dc
+    Council1: 咱 们 还 要 在 今 晚 的 丰 收 节 上 创 造 新 纪 录 呢！！！ #line:4bcc2e
+    Council2: 那好吧。我会把你们都给投诉了的。 #line:6bddef
+    Council1: 那 你 就 去 投 诉 我 们 吧，科 琳。 #line:183d43
+<<endif>>
+[[CityCouncilLoop_A2D4]]
+===
+title: CityCouncilLoop_A2D4
+tags: 
+colorID: 3
+position: 29498,-7740
+---
+Council1:{emote=spiral} #line:0c5c70
+Council2:{emote=cloud_lightning} #line:54543c
+Council3:{emote=gun} #line:9399ab
+Council4:{emote=cash} #line:ae651b
+===
+title: Window_Angry_A2D1
+tags: 
+colorID: 3
+position: 30609,-6253
+---
+note: 这些游戏无需你推进或互动 #line:705e76
+WindowAngry: 嘿！快 从 上 面 下 来！！！ #line:1aec5d
+WindowAngry: 嘿！！！！ #line:97e1bd
+===
+title: Window_Angry_A2D3
+tags: 
+colorID: 3
+position: 30614,-6007
+---
+note: 这些游戏无需你推进或互动 #line:02cc74
+WindowAngry: 嘿！快 给 我 从 上 面 下 来！ #line:a8ee33
+WindowAngry: 你 听 见 我 说 话 没 有？？？！！ #line:0608aa
+===
+title: Window_Angry_A3D1
+tags: 
+colorID: 4
+position: 30618,-5752
+---
+note: 这些游戏无需你推进或互动 #line:de17c9
+WindowAngry: 嘿！我 要 报 警 啦！！！ #line:7605ff
+WindowAngry: 你 听 见 我 说 话 了 吗？！？！？ #line:cb7419
+===
+title: Window_Angry_A3D3
+tags: 
+colorID: 4
+position: 30614,-5513
+---
+note: 这些游戏无需你推进或互动 #line:48b12e
+WindowAngry: 你肯定会把脖子给摔断的！！！ #line:562e84
+WindowAngry: 到时候我可不会去救你！！！ #line:3cf919
+WindowAngry: 嘿！！！！ #line:cf2abf
+===
+title: StairLanding
+tags: 
+colorID: 3
+position: 32249,-7362
+---
+Mae: 嗯，看来这路灯能经得住我…… #line:ae462a
+===
+title: Monument_Act1.1
+tags: 
+colorID: 2
+position: 27076,-5851
+---
+Mae:{locator=monument}我猜，这上面应该会有我曾叔祖父的名字。 #line:26c2d0
+Mae:{locator=monument}嗯，找到了。安塞尔姆·博罗夫斯基。 #line:c8aa32
+<<wait .25>>
+Mae:{locator=monument}“安塞尔姆"？ #line:575515
+Mae:{locator=monument}就算在他还活着的时候，他也是个悲剧人物。 #line:f637c0
+===
+title: Monument_Act1.2
+tags: 
+colorID: 2
+position: 27374,-5850
+---
+Mae:{locator=monument}我们大家都很喜欢负鼠泉的战争纪念碑。 #line:d4b9bf
+Mae:{locator=monument}在负鼠泉老区，就有两座很古老的雕像和纪念碑。 #line:ec9cde
+Mae:{locator=monument}镇上总共有三座。 #line:371f22
+Mae:{locator=monument}我猜，人们又在皮尔山上建了一座新的纪念碑。 #line:cbfba5
+Mae:{locator=monument}在负鼠崖旁边还有一座雕像，但那座雕像的样子实在太恐怖了。 #line:f55126
+Mae:{locator=monument}在那次我们意想不到的派对之后，我就再也没去过那儿了。 #line:95951d
+<<end>>
+===
+title: Monument_Act2.2
+tags: demo2
+colorID: 3
+position: 27375,-5580
+---
+<<if $did_gregg_friendship_quest_2>>
+    Mae:{locator=monument}格雷格还留着那顶一战的头盔呢…… #line:a619bc
+    Mae:{locator=monument}而且头盔上还有个弹孔…… #line:50cdde
+<<else>>
+    Mae:{locator=monument}我们高中有十个人好像就参军去了。 #line:89cfa9
+    Mae:{locator=monument}他们是想靠参军来攒自己的大学学费或者攒其他的什么钱。 #line:bfc7b8
+<<endif>>
+<<end>>
+===
+title: Monument_Act2.1
+tags: demo2
+colorID: 3
+position: 27067,-5579
+---
+Mae:{locator=monument}我没经历过战争。 #line:561e36
+Mae:{locator=monument}征兵办的人也不是没来征过兵， #line:a9820b
+Mae:{locator=monument}但就是招不上人来。 #line:97b518
+
+===
+title: Monument_Act3.1
+tags: 
+colorID: 4
+position: 27068,-5298
+---
+Mae:{locator=monument}战争就是狗屁。 #line:0cd6eb
+Mae:{locator=monument}雕像，你听见我说什么了吗？ #line:55532a
+Mae:{locator=monument}我猜，你这雕像就是别人设计出来的。 #line:53a772
+Mae:{locator=monument}啊。 #line:59caaa
+Mae:{locator=monument}在你的雕像还没做好之前，你恐怕早就已经挂啦。 #line:0a3d05
+Mae:{locator=monument}这些雕像和纪念碑都是垃圾， #line:a0cb1a
+===
+title: Monument_Act3.2
+tags: 
+colorID: 4
+position: 27376,-5286
+---
+Mae:{locator=monument}就算有了它们，我也不想去当兵。 #line:62aebc
+Mae:{locator=monument}我肯定会参加地下工作， #line:2458f4
+Mae:{locator=monument}我会加入一些反战组织， #line:c78ee8
+Mae:{locator=monument}然后，我们会销毁武器，还会破坏其他的……武器。 #line:e55462
+Mae:{locator=monument}我会隐姓埋名几十年， #line:a93a7f
+Mae:{locator=monument}不在同一个地方长驻， #line:381607
+Mae:{locator=monument}总要四处奔波。 #line:dc5f5f
+Mae:{locator=monument}我还会开着辆拖车，住在沙漠里。 #line:ba0ffe
+Mae:{locator=monument}这种生活真是太棒啦。 #line:85886d
+<<end>>
+===
+title: ReminderEastStairs
+tags: 
+colorID: 3
+position: 30551,-7965
+---
+Mae: 哇哦！终于施完工啦！ #line:efb822
+Mae: 台阶终于能正常使用啦！ #line:ba8080
+Mae: 我在想，山上会是个什么情况呢？ #line:b3488e
+<<set $reminder_east_stairs_done to 1>>
+===
+title: TZAutoA1D1
+tags: demo2
+colorID: 0
+position: 27870,-5671
+---
+Donna: 什么事？ #line:eb1a51
+TZEmployee2: 你到底想跳槽去哪儿呢？ #line:f5d94a
+Donna: 我也不知道。可能会去猎豹鲜生吧。 #line:79c5b7
+TZEmployee2: 可亲爱的，你在那儿只能拿个底薪。 #line:1e6139
+TZEmployee2: 而且，我还听说，那儿的人可黑啦…… #line:c31a79
+Donna: *这破公司*才黑呢。 #line:4e6c26
+Donna: 要是再接一个电话的话，我可能就抗不住啦。 #line:06228a
+Donna: 我有时候会被不存在的*哔哔*声吵醒。 #line:b88667
+TZEmployee2: 我现在得吃安眠药才能睡着了。安眠药很管用。 #line:d82dd4
+Donna: 咱们没必要为了这个工作每天靠吃药才能睡个安稳觉吧！ #line:9dab4c
+TZEmployee2: 嗯，可猎豹鲜生也不会给你发奖金的。 #line:5f1001
+TZEmployee2: 猎豹鲜生甚至连个最佳员工榜都没有. #line:337022
+Donna: 但至少不用接电话。 #line:aa9f78
+Donna: 而且不是干销售的活儿。 #line:409727
+Donna: 我不必再等着那*哔哔*声了。 #line:558160
+TZEmployee2: 亲爱的，这我可就不知道了…… #line:73b8de
+TZEmployee2: 可能你这一班儿就能干的不错然后荣登最佳员工榜。 #line:97aa38
+TZEmployee2: 然后我们再来看看你感觉能不能好一点。 #line:772dc2
+Donna: 可能会吧。但这么做什么用也没有。 #line:7c1979
+[[TZEmployeeEmoticonLoop]]
+===
+title: Bea_A2D1
+tags: demo2
+colorID: 3
+position: 28966,-7979
+---
+<<if $bea is 0>>
+    <<set $bea += 1>>
+    [[Bea_A2D1_00]]
+<<elseif $bea is 1>>
+    <<set $bea += 1>>
+    <<set $bea_done to 1>>
+    [[Bea_A2D1_01]]
+<<endif>>
+    
+===
+title: Bea_A2D1_00
+tags: demo2
+colorID: 3
+position: 29218,-8061
+---
+Mae: 嘿，碧娅。 #line:4d49e8
+Bea: 呦～ #line:a932fc
+Mae: 昨天晚上的事我实在很抱歉。 #line:7f76f5
+Mae: 我吃了感冒药之后感觉有点晕。 #line:775889
+Mae: 所以，我真不知道当时自己都干了什么。 #line:ae4daa
+Bea: 我也为我说过的话道歉。 #line:f21747
+Mae: 你知道，我已经记不清当时都发生过什么事了。 #line:3f81dc
+Mae: 所以，也没什么的。 #line:87517a
+Bea: 酒精万岁！ #line:79f993
+Mae: 这可以当作咱们镇的新标语啦。 #line:794735
+
+===
+title: Bea_A2D1_01
+tags: demo2
+colorID: 3
+position: 29491,-8052
+---
+Mae: 一会儿乐队还有排练吗？ #line:c5f5bc
+Bea: 哈哈，有啊。 #line:6763a1
+Mae: 没想到乐队居然还在。 #line:db253f
+Mae: 咱们高中的时候，算是勉强组了个乐队。 #line:f09f3b
+Bea: 对啊，挺有意思的。那时候还能和安格斯在一起。 #line:5f492f
+Mae: 那你最后是因为什么原因才加入乐队的啊？ #line:7e3b21
+Bea: 凯西离开镇子之后，安格斯告诉我，格雷格很伤心。 #line:b4bc92
+Bea: 所以，我就自愿充当乐队的新鼓手了。 #line:b2ab24
+Mae: 好吧，“鼓手"。 #line:961a43
+Mae: 碧娅，你用的只是台笔记本，那根本不是鼓。 #line:6f5e46
+Bea: 那确实就是个笔记本，梅，是个笔记本。 #line:b64069
+===
+title: NextToCat.1
+tags: demo2
+colorID: 0
+position: 28040,-8201
+---
+Mae: 嘿，小猫咪。 #line:60b9f0
+Mae: 你是怎么跑到这上面来的呀？ #line:a3b5e9
+Mae: 你费了这么大力气上来，难道就是为了睡大觉吗？ #line:380fbd
+Mae: 我和动物之间有一种特别特殊的联系。 #line:ae3645
+===
+title: NextToCat.2
+tags: demo2
+colorID: 0
+position: 28028,-7990
+---
+Mae: 在这世界的尽头： #line:7523b8
+Mae: 有一只睡大觉的猫。 #line:f059cf
+===
+title: NextToCat.3
+tags: demo2
+colorID: 0
+position: 28004,-7779
+---
+Mae: 嘿，小猫咪。 #line:c6211d
+Mae: 我小时候，根本就没想过自己能爬到这儿。 #line:d07089
+Mae: 但你的体型好像比我小一倍。 #line:a54c4e
+Mae: 所以，你赢了。 #line:070d48
+<<set $next_to_cat_done to 1>>
+<<unlockDoodle RoofcatIsCorrect>>
+===
+title: TopOfPartyBarn.1
+tags: demo2
+colorID: 0
+position: 28301,-8179
+---
+Mae: 要想让这地方运营下去，就得办很多很多派才行。 #line:f22571
+Mae: 我都不知道这地方是怎么坚持这么长时间的。 #line:4899f5
+===
+title: TopOfPartyBarn.2
+tags: demo2
+colorID: 0
+position: 28299,-7952
+---
+Mae: 我觉得，格雷格肯定是没拿到在这儿排练的许可。 #line:da04bc
+Mae: 所以我们就让房东给轰出来了。 #line:5c3822
+Mae: 然后这儿就又变冷清了。 #line:ee821c
+<<set $top_of_party_barn_done to 1>>
+===
+title: BlockedEast_Demo2
+tags: demo2
+colorID: 0
+position: 27458,-6445
+---
+Mae: 我今天可不想爬楼梯，也用不着去教堂。 #line:6ba35b
+Mae: 拜托，我今天既不想见神，也不想见神父牧师，更不想爬楼梯。 #line:7e80c0
+===
+title: Saleem
+tags: temp
+colorID: 4
+position: 31351,-7747
+---
+<<if $saleem_sequence is 0>>
+	Mae: 嘿！ #line:0ac6cd
+	Saleem: 你好啊。 #line:acae46
+    Mae: 我叫梅！ #line:0a3720
+    Saleem: 你好，梅。我叫萨利姆。 #line:f8fbb2
+	Mae: 你是街头艺人吗？你是在卖艺吗？ #line:25095e
+	Saleem: 卖艺是什么意思？ #line:a333bc
+	Mae: 我也不知道是什么意思。 #line:c0e82d
+	Mae: 我觉得，这个词应该是你在外面演奏乐器，然后有人给你钱的意思。 #line:1624b0
+	Saleem: 那你会给我钱吗？ #line:7f9a7c
+	Mae: 不会。 #line:a6fccc
+	Saleem: 那我就不是在卖艺。 #line:7745f8
+	Mae: 好吧。 #line:a462d1
+	<<set $saleem_sequence += 1>>
+<<elseif $saleem_sequence is 1>>
+	Mae: 你还在这儿啊？ #line:259b36
+	Saleem: 我觉得，咱俩见面之后，我就上班，干其他事去了。 #line:024ca0
+	Mae: 嗯…… #line:5cb2b8
+	Mae: 你这是那种和小提琴很像的琴吗？ #line:582055
+    Saleem: 不是像，这就是小提琴。 #line:f931bf
+    Mae: 你确定这不是别的什么琴吗？ #line:88c49e
+    Saleem: 我向你保证，这就是小提琴。 #line:225e8c
+	<<set $saleem_sequence += 1>>
+<<elseif $saleem_sequence is 2>>
+	Mae: 有人抱怨过你吗？ #line:71a96f
+	Saleem: 抱怨我什么？ #line:3e7428
+	Mae: 抱怨你拉琴。 #line:b56369
+	Saleem: 说真的，我觉得没人会在意我的。 #line:da4a5c
+    Saleem: 或者说，他们还比较喜欢我拉的曲子。 #line:aad1cb
+    Saleem: 不管是哪种情况，我都无所谓。 #line:e6b741
+	<<set $saleem_sequence += 1>>
+<<endif>>
+
+<<if $saleem_sadie_sequence is 0 and $sadie_sequence is 1>>
+	Mae: 我刚才还遇见了一个自己玩乐器的人。 #line:416e6d
+	Saleem: 真的？ #line:1f6fb3
+	Mae: 真的。那个人就在嘎嘣脆旁边的废楼里呢。 #line:1f3f0d
+    Mae: 她吹的是个大萨克斯。 #line:19d860
+	Saleem: 嗯。 #line:1aa9c0
+    Mae: 我就觉得这是个特有意思的巧合。 #line:671471
+    Saleem: 这个镇可真小啊。 #line:476700
+	<<set $saleem_sadie_sequence += 1>>
+<<elseif $saleem_sadie_sequence is 1 and $sadie_sequence is 2>>
+	Mae: 你认识那个总是在镇子另一边的人吗？ #line:117b24
+	Mae: 我觉得，她好像在找能和她一起演奏的人呢。 #line:420897
+	Saleem: 是吗？ #line:8ace4f
+	Mae: 是啊，就是在一起演奏罢了。 #line:f96b75
+	Mae: 我已经告诉她这事了。 #line:4696bd
+	Saleem: 我记住了。 #line:13db39
+    Mae: 我可没说让你*非得*和她一起演奏什么的…… #line:3049cc
+    Saleem: 我知道了。 #line:b073b5
+    Mae: 我可不想把这事给弄得很怪。 #line:98e27c
+    Saleem: 只要你别再继续把事情弄得很怪的话，这事就不会那么怪啦！ #line:f41855
+	<<set $will_complete_birdland_quest to 1>>
+	<<set $saleem_sadie_sequence += 1>>
+<<elseif $sadie_saleem_sequence is 1 and $saleem_sequence is 2>>
+    Mae: 镇子那边有个姐们儿， #line:21309d
+    Mae: 叫赛迪。 #line:bbb1ef
+    Saleem: 嗯。 #line:ad12fb
+    Mae: 她就在嘎嘣脆旁边的那栋废楼里。 #line:232c17
+    Saleem: 嗯…… #line:bfb92c
+    Mae: 她总是自己一个人吹萨克斯。 #line:a6edde
+    Mae: 没准你们俩可以在一起演奏呢？ #line:db634f
+    Mae: 因为你们俩干的事基本上都差不多。 #line:843f0a
+    Saleem: 哦，嗯。 #line:c0de3f
+    Mae: 我已经告诉她这事了。 #line:fcc3ce
+	Saleem: 我记住了。 #line:cd5995
+    Mae: 我可没说让你*非得*和她一起演奏什么的…… #line:48d710
+    Saleem: 我知道。 #line:74d466
+    Mae: 我可不想把这事给弄得很怪。 #line:556364
+    Saleem: 只要你别再继续把事情弄得很怪的话，这事就不会那么怪啦！ #line:d263ea
+	<<set $will_complete_birdland_quest to 1>>
+	<<set $sadie_saleem_sequence += 1>>
+<<endif>>
+
+<<set $saleem_done to 1>>
+===
+title: AngryWindowDude
+tags: 
+colorID: 0
+position: 27524,-7911
+---
+<<set $angry_window_dude to 1>>
+<<animationTrigger WindowAngry GetAngry>>
+<<wait .5>>
+WindowAngry: 嘿！快 给 我 从 上 面 下 来！ #line:5f6555
+===
+title: Janitor_A4D3
+tags: 
+colorID: 6
+position: 32770,-7571
+---
+Mae: 嘿，是你啊。 #line:124470
+<<wait 2>>
+Janitor: 是我，是我。 #line:e39af1
+Janitor: 至少现在是。 #line:83c409
+Mae: 知道吗，我还不知道你的名字呢。 #line:a1a920
+Janitor: 我就叫维修工。 #line:fc4c4f
+Janitor: 我负责清洁和维修， #line:64f0bc
+Janitor: 还负责其他各种事。 #line:3fe85b
+Mae: 哦，好吧。 #line:2fdef8
+Janitor: 重回故里之后有什么感觉吗？ #line:92e7ac
+Janitor: 老家和你记忆中的一样吗？ #line:e3929f
+    ->差不多。 #line:777e51
+    ->一点儿也不像了。 #line:634742
+Mae: 我也不太清楚。 #line:118998
+Mae: 我连今天的事都不记得了。 #line:e55685
+Janitor: 听起来，你好像是经历了不少事啊。 #line:587ad2
+Mae: 你是怎么知道的啊？ #line:71ead7
+Janitor: 这就叫经验。 #line:d8c6f3
+Janitor: 我敢说，有时候，|早上醒过来的时候，|我会感觉自己身体的|每个部分都和|这些树一样老。 #line:4a5bd3
+Mae: 知道吗，前几天确实是出了几件大事。 #line:9432cc
+Mae: 我觉得，今天我应该已经清醒了。 #line:1e986c
+Mae: 我还明白了一些事， #line:fdbecf
+Mae: 但说真的，我也不知道自己是不是真的明白了这些事。 #line:c38b2a
+Janitor: 好吧， #line:81b541
+Janitor: 以我的经验来看，大事虽然不能让你懂得什么东西， #line:7881d4
+Janitor: 但却能改变你。 #line:43dbbe
+Janitor: 有时候你只能静观其变。 #line:959955
+Mae: 嗯。 #line:59cb81
+<<wait 2>>
+Janitor: 好了，我今天的活儿都干完了。 #line:6a50a2
+Janitor: 该下班啦！ #line:7a0d6b
+Janitor: 今晚熔炉队有比赛！ #line:c8a414
+Mae: 再见了。 #line:cd3431
+Janitor: 咱们又不是第一次见了，梅。 #line:356aeb
+Mae: 哈哈…… #line:27078b
+Janitor: *哧哧哧*嚯嚯嚯！ #line:e73167
+//janitor walks offscreen to the left//
+<<close>>
+<<walk Janitor JanitorOffLeft wait>>
+Mae: 等等！你怎么知道我的名字啊？ #line:0196c8
+<<wait 2>>
+//giant astral-god-looking bird flys up and into the sky in the bg//
+//Mae: oh my god
+//Mae: he was-
+//Mae: finally some part of this makes sense.
+//<<close>>
+//<<walk Janitor JanitorBackOn wait>>
+//janitor walks back onscreen interrupting//
+//Janitor: HO-LEE JA-MOLEY
+//Janitor: you see that big bird?
+//Janitor: That’s a Great Nor’Easter King Crane!
+//Janitor: Must be late to the migratin’.
+//Janitor: Haw! Wait til the fellers at Miller’s hear about this!
+//Mae: Ha ha ha ha.
+//Mae: oh my god. This week.
+//<<walk Janitor JanitorOffLeft wait>>
+//Janitor: You said it.
+<<hide Janitor>>
+//janitor walks offscreen to the left//
+<<set $janitor_done to 1>>
+<<unlockDoodle Janitor1>>
+===
+title: FrontOfPartyBarnA2D2.1
+tags: 
+colorID: 0
+position: 30669,-7105
+---
+Mae: 我们不在这儿演奏的时候，这地方就冷冷清清的，感觉很凄凉。 #line:4caedb
+<<end>>
+===
+title: FrontOfPartyBarnA3D2.1
+tags: 
+colorID: 0
+position: 30664,-6860
+---
+Mae: 我真不敢相信，他们居然会把乐器什么的都放在这儿。 #line:2cafac
+Mae: 要是东西被偷了该怎么办啊？ #line:f7395c
+Mae: 要是这楼塌了该怎么办啊？ #line:f7cc05
+Mae: 我还是把格雷格的贝斯带回家吧。 #line:bc3fe1
+Mae: 你懂的……以防万一。 #line:7bc994
+<<end>>
+===
+title: VeryTopAct3
+tags: 
+colorID: 4
+position: 26291,-7214
+---
+Mae: 嗯，之前偶尔会看见有其他人来这儿。 #line:7d3403
+Mae: 难道这事都已经不叫事儿了吗？ #line:90446b
+Mae: 我是不是老了？还是和现实生活脱节了？ #line:dc268d
+Mae: 管他的呢，反正这样也挺好的。 #line:2f6f8d
+Mae: 我得在这外面搭个帐篷才行。 #line:781c0c
+<<wait 2>>
+Mae: …… #line:72b571
+Mae: 我可能会摔死的。 #line:db87b9
+<<unlockDoodle RoofcatIsCorrect>>
+<<end>>
+===
+title: VeryTopAct4
+tags: 
+colorID: 6
+position: 26508,-7203
+---
+Mae: 等这东西结了冰， #line:a448fc
+Mae: 我就爬不了了。 #line:5b6ebe
+Mae: 梅，好好享受现在的好天气吧。 #line:70101d
+<<unlockDoodle RoofcatIsCorrect>>
+<<end>>
+===
+title: Molly_A2D4
+tags: 
+colorID: 3
+position: 28735,-8244
+---
+Mae: 嘿，商场保安姨妈。 #line:2a7893
+Molly: 梅，商场保安可是不带枪的。 #line:c13098
+Mae: 我的天哪！ #line:b3cb7d
+Mae: 我猜你要这把枪是想……话说你到底在干什么呢？ #line:61a686
+Molly: 我们在封路呢。 #line:4eb946
+Mae: 哦，是啊。办这事没枪可不行啊。 #line:61e5af
+Molly: 你知道我用枪射击过多少人吗？ #line:0b4235
+Mae: 不知道。那现在就赶快告诉我吧。 #line:5dcd61
+Molly: 我只开过一次枪。 #line:66b2fa
+Mae: 你把那个人打死了吗？ #line:0b253a
+Molly: 没有。 #line:d597b8
+Mae: 那你的意思就是说，你根本就用不着枪对吗？ #line:b5d18d
+Mae: 你应该拿把战斧才对。 #line:ca4398
+Mae: *那*回头率一定会很高。 #line:165e6d
+Molly: 我会好好研究研究的。 #line:421366
+<<set $molly_done to 1>>
+===
+title: TZAutoA1D3
+tags: 
+colorID: 0
+position: 28138,-5666
+---
+Donna: ……唉，上了最佳员工榜也是于事无补。 #line:3c3fb7
+Donna: 我总是濒临崩溃。 #line:2a5830
+TZEmployee1: 你应该找个什么人问问这事。 #line:e3bfbc
+TZEmployee2: 试试汉克医生？ #line:0bcbf7
+Donna: 呃。 #line:453b2b
+Donna: 汉克医生什么都试了也不管用。 #line:e18d97
+TZEmployee2: 他去年可把我的腿给治好啦！ #line:528fcd
+TZEmployee1: 他还治过我家宝贝的水痘和链球菌感染呢！ #line:d7f2ea
+Donna: 我知道。 #line:a2ced8
+Donna: 我只是…… #line:808acc
+Donna: 随便了。 #line:3346be
+[[TZEmployeeEmoticonLoop]]
+===
+title: TZAutoA2D1
+tags: 
+colorID: 0
+position: 28401,-5670
+---
+TZEmployee2: 你不是要在*休息*的时候跑出去干这个吧？！ #line:a58eb4
+Donna: 嘘！ #line:491246
+Donna: [wave][size=.8]我想我会跟南希说我病了。[/all] #line:cbbfb2
+Donna: [wave][size=.8]我可以想吐就吐。[/all] #line:22e3e4
+TZEmployee2: [wave][size=.8]好吧，这倒是个方法。[/all] #line:7e43c7
+Donna: [wave][size=.8]我有一套替换的衣服在车里。[/all] #line:c607a6
+TZEmployee2: [wave][size=.8]以免你吐在平常穿的衣服上。[/all] #line:1e9eac
+Donna: [wave][size=.8]不是，我只是想在面试的时候穿得好看点。[/all] #line:5893f6
+TZEmployee2: [wave][size=.8]这主意不错！[/all] #line:a2bb9e
+Donna: [wave][size=.8]我的意思是，我就是去猎豹鲜生面个试而已，又不是去巴黎的美术馆参观。[/all] #line:743a52
+Donna: [wave][size=.8]但我又觉得，任何能给我面试加分的都是好的。[/all] #line:733c0d
+TZEmployee2: [wave][size=.8]我太激动啦！[/all] #line:858ae1
+Donna: [wave][size=.8]我也特激动！[/all] #line:b2dd82
+Donna: [wave][size=.8]我得把这些咖啡都喝了才行，|这样我二十分钟之后才能有东西可吐。[/all] #line:eac92b
+[[TZEmployeeEmoticonLoop]]
+===
+title: TZAutoA3D1
+tags: 
+colorID: 0
+position: 28665,-5666
+---
+Donna: 今天就是我在这儿的最后一天啦！ #line:216d76
+TZEmployee2: 哦，亲爱的，我们会想你的！ #line:996bfb
+TZEmployee1: 事情实在是太突然啦！ #line:91190b
+TZEmployee2: 一定要让我们知道是怎么回事，好吗？ #line:b11aa6
+Donna: 好，一定会的！我还会回来看你们的！ #line:a631db
+Donna: 我可不能看着你们俩在这儿拼死拼活地赚钱养家不管啊。 #line:c76275
+TZEmployee2: 哦，亲爱的……没了你，我们可怎么办啊？ #line:c600d2
+TZEmployee1: 你们想看电影去吗？ #line:c5c81f
+Donna: 想啊！等我把事都弄妥了， #line:ed5c27
+Donna: 咱们就能一起出去啦！ #line:3bdc54
+Donna: 到时候你们买东西的时候就能看见我啦！ #line:485d40
+TZEmployee2: 没错！ #line:f7c7fc
+Donna: 我以后上班的地儿离这儿也不远！ #line:987d05
+TZEmployee1: 那真是近得很啊。 #line:163393
+[[TZEmployeeEmoticonLoop]]
+===
+title: TZAutoA4D3
+tags: 
+colorID: 0
+position: 28930,-5673
+---
+Donna: ……那我是不是能提前下班，然后干点兼职呢？ #line:8e8286
+TZEmployee1: 他们那儿怎么可能会没排班表呢？ #line:d7e8c5
+TZEmployee2: 他们那可以家大商店啊！怎么可能没排班表啊？ #line:e93dad
+Donna: 他们那儿是用电脑程序来管这事的。 #line:10fca4
+Donna: 所有东西都是和主机什么的连在一起的， #line:e11bb9
+Donna: 它能算出每个员工最合适的工作时间。 #line:1b7287
+Donna: 就算是经理也拿它没办法。 #line:bc56fb
+Donna: 电脑可不会向着任何人。 #line:c22fee
+TZEmployee2: 是啊，我猜你是没法和一台电脑大吵大叫的。 #line:920dae
+TZEmployee1: 南希让你难堪过吗？ #line:43cf15
+Donna: 没有过。她肯定还很高兴我能走呢。 #line:8ce172
+Donna: 我也很高兴能离开这儿。 #line:0f9012
+TZEmployee2: 咱们还去看电影吗？ #line:9732e0
+Donna: 当然。咱们来找一个咱们三个都休息的日子去吧。 #line:71afa1
+TZEmployee1: 我每周二休息！ #line:73a2ce
+TZEmployee2: 我每周日休息！ #line:cdd913
+Donna: 我每周四的晚上才能歇。 #line:c903a9
+<<wait 4>>
+TZEmployee2: 咱们能找个都合适的时间吗？ #line:a4cd4f
+[[TZEmployeeEmoticonLoop]]
+===
+title: TZEmployeeEmoticonLoop2
+tags: 
+colorID: 0
+position: 28339,-6468
+---
+TZEmployee2:{emote=coffee} #line:30e23a
+TZEmployee1:{emote=cigarette} #line:2102cc
+[[TZEmployeeEmoticonLoop2]]
+===

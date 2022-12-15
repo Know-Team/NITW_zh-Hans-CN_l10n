@@ -1,0 +1,571 @@
+title: InitLevel
+tags: 
+colorID: 0
+position: -1937,10405
+---
+<<if $act is 0 and $day is 0>>
+    <<hide Harley1>>
+    <<hide Harley2>>
+    <<hide Harley3>>
+    <<alwaysLookAt Varney Chazokov>>
+<<endif>>
+
+<<if $act is 1 and $day is 3 and $underhill_city_council_a1d3_done is 0>>
+    <<show Council1>>
+    <<show Council2>>
+    <<show Council3>>
+    <<show Council4>>
+
+    <<setSpriteLayer Council1 CityCouncil1FG>>
+    <<setSpriteLayer Council2 CityCouncil2FG>>
+    <<setSpriteLayer Council3 CityCouncil3FG>>
+    <<setSpriteLayer Council4 CityCouncil4FG>>
+<<elseif $act is 4 and $day is 3 and $underhill_city_council_a4d3_done is 0>>
+    <<show Council1>>
+    <<show Council2>>
+    <<show Council3>>
+    <<show Council4>>
+
+    <<setSpriteLayer Council1 CityCouncil1FG>>
+    <<setSpriteLayer Council2 CityCouncil2FG>>
+    <<setSpriteLayer Council3 CityCouncil3FG>>
+    <<setSpriteLayer Council4 CityCouncil4FG>>
+<<else>>
+    <<hide Council1>>
+    <<hide Council2>>
+    <<hide Council3>>
+    <<hide Council4>>
+<<endif>>
+
+<<sit Selmers>>
+<<sit Varney>>
+
+<<if $act is 1 and $day is 1>>
+    <<unlockDoodle Houses1>>
+<<endif>>
+
+<<if $act is 2 and $day is 3>>
+    <<show AidaAlGadhi>>
+<<else>>
+    <<hide AidaAlGadhi>>
+<<endif>>
+
+<<if $act is 3 and $day is 2>>
+    <<show LizChandler>>
+<<else>>
+    <<hide LizChandler>>
+<<endif>>
+===
+title: Rick
+tags: 
+colorID: 2
+position: -962,11601
+---
+<<if $rick_sequence is 0>>
+    <<if $rick is 0>>
+        <<set $rick += 1>>
+        [[Rick_00_00]]
+    <<elseif $rick is 1>>
+        <<set $rick += 1>>
+        [[Rick_00_01]]
+    <<elseif $rick is 2>>
+        [[Rick_00_02]]
+    <<endif>>
+<<endif>>
+===
+title: Rick_00_00
+tags: 
+colorID: 2
+position: -1238,11922
+---
+Mae: 哈喽？你还活着吗？ #line:f4662f
+Mae: 你是被车碾了吗？ #line:d53b30
+Rick: 没有，孩子，我只是在修车。 #line:6b596b
+Mae: 在山坡上躺车底下难道不危险吗？ #line:5a298a
+Rick: 我可不怕死，孩子。 #line:22295d
+Mae: 我已经是大人了。 #line:1954e3
+Rick: 死亡害怕我才对。 #line:407d31
+Mae: 唔，好吧，可…… #line:623ef1
+Rick: 死神要是敢出现，我就开车从他身上碾过去。 #line:e49503
+Mae: 好吧。 #line:df7c2d
+===
+title: Rick_00_01
+tags: 
+colorID: 2
+position: -943,11925
+---
+Mae: 你住在这儿吗？ #line:7e7b53
+Rick: 没错，孩子，我就住在你身后边的雷克吉庄园。 #line:85c6c7
+Mae: 是大人。 #line:d61d6b
+Mae: 等一下……你难道就是瑞克·雷克吉？ #line:a7f8c3
+Mae: 就是那个死亡爬行乐队的瑞克·雷克吉？ #line:f78c2a
+Rick: 没错，孩子。我就是他，他就是我。 #line:ae98da
+Mae: 那乐队怎么样了？ #line:c5542c
+Rick: 乐队办得特别好，不光有演出，还有免费啤酒喝。 #line:a69cc9
+Rick: 有空的话，你就晚上来酒吧找我们呗！ #line:735e8d
+Mae: 我还没到21岁呢。 #line:d8ba2e
+Rick: 噢，别担心孩子，用不了多久你就能成真正的大人了。 #line:f3f1b5
+Mae: 我已经是大…… #line:920151
+Mae: 随便喽。 #line:7977ae
+===
+title: Rick_00_02
+tags: 
+colorID: 2
+position: -635,11920
+---
+Rick:{emote=wrench} #line:43e205
+===
+title: StoopKid_A0D0
+tags: demo
+colorID: 0
+position: -3327,11121
+---
+<<if $stoop_kid < 1>>
+    <<set $stoop_kid to 1>>
+    <<set $stoop_kid_done to 1>>
+    Mae: 哈喽，小子。 #line:f0018d
+    StoopKid: 你想干什么？ #line:a553e3
+    [[我想要你～的～血～|YourBlood]] #line:dc9b81
+    [[你在干什么呢？|WhatAreYouDoing]] #line:30abbd
+<<endif>>
+===
+title: WhatAreYouDoing
+tags: demo
+colorID: 0
+position: -3551,11405
+---
+StoopKid: 看松鼠。松鼠这种动物挺奇怪的。 #line:396d47
+Mae: 它们就是些长得好看点的耗子罢了。 #line:3e6f14
+[[End]]
+===
+title: YourBlood
+tags: demo
+colorID: 0
+position: -3094,11390
+---
+StoopKid: 你想要多少血？ #line:2a6e3d
+Mae: 你全身的血我都要了，我要你身上每一滴无比甜～美～的～血。 #line:2bd53d
+StoopKid: 你是怪物姐吗？ #line:616bbd
+Mae: 我是所有姐里面最像怪物的那位。 #line:ed4479
+[[End]]
+===
+title: End
+tags: demo
+colorID: 0
+position: -3327,11697
+---
+StoopKid: 我妈妈说，不让我和你说话。 #line:6fa4fb
+Mae: 为什么啊？ #line:3d407f
+StoopKid: 因为你以前伤害过别人，所以没人知道你会不会再伤害其他人了。 #line:5d0540
+Mae: 那都是好久以前的事了。 #line:5f9ef2
+StoopKid: 我妈妈还说，你本来有很多机会，但你都没有珍惜。 #line:5a47be
+Mae: 听起来你老妈还是个挺不错的人啊。 #line:127f20
+StoopKid: 她还说，你上大学的时候也没努力过， #line:ab3db2
+StoopKid: 你本来有离开这破地方的机会，但你却把这唯一的机会也丢了。 #line:d9ee7d
+Mae: 哇哦，孩子，你老妈是不是打算出一篇时事新闻啊？ #line:5adfb7
+StoopKid: 要是可以的话，我可不想再和你说话了。 #line:b7d16d
+Mae: 替我向你老妈问个好。 #line:daf366
+<<addToJournal UnderhillStoopKid>>
+===
+title: Varney_Demo_00
+tags: 
+colorID: 0
+position: -1264,11066
+---
+Varney: 要是他从我家的某一个窗户砸进来，我就立马去法院告他。 #line:f9228e
+Mae: 你说的是谁啊? #line:ece263
+Varney: 他！站在隔壁楼顶上那位！ #line:6a71ef
+Mae: 要是他真从楼顶掉下来，砸进你家窗户里， #line:9bb150
+Mae: 那你就得好好想想把地上的哪一块他告上法庭。 #line:d4fabb
+Varney: 当然是最大的那块儿啦。 #line:4705ba
+Chazokov: {align=middle,locator=icanhearyou}嘿，我可听得见你们在那儿说什么呢，知道吗！ #line:9a24a6
+<<set $varney to 1>>
+===
+title: Varney_Demo_01
+tags: 
+colorID: 0
+position: -1016,11071
+---
+Varney: 真是头笨熊。 #line:652333
+===
+title: ApplebaumBuilding
+tags: demo demo2
+colorID: 0
+position: -2508,11967
+---
+Mae: 我还记得，当时碧娅家有座大房子，可不像现在这样只能蜗居在一间小公寓里。 #line:aabc92
+<<set $applebaum_building_done to 1>>
+===
+title: ApplebaumStatue
+tags: demo demo2
+colorID: 0
+position: -1878,11522
+---
+<<if $applebaum_statue is 0>>
+    [[ApplebaumStatueStart]]
+<<elseif $applebaum_statue is 1>>
+    [[ApplebaumStatuePlaque]]
+<<elseif $applebaum_statue is 2>>
+    [[ApplebaumStatueBea]]
+<<endif>>
+===
+title: ApplebaumStatueStart
+tags: demo demo2
+colorID: 0
+position: -2140,11875
+---
+Mae:{locator=applebaum}阿诺德·阿普尔鲍姆。 #line:3fa2d1
+Mae:{locator=applebaum}他好像一千年前拥有矿业公司了。 #line:aaa95f
+Mae:{locator=applebaum}老爸说他是个反对工会的骗子。 #line:58c248
+Mae:{locator=applebaum}可不管怎么说，他还给我们建了一座图书馆呢！ #line:c853d5
+Mae:{locator=applebaum}……后来，图书馆又变成了公寓楼！ #line:c0bd1b
+<<set $applebaum_statue to 1>>
+===
+title: ApplebaumStatuePlaque
+tags: demo demo2
+colorID: 0
+position: -1870,11874
+---
+<<set $applebaum_statue to 2>>
+Mae:{locator=applebaum}嗯，我以前好像没看过雕像铭牌上都写着什么。 #line:1801df
+Mae:{locator=applebaum}阿诺德·A·阿普尔鲍姆， #line:b726c8
+Mae:{locator=applebaum}“工人之父"、 #line:a61066
+Mae:{locator=applebaum}“工人后人之祖"、 #line:bb8651
+Mae:{locator=applebaum}“工人后人后人之太祖"…… #line:5d1f8a
+Mae:{locator=applebaum}反正这个称号就这么一直往下传了很久。 #line:68839c
+Mae:{locator=applebaum}这雕像是1910年立在这儿的。 #line:d374b1
+===
+title: ApplebaumStatueBea
+tags: demo demo2
+colorID: 0
+position: -1609,11867
+---
+<<set $applebaum_statue to 3>>
+Mae:{locator=applebaum}真没想到，碧娅家的窗户外面居然会立着这老大爷的雕像。 #line:f1b7f5
+Mae:{locator=applebaum}它就这么一直立在这儿。 #line:94720b
+Mae:{locator=applebaum}阿诺德·斯托克鲍姆（原意为追踪者鲍姆）。 #line:ca006b
+<<unlockDoodle Stalkerbaum>>
+<<set $applebaum_statue_done to 1>>
+===
+title: TriggerCityCouncil_A1D3
+tags: 
+colorID: 2
+position: -1779,10972
+---
+Council1: 如果咱们再不*开始*干点正事的话， #line:db1a17
+Council1: 马上就不*存在*什么负鼠泉啦。 #line:dd68ab
+Council1: 所以，不管是什么事，只要是能办的，咱们就办， #line:321f84
+Council1: 这样才能让整个市场注意到咱们！ #line:b92858
+Council4: 咱们能不能回到眼下的事呀？ #line:0080aa
+Council1: 没错。那咱们就先拨点款，给雕像做个维护…… #line:b6d57f
+Council3: 加里，你根本就没在听我说话。 #line:ec5f3d
+Council1: 安德鲁，别跟我说什么我没听你说话。 #line:a10555
+Council3: 这 个 根 本 不 是 什 么 历 史 名 胜。 #line:e17e10
+Council2: 你他妈才不是历史名胜呢！！！！ #line:1aaeb0
+Council4: 两位，两位，别吵啦。 #line:6264dd
+Council2: 看来咱们又得干一架啦。 #line:5bc381
+Council1: 哦，是吗？你还记得上次是谁赢了吗？ #line:277766
+Council4: 咱们能继续说正事了吗？ #line:6a27fd
+Council1: 能。 #line:7cd579
+Council2: 能。 #line:3cb962
+<<close>>
+<<walk Council1 CouncilOffLeft>>
+<<walk Council2 CouncilOffLeft>>
+<<walk Council3 CouncilOffLeft>>
+<<walk Council4 CouncilOffLeft wait>>
+<<hide Council1>>
+<<hide Council2>>
+<<hide Council3>>
+<<hide Council4>>
+===
+title: Varney_A1D1.1
+tags: 
+colorID: 2
+position: -327,10693
+---
+Mae: 你好啊。 #line:0fd173
+Varney: 你在我家门廊上干什么呢？ #line:28d1a9
+<<set $varney_done to 1>>
+===
+title: Varney_A2D1.1
+tags: demo2
+colorID: 3
+position: -366,10923
+---
+<<lookAt Varney Chazokov>>
+Varney: 要是他从我家的某一个窗户砸进来，我就立马去法院告他。 #line:cbbe39
+Mae: 你说谁啊？ #line:53d90d
+Varney: 他！站在隔壁楼顶上那位！ #line:d1ba8c
+<<lookAt Mae Chazokov>>
+Mae: <o> #line:0f8e1f
+Mae: 要是他真从楼顶掉下来，砸进你家窗户里， #line:8d9af5
+Mae: -_- #line:e73b60
+Mae: 那你就得好好想想把地上的哪一块他告上法庭。 #line:ddfcac
+Varney: 当然是最大的那块儿啦。 #line:2de9e5
+Mae: o_o #line:2c0c05
+Chazokov: {align=middle,locator=icanhearyou}嘿，我可听得见你们在那儿说什么呢，知道吗！ #line:312fc9
+<<lookNearest Mae>>
+Mae: _o_ #line:9c885c
+===
+title: Varney_A2D1.2
+tags: demo2
+colorID: 3
+position: -336,11149
+---
+<<lookAt Varney Mae>>
+Varney: 我不记得邀请过你来我家啊。 #line:17fcbc
+Mae: 抱歉。 #line:75a29c
+Varney: 认识你可真是倒了八辈子的霉。 #line:7620c9
+<<lookAt Varney Chazokov>>
+<<set $varney_done to 1>>
+===
+title: Laundry_A1D2
+tags: demo2
+colorID: 2
+position: -3191,10548
+---
+Mae: 一只只的幽灵诶。 #line:ee9444
+<<unlockDoodle GhostLaundry>>
+<<set $underhill_laundry_done to 1>>
+===
+title: Laundry_A2D2
+tags: 
+colorID: 3
+position: -2932,10561
+---
+Mae: 看来，下雨天的时候，我应该把要洗的衣服都拿到外边来， #line:a625ef
+Mae: 这样又省水又省钱！ #line:b50df0
+<<set $underhill_laundry_done to 1>>
+===
+title: Laundry_A3D2
+tags: 
+colorID: 4
+position: -2690,10561
+---
+Mae: 我在想，松鼠会不会把晾的内衣内裤给偷走呢？ #line:52a615
+<<set $underhill_laundry_done to 1>>
+===
+title: Laundry_A4D3
+tags: 
+colorID: 6
+position: -2444,10557
+---
+Mae: 等有机会了， #line:245b0a
+<<wait 2>>
+Mae: 我也应该开一家自己的洗衣店。 #line:e8d8f1
+<<set $underhill_laundry_done to 1>>
+===
+title: Varney_A1D2.1
+tags: 
+colorID: 2
+position: -96,10703
+---
+Varney: 这房子是我的私人财产。 #line:3853c7
+Mae: 但这条街可归我所有！ #line:ba4baa
+Varney: 你小时候就这样。这么多年了你还是没变。 #line:519399
+<<set $varney_done to 1>>
+===
+title: Varney_A1D3.1
+tags: 
+colorID: 2
+position: 142,10705
+---
+Varney: 你擅自跑到我家门廊前，我就有权一枪撂倒你，你明白吗？ #line:65b539
+Mae: 哈哈，你肯定不会这么干的， #line:4c550b
+Mae: 因为我以前照顾过你家的猫。 #line:60df6d
+Varney: 这倒是…… #line:2d7c7c
+<<set $varney_done to 1>>
+===
+title: Varney_A2D2.1
+tags: 
+colorID: 3
+position: -115,10931
+---
+Varney: 可我家的猫也不喜欢有陌生人擅闯门廊。 #line:1a0338
+<<set $varney_done to 1>>
+===
+title: Varney_A2D3.1
+tags: 
+colorID: 3
+position: 108,10928
+---
+Varney: 你把我家的狗都给弄紧张啦。 #line:372199
+Varney: 她一紧张，拉的就多。 #line:c1a640
+<<set $varney_done to 1>>
+===
+title: Varney_A2D4.1
+tags: 
+colorID: 3
+position: 334,10934
+---
+Varney: 别碰我家的南瓜。 #line:68ee9e
+<<set $varney_done to 1>>
+===
+title: Varney_A3D1.1
+tags: 
+colorID: 4
+position: -367,11381
+---
+Varney: 这位小姐是不是把我家的门廊都“刷"了一遍呀。 #line:14e776
+Varney: 别用你的脏脚踩我家的门廊啦。 #line:c7eb38
+<<set $varney_done to 1>>
+===
+title: Varney_A3D2.1
+tags: 
+colorID: 4
+position: -143,11383
+---
+Varney: 我会弹中音班卓琴，我还会抓奏。 #line:aa7bfc
+Mae: 真的？我会弹贝斯。 #line:778364
+Mae: 咱俩应该找时间一块儿弹弹！ #line:38ec9d
+Varney: 你知道长黑纱吗？ #line:879994
+Mae: 当然知道啊！ #line:3e0f00
+Varney: 那你认识汤姆·杜利吗？ #line:8acfe8
+Mae: 认识！我老爸特喜欢他的歌！ #line:7fedac
+Varney: 那你知道维勒花园吗？ #line:d295c9
+Mae: 这我就不知道啦！ #line:0d401e
+Varney: 那好吧。 #line:e17cfe
+<<set $varney_done to 1>>
+===
+title: Varney_A3D3.1
+tags: 
+colorID: 4
+position: 101,11385
+---
+Varney: 坏天气马上就要来了， #line:358dda
+Varney: 我能感觉得到。 #line:f576f5
+<<set $varney_done to 1>>
+===
+title: Varney_A3D4.1
+tags: 
+colorID: 4
+position: 352,11380
+---
+Varney: 今年的天儿冷得可够早的， #line:dd7244
+Varney: 这可不是什么好兆头。 #line:d5c5bd
+<<set $varney_done to 1>>
+===
+title: Varney_A4D3.1
+tags: 
+colorID: 6
+position: 105,11612
+---
+Varney: 要下雪了。 #line:9b6c3e
+Varney: 今年的情况肯定不会太好。 #line:b11cd3
+<<set $varney_done to 1>>
+===
+title: TriggerHarleysA2D3
+tags: 
+colorID: 3
+position: -1550,10635
+---
+<<warp Harley1 Harley1RunStart>>
+<<warp Harley2 Harley2RunStart>>
+<<warp Harley3 Harley3RunStart>>
+<<show Harley1>>
+<<show Harley2>>
+<<show Harley3>>
+<<run Harley1 HarleyRunEnd>>
+<<run Harley2 HarleyRunEnd>>
+<<run Harley3 HarleyRunEnd>>
+<<setCanInteract Harley1 0>>
+<<setCanInteract Harley2 0>>
+<<setCanInteract Harley3 0>>
+===
+title: LizChandler
+tags: 
+colorID: 0
+position: -1119,10486
+---
+LizChandler: 嘿，小姑娘。 #line:b4b9c8
+Mae: 我已经是法律意义上的成年人啦。 #line:02c37d
+LizChandler: 哦，真抱歉。 #line:884d50
+Mae: 请问，你是谁啊？ #line:b6bf0d
+LizChandler: 我叫莉兹。我以前就住这儿。 #line:f48fb9
+Mae: 具体住哪儿？ #line:f9cbbc
+LizChandler: 在你出生之前，我就住在咱们站的这栋楼里了。 #line:fedcad
+Mae: 那你为什么要搬走呢？ #line:aeed10
+LizChandler: 因为我要到别的地方去上学。但也有可能我就是想离开这里。 #line:512045
+Mae: 你觉得这儿比你现在住的地方要好吗？ #line:a00a31
+LizChandler: 我现在住的地方挺好的， #line:4025e8
+LizChandler: 但负鼠泉也挺不错的。 #line:b40194
+Mae: 我觉得你说得没错。 #line:00ab77
+LizChandler: 是这样的。 #line:2b4344
+Mae: 没错，说得很对。 #line:9a1d40
+LizChandler: 在我还小， #line:be88c8
+LizChandler: 和你…… #line:554087
+Mae: 我已经20了。 #line:b4ea41
+LizChandler: ……和你个头差不多的时候…… #line:923d65
+LizChandler: 我晚上经常会躺在床上睡不着。 #line:984e0f
+LizChandler: 因为我很担心，楼外面那座雕像会活过来， #line:efe50c
+LizChandler: 然后顺着我房间的窗户爬进来。 #line:1e8c5b
+Mae: 哦，天哪，这也太吓人了吧。 #line:76feef
+LizChandler: 你肯定不希望有人在你家窗户外面晃来晃去的。 #line:c7d62d
+Mae: 幸亏那不是一座被施了邪恶魔法的雕像。 #line:a46d5d
+LizChandler: 是啊，不管是什么邪恶的东西，还是魔法，都应该离那玩意远点。 #line:164328
+Mae: 我住在阁楼上，所以没人能够到我屋的窗户。 #line:2b13a9
+LizChandler: 这倒是挺好的。 #line:d8ceac
+Mae: 甭管是吸血鬼，还是巫师和骷髅，他们全都上不来。 #line:1c05bf
+<<wait 2>>
+Mae: 和你聊天很开心。 #line:703e44
+LizChandler: 我也一样。 #line:6ee2c7
+Mae: 再见啦！ #line:8b19af
+<<set $liz_chandler_done to 1>>
+===
+title: TriggerCityCouncil_A4D3
+tags: 
+colorID: 6
+position: -1538,10987
+---
+Council1: ……科琳，这也没从根本上解决问题啊。 #line:92103d
+Council2: 这肯定能把问题给解决掉的。 #line:68e664
+Council1: 岩盐的总量肯定不成问题！ #line:8267d1
+Council3: 可咱们没有足够的卡车来运它们啊！ #line:bee2c3
+Council1: 科琳！这破山周围上上下下的全都是车！ #line:e0a14e
+Council4: 那还不是因为风暴来了，要封路才造成的吗。 #line:5e2868
+Council2: 哦，是啊，就这么着吧。咱们干脆别干啦。 #line:d35b7f
+Council4: 科琳，这可不是干不干的问题！！！ #line:b0b03f
+Council4: 你老是动摇军心，我真是受不了了！ #line:78a6b6
+Council2: 这根本就不是什么动摇军心的事！是这主意本身就不怎么样！ #line:89ff8c
+Council3: 你这才叫动摇军心呢。 #line:36794e
+Council1: 对于这件事，我比较支持科琳的看法。 #line:9e04ce
+Council4: 好吧，太好啦！这么一来事就好办了，对吧！ #line:4aaa00
+Council2: 好吧，好吧，咱们去把所有路都给封了得了！ #line:cbec18
+Council2: 咱们一起把这TM该死的镇子也给封了吧！ #line:d1ea51
+<<if $water_balloon_toss_percent > 50>>
+    Council2: 你的主意总是*最最最*重要的， #line:e1fcda
+    Council2: 你的想法也总是考虑*最最最*周详的，好了吧。 #line:475fbd
+    Council4: 我去你…… #line:770512
+    Council2: 咱们还要再办一次水球大战吗？ #line:a0366d
+    Council2: 上次办这活动，差点没把我给冻死！ #line:288802
+    Council3: 都到现在了，我感冒还没好呢。 #line:438857
+    Council1: 我觉得咱们几个都觉得扔水球太冷了是吧。 #line:031e2f
+    Council2: 是啊，凯斯琳。比起其他馊点子，扔水球这烂主意实在是太“冻人"啦。 #line:c137c7
+<<endif>>
+Council4: 你去死吧，科琳！ #line:962d6c
+Council3: 其实咱们可以租几辆私人铲雪车嘛。 #line:8bc48d
+Council2: 要是你想跟交通运输部对着干的话，那就请便吧。 #line:c07723
+Council2: 反正咱们已经和州县达成一致意见了。 #line:1251af
+Council1: 在这个问题上，科琳的看法又是对的。 #line:de4c90
+Council4: 既然你们俩都这么赞同这个观点，那你们怎么不早点结婚去呀？！？ #line:ceb812
+Council2: 呃 啊！ #line:260e01
+Council1: 你还是让我去死吧！ #line:92e750
+Council2: 那我还不如用煤渣砖把我这两条腿给砸折呢！ #line:e0e201
+Council3: 好吧，好吧，既然问题已经解决了，那路的问题咱们该怎么办呢？ #line:31276a
+<<wait 2>>
+Council4: 大伙儿想不想休息休息，吃点东西去呢？ #line:b50c38
+Council1: 这主意不错！ #line:21f156
+Council2: 正好我也饿了。 #line:97c513
+Council3: 看见了，咱们还是能做出一致决定的嘛！ #line:a8db72
+Council1: 哈哈哈。 #line:db3a7d
+Council1: 大伙儿，咱们走！ #line:dde779
+<<close>>
+<<walk Council1 CouncilOffLeft>>
+<<walk Council2 CouncilOffLeft>>
+<<walk Council3 CouncilOffLeft>>
+<<walk Council4 CouncilOffLeft wait>>
+<<hide Council1>>
+<<hide Council2>>
+<<hide Council3>>
+<<hide Council4>>
+===

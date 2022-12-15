@@ -1,0 +1,2179 @@
+title: EndBandPractice_A1D1
+tags: 
+colorID: 2
+position: 1996,-1146
+---
+<<lookAt Gregg Mae>>
+<<if $band_practice_0_right is 100>>
+    // player played the song perfectly!
+    Gregg: 嗯，刚刚那段还真是……挺完美的。 #line:0aa657
+    Bea: 唔……哇哦。 #line:fc21bf
+    Angus: 是啊，相当不错。 #line:ca797a
+    Mae: 一向如此。 :) #line:f4df4c
+    Mae: :| #line:de244d
+<<elseif $band_practice_0_right > 90>>
+    // player did pretty alright!!
+    Gregg: 太棒啦！ #line:23c35c
+    Bea: 是啊，还不错。 #line:e83cf8
+    Mae: 这歌我都还没怎么练过呢，对我来说弹成那样已经很不错了！ #line:20f7af
+<<elseif $band_practice_0_played < 50>>
+    // player played less than 50% of the notes registered
+    Gregg: 这么说……你平时不怎么练琴吗？ #line:8fe4a4
+    Bea: 是啊，你就这水平吗？ #line:919742
+    Mae: 我刚知道这歌该怎么弹好吗。 #line:156ea8
+<<elseif $band_practice_0_right < 20>>
+    // player probably mashed random buttons for the whole song
+    Bea: 可我感觉你根本就没认真弹。 #line:2ca283
+    Gregg: 确实。 #line:bfb263
+    Mae: 好吧…… #line:ea567e
+<<elseif $band_practice_0_right < 50>>
+    // pretty baaaad
+    Gregg: 啊 啊 啊，老天。 #line:7913d0
+    Bea: 是啊，这弹得可不怎么好。 #line:d93160
+<<else>>
+    // a catch-all for doing pretty meh
+    Gregg: 哇哦，梅，这也太…… #line:514c57
+    Bea: 太烂了，说实话。 #line:e7090a
+    Mae: 我压根就不会弹这首歌儿。 #line:a6fdd3
+<<endif>>
+
+<<unlockDoodle DieAnywhereElse>>
+<<if $band_practice_0_right > 90>>
+    <<unlockDoodle DieAnywhereElseResult 1>>
+<<else>>
+    <<unlockDoodle DieAnywhereElseResult 2>>
+<<endif>>
+
+[[Finish_A1D1]]
+===
+title: TriggerAngusA1D1
+tags: 
+colorID: 2
+position: 1631,-1114
+---
+<<lookAt Mae Angus>>
+Mae: 嗨，安格斯！ o/ #line:6cf392
+Mae: _o_ #line:24ce21
+Angus: 嘿，是你啊！ #line:e40a9e
+<<lookNearest Mae>>
+Gregg: 是梅！！！ :) #line:9f2469
+Angus: 是梅！ #line:9f2bb6
+Gregg: 啊 啊 啊 啊 啊！！！！ \o/ #line:16c181
+Gregg: _o_ #line:11299a
+<<close>>
+<<flip Gregg 1>>
+<<run Gregg OffRight>>
+<<wait 1>>
+<<lookAt Mae Angus>>
+Mae: 话说，派对屋倒闭了，对吧？ #line:cbe355
+Angus: 是啊。都不知道它是怎么撑了这么久。 #line:92a15b
+Mae: 那儿可开过不少派对呢，不至于吧？ #line:ee6a41
+Angus: 想让它不倒闭你得开更多派对才行。 #line:101041
+<<lookNearest Mae>>
+Gregg: 我 把 你 的|旧 贝 斯|带 过 来 了！！！ :| #line:081c2f
+<<close>>
+<<walk Bea BeaOnLeft>>
+Mae: 噢，哥们，我想我都不记得怎么…… #line:6877bd
+Angus: 嘿，碧娅。呃，梅回来了。 #line:794c1b
+Bea: …… #line:e7a614
+Mae: 哇哦，嗨。 :o #line:6cfb4a
+Bea: 嗯，嗨。 #line:24fbf5
+Gregg: 她 真 的 回 来 啦！！！！ #line:b96e35
+Bea: 等等，你说什么？ #line:5f53d7
+Mae: 你是……呃……来这儿排练的吗？ :| #line:8e2fe9
+Bea: 我是鼓手。 #line:1719f2
+Mae: 可你用的那根本就不是鼓。 :\ #line:165c70
+Mae: 那是电脑。 #line:dbea98
+Angus: 那没什么。你的贝斯部分她也负责了。 #line:0941bb
+Bea: 嗯，是贝斯部分，不是“你的"贝斯部分。 #line:c3857c
+Bea: 但我也能把它们关了。 -_- #line:1e86fb
+Mae: “把它们关了"，用你的电脑。  #line:d6ac89
+Bea: o_o #line:e59572
+Gregg: 梅，我们一定要练一首！你一定要来弹个贝斯！ #line:186ace
+Mae: 我都不记得该怎么弹了！ :o #line:f4d925
+Mae: 还有那个东西根本就不是鼓！ :\ #line:09e7ef
+Mae: :| #line:ca2db6
+<<runBandPractice 0>>
+===
+title: Gregg_A2D1
+tags: demo2
+colorID: 3
+position: 2837,-591
+---
+<<if $did_band_practice is 0>>
+    [[StartBandPractice_A2D1]]
+<<elseif $gregg_a2d1_bandpractice is 0>>
+    <<set $gregg_a2d1_bandpractice to 1>>
+	Gregg: 嘿，嘿，老妹儿。 #line:17f2c9
+    Mae: 安格斯今晚不在吗？ #line:5476d7
+    Gregg: 是啊。肯定会很无聊。 #line:0a82de
+    Gregg: 又或者说，*可能*会很无聊，如果我没有别～～～的安排。 #line:c4aef0
+    Mae: 别～～～的安排？ #line:269bb9
+    Gregg: 干坏事。 #line:5cfd56
+    Mae: 噢噢噢！干坏事！！！ #line:2b4dc4
+    [[UpForSomeCrimes]]
+<<else>>
+    [[UpForSomeCrimes]]
+<<endif>>
+
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 1184,-1004
+---
+<<set $did_band_practice to 0>>
+
+<<setSpriteLayer Gregg FG1>>
+
+<<if $act is 1 and $day is 1>>
+    <<warp Bea OffLeft>>
+    <<flip Bea 1>>
+    <<hide Germ>>
+<<elseif $act is 4 and $day is 3>>
+    <<warp Mae OffLeft>>
+    <<warp Bea OffLeft>>
+    <<warp Gregg OffLeft>>
+    <<warp Germ OffLeft>>
+    <<warp Angus OffLeft>>
+    <<hide Collision:Left>>
+<<endif>>
+
+<<set $angus_done to 0>>
+<<set $gregg_done to 0>>
+<<set $germ_done to 0>>
+<<set $bea_done to 0>>
+===
+title: Angus_A2D1
+tags: demo2
+colorID: 3
+position: 3182,-637
+---
+<<if $did_band_practice is 0>>
+    Mae: 所以说，呃……咱们什么时候开始呢？ #line:9f0e5a
+    Angus: 这就要问格雷格了。 #line:5f6a4a
+    Angus: 一般都是我们在等他，或者他在催我们。 #line:35981a
+    Mae: 多用途格雷格。 #line:ec7ed0
+    Angus: 每一刻，都有一个不同的格雷格。 #line:e6c7b8
+    <<set $angus_done to 1>>
+<<else>>
+	Angus: 可真吵啊。 #line:896ef0
+    Mae: 吵一点没问题吧？ #line:2ca754
+    Angus: 越吵越好。 #line:22b53e
+    <<set $angus_done to 1>>
+<<endif>>
+
+===
+title: Bea_A2D1
+tags: 
+colorID: 3
+position: 3526,-682
+---
+<<if $did_band_practice is 0>>
+	Bea: {emote=music} #line:de1dca
+<<elseif $bea_a2d1_band_practice is 0>>
+    <<set $bea_a2d1_band_practice to 1>>
+	Mae: 今晚你有什么安排吗？ #line:d90c32
+    Bea: 唔。 #line:720da3
+    Mae: 我保证，会比昨晚有进步的。 #line:86f91c
+    Mae: :) #line:ed8327
+    Bea: 你想要干什么？ #line:5ff258
+    Mae: 呃……嗯…… #line:e4bed8
+    Mae: :| #line:2e7f28
+    Mae: 想去商场吗？ #line:e3e17d
+    Bea: “商场"？ #line:71ccb1
+    Mae: 对！卢塞纳堡！咱们就和小时候一样，去逛逛！ :) #line:e6b9fd
+    Bea: 你上次去卢塞纳堡购物中心是什么时候? #line:94be73
+    Mae: 不记得了。五年前？ #line:aadd7d
+    Bea: 是啊。呃。 #line:ee4d75
+    Mae: :| #line:44acd9
+    Mae: 怎么了？ #line:ee6eda
+    Bea: 你猜怎么着？好啊，我们去吧。 #line:c13207
+    Mae: 好耶！ #line:9899e9
+    Bea: 是啊，多好啊。 #line:948753
+    Mae: 我保证，会很棒的。 =_= :) #line:1cc5d2
+    [[BeaWeSureWereDoingThis]]
+<<else>>
+    [[BeaWeSureWereDoingThis]]
+<<endif>>
+
+===
+title: Germ_A2D1
+tags: demo2
+colorID: 3
+position: 3845,-680
+---
+<<if $did_band_practice is 0>>
+	Germ: 在排练啊。 #line:b7562c
+	Mae: 对。 #line:a1da7e
+    Germ: 有一次我骑自行车撞上东西了，一条断裂的轮轴径直穿过了我的腿。 #line:05f6cc
+    Mae: 天 哪。 :( #line:ae2403
+    Germ: 其实那看上去还挺酷的。 #line:3fbd0b
+    Mae: 哦，是啊，那画面我能想象得出来。 :| #line:677135
+    <<set $germ_done to 1>>
+<<else>>
+	Germ: 你们练得真不错啊。 #line:f10de7
+    Mae: 是吗？ #line:4baabc
+    Germ: 嗯。 #line:d11653
+    <<set $germ_done to 1>>
+<<endif>>
+
+
+===
+title: EndBandPractice_A2D1
+tags: demo2
+colorID: 3
+position: 2888,-1177
+---
+<<lookLeft Gregg>>
+Mae: o_o :| #line:ccfab3
+<<if $band_practice_1_right is 100>>
+    // player played the song perfectly!
+    Gregg: 嗯，你刚才弹得还真是……挺完美的。 #line:57e007
+    Bea: 唔……哇哦。 #line:559b9d
+    Angus: 是啊。 #line:328d6e
+    Mae: 一向如此。 :) #line:7fd462
+    Mae: :| #line:897b12
+<<elseif $band_practice_1_right > 90>>
+    // player did pretty alright!!
+    Gregg: 真棒！ #line:acf6ea
+    Bea: 是啊，还不错。 #line:b35667
+    Mae: 对于没练过这首歌的我来说，弹得算很不错了！ #line:d80c4e
+<<elseif $band_practice_1_played < 50>>
+    // player played less than 50% of the notes registered
+    Gregg: 这么说……你平时不怎么练琴吗？ #line:7d5b33
+    Bea: 啊，你就这个水平？ #line:5417da
+    Mae: 我是刚刚才知道这歌该怎么弹的诶。 #line:1fc32a
+<<elseif $band_practice_1_right < 20>>
+    // player probably mashed random buttons for the whole song
+    Bea: 我觉得你压根就没在认真弹。 #line:f1f880
+    Gregg: 我也觉得。 #line:58d920
+    Mae: 嗯…… #line:8fe3e1
+<<elseif $band_practice_1_right < 50>>
+    // pretty baaaad
+    Gregg: 啊 啊 啊，老天。 #line:569722
+    Bea: 是啊，这弹得可不太好。 #line:48e388
+<<else>>
+    // a catch-all for doing pretty meh
+    Gregg: 哇哦，梅，这也太…… #line:dac8e3
+     Bea: 太糟了，说实话。 #line:db9eec
+     Mae: 我根本就不知道这首歌该怎么弹。 #line:80a4bb
+<<endif>>
+
+<<unlockDoodle WeirdAutumn>>
+<<if $band_practice_1_right > 90>>
+    <<unlockDoodle WeirdAutumnResult 1>>
+<<else>>
+    <<unlockDoodle WeirdAutumnResult 2>>
+<<endif>>
+
+<<set $angus_done to 0>>
+<<set $gregg_done to 0>>
+<<set $germ_done to 0>>
+<<set $bea_done to 0>>
+
+
+[[Finish_A2D1]]
+===
+title: Finish_A1D1
+tags: 
+colorID: 2
+position: 1987,-806
+---
+Mae: 我去。 #line:4014f8
+Mae: 这也太难了吧！ #line:2b9427
+Angus: 你再练练就好了。 #line:b37887
+Mae: 希望如此吧。老天呐。 #line:9dc835
+Mae: 我的手腕好疼。 #line:e48251
+Gregg: 这挺好的，伙计 #line:45e28b
+Gregg: 能看见你回来 #line:f02966
+Gregg: 弹你以前的那把破烂贝斯。 #line:1400e5
+Bea: 好了我们能去吃饭了吗？ #line:6ec93d
+Mae: 当 然 啦！！！！！！！！！ #line:22f723
+Gregg:{width=8}呜 呼～～！！！！ #line:465f91
+Angus: 好耶。 #line:c7fe9f
+Bea: 走喽走喽。 #line:8e2070
+<<fadeOut .5 wait>>
+<<lookNearest Gregg>>
+<<scene PawsModeDiner>>
+===
+title: Gregg_A3D1
+tags: 
+colorID: 4
+position: 5088,-552
+---
+<<if $did_band_practice is 0>>
+	Gregg: 嘿，老兄。 #line:81360c
+    Mae: 你还好吗？你看上去有点累。 #line:c13535
+    Gregg: 呃，我昨天一晚上没睡。 #line:bf39ea
+    Gregg: 他们在修楼顶的门。 #line:c0c0d2
+    Gregg: 巨吵。 #line:a95d29
+    Mae: “楼顶的门"？ #line:896d59
+    Gregg: 是啊，就是楼梯到头会见到的那个门 #line:3a0a69
+    Gregg: 那个门通向房顶。 #line:719010
+    Gregg: 现在我终于可以 #line:235622
+    Gregg: 呃……从楼下大厅那个门 #line:0d8923
+    Gregg: 直接跑到房顶 #line:9b0f9b
+    Gregg: 然后在楼顶上撒尿？ #line:a0c14b
+    Mae: 还是别吧。 #line:ea24c4
+    Gregg: 可怎么就没人这么做呢？？？ #line:d83536
+    Mae: 没事的，伙计。 #line:bf19a8
+    Gregg: 对不起，我好累。 #line:c492f6
+    Mae: 好吧。准备好出发了没？ #line:b3ebbc
+    Gregg: 当然，来干了这破事。 #line:7bcb68
+	<<runBandPractice 2>>
+	<<set $did_band_practice to 1>>
+<<endif>>
+
+===
+title: EndBandPractice_A3D1
+tags: 
+colorID: 4
+position: 4562,-1063
+---
+<<lookAt Gregg Mae>>
+<<lookAt Bea Mae>>
+<<if $band_practice_2_right is 100>>
+    // player played the song perfectly!
+    Gregg: 嗯，你刚才弹得还真是……挺完美的。 #line:4bd2d5
+    Bea: 唔……哇哦。 #line:815e69
+    Angus: 是的，相当棒。 #line:aaa909
+    Mae: 一向如此。 :) #line:9e08d2
+    Mae: :| #line:a1668b
+<<elseif $band_practice_2_right > 90>>
+    // player did pretty alright!!
+    Gregg: 太棒啦！ #line:a4677f
+    Bea: 是啊，还不错。 #line:b7d368
+    Mae: 考虑到我根本没练过这首歌，弹得算很不错了！ #line:4e0b1d
+<<elseif $band_practice_2_played < 50>>
+    // player played less than 50% of the notes registered
+    Gregg: 这么说……你平时不怎么练琴吗？ #line:39f1d6
+    Bea: 是啊，你只能弹到这种程度吗？ #line:9951ac
+    Mae: 这首歌我才刚知道该怎么弹。 #line:98f605
+<<elseif $band_practice_2_right < 20>>
+    // player probably mashed random buttons for the whole song
+    Bea: 我感觉你好像根本就没认真弹。 #line:448d29
+    Gregg: 我也觉得。 #line:b5152a
+    Mae: 好吧…… #line:36fba1
+<<elseif $band_practice_2_right < 50>>
+    // pretty baaaad
+    Gregg: 啊 啊 啊，老天。 #line:8c193b
+    Bea: 是啊，这弹得可不怎么样。 #line:91a2b9
+<<else>>
+    // a catch-all for doing pretty meh
+    Gregg: 哇哦，梅，这真是太…… #line:70c273
+    Bea: 太糟了。 #line:97a3eb
+    Mae: 我根本就不知道这首歌该怎么弹。 #line:d0a9f6
+<<endif>>
+
+<<unlockDoodle PumpkinHeadGuy>>
+<<if $band_practice_2_right > 90>>
+    <<unlockDoodle PumpkinHeadGuyResult 1>>
+<<else>>
+    <<unlockDoodle PumpkinHeadGuyResult 2>>
+<<endif>>
+
+<<wait 2>>
+
+// adjust these numbers later
+// also see these in Continuity.cs
+<<if $band_practice_0_right > 90 and $band_practice_1_right > 90 and $band_practice_2_right > 90>>
+    <<unlockAchievement Maestro>>
+    <<wait 2>>
+<<elseif $band_practice_0_right < 50 and $band_practice_1_right < 50 and $band_practice_2_right < 50>>
+    <<unlockAchievement Bass_Ackwards>>
+    <<wait 2>>
+<<endif>>
+
+[[Finish_A3D1]]
+===
+title: Bea_A3D1
+tags: 
+colorID: 4
+position: 4828,-542
+---
+<<if $did_band_practice is 0>>
+    Bea: 准备好没？ #line:95d64f
+    Mae: 准备好啦！ #line:9f865e
+    Bea: 去劝格雷格快点。今天他整个人都慢吞吞的。 #line:515b89
+    Mae: 没问题！ #line:a19482
+    <<set $bea_done to 1>>
+<<endif>>
+
+===
+title: Angus_A3D1
+tags: 
+colorID: 4
+position: 4841,-787
+---
+Mae: 嘿，安格斯。 #line:0f14aa
+Angus: 嘿，嘿，梅。 #line:1cbed5
+Mae: 怎么了？ #line:1e0b04
+Angus: 呃，没什么。 #line:1868ec
+Angus: 我这星期过得好无聊啊。 #line:fd06e9
+Mae: 天啊，那我倒是挺羡慕你的。 #line:fa5d8d
+Angus: 嗯。 #line:6dad55
+
+Angus: 所以，恶魔塔有在玩吗？ #line:310fbe
+
+<<if $demontower_finished is 1>>
+	// got regular ending
+	Mae: 我通关了！ #line:4f6dee
+	Angus: 哇哦，真的吗？？？ #line:badd81
+	Mae: 当然是真的啦！我杀了那个吸血鬼！ #line:a72bbb
+	Angus: 你打出好结局了吗？ #line:fa8cbb
+	Mae: ……什么好结局？ #line:46a035
+	Angus: 噢。里面还有一个好结局。 #line:e37767
+	Mae: 天啊！可 恶！ #line:e32d3a
+	Angus: ……抱歉…… #line:1fcea9
+	Mae: 啊 啊 啊。 #line:1ad26a
+	Angus: 你觉得……额……普通结局怎么样？ #line:08ed6a
+	Mae: 还好吧。 #line:5b520c
+	Mae: 挺好的。 #line:4f7b82
+	Mae: 好到我都不需要什么好结局了。 #line:a0b8bd
+	Angus: 要的就是这种精神！ #line:d89a0b
+	Mae: 啊 啊 啊 啊 啊。 #line:dec8f9
+<<elseif $demontower_finished is 2>>
+	// got good ending
+	Mae: 我通关了！ #line:5873f8
+	Angus: 哇，真的吗？？？ #line:6413f9
+	Mae: 是啊！我把那吸血鬼给杀了！ #line:14a810
+	Angus: 你打出好结局了吗？ #line:58820a
+	Mae: 可能吧？好结局是什么样的？ #line:6772c3
+	Angus: 好结局就是那个巨兽不流血了。 #line:2775bc
+	Angus: 而且在结尾还有另一座塔。 #line:f3e900
+	Mae: 好的，那个塔我倒是打出来了。 #line:1e156c
+	Mae: 这游戏到底讲的是什么事啊？ #line:dc4509
+	Mae: 就感觉到处血淋淋的 #line:fa774c
+	Mae: 还有个伤心的大家伙在那儿流血 #line:dfc9e7
+	Mae: 到最后还有个吸血鬼？ #line:9b945f
+	Angus: 我也不清楚。 #line:8149fd
+	Mae: 哈。 #line:835b87
+	Angus: 你觉得这游戏讲的是什么事呢？ #line:8bfe93
+	->呃……？ #line:bacc7e
+		Mae: 是个完成度有点低的诡异游戏吧 #line:cc4481
+		Mae: 关键难度还不低。 #line:6841ee
+		Mae: 但 是， #line:498816
+	->这游戏还是相当棒的！ #line:53ad8f
+		Angus: 应该是棒极了才对！ #line:89afa8
+		Mae: 很有难度，但很好玩。 #line:0de96f
+		Mae: 我超喜欢游戏里的那个吸血鬼， #line:3c6ee5
+		Mae: 也很喜欢那个教皇鸟。 #line:457905
+		Angus: 没错。 #line:ae2b52
+	Mae: 我还超喜欢那些骷髅。 #line:8d9538
+	Angus: 是啊，那些骷髅确实很酷。 #line:77d541
+	Mae: 骷髅超酷的，我会玩二周目的。 #line:b5d78b
+	Angus: 你要是感兴趣的话，这个系列还有一大堆游戏。 #line:8ce8e4
+	Mae: 是啊，我很期待能玩一玩。 #line:443452
+	Angus: 你的电脑再被弄坏，我就能给你装它的新作了。 #line:01e007
+	Mae: 哈哈，好嘞，我这就去把那些可疑的黄网逛个遍。 #line:00dbc5
+	Angus: 一次黄网背刺，换一份恶魔塔。 #line:367a9e
+	Mae: 安格斯？ #line:3df5dc
+	Angus: 嗯？ #line:c5970b
+	Mae: 你真是个好人。 #line:b454f2
+	<<wait 2>>
+	Angus: :) #line:e85ed9
+	<<wait 2>>
+	Mae: 你不说点什么吗？ #line:a1db82
+	Angus: 我不太擅长应对别人的称赞。 #line:063a92
+	Mae: 没关系，就算不善交际，你也是个好人啦。 #line:099a01
+	Angus: :| #line:5b84ee
+	Angus: 嗷，天呐。 #line:9cc814
+	Angus: 谢了，梅。 #line:cae6b2
+<<elseif $demontower_plays is 0>>
+	// (if has not played it)
+	Mae: 我还没碰过呢。 #line:00156f
+	Angus: 哦，你应该玩玩才对！ #line:66d64e
+	Angus: 我已经把游戏装到你电脑上了， #line:47e308
+	Angus: 我以为你会喜欢这游戏呢…… #line:61e33c
+	<<wait 2>>
+	Mae: :( #line:9c7322
+	Mae: 好吧，我现在好有负罪感啊。 #line:8ed3d7
+	Angus: 别，别，没关系的，千万别有压力，没什么大不了的。 #line:4e20ec
+	Mae :) #line:07a47c
+	Mae: 安格斯，我没事！ #line:833701
+	Angus: 噢，好吧。 #line:3876ce
+	Angus: 抱歉。 #line:8f11f5
+    Mae: :| #line:551950
+	Mae: 为什么要道歉？ #line:4a8a89
+	Angus: 因为我想！！！ #line:27a514
+<<elseif $demontower_plays > 0 and $demontower_floor <= 2 and $demontower_finished is 0>>
+	// (if has played the game but not beat level 3)
+	Mae: 有！ #line:cf2f0a
+	Angus: 觉得怎么样？ #line:aa56b8
+	Mae: 不太好说？还没打多少。 #line:d9dd8a
+	Angus: 很棒的游戏！我很喜欢！ #line:afa07b
+	Mae: 你喜欢？ :) #line:3e1175
+	Angus: 我喜欢！ :) #line:912c87
+	Mae: 嗯，那就好！ #line:9810b7
+	Angus: :| #line:f89745
+	Mae: :| #line:deee21
+<<elseif $demontower_plays > 0 and $demontower_floor > 2 and $demontower_finished is 0>>
+	//(if has played the game and beaten level 3 but not finished the game)
+	Mae: 有！ #line:6519c0
+	Angus: 你觉得怎么样？ #line:435420
+	->很有趣！ #line:bdc47b
+		Angus: 是啊，的确很有趣。 #line:b1d20d
+		Angus: 咻咻……哐哐哐……啊啊啊！ #line:c609ef
+		Angus: 哼！哼！噗嘣嘣…… #line:5ea7ed
+		<<wait 2>>
+		Mae: 这段拟音是什么意思？ #line:ee0328
+		Angus: 好吧，我现在感觉好尴尬。 #line:ece793
+	->这游戏很难！ #line:d7a9a1
+		Angus: 就是因为难才好玩。 #line:4302bd
+		Mae: 可能吧。 #line:3c5975
+		Mae: 我的意思是，在玩的时候，不会有人从头到尾都没发过火吧。 #line:dea2b7
+		Angus: 我就没发过火。 #line:664849
+		Angus: 我尽力去打，这就足够了。 #line:2bb1fc
+		Mae: 真的？ #line:db621e
+		Angus: 假的。 #line:2703b3
+	->我喜欢那些骷髅！ #line:d26da5
+		Angus: 是啊，这个游戏的骷髅很棒的。 #line:3ec7f8
+		Mae: 有骷髅的都不会是什么烂游戏。 #line:3c8fd5
+		Angus: 它们都很不错。骷髅都很帅。 #line:7ea906
+<<endif>>
+
+<<set $angus_done to 1>>
+===
+title: Finish_A3D1
+tags: 
+colorID: 4
+position: 4565,-801
+---
+Mae: 呼。 #line:c864f6
+Bea: 速度好快哦。 #line:a768a9
+Mae: 你只是一直在按按键好吗！ #line:e8dc8b
+Bea: …… #line:7b0c82
+Gregg: 累死我啦。 #line:8cafde
+Angus: 我的声带拉伤了。 #line:192fce
+Gregg: 好极了。 #line:f784c9
+Angus: 我的声音听起来肯定很沙哑。 #line:2c5d07
+<<fadeOut 1 wait>>
+[[TalkAboutLibrary]]
+===
+title: Germ_A3D1
+tags: 
+colorID: 4
+position: 5094,-807
+---
+Mae: 又回来欣赏这个烂摊子了吗？ #line:59f985
+Germ: 是啊！ #line:1d7378
+Mae: 杰姆，你是我们乐队唯一的粉丝。 #line:0b9b8c
+Germ: 我到这儿其实是为了找点乐子的。 #line:32d5fa
+Germ: 我可是个游手好闲的绅士。 #line:077e2a
+Mae: 很好，很好。 #line:87e82c
+<<set $germ_done to 1>>
+===
+title: StartBandPractice_A2D1
+tags: demo2
+colorID: 3
+position: 2497,-524
+---
+<<lookAt Bea Angus>>
+<<lookAt Gregg Angus>>
+Angus: 好了，各位，我准备走了。 #line:e2c948
+Bea: 你要去哪儿？ #line:1e8f1b
+Angus: 处理点家庭事务。 #line:deaea6
+Bea: 哦，好吧。 #line:b72a35
+Angus: 只需要忙一晚就可以了。 #line:7bb346
+Bea: …… #line:55d26f
+Angus: 好了，咱们能开始了吗？ #line:bd2d11
+<<lookAt Bea Gregg>>
+Gregg: 当然能啦！咱们开始吧！！！ #line:d02545
+<<lookAt Bea Mae>>
+<<lookAt Gregg Mae>>
+Mae: 等等！我还不知道这歌怎么弹呢！ #line:2d0bcd
+Mae: 完全不知道！ #line:b3d3c2
+Mae: 而且贝斯我也只是勉强记得怎么弹！ #line:d80125
+Gregg: 没事的！ #line:6bfa55
+Mae: 一定会有事的！ #line:838dd0
+Angus: 自信归零了，哈？ #line:729e8a
+Mae: \o/ 不是！我就单纯是不知道这歌怎么弹罢了！！！ #line:5f08af
+Mae: _o_ #line:375066
+<<close>>
+<<wait 2>>
+Mae: 你们这些蠢蛋！ #line:ba2baf
+<<lookNearest Bea>>
+<<lookNearest Gregg>>
+<<runBandPractice 1>>
+<<set $did_band_practice to 1>>
+===
+title: EnterLevel_A4D3
+tags: 
+colorID: 6
+position: 5762,-1479
+---
+<<if $dom_friend_gregg>>
+    [[DomFriendGreggEnding]]
+<<else>>
+    [[DomFriendBeaEnding]]
+<<endif>>
+===
+title: DomFriendGreggEnding
+tags: 
+colorID: 6
+position: 5604,-1194
+---
+//Gregg Domfriend
+//fade in on empty bad practice room//
+<<wait 3>>
+//from offscreen to the left//
+<<playAmbientSFX AmbientSFX:band_door_open>>
+<<wait 3>>
+<<toggleSitSwings Mae false>>
+Gregg: 老天，这扇门总是这么难开。 #line:d9cee1
+<<if $found_pentagrams >= 3>>
+	Mae: 我去！那是张五芒星贴纸吗？ #line:a10ecc
+    <<close>>
+	<<walk Gregg CharEnter1 wait>>
+	Gregg: 是啊，那是灵车人乐队的贴纸。 #line:6831bd
+	Mae: 我在想，四个五芒星代表什么意思。 #line:0787cc
+	Gregg: 你说什么？ #line:eb4b9e
+    <<close>>
+	<<walk Mae CharEnter2 wait>>
+	Mae: 没什么。 #line:f08c52
+<<else>>
+	Gregg: 天冷的时候这门卡得更紧。 #line:440e6e
+	Mae: 我已经对冷天气做足准备了。 #line:ae2b8e
+    <<close>>
+	<<walk Gregg CharEnter1 wait>>
+	Gregg: 呃～！我讨～厌冬天。 #line:d43e5c
+    <<close>>
+	<<walk Mae CharEnter2 wait>>
+	Mae: 其实冬天也挺不错的。 #line:170dc1
+<<endif>>
+Mae: 现在还没人来呢。 #line:52648f
+Gregg: 一群懒鬼。 #line:5b80e1
+Mae: 好像他们没人希望乐队成功一样。 #line:79ee3f
+Gregg: 呵呵。 #line:16892a
+Mae: 如果我们可以举办演出的话，在哪里好呢？ #line:bdb116
+Gregg: 嗯…… #line:5a7795
+Gregg: 我也不知道。 #line:42b7f8
+Gregg: 就在卢塞纳堡的那个大厅吧。 #line:4af9c3
+Mae: 哇，以前那里很有趣的。 #line:b93dd6
+Gregg: 我们现在去就是那儿的大人中的一员了。 #line:ba4d43
+Mae: 是啊。 #line:99ace7
+<<close>>
+<<walk Mae MaeNearSitOnStage wait>>
+<<sit>>
+Gregg: 所以…… #line:04ae68
+Gregg: 你还好吗？ #line:d08faf
+->还可以吧。 #line:e14c06
+	Mae: 今天我都敢畅所欲言了诶。 #line:34db4b
+	Gregg: 很好。 #line:56ba8b
+->不太好。 #line:102cc2
+	Mae: 我们之中有谁过得很好吗？ #line:837f01
+	Gregg: 不清楚。安格斯昨晚打呼噜打得很响。 #line:0d22e0
+Mae: 嗯。有些可疑。 #line:fcb377
+<<close>>
+<<walk Gregg GreggNearSitOnStage wait>>
+<<jumpAndSit Gregg>>
+<<wait 2>>
+Mae: 你觉得那些家伙能从矿井里出来吗？ #line:6fd97e
+Gregg: 我想很快我们就会有答案了。 #line:c314b1
+Gregg: 今天你有发觉谁失踪了吗？ #line:e6bd66
+Mae: 没有。 #line:c17bf4
+Mae: 但我不认为那帮人里头会有多少我认识的人。 #line:ee9615
+Gregg: 这可不好说。 #line:0659dc
+Mae: “不好说"？  #line:80aace
+Mae: 你身边经常发生这种事吗？ #line:7384b6
+Gregg: 噢，一直都是。 #line:a1643f
+Gregg: 所以…… #line:28a37c
+Gregg: 我到现在也不能理解当时下边发生了什么， #line:b3765a
+Gregg: 还有那些发生在你身上的事。 #line:7e3179
+Gregg: 还有那个……那个叫什么来着？ #line:85bb28
+->老头子们的杀人邪教？ #line:0665b7
+	Gregg: 对。 #line:d75519
+	Mae: 我可能有点明白了。 #line:8d8feb
+	Gregg: 真的？？？ #line:715f01
+	Mae: 没有， #line:251831
+	Mae: 有？ #line:c41786
+	Mae: 我说不清。 #line:9bf6ae
+->宇宙恐怖？ #line:b936fd
+	Gregg: 哦，是啊。那个。 #line:6c3072
+	Mae: 嗯。那很古老。 #line:c2756f
+	Mae: 比我想得到的任何东西都要古老。 #line:9b852b
+	Mae: 你可以在里面感受到它。 #line:238029
+	Gregg: 而它就在镇子外面的一个洞里？ #line:d52079
+	Mae: 是啊。 #line:d07f1d
+	Mae: 等等，不对。 #line:86e5b6
+	Mae: 就好像，洞里的那个东西其实是…… #line:f75b0a
+	Mae: ……老天，我忘记要说什么了。 #line:b67053
+	Gregg: 没关系。 #line:99d1c7
+Mae: 它就好像是， #line:c08f6d
+Mae: 门廊上亮着的一盏灯， #line:a108ad
+Mae: 周围聚满了虫子， #line:d78ae4
+Mae: 然后灯熄灭了。 #line:a73443
+Mae: 灯所在的位置上出现了一个洞。 #line:8f4fdd
+Mae: 就像我回来时发生在我身上的事情一样。 #line:74c37b
+Mae: 跟我昨晚在沙发上告诉你的一样。 #line:b8724a
+Gregg: 老天，是昨晚吗？ #line:27f315
+Gregg: 感觉像是2周前的事了。 #line:b75739
+Mae: 嘿嘿，是啊。 #line:d9ccc7
+<<wait 4>>	
+<<if $found_pentagrams < 3 and $did_lori_friendship_quest_2 is 0 and $did_germ_friendship_quest_3 is 0>>
+	Mae: 你走了的话，感觉哪里都会变得很奇怪。 #line:cf3342
+	Gregg: 嗯，我想说…… #line:a99583
+	Gregg: 你已经离开过一次了。 #line:909a5a
+	Gregg: 至少一次，然后你又回来了。 #line:06d6e9
+	<<if $did_gregg_friendship_quest_2>>
+		Mae: 至少。 #line:1b7b6d
+		Mae: 那天摸到那个电池的时候我差点没了。 #line:7ef33f
+		Gregg: 看吧？ #line:ca29f8
+	<<endif>>
+	Gregg: 这种事老是发生在你身上 #line:281509
+	Mae: 就好像，昨天晚上- #line:38d7a9
+	Mae: 我感觉许多糟糕的过往 #line:a74b5f
+	<<if $did_gregg_investigation_quest>>
+		Mae: 从那一晚开始，就一直被锁在历史协会里，直到现在 #line:e55b89
+		Mae: 哈哈，现在我知道那幅画是什么了 #line:5e66d0
+		Gregg: 是什么？ #line:490b59
+		Mae: 没什么。 #line:60bcc9
+		Mae: 就是感觉，过去的事物，没有办法*离开*。 #line:03a90b
+	<<endif>>
+	Mae: 它还在那儿 #line:009f41
+	Mae: 就好像你在里头游泳一样 #line:4b383a
+	Mae: 看不到未来。 #line:9dfbca
+	Gregg: 才不，呸 #line:19759c
+	<<wait 2>>
+	Mae: “才不，呸 "？没了？ #line:35dabf
+	Gregg: 你觉得我们干过最大的坏事是什么？ #line:f9c517
+	->差点把学校烧掉。 #line:7c29ac
+		Mae: 那大概是我们高中时期的高光时刻了 #line:8ed1b4
+	->生了一个恐怖的机器人宝贝？ #line:eaf3ec
+		Mae: 然后把他丢在公路边的树林里游荡？ #line:f2e6ed
+	Gregg: 实际上可能是，把那帮人搁在矿井里头等死 #line:dd28cc
+	Mae: 那叫自我防卫！！！！ #line:ae3043
+	Gregg: 这些事情…… #line:5f3173
+	Gregg: 就好像，今天一切都不一样了，都是因为这些事。 #line:29e720
+	Gregg: 我们已经和以前不一样了。 #line:62919d
+	Mae: 是啊。 #line:d51da1
+	Gregg: 所以就好像…… #line:496bec
+	Gregg: 一切都变了。 #line:6dc0f7
+	Mae: 可能是这样吧。 #line:ea4abf
+	<<if $did_gregg_friendship_quest_3>>
+		Mae: 就像你说的，以后这树林里的日子 #line:ccc36b
+		Mae: 会因为咱们来过这儿，而变得大不相同。 #line:c29aef
+		Gregg: 就是这样。 #line:31db15
+		Mae: 这样这样这样 #line:94ae42
+	<<endif>>
+<<else>>
+	Gregg: 这个秋天也太诡异了 #line:0804bb
+	Mae: 是啊。即使不算上昨晚，这里也够诡异的。 #line:562d39
+	Mae: 我生命中最诡异的两个星期 #line:065524
+	<<if $found_pentagrams >= 3 and $did_lori_friendship_quest_2 is 0 and $did_germ_friendship_quest_3 is 0>>
+		// if only did pentagrams //
+		Mae: 所以，刚才我是在问这个五芒星贴纸的事吗？ #line:5ed0ad
+		Mae: 嗯，话说有些奇怪的孩子跟我说我是 #line:be8361
+		Mae: 算了，别管了。这事说出来太蠢了。 #line:0f24f3
+		Gregg: 好吧。 #line:b4763d
+		Mae: 我说不清，有时候一些巧合也挺诡异的 #line:62289c
+		Mae: 就比如说，虽然独自一人，但是在屋里开着电视的话就不会感到那么孤单了 #line:57fd53
+		Mae: 之类的 #line:76ce1b
+		Gregg: 我和安格斯一起生活，最大的好处就是 #line:a38b38
+		Gregg: 总有他陪着我 #line:8eb09b
+		Mae: 安格斯就是你的电视 #line:298b40
+		Gregg: 还是我的暖气 #line:1a767f
+		Mae: 所以，那些孩子跟我说，我将会看见很多五芒星 #line:0e7d78
+		Mae: 接下来这些你会喜欢的，之前我在一个甜甜圈上看到一个五芒星 #line:817c7a
+		Gregg: 甜甜圈肯定被魔鬼附身了 #line:e007af
+		Mae: 昨晚我在矿道里又看到另一个五芒星 #line:530996
+		Gregg: 我想你知道安格斯听到的话会说什么 #line:bea196
+		<<if $did_angus_investigation_quest>>
+			Mae: 哈哈，是啊。 #line:01c8a5
+			Mae: 图形猎手 #line:13effb
+		<<else>>
+			Mae: 你在说什么啊？ #line:3e52a1
+			Gregg: 他对别人找各种图形图案这事一点兴趣都没有。 #line:d0c2fb
+			Gregg: 因为在他看来，这些图形都是我们的脑子想象出来的。 #line:6af885
+		<<endif>>
+		Gregg: 你知道他以前在网上做视频吗？ #line:fe2de8
+		Mae: 是吗？ #line:d6460b
+		Gregg: 是啊，他会讲一些无神论观点，还会教人做菜。 #line:d22dbe
+		Gregg: 好像是一个叫做“饼干与理性"的节目？ #line:9bef9d
+		Mae: 我去。 #line:f0a5d8
+		Gregg: 我想是我动摇了他。 #line:5ec09a
+		Mae: 他现在还会做饼干吗？ #line:93f95e
+		Gregg: 嗯，他现在也还会大谈无神论， #line:410e1b
+		Gregg: 不过从线上转线下了。 #line:cec42c
+		Mae: 哈。 #line:b689f8
+	<<elseif $found_pentagrams < 3 and $did_lori_friendship_quest_2 is 1 and $did_germ_friendship_quest_3 is 0>>
+		//if only did lori tracks 2//
+		Mae: 我最近和一个叫罗莉的小鬼老玩在一块。 #line:95f70e
+		Gregg: 你还和小孩子出去玩吗？ #line:c34862
+		Mae: 嗯。她似乎需要别人的引导。 #line:2f859b
+		Gregg: 哥们，你人可真好。 #line:9af469
+		Mae: 她喜欢去铁轨那边， #line:bda64a
+		Mae: 然后把金属小人儿放在上边让火车碾， #line:dbcef8
+		Mae: 还把它们整成一些很酷的小怪物。 #line:da5b77
+		Gregg: 我对硬币干过相同的事。 #line:90be50
+		Gregg: 当时我还是想的花样太少了，只用硬币玩了玩 #line:852b78
+		Mae: 不知道，我在想如果我是那些玩具小人儿的话会怎么样。 #line:376228
+		Mae: 你只能束手无措地看着这个庞然大物从你身上碾过去。 #line:bba63b
+		Mae: 最后只剩下完全被压变形的自己？我不知道…… #line:9b3684
+		Gregg: 听起来和小镇的处境差不多 #line:39065c
+		Mae: 差不多 #line:baa721
+		Gregg: 你应该知道我爸当时特别想让我上大学。 #line:3aee73
+		Mae: 天啊，相信我，这事我绝对还记得。 #line:ec447d
+		Gregg: 噢，对，我都忘了，你当时也在场。 #line:0a430f
+		Gregg: 总之，他人整个都 #line:79b9d4
+		Gregg: “我不想你只能在磨坊里工作。" #line:03f958
+		Mae: 哈哈，什么啊 #line:301270
+		Gregg: 嘿，爸。老爸，你像我这么大的时候工厂就已经有一半都关了。 #line:80be46
+		Mae: 是啊老爸。我们现在在猎鹰快餐工作呢。 #line:c9b21a
+		Gregg: 跟上时代，老爸。 #line:856a3e
+		<<if $did_bea_friendship_quest_1>>
+			Mae: 嗯，我还有个关于卢塞纳堡购物中心的坏消息。 #line:9b5c9f
+			Gregg: 噢，天呐伙计，那可都是个鬼城了 #line:60a2c4
+			Mae: 特别鬼。 #line:e83d55
+			Mae: 但那不过是间屋子罢了。没什么好上心的。 #line:3cf735
+		<<endif>>
+	<<elseif $found_pentagrams < 3 and $did_lori_friendship_quest_2 is 0 and $did_germ_friendship_quest_3 is 1>>		
+		//if only did Germ FQ3//
+		Mae: 你去过杰姆家吗？ #line:1886a0
+		Gregg: 没。他家住哪？ #line:7182c3
+		Mae: 穿过那个大停车场，就在树林子后边。 #line:f93cb9
+		Mae: 昨晚我们其实应该算是在他家后院里。 #line:e2d4bc
+		Gregg: 好吧。得劲。 #line:627d1c
+		Mae: 他有个怪吓人的外婆 #line:bfec6e
+		Mae: 她好像给我算了一卦吧。反正是类似的东西。 #line:730148
+		Gregg: 你知道吗，杰姆给我算过一卦 #line:847f70
+		Mae: 真的？？？ #line:4b3516
+		Gregg: 是啊，当时我们在嘎嘣脆披萨店。 #line:51f6df
+		Gregg: 然后他好像是看了一下我怎么咬的披萨 #line:451346
+		Mae: 那肯定是披萨妖术之类的怪东西 #line:95634b
+		Gregg: 当时很诡异的。他很认真。 #line:e2d29e
+		Mae: 他算出什么来了？ #line:276d2e
+		Gregg: 他说我会被公交车撞死。 #line:8331aa
+		Mae: 哇哦。 #line:b92729
+		Gregg: 他真是个扫兴鬼对吧？ #line:9960d3
+		<<if $did_gregg_friendship_quest_1>>
+			Mae: 那一晚我差点以为你会死在那儿。 #line:af524a
+			Mae: 就是我们搬箱子那晚。 #line:62f764
+			Gregg: 你和我都差点挂掉了哦。 #line:9d3faf
+		<<endif>>
+		Gregg: 所以杰姆他外婆说了什么？ #line:17869d
+		Mae: 我是说……她的话里好像能稍微看到昨晚发生的事？ #line:610129
+		Mae: 那天她还对我非常粗鲁。 #line:04615b
+        Mae: 你懂的， #line:547d8b
+        Mae: 她脑子可能有点问题。 #line:1a3f89
+        Gregg: 呸。 #line:3d14c3
+        Mae: 但还是挺吓人的。 #line:9eb1bc
+		Gregg: 我感觉他们一家子都挺吓人的。 #line:35cbb1
+		Mae: 他们家还有个蹦床呢。 #line:cc44f4
+		Gregg: 哇哦！真不错。 #line:3dde24
+		Mae: 讲真，杰姆这人挺好的。 #line:9428fb
+		Gregg: 我可是他的铁粉。 #line:3a51a4
+	<<elseif $found_pentagrams >= 3 and $did_lori_friendship_quest_2 is 1 and $did_germ_friendship_quest_3 is 0>>	
+		//if only did pentagrams and lori//
+		Mae: 年轻啊，老兄。 #line:d568f5
+		Gregg: 年轻？ #line:9ed7c3
+		Mae: 我只是在想 #line:c1d4d7
+		Mae: 话说你知道我为什么要问那个灵车人贴纸的事吗？ #line:1f3b8d
+		Gregg: 知道啊。 #line:8beebe
+		Mae: 有三个怪小孩告诉我，说我会看见很多五芒星。 #line:548d6b
+		Mae: 接下来这些你会喜欢的-之前我在一个甜甜圈上看到一个五芒星 #line:59291e
+		Gregg: 全地狱向多纳狼致敬 #line:db4a15
+		Mae: 昨晚我在矿道里又看见另一个。 #line:c60514
+		Gregg: 你应该知道安格斯要是听到这些的话，他会说什么吧。 #line:3627b0
+		<<if $did_angus_investigation_quest>>
+			Mae: 哈哈，我当然知道啦。 #line:efb95d
+			Mae: 图形猎手 #line:9a4d9e
+		<<else>>
+			Mae: 你说什么呢？ #line:c52fc8
+			Gregg: 他对别人找各种图形图案的事一点兴趣也没有。 #line:e45688
+			Gregg: 因为他觉得，这些图形都是在我们脑子里想象出来的。 #line:2126ba
+		<<endif>>
+		Mae: 等下，还有一个女孩，叫罗莉 #line:08a541
+		Mae: 她大概15岁。我们有时一起出去玩。 #line:fd8c9c
+		Gregg: 所以你……和青少年一块出去玩？ #line:108af0
+		Mae: 呃，不是。但是罗莉她…… #line:ec096b
+		Mae: 她需要有人给她带个好头 #line:ec0a55
+		Gregg: 你人真好 #line:fdab60
+		Mae: 她对恐怖片和那些酷酷的鬼东西很上头 #line:4afda6
+		Mae: 她会在铁轨上玩玩具小人儿，让火车来碾它们 #line:257098
+		Gregg: 听着很棒 #line:b78576
+		Mae: 我不知道。还记得我们也是青少年那会儿 #line:6d2168
+		Mae: 我们做了好多好疯的破事 #line:a4bf2d
+		Mae: 但这事我们还没做过 #line:c89532
+		Gregg: 哥们你回家后就7天24小时不间断地在经历很疯的破事吧 #line:256859
+		Mae: 是啊。可…… #line:213ab2
+		Mae: 这些是*发生*在我们身上的破事 #line:3d3596
+		Mae: 比如说看见五芒星啦， #line:b83a7c
+		Mae: 又比如说我们作为那些玩具小人被火车给碾过去啦 #line:0d56f2
+		<<if $did_bea_friendship_quest_2>>
+			Mae: 再比如说，前几天的晚上，我和碧娅被困在地下室里啦。 #line:bdcde3
+		<<endif>>
+		Gregg: 也许吧 #line:0ac1a1
+		Mae: 这难道就是当一个小孩和当一个大人之间的区别吗？ #line:bffa56
+		Gregg: 不。完全不啊。 #line:43fada
+		Mae: 嗯是啊，这种事我还是不知道该如何看待。 #line:659856
+	<<elseif $found_pentagrams >= 3 and $did_lori_friendship_quest_2 is 0 and $did_germ_friendship_quest_3 is 1>>	
+		//if only did pentagrams and germ fq3//
+		//Mae: this has been like the spookiest couple weeks of my life
+		Gregg: 我想，对我们来说这一切都结束了 #line:63f61d
+		Mae: 就好像其他的事也都一起结束了 #line:2d386a
+		Mae: 你知道我为什么要问你那个五芒星贴纸的事吗？ #line:44d367
+		Gregg: 嗯，因为灵车人是真的很酷 #line:56292b
+		Mae: 其实是，有三个奇怪的孩子……好吧，这听着有点蠢…… #line:87ad4e
+		Gregg: 我准备好听蠢事了 #line:d73a9b
+		Mae: 嗯，他们说我会看见一些五芒星 #line:e15eec
+		Gregg: 嗯。 #line:7147cc
+		Mae: 接下来这些你会喜欢的-之前我在一个甜甜圈上看到一个五芒星 #line:6a13bd
+		Gregg: 骑上战车，去甜甜圈地狱。和那句格言完全一致。 #line:8f4dc2
+        Mae: 哦，说点怪事，有一天我去了杰姆家。 #line:35e900
+        Gregg: 噢，真挺怪的！ #line:1bee08
+		Mae: 然后他外婆给我算了一卦。大概吧。 #line:960c7a
+		Gregg: 你知道吗，杰姆给我算过一卦。 #line:383f15
+		Mae: 哇，真的吗？ #line:bbba03
+		Gregg: 是啊，他跟我说我会被公交车撞。 #line:51d4b9
+		Gregg: 他好像是从我吃披萨的咬痕上算出来的 #line:a81ea6
+		Mae: 那你有让公交车给撞死吗？ #line:3ca644
+		Gregg: 还没呢！ #line:8a6b4f
+		<<if $did_gregg_friendship_quest_1>>
+			Gregg: 在我们搬箱子上楼梯那晚我也没死啊。 #line:79672b
+		<<endif>>
+		Mae: 我想这表示你赢了。 #line:0a4f60
+		Gregg: 也许就是这样吧。 #line:b21a24
+		Mae: 哇哦。 #line:e72f91
+		Mae: 所以我想说的是： #line:8bf839
+		Mae: 这些都只是随机发生的吗，还是我们没死都是因为我们运气足够好 #line:33c0c4
+		Mae: 又或者说这是某种冥冥中的安排，或者 #line:ba0f63
+		Mae: 我不是说那是神，但可能是…… #line:88cf7d
+		Mae: 别的什么？ #line:7ded34
+		Gregg: 你应该知道安格斯听到了会说什么。 #line:e2626b
+		<<if $did_angus_investigation_quest>>
+			Mae: 哈哈，是啊。 #line:dc7fba
+			Mae: 图形猎手。 #line:ba6e27
+		<<else>>
+			Mae: 你在说什么啊？ #line:245c32
+			Gregg: 他对别人找图形图案这些事可一点兴趣也没有。 #line:dd2bdf
+			Gregg: 因为他觉得，这些图形都是我们的脑子想象出来的。 #line:a30ceb
+		<<endif>>
+		Mae: 你其实是*希望*这背后真的有谁在操控一切，是吧？ #line:99967e
+		Mae: 我是说，即使被操控是坏事，它还是代表这世界是有某种规律的 #line:e35286
+		Mae: 即使只有那些特别聪明的人才能解读出来 #line:a73603
+		Gregg: 别吧。那太渗人了。 #line:95e129
+		Mae: 那也不会比杰姆和他外婆，还有那三个小孩渗人 #line:75fe12
+		Gregg: 杰姆才不渗人。他那叫吓人，大概。 #line:73c30a
+		Mae: 是啊。杰姆总是出其不意。 #line:4411ac
+		Mae: 生活也很吓人的，老兄。 #line:463da9
+		Gregg: 这话不假。 #line:030daa
+	<<elseif $found_pentagrams < 3 and $did_lori_friendship_quest_2 is 0 and $did_germ_friendship_quest_3 is 1>>
+		//if only did lori tracks 2 and germ fq3//
+		Mae: 话说有一天我到杰姆家去了 #line:15716b
+		Gregg: 哇，是真的吗？ #line:92ac31
+		Gregg: 我都还没去过呢。 #line:097a50
+		Mae: 嗯，它就在林子那头 #line:8b2e38
+		Mae: 实际上，昨晚我们应该是在他家后院里 #line:04f680
+		Gregg: 噢，也是 #line:fc8078
+		Gregg: 他家长什么样？ #line:bb8238
+		->挺好。挺温馨的。 #line:15af3d
+			Mae: 他有几个弟弟妹妹。尽管我没有见到。 #line:358f07
+			Mae: 他的外婆也住在那儿。 #line:ca93af
+		->他们家有个蹦床 #line:ce1b5d
+			Gregg: 嗷嗷嗷嗷嗷…… #line:5b48f6
+			Mae: 我在上面跳地可尽兴了 #line:b1dbf8
+			Gregg: 嗷 嗷 嗷 嗷 嗷 嗷 嗷！！！！ #line:4608d9
+			Gregg: 你运气可真好啊。 #line:b8db2e
+		Mae: 总之他的外婆给我算了一卦。大概。可能。没准。 #line:226866
+		Mae: 太怪了。 #line:cd9deb
+		Gregg: 杰姆给我算过一卦。 #line:4e6b1d
+		Mae: 真的？ #line:6371b7
+		Gregg: 是啊，他说我会被公交车撞到 #line:8ee561
+		Gregg: 他从我咬披萨的方式看出来的 #line:8d9402
+		Mae: 他是在开玩笑吗？ #line:d4df9b
+		Gregg: 有时候，他是不是在开玩笑真的很难说。 #line:118cce
+		Gregg: 他奶奶跟你说什么了？ #line:3ec229
+        Mae: 我是说……她的话里好像能稍微看到昨晚发生的事？ #line:f2ff8f
+		Mae: 而且，她对我的态度很不好 #line:9ea896
+        Mae: 你知道就是那个 #line:d8677d
+        Mae: 心智的问题。 #line:aa9eb5
+        Gregg: 呸。 #line:123d7c
+        Mae: 但还是，非常吓人。 #line:c6a832
+		Gregg: 吓人的一家子。 #line:16a844
+		Mae: 说不清。大概吧。 #line:35557f
+		Mae: 我有和一个孩子一起出去玩过，叫罗莉。 #line:c411b6
+		Gregg: 你在青春期的孩子一块玩？ #line:af0c7a
+		Mae: 没啦。我只是觉得她好像需要个榜样。 #line:d1be26
+		Gregg: 你人真好。 #line:f94c07
+		Mae: 总之她住在铁路附近 #line:2a4674
+		Mae: 她喜欢把金属小人放在铁轨上 #line:2ee12a
+		Mae: 然后让火车碾过去 #line:83d8fc
+		Gregg: 噢，我以前用硬币干过这事 #line:816cbc
+		Gregg: 我觉得当初我真该多试几种东西 #line:26e032
+		Mae: 这就像杰姆外婆跟我算的那一卦一样 #line:c6d07d
+		Mae: 我抹不去这种感觉，这种感觉似曾相识 #line:ec52ca
+		Mae: 直到昨晚我们在下边的时候我才明白，那是什么感觉 #line:eecd2b
+		Mae: 昨晚，就好像我在铁轨上被火车碾过去一样 #line:12982f
+		Mae: 我整个变形了，变得又糟糕又诡异 #line:47c3f5
+		Gregg: 哈。 #line:e7ba86
+		Gregg: 有道理 #line:9d49ac
+		Mae: 就好像他们在南边的那座山顶上开矿那会一样 #line:ee5ad5
+		Gregg: 呃。 #line:7378c3
+		Mae: 我知道的好吗 #line:a86026
+		Mae: 就好像一切都搞砸了，都被压扁了 #line:2557ed
+		Mae: 我不知道该怎么应对这些 #line:e09ff4
+		Mae: 老兄，我得小睡一会儿，你能想象到的最长的那种“一会儿" #line:b75848
+		Mae: 就像是老年人说的*只睡一会儿*的那种*一会儿*。 #line:7579a7
+		<<if $did_gregg_friendship_quest_2>>
+			Gregg: 我想说，我们还可以再去偷个车载电池 #line:4091cf
+			Mae: 哈哈哈哈，噢，天呐。 #line:811f63
+			Gregg: 再给你惹个大麻烦 #line:cab827
+			Mae: 鲨鱼君又能来看我了。 #line:982ea8
+			Gregg: 什么？ #line:664de9
+		<<else>>
+			Gregg: 我可以直接冲你脑袋来上一棍子什么的…… #line:2418fb
+			Mae: 没错，那就来吧。 #line:10e383
+			Mae: 算了，还是别了。 #line:0371c0
+			Mae: 经历了昨晚这事之后，再挨一棍子没准脑子真要出问题 #line:07732a
+			Gregg: 你的脑袋怎么样了？ #line:1ee6c3
+			Mae: 还能正常用吧。 #line:953e30
+		<<endif>>
+	<<elseif $did_lori_friendship_quest_2 is 1 and $did_germ_friendship_quest_3 is 1>>
+		//if did lori tracks 2, germ fq3//
+		Mae: 噢老兄你记不记得 #line:97373f
+		<<if $found_pentagrams >= 3>>
+			Mae: 我们在多纳狼那晚？ #line:02cf7e
+			Gregg: 记得。 #line:744ab3
+			Mae: 我当时拿了一个带五芒星图案的甜甜圈， #line:bf8f26
+			Mae: 三个奇怪的孩子说过我会看见这些五芒星 #line:f821f2
+			Mae: 好像这种东西可以帮上我什么忙 #line:9ebcc0
+			Mae: 昨晚我在矿道里又看到一个五芒星 #line:ca9220
+			Gregg: 你就为了这个才问我贴纸的事？ #line:e204fb
+			Mae: 没错。 #line:68052e
+			Gregg: 你应该知道安格斯听到了会说什么。 #line:c6c385
+			<<if $did_angus_investigation_quest>>
+				Mae: 哈哈，是啊。 #line:e88cd0
+				Mae: 图形猎手。 #line:22bfa3
+			<<else>>
+				Mae: 嗯，什么？ #line:2c29f9
+			Gregg: 他肯定对别人找图形图案的事一点兴趣也没有。 #line:ab3b9a
+			Gregg: 因为他觉得，这些东西都是我们的脑子想象出来的。 #line:b6ee10
+			<<endif>>
+			Mae: 好吧，那再听听这个…… #line:3b1dd0
+		<<endif>>
+		Mae: 有一天我去了杰姆家。 #line:bc43df
+		Gregg: 我 靠 #line:9ec4b9
+		Gregg: 我都还没去过呢！ #line:1e480b
+		Mae: 哦，那儿很棒，就在林子里头。他们家还有个蹦床。 #line:f15056
+		Gregg: 嗷，好棒啊啊啊啊啊啊。 #line:54b58a
+		Mae: 然后，她奶奶给我算了一卦。可结果有点，模糊。 #line:0cb96e
+        Mae: 也许我只听见了我想听见的东西？ #line:3992d2
+		Gregg: 杰姆也给我算过一卦。没准这是某种家传绝技呢？ #line:912c56
+		->他算出什么来了？ #line:782ca3
+			Gregg: 他说我会死。 #line:96b281
+			Gregg: 会被公交车撞死。 #line:1d8b13
+			Mae: 哇哦，那可真够煞风景的。 #line:5d53c1
+			Gregg: 嗯。 #line:15fcaf
+		->他是怎么算的？ #line:5f8e4c
+			Gregg: 他就看了一下我披萨上的咬痕。 #line:c35ebc
+			Mae: 看来他是个披萨术士啊。 #line:e4df9f
+			Gregg: 你和他奶奶也一起边吃披萨边算命吗？ #line:cfe668
+			Mae: 没。她只是看着我来着。 #line:7d59ff
+		Gregg: 那她都跟你说什么了？ #line:b08cb5
+		Mae: 我是说……她的话里好像能稍微看到昨晚发生的事？ #line:e4eb08
+		Mae: 我是说，她对我的看法挺粗鲁的 #line:28fef9
+        Mae: 你应该知道， #line:2ecbae
+        Mae: 她头脑可能不太正常。 #line:7b56d0
+        Gregg: 呸。 #line:09a366
+        Mae: 但还是很吓人。 #line:5ac5cc
+        Mae: 而且…… #line:fe9af9
+		Mae: 好吧，还有一个人，一个叫罗莉的女孩，我有时和她一块玩 #line:4f5319
+		Gregg: 罗莉是谁？ #line:aeb622
+		Mae: 罗莉·梅尔斯。她差不多15岁，住在铁道附近 #line:5804fe
+		Gregg: 你现在和青春期的孩子一块玩儿了？ #line:5e5fc0
+		Mae: 呃。她需要个好榜样。 #line:9e8e2d
+		Gregg: 你可真好，伙计 #line:ecf30e
+		Mae: 我们一块把金属小人儿放在铁轨上 #line:af5fd9
+		Mae: 然后等火车碾过去，把它们都压变形了 #line:e8fb2a
+		Gregg: 噢，是啊，我用硬币干过这事 #line:549fa3
+		Gregg: 当时我还是想的花样太少了，只用硬币玩了玩 #line:64ad07
+		<<if $found_pentagrams >= 3>>
+			Mae: 那个五芒星，杰姆的外婆，还有全部这些玩意 #line:e92b1f
+		<<else>>
+			Mae: 尤其是杰姆的外婆和全部这些玩意 #line:2d966c
+		<<endif>>
+		Mae: 就好像是有东西在背后操纵所有事情一样 #line:4088a5
+		Mae: 但它做的所有事情又不是为了我们 #line:8a7dd1
+		Mae: 这个东西是个洞、噩梦或者别的什么，我就只能记得这么些了 #line:c93cab
+		Mae: 好比负鼠泉，曾经这里也人口兴旺、就业繁荣，有各种各样的事物。 #line:e31e5d
+		Mae: 但是现在不再是那样了。 但是这不是任何人的错。 #line:476283
+		Mae: 至少错不在还住在这里的人。 #line:9893a6
+		Mae: 我和罗莉一起碾那些玩具小人的时候 #line:080a3e
+		Mae: 我觉得，它们简直就是我们 #line:ad070d
+		Mae: 不好说。这一切就好像一场梦，毫无逻辑可言 #line:84b139
+		Mae: 我就感觉有些巨大的..... #line:52087f
+		Mae: 就好像在磨坊和矿井关闭之后 #line:0364c8
+		Mae: 但矿井里的那帮混蛋还想着把往日荣光带回来 #line:03ad31
+		Mae: 又或者，虽然再也没有人会去教堂了 #line:52d93a
+		Mae: 但上帝还是会回到这里，之类的 #line:aecffa
+		Mae: 或者又好比你那次把羊圈给打开了 #line:faaee4
+		Gregg: 嘿！ #line:d20308
+		Mae: 在它们眼里，重要的是门已经不在了 #line:121ed6
+		Mae: 而在你眼里，重要的是羊已经不在了，还有…… #line:8d7831
+		Mae: 这就像*我做的*那些破事一样，然后…… #line:236de8
+		Mae: …… #line:14a4a4
+		Mae: 好吧，我的思路完全跑偏了 #line:968a89
+		Gregg: 伙计 #line:561a91
+		Gregg: 你说得对。 #line:bd6654
+		Gregg: 你*刚过*了很诡异的两周 #line:8adcb0
+		Gregg: 你大概需要……某种东西……来放松一下 #line:392757
+		Mae: 是啊，伙计。 #line:19cce3
+		Mae: 我挺期待长至夜的 #line:c1001e
+		Mae: 希望一切都能回归正轨 #line:a9bf73
+		Gregg: 我们工作的时候要弄好多长至夜相关的玩意 #line:6e2b39
+		Gregg: 你可以直接到我们这儿来一起做 #line:745896
+		Mae: 一年比一年来得快 #line:c15d0c
+	<<endif>>
+<<endif>>
+
+<<if $mallard_rats>>
+	Mae: 噢，还有，似乎是我造成的镇里老鼠横行？ #line:5eb1b5
+	Gregg: 什么鬼？ #line:fbb47f
+	Mae: 呃。这大概是件好事。 #line:a24ffb
+	Mae: 盼暖春来。鼠儿成灾。 #line:3cd159
+	Gregg: 很有诗意。 #line:260ee4
+	Mae: 特别有诗意。 #line:1bae5c
+<<endif>>
+Gregg: …… #line:45e09c
+<<wait 2>>
+Gregg: 他们杀了凯西。 #line:e7692b
+Mae: 是啊，是他们干的，就是他们杀了凯西。 #line:e2c32a
+Gregg: 我在尽可能不去想象那个画面。 #line:019928
+Gregg: 咱们应该……告诉他父母吗？ #line:adbebf
+Mae: 但该说什么呢？ #line:79e9bf
+Gregg: 我不知道。 #line:fd4a9a
+Gregg: 我实在不知道哪种做法才是正确的，是让他们以为他还活着，还是 #line:ab515a
+Gregg: 跟他们说他现在就在林子里 #line:5457cd
+Gregg: 就在矿道里 #line:0b8685
+Gregg: 在里面的一个深坑里 #line:efbe33
+Gregg: 死了好久了，身边还有一堆快死了的人。 #line:f2442a
+    ->咱们应该告诉他们。 #line:dd5cd0
+        Gregg: 好。 #line:c72772
+        Gregg: 你得好好想想咱们应该怎么说。 #line:413f1e
+        Mae: 如果我能想出点什么我会跟你说的。 #line:d4867a
+        Gregg: 听上去不错。 #line:970be2
+    ->咱们别告诉他们。 #line:d6dc53
+        Gregg: 这感觉可不太好。 #line:ea6e14
+        Mae: 怎么会呢，伙计？ #line:cd177c
+Mae: 我想，至少还有我们知道这件事 #line:3e5ffb
+Mae: 这很重要，这让它变得……有意义？ #line:a9f705
+Mae: 我不知道该怎么说... #line:2d959f
+Mae: 我想我们是宇宙中唯一 #line:d79387
+Mae: 会在意些什么的东西的人了。 #line:5e4acb
+Mae: 或者说，我们是唯一*能*去在意的人了。 #line:3edbd3
+Mae: 你觉不觉得这些事都有些特殊含义？ #line:1058a3
+Mae: 或者说，曾经有特殊含义？ #line:90ab73
+Gregg: 嗯。 #line:a4b312
+Mae: 到～～～底有没有，小格雷格？ #line:07f8b2
+
+<<close>>
+<<playAmbientSFX AmbientSFX:band_door_open>>
+<<wait 3>>
+<<close>>
+<<lookAt Gregg Angus>>
+<<walk Angus AngusEnterEnd wait>>
+Angus: 嘿，宝贝们。 #line:b0893f
+Gregg: 嘿，亲爱的。 #line:71fea1
+Mae: 宝贝们？ #line:d49fff
+Gregg: 工作怎么样啊？ #line:b654ac
+Angus: 老天，我全身上下没一块不痛的。 #line:cc3e3a
+<<if $mine_woods_run_away_hits > 0>>
+    //if hit obstacle during minewoods//
+	Mae: 昨天我穿过的灌木丛数都数不清。 #line:a60f05
+	Mae: 我的身体现在大概恨透我了。 #line:40aabe
+<<endif>>
+Gregg: 该做点拉伸了 #line:130b7c
+<<lookAt Gregg Mae>>
+Mae: 另外， #line:e8cbca
+Mae: 我能和你们一起搬到光明湾去吗？ #line:dc30d1
+Gregg: ！ #line:c01bb9
+Angus: ！ #line:df8b56
+Gregg: 呃…… #line:e4cf8a
+Angus: 唔…… #line:0e465e
+Gregg: 我本来以为你好像是不能离开家？ #line:d141eb
+Mae: 呃。有你们的地方也是家。 #line:b77b48
+Angus: …… #line:90ce69
+Mae: 或～者说没准等你们安顿好之后，我再去你们那儿住一段时间。 #line:9d7c42
+Angus: 当然可以！ #line:fa359a
+Gregg: 可以啊伙计，这一定超棒。 #line:1d7297
+Mae: 嘿，大伙儿。 #line:272e04
+Angus: 嗯？ #line:0b4419
+Mae: 谢谢你们昨晚救了我那么多次。 #line:526344
+Gregg: 那都不叫事，老兄。 #line:58f767
+Gregg: 不论要多少次，我们都会救你的。 #line:dd4e61
+
+<<close>>
+<<playAmbientSFX AmbientSFX:band_door_open>>
+<<wait 2>>
+<<lookAt Gregg Bea>>
+<<walk Bea CharEnter2 wait>>
+Gregg: 嘿，碧娅。 #line:9be996
+Mae: 嘿～碧娅。 #line:b9d38c
+Bea: …… #line:0b2fa3
+<<wait 3>>
+Mae: 你～打算说点什么吗？ #line:a34e5c
+Bea: 我实在不知道该说什么 #line:6ee2eb
+Bea: 昨晚都是些什么鬼？ #line:69911c
+->呃。这你别问我。 #line:6c9f27
+	Mae: 我们就不能 #line:4c5f1b
+	Mae: 乖乖排首歌吗 #line:5afd46
+	Mae: 然后去吃个披萨 #line:7dbf92
+	Mae: 把这个事放到明天？ #line:1da42b
+	Bea: 我做了个梦，梦见世界要毁灭了。 #line:270824
+	Mae: 排歌。吃披萨。 #line:0a9e19
+	<<wait 2>>
+	Bea: 好吧。 #line:21186c
+	Mae: 好耶。 #line:00945f
+	<<lookAt Gregg Mae>>
+	<<wait 1>>
+	Gregg: 有的，哥们。 #line:c17afe
+	Mae: 什么？ #line:ae4018
+	Gregg: 回答你大概两分钟前的问题。 #line:0e3d42
+	Mae: 什么问题？ #line:0cfbc3
+	Mae: 咱们刚才都说什么来着？ #line:5ed4a5
+->呃。什么都没发生。真的什么都没发生。 #line:069e47
+	Bea: 噢，好啊，所以刚才咱们说的话，都只是我做的一个史上最糟糕最诡异的噩梦 #line:c5277b
+	Bea: 另外，醒过来能听到这些真是太好了 #line:1f4f41
+	Mae: 噢噢噢，天啊，我当时半睡半醒的咱还是别说这个了 #line:06519b
+	Bea: 我觉得昨晚我把脚给扭了 #line:a6cf83
+	Mae: 我们今天能别再提昨晚的事了吗？ #line:ae0d6a
+	Bea: 啊， #line:72dc60
+	Bea: 不敢保证。 #line:9675d8
+	<<lookAt Gregg Mae>>
+	Mae: 我们就不能练首歌， #line:87407a
+	Mae: 去吃个披萨， #line:e0caad
+	Mae: 然后明天再说这些吗？ #line:a54525
+	<<wait 2>>
+	Angus: 当然可以。 #line:1f9b5c
+	Bea: 随便啦。 #line:7ba897
+	Bea: 等咱们看心理医生的时候，这些够聊好多年了 #line:d9064a
+	Mae: 要的就是这种精神 #line:3054a3
+	Mae: 我是说，我们都得向前看，不是吗？ #line:ec3b79
+	Mae: 很显然，世界已经是一团糟了，但是 #line:357b1b
+	Mae: 我们如果不试着活下去的话，我们都会死的 #line:6fbd1f
+	Gregg: 看来咱们这儿有个讨厌鬼贴纸呢 #line:79e8de
+	Mae: 嘿，我知道自己在说什么 #line:729fb5
+	Mae: 我们得制定出计划 #line:537c92
+	Mae: 我们得改变些什么 #line:d8ed0e
+	Mae: 我们得先排他喵的一首歌，再吃他喵的一个披萨。 #line:98706e
+	Angus: 好的，所以我们接下来要排哪首歌呢？ #line:b34917
+<<wait 5>>
+<<scene EndCredits>>
+===
+title: DomFriendBeaEnding
+tags: 
+colorID: 6
+position: 5943,-1207
+---
+//fade it on empty bad practice room//
+<<wait 3>>
+//from offscreen to the left//
+<<playAmbientSFX AmbientSFX:band_door_open>>
+<<wait 3>>
+<<toggleSitSwings Mae false>>
+Bea: 老天。这门好像开不开了。 #line:538259
+Mae: 我敢说夏天的时候还要更糟。 #line:99d71c
+<<if $found_pentagrams >= 3>>
+	Mae: 噢，哇哦，这贴纸上有个五芒星 #line:69c644
+	Bea: 这上边的乐队名我看不清 #line:92de29
+	Mae: 警察……钻孔机？ #line:d91d2d
+	Bea: 我向你保证，这上边写的绝对不是警察钻孔机。 #line:1cde38
+	Mae: 也许是个起了英文名的德国乐队 #line:65b306
+	Mae: 听着是这种感觉 #line:5d0401
+	Bea: 早上好。我ven是净察赞控鸡。 #line:442601
+	Mae: 我ven来自，ven德zen市。 #line:4bfba4
+	Bea: 学得挺像的。 #line:7e79bb
+<<else>>
+	Mae: 所以你们全都有后门的钥匙吗？ #line:d6c21a
+	Bea: 格雷格有一把，我们又配了几把。 #line:9a844a
+	Mae: 他到底是怎么弄到钥匙的？ #line:04de07
+	Bea: 我也不知道。 #line:fc7ed9
+<<endif>>
+<<close>>
+<<walk Bea CharEnter1>>
+<<wait 1>>
+<<walk Mae CharEnter2>>
+<<waitForMove Bea>>
+<<waitForMove Mae>>
+Bea: 格雷格哪儿去了？ #line:c0d581
+Mae: 嗯，他在帮安格斯翘班 #line:f6b4bc
+Bea: 什么意思？ #line:d6294e
+Mae: 毫无头绪 #line:7f5dcc
+Bea: 哈。 #line:6b946d
+Mae: 我有点迷惑，他们俩靠什么保住他们的工作 #line:b5b820
+Mae: 他们貌似一直都是想早退就早退。 #line:5e2435
+Bea: 他们俩有一堆事儿是我们搞不懂的。 #line:a1fb94
+Mae: 我想他们只是单纯很需要彼此。 #line:4e01d9
+Bea: 我觉得格雷格会更需要安格斯。 #line:da4976
+Mae: 我可不觉得安格斯会同意你的说法。 #line:34dcf3
+Bea: 那是因为安格斯从来不会在情感上把自己放在高一等的位置 #line:cb1944
+Bea: 也因为他是个好心到极点的人。 #line:51bdde
+->格雷格也是个好人！ #line:345739
+	Bea: 噢，是啊他当然是 #line:b97f31
+	Bea: 但他也很小孩子气，而且不怎么有担当 #line:85e796
+	Bea: 并且好像注意力持续时间为零。 #line:2cb70c
+	Bea: 比起男朋友，格雷格更需要个爹或妈。 #line:6c0629
+	Bea: 但他很幸运的是，安格斯能同时担任两种角色。 #line:b2cf41
+->你觉得他们能走到最后吗？ #line:9b9d8d
+	Bea: 嗯，他们高中时候就甜得很了！ #line:0cf866
+	Bea: 一旦他们搬走，换一个环境 #line:444726
+	Bea: 遇见新的人 #line:dffe36
+	Bea: 成为新的人 #line:bd58ab
+	Bea: 我想，安格斯会发现，他有更多选择。 #line:6a6242
+<<if $did_angus_investigation_quest>>
+	Mae: 安格斯觉得格雷格他，在某种程度上，*拯救*了自己。 #line:7b17a6
+	Bea: 如果他是这么想的话，那我也不会否认。 #line:484124
+	Bea: 安格斯也可能被他的真诚吸引了，还有他的皮夹克…… #line:db755a
+	Bea: 以及随身带刀的那种范儿。 #line:2facf2
+	Bea: 我想如果我遇见了对的人，那他身上的这些东西都会变成加分项。 #line:5a8c8f
+<<endif>>
+Mae: 老天。你想得可真全面。 #line:599288
+Bea: 你回来以前 #line:51b72f
+Bea: 大多数时间我都只和他们俩一块玩 #line:309d13
+Bea: 我有的是时间去研究他们。 #line:733e45
+<<close>>
+<<walk Mae MaeNearSitOnStage wait>>
+<<sit>>
+Bea: 所以 #line:b9135d
+Bea: 你*到底*怎么样呢？ #line:7beaf8
+->我……呃……很好。 #line:7d5343
+	Bea: 真的？ #line:2cdc00
+	Mae: 我想现在我可以说我很好，也可以说我整个人崩溃了。 #line:fd90f7
+	Mae: 就好像……卡在了中间。 #line:f55e23
+->我不知道。 #line:598f41
+	Mae: 我正在向前 #line:f7db88
+	Mae: 尽管我还在原地。 #line:1bc46a
+	Bea: 嗯。 #line:b894b3
+Mae: 你呢？ #line:a4403a
+Bea: 唔。不算太好？ #line:51c4f4
+Bea: 我梦见世界正要毁灭。 #line:13f528
+Mae: 有这种可能吧。 #line:28acc7
+Bea: 你觉得咱们现在安全吗？ #line:a88874
+Mae: 这可说不准。 #line:927c73
+Bea: 你心真宽。 #line:f89224
+Mae: 是啊。 #line:aa0b0d
+<<close>>
+<<walk Bea BeaNearSitOnStage wait>>
+Bea: 不过……我还是有些搞不懂，关于昨天晚上的事…… #line:2e7e20
+->嗯，那明显是个满是老头子的杀人邪教 #line:520ec5
+	Mae: 或者说曾经是 #line:7c8e5a
+	Mae: 谁知道昨晚在那儿的是不是他们所有的人 #line:16b685
+	Bea: 我还是不敢相信这玩意居然真的存在。或者存在过。 #line:18d0a3
+	Mae: 他们大概还得再过个几天才会死透。 #line:14fb89
+	Bea: …… #line:f07cc7
+	Bea: 是啊。 #line:6d76fb
+	Mae: 我说不清楚。从某些诡异的角度上来说，我有点理解他们了。 #line:82aedb
+	Bea: 是吗？！ #line:724ea1
+->那些宇宙恐怖之类的东西？ #line:ef8673
+	Bea: 是啊。那些。 #line:f3754a
+	Mae: 你看得到吗，感觉得到吗？ #line:80b6ed
+	Bea: 没有。但你和那堆老头子之间 #line:e325c4
+	Bea: 肯定发生了些什么 #line:9a7c30
+	Mae: 它很古老。那非常古老。 #line:de7f98
+	Mae: 就好像你闻都能闻到它有多古老。 #line:7b43db
+Mae: 这就像是 #line:1fb294
+Mae: 门廊上的一盏灯。 #line:3c2bee
+Mae: 灯的周围聚满了虫子。 #line:2c5855
+Mae: 然后，灯灭了， #line:ffdb0b
+Mae: 灯所在的位置上出现了一个洞。 #line:6e7532
+Mae: 就像我回来时发生在我身上的事情一样。 #line:bd711d
+Mae: 跟我昨晚在沙发上告诉你的一样。 #line:151cde
+Bea: 我去，那才昨天啊。 #line:2882bb
+Bea: 我觉着像两辈子之前的事了。 #line:276983
+Bea: 嘿嘿，是啊。 #line:191870
+<<wait 4>>
+<<if $found_pentagrams < 3 and $did_lori_friendship_quest_2 is 0 and $did_germ_friendship_quest_3 is 0>>
+	Mae: 这世界真的是糟透啦。 #line:189d4e
+	Bea: 是啊，的确是这样。 #line:67227d
+	<<if $failed_state_joke>>
+		Mae: ……在失败状态？ #line:1f945c
+		Bea: 很接近了。 #line:32ece6
+    <<endif>>
+	Mae: 有个怪问题- #line:9d307f
+	Mae: 每天早早起来，去开店门 #line:61fa6a
+	Mae: 日复一日 #line:af877a
+	Mae: 这你乐意吗？ #line:23390e
+	Bea: 实际上我没得选，不是吗？ #line:de8e4d
+	->我觉得，你绝对有得选。 #line:83b7d2
+		Mae: 你不够自信 #line:653473
+		Mae: 你还开着这店是因为你在意它们 #line:64829f
+		Bea: 可能吧。 #line:4493b7
+		Bea: 在不在意和愿不愿意是两回事。 #line:3c5f39
+		Bea: 对某些东西很在意，有时候是很吓人的一件事 #line:9019fc
+		Bea: 我感觉它一直都在我看不见的地方 #line:72af48
+		Bea: 跟着我。 #line:858ce6
+	->我猜的确没有吧。 #line:3c8503
+		Mae: 但是。很多人可能会 #line:284f20
+		Mae: 被你经历过的那些事给压垮 #line:37ddc5
+		Bea: 我妈特别坚强。也特别聪明。 #line:c11a76
+		Bea: 在我发现留给她的时间不多的时候 #line:b748c3
+		Bea: 我只是从没想过她会那么脆弱 #line:357590
+		Bea: 但我们都会变得脆弱。 #line:ad68ec
+		Bea: 我大概是不想让她让她失望吧。 #line:88d5df
+	Bea: 那些鬼东西我一样也*不能*放弃。 #line:565085
+	Bea: 我是说，我不只开店 #line:cc39cf
+	Bea: 还要给我们家做会计 #line:aa3001
+	Bea: 还要处理和商会的那些事务 #line:c008ee
+	Bea: 上那些免费网课 #line:949da8
+	Bea: 我还是那些青年社会主义者的一员。 #line:da6995
+	Mae: 而我一直在睡觉，时不时还吃个披萨。 #line:540b9e
+	Bea: “按能分配" #line:ef4d01
+	Mae: 嗯，往好处想，你还有我呢！ #line:ffb832
+	Bea: 哈哈，是啊。 #line:fc5e3b
+	Mae: 我们能一块拯救世界的！！！ #line:895a49
+	Bea: 是啊，把它修理得好好的。 #line:4de29e
+	<<if $did_bea_friendship_quest_2>>
+		Mae: 那炉子我们就修得好好的！ #line:4fc1f4
+		Bea: 是*我*把那个炉子修得好好的。 #line:d51e21
+		Mae: 嗯，我把当时，我们俩困在地下室的状况修得好好的。 #line:917adf
+		Bea: 当然了，梅。当然了。 #line:d12f72
+	<<endif>>
+	Bea: 呃。我猜昨晚应该没有那么怪了。 #line:bfecb5
+	Mae: 它超怪的。 #line:bbede2
+	Bea: 不过是老人在谋杀年轻人和穷人罢了 #line:5ac7c5
+	Bea: 这种事打以前就有。 #line:3ebed8
+	Bea: 一向如此，一向如此 #line:ba7e21
+	Bea: 他们就像某种老洋房里的鬼魂 #line:d7a94e
+	Bea: 不断杀掉新屋主。 #line:e7c49d
+	Bea: 你要么放弃，要么硬着头皮上。 #line:c37bd2
+	Mae: 要么弄得很扫兴，然后睡上一觉 #line:de5b35
+	Bea: 是啊。一觉下来，万事轻松。 #line:4ac1d4
+	Mae: 要么就在他们头上砸个电梯 #line:8f8ff7
+	Bea: 这个也能奏效吧，大概。 #line:00339b
+	<<wait 4>>
+<<else>>
+	//if did pentagrams, lori tracks 2, or germ fq3//
+	Mae: 老天，我都不敢回头去看这两个星期发生的那些事了。 #line:ef8bbd
+	Bea: 我很理解你，梅 #line:57fdfa
+	<<if $found_pentagrams >= 3 and $did_lori_friendship_quest_2 is 0 and $did_germ_friendship_quest_3 is 0>>
+		//if just did pentagrams//
+		Mae: 有三个奇怪的孩子 #line:61548b
+		Mae: 她们跟我说我会看见很多五芒星。 #line:31aced
+		Bea: 什么孩子？ #line:722b70
+		<<if $did_bea_investigation_quest>>
+			Mae: 就是我们在墓地看到的那几个 #line:aa1706
+			Bea: 噢，天呐。那些孩子。 #line:46dffa
+		<<else>>
+			Mae: 我在水塔边上见过他们， #line:95c09a
+			Mae: 就是一群小书呆子罢了。 #line:055778
+		<<endif>>
+		Mae: 总之，他们跟我说如果我看见三个五芒星 #line:63301f
+		Mae: 我就能得到一些帮助。 #line:49f0a5
+		Mae: 我们在派对上的时候我其实有看到一个 #line:a94e3d
+		Mae: 还有昨晚，我在矿道里有再看到一个 #line:e87964
+		Mae: 这让我想起了…… #line:75e771
+		Mae: 你还记得阿丁娜和冰湖的故事吗？ #line:64ca6d
+		Bea: 那个传说？当然。 #line:48357c
+		Mae: 就是那个被冻在冰或别的什么里头的那个天文学家 #line:b304ef
+		Mae: 她死后才找到的那颗星星？ #line:42375d
+		Bea: 鬼星。 #line:22ed54
+		Mae: 好好想想，倒影中的星星是上下颠倒的。 #line:b06ec5
+		Bea: 的确是这样。 #line:96d440
+		Mae: 而这些星星，就是在冰里头，倒影中的你会看到的- #line:66ae53
+		Bea: 好了我知道了。这个故事我看过。 #line:012dc0
+		Mae: 昨天在矿井里的时候我勉强想起来这个故事但是今天 #line:fb5ae1
+		Mae: 我好好想了想。这感觉就像 #line:daadca
+		Mae: 在万事的终结处，你才能把某个东西紧紧抓住。 #line:6eaa14
+		Mae: 或者说任何东西。 #line:ce57be
+		Mae: 去找到那颗骇人的鬼星。 #line:7ea737
+		Mae: 把它画进星图 #line:e47532
+		Mae: 但是你……有星图吗？ #line:e6b42f
+		Mae: 我不知道。我现在又饿又累。 #line:e1adb9
+		Mae: 我感觉像是被一列载着火车的火车碾了过去。 #line:49dbd3
+		Bea: 佩服，你居然能把那些青少年说的东西给理解得这么诡异又惊人。 #line:4ad99d
+		<<if $did_angus_investigation_quest>>
+			Mae: 图形猎手。 #line:53d803
+			Bea: 什么东西？ #line:ffc144
+			Mae: 安格斯造的这个词。 #line:a7ba37
+			Mae: 形容我们这类人很善于辨认形状。 #line:9b09b0
+			Bea: 哦。大概就是生存技能之类的东西。 #line:57ad5b
+			Mae: 是啊。 #line:dbb72d
+		<<else>>
+			Mae: 可我也说不清。 #line:a5aaed
+			Mae: 这对我来说有某种意义。 #line:8e3e27
+			Mae: 这还不够吗？ #line:fbba45
+			Bea: 我可没有什么资格去批判这种吓人的东西。 #line:cbd7f9
+			Mae: 吓人。 #line:5cbc96
+			Mae: 吓～人～ #line:71fd3c
+		<<endif>>
+		<<wait 4>>
+	<<elseif $found_pentagrams < 3 and $did_lori_friendship_quest_2 and $did_germ_friendship_quest_3 is 0>>
+		//if just did lori tracks 2//
+		Mae: 有个叫罗莉的小孩， #line:b17987
+		Mae: 我有在……嗯…… #line:564574
+		Mae: 没准是试着在给她做个榜样？ #line:4496af
+		Bea: 她多大了？ #line:72dee0
+		Mae: 大概15岁了吧。 #line:9f8f20
+		Bea: 所以你和一个15岁女孩一块儿玩？ #line:1076e2
+		Mae: 噢，别说了。总之， #line:9c23d7
+		Mae: 她会把金属小人儿放在铁轨上 #line:27d480
+		Mae: 让火车来碾它们 #line:df2132
+		Mae: 然后它们就变成一些很棒的小怪物。 #line:695f5b
+		Bea: 噢噢，那听着挺酷的。 #line:88dd6a
+		Mae: 是啊，这很棒。 #line:56d03a
+		Mae: 可这也让我去想 #line:65f9a9
+		Mae: 如果这事发生的时候，那些小人儿是活着的呢 #line:56ff23
+		Bea: 老天，这太残忍了 #line:03815c
+		Mae: 他们被不知道是什么的大家伙给压过去，给毁了 #line:dbbf48
+		Mae: 被塑造成 #line:c838c3
+		Mae: 某种新的怪物。 #line:b14b68
+		Bea: 从一个怪物变成另一个怪物。 #line:1ea349
+		<<if $did_bea_friendship_quest_1>>
+			Mae: 就像我当时在卢塞纳堡做的鱼神那件事一样 #line:818266
+			Bea: 我想你当时确实有弄伤几个人 #line:0014d2
+			Mae: 嗯。 #line:5e749f
+			Mae: 随便啦 #line:94a161
+		<<endif>>
+		Mae: 但看看我们生活的地方 #line:76262d
+		Mae: 已经被某些巨大的东西碾过了 #line:bd1035
+		Mae: 但我不清楚，这到底会让我们变得更强大 #line:ad2bcc
+		Mae: 还是只是制造了一批怪物 #line:5b5793
+		Bea: 我觉得……两者都有。 #line:668030
+		Bea: 那么大规模的创伤，大概两样都能做到。 #line:7d4266
+		Bea: 但不管平时我有多讨厌这个粪坑。 #line:22309d
+		Bea: 这儿还是我的家。 #line:9b19fb
+		Mae: 还记得我们是童子军那会，克兰格勒夫人教我们方块舞吗？ #line:9ad659
+		Bea: 哈哈，是啊。老天啊。她还拿着那拐棍 #line:a4712a
+		Mae: 是啊，她敲着地面打拍子 #line:895da4
+		Bea: 克兰格勒夫人对方块舞很上心的。 #line:293442
+		Mae: 她前不久好像去世了。 #line:1864a0
+		Bea: 是啊。她已经老得够可以的了。 #line:89c10e
+		Mae: 方块舞好诡异 #line:0bc856
+		Mae: 我们当时几乎全部乱成一团 #line:44e611
+		Mae: 一边要学会跳舞，一边还要小心别被彼此绊倒 #line:d63d4c
+		Bea: 克兰格勒夫人虽然不在了，可方块舞还在。 #line:4589e1
+		Mae: 我在想罗莉会不会跳方块舞。 #line:220752
+		Mae: 我们该教她跳吗？ #line:6bb86b
+		Bea: 噢，我也被扯进你们这个临时姐妹会了吗？ #line:ea78a7
+		Mae: 方块舞怪物姐妹会 #line:76e3d9
+		Bea: 我们要占领洲际农场秀的地板 #line:50e9fd
+		Mae: 我们要占领我们眼中所见的每一块地板 #line:351006
+		<<wait 4>>
+	<<elseif $found_pentagrams < 3 and $did_lori_friendship_quest_2 is 0 and $did_germ_friendship_quest_3>>
+		//if just did germ FQ3//
+		Mae: 还有，我去了杰姆家。 #line:00ae38
+		Bea: 什 么？！ #line:d835d1
+		Bea: 哦，老天，快跟我说说。 #line:c9eba5
+		Bea: 我都不敢相信他们家有房子 #line:c60563
+		Mae: 嗯，他家有房子。他总得是从哪来吧。 #line:4a6edc
+		Mae: 呃，那是个豪宅，扩建了地下室，还搭了一个小二层 #line:ad34b0
+		Mae: 说实话，真的特别棒。 #line:db3a2f
+		Mae: 他家还有个蹦床。 #line:71e86a
+		Bea: 哦。我一玩蹦床就头晕。 #line:5304e8
+		Mae: 还有，他外婆也住在那儿 #line:c1a412
+		Mae: 她还帮我算了一卦。 #line:ce7082
+		Bea: 靠。 #line:b5ceaa
+		Bea: 她给你算出来什么了吗？ #line:f26353
+        Mae: 嗯，她说了一些关于我的事，但都很离谱。 #line:b51f4e
+        Mae: 你懂的，她的脑子可能不太正常。 #line:35a3a7
+        Bea: 啊。 #line:aa921a
+		Mae: 但其实，它又模模糊糊地预示了一些……昨晚发生的事情？ #line:bcf094
+		Bea: 哇哦，够吓人的。 #line:ce4560
+		Bea: 你也知道，如果你回顾一下宗教史之类的东西 #line:ee0711
+		Bea: 你就能找到很多关于女巫的故事。 #line:b25f10
+		Mae: 你相信世上真的有女巫吗？ #line:dc9c05
+		Bea: 哦，老天，今天能不能别再问我这些信这还是信那的问题了，好吗？ #line:2dcae0
+		Bea: 不过，我相信女巫是真实存在的，因为历史书上有关于她们的记载。 #line:eb1cbb
+		Mae: 所以，你的意思是，她其实是个真正的女巫，对不？ #line:51fe39
+		Bea: 女巫是怎么看见别人的命运的呢？ #line:bc706c
+		Bea: 如果命能被算出来，那表示未来是已经决定好的吗？ #line:6c6556
+		Mae: 可能是吧。未来的发展取决于我们现在的选择。 #line:4865fc
+		Bea: 但如果我们还没有做出选择，那选择本身也可以算是未来的一部分。 #line:3bf885
+		Bea: 那它就应该是什么的一部分，什么…… #line:de0d7f
+		Bea: 啊啊啊，说得我头好疼。 #line:f2bc34
+		Mae: 不，你说到点子上了。这个问题我还没想过呢。 #line:aa28b9
+		Mae: 嗯，随便了。不过，她的话虽然很吓人， #line:ff4253
+		Mae: 但却给了我一种万物有序的感觉。这种感觉还是挺不错的。 #line:6c2638
+		<<if $did_bea_friendship_quest_3>>
+			Mae: 就好像我几天前晚上夹的一口菜 #line:781bc6
+			Mae: 这就是我一定要夹的那一口吗？ #line:5aa95b
+		<<endif>>
+		<<if $did_bea_friendship_quest_2>>
+			Mae: 又好比，我们是命中注定要被困在米兰达夫人的地下室里吗？ #line:8e4a5e
+		<<endif>>
+		Bea: 老天，我可不希望是这种情况。 #line:b356c0
+		->这倒是。 #line:5c2b3a
+			Bea: 我想的是，历史可是会重演的。 #line:eda1a8
+			Bea: 那感觉就跟得了幽闭恐惧症似的，对不？ #line:c936fa
+			Mae: 是啊。 #line:177539
+		->这样有什么不好吗？ #line:50ab1e
+			Bea: 我可不想让我老妈的死成为躲不开的宿命。 #line:d62f5a
+			Bea: 我也不想要让我上不了大学的事成为永远都改变不了的宿命。 #line:56c08d
+			Bea: 我可不想要我在老大镐的生涯只是一个硬编码出来的命运。 #line:bb508c
+			Mae: 嗯，是啊。 #line:55f9ab
+		Mae: 让那些命中注定滚蛋。 #line:5282be
+		Bea: 让它滚到大气层去。 #line:211dfe
+		<<wait 4>>
+	<<elseif $found_pentagrams >= 3 and $did_lori_friendship_quest_2 and $did_germ_friendship_quest_3 is 0>>
+		//if did just pentagrams and lori tracks 2//
+		Mae: 你还记得那个故事吗？呃……就是阿丁娜和冰湖的故事，还记得吗？ #line:0fe639
+		Bea: 那故事不是叫《阿丁娜与林中之神》吗？ #line:777537
+		Mae: 好吧，好吧，管他叫什么呢。 #line:aec7d7
+		Mae: 话说，我这段时间遇到了几个怪小孩儿。 #line:1c3346
+		Bea: 这部分内容我记不清了。 #line:88dcc8
+		Mae: 这可不是故事，傻瓜，这是真事。 #line:9e8aed
+		Bea: 我知道，开个玩笑而已。 #line:587400
+		Mae: 完了，今天我连怎么吐槽你的笑话都不会了！ #line:d2e357
+		Bea: 好吧，你说你见到了几个小孩儿。 #line:ed1915
+		Mae: 总之这几个小孩儿都挺吓人的。 #line:77ed6b
+		<<if $did_bea_investigation_quest>>
+			Mae: 其实，在墓地的时候，你已经见过他们了。 #line:0994f6
+			Bea: 噢，原来是那几个孩子啊。 #line:de0985
+			Bea: 就是那几个折磨人的小破孩儿。 #line:64ceb4
+			Mae: 没错，就是他们。 #line:9f41aa
+		<<endif>>
+		Mae: 他们预言我会看见一些五芒星，然后我就……真的看见了。 #line:93daea
+		Mae: 我感觉他们好像是巫师之类的人。 #line:6048b3
+		Bea: 你觉得他们……呃……有通灵能力，是吗？ #line:177b59
+		Mae: 说不清，我只是觉得他们很怪罢了。 #line:cf2e2e
+		Mae: 但昨晚我们在下边的时候，我又看见一个五芒星。 #line:49a872
+		Mae: 它就在矿道里，表明了那个大坑的位置。 #line:7a478d
+		<<if $did_angus_investigation_quest>>
+			Mae: 安格斯如果听到的话会笑我的 #line:5a75f3
+			Mae: 他会说我不过是在寻找图形罢了 #line:a75949
+			Bea: 是啊，安格斯就是这样。不过他说的时候语气会很温和的。 #line:f73b59
+		<<endif>>
+		Mae: 当时这个并没有引起我多大注意 #line:60c55a
+		Mae: 但就像那个故事一样，那个有个天文学家死在里头的故事 #line:7d9a42
+		Mae: 它们就好像是冰中的倒影 #line:006568
+		Mae: 还有那颗人不死就看不见的星星 #line:e92815
+		Bea: 嗯，那颗星星叫“鬼星"。 #line:c526cc
+		Mae: 而如果你看见了鬼星的倒影。它应该就是个五芒星。 #line:579b86
+		Bea: 没错。 #line:945c2e
+		Mae: 我不清楚。还有一个孩子，叫罗莉·梅尔斯。 #line:96adad
+		Mae: 我们曾经在铁轨边玩儿 #line:6676c1
+		Bea: 所以你在和一个小孩到处乱晃？ #line:19e298
+		Mae: 别打岔。 #line:2747fe
+		Mae: 罗莉她喜欢把金属小人儿放在铁轨上让火车碾 #line:2c124b
+		Mae: 然后它们就变成了一些很酷的小怪物。 #line:669848
+		Bea: 噢，酷啊。 #line:43f45d
+		Mae: 是啊，罗莉可牛啦。 #line:8df572
+		Mae: 但看着她做这些时候，我感觉这就像是，某种……仪式？ #line:76658a
+		Mae: 就好像是某种试着去点屎成金的古老魔法？ #line:cd9b4a
+		Bea: 炼金术。 #line:1fa7c6
+		Mae: 是啊。就像炼金素一样。她好像在搞巫术。 #line:87c603
+		Bea: 所以你正在跟我说你遇见了4个女巫。 #line:a13148
+		Mae: 虽然不是真的女巫但是 #line:3b6955
+		Mae: 我不知道我在说什么。 #line:529643
+		Mae: 昨晚当我感觉一切都结束时，感觉一切都没有希望时 #line:72a198
+		Mae: 我想起了……鬼星和阿丁娜和那些女巫年轻人 #line:88d2f4
+		Mae: 还有罗莉在把玩具小人变成怪物的事，还有那些火车 #line:29f550
+		Mae: 我突然就觉得，这就是生活 #line:839a4e
+		Mae: 而年轻人们，都在做着诡异的巫术来维持生活这个法阵。 #line:75e6a6
+		Mae: 所以这一切还不至于那么绝望。 #line:3f4533
+		Bea: 这就像宗教人士写在书里的励志故事 #line:ec225d
+		Bea: 大爷大妈们会捧着书去研究 #line:0c5138
+		Bea: 去看怎样才能找天使把快撞上他们的车子给停下 #line:d83b31
+		Bea: 或者怎样天使才会卖给他们房子，却一分钱也不收 #line:c6a80a
+		Bea: 想得太美了，哪里找这样傻傻的小年轻天使去 #line:688cf0
+		Mae: 我猜，你属于那种能力有多大，就做多大的事的人。 #line:8039dd
+		Bea: 嗯。 #line:4e027c
+		<<wait 4>>
+	<<elseif $found_pentagrams >= 3 and $did_lori_friendship_quest_2 is 0 and $did_germ_friendship_quest_3>>
+		//if just did pentagrams and germ fq3//
+		Mae: 你相信通灵之类的东西吗？ #line:9e9904
+		<<if $did_bea_investigation_quest>>
+			Mae: 哦，等一下，抱歉，咱们之前已经讨论过这件事了。 #line:887760
+			Bea: 咱们什么时候讨论过啊？ #line:b562d7
+			Mae: 那天晚上咱俩去墓地的时候说过这事！ #line:934d34
+			Mae: 你说你大概相信世界上有鬼之类的东西。 #line:7b47d1
+		<<else>>
+			Bea: “之类"？除了鬼还有别的吗？ #line:58bce6
+			Mae: 比如……超自然狗屎？ #line:e13fbd
+		<<endif>>
+		Bea: 嗯，对这样的我还能接受。大概吧。随便。 #line:a31e35
+		<<if $did_bea_investigation_quest>>
+			Mae: 还记得我们在那儿见到的那些怪小孩吗？ #line:c426ed
+			Bea: 哈哈，记得，是不是特别喜欢折磨你的那几个？ #line:3d86b5
+			Mae: 对，就是他们。 #line:732f5e
+			Mae: 我以前见过他们。 #line:2d42a2
+		<<else>>
+			Mae: 我是在外面那座水塔的边上 #line:1c5456
+			Mae: 见到的这三个小孩 #line:8985e6
+			Mae: 他们几个都又吓人又扯淡 #line:58c8a3
+		<<endif>>
+		Mae: 他们说我会看到一些五芒星，并且会从中得到帮助。 #line:7c0d28
+		Mae: 我觉得他们是女巫。 #line:5a9fc7
+		Bea: 诡异，又友善。 #line:d2afef
+		Mae: 好吧，先不想那个了。还有一天我去了杰姆家，然后- #line:062800
+		Bea: 我 勒 个 去！！！ #line:bbd204
+		Bea: 你居然去了杰姆家？！？！？ #line:0e2f17
+		Bea: 他家什么样？ #line:0af8a9
+		Mae: 那儿很棒。他家可是豪宅，还有个个地下室。 #line:779273
+		Mae: 他家还有个蹦床。 #line:bf32c5
+		Bea: 哦。我一玩蹦床就头晕。 #line:418c7d
+		Mae: 我爱死它了伙计。 #line:e1b4df
+		Mae: 我在上边蹦得好高，另外我还和他爸还有他舅舅聊工会的事。 #line:5516fa
+		Bea: 这些听着都好棒。 #line:aa8b50
+		Mae: 然后他外婆给我算了一卦。 #line:5a2588
+		Bea: 我靠。 #line:41a767
+		Bea: 她都跟你说什么了？ #line:609ff3
+        Mae: 嗯，她说了一些关于我的事，但都很离谱。 #line:c3855b
+        Mae: 你也知道，都是些比较烧脑的事。 #line:e65e6a
+        Bea: 啊。 #line:f5f1e0
+		Mae: 但其实，它又模模糊糊地预示了一些……昨晚发生的事情？ #line:ef5c6d
+		Bea: 哇哦。 #line:edee2a
+        Mae: 嗯。 #line:183872
+		Mae: 昨晚我在下面的时候， #line:8c5a91
+		Mae: 看见了一个五芒星。 #line:0c7e31
+		Mae: 它画在支撑梁上 #line:487461
+		<<if $did_angus_investigation_quest>>
+			Mae: 我要是跟安格斯说这事，他肯定会笑的 #line:5a2997
+			Mae: 他会说我不过是个图形猎手。 #line:af780d
+			Bea: 嗯，听着像是他会说的话。 #line:ae7aab
+		<<endif>>
+		Mae: 我看到它的时候并没想太多，直到今天 #line:4b4c3f
+		Mae: 它就好像，哇哦 #line:b6c5f1
+		Mae: 那些孩子的话是对的。 #line:5657ac
+		Mae: 杰姆的奶奶也……对了四分之一？差不多吧？ #line:599250
+		Bea: 他们说发现这些会对你有帮助，是吗？ #line:b5bf4d
+		Mae: 嗯……在这个事件里，我的确感觉我不是在孤军奋战 #line:9359b9
+		Mae: 我是说，你们大伙当时都在 #line:904410
+		Mae: 但是，他们说的那种帮助更像是……在我脑中的帮助 #line:7d9b6a
+		Mae: 它让我明白，这一切都还有人知道 #line:f3f81a
+		Mae: 而且他们正试着帮助我 #line:6264ef
+		Mae: 就好像他们*全部*都是女巫一样 #line:c467d8
+		Mae: 而且好像……我其实并不相信魔法，但是……我不知道 #line:3fd365
+		Bea: 听上去似乎你相信魔法 #line:93a05b
+		Mae: 讲真的我不相信。 #line:10e4ec
+		Bea: 你真相信这世上有女巫吗？ #line:f63012
+		Mae: 不信。 #line:51c0b7
+		Bea: 你整个人巫化了，老天呐 #line:9992f2
+		Mae: 好吧，就当我没说。 #line:03a5ec
+		Bea: 梅。 #line:36b46d
+		Mae: 嗯？ #line:48f8ad
+		Bea: 真高兴你没事。 #line:827f86
+		Mae: 谢了。 #line:dce6c1
+		<<wait 4>>
+	<<elseif $found_pentagrams < 3 and $did_lori_friendship_quest_2 and $did_germ_friendship_quest_3>>
+		//if did just lori tracks 2 and germ FQ3//
+		Mae: 对了，有一天我去了杰姆家。 #line:afaa03
+		Bea: 天哪！！！！ #line:46e437
+		Bea: 我都没法想象他会住在什么样的地方。 #line:266275
+		Bea: 树屋之类的？ #line:9a2978
+		Mae: 才不是，那儿很棒。 #line:6ada79
+		Mae: 他家是个豪宅，还扩建了地下室 #line:63d4b5
+		Mae: 他家里还有个蹦床。 #line:ce4535
+		Bea: 噢。蹦床总弄得我想吐。 #line:c631be
+		Mae: 很屌的。我们还去吃了邋遢乔。 #line:bdb39e
+		Bea: 嗯嗯嗯。你弄得我现在就想去吃一顿这个。 #line:61a86d
+		Mae: 老天，他们做的吃的真的超棒啊。 #line:5eb709
+		Mae: 平时没人提邋遢乔的时候，谁也不会想起它 #line:5c7dfe
+		Mae: 一旦提起它，你就想吃的不得了。 #line:2c4634
+		<<if $did_bea_friendship_quest_3>>
+			Mae: 那天在你家的时候就应该做点这个来吃 #line:086cd4
+			Bea: 噢噢噢，是啊 #line:eb34d0
+			Bea: 嘿，对不起，当时对你那样大吼大叫的。 #line:88228e
+			Mae: 噢，没事的，我都不记得当时说了什么了。 #line:9f57ad
+			Bea: 哦。 #line:173196
+		<<endif>>
+		Mae: 总之，吃邋遢乔之前 #line:c9e177
+		Mae: 他外婆给我算了一卦。 #line:c40bfd
+		Bea: 我去。 #line:6ca7d9
+		Bea: 她都跟你说什么了？ #line:61206b
+        Mae: 嗯，她说了一些关于我的事，但内容特别扯。 #line:21f691
+        Mae: 你也知道，都是些比较烧脑的事。 #line:b61e7b
+        Bea: 啊。 #line:5bbc12
+		Mae: 但其实，它又模模糊糊地预示了一些……昨晚发生的事情？ #line:dd093d
+		Bea: 哇哦。 #line:220860
+		Mae: 她说了什么不重要，重要的是，她是谁 #line:3a99da
+		Bea: 她是谁？ #line:72eb3f
+		Mae: 其实只是个普通老太太，出于某种原因，和这些怪事沾了点边。 #line:44ce75
+		Bea: 啊哈。 #line:237529
+		Mae: 好吧。然后，还有一个小孩，罗莉，我和她一起玩过几次。 #line:667f60
+		Bea: “小孩"？  #line:2bfb24
+		Mae: 她大概15岁左右。 #line:6e657d
+		Bea: 所以这些天你就跟老人和小孩在一块晃悠？ #line:071bed
+		Mae: 总之。 #line:0f7374
+		Mae: 罗莉家住在铁道附近 #line:332fdb
+		Mae: 我认为她的家庭生活不太好。 #line:1b95d4
+		Mae: 一点也不好。 #line:287f40
+		Mae: 但她很棒。她喜欢看恐怖片。 #line:2c6f5b
+		Mae: 她把金属小人放在铁轨上，把它们变成一些小怪物 #line:af5634
+		Bea: 噢，小人被火车碾变形了？太棒了。 #line:2dc65c
+		Mae: 是啊，懂了吧？酷小孩。 #line:a4b151
+		Mae: 然后她还会把两个小人放在一起，一块碾。 #line:62bf6b
+		Bea: 双重怪物。 #line:e11c5b
+		Mae: 和她一块玩的时候我感觉我是她姐姐，之类的？ #line:37225d
+		Mae: 我的奶奶已经过世好些年了 #line:e49eb8
+		Mae: 而杰姆的外婆，她试着把我当孙女照顾。 #line:edc33e
+		Mae: 你又像是我的……姐妹？堂表姐妹？ #line:668be6
+		Bea: 那你臆想中的叔叔，也就是虚拟我爸，肯定是个疯子。 #line:117063
+		Mae: 好吧，随便了。 #line:644e3e
+		Mae: 重点是：我们都粘在了一起，就像罗莉的那些小怪物 #line:1f82d7
+		Mae: 就好像你和我和杰姆的外婆和罗莉和…… #line:7f1735
+		<<if $did_bea_friendship_quest_2>>
+			Bea: 和米兰达夫人？ #line:be7389
+			Mae: 不。她会做木乃伊呢。这是绝对不允许的。 #line:703ee8
+		<<endif>>
+		Bea: 所以我们都是某种东西的……一部分？ #line:4e8998
+		Mae: 我们都是被碾出来的怪物的一部分 #line:24eda6
+		<<wait 2>>
+		Bea: 深刻。 #line:7043fa
+		<<wait 4>>
+	<<elseif $found_pentagrams >= 3 and $did_lori_friendship_quest_2 and $did_germ_friendship_quest_3>>
+		//if did pentagrams, lori tracks 2, and germ fq3//
+		Mae: 这个世界真是乱套了，哈？ #line:3e6d66
+		Bea: 是的。绝对如此。 #line:8dd13b
+		<<if $failed_state_joke>>
+			Mae: 算是……失败状态？ #line:41cc55
+			Bea: 离那很近了。 #line:93ab5b
+        <<endif>>
+		Mae: 我的爷爷，他死前 #line:53467e
+		Mae: 最后一句话就是“这房子闹鬼了" #line:78e529
+		Bea: 好吧，挺吓人的。他当时在你们家里吗？ #line:3e3343
+		Mae: 没有，他在医院里头，看着窗户外面。 #line:f837a9
+		Mae: 但我想我理解他说的是什么。 #line:3082d9
+		Mae: 他说的是这整个……地区。 #line:bde0b7
+		Mae: 那天，在墓地的时候 ， #line:0150e6
+		<<if $did_bea_investigation_quest>>
+			Mae: 我朝那三个奇怪的小孩跑过去的时候 #line:dbc15b
+			Mae: 实际上他们也在等我 #line:54f2b3
+			Bea: 哈哈哈，是啊。那些折磨你的孩子。 #line:83c1d9
+			Mae: 没错，就是他们。 #line:eeb255
+		<<endif>>
+		Mae: 她们说我会看见一大堆五芒星，并且能从中得到帮助 #line:9d721c
+		Mae: 我觉得他们是女巫。 #line:14b5c8
+		Mae: 而且后来我真的看到五芒星了。 #line:3ee17c
+		Bea: 怎么……回事？ #line:bc6f1a
+		Mae: 我不知道。昨晚我有在矿道里看到一个五芒星。 #line:bf3725
+		Mae: 貌似是刻在支撑梁上边的。 #line:d5021f
+		<<if $did_angus_investigation_quest>>
+			Mae: 安格斯会说我不过是个图形猎手 #line:2499b5
+			Bea: 是啊，安格斯就是这样。不过他说的时候语气会很温和的。 #line:f86a85
+		<<endif>>
+		Mae: 看见它的时候，我想起了一些 #line:344522
+		Mae: 直到今天早上为止，之前都没有太留意的东西- #line:d40df3
+		Mae: 还记得阿丁娜和冰湖的故事吗？ #line:617adc
+		Bea: 是那个民间传说吗？我觉得它的名字应该叫《阿丁娜和森林之神》。 #line:e08037
+		Mae: 随便啦。你还记得里边那个天文学家怎么死的吗 #line:03f252
+		Mae: 就是那个变成了冰中的倒影的天文学家 #line:e7682a
+		Bea: 记得。呃。她是在寻找那颗只有死人才看得见的星星时死掉的。 #line:6d879b
+		Bea: 鬼星。 #line:fe2694
+		Bea: 我妈她有过一个鬼星的纹身。 #line:b89254
+		Mae: 总之，如果你看着冰上，鬼星的倒影 #line:ea85ce
+		Mae: 它看着就像一个五芒星 #line:c2ebe0
+		Bea: 是……真的吗？ #line:dd286d
+		Mae: 今早上醒来我就感觉，哇 #line:9aae05
+		Mae: 我就感觉我好像找到了我的鬼星 #line:eaa306
+		Mae: 并且我还活着。 #line:1baad9
+		Bea: 而这都是因为那些女巫？ #line:da7fde
+		Mae: 好吧，你看，虽然我觉得这有点蠢，但是 #line:2bcc27
+		Mae: 我见到杰姆的奶奶了。 #line:248c28
+		Bea: 你 说 什 么？？？？？ #line:e8e4b1
+		Mae: 是啊，我去杰姆他们家啦！ #line:069f83
+		Bea: 他家长什么样？？？？？ #line:26be00
+		Mae: 唔，它很棒？ #line:ec7257
+		Mae: 一栋豪宅，还有个地下室。 #line:8aca8b
+		Mae: 他们家还有个蹦床。 #line:bc7daf
+		Bea: 呃。在那种东西上蹦会让我头晕目眩的。 #line:e08c65
+		Mae: 总之他外婆给我算了一卦。 #line:30d082
+		Bea: 老天。 #line:e1a519
+		Bea: 她都跟你说什么了？ #line:a9bdc1
+        Mae: 嗯，她说了一些关于我的事，但内容特别扯。 #line:315d6c
+        Mae: 你也知道，都是些比较烧脑的事。 #line:921a7e
+        Bea: 啊。 #line:65b680
+		Mae: 但其实，它又模模糊糊地预示了一些……昨晚发生的事情？ #line:9b41da
+		Bea: 哇哦。 #line:19d3b1
+		Mae: 看到没？所以我就想，没准她也是个女巫。 #line:9566b5
+		Mae: 不是那种真的女巫。那些孩子也不是*真正*的女巫。 #line:0d8733
+		Bea: 所以呢…… #line:bf9d67
+		Mae: 我现在还经常和一个叫罗莉·M的孩子一块出去玩。 #line:f1cba2
+		Bea: 你这些天就和那些青春期的孩子到处乱晃？ #line:9864f2
+		Mae: 嘘。我在给她做榜样呢。 #line:3a40f1
+		Bea: 哦，那好吧。 #line:10cf7f
+		Mae: 罗莉她把金属小人儿放在火车铁轨上。 #line:c2fb3e
+		Bea: 噢噢噢！然后火车就从它们上边碾过去？那超酷的。 #line:bfba22
+		Mae: 没错，她超棒的。 #line:48be91
+		Mae: 我不知道。也许只是因为我已经长大了 #line:f13b8d
+		Mae: 但是我看着她做这件事的时候。看她打开她的包 #line:9206d2
+		Mae: 把这些东西拿出来 #line:a6996b
+		Mae: 然后用真的火车 #line:540450
+		Mae: 把它们变成小怪物。 #line:b2cf15
+		Mae: 我得出了一个合理的结论。 #line:f90aee
+		Mae: 女巫。 #line:64619e
+		Bea: 哇哦，梅你简直是整个人泡在女巫里头了。 #line:90a2f2
+		Mae: 嘿，听着，你也可能是女巫。 #line:9aaafd
+		Bea: 老天，我要是就好了。 我有一堆咒要下呢。 #line:ec1d6d
+		Mae: 我还想说我很明显也算是个女巫。我怎么看都多少沾点恐怖巫术。 #line:1dfa31
+		Bea: 当然了 #line:d1ac85
+		Mae: 我不知道。昨晚，今天……？ #line:47d2ca
+		Mae: 现在一切都已经是坏得很了。 #line:494368
+		Mae: 世界上的一切都好糟糕。 #line:a4fd2c
+		Bea: 昨天晚上的那些家伙， #line:fff3d2
+		Bea: 他们就像老洋房里的幽灵一样 #line:d321d0
+		Bea: 不知道他们自己早就半截入土了 #line:05c310
+		Bea: 还在洋房里头潜伏着，等有人一进来就给杀掉。 #line:c3c9da
+		Mae: 就像爷爷说的那样。这里有鬼。 #line:ccc928
+		Mae: 但是这里也有很多女巫。 #line:2677d6
+		Mae: 这让我多少感觉好点。 #line:84cf4e
+		Bea: 所以这一整个荒废的工业区不过是被鬼和女巫给占领了？ #line:27aa06
+		Mae: 是啊，但不是所有的鬼都是恶鬼，就好像……我是说……呃。 #line:c354bc
+		Mae: 我不知道对于这些事我该说什么，真是漫长的一周。 #line:05474f
+		Bea: 没事的。 #line:dd1bd3
+		<<wait 4>>
+    <<endif>>
+<<endif>>
+
+Mae: 话说， #line:5c0d71
+<<if $mallard_rats>>
+	Mae: 最近你店里是不是……呃……有老鼠了？ #line:e8b43c
+	Bea: 呃……对。你怎么知道的？ #line:936735
+	Mae: 我听说，最近镇上出现了不少老鼠。 #line:ea4b36
+	Mae: 不知道为什么我感觉挺开心。 #line:d81532
+	Bea: 好吧这儿可没有“不严重的鼠患"这一说 #line:43a444
+	Bea: 它们会越来越多的 #line:6703de
+	Mae: 盼暖春来。鼠儿成灾。 #line:a3b3c5
+	Bea: 顺口溜不错。我们其实有在卖老鼠药。 #line:998efe
+	Bea: 它们的数量会减少的 #line:2a76dd
+	Mae: 拭目以待。 #line:39f2f9
+	Mae: 嘿，都是小事， #line:dccc31
+<<endif>>
+Mae: 话说你的车有多好？ #line:2ed604
+Bea: 怎么个好法？ #line:b0b2d2
+Mae: 就比如，它能开很远吗？ #line:ccfbcd
+Bea: 梅你对车了解多-你说什么？ #line:01778c
+Mae: 咱们应该来一次公～路～旅行。 #line:cb0b82
+Bea: 去哪儿呢？ #line:af246c
+Mae: 一直往西走， #line:fbd980
+Mae: 那儿的路很平坦。 #line:c3ba30
+Bea: 是啊。 #line:c5b468
+Mae: 我们可以去那些路很平坦的地方 #line:7659ff
+->那里还会有烧烤卖。 #line:4cce76
+	Bea: 我想BBQ应该往南边 #line:671f21
+	Mae: 可不一定 #line:0b0c6e
+	Mae: 它可无处不在呢，碧-碧-Q。 #line:ff3164
+	Mae: 各式各样的。干的。湿的。豪华的。 #line:f2f0fa
+->然后你就可以看见全世界最大的波兰饺子。 #line:987120
+	Mae: 或者是一家玩具火箭船的博物馆 #line:2246bb
+	Mae: 又或者是椒盐饼工厂 #line:6c6c3e
+	Mae: 或者是一间看着像巨型小鸡的房子！ #line:6a5ccc
+Bea: 我……好吧这个我们明年再说吧 #line:e344af
+Mae: 我现在就会开始做计划的。 #line:4ebd00
+Bea: 我想因为你身上的那些事你是不能离家的吧？ #line:d5b342
+Mae: 呃。有你就是家。 #line:9cfd7d
+Mae: 我是说，如果我们是一起被困在这里 #line:7bad62
+Mae: 那我们也能一起被困在外面。 #line:fd3bbc
+Mae: 我是说，要是到时侯我们没死的话。哈哈哈。 #line:b05fc6
+Bea: 能把死说得这么诙谐，做这种事你真的很有一套，梅梅。 #line:14083b
+Bea: 这其实应该是某种天赋。 #line:da55ec
+
+//from offscreen to the left//
+<<close>>
+<<playAmbientSFX AmbientSFX:band_door_open>>
+<<lookAt Bea Gregg>>
+<<wait 2>>
+Gregg: 天 杀 的，这 T M 破 门！ #line:6aa8a6
+Angus: 我觉得老天已经杀过这门了。 #line:a41f04
+Mae: 他们来啦！ #line:afb46a
+<<close>>
+<<walk Angus CharEnter1 wait>>
+Angus: 嘿，伙计们。 #line:7a864e
+<<close>>
+<<walk Gregg CharEnter2 wait>>
+Gregg: 怎么样啊？书呆子们。 #line:c600d8
+->噗，你们俩才是书呆子呢。 #line:f6559e
+	Gregg:{width=8}什什什什什什什么？ #line:131708
+	Angus: 老天。我们可从没被这么侮辱过。 #line:ffcd5a
+	Gregg: 收回那句话，呆子。 #line:25004a
+	Mae: 不可能。 #line:b9c3cb
+->你是怎么把安格斯带出来的？ #line:d6ed0c
+	Gregg: 我说家里有急事。 #line:788599
+	Angus: 我叔叔让拖拉机给碾了。 #line:c77b3c
+	Mae: 哈哈，哇哦。 #line:418d1f
+	Angus: 我的意思是，他确实被拖拉机给碾了，不过那是很多年前了。 #line:17676a
+Bea: 嘿，格雷格，所以…… #line:e5b372
+Bea: 我对凯西并不怎么了解。 #line:9be5c5
+Gregg: …… #line:faf615
+Gregg: 是啊。 #line:832c15
+Bea: 我只想说，很抱歉。 #line:cd08c3
+Gregg: 嗯。 #line:4472e0
+Gregg: 谢了。 #line:7412e4
+Gregg: 凯西是个好人。 #line:816d0a
+<<lookAt Bea Mae>>
+Mae: 对，凯西是个好人。 #line:2d22bf
+Bea: 我们应该……把这件事告诉他父母吗？ #line:c01a11
+->也许是的？ #line:56ae4a
+	Angus: 那咱们该跟他们说什么呢？ #line:5922c2
+	Mae: 我不知道。 #line:13b554
+	Mae: 我们能编点什么听着真实一点的东西吗？ #line:514e6b
+	Bea: 什么意思，事情的真相不够真实吗？ #line:043bcf
+	<<wait 2>>
+	Bea: 不，你是对的，真相很荒诞。 #line:1aabbc
+->或许不要？？？？ #line:8e0f31
+	Mae: 我是说，我们要跟他们说什么？ #line:9b1c31
+	Bea: 呃，说的是啊。 #line:218393
+	Bea: 唔…… #line:591189
+	Bea: 好问题。 #line:219564
+<<lookAt Bea Gregg>>
+Angus: 所以，我们该怎么办？ #line:c6a595
+Mae: 凯西的事？ #line:d24827
+Angus: 不，就是，我们该怎么办 #line:d27047
+<<wait 3>>
+<<lookAt Bea Mae>>
+Mae: 我们能不能明天再想这些？ #line:70c982
+Mae: 我们能排首歌然后去吃个披萨吗？ #line:341f62
+Bea: 说实话，我不认为“歌和披萨"能解决问题。  #line:ec1a5c
+Mae: 我们能回归平常的生活吗，哪怕一天？ #line:f3239f
+Bea: 我不知道今天要怎么样我才能觉得平常。 #line:fd4671
+->在我昏迷的时候 #line:b2a873
+	Mae: 我看见了未来， #line:1bc973
+	Mae: 或者可能，现在就是那个未来 #line:0d2fe1
+	Mae: 或者是曾经是未来 #line:be4bd7
+	<<lookAt Bea Gregg>>
+	Angus: 那种有飞车啊什么鬼的未来吗？ #line:b74a0b
+	Angus: 实际上那会是个灾难 #line:dfc79c
+	Gregg: 哈哈，你终于承认了。现在你欠我5美刀啦。 #line:0245a6
+	Angus: 愿赌服输。 #line:2d33b1
+	<<lookAt Bea Mae>>
+	Mae: 不，那种未来是，镇子已经荒废 #line:46ff77
+	Mae: 被大自然，或者什么鬼，给吃了，给夺回去了 #line:95e30b
+	Mae: 就在我要完全失望时 #line:f695c2
+	Mae: 我去了我家曾经在的地方 #line:22b1f9
+	Mae: 然后我感觉，我直接再建一座房子就成了。 #line:8291ab
+	Mae: 我也可以直接搬走。 #line:ba6c3d
+	Mae: 我得知道什么时候该抓紧 #line:6f528e
+	Mae: 什么时候该放手 #line:68466d
+	Mae: …… #line:7dca4a
+	Mae: 好吧，我的思路完全跑偏了 #line:ff61b3
+	Mae: 我才稳住了它一秒。 #line:ae7eee
+	Mae: 然后它就跑偏了。 #line:20c47a
+	<<wait 2>>
+	Bea: 梅，练歌、吃披萨是个不错的主意。 #line:9f180f
+	Gregg: 练歌和吃披萨。 #line:dd6967
+	Mae: 是啊。 #line:a5f7a8
+	Mae: 的确不错。 #line:e87b95
+->昨晚我在下边的时候 #line:f1d732
+	Mae: 我更倾向于选择不去死 #line:f5d206
+	Mae: 或者至少死前要挣扎一下 #line:1f0ddc
+	Mae: 而那下边的那个玩意…… #line:c99d9e
+	Mae: 它跟我说，没有东西能一直拯救我 #line:2885cd
+	Bea: 等下，它在和你说话？ #line:126292
+	Mae: 它一直在和我说话。 #line:98e961
+	Mae: 不过，我只是不知道它是什么罢了。 #line:585884
+	Mae: 但总之，没有东西能永远拯救我们 #line:80ef44
+	Mae: 但至少有很多东西能够在当下拯救我们。 #line:842699
+	Angus: 你说的真好，梅。 #line:7a7a4b
+	Mae: 哈哈谢了，其实都是我瞎编的 #line:ce42de
+	Mae: 昨天晚上那会儿编出来的 #line:3ae4d6
+	Bea: 我说过的。你很擅长面对死亡。 #line:80df4f
+	Gregg: 死 死 死 #line:9ad6ea
+	Mae: 不管怎么说。排歌，还有披萨。 #line:5c6b49
+	Mae: 每活一天我们就会多一点音乐和披萨 #line:7186cf
+	Bea: 很不错的理由。 #line:01f628
+	Gregg: 不错。 #line:ed780b
+	Angus: 不错。 #line:541cba
+	<<wait 2>>
+	Mae: 不错。 #line:8ba087
+
+<<wait 5>>
+<<scene EndCredits>>
+===
+title: TalkAboutLibrary
+tags: 
+colorID: 4
+position: 4562,-539
+---
+<<lookAt Gregg Mae>>
+<<lookAt Bea Mae>>
+<<fadeIn 1 wait>>
+Mae: ……其实我也说不清这些是不是梦。 #line:627bc6
+Mae: 有个家伙，我觉得他是幽灵 #line:fee36a
+Mae: 他绑走了某个小孩，这件事在我脑里挥之不去 #line:4413ea
+Mae: 睡着的时候我就会想起 #line:17dbe9
+Mae: 不管怎么说，我想我得做些什么 #line:631db9
+Mae: 因为这太吓人了。 #line:088315
+<<wait 2>>
+Bea: 好吧，我可没指望今晚会听到这些。 #line:b65518
+Gregg: 你还好吗，哥们？ #line:ecb8a9
+    ->好得很！ #line:44a4b0
+        Mae: 我不会放弃的。 #line:139064
+    ->不好！ #line:dc81f6
+        Mae: 我害怕极啦！ #line:146dca
+Angus: 那可能根本就不是什么幽灵。 #line:75d1ca
+Gregg: 没错，可能根本就不是。 #line:24b44b
+Bea: 是啊，绝对不是。 #line:c879d0
+Mae: 呃啊。 #line:983c2e
+Mae: 那好吧，那我就自己去查这件事。 #line:1629fd
+Gregg: 嗷，老兄，别这样嘛。 #line:d9bfd8
+Angus: 你还有我们呢！ #line:1ad11e
+Mae: 嗷……伙计们…… #line:ae1615
+<<wait 2>>
+Bea: 好吧，好吧。 #line:3d8a87
+Mae: 所以我们需要去看看, #line:75a67d
+Mae: 这附近 #line:9e8b60
+Mae: 有没有鬼怪那些事？ #line:08175f
+Mae: 我们可以通过可靠方式查明。 #line:ec295e
+Angus: 比如…… #line:346db7
+Mae: 报纸上有灵异版面吗？ #line:e7671d
+<<wait 2>>
+Mae: 什么？你们为什么会觉得这个问题很蠢？ #line:e2f35f
+Bea: 你也知道，我们可以去图书馆查查看。 #line:a2f669
+Mae: 查书吗？相关的书籍？ #line:3cf81f
+Bea: 不，他们有保存本地的报纸 #line:1ece51
+Bea: 一百年来的都有。 #line:b1a004
+Bea: 如果有关于绑小孩的幽灵的秘史的话 #line:894cad
+Bea: 我们可以在那儿查到。 #line:1a5720
+Mae: 噢，哇哦！我都不知道他们有这些呢！ #line:85ffce
+Mae: 我还以为那儿只有一堆破破烂烂的旧书呢。 #line:f6ee9c
+Bea: 你上次去图书馆是什么时候？ #line:daf9f2
+Bea: 我们的图书馆其实比这附近的图书馆要好很多。 #line:b1c1b5
+Mae: 噢。怎么说？ #line:c56814
+Bea: 那些富人一直在给它捐款，是从什么时候开始来着？ #line:09df7c
+Bea: 嗯，他们弄了个基金会，然后 #line:e29448
+Mae: ？ #line:6b9fda
+Bea: 没什么，咱们走吧。 #line:3c4a94
+Mae: 我们大伙能待会再碰头吗？ #line:a7a4a3
+Gregg: 行。 #line:66e9e7
+Angus: 当然可以！ #line:b9d513
+Mae: 好的！我们很快就回来！！！！ #line:c5130c
+Bea: 呜～呼～鬼哦。 #line:5c2b04
+Mae: 要的就是这种精神！ #line:d25d19
+<<set $bea_investigation_quest to 1>>
+<<irisOut 1 wait>>
+<<sectionTitle TheLibrary Library>>
+===
+title: UpForSomeCrimes
+tags: 
+colorID: 3
+position: 2852,-301
+---
+Gregg: 准备好去干点坏事了吗？？？ #line:c42f1b
+Mae: 嗯。 #line:5b5cd2
+->我可能要和碧娅一起出去。我先确认一下。 #line:28364f
+    Gregg: 酷哦。想好了就跟我说。 #line:a606a4
+->当然了！ #line:d2a6ec
+    Gregg:{width=8}嗷 呜～～！ #line:4e15ff
+    Mae:{width=8}嗷 呜～～！ #line:ecd548
+    <<set $gregg_friendship_quest to 1>>
+    <<set $did_gregg_friendship_quest_1 to 1>>
+    <<fadeOut 1 wait>>
+    <<sectionTitle GreggFQ1Intro Outskirts>>
+===
+title: BeaWeSureWereDoingThis
+tags: 
+colorID: 3
+position: 3515,-357
+---
+Bea: 好了，咱们能出发了吗？ #line:60580a
+Mae: o_o :| #line:3bfc8a
+->让我先看看格雷格的安排，很快的。 #line:2bb28a
+    Bea: 好好好。 #line:211bf8
+->当然能啦，咱们去商场买东西吧。 #line:2eb002
+    Bea: 好。 #line:14af92
+    <<close>>
+    <<set $bea_friendship_quest to 1>>
+    <<set $did_bea_friendship_quest to 1>>
+    <<fadeOut 1 wait>>
+    <<scene BeaCar>>
+===
+title: Finish_A2D1
+tags: temp
+colorID: 3
+position: 2896,-913
+---
+<<lookNearest Gregg>>
+
+===

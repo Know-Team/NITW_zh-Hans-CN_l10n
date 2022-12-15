@@ -1,0 +1,68 @@
+title: Caught
+tags: temp
+colorID: 0
+position: 505,248
+---
+<<if $caught_stealing_pretzel is 0>>
+    Cook: 嘿！ #line:424173
+    Mae: 嘿！ #line:494a8d
+    <<set $caught_stealing_pretzel += 1>>
+<<elseif $caught_stealing_pretzel is 1>>
+    Cook: 嘿！住 手！ #line:8bb52d
+    Mae: 哈哈，抱歉了。 #line:f779fe
+    <<set $caught_stealing_pretzel += 1>>
+<<elseif $caught_stealing_pretzel is 2>>
+    Cook: 小 姐，需 要 点 什 么 吗？ #line:55d723
+    Mae: 什么都不需要！ #line:d5156e
+    <<set $caught_stealing_pretzel += 1>>
+<<elseif $caught_stealing_pretzel is 2>>
+    Cook: 这 些 东 西 可 都 是 要 用 钱 才 能 买 的，知 道 吗？ #line:62e28f
+    Mae: 我当然知道啦！ #line:15f80f
+    <<set $caught_stealing_pretzel += 1>>
+<<else>>
+    Cook: 嘿！ #line:21cd1a
+    Mae: 啊，好 吧，好 吧。 #line:18699f
+    <<set $caught_stealing_pretzel += 1>>
+<<endif>>
+<<irisOut 1 wait>>
+<<scene Tunnel>>
+===
+title: Complete
+tags: 
+colorID: 0
+position: 788,244
+---
+<<if $pretzels_stolen is 0>>
+    Mae: 我！就！是！盗！贼！女！王！ #line:fcebf4
+<<elseif $pretzels_stolen is 1>>
+    Mae: 这可是有窍门的！ #line:eca7fc
+<<elseif $pretzels_stolen is 2>>
+    Mae: 这简直是小菜一碟。 #line:f0bb6e
+<<else>>
+    Mae: 对老鼠宝宝来说，这就是美味佳肴。 #line:82f251
+<<endif>>
+<<set $pretzels_stolen += 1>>
+
+<<close>>
+<<fadeOut 1 wait>>
+<<scene Tunnel>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 235,269
+---
+<<if $pretzel_intro_done is 0>>
+    <<set $pretzel_intro_done to 1>>
+    Mae: 好了，好了，好了，好了，梅。 #line:d99bba
+    Mae: 你只有一次机会。 #line:949213
+    Mae: 厨师往这边看的时候，我只要保持不动就可以了。 #line:dd7160
+    Mae: 就算手里拿着蝴蝶饼，他也不会看见的。 #line:26d6a6
+    Mae: 千，万，不，能，动。 #line:290d5f
+    Mae: 这是个很简单的心理学原理。 #line:db9caf
+    Mae: 你之前也干过这事。 #line:4ff8c0
+    Mae: 你知道该怎么做。 #line:b6343b
+    Mae: 放轻松，慢慢来，慢慢来。 #line:3a1243
+    Mae: 好，开 始 行 动。 #line:3605c4
+<<endif>>
+===

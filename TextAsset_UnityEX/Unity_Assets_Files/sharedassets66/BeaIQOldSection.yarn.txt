@@ -1,0 +1,322 @@
+title: EnterLevel
+tags: 
+colorID: 4
+position: -293,612
+---
+<<if $did_bea_coffin is 0>>
+    <<playMusic graveyard_old_section>>
+    [[Intro]]
+<<else>>
+    [[InSinkhole2]]
+<<endif>>
+===
+title: Intro
+tags: 
+colorID: 4
+position: -34,683
+---
+Bea: 这么说…… #line:8b612d
+Bea: 鬼。 #line:8b4301
+Mae: 鬼？ #line:e3ece4
+Bea: 我也不知道自己到底信不信鬼，但是…… #line:8de41b
+Mae: 嗯？ #line:87db0e
+Bea: 你还记得你说过，自己晚上会看见鬼怪吗? #line:10e1f7
+Bea: 我想说我并不是特别相信这不是梦。 #line:59b9cc
+Bea: 因为这本来就是梦。 #line:fc5181
+Mae: 好吧，你果然会这么想。 #line:e71220
+Bea: 但是…… #line:2b91ee
+Bea: 你有见到我妈吗？ #line:0eed6c
+->见过。 #line:9ac953
+	Mae: 虽然人变成鬼之后很难认出来 ， #line:c41434
+    Mae: 但是你可以感觉到那是谁。 #line:dc7428
+    Mae: 我……呃……我十分肯定我看见她了。 #line:70e863
+    Bea: …… #line:4b6332
+    Bea: 真的吗? #line:1b0f6d
+    Mae: 据我判断，是真的。 #line:a36e49
+    Bea: 我只是……想知道她去了哪里， #line:8d5f34
+    Bea: 想知道她是不是一切安好。 #line:4c8e73
+    Mae: 碧娅，她现在就在某个地方，并且过得很好。 #line:c965d3
+    Bea: 谢谢。但我不知道你是不是在说谎， #line:c31602
+    Bea: 也不知道这是不是你梦见的 #line:509674
+    Bea: 或者别的什么的。 #line:a83996
+    Bea: 但是……即使那都是你瞎编的 #line:0e8df7
+    Bea: 你人真好。 #line:bb6304
+    <<wait 2>>
+->没见过。 #line:2b1572
+	Mae: 我是说，我也不太清楚。 #line:7e3881
+    Mae: 我不觉得鬼会长得和 #line:9953bf
+    Mae: 人一样? #line:1c833a
+    Mae: 就好比，他们并不是变成鬼，待在这附近。 #line:51a588
+    Mae: 这更像是 #line:380e7f
+    Mae: 他们变成了回响？ #line:7d4840
+    Mae: 过去的破事，以前待过的人的回响？ #line:a4fe9b
+    Bea: …… #line:66eb65
+    Bea: 哦。 #line:dd8b5f
+    Mae: 相信我，这地方没什么好玩的。 #line:39b087
+    Mae: 你老妈人多好啊， #line:5e0acf
+    Mae: 她本应该好好地活着才对，而不是早早地被埋在这儿。 #line:5e00c5
+    Bea: 哈哈，那可真…… #line:5f826b
+    Bea: 谢谢你，试着活跃气氛。 #line:8837c1
+    Mae: 碧翠丝，我只是在尽我所能罢了。 #line:4a6583
+Bea: 好了，就这样吧。 #line:74d388
+Bea: 情况不太妙啊，咱们被这扇狗屁门 #line:ccb878
+Bea: 锁在外边了。 #line:aea9dd
+Mae: 呃，为什么要在墓地里放个大铁门啊？ #line:87762c
+Bea: 唔，可能是为了防止像你这样的人进去吧， #line:8299a2
+Bea: 还能防止你做你可能会做的那些事。 #line:456d4c
+Mae: 嗯。那也是你的猜测，咱们永远也不会知道这铁门是干什么用的了 #line:444fa8
+Bea: 好吧，我可不想爬到门上去。 #line:e05635
+Bea: 上吧，这是你擅长的领域 #line:06b5b2
+Mae: 我擅长的领域？ #line:2d0426
+Bea: 这种事你最擅长啦！ #line:351ab8
+Bea: 暴力突破之类的鬼东西。 #line:484bba
+Mae: 老天。什么事都得靠我。 #line:080755
+Bea: 是你要找的鬼！我只是个开车的。 #line:c1fb59
+Mae: 好好好。我去去就来。 #line:c82cfe
+<<walk Bea BeaByGate>>
+<<setCanInteract Bea 0>>
+===
+title: GateBreak
+tags: 
+colorID: 4
+position: 336,500
+---
+<<freezePlayer>>
+<<playerCanRun 0>>
+<<playerCanJump 0>>
+Bea: 呃。 #line:935670
+Bea: 我真心希望没人看见。 #line:e5aa85
+Bea: 我们会被起诉的。 #line:794d17
+Mae: 我不觉得门后边会有人。 #line:557ef2
+Mae: 而且现在已经很晚了。 #line:db814b
+Bea: 嗯哼。 #line:62fdc1
+Mae: 顺便一提，不用谢！ #line:ca8ee5
+Bea: 看到没？我就说这方面你很擅长的。 #line:d9ec66
+Mae: 我的背好痛。 #line:d6deed
+Bea: 所以我们需要干什么？ #line:1d8113
+Mae: 呃，我要去找小乔的坟 #line:8616d7
+Mae: 他要是不出来的话 #line:5d28ce
+Mae: 我就敲他的墓碑敲到他出来。 #line:fee8c8
+Bea: 什么东西都不准弄坏，梅。 #line:3737dc
+Mae: 好好好！随便啦！咱走吧！ #line:ed5863
+<<set $at_joes_grave_done to 0>>
+<<walk Bea BeaInPit>>
+===
+title: AtJoesGrave
+tags: 
+colorID: 4
+position: 637,541
+---
+Bea: “乔•谢德" #line:bd0ea8
+Bea: 嗯，这就是他的坟。 #line:43ebdd
+Bea: 这儿的地面都软塌塌湿嗒嗒的。 #line:052773
+Mae: 呃，真恶心。 #line:0228ef
+Bea: 所以我们来这是要干什么？ #line:54924a
+Mae: 唔。我猜我得先四处看看？ #line:f65d8a
+Bea: 看有没有……鬼吗？ #line:a1ec97
+Mae: 呃，可别太较真。 #line:20c369
+Bea: 没较真！这很酷的！ #line:8bf454
+Bea: 梅，我现在要来找*你*了。 #line:75f5b8
+Mae: 喂。你的语调好怪。 #line:39e8d9
+Bea: 那我收敛点。 #line:b8fd8a
+Mae: 谢了。 #line:15cd88
+<<set $at_joes_grave_done to 1>>
+<<set $check_old_section_1_done to 0>>
+<<set $check_old_section_2_done to 0>>
+<<set $check_old_section_3_done to 0>>
+===
+title: InitLevel
+tags: 
+colorID: 4
+position: -628,593
+---
+<<setCanInteract Bea 0>>
+<<set $check_old_section_1_done to 1>>
+<<set $check_old_section_2_done to 1>>
+<<set $check_old_section_3_done to 1>>
+<<set $at_joes_grave_done to 1>>
+
+<<if $did_bea_coffin>>
+    <<warp Mae MaeInPit>>
+    <<warp Bea BeaInPit>>
+    <<flip Mae -1>>
+    <<cameraLookAt CameraEnd>>
+    //<<hide Collision:Ground>>
+<<else>>
+    //<<hide Collision:Ground2>>
+<<endif>>
+
+<<setSpriteLayer Bea CharacterFG>>
+===
+title: CheckOldSection1
+tags: 
+colorID: 4
+position: 934,583
+---
+Mae: 我找到些旧东西！ #line:24a161
+Bea: 什么样的旧东西？ #line:02f3c6
+Mae: 坟？ #line:34fc85
+Bea: 哇哦。 #line:9cf745
+<<close>>
+<<set $check_old_section_1_done to 1>>
+<<set $checked_old_section_count += 1>>
+[[CheckOldSectionCount]]
+===
+title: CheckOldSection2
+tags: temp
+colorID: 4
+position: 1189,643
+---
+Mae: 我想这是一匹马的坟？ #line:a4f00b
+Bea: 我不觉得他们会在人的墓地里埋马。 #line:155e60
+Mae: 想象一下，马的棺材得有多大。 #line:a65a17
+Bea: 想象一下。 #line:786049
+<<close>>
+<<set $check_old_section_2_done to 1>>
+<<set $checked_old_section_count += 1>>
+[[CheckOldSectionCount]]
+===
+title: CheckOldSection3
+tags: 
+colorID: 4
+position: 1469,608
+---
+Bea: 这附近有鬼吗？ #line:e4b3ae
+Mae: 没，碧娅。 #line:0a0378
+Mae: 你也知道。 #line:acb676
+Mae: 我得这么说。 #line:e767c1
+Bea: 哈哈，好好好。 #line:aa44a2
+<<set $check_old_section_3_done to 1>>
+<<set $checked_old_section_count += 1>>
+[[CheckOldSectionCount]]
+===
+title: CheckOldSectionCount
+tags: 
+colorID: 4
+position: 1206,940
+---
+<<if $checked_old_section_count >= 3>>
+    <<setCanInteract Bea 1>>
+<<endif>>
+===
+title: Bea
+tags: 
+colorID: 4
+position: 1163,1206
+---
+<<wait 2>>
+Mae: 这 也 太 蠢 了 吧！ #line:f2cc12
+Bea: 你本来还以为会有什么？ #line:d7caef
+Mae: 某 些 东 西 ！ #line:69f519
+Mae: 可我感觉这么干……真 是 蠢 透 了！！！ #line:fc82cb
+Mae: 他 又 不 可 能 自 己 从 地 里 蹦 出 来！ #line:e8447d
+Bea: 这……这就是你的计划？ #line:4566df
+Mae: 真 是 蠢 透 了 ！ #line:a91e59
+Mae: 我真想狂扁他一顿！ #line:195d4e
+Bea: 哇哦伙计，稳住稳住，别…… #line:6ff57e
+Mae: [shake=.05]小 乔 小 乔 快 显 灵 吧！！！[/shake] #line:f12eda
+<<playerCanRun 1>>
+<<playerCanJump 1>>
+<<setCanInteract Bea 0>>
+===
+title: JumpOnJoeGrave
+tags: 
+colorID: 4
+position: 1478,1210
+---
+Bea: 好吧好吧，这声音听着可不太对啊。 #line:432447
+===
+title: InSinkhole
+tags: 
+colorID: 4
+position: 1748,1204
+---
+//<<hide Collision:Ground>>
+//<<show Collision:Ground2>>
+<<warp Bea BeaSinkhole>>
+<<warp Mae MaeSinkhole>>
+<<flip Mae -1>>
+<<freezePlayer>>
+Bea: 我 靠！ #line:05de66
+Mae: 我 靠！ #line:6d690f
+Bea: 你 都 干 了 什 么？？？ #line:d1cf74
+Mae: 你是对的！ #line:f169d8
+Bea: 对什么对？？？我不是跟你说了别这么搞吗？ #line:c4e71b
+Mae: 落水洞那件事你说的是对的！ #line:ed58c2
+Bea: 我们运气还不错，这洞不深。 #line:df893a
+Bea: 等一下……那是…… #line:a19871
+Mae: 嗯，这是个棺材。 #line:aa0037
+Bea: 哦，我靠。 #line:b4c15d
+Mae: 那咱们要……把它打开……是吗？ #line:b54b04
+Bea: 不。咱们不开 #line:d3eb27
+Bea: 那棺材里可是有一具烂掉的尸体。 #line:e8848d
+Mae: 碧娅，已经过好久了。 #line:e91f91
+Mae: 他已经腐烂的不能再烂了。 #line:b838c3
+    <<if $did_bea_friendship_quest_2>>
+        Mae: 这儿的尸体更多是米兰达先生那种情况。 #line:e98a67
+    <<endif>>
+Bea: 天呐，我们绝不会干这种事，赶紧走吧。 #line:90ddc4
+Mae: 你就真的一点都不好奇？ #line:74f819
+Bea: …… #line:d85af9
+Bea: …… #line:39e865
+Bea: ……好吧。 #line:5870fd
+Mae: 好！那咱们开始吧！ #line:1ac12d
+Bea: 你去弄吧。我就在这儿站着了。 #line:aa4da7
+<<close>>
+<<irisOut 1 wait>>
+<<scene PawsModeBeaCoffin>>
+===
+title: InSinkhole2
+tags: 
+colorID: 4
+position: 2004,1203
+---
+Mae: 没问题吗，这不算犯罪吗？ #line:039178
+Bea: 谁知道呢。 #line:ca21a7
+Mae: 咱们可是侦探！ #line:b6ce50
+Bea: 咱们不是。我们应该是 #line:8f7189
+Bea: 破坏公物的罪人 #line:8db13b
+Bea: 或者是盗墓贼之类的人。 #line:f481f9
+Mae: 这些也都算！ #line:0fdf30
+Mae: 我们现在的身份可多了。 #line:fc7039
+Bea: 嘘！ #line:b4abe3
+Mae: 怎么了？ #line:11c4ec
+<<playAmbientSFX _AmbientSFX:amb_ibon 3>>
+<<wait 2>>
+Bea: 有人在背后看着咱们呢。 #line:f1d83e
+Mae: 哦，老天…… #line:9718df
+Bea: 我不知道那人去哪了 #line:3786fc
+Bea: 就好像是 #line:438eec
+Bea: 从我的余光中消失了…… #line:b4f03e
+Mae: 那是不是…… #line:b3792e
+Bea: 我不知道。但是我们该走了。就现在！ #line:f75aec
+Mae: 那有可能是幽灵！ #line:2a7a3e
+Bea: 不会的！我们要走了！马上！ #line:0b1e04
+Mae: 好吧，好吧，天呐！ #line:3d678a
+<<set $graveyard_branch_break to 1>>
+<<close>>
+<<run Mae OffLeft>>
+<<run Bea OffLeft>>
+<<wait 2>>
+<<trigger GraveyardEide Run>>
+<<wait 4>>
+<<set $want_graveyard_ending to 1>>
+<<fadeOut 1 wait>>
+<<scene BeaIQGraveyard left>>
+===
+title: NeedBea
+tags: 
+colorID: 4
+position: 455,1133
+---
+<<if $graveyard_need_bea is 0>>
+    Mae: 我可不能把碧娅给丢下…… #line:f58345
+    Mae: 呃，碧翠丝。 #line:3d810d
+    Mae: 你也该学学怎么跳上来。 #line:03dfc8
+    Mae: 那双竹竿腿大概是做不到的。 #line:81708b
+    Mae: 我要怎么把这门打开？ #line:136339
+    <<set $graveyard_need_bea to 1>>
+<<elseif $graveyard_need_bea is 1>>
+    Mae: 嗯嗯嗯，肯定有办法能把这门破开的…… #line:300bba
+<<endif>>
+===

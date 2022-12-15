@@ -1,0 +1,614 @@
+title: ApproachHuncherDoor
+tags: 
+colorID: 0
+position: 313,163
+---
+<<set $huncher_intro to 1>>
+<<musicFadeOut 10>>
+<<speechBubbleSizeOverride 1.5>>
+HuncherOutside: 是谁在我家门廊上走来走去的？ #line:30571f
+Adina: 你好？ #line:d131d2
+HuncherOutside: 哦，小姑娘，现在一切都结束啦。 #line:1bdf69
+<<close>>
+<<speechBubbleSizeOverride 0>>
+<<hide HuncherOutside 1>>
+<<wait 1>>
+<<playOneShot event:/lost_constellation/teleport Adina>>
+<<fadeOut .5 1 1 1>>
+<<wait .5>>
+<<hide SceneLink:HuncherInterior>>
+<<warp Adina WarpHuncherInterior>>
+<<clearSnowballs>>
+<<wait 1>>
+<<fadeIn .5 1 1 1>>
+<<spawn BAMF Adina>>
+<<wait 1>>
+
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -305,28
+---
+<<hide HuncherOutside>>
+<<hide HuncherSisterGhost>>
+<<set $skeleton_arm to 0>>
+<<set $skeleton_arm_fire to 0>>
+<<set $skeleton_arm_done to 1>>
+<<if $kicked_out_of_huncher_house is 1>>
+	<<hide SceneLink:HuncherExterior>>
+<<endif>>
+<<if $huncher_sister_convo > 0>>
+	<<scene LN2_LostWoods>>
+<<endif>>
+===
+title: ApproachHuncherInside
+tags: 
+colorID: 0
+position: 340,607
+---
+<<tell HuncherMusic to Play>>
+HuncherInside: 北边土地上的冰雪终年不化， #line:91fe77
+HuncherInside: 死在那里的人 #line:c0b484
+HuncherInside: 也只能永远被冻在冰土里。 #line:5b9694
+HuncherInside: 因为一些死人带有疾病，所以这里才出现了疾病。|为了对抗疾病，我们现在已经没从前那么强大了。 #line:49aed8
+<<tell HuncherKid to PlayInstrument>>
+HuncherInside: 总有一天，大地会变暖，冰雪也会消融。 #line:a7bcd8
+HuncherInside: 然后，这病就会毁灭我们。 #line:d73926
+HuncherInside: 这在我们刚出生时就已经发生了。 #line:552b36
+Adina: …… #line:a9e4c8
+<<setTalkAnimType HuncherInside 2>>
+HuncherInside: [shake=.02]小 丫 头！|请你别再制造噪音了好吗？[/shake] #line:f87047
+<<setTalkAnimType HuncherInside 1>>
+HuncherKid: 不好。 #line:7c4070
+HuncherInside: 好吧，好吧，你个小毛孩。 #line:e9986b
+HuncherInside: 我要把你扔到一个谁都找不到你的地方去。 #line:3afd4a
+HuncherKid: 哈哈哈。 #line:6b61ed
+[[不好意思，我是不是打扰到你们了？|InterruptingSomething]] #line:33b190
+[[我要去一趟冰湖。|NeedFrozenLake]] #line:572e33
+<<show SceneLink:HuncherInterior>>
+<<set $huncher to 1>>
+
+===
+title: HuncherStop
+tags: 
+colorID: 0
+position: -264,564
+---
+<<if $huncher < 2>>
+	HuncherInside: 站那儿别动。 #line:1906a1
+	Adina: 啊 呃！ #line:96baa6
+	Adina: 我动不了了。疼疼疼，快住手。 #line:2f8f4b
+	HuncherInside: 别再往前走了。 #line:12d4f4
+	<<set $huncher to 2>>
+<<elseif $huncher is 2>>
+	HuncherInside: 别动。 #line:bc99fc
+	Adina: 啊 呃！ #line:eb1abc
+<<endif>>
+
+===
+title: AngryHuncherFix
+tags: 
+colorID: 0
+position: 606,366
+---
+<<set $huncher_outside to 1>>
+<<hide HuncherInside>>
+<<hide SceneLink:HuncherExterior>>
+<<show SceneLink:HuncherInterior>>
+<<hide TriggerDialogue:ApproachHuncherInside>>
+<<tell HuncherMusic to Play>>
+<<trackAllSpeechBubblesToCharacters 1>>
+<<if $huncher_fix is 0>>
+	Adina: ！！！ #line:7f4ab1
+<<elseif $huncher_fix is 1>>
+	Adina: 她来了…… #line:e44836
+<<elseif $huncher_fix is 2>>
+	Adina: 我得找个地方躲起来！ #line:e46c25
+<<elseif $huncher_fix is 3>>
+	Adina: 我得躲进荆棘丛里去！ #line:614e4e
+<<else>>
+	Adina: 我准备好啦！ #line:6a3d07
+<<endif>>
+<<tell WinchElevator to SetBottom>>
+<<warp HuncherKid HuncherKidStand>>
+<<animationTrigger HuncherKid Stand>>
+<<tell HuncherKid to StopInstrument>>
+<<flip HuncherKid 1>>
+<<wait .5>>
+<<close>>
+<<wait .5>>
+<<trackAllSpeechBubblesToCharacters 0>>
+<<warp HuncherOutside WarpHuncherExterior>>
+<<spawn BAMF HuncherBAMF>>
+<<flip HuncherOutside 1>>
+<<show HuncherOutside .5>>
+<<wait .5>>
+<<if $player_in_left_brambles is 0 and $player_in_right_brambles is 0>>
+	[[PlayerCaught]]
+<<else>>
+	<<if $player_in_left_brambles > 0 or $player_in_right_brambles > 0>>
+		<<walk HuncherOutside HuncherFix>>
+		<<show SceneLink:HuncherExterior>>
+		<<if $huncher_fix is 0>>
+			HuncherOutside: 讨厌的松鼠！ #line:9cf09e
+		<<elseif $huncher_fix is 1>>
+			HuncherOutside: 这些破松鼠就个没消停的时候。 #line:65b972
+		<<elseif $huncher_fix is 2>>
+			HuncherOutside: 是松鼠吗？ #line:c27229
+		<<else>>
+			HuncherOutside: 是松鼠。 #line:7a922f
+		<<endif>>
+		<<close>>
+		<<wait .5>>
+		<<setAnimInt HuncherOutside waggleArms 1>>
+		HuncherOutside: 北风、黑风、黑暗中的狼啊！ #line:eff14f
+		<<wait 3>>
+		HuncherOutside: 呃，这破天气总是不听话。 #line:169112
+		<<wait 2>>
+		HuncherOutside: 每次都要说一遍。 #line:6d24bb
+		<<wait 2>>
+		HuncherOutside: 北方的蓝色之火啊！|我已知晓你隐秘的名字！ #line:b1b57e
+		<<wait 2>>
+		HuncherOutside: 我将它深埋于地下，|又将房屋建于它之上！ #line:7da3ca
+		<<wait 2>>
+		HuncherOutside: 你须听命于这座房子！ #line:c72cad
+		<<wait 2>>
+		HuncherOutside: 现在，往西吹吧！ #line:247652
+		<<tell SnowWeathervane to Reset>>
+		<<wait .5>>
+		<<wait 1.5>>
+		<<setAnimInt HuncherOutside waggleArms 0>>
+		HuncherOutside: 好啦，完事啦。 #line:f2054a
+		<<wait 2>>
+		<<close>>
+		<<animationTrigger HuncherOutside Idle>>
+		<<if $player_in_house is 1>>
+			<<wait 10>>
+		<<endif>>
+		<<hide SceneLink:HuncherExterior>>
+        <<if $player_in_left_brambles is 0 and $player_in_right_brambles is 0 and $player_in_house is 0>>
+        	[[PlayerCaught]]
+        <<endif>>
+		<<flip HuncherOutside -1>>
+		<<walk HuncherOutside HuncherDoor wait>>
+        <<if $player_in_left_brambles is 0 and $player_in_right_brambles is 0 and $player_in_house is 0>>
+        	[[PlayerCaught]]
+        <<endif>>
+		<<set $huncher_outside to 0>>
+		<<spawn BAMF HuncherBAMF>>
+		<<hide HuncherOutside 0>>
+		<<wait 1>>
+		<<warp HuncherOutside WarpHuncherInterior>>
+        <<flip HuncherOutside 1>>
+        <<spawn BAMF HuncherBAMF>>
+		<<show HuncherOutside 1>>
+		<<if $player_in_house > 0>>
+			[[PlayerCaught]]
+		<<else>>
+			[[CleanUpHuncher]]
+		<<endif>>
+	<<else>>
+		[[PlayerCaught]]
+	<<endif>>
+<<endif>>
+
+===
+title: PlayerCaught
+tags: 
+colorID: 0
+position: 896,134
+---
+<<stopGlobalDialogue>>
+<<freezePlayer>>
+<<setTalkAnimType HuncherOutside 2>>
+<<if $player_in_house is 1>>
+	<<set $player_caught_inside += 1>>
+<<else>>
+	<<set $player_caught_outside += 1>>
+<<endif>>
+<<setAnimInt HuncherOutside waggleArms 0>>
+<<if $huncher_fix is 0>>
+	HuncherOutside: [shake=.015]走你！[/all] #line:484c12
+<<elseif $huncher_fix is 1>>
+	<<if $player_in_house>>
+		HuncherOutside: [shake=.015]Get out of my house![/shake]
+	<<else>>
+		HuncherOutside: [shake=.015]离我家门廊远点！[/shake] #line:275983
+	<<endif>>
+<<elseif $huncher_fix is 2>>
+	HuncherOutside: [shake=.02]接受现实吧！今晚你就在荆棘丛里冻着吧！[/shake] #line:43928c
+<<else>>
+	HuncherOutside: [shake=.02]赶快走吧！[/shake] #line:f6f7d3
+<<endif>>
+<<setTalkAnimType HuncherOutside 1>>
+<<freezePlayer>>
+<<setAnimInt HuncherOutside waggleArms 1>>
+<<set $kicked_out_of_huncher_house to 1>>
+<<fadeOut .5 1 1 1>>
+<<playOneShot event:/lost_constellation/teleport Adina>>
+<<wait 1>>
+<<warp Adina PlayerRejected>>
+<<playerFace 1>>
+<<wait 1>>
+<<fadeIn .5 1 1 1>>
+<<spawn BAMF Adina>>
+<<freezePlayer>>
+<<set $player_was_caught to 1>>
+[[CleanUpHuncher]]
+
+===
+title: CleanUpHuncher
+tags: 
+colorID: 0
+position: 903,586
+---
+<<musicFadeOut 8>>
+<<setAnimInt HuncherOutside waggleArms 0>>
+<<flip HuncherOutside 1>>
+<<hide HuncherOutside>>
+<<show HuncherInside>>
+<<set $huncher_outside to 0>>
+<<if $kicked_out_of_huncher_house is 0>>
+	<<show SceneLink:HuncherExterior>>
+<<else>>
+	<<hide SceneLink:HuncherExterior>>
+<<endif>>
+<<set $huncher_fix += 1>>
+<<tell WinchElevator to SetTop>>
+<<tell SnowWeathervane to Reset>>
+<<warp HuncherKid HuncherKidSit>>
+<<animationTrigger HuncherKid Sit>>
+<<tell HuncherKid to PlayInstrument>>
+<<flip HuncherKid -1>>
+
+<<if $player_was_caught is 0>>
+	<<unfreezePlayer>>
+<<else>>
+	[[PlayerReactionToGettingCaught]]
+<<endif>>
+
+		
+
+===
+title: NeedSpecialKeyItem
+tags: 
+colorID: 0
+position: 903,-96
+---
+<<if $player_caught_inside > 0>>
+	Adina: 那房子里应该有什么东西。如果我能足够快的话…… #line:d1ef53
+<<elseif $player_caught_inside is 0>>
+	Adina: 我得找个特殊的道具才行。 #line:27c591
+	Adina: 哦，我的天哪，我还要回那座房子一趟。 #line:b5c23a
+	Adina: 这是我过得最惨的一个长至夜啦。 #line:febd25
+<<endif>>
+
+===
+title: Snowproblem
+tags: 
+colorID: 0
+position: 314,-71
+---
+Snowproblem: …… #line:875a8e
+
+===
+title: NeedFrozenLake
+tags: 
+colorID: 0
+position: 340,851
+---
+HuncherInside: 今天晚上你要是出去的话，可是很冷的。 #line:0c63bb
+HuncherInside: 你要帮我找戒指吗？ #line:2dd1ce
+HuncherInside: 只要有东西掉进了荆棘丛，我就再也找不到了。 #line:2063a0
+HuncherKid: 我上个星期就找到你的戒指了。 #line:b6c0b4
+HuncherInside: 哦！你找到啦。 #line:00e22d
+HuncherInside: 这可是我第二值钱的家当啦。 #line:1d822b
+HuncherInside: 我把最值钱的东西放在神龛里了。|它对我来说太珍贵啦。 #line:1497d6
+HuncherInside: 但这样又很痛苦。|咱们只能把珍贵的东西|和痛苦的东西放在一起。 #line:30c4ac
+Adina: 我感觉咱们有点跑题了。 #line:12b3c5
+HuncherInside: *嗅 嗅* #line:dc6c4e
+HuncherInside: 我闻到你身上有林中神赐福过的味道。 #line:772a6f
+HuncherInside: 如果你窥探了其中的秘密，|你一定会疯狂想要|把这气味洗去，|直到把皮搓掉了为止。 #line:e86089
+HuncherInside: 等你离开的时候，|你会和其他人一样|掉进荆棘丛里。 #line:3d7fd0
+HuncherInside: 风向标“又"坏了…… #line:3a4888
+HuncherInside: 我还要出去把它修好。 #line:ef71c4
+HuncherKid: 你这个装置真是蠢到家啦。 #line:e7729e
+HuncherInside: ……我出去修风向标的时候， #line:7dde17
+HuncherInside: 顺便看看有没有适合埋人的地方。唉，挺无聊的。 #line:8c4f20
+HuncherInside: 不过那就是你最后要去的地方了。 #line:d30758
+Adina: 那你为什么不现在就杀了我呢？ #line:cdd88e
+HuncherInside: 因为你身上有那个气味。 #line:b9ac6e
+
+===
+title: InterruptingSomething
+tags: 
+colorID: 0
+position: 103,851
+---
+HuncherInside: 我以为你知道答案。你刚刚暴露了。 #line:b60dc5
+HuncherInside: 呃，我们都暴露在其中。 #line:900186
+HuncherInside: 保持这种状态是会出问题的。 #line:f4904e
+HuncherInside: 但你用不着担心。 #line:a4b55b
+HuncherInside: 对不对啊？ #line:e74338
+[[你刚刚是不是非～常含糊地威胁了我一下？|VagueThreat]] #line:eb7b70
+[[其实我想去一趟冰湖。|NeedFrozenLake]] #line:79076f
+===
+title: VagueThreat
+tags: 
+colorID: 0
+position: 102,1083
+---
+HuncherKid: 她？威胁很含糊？ #line:f422e9
+HuncherInside: 哦，我会把你搞明白的，小丫头。 #line:ad5b5d
+HuncherInside: 我会把你的残骸扔到一个与世隔绝的山洞里。 #line:bc82a4
+HuncherInside: 就随他们曝尸荒野！而且你也不会是最后一个哟。 #line:2ea9eb
+HuncherInside: 然后，剩下的工作就交给“她"来做啦！ #line:629129
+HuncherInside: 然后你家里人就永远都找不到你啦。 #line:e2e278
+HuncherKid: 哦，别，别这样。 #line:908ce2
+[[这就是你认为的事物之间正常的关系吗？|NormalDynamic]] #line:37e7a4
+[[*啊哼*。我得去冰湖了。|NeedFrozenLake]] #line:a20e89
+===
+title: NormalDynamic
+tags: 
+colorID: 0
+position: 339,1083
+---
+HuncherInside: 这就是世界万物的关系。 #line:c3d17b
+HuncherInside: 这对她也不例外。 #line:ef0f22
+HuncherInside: 小丫头，|你在伐木厂的时候家里人|就没给你起过名字吗？ #line:f90ee6
+HuncherInside: 就只叫你“小丫头"？ #line:588ce5
+HuncherKid: 不对哟，我的全名叫|“伐木厂小丫头"。 #line:80f0d1
+HuncherInside: 好吧，你是在开玩笑吧。 #line:6af004
+Adina: 你家里人没给你起名字吗？ #line:eac05e
+HuncherKid: …… #line:ad4be3
+HuncherInside: 只有在你没有名字的时候， #line:09a4c1
+HuncherInside: 你才会明白名字到底有什么用。 #line:0acc41
+Adina: 嗯？ #line:ed10fb
+Adina: 抱歉，说回一下我的事， #line:5420c8
+Adina: 我必须要到冰湖去。 #line:0f8534
+[[NeedFrozenLake]]
+===
+title: HuncherInside.1
+tags: 
+colorID: 0
+position: 573,852
+---
+HuncherInside: 对了，你到底是什么人？ #line:54113b
+Adina: 我是天文学家，但还是个学徒。 #line:9b7671
+Adinda: 说真的，我还是第一次进天文台呢。 #line:e2bae1
+HuncherInside: 哦，亲爱的，天上的星星可都在你脑袋里装着呢。 #line:30e496
+HuncherInside: 可今晚，你脑子里的星星就会像蜡烛一样熄灭的。 #line:cdae20
+Adina: 你又是什么人？ #line:5655f6
+HuncherInside: 林中之神根本就不是神。 #line:9dd048
+HuncherInside: 我的块头可比他大上一倍， #line:2bd351
+HuncherInside: 我也要比他真实得多。 #line:120b58
+HuncherInside: 说实话，不管是谁，就算是你，也比他真实得多。 #line:199ef4
+Adina: 我叫阿丁娜。阿丁娜·阿斯拉。 #line:3206bb
+HuncherInside: 这名字真可笑。|我敢说，这肯定是|你给自己起的名字吧。 #line:9b9066
+HuncherInside: ……我指的是你的姓。 #line:3ca1c3
+HuncherInside: 是什么原因会让一个小姑娘|把自己的姓给改了呢？ #line:655867
+Adina: 你是不会明白的。 #line:1fe9aa
+HuncherInside: 你也是什么情况都不知道。|我是从别处搬到这儿来的。 #line:488083
+HuncherInside: 在我来之前，也有个女人|和我一样来到了这儿。 #line:85cf5f
+HuncherInside: 我们找到了一座小木屋。|然后，|我们就在屋里生火做饭。 #line:5a9d58
+HuncherInside: 然后，我们俩就活了下来。|可最后，|只有我自己活了下来。 #line:a9bba5
+HuncherInside: 我和林中之神打了好几百年。 #line:b78a1f
+HuncherInside: 直到最近，我们的冲突才结束。 #line:456415
+HuncherKid: 额…… #line:ba0c9c
+HuncherInside: 把 嘴 闭 上，|小 毛 孩。 #line:9d3ffe
+HuncherInside: 我敢说，要不是我还活着站在这儿，|她肯定什么话都会说的。 #line:d9f872
+
+===
+title: HuncherInside.2
+tags: 
+colorID: 0
+position: 798,852
+---
+Adina: 你是女巫吗？ #line:754ba9
+HuncherInside: 女巫是个什么玩意？|你想说的是住在|森林里的女人吗？ #line:38bb9d
+HuncherInside: 要是住在森林里的人是个男人，|那他既有可能是个隐士，|也有可能是个伐木工，|还有可能是个猎人。 #line:4b1dc0
+HuncherInside: 可那些人根本就没给|这些干男人活的女人|想出合适的名字。 #line:a54127
+HuncherInside: 所以，|那些人就找了一个|他们又害怕又讨厌的名字， #line:47446b
+HuncherInside: 然后把它安在了我们头上。 #line:9b1099
+HuncherKid: 是安在你头上才对吧。|他们肯定会叫我|“被绑架的女孩"的。 #line:dc76f6
+HuncherInsdie: *唉* #line:fe6a74
+HuncherInside: 就这小破孩，一天天的， #line:24e6a7
+HuncherInside: 什么活也不干， #line:e49db5
+HuncherInside: 还没礼貌，说话也难听。 #line:594a22
+Adina: 那为什么不把她送回去呢？ #line:210c33
+HuncherInside: 我也不知道是为什么。 #line:4bef0a
+
+===
+title: HuncherInside.3
+tags: 
+colorID: 0
+position: 1024,851
+---
+HuncherInside: 话都说完了。 #line:31ac92
+HuncherInside: 我很抱歉，阿丁娜·阿斯拉。 #line:153458
+HuncherInside: 我知道你想活命， #line:3a36eb
+HuncherInside: 可我已经把你的未来给抢走了。 #line:9a175c
+HuncherInside: 现在，你的未来是我的了。 #line:763b38
+HuncherInside: 而且你再也拿不回去了。 #line:b1c622
+<<set $kicked_out_of_huncher_house to 1>>
+<<playOneShot event:/lost_constellation/teleport Adina>>
+<<fadeOut .5 1 1 1>>
+<<set $huncher_exit_enabled to 1>>
+<<musicFadeOut 10>>
+<<wait .5>>
+<<warp Adina PlayerRejected>>
+<<playerFace 1>>
+<<wait 1>>
+<<fadeIn .5 1 1 1>>
+<<spawn BAMF Adina>>
+<<hide SceneLink:HuncherExterior>>
+
+===
+title: HuncherSisterConvo
+tags: 
+colorID: 0
+position: -7,426
+---
+<<musicFadeOut 1>>
+<<clearSnowballs>>
+<<show HuncherOutside .1>>
+<<warp HuncherOutside HuncherSnowproblemsSpawn>>
+<<wait .5>>
+<<playerFace -1>>
+Snowproblem: 什么？不行，不行。 #line:d5702d
+<<playerFace -1>>
+Snowproblem: *咳**咳**咳* #line:c7082b
+<<playerFace -1>>
+Snowproblem: 你 不 能 这 样|！！！！ #line:bcfc7e
+<<close>>
+<<playOneShot event:/lost_constellation/ghost_appear HuncherSisterGhost>>
+<<show HuncherSisterGhost 4>>
+<<wait 4>>
+<<spawn BAMF HuncherBAMF>>
+<<wait 1>>
+<<walk HuncherOutside HuncherNextToSnowman wait>>
+HuncherOutside: 这是怎么啦？ #line:444f0e
+HuncherOutside: 哦，我的天啊，不是吧。 #line:05979d
+HuncherOutside: 姑娘，你都干了什么呀？ #line:cad6b4
+HuncherSisterGhost: [wave][size=.85]你……你就眼睁睁地看着这一切发生！[/all] #line:64cb5f
+HuncherSisterGhost:{width=8} [wave][size=.75]你 就 这 么 眼 睁 睁 地 看 着！[/all] #line:83d561
+HuncherOutside: 不是我干的！是这个地方出了问题！ #line:b02ee9
+HuncherSisterGhost: [wave][size=.85]这就是以前那个炉子。你已经变得和它一样了。[/all] #line:435556
+HuncherOutside: 我也是身不由己啊！ #line:9c96a8
+HuncherSisterGhost: [wave][size=.85]我当时又冷又害怕。[/all] #line:ca211e
+HuncherOutside: 我得活下去！ #line:9a049e
+HuncherSisterGhost: [wave][size=.85]可我却死了。[/all] #line:fe3672
+Adina: 怎么回事啊？您是谁啊？ #line:08c26f
+HuncherOutside: 你还敢张嘴问话，你个没用的小女孩。 #line:bb98ed
+HuncherSisterGhost: [wave][size=.85]我们俩是双胞胎！我们是一起逃到森林里来的。[/all] #line:94f283
+HuncherSisterGhost: [wave][size=.85]我们什么地方都一模一样，可只有一点不一样。[/all] #line:0b3835
+HuncherSisterGhost: [wave][size=.85]在她把我从水里拽上来的时候，[/all] #line:f88f20
+HuncherSisterGhost: [wave][size=.85]她手里握着的唯一东西[/all] #line:e48ee5
+HuncherSisterGhost: [wave][size=.85]就是那个[/all] #line:76fabf
+HuncherOutside: 几百年来，我一直都随身带着它。 #line:3d27fd
+HuncherSisterGhost: [wave][size=.85]我敢说，你的某些想法……[/all] #line:339c47
+HuncherSisterGhost: [wave][size=.85]在我死的那天就已经消失了。[/all] #line:76a9bf
+HuncherSisterGhost: [wave][size=.85]可你却活下来了。[/all] #line:58040e
+HuncherOutside: 我……我…… #line:0c0e45
+Adina: 哦，我的老天，太对不起啦，这件事我真的很抱歉。 #line:fedd77
+HuncherOutside: 快给我滚吧。 #line:fc9179
+Adina: 对不起！！！我本来不想…… #line:5422cd
+<<setTalkAnimType HuncherOutside 2>>
+HuncherOutside:{width=8, angryWobble=5} [shake=.05]给 我 滚！[/shake] #line:4568ff
+<<set $huncher_sister_convo to 1>>
+<<set $day to 3>>
+<<playOneShot event:/lost_constellation/teleport Adina>>
+<<fadeOut .5 1 1 1>>
+<<wait .5>>
+<<wait .5>>
+<<fadeColor 1 0 0 0>>
+<<wait 1>>
+<<showTalkingHeads>>
+Mae: …… #line:6f84b9
+Granddad: 怎么了，梅？ #line:1d72c3
+Mae: 这故事到底是什么意思啊？ #line:cf28dd
+Granddad: 你觉得它是什么意思呢？ #line:08467a
+Mae: 要是我能决定它是什么意思的话，我会觉得它什么意思都没有。 #line:c7cfd0
+Granddad: 哈，这个解释不错。 #line:12f046
+Mae: 我可聪明啦。 #line:b84f2a
+Granddad: 那好吧，既然你对抢银行很有研究， #line:f46c8e
+Granddad: 那就让你来想个抢银行的方案吧。 #line:458623
+Mae: 我就是想知道这故事到底是什么意思嘛。 #line:da6a73
+Granddad: 我觉得，这就要靠你自己了。 #line:e2790b
+Mae: …… #line:173b38
+Mae: 我可不喜欢这样。 #line:2c480d
+<<hideTalkingHeads>>
+<<wait 1>>
+<<scene LN2_LostWoods>>
+
+===
+title: HuncherKid.1
+tags: 
+colorID: 0
+position: 1338,-115
+---
+Adina: 我能把你带出去。 #line:bb151e
+HuncherKid: 你自己都还没逃出去呢。 #line:884ffe
+HuncherKid: 我没法从阁楼逃出去， #line:1a7c96
+HuncherKid: 也没法摆脱那个恐怖的神龛。 #line:bf4583
+Adina: 可你待在这儿一点也不安全。 #line:22d5c0
+HuncherKid: 你知道吗，让林中之神生病的毒药|是我做的，可她却从来没谢过我。 #line:432c9a
+HuncherKid: 她还把所有荣誉都据为己有啦！ #line:7613a5
+Adina: 你说什么？ #line:8041d4
+HuncherKid: 我知道你是怎么想的。 #line:2efeb6
+HuncherKid: 杀神的荣誉，|你肯定不想让别人抢走吧。 #line:a1883c
+Adina: 天啊。 #line:91ac52
+<<set $forest_god_poison to 1>>
+Adina: 我以为你…… #line:3acb63
+HuncherKid: 我不会死的。 #line:98482f
+HuncherKid: 没人知道我已经走了，|也没人想来找我。 #line:936be4
+Adina: 我得走了。 #line:4652bf
+
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: -12,173
+---
+<<animationTrigger HuncherKid Sit>>
+<<if $snowproblem is 1 and $huncher_sister_convo is 0>>
+	[[HuncherSisterConvo]]
+<<endif>>
+===
+title: HuncherKid.2
+tags: 
+colorID: 0
+position: 1585,-113
+---
+HuncherKid: 能走的话，你就赶快走吧。 #line:ec4aff
+===
+title: SnowmanBuildSpot
+tags: 
+colorID: 0
+position: 632,-83
+---
+<<if $huncher_outside is 1>>
+	Adina: 弓背女巫要回来啦！ #line:f98957
+<<elseif $huncher is 0>>
+	Adina: 嗯。 #line:cbf93d
+	Adina: 还是先检查一下那座房子吧。 #line:6839e6
+<<elseif $huncher_fix > 0 and $hasSpecialKeyItem > 0>>
+	Adina: 好了，开干吧。 #line:2fb294
+<<else>>
+	Adina: 有些怪雪是落在树上的。 #line:6ac5e9
+	Adina: 得刮一阵大风才行。 #line:d3d09c
+	Adina: 哈哈哈。只要把风控制住就可以啦。小菜一碟。 #line:7f23e5
+<<endif>>
+
+===
+title: PlayerReactionToGettingCaught
+tags: 
+colorID: 0
+position: 1353,553
+---
+<<set $player_was_caught to 0>>
+<<wait 1>>
+<<alwaysRequireButtonToAdvance 1>>
+<<if $hasSpecialKeyItem is 0>>
+	<<if $huncher_fix is 1>>
+		Adina: 呃。 #line:faf841
+		Adina: 我今晚才不会死在这地方呢。 #line:91be24
+		Adina: 我不能死。 #line:3666a2
+		Adina: 我要看看这里面有什么。 #line:f5d228
+		Adina: 我得进到房子里去。 #line:0349c2
+		Adina: 好了，行动。 #line:a085f4
+	<<elseif $huncher_fix is 2>>
+		Adina: 我太太太冷了。 #line:c5b211
+		Adina: 不行。 #line:1e24ac
+		Adina: 我可是个天文学家啊， #line:0215da
+		Adina: 整片天空都是属于我的，真见鬼。 #line:5fbf86
+		Adina: 我肯定死不了。 #line:10dff0
+	<<elseif $huncher_fix is 3>>
+		Adina: 她的注意力好像被这天气吸引住了。 #line:788729
+		Adina: 可能……嗯…… #line:ee59c0
+	<<endif>>
+<<endif>>
+<<alwaysRequireButtonToAdvance 0>>
+<<unfreezePlayer>>
+===

@@ -1,0 +1,579 @@
+title: InitLevel_A3D4
+tags: 
+colorID: 4
+position: 255,-1236
+---
+<<setCanInteract Bea 0>>
+<<setCanInteract Gregg 0>>
+<<setCanInteract Angus 0>>
+
+<<hide Eide>>
+
+<<flip Mae -1>>
+<<groupFollow>>
+
+<<playerCanRun 0>>
+
+<<playMusic mine_woods_trek 10>>
+===
+title: Trigger1
+tags: 
+colorID: 4
+position: 264,-747
+---
+Mae: 我怎么从没来过这个地方呢？ #line:a63eb6
+<<setGenerateFollowPoints Bea 0>>
+<<moveLocator BeaReturn Bea>>
+<<walk Bea Bea1>>
+Bea: 是不是因为有栅栏挡着，你才没到这儿来过呀？ #line:77e169
+Gregg: 不可能。这地方老有人来啊。 #line:249583
+<<close>>
+<<setGenerateFollowPoints Gregg 0>>
+<<moveLocator GreggReturn Gregg>>
+<<walk Gregg Gregg1>>
+Gregg: 我好像12岁的时候就来过这儿。 #line:eb746b
+Mae: 这儿到底是怎么了？ #line:bdee89
+<<lookAt Mae Bea>>
+<<close>>
+<<waitForMove Gregg>>
+Gregg: 这儿就只有一堆垃圾、树林和动物罢了。 #line:a412c3
+<<wait 2>>
+<<walk Gregg GreggReturn -1>>
+<<wait 4>>
+Angus: 碧娅，你怎么了？ #line:956af8
+<<wait 2>>
+Bea: 没什么。 #line:01e74e
+<<waitForMove Bea>>
+<<waitForMove Gregg>>
+Mae: 没什么？ #line:6fea25
+<<close>>
+<<walk Bea BeaReturn -1>>
+<<waitForMove Bea>>
+<<waitForMove Gregg>>
+Bea: 我刚才在祈祷呢。 #line:5fcff4
+Mae: 哇哦哦哦哦哦。 o> :) O_o #line:ddf547
+Angus: 你真在祈祷吗？ #line:598add
+Bea: 是啊。咱们接着走吧。 #line:9ba261
+<<lookNearest Mae>>
+Mae: _o_ :| o_o #line:ebfed0
+<<setGenerateFollowPoints Bea 1>>
+<<setGenerateFollowPoints Gregg 1>>
+
+===
+title: Trigger2
+tags: 
+colorID: 4
+position: 277,-496
+---
+Mae: 哇哦。 #line:d466ea
+<<lookLeft Mae>>
+<<wait 2>>
+Bea: 我觉得，这堆东西应该都搬到别处才对。 #line:f0ef1a
+Mae: 格雷格，你还记得你12岁的时候这里的样子吗？ #line:16e20a
+Gregg: 记得。我当时害怕极了。 #line:8c5340
+Angus: 这堆东西都是怎么运到这儿的呢？ #line:4f3969
+<<wait 2>>
+Mae: *发抖* #line:3edd02
+Bea: 你怎么了？ #line:4842ab
+Mae: 没事。 #line:917be0
+Mae: 我就是感觉， #line:986fd2
+Mae: 这些又老又旧的东西就这么堆在这儿， #line:961476
+Mae: 每天晚上，咱们睡觉的时候， #line:c0e317
+Mae: 它们还都堆在这儿。 #line:2fd943
+Bea: 那又怎么样？ #line:287533
+Mae: ～～ #line:b4b60b
+Mae: 它们就这么待在这儿，待在一片黑暗里。 #line:d2aa65
+Mae: -_- :( #line:cf674c
+Mae: 很老， #line:dab3f1
+<<setAnimint Mae headShaking 1>> 
+Mae: 很旧，很老，很旧。 #line:7213e7
+<<wait 2>>
+Gregg: :( #line:179627
+Gregg: 姐们儿！嘿，梅！ #line:6c0288
+<<wait 2>>
+<<setAnimint Mae headShaking 0>>
+Mae: _o_ :| =_= #line:cfb963
+Mae: 我还好。 #line:eeb5be
+Gregg: :| #line:7ea19f
+Bea: 咱们应该回去了。到这儿来真是蠢到家了。 #line:3fbd62
+<<wait 2>>
+Mae: 不用回去。没事的。 #line:939655
+Mae: 咱们在抓幽灵呢。呜～多有意思啊。 #line:11b739
+Mae: o_o #line:efb26a
+<<lookNearest Mae>>
+<<fadeOutMusic 10>>
+===
+title: MinerScene
+tags: 
+colorID: 4
+position: 284,-199
+---
+<<lookDirection Mae -.5 -.5>>
+<<lookDirection Gregg -.5 -.5>>
+<<lookDirection Bea -.5 -.5>>
+Mae: 我去…… #line:0649ee
+Gregg: 哈？ #line:2ca7b0
+Bea: 我的个天啊…… #line:ee11ae
+<<setAnimInt Miner3 state 1>>
+<<warp Miner3 MinerGround1>>
+<<close>>
+<<cameraLookAt MinerSceneCamera 3>>
+<<cameraZoom -10>>
+<<wait 3>>
+Miner3: 不 要！不 要 啊！ #line:dc0e5f
+Miner2: 啊，妈的，他醒了！ #line:a5465c
+Miner2: 谁还有乙醚？ #line:392a36
+Miner3: 别，别这样，伙计们…… #line:8a6e9d
+Miner2: 噢，他娘的。 #line:fc0d38
+Miner3: 伙计们……伙计们……等等…… #line:9eb763
+Miner1: 鲁尔夫，你早该料道会是这种结果的。 #line:0d3afd
+Miner1: 在你把整件事都搞砸的时候，你应该就已经知道了吧。 #line:fcd8aa
+Miner1: 这次谁都帮不了你啦。 #line:cd1593
+Miner3: 我的确是*失手*啦！ #line:a34d1c
+Miner3: 这我承认！ #line:323242
+Miner1: 鲁尔夫，这个错你*的确*得承认。 #line:14c2d5
+Miner3: 难道我连一次错也不能犯吗？ #line:df7196
+Miner1: 一 次 错？？？？ #line:8e810c
+Miner1: 你 T M D 居 然 把 |[shake=.05]*一 只 胳 膊*[/shake]|落 在 了 嘎 嘣 脆 的 店 门 口！ #line:2a9153
+Miner1: 就因为你，鬼知道以后镇上会闹出什么事！ #line:8e1546
+Miner3: 那我当时还能怎么办？？？ #line:7b9d8f
+Miner1: 是 你 把 事 情 给 搞 砸 啦！ #line:e0b4ec
+Miner2: 呃，他的腿已经绑好了。 #line:2f3ce9
+Miner1: 你 完 全 可 以 叫 我 们 来 帮 忙 的！ #line:a082d9
+Miner3: 我当时被吓坏啦，好吗？我很紧张！ #line:851c03
+Miner1: 鲁尔夫，我其实很希望你当时能叫我们过去。 #line:6be160
+Miner1: 你觉得我们也想干这种破事吗？ #line:41f4b5
+Miner3: 伙计们，咱们可以把事情说清楚的。 #line:2f9fd9
+Miner1: 已经没什么可说的了。 #line:1c456c
+Miner3: 可……可我还有一家人要养呢！ #line:e5b12c
+Miner1: 鲁尔夫，别侮辱我们的约定。 #line:724d7b
+Miner1: 你知道的，你用不着担心珍妮和你的几个女儿， #line:d724a7
+Miner1: 以后会有人照顾她们的。 #line:f8bcea
+Miner1: 她们不会缺衣少穿的。 #line:3d8230
+Miner2: 他动不了的，他的腿被绑的死死的！ #line:4f2a98
+Miner1: 啊，妈的。 #line:41f8bd
+Miner3: 戴……戴夫！瑞克！本尼！伙计们，你们可都知道我是什么样的人啊！ #line:64d430
+Miner1: 好了，戴夫，你来按住他。 #line:aa5e23
+Miner1: 我很抱歉，鲁尔夫。 #line:ba0616
+Miner1: 你知道，我们别无选择。 #line:1b9cba
+Miner1: 你要是能别再让我们难堪的话，我就谢天谢地了。 #line:f6af0c
+//camera pulls up to obscure action below//
+
+<<playOneShot event:/minewoods/miner_struggle Miner3>>
+<<cameraLookAt LookAwayCamera 3>>
+<<wait 1>>
+<<setAnimInt Miner1 stoop 1>>
+<<setAnimInt Miner2 stoop 1>>
+<<wait 1>>
+Miner3:{locator=Miner3LookawayBubble}[shake=.05]不，不，不，不……[/shake] #line:9e0696
+Miner1:{locator=Miner1LookawayBubble}按 住 他！ #line:b8a8d3
+Miner3:{locator=Miner3LookawayBubble}[shake=.07]不！[/shake] #line:33f301
+//horrible bone cracking noise//
+<<setAnimInt Miner1 stoop 0>>
+<<setAnimInt Miner2 stoop 0>>
+<<wait 1>>
+<<playOneShot event:/minewoods/miner_struggle Miner3>>
+<<wait 1>>
+Miner3:{locator=Miner3LookawayBubble, width=800}[shake=.1]啊啊啊啊啊啊啊啊啊啊！！！！[/shake] #line:c22c4e
+Miner1:{locator=Miner1LookawayBubble}按 住！要 是 这 么 着，能 容 易 点…… #line:dddb46
+//horrible bone cracking noise//
+<<wait 1>>
+<<warp Miner3 MinerGround2>>
+<<playOneShot event:/minewoods/miner_struggle Miner3>>
+<<wait 1>>
+Miner3:{locator=Miner3LookawayBubble, width=800}[shake=.1]啊啊啊啊啊啊啊啊啊啊！！！[/shake] #line:a4fe53
+Miner2:{locator=Miner2LookawayBubble}好了，他解脱了。 #line:74490a
+<<setAnimInt Miner3 state 2>>
+// camera goes back //
+<<playOneShot event:/minewoods/miner_struggle Miner3>>
+<<cameraLookAt MinerSceneCamera 2>>
+<<wait 2>>
+Miner1: 鲁尔夫。 #line:39d045
+Miner3:{width=800}[shake=.1]啊啊啊啊啊啊啊啊啊啊！！！[/shake] #line:baf68e
+Miner1: 鲁 尔 夫。 #line:0f4427
+Miner1: 在这地方，没人能听得见你的喊声的。 #line:f02092
+Miner1: 你越叫，就越难受。还有…… #line:152c0e
+Miner3: [shake=.12]啊啊啊！！！啊啊啊啊啊！！！啊！[/shake] #line:05810f
+Miner1: 我……啊，娘的，咱们还是快点完事吧。 #line:9619a9
+Miner1: 鲁尔夫，希望你别把事情给弄复杂了。 #line:0efd7e
+Miner2: 呃，我的天哪，他的骨头都露出来啦。 #line:d70d05
+Mae:{locator=MaeOffscreenBubble}*喘息声* #line:8c24d6
+<<playOneShot event:/minewoods/mae_discovered Mae>>
+Miner2: 什么情况？ #line:68f5ab
+Mae:{locator=MaeOffscreenBubble}[shake=.05]真 T M 见 鬼。[/shake] #line:702cff
+Miner1: 梅？梅·博罗夫斯基？ #line:6351a7
+Angus:{locator=MaeOffscreenBubble}[shake=.05]快 跑！！！！！！[/shake] #line:098a5d
+//wipe to run scene//
+<<cameraFollowPlayer 3>>
+<<fadeOut 1 wait>>
+<<scene MineWoodsRunAway>>
+===
+title: InitLevel_A4D2
+tags: 
+colorID: 5
+position: 523,-1015
+---
+<<set $death_walk to 1>>
+<<playIdleAnimationPlayer>>
+<<hide Miner1>>
+<<hide Miner2>>
+<<hide Miner3>>
+<<hide Gregg>>
+<<hide Bea>>
+<<hide Angus>>
+<<show Eide>>
+<<flip Mae -1>>
+<<warp Mae MaeStart>>
+
+<<setCanInteract Bea 0>>
+<<setCanInteract Gregg 0>>
+<<setCanInteract Angus 0>>
+===
+title: FallDown
+tags: 
+colorID: 5
+position: 533,-752
+---
+<<close>>
+<<cameraLookAt MinerSceneCamera 3>>
+<<cameraZoom -10>>
+<<wait 3>>
+// characters fall down from off screen
+Mae: 看来你终于露出真面目了。 #line:6e2931
+<<close>>
+<<warp Mae MaeGround>>
+Mae: 呀，终于找到你了。 #line:165c0c
+<<close>>
+<<irisOut 1 wait>>
+<<scene MineEntrance left>>
+===
+title: Eide
+tags: 
+colorID: 5
+position: 537,-491
+---
+Mae: 你到底是谁？ #line:2c69e8
+<<close>>
+<<wait 2>>
+Mae: 你真的是幽灵吗？ #line:361655
+Mae: 还是说， #line:041bbf
+Mae: 你只是个普通人啊？ #line:8f9363
+<<close>>
+<<wait 2>>
+Mae: 我脑子里出现的这些东西又是怎么回事？ #line:542284
+Mae: 这都是你干的吗？ #line:f03984
+Mae: 为什么这些事会发生在我身上啊？ #line:afeea5
+<<close>>
+<<wait 2>>
+Mae: 你说啊！！！！ #line:351372
+<<close>>
+<<wait 2>>
+Mae: 好吧，那咱们来做个了结吧。 #line:d47af5
+<<playerCanMoveRight 0>>
+===
+title: EideApproach
+tags: 
+colorID: 5
+position: 542,-222
+---
+<<tell GreggSideBoltShootEide Fire>>
+<<wait 2>>
+
+<<show Bea>>
+<<show Gregg>>
+<<show Angus>>
+
+<<setAnimInt Gregg crossbow 1>>
+
+<<if $dom_friend_bea>>
+    <<warp Bea Char1EideApproach>>
+    <<warp Gregg Char2EideApproach>>
+<<else>>
+    <<warp Gregg Char1EideApproach>>
+    <<warp Bea Char2EideApproach>>
+<<endif>>
+<<warp Angus Char3EideApproach>>
+
+<<if $dom_friend_bea>>
+    <<walk Bea Char1NearEide>>
+    <<walk Gregg Char2NearEide>>
+<<else>>
+    <<walk Gregg Char1NearEide>>
+    <<walk Bea Char2NearEide>>
+<<endif>>
+<<walk Angus Char3NearEide>>
+
+<<waitForMove Bea>>
+<<waitForMove Gregg>>
+//gregg is using Gregg_walk_crossbow, when he stops play Gregg_bod_Crossbow_Down2Up and hold on Gregg_bod_Crossbow_up//
+<<setAnimInt Gregg crossbow 2>>
+
+<<if $dom_friend_bea>>
+    Gregg: 砰。 #line:0ef499
+    Bea: 离她远点，你个王八蛋。 #line:976639
+    Angus: 我们人可比你多，混蛋。 #line:dd96f9
+    Eide: 啊啊啊，你敢拿箭射我！ #line:280c18
+    Bea: 我们的胳膊腿可都好着呢。 #line:fb49e7
+    Bea: 而且，我一个人就能拆了你。 #line:de568b
+    Gregg: 哇哦，我的老天哪，碧娅。 #line:a740bc
+<<else>>
+    Bea: 射得好。 #line:c6e30c
+    Gregg: 你该庆幸，我本来是照着你脑袋射的！ #line:cdabaa
+    Eide: 啊啊啊，你TM敢拿箭射我！ #line:f5cf93
+    Gregg: 嘿，你个王八蛋！给我离她远点！ #line:614ede
+    Angus: 我们可有三个人，你只有一个人。 #line:d66d04
+    Gregg: 而且，我们也没人中箭。 #line:822ce8
+    Gregg: 我要 *@$%ing  %*$@**$%*@*$%@ 了你！！！ #line:c1f899
+    Bea: 没错。 #line:f33bdb
+<<endif>>
+Eide: 啊啊啊啊啊！ #line:a76886
+<<close>>
+
+<<playOneShot event:/minewoods/eide_scamper_away Eide>>
+<<run Eide EideRunAway>>
+Eide: {width=5}[wave][shrink]啊啊啊哦哦哦哦哦……[/all] #line:402d1a
+<<close>>
+<<waitForMove Eide>>
+<<hide Eide>>
+<<wait 2>>
+//play Gregg_bod_Crossbow_Up2Down and hold on Gregg_bod_crossbow_down//
+<<setAnimInt Gregg crossbow 1>>
+
+<<if $dom_friend_bea>>
+	Bea: 你没事吧？ #line:6aebb8
+    // WARNING: These waits are essential to avoid a bug in Yarn Spinner
+	->这是哪儿…… #line:d8af59
+        <<wait .5>>
+	->怎么了…… #line:416878
+        <<wait .5>>
+	//bea walks up to mae//
+	Bea: 你就是个大傻子。 #line:49d917
+	Bea: 你想什么呢？一个人跑到这儿来？ #line:b84b13
+	->我……我做过一个梦…… #line:ed24af
+		Mae: 因为我的原因， #line:a24cc7
+		Mae: 最后让你们全都 #line:078919
+		Mae: 死在了树林里。 #line:8c15f8
+		Bea: 哦，你还做了一个梦？ #line:d9bf86
+		Bea: 难道这个梦能对咱们想办法有帮助吗？ #line:156aef
+			->我是在发生了这些事以后才开始做这种梦的……嗯？ #line:202686
+			->我不知道。 #line:4996c0
+	->这一切都是因为我造成的…… #line:2fdd64
+		Bea: 哦，不好意思。你就是那个穿着破衣服， #line:0b07e8
+		Bea: 跟踪我， #line:da30b4
+		Bea: 还绑架别人的人吗？ #line:1ba59c
+		Bea: 你现在承认是你错了吗？ #line:063775
+		Mae: 他……它……它在我的梦里出现过。 #line:6e1ad6
+	Bea: 嘿， #line:b882af
+	Bea: 小鬼， #line:e6f165
+	Bea: 咱们已经到这儿了， #line:dbc31d
+	Bea: 别想这么多了。 #line:adce4b
+	Bea: 不管出什么事，我都相信你。 #line:c1b4ee
+	Bea: 但我可不想让你一个人 #line:a949f2
+	Bea: 跑到树林里去送死。 #line:95a5fc
+    ->不会的。可…… #line:13baca
+    	Bea: 哦，别说了。 #line:3fef07
+    	Bea: 能不能让我来帮你呢？ #line:aa3cff
+    	Mae: 哦，你是在撒谎，才这么说的…… #line:741dbc
+    ->好吧。 #line:0cda53
+        <<wait .5>>
+	Bea: 我们现在全都跟着你。 #line:10dfe4
+	Bea: 就算咱们失败了， #line:e82add
+	Bea: 我也会陪着你的。 #line:13f56a
+	Gregg: 没啥可说的，俺也一样。 #line:854dcc
+	Angus: 很很很显然，我们都会和你在一起的。 #line:d73f4b
+	Bea: 听好了，我可是我爸唯一的亲人了。 #line:f3aafa
+	Bea: 而且，我敢说，我绝不会死在这里的。 #line:8aa1de
+	Bea: 还有， #line:56a985
+	Bea: 天啊，你是我身边最亲的人了。为了你，我也必须有个姐妹的样子才行。 #line:aa4189
+	Bea: 我不想让你离开我， #line:adb995
+	Bea: 所以，我是不会让你死的。 #line:85bf51
+	Mae: *咳咳* #line:f3c0ce
+	<<close>>
+	<<wait 2>>
+	Mae: 我觉得， #line:524093
+	Mae: 这话听起来还不错。 #line:cd8135
+<<else>>
+	Gregg: 姐们儿，你没事吧？ #line:b1781c
+    // WARNING: These waits are essential to avoid a bug in Yarn Spinner
+	->这是哪儿…… #line:ad8524
+        <<wait .5>>
+	->怎么了…… #line:ac38d2
+        <<wait .5>>
+	//gregg walks up to mae using Gregg_walk_crossbow ending in Gregg_bod_crossbow_down//
+	Gregg: 嘿，你个傻瓜， #line:5646f5
+	Gregg: 为什么要自己一个人跑到这儿来啊？ #line:fc3c50
+	->我……我做过一个梦…… #line:66874c
+		Mae: 因为我的原因， #line:852105
+		Mae: 最后让你们全都 #line:eee5d7
+		Mae: 死在了树林里。 #line:593bb5
+		Gregg: 这梦是什么意思啊？ #line:8f289b
+		Gregg: 话说，你做的噩梦什么时候可以预测我的未来了？ #line:2ae10e
+		->我是在发生了这些事以后才这样的……嗯？ #line:7fb389
+            <<wait .5>>
+		->我不知道。 #line:a08f24
+            <<wait .5>>
+	->这一切都是因为我造成的…… #line:bbc123
+		Gregg: 哦，是啊，姐们儿！这都是你的错！ #line:22a516
+		Gregg: 就是因为你，才让这帮家伙出现在小镇上， #line:d969e5
+		Gregg: 他们才会跟踪咱们，绑架别人。 #line:230311
+		Gregg: 是啊，你能做到这些，还不是因为你有什么能操控人思想的能力吗！ #line:625dc0
+		Gregg: 姐们儿！别扯啦！ #line:5d4c19
+		Mae: 他……它……它在我的梦里出现过。 #line:17f83b
+	Gregg: 姐们儿。 #line:c8dfa2
+	Gregg: 姐 们 儿。 #line:2d4012
+	Gregg: 你根本什么事都没干，好吗？ #line:0c311c
+	Gregg: 我不明白你到底怎么了。 #line:c448f4
+	Gregg: 但我理解在你身上发生了一些事。 #line:33c89c
+	Gregg: 我相信你，好吗？我相信。 #line:e685b9
+	Gregg: 但你可不能死在我面前。 #line:9103be
+	Gregg: 你可千万不能这么干，好吗？ #line:af8def
+	->可伙计，我…… #line:c3d94c
+		Gregg: 我可不想失去你。 #line:613213
+		Gregg: 知道吗？你可别让我失去你。 #line:e8024e
+		Gregg: 你能答应我吗？ #line:5b8db7
+		Mae: 伙计……我没法保证…… #line:f433b8
+	->好吧。 #line:0ac91a
+        <<wait .5>>
+	Gregg: 咱们可是永远的好朋友啊， #line:f7d1d5
+	Gregg: 你个大笨蛋。 #line:e820d7
+	Gregg: 就算这些都是你自己想象出来的， #line:6781f7
+	Gregg: 不管是真是假， #line:b6935d
+	Gregg: 不管结果怎么样， #line:43b2b6
+	Gregg: 我都会支持你的。 #line:43b5b3
+	Bea: 天哪，我也是。 #line:b85c98
+	Angus: 很很很显然，我们都会支持你的。 #line:8bbede
+	Gregg: 为了你，我可是射伤了一个人！ #line:f94505
+	Gregg: 我们要再这么说下去的话，我就该哭了。还有…… #line:bab9b4
+	Mae: 格雷格， #line:f62531
+	Mae: *咳咳* #line:ac5e3d
+	<<close>>
+	<<wait 2>>
+	Mae: 谢谢你。 #line:73f771
+<<endif>>
+
+Angus: 嗯，那个人已经受伤了。 #line:ea12b9
+Angus: 他好像跑回矿井里去了。 #line:34046e
+Bea: 是啊，那咱们该怎么办？ #line:d0d7a4
+Gregg: 我觉得，咱们应该跟着他。 #line:8ab683
+->不行……我要一个人去。 #line:236191
+    <<wait 1>>
+->你们都在这儿等着，我去找他。 #line:9674b5
+    <<wait 1>>
+Bea: …… #line:3a4857
+Gregg: …… #line:04a193
+Angus: …… #line:84380a
+Gregg: 随你怎么说了。 #line:a15408
+Bea: 对，随便你了。 #line:e7efde
+Angus: 如果他在矿井里的话，咱们就有机会困住他，然后…… #line:227e58
+Gregg: 把他给捆上？ #line:15b696
+Bea: 差不多吧。 #line:d5838d
+Angus: 梅，你还能走吗？ #line:0c3334
+Mae: 我……我觉得还能走。 #line:c147b8
+Mae: 但走得可能会慢点。 #line:e41cbd
+Angus: 要是需要帮忙，我可以帮你。 #line:f809a2
+Mae: 谢了，大块头。 #line:a7264c
+
+<<if $dom_friend_bea>>
+	Bea: 好了，咱们来干点蠢到家的事吧。 #line:cf5356
+<<else>>
+	Gregg: 好吧，咱们就去送死吧。但还是希望咱们不要死。 #line:8b7fd0
+<<endif>>
+<<close>>
+<<fadeOut 1 wait>>
+[[ByMineEntrance]]
+===
+title: ByMineEntrance
+tags: 
+colorID: 5
+position: 539,69
+---
+<<warp Angus AngusByEntrance>>
+<<warp Bea BeaByEntrance>>
+<<warp Gregg GreggByEntrance>>
+<<warp Mae MaeByEntrance>>
+<<flip Angus -1>>
+<<flip Bea -1>>
+<<flip Mae -1>>
+<<flip Gregg -1>>
+<<lookForward Angus>>
+<<lookForward Bea>>
+<<lookForward Mae>>
+<<lookForward Gregg>>
+<<cameraLookAt MinerSceneCamera 0>>
+<<wait 1>>
+
+<<fadeIn 1 wait>>
+//set gregg to Gregg_bod_crossbow_down//
+Angus: 门开了。 #line:a8bd4e
+Bea: 哦，我的天。 #line:3a843f
+Gregg: 什么情况？ #line:71e7ed
+Bea: 咱们可以……把它给别停。 #line:6c6fb4
+Gregg: 噢，见鬼。 #line:1eab09
+Gregg: 你说得对。 #line:199666
+<<lookAt Bea Mae>>
+<<lookAt Gregg Mae>>
+Mae: 不行…… #line:5f9ba3
+->他……它……随便了…… #line:3d20c3
+	Mae: 它就在下面， #line:517767
+	Mae: 我得下去。 #line:ce23c2
+->我得下去。 #line:33fb0c
+Bea: 那好吧。 #line:876a5f
+Angus: 看样子，他的同伙都没影了。 #line:728e48
+Bea: 就剩他一个人了。 #line:a6f104
+Gregg: 只剩他一个了。 #line:7b8980
+Mae: 只剩它……这个不知道是人是鬼的东西了…… #line:f301a8
+<<lookForward Gregg>>
+<<lookForward Bea>>
+<<lookForward Mae>>
+//play gregg_bod_crossbow_down2up and hold on Gregg_bod_crossbow_up//
+<<setAnimInt Gregg crossbow 2>>
+Gregg: *砰砰* #line:801296
+//<<playerCanMoveRight 1>>
+<<fadeOut 1 wait>>
+<<scene MineEntrance>>
+===
+title: EnterLevel_A3D4
+tags: 
+colorID: 4
+position: 265,-995
+---
+Bea: 我可从来都没在一个晚上走过这么多的路。 #line:3dd081
+Gregg: 我必须要听听猫头鹰的叫声。 #line:518d99
+Mae: 为啥啊？ #line:214560
+<<if $did_gregg_investigation_quest>>
+    Gregg: 没为什么。 #line:ef9225
+<<else>>
+    Gregg: 因为猫头鹰很酷。 #line:7399cb
+<<endif>>
+Angus: 是的。 #line:46ccce
+Angus: 我早上还要上班， #line:7f9219
+Angus: 所以，咱们开始抓幽灵吧。 #line:941504
+===
+title: Trigger1b
+tags: 
+colorID: 4
+position: -55,-494
+---
+Gregg: 等 等。 #line:2dfc1f
+<<lookAt Bea Gregg>>
+Bea: 怎么了？ #line:6e3225
+<<lookUp Gregg>>
+<<wait 1>>
+Gregg: 我好像听见猫头鹰的声音了。 #line:ac2964
+Angus: 哦，亲…… #line:ca7726
+<<lookAt Bea Mae>>
+Mae: 碧娅，格雷格让猫头鹰给抓过。 #line:152848
+Bea: 你说什么？！那是什么时候的事啊？！ #line:c2b012
+Mae: 是在我们夜闯历史协会的时候遇到的。 #line:4efee4
+<<lookAt Bea Gregg>>
+Angus: 我觉得猫头鹰不会袭击情侣的，小兄弟。 #line:dd0ae6
+<<lookAt Gregg Angus>>
+Gregg: 那好，我可警告你们，要是我被猫头鹰抓死了，就不好玩了。 #line:e877a1
+Angus: 那我就把所有靠近你的猫头鹰都狂扁一顿。 #line:41556a
+Gregg: 嗷，谢了，船长。 #line:f9802f
+Bea: 破坏大王格雷格居然怕鸟。 #line:5eefb6
+<<lookAt Gregg Bea>>
+Gregg: 我 差 点 就 死 在 那 只 猫 头 鹰 的 手 里 啦！！！ #line:1e46cf
+<<lookNearest Gregg>>
+<<lookNearest Bea>>
+===

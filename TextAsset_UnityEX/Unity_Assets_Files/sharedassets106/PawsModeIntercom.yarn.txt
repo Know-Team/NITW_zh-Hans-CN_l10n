@@ -1,0 +1,153 @@
+title: GreggAndAngus
+tags: 
+colorID: 0
+position: 236,311
+---
+<<if $act is 1 and $day is 2>>
+    <<if $laptop_fixed is 0>>
+        Intercom: *咔 嗒* #line:44699f
+        Angus: 喂？ #line:f64f94
+        Mae: 啊 啊 啊！！！ #line:501864
+        Angus: 你是哪位？ #line:2c3aed
+        Mae: 嗨！是我，梅。 #line:096c11
+        Angus: 是梅吗？ #line:c8f064
+        Mae: 是我，梅。 #line:938d11
+        Mae: 我刚才被电着啦！ #line:3d1ca0
+        Angus: 噢，这个通话器挺难搞的。 #line:c59da9
+        Mae: 按钮都不见啦！ #line:93b02a
+        Angus: 其实你可以找个螺丝刀插到孔里然后…… #line:41c5c5
+        Angus: 不过现在说也晚了。 #line:641eca
+        Angus: 啊……赶快上楼吧！ #line:5e0c3c
+        Intercom: *咔 嗒* #line:d55655
+        <<close>>
+        [[TakeElevator]]
+    <<endif>>
+<<endif>>
+===
+title: Intercom1
+tags: 
+colorID: 0
+position: 21,308
+---
+<<if $intercom_1 is 0>>
+    Intercom: *咔 嗒* #line:bebdf0
+    Intercom: 喂？您好？！？ #line:315f78
+    Mae: 喂，您好。 #line:ee1a92
+    Mae: 您一定不是安格斯吧。 #line:19eeb5
+    Intercom: 请问您是哪位？ #line:48775e
+    Intercom: 你是谁啊？ #line:d5f4ba
+    Mae: 我是梅·博罗夫斯基。 #line:c9a26e
+    Intercom: 你是推销什么的？ #line:03157c
+    Mae: 你是不是遇到过不少上门推销的啊？ #line:55cd65
+    Intercom: 喂？ #line:68ab06
+    Intercom: *咔 嗒* #line:83a279
+    <<set $intercom_1 += 1>>
+<<endif>>
+===
+title: Intercom3
+tags: 
+colorID: 0
+position: 463,303
+---
+<<if $intercom_3 is 0>>
+    Intercom: *咔 嗒* #line:f1cd38
+    Intercom: 呜 呜 呜喂？ #line:36787f
+    Mae: 额，嗨，请问是安格斯吗？ #line:118d8c
+    Intercom: 你是说安 安 安 安 安格斯吗？ #line:c8a85f
+    Mae: 嘿，伙计，是我，梅。 #line:a13a37
+    Intercom: 介 介 介绍一下|你自己，|美宝林 林 林。 #line:3e62f4
+    Mae: 这人肯定不是安格斯。 #line:279c77
+    Intercom: 你 你 你想让我变成安格斯吗？ #line:c2bef9
+    Mae: 不想！拜拜！ #line:46ca38
+    Intercom: *咔 嗒* #line:4845b4
+    <<set $intercom_3 += 1>>
+<<endif>>
+===
+title: Intercom4
+tags: 
+colorID: 0
+position: 703,323
+---
+<<if $intercom_4 is 0>>
+    Intercom: *咔 嗒* #line:8f7bc4
+    Intercom: 喂，是莫里斯吗？ #line:894e3f
+    Mae: 我是梅。 #line:5bfaa9
+    Mae: 请问是安格斯吗？ #line:807ac0
+    Intercom: 梅？ #line:7a6742
+    Mae: 对，是我！ #line:57d611
+    Mae: 你肯定不是安格斯。 #line:fdea9e
+    Intercom: 你也不是莫里斯。 #line:ef1730
+    Mae: 好极了，咱们终于弄清楚咱俩要找的人都是谁啦。 #line:0fb2b7
+    Intercom: *咔 嗒* #line:45ad2a
+    <<set $intercom_4 += 1>>
+<<endif>>
+===
+title: Intercom5
+tags: 
+colorID: 0
+position: 939,298
+---
+<<if $intercom_5 is 0>>
+    Intercom: *咔 嗒* #line:679592
+    Mae: 喂，请问是安格斯吗？ #line:19fce6
+    Intercom: 我的孩子，你是在找寻什么吗？ #line:b05348
+    Mae: 是啊。 #line:156bd4
+    Mae: 我在找安格斯。 #line:27763e
+    Intercom: 你可以在任何时间和地点去找你的安格斯。 #line:0d7840
+    Intercom: 每个人心中都有着一个不同的安格斯。 #line:6d757a
+    Intercom: 对于某些人来说，安格斯代表着一段美好的婚姻。 #line:04824b
+    Intercom: 对于某些人来说，是一个不错的事业。 #line:a8111a
+    Intercom: 对于另一些人来说，是一辆高档汽车。 #line:47c7db
+    Mae: 我心中的安格斯是一个名叫安格斯的人，他就住在这儿。 #line:415422
+    Intercom: 我的孩子，任何一个安格斯都不能 #line:a0822f
+    Intercom: 与我主，真正的安格斯相比拟。 #line:e76d5d
+    Mae: 好～吧。 #line:a89874
+    Intercom: 亲爱的，今天你有没有和上帝相遇呢？ #line:179ed9
+    Mae: 你听好了，我妈就在教堂工作， #line:9277e5
+    Mae: 所以我自然也算是教会成员。 #line:81ff84
+    Intercom: *咔 嗒* #line:747441
+    <<set $intercom_5 += 1>>
+<<endif>>
+===
+title: Intercom6
+tags: 
+colorID: 0
+position: 1170,310
+---
+<<if $intercom_6 is 0>>
+    Intercom: *咔 嗒* #line:246371
+    Intercom: 喂。 #line:554d36
+    Mae: 喂？ #line:1a294d
+    Intercom: 喂。 #line:a15fd0
+    Mae: 我在找一个叫安格斯的人， #line:174204
+    Mae: 您知道他住哪儿吗？ #line:8d10a1
+    Intercom: 他住在2号房。 #line:2f422b
+    Intercom: 按钮上好像有他的名字。 #line:a81138
+    Mae: 但按钮好像是……额……坏了。 #line:921fe9
+    Intercom: 好像是他的小个子室友把按钮踢坏的。 #line:9973f4
+    Mae: 格雷格？ #line:ce101b
+    Intercom: 也没准是其他什么东西撞坏的。 #line:7e1ea9
+    Mae: 那是怎么……？ #line:cbb7d0
+    Intercom: 孩子，我真不知道了，我住在这里而已。 #line:13fe4c
+    Intercom: *咔 嗒* #line:461aae
+    <<set $intercom_6 += 1>>
+<<endif>>
+===
+title: TakeElevator
+tags: 
+colorID: 0
+position: 338,596
+---
+<<fadeOut 1>>
+<<wait 1>>
+<<set $take_elevator to 1>>
+<<scene GreggAngusApartmentLobby>>
+===
+title: Hole
+tags: 
+colorID: 0
+position: 240,84
+---
+Mae: 什么情况？这儿居然没有……按钮？ #line:22fddb
+Mae: 嗯……肯定有什么办法能让它接通…… #line:1c0ce6
+===

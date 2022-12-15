@@ -1,0 +1,952 @@
+title: Selmers_00_00
+tags: 
+colorID: 2
+position: -212,-211
+---
+Mae: 瑟茉斯！ #line:6d332e
+Selmers: 你怎么这时候回家了？ #line:e8a5b8
+Mae: 辍学了！ #line:7a4764
+Selmers: 这样啊。 #line:f2d777
+Mae: 嗯，大概就是这么个情况吧。 #line:48c02d
+Selmers: 这么说，你以后就不回去了？ #line:e1e554
+Mae: 没错。 #line:d7662d
+Selmers: 真够怪的。 #line:34e40f
+===
+title: Selmers_00_01
+tags: 
+colorID: 2
+position: -188,41
+---
+Mae: 最近怎么样啊？ #line:4b553b
+Selmers: 还好吧。 #line:44ae98
+Selmers: 我和丹尼斯掰了。 #line:9e535c
+Mae: 哦，不会吧！ #line:6f3b15
+Selmers: 他在布里德尔新开的监狱找了份工作。 #line:b21ae8
+Selmers: 然后在加油站认识了别的女孩。 #line:400b25
+Mae: 靠，真是个垃圾。 #line:f3536c
+Selmers: 唉，他就是那种渣男。 #line:31c566
+Mae: 没错！ #line:26ab8a
+===
+title: Selmers_00_02
+tags: 
+colorID: 2
+position: -61,277
+---
+Selmers: 那个词儿怎么说的来着？ #line:665641
+Selmers: 就是那种在监狱里自制的武器。 #line:9ae73c
+Selmers: 像刀的那种？ #line:cccac8
+Mae: 自制刀？ #line:88ff41
+Selmers: 我真希望丹尼斯上班时候被犯人用自制刀捅。 #line:47401e
+Selmers: 吓吓就好。狠狠的吓他一跳。 #line:01a93b
+Mae: 一定吓死他了。 #line:b0efae
+Selmers: 吓得他肾透支就行。 #line:11eb18
+Mae: 好了，我得走了 #line:47d7a2
+Selmers: 真高兴见到你！有空再聊！ #line:e85d78
+===
+title: Selmers
+tags: 
+colorID: 0
+position: 162,-727
+---
+<<if $act is 0 and $day is 0>>
+    [[Selmers_Demo]]
+<<elseif $act is 1>>
+    [[Selmers_Act1]]
+<<elseif $act is 2>>
+    [[Selmers_Act2]]
+<<elseif $act is 3>>
+    [[Selmers_Act3]]
+<<elseif $act is 4>>
+    [[Selmers_Act4]]
+<<endif>>
+
+===
+title: Selmers_01_00
+tags: 
+colorID: 2
+position: 515,-75
+---
+Selmers: 回来的感觉怎样? #line:ad4370
+Mae: 我才刚回家所以…… #line:798ce0
+Mae: 还在尽力适应。 #line:63330c
+Selmers: 感觉这里有什么变化吗？ #line:f8b94d
+    ->变化可大了。 #line:7b2cef
+        Mae: 纪念品商店虽然没了， #line:3a4eb8
+        Mae: 但却有了家猎鹰小吃。 #line:0b439b
+        Mae: 老驴生鲜也倒闭了， #line:7fa9dd
+        Mae: 变成了猎豹鲜生。 #line:318f3b
+        Mae: 哈雷帮的孩子们现在也长大了， #line:316c0b
+        Mae: 之前看到他们到处乱跑。 #line:8b9f7b
+        Selmers: 是啊，我有时候会帮着照看这些小混蛋。 #line:7a9658
+        Mae: 他们很坏吗？我感觉他们都很乖呀。 #line:5c8b2b
+        Selmers: 这就是他们的障眼法。 #line:18311d
+        Selmers: 你知道他们会偷东西吗？ #line:d369c1
+        Mae: 啥？ #line:70fb9e
+        Selmers: 他们会偷东西。 #line:744e88
+        Mae: 我勒个去，我*的确*被骗了。 #line:8f748f
+    ->没什么感觉。 #line:f3b202
+        Mae: 还是老样子吧。 #line:eca5ee
+        Mae: 同样的人、同样的街道、同样的树。 #line:a57692
+        Selmers:我希望我能远走高飞。 #line:47dc45
+        Mae: 你想去哪? #line:84a756
+        Selmers: 我想搬到海边去， #line:243642
+        Selmers: 找一个薪水还不错的稳定工作。 #line:f73b3a
+        Selmers: 平时去海边捡捡贝壳，再做成首饰卖出去。 #line:5b03c8
+        Selmers: 还有，每天晚上都能唱唱卡拉OK。 #line:da9433
+        Mae: 我能过去找你吗？ #line:8aec04
+        Selmers: 你会唱卡拉OK吗？ #line:25f310
+        Mae: ……必须唱的不错吗？ #line:e6fc7d
+        Selmers: 不要紧，老妹。重在参与。 #line:c957b5
+===
+title: Selmers_Demo_00
+tags: demo demo2
+colorID: 0
+position: 967,-973
+---
+Selmers: 嘿，梅。 #line:c46115
+Mae: 嘿，瑟茉斯。 o/ #line:85deca
+Mae: _o_ #line:662874
+Selmers: 前几天你是不是总带着本日记啊？ #line:fd025f
+Mae: 没错，是医生让我拿的。 #line:b6b677
+Selmers: 看来咱俩一样，汉克医生也让我随身带着本日记来着。 #line:481ec4
+Mae: 噢？是吗？你也有易怒症吗？ #line:490531
+Selmers: 其实是因为我在猎鹰小吃偷过可待因咳嗽糖浆。 #line:5ea56e
+Mae: 哦，天哪。 #line:e3d192
+Mae: 看来，汉克医生是把日记当成包治百病的灵丹妙药了。 #line:0ad905
+Mae: 这方法有用吗？ _o_ #line:b8ea69
+Selmers: 没用。可我后来变得特别会写诗了。 #line:431c2c
+Selmers: 想听一首吗？ #line:f3951a
+[[不了，我还要找格雷格呢。|Selmers_Demo_Naw]] #line:ab63c6
+[[想啊！|Selmers_Demo_Sure]] #line:42b42c
+
+===
+title: Selmers_Demo_Naw
+tags: demo demo2
+colorID: 0
+position: 1258,-1064
+---
+Selmers: 好吧，下次再说吧。 #line:8d05ba
+Mae: 下次一定。 :) #line:e34fb1
+Mae: :| #line:3b7f05
+===
+title: Selmers_Demo_Sure
+tags: demo demo2
+colorID: 0
+position: 976,-1345
+---
+Selmers: 心儿心儿， #line:35fdb5
+Selmers: 悲伤不已。 #line:3a12c9
+Selmers: 与君相逢， #line:ea95fe
+Selmers: 顿生感激。 #line:bb9100
+Mae: 哇，写得可真不错。 :) #line:4dadfe
+Selmers: 吾心吾心， #line:55703b
+Selmers: 忧郁不堪， #line:987b2d
+Selmers: 吾愿吾愿， #line:c55b1d
+Selmers: 与君相伴。 #line:35c06d
+Mae: 写得好浪漫啊。 #line:8e10e6
+Selmers: 这写的是我家的马。 #line:63c081
+Mae: :| #line:c8e1b1
+Mae: 哦。 #line:34e3a6
+Selmers: 我和它只是普通朋友罢了。 #line:4f7c2e
+<<addToJournal SelmersPoetry>>
+===
+title: Selmers_Demo_01
+tags: demo demo2
+colorID: 0
+position: 605,-1121
+---
+Selmers: 查佐科夫老师又跑房顶上去了。 #line:6c37ec
+Selmers: 我敢说，他肯定会掉下来把脖子给摔断的。 #line:95ecac
+===
+title: Selmers_A2D1_00
+tags: demo2
+colorID: 3
+position: -2577,-1027
+---
+Selmers: 嘿，梅。 #line:d5bda2
+Mae: 嘿，瑟茉斯。 o/ #line:343e3a
+Mae: _o_ #line:b339f5
+Selmers: 前几天你是不是总带着本日记啊？ #line:a6b381
+Mae: 没错，是医生让我拿的。 #line:4f9263
+Selmers: 看来咱俩一样，汉克医生也让我随身带着本杂志来着。 #line:863c8e
+Mae: 噢？是吗？你也有易怒症吗？ #line:9f000a
+Selmers: 其实是因为我在猎豹鲜生的药店里偷过止疼药。 #line:e698a5
+Mae: 哦，我的老天。 #line:661cb8
+Mae: 看来，汉克医生是把杂志当成包治百病的灵丹妙药了。 #line:3ed789
+Mae: 这方法有用吗？ _o_ #line:436149
+Selmers: 没用。不过康复治疗的话，倒确实有点用。 #line:6a6a1a
+Selmers: 还有，后来我变得特别会写诗了。 #line:08117b
+Selmers: 想听一首吗？ #line:5a8bc0
+->想啊。 #line:29e7ea
+    Selmers: 心儿心儿， #line:609da0
+    Selmers: 悲伤不已。 #line:4a0426
+    Selmers: 与君相逢， #line:f9fa04
+    Selmers: 顿生感激。 #line:c88b54
+    Mae: 哇哦，写得可真不错。 :) #line:f061f4
+    Selmers: 吾心吾心， #line:c094ca
+    Selmers: 忧郁不堪， #line:874bc9
+    Selmers: 吾愿吾愿， #line:5289b8
+    Selmers: 与君相伴。 #line:db2130
+    Mae: 写得好浪漫啊。 #line:75fd92
+    Selmers: 这写的是我家的马。 #line:015755
+    Mae: :| #line:a7c41e
+    Mae: 哈。 #line:b9ed64
+    Selmers: 我和它只是普通朋友罢了。 #line:e5b1eb
+    <<set $selmers_poet += 1>>
+    <<unlockDoodle SelmersPoet>>
+->不用了。 #line:ca75cc
+    Selmers: 好吧，下次再说吧。 #line:fa082b
+    Mae: 下次一定听。 :) #line:55d9f0
+    Mae: :| #line:18c01e
+<<set $knows_selmers_poet to 1>>
+<<unlockDoodle Selmers1>>
+<<camera extraLookOffset 0 0>>
+===
+title: Selmers_A2D1_01
+tags: demo2
+colorID: 3
+position: -2572,-1317
+---
+<<lookAt Selmers Chazokov>>
+Selmers: 查佐科夫老师又跑房顶上去了。 #line:d55e17
+Selmers: 我敢保证，他肯定会掉下来把脖子给摔断的。 #line:14f10c
+<<lookNearest Selmers>>
+===
+title: Selmers_A2D2_00
+tags: 
+colorID: 3
+position: -2276,-1087
+---
+Selmers: 梅·博罗夫斯基。 #line:e0ec5e
+Mae: 瑟茉斯。 #line:00e88b
+Selmers: 现在，咱们都知道，展现自己最好的一面有多重要。 #line:f987dc
+Mae: 什么意思？ #line:2a22bd
+Selmers: 咱们的外表是咱们给别人的第一印象，也可能是最后印象！ #line:bb572f
+Mae: 瑟茉斯，你是不是入了什么邪教组织啊？ #line:e8222f
+Selmers: 算你走运，我刚好是个有执照的经销商。 #line:4bf54b
+Mae: 哦，好吧。 #line:23266d
+Selmers: 我负责推销希尔维姆家的产品。 #line:7b8912
+Mae: 瑟茉斯，我身上可一分钱也没有。 #line:77cc2f
+Selmers: 哦，那好吧。 #line:34c789
+    ->你是不是一见到人就开始给他们推销啊？ #line:73a98f
+        Selmers: 这么干挺吓人的，是不是？ #line:f53f7e
+        Selmers: 我参加过一个视频研讨会，会上一老姐就是这么说的。 #line:dab6c5
+        Mae: 她卖出货了没？ #line:2050e4
+        Selmers: 卖出去了。她有一个邻居特别捧她。 #line:703f9d
+        Mae: 抱歉。 #line:70ce23
+        Selmers: 所有人都是面带微笑，一个劲地笑。 #line:73d65c
+        Selmers: 所有人都是一边面带微笑，一边看着手里的护手霜。 #line:90ad9d
+        Mae: 要是你也需要这么干的话，我们也能给你陪笑。 #line:3ca126
+        Selmers: 还是算了吧。 #line:827689
+    ->你卖出货没有？ #line:00362a
+        Selmers: 我卖给了我妈一部分， #line:5b31b4
+        Selmers: 还卖给艾比·克兰格勒一部分。 #line:42e6e5
+        Mae: 那是克兰格勒夫人的女儿吗？ #line:65672a
+        Selmers: 那是她孙女。 #line:f4e589
+        Selmers: 我在学校旁边的洗衣店见过她。 #line:3efcc9
+        Mae: 有一次，格雷格就被关进了烘干机里。 #line:017e12
+        Selmers: 他还活着吗？ #line:202926
+        Mae: 他想让我把烘干机的开关打开，可我怂了，没敢开。 #line:191dce
+        Selmers: 要不然他肯定就一命呜呼了。 #line:af62b4
+        Mae: 要是我现在把实话告诉他，他肯定还会瞬间发飙。 #line:e5508b
+Selmers: 想听诗吗？ #line:98ad60
+<<if $knows_selmers_poet is 0>>
+	Mae: 你是诗人吗？ #line:683786
+	Selmers: 做完康复治疗之后，我就成诗人了。 #line:507fad
+	Mae: 你还做过康复治疗呀？ #line:8ab6f0
+	Selmers: 没错。 #line:810e7c
+    <<set $knows_selmers_poet to 1>>
+	Mae: 行吧，我会听你念诗的。 #line:32686d
+    [[Selmers_A2D2_Poem]]
+<<endif>>
+->不了，下次再说吧。 #line:5cd9ee
+	Selmers: 好吧。 #line:250652
+->想！ #line:eb4791
+	[[Selmers_A2D2_Poem]]
+===
+title: Selmers_A2D2_Poem
+tags: 
+colorID: 3
+position: -2023,-1089
+---
+Selmers: 有时有时， #line:51281a
+Selmers: 静静思索。 #line:13eb7d
+Selmers: 随即开始， #line:74d9be
+Selmers: 慢慢沉没。 #line:70af09
+Mae: 哦，不。 #line:d432b6
+Selmers: 还没完呢。 #line:84712b
+Mae: 不好意思。 #line:2ef6c3
+Selmers: 恍然察觉， #line:1c8474
+Selmers: 已十九月。 #line:3ab2e4
+Mae: “十九月"？ #line:6a5496
+Selmers: 我把我最喜欢的两个月份合在了一起。 #line:1a1de1
+Mae: 秋天确实是个很不错的季节。 #line:b21cb3
+Selmers: 应该是最好的季节才对。 #line:564ee0
+<<set $selmers_poet += 1>>
+<<unlockDoodle SelmersPoet>>
+===
+title: Selmers_A2D2_01
+tags: 
+colorID: 3
+position: -2070,-1346
+---
+Selmers: 白天开始变得越来越短， #line:8cb68f
+Selmers: 这让我很难受。 #line:5e75d5
+Mae: 我喜欢秋天！ #line:a5b6d7
+Selmers: 我喜欢秋天，可我又讨厌天黑。 #line:b6a0f6
+Mae: 我喜欢秋天！ #line:c4bb92
+Selmers: 你当然喜欢啦。 #line:c671a5
+===
+title: Selmers_A2D2_02
+tags: 
+colorID: 3
+position: -1809,-1449
+---
+Selmers: 我见到了一只浣熊。 #line:a92565
+Mae: 在哪儿见到的？ #line:4a7739
+Selmers: 就在镇中心那儿。 #line:02fd46
+Selmers: 它个头可不小。 #line:626b43
+Mae: 太酷啦。 #line:c8697b
+===
+title: Selmers_A2D3_00
+tags: 
+colorID: 3
+position: -2082,-504
+---
+Mae: 咋样啊，瑟～茉～斯。 #line:4f76fd
+Selmers: 有什么不错的故事可以分享一下吗？ #line:dafc2e
+Mae: 张嘴就来。 #line:97fea4
+    ->比如上初中的时候来例假，但是血没沾在椅子上？ #line:a4bfd1
+    ->比如本来想吐到垃圾桶里，但结果吐自己身上了吗？ #line:4fffd5
+    ->比如在高中舞会上和别人接吻的时候误伤了其他人？ #line:9f4267
+Selmers: 嗯…… #line:3dd72f
+Selmers: 我刚才想说，我小时候吃过不少水果味的零食。 #line:13f434
+Selmers: 上小学的时候，我们就经常吃这个。 #line:888eca
+Mae: 哦，说得是啊！这东西挺好吃的。 #line:6ba74a
+Selmers: 你还遇到过其他什么事吗？ #line:eb790b
+Mae: 没有了。 #line:6e8b0b
+Selmers: 想听首新诗吗？ #line:e657f5
+<<if $knows_selmers_poet is 0>>
+	Mae: 你是诗人吗？ #line:d237dc
+	Selmers: 做完康复治疗之后，我就成诗人了。 #line:913474
+	Mae: 你还做过康复治疗吗？ #line:70745d
+	Selmers: 嗯。 #line:100605
+    <<set $knows_selmers_poet to 1>>
+	Mae: 好吧，那我就听听吧。 #line:e4f99d
+    [[Selmers_A2D3_Poem]]
+<<endif>>
+->不了，下次再说吧。 #line:e57642
+	Selmers: 好吧。 #line:9544d2
+->想！ #line:aec938
+	[[Selmers_A2D3_Poem]]
+===
+title: Selmers_A2D3_Poem
+tags: 
+colorID: 3
+position: -2353,-366
+---
+Selmers: 偶有闲情， #line:3333d8
+Selmers: 独立道旁， #line:425e80
+Selmers: 悠哉悠哉， #line:db80f6
+Selmers: 品味蜜糖。 #line:f209d7
+Mae: 不错。 #line:e50019
+Selmers: 手拿果汁， #line:ca6d85
+Selmers: 头戴耳机， #line:6dacdb
+Selmers: 随后走进， #line:966849
+Selmers: 果汁之地。 #line:42222c
+Mae: 我的妈呀，我现在正想着这些东西呢。 #line:da8f19
+Mae: 你的诗好有既视感啊。 #line:4e2ad4
+Mae: 感觉我能从中尝到原子恐龙味的鸡块和蓝色洗碗机味的软糖。 #line:b18039
+Selmers: 谢谢。 #line:ac7042
+<<set $selmers_poet += 1>>
+<<unlockDoodle SelmersPoet>>
+===
+title: Selmers_A2D3_01
+tags: 
+colorID: 3
+position: -1822,-398
+---
+Selmers: 我觉得查佐科夫老师好像又上房了。 #line:21380b
+Mae: 哦，是吗？ #line:f93688
+Selmers: 总有一天他会掉下来的。 #line:ec7287
+===
+title: Selmers_A2D3_02
+tags: 
+colorID: 3
+position: -1536,-277
+---
+Selmers: 我能透过我家后边的窗户看见远处的水塔。 #line:8a36f2
+Selmers: 有天晚上，我看见水塔那边有火光。 #line:cc849f
+Selmers: 我在想，谁会跑到那地方去呢？ #line:9b707c
+===
+title: Selmers_Act2
+tags: 
+colorID: 3
+position: -2575,-706
+---
+<<if $act is 2 and $day is 1>>
+    <<if $selmers is 0>>
+        <<set $selmers += 1>>
+        [[Selmers_A2D1_00]]
+    <<elseif $selmers is 1>>
+        <<set $selmers += 1>>
+        <<set $selmers_done to 1>>
+        [[Selmers_A2D1_01]]
+    <<endif>>
+<<elseif $act is 2 and $day is 2>>
+    <<if $selmers is 0>>
+        <<set $selmers += 1>>
+        [[Selmers_A2D2_00]]
+    <<elseif $selmers is 1>>
+        <<set $selmers += 1>>
+        [[Selmers_A2D2_01]]
+    <<elseif $selmers is 2>>
+        <<set $selmers_done to 1>>
+        [[Selmers_A2D2_02]]
+    <<endif>>
+<<elseif $act is 2 and $day is 3>>
+    <<if $selmers is 0>>
+        <<set $selmers += 1>>
+        [[Selmers_A2D3_00]]
+    <<elseif $selmers is 1>>
+        <<set $selmers += 1>>
+        [[Selmers_A2D3_01]]
+    <<elseif $selmers is 2>>
+        <<set $selmers_done to 1>>
+        [[Selmers_A2D3_02]]
+    <<endif>>
+<<elseif $act is 2 and $day is 4>>
+    <<if $selmers is 0>>
+        <<set $selmers += 1>>
+        [[Selmers_A2D4_00]]
+    <<elseif $selmers is 1>>
+        <<set $selmers += 1>>
+        [[Selmers_A2D4_01]]
+    <<elseif $selmers is 2>>
+        <<set $selmers_done to 1>>
+        [[Selmers_A2D4_02]]
+    <<endif>>
+<<endif>>
+===
+title: Selmers_A2D4_00
+tags: 
+colorID: 3
+position: -2658,-307
+---
+Mae: 哇哦！看看这些装饰品啊！ #line:2c7d66
+Selmers: 妹子，万圣节这天你可别惹什么麻烦啊。 #line:0629ac
+Mae: 我去！ #line:298de8
+Selmers: 想听新诗吗？ #line:eaa795
+<<if $knows_selmers_poet is 0>>
+	Mae: 你是诗人吗？ #line:a13d83
+	Selmers: 做完康复治疗之后，我就成诗人了。 #line:efeac9
+	Mae: 你还做过康复治疗？ #line:bf5ee1
+	Selmers: 对。 #line:e4691a
+    <<set $knows_selmers_poet to 1>>
+	Mae: 嗯，那成。 #line:33871e
+    [[Selmers_A2D4_Poem]]
+<<endif>>
+->不了，下次再说吧。 #line:55fd47
+	Selmers: 行吧。 #line:657d9c
+->想！ #line:991f5f
+	[[Selmers_A2D4_Poem]]
+===
+title: Selmers_A2D4_Poem
+tags: 
+colorID: 3
+position: -2984,-544
+---
+Selmers: 明月与蝙蝠， #line:1d8703
+Selmers: 徘徊于夜幕。 #line:b3a20b
+Selmers: 夜色已阑珊， #line:3324a9
+Selmers: 小食正出炉。 #line:1c4325
+Mae: 酷啊。 #line:989dad
+Selmers: 披萨昨日剩， #line:bc7dae
+Selmers: 炉中火正新。 #line:b2b5f9
+Selmers: 残羹虽已冷， #line:6affbc
+Selmers: 早餐似黄金。 #line:d4d4e1
+Mae: 这话在理。 #line:d02a54
+Selmers: 就是这么回事。 #line:7d8beb
+<<set $selmers_poet += 1>>
+<<unlockDoodle SelmersPoet>>
+===
+title: Selmers_A2D4_01
+tags: 
+colorID: 3
+position: -2924,12
+---
+Selmers: 万圣节铁杆粉丝在此。 #line:466c9e
+Mae: 嗯，我也是铁杆粉丝，这不明摆着吗。 #line:911830
+Mae: 你想去丰收节逛逛吗？ #line:9d4e36
+Selmers: 我不去了。我还得在家招待上门要糖的小孩呢！ #line:bd0ad2
+Mae: 你真是个大善人啊。 #line:39e7b2
+===
+title: Selmers_Act3
+tags: 
+colorID: 4
+position: -1028,-2407
+---
+<<if $act is 3 and $day is 1>>
+    <<if $selmers is 0>>
+        <<set $selmers += 1>>
+        [[Selmers_A3D1_00]]
+    <<elseif $selmers is 1>>
+        <<set $selmers += 1>>
+        [[Selmers_A3D1_01]]
+    <<elseif $selmers is 2>>
+        <<set $selmers += 1>>
+        <<set $selmers_done to 1>>
+        [[Selmers_A3D1_02]]
+    <<endif>>
+<<elseif $act is 3 and $day is 2>>
+    <<if $selmers is 0>>
+        <<set $selmers += 1>>
+        [[Selmers_A3D2_00]]
+    <<elseif $selmers is 1>>
+        <<set $selmers += 1>>
+        [[Selmers_A3D2_01]]
+    <<elseif $selmers is 2>>
+        <<set $selmers += 1>>
+        <<set $selmers_done to 1>>
+        [[Selmers_A3D2_02]]
+    <<endif>>
+<<elseif $act is 3 and $day is 3>>
+    <<if $selmers is 0>>
+        <<set $selmers += 1>>
+        [[Selmers_A3D3_00]]
+    <<elseif $selmers is 1>>
+        <<set $selmers += 1>>
+        [[Selmers_A3D3_01]]
+    <<elseif $selmers is 2>>
+        <<set $selmers += 1>>
+        <<set $selmers_done to 1>>
+        [[Selmers_A3D3_02]]
+    <<endif>>
+<<elseif $act is 3 and $day is 4>>
+    <<if $selmers is 0>>
+        <<set $selmers += 1>>
+        [[Selmers_A3D4_00]]
+    <<elseif $selmers is 1>>
+        <<set $selmers += 1>>
+        [[Selmers_A3D4_01]]
+    <<elseif $selmers is 2>>
+        <<set $selmers += 1>>
+        <<set $selmers_done to 1>>
+        [[Selmers_A3D4_02]]
+    <<endif>>
+<<endif>>
+===
+title: Selmers_A3D4_01
+tags: 
+colorID: 4
+position: -310,-2730
+---
+Mae: 你有没有感觉 #line:b0ffd0
+Mae: 最近咱们这儿有点怪怪的？ #line:97fdec
+Selmers: 比如哪儿比较怪…… #line:8401d6
+    ->出现了像幽灵一样的人。 #line:85cf13
+        Selmers: 像幽灵一样的……人？ #line:4a05c5
+        Mae: ……没错。 #line:824bd2
+        Selmers: 不会是我说的那个吧……？ #line:8f1b26
+        Mae: 我感觉我快疯了， #line:09a5ef
+        Mae: 我可能是看见了别人看不见的东西吧？ #line:57b6eb
+        Selmers: 我妈就见过幽灵。 #line:3a4373
+        Selmers: 她还特肯定，说我家地下室里就有一只。 #line:021f0e
+        Selmers: 可她说的不对。 #line:25a137
+        Mae: 你怎么知道她不对呢？ #line:e6046b
+        Selmers: 因为我就住地下室。 #line:3a25bc
+        Mae: 那你是幽灵吗？ #line:406b01
+        Selmers: 嘿嘿，我还没到那地步呢。 #line:a902cc
+    ->有孩子失踪了。 #line:1874fd
+        Selmers: 我觉得没这事吧。 #line:75117d
+        Selmers: 至少最近这段时间没人失踪。 #line:30a3d0
+        Selmers: 那个叫凯西的孩子是去年春天失踪的。 #line:fdde2e
+        Selmers: 可他的岁数也不小了，也不算孩子了。 #line:794b99
+        Selmers: 也可能是别的镇的人失踪了吧？ #line:04f4e6
+        Selmers: 这事我会记着的。 #line:6098da
+        Mae: 你知道的，我虽然问过你这事了，但我还是不想让你知道。 #line:2ff4d9
+        Selmers: 我看过报纸啦！ #line:d780f8
+===
+title: Selmers_A3D4_02
+tags: 
+colorID: 4
+position: -203,-3099
+---
+Selmers: 天气预报说，马上就要下雪了。 #line:6184e2
+Mae: 什么时候下啊？ #line:c69b9a
+Selmers: 很快。天马上就要冷了。 #line:5c5311
+===
+title: Selmers_A3D4_00
+tags: 
+colorID: 4
+position: -746,-2669
+---
+Mae: 嘿……瑟茉斯。 #line:889dc0
+Selmers: 老天，梅，你病了吗？ #line:e32149
+Mae: 我～没～事。 #line:598f64
+Mae: 就是感觉有点累，头还疼。 #line:03ef4c
+Selmers: 那你为什么还出来乱跑啊？ #line:32dff7
+Mae: 病肯定会好的。 #line:85772f
+Selmers: 那必须的。 #line:336949
+Selmers: 别紧张，好邻居。 #line:9b8931
+Mae: 明白。 #line:d1fb71
+Selmers: 想听首我新写的诗吗？ #line:13504c
+->不了，下次再说吧。 #line:4d089e
+	Selmers: 行吧。 #line:315638
+->想！ #line:d3813e
+	[[Selmers_A3D4_Poem]]
+===
+title: Selmers_A3D4_Poem
+tags: 
+colorID: 4
+position: -914,-2944
+---
+Selmers: 繁星繁星亮晶晶， #line:a40982
+Selmers: 有如车灯放光明。 #line:129d35
+Selmers: 黑夜驶过辙两行， #line:40e6c2
+Selmers: 一路向前永不停。 #line:823a3a
+Mae: 说得没错，星星就是这样。 #line:b096eb
+Selmers: 我还给长至夜写了首诗。 #line:455e85
+Mae: 哦？ #line:eed075
+Selmers: 长至夜， #line:960497
+Selmers: 长至夜。 #line:3d20ea
+Selmers: 深夜已至， #line:9d69d2
+Selmers: 星光摇曳。 #line:1c06b3
+Mae: 写得好。 #line:6caa66
+Selmers: 谢谢。我现在已经感觉到节日的气氛了。 #line:bf2ca4
+<<unlockDoodle SelmersPoet>>
+===
+title: Selmers_A3D3_01
+tags: 
+colorID: 4
+position: -1728,-2666
+---
+Selmers: 查佐科夫老师又上房了。 #line:c09c18
+Mae: 他那个望远镜有没有从屋顶上掉下来过？ #line:ac0ae9
+Selmers: 哦，这事可没有过。真要这样，他非哭疯了不可。 #line:376511
+Selmers: 他在这玩意上花的心思可比花在他孩子身上的心思多多了。 #line:540cfd
+Mae: 他还有孩子？ #line:ae4e1b
+Selmers: 有。那孩子叫科林。 #line:b6f01b
+Selmers: 他每隔一段时间就会回来一趟。 #line:836a2a
+Selmers: 他简直帅爆啦！ #line:25f8c0
+Mae: 你和他搭过讪吗？ #line:067d65
+Selmers: 没。人家可是在大学的研究所上班的， #line:2684a6
+Selmers: 对这种事……肯定一点兴趣也没有。 #line:fe2786
+Mae: 瑟茉斯…… #line:365426
+Selmers: 嗯。 #line:cf3f17
+===
+title: Selmers_A3D3_00
+tags: 
+colorID: 4
+position: -1398,-2541
+---
+Selmers: 嗨，梅。 #line:a02a07
+Selmers: 你还好吧？ #line:b29b22
+Mae: 我觉得还可以。干嘛问这个？ #line:9e9c8b
+Selmers: 你看起来 #line:6e6f8f
+Selmers: 像是刚从 #line:95b280
+Selmers: 调错设置的烘机里爬出来似的。 #line:2808df
+Mae: 哈哈，确实。 #line:5d2292
+Mae: 这星期可真漫长啊。 #line:cc87f5
+Selmers: 你想不想听首诗提提神？ #line:d54217
+->不了，下次再说吧。 #line:f257b1
+	Selmers: 好吧。 #line:adba9e
+->想！ #line:1fb218
+    [[Selmers_A3D3_Poem]]
+===
+title: Selmers_A3D3_Poem
+tags: 
+colorID: 4
+position: -1362,-2789
+---
+Selmers: 时光流逝， #line:26ea0c
+Selmers: 连绵不止。 #line:1c265d
+Selmers: 而吾将言， #line:d7cb24
+Selmers: 光阴已逝。 #line:c64e79
+Mae: 哈哈。 #line:4b7cd6
+Selmers: 我还有一首比较欢快的： #line:45b777
+Selmers: 人生诚璀璨， #line:3d88b1
+Selmers: 世事多艰难。 #line:9744e6
+Selmers: 庭中与君逢， #line:73b352
+Selmers: 共炙何怡然。 #line:c4db16
+Mae: 谢啦，瑟茉斯。 #line:875e60
+Selmers: 你感觉好点了没？ #line:642420
+Mae: 好多了。这两首诗还真管用。 #line:7dee73
+Selmers: 耶啊！ #line:650230
+<<unlockDoodle SelmersPoet>>
+===
+title: Selmers_A3D3_02
+tags: 
+colorID: 4
+position: -2000,-2839
+---
+Selmers: 米勒酒吧那儿每个星期只能唱两次卡拉OK。 #line:961883
+Selmers: 应该每天晚上都能唱才对嘛。 #line:501713
+===
+title: Selmers_A3D2_01
+tags: 
+colorID: 4
+position: -1709,-2206
+---
+Selmers: 你到图书馆干什么去了？ #line:0b5d77
+Mae: 我就是去图书馆逛了逛而已！ #line:9d8c1d
+Selmers: 不可能吧。 #line:ec188e
+
+===
+title: Selmers_A3D2_02
+tags: temp
+colorID: 4
+position: -1962,-2130
+---
+Selmers:{emote=gatorhead} #line:42bf3b
+Selmers:{emote=eyecry} #line:4be614
+===
+title: Selmers_A3D2_00
+tags: 
+colorID: 4
+position: -1416,-2296
+---
+<<if $saw_selmers_deliver_poem_at_poets_society>>
+    Mae: 嘿，瑟茉斯！昨天晚上你可真是太太太牛啦！ #line:e157d4
+    Selmers: 噢，谢谢！！！ #line:a5347d
+    <<if $selmers_poet >= 3>>
+    	Selmers: 这也多亏了你的创意和点子。 #line:3c3553
+    	Mae: 这方面我最拿手啦。 #line:f7680c
+    <<endif>>
+<<endif>>
+Selmers: 想听首新诗吗？ #line:ceb15a
+->不了，下次再说吧。 #line:07b752
+    Selmers: 行吧。 #line:0f87d3
+->想！ #line:f3fdd4
+    [[Selmers_A3D2_Poem]]
+===
+title: Selmers_A3D2_Poem
+tags: 
+colorID: 4
+position: -1363,-2009
+---
+Selmers: 因为我累了， #line:f2a4ae
+Selmers: 所以就念首短的了。 #line:eb5a01
+Mae: 正好我也累了。就来首短的吧。 #line:b9b337
+Selmers: *啊咳* #line:17b2f9
+Selmers: 上网冲浪，欲消疲惫。 #line:a6525f
+Selmers: 打开网页，瞬间崩溃。 #line:87640f
+Mae: 我以前上网的时候也抓过狂。 #line:9ac9bd
+Selmers: 这就叫头大。 #line:ab9f05
+<<unlockDoodle SelmersPoet>>
+===
+title: Selmers_A3D1_00
+tags: 
+colorID: 4
+position: -1037,-2037
+---
+Mae: 瑟茉斯，你怎么样啊？ #line:5faa47
+Selmers: 万圣节过得怎么样呀？ #line:bb008f
+Mae: 感觉怪怪的。我去丰收节逛了。 #line:e0cd2e
+Mae: 然后，我就遇见了一个特邪门，但感觉又特真的事。 #line:c09ed5
+Mae: 后来，我又做了个特吓人的噩梦。 #line:9f0f3f
+Selmers: 听起来够酷的。我就在家里一边吃糖一边看电视来着。 #line:5b8bc4
+Selmers: 电视上还播万圣节特辑来着。 #line:db4ef1
+Mae: 好吧，我可是亲眼看了一场万圣节特辑的*现场直播*好吗！ #line:2b3cc1
+Selmers: 哇哦。 #line:3a786a
+Mae: 嗯哼。 #line:f0811b
+Selmers: 想听诗吗？ #line:30b04f
+->不了，下次再说吧。 #line:91f05b
+	Selmers: 酷。 #line:c12a7e
+->想！ #line:0d0b7e
+    [[Selmers_A3D1_Poem]]
+===
+title: Selmers_A3D1_Poem
+tags: 
+colorID: 4
+position: -767,-2012
+---
+Selmers: 秋日的寒风， #line:37b5fa
+Selmers: 秋日的罪。 #line:063f22
+Mae: 嗯。 #line:dcf2dc
+Selmers: 秋日的时光， #line:61d489
+Selmers: 秋日的贼。 #line:459237
+->什么才算是“秋日的罪"呢？ #line:76f1df
+    Selmers: 比如， #line:cee66c
+    Selmers: 十一月份的时候，你在加油站勾搭上了一个绿茶婊， #line:7ccb7b
+    <<wait 1>>
+    Selmers: 可你却对自己的老婆撒谎。 #line:3e0025
+    Mae: 嗯，说的是啊。这么干也太……额…… #line:498adc
+    Mae: 太自私啦。 #line:87bd12
+->什么才算是“秋日的贼"呢？ #line:9b95d1
+    Selmers: 比如，在十一月的时候， #line:810ea4
+    Selmers: 劫个加油站，然后再把它炸了。 #line:d98114
+    Mae: 是啊，这话靠谱。 #line:cdab28
+<<set $selmers_poet += 1>>
+<<unlockDoodle SelmersPoet>>
+===
+title: Selmers_A3D1_01
+tags: 
+colorID: 4
+position: -1042,-1756
+---
+<<lookAt Selmers Chazokov>>
+Selmers: 嘿，查佐科夫老师！ #line:4c7126
+Chazokov: 什么事啊，小瑟？ #line:d79c14
+Selmers: 总有一天，你会掉下来把脖子给摔断的！ #line:dd9e21
+Chazokov: 我保证会砸你身上的！ #line:fb4ec5
+Selmers: 哈哈哈！好吧，我个头大，目标也大！ #line:a4780e
+Chazokov: 哈哈哈！我的块头可比你大多啦！咱俩肯定是躲不开啦！ #line:abb330
+Mae: 你 们 俩 可 真 那 什 么。 #line:e28b8d
+<<lookNearest Selmers>>
+===
+title: Selmers_A3D1_02
+tags: 
+colorID: 4
+position: -1053,-1495
+---
+Selmers: 落叶，落叶，落叶。 #line:0b4b60
+Mae: 你是在念诗吗？ #line:822066
+Selmers: 不是。 #line:acd6d4
+===
+title: RunPast
+tags: 
+colorID: 0
+position: -615,-941
+---
+[[Selmers]]
+===
+title: Selmers_02_00
+tags: 
+colorID: 2
+position: 283,150
+---
+Mae: 这几天在忙什么呢？ #line:85cc10
+Selmers: 嗯……在我回自己家之前，我想把这儿弄得要多乱有多乱。 #line:c9e58b
+Selmers: 我爸妈把半个房子都租给查佐科夫老师了。 #line:10f891
+Selmers: 我一直都在给别人看孩子。后来又去猎豹鲜生面了个试。 #line:bcefa1
+Selmers: 正在等回复呢。 #line:de303e
+Mae: 哦！我老爸现在就在猎豹鲜生上班呢。 #line:d70702
+Selmers: 他们那儿可是要啥有啥！ #line:620d78
+===
+title: Selmers_Act1
+tags: 
+colorID: 2
+position: 171,-398
+---
+<<if $test_selmers>>
+<<elseif $selmers_sequence is 0>>
+	<<if $selmers is 0>>
+        <<set $selmers += 1>>
+		[[Selmers_00_00]]
+	<<elseif $selmers is 1>>
+        <<set $selmers += 1>>
+		[[Selmers_00_01]]
+	<<elseif $selmers is 2>>
+		<<set $selmers += 1>>
+		<<set $selmers_done to 1>>
+		[[Selmers_00_02]]
+	<<endif>>
+<<elseif $selmers_sequence is 1>>
+	<<if $selmers is 0>>
+		<<set $selmers += 1>>
+		<<set $selmers_done to 1>>
+		[[Selmers_01_00]]
+	<<endif>>
+<<elseif $selmers_sequence is 2>>
+	<<if $selmers is 0>>
+		<<set $selmers += 1>>
+		<<set $selmers_done to 1>>
+		[[Selmers_02_00]]
+	<<endif>>
+<<endif>>
+===
+title: Selmers_Demo
+tags: demo
+colorID: 0
+position: 690,-718
+---
+<<if $selmers is 0>>
+        [[Selmers_Demo_00]]
+    <<elseif $selmers is 1>>
+        [[Selmers_Demo_01]]
+    <<endif>>
+===
+title: RunPastTop
+tags: 
+colorID: 0
+position: -486,-1215
+---
+<<camera extraLookOffset 0 -2>>
+[[Selmers]]
+===
+title: SelmersInitLevel
+tags: 
+colorID: 0
+position: 403,-2826
+---
+<<if $Library>>
+    <<if $microfiche_done>>
+        <<if $selmers_poet >= 3>>
+            <<show Selmers>>
+            <<trigger Selmers PoetryBod>>
+            <<setCanInteract Selmers 0>>
+        <<else>>
+            <<hide Selmers>>
+        <<endif>>
+    <<else>>
+        <<hide Selmers>>
+    <<endif>>
+<<endif>>
+===
+title: Selmers_A2D4_02
+tags: 
+colorID: 3
+position: -2654,1
+---
+Selmers: 丰收节太无聊啦。 #line:027c55
+Mae: 是吗？我可喜欢丰收节啦。 #line:317a30
+Selmers: 你现在还是八岁的小孩吗？ #line:b3a407
+Mae: 不是啊。 #line:b37415
+Selmers: 唉。 #line:3ac01c
+===
+title: Selmers_A4D3_00
+tags: 
+colorID: 6
+position: 522,-1605
+---
+Selmers: 嘿，梅！ #line:447dd5
+Mae: 你好啊，瑟茉斯。 #line:41d1d7
+Selmers: 你没事吧？ #line:100934
+Selmers: 你头受伤之后好点没？ #line:90c3da
+Mae: 嗯，我没事了。 #line:3e3513
+Mae: 就是头疼。 #line:a2cd09
+Selmers: 我有治偏头痛的药。你想要的话，我可以给你。 #line:7713f8
+Mae: 不用了，我得的不是偏头痛。 #line:17522d
+Mae: 还有，我吃了这药老想上厕所。 #line:da7d1f
+Selmers: 那是因为药里有咖啡因。 #line:01cddc
+Selmers: 如果你吃了某种药之后老想上厕所， #line:5d9199
+Selmers: 就说明药里有咖啡因。 #line:ee0744
+Mae: 我还真不知道这事。 #line:18e507
+Selmers: 我原来可是在药店干过的。 #line:53122e
+Mae: 哦，说的是啊。 #line:96a196
+Mae: 那行吧，要是我再头疼， #line:689370
+Mae: 再总想上厕所， #line:15774d
+Mae: 我就来找你。 #line:552a6c
+Selmers: 随时奉陪，好邻居。 #line:faf3c2
+===
+title: Selmers_Act4
+tags: 
+colorID: 6
+position: 159,-1602
+---
+<<if $act is 4 and $day is 3>>
+    <<if $selmers is 0>>
+        <<set $selmers += 1>>
+        <<set $selmers_done to 1>>
+        [[Selmers_A4D3_00]]
+    <<endif>>
+<<endif>>
+===
+title: SelmersCool
+tags: 
+colorID: 4
+position: -1603,-1978
+---
+Selmers: 酷啊。 #line:5ad276
+===

@@ -1,0 +1,588 @@
+title: EnterLevel
+tags: 
+colorID: 3
+position: -768,6043
+---
+<<if $fort_lucenne_mall is 0>>
+    // intro
+    <<warp Mae MaeOffRight>>
+    <<wait .01>>
+    <<playerCanRun 0>>
+    <<playerCanJump 0>>
+    <<playerFace -1>>
+    <<flip Bea -1>>
+    <<setCanInteract Bea 0>>
+    <<set $fort_lucenne_mall to 1>>
+    [[Intro]]
+<<elseif $fort_lucenne_mall is 1>>
+    // after the not topic, first time
+    <<set $fort_lucenne_mall to 2>>
+    <<warp Bea BeaNotTopic2>>
+    <<warp Player MaeNotTopic2>>
+    <<playerFace -1>>
+    [[AfterMaeSteals]]
+<<elseif $fort_lucenne_mall is 2>>
+    <<playerCanRun 0>>
+    <<playerCanJump 0>>
+    <<setCanInteract Bea 0>>
+    <<if $after_bea_steals>>
+        <<warp Bea BeaMusicStore>>
+        <<generateFollowPoints Mae Bea>>
+        <<follow Bea Mae>>
+    <<else>>
+        <<set $after_bea_steals to 1>>
+        <<warp Bea Bea3>>
+        <<warp Player Mae3>>
+        <<playerFace -1>>
+        [[AfterBeaSteals]]
+    <<endif>>
+<<elseif $fort_lucenne_mall is 3>>
+    // they're eating in the cafeteria
+    <<fadeOut 0>>
+    <<setCanInteract Bea 0>>
+    <<warp Bea BeaCafeteria>>
+    <<warp Player MaeNotTopic2>>
+    [[DinnerConversation]]
+<<elseif $fort_lucenne_mall is 6>>
+    // walking out of the not topic for the last time
+    <<warp Mae MaeNotTopic>>
+    <<warp Bea BeaNotTopic>>
+    <<walk Bea BeaNearExit>>
+    <<walk Mae MaeNearExit>>
+    [[WalkOutConversation]]
+<<endif>>
+===
+title: TriggerNotTopic
+tags: demo2
+colorID: 3
+position: -250,6675
+---
+Mae: :) O_O #line:be5f2c
+Mae: 我 的 个 天 啊。 #line:fbc79c
+Mae: UREV居然还开着！ #line:c244dd
+Bea: 哈哈，是啊。这家店年头可不短了。 #line:2febd7
+Mae: 我一到这儿就有种冲动的感觉。 #line:f00a93
+Bea: 光看两眼，就让我觉得自己已经老了。 #line:071d18
+Mae: 那咱们就进去看看吧。 #line:fe2c8c
+Bea: 不管怎么着，打死我也不进去。 #line:390083
+<<fadeOut 1 wait>>
+<<scene URev>>
+===
+title: LookAtSomeStore
+tags: demo2
+colorID: 3
+position: -168,6365
+---
+Mae: #line:8ad7dd
+<<lookUp Mae>>
+Mae: 一美元帝国居然也还开着呢？！ #line:ffa495
+Bea: 我觉得，这种店的特色可是网店模仿不了的。 #line:c15121
+    ->可能是这样吧。 #line:f13330
+    ->我小时候就经常到这儿来。 #line:1533c3
+        Mae: 你花一美元就能买到一块橡皮， :) #line:2f2cbc
+        Mae: 花一美元就能买到根铅笔。 #line:dc30cc
+        Bea: 说实话，这买卖听起来一点都不划算啊。 #line:733911
+        Mae: 哦，天哪，你说得对啊。 :( #line:a3815a
+<<lookNearest Mae>>
+<<end>>
+===
+title: Cafeteria
+tags: demo2
+colorID: 3
+position: 69,6360
+---
+Bea: 你准备好吃饭了吗？ #line:70fb81
+[[咱们还是先到别的地方转转吧。|EatLater]] #line:caceeb
+[[准备好啦！|EatNow]] #line:a087c3
+===
+title: EatLater
+tags: demo2
+colorID: 3
+position: 343,6273
+---
+Mae: 这饭看起来就有食欲。 #line:3a4911
+Bea: 咱们刚到这儿的时候，我就有点饿了…… #line:6394e2
+===
+title: EatNow
+tags: demo2
+colorID: 3
+position: 351,6588
+---
+Mae: 开吃！ \o/ #line:4ff7d2
+Bea: 好。 #line:b89e1a
+Mae: _o_ #line:8e41f7
+Mae: 我本来还以为能有更精彩的事发生呢。 #line:2a8493
+Bea: 这可是从商场的美食街买的晚饭。 #line:4e1d37
+Bea: 噢，真是太有感觉啦。 #line:2f38a3
+Mae: 看见了吗？这也没什么嘛。 #line:fcba11
+<<close>>
+<<set $fort_lucenne_mall to 3>>
+<<fadeOut .5 wait>>
+[[DinnerConversation]]
+===
+title: DinnerConversation
+tags: demo2
+colorID: 3
+position: 66,6648
+---
+<<close>>
+<<stopFollowing Bea>>
+<<warp Mae MaeCafeteria>>
+<<sit2>>
+<<warp Bea BeaCafeteria>>
+<<flip Bea 1>>
+<<sit2 Bea>>
+<<wait 1>>
+<<fadeIn .5 wait>>
+Bea: 你闻出来咱们要吃的是什么了吗？ #line:a1a69c
+Bea: 在我看见是什么东西之前，你肯定早就闻见味道了吧。 #line:4e3eb3
+	->是跑腿工的披萨塔可。 #line:f6fa0f
+		Bea: 跑腿工可是家相当不错的垃圾食品店。 #line:315c9b
+		Mae: 是啊，我希望咱们镇也能开这么一家店。 #line:265c9c
+		Bea: 哦，那我可就要倒霉了。 #line:ad56eb
+		Mae: 那也值了。 #line:ca7c33
+	->是熔炉汉堡店的饺子汉堡。 #line:dc5030
+		Bea: 那就是一大堆碳水化合物和肉，是吧？ #line:4ac4ca
+		Mae: 咱们不也是由这些东西组成的吗？ #line:b6350e
+		Bea: 还有骨头。 #line:d8903c
+		Mae: 我可不希望在汉堡里吃到骨头。 #line:f8a4e7
+<<close>>
+<<wait 2>>
+Bea:{emote=cloud_rain} #line:1b19a0
+Mae: 你怎么了？ #line:cd2e4e
+Bea: …… #line:e536d0
+Mae: 你是不是想起了凯茜·多明戈在这儿把|辛迪·克拉克的鼻环揪下来的事了？ #line:6e611a
+Bea: 你应该知道是怎么回事吧？ #line:71e812
+Mae: 是不是凯茜被……|他叫什么名字来着……|反正一个橄榄球手……|把肚子给搞大了？ #line:8fe6f7
+Bea: 那哥们儿叫罗恩·布恩斯特拉。|不敢相信你居然知道的这么多。 #line:8ef90d
+Mae: 当然知道了。我想说的是，那还是咱们高中那会儿举办的第一次橄榄球赛呢。 #line:2de60b
+Mae: 然后，罗恩还跑到边线上，对着观众席大喊： #line:16ae6d
+Mae: “我 把 我 取 得 的|第 一 个 达 阵 球|送 给 我 第 一 个 儿 子|和 他 的 妈 妈，|卡 茜 · 多 明 戈"来着。 #line:1cbae4
+Bea: 那也……够牛的。 #line:8f2c0a
+Mae: 我猜，凯茜当时肯定就躲在仪仗队里偷偷地哭呢。 #line:09f0f5
+Mae: 一个星期以后，罗恩就把辛迪给甩了。 #line:6dbcc1
+Bea: 对，是这么回事。这段我倒是知道。 #line:44cb79
+Bea: 而且，就因为这事，才有了后来扯鼻环的事。 #line:5aca4a
+    ->我在想，凯茜现在怎么样了？ #line:abcfc9
+        Bea: 哦，去年，罗恩在开全地形车的时候出事了。 #line:c585ff
+        Bea: 事后，不知道是什么原因，凯茜和罗恩又有了联系。 #line:b8ffe1
+        Bea: 然后……他们就结婚啦！ #line:cef3e9
+        Mae: 哈？ :\ #line:3c4672
+        Bea: 这是真的。后来，因为凯茜不想继续住在负鼠泉， #line:e93140
+        Bea: 罗恩的父母就在布里德尔给他们俩建了一座两栋联排的楼。 #line:b165e1
+        Mae: 从这儿到布里德尔好像……就15分钟的路程吧。 #line:ca5711
+    ->我在想，罗恩现在怎么样了？ #line:09a6c3
+        Bea: 额，去年，他在开全地形车的时候翻车了。 #line:14e300
+        Bea: 但因为医药费太高， #line:e3d728
+        Bea: 所以，他父母就只能让他出院了。 #line:08d01f
+        Mae: 是啊，也只有这个办法了。 :\ #line:2ed9e0
+        Bea: 然后，他又和凯茜有了联系。现在，他们两个已经结婚了。 #line:a8bcde
+        Bea: 我觉得，这个结果对罗恩来说，算是挺不错的了。 #line:58bc90
+    ->我在想，辛迪现在怎么样了？ #line:a1a9e0
+        Bea: 我猜，她要么又换了个新鼻环， #line:bac673
+        Bea: 要么就再也不戴鼻环了。 #line:f23eaf
+Bea: 你知道这件事最糟的部分是什么吗？ #line:a7e2db
+    ->是这个狗血的高中三角恋剧情吗？ #line:1f2f71
+    ->是辛迪脸上缺了什么东西吗？ #line:966694
+    ->是罗恩吗？ #line:6ac101
+Bea: 当时，我想的是， #line:4a3cff
+Bea: "神居然通过特别奇异的方式让这两个人相遇了。" #line:1c59e4
+Mae: :| #line:9a9d9c
+    ->嗯，可能是吧。 #line:bf2429
+        Bea: 是啊。至少，这种解释能让事情听起来更靠谱一点。 #line:e60ba3
+    ->我不知道自己到底信不信神。 #line:015297
+        Bea: 说真的，我也一样。 #line:84ebb8
+Bea: 我一直都在思考关于这座商场的事：|思考这里的喷泉，思考这里的神，|思考这里其他的东西…… #line:bf12a9
+Bea: 可我还是不知道，那些以前认为是……魔法的东西，到底是怎么运作的。 #line:ed0919
+Bea: 而到了现在，|“不知道"这个词却表示，|事情会出问题，|而我却没办法补救和弥补。 #line:6e936e
+Bea: 这也让我明白了，所有的一切都是有人操控的。这你知道吗？ #line:ec9122
+Bea: 现在，只要是忙完店里的事，我就累得不行。 #line:cb9252
+Mae: 我还在学校的时候…… #line:018721
+Bea: 嗯？ #line:c0d56f
+Mae: 啊，我可不想提那些事了。 #line:a91aea
+Bea: 当时出什么事了？ #line:f0af0e
+Mae: …… #line:1f905a
+<<close>>
+<<wait 2>>
+Mae: 你还想再转转吗？ #line:29b0fd
+Bea: 额……其实这里也没什么可逛的了。 #line:ded32d
+Mae: 咱们可以到楼上去看看那件又怪又丑的艺术品啊！ #line:e3fd0e
+Mae: 我想去摸摸它。 #line:33d0ee
+Bea: 求你了，别摸。 #line:a40a09
+Mae: 我可要上去啦！ :) #line:5d0512
+Bea: 你去吧。我想在这儿坐会儿。 #line:ac0fcf
+Bea: 我现在有点累了，还有点郁闷。 #line:8628ed
+Mae: :| #line:ff0c2a
+Mae: 随你的便啦。 #line:6df18f
+[[DinnerConversationEnd]]
+===
+title: DinnerConversationEnd
+tags: 
+colorID: 3
+position: 100,6942
+---
+<<playerCanRun 1>>
+<<playerCanJump 1>>
+===
+title: FountainDone
+tags: demo2
+colorID: 3
+position: 1108,6555
+---
+<<closeAll>>
+<<tell Fountain Stop>>
+<<fadeOutMusic 3>>
+<<wait 3>>
+// feedback noise, crackly, echoey, overblown V/O and a bit of screenshake when she talks?
+<<playOneShot event:/fort_lucenne_mall/microphone_feedback>>
+Mae: {size=1.2,locator=MaeGodTalk}[shake=.03]碧 翠 丝 · 桑 特 罗！！！[/shake] #line:c3fe54
+Bea: {locator=BeaFountainTalk}哈哈哈哈！！！别叫我的真名！ #line:d46596
+Mae: {locator=MaeGodTalk}…… #line:17b246
+Mae: {locator=MaeGodTalk}[shake=.03]碧 翠 丝 · 琼 斯！！！[/shake] #line:c5d9e5
+Bea: {locator=BeaFountainTalk}哦，哇哦！神啊，是您吗？ #line:259c07
+Mae: {locator=MaeGodTalk}[shake=.03]是 的！我 是 天 神，史 蒂 文 森。[/shake] #line:c463b5
+Bea: {locator=BeaFountainTalk}我都不知道您居然还有姓！ #line:410ec8
+Mae: {locator=MaeGodTalk}[shake=.03]肃 静，凡 人！[/shake] #line:bf69c4
+Mae: {locator=MaeGodTalk}[shake=.03]我 已 经 让 我 的 鱼 怪 向 你 们 扔 垃 圾 啦！[/shake] #line:854ffb
+Bea: {locator=BeaFountainTalk}我不想说假话，这真的太神奇啦。 #line:2ae863
+Mae: {locator=MaeGodTalk}[shake=.03]肃 静！我 说 话 可 不 会 重 复 第 二 遍！[/shake] #line:f9dbb8
+Mae: {locator=MaeGodTalk}[shake=.03]你 和 你 那 善 良 高 尚 的 伙 伴 应 该 在 回 家 的 路 上 买 两 个 冰 淇 淋。[/shake] #line:cda151
+Bea: {locator=BeaFountainTalk}哈哈哈。是啊，咱们应该在你被人抓住之前 #line:563acf
+Bea: {locator=BeaFountainTalk}哈哈哈哈，赶快离开这儿！ #line:644588
+Bea: {locator=BeaFountainTalk}[shake=.03]啊哈哈哈哈哈哈哈哈！[/shake] #line:f25338
+Mae: {locator=MaeGodTalk}[shake=.03]警 察 会 被 我 迷 惑，然 后 自 相 残 杀 的！[/shake] #line:dd4df8
+Mae: {locator=MaeGodTalk}[shake=.03]因 为 我 就 是 神，而 且，我 痛 恨 警 察！[/shake] #line:a64f91
+Bea: {locator=BeaFountainTalk}好啦，好啦！赶快下来吧！ #line:f74606
+Mae: {locator=MaeGodTalk}[shake=.03]凡 人，祝 你 一 切 顺 利。[/shake] #line:3d3dcd
+<<close>>
+<<unlockDoodle BeaFQ1>>
+<<set $bea_bubble_data to 0>>
+<<set $fort_lucenne_mall to 5>>
+<<fadeOut 1 wait>>
+<<scene URev>>
+===
+title: WalkOutConversation
+tags: demo2
+colorID: 3
+position: -753,6419
+---
+<<wait 1>>
+Mae: 这地方以前还挺像回事的。 #line:2d52bf
+Bea: 我觉得现在这里也*挺像回事*的。 #line:e7e76e
+Mae: 不不不。现在，这就是一座盖在空停车场上， #line:afa1a5
+Mae: 里面也不剩什么东西的商场罢了。 #line:ca1764
+Bea: 好吧，你要觉得是这样，那你就这么觉得吧。 #line:d2ae54
+Mae: 咱们以后再也别来这儿了。 #line:7e31dd
+Bea: 你用不着劝我。 #line:405c44
+Bea: 我会来这儿还不是因为是你想来吗。 #line:b26986
+Mae: 好吧。以前的卢塞纳堡还像回事， #line:36f012
+Mae: 可现在的卢塞纳堡早就不行了。 #line:a632f6
+Bea: 咱们走吧。 #line:bf54d2
+Bea: 让它安息吧。 #line:ee8dcc
+Mae: 让 它 安 息 吧。 #line:38fb3b
+Mae: 回去的时候就让我开车吧。 #line:02466d
+Bea: 不行。 #line:781a14
+<<fadeOut 1 wait>>
+<<set $night to 1>>
+<<set $did_bea_friendship_quest_1 to 1>>
+<<set $completed_bea_friendship_quests += 1>>
+<<if $demo2>>
+    <<scene ShowJournalDoodles>>
+<<else>>
+    <<scene MaeHouse left>>
+<<endif>>
+===
+title: Intro
+tags: demo2
+colorID: 3
+position: -1002,6392
+---
+<<set $fort_lucenne_mall_blocker_right_disabled to 1>>
+<<wait 3>>
+<<run Mae MaeNearExit>>
+Mae: :) #line:c0ed63
+Mae: [wave]卢 塞 纳 堡！！！[/wave] \o/ -_- #line:eaad12
+Mae: O_O :( #line:d556d3
+<<walk Bea BeaNearExit>>
+Mae: 哦，老天。 #line:a8b989
+Bea: 是啊。 #line:c6f51a
+Mae: _o_ #line:072e9c
+Mae: 这儿到底是怎么啦？ #line:c07859
+Bea: 唔……可能是网络造成的吧？ #line:016bab
+<<run Mae MaeNearExitStairTop>>
+Mae: 话说，咱们以前来这儿的时候，不早就有网络这东西了吗！ #line:23caee
+Mae: 旋 转 木 马 跑 哪 儿 去 啦？！ #line:c5c6ab
+<<waitForMove Bea>>
+<<walk Bea BeaNearExitStairTop>>
+Bea: 我猜可能是卖了吧。 #line:25b4a2
+Mae: 谁 会 买 旋 转 木 马 啊？！ #line:5c0fac
+Bea: 因为没人来这儿了。 #line:88985e
+Mae: 书 店 到 底 是 怎 么 回 事 啊？！ #line:7fb785
+Bea: 还是网络造成的。 #line:417db6
+Mae: 那 游 戏 厅 又 怎 么 啦？！ #line:c6bc11
+Bea: 我真想做个牌子，在上面写上“网络"两个字， #line:b6b580
+Bea: 只要你一问为什么，我就举牌。 #line:b4c9c9
+<<waitForMove Bea>>
+<<walk Bea BeaNotTopic>>
+<<set $fort_lucenne_mall_blocker_right_disabled to 0>>
+===
+title: AfterBeaSteals
+tags: demo2
+colorID: 3
+position: -495,6419
+---
+<<playerUpdateFallDuringInteract 1>>
+Bea: :( #line:48eb20
+Bea: 我干嘛要这么做呢？ #line:d1b96b
+Mae: -_- :) #line:860a20
+Mae: 碧娅，你做得太好啦！！！ #line:145cae
+Bea: 要是有人敢到我店里偷东西，我肯定马上打电话报警！ #line:0a4e32
+Bea: 这…… #line:4503f1
+Mae: o_o #line:47a807
+   ->你偷到什么了？ #line:e53fc2
+        Bea: 这好像是项链之类的东西吧？ #line:0a1eb5
+        Mae: 不错，不错。 #line:1936cd
+        Bea: 哦，天啊。 #line:c5fb28
+    ->你以前不是去商店里偷过东西吗？ #line:11fa2f
+        Bea: 没有！绝对没偷过！ #line:3c5a96
+        Mae: 好吧，可你现在的表现怎么让*我*感觉有点奇怪呢。 #line:c0e07c
+        Bea: ……对不起？ #line:cb5ae4
+Mae: 没事啦。咱们已经安全啦。 #line:de20ba
+Bea: 真的？ #line:a35824
+Mae: 当然是真的啦。咱们已经安全啦。 #line:07a625
+Bea: 我有点不太舒服。 #line:07f724
+Mae: 那咱们走吧。 #line:fd9607
+Bea: :| #line:3050eb
+Mae: :| #line:360f30
+<<generateFollowPoints Mae Bea>>
+<<follow Bea Mae>>
+<<playerUpdateFallDuringInteract 0>>
+===
+title: AfterMaeSteals
+tags: demo2
+colorID: 3
+position: -426,6101
+---
+<<if $urev_theft is 0>>
+    Mae: =_= :( #line:6cda65
+    Bea: 梅·博罗夫斯基，我想澄清一件事： #line:e67bc2
+    Bea: 我还以为，你是个很牛很牛的罪犯什么的呢。 #line:8bd6b7
+    Mae: 得了，闭嘴吧。 #line:0450b8
+    Bea: 因为[wave]恐龙！！！[/wave] #line:acf9b2
+    Mae: 看来，是我的技术生疏啦！要不她就是个超人。 #line:222231
+    Mae: 随便吧。 #line:b7c3e5
+    Bea: 嗯，你知道吗，没有什么都样样精通的人。 #line:32b200
+    Bea: 所以，有些梦真的只是梦罢了。 #line:f5725c
+<<else>>
+    Mae: 嗷，是啊。我是不会带这么漂亮的腰带扣的， #line:df76e5
+    Mae: 因为它太磨肚子啦。 #line:089f51
+    Bea: 梅，偷东西可不好啊。 #line:39c403
+<<endif>>
+Mae: o_o :| #line:f0101a
+Mae: 你现在应该去偷点东西！ #line:308d01
+Bea: 麻烦你再说一遍？ #line:f20ff3
+Mae: 你干没干过*什么*违法的事呢？ #line:ac90b5
+Bea: 我猜，我确实干过违法的事。再说了，谁没干过啊？ #line:e05ee0
+Mae: 那 好 吧，|冠 军，|快 点 回 那 家 店 去 吧！ :) #line:9052e1
+Bea: 你说什么？不不不。 #line:611182
+Mae: 碧翠丝，听我给你解释一下： #line:e1b557
+Mae: 1. 店里的|监控摄像头|根本就没开。 #line:f5346c
+Mae: 2. 收银员的警觉性|也不够高。 #line:b659a3
+<<if $urev_theft is 0>>
+    Bea: 但她对你可是够警觉的。 #line:e834dd
+    Mae: -_- #line:5dcfc6
+    <<wait 1.5>>
+    Mae: 随你怎么说了。 #line:896c15
+    Mae: o_o #line:64d425
+<<endif>>
+Mae: 3. 据我所知，|现在商场里|一个保安都没有。 #line:90b4c7
+Bea: 我不知道……我是说……嗯…… #line:aa77a3
+Mae: 碧 娅，这 也 算 是 一 次 经 历。 #line:dc5f60
+Mae: 去 试 试 看。 #line:39d790
+Mae: 我负责吸引她的注意！ #line:bec4ec
+Bea: 好吧……要是我被抓住了，你一个人负全责，我可就开车走了。 #line:b91f78
+Mae: 完美！ \o/ #line:8478de
+<<fadeOut 1 wait>>
+<<scene URev>>
+===
+title: BeaReactsToSplash1
+tags: demo2
+colorID: 0
+position: 873,5500
+---
+Bea: {locator=BeaFountainTalk,emote=interrobang} #line:12dbef
+Bea: {locator=BeaFountainTalk}哦，我的老天。 #line:64df05
+===
+title: BeaReactsToSplash2
+tags: demo2
+colorID: 0
+position: 1112,5500
+---
+Bea: O_O :) #line:9f8e5d
+Bea:{locator=BeaFountainTalk}见鬼！ #line:8885f7
+===
+title: BeaReactsToSplash3
+tags: demo2
+colorID: 0
+position: 871,5749
+---
+Bea:{locator=BeaFountainTalk}怎么会……嘻……嘻嘻……嘻嘻嘻嘻…… #line:05fd79
+===
+title: BeaReactsToSplash4
+tags: demo2
+colorID: 0
+position: 1109,5754
+---
+Bea:{locator=BeaFountainTalk}哈哈，梅，我 就 知 道 是 你！ #line:980a3f
+===
+title: FountainStart
+tags: demo2
+colorID: 3
+position: 505,5758
+---
+<<set $bea_bubble_data to 1>>
+<<setSpriteLayer Bea BG0>>
+Mae: 哦，哇哦。 #line:2585d5
+Mae: 这是不是……？ #line:2d7bdd
+<<close>>
+<<tell ColorFadeSprites Set>>
+<<musicFadeOut 3>>
+<<wait 3>>
+<<playMusic fish_fountain>>
+<<wait 1>>
+Mae: 嘿嘿…… #line:df482e
+Mae: 嘻嘻…… #line:14ac59
+Mae: 哈 哈 哈 哈 哈 哈…… #line:39bfe8
+Mae: 真 是 棒 极 啦。 #line:bd5bd6
+<<tell Fountain Run>>
+Bea: 哇哦，嘿。 #line:029692
+===
+title: BeaReactsToSplash8
+tags: 
+colorID: 0
+position: 1108,6240
+---
+[[FountainDone]]
+===
+title: ClosedStore1
+tags: demo2
+colorID: 3
+position: 42,6082
+---
+Mae: #line:d0d061
+<<lookUp Mae>>
+Mae: 到底是怎么…… #line:9acde2
+Bea: 是网络造成的。 #line:ec10c7
+<<lookNearest Mae>>
+<<end>>
+===
+title: BeaReactsToSplash5
+tags: demo2
+colorID: 0
+position: 873,5993
+---
+Bea:{locator=BeaFountainTalk}[shake=.04]啊哈哈哈哈，梅，你是怎么做到的啊？！[/shake] #line:f6c76f
+===
+title: BeaReactsToSplash6
+tags: demo2
+colorID: 0
+position: 1108,5999
+---
+Bea:{locator=BeaFountainTalk}[shake=.04]哈 哈 哈，别 再 弄 啦！我 都 快 笑 死 啦！哈 哈 哈 哈 哈！[/shake] #line:274745
+===
+title: BeaReactsToSplash7
+tags: demo2
+colorID: 0
+position: 872,6236
+---
+Bea:{locator=BeaFountainTalk}[shake=.04]好 啦，好 啦，有 人 要 叫 警 察 啦！哈 哈 哈 哈 哈 哈 哈 哈 哈！[/shake] #line:77a443
+===
+title: PastFountain
+tags: demo2
+colorID: 3
+position: -444,5782
+---
+Mae: 哇哦，我都忘了这个大鱼头啦。 #line:9c8485
+Bea: 哦，我的天，我以前可喜欢她了。 #line:4e9b93
+Mae: 你以前有没有来这儿参加过《酷炫夏日》啊？ #line:40dac3
+Bea: 参加过。这活动好像还有用水喷人的环节。|我到现在都还没弄明白，他们是怎么做到的。 #line:b680c1
+->我一直觉得，是有人躲在喷泉里用水枪喷的人。 #line:fe46e5
+    Bea: 没那个必要。这个喷泉本身就是用来喷人的。 #line:7ae4a3
+    Mae: 感觉太神奇了。 #line:48258c
+->有一次，我就看见有人被喷泉的水给喷倒了。 #line:2e06f0
+    Bea: 是啊，这种事每年都会发生，但还是有人会大惊小怪的。 #line:916d6a
+    Bea: 可是……我也不知道了。 #line:0d4c42
+    Bea: 但很显然，你肯定会被鱼神喷泉给喷了的。 #line:5652a0
+Bea: 嘿嘿，你肯定知道去上面控制台的路。 #line:bb9acb
+Bea: 从美食街上面穿过去， #line:20b1f8
+Bea: 到天井那儿就能找到那东西了。 #line:4f7fd8
+Mae: 到什么地儿？ #line:b54b25
+Bea: 就是天花板。就是楼顶上有玻璃的地方。 #line:dd342a
+->我知道天井是什么意思。 #line:cbadfb
+    Bea: 啊哈。 #line:240abd
+    Bea: 随便了。 #line:da6166
+->嗯，是吗？ #line:528195
+Bea: 我小时候一直以为，神就住在那上面。 #line:f848a2
+Mae: 哇。 #line:3b8bac
+Bea: 我也不知道是为什么。我只记得，小时候那会儿，只要是在这儿吃汉堡， #line:b4397a
+Bea: 我就会一直盯着它看， #line:15ec3e
+Bea: 想看看到底能不能见到神， #line:a1ad4a
+Bea: 想看看他是不是在窥探我们。 #line:ae74f5
+<<extraZoom -3 4>>
+<<cameraLookAt FountainLookFocus 4>>
+Mae: 看来，他们现在又在天花板上挂了个奇怪的“艺术品"。 #line:a073ef
+Mae: 你想上去看看吗？ #line:86d582
+Bea: 不了。干了一天活，我的膝盖都快疼死了。 #line:9403c3
+<<extraZoom 0 2>>
+<<cameraFollowPlayer 2>>
+===
+title: Plaque
+tags: demo2
+colorID: 3
+position: -173,5720
+---
+Mae: “宇宙四号：岩石宇宙" #line:f5e6e4
+Mae: “创作者：罗福德·吉姆斯" #line:be66dc
+Mae: “由一美元帝国赞助" #line:e597f0
+Mae: “注意：禁止踩踏艺术品" #line:12904a
+<<end>>
+===
+title: OtherEnd
+tags: demo2
+colorID: 3
+position: 132,5751
+---
+<<if $fort_lucenne_mall >= 3>>
+    Mae: 哇，这地方还真算得上是整个商场里最寂寞的角落了。 #line:4720a9
+    Mae: 在这么大的商场里， #line:1c9af3
+    Mae: 还有这么一个鲜为人知的地方，也是挺奇怪的。 #line:35dd4a
+<<else>>
+    Mae: 哈。我想，这里是不是还有像这样的地方啊？ #line:d2012c
+    Bea: 没有了。 #line:ae5e44
+    Mae: 这根本就算不上是商场，这顶多就是一个堆满了破烂的走廊。 #line:a14778
+    <<lookLeft Mae>>
+    <<lookLeft Bea>>
+    <<close>>
+    <<wait 1>>
+    Mae: 哇哦，来看看那座又黑又空旷的大停车场。 #line:5a7f06
+    Bea: 是啊，也不知道那里有没有停满过车。 #line:8b18d6
+    Mae: 把整个镇都算上，肯定也没多少人。 #line:4fe4b2
+    Bea: 人应该没那么少吧。 #line:94186b
+    Mae: 这座停车场就像一片广阔而漆黑的大海。 #line:202f9a
+    Bea: 在海的另一边，还有一家鱼多美。 #line:88f58e
+    Mae: 哦，真 见 鬼。 #line:59118d
+    Mae: 以前，我在鱼多美吃完饭以后，就莫名其妙地发了一次烧。 #line:190df0
+    <<lookNearest Mae>>
+    <<lookNearest Bea>>
+<<endif>>
+<<end>>
+===
+title: MusicStoreAlone
+tags: demo2
+colorID: 3
+position: 290,5524
+---
+Mae: 真是弄得一团糟。 #line:6ddbfe
+Mae: 我敢说，以后这里肯定不会再灯火通明的了。 #line:4d4b6d
+<<end>>
+===

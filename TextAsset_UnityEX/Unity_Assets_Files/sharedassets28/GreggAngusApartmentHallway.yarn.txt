@@ -1,0 +1,37 @@
+title: Door
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if $dom_friend_bea>>
+	Bea: 哦，老天。 #line:e56343
+	Mae: ……碧……娅？ #line:85094c
+	Bea: 哦，我的老天……你是梅吗？ #line:013f2c
+<<else>>
+	Gregg: 卧槽。 #line:0dc5e8
+	Mae: ……格……雷……格？ #line:69a08e
+	Gregg: 我勒个去，你是梅吗？ #line:3e4e20
+	Gregg: 没错，就是梅！！！ #line:6d4f74
+<<endif>>
+<<close>>
+<<fadeOut 1 wait>>
+<<overrideLoadingScreenType Blank>>
+<<scene GreggAngusApartment>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 254,156
+---
+<<fadeIn 1>>
+<<wait 1>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -17,125
+---
+<<set $death_walk to 1>>
+<<flip Mae -1>>
+<<playIdleAnimationPlayer>>
+===

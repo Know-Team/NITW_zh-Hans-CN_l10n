@@ -1,0 +1,88 @@
+title: Start
+tags: 
+colorID: 0
+position: -128,294
+---
+MaePaws: 格雷格。 #line:28e3ea
+MaePaws: 这些可都是特别特别重要的甜甜圈。 #line:77aec1
+GreggPaws: 于它们相比，我毫无价值。 #line:e3b49e
+MaePaws: [shake=.03]把头低下，你个臭狐狸！[/shake] #line:711abe
+MaePaws: 现在展示在我们面前的，是比我们更伟大、更高深莫测的物品。 #line:4a7829
+===
+title: Donut1
+tags: 
+colorID: 0
+position: 116,308
+---
+<<animateBloomIntensity .5 5>>
+MaePaws: 哦，极暗深渊的神啊。 #line:03bab9
+MaePaws: 这里每一个甜甜圈都是一个独立的星球。 #line:25061a
+GreggPaws: 我死后，灵魂就会飞往甜甜圈的国度。 #line:24893b
+MaePaws: 我本来已经死了，但甜甜圈又使我获得了重生。 #line:eae8f2
+GreggPaws: [size=1.2][shake=.03]一切荣耀皆归于甜甜圈。[/shake][/size] #line:b9d47f
+===
+title: Donut2
+tags: 
+colorID: 0
+position: 347,327
+---
+<<animateBloomIntensity 1 5>>
+GreggPaws: 而甜甜圈的秘密就藏在它的中心位置。 #line:24631b
+MaePaws: 可甜甜圈的中心不是个洞吗？ #line:7a1785
+GreggPaws: 不，那是虚无。而包裹在虚无周围的，是[wave]万物。[/wave] #line:a0fec6
+MaePaws: 不过每当我吃到中间的时候，我都很不爽， #line:543931
+MaePaws: 因为我能咬到的只有空气。 #line:25ff62
+GreggPaws: 不不不，姐们。正因为有了这个洞，你才会更加重视甜甜圈的存在。 #line:9e4ba4
+===
+title: Donut3
+tags: 
+colorID: 0
+position: 574,294
+---
+<<animateBloomIntensity 2 5>>
+<<set $paw_shake to 2>>
+GreggPaws: 除此之外，中间的洞还可以让它更好拿！ #line:cee9e5
+MaePaws: 说的是啊。如果甜甜圈上面没有洞， #line:f60a78
+MaePaws: 你还怎么腾得出手去拿其他东西呢？ #line:2decce
+GreggPaws: 你有点跑偏了。这其实是一种[wave]对比。[/wave] #line:bfeecc
+GreggPaws: 就好像是“有"和“无"的关系一样，相互依存。 #line:98203f
+GreggPaws: 而“无"，就相当于我刚才说的“中间的洞使得甜甜圈更好拿"。 #line:a3d167
+GreggPaws: 对于“有"这个问题…… #line:fe6a5f
+GreggPaws: 该死，我忘了刚才说的是什么了。 #line:8519e8
+MaePaws: 伙计，这问题可就深奥了。 #line:0eb009
+GreggPaws: 这就是“论甜甜圈"。 #line:f100da
+
+===
+title: Donut4
+tags: 
+colorID: 0
+position: 836,303
+---
+<<animateBloomIntensity 3.5 5>>
+<<set $paw_shake to 4>>
+MaePaws: [shake=.02]我觉得我可以从这个洞里看到过去和未来，[/shake] #line:4d5ed2
+MaePaws: [shake=.02]看到万物的诞生和灭亡。[/shake] #line:802281
+GreggPaws: [shake=.02]我能看见太阳爆炸的画面。[/shake] #line:6e487b
+MaePaws: [shake=.02]咱俩是不是玩得太嗨了？[/shake] #line:88e349
+GreggPaws: [shake=.02]才没呢。这些甜甜圈简直[/shake] #line:754b35
+GreggPaws: [shake=.02]太太太[/shake] #line:199cff
+GreggPaws: [shake=.02]太棒啦。[/shake] #line:03c75b
+GreggPaws: [shake=.02]老妹儿，[/shake] #line:fd293f
+===
+title: Donut5
+tags: 
+colorID: 0
+position: 1077,301
+---
+<<animateBloomIntensity 4.5 5>>
+<<set $paw_shake to 6>>
+MaePaws: [shake=.03]我得到了最完美的甜甜圈。[/shake] #line:c86a2b
+GreggPaws: [shake=.04]哈哈哈，我就是个甜甜圈。[/shake] #line:64a784
+MaePaws: [shake=.05]多纳……[/shake] #line:99a1f5
+GreggPaws: [shake=.06]狼……[/shake] #line:171f8f
+MaePaws: [shake=.07]驾着战车……[/shake] #line:fcda30
+GreggPaws: [shake=.08]奔向了甜甜圈地狱！！！[/shake] #line:3dced7
+<<fadeOutSound DonutWolfMusic 2>>
+<<fadeOut 2 wait>>
+<<scene DonutWolfExterior>>
+===

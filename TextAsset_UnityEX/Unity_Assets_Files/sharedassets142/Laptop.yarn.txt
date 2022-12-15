@@ -1,0 +1,1171 @@
+title: GreggMessages_A2D1
+tags: demo2
+colorID: 3
+position: -3796,16077
+---
+<<set $gregg_laptop to 1>>
+GreggLaptop: 嗨，姐们 #line:f39c37
+GreggLaptop: 还好不？ #line:cf1fe6
+GreggLaptop: 昨晚实在太疯狂了。 #line:998f31
+GreggLaptop: 碧娅说你没什么大事 #line:d2bcb2
+GreggLaptop: 我今天一整天都在快餐店。 #line:4ce5df
+GreggLaptop: 如果没死，速来 #line:7f5ba1
+GreggLaptop: 你真诚的 #line:60f8d9
+GreggLaptop: 小格雷格 #line:9a6218
+GreggLaptop: P.S. 之后有乐队表演哦！ #line:2aee85
+GreggLaptop: 不聊了 #line:14d377
+===
+title: GreggLaptop_A1D2
+tags: temp
+colorID: 2
+position: -5043,15968
+---
+<<set $gregg_laptop to 2>>
+GreggLaptop: 你电脑里的小黄片清理干净了吗？？？ #line:40a3ae
+GreggLaptop: 我听说你由于看了太多小黄片，电脑中毒了。 #line:795e57
+->我！没！有！ #line:369f24
+    GreggLaptop: 我闻到了谎言的味道 #line:f528b8
+    GreggLaptop: 你为什么要让纯净的互联网充斥着谎言与欺骗？ #line:dbcf63
+    Mae: 我她喵的明明就是什么都没做！！！！！！ #line:66a96b
+->你懂的嘛 #line:38893b
+    GreggLaptop: 瑞克·瑞卡吉告诉我，有网之前他们都把自己的小黄碟藏在林中的空心树里。 #line:68437f
+    Mae: 这是一个好办法对吧？ #line:291e7c
+    GreggLaptop: 可是等到想去拿片的时候就尴尬了 #line:22bb88
+    GreggLaptop: 万一有人已经在那儿了，然后都打着招呼：“嗨，怎么样呀？" #line:ab6e57
+    GreggLaptop: 然而大家都是为各自的珍藏而来。 #line:f3a854
+    Mae: 确实如此，一个眼神交换所有。而且他们还成为了朋友吧？ #line:2353e1
+    GreggLaptop: 致永远的小黄树兄弟。 #line:29422e
+    <<set $porn_log to 1>>
+GreggLaptop: 那么兄得你会来明天晚上的派对吧？？？？ #line:08c451
+Mae: 什么派对？？？？？ #line:3826de
+GreggLaptop: 就在州立森林那里！许多人这周末都会从学校或工作的地方回来。 #line:bb442e
+GreggLaptop: 靓仔美女，超大篝火，小吃零食，酒水饮料 #line:7521c7
+->姐们，你知道我会去的 #line:f7a353
+    GreggLaptop: 姐妹，我太兴奋了 #line:61320d
+    GreggLaptop: 林中之夜可好玩了 #line:9b90d2
+    GreggLaptop: 我要喝个天昏地暗 #line:bfd88b
+    GreggLaptop: 丛林之中，再无法则 #line:839040
+->你是指零食(snack)还是蛇(snake)？ #line:ed1795
+    GreggLaptop: 都有哦 #line:e76737
+    GreggLaptop: 鱼和熊掌 #line:008369
+GreggLaptop: 现在就差你问下碧娅能不能载我们去了 #line:cf034c
+Mae: 算了吧，我不觉得她喜欢我 #line:ea5dad
+GreggLaptop: 不会的，她很豪爽的，一直是她开车送我们，平时借车也大方 #line:e02d8a
+GreggLaptop: 拜托拜托拜托明天去问一下她好吗？ #line:c22145
+Mae: 好吧好吧 #line:b4c032
+GreggLaptop: {width=400}真是太棒啦啦啦啦啦啦！ #line:0405a2
+
+===
+title: AngusLaptop_A1D2
+tags: temp
+colorID: 2
+position: -5042,16233
+---
+<<set $angus_laptop to 2>>
+AngusLaptop: 我想你电脑应该恢复正常了吧？ #line:1e479c
+Mae: 是的，谢谢你了！ #line:8b2daf
+AngusLaptop: 我在硬盘里还装了些别的好玩意！你还记得恶魔塔吗？ #line:2715b1
+<<if $demontower_plays > 0>>
+    // if player has played demontower already
+    Mae: 是的，我之前刚玩过呢！ #line:1d3433
+    AngusLaptop: NICE #line:be8626
+    AngusLaptop: 我也一直在玩，他们还在不断更新呢 #line:f1b13b
+    AngusLaptop: 有机会好好聊聊这游戏，它实在太酷了！ #line:5a9163
+    Mae: 啊，谢谢你了，安格斯！！！ #line:c24261
+    AngusLaptop: *脱帽致礼* #line:fcd8c2
+<<else>>
+    // if player hasn't played demontower yet
+    Mae: 哇塞，十年前我好像总是在玩这游戏。 #line:d04815
+    AngusLaptop: 我又开始玩了。他们一直在更新呢。 #line:94289e
+    AngusLaptop: 你可以从他们服务器下载你的旧存档，然后接着上次的进度玩:) #line:c22b5b
+    Mae: 噢～太酷了！ #line:f5cb7e
+    AngusLaptop: 你应该试试看，然后我们可以找机会好好聊聊这游戏，它实在太酷了！ #line:8fc800
+    Mae: 我一定会的！！！！！嗷，谢谢你，安格斯！！！！ #line:3df85a
+    AngusLaptop: *脱帽致礼* #line:b0ec15
+<<endif>>
+[[GreggLaptop_A1D2]]
+
+===
+title: GreggMessages_A1D3
+tags: temp
+colorID: 2
+position: -4681,15964
+---
+<<set $gregg_laptop to 1>>
+GreggLaptop: 对了，碧娅在老大镐，你也可以去看看她 #line:2b2eda
+GreggLaptop: 还可以从她那买些“工具"，啊哈哈哈哈哈 #line:91ce93
+GreggLaptop: 大斧子要开启狂暴模式啦 lol #line:0449e1
+===
+title: GreggLaptop_A2D1
+tags: temp
+colorID: 3
+position: -3531,16373
+---
+<<set $gregg_laptop to 2>>
+<<if $did_bea_friendship_quest_1>>
+    Mae: 嘿，嘿，伙计。你今晚都干什么了 #line:d3e53f
+    GreggLaptop: 没干啥 #line:30f64d
+    GreggLaptop: 就是给安格斯 #line:ff3294
+    GreggLaptop: 偷了点东西 #line:d26db1
+    GreggLaptop: （这可是个大惊喜）！ #line:a512db
+    Mae: 哇，是什么惊喜啊？ #line:b985cb
+    GreggLaptop: 稍等一会儿 #line:b30ee4
+    GreggLaptop: 糟糕我得走了，回聊ヾ(￣▽￣)Bye～Bye～ #line:512203
+Mae: 好的怪咖，你 还 好 吗 #line:f4a54f
+    <<set $gregg_ttyl to 1>>
+<<else>>
+    Mae: 兄嘚，我得所有肌肉都会∞讨厌你的。 #line:0ccc16
+    Mae: 从-∞到+∞ #line:7c4bbd
+    GreggLaptop: 姐们，我的肌肉已经因为 我 们 俩 恨透我了 #line:8815f4
+    Mae: 重力真是快要把我气死了 #line:66fd37
+    GreggLaptop: 我们把重力干掉吧 #line:6dfb55
+    Mae: 最近重力都对我做了什么 #line:a768b5
+    GreggLaptop: 伤了我们全身的肌肉 #line:d560b7
+    Mae: 好的我可能要去躺床上等死了 #line:982631
+    GreggLaptop: 我已经死了，现在和你聊天的是一个机器人 #line:022c7d
+    Mae: 我的天 #line:eb901d
+    GreggLaptop: 我知道你住在哪儿，也知道你都说过些什么 #line:79a0b7
+    Mae: OMG，too((⊙﹏⊙))o. #line:c992f2
+    GreggLaptop: 好了，晚安 #line:1a9063
+<<endif>>
+===
+title: PlayDemonTower
+tags: 
+colorID: 0
+position: -3016,16110
+---
+Mae: 恶魔塔！！！！！！！ #line:3560f2
+<<irisOut 1 wait>>
+<<scene Demontower>>
+===
+title: BeaMessages_A2D1
+tags: demo2
+colorID: 3
+position: -3826,16362
+---
+<<set $bea_laptop to 1>>
+BeaLaptop: 嗨！ #line:4fd1f0
+BeaLaptop: 昨晚的事对不起了 #line:8d9301
+BeaLaptop: 希望你没事 #line:f40f20
+BeaLaptop: 话说…… #line:b421c9
+BeaLaptop: 就是 #line:9b8685
+BeaLaptop: 如果你想过来看看的话。 #line:4ee566
+BeaLaptop: 我今天一整天都在老大镐。 #line:70baaf
+===
+title: BeaLaptop_A2D1
+tags: temp
+colorID: 3
+position: -3503,16081
+---
+<<set $bea_laptop to 2>>
+<<if $did_bea_friendship_quest_1>>
+    Mae: 哈哈，商场一日游真欢乐！ #line:f03ed2
+    BeaLaptop: 超级欢乐的商场一日游。 #line:90e9f7
+    Mae: 希望咱俩没搞出太大乱子 #line:076834
+    Mae: 尤其在喷泉那里 #line:fdad2f
+    BeaLaptop: 怎么就成“咱俩"了？ #line:8dc4c1
+    BeaLaptop: 我可是就乖乖坐在那里，却被邪恶水柱所袭击。 #line:579f37
+    Mae: 你这样我可得让喷泉喷到你说实话了。 #line:c28b0e
+    BeaLaptop: 去告诉全世界我的证词。 #line:1e1737
+    BeaLaptop: 他们理应知道“真相"！ #line:bf2ed3
+    Mae: 好了，俺要睡觉了，希望今天不要做噩梦o((⊙﹏⊙))o. #line:4e5ef6
+    BeaLaptop: 啊，我的老天哪，这段创伤我永远也忘不了了。 #line:bdd763
+<<else>>
+    Mae: 嘿～今儿晚上干嘛呢？ #line:e0daf3
+    BeaLaptop: 已经看了1/3的《黑暗统治》。 #line:d30f54
+    <<set $bleak_dominion to 1>>
+    Mae: 芜湖，我可喜欢那节目了 #line:1f1508
+    BeaLaptop: 这是我第一次看 #line:b8bffd
+    Mae: (๑•̀ㅂ•́)و✧，我可全看完了哦～ #line:8202d5
+    BeaLaptop: 别！剧！透！ #line:63ae67
+    Mae: 你在看第几集？ #line:0b7742
+    BeaLaptop: S1E4 #line:a08f38
+    Mae: O～糟糕 #line:65ec14
+    Mae: 好的哟 #line:b5764a
+    Mae: 回聊 #line:808d04
+    BeaLaptop: 嗯，现在我要继续看了。 #line:483221
+    Mae: 好好享受！！！！ #line:2d2b66
+    BeaLaptop: 晚安 #line:543006
+<<endif>>
+===
+title: EnterLevel_A1D2
+tags: temp
+colorID: 0
+position: -5041,15688
+---
+<<if $night is 0>>
+    <<if $need_to_fix_laptop is 0>>
+        <<wait 2>>
+        MaeNotLaptop: w(ﾟДﾟ)w！！！ #line:4e62c9
+        MaeNotLaptop: 这电脑怎么了？ #line:ba6749
+        MaeNotLaptop: 该死！ #line:a5d228
+        MaeNotLaptop: 安格斯肯定知道怎么修。 #line:aebf97
+        MaeNotLaptop: 他可是电脑高手。 #line:3f9ebd
+        MaeNotLaptop: 我觉得他肯定是。 #line:182ddc
+        MaeNotLaptop: 可我不能……让他看到这个呀…… #line:3ab6ef
+        MaeNotLaptop: 说起来他在哪里工作来着？ #line:b954db
+        <<set $need_to_fix_laptop to 1>>
+    <<endif>>
+<<else>>
+    <<if $talked_about_fixed_laptop is 0>>
+        MaeNotLaptop: 我的天，它修好了！ #line:fb955b
+        <<set $talked_about_fixed_laptop to 1>>
+		[[AngusLaptop_A1D2]]
+    <<endif>>
+<<endif>>
+
+===
+title: ChattrBox_A2D1
+tags: 
+colorID: 3
+position: -3744,15180
+---
+ChattrBox: 《今日财经》经济学家皮特·科格利：低工资行业岗位增长迅速。|我认为，这是一次清洗 #line:0ef3c1
+
+===
+title: EnterLevel_A4D2
+tags: 
+colorID: 5
+position: 3204,15790
+---
+<<if $laptop_vignettes is 0>>
+    [[StartLaptopVignettes]]
+<<else>>
+    [[EndLaptopVignettes]]
+<<endif>>
+===
+title: StartLaptopVignettes
+tags: 
+colorID: 5
+position: 3060,16142
+---
+<<fadeIn 1>>
+<<playAmbientSFX AmbientSFXLaptopVignettes 1>>
+<<wait 1>>
+<<set $laptop_vignettes to 1>>
+Mae: 嗨，朋友们 #line:4183b9
+Mae: 额 #line:9daaa7
+Mae: 有人吗？ #line:bbd89c
+<<close>>
+<<wait 2>>
+Mae: 任何人？ #line:254a23
+<<close>>
+<<wait 2>>
+Mae: 好了，那我就乱打了 #line:f982cc
+<<playMusic laptop_vignettes 20>>
+Mae: 我真无法用言语来形容刚发生的鬼事 #line:321a40
+Mae: 在这里发出来会容易点 #line:eeb4df
+Mae: 我想聊聊 #line:bd1cea
+Mae: 即使你们这些混蛋已读不回 #line:39b6fd
+<<fadeOut 1 wait>>
+
+<<overrideLoadingScreenType Blank>>
+<<if $dom_friend_bea>>
+    <<scene BeaApartment>>
+<<else>>
+    <<scene GreggAngusApartment>>
+<<endif>>
+===
+title: EndLaptopVignettes
+tags: 
+colorID: 5
+position: 3375,16139
+---
+<<fadeIn 1 wait>>
+<<if $dom_friend_bea>>
+    Mae: 碧娅，你肯定有事忙 #line:a925d3
+    Mae: 对你所经历的一切我很抱歉 #line:8d2061
+    Mae: 尽管我甚至都不了解你全部的糟事 #line:d45960
+    Mae: 但是如果我能够修补好他们 #line:b64baf
+    Mae: 我一定会努力修补好所有的问题 #line:df6633
+    Mae: 我会从你店里买些工具来修的 #line:8029a8
+    Mae: 或许还是借些来吧 #line:87e1b5
+    Mae: 一个牛逼的朋友应该照顾你的生意，但谁让你摊上我这样的朋友呢 #line:6e2975
+    Mae: 而且我也很高兴 #line:2903b9
+<<else>>
+    Mae: 我是指我最喜欢格雷格了 #line:b4a44e
+    Mae: 我想象不出比格雷格更好的朋友了 #line:7feaa7
+    Mae: 我们就像一双合脚的旧鞋子。 #line:6fb1ce
+    Mae: 兄弟，我很抱歉在你和安格斯之间搞了场狗血剧 #line:48b7d6
+    Mae: 安格斯，我把格雷格作为礼物送给你。 #line:da3ccd
+    Mae: 记得要好好呵护与照看他。 #line:a97d29
+    Mae: 如果你敢伤害他，我可会把你踢到地上。 #line:3f61f7
+    Mae: 他一开始可是我的啊。 #line:9d37ed
+<<endif>>
+<<fadeOutMusic 8>>
+Mae: 没错，是我的。 #line:1cb8e6
+Mae: 好了，现在我得删掉所有的话了。 #line:6f579f
+<<wait 2>>
+Mae: 哦，糟糕 #line:7f9016
+Mae: 哈哈哈，我刚发的一切都是跟大家开玩笑的。 #line:36311a
+Mae: 我真的好累，我也不知道我在说什么。 #line:832073
+Mae: 下线，梅。 #line:278617
+Mae: 下下下线了。 #line:d779f8
+<<fadeOutAmbientSFX AmbientSFXLaptopVignettes 1>>
+<<fadeOut 1 wait>>
+<<fadeOutMusic 2>>
+<<wait 3>>
+<<endDay>>
+===
+title: InitLevel_A4D2
+tags: 
+colorID: 5
+position: 3201,15559
+---
+
+===
+title: GreggLaptop_A1D3
+tags: temp
+colorID: 2
+position: -4377,15974
+---
+<<set $gregg_laptop to 2>>
+GreggLaptop: 嗨，可别忘了今晚的派对！ #line:102147
+Mae: 才没有！ #line:773c44
+GreggLaptop: 那么你还在电脑前干嘛！开始准备起来！ #line:e4582d
+Mae: 老天！好的！ #line:a7d5cb
+GreggLaptop: :D #line:e62d1e
+===
+title: BeaLaptop_A1D3
+tags: temp
+colorID: 2
+position: -4375,16233
+---
+<<set $bea_laptop to 2>>
+Mae: 老天，派对时间，准备好了吗，碧娅？ #line:a70c6c
+BeaLaptop: 好了，*你*好了吗？ #line:33d1d4
+Mae: 嗯……也许我该开始准备了。 #line:c6c16a
+BeaLaptop: 是啊，也。许。 #line:c3701a
+===
+title: GreggMessages_A2D2
+tags: 
+colorID: 3
+position: -2215,15798
+---
+<<set $gregg_laptop to 1>>
+GreggLaptop: 早上好啊！！！ #line:0e7b23
+<<if $did_gregg_friendship_quest_1>>
+    GreggLaptop: 不知道怎么回事，我身上更酸了 #line:840592
+    GreggLaptop: 好吧，这是扯淡 #line:c70fa4
+<<endif>>
+GreggLaptop: 又是打工人的一天 #line:7a0968
+GreggLaptop: 安格斯出去了，我好空虚寂寞冷 #line:041b9a
+GreggLaptop: 就是这样 #line:c66bf4
+GreggLaptop: 你真诚的，小格雷格 #line:2e95ee
+===
+title: BeaMessages_A2D2
+tags: 
+colorID: 3
+position: -2228,16045
+---
+<<set $bea_laptop to 1>>
+BeaLaptop: 嗨 #line:b7bd07
+<<if $did_bea_friendship_quest_1>>
+	BeaLaptop: 商场里的食物让我生病了。 #line:aa0466
+	BeaLaptop: 那的食物有问题。 #line:11b336
+<<endif>>
+BeaLaptop: 如果你想来聊天话，来店里找我。 #line:04b08d
+BeaLaptop: 没错。那就是我生活的全部所在地 #line:7baab4
+===
+title: GreggLaptop_A2D2
+tags: 
+colorID: 3
+position: -1899,15790
+---
+<<set $gregg_laptop to 2>>
+<<if $did_gregg_friendship_quest_2>>
+	Mae: 嘿，小废物 #line:9f41f3
+	GreggLaptop: 你身上还带着电吗？ #line:f8cbe3
+	Mae: 没了。我觉得电已经都跑了。 #line:c36dd9
+	Mae: 等等，让我摸一下金属的东西 #line:125b72
+	<<wait 3>>
+	Mae: 好的我摸了下我的床栏，没出事 #line:e5e82b
+	GreggLaptop: 严谨又科学啊，科学家 #line:5c4ade
+	Mae: 安格斯喜欢机器人吗？ #line:15615a
+	GreggLaptop: 我想是吧 #line:7f5d40
+	GreggLaptop: 他经常看它们的 #line:3d8cd3
+	GreggLaptop: 等下，让我来问问他 #line:0385e2
+	<<wait 3>>
+	GreggLaptop: 好的，他代我向你说“谢谢" #line:260560
+	GreggLaptop: 所以我觉得他喜欢吧 #line:659a49
+	Mae: 好了兄嘚我要去睡觉了 #line:fcdf68
+	GreggLaptop: 俺也一样 #line:a62a68
+	GreggLaptop: 886 #line:6829ef
+<<else>>
+    GreggLaptop: 嘿，小废物，你今晚做了啥 #line:9bd17b
+    Mae: 我被困在地下室了 #line:e00be9
+    Mae: 还暴打了一个锅炉 #line:87fc57
+    GreggLaptop: 可以的，姐们 #line:81f74c
+    GreggLaptop: 安安 #line:80d279
+<<endif>>
+===
+title: AngusLaptop_A2D2
+tags: 
+colorID: 3
+position: -1917,16065
+---
+<<set $angus_laptop to 2>>
+<<if $did_gregg_friendship_quest_2>>
+    AngusLaptop: 嘿，梅。你没事吧? #line:b9293c
+    AngusLaptop: 我怕你真的被伤到了。 #line:ac41b3
+    AngusLaptop: 当时你那么快就离开了。 #line:3a3cb2
+    Mae: 我还好，大块头。 #line:56373a
+    AngusLaptop: 好。我只是想确认一下。 #line:e26d85
+    Mae: 嗷。感谢。 #line:c5588e
+    AngusLaptop: 今晚尽量别死掉了。 #line:991c53
+    Mae: 不敢保证。 #line:564cf1
+<<endif>>
+===
+title: BeaLaptop_A2D2
+tags: 
+colorID: 3
+position: -1902,16299
+---
+<<set $bea_laptop to 2>>
+<<if $did_bea_friendship_quest_2>>
+	Mae: 嘿！太有意思了！ #line:40c1b0
+	Mae: 我们什么时候再来一次吧！ #line:c7d30e
+	BeaLaptop: 你砸东西可真熟练啊 #line:8c2cb4
+	Mae: 我敢确定，一定有一份工作需要我这个技能 #line:716d3d
+	BeaLaptop: 对。那叫拆迁。 #line:22d58a
+	BeaLaptop: 你是真的可以找到干这行的工作的 #line:5bcf43
+	Mae: 卧槽！我感受到了呼唤。 #line:70df53
+	BeaLaptop: 我很高兴能帮忙促成这件事 #line:7e7061
+	BeaLaptop: 哦，我查了查关于“爱招虫子的人"的事 #line:20ea54
+	BeaLaptop: 这种人需要降低体温，减少身上的气味 #line:957a58
+	Mae: 是因为他们缺这些东西才对吧 #line:0044f2
+	BeaLaptop: 我觉得不是吧 #line:4ac18e
+	BeaLaptop: 晚安梅 #line:1e707a
+	Mae: 安 #line:47642a
+<<else>>
+    BeaLaptop: 嗨梅，醒着吗？ #line:85e346
+    Mae: 当然了！ #line:0af540
+    Mae: 有事吗？ #line:5e0032
+    BeaLaptop: 没什么，我在看电视呢。 #line:61755a
+    Mae: 你在看什么? #line:7d2a00
+    BeaLaptop: 一个犯罪类的真人秀节目 #line:5df132
+    Mae: 好看吗? #line:5e4205
+    BeaLaptop: 不。它重现的场景太烂了 #line:92c473
+    BeaLaptop: 可就算这片子拍得还不错，我也会觉得很烂 #line:d7b11e
+    BeaLaptop: 就目前的情况来看，这只像是一群糟糕的本地商业演员 #line:22080f
+    BeaLaptop: 假装自己在谋杀或者被谋杀 #line:8fbbe9
+    Mae: 我可喜欢这些秀了 #line:83de14
+    BeaLaptop: 它们是最棒的 #line:c28178
+<<endif>>
+===
+title: GreggMessages_A2D3
+tags: 
+colorID: 3
+position: -1317,15842
+---
+<<set $gregg_laptop to 1>>
+<<if $did_gregg_friendship_quest_2>>
+	GreggLaptop: 更新：这个机器人的味道闻起来有点怪。 #line:f3003f
+	GreggLaptop: 我也不知道咱们都错过了什么。 #line:be8f30
+	GreggLaptop: 管他呢 #line:6d369e
+<<endif>>
+GreggLaptop: 老妹儿好啊 #line:2feded
+GreggLaptop: 一天的打工人生活啊 #line:208f9c
+GreggLaptop: 实在是太无聊了 #line:c32e8a
+GreggLaptop: 工作使我难过 #line:bf1469
+GreggLaptop: 就如同坏掉的零食一般 #line:3e9b90
+===
+title: BeaMessages_A2D3
+tags: 
+colorID: 3
+position: -1310,16094
+---
+<<set $bea_laptop to 1>>
+BeaLaptop: 嘿 #line:75b9c5
+<<if $did_bea_friendship_quest_2>>
+	BeaLaptop: 我接到了米兰达夫人的电话 #line:77592e
+	BeaLaptop: 显然她对我们弄乱了她的地下室很不高兴 #line:b49822
+	BeaLaptop: 不管了。她没雇我们打扫。 #line:42c4bf
+<<endif>>
+BeaLaptop: 只是说一下，如果你想来打招呼的话。 #line:a11024
+BeaLaptop: 我一整天都在值班。 #line:354b14
+BeaLaptop: 我就在店里等着你 #line:e9b98e
+===
+title: GreggLaptop_A2D3
+tags: 
+colorID: 3
+position: -999,15851
+---
+<<set $gregg_laptop to 2>>
+Mae: 嘿，小子 #line:7ae726
+GreggLaptop: 嘿哦～ #line:4a9190
+<<if $did_gregg_friendship_quest_3>>
+	GreggLaptop: 白天的时候谢谢你陪我一起出去闲逛 #line:87b764
+	Mae: 都是小意思嘛，伙计 #line:3735bd
+	<<if $won_knife_fight is 0>>
+		GreggLaptop: 你手上的伤怎么样了 #line:6261ff
+		Mae: 我把手放进某种水里，然后用手搅水 #line:71c512
+		Mae: 我觉得这样能让伤口愈合 #line:265e6c
+		GreggLaptop: 听起来还挺有道理的 #line:2f4772
+    <<else>>
+		Mae: 你的手怎么样了？ #line:f83707
+		GreggLaptop: 这点伤死不了。 #line:80f82a
+		GreggLaptop: 安格斯帮我把伤口处理好了。 #line:482e8e
+		Mae: 嗷，好一个暖男啊。 #line:3b2b21
+		GreggLaptop: 没错，他就是我的守护者。 #line:f80aeb
+    <<endif>>
+	GreggLaptop: 抱歉，说到底，我就是个游手好闲的人 #line:adfd3c
+	Mae: 没关系的，伙计。真的。 #line:f021f0
+	GreggLaptop: 我只是……好吧。 #line:6a24a5
+	Mae: 好好休息休息吧，哥们儿 #line:e1b153
+	GreggLaptop: 我这就睡去。 #line:9ef776
+	GreggLaptop: 晚安啦，姐们 #line:994dcb
+<<else>>
+    Mae: 干嘛呢 #line:7ddf14
+    GreggLaptop: 啥都没干。今天晚上有点不开心。 #line:bfe130
+    Mae: 噢，为什么呀？ #line:b3b3b5
+    GreggLaptop: 没有为什么，就是不开心。 #line:658c6b
+    Mae: 不开心肯定会传染 #line:dfb556
+    Mae: 我刚和碧娅吵了一架 #line:879304
+    GreggLaptop: 哦，不会吧！是因为什么事吵起来的？ #line:5f5c11
+    Mae: 我也不知道是因为什么吵起来的。我感觉我就是个混蛋。 #line:08c89a
+    GreggLaptop: 咱们俩都是混蛋 #line:102981
+    Mae: 混蛋双胞胎 #line:939c12
+    GreggLaptop: 咱们可以弄两件夹克，然后把这几个字印在后背上 #line:a96810
+    Mae: 弄两件运动服 #line:1eb09a
+    Mae: 然后把写着“混蛋"的补丁缝在袖子上。 #line:dc19db
+    GreggLaptop: 哈哈哈 #line:28a61d
+    Mae: 好了，伙计。我今天余额不足啦。 #line:748877
+    GreggLaptop: 那就拜拜啦，姐们 #line:17dd4c
+<<endif>>
+===
+title: BeaLaptop_A2D3
+tags: 
+colorID: 3
+position: -1002,16103
+---
+<<set $bea_laptop to 2>>
+Mae: 嘿，碧。在吗？ #line:8d1f8d
+<<if $did_bea_friendship_quest_3>>
+	<<wait 4>>
+	BeaLaptop: 在。 #line:9a50ab
+	Mae: 我真不知道我是怎么把事给搞砸的，但我还是要向你道歉 #line:58862b
+	BeaLaptop: 没关系的。去睡觉吧。拜。 #line:217c14
+	Mae: 好滴。 #line:50bc65
+<<else>>
+    BeaLaptop: 是的，长官。 #line:cca1d2
+    Mae: 你干什么呢？ #line:8f47be
+    BeaLaptop: 我在算店里的帐，还在看八十年代的MV #line:74ff96
+    Mae: 这些好像是你二十年之后才应该干的事吧 #line:aef5c3
+    BeaLaptop: 嗯，总得有人接管我老妈的事业吧。 #line:d8610e
+    BeaLaptop: 所以我就全盘负责了。 #line:880369
+    Mae: 嗯，你干得确实不错 #line:c7097d
+    BeaLaptop: 谢了 #line:909e53
+    BeaLaptop: 该干活啦 #line:8597d5
+    Mae: 晚安了 #line:0d3488
+<<endif>>
+===
+title: GreggMessages_A2D4
+tags: 
+colorID: 3
+position: -566,15852
+---
+<<set $gregg_laptop to 1>>
+GreggLaptop: 伙 计，万 圣 节 快 乐 #line:d2e6ce
+GreggLaptop: 等 着 被 吓 一 跳 吧 #line:a3cd49
+===
+title: BeaMessages_A2D4
+tags: 
+colorID: 3
+position: -552,16092
+---
+<<set $bea_laptop to 1>>
+BeaLaptop: -离线留言- 一 年 一 度 的 丰 收 节 话 剧 表 演 今 晚 将 在 老 大 镐 和 大 家 见 面 啦！快 来 了 解 负 鼠 泉 的 恐 怖 过 往 吧！ #line:07c258
+===
+title: GreggMessages_A3D1
+tags: 
+colorID: 4
+position: -114,15856
+---
+<<set $gregg_laptop to 1>>
+GreggLaptop: 嘿，姐们，昨天晚上没和你一起玩，真对不起 #line:b76c00
+GreggLaptop: 安格斯说，他也很抱歉 #line:29d85d
+GreggLaptop: 今天乐队有排练！！！！我说有就有，因为乐队里我说了算 #line:c73371
+GreggLaptop: 该上班啦，拜 #line:e50525
+===
+title: BeaMessages_A3D1
+tags: 
+colorID: 4
+position: -114,16112
+---
+<<set $bea_laptop to 1>>
+BeaLaptop: 嘿，梅！昨天晚上你帮了我一个大忙，太感谢啦。 #line:a8020d
+BeaLaptop: 醒来后，我意识到我确实压力太大了。 #line:afa2b9
+BeaLaptop: 十分感谢，万分感激。 #line:0305ed
+BeaLaptop: 我要去店里收拾做昨天晚上的烂摊子。|如果你想过来打个招呼的话，来就是了 #line:68fc78
+===
+title: GreggLaptop_A3D1
+tags: 
+colorID: 4
+position: 192,15866
+---
+<<set $gregg_laptop to 2>>
+GreggLaptop: 哟，我在网上查了查历史协会的资料 #line:1634eb
+GreggLaptop: 以前那地方特别破，然后做过一次大翻修 #line:9bab5f
+Mae: 哦，是吗 #line:4ecef7
+GreggLaptop: 听我说，虽然我没说那地方有幽灵， #line:624790
+GreggLaptop: 但里面那些被毁的老物件倒有可能和幽灵有关系 #line:6c14b3
+Mae: 为什么这么说 #line:128503
+GreggLaptop: 因为你就是在老房子里游荡的幽灵 #line:838274
+GreggLaptop: 后来，有个人在你死的地方安了一个游泳池 #line:961ff0
+Mae: 闹鬼的游泳池确实很恐怖 #line:630262
+GreggLaptop: 我好怕怕。我睡觉去了 #line:cfd3fa
+===
+title: BeaLaptop_A3D1
+tags: 
+colorID: 4
+position: 185,16110
+---
+<<set $bea_laptop to 2>>
+BeaLaptop: 嘿，你要是想去墓地的话，就跟我说。 #line:892b28
+BeaLaptop: 这个星期我晚上差不多都有时间。 #line:7d7b61
+Mae: 明白啦。谢了，碧 #line:489165
+BeaLaptop: 别那么谢我 #line:b13d41
+BeaLaptop: 我也想去那儿，而且路也不远 #line:309972
+Mae: 你把腻歪的氛围都毁了 #line:3eb41e
+BeaLaptop: 哦，这么说的话…… #line:b696a8
+BeaLaptop: 随时欢迎你来哦。还有，你可千万别把我的大恩大德给忘啦。 #line:075447
+Mae: 这才对嘛。 #line:ff8f9a
+BeaLaptop: 我困了。今晚玩得很开心。要是我刚才显得发火了，我向你道歉，我只shiiiii #line:985294
+Mae: 没事的。 #line:782a46
+<<wait 1>>
+Mae: 等等，你睡了吗？ #line:8a91ab
+<<wait 1>>
+Mae: lol #line:866789
+===
+title: AngusLaptop_A3D1
+tags: 
+colorID: 4
+position: 193,16350
+---
+<<set $angus_laptop to 2>>
+AngusLaptop: 嘿，梅。 #line:d68142
+AngusLaptop: 你想去公园的话就告诉我。 #line:7ae350
+AngusLaptop: 我查了地图，发现去负鼠崖的路很好走。 #line:d45783
+Mae: 那可太好啦！我可从来都没去那儿玩过 #line:713a1d
+AngusLaptop: 我觉得一定会很有意思的！ #line:4ab019
+AngusLaptop: 好了，我要睡觉了。 #line:50a9db
+Mae: 晚安，长官。 #line:a81a67
+AngusLaptop: *脱帽致礼* #line:f24e9d
+===
+title: GreggMessages_A3D2
+tags: 
+colorID: 4
+position: 639,15919
+---
+<<set $gregg_laptop to 1>>
+GreggLaptop: 姐们，今天早上我感觉嘴里的味道很怪 #line:a8e371
+GreggLaptop: 好像有一股轮胎味儿 #line:1e7627
+GreggLaptop: 我要去上班啦。我一会儿要从冰柜里随便拿点东西来漱漱我的嘴 #line:e7bfed
+===
+title: AngusMessages_A3D2
+tags: 
+colorID: 4
+position: 660,16171
+---
+<<set $angus_laptop to 1>>
+AngusLaptop: -离线留言-“行星应该受到人们的同情，|因为它们不知道自己是多么的庞大，|也不知道自己有多么冰冷。"|——凯茜·康克林，国家天文局 #line:b66ce6
+===
+title: BeaMessages_A3D2
+tags: 
+colorID: 4
+position: 653,16428
+---
+<<set $bea_laptop to 1>>
+BeaLaptop: 昨晚的事启发了我 #line:f39c5e
+BeaLaptop: 长至夜要到了，我打算给你张图书馆的借书卡 #line:26309f
+BeaLaptop: 不用谢。 #line:4cae32
+===
+title: GreggMessages_A4D3
+tags: 
+colorID: 5
+position: 3935,15828
+---
+<<set $gregg_laptop to 1>>
+GreggLaptop: 嘿，姐们。 #line:6c4c5b
+GreggLaptop: 昨晚干得不错哟 #line:757e65
+GreggLaptop: 我是说……真不错 #line:438708
+GreggLaptop: 你个大笨蛋 lol #line:fa7e62
+GreggLaptop: 今天乐队有排练 #line:229572
+GreggLaptop: 因为我感觉咱们得干点正常的事才行 #line:3d608e
+GreggLaptop: 我在快餐店呢 #line:49bba6
+GreggLaptop: 希望你能感觉好一点 #line:2651e8
+GreggLaptop: 你真诚的，小格雷格 #line:bf30f2
+===
+title: AngusMessages_A4D3
+tags: 
+colorID: 5
+position: 3942,16090
+---
+<<set $angus_laptop to 1>>
+AngusLaptop: -离线留言- |今早醒来|发现自己还活着，|感觉很庆幸。|仅此而已。 #line:062ebe
+===
+title: BeaMessages_A4D3
+tags: 
+colorID: 5
+position: 3940,16360
+---
+<<set $bea_laptop to 1>>
+BeaLaptop: 嘿，梅。 #line:f93eea
+BeaLaptop: 今天早上一切正常吗？ #line:887f52
+BeaLaptop: 我今天准备停业一天。 #line:2e6e7d
+BeaLaptop: 格雷格还通知我，说今天咱们有排练。 #line:a0adc5
+BeaLaptop: 老地方见。 #line:b0131e
+======= #line:6ab359
+title: Node46 #line:f0d231
+tags: empty #line:8ba340
+colorID: 0 #line:1543d6
+position: -2421,16462 #line:784db5
+--- #line:e7643f
+Empty Text #line:97bd30
+===
+title: ChattrBox_A1D2
+tags: 
+colorID: 2
+position: -3744,14930
+---
+ChattrBox: 《光明湾公报》教育部长：“公立学校就等同于公费汉堡。|这样很不合理。想要吃汉堡，每个人都应该自掏腰包。" #line:a14ae5
+===
+title: ChattrBox_A2D2
+tags: 
+colorID: 3
+position: -3497,15178
+---
+ChattrBox: 《科学跳动》工作不会使人的灵魂支离破碎，|因为并无证据表明灵魂是真实存在的。 #line:38d25b
+===
+title: ChattrBox_A1D3
+tags: 
+colorID: 2
+position: -3495,14932
+---
+ChattrBox: 返校提示：用锡箔纸把课本都包好。照办就行。 #line:457614
+===
+title: ChattrBox_A4D3
+tags: 
+colorID: 6
+position: -3755,15723
+---
+ChattrBox: 气 象 服 务：| 雨雪天气即将到来！|您做好准备了吗？ #line:bae7fa
+===
+title: ChattrBox_A2D3
+tags: 
+colorID: 3
+position: -3249,15183
+---
+ChattrBox: 《我爱我家》按揭贷款是否让您情绪失落？|全新APP可让您家的卫生间|变为公共卫生间对外出租！ #line:dd855d
+===
+title: ChattrBox_A2D4
+tags: 
+colorID: 3
+position: -2981,15184
+---
+ChattrBox: 《鬼葫芦》世界最大南瓜“布洛克"竟是与亡者联络的媒介？ #line:e047b6
+===
+title: ChattrBox_A3D1
+tags: 
+colorID: 5
+position: -3752,15447
+---
+ChattrBox: 《光明湾邮报》秋天会慢慢残害你吗？ #line:5f0539
+===
+title: ChattrBox_A3D2
+tags: 
+colorID: 5
+position: -3492,15445
+---
+ChattrBox: 科学家：“由于某些明显原因，海平面上升将增加鲨鱼袭人的发生概率。" #line:60d177
+===
+title: ChattrBox_A3D3
+tags: 
+colorID: 5
+position: -3247,15451
+---
+ChattrBox: 《今日财经》TurnUP创始人迈克·艾格普朗特欲收购邮政总局 #line:fad05a
+===
+title: ChattrBox_A3D4
+tags: 
+colorID: 5
+position: -2989,15452
+---
+ChattrBox: 《科学跳动》有新研究表明，事情并非会像其本身一样消极 #line:3cfd14
+===
+title: EnterLevel_A2D2
+tags: 
+colorID: 3
+position: -2047,15511
+---
+<<if $night>>
+    <<if $did_gregg_friendship_quest_2 is 0>>
+        <<set $angus_laptop to 2>>
+    <<endif>>
+<<endif>>
+===
+title: GreggLaptop_A3D2
+tags: temp
+colorID: 4
+position: 928,15931
+---
+<<set $gregg_laptop to 2>>
+Mae: 嘿，嘿，嘿 #line:18837f
+GreggLaptop: 哟，哟，哟 #line:69e875
+<<if $did_gregg_investigation_quest_on_a3d2>>
+	Mae: 你的腿怎么样了？ #line:9b07ec
+	GreggLaptop: 哦，腿没事了。我一直都是从二楼楼梯直接往下跳的。 #line:8a1135
+	GreggLaptop: 其实我的腿快疼死啦。 #line:54cb8b
+	GreggLaptop: 对了，你找到想要的东西没？ #line:7dabe3
+    	->额，我感觉是他找到了我们。 #line:67fc38
+    	->伙计，咱们可找到了不少东西 #line:4906fb
+    		Mae: 咱们找到了地图、吓人的机器人、 #line:8cc59c
+    		Mae: 阁楼上那个又怪又丑的艺术品、 #line:549167
+    		Mae: 一堆电梯 #line:152690
+    		Mae: 和！幽！灵！ #line:6b0b5f
+	GreggLaptop: 你说的是那个修旧机器人的维修工吗？ #line:51712e
+	Mae: 格～雷～格～ #line:c82a88
+	GreggLaptop: 你听我说，我知道那地方有维修工 #line:79abea
+	GreggLaptop: 所以，有百分之一万的可能 #line:51a0d7
+	GreggLaptop: 那就是个维修工，根本不是什么幽灵。 #line:f8d052
+	Mae: 可伙计，我能*感觉出来*啊。 #line:b3c2cd
+	//No more owl
+	//GreggLaptop: well I felt getting attacked by an owl
+	//GreggLaptop: maybe the owl was stalking us inside there
+	GreggLaptop: 我要问问安格斯有没有这种可能 #line:f6edbc
+	<<wait 3>>
+	GreggLaptop: 他没回。 #line:2ac9a6
+	Mae: 那好吧，我要睡觉觉去了。 #line:de5887
+	Mae: 谢谢今晚你能陪我一起去那儿。 #line:ade2ea
+	GreggLaptop: 老兄，一起干坏事。 #line:6549f3
+	Mae: 一起干坏事。 #line:d48f2b
+<<elseif $did_angus_investigation_quest_on_a3d2>>
+	Mae: 嘿，嘿 #line:d4337f
+	GreggLaptop: 你和安格斯玩得怎么样啊？？？？？？ #line:0ab4ad
+		->他没跟你说吗？ #line:b5084e
+			GreggLaptop: 他跟我说了。 #line:5fdb31
+		->开始玩得很不错，但后来就不好玩啦！！！ #line:67ad77
+	GreggLaptop: 你们见到了一个怪人，对不 #line:6973ef
+	Mae: 对，又是那个该死的幽灵！！！ #line:c74cae
+	GreggLaptop: 稍等 #line:5e5f7a
+	<<wait 2>>
+	GreggLaptop: 安格斯觉得那是个猎人，因为猎鹿季两天以后就要开始了。 #line:0b5e64
+	Mae: 哦，我勒个去 #line:bc41d6
+	Mae: 让他回话 #line:6ffbd3
+	GreggLaptop: 嘟嘟嘟 #line:c48608
+	<<wait 4>>
+	GreggLaptop: 嘿，梅，我是安格斯。 #line:05a5d9
+	Mae: 伙 计！你 可 亲 眼 看 见 那 家 伙 啦！ #line:2601e9
+	GreggLaptop: 我感觉我只是看见了一个比较怪的人。 #line:15e7ce
+	GreggLaptop: 可确实有人住在公园里， #line:73264d
+	GreggLaptop: 而且那里也有狩猎营之类的地方。 #line:23a707
+	<<set $angus_laptop to 1>>
+	GreggLaptop: 所以，那个人很可能是个提前出来打猎的猎鹿人。 #line:cc3cdb
+	Mae: 伙计，我能“感觉出来"。 #line:eb8819
+	GreggLaptop: 我知道。可我不知道该说什么。 #line:92d2d7
+	GreggLaptop: 我感觉，咱们三个人可能都吓坏了。 #line:82969f
+	Mae: 嗯，好吧。谢谢你能陪我一起去，你当时真的很勇敢。 #line:363f86
+	GreggLaptop: 有问题随叫随到。我感觉很开心！ #line:e7612c
+	Mae: 你把格雷格换回来吧。 #line:7d4b8c
+	<<wait 3>>
+	GreggLaptop: 嘿嘿嘿，姐们。 #line:413c10
+	GreggLaptop: 我可是个艺术家 #line:8be485
+	Mae: 你刚才是在搞艺术吗 #line:e77763
+    GreggLaptop: 没错 #line:ab426c
+    GreggLaptop: 好了，我要睡了 #line:69e3bb
+    Mae: 晚安，伙计。 #line:d006b4
+<<else>>
+	Mae: 伙计 #line:5ea48c
+	GreggLaptop: 嘿嘿嘿 #line:6aa095
+	GreggLaptop: 今天的惊悚之夜过得如何 #line:049e81
+	Mae: 伙计，我们去了趟墓地 #line:c678c1
+	Mae: 然后，我们无意之中打开了口棺材 #line:b5ddb5
+	Mae: 那个幽灵好像就是从那具尸体上跑出来的 #line:4a16dd
+	Mae: 或者就是……你知道我想说什么 #line:c8a395
+	GreggLaptop: 哇～哦！！！ #line:004ec0
+    Mae: 那个尸体特怪特诡异 #line:e92bc9
+	GreggLaptop: 你见到幽灵了没！ #line:2351ac
+	Mae: 我 亲 眼 看 见 啦！！！ #line:8d44b9
+	Mae: 肯定错不了 #line:b6c715
+	GreggLaptop: 那家伙可能是看见你在刨他的坟，所以就怒了 #line:5facfa
+	Mae: 哦，你说得对啊。 #line:952f58
+	Mae: 随便啦。 #line:582eb5
+	GreggLaptop: 好吧，我要去睡了。 #line:b525e2
+	GreggLaptop: 这些事……干得都不错。 #line:4bfafe
+	Mae: 你懂的，伙计 #line:d2ce69
+	GreggLaptop: 晚你的安吧，姐们 #line:9ddaff
+	Mae: 晚你的安去吧 #line:83c76f
+<<endif>>
+===
+title: AngusLaptop_A3D2
+tags: 
+colorID: 4
+position: 931,16219
+---
+<<set $angus_laptop to 2>>
+AngusLaptop: 嘿，梅，我是格雷格 #line:07229e
+AngusLaptop: 你和安格斯正在我电脑上聊天呢 #line:121bac
+AngusLaptop: 哦，嘿，我是安格斯。我人聪明，屁股又翘 #line:c25ad0
+AngusLaptop: 布拉布拉布拉。你们俩可聊了不少啊 #line:d2771c
+AngusLaptop: 等下，我正用绘图软件给他画小黄图呢。 #line:51f88b
+AngusLaptop: 我画了一个头戴帽子，面带微笑的小丁丁 #line:9df3f9
+AngusLaptop: 我也不知道这是个啥意思 #line:235381
+AngusLaptop: 看样子你们俩已经聊完了 #line:37bcc1
+AngusLaptop: 那我下咯 #line:267167
+AngusLaptop: 嘿，梅，我是安格斯。 #line:d3f6ab
+AngusLaptop: 你刚才是在和格雷格聊天。 #line:81fc8b
+AngusLaptop: 我承认，这画确实有点迷惑。 #line:1c0a42
+AngusLaptop: 晚安。 #line:f47bbf
+===
+title: EnterLevel_A3D2
+tags: 
+colorID: 4
+position: 885,15679
+---
+<<if $night>>
+    <<set $angus_laptop to 2>>
+<<endif>>
+===
+title: BeaLaptop_A3D2
+tags: 
+colorID: 4
+position: 917,16505
+---
+<<set $bea_laptop to 2>>
+Mae: 嘿，碧。你睡了没？ #line:3b57af
+BeaLaptop: 没。 #line:5d9d49
+BeaLaptop: 我在算账，还在吃烤奶酪。 #line:055b3e
+BeaLaptop: 有事吗？ #line:bfe786
+<<if $did_bea_investigation_quest_on_a3d2>>
+	Mae: 嘿，我差点把墓地给毁了，我很抱歉 #line:3f2d17
+	Mae: 我知道，正常情况下，你是不会这么干的 #line:702434
+	BeaLaptop: 没关系的，你知道你不是有意为之的。 #line:cbd0f0
+	BeaLaptop: 我指的是毁别人坟的事 #line:aa82b7
+	Mae: 那个幽灵是怎么回事啊？？？？ #line:235846
+	BeaLaptop: 梅，说真的，那就是个守墓人罢了。 #line:e31111
+		->！！！！ #line:c8366c
+			Mae: 蓓 娅！ #line:cbcf8a
+			BeaLaptop: 怎么了？ #line:d6928b
+			Mae: 他当时就站在那儿！ #line:5231d4
+			Mae: 那家伙和前几天晚上的那个人是同一个人！ #line:251cd7
+			BeaLaptop: 那就是个普通人！ #line:8c162d
+		->！？！？！？ #line:058e1e
+			Mae: 我还以为你相信世界上会有鬼呢！ #line:3fe987
+			BeaLaptop: 我当然信啦！可能信吧！我是这么觉得的！ #line:14a8fa
+			Mae: 那东西怎么就不可能是幽灵呢？ #line:0d676d
+			BeaLaptop: 我觉得不可能所有人都是幽灵吧！ #line:e61c4b
+			Mae: 所有人都有可能是幽灵！ #line:c8e415
+			BeaLaptop: 梅，那我是幽灵吗？ #line:4c88e0
+			Mae: 哦，你不是很喜欢幽灵吗。 #line:a845c4
+			Mae: 成天围着我转。 #line:322765
+			BeaLaptop: 我当初真应该教你学开车的。 #line:748036
+			BeaLaptop: 但，随便了…… #line:17e9bc
+	BeaLaptop: 对了，你是怎么发现那个人的？当时雾那么大！ #line:26c35c
+	Mae: 对我来说，这不成问题，我能“感觉"到他。 #line:90e6d4
+	BeaLaptop: 说真的，幸亏当时雾很大 #line:d9dd58
+	BeaLaptop: 要不然那个人就该认出咱们，然后报警去啦 #line:15351e
+	Mae: 啊啊啊啊啊！！！！ #line:a15520
+	Mae: 好吧，随便啦。 #line:713a76
+	BeaLaptop: 抱歉又惹你生气啦！！ #line:c24b55
+	Mae: 没事了，没事了。 #line:24554b
+	Mae: 谢谢你陪我一起去。 #line:37920e
+	BeaLaptop: 车是我开的。所以应该是你陪着我才对。 #line:52d376
+	Mae: 好吧，那谢谢你能去那儿。 #line:f53e5c
+	BeaLaptop: 不用谢。 #line:0ccde6
+	BeaLaptop: 不早了，快去睡觉吧。 #line:62aa35
+	Mae: 这就去。 #line:d20a0e
+	Mae: 晚安，老妹 #line:d944b8
+	BeaLaptop: 晚安！ #line:e3ca58
+<<elseif $did_gregg_investigation_quest_on_a3d2>>
+	Mae: 我们去历史协会了 #line:2f0a9a
+	BeaLaptop: 哦，情况怎么样？ #line:fa2464
+	Mae: 额，有个幽灵一直在追着我们跑 #line:cce8fd
+	BeaLaptop: 是真的吗？ #line:862900
+	BeaLaptop: 等下，我去找格雷格确认一下。 #line:c7616d
+	Mae: 你为啥要找他确认啊！你不相信我吗？？？ #line:d121ac
+	BeaLaptop: 不好意思，我得找第二个人，问问他是怎么认为的。 #line:129fea
+	<<wait 4>>
+	BeaLaptop: 格雷格说，那有可能是个维修工之类的人。 #line:9a5b3a
+	Mae: 啊啊啊。 #line:940d23
+	Mae: 好吧，我睡觉去了。 #line:6d5391
+	BeaLaptop: 睡觉前别生气，不然会做噩梦的。 #line:0ea2d5
+	Mae: 谢了。 #line:0e5f74
+	BeaLaptop: 晚安，梅。 #line:72739a
+<<else>>
+    // angus IQ
+	Mae: 我和安格斯去公园了 #line:111469
+	BeaLaptop: 情况如何？ #line:5d157a
+	Mae: 一开始还是喜剧片，可后来就变成恐怖片啦。 #line:8dc021
+	BeaLaptop: 啥情况啊？ #line:caace0
+	Mae: 我们在树林里看见那幽灵啦。 #line:583a77
+	BeaLaptop: 真的吗？安格斯也看见了？ #line:a50d94
+	Mae: 他看见啦！ #line:199be2
+	BeaLaptop: 哇哦，好吧。你等会儿，我去问问安格斯。 #line:497aed
+	Mae: 问他干什么？ #line:cddbf3
+	BeaLaptop: 因为安格斯是个死硬死硬的无神论者。 #line:26e14b
+	BeaLaptop: 他肯定不信这些神了鬼了的。 #line:9453a7
+	Mae: 你为什么就不能相信我呢。 #line:098434
+	BeaLaptop: 等下 #line:b23d40
+	<<wait 4>>
+	BeaLaptop: 他说，那很可能是猎人 #line:1a9fc5
+	Mae: 啊啊啊啊啊。 #line:d24960
+	Mae: 好吧，好吧。 #line:96d7d1
+	BeaLaptop: 抱歉，我并不是*不*信任你。 #line:331ba0
+	Mae: 谢了。 #line:b1fec5
+	BeaLaptop: 对了，你和安格斯逛得怎么样，开心不？ #line:3b5d5e
+	Mae: 挺开心的。我知道了很多安格斯的事。 #line:0cd793
+	Mae: 他以前的生活是不是很糟啊？？？ #line:e519bc
+	BeaLaptop: 哦，没错，确实很糟。 #line:1d7e45
+	Mae: 等等，你是怎么知道的？ #line:ae215f
+	BeaLaptop: 额，因为初二的时候，我和安格斯好像就已经是朋友了。 #line:653e67
+	Mae: 哦，对啊。我都忘了。 #line:ee5735
+	BeaLaptop: 你不属于那种能聚人心的人，可安格斯就能。 #line:50884e
+	BeaLaptop: 他就像是粘合剂。如果没有他，我和格雷格绝对不会一起出去。 #line:55a1af
+	Mae: 嗯，安格斯人很好。 #line:7e46ea
+	BeaLaptop: 没错。 #line:3f821e
+	Mae: 好了，我要睡觉了。 #line:8127fa
+	BeaLaptop: 回聊 #line:34018f
+<<endif>>
+===
+title: GreggMessages_A3D3
+tags: 
+colorID: 4
+position: 1442,15953
+---
+<<set $gregg_laptop to 1>>
+GreggLaptop: 嘿，姐们 #line:6297a1
+GreggLaptop: 我现在在快餐店 #line:b3ebe1
+GreggLaptop: 快来把我从无聊的深渊里解救出来吧 #line:b1e1b0
+GreggLaptop: 你真诚的，小格雷格 #line:267da5
+===
+title: AngusMessages_A3D3
+tags: 
+colorID: 4
+position: 1449,16230
+---
+<<set $angus_laptop to 1>>
+AngusLaptop: -离线留言-“行星应该受到人们的同情，|因为它们不知道自己是多么的庞大，|也不知道自己有多么冰冷。"|——凯茜·康克林，国家天文局 #line:f5bdfc
+===
+title: BeaMessages_A3D3
+tags: 
+colorID: 4
+position: 1448,16491
+---
+<<set $bea_laptop to 1>>
+BeaLaptop: 早啊。要是今天你能来镇中心的话，就到老大镐来找我。 #line:677e3b
+BeaLaptop: 我自己都不知道为啥要说这话，你每天都会去那儿的。 #line:422105
+BeaLaptop: 算了，回头见。 #line:0a6fbd
+===
+title: GreggLaptop_A3D3
+tags: 
+colorID: 4
+position: 1733,15951
+---
+<<set $gregg_laptop to 2>>
+<<if $did_gregg_friendship_quest_4>>
+	Mae: 嘿，伙计 #line:2cfc79
+	GreggLaptop: 嘿，姐们 #line:bfa8d5
+	Mae: 我对发生的所有事道歉 #line:9a4f6a
+	GreggLaptop: 咱俩还道啥歉呀？ #line:612ea7
+	GreggLaptop: 咱们能不能跳过这部分啊？ #line:d34318
+	Mae: 哈哈，抱歉 #line:389556
+	Mae: 我想说 #line:7ca4cb
+	Mae: 你懂的 #line:15242d
+	GreggLaptop: 哈哈哈哈哈 #line:b681e6
+	GreggLaptop: 晚安了，姐们 #line:405689
+	Mae: 晚安 #line:038369
+<<else>>
+    Mae: 嘿，小子 #line:60f182
+    Mae: 我参加了一个派对 #line:bb54cb
+    Mae: 我在派对上跳了舞 #line:d34576
+    Mae: 在雨里狂奔 #line:0187e0
+    <<if $cool_party_girl>>
+    	Mae: 还遇见了个辣妹 #line:8d59dd
+    	Mae: 可我没要到她的联系方式 #line:f39623
+    	Mae: 她可是个漂亮的小姐姐哟 #line:aef41a
+    <<endif>>
+    GreggLaptop: 哇哦，听你一说，感觉你今天晚上过得很嗨啊 #line:2881b9
+    Mae: 好事坏事全都有 #line:dc55ab
+    Mae: 但总之，我还会再去的 #line:07b229
+    GreggLaptop: 咱们要办更多派对才行 #line:4f6be5
+    Mae: 太对啦 #line:9b54f8
+    Mae: 好了，我要睡觉了 #line:09f8cf
+    GreggLaptop: 886 #line:4cb3f9
+<<endif>>
+===
+title: BeaLaptop_A3D3
+tags: 
+colorID: 4
+position: 1725,16232
+---
+<<set $bea_laptop to 2>>
+<<if $did_gregg_friendship_quest_4>>
+	Mae: 嘿，嘿，碧。你还没睡吧？ #line:f2dfbc
+	BeaLaptop: 没睡呢，老姐。 #line:31bc06
+	BeaLaptop: 有事吗？ #line:559853
+	Mae: 没事。 #line:005b90
+	Mae: 吃完多纳狼之后有点不舒服 #line:f42220
+	BeaLaptop: 是啊，所以我才不去那儿呢。 #line:dc8b63
+	Mae: 那儿超不错的 #line:2f5996
+	Mae: 为什么你会觉得那儿又好……又不好的 #line:f0fa9b
+	BeaLaptop: 梅，因为这世界本来就很疯狂。 #line:a78f07
+	Mae: 对了，我还吐了，然后我们还把机器人扔到树林里了。 #line:0e60e4
+	BeaLaptop: 好吧。我太困了，都听不懂你在说什么了。 #line:4d2ebd
+	Mae: 那就睡觉去吧 #line:4aca52
+	BeaLaptop: 我睡了 #line:bc4f9d
+<<else>>
+    Mae: 嘿，好啊 #line:dade47
+    BeaLaptop: 嘿，我很好。 #line:2ca911
+    Mae: 今晚我人都累垮啦。 #line:71b269
+    BeaLaptop: 这我绝对相信。你是一路跑到河边的吗？ #line:3b6421
+    Mae: 是啊，我是登高上房才跑过去的。 #line:9f1fc8
+    Mae: 开派对和跳舞确实让你开心了不少。 #line:3df060
+    BeaLaptop: 那其实 #line:3bfeb5
+    BeaLaptop: 其实相当不错，梅。 #line:203677
+    BeaLaptop: 还有你干的事也是。 #line:78acc4
+    Mae: 嗷，这可不是吧 #line:8f522a
+    BeaLaptop: 早点休息吧。 #line:b26400
+    Mae: 好，我马上就睡。 #line:2487d2
+    BeaLaptop: 谢谢你能一路跑过来找我。 #line:32e781
+    Mae: 哦，我永远都在你身边。你是甩不掉我的。 #line:46c9e2
+    <<wait 2>>
+    BeaLaptop: 我已经想到最坏的结局了。 #line:3efc81
+<<endif>>
+===
+title: GreggMessages_A3D4
+tags: 
+colorID: 4
+position: 2195,15966
+---
+<<set $gregg_laptop to 1>>
+GreggLaptop: 嘿，小子 #line:65cb5a
+GreggLaptop: 我在快餐店呢 #line:02bd94
+GreggLaptop: 我在上班，上班，上班 #line:dd9094
+GreggLaptop: 上班上到死为止 #line:2453dc
+===
+title: AngusMessages_A3D4
+tags: 
+colorID: 4
+position: 2200,16198
+---
+<<set $angus_laptop to 1>>
+AngusLaptop: -离线留言- |“过来应战 /|箭矢横飞 /|你激怒了我 /|你激怒了我们"|- 下周就要去看|空白之音的演唱会|啦！！！！！！ #line:90569b
+===
+title: BeaMessages_A3D4
+tags: 
+colorID: 4
+position: 2202,16412
+---
+<<set $bea_laptop to 1>>
+BeaLaptop: 嗨，梅。 #line:147aae
+BeaLaptop: 我，在，老，大，镐。 #line:e0635c
+BeaLaptop: 你知道我要说什么 #line:06d950
+===
+title: CaseyAwayMessage
+tags: 
+colorID: 0
+position: -4247,17116
+---
+CaseyLaptop: -离线留言- |生而为输|败者自豪|鼓手啊鼓手|滑板与毁灭|滑板为创造|通向辉煌 #line:270c78
+===

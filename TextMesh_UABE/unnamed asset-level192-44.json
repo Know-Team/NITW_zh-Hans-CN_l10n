@@ -1,0 +1,28 @@
+{
+    "0 TextMesh Base": 
+    {
+        "0 PPtr<GameObject> m_GameObject": 
+        {
+            "0 int m_FileID": 0,
+            "0 SInt64 m_PathID": "12"
+        },
+        "1 string m_Text": "2013年12月，在为《林中之夜》工作了短短几个月以及 Kickstarter 众筹结束的三周后，我们决定发布一个小东西。\r\n我们想展示一下我们的实际成果（虽然有很多灵感，但也只是停留在脑海中），更何况我们已经发布了游戏的相关消息。\r\n所以有时候你需要一个目标去完成一些事。虽然在所有成员要度假探望家人之前，团队只有不到两周的时间去完成它。\r\n不过《长至夜》还是由此而来，我们的第一个拓展小游戏。\r\n它埋下了一些灵感，这些灵感最终会长成高大、怪诞的灵感之树，在随后而来的《林中之夜》中呈现出来。\r\n",
+        "0 float m_OffsetZ": 0,
+        "0 float m_CharacterSize": 0.0500000007,
+        "0 float m_LineSpacing": 1,
+        "0 SInt16 m_Anchor": 4,
+        "0 SInt16 m_Alignment": 0,
+        "0 float m_TabSize": 4,
+        "0 int m_FontSize": 0,
+        "0 int m_FontStyle": 0,
+        "1 bool m_RichText": true,
+        "0 PPtr<Font> m_Font": 
+        {
+            "0 int m_FileID": 2,
+            "0 SInt64 m_PathID": "5"
+        },
+        "0 ColorRGBA m_Color":  {
+            "0 unsigned int rgba": 4294967295
+        }
+    }
+}

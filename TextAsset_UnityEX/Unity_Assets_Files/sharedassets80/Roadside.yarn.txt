@@ -1,0 +1,171 @@
+title: EnterLevel
+tags: 
+colorID: 4
+position: -150,-17
+---
+[[FQ400]]
+===
+title: FQ400
+tags: 
+colorID: 4
+position: 195,36
+---
+<<cameraLookAt CameraArgument>>
+Angus: 车胎瘪了。 #line:7d2b14
+Angus: 轮胎瘪了，车就没法再开了。 #line:137de4
+Gregg: 为什么不能开了？ #line:85e3fa
+Mae: 对啊，为什么啊？ #line:b2c504
+Angus: …… #line:0b28c4
+Angus: 就是不能开！瘪了的轮胎会影响整个车轮和其他部件的！ #line:c283ca
+Mae: 话说，你怎么这么懂车啊？ #line:f3c485
+Gregg: 咱们能把车给修好的！ #line:17c62d
+Angus: 拿什么修？ #line:516eb3
+Angus: 难不成找几根破棍子就能把车修好？ #line:88e77d
+Mae: 这主意简直蠢爆了。 #line:4f1e29
+Gregg: 不我意思是…… #line:0c3423
+Gregg: 咱们可以去换个新轮胎啊！ #line:932ae2
+Gregg: 换轮胎人人都会啊！ #line:6bd2a2
+Angus: “换轮胎人人都会"， #line:a3e08d
+Angus: 那也得有TM的备胎才能换啊！ #line:7f21e3
+Mae: 伙计们…… #line:c1ff08
+Gregg: 你这人怎么这么混蛋啊？ #line:3a4f5c
+Angus: 难道是我 #line:a61c58
+Angus: 应该为此事负责吗！ #line:d1d173
+Mae: 嘿，伙计们！ #line:cb189c
+Angus: 怎 么 了，|梅！？！？！？ #line:51a06a
+Gregg: 别冲她叫！！！ #line:ec0d48
+Mae: 啊 啊 啊！|我自己先逛一会儿。 #line:2309c4
+Angus: 行！ #line:df23fb
+Gregg: 行！ #line:29028f
+Mae: 好 吧 啊啊啊呃啊 #line:4d0691
+<<cameraFollowPlayer 1>>
+//now free to wander and stuff. Look around and then talk to Gregg and Angus,
+// who are having some sort of auto-rolling argument or emoticon convo or something
+<<runDialogue BackgroundDialogue ArgumentLoop>>
+===
+title: FQ401
+tags: 
+colorID: 4
+position: 596,35
+---
+<<stopDialogue BackgroundDialogue>>
+Mae: 咱们现在到底在干什么呢？ #line:83ba23
+Angus: 嗯，我是想弄清楚接下来咱们该干些什么。 #line:ba739f
+Gregg: 咱们可以打电话找人……对吧？ #line:435d33
+Angus: 哦，对啊。我们谁突然把手机带着了？ #line:0ee32e
+Angus: 这TM该死的破镇子上 #line:2fc761
+Angus: 难道会奇迹般地产生信号吗！ #line:bfd8cd
+Gregg: 我的天啊！ #line:cde30f
+Mae: 好吧，好吧。 #line:1c7bb4
+<<set $roadside_trunk to 1>>
+<<setCanInteract Gregg 0>>
+<<setCanInteract Angus 0>>
+<<runDialogue BackgroundDialogue ArgumentLoop>>
+===
+title: Trunk
+tags: 
+colorID: 4
+position: 1016,47
+---
+<<stopDialogue BackgroundDialogue>>
+<<cameraLookAt CameraArgument 1>>
+<<closeAll>>
+Mae: 嘿我找到了！ #line:c41286
+<<close>>
+<<wait 1>>
+<<runNextLinesTogether 2>>
+Gregg: 什 么 #line:d4e133
+Angus: 什 么 #line:24fb7f
+Mae: 车后面有个备胎。 #line:8a1668
+Gregg: 哦！太棒啦，太棒啦！ #line:98f4fb
+Angus: 真是个好消息啊。 #line:8d130e
+Mae: 呃，有谁知道 #line:12596c
+Mae: 怎么换轮胎？ #line:29b8db
+Angus: 我知道。 #line:b92377
+Mae: 要我帮忙吗？ #line:4836d8
+Angus: 不用了。 #line:89ab1f
+Gregg: 哦，老兄。 #line:4ed365
+Angus: 梅，你人不坏， #line:bd2824
+Angus: 但在换轮胎这件事上，我绝对信不过你。 #line:2d4638
+<<close>>
+<<wait 2>>
+Mae: 我勒个去，拜托，老兄。 #line:e2cf49
+Gregg: 老天啊。 #line:a12e8a
+<<close>>
+<<wait 4>>
+<<irisOut 1 wait>>
+<<scene DonutWolfInterior>>
+===
+title: Gregg
+tags: 
+colorID: 4
+position: 464,-256
+---
+[[FQ401]]
+===
+title: Angus
+tags: 
+colorID: 4
+position: 705,-252
+---
+[[FQ401]]
+===
+title: ArgumentLoop
+tags: 
+colorID: 4
+position: 361,272
+---
+Angus:{emote=cloud_lightning} #line:1424b6
+Gregg:{emote=spiral} #line:d472fc
+Angus:{emote=heart} #line:b7632b
+Gregg:{emote=heartbreak} #line:f72d6c
+Angus:{emote=eyecry} #line:2b8aa9
+<<wait 1>>
+[[ArgumentLoop]]
+===
+title: LeftOfCar.1
+tags: 
+colorID: 4
+position: 1408,76
+---
+Mae: 我真服了。 #line:27709c
+Mae: 看看这片树林， #line:62da35
+Mae: 多适合抛尸啊。 #line:d3a108
+Mae: 抛完尸后，肯定很难找到。 #line:e22634
+Mae: 真是片适合抛尸藏尸的树林啊。 #line:757d38
+===
+title: LeftOfCar.2
+tags: 
+colorID: 4
+position: 1680,78
+---
+Mae: 可以到树林里转转，看能不能找到几具尸体。 #line:700a61
+<<wait 2>>
+Mae: 嗯。 #line:5d528d
+<<end>>
+===
+title: RightOfCar.1
+tags: 
+colorID: 4
+position: 1405,350
+---
+Mae: 好吧，什么东西能把瘪了的车胎补好呢？ #line:0e117f
+Mae: 唔。 #line:7a044f
+Mae: 树枝 #line:1f56c8
+Mae: 石头 #line:4c5b56
+Mae: 树叶 #line:c547d3
+Mae: 木头 #line:4f56ee
+Mae: 泥土 #line:dfce07
+Mae: 或许我能用木头雕出个扳手。 #line:aa40b0
+===
+title: RightOfCar.2
+tags: 
+colorID: 4
+position: 1679,355
+---
+Mae: 还有，我在想， #line:9d0389
+Mae: 能不能训练一只猫头鹰， #line:b038f4
+Mae: 然后让它做点杂技呢。 #line:0d275c
+Mae: 不不不！梅，集中注意力！ #line:44be65
+<<end>>
+===

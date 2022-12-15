@@ -1,0 +1,180 @@
+{
+    "0 Sprite Base": 
+    {
+        "1 string m_Name": "doodle_WeirdAutumn",
+        "0 Rectf m_Rect": 
+        {
+            "0 float x": 0,
+            "0 float y": 0,
+            "0 float width": 512,
+            "0 float height": 512
+        },
+        "0 Vector2f m_Offset": 
+        {
+            "0 float x": 0,
+            "0 float y": 0
+        },
+        "0 Vector4f m_Border": 
+        {
+            "0 float x": 0,
+            "0 float y": 0,
+            "0 float z": 0,
+            "0 float w": 0
+        },
+        "0 float m_PixelsToUnits": 135,
+        "0 Vector2f m_Pivot": 
+        {
+            "0 float x": 0.5,
+            "0 float y": 0.5
+        },
+        "0 unsigned int m_Extrude": 1,
+        "1 bool m_IsPolygon": false,
+        "1 SpriteRenderData m_RD": 
+        {
+            "0 PPtr<Texture2D> texture": 
+            {
+                "0 int m_FileID": 0,
+                "0 SInt64 m_PathID": "1068"
+            },
+            "0 PPtr<Texture2D> alphaTexture": 
+            {
+                "0 int m_FileID": 0,
+                "0 SInt64 m_PathID": "0"
+            },
+            "0 vector m_SubMeshes":  {
+                "0 Array Array": [
+                    {"0 SubMesh data": 
+                    {
+                        "0 unsigned int firstByte": 0,
+                        "0 unsigned int indexCount": 6,
+                        "0 int topology": 0,
+                        "0 unsigned int firstVertex": 0,
+                        "0 unsigned int vertexCount": 4,
+                        "0 AABB localAABB": 
+                        {
+                            "0 Vector3f m_Center": 
+                            {
+                                "0 float x": 0,
+                                "0 float y": 0,
+                                "0 float z": 0
+                            },
+                            "0 Vector3f m_Extent": 
+                            {
+                                "0 float x": 0,
+                                "0 float y": 0,
+                                "0 float z": 0
+                            }
+                        }
+                    }}
+                ]
+            },
+            "0 vector m_IndexBuffer":  {
+                "1 Array Array": [
+                    {"0 UInt8 data": 3},
+                    {"0 UInt8 data": 0},
+                    {"0 UInt8 data": 0},
+                    {"0 UInt8 data": 0},
+                    {"0 UInt8 data": 1},
+                    {"0 UInt8 data": 0},
+                    {"0 UInt8 data": 2},
+                    {"0 UInt8 data": 0},
+                    {"0 UInt8 data": 1},
+                    {"0 UInt8 data": 0},
+                    {"0 UInt8 data": 0},
+                    {"0 UInt8 data": 0}
+                ]
+            },
+            "1 VertexData m_VertexData": 
+            {
+                "0 int m_CurrentChannels": 9,
+                "0 unsigned int m_VertexCount": 4,
+                "0 vector m_Channels":  {
+                    "0 Array Array": [
+                        {"0 ChannelInfo data": 
+                        {
+                            "0 UInt8 stream": 0,
+                            "0 UInt8 offset": 0,
+                            "0 UInt8 format": 0,
+                            "0 UInt8 dimension": 3
+                        }},
+                        {"0 ChannelInfo data": 
+                        {
+                            "0 UInt8 stream": 0,
+                            "0 UInt8 offset": 0,
+                            "0 UInt8 format": 0,
+                            "0 UInt8 dimension": 0
+                        }},
+                        {"0 ChannelInfo data": 
+                        {
+                            "0 UInt8 stream": 0,
+                            "0 UInt8 offset": 0,
+                            "0 UInt8 format": 0,
+                            "0 UInt8 dimension": 0
+                        }},
+                        {"0 ChannelInfo data": 
+                        {
+                            "0 UInt8 stream": 0,
+                            "0 UInt8 offset": 12,
+                            "0 UInt8 format": 0,
+                            "0 UInt8 dimension": 2
+                        }},
+                        {"0 ChannelInfo data": 
+                        {
+                            "0 UInt8 stream": 0,
+                            "0 UInt8 offset": 0,
+                            "0 UInt8 format": 0,
+                            "0 UInt8 dimension": 0
+                        }},
+                        {"0 ChannelInfo data": 
+                        {
+                            "0 UInt8 stream": 0,
+                            "0 UInt8 offset": 0,
+                            "0 UInt8 format": 0,
+                            "0 UInt8 dimension": 0
+                        }},
+                        {"0 ChannelInfo data": 
+                        {
+                            "0 UInt8 stream": 0,
+                            "0 UInt8 offset": 0,
+                            "0 UInt8 format": 0,
+                            "0 UInt8 dimension": 0
+                        }},
+                        {"0 ChannelInfo data": 
+                        {
+                            "0 UInt8 stream": 0,
+                            "0 UInt8 offset": 0,
+                            "0 UInt8 format": 0,
+                            "0 UInt8 dimension": 0
+                        }}
+                    ]
+                },
+                "1 TypelessData m_DataSize": [154, 153, 25, 193, 205, 204, 172, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 25, 65, 205, 204, 172, 192, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 25, 65, 205, 204, 172, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 25, 193, 205, 204, 172, 192, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            },
+            "0 Rectf textureRect": 
+            {
+                "0 float x": 2.02675104,
+                "0 float y": 97.0267487,
+                "0 float width": 507.897125,
+                "0 float height": 317.897156
+            },
+            "0 Vector2f textureRectOffset": 
+            {
+                "0 float x": 2.02675104,
+                "0 float y": 97.0267487
+            },
+            "0 Vector2f atlasRectOffset": 
+            {
+                "0 float x": -1,
+                "0 float y": -1
+            },
+            "0 unsigned int settingsRaw": 64,
+            "0 Vector4f uvTransform": 
+            {
+                "0 float x": 135,
+                "0 float y": 256,
+                "0 float z": 135,
+                "0 float w": 256
+            }
+        }
+    }
+}

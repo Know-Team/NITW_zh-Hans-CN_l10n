@@ -1,0 +1,20 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 545,259
+---
+Gregg: 所有零件都在这里了…… #line:28e010
+Mae: 哇！想怎么组装和搭配都可以。 #line:3d4fc9
+Gregg: 咱们可以打造一台咱们专属的机器人。 #line:898b91
+Mae: 那咱们……只需要把所有零件拼在一起就可以了？ #line:6dd136
+Gregg: 没错，把所有零件拼在一起，然后把螺丝拧紧就大功告成了。 #line:4d7831
+Gregg: 能有什么问题呢？ #line:388e98
+Mae: 我想说的是，很多时候，事情和东西都会出错。 #line:042b01
+Gregg: 嘿，姐们，你可真没意思。 #line:63ebc2
+Mae: 我刚才已经死过一次啦。 #line:c74ba0
+
+<<set $gregg_friendship_quest to 2>>
+<<set $gregg_friendship_quest_2 to 4>>
+<<set $act to 2>>
+<<set $day to 2>>
+===

@@ -1,0 +1,42 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 370,-88
+---
+<<set $diner to 2>>
+Angus: 梅，你这么做，好像是在破坏证据啊。 #line:8c8b8e
+Bea: 呃，我现在开始担心 #line:3fce88
+Bea: 自己会不会在回家的路上被肢解什么的？ #line:0c52ae
+Gregg: 嘘，让我瞧瞧这条胳膊。 #line:85ddcc
+Bea: 你又用不着拿耳朵去看。 #line:d34221
+Gregg: 嘘～～～！ #line:90a17a
+===
+title: CopsArrive
+tags: 
+colorID: 0
+position: 750,239
+---
+<<fadeOutMusic 1>>
+Molly: 这里发生什么事啦！ #line:845fbc
+Gregg: [shake=.05]啊哦！[/shake] #line:f70f21
+<<fadeOut 1>>
+<<wait 1>>
+<<scene TowneCentreWest>>
+===
+title: FindTattoo
+tags: 
+colorID: 0
+position: 367,205
+---
+Mae: 哇哦！那是个什么东西？ #line:86b1f0
+Gregg: 好像是个记号。 #line:183fa7
+Mae: 你说什么？ #line:861f10
+Bea: 这是纹身吗？ #line:404896
+Angus: 对，是纹身。 #line:063055
+Mae: 这纹身是什么意思啊？ #line:debdb4
+Gregg: 姐们，我觉得你刚刚发现了一条线索。 #line:30980d
+Bea: 啊，你们俩够了。 #line:e620bd
+Angus: 警察来了。 #line:a8481c
+<<set $found_tattoo to 1>>
+[[CopsArrive]]
+===

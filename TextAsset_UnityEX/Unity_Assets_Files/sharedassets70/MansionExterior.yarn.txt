@@ -1,0 +1,155 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: -91,369
+---
+<<if $gregg_iq_mansion is 0>>
+    [[Intro]]
+<<else>>
+    [[End]]
+<<endif>>
+===
+title: Intro
+tags: bikeCrash
+colorID: 0
+position: -337,640
+---
+<<walk Mae MaeNextToGregg wait>>
+<<lookAt Gregg Mae>>
+Gregg: 不好意思，刚才撞车了。 #line:f4032d
+Mae: 没事。 #line:a786fb
+<<if $did_germ_friendship_quest_2>> //or $did_gregg_friendship_quest_3>>
+	Mae: 我都习惯了。 #line:edd97a
+<<endif>>
+Mae: 你的自行车没事吧？ #line:93dc84
+Gregg: 没关系的，我能把它修好，我可心灵手巧啦。 #line:92924d
+Gregg: 真希望你刚才被车给碾了，但你居然没事，真讨厌。 #line:103096
+Mae: 我希望你刚才一头撞在火车上，可惜没有，真糟糕。 #line:00bbfa
+Gregg: 我本来希望你的尸体会被食腐动物给吞了，但你还活得好好的，可惜了。 #line:3d1d1c
+Mae: 我还希望食肉动物把你生吞活剥了呢，不过也没有，倒霉。 #line:fbbdf2
+Gregg: 呵呵。 #line:fdc930
+<<close>>
+<<lookRight Gregg>>
+<<wait 1>>
+Mae: 这就是目的地了，对吗？ #line:179ce8
+Gregg: 对。 #line:572bce
+Mae: 我以前可没来过这儿。 #line:39860c
+Gregg: 我也是。 #line:4ae7ba
+Mae: 哦……呃……我还以为你已经有计划了呢。 #line:b95cd1
+<<lookAt Gregg Mae>>
+Gregg: 谁需要什么计划啊？ #line:8d850a
+Gregg: 咱们不过是闯进一座旧房子罢了。 #line:19ec4c
+<<if $did_gregg_friendship_quest_4>>
+	Mae: 知道吗，我还以为你已经不干坏事了。 #line:7342b1
+	Gregg: 呃，我确实不干了， #line:b70eb4
+	Gregg: 可我还是留了个念想。 #line:c82170
+	Gregg: 所以，言出必行嘛，只好再干一次了。 #line:0ce0bf
+	Mae: 谢了，伙计。 #line:dc3940
+	Gregg: 咱俩可是永远的好兄弟啊。 #line:dd9601
+	Gregg: 但是，如果咱们被抓了，所有锅都得让你来背。 #line:a18c8c
+	Mae: 好吧，这听起来还挺公平的。 #line:696875
+	Gregg: 但！是！咱俩肯定不会让人给抓住的。 #line:827565
+	Mae: 说得对。 #line:4751cc
+<<endif>>
+Mae: 干坏事。 #line:301b38
+Gregg: 说得对。 #line:55174a
+Mae: 这楼看起来有点……额…… #line:470b16
+<<lookRight Gregg>>
+Gregg: ……完全就像个鬼屋一样。 #line:ab7637
+<<lookAt Gregg Mae>>
+Mae: 的确。 #line:dcfa14
+    ->这就和那部老电影里的房子一样。 #line:ae255f
+        Mae: 《鬼宅魅影》。 #line:14b788
+        Gregg: 呃，那部电影啊。 #line:8e9268
+        Mae: 是啊，我知道那部电影， #line:dd6e65
+        Mae: 那硕大老旧的别墅…… #line:b8ca65
+    ->就和书封面上的房子一样。 #line:227e21
+        Mae: 《凉亭街惊魂》。 #line:1535f0
+        Gregg: 咱们镇不就有条叫凉亭街的街吗！ #line:5dab68
+        Mae: 是啊。我小时候可被这本书吓得不轻。 #line:1201d7
+        Mae: 巨大而阴森的房屋…… #line:7238cd
+Mae: 这地方和我刚提到的画面简直一模一样。 #line:cf8415
+Gregg: 哎呀，所以说你是来找鬼的嘛，是吧？ #line:63ab5c
+<<if $did_angus_investigation_quest or $did_bea_investigation_quest>>
+	Mae: 其实，我觉得是它在找我。 #line:432824
+	Gregg: 哦，对，是那天晚上的鬼。 #line:fde311
+<<endif>>
+Mae: ……这样啊…… #line:f823f5
+Gregg: 好吧，不管那人是谁，没准咱们能在这儿找到点有用的信息。 #line:e1895f
+Mae: 可是，伙计，那个好像不是个人啊。 #line:493739
+Mae: 那是个鬼。 #line:de0410
+Gregg: 额。 #line:549f10
+Gregg: 那好吧， #line:7e75c9
+<<close>>
+<<lookRight Gregg>>
+<<wait 1>>
+Gregg: 咱们现在就找那个鬼去。 #line:7729d8
+<<close>>
+<<fadeOut 1 wait>>
+<<scene MansionBack>>
+===
+title: End
+tags: 
+colorID: 0
+position: 182,661
+---
+<<wait 1>>
+<<set $night to 1>>
+<<set $did_gregg_investigation_quest to 1>>
+<<if $act is 3 and $day is 2>>
+    <<set $did_gregg_investigation_quest_on_a3d2 to 1>>
+<<endif>>
+<<set $completed_investigation_quests += 1>>
+<<unlockDoodle GreggIQ>>
+Mae: 现在你相信我的话了吗？ #line:871e5d
+Gregg: 我相信咱们刚才差点就让这儿的保安什么的给逮住了。 #line:1cfa88
+Mae: 才不是呢。我告诉你，我好像能……感觉到它的存在。 #line:17c9ed
+Gregg: 好吧，好吧。幽灵，幽灵保安。 #line:c9f0fa
+Mae: 我对这一切，感觉很抱歉。 #line:4c4cee
+Mae: 你不光车撞坏了， #line:2a740e
+Mae: 还让一只猫头鹰给抓伤了， #line:101ce7
+Mae: 而且还破窗而出， #line:c8deca
+Mae: 又从防火梯上跳了下去。 #line:d0a0c1
+Gregg: 没事的，姐们，干这些都是值得的。 #line:e805d1
+Mae: 格雷格，你可真是个好朋友。 #line:b4b2db
+Gregg: 噗…… #line:5252f9
+Gregg: 干坏事。 #line:3aa2d4
+Mae: 干坏事。 #line:a9066f
+<<close>>
+<<if $act is 3 and $day is 4>>
+	<<wait 2>>
+    <<enableAnimator GreggIQMansionExterior>>
+    <<playAnimation Mae MaeFreakoutHeadRight>>
+    <<trigger GreggIQMansionExterior Freakout>>
+    <<wait 12>>
+    <<playAmbientSFX _AmbientSFX:mae_head_hurt 3>>
+    <<wait 3>>
+	Mae: 啊 啊 啊！ #line:1707ea
+	Gregg: 姐 们！你 怎 么 啦？！ #line:363032
+	Mae: 啊啊啊…… #line:2aca68
+	Mae: 呃啊啊啊啊啊…… #line:b016a4
+	Gregg: 姐 们！说 句 话 啊！ #line:6121e7
+	Mae: 呃……老天，我的头…… #line:5e0cc1
+	Mae: 咱们得把……今晚的事……告诉大家…… #line:59634c
+	Gregg: 好好好，你还能坐到自行车上吗？ #line:b61f98
+	Mae: 我觉得……能。 #line:9aa7f2
+	Gregg: 那好，抓紧我，咱俩这就回家。 #line:0cb52a
+	Mae: 那个幽灵怎么办呀？ #line:79eaa5
+	Gregg: 这儿根本就没有鬼。 #line:5e6468
+	Mae: 咱们走吧。 #line:6b8564
+    <<fadeOut 1 wait>>
+    <<scene GreggAngusApartment>>
+<<else>>
+    <<irisOut 1 wait>>
+    <<scene MaeHouse left>>
+<<endif>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -93,148
+---
+<<if $gregg_iq_mansion is 0>>
+    <<warp Mae MaeOffscreen>>
+<<endif>>
+===

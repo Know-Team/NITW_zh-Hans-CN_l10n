@@ -1,0 +1,327 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: -530,361
+---
+<<if $germ_home_quest is 0>>
+    [[HomeQuestIntro]]
+<<elseif $germ_home_quest is 1>>
+    [[HomeQuestTrampoline]]
+<<endif>>
+
+<<if $germ_home_quest > 0>>
+    <<hide Collision:GermOnPorch>>
+<<endif>>
+===
+title: HomeQuestIntro
+tags: 
+colorID: 0
+position: -251,290
+---
+<<warp Mae Mae0>>
+<<warp Germ Germ0>>
+
+<<hide Collision:Right>>
+
+Mae: 这真是太诡异啦。 #line:7dc5d5
+Germ: 为什么这么觉得？ #line:7feaf5
+<<close>>
+
+//<<walk Mae Mae1>>
+//<<walk Germ Germ1>>f
+
+//<<waitForMove Mae>>
+
+//Germ: Dialogue 1.
+//Mae: Dialogue 1.
+//<<close>>
+
+<<walk Mae Mae2>>
+<<walk Germ Germ2>>
+
+Mae: 我一直以为…… #line:d0b512
+Mae: 其实我根本没想过你到底是从哪儿来的。 #line:be1db8
+Mae: 我一直觉得你可能是…… #line:f524a5
+Mae: 某一天突然从停车场里冒出来的一样。 #line:ae964b
+Germ: 噢。 #line:63fbb3
+Mae: 抱歉，我这想法实在是有点怪。 #line:865f7f
+Germ: 没关系的。镇上不少人也从没来过我家这边。 #line:3de5b2
+Mae: 这儿可停了不少车啊。 #line:75eaf1
+Germ: 我的几个叔叔姨夫经常来这儿 #line:556f20
+Germ: 他们会和我爸一起修车。 #line:27c8c1
+Mae: 你会开车吗？ #line:94d870
+Germ: 我会骑车。 #line:951077
+Germ: 这样比较环保。 #line:eb1012
+Mae: 你这人真是惊喜不断呢。 #line:4d8937
+Germ: 你说什么呢？温度升高导致的海平面上升可是会要了咱们的命的！ #line:d57b43
+<<close>>
+
+<<waitForMove Germ>>
+<<waitForMove Mae>>
+<<wait 1>>
+
+Mae: 额，这是你的……车胎吗？ #line:755e1c
+Germ: 这不是我的。这是要送给我那些兄弟姐妹的。 #line:d9a2b8
+Mae: 你还有姐妹吗？ #line:5587a5
+Germ: 有啊。现在她们正在教堂做礼拜呢。 #line:5f5fd0
+Germ: 所以我才请你来我家做客的。 #line:b12fae
+Germ: 看起来……成人之夜要开始了。 #line:aba78d
+Mae: "成人之夜"是什么？ #line:ea3030
+Germ: 这活动每周一次！而且小孩不能参加！ #line:3499de
+<<close>>
+
+<<waitForMove Germ>>
+<<walk Germ Germ3 1>>
+<<wait 4>>
+
+<<show Collision:Right>>
+===
+title: Germ
+tags: 
+colorID: 0
+position: 369,294
+---
+<<if $germ_home_quest is 0>>
+    <<flip Germ 1>>
+    Germ: 好了，好了，好了。 #line:07ccd2
+    Mae: 什么就好了，好了，好了？ #line:d1d8ea
+    Germ: 好了，你该去见见我老妈了。 #line:efab5b
+    Mae: 我“应该"要去见她吗？ #line:0c8ae2
+    Germ: 因为你要在我家吃饭，所以，出于礼貌，你最好还是去见见她吧。 #line:b27a8e
+    Mae: ……我刚才是开玩笑的。 #line:dca519
+    Germ: 我可不这么觉得！！！！！ #line:86569b
+    Mae: 你还好吗？ #line:17da88
+    Germ: 我好紧张！！！！ #line:5bcdd0
+    Mae: 紧张什么啊？ #line:7caa80
+    Germ: 拜托！！！！！ #line:02e1aa
+    
+    <<walk Mae Mae4>>
+    <<walk Germ Germ4>>
+    
+    <<set $germ_home_quest to 1>>
+    
+    <<irisOut 1 wait>>
+    <<scene GermKitchen -1>>
+<<elseif $germ_home_quest is 1>>
+    <<alwaysRequireButtonToAdvance 1>>
+    <<allSpeechBubblesToY 2.33>>
+    Mae: 啊？为什么？ #line:dcb9bf
+    //offscreen//
+    GermMom: 开饭啦！ #line:022837
+    Germ: 等一下。 #line:9c6553
+    <<alwaysRequireButtonToAdvance 0>>
+    [[Dinner]]
+<<endif>>
+===
+title: HomeQuestTrampoline
+tags: 
+colorID: 0
+position: -248,546
+---
+<<warp Mae Mae10>>
+<<warp Germ Germ10>>
+<<flip Germ 1>>
+
+<<hide Collision:TrampolineRight>>
+<<setCanInteract Germ 0>>
+
+<<walk Mae Mae11 wait>>
+
+Germ: 我奶奶跟你说的事可别跟我讲。 #line:1e56ab
+Mae: 为什么不能告诉你啊？ #line:533be4
+Germ: 因为那些话是奶奶说给你一个人听的， #line:5fdb37
+Germ: 如果你告诉别人，它就不灵了。 #line:386b03
+<<toggleBlinks Germ 0>>
+Mae: 这话是什么意思啊？ #line:1b0b80
+Germ: 你看这个！！！ #line:758dd4
+<<close>>
+<<playMusic cloud_vacation>>
+<<runAndJumpOffPorchToTrampoline Germ>>
+<<cameraLookAt CameraTrampoline 2>>
+<<wait 3>>
+// Germ runs and jumps off the porch onto the trampoline.
+Mae: 我去！ #line:597eca
+<<allSpeechBubblesToY 2.33>>
+Germ: 快过来！！！ #line:f72114
+<<close>>
+<<cameraFollowPlayer 1>>
+<<wait 1>>
+===
+title: Dinner
+tags: 
+colorID: 0
+position: 646,303
+---
+<<irisOut 1 wait>>
+<<allSpeechBubblesToY 0>>
+<<hide GermDad>>
+<<hide GermUncle>>
+<<resetRig Germ>>
+<<warp Mae MaeSitDinner>>
+<<warp Germ GermSitDinner>>
+<<flip Germ -1>>
+<<playerFace -1>>
+<<warpSit>>
+<<sit Germ>>
+// force Germ to blink to clear his eyes
+//<<trigger Germ Blink>>
+<<toggleBlinks Germ 1>>
+<<irisIn 1 wait>>
+Mae: 这可真不错。 #line:392364
+Germ: 很高兴你也喜欢邋遢乔。 #line:b767bc
+Mae: 谁不喜欢呢？ #line:4af7d2
+<<close>>
+<wait 3>> #line:42b866
+Germ: 晚饭前你想说什么来着？ #line:82f4e2
+Mae: 对哦，不说我都忘了。 #line:6439a1
+Mae: 我有个问题，可能听起来有点奇怪： #line:fb2736
+Mae: 你为什么要请我来你家呢？ #line:105451
+Mae: 我觉得就连格雷格都没来过这儿。 #line:cc9626
+Germ: 对，他也没来过。 #line:d44368
+Germ: 格雷格这人是不错，不过呢…… #line:e684e1
+Germ: 他最近也没什么不顺心的事情。 #line:8983da
+Mae: 没错，格雷格这人可相当不错。 #line:ed57d2
+Germ: 我就是觉得，你最近好像过得不太好。 #line:dcbd61
+Germ: 我想着你可能会想要……有人陪陪。 #line:745057
+Germ: 其他人好像 #line:79d49c
+Germ: 不是离开这里，就是去别的地方了， #line:8b6b24
+Germ: 还有希望自己能离开这里，去别的地方。 #line:9945d7
+Germ: 可你好像…… #line:cf1884
+Germ: 和那些人不一样。 #line:0fee38
+Germ: 我也说不好。 #line:390aa0
+<<close>>
+<<wait 2>>
+Mae: 嗯哼。 #line:1865f7
+<<close>>
+//Mae kinda slumps to the side and leans her head on Germ and closes her eyes//
+<<close>>
+<<wait 2>>
+Mae: 谢谢你请我吃晚饭。 #line:e82e68
+Germ: 你得谢谢我老妈才对。 #line:70cf77
+Mae: 不是的，我只是想说…… #line:d3530c
+Mae: 说句谢谢。 #line:d8f8c8
+<<fadeOutMusic 5>>
+Mae: 我…… #line:bb4c0c
+Mae: 感觉这个秋天似乎很漫长。 #line:024bc1
+Germ: 我明白你的感觉，我懂。 #line:ff8499
+Germ: 很高兴你也喜欢邋遢乔。 #line:78c4ab
+<<close>>
+<<wait 2>>
+Mae: 谁不喜欢呢？ #line:909c0d
+<<close>>
+<<fadeOut 1 wait>>
+<<scene Outskirts>>
+===
+title: GermKids
+tags: 
+colorID: 0
+position: 55,294
+---
+Mae: 杰姆的车胎。 #line:74a25b
+Mae: 杰姆他有个车胎。 #line:db1b14
+Mae: 有妹妹。 #line:10abbd
+Mae: 这居然是这星期我遇到过的最奇怪的事情！ #line:98b585
+
+<<set $germ_kids_done to 1>>
+===
+title: TrampolineTalk
+tags: 
+colorID: 0
+position: 91,579
+---
+<<wait 8>>
+
+<<show GermDad>>
+<<show GermUncle>>
+
+<<setCanInteract GermDad 0>>
+<<setCanInteract GermUncle 0>>
+
+<<walk GermDad GermDad0>>
+<<waitForMove GermDad>>f #line:38439e
+
+<<alwaysRequireButtonToAdvance 1>>
+
+<<allSpeechBubblesToY 2.33>>
+
+GermDad: 嘿，这儿好像有个熟人啊！ #line:c1930f
+Mae: 什么？ #line:6fc227
+GermDad: 其实我早就见过你啦！ #line:59b037
+Mae: 可我没…… #line:221cfa
+GermDad: 我可是会隐身的！ #line:1cb352
+<<walk GermUncle GermUncle0>>
+GermUncle: 你可别让这家伙给吓着了。 #line:4b797f
+GermUncle: 他一直都在你住的那条街里工作。 #line:b01459
+GermDad: 我在交通运输部工作。 #line:2e9e41
+GermDad: 你虽然看不见我们，可我们能看得见你。 #line:f634dd
+Mae: 哦，说的也是啊！嗨！ #line:78a45d
+Mae: 谢谢你们……额……把我们那条街给修好了！ #line:af0d81
+GermDad: 是啊，这都是应该做的。 #line:41994a
+GermDad: 所以没什么的。 #line:deeb8c
+GermUncle: 是啊，他一直干的都是比较简单的活。 #line:e6069a
+GermUncle: 我们的人一直都在萨尔茨镇各处的桥上工作。 #line:acffde
+Mae: 哦，那这些桥现在能走了吗？ #line:81c5a8
+GermUncle: 还不能呢！ #line:a67550
+GermDad: 会有那么一天的。 #line:499092
+<<if $austerity_bearity>>
+	Mae: 哦，淳朴熊啊！ #line:be1674
+	Germ: 你说啥？ #line:20bd6d
+	Mae: 没什么。 #line:cf3954
+<<endif>>
+GermDad: 你是斯坦·博罗夫斯基的女儿，对吧？ #line:da285a
+Mae: 额，是的。 #line:6f655a
+GermDad: 我们以前经常能见到他和米勒待在一起， #line:a9fc19
+GermDad: 现在我们不怎么见到他了，这可能是好事。 #line:a8ed94
+Mae: ……这样啊…… #line:f8db74
+GermUncle: 他这话没别的意思。 #line:10cfb7
+Mae: 没事的。 #line:53d17b
+GermDad: 你父亲以前可不像现在这样。 #line:43a75a
+GermDad: 他现在是在猎豹鲜生上班，对吗？ #line:71e285
+Mae: 对。 #line:ae68c5
+GermDad: 你父亲那些人是反工会支持者，是不是？ #line:dcac14
+Mae: 是啊，我爸之前提到过这些。 #line:4407db
+GermUncle: 嗯。 #line:3c0cb9
+GermDad: 是啊，是啊。 #line:b8418c
+GermUncle: 孩子，你父亲可是个不错的人。 #line:1ba8fd
+Mae: 是啊！ #line:3f95a0
+Germ: 是啊，你老爸人很好！ #line:acfb8a
+Mae: 你是怎么认识我爸的？ #line:f33ae5
+Germ: 不，我不认识他！我只是感觉自己插不上什么嘴罢了。 #line:ed9120
+GermUncle: 你回去告诉你父亲，猎豹鲜生里的那些头头儿们都下地狱去吧。 #line:68519d
+Mae: 好吧，这也太……额……奇怪了吧！ #line:b99026
+GermDad: 这也没什么好奇怪的。 #line:7a9a99
+GermDad: 杰里米，咱们这周末还去亨威克吗？ #line:5aaeaf
+Germ: 当然可以啦！ #line:29eb47
+Mae: 亨威克那儿有什么呢？ #line:79b2c1
+<<runNextLinesTogether 2>>
+GermDad: 旧电脑展！ #line:236035
+Germ: 对，那儿有个旧电脑展！ #line:197dfe
+GermDad: 我打算买一台老款的康比顿-80电脑。 #line:cbc4cc
+Germ: 然后就能玩《克洛根漫游者》啦！ #line:0ed665
+GermUncle: 嘿，你们这些只会玩电脑的呆子，快过来！ #line:ce2d0b
+GermDad: 好，这就来。 #line:918a81
+<<close>>
+<<wait 2>>
+Mae: 好啦，好啦。我要再蹦下去的话，就要吐啦。 #line:529549
+Germ: 要是不想跳，就别再跳了。 #line:77f818
+Germ: 我以后不用再自己一个人独来独往了。 #line:690a4a
+Mae: 说得对。 #line:e76ab4
+<<close>>
+<<allSpeechBubblesToY 0>>
+<<hide Collision:TrampolineLeft>>
+<<hide Collision:TrampolineRight>>
+<<hide Collision:GermOnPorch>>
+<<setCanInteract Germ 1>>
+// this next command prevents Germ from making Mae walk and pause
+<<setUsePlayerInteractStates Germ 0>>
+<<alwaysRequireButtonToAdvance 0>>
+//<<cameraFollowPlayer 1>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -771,357
+---
+<<hide GermDad>>
+<<hide GermUncle>>
+===

@@ -1,0 +1,100 @@
+title: Caught
+tags: demo2
+colorID: 0
+position: 515,200
+---
+<<if $caught_stealing is 0>>
+    URevClerk: 女士，您需要帮助吗？ #line:7aa783
+    Mae: [shake=.01]哈 哈 哈 哈 哈 哈 哈，不 需 要，我 没 事。[/shake] #line:6ac045
+    <<set $caught_stealing += 1>>
+<<elseif $caught_stealing is 1>>
+    URevClerk: 您想看点什么？ #line:bf1234
+    Mae: [shake=.03]哈 哈 哈 哈，我 只 是 随 便 看 看，我 没 事。[/shake] #line:deb52a
+    Bea: *我记得你刚才说，她看你的时候，你就会一动不动。* #line:b20035
+    Mae: 别再说我啦！ #line:10c77a
+    <<set $caught_stealing += 1>>
+<<elseif $caught_stealing is 2>>
+    URevClerk: 您好像真的需要帮助诶。 #line:64a29c
+    Mae: [shake=.05]哈 哈 哈 哈！没 事，一 切 正 常！[/shake] #line:5d366c
+    <<set $caught_stealing += 1>>
+<<elseif $caught_stealing is 3>>
+    URevClerk: 呃…… #line:79dd78
+    Mae: [shake=.06]我 只 是 看 看 商 品 而 已，哈 哈 哈 哈 哈 哈！[/shake] #line:0a7cc7
+    Bea: *这么说，你是想放弃你那个“一看你，你就不动"的计划了？* #line:846288
+    Mae: 快 闭 嘴，你 让 我 分 心 啦！ #line:f04ecc
+    <<set $caught_stealing += 1>>
+<<elseif $caught_stealing is 4>>
+    URevClerk: 您确定您没…… #line:690c52
+    Mae: [shake=.08]嘿！哈 哈 哈 哈！[/shake] #line:92ef9e
+    URevClerk: 女士，您有什么觉得好笑的事吗？ #line:af9c0f
+    Mae: [shake=.02]哈 哈 哈！[/shake] #line:3eee96
+    <<set $caught_stealing += 1>>
+<<else>>
+    URevClerk: 您需要让我来…… #line:3efdec
+    Mae: [shake=.1]哈 哈 哈 哈！嘿！[/shake] #line:c1c740
+    URevClerk: 嗨？ #line:b5a3a4
+    Bea: 嘿。 #line:0b1859
+    Bea: 你 完 事 没？ #line:b5b989
+    [[嘘……|NotDone]] #line:936c23
+    [[啊，完事啦。|Done]] #line:8cc399
+<<endif>>
+===
+title: Complete
+tags: demo2
+colorID: 0
+position: 798,196
+---
+Mae: 终 于 到 手 啦。 :) #line:91284e
+// $urev_theft will be 1
+<<fadeOut 1 wait>>
+<<scene URev>>
+===
+title: EnterLevel
+tags: demo2
+colorID: 0
+position: 244,221
+---
+<<if $urev_theft is 0>>
+    Bea: 这么说……你真要这么干？ #line:b2a924
+    Mae: 嘘，淡 定，淡 定。 #line:80d06b
+    ->在商店里顺点东西也没什么大不了的。 #line:743f1d
+        Bea: 我觉得你非要这么干的话，肯定会被抓起来的。 #line:e793d0
+        Mae: 我想说的可不是这些。我是想说，顺东西这事一点都不难。 #line:03bcaf
+    ->我又不是第一次干坏事了。 #line:4ca5df
+        Bea: 你之前还干过什么坏事？ #line:56dbf7
+        Mae: 我去商店偷过东西， #line:3f0abc
+        Mae: 搞过破坏， #line:27fdc6
+        Mae: 做过盗版。 #line:867ee9
+        Mae: 现在又要到商店里偷东西了。 #line:100cbe
+        Mae: 不过，偷东西这事其实很简单。 #line:1fffae
+        Bea: 偷东西这种蠢到家的想法到底怎么简单了？ #line:effb89
+    Mae: 咱们的眼睛经过进化之后，对运动的物体很敏感。 #line:901ac0
+    Bea: 就和恐龙一样？ #line:40dee5
+    Mae: 如果有恐龙在移动，就能很容易地发现它们！ #line:1d2bde
+    Bea: 等等，这不……算了，当我什么也没说。 #line:c95f18
+    Mae: 所以，在店员看你的时候，你只需要一动不动…… #line:54c672
+    Bea: 也就是说，店员往你这儿看的时候，你就站在原地一动不动…… #line:12d240
+    Bea: 就算是你正准备把东西往兜里放，她也看不见…… #line:da21cf
+    Bea: 然后东西就到手了……就和恐龙的道理一样？ #line:969d75
+    Mae: 就，和，恐，龙，的，道，理，一，样。 #line:d8ab4c
+    Bea: 在你完事之前，我就装不认识你，成不？ #line:6027a3
+<<endif>>
+===
+title: NotDone
+tags: demo2
+colorID: 0
+position: 695,483
+---
+Mae: 闭 嘴，快 闭 嘴。我 正 忙 着 呢。闭 嘴。 #line:782b19
+===
+title: Done
+tags: demo2
+colorID: 0
+position: 452,463
+---
+Mae: 真 是 糟 透 啦。 #line:b15b8d
+Mae: 我 放 弃 了。 #line:907ed9
+// $urev_theft will be 0
+<<irisOut 1 wait>>
+<<scene URev>>
+===

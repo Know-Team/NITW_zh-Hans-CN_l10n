@@ -1,0 +1,29 @@
+title: Zapped
+tags: 
+colorID: 0
+position: 343,149
+---
+Mae: {width=8}呀 啊 啊 啊 啊 啊！！！！！！ #line:eb6322
+<<irisOut 1 wait>>
+<<scene GreggAngusApartment>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 129,-28
+---
+//aperture in//
+Mae: 哦，我的妈呀。 #line:3b073f
+Mae: 这块儿闻起来更不怎么样。 #line:b4b4d9
+Mae: 之前肯定有什么东西住在 #line:a362e2
+Mae: 这个…… #line:8772f0
+Mae: 又窄又恶心的破地方…… #line:cbb45d
+Mae: 好了，我想我找到啦！ #line:780923
+Gregg: 使 劲 推，使 劲，使 劲。 #line:85a99e
+Mae: 嘿，怎么说呢，很高兴你和安格斯 #line:d429c4
+Mae: 能走到一起。 #line:58d5b6
+Gregg: 谢了，老兄。我们俩一直都在为这事努力呢。 #line:fb92d3
+Mae: 那真是太好了。 #line:87642f
+Gregg: 使 劲 推，用 力，用 力。 #line:4cf9aa
+Mae: 好，好，好，好，好。 #line:7e05d5
+===

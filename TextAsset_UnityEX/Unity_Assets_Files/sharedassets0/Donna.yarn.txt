@@ -1,0 +1,82 @@
+title: Donna
+tags: 
+colorID: 0
+position: 181,170
+---
+<<if $donna_sequence is 0>>
+	<<if $donna is 0>>
+		[[Donna_00]]
+	<<elseif $donna is 1>>
+		[[DonnaSorry]]
+	<<elseif $donna is 2>>
+		[[DonnaBreak]]
+	<<endif>>
+<<endif>>
+===
+title: DonnaBreak
+tags: 
+colorID: 0
+position: 177,466
+---
+Donna: 还有10分钟。 #line:9bf3d6
+===
+title: DonnaSorry
+tags: 
+colorID: 0
+position: 471,342
+---
+<<set $donna to 2>>
+Donna: 在你面前吐了这么半天槽，真的很抱歉。 #line:5cefff
+Mae: 用不着道歉，没事的。 #line:68b572
+Mae: 想让我抱抱你吗？ /o\ :) #line:377f7a
+Donna: 算了。 #line:b6cbb1
+Mae: _o_ :| #line:eb7fa2
+===
+title: Donna_00
+tags: 
+colorID: 0
+position: 709,106
+---
+<<set $donna to 1>>
+Mae: 嘿！你是叫唐娜吧？ #line:3f1d22
+Mae: 你以前当过我保姆，记得吗？ #line:a5803c
+Donna: 记得。 #line:832f44
+Mae: 唐娜，你的外套真好看。 #line:69eb0b
+Donna: 这是我最好看的一件衣服了。 #line:f0a00d
+Mae: 看起来相当不错啊！ :) #line:49e4ec
+Donna: 这是我在卢塞纳堡购物中心买的。 #line:de129d
+Donna: 我只会在工作的时候才穿它。 #line:9fcd8c
+Mae: 不管是什么时间，我都会穿着现在穿的这件衣服， #line:1c50de
+Mae: 因为这就是我的名片。 #line:e72877
+Donna: 我也没有别的场合穿这件衣服。 #line:dc9763
+[[好了，好好享受你的休息时光吧！|DonnaEnd]] #line:1348de
+[[我感觉这件衬衣很酷，因为它带有很多重意义在里面。|Donna30]] #line:0d1ea9
+
+===
+title: DonnaEnd
+tags: 
+colorID: 0
+position: 764,476
+---
+<<set $donna to 2>>
+Donna: 再见了，梅。 #line:c5dd04
+Mae: :| #line:84b8bf
+===
+title: Donna30
+tags: 
+colorID: 0
+position: 996,215
+---
+Donna: 我在工作的时候 #line:8d442f
+Donna: 才会穿这件外套。 #line:25b3e6
+Donna: 因为在我工作的地方，人们只能听到我的声音。 #line:f305ea
+Mae: 一样！我也把这衣服当成我一人独享的。 #line:e4290b
+Donna: 下个星期我就该30岁了。 #line:a1e398
+Mae: 以前，我在家庭财政方面也算是个行家。 #line:3f1ed1
+Donna: 将来，我会在这小镇死去。 #line:982133
+Donna: 我希望他们能把穿着这衣服的我埋下去。 #line:5c86ba
+Mae: 我也希望自己能穿着这件衣服下葬。 /o\ #line:7e84f9
+Donna: 梅，你的衬衣很好看。 #line:18a035
+Mae: [wave]谢谢！！！[/wave] #line:e83612
+Mae: :| _o_ #line:c3781c
+===

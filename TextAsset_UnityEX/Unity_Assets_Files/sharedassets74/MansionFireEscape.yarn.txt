@@ -1,0 +1,36 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 539,263
+---
+<<setCanInteract Gregg 0>>
+<<set $gregg_iq_mansion to 1>>
+<<runLocatorPath Gregg GreggRunPath>>
+<<wait 3>>
+Gregg: 快点！！ #line:8a516f
+===
+title: NowhereToGo
+tags: 
+colorID: 0
+position: 920,322
+---
+Mae: 格雷格！！ #line:65c86c
+Mae: 你去哪儿了啊！ #line:e6e3ff
+Gregg: 楼梯到头啦！ #line:771339
+Gregg: 你只能跳下来啦！！ #line:f26c05
+===
+title: Landed
+tags: 
+colorID: 0
+position: 891,103
+---
+<<playOneShot event:/mae/body/land_hard Mae>>
+<<rumbleBoth 1 1 .5>>
+<<shake .02 0 1>>
+<<close>>
+<<wait 3>>
+Mae: 嗷。 #line:2d006e
+<<close>>
+<<fadeOut 1 wait>>
+<<scene MansionExterior>>
+===

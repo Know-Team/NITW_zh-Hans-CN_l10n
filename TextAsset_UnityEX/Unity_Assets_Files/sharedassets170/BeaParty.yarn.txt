@@ -1,0 +1,484 @@
+title: InitLevel
+tags: 
+colorID: 4
+position: -1855,651
+---
+<<if $bea_party is 0>>
+<<endif>>
+
+<<hide Collision:Left>>
+===
+title: EnterLevel
+tags: 
+colorID: 4
+position: -1605,795
+---
+<<if $bea_party is 0>>
+    <<wait .1>>
+    <<walk Mae Mae1 wait>>
+    <<show Collision:Left>>
+    [[Dialogue1]]
+<<endif>>
+
+===
+title: Dialogue1
+tags: 
+colorID: 4
+position: -1327,664
+---
+<<cameraLookAt CameraConvo 2>>
+Jackie: 这就是你们要严肃对待这件事的原因。 #line:5bdc78
+Jackie: 把脚给我放下来， #line:184094
+<<setAnimInt Jackie point 1>>
+<<setTalkAnimType Jackie 2>>
+Jackie: 这儿可不准搞法西斯那套东西！ #line:a46535
+<<setAnimInt Jackie point 0>>
+BeaPartyGuy1: 哈哈哈，说得对。 O_O :) #line:979a84
+Jackie: 光靠说一点用都没有， #line:b74675
+Jackie: 要来就得来硬的。 #line:eab349
+BeaPartyGuy1: 你觉得这是最好的方法吗？ #line:eb1d38
+Jackie: 啊，当然是啦。 #line:c31b67
+Jackie: 随身带把刀，学学怎么打人。 #line:ce3dfc
+Jackie: 对于这种破事，可不能少了咱们的幽默感才行！ #line:274831
+Bea: 用锤子也可以。 #line:0e18ca
+Jackie: 对，用锤子对付那帮该死的法西斯！！！ #line:5de738
+Bea: 哈哈。 #line:51d7ff
+<<lookAt Mae BeaPartyGuy2>>
+Mae: 嘿！ :) o/ #line:ad1678
+Bea: 嘿，这位是梅。 #line:9a2106
+<<lookRight Bea>>
+<<lookNearest Mae>>
+Mae: _o_ #line:b85123
+BeaPartyGuy2: 嘿，梅。 #line:009f21
+<<lookAt Bea BeaPartyGuy2>>
+Jackie: 没错，这位是梅。 #line:c2263a
+Bea: 你们都是从哪儿过来的？ #line:f6ac4f
+BeaPartyGuy1: 我们是从光明湾市郊过来的。 #line:5206b2
+BeaPartyGuy2: 我们俩都是那儿土生土长的人！ #line:80b1c6
+Jackie: 哇哦，那你们俩来这儿是想干什么呢？ #line:a5fb7b
+BeaPartyGuy1: 对我俩来说，这事就说来话长了。 #line:dbed86
+Bea: 没事，我有的是……时间…… #line:c17eea
+BeaPartyGuy2: 稍等一会儿，我们先去和那个DJ聊几句，马上就回来。 #line:e1000c
+BeaPartyGuy1: 我们认识他。他可是个真真正正的丁克族。 #line:0f6e27
+Bea: 没问题！我就在这儿等着！ #line:4d52f9
+Jackie: 拜，帅哥们！ #line:dd59a3
+<<close>>
+<<walk BeaPartyGuy1 BeaPartyGuy1BehindStairs>>
+<<walk BeaPartyGuy2 BeaPartyGuy2BehindStairs>>
+<<wait 4>>
+Bea: o_o :| #line:b4ca62
+<<lookRight Mae>>
+Mae: 他俩看起来不错！ #line:c6106b
+<<lookNearest Mae>>
+Mae: 太酷啦！ #line:c641de
+Bea: 梅，不 许 喝 酒。 #line:355dc5
+<<lookNearest Bea>>
+Mae: 好吧，好吧。 :\ #line:7c0e50
+Jackie: 你们几个想跳会儿舞吗？ #line:5da581
+Mae: 想啊！ :) #line:98a580
+Bea: 梅，你会跳舞吗？ #line:f79e9c
+Mae: O_o #line:580b03
+Mae: 这儿真的有人会跳舞吗？ #line:1d115e
+Mae: o_o :| #line:5a7e77
+<<close>>
+<<cameraFollowPlayer 2>>
+//<<walk Jackie Jackie2 wait>>
+//<<flip Jackie -1>>
+<<walk Bea BeaDance>>
+<<walk Jackie JackieDance>>
+<<walk Mae MaeDance wait>>
+<<waitForMove Bea>>
+<<fadeOutMusic 4>>
+<<wait 4>>
+<<playMusic bea_dance_close 4>>
+<<setAnimInt Jackie dancing 1>>
+<<tell DanceBrain DanceWithBeaAndJackie>>
+===
+title: AfterFirstDance
+tags: 
+colorID: 4
+position: -1052,631
+---
+<<setAnimInt Jackie dancing 0>>
+<<flip Jackie -1>>
+Jackie: 嘿，我觉得刚才那两个老哥又回来啦！ #line:0724f4
+Bea: 哦……是啊…… #line:abfba6
+Bea: 咱们还要不要过去继续和他们聊天呢？？？ #line:746b95
+Jackie: 当 然 啦，那 必 须 的！！ #line:7550ef
+Mae: 其实我会跳舞！只是我从来都不知道而已！ #line:8da80d
+Mae: 我还想接着跳呢！ #line:a56063
+Bea: 嗯？……你确定？ #line:9973b3
+Mae: 当然确定啦！我觉得我以前好像没在聚会上跳过舞！ #line:d8a23e
+Bea: 行啊我会和你保持一定距离的。 #line:5e078b
+Bea: 但你还是得待在我能看得见的地方。 #line:a34683
+Bea: 我会看着你的。 #line:3d3221
+Bea: 还有，别人给你什么东西你都别喝 #line:3ce1ec
+Mae: 碧 娅，我 知 道 的。 #line:41b98d
+Bea: 不，我是认真的。要是有…… #line:8ac43b
+Mae: 碧 娅，我 不 会 有 事 的。 #line:c15c86
+Jackie: 咱们快过去吧！她肯定不会有事的。 #line:af59f3
+Bea: 好吧，好吧，好吧。 #line:b5e0fd
+
+//they walk away. And you’re free to walk around or dance until you go talk to Bea again.
+//How do we want to continue dancing?
+//Is it like an interact spot?
+//Otherwise you can wander and look at stuff
+<<close>>
+<<walk Bea Bea3 1>>
+<<walk Jackie Jackie3 1>>
+<<warp BeaPartyGuy1 BeaPartyGuy1Original>>
+<<warp BeaPartyGuy2 BeaPartyGuy2Original>>
+<<flip BeaPartyGuy1 -1>>
+<<flip BeaPartyGuy2 -1>>
+<<wait 1>>
+<<tell DanceBrain DanceAfterBeaAndJackie>>
+===
+title: AfterSecondDance
+tags: 
+colorID: 4
+position: -785,618
+---
+Mae: 跳舞也不难嘛！他们大惊小怪什么啊？ #line:3c530e
+<<close>>
+===
+title: Bea
+tags: 
+colorID: 4
+position: 590,572
+---
+Mae: 嘿，碧 娅！ #line:e2e64a
+Bea: 哦，嘿，梅。这位是克里斯。 #line:b69a77
+<<lookAt Mae BeaPartyGuy2>>
+Mae: o/ #line:a7d84d
+Mae: 嘿，克里斯。 #line:9d6050
+<<lookNearest Mae>>
+BeaPartyGuy2: 嘿！ #line:0dc395
+Mae: _o_ #line:0e5105
+BeaPartyGuy2: 你朋友碧娅可真够酷的。 #line:082d91
+Mae: :) #line:610652
+Mae: 嗷～那确实。 #line:d8bb05
+<<if $did_bea_investigation_quest>>
+	Mae: 她有没有告诉你们我们俩昨晚见到了一具骷髅？ #line:e1d8e8
+	BeaPartyGuy2: 哇哦！ #line:f4327e
+	Bea: 是啊。哈哈。 #line:1470f7
+	BeaPartyGuy2: 就像“死亡预兆"一样。 #line:a2826a
+	    ->那是什么意思啊？ #line:604620
+            Jackie: 意思就是“记住你终有一死"。 #line:67a7c3
+            Mae: 天哪，真的有人需要那种提醒吗？ #line:ef875a
+        ->是啊，是啊，真是蠢透了，蠢到家啦。 #line:e38dc2
+<<endif>>
+<<lookAt BeaPartyGuy1 Bea>>
+Bea: 哈哈哈。 #line:a60b0c
+<<lookAt BeaPartyGuy1 Mae>>
+Mae: :| O_o #line:0c4631
+Mae: 你今天笑的次数可有点多啊。 #line:30aa8b
+<<lookAt BeaPartyGuy1 Bea>>
+Bea: 哈哈哈哈。 #line:4e4578
+Mae: o_o #line:1c1e87
+BeaPartyGuy2: 碧-翠-丝， #line:478c59
+BeaPartyGuy2: 这个名字听起来好像很有年代感啊， #line:36cbe8
+BeaPartyGuy2: 就像是在二年级课本上读到的名字一样。 #line:ef4b6d
+Bea: 哈哈。好吧，你最喜欢什么书？ #line:3a131f
+<<lookAt Mae BeaPartyGuy2>>
+<<lookAt BeaPartyGuy1 Mae>>
+    ->我喜欢看鬼故事！ #line:779840
+        Mae: 我爷爷去世之后， #line:848851
+        Mae: 给我留下了一大箱子书！ #line:aa9989
+    ->我以前可是饱读诗书啊！ #line:892e7e
+        Mae: 但后来，我觉得看书没什么意思了。 #line:bab1c9
+        Mae: 在我爷爷得了痴呆症和去世以前， #line:ae4b8d
+        Mae: 他经常会读书给我听！ #line:e2c483
+<<wait 2>>
+<<lookNearest Mae>>
+<<lookAt BeaPartyGuy1 Bea>>
+Bea: 哈哈哈。 #line:bb4b8d
+<<lookAt BeaPartyGuy1 Mae>>
+BeaPartyGuy2: 对于你爷爷的事，我深表歉意。 #line:7524b9
+Mae: 没事的！那都是多少年前的事了。 #line:6676e6
+Mae: 碧娅的妈妈也去世了。 #line:b2a629
+<<lookAt BeaPartyGuy1 Bea>>
+Bea: 哈哈哈哈哈哈。 #line:69c4a4
+Bea: 梅。别说了。 #line:9e3811
+<<lookAt BeaPartyGuy1 Mae>>
+Mae: 我敢肯定，这里的每个人都有失去亲人朋友的经历！ #line:661a8f
+BeaPartyGuy1: 去年春天， #line:6d235e
+BeaPartyGuy1: 在我们搬家的时候，我爸说， #line:2ca1ba
+BeaPartyGuy1: 要把我家以前那条狗的尸骨挖出来，然后一起带到新家去。 #line:cca55e
+BeaPartyGuy1: 之后，我爸挖土的时候，不小心挖到了燃气管。 #line:b79acb
+BeaPartyGuy1: 后来，燃气泄漏了。 #line:e46fc0
+BeaPartyGuy1: 再后来，我们的房子就爆炸了， #line:499693
+BeaPartyGuy1: 然后，我家现在这条狗就这么没了。 #line:00c419
+<<wait 3>>
+<<lookAt BeaPartyGuy1 Jackie>>
+Jackie: 哇，天哪。 #line:dcec01
+<<lookAt BeaPartyGuy1 Bea>>
+Bea: 那克里斯，你学的是什么专业啊？ #line:595429
+BeaPartyGuy2: 政治学。 #line:da11c9
+Bea: 哦，感觉挺不错的。 #line:9b3ce1
+Bea: 那学这个专业好找工作吗？ #line:1b517a
+BeaPartyGuy2: 哦，这我就不知道了。 #line:a313c2
+BeaPartyGuy2: 我只是对这个专业比较感兴趣罢了。 #line:853671
+BeaPartyGuy2: 我感觉你这个人好像很现实啊。 #line:ee0d95
+BeaPartyGuy2: 你的意思是，上了大学，就是为了毕业之后能找个好工作吗。 #line:c6c7c3
+Bea: 我觉得这样其实也挺有意思的，因为…… #line:6f0e1e
+<<lookAt BeaPartyGuy1 Mae>>
+Mae: :) =_= #line:710c65
+<<lookAt Mae BeaPartyGuy2>>
+Mae: 哈 哈，哇 哦，哇 哦。 #line:ae14e3
+Mae: o> #line:d3b075
+Mae: 快过来看看这个富家小子啊！ #line:96b8c4
+Mae: 他只是因为对某件事“感兴趣"， #line:7eff12
+Mae: 就花大把大把的钱去送自己上大学。 #line:dc7e01
+Mae: 碧娅，碧娅。快来看看这哥们儿啊。 #line:2e217b
+Mae: 查兹，你这辈子工作过哪怕是一天吗？ #line:27271e
+<<lookNearest Mae>>
+BeaPartyGuy2: 上过。我之前在我叔叔的公司里实过习。 #line:45e6f0
+Mae: 是吗。*我*可在杂货店搬过货。 #line:31ac74
+BeaPartyGuy2: 好吧。 #line:e736dd
+<<lookAt BeaPartyGuy1 Bea>>
+Bea: 哈哈哈梅要不你还是再跳会儿舞去吧 #line:eb2167
+<<lookAt BeaPartyGuy1 Mae>>
+    ->好啊！ #line:7d16db
+        <<lookAt BeaPartyGuy1 Bea>>
+        Bea: 你应该再去跳会儿舞。 #line:85c2b6
+    ->不我不想跳了。 #line:b5019a
+        <<lookAt BeaPartyGuy1 Bea>>
+        Bea: 你真不想去跳舞吗？ #line:07d2fa
+BeaPartyGuy2: 是啊，我爸妈都开了公司，所以…… #line:a62ba1
+Bea: 哦，是吗！能跟我说说吗？ #line:c3872d
+Bea: 我对经营小本生意略知一二。 #line:21a3be
+BeaPartyGuy2: 想到街对面吃点披萨去吗？ #line:4f7928
+Bea: 当然可以了。卖披萨也算是小本生意！ #line:8ff18d
+BeaPartyGuy2: 到了那儿，你可以用行话和他们聊几句，这样咱们就有免费披萨吃了。 #line:525c27
+<<lookAt BeaPartyGuy1 Mae>>
+Mae: :| o_o _o_ #line:a5b4d9
+Mae: 查克，碧娅可不喜欢被宠坏了的富二代。 #line:394f06
+<<lookAt BeaPartyGuy1 Bea>>
+Jackie: 碧娅，如果你不介意的话，我也想一起去，怎么样？ #line:9aac3e
+Bea: 没问题！咱们走！ #line:2fda55
+BeaPartyGuy2: 好。 #line:aa7687
+<<lookAt BeaPartyGuy1 Mae>>
+    ->碧娅对经商那套可是*一清二楚* #line:0f5ca8
+    ->嘿，科迪，我来告诉你一些关于碧翠丝·桑特罗的事吧。 #line:9f604f
+Mae: 她样样精通。 #line:0b37ca
+Mae: 又聪明又有责任心。 #line:5d8e11
+Mae: 而且，她还经营了一家在负鼠泉差不多是规模最大的店。 #line:cd3df7
+<<lookAt BeaPartyGuy1 Bea>>
+Bea: 哈哈哈哈别这样梅 #line:ae5cf5
+BeaPartyGuy1: 负鼠泉是什么地儿啊？ #line:f768c8
+BeaPartyGuy2: 就在西边的山谷里。 #line:4199c3
+<<lookAt BeaPartyGuy1 Mae>>
+Mae: 碧娅在现实世界摸爬滚打， #line:bbafc0
+Mae: 与此同时某些富二代还在这里学什么政治。 #line:ca879b
+Mae: 她和你们这种人不一样。 #line:cf61ca
+<<lookAt BeaPartyGuy1 Jackie>>
+Jackie: 梅！ #line:ee244b
+BeaPartyGuy2: 你说什么呢？ #line:5023b8
+<<lookAt BeaPartyGuy1 Bea>>
+Bea: 哈哈哈哈哈。 #line:9e83e2
+<<lookAt Mae BeaPartyGuy2>>
+<<lookAt BeaPartyGuy1 Mae>>
+Mae: =_= :) o> #line:9073ac
+Mae: 大学里学的东西我基本上都自学完了。 #line:9e88d0
+Mae: 而且，除了幽灵之类的事以外， #line:17ea1e
+Mae: :| o_o _o_ #line:198d3c
+Mae: 负鼠泉的所有事务基本上都是我和碧娅负责经营和打理的。 #line:f1ca9a
+<<lookNearest Mae>>
+BeaPartyGuy1: 你们俩是从负鼠泉来的？ #line:dc3d4e
+Mae: =_= #line:25102f
+Mae: 对！有什么问题吗？ #line:157a2b
+BeaPartyGuy2: 哇哦，你们俩是从深谷县一路开车过来的？ #line:137e7f
+BeaPartyGuy2: 路程是不是要花差不多两个小时啊？ #line:fce821
+<<lookAt BeaPartyGuy1 Bea>>
+Bea: 不是这样的，我……呃…… #line:c1af44
+BeaPartyGuy2: 你们为什么要这么做啊？ #line:cc69d7
+BeaPartyGuy2: 嘿，瑞克！我身边的这位碧娅可是从深谷县一路开车过来的！ #line:774e9a
+Jackie: …… #line:df1c90
+BeaPartyGuy1: 你根本就不是大学生吧？ #line:1eb03d
+Bea: 我是大学生！ #line:086009
+<<lookAt BeaPartyGuy1 Mae>>
+Mae: :| o_o _o_ #line:9a616f
+Mae: 你说什么？ #line:fc0c85
+<<lookAt BeaPartyGuy1 Bea>>
+Bea: 我真的是！我……哈哈…… #line:4f24bd
+<<close>>
+<<wait 2>>
+<<cameraLookAt CameraBeaLeft 2>>
+<<lookLeft BeaPartyGuy1>>
+<<run Bea ExitLeft>>
+<<wait 0.5>>
+<<flip Jackie -1>>
+<<wait 1.0>>
+Jackie: 碧 娅！等 等！ #line:32077a
+<<close>>
+//Jackie runs up stairs//
+<<run Jackie ExitLeft>>
+<<wait 2.5>>
+<<lookAt BeaPartyGuy1 Mae>>
+BeaPartyGuy1: 这都什么情况啊？ #line:1ec4d3
+BeaPartyGuy2: 我觉得她根本就没上过大学。 #line:87c6cf
+BeaPartyGuy1: 那又能怎么样？ #line:3aaf26
+BeaPartyGuy2: 伙计，我也不知道该怎么办了。 #line:d41e63
+<<set $bea_party_block_right to 1>>
+//you can freerun now until you leave up the stairs//
+<<close>>
+<<lookNearest BeaPartyGuy1>>
+<<set $bea_town to 1>>
+<<hide Collision:Left>>
+<<hide CoolPartyGirl>>
+===
+title: DanceAgain
+tags: 
+colorID: 4
+position: -516,609
+---
+<<tell DanceBrain DanceAgain>>
+===
+title: AfterDanceAgain
+tags: 
+colorID: 4
+position: -265,603
+---
+Mae: 我的技术还是挺不错的！ :) \o/ #line:19f8e5
+Mae: _o_ #line:3cc471
+<<close>>
+===
+title: CoolPartyGirl
+tags: 
+colorID: 4
+position: 11,603
+---
+<<if $cool_party_girl is 0>>
+    <<set $cool_party_girl += 1>>
+    <<setCanInteract CoolPartyGirl 0>>
+    <<animationTrigger CoolPartyGirl ArmUp>>
+    CoolPartyGirl: 嘿，说你呢。 #line:85ae12
+    Mae: 嘿……你好。 #line:7367d6
+    Mae: 我认识你吗？ #line:ca12f5
+    CoolPartyGirl: 不认识。 #line:3d4b5f
+    <<animationTrigger CoolPartyGirl ArmDown>>
+    CoolPartyGirl: 你叫什么？ #line:d6c9d6
+    ->我叫梅·博罗夫斯基。 #line:d562e1
+        <<set $party_girl_mae to 1>>
+        CoolPartyGirl: 博～罗夫斯基。 #line:b0f546
+        CoolPartyGirl: 这名儿不错， #line:ff7de1
+        CoolPartyGirl: 听起来就蛮狠的。 #line:b3d357
+        Mae: 我是超级无敌狠。 #line:8dcaba
+        Mae: 不管跟谁打都不成问题。 #line:1fc1ca
+    ->我叫萨曼莎·史蒂文森。 #line:d18005
+        <<set $party_girl_sam to 1>>
+        CoolPartyGirl: 萨-曼-莎。 #line:a8e1a4
+        CoolPartyGirl: 这名儿我喜欢， #line:539d06
+        CoolPartyGirl: 听起来就像是一句咒语。 #line:856657
+        Mae: 看来这秘密让你给发现了。我名字还真是魔法咒语。 #line:f9e27d
+        Mae: 现在，你已经被我施了魔法了。 #line:8be1d0
+    CoolPartyGirl: 哇哦～ #line:0e4fa9
+    <<if $party_girl_mae is 1>>
+        CoolPartyGirl: 梅·博罗夫斯基，能介绍一下你自己吗？ #line:9bdecc
+    <<else>>
+        CoolPartyGirl: 萨曼莎·史蒂文森，能说说你自己的经历吗？ #line:00d420
+    <<endif>>
+    ->我是个……额……吸血鬼学专业的毕业生……我还会弹贝斯。 #line:370e5a
+        CoolPartyGirl: 哇哦！这也太有趣了吧。 #line:22e985
+        ->我是说，我弹的只是把普通的低音吉他。 #line:b34fb6
+            CoolPartyGirl: 那这把吉他有没有什么特殊意义呢？ #line:d35545
+            Mae: 这是我16岁生日时的礼物， #line:9eff8e
+            Mae: 上面还沾着我的血呢。 #line:1e1c3e
+            CoolPartyGirl: 那你带着它和吸血鬼在一起不会有什么问题吧？ #line:7fbf0e
+            Mae: 当然会有问题啦。那帮吸血鬼老惦记我那把琴。 #line:08acdd
+        ->没错，吸血鬼学。 #line:30262c
+            CoolPartyGirl: 那这个专业都包括哪些内容呢？ #line:63d9a9
+            Mae: 包括牙齿测量、 #line:43cbbb
+            Mae: 熬夜， #line:ff9456
+            Mae: 还有参加各种哥特式派对。 #line:b50628
+            Mae: 这也就是今晚我会来这儿的原因。 #line:568f3b
+            CoolPartyGirl: 可这儿也没多少哥特族啊。 #line:b1a858
+            Mae: 是啊，这我知道。所以感觉太不爽了。 #line:4b6735
+        CoolPartyGirl: 不过我倒觉得很酷。 #line:d6331f
+        Mae: 哈哈，可能吧！ #line:261e4a
+        Mae: 我觉得我好像很擅长鼓捣一些很炫很酷的东西， #line:ec4c62
+        Mae: 所以，我在很多场合都显得特酷特显眼。 #line:fae9d1
+        CoolPartyGirl: 哦，是吗？ #line:c65954
+    ->我从大学退学了。后来，我遇见了一个幽灵。最近一段时间，我又遇见了神。 #line:184c37
+        Mae: 我一直都在做这些感觉不太像是梦的梦。 #line:df9eaf
+        Mae: 在梦里，我就像是在一团历史的碎片里不停地跑着， #line:6adce6
+        Mae: 这感觉就和浴室下水管被毛团堵了一样。 #line:7a954f
+        Mae: 是啊真的有幽灵这回事 #line:7a9fa4
+        Mae: 而且我特别特别肯定，那个幽灵在万圣节那天晚上绑架了一个人。 #line:532ae1
+        Mae: 我当时绝对没出现幻觉， #line:fb87b6
+        Mae: 可我的朋友却不太买账。 #line:aca122
+        Mae: 而且，这件事总是在我的脑子里反复出现。 #line:24e256
+        Mae: 而且我退学了。而且我从一开始就不想上学。 #line:fbe4ff
+        Mae: 我唯一想做的，就是回家，然后让所有事都能恢复正常， #line:2c5f7c
+        Mae: 但最后却事与愿违。 #line:383f97
+        Mae: 后来，我在今晚的聚会上发现自己会跳舞。再后来，我就遇见了你。 #line:1924c4
+        <<wait 2>>
+        Mae: 我还从来没把这些事一口气都说出来过呢。 #line:05b617
+        CoolPartyGirl: 哇哦。 #line:6d61da
+        CoolPartyGirl: 看来我已经把你过去的事给偷走了。 #line:507e50
+        Mae: 哈哈，有可能吧。 #line:16c33e
+    CoolPartyGirl: 嘿，把你的手给我。 #line:0d2533
+    Mae: 哦……好吧。 #line:037491
+    <<close>>
+    <<tell PentagramHandshakeBrain Go>>
+<<endif>>
+===
+title: AfterPentagramHandshake
+tags: 
+colorID: 4
+position: 311,577
+---
+Mae: 哦，哇哦。 #line:366353
+CoolPartyGirl: 这是只有咱俩才知道的秘密握手方式。 #line:b363c7
+Mae: 哇哦。 #line:313637
+CoolPartyGirl: 哈哈。 #line:f6d103
+Mae: -_- :) #line:4ff9ad
+Mae: 哇……哦…… #line:49feff
+CoolPartyGirl: 成了。 #line:202d73
+Mae: 哇哦，好的。 #line:f3db7c
+Mae: o_o :| #line:fd0dca
+Mae: 好了，我该找我朋友去了。 #line:d3bdfe
+Mae: 我得让她知道我在这儿。 #line:ae7b47
+<<if $party_girl_mae is 1>>
+    CoolPartyGirl: 这主意不错， #line:b5aeb0
+    CoolPartyGirl: 博～罗夫斯基。 #line:e8315e
+    Mae: 哈哈。 #line:af9269
+    CoolPartyGirl: 这名字真的很不错， #line:05ea4f
+    CoolPartyGirl: 听起来就感觉 #line:70b506
+    CoolPartyGirl: 蛮狠。 #line:38ad88
+    Mae: 嗯……好吧。 #line:b80c9f
+    Mae: 我得 #line:38ba67
+    Mae: 告诉我朋友 #line:b58687
+    Mae: 我-在-哪-儿。 #line:802a63
+<<else>>
+    CoolPartyGirl: 哦，是啊，你是得告诉你朋友你在哪儿。 #line:a377d7
+    CoolPartyGirl: 萨-曼-莎。 #line:717b1b
+    Mae: 哈……再给你施个魔法。 #line:5adcb8
+    Mae: 砰。 #line:0cc7de
+<<endif>>
+CoolPartyGirl: 哈哈。 #line:377a2d
+CoolPartyGirl: 我会一直在这儿待着的。 #line:0b8c24
+Mae: 哇哦，好的。 #line:e66f92
+Mae: 我马上就回来。 #line:af5011
+<<if $pentagram_quest>>
+    <<set $found_pentagrams += 1>>
+    <<unlockPentagramDoodle>>
+<<endif>>
+===
+title: MichelleCzajkowski
+tags: 
+colorID: 0
+position: -1412,1146
+---
+MichelleCzajkowski: *嘘*！ #line:e92d60
+Mae: 嘿，你好啊。 #line:612a08
+MichelleCzajkowski: “这只聪明的小猫|并没有把注意力|放在已经失去的东西上，|而是放在了|所剩下的东西上。" #line:34a3f6
+<<wait 2>>
+Mae: 哦，哇哦。 #line:c90dec
+Mae: 原来你也来参加聚会了，居然还跑到后面来乱晃。 #line:22a9b9
+Mae: 是不是来这儿播撒你的智慧啊？ #line:b5e90f
+<<wait 2>>
+Mae: 好吧，我会记住你说的话的！ #line:47860a
+Mae: 祝你玩得愉快！ #line:95231c
+<<set $michelle_czajkowski_done to 1>>
+===

@@ -1,0 +1,109 @@
+title: Convo1
+tags: 
+colorID: 0
+position: 373,227
+---
+Mae: 咱们的宝贝儿子怎么样了？ #line:7097f6
+Angus: 他在客厅里呢。 #line:2e49e3
+Mae: 那必须的！ #line:e7af48
+Mae: 相当不错啊。 #line:18b30e
+Angus: 的确。 #line:639bd2
+<<wait 1>>
+<<tell AngusFoodPaw Reach>>
+===
+title: Convo2
+tags: 
+colorID: 0
+position: 624,230
+---
+Mae: 格雷格，你怎么这么安静啊？ #line:71e2fd
+Gregg: 因为我在吃东西。 #line:2b39b6
+Mae: 以前你可以一边说话，一边吃东西，完全不成问题。 #line:d8c8b0
+Gregg: …… #line:3f5db2
+Angus: …… #line:1613f8
+<<wait 1>>
+<<tell GreggFoodPaw Reach>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 57,118
+---
+Mae: 哦，天呐。 #line:fc33f5
+Mae: 如果上帝真的存在， #line:ef7fdc
+Mae: 那这些甜甜圈…… #line:40365b
+Mae: 安格斯，你不信教，对吧？ #line:7b91c4
+Angus: 是的。 #line:73426d
+Mae: 那吃甜甜圈的时候你会感到犹豫吗？ #line:851283
+Angus: 不会。 #line:794462
+<<close>>
+<<wait 1>>
+<<tell GreggFoodPaw Reach>>
+===
+title: Convo3
+tags: 
+colorID: 0
+position: 868,228
+---
+<<playOneShot event:/paws_mode_pizza/mae_pizza_sick>>
+Mae: 呃，我的甜甜圈晕眩症又犯啦。 #line:5e9ab6
+<<wait 2>>
+Angus: 这味道闻起来可真…… #line:626ab5
+Gregg: 嘿，老兄。 #line:59774e
+Mae: 这是多纳狼的甜甜圈吗？ #line:b65be7
+Angus: 又是关于那个机器人的事。 #line:a4e399
+Gregg: 我还以为你喜欢它呢！ #line:b640bf
+Gregg: 我闻到了，你喜欢我！ #line:6205a9
+Mae: 是啊！我都喜欢！ #line:448949
+Mae: 格雷格在这个机器人身上花了很多时间和精力， #line:0ac61c
+Mae: 他这么做，就是因为他觉得你会喜欢这个机器人。 #line:76502a
+Angus: 不，他做这些并不是为了我，而是因为他觉得做这些很有意思罢了。 #line:a3d587
+Angus: 不管会出现什么情况，他还是会一如既往，|鼓捣他的机器人，但他这么做并不是为了我。 #line:8bcf06
+Mae: 老天。 #line:c157dd
+Gregg: …… #line:04a9ae
+<<wait 1>>
+<<tell AngusFoodPaw Reach>>
+===
+title: Convo5
+tags: 
+colorID: 0
+position: 1362,227
+---
+<<playOneShot event:/paws_mode_pizza/mae_pizza_sick>>
+<<wait 2>>
+<<fadeOutMusic 10>>
+Mae: 哦，我滴个田啊…… #line:b7ca56
+<<wait 2>>
+Mae: 哦，我滴个的劳天啊…… #line:f93047
+Mae: 我有一种飘飘欲仙的感觉。 #line:f01df7
+<<resumeAnimation PawsModeDonutWolfGreggAngus>>
+<<playOneShot event:/paws_mode_donut/donut_sick_transition>>
+<<wait 7>>
+===
+title: Convo4
+tags: 
+colorID: 0
+position: 1108,224
+---
+<<playOneShot event:/paws_mode_pizza/mae_pizza_sick>>
+Mae: 呃，还感觉迷迷糊糊的。 #line:4f56d6
+<<wait 2>>
+Mae: 安格斯，你真是太粗鲁啦。 #line:69d65b
+Angus: *我*太粗鲁？ #line:bc221e
+Angus: 我们拼了命地努力工作， #line:e5b751
+Angus: 就是为了能早点离开这里。 #line:217e15
+Angus: 结果你一屁颠屁颠地回到镇上。 #line:9ccd0b
+Angus: 格雷格就开始非法闯入杂货店，去偷店里的东西。 #line:c5c724
+Gregg: 我进的都是废弃商店！ #line:749621
+Angus: 之后他还去偷汽车的蓄电池。 #line:40c4cf
+Gregg: 那也废弃的！ #line:583482
+Angus: 再后来，我们这间本来就已经够乱的公寓又让他弄得更乱了。 #line:8caf53
+Gregg: 嘿，老兄，别这样嘛。 #line:85cb59
+Mae: 等等，这些都是我的错了？ #line:d966a3
+Angus: …… #line:883597
+Gregg: …… #line:89e6d2
+Mae: 随你们怎么说吧，我要接着吃了。 #line:4357a7
+<<wait 1>>
+<<tell GreggFoodPaw Reach>>
+<<tell AngusFoodPaw Reach>>
+===

@@ -1,0 +1,21 @@
+title: Zapped
+tags: 
+colorID: 0
+position: 891,297
+---
+<<fadeOutMusic .1>>
+Mae: {width=4}啊 啊 啊 啊 啊！！！！！！ #line:22e727
+Gregg: 哇 哦！！！ #line:dd9989
+<<set $gregg_friendship_quest_2 to 2>>
+<<fadeOut .1 wait>>
+<<scene SharkleDream>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 244,202
+---
+Gregg: 好，只需要抓住一根电线，然后把它拽下来就行啦！ #line:910d6e
+Mae: 谢啦！我觉得我能搞得定！ #line:f6560a
+Mae: 得先把这些叶子清干净…… #line:9f4d8c
+===

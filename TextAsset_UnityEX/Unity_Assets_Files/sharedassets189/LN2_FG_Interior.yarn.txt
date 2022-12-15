@@ -1,0 +1,216 @@
+title: CliffJump
+tags: 
+colorID: 0
+position: 91,-205
+---
+<<showTalkingHeads>>
+<<setCameraMode Stationary>>
+<<if $cliff_jumps is 0>>
+	Mae: ……然后她就从悬崖边跳下去啦！ #line:33257d
+	Granddad: 什么？不，她可没跳下去！ #line:572884
+	<<set $cliff_jumps += 1>>
+<<elseif $cliff_jumps > 0 and $cliff_jumps < 1000>>
+	Mae: ……然后，她就跳了…… #line:6b4635
+	Granddad: 不，梅，别再说了。 #line:d831aa
+	<<set $cliff_jumps = 1000>>
+<<elseif $cliff_jumps is 1000>>
+	Granddad: 唉。 #line:416c03
+<<endif>>
+<<fadeOut 1 0 0 0>>
+<<wait 1>>
+<<scene LN2_FG_Interior>>
+
+===
+title: ForestGod
+tags: 
+colorID: 0
+position: 537,-178
+---
+Adina: ……您好？ #line:8f9cb9
+<<close>>
+<<wait 2>>
+Adina: 请问，您在吗？ #line:3901b9
+ForestGod: 你来迟了。 #line:b3e896
+ForestGod: 而且，你也不是女王。 #line:69c6ca
+ForestGod: 我上一次和一个渺小而无足轻重的生物谈话还是几百年之前的事。 #line:7ee7ba
+ForestGod: 我有处死你的权力。 #line:d3241b
+Adina: 我可不知道有这回事。 #line:a63ec6
+ForestGod: 接受现实吧。死亡是多么司空见惯的事啊。 #line:f2f5d0
+Adina: 为什么我要接受这个现实啊？ #line:3d4ed1
+ForestGod: 因为这就是自然规律。 #line:d5fb1d
+Adina: 真逗啊。你凭什么认为，有杀死我的权力 #line:e18a5e
+Adina: 就是自然规律呢？ #line:3a47c3
+ForestGod: 噗…… #line:2e4098
+Adina: 你根本就不是神， #line:6a33ef
+Adina: 你只不过是只块头很大的动物罢了。 #line:e788eb
+<<animationTrigger ForestGod LightsUp>>
+ForestGod: 但其他人都称呼我为神。 #line:d19622
+ForestGod: 所以，我就是神。 #line:1e0bfc
+ForestGod: 告诉我，你为什么要冒着失去生命的风险来找我呢。 #line:83d296
+[[因为我知道你将死的原因是什么。|FGKnowDying]] #line:b9b0c4
+[[因为我知道你生病的原因是什么。|FGKnowSick]] #line:4d74f1
+
+===
+title: Intro
+tags: 
+colorID: 0
+position: -400,91
+---
+GodtenderBrown: 接近他们时，一定要表现得很谦卑。 #line:9bad52
+GodtenderBrown: 我会在这儿等着的。 #line:e2ebd6
+<<speechBubbleSizeOverride 0>>
+===
+title: FGKnowSick
+tags: 
+colorID: 0
+position: 647,80
+---
+ForestGod: 噗…… #line:3ab1d0
+ForestGod: 我可是百毒不侵。 #line:b37504
+Adina: 你虽然没生病，但你现在却已经奄奄一息了。 #line:9c7ef2
+Adina: 真是有意思，轮到你自己，死亡就没那么容易接受了哈？ #line:72d796
+ForestGod: 肯定是侍神者布朗告诉你我很虚弱的。 #line:f95262
+ForestGod: 没用的东西，该死的东西。 #line:5ab8dc
+ForestGod: 我会给他找一个能体现出他价值的地方。我要让他到森林里自生自灭。 #line:bb634e
+ForestGod: 那些树会发现他身上的价值的。 #line:b6e74c
+Adina: 你不能这么做。 #line:2457cc
+Adina: 侍神者布朗是个好人。 #line:f24916
+Adina: 他善良，有求知欲，还很亲切。 #line:1b75ec
+Adina: 而且，为了你，他还要在外面的冰天雪地里站岗。 #line:e3fcf9
+ForestGod: 噗…… #line:388383
+Adina: 他觉得自己不配做你的侍从。 #line:8401df
+Adina: 但事实上，是你根本配不上他。 #line:fcaeb4
+Adina: 如果你敢伤害他分毫， #line:5b59d0
+Adina: 或是背弃他的忠心， #line:d6132e
+Adina: 我就让你死得不明不白，连生了什么病都不知道。 #line:7005cf
+ForestGod: 我们为什么会生病呢？ #line:67fab8
+Adina: 你得先向你认为神圣的事物发誓，发誓你会保证布朗的安全。 #line:9ebba5
+ForestGod: 我以我自己的名义发誓。我向这方圆数万里的森林发誓。 #line:7b7914
+Adina: 很好。 #line:490589
+ForestGod: 现在，你还要向你认为神圣的东西发誓。 #line:c743cb
+[[我以群星之名发誓。|FGSwear]] #line:e9709f
+[[我以你找到的那家人的名义发誓。|FGSwear]] #line:7114cc
+[[我以搜索队的名义发誓。|FGSwear]] #line:045939
+
+===
+title: FGKnowDying
+tags: 
+colorID: 0
+position: 418,82
+---
+ForestGod: 噗…… #line:dffee9
+ForestGod: 我才不会死呢。 #line:15cf7b
+Adina: 哦，我还以为，你已经接受了那个现实呢。 #line:151981
+Adina: 就是你说的那句：死亡是多么司空见惯的事啊。 #line:d355ee
+ForestGod: 肯定是侍神者布朗告诉你我很虚弱的。 #line:b19571
+ForestGod: 没用的东西，该死的东西。 #line:8abcb9
+ForestGod: 我会给他找一个能体现出他价值的地方。我要让他到森林里自生自灭。 #line:a5beb1
+ForestGod: 那些树会发现他身上的价值的。 #line:acb0e3
+Adina: 你不能这么做。 #line:fe4fe9
+Adina: 侍神者布朗是个好人。 #line:007391
+Adina: 他善良，有求知欲，还很亲切。 #line:cd47d8
+Adina: 而且，为了你，他还要在外面的冰天雪地里站岗。 #line:0c1024
+ForestGod: 噗…… #line:d9d1b8
+Adina: 他觉得自己不配做你的侍从。 #line:4b85e9
+Adina: 但事实上，是你根本配不上他。 #line:379282
+Adina: 如果你敢伤害他分毫， #line:866784
+Adina: 或是背弃他的忠心， #line:b1a350
+Adina: 我就让你死得不明不白，连生了什么病都不知道。 #line:ef4148
+ForestGod: 我们为什么会生病呢？ #line:1ed1d7
+Adina: 你得先向你认为神圣的事物发誓，发誓你会保证布朗的安全。 #line:4a439f
+ForestGod: 我以我自己的名义发誓。我向那一望无尽的针叶林发誓。 #line:31b06b
+Adina: 很好。 #line:63870b
+ForestGod: 现在，你还要向你认为神圣的东西发誓。 #line:d4e76d
+[[我以群星之名发誓。|FGSwear]] #line:c2b22c
+[[我以你找到的那家人的名义发誓。|FGSwear]] #line:adbf67
+[[我以搜索队的名义发誓。|FGSwear]] #line:49aaf4
+
+===
+title: FGSwear
+tags: 
+colorID: 0
+position: 524,336
+---
+ForestGod: 如果向这些发誓能让你充满希望的话，你就发吧。 #line:e57a38
+ForestGod: 现在，你可以告诉我你来这儿的原因了。 #line:fcf1ac
+Adina: 我来这儿的唯一原因，就是侍神者布朗的悲伤 #line:6772c1
+Adina: 和他对你的敬仰之情。 #line:f1ac47
+Adina: 但你肯定是没法再活下去了。所以，我现在想让你明白些事情。 #line:ec3138
+ForestGod: 你 说 吧！！！！！ #line:b30e53
+Adina: 很显然， #line:01c2c9
+Adina: 是弓背女巫给你下了毒。 #line:f4f928
+ForestGod: 噗噗噗…… #line:7ab9f3
+ForestGod: 这是原来可和平安宁啦！但后来…… #line:a593d2
+Adina: 我知道，几百年前，这里确实很安宁。 #line:a1cdcb
+ForestGod: 但为什么会是这样呢？ #line:5101de
+Adina: 弓背女巫会活下来， #line:40b3a4
+Adina: 而你却不能。 #line:90b932
+ForestGod: 那她也别想继续活下去。 #line:3e3e47
+Adina: 呃， #line:8bd2a0
+Adina: 你可真是四肢发达，头脑简单啊。 #line:85b1f6
+<<fadeOutMusic 3>>
+ForestGod:{width=8}噗啊啊啊啊啊！！！！！ #line:fc3b22
+<<close>>
+<<wait 1>>
+<<tell ForestGodFlyAway to Play>>
+<<animationTrigger ForestGod Freakout>>
+<<wait 9>>
+<<hide ForestGod>>
+<<wait 4>>
+Adina: 再见啦。 #line:8e11f7
+<<destroy Fire1>>
+<<destroy Fire2>>
+<<set $forest_god to 1>>
+<<end>>
+
+===
+title: Done
+tags: 
+colorID: 0
+position: -69,80
+---
+Adina: 他们都走了。 #line:ca030a
+GodtenderBrown: 他们还会回来的！他们总是这样。 #line:963416
+Adina: 侍神者…… #line:1c74cf
+GodtenderBrown: 女王大人，有何吩咐？ #line:672923
+Adina: 你是个好人。 #line:f51190
+GodtenderBrown: 女王大人，谢谢您。我唯一希望的，就是能成为一个善良的人。 #line:976238
+Adina:{width=5}希望是美好的。所以，不管发生什么，都请不要放弃希望。 #line:d80283
+GodtenderBrown: 我祝您一路平安。 #line:ca9ec7
+Adina: 也祝你一路平安。长至夜快乐。 #line:26d12d
+GodtenderBrown: 也祝您长至夜快乐。 #line:d2a8ce
+<<close>>
+<<fadeOut 3 0 0 0>>
+<<wait 3>>
+<<speechBubbleSizeOverride 0>>
+<<showTalkingHeads>>
+Mae: 爷爷，我困了。 #line:7c77dd
+Granddad: 梅，故事基本上全都讲完了。 #line:40e80d
+Mae: 哦，好的。我很喜欢这个故事。 #line:526754
+Granddad: 我就知道你会喜欢的。 #line:259686
+Mae: 您什么时候想和我一起抢银行都可以。 #line:67ea7d
+<<hideTalkingHeads>>
+<<wait 1>>
+<<scene LN2_LostWoods>>
+
+===
+title: GodtenderBrown
+tags: 
+colorID: 0
+position: -238,-192
+---
+<<speechBubbleSizeOverride 1>>
+<<if $forest_god is 0>>
+	[[Intro]]
+<<else>>
+	[[Done]]
+<<endif>>
+
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 329,-465
+---
+<<clearSnowballs>>
+===

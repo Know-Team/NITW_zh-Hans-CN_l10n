@@ -1,0 +1,106 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 47,294
+---
+[[HomeQuest]]
+===
+title: HomeQuest
+tags: 
+colorID: 0
+position: 324,330
+---
+<<hide Collision:Right>>
+
+<<warp Mae Mae0>>
+<<warp Germ Germ0>>
+
+<<walk Mae Mae1>>
+<<walk Germ Germ1>>
+
+<<waitForMove Mae>>
+Germ: 哦，她在这呢。 #line:cc0fc3
+<<close>>
+<<wait 2>>
+GermGramma: 这姑娘长得可真结实。 #line:d3026e
+Mae: …… #line:d0d6d8
+Mae: 我爷爷也这么说过我。 #line:1b4c30
+Mae: 您之前是不是…… #line:8fe183
+Gramma: 这位是我奶奶。 #line:33cc24
+<<lookAt Mae GermGramma>>
+Mae: 您好。 #line:cf6307
+GermGramma: 嗯嗯嗯。 #line:b2e759
+<<wait 2>>
+<<lookAt Mae Germ>>
+Germ: 那我先走了，你们聊！ #line:0c0ebf
+<<walk Germ Germ0>>
+Mae: 等会儿，你说啥？ #line:ce993e
+<<close>>
+<<walk Germ Germ0>>
+<<wait 2>>
+<<lookAt Mae GermGramma>>
+<<wait 1>>
+Mae: 您一直在盯着我。 #line:f64841
+GermGramma: 说你长得结实是在夸你。 #line:907318
+GermGramma: 比如说你长得又高又大，|或者壮实什么的。 #line:5789db
+Mae: 嗯，是吧。 #line:7c2152
+<<wait 2>>
+Mae: 您……就想和我说这些吗？ #line:808162
+GermGramma: 哦，不好意思。 #line:ebb8f1
+GermGramma: 我是不是让你感觉不自在了？ #line:3a6dea
+Mae: 没有没有。 #line:cca65d
+GermGramma: 那真是太糟了。|需要让你感觉不自在一点。 #line:d4b345
+GermGramma: 小姑娘，|将来你会遇到三次灾祸， #line:3b34d5
+GermGramma: 而且都是无法避免的灾祸。 #line:820ff5
+GermGramma: 用不了多久， #line:bf8c48
+GermGramma: 危机就会出现了。 #line:53611c
+GermGramma: 你会在这片林子里 #line:87dcf3
+GermGramma: 经历这三次危机。 #line:eba622
+Mae: 您好像是在给我算命，对吗？ #line:2fa34b
+<<wait 2>>
+GermGramma: 姑娘，虽然我不知道之前你都做过些什么， #line:49f491
+GermGramma: 但我能感觉到，|你的内心当中|存在着一个黑点， #line:4e5c9e
+GermGramma: 这个黑点终有一天|会要人性命。 #line:43580e
+GermGramma: 它可能会要了别人的命，|也可能会要了你自己的命。 #line:d4362e
+<<wait 2>>
+GermGramma: 请一定记住我的话。 #line:b625f2
+GermGramma: 这是你被诅咒的命运。 #line:e09cdd
+<<wait 2>>
+Mae: 额，好吧，我会……尽量记住您的话的。 #line:ad5d52
+Mae: o> O_o :\ #line:484aa0
+Mae: 我真的会吗？开什么玩笑，这些话简直太蠢了。 #line:3181ac
+Mae: 你根本就不了解我。 #line:cfdc64
+Mae: 万一她的话是错的呢？ #line:5cee35
+Mae: 对啊，我又不只是个 #line:760ab1
+Mae: 装满各种问题的破躯壳。 #line:b24e84
+Mae: “呃～呃～你的身上有一个黑点。" #line:c5ada1
+Mae: 去你的吧，你觉得你很了解我是吗？！？ #line:86f2a4
+<<wait 2>>
+GermGramma: 我没法阻止将要发生的事， #line:1d9dfa
+GermGramma: 但我还是想问一个|你回答不了的问题： #line:ac5d10
+GermGramma: 你能让一间闹鬼的房子|不再闹鬼吗？ #line:470fef
+Mae: :| #line:69457f
+Mae: 我……我……什么？ #line:844391
+<<wait 2>>
+GermGramma: 呵呵呵。 #line:2886f7
+GermGramma: 你去过闹鬼的房子吗？ #line:b31981
+Mae: 您说什么？ #line:54f9dd
+GermGramma: 我刚才都是开玩笑的。 #line:0b98c7
+GermGramma: 我喜欢这样。 #line:4d9ec4
+Mae: o_o :\ _o_ #line:682a97
+Mae: 你没毛病吧？！？！ #line:cf0235
+Mae: 这闹的是什么乱七八糟的！！ #line:e1a96e
+GermGramma: 嘻嘻嘻。 #line:0806d6
+GermGramma: 你是个输得起的人。 #line:0c837a
+GermGramma: 好了，亲爱的，|你现在可以走了！ #line:7fa152
+GermGramma: 我要看《法官贾尼斯》了。 #line:48f9e4
+Mae: :| #line:2fa60d
+Mae: 好吧……呃……那再见了！ #line:603e38
+GermGramma: 姑娘啊， #line:e9d792
+<<wait 2>>
+GermGramma: 咱们可能不会再见了。 #line:810669
+<<close>>
+
+<<irisOut 1 wait>>
+<<scene GermHouse left>>
+===

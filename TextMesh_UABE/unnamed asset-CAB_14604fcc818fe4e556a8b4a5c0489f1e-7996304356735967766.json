@@ -1,0 +1,28 @@
+{
+    "0 TextMesh Base": 
+    {
+        "0 PPtr<GameObject> m_GameObject": 
+        {
+            "0 int m_FileID": 0,
+            "0 SInt64 m_PathID": "2917229052029565705"
+        },
+        "1 string m_Text": "查看概念艺术",
+        "0 float m_OffsetZ": 0,
+        "0 float m_CharacterSize": 0.0599999987,
+        "0 float m_LineSpacing": 1,
+        "0 SInt16 m_Anchor": 4,
+        "0 SInt16 m_Alignment": 1,
+        "0 float m_TabSize": 4,
+        "0 int m_FontSize": 0,
+        "0 int m_FontStyle": 0,
+        "1 bool m_RichText": true,
+        "0 PPtr<Font> m_Font": 
+        {
+            "0 int m_FileID": 0,
+            "0 SInt64 m_PathID": "-1611960639102808335"
+        },
+        "0 ColorRGBA m_Color":  {
+            "0 unsigned int rgba": 4294967295
+        }
+    }
+}

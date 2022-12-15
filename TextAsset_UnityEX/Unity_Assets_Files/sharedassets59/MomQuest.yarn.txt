@@ -1,0 +1,198 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 79,276
+---
+<<setCanInteract Mom 0>>
+<<flip Mom -1>>
+<<flip Mae -1>>
+Mae: 我不记得我以前来过这里啊。 #line:a4b1d9
+Mom: 我们以前经常到这儿来啊。 #line:a23177
+Mae: 是吗？ #line:fda458
+Mom: 当然不是了。我说的“我们"是指“像你这么大的时候的我和我的朋友"。 #line:01a5c7
+Mae: 哦，好吧。我还真有点不习惯你说的“我们"这个词。 #line:2c6347
+Mom: 信不信由你，我已经有过不少“我们"了。 #line:705319
+Mae: 嗯哼。 #line:7ed2dd
+<<close>>
+<<walk Mom HillPoint_1>>
+===
+title: Jenny
+tags: 
+colorID: 0
+position: 636,399
+---
+Mae: 话说，这是什么地方？ #line:f25efd
+Mom: 这儿叫詹妮草场，听说过这里吗？ #line:9bf76c
+Mae: 没有吧，我好像没听说过。 #line:b45c06
+Mom: 上个世纪30年代的时候， #line:fe36f4
+Mom: 有一对母女 #line:568b0c
+Mom: 来到过这个地方…… #line:9b988a
+Mom: 当时，女儿就走在妈妈的前面。 #line:83509f
+Mom: 但后来，女孩就突然踪迹全无了，就像凭空消失了一样。 #line:cab3d5
+Mae: 当时到底发生了什么事啊？ #line:361eee
+Mom: 经过调查，后来发现，这附近有一个落水洞。 #line:bfb545
+Mom: 这附近的山里有个矿井。|当时，|矿井里的一根支撑柱塌了，|结果就把这个落水洞|给震开了。 #line:c11221
+Mae: 我的天啊。 #line:3954a7
+Mom: 是这样的。但因为地上的草长得太茂密了，所以，人们根本看不见这个洞。 #line:6952c2
+Mom: 还有，因为那个出事的女孩名叫詹妮，所以，人们就把这里命名为了詹妮草场。 #line:8d4371
+Mom: 自从那件事以后，人们就再也没有找到过她。 #line:8488a8
+Mom: 她就 #line:7b0094
+Mom: *咻！*的一下， #line:afef02
+Mom: 消失了。 #line:bb80d7
+Mae: 等等……那咱们为什么要来这儿呢？ #line:1cf04a
+Mom: 为什么来这儿？你不是想来一次小冒险吗？ #line:9448d7
+Mae: …… #line:b85bba
+<<close>>
+<<walk Mom Furnace_Mom1>>
+===
+title: Hillstop
+tags: 
+colorID: 0
+position: 357,273
+---
+Mae: 很好，很好。 #line:01382d
+Mom: 原来这里还有很多树呢。 #line:3b0120
+Mom: 后来，这里准备建输电塔和信号塔，所以，树就都被砍掉了。 #line:956911
+Mae: 我怎么对这些事完全没有印象啊。 #line:0cd04a
+Mom: 你也知道，很多事都是在你出生前就已经发生过了。 #line:9261e7
+Mae: 什 么？！？！ #line:c2e21e
+Mom: 但当然，发生的都是些小之又小的历史事件罢了。 #line:50bd38
+<<close>>
+<<walk Mom JennyPoint_1>>
+===
+title: Hole
+tags: 
+colorID: 0
+position: 641,147
+---
+<<playOneShot event:/mom_quest/mae_fall_meadow Mae>>
+Mae: 啊 啊 啊！！ #line:0a9a9f
+Mom: 怎么了？ #line:45e907
+Mae: 我觉得我可能是掉到……落水洞里了…… #line:6cf80a
+Mom: 嗯……掉下去的时候感觉怎么样？ #line:7a513e
+Mae: …… #line:ebb39e
+===
+title: Furnace1
+tags: 
+colorID: 0
+position: 880,254
+---
+Mae: 好吧……那是个什么东西？ #line:2cf8dd
+Mom: 由于某些原因，在联合会解散以前， #line:4d3261
+Mom: 他们把旧石灰窑搬到了山上。 #line:6db21b
+Mae: 他们为什么要把石灰窑搬到山上去呢？ #line:3420f2
+Mom: 谁知道呢。联合会可干过不少事呢。 #line:10093a
+Mae: 看样子这东西会永远待在这里了。 #line:41d042
+Mom: 它都陷到地里面很深了。 #line:2e3fb5
+Mae: 就像詹妮一样！ #line:353afe
+Mom: 但它下陷的速度可要比詹妮慢多了。 #line:6ec2ee
+Mom: 我们以前经常会爬到烟囱上去。 #line:47ed50
+Mae: 想不想再试试？ #line:c7e4eb
+Mom: 哈哈哈。哦，我的宝贝。 #line:3de8bf
+Mom: 在那以后，我不仅有了你，还有了许多给你过生日的机会和吃也吃不完的甜甜圈。 #line:a7098a
+Mom: 然后我也变老了，身体也不如从前了，没法像以前那样窜上窜下了。 #line:be515a
+===
+title: FurnaceTop
+tags: 
+colorID: 0
+position: 874,471
+---
+Mae: 这样的话……嗯…… #line:f0ccad
+<<lookAt Mom Mae>>
+Mae: 不错的是，烟囱顶已经被封上啦！ #line:202930
+Mom: 哈哈哈，是啊，这倒是不错。 #line:2730e2
+Mom: 你在上面能看到什么？ #line:4db556
+Mom: 你在上面已经待了有一段时间了。 #line:4624ef
+Mae: 嗯…… #line:0f72fd
+    ->我可以看到负鼠泉和很多山谷！ #line:dc0a41
+        Mom: 景色如何啊？ #line:f126cf
+            ->整片山谷就好像是一床被子一样。 #line:60f64b
+                Mom: 唔，听起来，这片山谷好像很暖和啊。 #line:f166aa
+            ->负鼠泉就像是被人扔在地上的一堆砖头。 #line:1ef2f5
+                Mom: 哈哈，好像是这么回事啊。 #line:c42924
+    ->我可以看到公路！ #line:c67722
+        Mom: 公路看起来怎么样？ #line:d8b66c
+            ->我是看到了一条河吗？一条用水泥铺成的河吗？河上面还有车？ #line:329366
+                Mom: [wave]那条河的水总是很湍急啊。[/wave] #line:f035e6
+                Mom: [wave]哦，你说那条“河"啊，那条“河"可宽了。[/wave] #line:52bd3a
+                Mae: 老妈，你是在……唱歌吗？ #line:46c0e3
+                Mom: 是啊。这首好像是某部音乐剧里的歌。 #line:4da109
+                Mom: 可能是吧。 #line:3c59e4
+                Mae: :) \o/ #line:401110
+                Mae: [wave]喔吼！！！！[/wave] #line:16d68d
+                Mom: 很好，很好。 #line:46dfa1
+            ->我是看到了一条大蛇吗？一条用水泥做成的大蛇？蛇身上还有车？ #line:c01936
+                <<if $eels is 1>>
+                    Mom: 呵呵呵，也没准是条鳗鱼哦。 #line:9fe5c8
+                    Mae: 哦，我的老天，确实是一条大鳗鱼。 #line:79b094
+                    Mom: 是鳗鱼啊，亲爱的。 #line:eeb095
+                    Mae: 是啊，老妈，是鳗鱼。 #line:5f0dd9
+                    Mae: 顺便问一句，那个鳗鱼男孩后来怎么样了？ #line:4998cc
+                    Mom: 后来，终于有人在井底发现了他。 #line:b94add
+                    Mom: 然后，紧急救援队把男孩从井里救了出来。 #line:731c34
+                    Mom: 很多年之后，这个男孩把自己的经历写成了一本书， #line:578051
+                    Mom: 最后变成了富翁！ #line:65c6bf
+                    Mae: 那那条鳗鱼最后分到稿费了吗？ #line:d4108d
+                    Mom: 我觉得没有。 #line:d21571
+                    Mae: 这简直是造孽啊，太过分啦。 #line:309408
+                    Mom: 有谁还会记得那条可怜的鳗鱼呢？ #line:e369bc
+                <<else>>
+                    Mom: 大蛇。 #line:f833b1
+                    Mae: 大蛇。 #line:26d31b
+                    Mom: 以前，我在这儿被一条蛇咬到过，这可是真事！ #line:6ade41
+                    Mae: 我可没听你说起过这事。 #line:0fa95d
+                    Mom: 是啊，还没跟你说过这事。|那是一条铜头蝮，|当时它是从|一根原木下面窜出来的。 #line:6681bb
+                    Mom: 当时，那条蛇咬到了我的腿。|然后，我的前男友查理——|他可是个不错的帅小伙—— #line:5c0b91
+                    Mom: 想尽办法想要把我腿上的蛇毒吸出来。 #line:0cbbcf
+                    Mae: 哇，他可真是个大暖男啊！ #line:152dfd
+                    Mom: 后来，因为接触到了蛇毒，他的嘴失去了知觉，而且他的组织也受到了损伤。 #line:1ea290
+                    Mom: 即使如此，我还是得去医院接受正规治疗。 #line:7da71e
+                    Mae: 哦，哇哦。 #line:558949
+                    Mom: 所以，宝贝，千万别用嘴去吸蛇毒。 #line:02a798
+                    Mae: 好的，我会记住的。 #line:aea9b7
+                    Mom: 因为这么做一点用都没有。 #line:7527b1
+                    Mae: 了解。 #line:f727dc
+                <<endif>>
+Mae: _o_ :| #line:596881
+Mom: 我记得，当我爬上烟囱时，我根本没法判断 #line:81f776
+Mom: 周围的一切到底是变大了，还是变小了。 #line:b0bb9d
+Mom: 这种感觉可真奇怪。 #line:0952a2
+Mae: 是啊，我知道那种感觉。 #line:e05140
+Mom: 在我像你这么大的时候，我做过一个梦： #line:adcf8d
+Mom: 我身处一座大停车场之中，而停车场旁边是一条小路。 #line:cc745a
+Mom: 然后，我开始跑了起来。但不管我怎么跑，我还是跑不出那座停车场。 #line:20c267
+Mae: 嗯。 #line:7cfc68
+Mom: 你觉得这个梦是什么意思呢？ #line:7cde56
+Mae: 我也不太清楚。解释你的梦让我感觉很奇怪。 #line:37dbf2
+Mom: 这是为什么啊？ #line:edda17
+Mae: 因为你是我妈。 #line:c772a3
+Mom: …… #line:8b9fea
+Mom: 说的也是。 #line:f01897
+Mae: 那咱们今天为什么要来这儿呢？ #line:06a0fa
+Mom: 这不是明摆着的吗，我就是想让你掉进落水洞里，仅此而已。 #line:01ff5e
+Mae: 但你的计划落空了。 #line:dcaf79
+Mom: 真讨厌。 #line:f80234
+Mom: 看来我只能把你留在这儿了。 #line:2bea1e
+<<close>>
+<<wait 1>>
+Mae: 老妈，你说话的时候，我看不见你的表情。 #line:dbe2a2
+Mom: 你是想看到我的表情吗？ #line:3df7ab
+<<close>>
+<<wait 1>>
+Mae: :) #line:d5d829
+Mae: 我不想了。 #line:e4057e
+<<close>>
+<<wait 2>>
+<<walk Mom MomWalkOff>>
+Mom: 好了，那咱们回家见吧！ #line:0a1abe
+Mae: :( #line:31b1a4
+Mae: 嘿，老 妈！ #line:814338
+<<unlockAchievement Jenny's_Field>>
+<<wait 1>>
+<<unlockDoodle JennysField>>
+<<wait 1>>
+<<close>>
+<<set $did_mom_friendship_quest to 1>>
+<<fadeOut 1 wait>>
+<<scene ChurchHill>>
+===

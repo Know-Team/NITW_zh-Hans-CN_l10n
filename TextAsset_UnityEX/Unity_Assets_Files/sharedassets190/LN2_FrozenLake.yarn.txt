@@ -1,0 +1,252 @@
+title: TreeCat_A1D3.1
+tags: 
+colorID: 0
+position: 781,86
+---
+<<speechBubbleDistanceOverride 1.5>>
+Adina: 嘿，猫咪。就猜到你会在这儿待着。 #line:df5945
+TreeCat: 猜对了。 #line:62c2a6
+Adina: 可你猜错了。 #line:1276fb
+TreeCat: 我怎么错了？ #line:62cb99
+Adina: 我没把命丢在森林里。 #line:9955cf
+TreeCat: 你确实还活着。 #line:fabc52
+TreeCat: 不过话说回来，我也一样，|每次都能森林里活着回来。 #line:d4cda4
+TreeCat: 所以，不好意思，|我觉得这点小事|实在是没什么了不起的。 #line:8e9f06
+Adina: 你可真混蛋。 #line:b963df
+TreeCat: 你今晚可惹了不少麻烦啊。 #line:efd792
+Adina: 我根本就没想惹什么麻烦，不过是想从森林里穿过去罢了。 #line:9b7b82
+TreeCat: 事情不都是这样的吗。 #line:e2de1f
+[[我该走了。|GoodbyeTreeCat]] #line:9269b6
+[[对了，你到底是谁啊？|WhoIsTreeCat]] #line:533a55
+
+===
+title: Astronomer
+tags: 
+colorID: 0
+position: 1378,198
+---
+//<<trackAllSpeechBubblesToCharacters 1>>
+//<<speechBubbleSizeOverride 1.75>>
+//<<speechBubbleDistanceOverride 2>>
+<<speechBubbleMaxOpenTimeOverride 2.5>>
+<<holdInput 1 0>>
+<<playerRunSpeedOverride 2>>
+//<<musicDialogueFaderOverride 1>>
+<<show Astronomer 1>>
+<<wait 2>>
+<<tell Music to Play>>
+Astronomer: 你知道吗，我原本以为，你是到不了这儿的。 #line:822279
+Adina: 一言既出，驷马难追嘛。 #line:c77fd2
+Astronomer: 家那边怎么样了？ #line:674ff6
+Adina: 还是老样子，就是比以前冷了不少。 #line:bab937
+Adina: 绵羊又在长至夜前夜把第五大街上的桥给封了。 #line:3352eb
+Astronomer: 哈哈哈！ #line:4db8e8
+Adina: 农民一整天都在试着把它们从桥上轰走。 #line:8902d1
+Astronomer: 那他们弄清楚它们这么做的原因了吗？ #line:91423f
+Adina: 没人知道是为什么。 #line:da15d1
+Astronomer: 嗯。 #line:b207f4
+Adina: 我知道你不会待很久的。 #line:1402bc
+Astronomer: 对。所以，有问题就问吧。 #line:cafb9a
+Adina: 好。你找到鬼星了吗？ #line:12c4a5
+Astronomer: 找到了，我死的第一晚就找到了。 #line:64612d
+<<close>>
+<<waitForPlayerPastX 33>>
+<<holdInput 0 0>>
+<<speechBubbleMaxOpenTimeOverride 0>>
+Astronomer: 它就在那儿。 #line:05f816
+<<show LostConstellation 3>>
+<<wait 3>>
+Adina: 我的天啊。 #line:5483bf
+Astronomer: 差不多吧。 #line:7a6be8
+Astronomer: 你能记住它的位置吗？ #line:b0307d
+Adina: 能。 #line:11fa2f
+<<close>>
+<<wait 2>>
+Adina: 这很有意思。 #line:32ff6f
+Astronomer: 什么？ #line:32ce9c
+Adina: 它一直都在那儿， #line:8d6331
+Adina: 我只是看不到它罢了。 #line:14ae17
+Astronomer: 你其实现在也还是看不到。 #line:8ead87
+Astronomer: 但你可以用网格表去找它的位置啊。 #line:741b68
+Astronomer: 这至少算个方法吧。 #line:a8757e
+Adina: 哇。 #line:0d0fae
+Adina: 我感觉，它离我只有几英尺远。 #line:b9278d
+Adina: 它就在那儿，而且比我想象中的要大， #line:de33f7
+Adina: 而且，它还在燃烧。最后，它爆炸了。 #line:ae627f
+Adina: 隔在我和它之间的，是一片黑暗。 #line:2e9ed6
+Adina: 在我想到它的时候，我就感觉自己的思绪很乱。 #line:aff355
+Astronomer: 我这些天也总会想到它。 #line:f87dcf
+Astronomer: 咱们把自己的一切都献给了咱们几乎不了解 #line:f2da82
+Astronomer: 也永远都触及不到的事物。 #line:14577e
+Astronomer: 咱们不仅给它命了名，而且在这个过程中，咱们也给自己正了名。 #line:c43958
+Astronomer: 所以这一切都是有联系的。 #line:2dfa2e
+Astronomer: 而且，这种联系会变成咱们能够触及的事物。 #line:d29526
+Astronomer: 在死后，你会更懂得这些联系的意义。 #line:d487b9
+Adina: 我会想念你的。 #line:c8f772
+Astronomer: 嗯，但从好的方面来看，你得到了一颗星星。 #line:53a20e
+Adina: 这至少也算是小有成就吧。 #line:4e1705
+Astronomer: 哈哈哈。 #line:88acd5
+Astronomer: 至少，这个成就还是很让人惊喜的。 #line:606f07
+Adina: 是啊。 #line:4ec8dc
+Astronomer: 再见，天文学家。 #line:ce5a35
+Adina: 再见了，天文学家。 #line:e7f7ad
+<<close>>
+<<fadeOut 5 0 0 0>>
+<<wait 3>>
+<<fadeOutAllSounds 4>>
+<<wait 2>>
+//<<trackAllSpeechBubblesToCharacters 0>>
+//<<speechBubbleSizeOverride 0>>
+//<<speechBubbleDistanceOverride 0>>
+//<<musicDialogueFaderOverride 0>>
+<<speechBubbleMaxOpenTimeOverride 0>>
+<<showTalkingHeads>>
+Granddad: 故事结束了。 #line:706c76
+Mae: 那个星座到底叫什么名字啊？ #line:88a6f0
+Granddad: 没人知道它叫什么名字。历史上也没有记载。 #line:64e01f
+Mae: 这件事是真的吗？ #line:756baa
+Granddad: 是不是真的还有那么重要吗？ #line:eb4b05
+Mae: 我觉得很重要。 #line:d0e3ef
+Granddad: 好吧。但咱们永远都不会知道|它到底是不是真的了。 #line:5f6a47
+Granddad: 但你听到了这个故事， #line:206bb9
+Granddad: 这才是最重要的。 #line:f4bf47
+Mae: 很重要，很重要，很重要。 #line:b2d1ba
+Mae: 我也想找到那个星座。 #line:d8a26e
+Granddad: 那就在晚上的时候出去找它吧。 #line:469dce
+Granddad: 然后，你再告诉我它的位置，好吗？ #line:8add6c
+Mae: *打哈欠* #line:40a939
+Granddad: 小鬼，你好像是困了。 #line:cfdb43
+Mae: 嗯。 #line:b30e47
+Granddad: 那你睡吧。 #line:2bb351
+<<fadeOutMusic 4>>
+Granddad: 做个好梦，小鬼。 #line:83691d
+Mae: zzz #line:640f67
+<<hideTalkingHeads>>
+<<wait 4>>
+<<scene LN2_End>>
+
+===
+title: GoodbyeTreeCat
+tags: 
+colorID: 0
+position: 549,339
+---
+TreeCat: 弓背女巫、|她的孩子、|林中之神……|这些都和你|一点关系也没有。 #line:d27dca
+Adina: 我知道。 #line:1fea23
+TreeCat: 那就把这一切|都留在这里，|因为你在属于|他们的森林里。 #line:5009af
+Adina: 可我是个天文学家。 #line:41bebd
+Adina: 也许这片森林是属于他们的，但森林上面的天空是属于我的。 #line:268991
+TreeCat: 哈哈哈。我敢说，|你肯定在想这话很伟大吧。 #line:a7d6c1
+Adina: 在我说出这句话的时候，|它才伟大呢，你个臭猫。 #line:dba8c3
+TreeCat: 那再见了，|天文学家阿丁娜。|祝你好运！ #line:4902bd
+Adina: 再见了，猫咪。|长至夜快乐。 #line:df5d60
+
+===
+title: WhoIsTreeCat
+tags: 
+colorID: 0
+position: 546,87
+---
+TreeCat: 请你再说一遍。 #line:e4b796
+Adina: 你是魔法猫吗？|还是猫神？|还是巫师猫？|还是其他什么猫？ #line:04b65c
+TreeCat: 我就是一只普通的猫。 #line:b43f10
+TreeCat: 我住的地方离森林很近， #line:3fe4ab
+TreeCat: 我还喜欢亮晶晶的东西。 #line:a5c133
+TreeCat: 还有，我喜欢听人说话。 #line:c07dd1
+Adina: 哦。 #line:9ca337
+TreeCat: 该你说了。你是谁？ #line:30809d
+[[我是个天文学家。|ImAnAstronomer]] #line:7953d8
+[[我是个幸存者。|ImASurvivor]] #line:38f6d5
+
+===
+title: ImAnAstronomer
+tags: 
+colorID: 0
+position: 312,337
+---
+Adina: 我之所以来这儿，是因为天上少了点东西。 #line:4353d1
+Adina: 而只有到了这儿，我才能找到它。 #line:df0f65
+TreeCat: 你确定吗？ #line:991388
+Adina: 我现在又累又冷， #line:d26ec8
+Adina: 已经什么都没法确定了。 #line:1f9836
+TreeCat: 看来，这要么是个|特别悲伤的故事，|要么就是个|特别美丽动人的故事。 #line:11679e
+Adina: 的确是这样。 #line:5557bf
+Adina: 真是冷死我了。 #line:8bf758
+TreeCat: [speed=.5][wave]咕噜噜。[/all] #line:49aa4c
+[[GoodbyeTreeCat]]
+
+===
+title: ImASurvivor
+tags: 
+colorID: 0
+position: 311,90
+---
+Adina: 我从哪里来的，今晚就到哪里去 #line:884e38
+Adina: 我活了下来。 #line:83c6cb
+TreeCat: 能活下来就好。 #line:9b08be
+TreeCat: 偷别人的东西，|神不知鬼不觉。 #line:5cf983
+TreeCat: 吃老鼠，在暖和的|谷仓里睡觉。 #line:dd05ea
+Adina: 虽然我想的和你不一样，但是这个理儿。 #line:eab974
+TreeCat: 那你是怎么想的？ #line:fbdc6b
+Adina: 我只是想穿过这片破森林。 #line:c80d8a
+<<close>>
+<<wait 2>>
+Adina: 我很喜欢天上的星星。它们就挂在那漆黑的夜空里。 #line:2062c7
+Adina: 这听起来很无聊，是吧。 #line:46e832
+Adina: 天越黑…… #line:3e568d
+TreeCat: [speed=.5][wave]咕噜噜。[/all] #line:cd94e8
+[[GoodbyeTreeCat]]
+
+===
+title: TreeCat_A1D3.2
+tags: 
+colorID: 0
+position: 785,339
+---
+TreeCat: [speed=.5][wave]咕噜噜。[/all] #line:0fa241
+===
+title: AstronomerA
+tags: 
+colorID: 0
+position: 1210,604
+---
+Adina: 特拉维斯？！？*你*在这儿干什么呢？ #line:87e132
+Astronomer: 你怎么知道我是谁？ #line:800ce7
+<<showTalkingHeads>>
+Mae: 然后，特拉维斯训了她一顿…… #line:3bb422
+Granddad: 特拉维斯是谁？ #line:f008eb
+Mae: 他是学校里一个特讨人厌的小破孩。 #line:fe92aa
+Granddad: 那这个特拉维斯为什么会出现在过去呢？ #line:98bdc3
+Mae: 因为他偷了一台时间机器。 #line:a0dc9b
+Granddad: 好吧，好吧。 #line:ca5f9b
+Mae: 总之呢，后来，特拉维斯说道…… #line:a40602
+<<hideTalkingHeads>>
+Astronomer: ……我偷了一台时间机器。这就是我能到这儿来烦你的原因。 #line:9f5aa5
+Adina: 好……好吧。 #line:39ba6f
+Astronomer: 所以，你该生气了。 #line:f2bc7c
+Adina: 没错，你的确是很烦人。 #line:40154b
+<<close>>
+<<wait 1>>
+Adina: 好吧。 #line:850001
+Astronomer: 祝你一切顺利。 #line:396a41
+Adina: 回见了。 #line:4d7b5a
+===
+title: TreeCat
+tags: 
+colorID: 0
+position: -57,-49
+---
+TreeCat: 有事就再找我聊吧。 #line:307178
+<<set $day to 3>>
+<<set $act to 1>>
+
+
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 1041,-119
+---
+<<hide Astronomer>>
+<<hide LostConstellation>>
+===

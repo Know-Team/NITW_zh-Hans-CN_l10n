@@ -1,0 +1,187 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 621,68
+---
+<<if $did_lori_friendship_quest_1 is 0>>
+    [[Tracks1]]
+<<else>>
+    [[Tracks2]]
+<<endif>>
+===
+title: Tracks2
+tags: 
+colorID: 4
+position: 805,431
+---
+<<freezePlayer>>
+<<wait 4>>
+Lori: 你知道咱们这儿还缺点什么东西吗？ #line:7f646f
+Mae: 缺一家塔可店。 #line:fd6546
+Lori: 错，是缺连环杀手。 #line:431d74
+Mae: 额，是吧。嗯…… #line:105797
+Mae: 我的想法是，我会希望先建一家塔可店，但是…… #line:215aef
+Mae: 你得承认咱这儿根本就找不到连环杀手。 #line:a0745b
+Lori: 你有没有想过杀人的事呢？ #line:4e2613
+Lori: 嗯……就比如说…… #line:d1336c
+Lori: 就在长至夜节的前几天，我和姨妈、表弟准备去光明湾一趟。 #line:119ced
+Lori: 我们当时是坐地铁去的。 #line:4c69a9
+Lori: 那个轨道旁边没有护栏， #line:3db6d2
+Lori: 于是，我当时突然产生一种想把人推下去的冲动。 #line:0d50f5
+Lori: 这想法很诡异。也因为这件事，我有很长一段时间都感觉自己有罪，而且很内疚。 #line:63c992
+Lori: 虽然有这种想法，可我并没有真正尝试过。 #line:54610a
+Lori: 所以，我想问的是，有这种想法到底正不正常？ #line:04a34e
+Mae: 我觉得这再正常不过了。 #line:87856d
+Lori: 我猜你*肯定*也想过去杀人。 #line:061ab8
+    ->这不一样。 #line:d961d1
+        Lori: 怎么不一样了？ #line:fd094b
+        Mae: 我的那种想法……根本就是一时冲动，没有预谋的。 #line:1b7898
+    ->我可没有。 #line:96abb3
+        Lori: 不过很多人都是这么觉得的。 #line:d2c452
+        Mae: 是啊， #line:834f70
+        Mae: 大部分人就是群傻子。 #line:3fb47d
+Mae: 而且话说回来，我根本就没打算要他的命。 #line:f888f4
+Mae: 可事情最后就这么发生了。 #line:873965
+Mae: 所以说， #line:4b5a0a
+Mae: 这件事并不会成为我 #line:68d528
+Mae: 通向连环杀手之路的第一步。 #line:03bd3f
+<<wait 2>>
+Lori: 抱歉。 #line:e69332
+<<setAnimInt Lori laying 2>>
+<<playOneShot event:/lori_quest/legs_move Lori>>
+<<wait 1>>
+<<setAnimInt Mae laying 2>>
+<<playOneShot event:/lori_quest/legs_move Mae>>
+<<wait 1>>
+//mae pulls her feet in as the train passes//
+<<trigger OverheadTracks TrainPassBottom>>
+<<wait 13>>
+<<setAnimInt Lori laying 1>>
+<<playOneShot event:/lori_quest/legs_move Lori>>
+<<wait 1>>
+<<setAnimInt Mae laying 3>>
+<<playOneShot event:/lori_quest/legs_move Mae>>
+<<wait 1>>
+Mae: 没事，用不着道歉。 #line:ed0e58
+Lori: 你知道我喜欢什么吗？ #line:8e6d8f
+Mae: 塔可吗？ #line:015d7b
+Lori: 我喜欢看陨石撞击地球，灭绝恐龙的电影。 #line:322cd0
+Lori: 在当时那种情况下，恐龙只能呆呆地看着天上的陨石掉下来，不过什么也做不了。 #line:4680fa
+Mae: 噢，是啊！ #line:c9b2a1
+Mae: 这感觉就像是每只恐龙的眼睛里都有一幅陨石的画面一样。 #line:322827
+Mae: 真是太诡异啦。 #line:1bdcb4
+Lori: 我在想这些恐龙知不知道自己很快就要灭绝的命运。 #line:e2b920
+//lori pulls her feet in as the train passes//
+<<setAnimInt Lori laying 2>>
+<<playOneShot event:/lori_quest/legs_move Lori>>
+<<wait 1>>
+<<setAnimInt Mae laying 2>>
+<<playOneShot event:/lori_quest/legs_move Mae>>
+<<wait 1>>
+<<trigger OverheadTracks TrainPassBoth>>
+<<wait 13>>
+Lori: 好了好了。 #line:ec29ff
+Lori: 咱们快去看看有什么收获吧！ #line:91f04b
+<<irisOut 1 wait>>
+<<scene Tracks>>
+===
+title: Tracks1
+tags: 
+colorID: 3
+position: 486,431
+---
+<<freezePlayer>>
+<<wait 4>>
+Lori: 我有些时候会夜里过来。 #line:bbe2c1
+Lori: 然后躺在两条铁轨之间睡觉。 #line:8e5e9b
+	->听起来可够危险的！ #line:570446
+	->为什么要这么做？ #line:96fcd6
+		Lori: 我也不知道为什么。 #line:9e74c3
+Lori: 我在兴奋的时候才能睡得着。 #line:7f047d
+Lori: 不知道你有没有这种感觉， #line:ba219b
+Lori: 就是在特别兴奋的时候，你能睡得着觉吗？ #line:873512
+	->喝咖啡会让我犯困。 #line:c404a6
+		Lori: 哈哈，真是太逊啦。 #line:b09735
+		Mae: 感觉有点丢人。 #line:220eb2
+	->我情绪波动太大的话，就会做一些让人提心吊胆的梦。 #line:8202c8
+		Lori: 我都不记得自己做过的梦了。 #line:ba3997
+//train noise in the distance to the right//
+<<tell _AmbientSFX:train_whistle Play>>
+<<close>>
+<<wait 4>>
+Lori: 我有些时候好像也就只能睡个5分钟， #line:730089
+Lori: 不过有时候好像又能睡1个小时。 #line:aca01d
+Mae: 那还挺麻烦的。 #line:7a15d5
+<<close>>
+<<setAnimInt Lori laying 2>>
+<<playOneShot event:/lori_quest/legs_move Lori>>
+<<wait 1>>
+<<setAnimInt Mae laying 2>>
+<<playOneShot event:/lori_quest/legs_move Mae>>
+<<wait 1>>
+//train flies past//
+<<trigger OverheadTracks TrainPassBottom>>
+<<wait 13>>
+//after train passes//
+<<setAnimInt Lori laying 1>>
+<<playOneShot event:/lori_quest/legs_move Lori>>
+<<wait 1>>
+<<setAnimInt Mae laying 3>>
+<<playOneShot event:/lori_quest/legs_move Mae>>
+<<wait 1>>
+Lori: 我总有一些奇奇怪怪的想法， #line:0368f6
+Lori: 比如，我会想到树林里去睡觉； #line:17cea3
+Lori: 或者白天跑到一间废弃房子的地下室睡大觉， #line:9a2189
+Lori: 然后只在夜里才出来活动。 #line:551a51
+Lori: 再比如，我会把自己想象成一只怪兽。 #line:e550eb
+Lori: 亦或是，想象自己变得更漂亮之类的。 #line:cd762d
+	->我明白那种感受。 #line:2b09bb
+		Mae: 我还想过什么时候去吃人呢。 #line:af4943
+		Lori: 你真有这种想法？？？ #line:0bf379
+		Mae: 只要是一见到人，我就会这么想。 #line:319cc2
+		Mae: 而且我还会想，人到底是个什么味儿呢？ #line:0de00f
+		Lori: 另外我感觉这世界上坏人特别多， #line:3af0ac
+		Lori: 你说会不会有些人味道更好呢？ #line:555d46
+		Mae: 嗯哼哼哼哈哈哈哈哈～ #line:ea3e03
+	->有些梦还是可以成真的。 #line:5f5b51
+		Lori: 噢～是吗，哈哈哈。 #line:f6a8b0
+		Lori: 可我长得一点也不好看。 #line:aa81b3
+		Mae: 嘿，其实你长得还不错啊。 #line:6b1900
+		Mae: 像你这样年纪的孩子都不喜欢自己的长相。 #line:5f95d7
+		Lori: 说实话，我长得确实不怎么样。 #line:4465b7
+		Mae: 你比我可好看多啦。 #line:2c4b2a
+		Lori: 你真这么觉得？ #line:a8b7a6
+		Mae: 句句当真。 #line:5a1430
+<<close>>
+<<setAnimInt Lori laying 2>>
+<<playOneShot event:/lori_quest/legs_move Lori>>
+<<wait 1>>
+<<setAnimInt Mae laying 2>>
+<<playOneShot event:/lori_quest/legs_move Mae>>
+<<wait 1>>
+//train flies past going other direction//
+<<trigger OverheadTracks TrainPassBoth>>
+<<wait 13>>
+Lori: 好了好了好了好了。 #line:0834e8
+Lori: 咱们去看看这次又有什么收获吧。 #line:91386f
+<<irisOut 1 wait>>
+<<scene Tracks>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 299,16
+---
+<<playerFace -1>>
+<<if $did_lori_friendship_quest_1 is 0>>
+    <<setAnimInt Lori laying 1>>
+    <<setAnimInt Mae laying 1>>
+<<else>>
+    <<warp Lori Lori2>>
+    <<warp Mae Mae2>>
+    <<toggleUpdateTargetNormal 0>>
+    <<rotate Mae -180>>
+    <<setAnimInt Lori laying 1>>
+    <<setAnimInt Mae laying 1>>
+<<endif>>
+===

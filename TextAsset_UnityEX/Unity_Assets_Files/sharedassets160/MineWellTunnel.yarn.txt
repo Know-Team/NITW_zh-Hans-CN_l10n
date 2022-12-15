@@ -1,0 +1,247 @@
+title: InitLevel
+tags: 
+colorID: 5
+position: 460,-1880
+---
+<<flip Mae -1>>
+<<set $death_walk to 1>>
+<<playIdleAnimationPlayer>>
+<<playerCanJump 0>>
+<<flip Gregg -1>>
+<<flip Bea -1>>
+<<flip Angus -1>>
+<<setCanInteract Angus 0>>
+<<setCanInteract Bea 0>>
+<<setCanInteract Gregg 0>>
+===
+title: WellBottom
+tags: 
+colorID: 5
+position: 926,-1010
+---
+<<cameraLookAt CameraWellBottom 2>>
+<<setSpriteLayer Angus AngusFG>>
+<<walk Gregg GreggBottom2 1>>
+<<walk Angus AngusBottom2 1>>
+<<walk Bea BeaBottom2>>
+<<waitForMove Bea>>
+//when you walk up to friends //
+Mae: 这是什么东西啊？ #line:454c50
+<<lookDirection Bea 0 1>>
+Bea: 可能是个通风管之类的东西。 #line:8a6094
+Bea: 在过去，这个东西的作用是通风，这样井下的矿工就不会窒息了。 #line:849fc9
+Bea: 但看起来，这玩意儿可够年头了。 #line:0b3a4d
+Mae: ？ #line:cfd7bc
+<<lookAt Bea Mae>>
+Bea: 旅游手册上写的。 #line:7e9f41
+<<lookAt Bea Gregg>>
+<<lookDirection Gregg 0 1>>
+Gregg: 你 好！！！！ D: #line:58f56e
+Gregg: 我 们 在 这 下 面！！！！！ D: #line:1f152b
+Gregg: 请 别 问 我 们 为 什 么 要 这 么 做 D: #line:09d175
+<<lookAt Bea Angus>>
+Angus: 说不定我们运气不错，会有人在大晚上的来树林里呢。 #line:87c62e
+<<lookAt Bea Mae>>
+<<lookAt Gregg Mae>>
+Mae: 我……我可以试试看。 #line:025a75
+<<lookAt Bea Angus>>
+Angus: 不用你试，我能…… #line:5615c8
+Bea: …… #line:eb2195
+Gregg: …… :| #line:bcf96d
+Angus: ……好了，你们准备好了吗？ #line:1e20b0
+<<lookAt Bea Mae>>
+    ->是的。 #line:ba3c5e
+        Mae: 我不知道自己准备好没有。 #line:ea55cf
+        Mae: 我现在感觉自己就像海豚一样， #line:bd23ae
+        Mae: 变得很嗨。 #line:8e93b6
+        <<lookAt Bea Gregg>>
+        Gregg: 像海豚一样嗨，是吗？ #line:1c0d74
+        <<lookAt Bea Mae>>
+        Mae: 不，就像是当你的身体状态处在“哇我差点就没命啦"时。 #line:f32ff1
+        Mae: 你们也会变得很嗨很嗨，因为你们的身体里全是海豚。 #line:337a24
+        Bea: 好吧，说真的，我现在很懵。梅，你还好吗？ #line:ac3b71
+        <<lookAt Bea Angus>>
+        Angus: 内啡肽。 #line:ffc818
+        <<lookAt Bea Mae>>
+        Bea: 啊啊啊，好啦。 #line:ac0b01
+        Mae: 在那儿！谢谢你。这些海豚。 #line:186e61
+        Gregg: 好的，好的， #line:f1f163
+        Gregg: 咱们可以骑着这些海豚从这儿逃出去。 #line:fdc2c8
+    ->还没。 #line:ab318b
+        Mae: 不过这也没什么， #line:63acef
+        Mae: 因为我可不想让你们活活饿死在这儿。 #line:bcdd57
+        Gregg: 嗷，姐们。 #line:2e0e07
+        Bea: 谢谢了，梅，你人可真是太好啦。 #line:f7e2e9
+Mae: 啊，我觉得我能办得到。 #line:7673f3
+Angus: 我们会支持你的。 #line:11d0b0
+Mae: 好吧。 #line:5b8c4b
+<<alwaysLookAt Bea Mae>>
+<<alwaysLookAt Gregg Mae>>
+<<set $death_walk to 0>>
+<<playerCanJump 1>>
+<<cameraFollowPlayer 1>>
+===
+title: EnterLevel
+tags: 
+colorID: 5
+position: 916,-1846
+---
+Angus: 是的，是新鲜空气的味道。 #line:7746f9
+Angus: *嗅 嗅* #line:909c64
+Angus: 还有水的味道。 #line:861d9e
+Gregg: 嘿，姐们，这也太绝了吧。 #line:59b533
+Bea: 你能闻出水的味道？ #line:cae3e6
+Angus: 希望那不是条地下河， #line:afb547
+Angus: 因为洞穴里的地下河是相当危险的。 #line:9fe4cc
+Gregg: 应该叫矿井河才对。咱们现在可是在矿井里啊。 #line:b1604d
+Angus: 没错。 #line:4a4487
+<<walk Gregg GreggEdge>>
+<<walk Angus AngusEdge>>
+<<walk Bea BeaEdge>>
+===
+title: WatersEdge
+tags: 
+colorID: 5
+position: 913,-1569
+---
+Angus: 嗯…… #line:c4ca06
+Gregg: 我能看得到水底。 #line:17e4c4
+Mae: 我觉得，一英尺深的水不可能会淹死咱们的。 #line:d65a8a
+Angus: 是这样的。 #line:141944
+===
+title: IbonFight
+tags: 
+colorID: 5
+position: 930,-1310
+---
+<<tell _AmbientSFX:bg1 FadeOut1>>
+<<setCameraOffset 0 0.5>>
+<<setCameraMode Stationary>>
+<<playOneShot event:/finale/mae_enter_void Mae>>
+<<lerp Mae MaeUnderwater .5>>
+<<wait .5>>
+
+<<wait .5>>
+<<cameraLookAt CameraUnderwater .25>>
+<<wait .25>>
+<<fadeOut .25 wait>>
+
+<<cameraLookAt CameraIbonScene 0>>
+<<warp Mae MaeIbonScene>>
+<<playAnimation Mae MaeFlailLeft1>>
+<<playAmbientSFX AmbientSFX:amb_ibon_void_underwater 1>>
+<<fadeIn 1 wait>>
+
+//at a point about halfway in, mae plunges underwater and into this inky blackness. It’s mostly blackness and she just floats there so this isn’t like super intensive or anything so I think we can do something simple here?//
+<<wait 4>>
+Mae: 现在，我知道你是谁了。 #line:f8bf61
+Mae: 我觉得，我以前就已经知道这些了， #line:9fb28a
+Mae: 但， #line:6c696e
+Mae: 你知道吗， #line:000050
+Mae: 几年前， #line:119173
+    Mae: 在我把那个孩子送到医院之后， #line:265bd4
+    Mae: 他们就说，我有易怒的毛病。 #line:521c5f
+    Mae: 可事实根本就不是这样的。 #line:56e66f
+    Mae: 我之所以会很愤怒，是因为别的事情， #line:d86457
+    Mae: 我是因为那些我已经失去的东西才生气的。 #line:0b7235
+    Mae: 为了能控制住我的愤怒，我尽了最大的努力， #line:23ccba
+    Mae: 可这却让我变得更脆弱了。 #line:6630df
+    Mae: 然后，我又失去了很多，很多，很多…… #line:67040a
+    Mae: 这么做根本一点用也没有。 #line:215263
+    Mae: 我从大学退学回家， #line:a62485
+Mae: 在回来的公交车上，我做过这样的梦， #line:cae8d7
+    Mae: 我梦见，我想要变得更愤怒。 #line:d44c6d
+    Mae: 或者，当我看到 #line:5e32de
+    Mae: 窗外那最后一片树叶 #line:74ada2
+    Mae: 被风吹落时， #line:ab28bc
+    Mae: 我就会恐惧不已， #line:c29465
+    Mae: 惶惶不可终日。 #line:42f565
+    Mae: 而且，恐惧是*痛苦*的。 #line:1a9527
+    Mae: 这感觉就像，在我来这儿很久以前， #line:643831
+    Mae: 一切就都已经结束了。 #line:636e7a
+Mae: 所以，在很长一段时间里，我一直都在躲藏， #line:c3afd0
+Mae: 或是想要逃避这一切。 #line:6c582c
+Mae: 我明白了， #line:534b24
+Mae: 只要我还活着， #line:8219d7
+Mae: 这一切就不会停止。 #line:61f6ea
+Mae: 但在我死的那一刻， #line:3afe11
+Mae: 我也想让它体验一下痛苦的滋味。 #line:94263c
+Mae: 在我的朋友们离我而去的时候， #line:4213d7
+Mae: 在我不得不放手的时候， #line:ddd81f
+Mae: 在整个镇被从地图上移除的时候， #line:050366
+Mae: 我想让它彻彻底底地体验一下痛苦的滋味。 #line:c3fa65
+Mae: 我想要失去， #line:5073e8
+Mae: 我想被打得遍体鳞伤， #line:2e0db7
+Mae: 我想要坚持。 #line:e65175
+Mae: 但最后，我却失败了。 #line:50181e
+Mae: 然后，一切都结束了。 #line:bfb451
+Mae: 你知道吗？ #line:04a5db
+Mae: 当那一刻真正到来， #line:9ee2a1
+Mae: 我会再次许下愿望， #line:852a2f
+Mae: 我也会让它体验痛苦的滋味， #line:6250e3
+Mae: 因为这表示，它还有意义； #line:f38454
+Mae: 因为这表示，至少，我……还有意义。 #line:63dfdb
+Mae: 嘿嘿哈哈嘿嘿嘿嘿…… #line:8e62e4
+Mae: 能成为某些东西就已经很让人惊讶了。 #line:f9c047
+Ibon: 1837582 #line:e67776
+Mae: 我根本听不懂你在说些什么，你知道吗？ #line:75f81a
+Ibon: 3487234 #line:669727
+Mae: 哦，快闭嘴吧。 #line:a33722
+Mae: 我知道，到最后这也救不了我， #line:2b31cd
+Mae: 但我也不需要永远让它来拯救我， #line:5184df
+Mae: 我只想让它在现在来拯救我。 #line:b5c9fc
+Mae: 所以，如果你想在这儿杀了我的话， #line:851d62
+Mae: 那就来吧。 #line:08313c
+Mae: 如果不想…… #line:9c91d6
+//trigger ibon swarming animation that lasts like 2 seconds//
+//abruptly cut to black//
+<<stopAmbientSFX AmbientSFX:amb_ibon_void_underwater>>
+<<fadeOut .0001 wait>>
+
+//cut to everyone standing on the opposite bank
+//and mae standing near them still in the water//
+<<warp Angus AngusBank>>
+<<warp Mae MaeShallows>>
+<<warp Gregg GreggBank>>
+<<warp Bea BeaBank>>
+<<playIdleAnimationPlayer>>
+
+<<cameraLookAt CameraBank 0>>
+
+<<flip Gregg 1>>
+<<flip Angus 1>>
+<<flip Bea 1>>
+
+<<snapLookForward Mae>>
+<<wait 2>>
+
+<<set $death_walk to 0>>
+<<playerForcePlayIdleAnimation>>
+
+<<tell _AmbientSFX:bg2 Play1>>
+<<fadeIn 1 wait>>
+Bea: 梅！ #line:4de1a3
+Gregg: 姐们，你怎么样了？ #line:ba03a7
+Mae: 哇哦。 #line:fed13a
+Bea: 刚才你就和梦游一样。 #line:d4cc97
+Angus: 你想让我背着你吗？ #line:766d6d
+Mae: 不用了……我觉得我没什么事……我就是 #line:d07423
+Mae: ……特别特别累。 #line:8fa67e
+Gregg: 要是你想歇会儿的话，就歇一会儿，咱们现在已经安全了。 #line:241d08
+Mae: 嗯哼。 #line:892bea
+
+//others walk over to the bottom of the well//
+<<walk Angus AngusBottom>>
+<<walk Gregg GreggBottom>>
+<<walk Bea BeaBottom>>
+//as they go//
+Angus: 嘿！这块儿有光！ #line:1c4efd
+Bea: 是你闻出来的吗？ #line:e22a1f
+Gregg: 我想是的。 #line:7a74ee
+
+<<setCanInteract Bea 0>>
+<<setCanInteract Gregg 0>>
+<<setCanInteract Angus 0>>
+
+<<cameraFollowPlayer 1>>
+===

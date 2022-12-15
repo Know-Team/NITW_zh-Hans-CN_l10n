@@ -1,0 +1,135 @@
+title: Creek.2
+tags: 
+colorID: 0
+position: 1000,535
+---
+Mae: 购物袋就像小小的幽灵， #line:27c843
+Mae: 自杂货店而来， #line:16299c
+Mae: 作祟于四面八方。 #line:388522
+===
+title: Creek.3
+tags: 
+colorID: 0
+position: 1277,541
+---
+Mae: 哇哦，我听见了蟾蜍的叫声， #line:48a56e
+Mae: 还听见了只仓鸮的声音。 #line:342af9
+Mae: 我敢打赌，这里肯定有不少女巫的候选使魔。 #line:f7f97a
+<<end>>
+===
+title: Creek.1
+tags: 
+colorID: 0
+position: 704,505
+---
+Mae: 我记得以前这附近有一个老锯木厂来着。 #line:e63ebf
+Mae: 毕竟上面那个公园名字就叫做锯木厂公园。 #line:f974e0
+Mae: 看来他们把一捆原木给弄掉了。 #line:554190
+Mae: *唉* #line:2353fb
+Mae: 可能得从这堆东西上爬过去了。 #line:05796a
+
+===
+title: BottomOfCliff
+tags: 
+colorID: 0
+position: 399,512
+---
+Mae: 好吧…… #line:7b70f8
+Mae: ……该死。 #line:d9e711
+Mae: 嗯…… #line:99bf8c
+===
+title: BottomOfPipes.1
+tags: 
+colorID: 0
+position: 491,834
+---
+Mae: 啊。这可真有够“潮"的。 #line:cf8e89
+Mae: 湿嗒嗒的大自然，湿嗒嗒的垃圾。 #line:01951e
+===
+title: BottomOfPipes.2
+tags: 
+colorID: 0
+position: 728,832
+---
+Mae: 这些都是老驴生鲜的购物车吗？ #line:52a907
+Mae: 到这儿来可要横穿整个镇子呢！ #line:f53836
+Mae: 可谓是契而不舍！ #line:ccc7f9
+<<end>>
+===
+title: TopPipe
+tags: 
+colorID: 0
+position: 913,250
+---
+<<if $firefliesInTargets is 0>>
+	<<if $ravineTopPipe is 0>>
+                Mae: 哇，好吧，嗯。 #line:2e183c
+                Mae: 小镇在树林的另一边。 #line:ba5ec7
+                Mae: 但这实在是…… #line:75033f
+                Mae: 这儿这么黑， #line:0b00d8
+		Mae: 我又孤零零的一个人。 #line:760158
+		<<set $ravineTopPipe to 1>>
+	<<elseif $ravineTopPipe is 1>>
+		Mae: 真是天又黑，人又孤单。 #line:54e0e9
+	<<endif>>
+<<elseif $firefliesInTargets < 6>>
+	<<if $ravineTopPipe < 10>>
+		Mae: 嘿，小家伙们，能帮我照个亮吗？ #line:1c64cc
+		Mae: 帮帮忙好吗？ #line:a68ac6
+		Mae: 要是你们能再多叫点小伙伴来的话就好了…… #line:5d5741
+		Mae: 嗯……好吧。 #line:aa56b6
+		<<set $ravineTopPipe to 10>>
+	<<elseif $ravineTopPipe is 10>>
+		Mae: 可能还要再多来点萤火虫才行。 #line:490d6c
+		Mae: 我倒不是很怕黑， #line:902918
+		Mae: 但还是有点怕。 #line:99a6c8
+		Mae: 可能还得再多招点萤火虫吧。 #line:d7906a
+		<<set $ravineTopPipe to 11>>
+	<<elseif $ravineTopPipe is 11>>
+		Mae: 再多来点小萤火虫吧。 #line:5ac52d
+	<<endif>>
+<<elseif $firefliesInTargets < 9>>
+	<<if $ravineTopPipe < 20>>
+		Mae: 好吧好吧，这下边可真是黑得伸手不见五指啊。 #line:d7c083
+                Mae: 不过多亏有你们帮忙，现在问题解决了。 #line:953f2c
+                Mae: 咱们可能还需要更多你的小伙伴才行…… #line:5b78c5
+		<<set $ravineTopPipe to 21>>
+	<<elseif $ravineTopPipe is 21>>
+		Mae: 听着，虫虫们： #line:80d793
+                Mae: 咱们还要找到更多小虫虫才行。 #line:2a1f99
+                Mae: 我滴个天，我现在居然在放虫子诶！ #line:7b278f
+                Mae: 所以我现在可以从这条管子跳到沟里去了。 #line:420af4
+                Mae: 我的人生都发生了些什么？ #line:975502
+		<<set $ravineTopPipe to 22>>
+	<<elseif $ravineTopPipe is 22>>
+		Mae: 再多来点萤火虫吧，这样我就能从管子上跳下去了。 #line:95df43
+	<<endif>>
+<<elseif $firefliesInTargets >= 9>>
+	<<if $ravineTopPipe < 30>>
+		<<releaseFireflies>>
+		<<wait 3>>
+		Mae: 喔哦。 #line:e1fe48
+		Mae: 我真想吐个槽：上他喵什么大学！ #line:28fac7
+		Mae: 我可是虫语者啊！ #line:d126c6
+		Mae: 好啦！出发！ #line:61f12c
+		<<set $ravineTopPipe to 30>>
+		<<end>>
+	<<endif>>
+<<endif>>
+
+	
+
+===
+title: AfterLogSlide
+tags: 
+colorID: 0
+position: 456,188
+---
+Mae: 哦，我的天。 #line:632d93
+Mae: 刚才可真是太险了！ #line:4e7413
+Mae: 我差点把小命给丢了！ #line:7a8f54
+Mae: 真是“好"极了！ #line:89349f
+<<close>>
+<<wait 1.5>>
+Mae: 我可不想死在这阴沟里。 #line:c24609
+===

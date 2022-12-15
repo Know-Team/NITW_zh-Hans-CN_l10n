@@ -1,0 +1,157 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 523,187
+---
+<<irisIn 1 wait>>
+FortuneTeller: 你敢转动这命运之轮吗？ #line:57fa07
+Mae: 说说它有什么神秘之处值得我转动。 #line:ac3b62
+FortuneTeller: 没有人能说出命运之轮的神秘所在。 #line:f23d9c
+FortuneTeller: 记住，命运之轮就是一个神秘莫测的环状预言家。 #line:4359fb
+Mae: 哦，是吗。它能够预言吗？ #line:77baa0
+FortuneTeller: 卡片会预知你的未来。 #line:d73547
+Mae: 那好，我来试试。 #line:3f8e23
+<<tell FortuneWheelBrain StartSpin>>
+===
+title: AfterSpin
+tags: 
+colorID: 0
+position: 770,192
+---
+<<if $fortune_wheel_spin_power > 0.8>>
+    FortuneTeller: 用力去转！用全力去转！ #line:8e9d5f
+<<elseif $fortune_wheel_spin_power > 0.6>>
+    FortuneTeller: 转啊，转啊，转啊。 #line:bab4d8
+<<elseif $fortune_wheel_spin_power > 0.3>>
+    FortuneTeller: 哦，孩子，你转的劲儿也……太小了吧。 #line:f21655
+    Mae: 我已经20了。 #line:084cb5
+<<else>>
+    FortuneTeller: 你是不是胳膊有伤呀？ #line:8cd78e
+    Mae: 说真的，我的胳膊最近的确有点疼。 #line:1fa5cf
+    FortuneTeller: 我就说嘛。因为我能预见一切。 #line:53e7a2
+<<endif>>
+
+<<if $fortune_wheel_index is 1>>
+    FortuneTeller: 你的命运即是你的未来， #line:6be02d
+    FortuneTeller: 你的命运如何， #line:b03610
+    FortuneTeller: 将马上揭晓。 #line:cff2c6
+    Mae: 好吧，来看看抽到的是什么牌吧。 #line:249f77
+    FortuneTeller: 你选中的这张牌表示…… #line:3655d2
+    FortuneTeller: 你会一直活下去…… #line:7d2289
+    Mae: 哦，这不是挺好的吗。 #line:7ac14d
+    FortuneTeller: 哎呀，直到你死去的那一刻为止。 #line:04fb03
+    Mae: 哦。 #line:60f92f
+    Mae: 等等，这事无论如何都是会发生的啊！ #line:08a6df
+<<elseif $fortune_wheel_index is 2>>
+    FortuneTeller: 你的命运即是你的未来， #line:e6b06b
+    FortuneTeller: 你的命运如何， #line:3bf6ae
+    FortuneTeller: 将马上揭晓。 #line:8e9fa0
+    Mae: 好吧，来看看抽到的是什么牌吧。 #line:075702
+    FortuneTeller: 你选中的这张牌表示…… #line:ca0ad6
+    FortuneTeller: 你会预见到很多问题和困难， #line:ff4b6c
+    FortuneTeller: 即使在你生命终止的那一刻也是如此。 #line:c6398e
+    Mae: 哦。 #line:a08c96
+    FortuneTeller: 是这样的。 #line:178ba0
+    Mae: 我觉得，每个人的一生都会遇到这种情况。 #line:3652e9
+    Mae: 而且，每个人都会遇到各种各样的问题。 #line:edb6f9
+    Mae: 这怎么能叫预言呢？ #line:f56fde
+<<elseif $fortune_wheel_index is 3>>
+    FortuneTeller: 你的命运即是你的未来， #line:dad9b2
+    FortuneTeller: 你的命运如何， #line:0e8848
+    FortuneTeller: 将马上揭晓。 #line:e951ec
+    Mae: 好吧，来看看抽到的是什么牌吧。 #line:d00619
+    FortuneTeller: 你选中的这张牌表示…… #line:a53b81
+    FortuneTeller: 有些你想拥有的， #line:feb1d6
+    FortuneTeller: 终可得。 #line:667435
+    FortuneTeller: 有些你渴望的， #line:79855c
+    FortuneTeller: 不可得。 #line:d461f5
+    Mae: 哦，少来了。 #line:eb60ca
+    Mae: 这和命运根本就没什么关系， #line:edf5ce
+    Mae: 这只是……人生本该如此之类的东西。 #line:1b7e48
+<<elseif $fortune_wheel_index is 4>>
+    FortuneTeller: 你的命运即是你的未来， #line:c7dedd
+    FortuneTeller: 你的命运如何， #line:265f0b
+    FortuneTeller: 将马上揭晓。 #line:6bfdfa
+    Mae: 好吧，来看看抽到的是什么牌吧。 #line:fab3d8
+    FortuneTeller: 你选中的这张牌表示…… #line:4d14ac
+    FortuneTeller: 在你的一生当中，你既会遇到能伤害到你的小人， #line:9c4084
+    FortuneTeller: 也会遇到可以保护你的贵人。 #line:9a0d78
+    FortuneTeller: 二者皆有。 #line:52ff04
+    Mae: …… #line:4b4232
+    Mae: 就是说，人生中遇到的有些人还不错，但有些人就很混蛋，是吗？ #line:e996bd
+    FortuneTeller: 注意你的言辞！ #line:5ca98f
+    Mae: 抱歉。但这好像就是人生中的随机事件。 #line:3bc3f2
+<<elseif $fortune_wheel_index is 5>>
+    FortuneTeller: 你的命运即是你的未来， #line:4895a6
+    FortuneTeller: 你的命运如何， #line:383720
+    FortuneTeller: 将马上揭晓。 #line:c49289
+    Mae: 好吧，来看看抽到的是什么牌吧。 #line:bb696b
+    FortuneTeller: 你选中的这张牌表示…… #line:2bdcc7
+    FortuneTeller: 你会预见到许多事情： #line:67c01f
+    FortuneTeller: 有时，对于某些事，你必须敬而远之； #line:754bed
+    FortuneTeller: 而有时，对于另一些事，你必须坚定立场； #line:e952e6
+    FortuneTeller: 但最终，你只能在事后才会明白该如何处理。 #line:6630a9
+    <<wait 2>>
+    Mae: 就这？这一点神秘感也没有啊！ #line:76704f
+    Mae: 这就像……幸运饼干里的话一样。 #line:d55c5d
+<<elseif $fortune_wheel_index is 6>>
+    FortuneTeller: 你的命运即是你的未来， #line:c16a7e
+    FortuneTeller: 你的命运如何， #line:3b4d8b
+    FortuneTeller: 将马上揭晓。 #line:664fb9
+    Mae: 好吧，来看看抽到的是什么牌吧。 #line:d7e708
+    FortuneTeller: 你选中的这张牌表示…… #line:7c0f77
+    FortuneTeller: 有些事物是你可以理解的， #line:9e86cd
+    FortuneTeller: 而有些事物是你无法理解的， #line:e773d2
+    FortuneTeller: 而这正是你的命运。 #line:3444ea
+    Mae: …… #line:fb4fa1
+    Mae: 就是说有些东西我能理解得了，而有些……等等。 #line:4e00df
+    Mae: 这命算得可真是蠢到家啦！ #line:732157
+    Mae: 每个人！每个人都是这样，好吗！ #line:3f7825
+<<elseif $fortune_wheel_index is 7>>
+    FortuneTeller: 你的命运即是你的未来， #line:a3abca
+    FortuneTeller: 你的命运如何， #line:934d71
+    FortuneTeller: 将马上揭晓。 #line:cb85b5
+    Mae: 好吧，来看看抽到的是什么牌吧。 #line:5377e9
+    FortuneTeller: 你选中的这张牌表示…… #line:7b4b1b
+    FortuneTeller: 这是一个巨大的圆， #line:9c4570
+    FortuneTeller: 或是一个球 #line:9ab7f4
+    FortuneTeller: 一个扁平的球。 #line:aa2dab
+    FortuneTeller: 它会消耗你的思想， #line:f142f5
+    FortuneTeller: 但同时，你也可以反过来吞噬它。 #line:b1deb8
+    Mae: 这就像是……披萨！或者是像多纳狼的龙舌兰鸡尾酒蛋糕？ #line:ad8df9
+    Mae: 难道我的命运就只是为了吃披萨或甜甜圈这些东西吗？ #line:877072
+    Mae: 我是说，这样虽然很好，可我还是想要一些 #line:6d0460
+    Mae: 更神秘的东西。 #line:3a1f4c
+<<elseif $fortune_wheel_index is 8>>
+    FortuneTeller: 你的命运即是你的未来， #line:ab0ac9
+    FortuneTeller: 你的命运如何， #line:4da895
+    FortuneTeller: 将马上揭晓。 #line:6ca1d5
+    Mae: 好吧，来看看抽到的是什么牌吧。 #line:7614dc
+    FortuneTeller: 你选中的这张牌表示…… #line:04a2e7
+    FortuneTeller: 有时，生活会像你钓上来后视作珍品的那些鱼； #line:b54d9e
+    FortuneTeller: 有时，生活会像你钓上来后吃掉的那些鱼； #line:516e8e
+    FortuneTeller: 而有时，生活会像你钓上来后扔回河里的那些鱼。 #line:5102ad
+    Mae: 好吧，就是说，有些时候情况会很好，另一些时候就很一般， #line:aa937b
+    Mae: 还有些时候情况会很糟。 #line:bf664d
+    Mae: 我觉得我以前在贺年卡上见过这样的话。 #line:e6c4f3
+    Mae: 这根本就不是算命！这不就是平常都会遇到的情况吗！ #line:c4597c
+<<else>>
+    FortuneTeller: 哎呀，看来出bug了。 #line:1dfe01
+    FortuneTeller: 记住，一定要告诉开发人员有bug，这样他们就能修复bug了。 #line:b47836
+    Mae: 没问题！ #line:63ce5f
+<<endif>>
+
+FortuneTeller: 卡牌是不会说谎的。 #line:b551d2
+FortuneTeller: 而且，选牌的命运之轮是神秘莫测的。 #line:6159ed
+Mae: 这么说……真相也是神秘莫测的吗？ #line:edc312
+FortuneTeller: 孩子，看来你已经学会不少东西了。 #line:d5744f
+Mae: 我已经20了。 #line:f8befb
+Mae: ……不管怎么说，这还是挺有意思的。 #line:20e6be
+FortuneTeller: 愿命运之轮总会指向你所希望之事。 #line:281bfa
+Mae: 好的。 #line:605711
+
+<<set $did_fortune_wheel to 1>>
+
+<<irisOut 1 wait>>
+<<scene TowneCentreEast_Harfest>>
+===

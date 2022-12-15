@@ -1,0 +1,269 @@
+title: Molly
+tags: 
+colorID: 0
+position: 159,578
+---
+<<set $act to 1>>
+<<set $day to 0>>
+<<trackAllSpeechBubblesToCharacters 0>>
+<<fadeOutMusic .25>>
+<<wait 1>>
+<<setAnimBool Molly flashlight 1>>
+<<playOneShot event:/playground/flashlight_on MollyFlashlightSound>> 
+Mae: -_- #line:6fe5bc
+Molly: 你好啊，梅。好久不见。 #line:b17506
+Mae: 嘿，你来这儿干什么？是没别的事可做了吗？ #line:7837da
+Molly: 我正值班呢。然后我就看见，你在这严禁入内的游乐场里闲逛。 #line:8773c7
+Mae: 所以呢？ :\ #line:0a6724
+<<setAnimBool Molly hip 1>>
+Molly: 梅，快上车。 #line:95f681
+Mae: 不要。 :| #line:954d55
+Molly: 你想回来第一晚就睡局子里吗，梅？ #line:ac8356
+<<close>>
+<<wait 2>>
+Mae: 不要。 :( #line:abb682
+<<set $night to 1>>
+<<set $act to 1>>
+<<set $day to 0>>
+<<fadeOut 1 wait>>
+<<scene MaeHouse left>>
+
+===
+title: TowerTop
+tags: 
+colorID: 0
+position: 306,141
+---
+<<freezePlayer>>
+Mae: 话说，我离开这儿才两年时间啊。 #line:28bef4
+Mae: 我是在说负鼠泉，不是这个游乐场。 #line:b7e70d
+Mae: 现在这儿已经变得乱七八糟的了。我得把这些都记下来。 #line:078aae
+<<close>>
+//journal time!//
+<<close>>
+<<unlockDoodle Intro>>
+<<unlockDoodle RipGranddad>>
+<<openJournal>>
+<<end>>
+
+===
+title: Branch
+tags: 
+colorID: 0
+position: 657,628
+---
+<<if $playground_branch is 0>>
+        Mae: 嘿呀！好！ #line:0a840e
+        Mae: 现在我得爬到塔顶上去， #line:584f5c
+        Mae: 然后就能顺着电线回镇子啦！ #line:8c0d38
+	<<set $playground_branch to 1>>
+<<else>>
+        Mae: 希望各家各户门前面的树没让人给砍了。 #line:0f3849
+        Mae: 我以前可是让潘德森先生抓过狂的。 #line:55af68
+        Mae: 我就在他家那棵树上头瞎蹦跶，还在电线上跑来跑去的。 #line:c30542
+        Mae: 管他的呢，反正大伙儿都这么干过。 #line:165351
+        Mae: 从某种意义上说，这应该也算是人行道吧。 #line:ea9a33
+<<endif>>
+
+===
+title: BoatTop
+tags: temp
+colorID: 0
+position: 28,925
+---
+<<if $playground_boat_top is 0>>
+    <<lookUp Mae>>
+    Mae: 看来有人把梯子给撤了。 #line:c5bef9
+    Mae: 要是我能爬到这玩意上面的话…… #line:7016fc
+    Mae: 呃。 #line:a8986a
+    <<wait 1>><U+200B> #line:7bcefc
+    <<lookDirection Mae .5 .5>>
+    Mae: <o> #line:59827c
+    <<cameraLookAt LookAtTree 1.5>>
+    <<wait 1>>
+    Mae: 我还是小孩子那会儿，怎么也爬不上去那棵树。 #line:9c568a
+    Mae: 这些带编号的木桩子看着就像在笑我。 #line:6f111b
+    Mae: 树桩子和别的小鬼都在笑我。 #line:4923ba
+    <<wait 1>>
+    Mae: 我先想像一下，该怎么上去…… #line:f59071
+    <<tell TripleJumpVisualization Show>>
+    <<wait 2>>
+    Mae: 嗯嗯。嗯嗯嗯。 #line:c5dfbf
+    Mae: 要想蹦上去得先助跑，不能停。哪怕一秒也不能停。 #line:107bdd
+    Mae: 这样就能有足够的动能啦。 #line:f0223b
+    Mae: 我觉得我能办得到。 #line:be5445
+    Mae: 冲刺，然后蹦蹦蹦！\o/ #line:322c91
+    <<lookNearest Mae>>
+    Mae: _o_ #line:e01304
+    <<cameraFollowPlayer 1>>
+    <<tell TripleJumpVisualization Hide>>
+    <<set $playground_boat_top += 1>>
+<<else>>
+    <<lookDirection Mae .5 .5>>
+    <<if $playground_boat_top is 1>>
+        Mae: 我是不是应该在尝试前就放弃呢？ #line:04bf34
+        <<set $playground_boat_top += 1>>
+    <<endif>>
+    Mae: 嗯。 #line:c1da68
+    ->好吧，我再来试一次。冲刺，然后再来个三段跳。 #line:ae91fd
+        <<lookNearest Mae>>
+    ->等下，我该怎么做来着？ #line:2a0d97
+        Mae: <o> #line:552de5
+        <<cameraLookAt LookAtTree 1.5>>
+        <<wait 1>>
+        <<tell TripleJumpVisualization Show>>
+        <<wait 2>>
+        Mae: 助跑的时候不能停，一下都不能停。 #line:f0a03f
+        Mae: 冲刺，然后蹦蹦蹦！\o/ #line:fa2a90
+        <<lookNearest Mae>>
+        Mae: _o_ #line:5075bb
+        <<cameraFollowPlayer 1>>
+        <<tell TripleJumpVisualization Hide>>
+    ->去他的吧，烦死人啦。 #line:a98d50
+        Mae: 等一下，我闭上眼来一次的话，说不定有戏…… #line:e4b395
+        Mae: U_U #line:9bdec9
+        <<close>>
+        <<fadeOut 1 wait>>
+        <<warp Mae MaeInTree>>
+        <<flip Mae -1>>
+        Mae: \o/ o_o #line:45cd63
+        <<wait .5>>
+        <<playOneShot event:/mae/footsteps/log/footstep_log_jump Jump1>>
+        <<wait .5>>
+        <<playOneShot event:/mae/footsteps/log/footstep_log_land Jump2>>
+        <<wait .1>>
+        <<playOneShot event:/mae/footsteps/log/footstep_log_jump Jump2>>
+        <<wait .5>>
+        <<playOneShot event:/mae/footsteps/log/footstep_log_land Jump2>>
+        <<wait .1>>
+        <<playOneShot event:/mae/footsteps/log/footstep_log_jump Jump3>>
+        <<playOneShot event:/vo/mae/jump Jump3>>
+        <<wait 1>>
+        <<clearPlayerOnGround>>
+        <<waitForPlayerFallToGround>>
+        <<playOneShot event:/mae/footsteps/branch/footstep_branch_land MaeInTree>>
+        <<lookNearest Mae>>
+        <<fadeIn 1>>
+        <<if $playground_warp is 0>>
+            <<wait 1>>
+            Mae: 太 太 太 牛 掰 了 吧！ #line:295af7
+            Mae: 不管遇到什么事，我都应该这么干才对！ #line:adc15e
+            Mae: 这样的话，没准我就能把驾照拿到手啦！ #line:d4d2ff
+            Mae: _o_ #line:7902ec
+            <<set $playground_warp to 1>>
+        <<else>>
+            Mae: _o_ #line:09f040
+        <<endif>>
+<<endif>>
+===
+title: BoatWheel.1
+tags: 
+colorID: 0
+position: -186,1339
+---
+Mae: 啊嘿！ #line:206119
+===
+title: BoatWheel.2
+tags: 
+colorID: 0
+position: 46,1378
+---
+Mae: 我还清清楚楚地记得，我以前只能将将摸到转向舵的上边。 #line:801ee5
+Mae: 我还记得，从那以后，我就几乎没长过个了。 #line:e3b124
+<<end>>
+===
+title: X_BoatWheel.3
+tags: 
+colorID: 0
+position: 533,1542
+---
+Mae: 这儿以前还有个旋转井子棋盘之类的玩意。 #line:ffcebf
+Mae: 这就是你会来这个巨型船堡的原因吧。 #line:08dc9c
+Mae: 就是为了来用世上最蠢的游戏方式，玩世上最蠢的游戏。 #line:fc68de
+<<end>>
+===
+title: Fence.1
+tags: 
+colorID: 0
+position: 1006,430
+---
+Mae: 哦，拜 托 啦。 #line:2df14a
+Mae: 可别指望我的小手能有足够的力气爬得过这玩意…… #line:6e109a
+
+===
+title: Fence.2
+tags: 
+colorID: 0
+position: 1257,425
+---
+Mae: 负鼠泉，你是挡不住我的。 #line:26e566
+Mae: 我可是你的女王大人啊。 #line:4c299b
+Mae: …… #line:b6f2e5
+Mae: ……没准我能直接跳到这根电话线杆上去…… #line:e5d6c2
+<<end>>
+===
+title: BeneathTree
+tags: 
+colorID: 0
+position: 1600,579
+---
+Mae: 哇哦，我差不多有10年没来过这儿了吧。 #line:184317
+Mae: 而且很明显，其他人也都没来过。 #line:c7c4d2
+<<end>>
+===
+title: BoatBottom.1
+tags: 
+colorID: 0
+position: 1038,896
+---
+Mae: 我真搞不懂这是一个什么设计。 #line:493668
+Mae: 难道是用船做成的城堡之类的？ #line:d8577d
+Mae: 现在这东西都快烂没了。 #line:783c57
+Mae: 现在这儿已经成了奇怪动物觅食和下小崽儿的地方了。 #line:874e03
+===
+title: BoatBottom.2
+tags: 
+colorID: 0
+position: 1315,973
+---
+Mae: 我在想，什么样的小怪物会在里头下崽子呢？ #line:4d5de0
+Mae: 可能会是土负鼠、夜蛇，或者是各种千奇百怪的奇珍异兽。 #line:a71d6a
+===
+title: BoatBottom.3
+tags: 
+colorID: 0
+position: 1570,1019
+---
+Mae: 我记得凯茜·多明戈的男朋友就带她来过这儿。 #line:98f7aa
+Mae: 他们俩来这儿，先是亲热了一番，然后就分手了。 #line:6cc600
+Mae: 第二天，凯茜就在卢塞纳堡购物中心 #line:956c4e
+Mae: 把辛迪·克拉克的鼻环给一把扯了下来。 #line:d51eba
+Mae: 这儿可真是个爱情圣地啊。 #line:75ec6c
+// would be funny if two rats scurried out of the boat just then//
+
+===
+title: BoatBottom.4
+tags: 
+colorID: 0
+position: 1819,1103
+---
+Mae: 嘿！还能看见潜望镜先生在这上边呢！ #line:5822ae
+<<end>>
+===
+title: TowerTopB
+tags: 
+colorID: 0
+position: 620,232
+---
+Mae: 这儿有条电线。 #line:971b67
+Mae: 回家咯。 #line:bda3b3
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 35,7
+---
+<<lookAt Molly Mae>>
+<<hide Molly>>
+<<hide CopCarNight>>
+===

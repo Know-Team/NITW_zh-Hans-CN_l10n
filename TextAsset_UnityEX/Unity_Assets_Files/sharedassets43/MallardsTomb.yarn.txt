@@ -1,0 +1,434 @@
+title: Bed
+tags: 
+colorID: 0
+position: 30611,-14620
+---
+<<if $mallards_secret_day is 1>>
+    <<if $mallards_bed is 0>>
+        <<set $mallards_bed to 1>>
+        Mae: 不管住在这儿的人是谁，他一定是个信徒。 #line:c0a1ba
+        Mae: 五圣贤。 #line:ea3110
+        Mae: 在我最后一次看我奶奶的时候， #line:0a7d86
+        Mae: 我看见她也有这么一个物件。 #line:e86d72
+    <<elseif $mallards_bed is 1>>
+        <<set $mallards_bed to 2>>
+        Mae: “圣像可以招财纳福，" #line:9c41b2
+        Mae: “驱灾辟邪。" #line:9ed601
+        Mae: 这是我很多年前，在主日学校里 #line:dcb179
+        Mae: 学到的最最重要的一句话。 #line:48374f
+    <<elseif $mallards_bed is 2>>
+        <<set $mallards_bed to 3>>
+        Mae: 最后，在各圣贤的注视下，奶奶去世了。 #line:8dd7c1
+        Mae: 她的大限已到。 #line:e38f87
+        Mae: 而且，那些所谓的圣贤也都是假的， #line:7b09aa
+        Mae: 他们只不过是人们想象出来的形象和画像罢了。 #line:da403e
+    <<elseif $mallards_bed is 3>>
+        <<set $mallards_bed_done to 1>>
+        Mae: 人们给奶奶的只不过是一张画像罢了。 #line:a16afd
+    <<endif>>
+<<elseif $mallards_secret_day is 2>>
+    <<if $mallards_bed is 0>>
+        <<set $mallards_bed_done to 1>>
+        Mae: 除了一楼远信通的员工以外， #line:052470
+        Mae: 这栋楼里就没几个人了。 #line:4958c0
+        Mae: 所以，晚上独自一个人在这里睡觉肯定很诡异。 #line:eec0d6
+        Mae: 可能住这儿的人也会在这楼里上班吧。 #line:3a1230
+        Mae: 他们可能会穿着睡衣走下楼， #line:5ba4eb
+        Mae: 然后说，嘿，各位，我刚睡醒就在工位上啦。 #line:4ad49e
+        Mae: 哦，天啊，这听起来也太可怕了。 #line:27c418
+    <<endif>>
+<<elseif $mallards_secret_day is 3>>
+    <<if $mallards_bed is 0>>
+        <<set $mallards_bed += 1>>
+        Mae: 其实，我可以在这张床上睡一觉， #line:5ef3c8
+        Mae: 反正住这儿的人也不会知道。 #line:aa596c
+        Mae: 今天晚上， #line:80539e
+        Mae: 等他们回来睡觉的时候， #line:bf5624
+        Mae: 肯定不会注意到有人来过的， #line:99116d
+        Mae: 也不会注意到有人盖过他们床单的， #line:dcb18a
+        Mae: 更不会注意到有人枕过他们的枕头。 #line:7ccd76
+        Mae: 嗯哈哈哈哈。 #line:78a034
+    <<elseif $mallards_bed is 1>>
+        <<set $mallards_bed_done to 1>>
+        Mae: 其实， #line:8dcc43
+        Mae: 我也可以给住在这儿的人帮帮忙。 #line:db7d2a
+        Mae: 他们如果没铺床的话，我可以帮他们铺。 #line:6bc597
+        Mae: 这就用不着偷偷摸摸的了。 #line:22e4e8
+    <<endif>>
+<<endif>>
+===
+title: Closet
+tags: 
+colorID: 0
+position: 30892,-14609
+---
+<<if $mallards_secret_day is 1>>
+    <<if $mallards_closet is 0>>
+        <<set $mallards_closet to 1>>
+        Mae: 我可以躲在这儿，等那些人回来。 #line:578c51
+        Mae: 我没准能把他们吓个半死， #line:656192
+        Mae: 又或者，他们会用枪一枪打在我脸上。 #line:c03a6c
+        <<wait .5>>
+        Mae: 我在这儿干什么呢？ #line:c83354
+        Mae: 我到底在干什么呢？ #line:72ab9e
+        Mae: 我现在正在一座没几个人住的楼里， #line:81c75f
+        Mae: 而且，还坐在一个陌生人家的壁橱里。 #line:63c951
+        Mae: 我可以待在这里面， #line:3eb379
+        Mae: 永远待下去。 #line:198439
+    <<elseif $mallards_closet is 1>>
+        <<set $mallards_closet to 2>>
+        Mae: 话说，住这儿的人要去哪儿嘘嘘呢？ #line:5965ce
+    <<elseif $mallards_closet is 2>>
+        <<set $mallards_closet_done to 1>>
+        Mae: 这里好黑呀。 #line:a0d489
+    <<endif>>
+<<elseif $mallards_secret_day is 2>>
+    <<if $mallards_closet is 0>>
+        <<set $mallards_closet += 1>>
+        Mae: 壁橱里都有什么呢？ #line:69996d
+        Mae: 我觉得我碰到了几只鞋， #line:9e4dd2
+        Mae: 还有几件衬衫。 #line:2fc759
+        Mae: 好吧，他们好像还有高尔夫球杆之类的东西。 #line:b89fd7
+        Mae: 哦，真是怪了。他们居然还在这儿放了一把剑？ #line:415675
+        Mae: 我能拿着这把剑去抢银行吗？ #line:feba04
+        Mae: 你，把手举起来！信不信我把这支剑插你脖子上！ #line:25b512
+        Mae: 哈哈。我得戴个面罩，穿身斗篷才行。 #line:6fd449
+        Mae: “那个漂亮的女神偷是谁啊？ #line:77ef24
+        Mae: 就是那个恐吓银行职员，说要用剑扎他脖子的女神偷到底是谁啊？" #line:fe2b64
+        Mae: 呃，可我的人生简直就是个悲剧啊。 #line:d295e5
+        Mae: 我可能会因为意外，一不小心把*自己*的脖子给捅了的。 #line:daac8c
+        Mae: 梅，千万要冷静。 #line:16484d
+    <<elseif $mallards_closet is 1>>
+        <<set $mallards_closet_done to 1>>
+        Mae: 不过，说真的，住这儿的人到底会在哪儿嘘嘘呢？ #line:69dd71
+    <<endif>>
+<<elseif $mallards_secret_day is 3>>
+    <<if $mallards_closet is 0>>
+        <<set $mallards_closet += 1>>
+        Mae: 我在想，住这儿的人会不会知道我来过这儿呢。 #line:4b2762
+        Mae: 我感觉，我和住在这儿的人好像有些某种联系， #line:4f5c05
+        Mae: 就好像我是个幽灵， #line:bf9027
+        Mae: 要去捉弄和吓唬别人一样。 #line:22088a
+        Mae: 我是不是应该 #line:641144
+        Mae: 把什么东西的位置换换。 #line:ba6b0b
+        Mae: 这么做只是为了让住在这儿的人知道， #line:b25a96
+        Mae: 还有人在乎他们，还有人来他们这儿串门。 #line:77c9f0
+    <<elseif $mallards_closet is 1>>
+        <<set $mallards_closet_done to 1>>
+        Mae: 算了，我还是别这么干了。 #line:5824c2
+        Mae: 因为这么做的话，可能会成为有史以来最诡异的事。 #line:82b3ed
+    <<endif>>
+<<endif>>
+===
+title: Decorations1
+tags: 
+colorID: 0
+position: 30409,-15672
+---
+<<if $mallard_decorations is 0>>
+    [[wow]]
+<<elseif $mallard_decorations is 1>>
+    [[parade1]]
+<<elseif $mallard_decorations is 2>>
+    [[flowers]]
+<<elseif $act >= 3 and $mallard_decorations is 3>>
+    [[decorations1_act3]]
+<<elseif $act >= 4 and $mallard_decorations is 4>>
+    [[decorations1_act4]]
+<<endif>>
+===
+title: parade1
+tags: demo2
+colorID: 0
+position: 30548,-15365
+---
+<<set $mallard_decorations += 1>>
+Mae: 自从花车游行被取消了之后，每年春天就没什么活动了。 #line:a6e81f
+Mae: 但我们还是会去教堂做复活节祷告。 #line:5bd347
+Mae: 我们还会吃特制的蝴蝶饼。但我们可不想感激这些蝴蝶饼， #line:a7b250
+Mae: 因为它们一点都不神圣。 #line:563989
+===
+title: flowers
+tags: demo2
+colorID: 0
+position: 30798,-15831
+---
+Mae: 哦，天哪。这些假花真是假得离谱啊。 #line:7f6b61
+Mae: 应该给大萌鸭更好的祭品才对啊。 #line:82f3a8
+<<set $mallard_decorations += 1>>
+<<if $act < 3>>
+    <<set $mallard_decorations_1_done to 1>>
+<<endif>>
+===
+title: wow
+tags: demo2
+colorID: 0
+position: 30871,-15510
+---
+<<set $mallard_decorations += 1>>
+Mae: 哇哦。这么说来，花车游行上用的东西最后就都堆在了这里。 #line:d12356
+Mae: 我还记得当时的春季花车游行。那真是太有意思，太好玩了。 #line:c8b1c1
+Mae: 可直到有一年，固定大萌鸭·P·布鲁明格罗的绳索断了，|结果他就砸在了克里斯·伊文斯的身上。 #line:bc3c03
+Mae: 那件事之后，花车游行就被取消了。 #line:bf0db1
+Mae: 真是一群胆小鬼。 #line:ea98ed
+Mae: 他们不该把大萌鸭关在这儿。大萌鸭也需要自由。 #line:15b76d
+Mae: 不管是断了的绳索，还是克里斯·伊文斯那条倒霉的腿，|全都阻止不了他走向自由的脚步。 #line:c50c9b
+Mae: 我在想，那断了的绳索和克里斯·伊文斯后来都怎么样了。 #line:17de14
+===
+title: Dresser
+tags: 
+colorID: 0
+position: 31137,-14599
+---
+<<if $mallards_secret_day is 1>>
+    <<if $mallards_dresser is 0>>
+        <<set $mallards_dresser to 1>>
+        Mae: *是谁住在这儿呢？* #line:3c096b
+        Mae: 这儿只有一个房间。 #line:44ea03
+    <<elseif $mallards_dresser is 1>>
+        <<set $mallards_dresser to 2>>
+        Mae: 房间里只有一台冰箱， #line:81256c
+        Mae: 一个衣柜， #line:7c1537
+        Mae: 一盏灯， #line:b84ad0
+        Mae: 一张床， #line:f7db99
+        Mae: 一扇窗户， #line:0c2124
+        Mae: 和一扇门。 #line:0e3fdf
+        Mae: 这说明这间屋子有两个出口。 #line:058df9
+    <<elseif $mallards_dresser is 2>>
+        <<set $mallards_dresser_done to 1>>
+        Mae: 如果这都不算恐怖的话，那才怪呢。 #line:0984e2
+    <<endif>>
+<<elseif $mallards_secret_day is 2>>
+    Mae: 告诉 Alec，让他修复一下代码。|（Alec Holowka是该游戏的主创） #line:16ba30
+<<elseif $mallards_secret_day is 3>>
+    <<if $mallards_dresser is 0>>
+        <<set $mallards_dresser += 1>>
+        Mae: 不过，说真的，这儿连个卫生间都没有。 #line:210852
+        Mae: 就连房间外面也没有。 #line:694a14
+        Mae: 难道住这儿的人会在衣柜里方便吗？！ #line:2411b3
+        Mae: 哦，我的老天啊…… #line:3b7700
+        Mae: 还是他们会找个桶来方便呢？？？？？ #line:79e630
+        Mae: 哦，天哪。要是我被装便便的桶给绊倒了该怎么办啊。 #line:681731
+        Mae: 这个地方真是有不少未解之谜啊。 #line:6ba8e1
+    <<elseif $mallards_dresser is 1>>
+        <<set $mallards_dresser += 1>>
+        Mae: 我在想，住在这儿的人到底是男是女。 #line:f3d672
+        Mae: 我觉得，住这儿的人岁数肯定不小了。 #line:24b983
+        Mae: 因为年轻人才不会在乎什么圣贤不圣贤 #line:84f66b
+        Mae: 或者教会的那些事呢。 #line:8ab505
+        Mae: 再过三十年，等所有教堂都人去楼空了， #line:a9f21f
+        Mae: 还信这些东西的人肯定会被认为是异类的。 #line:5e55e2
+        Mae: 到那时候，我就到教堂里开家披萨店， #line:27843c
+        Mae: 然后坐在教堂的长椅上吃披萨。 #line:326b5a
+        Mae: 所以，我还得想出个一语双关的名字， #line:a43929
+        Mae: 把“披萨"和“教堂"这两个词结合到一起才行。 #line:1caaee
+    <<elseif $mallards_dresser is 2>>
+        <<set $mallards_dresser_done to 1>>
+        Mae: 我神圣的辣香肠啊！ #line:b572f4
+    <<endif>>
+<<endif>>
+===
+title: OnEntry
+tags: demo2
+colorID: 0
+position: 30006,-15889
+---
+<<playMusic mallard>>
+<<set $mallard_track_played to 1>>
+<<camera lookOffset .8 .25>>
+<<wait .5>>
+<<lookAt Mae Mallard>>
+Mae: \o/ :( #line:52feaf
+Mae: {align=middle,width=1,locator=mallard locator}[shake=.06][size=1.5]我 的 天 啊！！[/size][/shake] #line:198c7e
+Mae:{align=middle,width=6,locator=mallard locator}[shake=.08][size=1.8]大 萌 鸭！！！[/size][/shake] #line:b55b20
+Mae:{align=middle,locator=mallard locator}[shake=.03]他 们 都 对 你 做 了 些 什 么？[/shake][size=1.2][/size] #line:3eb90f
+Mae: _o_ :| #line:9dd613
+<<unlockDoodle Mallard4eva>>
+===
+title: Exit
+tags: demo2
+colorID: 0
+position: 31319,-15574
+---
+<<if $mallards_exit is 0>>
+	Mae: 门锁上了。搞什么鬼？ #line:1184d3
+	Mae: 锁门可是会造成火灾隐患的。 #line:ac4116
+	<<set $mallards_exit += 1>>
+<<elseif $mallards_exit is 1>>
+	Mae: 我可是认真的，这门上有什么清晰的标识吗？根本没有。 #line:805ac5
+	<<set $mallards_exit += 1>>
+<<elseif $mallards_exit is 2>>
+	Mae: 安全出口，我来看你了。 #line:bd6a48
+	Mae: 看来，我得 #line:7c3766
+	Mae: 用我的靴子和你聊聊啦。 #line:532678
+	<<set $mallards_exit += 1>>
+<<elseif $mallards_exit is 3>>
+	Mae: 这无疑是我见过最糟的安全出口啦。 #line:b646b8
+    <<set $mallards_exit_done to 1>>
+<<endif>>
+===
+title: MallardHimself
+tags: 
+colorID: 0
+position: 29064,-15819
+---
+<<if $mallard_himself is 0>>
+    [[bloomingro]]
+<<elseif $mallard_himself is 1>>
+    [[depressing]]
+<<elseif $mallard_himself is 2>>
+    [[springtime]]
+<<elseif $mallard_himself is 3>>
+    [[dead]]
+<<endif>>
+===
+title: dead
+tags: demo2
+colorID: 0
+position: 29521,-16007
+---
+Mae: {align=middle,locator=mallard locator}大萌鸭，你的事我会好好保密的。 #line:1fecd6
+Mae: 我还会再回来的。 o/ :) #line:3c16db
+Mae: _o_ :| #line:b54eb4
+<<set $mallard_himself_done to 1>>
+===
+title: bloomingro
+tags: demo2
+colorID: 0
+position: 29509,-15708
+---
+<<set $mallard_himself to 1>>
+Mae: {align=middle,locator=mallard locator}大萌鸭·P·布鲁明格罗， #line:0ca937
+Mae: 你是我小时候最喜欢的角色之一啦， #line:64904a
+Mae: 而且，你还是春季花车游行中的主角和焦点。 #line:be29af
+Mae: 嘿，伙计，这儿可算是个坟墓啊。 #line:433673
+Mae: 是属于你大萌鸭的坟墓啊。 #line:c46241
+===
+title: springtime
+tags: demo2
+colorID: 0
+position: 29420,-15435
+---
+<<set $mallard_himself to 3>>
+Mae: {align=middle,locator=mallard locator}哦，大萌鸭， #line:8888cd
+Mae: 你很可能是让商会的人给扔到这儿的。 #line:23aa91
+Mae: 最后，你就被人给遗忘啦！ #line:a485d3
+Mae: 但我还是找到了你， #line:b4d271
+Mae: 我知道你就在这里， #line:a13701
+Mae: 你还是花车游行上那个吓坏所有人的主角。 #line:7606bd
+===
+title: depressing
+tags: demo2
+colorID: 0
+position: 29156,-15347
+---
+<<set $mallard_himself to 2>>
+Mae: {align=middle,locator=mallard locator}大萌鸭，亲爱的死大萌鸭， #line:16edd5
+Mae: 我小时候可喜欢你了。 #line:236a68
+Mae: 在春季花车游行的时候，我会跑过去看你。 #line:f7d870
+Mae: 你就像一只长着鸭子嘴的恐龙。 #line:6c1ac8
+Mae: 大萌鸭，你还是那么…… #line:140ed2
+Mae: 让人难忘。 :) #line:8c3ca0
+Mae: :| #line:82129f
+===
+title: decorations1_act3
+tags: 
+colorID: 0
+position: 29992,-15423
+---
+Mae: 不知道是为什么， #line:9efac3
+Mae: 塑料花看起来 #line:ee79f3
+Mae: 让人特别悲伤。 #line:f1cf7d
+Mae: 枯萎的真花都要比这些塑料做的假花让人心情好受点。 #line:462910
+<<set $mallard_decorations += 1>>
+<<if $act < 4>>
+    <<set $mallard_decorations_1_done to 1>>
+<<endif>>
+===
+title: decorations1_act4
+tags: 
+colorID: 0
+position: 30241,-15411
+---
+Mae: 堆在这儿的这些东西到底是怎么一回事呢？ #line:ad136b
+Mae: 我猜，它们可能只是在这儿静静等着 #line:7c966c
+Mae: 有人来把它们都扔掉吧？ #line:fc6c71
+Mae: 或许，我应该 #line:7d9497
+Mae: 偷走点好东西， #line:a99fdb
+Mae: 然后看看老爸老妈的反应。 #line:b78978
+Mae: 我敢说，他们肯定会很喜欢这些东西的。 #line:80138a
+Mae: 然后，再把家里的客厅重新装修一下！ #line:f20a40
+<<set $mallard_decorations += 1>>
+<<set $mallard_decorations_1_done to 1>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 29997,-16354
+---
+<<if $act < 3 and $mallard_decorations >= 3>>
+    <<set $mallard_decorations_1_done to 1>>
+<<elseif $act < 4 and $mallard_decorations >= 4>>
+    <<set $mallard_decorations_1_done to 1>>
+<<elseif $mallard_decorations >= 5>>
+    <<set $mallard_decorations_1_done to 1>>
+<<endif>>
+
+
+<<if $mallards_secret_day is 2>>
+    <<set $mallards_dresser_done to 1>>
+<<endif>>
+
+<<if $mallards_secret_day != 2>>
+    <<set $mallards_fridge_done to 1>>
+<<endif>>
+===
+title: Fridge
+tags: 
+colorID: 0
+position: 31386,-14598
+---
+<<if $mallards_secret_day is 2>>
+    <<if $mallards_fridge is 0>>
+        <<set $mallards_fridge += 1>>
+        <<if $did_bea_friendship_quest_2>>
+            Mae: 米兰达夫人应该过来和住在这儿的人见见面， #line:c45606
+            Mae: 让他们就在一起聊聊冰箱的事。 #line:d51e92
+        <<else>>
+        	Mae: 我在想，冰箱里都有什么东西呢？ #line:0cc36b
+        	Mae: 额，真这么做的话，就算侵犯别人的隐私了。 #line:532340
+        <<endif>>
+    <<elseif $mallards_fridge is 1>>
+        <<set $mallards_fridge_done to 1>>
+        Mae: 我应该 #line:2a1f0f
+        Mae: 看看衣柜里有什么东西。 #line:e611f0
+        <<wait 2>>
+        Mae: 梅，你来这儿的目的是为了干这些吗？ #line:9b7e74
+        Mae: 你真想从某个陌生人的怪屋里偷走点东西吗？ #line:e6918a
+        Mae: 你自己到底在干什么呢。 #line:ea2b14
+        Mae: 住这儿的人可能也没什么值钱东西可偷的。 #line:5253da
+        Mae: 所以，我没有任何理由去偷他们的东西。 #line:46b1b5
+    <<endif>>
+<<else>>
+    Mae: 嘿，Alec，这个交互界面不该显示出来的！ #line:83f37e
+<<endif>>
+===
+title: DoorLocked
+tags: 
+colorID: 0
+position: 30270,-14690
+---
+<<if $opened_mallards_door>>
+    Mae: 噢，拜托！ #line:336b3e
+    Mae: 门又锁上啦！ #line:fdbd82
+    Mae: 真讨厌。 #line:b15465
+    Mae: 呃。 #line:9af7e4
+    Mae: 不管这里面住的是谁， #line:22cf8a
+    Mae: 我都感觉好像是遭到了人身攻击。 #line:5490fb
+    Mae: 管他是什么事呢，管他是谁呢。 #line:85df76
+    Mae: 随便啦。 #line:53a270
+<<else>>
+    Mae: 嗯……门又锁了。 #line:ef7635
+<<endif>>
+<<set $mallards_door_locked_done to 1>>
+===

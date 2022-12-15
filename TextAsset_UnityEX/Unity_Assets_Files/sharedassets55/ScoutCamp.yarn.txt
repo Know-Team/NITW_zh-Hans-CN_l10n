@@ -1,0 +1,207 @@
+title: EnterLevel
+tags: 
+colorID: 4
+position: -24,-146
+---
+<<flip Angus -1>>
+<<playerFace -1>>
+<<setCanInteract Angus 0>>
+[[Intro]]
+===
+title: Intro
+tags: 
+colorID: 4
+position: -21,102
+---
+Angus: 哇哦。 #line:72a4c6
+Mae: “哇哦"什么？ #line:3e6e3c
+Angus: 这里以前是我们的童子军营地。 #line:03a31b
+Angus: 我和其他队员会经常到这里来。 #line:f486cb
+Angus: 那都是快十年前的事了。 #line:880749
+Mae: 看来你现在已经变成了怀旧的“老海怪"了。 #line:7e282d
+Angus: 没错，好像是这样啊。 #line:07f70a
+<<walk Angus Angus1>>
+===
+title: AngusSteps
+tags: 
+colorID: 4
+position: 303,-145
+---
+Angus: 哇，看样子，有些竹蜻蜓飞信又飞回来了。 #line:e59ecb
+Mae: 什么东西？ #line:199677
+Angus: 啊，之前我们做过一些像小风车一样的东西， #line:85ae37
+Angus: 然后我们每个人会把一张没有署名的字条放到风车里面， #line:6be2d7
+Angus: 最后再把字条连接到这个用发条控制的竹蜻蜓上。 #line:7f45d7
+Angus: 我们的想法是，风会带动风车旋转， #line:c40262
+Angus: 风车旋转会上紧竹蜻蜓上的发条， #line:43e5b4
+Angus: 然后固定在竹蜻蜓上的字条就会飞走。 #line:ee9230
+Angus: 看来有些字条又被风吹回来了。 #line:5e65e3
+Mae: 这也……太巧了吧。 #line:432c1d
+Angus: 这可不是巧合，这就是我们想要的结果。 #line:3839b2
+Angus: 我们每年都能读到前一年写好的字条。 #line:4ba912
+Mae: 我去看看能不能找到其他的字条！ #line:0848bf
+Angus: 我打算先上塔待一会儿。 #line:e9af98
+<<set $can_get_scout_notes to 1>>
+<<walk Angus AngusOnPlatform>>
+<<set $scout_camp_check_done to 0>>
+===
+title: Windmill00
+tags: 
+colorID: 4
+position: 574,-125
+---
+<<if $can_get_scout_notes>>
+    Mae: 找到一张！ #line:27b5b8
+    <<set $windmill_00_done to 1>>
+    <<set $windmill_messages_collected += 1>>
+    <<playOneShot event:/angus_IQ/windmill_note_interact Mae>>
+<<else>>
+    Mae: 嗯…… #line:03b851
+<<endif>>
+===
+title: Windmill01
+tags: 
+colorID: 4
+position: 796,-100
+---
+<<if $can_get_scout_notes>>
+    Mae: 又找到一张！ #line:0c4032
+    <<set $windmill_01_done to 1>>
+    <<set $windmill_messages_collected += 1>>
+    <<playOneShot event:/angus_IQ/windmill_note_interact Mae>>
+<<else>>
+    Mae: 嗯…… #line:f3caa9
+<<endif>>
+===
+title: Windmill02
+tags: 
+colorID: 4
+position: 1028,-132
+---
+<<if $can_get_scout_notes>>
+    Mae: 这还有一张！ #line:b1f2db
+    <<set $windmill_02_done to 1>>
+    <<set $windmill_messages_collected += 1>>
+    <<playOneShot event:/angus_IQ/windmill_note_interact Mae>>
+<<else>>
+    Mae: 嗯…… #line:182912
+<<endif>>
+===
+title: Windmill03
+tags: 
+colorID: 4
+position: 1261,-110
+---
+<<if $can_get_scout_notes>>
+    Mae: 这又发现一张！ #line:50a398
+    <<set $windmill_03_done to 1>>
+    <<set $windmill_messages_collected += 1>>
+    <<playOneShot event:/angus_IQ/windmill_note_interact Mae>>
+<<else>>
+    Mae: 嗯…… #line:220d37
+<<endif>>
+===
+title: Check
+tags: 
+colorID: 4
+position: 371,81
+---
+<<if $windmill_messages_collected >= $windmills_launched>>
+    Angus: 从我这里看， #line:08fbb9
+    Angus: 我觉得你已经把所有字条都找齐了！ #line:9f15bd
+    Angus: 我这里居高临下，视野开阔。 #line:9e03a6
+    [[Notes]]
+<<else>>
+    Angus: 那里是不是还有几张？ #line:96d2b5
+    Angus: 我看见字条了。 #line:9408c4
+    Mae: 太棒了！我这就看看去。 #line:95d0db
+    Angus: 好的，好的。 #line:984767
+<<endif>>
+===
+title: Notes
+tags: 
+colorID: 4
+position: 543,379
+---
+Mae: 快打开看看，快打开看看！ #line:ed4dee
+Mae: 等等……话说这些字条咱们能看吗？ #line:a81b1e
+Mae: 咱们应该把字条交给童子军才对！！！ #line:e9ffb4
+Angus: 害，没关系的。 #line:d33249
+Angus: 反正到冬天这些字条都会被雪和水泡化的。 #line:9ff929
+Mae: 好耶，咱们先看一张吧！！！ #line:3dd8f8
+<<if $windmill_00_done>>
+    Angus: 好，看看这张。 #line:037235
+    Angus:  “你好，我可不打算签上我的名字。 #line:2f58a7
+    Angus:不过这也没什么关系，因为我是一名童子军， #line:afc485
+    Angus: 而童子军就是我唯一的名字。" #line:bfd950
+    Mae: 哇哦，这写得也太有感情了。 #line:64ddad
+    Angus: 这张字条是这么写的： #line:f96a15
+    Angus: “童子军所给予我的远甚于这个名字本身， #line:9af961
+    Angus: 他们为我颁发奖章，借此显示出我的价值。" #line:0f6b52
+    Mae: 天哪。 #line:0a4c14
+    Angus: “为了童子军，我可以赴汤蹈火，在所不辞。" #line:0054e6
+    Angus: 这张内容就这么多。 #line:b881ee
+    Mae: 你们当时都是这样吗？ #line:5ba302
+    Angus: 可能……有时候……不是……这样吧。 #line:dd9c07
+<<endif>>
+<<if $windmill_01_done>>
+    Angus: 好了，咱们再看看这张。 #line:4aef0d
+    Mae: 快快快！赶快读读！ #line:3ab5ea
+    Angus: 哈哈哈，我的乖乖。 #line:f762e9
+    Mae: 怎么了？ #line:00bc21
+    Angus: “我是宇宙超级无敌大基佬。" #line:d6146e
+    Mae: 哈哈哈，写得宇宙超级无敌好！ #line:65ff1b
+    Mae: 嘿，安格斯，你以前写过这些吗？ #line:b75371
+    Angus: 老天，我可没写过，不过我其实应该写的。 #line:c39193
+    Angus: 我觉得我的字条会写得很不错，而且充满力量，慷慨激昂。 #line:109abd
+    Mae: 而且还很有基情。 #line:e69879
+    Angus: 对于我是同性恋这件事，|我觉得聪明细心的读者|一定会从我的字里行间|中感受得到。 #line:cddf30
+<<endif>>
+<<if $windmill_02_done>>
+    Angus:  好了，咱们来看看这张。 #line:e87322
+    Angus: *呃哼* #line:2ff99e
+    Angus: “我很喜欢射箭，因为射箭很酷。 #line:ae14d9
+    Angus: 我认为在军队中， #line:564ac9
+    Angus: 大家都应该使用弓箭，而非用枪， #line:7117f5
+    Angus: 因为弓箭具有一个重要的战术优势：消音， #line:9b10fe
+    Angus: 且十分优雅。" #line:4e39fe
+    Mae: 嗯哼…… #line:7876c9
+    Angus: 嗯，我什么想法也没有。 #line:684f95
+<<endif>>
+<<if $windmill_03_done>>
+    Angus: 好吧，这张字条已经有点破了， #line:abd6a0
+    Angus: 可能是被鸟抓过吧。 #line:244383
+    Mae: 快 读 读 这 张 被 鸟 抓 过 的 字 条。 #line:d45fa9
+    Angus: “我特别不开心。而你是唯一一个知道我感受的人。" #line:5c7bac
+    Mae: 噢。 #line:33f159
+    Angus: 好吧。 #line:4d152d
+    <<wait 2>>
+<<endif>>
+Angus: 嗯…… #line:1ebefc
+Mae: 怎么了？ #line:b5aa36
+Angus: 这里几乎没怎么变。 #line:12a1e5
+Angus: 一切都还和十年前我们一起写字条的时候一模一样。 #line:feafa4
+Mae: 是啊。 #line:9ec0d7
+Angus: 对于人们来说， #line:e581b7
+Angus: 这里就像是…… #line:3b2fb2
+Angus: 一片永恒之地。 #line:b66cbd
+Angus: 经历了这么多事情 #line:4ae1cd
+Angus: 也改变不了我们的本性。 #line:5d917c
+Mae: 嗯嗯。 #line:f5eb05
+Angus: 的确是这样。 #line:a75efc
+Angus: 嗯…… #line:13eb45
+<<wait 3>>
+<<close>>
+<<irisOut 1 wait>>
+<<scene PossumJump left>>
+===
+title: InitLevel
+tags: 
+colorID: 4
+position: -258,-142
+---
+<<set $scout_camp_check_done to 1>>
+<<if $windmills_launched is 0>>
+    <<scene PossumJump left>>
+<<endif>>
+===

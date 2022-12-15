@@ -1,0 +1,165 @@
+title: Tracks1
+tags: 
+colorID: 3
+position: 475,470
+---
+<<fadeOutMusic 5>>
+<<if $tracks_1 is 0>>
+    <<walk Mae MaeEnd>>
+    <<walk Lori LoriEnd>>
+    <<cameraLookAt CameraEnd 16>>
+    Mae: 哇，我已经很久都没来过这里了。 #line:e002de
+    Lori: 我家离这也就大概3分钟的路程。 #line:903a6c
+    Lori: 去年长至夜节的灯还挂着呢。 #line:900776
+Mae: 哈哈，我们那条街上也这样。 #line:f0a957
+    Lori: 去年我们把南瓜放在屋外，不过放的时间实在是太长了。 #line:a44dde
+    Lori: 后来，这些南瓜就…… #line:c8ad4b
+    Lori: 烂掉了。 #line:588a01
+        ->咦～ #line:adcbc3
+            Lori: 哦，让你觉得不舒服了？抱歉。 #line:53879c
+            Mae: 哈哈，没什么。 #line:e5e859
+            Mae: 恶心点也没什么关系。 #line:75add9
+        ->噢，对了！我们有一年也遇到过相同的情况。 #line:14164f
+            Mae: 我老妈为此没少生我爸的气。 #line:d8a45e
+            Mae: 因为清理烂南瓜的工作是我老爸负责的。 #line:13c5ec
+            Mae: 他本应该 #line:3a75ab
+            Mae: 把南瓜收拾干净的。 #line:008df4
+    Lori: 我曾经看过一部延时摄影的视频， #line:1a50a4
+    Lori: 内容是关于尸体腐烂的整个过程。 #line:2b8c49
+    Lori: 而且…… #line:af568b
+    Lori: 世间万物都有腐朽的那一天。 #line:8d7547
+    Mae: 实际上我们最后都会面临这个问题。 #line:0d4fed
+    Lori: 是的。 #line:2ae097
+    Lori: 对了！有件挺酷的事， #line:d56fb7
+    Lori: 就是把金属小人放在铁轨上，然后让火车把它压扁。 #line:7c8838
+    Lori: 我特别喜欢这么干。 #line:96b845
+    Mae: 真酷～ #line:ee8d85
+    Lori: 这次我带了一个金属小人儿。咱们去看看它会变成什么样吧。 #line:512e5e
+    Mae: 老妹儿，这主意听起来不错。 #line:545118
+    <<set $tracks_1 to 1>>
+    <<irisOut 1 wait>>
+    <<scene OverheadTracks>>
+<<else>>
+    Mae: 哇哦！ #line:132e03
+    <<set $tracks_quest to 1>>
+    <<set $did_lori_friendship_quest_1 to 1>>
+    <<unlockDoodle LoriTracks1>>
+    Lori: 耶！！！ #line:0380a2
+    Mae: 你的小人儿已经……哇哦。 #line:77b140
+    Lori: 它体现出了人类灵魂的状态。 #line:549d28
+    Lori: 这件艺术品可是天造之物。 #line:6787e5
+    Mae: 哈哈哈！ #line:31a78f
+    Mae: 好了，我要继续往前走了。 #line:e42e10
+    Lori: 好好好好好， #line:59a0ca
+    Lori: 走着。 #line:9b54ea
+    <<close>>
+    <<irisOut 1 wait>>
+    <<unlockDoodle LoriMPage>>
+    <<scene TowneCentreEast>>
+<<endif>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 589,146
+---
+<<if $did_lori_friendship_quest_1 is 0>>
+    [[Tracks1]]
+<<else>>
+    [[Tracks2]]
+<<endif>>
+===
+title: Tracks2
+tags: 
+colorID: 4
+position: 756,467
+---
+<<fadeOutMusic 5>>
+<<if $tracks_2 is 0>>
+    <<walk Mae MaeEnd>>
+    <<walk Lori LoriEnd>>
+    <<cameraLookAt CameraEnd 16>>
+    Mae: 我朋友凯西过去经常到这里来抽烟。 #line:f54061
+    Lori: 我以前也抽过烟。 #line:d80b05
+        ->我对烟味过敏。 #line:20c30c
+            Mae: 但我另一个朋友碧娅却总是当着我的面抽烟。 #line:fbd30d
+            Mae: 你抽了几年烟了？ #line:41a423
+        ->噢，真的吗？ #line:f05797
+    Lori: 好吧，其实只有一次。我那时12岁，之后我就再没抽过。 #line:ea7b22
+    Mae: 聪明的选择。 #line:611914
+    Lori: 我应该去抽电子烟的。 #line:6f95b4
+    Mae: 对，你可以去抽电子烟。 #line:9b02b9
+    Lori: 但我还是没准备抽电子烟。 #line:249a18
+    Mae: 至少有个不错的想法。 #line:c78273
+    Lori: 嗯，你还记得上次咱们在铁轨上压金属小人儿的事吗？ #line:d1cd41
+    Mae: 啊……当然记得啦！ #line:728c55
+    Mae: 那咱们现在还能干些什么呢？你是想把它再压得扁一点吗？ #line:35ef03
+    Lori: 是但也不全是。我想做点新东西，一会儿你就知道了。 #line:6f978f
+    Lori: 我又找了一个小人儿，然后把它俩放在一起去压。 #line:9468cc
+    Mae: 好。 #line:b52247
+    <<set $tracks_2 to 1>>
+    <<irisOut 1 wait>>
+    <<scene OverheadTracks>>
+<<else>>
+    //Mae: whoa!
+    //Mae: WHOA.
+    //Mae: This looks tortured.
+    //Lori: Aaah look at mine!!!
+    <<set $tracks_quest to 2>>
+    <<set $did_lori_friendship_quest_2 to 1>>
+    <<unlockDoodle LoriTracks2>>
+    Lori: 耶耶耶！ #line:bacab4
+    Mae: 哦，老天，你那两个小人儿已经…… #line:8a662d
+    Mae: 我感觉很心疼。 #line:74211f
+    Lori: 梅，它说话了，这件作品在说话呢。 #line:0d9599
+    Mae: 它居然在叫我的名字！！！ #line:da1fc6
+    Lori: 呃， #line:075ba2
+    Lori: 酷啊！ #line:597aaa
+    Mae: 确实。 #line:00e84b
+    Mae: 我得走了。 #line:5006fa
+    Mae: 最近……怪事有点多。 #line:6e3719
+    Lori: 嗯？怎么了？ #line:2110b0
+    Mae: 啊……天哪。 #line:711c79
+    Mae: 你一定要多加小心，好吗？ #line:e21e5c
+    Lori: 为什么要小心？怎么了？ #line:56479b
+    Mae: 还有，天黑的时候一定要赶快回家。 #line:a6ed2a
+    Mae: 最近出了一些不太好的事情。 #line:7efbba
+    Lori: 比如？ #line:364be8
+    Mae: 哦，我的天，我都不知道该从哪儿讲起。 #line:d74b86
+    Mae: 但无论如何……自己一定要多注意。 #line:6cb23b
+    Lori: 明白了。 #line:1cf856
+    Lori: 不管你刚才提醒或警告过我什么， #line:2f0d89
+    Lori: 我都要谢谢你。 #line:93cb94
+    Mae: 别客气。 #line:1b2627
+    <<close>>
+    <<irisOut 1 wait>>
+    <<scene TowneCentreEast>>
+<<endif>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 243,120
+---
+<<if $did_lori_friendship_quest_1 is 0>>
+    <<if $tracks_1 is 0>>
+        <<warp Mae MaeStart>>
+        <<warp Lori LoriStart>>
+        <<cameraLookAt CameraStart 0>>
+    <<else>>
+        <<warp Mae MaeEnd>>
+        <<warp Lori LoriEnd>>
+        <<cameraLookAt CameraEnd 0>>
+    <<endif>>
+<<else>>
+    <<if $tracks_2 is 0>>
+        <<warp Mae MaeStart>>
+        <<warp Lori LoriStart>>
+        <<cameraLookAt CameraStart 0>>
+    <<else>>
+        <<warp Mae MaeEnd>>
+        <<warp Lori LoriEnd>>
+        <<cameraLookAt CameraEnd 0>>
+    <<endif>>
+<<endif>>
+===

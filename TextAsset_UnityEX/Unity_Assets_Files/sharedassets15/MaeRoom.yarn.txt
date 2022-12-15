@@ -1,0 +1,492 @@
+title: Bed
+tags: demo2
+colorID: 0
+position: 3493,1361
+---
+[[DoSleep]]
+===
+title: Internal
+tags: demo
+colorID: 0
+position: 1835,1792
+---
+<<if $mae_room_internal is 0>>
+	Mae: {align=top,furthestLocator}要是我再不从这儿出去的话我没准真的要 [speed=.7][color=999]把它连同我自己一起给烧了。[/all] #line:b8186a
+	<<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 1>>
+	Mae: {align=top,furthestLocator}我敢打赌，这之前就有人干过这种事，出于 [color=999]政治原因。[/all]-_- #line:7c0703
+    Mae: o_o #line:d91611
+	<<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 2>>
+	Mae: {align=top,furthestLocator}我在想，要是我真把我和这房子一块给烧了， [speed=.7][color=999]这儿还会剩些什么？[/all]o_o #line:4e50e5
+	<<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 3>>
+	Mae: {align=top,furthestLocator,width=2}大概只会剩骨头，铜管 ，speed=.7][color=999]还有厉鬼。[/all] #line:0e224c
+	<<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 4>>
+	Mae: {align=top,furthestLocator,width=2}“是啊，这可是块风水宝地。" #line:edff90
+	Mae: {align=top,furthestLocator,width=3}"但我听说啊，这里以前有过一栋房子，有个姑娘一把火给它给烧了。" #line:a322de
+	Mae: "[speed=.5][color=999][shake=.03]连她自己也一块给烧死了。[/all]":( \o/ #line:7e7347
+    Mae: :| _o_ #line:33f726
+	<<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 5>>
+	Mae: {align=top,furthestLocator,width=2}"我们可是很喜欢跟潜在的买家提这件事的。"[/all] #line:5e02cd
+	<<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 6>>
+	Mae: {align=top,furthestLocator,width=2}"这里可满是鬼哭狼嚎啊。" #line:582c59
+	Mae: "[speed=.7][color=999]我是说，以前是这样的。"[/all] #line:c023b8
+	<<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 7>>
+	Mae: {align=top,furthestLocator,width=2}事实上啊，她放火的那一个晚上， [speed=.7][color=999][shake=.04]和今晚，很像呢……[/all]-_- #line:317cd1
+    Mae: o_o #line:d76775
+	<<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 8>>
+	Mae: {align=top,furthestLocator,width=2}所以，我还是[wave]出去为妙。[/all] #line:623215
+	<<set $mae_room_internal += 1>>
+<<elseif $mae_room_internal is 9>>
+	Mae: {align=top,furthestLocator,emote=maeburn,emoteAlign=middle} #line:493746
+<<endif>>
+===
+title: Mirror_A1D3
+tags: 
+colorID: 2
+position: 2088,1793
+---
+<<fadeOut 1>>
+<<wait 1>>
+<<scene Mirror>>
+===
+title: BedChoice
+tags: 
+colorID: 0
+position: 3789,1092
+---
+<<if $act is 2 and $day is 4 and $night is 1>>
+    Mae: 不能睡！丰收节还等着我呢！！！ #line:b9a1ee
+<<elseif $act is 1 and $day is 3 and $party_prep>>
+    Mae: 还不能睡呢！派对时间到！该做好准备啦！ #line:051e1a
+<<elseif $night is 0>>
+    [[Bed]]
+<<elseif $act is 1 and $day is 0>>
+    [[Bed]]
+<<else>>
+    Mae: 要上床睡觉吗？ #line:6bed1b
+    [[不要。|NoBed]] #line:af024e
+    [[睡觉觉喽～|Bed]] #line:0633e1
+<<endif>>
+===
+title: Bass
+tags: 
+colorID: 0
+position: 4063,1090
+---
+<<if $bass_practice_times_today >= 2>>
+    Mae: 今天贝斯已经练得够久啦。 #line:212bc0
+    <<set $bass_practice_done to 1>>
+<<else>>
+    <<if $bass_practice_times_today is 1>>
+        Mae: 嗯……要不再来一次？ #line:d85479
+    <<else>>
+        Mae: 要弹会儿贝斯吗？ #line:165374
+    <<endif>>
+    Mae: 弹哪首歌呢？ #line:02d34a
+    ->算了……晚点再说吧。 #line:7cc20e
+        Mae: 没准再也不弹了 #line:f426b9
+    ->太空龙。 <<if $actday > 0100>> #line:50b676
+        <<if $did_bass_practice_heavy_doze_intro is 0>>
+            <<set $did_bass_practice_heavy_doze_intro to 1>>
+            Mae: 太 空 的 漫 游 者 啊 ～ #line:a4adfd
+            Mae: 禁 地 的 游 牧 民 啊 ～ #line:c33be3
+        <<endif>>
+        <<runBandPractice 3>>
+    ->埋骨他乡。 <<if $actdaynight >= 01015>> #line:fb9c84
+        <<runBandPractice 0>>
+    ->脚踏车小调。 <<if $did_gregg_friendship_quest_3 or $did_bea_friendship_quest_4>> #line:2e4016
+        <<if $did_bass_practice_cycles_intro is 0>>
+            <<set $did_bass_practice_cycles_intro to 1>>
+            Mae: 就那首歌，你懂的，那首歌。 #line:5e9324
+        <<endif>>
+        <<runBandPractice 4>>
+    ->怪诞之秋。 <<if $actdaynight >= 02015>> #line:255175
+        <<runBandPractice 1>>
+    ->滴答滴答。 <<if $library_charity_bearity > 0>> #line:439b9a
+        <<if $did_bass_practice_tick_tock_intro is 0>>
+            <<set $did_bass_practice_tick_tock_intro to 1>>
+            Mae: 啊，是啊，滴答滴答。 #line:8d3750
+            Mae: 那首善心熊教你怎么报时的烂歌。 #line:977ab9
+            Mae: 高中那会儿，我还和格雷格一起把歌词魔改了一通。 #line:331649
+            Mae: 看看我还记不记得词儿了…… #line:ef5622
+        <<endif>>
+        <<runBandPractice 5>>
+    ->南瓜头。 <<if $actdaynight >= 03015>> #line:33bfe7
+        <<runBandPractice 2>>
+    ->去死吧，小白脸。 <<if $actday > 0103 and $did_get_dead_angel_face_intro is 0>> #line:f9255e
+        <<set $did_get_dead_angel_face_intro to 1>>
+        Mae: 哇，还是算啦。 :( -_- #line:6aaaed
+        Mae: 不要。 #line:c95744
+        Mae: 我绝对不会弹这首歌。 #line:d77add
+        Mae: 感觉好尴尬啊。 #line:556605
+        Mae: :| o_o #line:dcc73a
+    //-> Bass Practice 4 <<if $actday > 0400>>
+    //    <<runBandPractice 6>>
+<<endif>>
+===
+title: NoBed
+tags: 
+colorID: 0
+position: 3805,1659
+---
+Mae: 光躺在床上可活不下去，梅。 #line:f0ec03
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 2830,1303
+---
+<<if $night is 0>>
+    <<if $mae_room_morning>>
+        <<tell _AmbientSFXMorning Play>>
+    <<else>>
+        <<tell _AmbientSFXDay Play>>
+    <<endif>>
+<<else>>
+    <<tell _AmbientSFXNight Play>>
+<<endif>>
+<<if $day > 0 and $night is 0 and $party_prep is 0 and $woke_up is 0>>
+    <<fadeIn 3>>
+    <<if $act is 4 and $day is 2>>
+        // let the hospital ambience keep playing
+    <<else>>
+        <<if $act is 3>>
+            <<playMusic waking_up_act3>>
+        <<else>>
+            <<playMusic waking_up>>
+        <<endif>>
+    <<endif>>   
+    <<wait 3>>
+    <<waitForInteractOrJump>>
+    <<fadeOutMusic .5>>
+    <<if $act is 4 and $day is 2>>
+        <<fadeOut .5 wait>>
+        <<animationTrigger MaeBed Empty>>
+    <<else>>
+        <<animationTrigger MaeBed WakeUp>>
+        <<wait 3.5>>
+        <<fadeOut .5 wait>>
+    <<endif>>
+    <<show Laptop>>
+    <<animationTrigger MaeBed Idle>>
+    <<warp Mae PlayerStart>>
+    <<snapToFloor>>
+    <<setCameraMode FollowPlayer>>
+    <<if $act is 4 and $day is 1>>
+        <<hide Laptop>>
+    <<elseif $act is 4 and $day is 2>>
+        <<hide Laptop>>
+    <<elseif $act > 1 or $day >= 2>>
+        <<show Laptop>>
+    <<else>>
+        <<hide Laptop>>
+    <<endif>>
+    <<fadeIn .5>>
+    <<set $woke_up to 1>>
+<<else>>
+    <<if $act > 1 or $day >= 2>>
+        <<show Laptop>>
+    <<else>>
+        <<hide Laptop>>
+    <<endif>>
+<<endif>>
+
+<<if $act is 1 and $day is 2>>
+    <<if $enter_mae_room < 010200 and $night is 0>>
+        [[A1D2Morning]]
+    <<endif>>
+<<elseif $act is 1 and $day is 3>>
+    <<if $after_party>>
+        <<animationTrigger MaeBed Sleeping>>
+        <<hide Laptop>>
+        <<hide Player>>
+        [[A1D3AfterParty]]
+    <<elseif $party_prep>>
+        <<set $mirror_done to 0>>
+        <<if $mae_room_party_prep is 0>>
+            [[A1D3PartyPrep]]
+        <<endif>>
+    <<endif>>
+<<elseif $act is 2 and $day is 1>>
+    <<if $enter_mae_room < 020100 and $night is 0>>
+        [[A2D1Morning]]
+    <<endif>>
+<<elseif $act is 2 and $day is 4>>
+    <<if $harfest_prep is 1 and $harfest_costume is 0>>
+        <<set $mirror_done to 0>>
+    <<endif>>
+<<endif>>
+
+<<if $act is 4 and $day is 2>>
+    <<if $night is 0>>
+        <<set $death_walk to 1>>
+        <<playIdleAnimationPlayer>>
+        //<<set $death_prairie_effects to 1>>
+        <<if $enter_mae_room < 040200>>
+            [[A4D2Morning]]
+        <<endif>>
+    <<endif>>
+<<elseif $act is 4 and $day is 3>>
+    <<if $found_pentagrams >= 3>>
+        <<unlockAchievement Thryy_Wyrd_Tyyns>>
+    <<endif>>
+<<endif>>
+
+<<if $act is 3 and $day is 3>>
+    <<unlockAchievement Astral_Secrets>>
+<<endif>>
+
+<<if $act is 2 and $day is 1>>
+    <<unlockDoodle EverythingFeelsBad>>
+    <<unlockDoodle NeverDrink>>
+<<endif>>
+
+<<if $act is 3 and $day is 1>>
+    <<unlockDoodle Ibon1>>
+    <<unlockDoodle Eide1>>
+<<endif>>
+
+<<if $act is 4 and $day is 3>>
+    <<unlockPentagramDoodle>>
+    <<unlockDoodle Ibon3>>
+    <<unlockDoodle Shapes>>
+<<endif>>
+===
+title: DoSleep
+tags: 
+colorID: 0
+position: 3478,1701
+---
+<<close>>
+<<fadeOut .5 wait>>
+<<setCameraMode Stationary>>
+<<camera position 0 0>>
+<<hide Laptop>>
+<<hidePlayer>>
+<<fadeIn .5>>
+<<animationTrigger MaeBed Sleep>>
+<<wait 7>>
+
+[[EndSleep]]
+===
+title: A1D2Morning
+tags: 
+colorID: 2
+position: 2531,1376
+---
+Mae: 哇，我已经有足足36个小时没上线啦。 #line:527470
+Mae: 不能再这样下去啦。 #line:d0c0fb
+<<set $enter_mae_room to 010200>>
+<<fadeOut 1 wait>>
+<<scene Laptop>>
+===
+title: A1D3PartyPrep
+tags: 
+colorID: 2
+position: 2829,1645
+---
+<<set $mae_room_party_prep to 1>>
+Mae: 好的，好的，好的。 #line:34ba15
+Mae: 该出发啦。 #line:1c6fe3
+Mae: 呃，我得先确认一下，别让自己看着跟个刚从洞穴里出来的野兽似的。 #line:94f4e1
+===
+title: A1D3AfterParty
+tags: 
+colorID: 2
+position: 3197,1348
+---
+<<set $mirror_done to 1>>
+<<show Bea>>
+Bea: 好了，睡吧。 #line:e6d2e0
+Mae: 对不起，碧娅。我把事情给搞砸了。 #line:3df7c4
+Bea: 你知道我怎么想的吗？随他的便吧。 #line:208e5a
+Bea: 这不是你的错。 #line:96ecaa
+Bea: 你就是个小孩子。 #line:a3b28a
+Mae: 我可比你大呢！大俩月呢！ #line:c2c29d
+Bea: 啊，好吧， #line:4b7d9b
+Bea: 我留在镇上，慢慢长大了。 #line:91603e
+Bea: 你虽然离开了这儿，但一点变化也没有。 #line:9d4919
+Mae: zzz #line:a7865a
+Bea: *唉* #line:503330
+Bea: 晚安，小梅。 #line:0ea5b1
+<<close>>
+[[EndSleep]]
+===
+title: Laptop
+tags: 
+colorID: 0
+position: 2076,1507
+---
+<<fadeOut .5 wait>>
+<<scene Laptop>>
+===
+title: TriggerLaptop
+tags: 
+colorID: 0
+position: 1836,1512
+---
+<<set $trigger_laptop to 0>>
+
+Mae: 来看看安格斯的程序有没有起作用…… #line:1a6732
+Mae: 至少不会比现在更糟了。 #line:246c71
+Mae: 我在想，这东西会不会着火呀？ #line:c6fe5a
+Mae: 随便啦。 #line:3d5618
+<<irisOut 1 wait>>
+<<scene Laptop>>
+===
+title: EndSleep
+tags: 
+colorID: 0
+position: 3161,1654
+---
+<<fadeOut 3 wait>>
+
+<<if $act is 1 and $day is 3>>
+    <<scene AstralAct1Day3>>
+<<elseif $act is 2 and $day is 1>>
+    <<scene AstralAct2Day1>>
+<<elseif $act is 2 and $day is 2>>
+    <<scene AstralAct2Day2>>
+<<elseif $act is 2 and $day is 3>>
+    <<scene AstralAct2Day3>>
+<<elseif $act is 2 and $day is 4>>
+    <<scene BlackoutWoods>>
+<<elseif $act is 3 and $day is 1>>
+    <<scene AstralAct3Day1>>
+<<elseif $act is 3 and $day is 2>>
+    <<scene AstralAct3Day2>>
+<<else>>
+    <<endDay>>
+<<endif>>
+===
+title: Mirror_A2D4
+tags: 
+colorID: 3
+position: 2079,2258
+---
+<<fadeOut 1>>
+<<wait 1>>
+<<scene Mirror>>
+===
+title: Mirror_A2D1
+tags: demo2
+colorID: 3
+position: 2082,2027
+---
+Mae: 哦，好家伙。 #line:0ca0d4
+Mae: 我说对了。 #line:cd1c65
+Mae: 简直是糟糕透顶。 #line:d8f5db
+Mae: 给 我 烧 了 它！ #line:cfe544
+<<set $mirror_done to 1>>
+===
+title: A2D1Morning
+tags: demo2
+colorID: 3
+position: 2538,1642
+---
+<<set $enter_mae_room to 020100>>
+<<set $mirror_done to 0>>
+Mae: =_= #line:297513
+Mae: 好吧， #line:71032c
+Mae: 真够怪的。 #line:31fabd
+Mae: 我有点不舒服。 #line:f6439d
+Mae: :\ #line:df2910
+Mae: 我现在看上去应该很惨吧。 #line:c09536
+Mae: 呃。 #line:044650
+Mae: 我要把这间屋子烧个精光。 #line:cb2c74
+Mae: o_o #line:80183e
+Mae: 连我一起都烧啦。 #line:0f0a0d
+Mae: 然后化为厉鬼度过我的余生。 #line:18afa3
+Mae: 是啊。 #line:12291f
+Mae: :| #line:d0dffe
+<<unlockDoodle FireGhost>>
+<<unlockDoodle EverythingFeelsBad>>
+<<unlockDoodle NeverDrink>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 2746,1034
+---
+<<set $mirror_done to 1>>
+
+<<if $day > 0 and $night is 0 and $party_prep is 0 and $woke_up is 0>>
+    <<hidePlayer>>
+    <<setCameraMode Stationary>>
+    <<camera position 0 0>>
+    <<hide Laptop>>
+    <<animationTrigger MaeBed WakeUpIdle>>
+<<endif>>
+===
+title: A4D2Morning
+tags: 
+colorID: 0
+position: 2603,1911
+---
+<<set $enter_mae_room to 040200>>
+Mae: 呃。 #line:32b978
+<<close>>
+<<fadeOut 1 wait>>
+<<overrideLoadingScreenType Blank>>
+<<scene MaeStreet>>
+===
+title: EndBassPractice
+tags: 
+colorID: 0
+position: 4353,1097
+---
+<<if $quit_bass_practice>>
+<<else>>
+    <<if $bass_practice_right is 100>>
+        Mae: 嗯，弹得相当不错啊。 #line:9ef632
+    <<elseif $bass_practice_right > 90>>
+        // player did pretty alright!!
+        Mae: 这歌我还没练过呢，对我来说弹得还不错嘛！ #line:eaa421
+    <<elseif $bass_practice_right < 50>>
+        // player played less than 50% of the notes registered
+        Mae: 这首歌我根本就不知道该怎么弹。我为啥要弹这首啊。 #line:2c6a9e
+    <<elseif $bass_practice_right < 20>>
+        // player probably mashed random buttons for the whole song
+        Mae: 嗯…… #line:6da361
+        Mae: 是啊，这可算不上好。 #line:38d6d1
+    <<elseif $bass_practice_right < 50>>
+        // pretty baaaad
+        Mae: 好疼。 #line:bfac2b
+    <<else>>
+        // a catch-all for doing pretty meh
+        Mae: 我压根就弹不来这歌。 #line:9b88f4
+    <<endif>>
+    
+    // unlock doodles if player did well enough
+    <<if $bass_practice_right > 90>>
+        <<if $bass_practice_song_index is 3>>
+            <<unlockDoodle SpaceDragon>>
+        <<elseif $bass_practice_song_index is 4>>
+            <<unlockDoodle Cycles>>
+        <<elseif $bass_practice_song_index is 5>>
+            <<unlockDoodle CharityBearity>>
+        <<endif>>
+    <<endif>>
+    
+    <<if $bass_practice_song_index is 0>>
+        // die anywhere else
+    <<elseif $bass_practice_song_index is 1>>
+        // weird autumn
+    <<elseif $bass_practice_song_index is 2>>
+        // pumpkin head guy
+    <<elseif $bass_practice_song_index is 3>>
+        // Space Dragon
+    <<elseif $bass_practice_song_index is 4>>
+        // Cycles
+    <<elseif $bass_practice_song_index is 5>>
+        // Tick Tock
+    <<endif>>
+<<endif>>
+===

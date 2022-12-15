@@ -1,0 +1,116 @@
+title: HitTarget1
+tags: 
+colorID: 0
+position: 769,192
+---
+<<set $wb_target_1_hits += 1>>
+<<if $wb_target_1_hits is 1>>
+    Council1: 呜 呜 呜！|你砸中可怕的幽灵啦！ #line:46e274
+<<elseif $wb_target_1_hits is 2>>
+    Council1: 我是个可怕的幽灵，我被人砸中啦！ #line:487bb5
+<<elseif $wb_target_1_hits is 3>>
+    Council1: 为此，我会来找你的！ #line:daede7
+<<elseif $wb_target_1_hits is 4>>
+    Council1: 我都湿透啦，可真冷啊！ #line:093b55
+<<elseif $wb_target_1_hits is 5>>
+    Council1: 啊啊啊！ #line:7d23c5
+<<elseif $wb_target_1_hits is 6>>
+    Council1: 哦不，我又……挂啦！ #line:0bab35
+<<endif>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 508,101
+---
+Council1: 等等…… #line:b5cb29
+Council1: 嘿，这东西要怎么穿？ #line:4cc111
+<<wait 2>>
+Council1: 真该死。 #line:49146f
+<<wait 2>>
+Council1: 好了，我们都准备好了，准备好了。 #line:7b8022
+Council1: 欢迎参加丰收节鬼怪水球大战！ #line:fc7939
+Council1: 你知道该怎么做！ #line:6aafbc
+Council1: 如果你不知道，一会儿你也就明白该怎么做啦！ #line:40ad08
+Council1: 好，开始！ #line:c4b147
+<<set $did_water_balloon_toss to 1>>
+===
+title: HitTarget2
+tags: 
+colorID: 0
+position: 1030,208
+---
+<<set $wb_target_2_hits += 1>>
+<<if $wb_target_2_hits is 1>>
+    Council2: 哦，不，你砸中了邪恶的女巫！ #line:6af4ce
+<<elseif $wb_target_2_hits is 2>>
+    Council2: 啊啊啊！接下来我该怎么走啦？？？ #line:075e40
+<<elseif $wb_target_2_hits is 3>>
+    Council2: 哎哟！我要诅咒你！ #line:111e00
+<<elseif $wb_target_2_hits is 4>>
+    Council2: 啊 啊 啊！ #line:7ae9e5
+<<elseif $wb_target_2_hits is 5>>
+    Council2: 啊 啊 啊 啊 啊！ #line:7f8124
+<<elseif $wb_target_2_hits is 6>>
+    Council2: 哦不，我化啦！我得赶快撤啦！！！！ #line:ca49cb
+<<endif>>
+===
+title: HitTarget3
+tags: 
+colorID: 0
+position: 1278,215
+---
+<<set $wb_target_3_hits += 1>>
+<<if $wb_target_3_hits is 1>>
+    Council3: 哎呀，我是南瓜怪。 #line:b81eba
+<<elseif $wb_target_3_hits is 2>>
+    Council3: 你打中我南瓜怪啦。 #line:7fe12e
+<<elseif $wb_target_3_hits is 3>>
+    Council3: 你砸中我南瓜怪啦，我都湿透啦。 #line:c8c056
+<<elseif $wb_target_3_hits is 4>>
+    Council3: 哎哟，打得我南瓜怪好痛哟。 #line:59099e
+<<elseif $wb_target_3_hits is 5>>
+    Council3: 我快被冻住啦。南瓜怪要被冻住啦。 #line:0343c6
+<<elseif $wb_target_3_hits is 6>>
+    Council3: 哦不，我得快点逃啦。我是南瓜怪。 #line:83a3eb
+<<endif>>
+===
+title: HitTarget4
+tags: 
+colorID: 0
+position: 1537,231
+---
+<<set $wb_target_4_hits += 1>>
+<<if $wb_target_4_hits is 1>>
+    Council4: 咔嗒嗒，咔嗒嗒！我是骷髅怪！ #line:0b0d54
+<<elseif $wb_target_4_hits is 2>>
+    Council4: 咔嚓咔！你打到了我的骨头！ #line:b75e4a
+<<elseif $wb_target_4_hits is 3>>
+    Council4: 咔嚓轰！你碰到了我的痒痒骨！ #line:f3760b
+<<elseif $wb_target_4_hits is 4>>
+    Council4: 咔嚓叮！我湿透啦！ #line:16e22a
+<<elseif $wb_target_4_hits is 5>>
+    Council4: 咔嚓嘣！我可怜的身体！ #line:9b39e5
+<<elseif $wb_target_4_hits is 6>>
+    Council4: 快和我一起回土里去吧！ #line:f247a7
+<<endif>>
+===
+title: End
+tags: 
+colorID: 0
+position: 743,480
+---
+Council1: 对了，还有件重要的事！ #line:d8c80c
+Council3: 我们代表负鼠泉镇政会 #line:c17295
+Council3: 提醒你要多多支持本地的各项事业， #line:46dd57
+Council2: 同时热爱这片有着悠久历史的土地！ #line:907247
+Council4: 负鼠泉，可真…… #line:79b37a
+Council1: ……凯斯琳，别…… #line:d3c910
+Council4: 可真像一汪清泉啊！ #line:67adcb
+Council1: …… #line:075255
+Council3: …… #line:45f497
+Council2: 好了，游戏结束啦。 #line:b7b331
+<<wait 1>>
+<<irisOut 1 wait>>
+<<scene TowneCentreEast_Harfest>>
+===

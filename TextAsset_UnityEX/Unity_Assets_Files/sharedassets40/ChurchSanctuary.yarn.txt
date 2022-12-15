@@ -1,0 +1,215 @@
+title: InitLevel
+tags: 
+colorID: 0
+position: 114,-168
+---
+<<if $act is 4 and $day is 1>>
+    <<cameraLookAt CameraComa>>
+    <<warp Mae MaeComa>>
+    <<warp Pastor PastorComa>>
+    <<flip Pastor -1>>
+    <<show Mom>>
+    <<show Dad>>
+    <<show Penderson>>
+    <<show Pastor>>
+    <<setAnimInt Mom gloomy 1>>
+<<else>>
+    <<hide Mom>>
+    <<hide Dad>>
+    <<hide Penderson>>
+<<endif>>
+
+<<if $act is 4 and $day is 1>>
+    <<if $did_lori_friendship_quest_1 and $did_lori_friendship_quest_2>>
+        <<show Lori>>
+    <<else>>
+        <<hide Lori>>
+    <<endif>>
+    
+    <<if $did_chazokov_star_visits >= 2>>
+        <<show Chazokov>>
+        <<setAnimInt Chazokov sad 1>>
+    <<else>>
+        <<hide Chazokov>>
+    <<endif>>
+    
+    <<if $saw_selmers_deliver_poem_at_poets_society>>
+        <<show Selmers>>
+    <<else>>
+        <<hide Selmers>>
+    <<endif>>
+<<else>>
+    <<hide Chazokov>>
+    <<hide Twigmeyer>>
+    <<hide Lori>>
+    <<hide Selmers>>
+    <<hide Penderson>>
+    <<hide Janitor>>
+<<endif>>
+
+<<if $act is 4 and $day is 1>>
+    <<setAnimInt Mae layingSide 1>>
+    <<setAnimInt Mae eyes 4>>
+    <<togglePlayerFallEnabled false>>
+    <<warp Mae MaeDeadOnThing>>
+    <<trigger ChurchAnimate FadeIn>>
+    <<fadeOutAmbientSFX _AmbientSFX:amb_sanctuary 0>>
+    <<playAmbientSFX _AmbientSFX:amb_deathprairie_church 10>>
+    <<togglePlayerEarTwitch false>>
+<<endif>>
+===
+title: EnterLevel_A4D1
+tags: 
+colorID: 5
+position: 536,80
+---
+<<playMusic church_hospital 10>>
+<<wait 8>>
+Pastor: 我相信， #line:4aed4e
+Pastor: 神就在这里， #line:a2d95f
+Pastor: 他就在这间屋子里。 #line:961106
+Pastor: 此时此刻，我们可以呼喊 #line:01b6dc
+Pastor: 因为，我们知道，我们的声音能被祂听到 #line:abd5a4
+Mom: *吸鼻子* #line:a36390
+Pastor: …… #line:d80a51
+Dad: …… #line:7052be
+Pastor: 现在，我们大家都聚集于此，有谁想再为梅说两句吗？ #line:59c64e
+Mom: 如果有，那就太好了。 #line:faf344
+
+<<if $did_lori_friendship_quest_1 and $did_lori_friendship_quest_2>>
+	Lori: 梅是……我的朋友。 #line:6e3f5f
+	Lori: 神啊，请让梅回来吧。 #line:bd5a5a
+	Lori: 虽然她自己可能不知道， #line:9d07ea
+	Lori: 但她人真的很好。 #line:fce766
+	Lori: 我想拍一部名叫《战栗女巫会》的电影， #line:afa397
+	Lori: 我在电影里专门给她设定了一个角色。 #line:c185d7
+	Dad: 她一定会喜欢的。 #line:e7b14a
+	Mom: 容我再问一句你是谁？ #line:b79c32
+	Lori: 罗莉·梅尔斯。 #line:7d2d95
+	Pastor: 谢谢你，罗莉。 #line:2510fc
+
+	Pastor: 谁还想再说点什么？ #line:9a29ed
+<<endif>>
+
+<<if $did_chazokov_star_visits >= 2>>
+	Chazokov: 梅是个好姑娘， #line:5897ac
+	Chazokov: 我和她一起观测过星座， #line:d36dda
+	Chazokov: 而且……她还很喜欢听关于这些星座的故事…… #line:0bdc2f
+	Chazokov: 她…… #line:3bb949
+    <<close>>
+    <<wait .5>>
+    <<setAnimInt Chazokov crying 1>>
+    <<wait .5>>
+	Chazokov: 我很抱歉。 #line:c07359
+	Pastor: 现在要说这些的确很困难。 #line:aed254
+
+	Pastor: 谁还想再说点什么？ #line:a0b1c2
+<<endif>>
+
+<<if $saw_selmers_deliver_poem_at_poets_society>>
+	Selmers: 我一直都把梅当成是住在山下那条街里的小孩。 #line:08daa6
+	Selmers: 她虽然比我小一点，但她很坚强。 #line:e857fd
+	Selmers: 在过去的这几年里， #line:4c2b69
+	Selmers: 我经历过吸毒、蹲监狱、戒毒和离婚这些事。 #line:954017
+	Selmers: 而且…… #line:532d19
+	Selmers: 我就是觉得，为什么这么多人之中，只有梅遭受到了这些苦难？ #line:28210f
+	Selmers: 这不公平。 #line:ed6379
+	Selmers: 神到底在何处？ #line:1b8e28
+	Selmers: 神的力量又在何处？ #line:0710dc
+	Selmers: 这一切都TM是扯淡。 #line:09a6ce
+    Pastor: 谢谢你，塞尔玛。 #line:5620fa
+	Mom: …… #line:ce37b4
+	Dad: …… #line:1bbc72
+	Pastor: 谁还想再说点什么？ #line:a99727
+<<endif>>
+
+Penderson: 我想说几句。 #line:da785f
+Penderson: 梅·博罗夫斯基这孩子一直都算是个危险份子， #line:fb58d6
+Penderson: 因为她，我报过不止一次警。 #line:29fa79
+Penderson: 所以，我希望她能醒过来，好好吸取吸取教训。 #line:17ad25
+Penderson: 我就想说这么多。 #line:3b9a94
+Dad: 额……好吧…… #line:dc7eb4
+Pastor: ……谢谢你，威廉。 #line:435425
+Twigmeyer: 我想再说几句。 #line:fd35f9
+Pastor: 您请说。 #line:c8e728
+Twigmeyer: 梅是我们这个街区里所有人的女儿。 #line:7483ef
+Penderson: 那是你的个人看法。 #line:769e72
+Twigmeyer: 有些时候，人们会在错误的时间来到错误的地点。 #line:23c570
+Twigmeyer: 我希望大家能一起查清楚她到底遭遇了什么事。 #line:4b2412
+Mom: 哦，我们知道发生了什么。梅的几个朋友已经把事告诉我们了。 #line:f255a1
+Dad: 是的。一天晚上，他们几个人 #line:cf6b84
+Dad: 顺着中央大街，跑到了树林里。 #line:8a34d6
+Dad: 当时，树林里有人在非法狩猎。 #line:c5fd93
+Dad: 之后，那人就朝这几个孩子开了枪。 #line:eb624a
+Dad: 然后梅就倒在了地上，然后…… #line:f4913b
+Mom: 她之后肯定是从山上滚了很多圈才下来的。 #line:37588e
+Mom: 她在滚下来的过程中，着地的方式肯定也不太好……然后…… #line:677818
+Twigmeyer: 哦， #line:716e51
+Twigmeyer: 好吧。 #line:aec7db
+Twigmeyer: 希望她能快点醒过来，然后把她知道的所有事都告诉咱们。 #line:d8ff47
+Twigmeyer: 看她还记不记得。 #line:6a2d41
+Pastor: 我确定她- #line:74e6da
+<<close>>
+<<walk Janitor JanitorComa wait>>
+<<playAmbientSFX _AmbientSFX:hospital_fade_in>>
+<<trigger ChurchAnimate Morph>>
+
+// fade out characters //
+<<if $saw_selmers_deliver_poem_at_poets_society>>
+    <<lerpOffset Selmers 0 -3 6 sineIn>>
+<<endif>>
+<<if $did_lori_friendship_quest_1 and $did_lori_friendship_quest_2>>
+    <<lerpOffset Lori 0 -3 6 sineIn>>
+<<endif>>
+<<if $did_chazokov_star_visits >= 2>>
+    <<lerpOffset Chazokov 0 -3 6 sineIn>>
+<<endif>>
+<<lerpOffset Penderson 0 -3 6 sineIn>>
+<<lerpOffset Twigmeyer 0 -3 6 sineIn>>
+
+//<<fadeOutMusic 7>>
+<<fadeOutAmbientSFX _AmbientSFX:amb_deathprairie_church 7>>
+//<<playAmbientSFX _AmbientSFX:amb_hospital 7>>
+<<playMusic amb_hospital 7>>
+<<wait 7>>
+Janitor: 哦，抱歉。我本来不想打断你们的。 #line:0f83ec
+Janitor: 这姑娘怎么了？ #line:94156f
+Mom: 我们认识你吗？ #line:ba74fb
+Pastor: 您是到这儿来打扫卫生的吗？ #line:de0a7c
+Janitor: 不是的。我是来修门的。 #line:617b38
+Pastor: 是修这间屋子的门吗？ #line:aef5e0
+Janitor: 不是！ #line:09548a
+Dad: 那好吧，那…… #line:f092c6
+Janitor: 她会没事的。 #line:7e1f4d
+Janitor: 至少今天会没事的。 #line:d81504
+Mom: 你在说什么？ #line:e1e1b5
+Janitor: 什么什么啊？ #line:240c23
+Dad: 你到底是谁？ #line:84d8c4
+Janitor: 我只是个维修工罢了！ #line:d253a0
+<<close>>
+<<walk Janitor JanitorOffRight wait>>
+//mae opens her eyes//
+Mae: 那座房子消失了…… #line:5d5d9c
+Dad: 梅！ #line:0ba4ac
+Mom: 哦，感谢上天！ #line:1f70d5
+Pastor: 梅，你刚才说什么？ #line:d7a77a
+Mae: 它死了。 #line:1ea1a5
+Mom: 亲爱的，什么东西死了？ #line:2f67a8
+Mae: …… #line:dcfcfd
+Dad: 梅，亲爱的？ #line:fb0dd8
+Mae: 一切 #line:4c22a3
+<<close>>
+//<<fadeOutAmbientSFX _AmbientSFX:amb_hospital 1>>
+<<playAmbientSFX _AmbientSFX:hospital_fade_out>>
+<<fadeOut 4 wait>>
+<<wait 2>>
+<<overrideLoadingScreenType Blank>>
+<<endDay>>
+===
+title: ChurchHospital
+tags: 
+colorID: 5
+position: 530,329
+---
+
+===

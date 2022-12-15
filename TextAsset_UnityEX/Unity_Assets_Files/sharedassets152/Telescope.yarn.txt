@@ -1,0 +1,569 @@
+title: DS1
+tags: demo2
+colorID: 0
+position: 17983,-1246
+---
+Mae: 我好像找到了一颗。 #line:909994
+Chazokov: 让我看看。 #line:0827b6
+<<close>>
+<<tell Telescope ShowConstellation>>
+<<wait 2>>
+Chazokov: 没错，这是卡斯蒂斯。 #line:f7c9b5
+    ->卡斯蒂斯是什么啊？ #line:9422ac
+    ->没错，就是它。 #line:e4244b
+        Chazokov: 你以前就认识这个？ #line:63a943
+        Mae: 没。 #line:28b7f7
+Chazokov: 这颗星背后有这样一个故事：有个女人想要建造一座通天塔， #line:e8bdf0
+Chazokov: 众神为此将她沉入深海。 #line:a5d5ab
+Mae: 哇，这也太狗血了吧。 #line:eb71e2
+Chazokov: 但无论在海里沉得有多深，她也不愿死去。 #line:e1c648
+Mae: [shake=.01]那 必 须 的！[/shake][/size] #line:08d014
+Chazokov: 哦？你也是绝对不死的吗？ #line:3830cb
+    ->我想，某一天我还是会死吧。 #line:10b838
+    ->我不知道。 #line:648731
+    ->[shake=.05]当 然 不 可 能 啦！[/shake] #line:f15b59
+        Chazokov: 吼吼吼吼～！ #line:125e56
+        Chazokov: 看来你不仅会违抗众神的死亡诅咒，还会违抗卡斯蒂斯的不死诅咒，或许你应该叫“薛定谔的梅"。 #line:baf44b
+Chazokov: 众神在这些故事中只是意象， #line:fae4ed
+Chazokov: 实际指代了那些我们无法控制的事物。 #line:1aefe0
+Chazokov: 例如水灾，癌症或类似的事儿。 #line:d5f55f
+Mae: 无论发生什么，我决不放弃。 #line:696e3a
+Chazokov: 这还差不多。 #line:d6e440
+<<if $found_ds_1 is 1 and $found_ds_2 is 1>>
+    [[FoundBothForDay1]]
+<<endif>>
+===
+title: DS2
+tags: demo2
+colorID: 0
+position: 18286,-1252
+---
+Mae: 找到一个！ #line:5da86e
+Chazokov: 让我看看。 #line:9d2464
+<<close>>
+<<tell Telescope ShowConstellation>>
+<<wait 2>>
+Chazokov: 啊，没错，这是弑君者多尔。 #line:7aced8
+Mae: 这下我感兴趣了。 #line:b91366
+Chazokov: 有一天多尔在街上经过国王贝恩的仪仗队时， #line:fc471b
+Chazokov: 多尔没有高呼万岁，国王把这个视为对他的冒犯。 #line:344272
+    ->为什么啊？ #line:735ceb
+        Chazokov: 谁知道贵族脑子里怎么想的。 #line:7ae9cd
+    ->天哪。 #line:e6c552
+Mae: 那后来发生什么了？ #line:ac93c3
+Chazokov: 国王羞辱了多尔和他家族，从他所在村庄到一切与他有关的东西。 #line:27f339
+Chazokov: 直到他准备去羞辱多尔的鸡仔。 #line:c4d6a6
+    ->该死。 #line:905377
+    ->鸡这种动物还挺恶心的。 #line:cd9168
+        Mae: 它们是恐龙的后代，怪异糟糕还易怒。 #line:a19dc0
+        Mae: 他们还互啄眼睛! #line:a9ec9a
+        Chazokov: 它们很好吃。 #line:00173d
+        Mae: 它们就应该很好吃。 #line:a029ba
+Chazokov: 多尔决定反击，他先杀害了国王的鸡群， #line:80c609
+Chazokov: 然后是他祖先的领地， #line:b42663
+Chazokov: 最后是他的家族。 #line:056f4c
+Mae: Giao！ #line:8fb487
+Chazokov: 当他来到国王面前的时候， #line:c33a1b
+Chazokov: 国王一言不发。 #line:828164
+Mae: 我想把这个家伙纹在我身上。 #line:15e138
+Chazokov: 你觉多尔是一个英雄吗？ #line:b04272
+    ->当然了。 #line:98592b
+    ->我不知道。 #line:74c743
+        Mae: 不过我觉得没什么关系吧？ #line:f40d5c
+Mae: 就像有人告诉你，你什么都不是。 #line:4fc565
+Mae: 这样的故事听起来还不错。 #line:272b5a
+Chazokov: 这是个真实故事，活生生的人为此死去。 #line:314376
+Chazokov: 我觉得你应该感到糟心。 #line:9a2146
+Mae: 真的吗？ #line:f6fe47
+Chazokov: 吼吼吼吼～ #line:695572
+<<if $found_ds_1 is 1 and $found_ds_2 is 1>>
+    [[FoundBothForDay1]]
+<<endif>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 17685,-1208
+---
+<<tell AmbientSFX:telescope_flare Play>>
+<<set $did_chazokov_star_visits += 1>>
+<<if $found_all_dusk_stars>>
+    [[AllStars]]
+<<elseif $telescope_blind is 0>>
+    <<set $telescope_blind += 1>>
+    [[TelescopeBlind0]]
+<<elseif $telescope_blind is 1>>
+    <<set $telescope_blind += 1>>
+    [[TelescopeBlind1]]
+<<elseif $telescope_blind is 2>>
+    <<set $telescope_blind += 1>>
+    [[TelescopeBlind2]]
+<<endif>>
+===
+title: FoundBothForDay1
+tags: demo2
+colorID: 0
+position: 18102,-913
+---
+Chazokov: 我觉得我们今天已经把能看的星座都看完了。 #line:aa95dc
+Mae: 哦，是吗？ #line:2c70db
+Chazokov: 他们来去匆匆，稍纵即逝。 #line:b47b7d
+<<irisOut 1 wait>>
+<<scene Underhill>>
+===
+title: DS3
+tags: 
+colorID: 0
+position: 18707,-1223
+---
+Mae: 我发现了，我发现了，我发现了一个！ #line:10bdfd
+Chazokov: 让我看看。 #line:5cf4b0
+<<close>>
+<<tell Telescope ShowConstellation>>
+<<wait 2>>
+Chazokov: 先知者斯特林 #line:ee849b
+Mae: 为什么我从来没听过这些人呢？ #line:6ffabc
+Chazokov: 额…… #line:8fb263
+Chazokov: 天文学家发现这些稀有星座之前， #line:701fa2
+Chazokov: 别的被发现的星球已经把耳熟能详的神话与传奇的名字都占了。 #line:ef6044
+Mae: 好吧。 #line:49f7b4
+Chazokov: 斯特林这个人的故事讲述了世界的瞬息万变、沧海桑田， #line:f9af8b
+Chazokov: 还讲述了一个被世界遗忘的人。 #line:a96c7c
+    ->这些故事都是以悲剧收场吗？ #line:f5ba69
+        Chazokov: 我可不会这样说。 #line:2f95a0
+        Chazokov: 你觉得世界不断变化是一件坏事吗？ #line:cdafd7
+        Mae: 我的意思是先知斯特林可能会觉得这不是什么好事。 #line:c0a7bc
+    ->所以他并不会预卜先知吗？ #line:24f162
+        Chazokov: 谁知道呢？ #line:7ec040
+        Chazokov: 我们又是否相信那些传说真实发生过呢？ #line:407f7c
+        Mae: 是吧。 #line:434acc
+Chazokov: 不管怎样，有一天他的国王遇见了一位陌生的智者， #line:3fda4f
+Chazokov: 他还是一名天文学家。 #line:29776f
+Chazokov: 这名天文学家向国王展示了 #line:9f34d9
+Chazokov: 行星与星辰的运转规则与原理。 #line:4c10e7
+Chazokov: 于是国王将斯特林赶出了他所居住的府邸。 #line:192de7
+Chazokov: 因为先知斯特林告诉国王的是 #line:19e606
+Chazokov: 一个截然相反的星系故事。 #line:66a9d2
+    ->斯特林相信他自己的说辞吗？ #line:e855b8
+        Chazokov: 我认为他相信。 #line:a87ed7
+        Mae: 也是。 #line:fa53e9
+    ->国王做得挺对的。 #line:6058b2
+Chazokov: 对于那些上位者而言， #line:c0797c
+Chazokov: 就算他们的王国 #line:f6c04a
+Chazokov: 在一日之间被取代， #line:ec2372
+Chazokov: 难道他们就没有责任去好好处安置劳动者吗？ #line:24cc6e
+Chazokov: 他们就应该被直接淘汰扔进垃圾桶里吗？ #line:206642
+    ->这就是生活！ #line:e04255
+        Chazokov: 你觉得这合理吗？ #line:18602a
+        Chazokov: 一个人受到诸如 #line:a6f6f5
+        Chazokov: 无饭可食和无家可归的待遇， #line:b14c10
+        Chazokov: 只是因为他对掌权者 #line:58145d
+        Chazokov: 不再有用了而理应如此？ #line:94c3a6
+        Mae: 额……查佐科夫先生，你想多了。 #line:d2ec8c
+    ->不是。 #line:b487bd
+        Chazokov: 那怎么办呢？ #line:a77050
+        Mae: 我不知道。 #line:eaa7b1
+        Mae: emmmmm…… #line:9f8c72
+        Mae: 国王就不能给斯特林一份其他的工作吗？ #line:15c6fa
+        Mae: 或者不如这样 #line:ca025a
+        Mae: 为了活命他可以前往 #line:df515f
+        Mae: 一个不必再为国王效命的地方？ #line:c1c577
+        Chazokov: 不错，这是你思考的结果！ #line:8352b3
+Chazokov: 吼吼吼吼～ #line:a5fe86
+Chazokov: 星空使人思考。 #line:d5167d
+<<if $found_ds_3 is 1 and $found_ds_4 is 1>>
+    [[FoundBothForDay2]]
+<<endif>>
+===
+title: DS4
+tags: 
+colorID: 0
+position: 19005,-1180
+---
+Mae: 当啷！ #line:d6ac46
+Mae: 发现一个了！ #line:3b3c3c
+Chazokov: 让我看看。 #line:62c5f2
+<<close>>
+<<tell Telescope ShowConstellation>>
+<<wait 2>>
+Chazokov: 没错！斗士西蒙娜！ #line:c4ad15
+Mae: 她有一把枪。 #line:43c6c9
+Chazokov: 西蒙娜生活在一片美好的土地上， #line:d49e94
+Chazokov: 但在这美好的土地下有着压迫的根源。 #line:0950ea
+Chazokov: 在这片土地上，那些根须狠狠汲取养分， #line:a75caa
+Chazokov: 扼杀了其他一切。 #line:0fc6f0
+    ->刚才你讲得好诗意啊，查佐科夫先生。 #line:46e16c
+        Chazokov: 谢谢，不过我只是在读手机上看到的摘要。 #line:39360f
+        Mae: 好吧。 #line:b2ac31
+        Chazokov: 这里可能没信号，但是有WIFI呀！ #line:0996f7
+    ->天哪。 #line:4fa3ca
+        Chazokov: 一切发生实在是太快了。 #line:0024f3
+Chazokov: 总之，当采取封境和宵禁的措施后， #line:0f2f5e
+Chazokov: 西蒙娜和她的战友们展开地下反抗活动。 #line:ed6d82
+Chazokov: 他们渗透，破坏和释放囚犯。 #line:0c1fff
+Mae: 很好。 #line:666015
+Chazokov: 西蒙娜是第一批身份暴露的斗士之一。 #line:998886
+Chazokov: 不过就算是张贴了她的通缉令，她仍然顺利逃过了抓捕。 #line:91febb
+Chazokov: 随着她的事迹传到整片大陆， #line:e7c5f2
+Chazokov: 越来越多的人在晚上为她祈祷。 #line:94b3c9
+Chazokov: 他们认为西蒙娜是他们的救世主。 #line:cc484c
+    ->她是吗？ #line:a4a096
+    ->她一个人得承受多大的压力啊 #line:2e8636
+        Chazokov: 当然她并非独自战斗。 #line:7a5993
+        Chazokov: 她其实只是组织中的一个成员， #line:50e2d7
+        Chazokov: 但她成为一个标志。 #line:1e535e
+        Chazokov: 有时候人们很难去记住太多的东西， #line:810752
+        Chazokov: 所以有时候用一个标志来代表他们 #line:e6b960
+        Chazokov: 就变得尤为重要。 #line:770135
+        Mae: 就好比数字。 #line:1a7af5
+Chazokov: 我们并不知道西蒙娜身埋何处。 #line:21a9cd
+Mae: 该死，我就知道不是个好结局。 #line:15772b
+Chazokov: 当战事升级后，坏事就发生了， #line:e99031
+Chazokov: 她朝着宫殿大门冲锋 #line:bda050
+Chazokov: 而大门背后埋伏了一批大炮。 #line:1b953f
+Mae: 不是吧。 #line:70c0f4
+Chazokov: 直到许多年后人们发现当时的乱葬岗， #line:43c195
+Chazokov: 她的尸骨早已无法分辨。 #line:9da60a
+Chazokov: 据说她和其他尸骸 #line:09ef66
+Chazokov: 被一起安葬在她的家乡。 #line:484d6d
+Mae: 唉，这故事真是又黑暗，又悲伤，又吓人。 #line:4de239
+Chazokov: 吼吼吼吼～ #line:8348c2
+Chazokov: 这就是历史！ #line:6e3a41
+<<if $found_ds_3 is 1 and $found_ds_4 is 1>>
+    [[FoundBothForDay2]]
+<<endif>>
+===
+title: FoundBothForDay2
+tags: 
+colorID: 0
+position: 18839,-871
+---
+Chazokov: 与今日而言，这是难以磨灭的历史与口口相传的故事。 #line:37fb7f
+Mae: 一句卧槽走天下啊！ #line:95f57b
+<<irisOut 1 wait>>
+<<scene Underhill>>
+===
+title: DS5
+tags: 
+colorID: 0
+position: 19422,-1159
+---
+Mae: 发现！一个了！ #line:15a206
+Chazokov: 让我们！看看！ #line:bad2fc
+<<close>>
+<<tell Telescope ShowConstellation>>
+<<wait 2>>
+Chazokov: 巨蛇座。 #line:f1e3dc
+Mae: “巨蛇座"？ #line:b5a578
+Chazokov: 没错。 #line:1cf29e
+    ->就这个名字吗？ #line:0c75ff
+    ->我以前看到过一条巨蛇。 #line:4317c1
+        Chazokov: 是在动物园吗？ #line:eee654
+        Mae: 是当童子军去远足的时候， #line:a68873
+        Mae: 有一条巨蛇就在石头上晒太阳。 #line:967da5
+        Chazokov: 它很惬意呢！ #line:200c7e
+        Mae: 我觉得能看到一条蛇休息还蛮罕见的呢～ #line:154092
+        Mae: 那么这条星座蛇有什么故事呢？ #line:5a4500
+Chazokov: 巨蛇由地球孕育而生，并向村子发动战争。 #line:b86e12
+Mae: 什么村庄？ #line:89094c
+Chazokov: 你懂的，村庄。 #line:8ebf9d
+Mae: 好吧。 #line:60280c
+Chazokov: 随着巨蛇渐渐卷缩起来， #line:d8a294
+Chazokov: 部落的人才意识到他们被某个巨大的东西包围住了， #line:1ebb1a
+Mae: 那就是巨蛇。 #line:910264
+Chazokov: 于是人们联合起来 #line:f41fcc
+Chazokov: 杀死了这条…… #line:1694c2
+Mae: 巨蛇。 #line:518f0e
+Chazokov: 聪明 #line:d1d843
+Mae: 巨蛇为什么要攻击人类呢？ #line:9b5f0b
+Chazokov: 你对巨蛇心生同情吗？ #line:229e7f
+Mae: 拜托，我不知道，那我们能继续说说巨蛇了吗？ #line:fbe27c
+Chazokov: 巨蛇 #line:880f55
+Mae: 巨蛇 #line:9f7885
+Chazokov: 巨 #line:46d18f
+Mae: 蛇 #line:48ff8a
+<<if $found_ds_5 is 1 and $found_ds_6 is 1>>
+    [[FoundBothForDay3]]
+<<endif>>
+===
+title: DS6
+tags: 
+colorID: 0
+position: 19763,-1148
+---
+Mae: 已定位目标星座，队长。 #line:366655
+Chazokov: 让我们按照指示行事。 #line:f68ab7
+<<close>>
+<<tell Telescope ShowConstellation>>
+<<wait 2>>
+Chazokov: 噢，你会喜欢这个星座的。 #line:e46418
+Mae: 真滴么？ #line:3b40d1
+Chazokov: 因为他们死了。 #line:638061
+Mae: 好的，我已经喜欢上了。 #line:8f2375
+Chazokov: 通灵者格姆西 #line:3113e8
+Chazokov: 貌似他可以和死者对话？ #line:5a0e97
+Mae: 真滴？ #line:0e04f5
+Chazokov: 谁知道呢。 #line:de920b
+Chazokov: 但是他死去的时候 #line:2690d6
+Chazokov: 他的灵魂附身到他的尸体上，然后开始说话了。 #line:4307be
+Mae: 等下，这也太蠢了 #line:2722aa
+Chazokov: 为什么这么说？ #line:fb88c0
+    ->他那种状态和活着没什么两样 #line:5b8062
+        Chazokov: 并不是！他的身体已经死了！ #line:e537f8
+        Mae: 也就是说他就像丧尸一样？ #line:80e61a
+        Chazokov: 不过和原来一样聪明噢！ #line:b98dcf
+        Chazokov: 而且不会吃别人的脑子。 #line:edba2d
+        Mae: 所以除了闻起来臭臭的，其他一切正常？ #line:aaa62e
+        Chazokov: 就是这样。 #line:4f7f27
+        Mae: 为什么这家伙也能被选作一个星座名呢？ #line:a6f91a
+        Chazokov: 我也不知道。 #line:a1d5af
+        Mae: 我想这故事还挺让人印象深刻的。 #line:ff0d44
+        Mae: 挺傻的，不过挺难忘的。 #line:6943ee
+    ->他是怎么……等下……你说什么？ #line:e97c95
+        Chazokov: 他的灵魂占据了他的身体。 #line:200b99
+        Mae: 这好像就等同于还活着吧。 #line:1a466c
+        Chazokov: 不，他已经死了，只不过被附身了 #line:fa541e
+        Mae: 还是被他自己。 #line:109383
+        Chazokov: 没错。 #line:bb086b
+        Mae: 天哪，这太蠢了。 #line:4f6dcf
+Mae: 那么这个的寓意是什么呢？ #line:5fb6e3
+Chazokov: 寓意？ #line:4d7e1b
+Mae: 是啊，像这样的星星不都有某种寓意嘛？ #line:e9a629
+Chazokov: 有时候奇怪的事情只是自顾自地奇怪而已，不明也不白！ #line:1eb5da
+Mae: 这是它的寓意？ #line:75e0e8
+Chazokov: 吼吼吼吼～ #line:7d2d41
+<<if $found_ds_5 is 1 and $found_ds_6 is 1>>
+    [[FoundBothForDay3]]
+<<endif>>
+===
+title: FoundBothForDay3
+tags: 
+colorID: 0
+position: 19519,-848
+---
+Chazokov: 今天这一对星座全找完了！ #line:2588ea
+Mae: 哦天呐, 查佐科夫先生!  #line:ff9c27
+Chazokov: 吼吼吼吼～ #line:2f1424
+Chazokov: "天呐"。 #line:7e93fc
+<<irisOut 1 wait>>
+<<scene Underhill>>
+===
+title: DS7
+tags: 
+colorID: 0
+position: 20170,-1117
+---
+Mae: 我好像找到了一个。 #line:10b624
+Chazokov: 咱们来瞅瞅。 #line:b27058
+<<close>>
+<<tell Telescope ShowConstellation>>
+<<wait 2>>
+Chazokov: 这是攀登者科尔。 #line:cd8ef5
+Mae: 科尔。 #line:d38d03
+Mae: 我也认识一个叫科尔的人。他们俩之间有什么关系吗？ #line:2a6c64
+Chazokov: 应该有关系吧。 #line:d64f82
+Mae: 这个人怎么样了呢？ #line:3fdea9
+Chazokov: 科尔的家乡位于平原地区。 #line:3921ea
+Mae: 中西部吗？ #line:16aa83
+Chazokov: 不论哪里的中西部，反正他来自平原。 #line:07293b
+Mae: 每片土地都有中西部地区。 #line:e5eab5
+Chazokov: 这倒没错。 #line:591762
+Chazokov: 他一直向往高山， #line:9e595c
+Chazokov: 于是他此生都在不断攀登高峰。 #line:e6e72e
+Mae: ……就因为他家乡是平原？ #line:4f919d
+Chazokov: 这不是人类与生俱来的本能吗？ #line:428e69
+Chazokov: 去追求一个人成长过程中不曾或不同的事物？ #line:3c338c
+    ->好像是哦 #line:fa3c72
+        Mae: 镇上的人也经常去市里。 #line:16cd7b
+        Mae: 好像他们去了那儿走一趟就能得到些什么似的， #line:5fba79
+        Mae: 感觉这样的人还挺多的吧。 #line:fd7171
+        Mae: 虽然挺糟的，因为并不是所有人能向上爬到足以离开。 #line:2389a0
+        Chazokov: 当我离开我的祖国时， #line:d72307
+        Chazokov: 我有同样的想法。 #line:e350da
+        Chazokov: 不过我并不后悔。 #line:d9a48e
+        Mae: 你喜欢负鼠泉吧？ #line:11e297
+        Chazokov: 这个地方有太多难以言明与可见的美。 #line:3cca87
+        Chazokov: 尤其对那些生长于此天天见到这些的人而言。 #line:739bad
+    ->并不是 #line:6f17dc
+        Mae: 我爱我家。 #line:680ab7
+        Mae: 我也爱我的邻居， #line:5b5d2f
+        Mae: 我喜欢那糟糕的餐厅食品。 #line:b9f1a7
+        Chazokov: 那个可不太好。 #line:bea608
+        Mae: 不过还是好的那种坏。 #line:2c1231
+        Mae: 那些不一样的世界就像 #line:3ec902
+        Mae: 你读朋友所写的一个故事一样。 #line:f488c1
+        Chazokov: 我喜欢迪斯科炸薯条。 #line:d446b9
+Mae: 那他最后怎么样了呢？ #line:2b8040
+Chazokov: 他回到了自己的家， #line:3ed78a
+Chazokov: 抱怨天空令人感到沉重， #line:49bc16
+Chazokov: 他已经去过云端， #line:da67c3
+Chazokov: 现在它们紧挨着他。 #line:c13233
+Mae: 这是一个非常具体的抱怨。 #line:f9e900
+Chazokov: 当一个人离开一个地方后， #line:b3df30
+Chazokov: 他回来的时候一定会带来些什么。 #line:698319
+Mae: 一个人。 #line:069f81
+Chazokov: 一个人。 #line:af24bf
+
+<<if $found_ds_7 is 1 and $found_ds_8 is 1>>
+    [[FoundBothForDay4]]
+<<endif>>
+===
+title: DS8
+tags: 
+colorID: 0
+position: 20480,-1115
+---
+Mae: 找到了！ #line:02befa
+Chazokov: 啊哈……来看看这是哪个？ #line:cf243d
+<<close>>
+<<tell Telescope ShowConstellation>>
+<<wait 2>>
+Chazokov: 这是天文学家阿丁娜。 #line:33527e
+Mae: ！！！！ #line:40f9b4
+Chazokov: 你知道这个？ #line:2b4c77
+Mae: 没错！我知道这个！！！！ #line:90844b
+Chazokov: 这是个家喻户晓的故事。 #line:1846a9
+Chazokov: 故事讲述了阿丁娜怎样游历到冰湖， #line:1ed983
+Chazokov: 还讲述了她怎样穿越一片又一片无人之地。 #line:1344b2
+Mae: 小时候我很喜欢阿丁娜的故事。 #line:8ee6b8
+Chazokov: 那你肯定知道她的结局喽？ #line:f66bed
+Mae: ……嗯…… #line:f03c29
+Chazokov: 你应该知道她所追求的， #line:50c7d5
+Chazokov: 背朝天， #line:c46ceb
+Chazokov: 深入地下， #line:031421
+Chazokov: 那里她的头顶不再是星辰， #line:c5863d
+Chazokov: 从此她再也没出现在人们的视线里？ #line:ae9fcc
+Mae: 是的。 #line:abcc0b
+Mae: 就这样吧。 #line:2bf90e
+Chazokov: 你觉得这算是个悲伤结局吗？ #line:9a715a
+    ->是啊，你看，她可能死了。 #line:72472a
+        Chazokov: 她活过经历过，她曾做过太多壮举。 #line:5b08db
+        Chazokov: 像流星一般闪耀天际而倏忽不见也是件乐事。 #line:6e47b0
+        Mae: 还是很糟糕啊，与死无异。 #line:10b34c
+        Chazokov: 这的确是个遗憾。 #line:bb64e8
+    ->不！消失可不等同于死亡。 #line:a81e2c
+        Mae: 她可能好好地去到别的地方了。 #line:255bc5
+        Mae: 再做尽天下酷事！ #line:3c65b7
+        Chazokov: 天 哪！ #line:9e8845
+        Mae: 就是这样，也很好啊。 #line:038871
+
+<<if $found_ds_7 is 1 and $found_ds_8 is 1>>
+    [[FoundBothForDay4]]
+<<endif>>
+===
+title: FoundBothForDay4
+tags: 
+colorID: 0
+position: 20249,-858
+---
+Chazokov: 哇哦～今天完美收官了！ #line:6faa70
+Mae: 真好。 #line:6d9fed
+<<irisOut 1 wait>>
+<<scene Underhill>>
+===
+title: DS9
+tags: 
+colorID: 0
+position: 20927,-1075
+---
+Mae: 找到了！ #line:dcb158
+Chazokov: 让我们谷歌一下。 #line:2a7fce
+<<close>>
+<<tell Telescope ShowConstellation>>
+<<wait 2>>
+
+Chazokov: 这是生火者厄斯金。 #line:0f239d
+Mae: “生火者"？ #line:6da64a
+Chazokov: 他是一个在寒冷和黑暗中的浪子， #line:40492e
+Chazokov: 燃起一堆火，蜷缩起来， #line:271102
+Chazokov: 为了微光和温暖。 #line:3010b7
+Mae: 听起来很喜庆。 #line:296d5b
+Chazokov: 听起来像个苟活的人。 #line:a65f5f
+Mae: 好吧。 #line:0d38ae
+Mae: 这些星辰让我有点想哭。 #line:2b844f
+Chazokov: 在我屋顶上哭吗？ #line:65a209
+Chazokov: 想聊聊吗？ #line:dddacc
+Mae: 没事，我挺好的。 #line:3b4417
+Chazokov: 这是那种喜悦的哭，还是悲伤的？ #line:ee0fb4
+Mae: 我不知道，我可没有足够的墨水来描述我现在的情绪。 #line:854f2b
+Chazokov: 没事的。 #line:d753a2
+Chazokov: 有时候太多的词语反而没用。 #line:fbabf6
+Mae: 是的。 #line:4b4934
+Mae: 谢谢你。 #line:081324
+Chazokov:谢谢你和我一起看星星。 #line:3d8a0b
+
+<<if $found_ds_1 and $found_ds_2 and $found_ds_3 and $found_ds_4 and $found_ds_5 and $found_ds_6 and $found_ds_7 and $found_ds_8 and $found_ds_9>>
+    <<set $found_all_dusk_stars to 1>>
+    Chazokov: 我想我们已经发现……所有的星座了? #line:6c2e27
+    Mae: 其实, 我们并没有真正发现他们, 对吧?  #line:3cdd95
+    Mae: 我的意思是早就有人已经看到并且给他们命名了， #line:5aa0ce
+    Mae: 写了一堆关于他们的东西， #line:741b62
+    Mae: 而我们就像 #line:c50ace
+    Mae: 发现他们为我们创造了什么。 #line:304668
+    Chazokov: 这不是一种发现吗? #line:6fe78f
+    Mae: 并不是. #line:6b2886
+    Chazokov: 也许不是历史意义上的 #line:dbe0f2
+    Chazokov: 我们没有创造繁星 #line:80513d
+    Chazokov: 也没有赋予他们名字 #line:0fbc41
+    Chazokov: 但我们在如此秋夜 #line:1f3c48
+    Chazokov: 一起发现了它们。 #line:88cc00
+    Chazokov: 这不说明一些东西么? #line:138ad0
+    Mae: 东西东西东西。 #line:264806
+    Mae: 我奶奶也曾经那么曰过。 #line:b5494d
+    Mae: 故事里的一些事情已经真的发生了 #line:956dd7
+    Mae: 因为故事已经被你听到了。 #line:853d0e
+    Chazokov: 真不错。 #line:878ec9
+    Mae: 是不错。 #line:7bbb54
+    <<close>>
+    <<tell Telescope Center>>
+    <<extraZoom -40 3>>
+    <<wait 4>>
+    <<waitForInteractOrJump>>
+    <<unlockAchievement Dusk_Stargazer>>
+<<endif>>
+
+<<close>>
+<<irisOut 1 wait>>
+<<scene Underhill>>
+===
+title: TelescopeBlind0
+tags: demo2
+colorID: 0
+position: 17404,-1221
+---
+Mae: [shake=.1]靠，我的眼睛!![/shake] #line:3278bf
+Chazokov: 你应该先把滤镜给装上…… #line:04ac8f
+Mae: [shake=.05]上帝啊！！！[/shake] #line:66dc7b
+Chazokov: 太阳太刺眼了！你会瞎了的！ #line:5c3c50
+Mae: 你刚才好像没提醒我吧？ #line:103d91
+Chazokov: 我刚刚说过的！ #line:4be191
+===
+title: TelescopeBlind1
+tags: 
+colorID: 0
+position: 17424,-980
+---
+Mae: [shake=.1]哇啊啊啊啊啊啊啊，我的眼睛！！！[/shake] #line:028bb2
+Chazokov: 滤镜！ #line:f411fb
+Mae: 啊啊啊啊！ #line:650e7c
+===
+title: TelescopeBlind2
+tags: 
+colorID: 0
+position: 17651,-927
+---
+Mae: [shake=.1]啊啊啊啊！！！我瞎了！！[/shake] #line:7c99dc
+Chazokov: 这可是你自己的失误了。 #line:f566d1
+===
+title: VerifyQuit
+tags: 
+colorID: 0
+position: 17670,-639
+---
+Mae: 嗯……我弄不懂这玩意儿 #line:906ce3
+->放弃 #line:d56f35
+    <<fadeOutMusic 1>>
+    <<fadeOut 1 wait>>
+    <<scene Underhill>>
+->再试一次 #line:cd5533
+===

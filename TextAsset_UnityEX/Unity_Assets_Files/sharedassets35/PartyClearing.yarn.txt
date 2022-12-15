@@ -1,0 +1,725 @@
+title: Bea
+tags: 
+colorID: 0
+position: -8156,1534
+---
+<<if $beer_phase is 0>>
+	<<if $bea is 0>>
+		Bea: 怎么了？ #line:3a9965
+		Mae: 没什么。 #line:a402a5
+		<<set $bea += 1>>
+	<<elseif $bea is 1>>
+		Mae: 这聚会真是酷毙啦！ #line:a32de1
+		Bea: 没错。 #line:346938
+		<<set $bea += 1>>
+	<<elseif $bea is 2>>
+		Mae: 你在和谁聊天啊？ #line:56b0a4
+		Bea: 反正不是在和你聊。 #line:00e569
+		<<set $bea_done to 1>>
+	<<endif>>
+<<elseif $beer_phase is 1>>
+	<<if $bea is 0>>
+        Mae: =_= #line:144859
+		Mae: 哟～ #line:f5e99f
+		Bea: 又怎么了？ #line:776ec6
+		Mae: 你的脾气有点不太好，知道吗？ #line:f57914
+		Bea: 我不知道。 #line:11b87e
+		Jackie: 真粗鲁。 #line:147744
+        Mae: o_o :| _o_ #line:23d6be
+		<<set $bea += 1>>
+	<<elseif $bea is 1>>
+        Mae: =_= #line:7b1bdf
+		Mae: 你打算在这儿待多长时间？ #line:91c72b
+		Bea: 梅，咱们才刚到这儿十分钟。 #line:42f444
+		Mae: 哦。 #line:b94b09
+		Bea: 话说，你喝了……多少啤酒啊？ #line:7d7256
+		Mae: 喝 了 两 杯！ #line:fc4658
+		Bea: 梅，你还小，可要适可而止啊。 #line:f74988
+        Mae: o_o :| _o_ #line:323674
+		<<set $bea_done to 1>>
+	<<endif>>
+<<elseif $beer_phase is 2>>
+	<<if $bea is 0>>
+        Mae: =_= :) #line:39e9fb
+		Mae: 嘿，碧 娅。 #line:33a46c
+		Bea: 又怎么了？ #line:de76da
+		Bea: 哦，老天， #line:29b05a
+		Bea: 你已经 #line:bd61a1
+		Bea: 喝醉啦。 #line:656ff2
+		Mae: 咱们来这儿不就是为了能喝个痛快吗？？？ #line:bd2ebf
+		Bea: 我可不这么觉得。我还得开车呢。 #line:97dbd0
+		Bea: 就算不开车，我也不会喝这么多…… #line:00d815
+		Mae: 好吧，我还没有驾照呢！！！ \o/ #line:182f92
+		Mae: 那……我……怎么办啊！！！！ #line:4fb043
+        Mae: o_o :| _o_ #line:17daa5
+		<<set $bea += 1>>
+	<<elseif $bea is 1>>
+		Mae: 嘿，碧 娅。 #line:4c016c
+		Bea: 什么事？ #line:daf1b1
+		Jackie: 这人是谁啊？ #line:6c779e
+		Bea: 你还记得梅·博罗夫斯基吗？ #line:a10767
+		Jackie: 哦，我的天。 #line:2b7435
+		<<set $bea += 1>>
+	<<elseif $bea is 2>>		
+		Bea: 梅，你已经醉啦。 #line:c58a41
+		Bea: 你应该到篝火边醒醒酒去了。 #line:f8fbc9
+        Mae: :) #line:cb8d92
+		Mae: 我真想脱光了，然后在林子里跑几圈！！！！！ \o/ #line:b6caea
+		Bea: 你 快 给 我 找 地 儿 坐 下。 #line:bcfc63
+        Mae: o_o :| _o_ #line:938ed9
+        <<set $should_sit_log to 1>>
+		<<set $bea_done to 1>>
+	<<endif>>
+<<elseif $beer_phase is 3>>
+<<endif>>
+
+
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: -8465,1136
+---
+<<set $night to 1>>
+[[SceneStart]]
+===
+title: Beer
+tags: 
+colorID: 0
+position: -8811,1242
+---
+<<if $can_drink_beer is 1>>
+	<<set $beer_phase += 1>>
+	<<fadeOut 1 wait>>
+	<<wait 1>>
+    <<playAmbientSFX AmbientSFX:beer_drink>>
+    <<wait 3>>
+	<<fadeIn 1 wait>>
+	[[SceneStart]]
+<<else>>
+	Mae: 我没准还能再喝一杯？ #line:097e53
+<<endif>>
+
+===
+title: SceneStart
+tags: 
+colorID: 0
+position: -8573,1604
+---
+<<set $bea to 0>>
+<<set $gregg_angus to 0>>
+<<set $cole to 0>>
+
+<<set $angus_done to 0>>
+<<set $bea_done to 0>>
+<<set $gregg_done to 0>>
+<<set $cole_done to 0>>
+
+<<set $can_drink_beer to 0>>
+
+<<if $beer_phase is 0>>
+    Mae: =_= :\ #line:6233f0
+	Mae: 呃， #line:6ce028
+	Mae: 真是太糟啦。 #line:ec4077
+	Mae: 我讨厌啤酒。 #line:77b8fa
+	Mae: 我都不记得上次喝啤酒是什么时候了， #line:6788a4
+	Mae: 但我还记得，啤酒一点也不好喝。 #line:2f5ea0
+    Mae: o_o :| _o_ #line:bcee4c
+<<elseif $beer_phase is 1>>
+    Mae: =_= #line:53e5b9
+	Mae: *唉* #line:e841f6
+	Mae: 我觉得，喝酒可能是大人干的最可怕的事之一了， #line:c20c59
+	Mae: 还有交税和生孩子，也挺可怕的。 #line:00af69
+    Mae: o_o :| _o_ #line:705e38
+<<elseif $beer_phase is 2>>
+    Mae: O_O #line:c4b706
+	Mae: 管他呢！我还要再喝两杯！ #line:0ab8de
+    Mae: :) #line:994f03
+	Mae: 我要喝酒！ #line:9b7577
+	<<if $ate_tacos>>
+		Mae: 我嘴里还有玉米卷饼味儿呢！ #line:571999
+	<<endif>>
+	Mae: 嘿？！ #line:5e0dce
+	Bea: 什么事？ #line:7696b0
+	Mae: 没 什 么！ #line:dd4982
+    Mae: o_o :| _o_ #line:c2083a
+<<endif>>
+
+===
+title: End
+tags: 
+colorID: 0
+position: -9034,1731
+---
+<<fadeOut .5 wait>>
+<<scene BeaCar>>
+===
+title: GreggAngus_BP0
+tags: 
+colorID: 0
+position: -7769,1470
+---
+<<if $gregg_angus is 0>>
+	Mae: 嘿，伙计们。 #line:fc9c9f
+	Gregg: 哟，你见到科尔了没？ #line:d7d552
+    <<lookOut Mae>>
+    <<dilate Mae .75 .5>>
+	Mae: 哦，天 哪。 #line:a02a2e
+    <<wait 1>>
+	Angus: 你没事吧？ #line:254f8d
+    <<lookNearest Mae>>
+    <<dilate Mae 1 .5>>
+	Mae: 嗯嗯，我好得很。 #line:a1ecdd
+	Gregg: 你想跟他聊几句吗？ #line:8dd6d3
+	[[不想。|GreggAngus_No]] #line:b7e814
+	[[当然。|GreggAngus_YeahSure]] #line:034a8e
+<<elseif $gregg_angus is 1>>
+    Mae: =_= #line:2bbbf6
+	Mae: 呃。 #line:7b6b89
+    Mae: \o/ #line:7ced98
+	Mae: 他在那儿！跟个没事儿人似的！ #line:a01592
+	Gregg: 那个混蛋。 #line:d4f887
+	Angus: 他确实是个混蛋。 #line:c77c6a
+    Mae: _o_ o_o :| #line:508179
+	Mae: 我跟你说，我可不会这么傻站着， #line:792f7b
+	Mae: 让他在那儿， #line:4575c5
+	Mae: 毁了老娘今晚的兴致！ #line:30532b
+	Gregg: 说的是啊！ #line:d17974
+	Mae: 我要过去和科尔说几句话。 #line:5b4146
+	Angus: 那就祝你今晚毁得开心啦！ #line:fbca8a
+	Gregg: 梅，聚会就算被毁，也该毁在你自己手里。 #line:2f98ae
+    Mae: :) #line:89f513
+	Mae: 谢啦，伙计们。 #line:da4247
+    Mae: :| #line:fc1965
+	<<set $talking_to_cole to 1>>
+    <<set $cole_done to 0>>
+	<<set $gregg_angus += 1>>
+<<elseif $gregg_angus is 2>>
+	Mae: 你们敢信这家伙居然会弹吉他？ #line:dc5060
+	Gregg: 呵。他在弹那个讨厌鬼的歌。 #line:20bb57
+	Angus: 我很喜欢这首歌！ #line:2c3b3d
+	Angus: 但他弹的真的是讨厌鬼的歌吗？根本听不出来。 #line:5d8652
+	<<set $douchebag_song to 1>>
+	Mae: 呵。别在意，大块头。 #line:7473f8
+	Angus: …… #line:58bd1c
+	<<set $gregg_angus += 1>>
+<<elseif $gregg_angus is 3>>
+	Gregg: 每个聚会上都能遇见像这样的人渣。 #line:4665b3
+	Mae: 谁说不是呢，格雷格。 #line:b64557
+	Mae: 在学校的时候，总有那么几个纨绔子弟 #line:477618
+	Mae: 到草坪上无所事事， #line:659750
+	Mae: 只会盯着姑娘的胸和屁股。 #line:950ad6
+	<<set $try_to_look_sensitive to 1>>
+	Angus: 这怎么会是讨厌鬼的歌呢？？？ #line:4c1648
+	<<set $angus_done to 1>>
+	<<set $gregg_done to 1>>
+<<endif>>
+
+===
+title: GreggAngus_YeahSure
+tags: 
+colorID: 0
+position: -7618,1797
+---
+<<set $talking_to_cole to 1>>
+<<set $gregg_angus += 1>>
+<<set $cole_done to 0>>
+Gregg: 是啊，老兄！ #line:52696d
+Angus: 梅，你能确定吗？ #line:c59bc6
+Mae: 十分确定！我是说，难道我不该确定吗？ #line:a187cc
+Gregg: 好吧。我觉得，这歌是你写的…… #line:050637
+[[GreggAngus_Song]]
+
+===
+title: GreggAngus_No
+tags: 
+colorID: 0
+position: -7885,1806
+---
+Angus: 这倒是不错。 #line:509b2a
+Gregg: 我是说，你确实写过这首歌…… #line:bc8600
+[[GreggAngus_Song]]
+===
+title: GreggAngus_Song
+tags: 
+colorID: 0
+position: -7778,2157
+---
+Gregg: 这首歌叫什么？ #line:46a0cf
+Angus: 好像是叫《去死吧，小白脸》。 #line:83c1d1
+Mae: 啊啊啊啊啊。 #line:d048a5
+Mae: 咱们可不是来讨论《去死吧，小白脸》这首歌的。 #line:efbe7f
+<<set $gregg_angus += 1>>
+===
+title: Cole
+tags: 
+colorID: 0
+position: -6862,1423
+---
+<<if $beer_phase is 0>>
+	Mae: 哦，老天。这真…… #line:433c74
+	<<if $talking_to_cole is 1>>
+		Mae: 我可能还得再来一杯。 #line:48cd8a
+		<<set $can_drink_beer to 1>>
+	<<else>>
+        <<set $cole_done to 1>>
+    <<endif>>
+<<elseif $beer_phase is 1>>
+	<<if $cole is 0>>
+		<<if $whats_your_name is 1>> 
+			Mae: 噢，嘿，我叫梅！您贵姓？ #line:2245fb
+			Cole: 梅，是你吗？ #line:11a3d4
+			Mae: 噢，我觉得好像在哪儿见过你…… #line:2dbaa2
+			Cole: 呃，咱们是同一个高中的。 #line:a51d3b
+			Mae: 那咱俩可能曾经还是一对儿呢。 #line:82083b
+			Cole: 哈哈，也许吧。 #line:c63db0
+			Mae: 咱们还把一个街头小混混打得落花流水。 #line:cd03f1
+			Cole: 噢，对啊！ #line:4de03e
+			Mae: 咱们就用铁链和垃圾桶就把他们都摆平啦。 #line:c5e7e6
+			Cole: 这些真是美好的回忆啊，梅。 #line:293628
+			Cole: 顺便说一句，你说的这个游戏我还留着呢。 #line:c59c7d
+			Cole: 在学校的时候，我女朋友…… #line:6d1b7c
+            Mae: \o/ :( #line:8bacd6
+			Mae: 你到底是怎么回事啊？ #line:a5c43c
+			Cole: 你说什么呢？ #line:b747fd
+            Mae: o_o :| _o_ #line:22ae6d
+		<<else>>
+			Mae: 嘿～ #line:3687e4
+			Cole: 梅，是你吗？ #line:e9d03b
+			Cole: 哇哦。你最近怎么样？ #line:8d826e
+			<<if $dropout_week is 1>>
+				Mae: 额，这星期刚开始的时候，我退学了。 #line:61e519
+				Mae: 现在呢，我正在树林里喝酒。 #line:bb76a3
+				Cole: 哇哦，好吧！ #line:2d1933
+				Mae: 你到底是怎么回事啊？ #line:f30c57
+				Cole: 你说什么呢？ #line:6ab765
+			<<elseif $hows_it_going is 1>>
+				Mae: 嗨，我叫梅！近来可好？ #line:2ff1a8
+				Cole: 我才问完你这句啊？ #line:563b0e
+				Cole: 我是说，我挺好的。 #line:ab2f5f
+				Cole: 我只是周末回来看看而已。 #line:7312ad
+				Mae: 是吗？真是太有意思啦！ #line:435443
+				Cole: 可能是吧。 #line:568076
+				Cole: 你是我这段时间 #line:2bd0bf
+				Cole: 第一个说我的生活有意思的人。 #line:ec91e0
+				Mae: 这话倒是真的！好啦，再见啦！ #line:dd7ee3
+				Cole: 好吧…… #line:e36db3
+				Mae: 你到底是怎么回事啊？ #line:3b4056
+				Cole: 你说什么呢？ #line:62d023
+			<<endif>>
+		<<endif>>
+        <<set $cole += 1>>
+		<<set $has_talked_to_cole_1 to 1>>
+	<<elseif $cole is 1>>
+		Mae: 梅，冷静，冷静。 #line:2b0279
+		Mae: 去喝杯酒冷静冷静。 #line:a14877
+		<<set $can_drink_beer to 1>>
+	<<endif>>
+<<elseif $beer_phase is 2>>
+    Mae: 呃，我不知道还能不能再喝了。 #line:343d1c
+<<endif>>
+===
+title: GreggAngus
+tags: 
+colorID: 0
+position: -7517,1023
+---
+<<if $beer_phase is 0>>
+	[[GreggAngus_BP0]]
+<<elseif $beer_phase is 1>>
+	[[GreggAngus_BP1]]
+<<elseif $beer_phase is 2>>
+	[[GreggAngus_BP2]]
+<<endif>>
+===
+title: GreggAngus_BP1
+tags: 
+colorID: 0
+position: -7417,1439
+---
+<<if $gregg_angus is 0>>
+	<<if $has_talked_to_cole_1 is 1>>
+		Mae: 啊 啊 啊 啊 啊。 #line:813868
+		Gregg: 怎么了？ #line:98935e
+		Mae: 啊 啊 啊 啊 啊。 #line:472a97
+		<<set $can_drink_beer to 1>>
+	<<endif>>
+
+	<<if $people_dont_like is 1>>
+        Mae: =_= :\ #line:862e61
+		Mae: 呃。 #line:293345
+		Angus: 你还好吗？ #line:ffff48
+		Mae: 有些时候，我感觉所有人都讨厌我。 #line:346c50
+		Gregg: 嗷，姐们儿， #line:795961
+		Gregg: 这也太糟了吧。 #line:aad6ee
+		Angus: 是啊，梅，你千万别让自己太难过了。 #line:053e02
+		Gregg: 没错，谁会在乎到底有没有人讨厌你呀？ #line:23f261
+		Angus: 好吧。我可不是这意…… #line:4d39ec
+		Gregg: 让 所 有 人 都 见 鬼 去 吧，|梅 是 最 棒 的！！！ D: \o/ #line:e6786a
+		<<set $maes_the_best to 1>>
+		<<lookAt Gregg DoucheBag>>
+		<<lookAt Mae DoucheBag>>
+		DoucheBag: 说的没错，哥们儿！ #line:623c11
+		Gregg: 你给我闭嘴，讨厌鬼！ _o_ :| #line:e1575a
+		DoucheBag: ……蛤？ #line:8d56e7
+		<<lookAt Gregg Mae>>
+		<<lookAt Mae Gregg>>
+        Mae: :) #line:f52cc8
+		Mae: 谢啦，伙计们。 #line:1e977d
+        Mae: o_o :| #line:c3033d
+		<<lookNearest Gregg>>
+		<<lookNearest Mae>>
+	<<elseif $you_dont_like is 1>>
+        Mae: =_= #line:752b93
+		Mae: 呃。 #line:2bcd2d
+		Angus: 有什么问题吗？ #line:1b0e50
+		Mae: 有些时候，我感觉自己讨厌所有人。 #line:59f143
+		Gregg: 是啊，姐们。让世界去死吧。 #line:0a8bfa
+		Angus: 没错，去死吧。 #line:6f6770
+		Mae: 天啊，早就应该有人把这个世界给毁了。 #line:fd6568
+		Gregg: 这个世界已经很久没出过大乱子啦。 #line:d90a9d
+		Angus: 说得没错，应该毁了这个世界。 #line:8f9c99
+        Mae: o_o :| #line:a83f23
+		<<set $eff_the_world to 1>>
+	<<endif>>
+
+	<<set $gregg_angus += 1>>
+	
+<<elseif $gregg_angus is 1>>
+    Mae: O_o #line:6a83e5
+	Mae: 伙计们，你们听见什么声儿没有？ #line:5477d9
+	Angus: 什么声儿？ #line:f7abf4
+	Mae: 树林那边有动静…… #line:953f6d
+	Gregg: 哦，是啊。有两个人在咱们身后那块石头上亲热呢。 #line:b5931f
+	Mae: 在那上面亲热肯定很不舒服吧。 #line:0c4a05
+	Gregg: 想啪啪啪的时候，谁还会考虑舒不舒服的问题啊？ #line:c951bb
+	Angus: 能考虑到更好。 #line:744c0b
+	Gregg: 安格斯，这个世界可不那么完美。 #line:a6ead1
+    Mae: o_o #line:c9d912
+	<<set $rock_makeouts to 1>>
+	<<set $gregg_angus += 1>>
+<<elseif $gregg_angus is 2>>
+	Mae: 那两个人还在石头上啪啪啪呢。 #line:6ab81c
+	Gregg: 当然……是啦。 #line:fb8558
+	Mae: 你们俩能不能……我不知道……换个地方站站呢？ #line:dce1ad
+	Gregg: 不能，梅！ #line:005871
+	Angus: 我们为什么要换地儿啊？ #line:6dd4aa
+	Gregg: 那两个人才是下流之辈， #line:1f61e2
+	Angus: 我俩可是绅士。 #line:094689
+	<<set $gregg_angus += 1>>
+<<elseif $gregg_angus is 3>>
+    Mae: =_= #line:455855
+	Mae: 我那两杯酒的酒劲儿上来了。 #line:8a55cf
+	Angus: 我知道那感觉。我酒量可不大。 #line:fc2788
+	Mae: 以前，我只喝过一次啤酒。 #line:5616cb
+	Gregg: 哈哈哈，是啊，你还把酒都给吐啦！ #line:46138d
+	Angus: 梅，要是你不会喝酒的话，你真该悠着点喝。 #line:4438a6
+	Mae: 没事的，伙计。我好着呢。 #line:67ff3b
+	Angus: 那好吧。但我俩会看着点儿你的。 #line:2c1ce4
+	Gregg: 我们俩会像鹰一样盯着你的。 #line:086fee
+	Angus: 我们现在就是你的“监护鹰"了。 #line:662a17
+    Mae: :) #line:3ea21a
+	Mae: 谢啦，伙计们。 #line:3c9e9c
+    Mae: o_o :| #line:16c6f1
+	<<set $chaperone_hawks to 1>>
+	<<set $gregg_angus += 1>>
+<<elseif $gregg_angus is 4>>
+	Gregg: 是啊，那两个人还干着呢。 #line:2bcddd
+	<<set $gregg_done to 1>>
+	<<set $angus_done to 1>>
+<<endif>>
+
+===
+title: GreggAngus_BP2
+tags: 
+colorID: 0
+position: -7184,1435
+---
+<<if $gregg_angus is 0>>
+	<<if $porn_log is 1 and $rock_makeouts is 1>>
+        Mae: =_= :) #line:26f4ab
+		Mae: 嘿，格-雷-格！ #line:a4cfb6
+		Gregg: 哇哦，吓我一跳。 #line:d11a3d
+		Angus: 你没事吧，梅？ #line:405308
+		Mae: 你们有没有觉得， #line:b0c628
+		Mae: 到那块石头上啪啪啪的人， #line:2c466d
+		Mae: 肯定是因为聚会上有什么小黄书 #line:b7fa7f
+		Mae: 才让他们聚在一起的吗？？？ #line:30e54b
+		Gregg: 哦，老 天！我 敢 打 赌，一 定 是 这 么 回 事。 #line:55f20b
+		Angus: 什么书？ #line:18059f
+		<<lookAt Gregg Angus>>
+		Gregg: 你看，这儿就有一份。 #line:190adb
+		<<lookAt Gregg Mae>>
+		Mae: 哪个朝代的老古董 #line:4e41f7
+		Mae: 才 会 在 这 放 小 黄 书 啊。 #line:54be6a
+		<<lookAt Gregg Angus>>
+		Angus: 咱们说的这个老古董有多老？ #line:584b21
+		Angus: 是独立战争时期的吗？ #line:79a63b
+		Angus: 我觉得，这附近应该有一座古代墓地…… #line:4eeb7f
+		<<lookAt Gregg Mae>>
+		Mae: 这些树林里面全是古代的鬼魂、小黄书和啪啪啪的人！！！ #line:1ab5df
+	    Mae: o_o :| #line:ec1c99
+		<<lookNearest Gregg>>
+    <<else>>
+        Mae: =_= :) #line:eb2a18
+		Mae: 嘿，格-雷-格！ #line:6620e6
+		Gregg: 哇哦，梅。你还好吗？ #line:b80d12
+		Mae: 嘿，格雷格，你知道吗， #line:4eb4ce
+		Mae: 你这个小安吉。|（天使 angel，梅说成了 angyyy） #line:937511
+		Mae: …… #line:522857
+		Angus: “安吉"？ #line:247058
+		Mae: 好 可 爱 啊！！！ #line:103f33
+		Gregg: 姐们，这我知道。 #line:8facb8
+		Mae: \o/ #line:692289
+        Mae: 嗯，很 好。 #line:ad2330
+        Mae: o_o :| _o_ #line:a61fed
+	<<endif>>
+	<<set $gregg_angus += 1>>
+<<elseif $gregg_angus is 1>>
+	<<if $dad_knows_angus is 1>>
+        Mae: =_= :) #line:8aafa0
+		Mae: 嘿，小安吉……我爸比可认识你爸比哟！ #line:37ad6f
+		Mae: 八几年的时候，他们俩还在一起工～作过呢。 #line:9023e0
+		Angus: 好吧。 #line:9e0b35
+		Mae: 我爸比还经常和你爸～比一起去酒～吧呢。 #line:43c371
+		Gregg: 梅， #line:56b5a1
+		Gregg: 别再说“爸比"这个词啦！ #line:0bc76f
+		<<if $stop_saying_daddy is 1>>
+			Gregg: 你一直都在说“爸比"这个词！ #line:c00569
+			Gregg: 讨厌鬼现在弹的这首歌就是写某人“爸比"的！ #line:bd0e82
+			Gregg: 我真是受不了啦！ #line:f31b75
+            Gregg: 太肉麻了，我的皮都快从骨头上滑下来啦！ #line:514c0a
+		<<endif>>
+		Mae: 呲！ #line:14730a
+		Angus: 什么事？ #line:3463c3
+		Mae: 我老爸之所以把酒给戒了， #line:e421e9
+		Mae: 是因为他喝完酒以后，总是对我和我老妈撒酒疯。 #line:3d0bef
+		Mae: 哈 哈 哈 哈 哈 哈 哈 哈 哈！！！ #line:f7d196
+		Gregg: 姐们。 #line:ef7a3b
+		Angus: 好了，梅，你一滴酒都不能再喝了。 #line:0fb41a
+		Angus: 绝对不能再喝啦。 #line:b276a8
+        Mae: o_o :| _o_ #line:b9846f
+		<<set $gregg_angus += 1>>
+	<<else>>
+		<<set $gregg_angus += 1>>
+		[[GreggAngus_BP2]]
+	<<endif>>
+<<elseif $gregg_angus is 2>>
+	Angus: 梅，我有点担心你现在的情况了。 #line:4b7438
+	<<if $chaperone_hawks is 1>>
+		Gregg: 我们俩都没当好你的“监护鹰"。 #line:528581
+		Angus: 下次吧，小兄弟。 #line:517484
+        Mae: :) #line:b0a60a
+		Mae: 噢～，我都忘了，你总是管格雷格叫“小～兄弟"。 #line:73c0ca
+		<<set $knows_gregg_is_bug to 1>>
+		Gregg: …… #line:d83fdc
+        Angus: …… #line:115aa5
+	<<endif>>
+    Mae: =_= #line:7ef1e6
+	Mae: 嗯，我今晚在树林里玩得很开心，真的。 #line:1be2b0
+	Angus: 格雷格，你是不是应该让梅坐下来歇会儿呢？ #line:a086f5
+	Gregg: 哦，对啊，梅。你应该坐下来歇一会儿。 #line:9c99b4
+    Mae: o_o :| _o_ #line:4ed7f6
+    <<set $should_sit_log to 1>>
+	<<set $gregg_angus += 1>>
+<<elseif $gregg_angus is 3>>
+	Gregg: 姐们，快到篝火旁边醒醒酒去吧，好吗？ #line:83c21b
+    Mae: o_o :| _o_ #line:afd21d
+    <<set $should_sit_log to 1>>
+	<<set $gregg_done to 1>>
+	<<set $angus_done to 1>>
+<<endif>>
+
+===
+title: Gregg
+tags: 
+colorID: 0
+position: -7854,873
+---
+[[GreggAngus]]
+===
+title: ColeByFireEnding
+tags: 
+colorID: 0
+position: -6553,1431
+---
+<<cameraLookAt CameraEnd 3>>
+<<wait 6>>
+<<flip Cole -1>>
+<<wait 1>>
+<<walk Cole ColeByFire wait>>
+Cole: 嘿，梅。 #line:8d55fe
+Mae: =_= #line:e15d6c
+Mae: 嘿，科、科里尔。 #line:be1e17
+Cole: 哇，已经很久没人这么叫我了。 #line:b6b335
+Mae: 柴过了差不多三年而已！ #line:1487b0
+Mae: 根本涮不上很久。 #line:22f099
+Cole: ……好吧，很高兴见到你。 #line:432410
+Cole: 我才刚从学校回来没几天，然后…… #line:5ab076
+Mae: 你 快 闭 嘴 吧。 #line:2f0e17
+Cole: 你说什么？ #line:f80ea3
+Mae: o_o #line:14d4dc
+<<if $no_smooches is 1>>
+	Mae: 咱们连嘴都没亲过！ #line:a39a08
+	Cole: 咱们没亲过吗？ #line:1a510a
+	Mae: 没 有！根 本 就 没 亲 成！！ #line:af5327
+	Cole: 我很……抱歉？ #line:151c68
+	Mae: 反 正 我 一 点 也 不 在 乎！ #line:2c9ec2
+<<endif>>
+<<if $whatever_god is 1>>
+	Mae: 在 我 知 道 你 要 来 的 时 候，我 紧 张 坏 啦。 #line:20c4f7
+	Cole: 噢。 #line:7ff89e
+	Mae: 我 可 是 向 那 个 什 么 什 么 神 祈 祷 过 的！！！ #line:b6abe0
+	Cole: 你说什么？ #line:f39ec1
+	Mae: 我 以 为 会 有 某 个 神 能 听 见 我 的 祈 祷！ #line:5aabb4
+	Mae: 但 根 本 就 没 有 一 个 神 听 见 了 我 的 祈 祷！ #line:382a1f
+	Mae: 因 为 你 来 啦！ #line:e638ea
+<<endif>>
+<<if $not_cute_ones is 1>>
+	Mae: 音像店里的每个姑娘见了你都会说： #line:df7dd5
+	Mae: "呜呼！是帅小伙啊！！！" #line:2a4a6a
+	Mae: 科尔，你确实很帅。 #line:6b8394
+    Cole: 哦！谢谢你，梅。我…… #line:455afc
+	Mae: 可 我 就 讨 厌 长 的 帅 的 人！！！ #line:8cd589
+	Mae: 长 得 帅 什 么 的 简 直 糟 透 啦！！！ #line:a422b8
+<<endif>>
+Cole: 哦，好吧，我该走了…… #line:1c878c
+<<close>>
+<<playerJump>>
+<<lookAt Mae Cole>>
+<<wait 1>>
+<<lookOut Mae>>
+Mae: o_o #line:5681c0
+<<dilate Mae .75 .25>>
+Mae: 这一切也不似我的错。我就是《废物之火》的主角！ #line:027414
+<<flip Bea -1>>
+<<clearBGChatPartner Bea>>
+<<walk Bea BeaByFire>>
+<<walk Gregg GreggByFire>>
+<<walk Angus AngusByFire>>
+<<set $nightmare_eyes to 1>>
+<<fadeOutAmbientSFX AmbientSFX:DoucheBagGuitar 1>>
+<<fadeOutAmbientSFX AmbientSFX:Walla 1>>
+<<wait 1>>
+<<setAnimInt DoucheBag state 0>>
+<<if $nightmare_eyes>>
+    Mae: 我 长 了 一 双|梦 魇 般 的 眼 睛！！！！！ O_O #line:90b0ef
+    Mae: 你们屎前最后看见的一样东西，就系我那向窗内窥探的双眼。 o_o #line:8491a5
+    Mae: 然后，窝的刀就扎在了你们的身上！！！ :) \o/ #line:56cbea
+    Mae: 扎 扎 扎……！！！！ :| /o\ #line:5bae82
+    Mae: 嘣！然后你们就死啦！ _o_ #line:39b37e
+    Mae: 当警察赶到事发现场，你们早已经…… #line:38c706
+    Mae: {width=4}[color=aaa][shake=.01][wave]噩 梦 之 眼。[/all] #line:fb2c69
+    Gregg: 新 绰 号！ #line:8f860e
+<<elseif $dog_bite_dead>>
+    Mae: 你们应该见到过那只咬过我耳朵的狗。 \o/ #line:76605e
+    Cole: 你想说什么啊？ #line:f0c3c2
+    Mae: 是啊，当时，它死死地抓住我，不让我挣脱！ #line:23776a
+    Mae: 接着，它开始冲我狂叫。 #line:5965e0
+    Mae: 我以为我就要死啦！！！ #line:9bd12e
+    Mae: 可后来，我抓到了一根棍子！ #line:d026c1
+    Mae: 然后，我就用它狠狠地打了那只狗的屁股！ #line:bdeed1
+    Mae: 我也会用同样的方法来对付别人的！！！！ #line:62077d
+    Mae: _o_ #line:69d57d
+<<endif>>
+Mae: 所 以，孩 子，|可 千 万 别 惹 我！ #line:ef43ee
+<<if $eff_the_world>>
+	Gregg: 去死吧，世界！ #line:7fc1fe
+<<endif>>
+Bea: 好啦，梅，你现在已经吓到大家啦。 #line:1ca115
+<<if $body_posi>>
+	Mae: 不，碧娅，我的身体现在AT立场全开。 #line:982c15
+	Mae: 你 到 网 上 查 查 去！！！！ #line:902359
+<<elseif $eat_everything_i_see>>
+	Mae: 我要健身减肥，见谁打谁！ #line:552668
+    Mae: 我还要把所有人都吃啦！见谁吃谁！ #line:552bdf
+<<endif>>
+Bea: 梅，我觉得你应该…… #line:fb2482
+<<if $maes_the_best>>
+	Gregg: 毁灭一切！梅是最牛的！ #line:dea041
+	Angus: 我同意！但你自己应该先冷静一下！ #line:8c68cb
+    Bea: 你们谁也别想以后再让我开车带你们。 #line:a9041c
+<<endif>>
+Mae: 去 死 吧，|大 学！！！ #line:dd959d
+Gregg: 说得好！ #line:b64e86
+Mae: 所 有 的 富 家 子 弟 和 受 欢 迎 的 人， #line:b68dbd
+<<dilate Mae 1 .5>>
+<<lookRight Mae>>
+Mae: 所 有 写 黄 段 子 的 人|和 互 传 黄 段 子 的人，|都 去 死 吧！ #line:12868a
+Angus: 还差一个！ #line:a18ce2
+Mae: 还有那座每天都用手指着我， #line:1260c7
+Mae: 叫什么创始人……的破雕像。 #line:12e919
+Mae: :( #line:95bf65
+Mae: 但那只是个雕像而已…… #line:58873c
+Mae: 我…… #line:b96de5
+Mae: :| #line:f2eb43
+<<lookUp Mae>>
+Mae: 我 简 直 就 是|一 个 垃 圾！ #line:e7fdf1
+Mae: 我 什 么 事 也 没 办 成 过！ #line:84cc34
+Mae: 在这儿，我们得不到任何机会， #line:2725d1
+Mae: 可我又哪儿也去不了。 #line:7d3e62
+Mae: …… #line:69e7f2
+Mae: =_= #line:14b2b4
+<<lookDown Mae>>
+Mae: 现在，我又回家了， #line:8cd309
+Mae: 在这儿，除了睡觉和独自抹眼泪， #line:43aca7
+Mae: 我应该能找到点别的事做， #line:5a23a8
+Mae: *嗝* #line:ad94c2
+Mae: 因为在这儿，这都不是事儿，你懂吗？ #line:e3537e
+Mae: 哦，天哪， #line:23000b
+Mae: 我真是 #line:b4deca
+Mae: -_- #line:9cc58e
+Mae: :( #line:39e0ab
+Mae: 难受 #line:6a47ff
+Mae: 得 #line:008d95
+Mae: 要命。 #line:2f6b3d
+<<lookRight Mae>>
+Mae: o_o #line:01a00b
+Mae: :| #line:608a00
+Mae: 说这些还有意义吗？科里尔？ #line:5b133d
+Cole: 梅，我很抱歉。我没想惹你不开心的。 #line:ac5e3a
+Cole: 我还以为，你其实很…… #line:52284d
+<<lookUp Mae>>
+Mae: 又 要 回 家 啦！！！！ \o/ :) #line:b1f071
+Gregg: 呜～！ #line:c011d7
+Mae: 呜 啊 啊 啊 啊 啊 :| #line:3a3605
+<<close>>
+<<swapRig Player MaePuke>>
+<<trigger MaePuke Puke>>
+<<wait 5>>
+<<if $ate_tacos>>
+	Mae: 那是我的晚饭。 #line:10f0df
+<<endif>>
+<<set $after_party to 1>>
+<<fadeOutAmbientSFX AmbientSFX 1>>
+<<fadeOutAmbientSFX AmbientSFX:Campfire 1>>
+<<fadeOutAmbientSFX AmbientSFX:Walla 1>>
+<<fadeOut 1>>
+<<wait 1>>
+<<scene BeaCar>>
+===
+title: Log
+tags: 
+colorID: 0
+position: -6553,1064
+---
+<<sit>>
+<<if $should_sit_log is 1>>
+    [[ColeByFireEnding]]
+<<else>>
+    <<waitForInteractOrJump>>
+<<endif>>
+===
+title: TestEnding
+tags: 
+colorID: 0
+position: -6277,1111
+---
+<<close>>
+<<playerJump>>
+<<lookAt Mae Cole>>
+<<wait 2>>
+<<swapRig Player MaePuke>>
+<<trigger MaePuke Puke>>
+<<wait 5>>
+===

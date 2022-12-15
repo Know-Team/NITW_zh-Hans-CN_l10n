@@ -1,0 +1,618 @@
+title: Hit.1
+tags: 
+colorID: 0
+position: -2050,606
+---
+<<if $act is 2>>
+    Gregg: 嘭！ #line:a90a81
+<<elseif $act is 3>>
+    Gregg: 真 叫 一 个 干 净 利 落！ #line:320652
+<<endif>>
+===
+title: Miss.1
+tags: 
+colorID: 0
+position: -2046,212
+---
+<<if $act is 2>>
+    Gregg: 哈哈哈。 #line:d9914f
+<<elseif $act is 3>>
+    Gregg: 嗖…… #line:4d10f9
+<<endif>>
+===
+title: Miss.2
+tags: 
+colorID: 0
+position: -1806,207
+---
+<<if $act is 2>>
+    Gregg: 我的老天，梅。 #line:32e4e5
+<<elseif $act is 3>>
+    Gregg: 姐们，别紧张，慢慢来。 #line:daa7d3
+<<endif>>
+===
+title: Hit.2
+tags: 
+colorID: 0
+position: -1814,606
+---
+<<if $act is 2>>
+    Gregg: 嘣！ #line:7f6dda
+<<elseif $act is 3>>
+    Gregg: 太 爽 啦！ #line:d6cd1a
+<<endif>>
+===
+title: Hit.3
+tags: 
+colorID: 0
+position: -1566,623
+---
+<<if $act is 2>>
+    Gregg: 邦 邦！ #line:0b32fe
+<<elseif $act is 3>>
+    Gregg: 向 灯 管 星 发 起 进 攻！！！ #line:5c50c4
+<<endif>>
+===
+title: Miss.3
+tags: 
+colorID: 0
+position: -1559,205
+---
+<<if $act is 2>>
+    Gregg: 你应该用手里的球棒去打那些灯管啊！ #line:1d4fb7
+<<elseif $act is 3>>
+    Gregg: 用球棒啊！用球棒去打灯管啊！ #line:c287b4
+<<endif>>
+===
+title: Hit.4
+tags: 
+colorID: 0
+position: -1318,609
+---
+<<if $act is 2>>
+    Gregg: 我算了算这些灯管到底值多少钱！ #line:b13a1c
+<<elseif $act is 3>>
+    Gregg: 噢，你 把 “小 太 阳" 给 打 爆 啦！！！！！！ #line:8fd6c0
+<<endif>>
+===
+title: Miss.4
+tags: 
+colorID: 0
+position: -1312,221
+---
+<<if $act is 2>>
+    Gregg: 打！爆！它！们！ #line:c98bb7
+<<elseif $act is 3>>
+    Gregg: 你就把它想成是你见到的那个幽灵或者是其他什么东西都行！ #line:e888e8
+<<endif>>
+===
+title: Miss.5
+tags: 
+colorID: 0
+position: -1073,214
+---
+<<if $act is 2>>
+    Gregg: 呼…… #line:4f488f
+<<elseif $act is 3>>
+    Gregg: 你是不是在暗恋这些灯管，所以才下不去手啊？ #line:067512
+<<endif>>
+===
+title: Hit.5
+tags: 
+colorID: 0
+position: -1071,609
+---
+<<if $act is 2>>
+    Gregg: 67美分一根的灯管废啦！ #line:a863ef
+<<elseif $act is 3>>
+    Gregg: 我好像让碎玻璃划伤啦！ #line:e344b8
+<<endif>>
+===
+title: MaeHit_1
+tags: 
+colorID: 0
+position: -2034,968
+---
+<<if $act is 2>>
+    Mae: 哎 呀！老 天！ #line:a77341
+<<elseif $act is 3>>
+    Mae: 真 见 鬼！ #line:258b81
+<<endif>>
+
+===
+title: MaeHit_2
+tags: 
+colorID: 0
+position: -1766,942
+---
+<<if $act is 2>>
+    Mae: 啊，你 搞 什 么 啊？！ #line:9409e0
+<<elseif $act is 3>>
+    Mae: 很 疼 的！ #line:3effe1
+<<endif>>
+
+
+===
+title: MaeHit_3
+tags: 
+colorID: 0
+position: -1491,932
+---
+<<if $act is 2>>
+    Mae: 唉！ #line:8cf6af
+    Mae: 好了，好了，趁着我还没把眼睛弄瞎， #line:489bbd
+    Mae: 我还是别再砸灯管啦。 #line:956705
+<<elseif $act is 3>>
+    Mae: 哦，我的天！格雷格，我真想给你屁股一脚！ #line:5f96a6
+<<endif>>
+<<unlockDoodle LightBulbSmash>>
+<<wait 1>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: -2467,477
+---
+<<set $light_bulb_smash_done to 1>>
+===
+title: OutOfBulbs
+tags: 
+colorID: 0
+position: -2387,760
+---
+<<if $act is 2>>
+    Gregg: 额……灯管都用完了…… #line:a0678c
+    Mae: 哦，是吗。 #line:5aa457
+<<elseif $act is 3>>
+    Gregg: 哇，灯管用完了。 #line:e23588
+    Gregg: 我在想，我们店里到底还需不需要这些灯管呢？ #line:d641a5
+    Gregg: 管他的呢，反正克里斯汀还会再订灯管的。 #line:4d3e5e
+    Mae: 这个地方真是太魔性啦。 #line:12d0d7
+<<endif>>
+
+
+<<unlockDoodle LightBulbSmash>>
+<<wait 1>>
+<<irisOut 1 wait>>
+<<scene SnackFalcon>>
+===
+title: Miss.6
+tags: 
+colorID: 0
+position: -832,218
+---
+<<if $act is 2>>
+    Gregg: 你在这儿什么都打不着！！！ #line:26c6fd
+<<elseif $act is 3>>
+    Gregg: 好了，你想让*我*砸会儿灯管吗？ #line:74c426
+<<endif>>
+===
+title: Miss.7
+tags: 
+colorID: 0
+position: -589,221
+---
+<<if $act is 2>>
+    Gregg: 球棒说：我是你的得力助手。 #line:24d7aa
+<<elseif $act is 3>>
+    Gregg: 听我说，就算你用球棒的技术退步了也没什么大不了的。 #line:b2a134
+<<endif>>
+===
+title: Miss.8
+tags: 
+colorID: 0
+position: -354,222
+---
+<<if $act is 2>>
+    Gregg: 嗖…… #line:12db3e
+<<elseif $act is 3>>
+    Gregg: 拜托！能不能显得愤怒点啊！ #line:e29734
+<<endif>>
+===
+title: Miss.9
+tags: 
+colorID: 0
+position: -116,220
+---
+<<if $act is 2>>
+    Gregg: 姐们，这儿可有不少好打的大靶子！ #line:c5aa6a
+<<elseif $act is 3>>
+    Gregg: 求 你 了，能 不 能 打 中 一 根 啊！ #line:ca99ee
+<<endif>>
+===
+title: UnusedMiss.10
+tags: demo2
+colorID: 0
+position: -1037,2023
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 你是不是在暗恋这些灯管，所以才下不去手啊？ #line:c7c507
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:946aad
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:19c4f5
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:44a202
+<<endif>>
+===
+title: UnusedMiss.11
+tags: demo2
+colorID: 0
+position: -761,2015
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: …… #line:bba219
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:2da622
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:018a29
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:6bc96f
+<<endif>>
+===
+title: UnusedMiss.12
+tags: demo2
+colorID: 0
+position: -523,2016
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: ……接下来…… #line:9b7b31
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:a4dda8
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:f07f1f
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:16ee86
+<<endif>>
+===
+title: UnusedMiss.13
+tags: demo2
+colorID: 0
+position: -298,2014
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 好了，你想让*我*砸会儿灯管吗？ #line:a712a6
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:c84d58
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:ec0ed6
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:7c6209
+<<endif>>
+===
+title: UnusedMiss.14
+tags: demo2
+colorID: 0
+position: -64,2010
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 听我说，就算你用球棒的技术退步了也没什么大不了的。 #line:998acd
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:2de282
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:6544c8
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:499c29
+<<endif>>
+===
+title: UnusedMiss.15
+tags: demo2
+colorID: 0
+position: 176,2014
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 挥棒，可惜没打中！ #line:517588
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:363171
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:39b4c8
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:2be357
+<<endif>>
+===
+title: UnusedMiss.16
+tags: demo2
+colorID: 0
+position: 411,2012
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 拜托！能不能显得愤怒点啊！ #line:ccec04
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:3b8881
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:43f531
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:7d9c96
+<<endif>>
+===
+title: UnusedMiss.17
+tags: demo2
+colorID: 0
+position: 637,2010
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 这 些 灯 管 全 都 是 你 的 敌 人！！！！ #line:9709b6
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:30b28f
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:df72e3
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:489e59
+<<endif>>
+===
+title: UnusedMiss.18
+tags: demo2
+colorID: 0
+position: 866,2013
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 能 不 能 打 中 一 根 灯 管 啊，求 你 啦！ #line:9bc2e9
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:32b51c
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:094dde
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:1f4a2e
+<<endif>>
+===
+title: UnusedMiss.19
+tags: demo2
+colorID: 0
+position: 1093,2020
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 打 中 一 根 灯 管 吧！打 中 一 根 吧！！！ #line:f891e5
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:f965de
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:3e4b36
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:7ed8ce
+<<endif>>
+===
+title: Miss.10
+tags: 
+colorID: 0
+position: 128,229
+---
+<<if $act is 2>>
+    Gregg: 老兄，我感觉 #line:d14a34
+    Gregg: 很不爽。 #line:183ade
+    Mae: 那你为什么还在笑啊？ #line:b0070c
+    Gregg: 笑是因为我想让你觉得我很想帮你。 #line:3f7ca0
+    Mae: 谢了，伙计。 #line:3af718
+    Gregg: 灯管都用完了。 #line:e37174
+<<elseif $act is 3>>
+    Gregg: 打 中 一 根 吧！打 中 一 根 吧！！！ #line:82ea83
+    Gregg: 哦，灯管都用完了。 #line:0fa5d4
+    Gregg: 糟糕，这下可没的玩了，哼？ #line:676c63
+    Mae: …… #line:b8a64b
+<<endif>>
+
+
+[[Exit]]
+===
+title: Hit.6
+tags: 
+colorID: 0
+position: -792,601
+---
+<<if $act is 2>>
+    Gregg: [shake=.02]67美分！！！！！！[/shake] #line:cddd92
+<<elseif $act is 3>>
+    Gregg: 哦，我真让碎玻璃给划了，我耳朵旁边破啦！ #line:c0e2dd
+<<endif>>
+===
+title: Hit.7
+tags: 
+colorID: 0
+position: -542,606
+---
+<<if $act is 2>>
+    Gregg: 克里斯汀肯定会琢磨，灯管都跑哪儿去了！ #line:e86938
+<<elseif $act is 3>>
+    Gregg: 好吧，虽然表面上我是在笑，但说实话，我真的好疼啊。 #line:922b18
+<<endif>>
+===
+title: Hit.8
+tags: 
+colorID: 0
+position: -300,604
+---
+<<if $act is 2>>
+    Gregg: 干脆我告诉克里斯汀，这些灯管是被一群神经病偷走了？ #line:b1d02f
+<<elseif $act is 3>>
+    Gregg: 哎哟。 #line:2eaaa2
+<<endif>>
+===
+title: Hit.9
+tags: 
+colorID: 0
+position: -73,600
+---
+<<if $act is 2>>
+    Gregg: "是一群神经病干的！是他们偷的灯管！" #line:e85514
+<<elseif $act is 3>>
+    Gregg: 好了，好了，趁我还没受什么重伤，咱们还是别再继续砸了。 #line:c0fd8b
+<<endif>>
+===
+title: UnusedHit.10
+tags: demo2
+colorID: 0
+position: -1002,2390
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 偷灯管的神经病！！！！ #line:0930fb
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:240d50
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:43ab3f
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:15f5f3
+<<endif>>
+===
+title: UnusedHit.11
+tags: demo2
+colorID: 0
+position: -782,2395
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 太 爽 啦！ #line:fd9d50
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:cc5631
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:5d3e29
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:52f10b
+<<endif>>
+===
+title: UnusedHit.12
+tags: demo2
+colorID: 0
+position: -546,2395
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 我好像是让碎玻璃给划伤啦！ #line:d6f7b1
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:e3349c
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:2cc1d4
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:7cf0bf
+<<endif>>
+===
+title: UnusedHit.13
+tags: demo2
+colorID: 0
+position: -291,2385
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 哦，我真让碎玻璃给划了，我耳朵旁边破啦！ #line:b98597
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:8ca57b
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:170cec
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:d91c0e
+<<endif>>
+===
+title: UnusedHit.14
+tags: demo2
+colorID: 0
+position: -72,2382
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 好吧，虽然表面上我是在笑，但说实话，我真的好疼啊。 #line:065838
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:48e0cf
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:7718b2
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:9ea202
+<<endif>>
+===
+title: UnusedHit.15
+tags: demo2
+colorID: 0
+position: 175,2380
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 咻！！！！ #line:9df7d5
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:4cfd58
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:63b81e
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:3a5212
+<<endif>>
+===
+title: UnusedHit.16
+tags: demo2
+colorID: 0
+position: 404,2376
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 把 所 有 灯 管 全 都 砸 碎！！！ #line:cc37b9
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:fc03a8
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:faf105
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:f83c4b
+<<endif>>
+===
+title: UnusedHit.17
+tags: demo2
+colorID: 0
+position: 633,2365
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 向 灯 管 星 发 起 进 攻！！！ #line:ba6aeb
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:4c7f41
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:ab77c9
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:b233e9
+<<endif>>
+===
+title: UnusedHit.18
+tags: demo2
+colorID: 0
+position: 854,2361
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 哦，你把"小太阳"给打爆啦！！！！！！ #line:5afb10
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:9815b8
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:e4dbe3
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:692452
+<<endif>>
+===
+title: UnusedHit.19
+tags: demo2
+colorID: 0
+position: 1071,2363
+---
+<<if $act is 2 and $day is 2>>
+    Gregg: 哦，我喊得嗓子都疼了。 #line:ba850a
+<<elseif $act is 2 and $day is 4>>
+    Gregg: A2D4 #line:6cbc35
+<<elseif $act is 3 and $day is 2>>
+    Gregg: A3D2 #line:c6761f
+<<elseif $act is 3 and $day is 4>>
+    Gregg: A3D4 #line:ac9e7c
+<<endif>>
+===
+title: Hit.10
+tags: 
+colorID: 0
+position: 165,595
+---
+<<if $act is 2>>
+    Gregg: 哦，哇哦，好啊！ #line:13ba3c
+    Mae: 耶啊，伙计！ #line:74bf87
+    Gregg: 灯管都用完了。 #line:2a0dbc
+    Gregg: 你想来份沙冰吗？ #line:5ddf71
+    Mae: 我觉得我值得拥有。 #line:e36016
+<<elseif $act is 3>>
+    Gregg: 哦，好了，好了，现在我感觉伤口开始疼起来了…… #line:88b94c
+    Gregg: 而且，灯管也用完了。 #line:a40659
+<<endif>>
+
+
+[[Exit]]
+===
+title: Exit
+tags: 
+colorID: 0
+position: 439,411
+---
+<<unlockDoodle LightBulbSmash>>
+<<wait 1>>
+<<irisOut 1 wait>>
+<<set $has_bat to 0>>
+<<scene SnackFalcon>>
+===

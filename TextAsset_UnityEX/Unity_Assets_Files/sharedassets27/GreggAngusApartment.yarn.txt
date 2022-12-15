@@ -1,0 +1,1969 @@
+title: EnterLevel_A1D2
+tags: 
+colorID: 2
+position: -34979,15518
+---
+<<show Angus>>
+<<hide Gregg>>
+<<hide Bea>>
+<<hide Germ>>
+
+<<playMusic angus_home>>
+<<tell _AmbientSFX:door Play>>
+<<tell _AmbientSFX:upstairs_neighbours_01 Play>>
+===
+title: AngusLaptopStart
+tags: 
+colorID: 2
+position: -34654,15768
+---
+Angus: 哇！快进来！ #line:8ecabb
+Mae: 嗨，老兄。 o/ :) #line:c46339
+Angus: 嗯…… #line:1a57d9
+Angus: 欢迎来到我们的公寓。 #line:0f05a3
+Angus: 其实你上来之前，我除了内裤什么也没穿。 #line:b44230
+Mae: _o_ #line:6471fa
+Mae: 嘿，老兄，随意一点，不用为了我特意穿上裤子。 #line:132f38
+Mae: 为什么这门没锁？ :| #line:0c512d
+Angus: 因为格雷格总是忘记锁门。 #line:1e9773
+Angus: 如果你要找他的话，他现在正在看店呢。 #line:676290
+Mae: 实际上，我是来找你的。 #line:071c54
+Mae: 我电脑出问题了，所以我想…… #line:96db10
+Angus: 出什么问题了？ #line:f962c0
+Mae: 一开机就会弹出各种乱七八糟的东西。 #line:37bf47
+Angus: 具体会弹出什么东西？ #line:86976a
+<<lookLeft Mae>>
+[[你懂得嘛……就是东西嘛……就那些少儿不宜的东西嘛。|NotForKidThings]] #line:4dfb5a
+[[没什么，就是些很普通的东西。|NothingJustThings]] #line:119aa8
+===
+title: NotForKidThings
+tags: 
+colorID: 2
+position: -34850,16079
+---
+Angus: 你为什么不把电脑带过来？ #line:cbb3e4
+Mae: 我忘了。 #line:4043c9
+Angus: 嗯…… #line:24fe31
+Angus: 梅，这没什么的，你不用觉得尴尬…… #line:503b12
+<<lookNearest Mae>>
+Mae: 我没觉得尴尬呀。 #line:13f450
+Angus: 我是说，其实大家都…… #line:4664a3
+Mae: 别说了，我懂。 #line:52104c
+[[Angus_A1D2_End]]
+===
+title: NothingJustThings
+tags: 
+colorID: 2
+position: -34476,16066
+---
+Angus: 好吧，你电脑上可能是有广告类的垃圾软件， #line:dbd60e
+Angus: 这可能是你捆绑下载到电脑上的， #line:05ec3b
+Angus: 也有可能是你在某些不该点确定键的网站上点了确定。 #line:ae0eaf
+<<lookNearest Mae>>
+Mae: 这就是互联网，在上面什么事都有可能发生。 #line:74847f
+[[Angus_A1D2_End]]
+
+===
+title: Angus_A1D2_End
+tags: temp
+colorID: 2
+position: -34649,16392
+---
+Angus: 嗯……我来看看我能做点什么…… #line:2e9ca2
+<<close>>
+<<walk Angus BedroomAngus 1 wait>>
+<<tell _AmbientSFX:rummage_usb Play>>
+<<wait 2>>
+Angus: 好了，我找到能帮你的东西了。 #line:539a1b
+<<close>>
+<<walk Mae BedroomMae wait>>
+Angus: 把它插到USB接口上，然后重启电脑， #line:a12dcc
+Angus: 这样就能把电脑里的流氓程序清除掉了。 #line:1947bc
+Angus: 但也有可能会删除掉一些你的旧文件。 #line:6879db
+Mae: 哇哦，谢谢啦，伙计！ :) #line:a454df
+Angus: 不用客气。 #line:7cce0b
+Mae: 我该回家了。 #line:893b8a
+Mae: 看看你的魔法是不是管用。 #line:4dd2be
+Angus: 这可不是魔法， #line:bffc91
+Angus: 这只不过是一堆0和1罢了。 #line:2d673e
+Angus: 而且，咱们也只是一堆原子。 #line:a394db
+Angus: 还有，咱们对现实的感知也只是化学反应而已。 #line:f95442
+Mae: :| #line:735025
+Angus: 万物来去匆匆，这就是宇宙的规律。 #line:2a6270
+Mae: …… #line:c8437c
+Mae: 哇哦。 #line:5921e4
+Angus: 抱歉。 #line:52fc82
+Mae: 我要走了。 o/ #line:87a3a8
+<<unlockDoodle Angus1>>
+<<set $laptop_fixed to 1>>
+<<set $night_at_home to 1>>
+<<set $trigger_laptop to 1>>
+<<irisOut 1 wait>>
+<<scene MaeHouse>>
+===
+title: EnterLevel_A2D1
+tags: 
+colorID: 3
+position: -34093,15762
+---
+<<if $gregg_friendship_quest is 1>>
+    [[FQ1]]
+<<endif>>
+===
+title: Angus_A1D2
+tags: 
+colorID: 2
+position: -34664,15507
+---
+<<if $angus is 0>>
+    <<set $angus += 1>>
+    [[AngusLaptopStart]]
+<<endif>>
+===
+title: InitLevel_A2D1
+tags: 
+colorID: 3
+position: -34103,15475
+---
+<<hide Angus>>
+<<hide Bea>>
+<<hide Germ>>
+===
+title: InitLevel_A2D2
+tags: 
+colorID: 3
+position: -33670,15462
+---
+<<hide Angus>>
+<<hide Bea>>
+<<hide Germ>>
+
+<<if $gregg_friendship_quest is 2>>
+    <<set $gregg_hat to 1>>
+    <<warp Player MaeRobotBody>>
+    <<warp Gregg GreggRobotBody>>
+    <<cameraLookAt CouchCamera>>
+<<endif>>
+===
+title: EnterLevel_A3D1
+tags: 
+colorID: 4
+position: -32683,15800
+---
+Mae: 好了，谢谢大家都能过来。 :) #line:37d003
+Angus: 我们就住在这儿啊。 #line:b14126
+Mae: 说得是啊。 #line:ca77f1
+Gregg: 你找到关于那个幽灵的线索了吗？ #line:0410bb
+<<setAnimInt Mae nodding 1>>
+Mae: 当然找到啦！ #line:1761e1
+Mae: 碧娅，你来告诉他们！ #line:cefb71
+<<setAnimInt Mae nodding 0>>
+Bea: 有几份剪报上的确提到了关于幽灵的事。 #line:25a174
+<<setAnimInt Mae nodding 1>>
+Mae: 而且，那还不是*一般*的幽灵！那可是小乔啊！ <o> #line:6069eb
+<<setAnimInt Mae nodding 0>>
+<<wait 2>>
+Angus: 我实在是记不起关于小乔的事了。 #line:7ad66a
+Mae: 他就是那个幽灵矿工！而且，他的死因也是扑朔迷离！ #line:7dfe95
+Gregg: 哇哦！ #line:c8478c
+Mae: 是啊，哇哦。扑朔迷离！ #line:332f94
+Bea: 看你这么兴奋，我还以为你说的怕鬼， #line:ae55f5
+Bea: 是真的害怕的那种怕鬼。 #line:b6634b
+<<setAnimInt Mae nodding 1>>
+Mae: 我是真害怕啊！ \o/ #line:9eaab8
+<<setAnimInt Mae nodding 0>>
+Bea: 好吧…… #line:ddb48a
+Mae: 剪报上提到了三个不同的地点，所以全都需要调查一下才行！ _o_ #line:cafd58
+Bea: 额，我还有工作和其他事要忙。 #line:c634c4
+Angus: 是啊，我和格雷格也要上班。 #line:edd498
+Mae: 你们不是经常撬班的吗！ o_o :\ #line:2e6135
+Bea: 或许，咱们可以 #line:550de0
+Bea: 分头行动。 #line:baf13b
+Mae: :| #line:fd5be0
+Bea: 轮流照顾这只菜鸡和她所谓的幽灵。 #line:00289c
+Gregg: 剪报上说的是哪三个地方？ #line:519e16
+Mae: 额，墓地…… #line:9e4ca5
+Bea: 那地方我来负责。 #line:9caeee
+Bea: 离得又近，又不会违法。 #line:2ba9ee
+Gregg: 有违法的选项可选吗？我有兴趣 :) #line:dceaec
+Angus: …… #line:e991df
+Mae: 当然有啦！历史协会不就是吗！ :) <o> #line:7e2127
+Bea: 其实你们根本就用不着硬闯进去， #line:f8ee68
+Bea: 只要花钱，那儿的工作人员就会带你看你想看的东西了。 #line:88d98c
+Mae: :| #line:7e4892
+Gregg: :| #line:763eab
+<<wait 2>>
+Mae: 你随便吧…… #line:c34359
+Gregg: 我决定了，去历史协会。 #line:6424b0
+Mae: 太好啦！ :) #line:4f895f
+Angus: 那我去哪儿呢？ #line:89cbea
+Mae: 就只剩下负鼠崖啦！ #line:4a4c4a
+Angus: ！ :) #line:42d867
+Angus: 啊！负鼠崖！ #line:43eaf4
+Angus: 咱们以前还是童子军的时候，就去过那儿！ #line:01f7a1
+Mae: 完美！ #line:0b3cf4
+Bea: 好了，我得回家了， #line:858b31
+Bea: 还有工作要做。 #line:8cccfd
+<<dilate Mae .85 0>>
+Mae: \o/ #line:7f1149
+Mae: 这次的行动一定会很精彩的！！！！ #line:ed3190
+Mae: 当然，我也有可能会被吓死！！！ #line:5aa98a
+<<close>>
+<<irisOut 1 wait>>
+<<set $night to 1>>
+<<scene MaeHouse>>
+===
+title: InitLevel_A3D1
+tags: 
+colorID: 4
+position: -32680,15497
+---
+<<cameraLookAt CouchCameraA3D4>>
+<<playerCanRun 0>>
+<<playerCanJump 0>>
+//left to right on the couch, seated: angus, gregg, bea. mae on the floor in floor sit pose//
+
+<<hide Germ>>
+
+<<flip Angus 1>>
+<<sit7 Angus SitOnCouch1>>
+
+<<flip Gregg 1>>
+<<sit Gregg SitOnCouch2>>
+
+<<flip Bea 1>>
+<<sit Bea SitOnCouch3>>
+<<warp Mae SitRightOfCouchMae>>
+<<playerFace -1>>
+<<lookAt Angus Mae>>
+<<lookAt Gregg Mae>>
+<<lookAt Bea Mae>>
+<<lookAt Mae Gregg>>
+===
+title: EnterLevel_A2D2
+tags: 
+colorID: 3
+position: -33408,15708
+---
+<<if $gregg_friendship_quest is 2>>
+    <<if $gregg_friendship_quest_2 is 5>>
+        [[FQ2_5]]
+    <<elseif $gregg_friendship_quest_2 is 4>>
+        [[FQ2_4]]
+    <<elseif $gregg_friendship_quest_2 is 3>>
+        [[FQ2_3]]
+    <<else>>
+        [[FQ2_2]]
+    <<endif>>
+<<endif>>
+===
+title: FQ1
+tags: 
+colorID: 3
+position: -34092,16063
+---
+<<warp Player MaeRobotCrate>>
+<<warp Gregg GreggRobotCrate>>
+Mae: =_= #line:959b9a
+Gregg: 安格斯要出去一趟，明天晚上才能回来。 #line:5f6518
+Gregg: 所以，我得查查怎么自己修自行车。 #line:020eb7
+Gregg: 这件事一会儿再说。 #line:6b4d4b
+Gregg: :) #line:249b4c
+Gregg: 吃饭，去吗？ #line:3295c7
+Mae: o_o :) \o/ #line:7cdec8
+Mae: 去！我快饿死了！ #line:b3e546
+Mae: o_o :| _o_ #line:ca4f54
+<<fadeOut 1 wait>>
+<<scene Diner>>
+===
+title: FQ2_2
+tags: 
+colorID: 3
+position: -33750,16059
+---
+<<playMusic gregg_not_as_manic 3>>
+Gregg: ……就算这过去*确实*是一顶法西斯钢盔，我也无所谓。 #line:b272a5
+Gregg: 现在，它又多了一个无政府状态的标志， #line:79153b
+Gregg: 这下这顶头盔就更好看了。 #line:324c83
+Gregg: 这儿还有个弹孔， #line:f9f785
+Gregg: 所以，之前戴这顶头盔的人肯定早就挂啦。 #line:837efe
+Gregg: 那样的话，现在我戴的这顶头盔就是件战利品。 #line:91448b
+Mae: =_= :) #line:ffdd6e
+Mae: 这么说，你承认这是顶法西斯钢盔啦！ #line:cf5924
+Gregg: 不！ D: #line:aa5607
+Gregg: 我没承认过！ #line:300d62
+Gregg: :| #line:40249f
+Mae: 好吧，好吧。 o_o #line:db675f
+Mae: 那咱们现在要去干什么呢？ #line:798fd9
+Mae: :| #line:7b73f8
+Gregg: 嗯，我想想…… #line:3c68d9
+<<if $did_gregg_friendship_quest_1 is 0>>
+	Mae: 等等，我有个问题。 #line:a3884d
+	Gregg: 问吧。 #line:eb88ce
+    Mae: O_o #line:1122ec
+	Mae: 这倒底是个啥啊？ #line:b8f99a
+	Gregg: 你是说这东西吗？ #line:f21eeb
+    <<setAnimInt Mae nodding 1>>
+	Mae: 当然啦，说的就是这个“东西"。 #line:7a9d6a
+    <<setAnimInt Mae nodding 0>>
+    Mae: o_o #line:c4d119
+	Gregg: 你还记得吗， #line:1f3b5c
+	Gregg: 小时候老驴生鲜那里，那些像是从机器人动画里跑出来的大家伙？ #line:af7d5d
+	Mae: 当然记得啦！ #line:d10064
+    <<dilate Mae .85 .5>>
+	Mae: 哦，我 的 天 啊！ :) #line:474f52
+	Mae: 难 道 这 就 是 其 中 之 一 吗？？？ #line:8a2cc7
+	Mae: 咱们是要一起把它给拼好吗？ #line:7c126f
+	Gregg: 当然啦，老兄。 #line:8da11c
+	Mae: 这 简 直 棒 极 啦！ \o/ #line:643e40
+	Mae: 你到底是从哪儿找到这东西的？ #line:4bb2ca
+    <<dilate Mae 1 .5>>
+    Mae: _o_ #line:f95fe3
+	Gregg: 你认识史蒂夫·斯克里金斯吗？ #line:0f5e13
+    Mae: :| #line:99d55b
+	->是那个把代课老师锁在杂物间的人吗？ #line:9d16ba
+        Gregg: 哈哈，就是他。 #line:17ffc7
+        Mae: 老兄，他整个长至夜假期都没能从杂物间里出来， #line:48e0e1
+        Mae: 后来，他是靠喝胶水，吃西班牙语练习册才活下来的。 #line:c06bf6
+        Mae: 这个*史蒂夫·斯克里金斯*是不是就让你记住了这些事呢？ #line:70b315
+	->是那个在学校停车场开着小车绕着人兜圈子的家伙吗？ #line:10b6af
+        Mae: 它这么一来，圈里的人都不敢动了。 #line:0b5f86
+		Mae: 我记得他管这种玩法叫“车中营"。 #line:b6320d
+		Mae: 而且，那家伙还会冲你按喇叭。 #line:e276f5
+	Gregg: 是啊，这个家伙。 #line:4f03e6
+	Mae: 伙计，他这人烂透啦。 =_= :\ #line:ad0cf0
+	Gregg: 但是！自从老驴生鲜关门以后，他就一直在那里。 #line:7f422b
+	Gregg: 这个机器人也是他找到以后送我的。 #line:1c0bc0
+	Mae: 这可算是史蒂夫干的第一件正经事啊。 :) #line:e3f120
+<<else>>
+	Mae: 哦，哇，是你一个人把它搬到沙发上的吗？ #line:c5a5de
+	Gregg: 是的！ #line:c7c4fe
+	Mae: 昨晚在楼梯上那么费劲之后，你还能自己把它搬上来？ #line:39127e
+	Gregg: 昨晚真是让人印象深刻啊。 #line:2172db
+<<endif>>
+Mae: 好好好好好，接下来咱们该怎么办啊？？？ o_o #line:c3e52e
+Gregg: 咱们得把这块旧蓄电池装到老家伙身上。 #line:c1c65a
+Mae: 好的，这听起来倒不是很复杂。 :| #line:4fb1ea
+Gregg: 或许吧。这根本就是个垃圾堆。 #line:eda18c
+Mae: 真希望你让这堆垃圾给划了，然后得点什么病，但你没有，太可惜啦。 #line:59d9de
+Gregg: 本来以为你会在来的路上挂掉，可你却没挂，太糟啦。 #line:82cf25
+Mae: 真希望机器人里全是愤怒的毒蛇，然后把你咬死， :) =_= #line:28f720
+Mae: 但你没事，真烦啊。 #line:3c2fac
+Gregg: 我真希望你会被掉下来的电梯砸成肉饼， #line:0717c3
+Gregg: 可惜电梯没掉下来。 :) #line:83caff
+Mae: 哦，伙计，别说了。这事我都有心理阴影啦。 :| o_o #line:41b807
+Gregg: 情有可原。 :| #line:4617c7
+<<wait 2>>
+Mae: 咱们又该干什么了？ #line:e45a97
+<<close>>
+<<set $gregg_friendship_quest_2 to 3>>
+<<irisOut 1 wait>>
+<<scene PawsModeBatteryConnect>>
+===
+title: FQ2_3
+tags: 
+colorID: 3
+position: -33476,16076
+---
+Mae: 天哪。 #line:46c4bc
+Mae: 这看起来也不怎么危险嘛。 #line:cc094b
+Gregg: 就因为你刚才死了 #line:dfba7d
+Gregg: 差不多5秒钟， #line:de5d3e
+Gregg: 你定义危险的门槛就提高了这么多吗？ #line:2bb22a
+Mae: 伙计。 =_= #line:8b8885
+Mae: 拜托。 #line:a2a7ec
+Gregg: 有些人早就已经挂了，而且是属于永别那类的！ #line:50b6f6
+Gregg: 他们可抱怨不了什么“拜托"。 #line:484684
+Mae: 嗯…… #line:e6bf65
+Gregg: 没错， #line:c46b5d
+Gregg: 他们要么闭嘴干事， #line:e25a23
+Gregg: 要么就是变成鬼啦！ #line:d03776
+Mae: 你是说，如果我不想被人使唤得累死累活，那我就应该……变成鬼？ o_o #line:02706d
+Gregg: 是啊！Carpy Diem，|抓住当下，|学学《死亡诗社》嘛！|（正确拼写应为Carpe Diem，|拉丁文“抓住当下"） #line:51be39
+    ->应该是读“Carp-ay Diem"吧。 #line:2b4391
+        Gregg: 哦，快瞧瞧啊，看看谁又在造新词啦。（他俩谁也没说对） #line:b66c91
+    ->“Carpy Diem"，|听着感觉好像是|一条叫Diem的鲤鱼啊。|（carp：鲤鱼） #line:a63ba7
+        Gregg: 一条会告诉你“凑合着活吧"的鲤鱼。 #line:c5dc1d
+Mae: 好吧。咱们接下来要干什么呢？ <o> #line:2b2bc1
+Gregg: 下面就是最精彩的环节啦。 #line:2a3fef
+Gregg: 咱们来把这个机械小怪兽给拼好。 #line:357ab4
+Mae: 你知道该怎么拼装吗？ #line:4d97b8
+Gregg: 咱 们 会 知 道 该 怎 么 做 的！！！ #line:4a2371
+Mae: 酷啊。 :| _o_ #line:af752e
+Gregg: 梅。 #line:b6dcd0
+Mae: 抱歉。 #line:9530a2
+<<dilate Mae .85 .5>>
+Mae: 酷～！！！！ :) #line:1fe9c1
+Mae:{width=8}噢 哦！！！！ \o/ #line:843c49
+<<dilate Gregg .85 .5>>
+Gregg:{width=8}噢～哦～！！！ D: \o/ #line:699b52
+<<irisOut 1 wait>>
+<<set $gregg_friendship_quest_2 to 4>>
+<<scene RobotBuilder>>
+===
+title: FQ2_4
+tags: 
+colorID: 3
+position: -33224,16069
+---
+Mae: :) <o> #line:879487
+Mae: 它可真帅啊。 #line:747a06
+Gregg: 是啊，完美无缺。 #line:9c5f2d
+Mae: 咱们的帅小伙。 =_= #line:6aa94e
+<<fadeOutMusic 5>>
+Gregg: 咱们的机器人小宝贝。 #line:664834
+Mae: 看起来……还真不赖嘛。 #line:b338df
+Mae: o_o #line:3c5142
+Mae: 不过，我想起来个事： #line:0593e1
+Mae: 咱们为什么要把这么一大堆垃圾放在你们屋的客厅里呢？ #line:99f3b3
+Mae: 为什么要吃饱了撑的把这堆垃圾 #line:3c3c78
+Mae: 和偷的那块已经漏了酸的汽车蓄电池连在一起呢？ #line:966a91
+Gregg: 我也不知道。 #line:d0bbe5
+Gregg: 自打你回来那天起， #line:7b9eaa
+Gregg: 我才发现，我开始想念几年前的那个格雷格了。 #line:db06f5
+Mae: 哈？ #line:8b468c
+Gregg: 就感觉我这几年把大部分时间都花在工作上了，但…… #line:0b4768
+<<if $did_gregg_friendship_quest_1 is 0>>
+	Mae: 那你为什么要那么玩命工作啊？ O_o #line:89a268
+	Gregg: 我和安格斯已经有了一个计划。 #line:805eb7
+	Mae: 啥计划？ #line:d738e6
+    <<set $knows_bright_harbor to 1>>
+	Gregg: 搬到光明湾去！ :) #line:10ec1a
+	Mae: 光明……湾？ :| o_o _o_ #line:60dc1c
+    Mae: 你们是什么时候有这个想法的啊？ #line:cd5e6d
+    Gregg: 嗯……大概是在一年前吧。 #line:7bdbe9
+    Gregg: 这就是我和安格斯每周上七天班的原因。 \o/ #line:1aec05
+    Mae: 可是……你们打算什么时候走啊？ #line:ba1aa8
+    Gregg: 我觉得，可能会在明年春天走吧。 _o_ #line:114a08
+    Mae: 那好像……只剩几个月的时间了啊。 #line:7e7192
+    Gregg: 没错！ #line:95970c
+    Mae: 哦，那好吧。 #line:2ee810
+    Gregg: 等我们都安顿好了，你一定要过来做客啊！ #line:74d55a
+        ->为什么要去光明湾啊？ #line:f657e3
+        ->光明湾那儿消费不是很高吗？ #line:82be2b
+            Gregg: 要是你住的地方很烂的话，你就不会觉得光明湾贵啦！ #line:cc7aac
+    Gregg: 哦，梅，那地方相当不错啊。 o_o :| #line:deab31
+    Gregg: 我和安格斯夏天的时候去那儿看过了。 #line:5f2add
+    Gregg: 那儿有很多的录像店和奇怪主题的酒吧， #line:4ff157
+    Gregg: 那儿的人也是又酷又……悠闲？或者说自由？ #line:45faf6
+    Mae: 哦。 #line:658e28
+    Gregg: 我就是在那儿纹的身！ #line:9c2839
+    Mae: 什么？ #line:9e855a
+    Gregg: 耶，你看！ #line:eef24e
+    Gregg:{emote=sheep_tattoo} #line:a0a7c5
+    <<close>>
+    Mae: 这是个羊的图案吗？ #line:1c78dd
+    Gregg: 没错。 #line:899fa5
+    Mae: 为什么要纹一只羊呢？ #line:94c130
+    Gregg: …… #line:598409
+    Gregg: 那个纹身师酷极啦， #line:b9dc09
+    Gregg: 而且纹身一点也不疼！ #line:7290c3
+    Mae: 你也有纹身了， #line:bedce4
+    Mae: 也要搬到光明湾去了。 #line:a42dc5
+    Gregg: 是啊！ #line:2d3a67
+    Mae: 哦。 #line:14d1ea
+    Mae: 好吧。 #line:48b0da
+    Mae: 就这么着吧。 #line:73502f
+    Gregg: 是啊，我正想说， #line:08bf36
+<<endif>>
+Gregg: 既然你又回负鼠泉了， #line:ba3619
+Gregg: 我想…… #line:f89e1c
+Gregg: 嘿，咱们再干点坏事吧。 #line:817327
+Mae: 嗷，伙计。 _o_ :) #line:b08ea5
+Gregg: 嗯哼。 #line:54fe2b
+Gregg: 我一直在想，该怎么做才能让这东西更有意义呢。 #line:34c74c
+Gregg: 后来，我想，应该把它带回来，送给安格斯！ #line:a6ba36
+Mae: 太好啦，伙计。 =_= #line:d6abd1
+Mae: 我敢说，他一定会很喜欢这个的。 #line:251e59
+Gregg: 希望他会喜欢吧。 #line:45e495
+<<close>>
+<<wait 1>>
+Mae: 好吧。 o_o #line:13ac66
+<<playMusic gregg_not_as_manic>>
+Gregg: 好啦，现在咱们唯一要做的，就是启动它啦！ #line:044138
+<<dilate Mae .85 .5>>
+Mae: 哦！哦！ :) #line:9cf378
+Mae: 我想按开关，让我来按开关，让我来。 \o/ #line:7bdc17
+Gregg: 姐们，为了我最好的朋友梅， #line:3b5535
+Gregg: 也为了你起死回生的传奇经历，我把按开关的荣誉让给你。 #line:c54c72
+<<dilate Mae 1 .5>>
+Mae: 如果下次我又起死回生了，咱们就办一个披萨宴。 _o_ #line:241440
+Gregg: 姐们，就这么定了。 #line:e4367e
+Mae: 太 好 啦。 =_= #line:38b38c
+<<irisOut 1 wait>>
+<<set $gregg_friendship_quest_2 to 5>>
+<<scene PawsModeFlipTheSwitch>>
+===
+title: FQ2_5
+tags: 
+colorID: 3
+position: -33009,16049
+---
+<<cameraLookAt GreggFQ2EndCam1 0>>
+<<extraZoom 1 0>>
+<<setAnimInt Mae layShocked 1>>
+//mae is laying on the floor getting electrocuted.
+//Her dialogue autoplays and you just advance Gregg’s.
+//Robot is waggling around. Gregg is whooping and hollering and dancing.
+<<tell RobotBody Activate>>
+Gregg: \o/ :) #line:21f9cb
+<<lookUp Gregg>>
+<<dilate Gregg .85 .5>>
+Mae:{width=8}啊噗嘻嚇嘎啊咯呃！！！ #line:c03456
+Gregg:{width=4}耶～啊～！！！ #line:b0e590
+Gregg:{width=4}哇～哦～！！！ #line:f23c44
+Mae:{width=4}哈～嘎～嘎～嘎～嗯～！！！ #line:862ad5
+Gregg: D: #line:60969e
+Gregg: 它 活 过 来 啦！！！！ #line:576dfe
+Gregg: :) #line:0be0cf
+<<warp Angus AngusDoor>>
+<<flip Angus 1>>
+<<show Angus>>
+<<tell _AmbientSFX:door Play>>
+<<wait 2>>
+Angus: 我勒个…… #line:d6ba27
+<<close>>
+<<extraZoom 0 2>>
+<<cameraLookAt GreggFQ2EndCam2 3>>
+<<wait 2>>
+//pan over and Angus is standing there with the door open//
+Angus: 我…… #line:8aba4a
+Gregg: D: #line:479af2
+Gregg:{width=8}哇～哦～哇～哦～哇～哦～！！！ #line:e185f9
+Gregg: :) #line:3a0d50
+<<close>>
+//you control mae’s dialogue again. She is no longer being electrocuted.//
+Mae: 嘿……安格斯…… #line:592a7d
+Angus: 梅，最近怎么样？ #line:d5ebfb
+Mae: 挺好的！这次我的小命可没丢！ #line:a4f4c4
+Mae: 你怎么样？ #line:57533a
+Angus: 还不错，还不错。 #line:c487ce
+Mae: 要是你不介意的话，我想在这儿待一会儿。 #line:b4ff82
+Angus: 没问题。 #line:472a0d
+<<close>>
+<<fadeOut 1 wait>>
+<<unlockDoodle GreggFQ2>>
+<<set $gregg_hat to 0>>
+<<set $night to 1>>
+<<set $did_gregg_friendship_quest_2 to 1>>
+<<set $completed_gregg_friendship_quests += 1>>
+<<set $gregg_friendship_quest to 0>>
+<<scene MaeHouse>>
+
+						
+===
+title: EnterLevel_A3D3
+tags: 
+colorID: 4
+position: -32333,15581
+---
+[[GreggFQ4Intro]]
+===
+title: GreggFQ4Intro
+tags: 
+colorID: 4
+position: -32322,15844
+---
+<<extraZoom 1.7 0>>
+<<set $gregg_friendship_quest to 4>>
+<<if $did_gregg_friendship_quest_2>>
+	Mae: 咱们的小宝贝， :) #line:69be0d
+	Gregg: 嗯。 #line:483818
+	Mae: 咱们的儿子看起来不太好啊。 :\ #line:c9fbf3
+	Gregg: 嗯，是啊。 #line:f75a84
+<<else>>
+	Mae: 呃，这东西就是咱儿子吗？ O_o #line:43bb0f
+	Gregg: 对，这东西就是咱儿子。 #line:8114c9
+	Mae: 那这勉强算是咱们的儿子吧。 #line:5542d0
+	Mae: 是咱们让他来到这个世上的。 #line:1ce890
+	Gregg:对啊，你[wave]也助了一臂之力。[/wave] #line:f6b4ab
+	Mae: 但味儿闻起来可有点怪。 :\ #line:8387ae
+<<endif>>
+Gregg: 不用管它是什么味儿。 #line:dee152
+Mae: 那咱们今晚该干点什么呢？ :) o_o #line:092627
+Gregg: 我也不知道该干点什么。我们借到了碧娅的车。 #line:309b6c
+Mae: [wave]哦，是吗？[/wave] #line:0ffd4e
+Mae: [wave][shake=.01]那 咱 们 就 去 多 纳 狼 吧！！！[/all] #line:515663
+Gregg: 哦，对啊！ :) #line:488adf
+Mae: 我回来以后，还没去过那儿呢！ #line:095088
+Mae: 我得“来"几个龙舌兰鸡尾酒蛋糕才行。 #line:0661d7
+Gregg: 不知道什么原因，他们现在也卖薄饼。 #line:fb4852
+Mae: 哦哦哦！！！ #line:4ff806
+Gregg: 嘿，船长！咱们去多纳狼怎么样？ o_o #line:fd902d
+<<lookAt Mae Angus>>
+<<lookAt Gregg Angus>>
+<<close>>
+<<warp Angus AngusRobotBody>>
+<<flip Angus -1>>
+//camera pulls out to see Angus is standing like 6 feet away//
+<<extraZoom 0 2>>
+<<wait 1>>
+Angus: …… #line:28e67d
+Gregg: :| #line:d0000f
+Gregg: ？ #line:4bf187
+Mae: o_o #line:dd8366
+Mae: …… #line:645e9c
+Gregg: 那儿现在还卖薄饼呢！ :) #line:d99f16
+<<close>>
+//angus walks across the screen and off the left//
+<<walk Angus AngusOffLeft>>
+<<wait 3>>
+Angus: 那好吧。 #line:ab16bb
+<<lookUp Mae>>
+<<lookUp Gregg>>
+Gregg: \o/ D: #line:c7077d
+Gregg: 上 战 车！ #line:d6e753
+<<dilate Mae .85 .5>>
+Mae: 向 甜 甜 圈 地 狱 前 进！！！ \o/ #line:e401fa
+<<runNextLinesTogether 2>>
+Mae: {width=8}[shake=.05]噢 哦 噢 噢！！[/shake] #line:00c4a4
+Gregg: {width=8}[shake=.05]噢 哦 哦 哦！！[/shake] #line:6f14bd
+<<close>>
+<<irisOut 1 wait>>
+<<sectionTitle GreggFQ4Intro BeaCar>>
+===
+title: EnterLevel_A4D1
+tags: 
+colorID: 5
+position: -31710,15522
+---
+[[HangoutWithoutMae]]
+===
+title: EnterLevel_A4D2
+tags: 
+colorID: 5
+position: -30749,15491
+---
+<<if $laptop_vignettes>>
+    <<fadeOut .0001>>
+    <<hide Bea>>
+    <<hide Germ>>
+    <<warp Mae MaeOffScreen>>
+    <<sit5 Gregg GreggSitInFrontOfCouch>>
+    <<flip Gregg 1>>
+    <<flip Angus 1>>
+    <<sit7 Angus SitOnCouch1>>
+    <<lookOut Gregg>>
+    <<playMusic laptop_vignettes 10>>
+    <<if $dom_friend_bea>>
+        [[SubFriendVignette]]
+    <<else>>
+        [[DomFriendVignette]]
+    <<endif>>
+<<elseif $night is 0>>
+    <<set $death_walk to 1>>
+    <<playIdleAnimationPlayer>>
+    [[MaeComesBack]]
+<<else>>
+    <<cameraLookAt CameraMaeKitchen>>
+    [[AfterPizza]]
+<<endif>>
+===
+title: AfterCouchNightmare
+tags: temp
+colorID: 5
+position: -30146,17598
+---
+<<setAnimInt Mae layingSide 0>>
+<<playIdleAnimationPlayer>>
+<<cameraUseData 1>>
+<<cameraLookAt CouchCamera 0>>
+<<togglePlayerFallEnabled true>>
+<<warp Mae MaeAboutToLeave>>
+<<flip Mae -1>>
+<<fadeIn 1 wait>>
+Mae: …… #line:9d0c70
+<<wait 3>>
+Mae: 拜拜啦，伙计们。 #line:cef57f
+Mae: 爱你们哟。 #line:d9c1b3
+<<close>>
+<<irisOut 1 wait>>
+<<sectionTitle TheDark MineWoods left>>
+===
+title: SubFriendVignette
+tags: 
+colorID: 5
+position: -30199,15890
+---
+<<cameraLookAt CameraVignetteStart 0>>
+<<cameraLookAt CameraVignetteEnd 30>>
+<<fadeIn 1 wait>>
+MaeLaptop: 我不知道自己知不知道到底发生了什么事。 #line:f63863
+MaeLaptop: 但我希望一切都会结束。 #line:b98b0c
+MaeLaptop: 我现在唯一想做的事， #line:ae8134
+MaeLaptop: 就是紧紧地抱住你们大家。 #line:05160c
+MaeLaptop: 我这么做，不仅是因为我爱你们， #line:0b53ce
+MaeLaptop: 还因为我想把你们都留在我身边。 #line:3a856d
+MaeLaptop: 咱们紧紧地抱在一起，这样，就没人能伤害到我们了。 #line:152c24
+MaeLaptop: 抱歉，我又说这些不着边际的话了。 #line:533278
+//fade out. Fade in on germ in a parking lot. This will need to be a new scene called “GermVignette”//
+<<fadeOut 1 wait>>
+<<overrideLoadingScreenType Blank>>
+<<scene GermVignette>>
+===
+title: DomFriendVignette
+tags: 
+colorID: 5
+position: -30492,15894
+---
+<<cameraLookAt CameraVignetteStart 0>>
+<<cameraLookAt CameraVignetteEnd 30>>
+<<fadeIn 1 wait>>
+MaeLaptop: 我对生活一点都不了解。 #line:abd8f8
+MaeLaptop: 咱们可能从小就被这么教育， #line:3e74cb
+MaeLaptop: “人定胜天"。 #line:b0ea8c
+MaeLaptop: 我刚刚被卷进这件可怕的事当中。 #line:2a1002
+MaeLaptop: 我们都被卷进来了。 #line:07d419
+MaeLaptop: 我猜，这件事会很可怕吧。谁知道会发生什么事呢？ #line:8d611c
+MaeLaptop: 但我觉得，人们有把不同事件串联起来的能力， #line:9ba43b
+MaeLaptop: 或者人的存在本身就会招来一堆事件。 #line:50f163
+MaeLaptop: 有些时候，人们需要有人来做他们的依靠， #line:c93f7c
+MaeLaptop: 做他们本该有、却没有的依靠。 #line:65077c
+MaeLaptop: 今晚，是你们把我从湍流之中救了回来， #line:4999e0
+MaeLaptop: 你们为了救我，差点杀了人。 #line:40d790
+MaeLaptop: 我会为此感激你们的。 #line:783808
+MaeLaptop: 哈 哈 哈 #line:7e0a6c
+//fade in on bea, sitting in her living room doing bills as her dad is asleep on the couch.//
+<<fadeOut 1 wait>>
+<<overrideLoadingScreenType Blank>>
+<<scene BeaApartment>>
+===
+title: HangoutWithoutMae
+tags: 
+colorID: 5
+position: -31709,15825
+---
+<<tell _AmbientSFX:skate_wolf Play>>
+<<tell _AmbientSFX:skate_wolf_music Play>>
+<<tell _AmbientSFX:upstairs_neighbours_02 Play>>
+<<lookOut Gregg>>
+<<LookOut Germ>>
+<<LookOut Bea>>
+<<dilate Bea .85 0>>
+<<if $dom_friend_bea>>
+    <<wait 6>>
+    Bea: 不错。 #line:19d71d
+    Gregg: 不赖。 #line:df5c73
+    Germ: 是啊。 #line:a775b3
+    Bea: 我都快忘了这游戏怎么玩了。 #line:aa2c15
+    Gregg: 这游戏玩起来就和骑车一样简单。 #line:55e113
+    Germ: 在我睡觉的时候，我会在脑海里重现这个游戏，然后用脑子去玩。 #line:1fcd57
+    Bea: 嗯。我睡觉的时候，喜欢回忆之前看过的书上的情节。 #line:9f85b4
+    Germ: 哦，快来看啊，这有个聪明人。 #line:de1cae
+    Gregg: 我会去记每一个我去过的地方。 #line:9a1169
+    Gregg: 而且，我还能记住去过地方的先后顺序。 #line:938efb
+    Bea: 哇哦。 #line:4107cf
+    <<close>>
+    <<wait 4>>
+    Bea: 好吧。 #line:7794af
+    <<close>>
+    <<wait 1>>
+    <<possess Bea>>
+    <<dilate Bea 1 .25>>
+    <<set $bea to 1>>
+    <<set $bea_done to 1>>
+<<else>>
+    <<wait 6>>
+    Gregg: 干得好。 #line:52527c
+    Bea: 确实是厉害。 #line:4fc57c
+    Germ: 是吧。 #line:57e0a3
+    Gregg: 姐们，你玩得可比我好啊。 #line:f63245
+    Bea: 我好像……从没在别的事情上这么突出过。 #line:44a438
+    Germ: 我还经常玩呢。 #line:c30abf
+    Germ: 我家里有一堆老游戏， #line:13ba58
+    Germ: 都是我收的。 #line:7ccd96
+    Gregg: 哈，我还没去过你家呢。 #line:a0188e
+    Germ: 我没带人去过我家。 #line:9f0e9b
+    Gregg: 你家是个秘密基地吗？ #line:b3740f
+    Germ: 我家在树上。 #line:af8f13
+    Bea: 这话我倒信。 #line:a342a2
+    <<close>>
+    <<wait 4>>
+    Gregg: 嗯，那好吧。 #line:39a661
+    <<close>>
+    <<wait 1>>
+    <<possess Gregg>>
+    <<set $gregg to 1>>
+    <<set $gregg_done to 1>>
+<<endif>>
+<<cameraFollowPlayer 1>>
+===
+title: InitLevel_A4D1
+tags: 
+colorID: 5
+position: -31710,15100
+---
+<<warp Mae MaeOffScreen>>
+<<cameraLookAt CouchCamera>>
+<<playerCanRun 0>>
+<<playerCanJump 0>>
+[[SetupDomFriendCouchGroup]]
+===
+title: Angus_A4D1
+tags: 
+colorID: 5
+position: -31726,16086
+---
+<<if $angus is 0>>
+    <<set $angus += 1>>
+    <<if $did_angus_investigation_quest is 0>>
+        <<set $angus_done to 1>>
+    <<endif>>
+    <<closeAll>>
+    <<if $dom_friend_bea>>
+        Angus: 想来点儿布朗尼吗？ #line:3b4317
+        Angus: 我正做着呢。 #line:931097
+        Angus: 而且…… #line:378528
+        Bea: 而且什么？ #line:0a0d41
+        Angus: 我等会可能还要做千层面呢。 #line:537290
+        ->千层面？ #line:8e1dee
+        	Angus: 我在冰箱里找到了一点儿！ #line:782df6
+        ->布朗尼？ #line:6189ab
+        	Angus: 我上星期买的原料！ #line:9fb3ee
+        Bea: 为什么要做这么多？ #line:cf24c0
+        Angus: 当然是为了吃啦！每个人都得吃饭啊！ #line:5da058
+        Bea: 你难道不害怕，不担心吗？ #line:6127b8
+        Angus: 好吃的晚饭能让人心情愉悦！ :) #line:e4a45a
+        Angus: 总得有人来照顾你们吧！ #line:f55ecc
+        Bea: 谢谢了，安格斯，你人真好。 #line:b3acc4
+        Angus: 噢，其实我也不比别人好多少。 :| #line:cdbc4a
+    <<else>>
+        Gregg: 嘿，船长。 #line:a46361
+        Angus: 嘿，小兄弟。 #line:1d5b91
+        Gregg: 你是不是一次做了三天的晚饭啊？ #line:e90833
+        Angus: 布朗尼在烤箱里。 #line:903f6a
+        Angus: 还是说你想吃千层面？咱们上次买了点儿，忘了做了。 #line:3b0e9f
+    	->有千层面是吗？ #line:4bdebf
+    		Angus: 当然啦！不过放了好久了！ #line:d30d36
+            Gregg: 噢，我还以为之前见到的是一块墙砖呢。 #line:206343
+            Angus: 才不是！ #line:868f20
+    	->把布朗尼和千层面搭配在一起会好吃吗？ #line:f910bf
+    		Angus: 咱们已经有一个星期没去买过东西了。 #line:2d1d37
+        Gregg: 嘿，亲爱的，你应该去好好睡一觉了…… #line:fb6a71
+        Gregg: 你已经坐了差不多整整24个小时啦。 #line:ddf1dd
+        Angus: 没事，好吃的晚饭能让大家心情愉悦！ #line:7ac881
+        Angus: 总得有人来照顾你们吧！ #line:2be864
+        Gregg: 老兄，还是让我来照顾照顾*你*吧。 #line:f7e69f
+        Angus: 你想帮我弄这些吗？ #line:06e972
+        Angus: 不用啦，对我来说，做家务的时候就是放松的时候。 #line:1c3ab1
+        Gregg: 好吧，酷。 #line:e48a40
+        //need some sort of animation of Gregg hugging or smooching Angus here//
+        Gregg: 咱们一定能挺过去的。 #line:0c751c
+        Angus: 咱们一定能挺过去的。 #line:a69785
+        Gregg: 爱你。 #line:900428
+        Angus: 我也爱你。 #line:401c6a
+    <<endif>>
+<<elseif $angus is 1>>
+    <<set $angus += 1>>
+    <<set $angus_done to 1>>
+    <<if $dom_friend_bea>>
+        Bea: 这么说，你们是在负鼠崖的树林里看见的那个人，是吗？ #line:b2e9e0
+        Angus: 是的。 #line:160b04
+        Bea: 那这些人……和你们见到的那个人像吗？ #line:da2485
+        Angus: 是的，有点像。 #line:b0118d
+        Angus: 那个人还戴着顶帽子。 #line:88bbe2
+        Bea: 嗯。 #line:9891ed
+        Angus: 我得先把千层面解冻了才行。 #line:e37c7f
+        Angus: 或者不解冻，直接做也行？ #line:de6665
+    <<else>>
+        Gregg: 嘿，我刚想说， #line:1e5b8b
+        Gregg: 你能和梅一起去负鼠崖真是太酷啦。 #line:c920d2
+        Gregg: 我知道，在你小时候， #line:d25c44
+        Gregg: 你并不是很喜欢童子军营地。 #line:faab3a
+        Angus: 我觉得还好，因为我在那儿可以发泄心里的不快。 #line:96187d
+        Gregg: 那倒是不错。 #line:c686e0
+        Angus: 我得先把千层面解冻了才行。 #line:130338
+        Angus: 或者不解冻，直接做也行？ #line:fe97c1
+    <<endif>>
+<<endif>>
+===
+title: MaeComesBack
+tags: temp
+colorID: 5
+position: -30718,15056
+---
+<<playAmbientSFX _AmbientSFX:skate_wolf>>
+<<playAmbientSFX _AmbientSFX:skate_wolf_music>>
+
+<<if $dom_friend_bea>>
+    Bea: O_O #line:ef6458
+	Bea: 我去，是梅。 #line:99ffd7
+	Mae: 是我。 #line:6477f2
+	Gregg: 你居然复活啦！ #line:e9a9fd
+	Bea: 我觉得她根本就没死。 #line:cce370
+<<else>>
+    Bea: O_O #line:6100b6
+	Gregg: 卧 槽！梅！！ #line:661f39
+	Gregg: 我 以 为 你 已 经 死 了 呢！！ #line:9a3c19
+	Mae: 我还活着呢。 #line:24eb6d
+	Gregg: 你居然复活啦！ #line:a33c5c
+	Bea: 我觉得她根本就没死。 #line:65b9b9
+<<endif>>
+Gregg: :) \o/ #line:5a3e46
+Gregg: 披 萨 派 对 时 间 到！！！ #line:c869a8
+Mae: 我感觉有点晕。 #line:10d48c
+Gregg: :) _o_ #line:a737a8
+Bea: 你应该先躺下来。 #line:2724c4
+Gregg: 你可以去我们床上睡！ #line:145f39
+Mae: 我不太习惯睡别人床上。我还是躺沙发上吧，怎么样？ #line:dd3f26
+Germ: 那我先不玩了？ #line:361e53
+Mae: 不用。听着声音睡觉能让我好受点。 #line:7a3465
+<<close>>
+<<fadeOut 1 wait>>
+
+// mae laying on couch
+<<setAnimInt Mae eyes 4>>
+<<togglePlayerFallEnabled false>>
+<<warp Mae MaeLieCouch>>
+<<setAnimInt Mae layingSide 1>> 
+<<setSortingLayerName BG4>>
+
+<<warp Bea SitRightOfCouchMae>>
+<<flip Bea 1>>
+
+<<warp Angus GreggRobotCrate>>
+<<flip Angus -1>>
+<<lookAt Bea Angus>>
+<<hide Gregg>>
+
+<<cameraLookAt CouchCameraA4D2>>
+
+<<wait 1>>
+
+
+//Germ still playing games. Bea and Angus talking to the right of the couch.//
+Bea: o_o #line:60ea19
+Gregg: o_o :| #line:9bcd31
+<<fadeIn 1 wait>>
+Bea: 她妈妈说，把她留在这儿没问题。 #line:7054dd
+Bea: 不过，我等会儿还是开车把她送回去吧。 #line:3a7b48
+Angus: 这么说，她是徒步从家里走过来的？ #line:3ce6c3
+Bea: 是啊，她是一路走过来的。 #line:a828bb
+Angus: 天哪。 #line:0ec1ac
+Bea: 幸好她没在半路上晕倒。 #line:32499f
+<<close>>
+<<fadeOut 1 wait>>
+
+<<warp Gregg AngusWalkInCouch>>
+<<warp Bea BeaKitchen>>
+
+<<show Gregg>>
+<<hide Angus>>
+
+<<lookOut Gregg>>
+
+<<cameraLookAt CouchCamera>>
+
+<<wait 1>>
+
+<<fadeIn 1 wait>>
+//Gregg is standing to the left of the couch//
+Gregg: 真希望她能好起来。 #line:0b9598
+<<if $did_germ_friendship_quest_3>>
+	Germ: 我也是。 #line:801d47
+	Germ: 她是个好人。 #line:95cfe6
+<<else>>
+	Germ: 嗯嗯嗯。 #line:315fbf
+<<endif>>
+<<close>>
+<<walk Bea SitRightOfCouchMae wait>>
+//Bea walks in from kitchen//
+<<lookAt Gregg Bea>>
+Bea: 你们俩！！嘘！！！ #line:f3e63a
+<<if $did_gregg_investigation_quest>>
+	Gregg: 不行，嘘！ #line:1da2ef
+	Bea: 你说什么？ #line:f525e7
+	Gregg: 外卖小哥送披萨来啦。 #line:727544
+<<endif>>
+<<close>>
+<<fadeOut 1 wait>>
+<<wait 1>>
+
+<<lookNearest Gregg>>
+<<show Angus>>
+<<warp Bea SitRightOfCouchMae>>
+<<warp Gregg GreggRobotCrate>>
+<<warp Angus AngusIsOnTheLeft>>
+<<flip Bea -1>>
+<<flip Gregg -1>>
+<<flip Angus 1>>
+<<cameraLookAt CouchCameraA4D2>>
+
+
+<<fadeIn 1 wait>>
+//Bea and Gregg are standing to the right of the couch. Angus is on the left//
+Bea: 话说，你们认识这个人吗？ #line:421f93
+<<lookAt Bea Gregg>>
+Gregg: 我们每个星期会订两次披萨。 #line:a65a2a
+<<lookAt Bea Angus>>
+Angus: 至少两次。 #line:7338fa
+<<lookAt Bea Gregg>>
+Gregg: 自从美味意面馆关门之后，我们就开始订路边那家店的披萨了。 #line:51e929
+Bea: 我还以为你们俩一直都省吃俭用，准备攒钱呢。 #line:afebcb
+Gregg: 啥？ #line:3fe86c
+<<lookAt Bea Angus>>
+Angus: 碧娅，不要对我们的生活方式评头论足好不好。 #line:8b2620
+Bea: 好吧。不过，咱们得先……验验那个送披萨的人。 #line:e57f85
+Angus: 我能从钥匙孔里看看是不是那个送披萨的哥们。 #line:32d833
+<<lookAt Bea Gregg>>
+Gregg: 如果不是那个人，咱们就把屋里的灯都关了， #line:893e39
+Gregg: 然后咱们就躲在屋里，一辈子不出去。 #line:15fcbc
+<<lookAt Bea Angus>>
+Bea: 好吧，烂计划总比没计划好。 #line:0d86ff
+<<lookNearest Bea>>
+<<fadeOut 1 wait>>
+<<wait 1>>
+
+//<<cameraLookAt CouchCamera>>
+
+<<setAnimInt GreggAngusApartment blackOut 1>>
+
+<<fadeIn 1 wait>>
+//on black screen//
+Mae: 哈喽？ #line:21e92a
+Bea: 快看看是谁醒啦！ #line:ab3780
+//buzzer rings//
+<<tell _AmbientSFX:intercom_buzz_short Play>>
+<<wait 1>>
+Angus: 是他！是平时送披萨的小哥！ :) #line:e64c00
+Gregg: 披 萨 到 啦！！ :) #line:b8d957
+<<set $night to 1>>
+<<irisOut 1 wait>>
+<<scene PawsModePizzaParty>>
+===
+title: AfterPizza
+tags: temp
+colorID: 5
+position: -30399,15358
+---
+//Mae is talking to her mom on an actual land line in the kitchen! A LAND LINE! Mom’s responses come from receiver and hang out on a node opposite Mae?
+<<lookAt Mae Mom>>
+Mae: -_- #line:90688d
+Mae: 老妈，对不起。 #line:98ced2
+Mom: 亲爱的，你差点把我们给吓死。 #line:9dada7
+Mae: 对不起，老妈。 #line:539726
+Mom: 我们会过去接你的。 #line:29aafa
+Mae: 不用，没事的。我就是想到这儿睡一会儿。 #line:29fca9
+Mom: 碧娅也在那儿吗？ #line:acc339
+Mae: 碧娅在这儿。 #line:24bab5
+Mom: 那就好。 #line:523f0a
+Mae: 我早上就回去。 #line:33d599
+Mom: 让碧娅开车送你回来。 #line:8ea680
+Mae: 我会跟她说的。 #line:a4ce25
+Mom: 梅…… #line:0d6c75
+<<wait 3>>
+Mae: 我知道。 #line:3459fa
+Mom: 要是你想回家了，就给我们打电话。 #line:66580b
+Mae: 我会的。 #line:aac6b8
+Mae: 爱你，老妈。 #line:1baea4
+Mom: 我也爱你，宝贝。 #line:34c263
+<<close>>
+<<fadeOut 1 wait>>
+<<lookNearest Mae>>
+<<wait 2>>
+<<set $gregg_angus_phone_off_hook to 0>>
+//music does a thing during this pause here? Like an ambient sting or... something? Like foreboding? So players can think maybe her saying she loves her mom is like her last words to her?//
+//Mae can deathwalk around the apartment.
+//Angus is in the kitchen eating a brownie.
+<<warp Angus AngusKitchen>>
+//Gregg is on the couch watching
+<<sit Gregg SitOnCouch2>>
+//Germ, who is still sitting there playing the game.
+//Bea is looking at her phone by their computer in the bedroom.
+<<warp Bea BeaBedroom>>
+<<flip Bea -1>>
+<<playIdleAnimationPlayer>>
+<<warp Mae MaeKitchenLandline>>
+<<fadeIn 1 wait>>
+// need to prevent access to the door here! somehow... maybe the door should always be off?
+<<unfreezePlayer>>
+<<cameraFollowPlayer 1>>
+===
+title: Angus_A4D2
+tags: 
+colorID: 5
+position: -31030,16481
+---
+Angus: 你想来块布朗尼吗？ :) #line:e50531
+Mae: 不用了，我现在不太想吃东西。 #line:6e050f
+Mae: 虽然我胃里已经空了，但是我还是想吐。 #line:6a062c
+Mae: 所以，我要是再吐的话，就该把内脏都吐出来了。 #line:e43529
+Angus: 哦，说的也对。 :| #line:ca489a
+Angus: 你还需要你的内脏呢。 #line:2101ad
+Mae: 至少目前是这样。 #line:10a711
+<<set $angus_done to 1>>
+===
+title: Gregg_A4D2
+tags: 
+colorID: 5
+position: -30726,16477
+---
+<<if $gregg is 0>>
+    <<set $gregg += 1>>
+    [[Gregg_A4D2_00]]
+<<elseif $gregg is 1>>
+    [[Gregg_A4D2_01]]
+<<endif>>
+===
+title: Gregg_A4D2_00
+tags: 
+colorID: 5
+position: -30777,16732
+---
+<<if $dom_friend_bea>>
+	Gregg: 姐们，这星期过得可真够疯狂的，是不？ #line:8ad557
+	Mae: 可以这么说。 #line:07a314
+	Gregg: 等咱们把这事全都摆平了…… #line:b3a88a
+	Mae: 我觉得，咱们很有可能摆不平这事。 #line:922bfe
+	Gregg: 好吧，就算咱们没摆平， #line:013aad
+	Gregg: 还都把命丢了，变成了鬼， #line:106075
+	Gregg: 咱们也要多出去玩玩才行。 #line:605e18
+	Mae: 就这么定啦。 #line:99d146
+<<else>>
+	Gregg: 姐们，你确定你没事了吗？ #line:dcf68f
+	Mae: 我猜应该没什么事了， #line:a0f731
+	Mae: 但也不太好。 #line:5b1768
+	Gregg: 我真的……很担心你。 #line:7ff548
+	Mae: 你的担心 #line:a18ec0
+	Mae: 是对的。 #line:48ca49
+	Mae: 因为事情太糟了。 #line:1822e9
+	Gregg: 是啊。 #line:f996f0
+    Gregg: 别再让自己受这么重的伤了，好吗？ #line:4e7e45
+<<endif>>
+
+<<if $dom_friend_bea>>
+    <<set $gregg_done to 1>>
+<<endif>>
+===
+title: Gregg_A4D2_01
+tags: 
+colorID: 5
+position: -30511,16733
+---
+->咱们能睡觉了吗？ #line:ffaa1e
+	Gregg: 当然可以了，姐们。 #line:b141ec
+    Mae: …… #line:e657fa
+	Gregg: 嘿！！ D: #line:d81310
+	Gregg: 现 在 大 家 都 上 床 睡 觉 去！！！ D: #line:fe7e39
+    Gregg: :| #line:22e62e
+	Mae: 我去。 #line:6b3603
+    [[GermLeaves]]
+->我还想……在屋里转转。 #line:7c1631
+	Gregg: 想转的话，就去转转吧。 #line:f1d85a
+===
+title: Germ_A4D2
+tags: 
+colorID: 5
+position: -30222,16476
+---
+Mae: 这是什么游戏啊？ #line:ed26c6
+Germ: 《狼人：咆哮者施莱德 3》 #line:c6324f
+Mae: 哇哦。我记得几年前， #line:7846f1
+Mae: 在凯西家玩过这游戏。 #line:4ed32a
+Germ: 我是昨天 #line:ac3363
+Germ: 在家 #line:ce8637
+Germ: 玩过这游戏。 #line:7cabfa
+Mae: 酷啊。 #line:42f015
+<<set $germ_done to 1>>
+===
+title: Bea_A4D2
+tags: 
+colorID: 5
+position: -29818,16399
+---
+<<if $bea is 0>>
+    <<set $bea += 1>>
+    [[Bea_A4D2_00]]
+<<elseif $bea is 1>>
+    [[Bea_A4D2_01]]
+<<endif>>
+===
+title: Bea_A4D2_00
+tags: 
+colorID: 5
+position: -29930,16664
+---
+<<if $dom_friend_bea>>
+    Bea: 他们家居然有WIFI！ #line:9ed5a3
+    Mae: 太好啦。 #line:225994
+    Bea: WIFI让我觉得负鼠泉和外面的世界还有联系， #line:f91aaf
+    Bea: 不然的话，不仅现实世界，就连虚拟世界都没有负鼠泉存在过的证明了。 #line:928eb6
+    Mae: 就因为在这破地方，我连个手机都没有。 #line:51045d
+    Mae: 这里的生活就和十九世纪一样。 #line:237524
+    Bea: 嘿，梅？ #line:2e4868
+    Mae: 怎么了？ #line:0afcdf
+    Bea: 看到你活着我很高兴。 #line:3075e6
+    Mae: 我也是。 #line:9362c8
+    Bea: …… #line:0b40a2
+    Mae: …… #line:2ad170
+    Bea: 是啊。 #line:7a1fe4
+    Mae: 嗯。 #line:ebf81a
+    Bea: 是……啊…… #line:cce247
+<<else>>
+    Mae: 这儿有信号吗？ #line:746e1e
+    Bea: 这儿有WIFI。 #line:1b87e6
+    Mae: 啊，好吧。 #line:e48b0a
+    Bea: 镇上所有有WIFI的地方我都给记下来了。 #line:4e3269
+    Mae: 为啥咱们这儿就没信号呢？ #line:6fbfc1
+    Bea: 嗯，是啊。可到了山上就能收到信号。 #line:2a4f16
+    Bea: 咱们镇太小了， #line:b2c247
+    Bea: 所以没人建信号塔什么的。 #line:0924db
+    Mae: 哈，是吗。 #line:90c25c
+    Bea: 嘿， #line:26f5fb
+    Mae: 什么事？ #line:0f6252
+    Bea: 如果这件事之后咱们都还活着或者怎么样了， #line:2339ae
+    Bea: 咱们以后应该 #line:9a2bc8
+    Bea: 一起多出去玩玩。 #line:218a54
+    Mae: 我还以为你觉得我很烦人呢。 #line:8e2364
+    Bea: 嗯。 #line:f4c3ce
+    Mae: 回“嗯"总比损我好。 #line:8c9130
+<<endif>>
+
+<<if $dom_friend_gregg>>
+    <<set $bea_done to 1>>
+<<endif>>
+
+===
+title: Bea_A4D2_01
+tags: 
+colorID: 5
+position: -29679,16728
+---
+->咱们能睡觉了吗？ #line:03494d
+	Bea: 当然能了。我等会也睡沙发。 #line:a9f4a6
+    <<close>>
+    <<walk Mae MaeDoor wait>>
+	Mae: 嘿，孩子们，现在可以关灯了吗？ #line:f5c954
+	Mae: 我会来串门的。 #line:007c40
+	Gregg: 好啊，姐们。 #line:bbef8f
+	Germ: 听起来不错！ #line:aea5c1
+	[[GermLeaves]]
+->我还想……在屋里转转。 #line:5e9eab
+	Bea: 放轻松，别强迫自己。 #line:58a10c
+===
+title: Bedtime
+tags: 
+colorID: 5
+position: -30142,17251
+---
+<<setAnimInt Mae layingSide 1>>
+<<setAnimInt Gregg sitting 0>>
+<<setAnimInt Bea sitting 0>>
+<<togglePlayerFallEnabled false>>
+<<warp Mae MaeOnCouchWithFriend>>
+<<hackFlip Mae -1>>
+<<if $dom_friend_bea>>
+    <<show Bea>>
+    <<hide Gregg>>
+    <<warp Bea BeaOnCouchWithMae>>
+    <<setAnimInt Bea layingSide 1>>
+    <<flip Bea 1>>
+    <<lookAt Mae Bea>>
+<<else>>
+    <<show Gregg>>
+    <<hide Bea>>
+    <<warp Gregg GreggOnCouchWithMae>>
+    <<setAnimInt Gregg layingSide 1>>
+    <<flip Gregg 1>>
+    <<lookAt Mae Gregg>>
+<<endif>>
+<<cameraLookAt CouchCamera 0>>
+<<hide Angus>>
+<<hide Germ>>
+<<fadeIn 1 wait>>
+<<wait 4>>
+<<if $dom_friend_bea>>
+	Mae: 你知道六年前，我为什么要狂扁安迪·卡伦吗？ #line:82f983
+    Bea: 不知道。 #line:db5b1b
+    Bea: 咱们俩从那之后就赌气不说话了。我觉得，我来提这事还挺怪的。还有…… #line:a79d29
+    Mae: 我当时正在沉迷某个游戏。游戏里需要和幽灵约会什么的。 #line:6b1b71
+    Bea: 好吧。 #line:17a58b
+    Mae: 我当时玩这个游戏已经走火入魔啦，每天都会把所有时间花在玩游戏上。 #line:406492
+    Mae: 可到了某天下午，我突然就不想玩了。 #line:77b876
+    Mae: 就感觉有什么东西突然坏了似的。 #line:012eac
+    Bea: 坏了？ #line:f95007
+    Mae: 我指的是……像素之类的东西坏了。 #line:03d8d3
+    Mae: 屏幕上出现的角色……我感觉我对它们很熟悉。 #line:334b44
+    Mae: 可它们都不是真人，它们只不过就是一堆图形罢了。 #line:c7a858
+    Mae: 它们的台词也都是别人写上去的。 #line:8053ce
+    Mae: 它们都是虚拟的，它们根本就没有感情。 #line:0cec39
+    Mae: 而且，它们永远都变不成真人。 #line:18a0fe
+    Mae: 这让我有些伤感 #line:ec135b
+    Mae: 就感觉我失去了现实中的人一样。 #line:1934b9
+    Mae: 所以，在游戏里，我就只剩……我自己了。只有孤零零的我。 #line:685853
+    Mae: 最后这种感觉从屏幕里跑到了我的现实生活中。 #line:6b98bb
+    Mae: 我屋外面有一棵树， #line:41a20a
+    Mae: 我每天都会看看它。它就像是一个站在窗户外面的好朋友。 #line:003b76
+    Mae: 可现在，它就是一棵普普通通的树……就只是窗外的一棵树罢了。 #line:941c9f
+    Mae: 它和我见到的其他树一样， #line:e9728a
+    Mae: 吸收养分，慢慢地长大，永远待在同一个地方。 #line:a25282
+    Mae: 这和我印象当中的树没有任何差别。 #line:9e9efa
+    Mae: 当有人从我身边经过时， #line:7eaf72
+    Mae: 在我眼里这个人只是一堆图形而已。 #line:278823
+    Mae: 由一堆图形堆砌成的一个会移动的……东西而已。 #line:1b8138
+    Mae: 然后，我哭了， #line:420373
+    Mae: 因为所有的一切都和我无关了。 #line:d718f2
+    Mae: 一切就只是一大堆普普通通的东西，就是宇宙中的万物， #line:73f1de
+    Mae: 就这么……完了。 #line:5f9857
+    Bea: 哇哦……这也……嗯…… #line:35e549
+    Mae: 那是垒球比赛的前一天。 #line:f5915d
+    Mae: 那是场练习赛，我上场的时候，安迪是投手。 #line:ecc63d
+    Mae: 可他也只是一堆图形罢了。 #line:4ef3fb
+    Mae: 说的话也都是别人写上去的。 #line:0b251e
+    Mae: 感觉他就是个空壳。 #line:9e0969
+    Mae: 所以，我当时又害怕又生气，还……我不知道怎么形容那时的情绪。 #line:791cd0
+    Mae: 在我还没反应过来的时候，我就已经跳到了他身上， #line:e69168
+    Mae: 用球棒把他的脸给打了。 #line:97a9dc
+    Mae: 然后，我眼前就迸出了一片红色的图形， #line:220b02
+    Mae: 然后，它们就洒在了草地上。 #line:a0dbc1
+    Bea: 哦，我的天，梅。 #line:1db181
+    Bea: 你以前和别人说过这些吗？ #line:5ad820
+    Mae: 出了那件事以后， #line:2d1b75
+    Mae: 大家就让我去汉克医生那儿看病…… #line:0c3d62
+    Bea: 我～的～天。他的医术可是最差劲的啦。 #line:f65d14
+    Mae: 后来，他就让我去写日记。 #line:45fdac
+    Bea: 日记？ #line:bde14b
+    Mae: 没错。他说，写日记可以让我不胡思乱想。 #line:dc949b
+    Bea: 这方法有用吗？ #line:9823ed
+    Mae: 可能有点用吧。 #line:5056d3
+    Mae: 可这件事发生之后，每当我独自一人来到一个新环境， #line:6d03b6
+    Mae: 所有的一切就全都会变成大大小小的图形，就和那次垒球比赛的感觉一模一样。 #line:586596
+    Mae: 我在大学的时候，有段时间这种状况没有再发生过。 #line:eedce4
+    Mae: 但我没有办法去和别人交朋友，因为我不敢出门，也害怕在人群里一个人孤零零的。 #line:f1e890
+    Mae: 然后，我看见外面有一座像是学校创始人的雕像。 #line:054aa7
+    Mae: 这雕像特别难看，上面还锈迹斑斑的。 #line:cc7c76
+    Mae: 它就是用一堆图形拼在一起的。 #line:98f619
+    Mae: 它手朝下指着我。 #line:18dc6f
+    Mae: 我……害怕极啦……我连宿舍的门都不敢出啦。 #line:5c373d
+    Mae: 我当时要么是什么都吃不下，要么就是一口气能吃一整张披萨。 #line:bf2b38
+    Mae: 我每天都要喝咳嗽糖浆才能睡着。 #line:223714
+    Mae: 最后，我才鼓足勇气退了学。 #line:8fe6f5
+    Mae: 然后，我就回来了。回到家，我感觉一切都好极了。 #line:d3b2ec
+    Mae: 我认识这里的所有人。他们都是活生生的人…… #line:91c30f
+    Mae: 而不是一堆只会盯着我看的图形。 #line:8ac271
+    Bea: 天哪。 #line:2025fb
+    Mae: 在我的脑海里，在我的生命里，好像有个什么东西坏了。 #line:c9ad03
+    Bea: 我不想去……算了，可…… #line:e0ee3d
+    Bea: 听了这话，感觉你好像是遇到了什么特别严重的问题。 #line:7b2b4f
+    Bea: 也许我能找别人帮帮你？ #line:ef3b82
+    Mae: 汉克医生已经帮过我啦！ #line:850753
+    Bea: 我觉得，他应该把重点放在家庭医疗、牙科 #line:a9f82d
+    Bea: 和其他六七个项目上。 #line:de3073
+    Bea: 然后把心理治疗相关的活儿， #line:f340de
+    Bea: 比如抑郁症、焦虑症，都留给其他人干， #line:cbc108
+    Bea: 还有……你正在经历的这些，这些不知道是什么，但是确实存在的问题。 #line:477a62
+    Mae: 我……我感觉，在我回家的时候…… #line:718385
+    Mae: 我只是…… #line:727210
+    Mae: 觉得在这儿很有安全感， #line:312b0e
+    Mae: 刚开始的那几天发生的事也都很正常。 #line:d5838c
+    Mae: 然后，就出了这些事。 #line:842228
+    Mae: 而且……而且……而且…… #line:fa8457
+    Bea: 嘘…… #line:dbcdf0
+    Bea: 会没事的。 #line:0f4184
+    Bea: 咱们会查出真相的。 #line:c8e193
+    Mae: 我害怕极了。 #line:9d2bc6
+    Bea: 我懂。咱们大家都很害怕， #line:fde959
+    Bea: 但咱们还是要查出真相。 #line:5d0b6a
+    Bea: 你应该去睡会儿觉了。 U_U #line:05da76
+    Mae: …… #line:d18cf2
+    Mae: 我…… #line:e026b7
+    Mae: …… #line:cdb4f8
+    Mae: …… #line:3b729f
+    Bea: zzz #line:62dfca
+    Mae: …… #line:7ea4ac
+<<else>>
+    Mae: 嘿。 #line:8dca8c
+    Mae: 嘿，格雷格， #line:872533
+    Mae: 你醒了吗？ #line:9b5866
+    Gregg: 醒了。 #line:817af0
+    Mae: 你知道六年前，我为什么要狂扁安迪·卡伦吗？ #line:d63719
+    Gregg: 你当时说，自己突然就发飙了。 #line:7c50a9
+    Gregg: 但我想的是，这根本算不上是个理由。 #line:dcf30d
+    Mae: 我当时正在玩那个游戏，就是那个能和幽灵约会的游戏。 #line:61694b
+    Gregg: 我知道这游戏。里面有个巨性感的骷髅。 #line:a8e86a
+    Gregg: 好像叫阿利斯特什么的。 #line:cb4f80
+    Mae: 嘿嘿，是啊。 #line:c30b88
+    Mae: 你超喜欢这个骷髅。 #line:7a3523
+    Mae: 我每天把所有时间都花在这游戏上啦。 #line:fb9c05
+    Mae: 可到了某天下午，我就不玩了。 #line:262788
+    Mae: 就感觉有什么东西突然坏了似的。 #line:bdd045
+    Mae: 我指的是……像素之类的东西坏了。 #line:5af8f1
+    Gregg: 你的电脑是不是坏了？ #line:268408
+    Mae: 不是那种……物理意义上的坏了。 #line:e7b161
+    Mae: 屏幕上出现的角色，我感觉我对它们很熟悉…… #line:86b3b0
+    Mae: 可它们都不是真人，它们只不过就是一堆图形罢了。 #line:3b090f
+    Mae: 它们的台词也都是别人写上去的。 #line:27b2bd
+    Mae: 它们都是虚拟的，它们根本就没有感情。 #line:b41904
+    Mae: 而且，它们永远都变不成真人。 #line:c47168
+    Mae: 这让我有些伤感， #line:c8e17b
+    Mae: 就感觉我失去了现实中的人一样。 #line:ed96aa
+    Mae: 所以，在游戏里，我就只剩……我自己了。只有孤零零的我。 #line:223ca1
+    Mae: 最后这种感觉从屏幕里跑到了我的现实生活中。 #line:6ca198
+    Mae: 我屋外面有一棵树， #line:db13c6
+    Mae: 我每天都会看看它。它就像是一个站在窗户外面的好朋友。 #line:a99e5c
+    Mae: 可现在，它就是一棵普普通通的树……就只是窗外的一棵树罢了。 #line:0f14ca
+    Mae: 它和我见到的其他树一样， #line:b7525b
+    Mae: 吸收养分，慢慢地长大，永远待在同一个地方。 #line:6e858e
+    Mae: 这和我印象当中的树没有任何差别。 #line:7b50a8
+    Mae: 当有人从我身边经过时， #line:749c31
+    Mae: 在我眼里这个人只是一堆图形而已。 #line:3df67c
+    Mae: 由一堆图形堆砌成的一个会移动的……东西而已。 #line:c0552e
+    Mae: 然后，我哭了， #line:d62b1e
+    Mae: 因为所有的一切都和我无关了。 #line:f0f71f
+    Mae: 一切就只是一大堆普普通通的东西，就是宇宙中的万物， #line:5af3f5
+    Mae: 就这么……完了。 #line:5932e3
+    Gregg: 姐们，这事你为什么不告诉我呢？ #line:a72f1b
+    Mae: 我也不知道是为什么。我该说什么呀？ #line:991b0b
+    Mae: 这一切就发生在垒球比赛的前一天。 #line:32e586
+    Gregg: 我当时就在看台上， #line:43f203
+    Gregg: 你干的事我都看见啦。我都快担心死啦。 #line:05d60a
+    Mae: 练习赛上，在安迪踏上本垒的时候，我感觉…… #line:22f6a3
+    Mae: 他也变成了一堆图形。 #line:024d53
+    Mae: 他说的话也都是别人写上去的。 #line:36e3e2
+    Mae: 感觉他就是个空壳。 #line:480a31
+    Mae: 所以，我当时又害怕又生气，还……我不知道怎么形容那时的情绪。 #line:769401
+    Mae: 在我还没反应过来的时候，我就已经跳到了他身上， #line:b9a2ae
+    Mae: 用球棒把他的脸给打了。 #line:e60396
+    Mae: 然后，我眼前就迸出了一片红色的图形， #line:b4beee
+    Mae: 然后，它们就洒在了草地上。 #line:27d6ba
+    Gregg: 他可没流*那么*多血。 #line:56f1ee
+    Mae: 我的老天，格雷格。我可打得他满地都是血。 #line:d9b188
+    Mae: 我在想，他到底知不知道我为什么要这么干。 #line:c2b3cb
+    Mae: 我也不清楚他到底知不知道自己都干了什么。 #line:d276ea
+    Gregg: 他可能本来就是个王八蛋。 #line:93e446
+    Mae: 不能这么说，伙计。你和我都不了解他这个人。 #line:b3fa77
+    Gregg: 不管他怎么样，你最后还是要去做心理治疗了。 #line:0faf10
+    Mae: 是啊。汉克医生就开始让我写日记啦。 #line:01df46
+    Gregg: 汉克医生给我补牙的时候，把我的一颗牙给补坏啦。 #line:b7caee
+    Mae: 嗯，他能力不过关。 #line:99d39f
+    Mae: 他在专业方向上雨露均沾，所以，出点问题也情有可原。 #line:13fd25
+    Gregg: 我还想问你来着，那个……写日记真的有用吗？ #line:5485fa
+    Mae: 可能有点用吧。 #line:fee47a
+    Mae: 写日记嘛……的确提升了我的专注力，也让我不胡思乱想了。 #line:86ffd3
+    Gregg: 哇哦。 #line:e8310b
+    Mae: 可这件事发生之后， #line:fd7b16
+    Mae: 每当我独自一人来到一个全新的环境， #line:84cdd3
+    Mae: 所有的一切就全都会变成大大小小的图形，就和那次垒球比赛的感觉一模一样。 #line:358ce9
+    Mae: 我在大学的时候，有段时间这种状况没有再发生过。 #line:8cbd6c
+    Gregg: 只有废柴才会去上大学呢。 #line:2d80cd
+    Mae: 伙计，安静听我说，好吗？ #line:93d9f4
+    Gregg: 抱歉，梅。 #line:8e97b1
+    Mae: 我没有办法去和别人交朋友，因为我不敢出门，也害怕在人群里一个人孤零零的。 #line:81337e
+    Mae: 然后，我看见外面有一座像是学校创始人的雕像。 #line:807f64
+    Mae: 这雕像特别难看，上面还锈迹斑斑的。 #line:c30b70
+    Mae: 它就是用一堆图形拼在一起的。 #line:caa006
+    Mae: 它手朝下指着我。 #line:1fef4d
+    Mae: 我……害怕极啦……我连宿舍的门都不敢出啦。 #line:35bdb6
+    Mae: 我当时要么是什么都吃不下，要么就是一口气能吃一整张披萨。 #line:930995
+    Mae: 我每天都要喝咳嗽糖浆才能睡着。 #line:330a5b
+    Gregg: 兄弟…… #line:55721b
+    Mae: 最后，我才鼓足勇气退了学。 #line:d14ec4
+    Mae: 然后，我就回来了。回到家，我感觉一切都好极了。 #line:b9c69f
+    Mae: 我认识这里的所有人。他们都是活生生的人…… #line:5379ee
+    Mae: 而不是一堆只会盯着我看的图形。 #line:1daa42
+    Gregg: 我的天哪，老兄。 #line:6444f3
+    Mae: 在我的脑海里，在我的生命里，好像有个什么东西坏了。 #line:fda162
+    Gregg: 姐们，你当时应该把这事告诉我啊！ #line:03b434
+    Gregg: 我们几个可以一起去学校，帮你解决这个问题的。 #line:5d12d8
+    Gregg: 比如把你给绑回来。 #line:a6f97d
+    Mae: 我没把这事告诉家里人， #line:4983d2
+    Mae: 我没跟任何一个人说过这事。 #line:a54fd4
+    Mae: 我都不知道为什么要这样。 #line:e1501c
+    Mae: 长至夜的时候，我也没回过家。 #line:9911e6
+    Mae: 我就一个人待在宿舍里， #line:2ff4de
+    Mae: 躺在床上，无所事事。 #line:b15010
+    Gregg: 这……这也太可怕了吧，老妹儿。 #line:241229
+    Mae: 我……我感觉，在我回家的时候…… #line:7b4d7f
+    Mae: 我只是…… #line:4eb2d6
+    Mae: 觉得在这儿很有安全感， #line:4a8f1a
+    Mae: 刚开始的那几天发生的事也都很正常。 #line:f1c62d
+    Mae: 然后，就出了这些事。 #line:8415c5
+    Mae: 而且……而且……而且…… #line:59462a
+    Gregg: 梅……老妹儿…… #line:873e21
+    Gregg: 嘘…… #line:93fcc5
+    Gregg: 你会没事的。 #line:c85a3c
+    Mae: 格雷格，我害怕极了。 #line:587e0a
+    Gregg: 老妹儿，我明白。 #line:423467
+    Gregg: 咱们现在都很害怕。 #line:0f6b79
+    Gregg: 你得好好休息。 #line:c9443f
+    Gregg: 我今晚会一直陪着你的。 U_U #line:940b2a
+    Mae: …… #line:d9f15a
+    Mae: 我…… #line:6ed5b1
+    Mae: …… #line:84c093
+    Mae: …… #line:446183
+    Gregg: zzz #line:42ae60
+    Mae: …… #line:9abf5a
+<<endif>>
+<<fadeOut 1 wait>>
+<<lookNearest Mae>>
+<<wait 3>>
+[[AfterCouchNightmare]]
+===
+title: SetupDomFriendCouchGroup
+tags: 
+colorID: 5
+position: -31346,15354
+---
+<<if $dom_friend_bea>>
+    //if Bea is domfriend, here’s the layout- Bea is sitting on the couch, on the right. Gregg is sitting on the ground in front of the couch to the left, germ on the right. Those two are playing videogames. Angus is in the kitchen, cooking. We just watch this for a few seconds. What era of games is it? Feel like they’d be playing some sort of two-player Tony Hawk thing or something but how do we want to show “old game” audibly w/o it being like 8-bit?
+    <<sit Bea>>
+    <<sit5 Gregg GreggSitInFrontOfCouch>>
+    <<flip Gregg 1>>
+    <<sit5 Germ LeftOfCouch>>
+    <<flip Germ -1>>
+    <<warp Angus AngusKitchen>>
+    <<flip Angus -1>>
+    <<setSpriteLayer Germ FG1>>
+<<else>>
+    //if Gregg is domfriend, here’s the layout- Gregg is standing in front of the couch, to the left. Bea is sitting on the couch, on the right. Germ is sitting in from of the couch on the right. Angus is in the kitchen, cooking. We just watch this for a few seconds. Video game noises.
+    <<warp Gregg GreggSitInFrontOfCouch>>
+    <<flip Gregg 1>>
+    <<sit Bea SitOnCouch3>>
+    <<sit5 Germ GermPlayingGameLeft>>
+    <<flip Germ -1>>
+    <<warp Angus AngusKitchen>>
+    <<flip Angus -1>>
+    <<setSpriteLayer Germ FG1>>
+<<endif>>
+===
+title: InitLevel_A4D2
+tags: 
+colorID: 5
+position: -31001,15197
+---
+<<if $laptop_vignettes>>
+<<elseif $night is 0>>
+    <<cameraLookAt CouchCamera2>>
+
+    <<warp Gregg GreggSitInFrontOfCouch>>
+    <<flip Gregg -1>>
+    <<warp Bea GreggRobotBody>>
+    <<flip Bea -1>>
+    <<sit5 Germ GermPlayingGameLeft>>
+    <<flip Germ -1>>
+    <<warp Angus AngusKitchen>>
+    <<flip Angus -1>>
+    <<setSpriteLayer Germ FG1>>
+
+    <<lookAt Bea Mae>>
+    <<lookAt Gregg Mae>>
+    <<lookOut Germ>>
+
+    <<set $death_walk to 1>>
+    <<playIdleAnimationPlayer>>
+<<else>>
+    <<set $death_walk to 1>>
+    <<sit4 Mae MaeKitchenLandline>>
+    <<set $gregg_angus_phone_off_hook to 1>>
+<<endif>>
+===
+title: InitLevel_A3D3
+tags: 
+colorID: 4
+position: -32333,15305
+---
+<<hide Bea>>
+<<hide Germ>>
+//Gregg and Mae are in the living room.
+<<warp Mae MaeRobotBody>>
+<<warp Gregg GreggRobotBody>>
+//The robot is on the couch(?).
+//Angus is in the kitchen but we can’t see him yet.
+<<warp Angus AngusKitchen>>
+<<cameraLookAt CouchCamera>>
+===
+title: InitLevel_A3D4
+tags: 
+colorID: 4
+position: -31995,15319
+---
+<<cameraLookAt CouchCameraA3D4>>
+<<playerCanRun 0>>
+<<playerCanJump 0>>
+//left to right on the couch, seated: angus, gregg, bea. mae on the floor in floor sit pose//
+
+<<hide Germ>>
+
+<<flip Angus 1>>
+<<sit7 Angus SitOnCouch1>>
+
+<<flip Gregg 1>>
+<<sit Gregg SitOnCouch2>>
+
+<<flip Bea 1>>
+<<sit Bea SitOnCouch3>>
+
+<<sit3 Mae SitRightOfCouchMae>>
+===
+title: EnterLevel_A3D4
+tags: 
+colorID: 4
+position: -32014,15572
+---
+[[PostIQConvo]]
+===
+title: PostIQConvo
+tags: 
+colorID: 4
+position: -32017,15844
+---
+//left to right on the couch, seated: angus, gregg, bea. mae on the floor in floor sit pose//
+<<lookAt Angus Mae>>
+<<lookAt Gregg Mae>>
+<<lookAt Bea Mae>>
+<<dilate Mae .85 0>>
+<<lookAt Mae Gregg>>
+Mae: O_O :( #line:ab6a8b
+Mae: 谢谢你们…… #line:695591
+Mae: 能赶过来…… #line:83ec18
+Angus: 再重申一遍，我们就住在这儿，这是我们家。 #line:ffd9b4
+Gregg: 是啊，你现在是在我们屋的客厅里。 #line:81199e
+Bea: 我接受你的感谢。 #line:d87a11
+Gregg: 那……你知道发生什么事了吗？ #line:e5c3ee
+<<lookDown Mae>>
+    ->总是有个幽灵在我脑子里乱晃。 #line:e3fcfa
+        Mae: 就在有人被绑架的那晚， #line:e82197
+        Mae: 或者说，我想象有人被绑架的那晚，我就有这种感觉啦。 #line:508a85
+        Mae: 那晚我做了一个梦，我只记得…… #line:11bb60
+        Mae: 梦里有一个声音， #line:a68ddd
+        Mae: 一个恐怖的声音， #line:a4a1cd
+        Mae: 还有个幽灵在我脑子里乱晃。 #line:e70ae0
+        Mae: 而且，只要幽灵一靠近我，我就能一直听到那个声音。 #line:487a7a
+        Mae: 就像是有人在我的脑子上开了个洞一样。 #line:41442d
+    ->有个幽灵在跟踪我。 #line:ee8a20
+        Mae: 咱们去调查线索的时候， #line:d15c56
+        Mae: 它就总是会出现。 #line:78089a
+        Angus: 咱们遇到的也有可能只是个普通的路人。 #line:32887e
+        Mae: 不可能！我感觉得到， #line:bf7d28
+        Mae: 我能感觉到它在我脑子里！ #line:555005
+        Mae: 为什么你们会觉得我之前被吓到了呢？ #line:0bc6e9
+    ->我也不清楚。 #line:ad4795
+        Mae: 但的确是有一个幽灵， #line:bb6cfb
+        Mae: 而且，它还在跟踪我。 #line:f448ba
+Angus: …… #line:93ce98
+Gregg: …… #line:12ee53
+Bea: …… #line:6f9278
+Mae: 我知道，你们是不会信我的话的…… #line:367a22
+Bea: 我不是不相信你遇到的事， #line:5c8f89
+Bea: 我只是不相信那是个……幽灵。 #line:54b062
+Gregg: 是啊，姐们。 #line:ed467e
+Gregg: 比幽灵更靠谱的解释随便就能找出五十个来。 #line:1690b5
+<<lookAt Mae Gregg>>
+Mae: 比如？ #line:78a79d
+Bea: 比如，你有应激性偏头痛， #line:11f7ee
+Bea: 然后，你看见了让你特别害怕的东西， #line:cac6be
+Bea: 最后，你的压力就变得很大。 #line:4ab566
+Angus: 我就有偏头痛。 #line:70ac8f
+Bea: 梅，这段时间，你的确经历了不少生活上的变故。 #line:ab9bb4
+Bea: 而且……我也不知道……压力会给人带来这么多不好的影响。 #line:73823b
+Mae: =_= #line:a34126
+Mae: 哦，好吧，好吧，随你们怎么说吧。 #line:a572a5
+Mae: 我要到树林里走一趟， #line:1b12a7
+Mae: 我知道，那东西就在那儿。 #line:705c72
+Mae: 我知道自己到底看见了什么。 #line:f1a9e1
+Mae: 如果你们不信我的话，那也没辙。 #line:fdb019
+Mae: 我自己一个人去。 #line:22b662
+Bea: 你真想从篮球场那儿穿过去吗？ #line:ef695c
+Gregg: 姐们，天色已经开始暗下来啦。 #line:f2e67a
+Mae: 你们管我干什么？ #line:265b37
+Mae: 再说了，你们也都不相信我。 #line:437c65
+<<wait 2>>
+Angus: 我跟你去。 #line:73052d
+<<dilate Mae 1 1>>
+Mae: o_o #line:caa5c5
+Mae: ！ #line:6836dc
+Angus: 你听我说，我虽然不信有鬼， #line:ebed63
+Angus: 可我相信你。 #line:14058b
+<<lookAt Gregg Angus>>
+Gregg: 噢，伙计。 :) #line:78252e
+Angus: 所以，咱们一起去找你说的那个幽灵吧。 #line:446cb8
+Bea: 我也想这么说来着， #line:8cd0e4
+Bea: 不过你表达的比我好多了。 #line:44ab78
+<<lookAt Gregg Mae>>
+Mae: 嗷……伙计们…… :) #line:d2d59b
+Bea: 现在可不是狩猎幽灵的季节。 #line:746a82
+Angus: 没错，现在应该是狩猎鹿的季节。 #line:b80ffd
+Bea: 所以，咱们都是盗猎者。 #line:50b80b
+Mae: 谢……谢谢你们…… #line:937135
+Mae: 能相信我。 #line:634407
+Bea: 最主要的是，我不想让你一个人 #line:fb2aaa
+Bea: 大晚上的 #line:2de63f
+Bea: 去那个地方瞎晃。 #line:92a9de
+Mae: 差不多吧。 =_= #line:1c4421
+Gregg: 好啦， #line:fdc513
+Gregg: 咱们一起去抓幽灵吧。 #line:d0979e
+<<set $night to 1>>
+//<<set $walking_up_to_the_woods to 1>>
+<<fadeOut 1 wait>>
+<<scene MineWoods left>>
+===
+title: Gregg_A4D1
+tags: temp
+colorID: 5
+position: -31708,16329
+---
+<<if $gregg is 0>>
+    Bea: 现在还没收到她父母的回信吗？ #line:25c0a2
+    Gregg: 还没有。 #line:04865f
+	->你发消息了吗？ #line:8f4757
+		Gregg: 发了。 #line:3a3d5e
+	->情况很糟糕，对吗？ #line:1a0a82
+		Gregg: 没错。 #line:9b6a77
+		Germ: 没错。 #line:c9c31a
+        Bea: 谢了，伙计们。 #line:f698a1
+    <<set $gregg += 1>>
+<<elseif $gregg is 1>>
+    Bea: 这个游戏的原声集相当不错， #line:711836
+    Bea: 总让我回忆起高中时那个夏天。 #line:2384f7
+    Gregg: 这上面一半乐队的歌我都听过。 #line:7cabfe
+    Gregg: 我和安格斯过几天还要去看空白之音的演唱会呢。 #line:101eeb
+    Gregg: 好像我们已经去过了。 #line:191324
+    Gregg: 我也不记得了。 #line:e1ab35
+    <<set $gregg += 1>>
+    <<set $gregg_done to 1>>
+<<endif>>
+===
+title: Germ_A4D1
+tags: temp
+colorID: 5
+position: -31715,16574
+---
+<<if $dom_friend_bea>>
+    Bea: 我也玩过这游戏，可后来我按坏了一个摇杆，然后就不玩了。 #line:22a0b8
+    Germ: 那你脾气还挺大，把摇杆都按坏了。 #line:ae59d9
+    ->至少我不是故意要做个暴力狂。 #line:8cba3a
+    	Germ: 这样就对啦。 #line:52a18f
+    ->我上高中那会儿，简直就是煎熬。 #line:fdf263
+    	Germ: 我记得。 #line:0648ae
+        Germ: 我对你母亲的事情深表遗憾。 #line:e3dbab
+        Bea: 谢谢。 #line:66f03c
+    <<set $germ += 1>>
+    <<set $germ_done to 1>>
+<<else>>
+    Gregg: 我以前经常玩滑板。 #line:a0ac9f
+    Gregg: 可我却特不擅长玩这个。 #line:2ed6a4
+    Germ: 我也会滑。我可算是个滑板高手。 #line:ed62a8
+	->滑滑板总是和毁东西分不开。 #line:ca5a9c
+		Germ: 我会用我的能力去干好事。 #line:8e65da
+	->滑滑板是为了激发创造力。 #line:dceb3d
+		Germ: 这就叫做我所想。 #line:02856e
+    <<set $germ += 1>>
+    <<set $germ_done to 1>>
+<<endif>>
+===
+title: Bea_A4D1
+tags: temp
+colorID: 5
+position: -31707,16810
+---
+<<if $bea is 0>>
+    Gregg: 她死了吗？ #line:f4d023
+    Bea: 不知道。她父母还没回信。 #line:5cbf7d
+    ->太糟了。 #line:d6a258
+    	Bea: 反正是好不到哪去。 #line:72e4c6
+    ->没准他们都在医院呢？ #line:289624
+    	Bea: 她可能已经脑死亡或者怎么着了。 #line:4d448a
+        Bea: 没准，她的死亡方式会更离奇。 #line:c61f66
+        Gregg: 嘿，姐们。 #line:d8ef85
+        Bea: 抱歉。我只是觉得这么说会比较搞笑。 #line:d1e2e0
+    Gregg: 老天啊。 #line:d9c82d
+    <<set $bea += 1>>
+    <<set $bea_done to 1>>
+//<<else>>
+//    <<set $bea += 1>>
+//    <<set $bea_done to 1>>
+<<endif>>
+===
+title: Window_A4D1
+tags: 
+colorID: 5
+position: -31709,17067
+---
+<<if $dom_friend_bea>>
+    <<if $gregg_angus_window is 0>>
+        Bea: 我没看见外面有人。 #line:dcbab7
+        Gregg: 等着就行。他会回来的。 #line:7aa99e
+        ->这么说，咱们还不知道这个人到底是谁，对吗？ #line:963842
+            Gregg: 额，这个人身材高大，穿着件脏外套什么的， #line:af50a4
+            Gregg: 也有可能不止一个人。这样他们就能轮流出现了。 #line:f7be83
+            Gregg: 我也不能确定。 #line:a7f111
+        ->那警察那边怎么样了？ #line:d39341
+            Gregg: 我们报了警，可他们没当回事。 #line:37a4e7
+            Bea: 这就……完了？ #line:b1c5ff
+            Gregg: “先生，您说您看见屋外有一个人？" #line:40a34e
+            Gregg: “先生，这种行为并不违法。" #line:4cd0d1
+        <<set $gregg_angus_window += 1>>
+    <<else>>
+        Bea: 现在天黑得越来越早了。 #line:a12c04
+        <<set $gregg_angus_window_a4d1_done to 1>>
+    <<endif>>
+<<else>>
+    <<if $gregg_angus_window is 0>>
+        Gregg: 我看不见那个人了。 #line:94b77b
+        Bea: 昨天晚上，我看见那个人在我们楼外面， #line:c9a292
+        Bea: 还是在深夜看见他的。 #line:f77c64
+        ->你们知道这些人到底是什么人吗？ #line:ecbbf3
+        	Bea: 我一点头绪都没有。 #line:63d9bf
+            Bea: 我想不出合理的解释来。 #line:6070b2
+    	->你报警了吗？ #line:bed066
+    		Bea: 报了。 #line:2ca7da
+            Bea: 他们派人来了。 #line:6fe2c1
+            Bea: 现在那人走了。 #line:be7f39
+            Bea: 他也说，站在街上不算犯法。 #line:3b5d3f
+        <<set $gregg_angus_window += 1>>
+    <<else>>
+        Gregg: 现在天黑得越来越早了。 #line:f41332
+        <<set $gregg_angus_window_a4d1_done to 1>>
+    <<endif>>
+<<endif>>
+===
+title: Bedroom_A4D1
+tags: 
+colorID: 5
+position: -31710,17333
+---
+<<if $dom_friend_bea>>
+    Bea: 我太累啦。 #line:7c4813
+    Bea: 我真想爬到他们床上睡一觉啊。 #line:c6c579
+    Bea: 这儿应该是客厅吧。 #line:a609a6
+<<else>>
+    Gregg: 我会在一个地方 #line:e788c7
+    Gregg: 好好打上五个小盹的。 #line:a62e5d
+    Gregg: 来吧。 #line:9466aa
+<<endif>>
+<<set $gregg_angus_bedroom_done to 1>>
+===
+title: Computer_A4D1
+tags: 
+colorID: 5
+position: -31714,17611
+---
+<<if $dom_friend_bea>>
+    Bea: 嗯，电脑？ #line:5c8151
+<<else>>
+    Gregg: 我在想，那些人会不会在监视咱们的网络啊？ #line:d56a54
+    Gregg: 他们能做到吗？ #line:bad75a
+    Gregg: 不是只有政府机构和宅家的愤青黑客才会做这些吗？ #line:242a36
+<<endif>>
+<<set $gregg_angus_computer_done to 1>>
+===
+title: Couch_A4D1
+tags: temp
+colorID: 5
+position: -31714,17884
+---
+<<if $dom_friend_bea>>
+    Bea: 各位，情况可不太妙啊。 #line:75e6d8
+    Gregg: 是啊。 #line:8b9f10
+    Angus: 是的。 #line:4da368
+    Germ: 没错。 #line:935cfa
+    Gregg: 等等，大家都别出声。 #line:f15bfb
+    <<playAmbientSFX _AmbientSFX:mae_shuffle>>
+    <<wait 12>>
+    Bea: 怎么了？ #line:371820
+    //Angus walks in and stands to the left of the couch//
+    Angus: 我也听见了。 #line:457196
+    Bea: 说真的，到底怎么了？ #line:92b5b5
+    <<close>>
+    <<wait 3>>
+    Angus: 有人正站在门外面。 #line:2b253d
+    Bea: 什么？？？？ #line:4dc28b
+    Gregg: 大家都安静，千万别出声。 #line:b5b49d
+    <<close>>
+    <<wait 3>>
+    //three knocks on the door- how do we want to do this? Just sound? Some sort of graphic too? Maybe not?//
+    Bea: 哦，我的天啊。 #line:53a41e
+<<else>>
+    Gregg: 大伙儿，情况真的不太妙啊。 #line:c80802
+    Bea: 是啊。 #line:0cffc6
+    Angus: 是的。 #line:3119bf
+    Germ: 是的，长官。 #line:8628d3
+    Gregg: 等等，大家都别出声。 #line:8e7423
+    <<playAmbientSFX _AmbientSFX:mae_shuffle>>
+    <<wait 12>>
+    Bea: 怎么了？ #line:6245a7
+    //Angus walks in and stands to the left of the couch//
+    Angus: 我也听见了。 #line:787ed2
+    Bea: 说真的，到底怎么了？ #line:a53b05
+    <<wait 3>>
+    Angus: 有人正站在门外面。 #line:69e56b
+    Bea: 什么？？？？ #line:1e3b7d
+    Gregg: 大家都安静，千万别出声。 #line:3f4c5e
+    <<wait 3>>
+    //three knocks on the door- how do we want to do this? Just sound? Some sort of graphic too? Maybe not?//
+    Gregg: 该死。 #line:a2250f
+<<endif>>
+<<fadeOut .0001 wait>>
+<<wait 3>>
+<<scene DeathPrairie_Woods>>
+===
+title: AngusKitchen_A4D1
+tags: temp
+colorID: 5
+position: -31701,18117
+---
+Angus: 好了……你们要的布朗尼和汽水来了…… #line:574b2e
+===
+title: GermLeaves
+tags: 
+colorID: 5
+position: -30149,16992
+---
+Germ: 大伙儿，明天见啦！ #line:e88b2a
+Mae: 你确定直接出去不会有什么事吗？ #line:51b4dd
+<<if $did_germ_friendship_quest_1 and $did_germ_friendship_quest_2>>
+    //walk mae and germ over by door//
+    <<close>>
+    <<walk Germ GermByDoorWithMae wait>>
+    <<if $dom_friend_bea is 0>>
+        // only flip if gregg is dom friend
+        <<flip Mae -1>>
+    <<endif>>
+    <<lookAt Germ Mae>>
+    Germ: 至少对我来说，还算安全。 #line:c0684a
+    Germ: 没人跟踪过我。 #line:917689
+    Germ: 出事那晚，我没到林子里去过。 #line:1d5f55
+    Mae: 哦，对啊。 #line:e421fd
+    Germ: 但我会多加注意的， #line:77667c
+    Germ: 况且，我还有锤子呢。 #line:e654aa
+    Mae: 你随身还带着锤子？ #line:708d44
+    <<if $germ_followed>>
+        Germ: 自从被那个人跟踪之后，我就开始随身带家伙了。 #line:53bbb9
+        Mae: 哦，对啊。 #line:6bdd54
+    <<endif>>
+    <<wait 2>>
+    <<if $did_germ_friendship_quest_3 is 0>>
+        Germ: 我家就在州立公园前面， #line:9f188b
+        Germ: 镇子边上， #line:2b736c
+        Germ: 停车场旁边的 #line:727dc3
+        Germ: 树林里。 #line:295892
+        Germ: 我家里有老爸老妈， #line:e73644
+        Germ: 兄弟姐妹 #line:dd2d0c
+        Germ: 和我奶奶。 #line:9359fc
+        Germ: 她有时候会神神叨叨的。 #line:ed9ab4
+        Mae: 哇哦。 #line:3e5e95
+        Germ: 我们有个蹦床。 #line:28a3f4
+        Mae: 嗷，你们真是太走运啦。 #line:febd77
+    <<endif>>
+    Germ: 嘿，梅？ #line:9909e0
+    Mae: 怎么了，杰姆？ #line:b66f08
+    Germ: 你名字的全称是什么？ #line:20058a
+    Mae: …… #line:05f286
+    Germ: …… #line:fa3ba9
+    Mae: ……玛格丽特。 #line:5ceb82
+    Germ: 你一定要多保重，玛格丽特。 #line:159c54
+    Mae: 你也是，杰里米。 #line:ba44cb
+    <<unlockAchievement He's_From_Somewhere>>
+<<else>>
+    Germ: 什么事都和我无缘， #line:57ab5a
+	Germ: 也没有怪人会跟踪我。 #line:4c52b1
+	Mae: 哦，说的是啊。 #line:ab7e58
+	Germ: 回见啦！ #line:3c11cb
+	Mae: 拜拜，杰姆。 #line:08d0d1
+    //Mae: What a weird guy.
+    //Gregg: Aw, Germ’s alright.
+<<endif>>
+<<fadeOut 1 wait>>
+<<hide Germ>>
+[[Bedtime]]
+===

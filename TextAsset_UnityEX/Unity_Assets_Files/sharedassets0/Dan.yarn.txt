@@ -1,0 +1,301 @@
+title: DanInitLevel
+tags: 
+colorID: 0
+position: -379,-289
+---
+<<if $act is 0 and $day is 0 and $Underhill is 1>>
+    <<show Dan>>
+<<elseif $act is 1 and $Underhill is 1 and $talked_to_dan_in_act_1 is 0>>
+	<<show Dan>>
+    <<trigger Dan CoffeeIdle>>
+<<elseif $act is 2 and $day is 1 and $OlPickaxe>>
+	<<show Dan>>
+<<elseif $act is 2 and $day is 3 and $OlPickaxe>>
+	<<show Dan>>
+<<elseif $act is 3 and $day is 1 and $TowneCentreWest>>
+    <<warp Dan DanBehindDiner>>
+    <<show Dan>>
+<<elseif $act is 4 and $day is 3 and $TowneCentreWest>>
+    <<show Dan>>
+    <<trigger Dan TacoSignIdle>>
+<<elseif $act is 2 and $day is 4 and $OlPickaxe is 1 and $night>>
+	<<show Dan>>
+<<else>>
+	<<hide Dan>>
+<<endif>>
+
+===
+title: Dan
+tags: 
+colorID: 0
+position: 1,183
+---
+<<if $act is 0 and $day is 0>>
+	[[DanDemo]]
+<<elseif $act is 2 and $day is 1>>
+    <<if $dan is 0>>
+        <<set $dan += 1>>
+        <<if $met_dan is 0>>
+            [[DanIntro]]
+        <<else>>
+            [[DanA2D1_00]]
+        <<endif>>
+    <<elseif $dan is 1>>
+        <<set $dan_done to 1>>
+        [[DanA2D1_01]]
+    <<endif>>
+<<elseif $act is 2 and $day is 3>>
+    <<if $dan is 0>>
+        <<set $dan += 1>>
+        <<if $met_dan is 0>>
+            [[DanIntro]]
+        <<else>>
+            [[DanA2D3_00]]
+        <<endif>>
+    <<elseif $dan is 1>>
+        <<set $dan_done to 1>>
+        [[DanA2D3_01]]
+    <<endif>>
+<<elseif $act is 3 and $day is 1>>
+    <<if $dan is 0>>
+        <<set $dan += 1>>
+        <<if $met_dan is 0>>
+            [[DanIntro]]
+        <<else>>
+            [[DanA3D1_00]]
+        <<endif>>
+    <<elseif $dan is 1>>
+        <<set $dan_done to 1>>
+        [[DanA3D1_01]]
+    <<endif>>
+<<elseif $act is 4 and $day is 3>>
+    <<if $dan is 0>>
+        <<set $dan += 1>>
+        <<if $met_dan is 0>>
+            [[DanIntro]]
+        <<else>>
+            [[DanA4D3_00]]
+        <<endif>>
+    <<elseif $dan is 1>>
+        <<set $dan_done to 1>>
+        [[DanA4D3_01]]
+    <<endif>>
+<<elseif $act is 1>>
+	<<if $dan is 0>>
+        <<set $talked_to_dan_in_act_1 to 1>>
+        <<set $dan += 1>>
+		[[Dan_00_00]]
+	<<elseif $dan is 1>>
+        <<set $dan += 1>>
+		<<set $dan_done to 1>>
+		[[Dan_00_01]]
+	<<endif>>
+<<endif>>
+
+===
+title: Dan_00_00
+tags: demo2
+colorID: 0
+position: 291,499
+---
+<<set $met_dan to 1>>
+Mae: 你是丹尼吧？ #line:1e31fb
+Dan: 对。 #line:173b22
+Mae: 我记得你好像比我大三届？ #line:aa7c41
+Dan: 好像是吧。 #line:975937
+Mae: 近来如何？ #line:8e6335
+Dan: 我刚失业了…… #line:bb9b0e
+Mae: 哦，不是吧！ #line:34d338
+Dan: 他们说建筑行业总是在招人。 #line:e85056
+Dan: 但事实并不是这样。 #line:f15d3a
+Dan: 实际上，他们总是会开除名字里带“丹"字的人。 #line:cf9f4e
+Mae: 那你接下来有什么打算？ #line:0c4300
+Dan: 不如听听你的建议。 #line:394f7a
+[[千万别放弃哟！|Dan_00_DontGiveUp]] #line:86a190
+[[我敢肯定，镇子上一定*有什么人*在招人！|Dan_00_Someone]] #line:61e2da
+===
+title: Dan_00_01
+tags: demo2
+colorID: 0
+position: -47,468
+---
+Mae: 我也没工作诶。 #line:4e663f
+Dan: 哦，很抱歉跟你唠叨个没完。 #line:cbb9f0
+Dan: 那你怎么样呢？ #line:ea94b4
+Mae: 挺好的，我刚从学校辍学，和父母又住一起了。 #line:b07126
+Dan: 哦，好吧。 #line:e4bbc9
+Dan: 这么说，你又变回孩子了。 #line:a91e87
+Mae: 当 然 不 。 #line:8cc110
+Mae: 我只是个和爸妈一起住的大人罢了。 #line:7ab0a1
+Dan: 好吧。这么说的话，你就不算没工作的人了。 #line:a63fa1
+Dan: 你更像是缺少一份 #line:dfad55
+Dan: 能付房租的爱好而已 #line:f6d174
+Mae: 好吧，我要走了。 #line:541a24
+Dan: 好。 #line:58062b
+===
+title: DanDemo
+tags: demo
+colorID: 0
+position: 465,171
+---
+<<if $dan is 0>>
+	Dan: {width=2}建造业总是在招人的， #line:7cdc05
+	Dan: {width=2}嗯，虽然咖啡店没在招人， #line:43a93a
+	Dan: {width=2}但至少那地方还在开门营业呢。 #line:6abeaf
+	<<set $dan to 1>>
+	<<set $dan_done to 1>>
+<<endif>>
+
+===
+title: Dan_00_DontGiveUp
+tags: demo2
+colorID: 0
+position: 183,767
+---
+Dan: 总会有人死 #line:e4db66
+Dan: 这样我就能接手他们的工作了。 #line:2fb23b
+Mae: 丹，你不会是要…… #line:631b43
+Mae: 去杀人吧？ #line:a51abb
+Dan: 付我工资吗？ #line:be25c9
+===
+title: Dan_00_Someone
+tags: demo2
+colorID: 0
+position: 537,763
+---
+Dan: 我之前出去签了一年的合同工。 #line:0a16d7
+Dan: 结果还剩6个月就开始裁员了。 #line:89e77e
+Dan: 你知道这对你的简历意味着什么吗？ #line:c03c3e
+Mae: 不太清楚。 #line:00278b
+Dan: 我有了一份丧尸一样的令人闻风丧胆的履历。 #line:d4bfe1
+Dan: 明明这种简历已经是垃圾了，可还是要发给各个公司。 #line:0e4484
+Mae: 哦，好吧。 #line:7f148b
+===
+title: DanA2D1_00
+tags: 
+colorID: 3
+position: -1677,266
+---
+// olpickaxe
+Mae: 怎么样啊，兄嘚？ #line:d9a678
+Dan: 我在这儿找了份工作。还挺不错的。 #line:e463e3
+Mae: 嗯，挺好的啊！ #line:421f0f
+Dan: 说真的，我刚才那句话其实是在撒谎。这工作简直糟透了。 #line:690a0e
+Mae: 哦天。 #line:4c90fb
+===
+title: DanA2D1_01
+tags: 
+colorID: 3
+position: -1688,500
+---
+Dan: 这里居然有这么多种类的锤子，真把我给整懵了。 #line:50fb32
+Dan: 这儿还有各种各样的扳手， #line:ad7fe4
+Dan: 和各种各样的钉子。 #line:c6b3ba
+Dan: 我的天，这些钉子啊。 #line:ccfac7
+===
+title: DanA2D3_00
+tags: 
+colorID: 3
+position: -1401,266
+---
+// olpickaxe
+Mae: 嗨老兄。 #line:af3eb6
+Dan: 你好。 #line:42c0fe
+Mae: 在这儿工作感觉怎么样啊？ #line:eadcac
+Dan: 还行吧，我也不太清楚。 #line:1308b7
+Dan: 不过至少它能付我工资 #line:c7a891
+===
+title: DanA2D3_01
+tags: 
+colorID: 3
+position: -1403,503
+---
+Dan: 我不太想一个人去卸下那些岩盐。 #line:1a70e6
+Dan: 现在连万圣节都没到呢，为什么要进这么多货。 #line:5a914b
+===
+title: DanA3D1_00
+tags: 
+colorID: 4
+position: -1150,271
+---
+// tcw, behind diner
+Mae: 嗨老哥！ #line:743654
+Dan: 嗯，好……是你啊？ #line:f75680
+Mae: 在这儿工作了哈？ #line:a85320
+Dan: 是啊。烂的要命。 #line:a1f16f
+Dan: 不过好在有工资拿。 #line:668985
+Mae: 提问：其他人会在这里买什么厨房用品吗？ #line:223d9b
+Dan: 几乎不。 #line:d9faf2
+
+===
+title: DanA3D1_01
+tags: 
+colorID: 4
+position: -1152,503
+---
+Mae: 你在这儿做什么工作？ #line:5bd36b
+Dan: 烧烤员兼维修工。 #line:51fd7c
+Dan: 就是管做饭和拖地。 #line:d72061
+Mae: 是同时干两个活吗？ #line:ba5da2
+Dan: 是的。 #line:3ac598
+===
+title: DanA4D3_00
+tags: 
+colorID: 6
+position: -885,273
+---
+// taco
+Mae: 那么你现在是个塔可专业户了？ #line:97e9dc
+Dan: 我只是被雇来做塔可专业户学徒的。 #line:147614
+Dan: 不过我觉得这只是意味着我要在雪地里举着这个牌子。 #line:47f2cb
+Mae: 外面的雪下得也没有很大。 #line:3d98f5
+Dan: 在下呢。有雪花在空中飘着了。 #line:9a6141
+Mae: 这里卖的塔可怎么样？ #line:f6bc88
+Dan: 还不错。我很喜欢塔可。 #line:d54f68
+Mae: 在上帝管理的土地上，还没有一个人不喜欢塔可的。 #line:24f0a6
+Dan: 插播坏新闻：我前任就讨厌塔可。 #line:ae73b6
+Mae: 再插播一条好新闻：她们现在是你的前任了。 #line:15153e
+Dan: 哈哈哈。 #line:8b8408
+Mae: 享受你和塔可的快乐时光吧。 #line:90e683
+Dan: 呃。只是为了钱罢了。 #line:768c3f
+<<set $talked_to_dan_about_taco_buck to 1>>
+===
+title: DanA4D3_01
+tags: 
+colorID: 6
+position: -881,505
+---
+Dan: 卖塔可卖塔可喽！ #line:be250a
+Dan: 打包，堂食，外卖 #line:0558d8
+Dan: 想怎么吃怎么吃喽！ #line:ae1ee5
+Dan: 别忘了给外卖小哥打赏哦！ #line:c8e3ae
+Dan: 最好的塔可就在这里喽！ #line:349429
+Dan: 想吃个披萨不？ #line:c49ec2
+Dan: 那何不来个披萨塔可尝尝？ #line:56f913
+Mae: 哇哦，听起来可真棒诶。 #line:14f6c1
+Dan: 你关心你的健康吗？ #line:826bb1
+Dan: 那就尝尝全生菜塔可吧！ #line:86d783
+Mae: 不。我拒绝。 #line:54cc23
+Dan: 得走了年轻人，我还在工作呢。 #line:d488e5
+===
+title: DanIntro
+tags: 
+colorID: 0
+position: -864,-204
+---
+Mae: 你是丹尼，对吧？ #line:a1b7cb
+Dan: 对，还是叫我丹吧。 #line:04352a
+Mae: 我记得你好像比我大三届？ #line:b768dc
+Dan: 可能是吧。 #line:0a68f1
+<<set $met_dan to 1>>
+
+<<if $act is 2 and $day is 1>>
+    [[DanA2D1_00]]
+<<elseif $act is 2 and $day is 3>>
+    [[DanA2D3_00]]
+<<elseif $act is 3 and $day is 1>>
+    [[DanA3D1_00]]
+<<elseif $act is 4 and $day is 3>>
+    [[DanA4D3_00]]
+<<endif>>
+===

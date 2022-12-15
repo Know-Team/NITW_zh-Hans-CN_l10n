@@ -1,0 +1,1431 @@
+title: IntroPastor
+tags: 
+colorID: 0
+position: -1326,62
+---
+<<if $demo2 and $act is 2 and $day is 1>>
+    [[PastorDemo2]]
+<<elseif $act is 4 and $day is 3>>
+    Mae: 嘿！ #line:b7d8fe
+    Pastor: 嘿！你是肯迪·博罗夫斯基的女儿吧？ #line:897066
+    Mae: 没错。请问你是谁啊？ #line:bd3da8
+    Pastor: 我是凯特牧师。 #line:282f6c
+    Mae: 哦，是啊。你是我老妈的上司。 #line:098040
+    Pastor: 哈哈，教堂理事会才是你妈妈的上司呢。 #line:b06798
+    Pastor: 当然了，理事会也是我的上级。 #line:fc58aa
+    Mae: 我真不知道还有这么一回事啊。 #line:97c40c
+    Pastor: 确实有这么回事。 #line:97d4e0
+    Mae: 你是新来的牧师吗？ #line:710643
+    Pastor: 我来了差不多有一年零四个月了。 #line:12e4f7
+    Mae: 哦。但至少我是头一次见到你。 #line:eb3e76
+    Pastor: 那你顺路的话可以经常来教堂看看啊？ #line:40792b
+    Mae: 我要是真能经常过来的话，我老妈可就乐坏了。 #line:6e5178
+    Pastor: 我懂。 #line:9af399
+    Pastor: 我就是在给你增加额外的罪恶感。 #line:324522
+    Mae: 哈哈哈，谢了。 #line:fb6f59
+    Pastor: 嗯，嗯。 #line:fa421e
+    Pastor: 在有能力的情况下， #line:934e7b
+    Pastor: 我们会尽自己所能， #line:01aef2
+    Pastor: 把事做到最好的。 #line:75c0fc
+	<<set $met_pastor to 1>>
+    <<set $pastor_done to 1>>
+<<elseif $day is 1>>
+	// then bruce + pastor are together
+	Mae: 嘿！ #line:67ac36
+    Pastor: 嘿！ #line:a818c8
+    Pastor: 你是肯迪·博罗夫斯基的女儿吧？ #line:125b84
+    Mae: 对。请问你是谁啊？ #line:665427
+    Pastor: 我是凯特。不过，你可以叫我K牧师。 #line:56e731
+    Mae: “凯特”是两个音节，“K牧师"……可有三个音节呢。 #line:58e3e4
+    Mae: 你是新来的牧师吗？ #line:97d806
+    Pastor: 我来了差不多有一年零四个月了。 #line:3b9fb6
+    Mae: 哦。但至少我是头一次见到你。 #line:32a3e7
+    Pastor: 这位是布鲁斯。 #line:753560
+    <<lookAt Mae Bruce>>
+    Mae: 嘿。 #line:bd2c8a
+    Bruce: 嘿。 #line:2fb1ec
+    Pastor: 布鲁斯是刚搬到咱们社区来的！ #line:03c1d4
+    Mae: 你就住在树林里吗？ #line:d4fa0b
+    Bruce: …… #line:ba3c41
+    Bruce: 没错。 #line:9ce600
+    <<lookNearest Mae>>
+    Pastor: 但他不会在这儿住很久的！|现在，我们正在翻新和加固呢|，冬天之前应该就能完工了。 #line:856555
+    Pastor: 我们也该承担一些事的，但神才是真正完成这些事的人。 #line:d9d33e
+    Pastor: 他的力量可要比市政会大得多。 #line:729872
+    Bruce: ……我还在考虑，毕竟还有很多问题没…… #line:b88620
+    Pastor: 听我说一句，没人说“爱你的邻居是件简单的事"这句话， #line:050181
+    Pastor: 而且，你就是我们的邻居。 #line:a20bcb
+    Bruce: 谢谢你。 #line:f941bb
+    Pastor: 布鲁斯，我们每个人都有需要帮助的时候。 #line:eda89d
+    Pastor: 在困难的时候需要帮助一点也不丢脸。 #line:442cc6
+    Mae: 嗯，很高兴认识你们两位！ #line:c126e0
+    Pastor: 有空就到教堂来看看我！ #line:f23888
+    Mae: 一定！我也会顺便来看看我老妈的。 #line:c01fa3
+    <<lookAt Mae Bruce>>
+    Mae: 再见了，布鲁斯！ #line:7a1918
+    Bruce: 好的，很高兴认识你，玛丽。 #line:56b8f4
+    Mae: 我叫梅。梅·博罗夫斯基。 #line:b7ae53
+    Bruce: 我叫布鲁斯，单名就叫布鲁斯。 #line:2cc35c
+    <<lookNearest Mae>>
+    Pastor: 我是牧师，凯特牧师。 #line:388713
+    <<unlockDoodle BruceSketch>>
+    <<set $knows_bruce_situation to 1>>
+	<<set $met_pastor to 1>>
+	<<set $met_bruce to 1>>
+    <<set $pastor_done to 1>>
+    <<set $bruce_done to 1>>
+<<elseif $act is 2>>
+	Mae: 你好。 #line:9b2fe3
+    Pastor: 你好。 #line:502cc7
+    Pastor: 你是肯迪的女儿吧？ #line:e1579d
+    Mae: 对。请问你是谁啊？ #line:aae223
+    Pastor: 我叫凯特。不过很多人都喜欢叫我K牧师。 #line:c1db44
+    Mae: 你是新来的牧师吗？ #line:b2990f
+    Pastor: 我来了差不多有一年零四个月了。 #line:5783b3
+    Mae: 哦。但至少我是头一次见到你。 #line:6480a4
+    Mae: 你好。 #line:5c2456
+    Pastor: 你好。 #line:6530f9
+    Mae: 你好。 #line:fbd0e3
+    Pastor: 能不能帮我个忙， #line:55b86c
+    Pastor: 把你这最后一句“你好"先留住， #line:bb8c8a
+    Pastor: 然后说给布鲁斯听。 #line:3cb756
+	<<if $met_bruce>>
+		Mae: 哦，说的是啊！我已经见过他了。 #line:99576c
+        Pastor: 哦，那很好啊！ #line:e0b758
+        Pastor: 布鲁斯是刚搬到咱们社区来的。 #line:955f22
+        Mae: 看样子，他好像已经在树林里待了一段时间了。 #line:760a03
+        Pastor: 他只待了几个星期而已。 #line:206ee0
+        Pastor: 但住在树林里 #line:20b608
+        Pastor: 确实和住在社区里很不一样。 #line:4928d2
+        Mae: 说的是啊。 #line:70bf7a
+        Mae: 他晚上的时候冷吗？ #line:c5a06b
+        Pastor: 哈哈，正在努力干呢。 #line:aed70d
+	<<else>>
+		Mae: “布鲁斯"吗？ #line:24b2e6
+        Pastor: 布鲁斯就住在街对面。 #line:222761
+        Mae: 他是住在树林里吗？ #line:95c051
+        Pastor: 至少现在是这样的。 #line:66ab5c
+        Mae: 你想让我到树林里去和一个陌生人说话吗？ #line:d7b862
+        Pastor: 布鲁斯可不是陌生人，他是我的朋友。 #line:c1869e
+        Pastor: 而且，他也是咱们社区的一份子。 #line:dbeaf2
+        Mae: 好吧。 #line:bd870c
+        Pastor: 谢谢你。 #line:90692e
+        Pastor: 认识你很高兴！ #line:f72ad9
+        Mae: 我也是！ #line:6891f1
+	<<endif>>
+	<<set $met_pastor to 1>>
+<<elseif $act is 3>>
+	<<if $day is 3>>
+		Pastor: 你好，梅。 #line:84cd43
+        Mae: 哇哦，啊。 #line:d8e4a3
+        Pastor: 哈哈。 #line:f203dc
+        Pastor: 我在你妈妈的桌子上见过你的照片。 #line:c38a10
+        Pastor: 我叫凯特，你也可以叫我K牧师。 #line:273a2e
+        Mae: 你是新来的牧师吗？ #line:1b14be
+        Pastor: 我来这儿差不多有一年零四个月了。 #line:54057b
+        Mae: 哦。但至少我是头一次见到你。 #line:a8dd2b
+        Pastor: 你能过来，你妈妈肯定会很高兴的。 #line:3cdad1
+        Mae: 哦，天啊，千万别告诉她。 #line:fd70d8
+        Mae: 这样能给她留点……念想。 #line:97f031
+        Pastor: 额，可咱们是不可能拥有念想这东西的，命运是上帝定的。 #line:88a03c
+        Mae: …… #line:846f89
+        Mae: 你好像有点难过啊。 #line:58e11b
+        Pastor: 哦，是吗？ #line:df684a
+		Mae: 是啊。你是因为什么事才不开心的啊？ #line:e4b9f5
+		Pastor: 哦，没什么。 #line:e0aef0
+        Mae: 是吗，我不信。 #line:973f73
+        Pastor: 我从来都不擅长说谎， #line:0c0d53
+        Pastor: 但我还是活得好好的。 #line:ef5e40
+        Pastor: 嘿，你见到布鲁斯了吗？他是咱们的新邻居。 #line:2a7069
+		<<if $met_bruce>>
+			Mae: 见到啦！ #line:8a8c5c
+            Mae: 就是那个住在街对面的人吗？ #line:328090
+            Pastor: 就是他。 #line:862f3d
+            Mae: 他这人挺酷的。 #line:9fb3e3
+            Mae: 他晚上的时候会冷吗？ #line:1cd8be
+            Pastor: 我觉得他会的。 #line:f0d857
+            Pastor: 但我们正在尽可能地帮他呢。 #line:8cc842
+            Mae: 那好，再见了！ #line:9a9db7
+            Pastor: 再见，梅。 #line:894606
+		<<else>>
+			Mae: 我好像没见过他。 #line:3e49d6
+			Pastor: 你应该和他打个招呼。 #line:c54f3e
+            Pastor: 他就住在街对面。 #line:c461b0
+            Mae: 他是住在树林里吗？ #line:d42565
+            Pastor: 是啊，他的确……住在树林里。 #line:148a29
+            Mae: 这事让人感觉挺难受的。 #line:07d2b5
+            Pastor: 不管怎么说，还是过去和他打个招呼吧。 #line:a35b46
+            Pastor: 他很需要其他人的问候。 #line:b27ff3
+            Mae: 没问题。 #line:f934b1
+            Pastor: 谢谢你，梅。 #line:05a149
+		<<endif>>
+		<<set $met_pastor to 1>>
+	<<elseif $day is 4>>
+		Pastor: 哦，嘿，你好啊？ #line:f52357
+		Pastor: 我是凯特牧师。 #line:c7e24e
+        Mae: 你是新来的吗？ #line:88c599
+        Pastor: 我来了大概有一年零四个月了。 #line:b16634
+        Mae: 哦。但至少我是第一次见到你。 #line:8cc2b5
+        Pastor: 你是肯迪·博罗夫斯基的女儿吧？ #line:998724
+        Mae: 对。 #line:1150c7
+		Mae: 你还好吗？ #line:0dca40
+		Pastor: 我很好。 #line:f85017
+        Mae: 你看起来可不太好啊。 #line:dccca8
+        Pastor: 我在找一个朋友， #line:fb3c02
+        Pastor: 可他好像已经走了。 #line:264799
+        Mae: 哦，对不起。 #line:845bda
+        Pastor: 没关系的。 #line:07cc98
+        Pastor: 我会在这儿再等一会儿的。 #line:3e2187
+        Pastor: 我工作的大部分内容， #line:fa40e7
+        Pastor: 就是等待别人的到来。 #line:a66412
+        Pastor: 再见，梅。 #line:6bd49e
+        Mae: 再见。 #line:23d62d
+		<<set $met_pastor to 1>>
+	<<endif>>
+<<endif>>
+<<unlockDoodle PastorK>>
+===
+title: IntroBruce
+tags: 
+colorID: 0
+position: 768,254
+---
+Mae: 你好，我叫梅·博罗夫斯基！ #line:0a6170
+<<if $met_pastor>>
+	Mae: 额……我是凯特牧师的朋友。 #line:2a3c67
+<<endif>>
+Bruce: 嘿，我叫布鲁斯。 #line:c73d39
+Bruce: …… #line:0e3f74
+Bruce: 我这人话不多。 #line:b394cb
+Mae: 没关系的。 #line:bf2701
+Mae: 我话可多了。 #line:d2a0f2
+Bruce: …… #line:c43e8b
+Mae: 可我也能……让自己的话少一点。 #line:b04a24
+<<if $act is 2 and $day is 3>>
+    Bruce: 昨天晚上我看见树林那边有火光。 #line:4456f2
+    Bruce: 除了火光， #line:d79595
+    Bruce: 还有怪声。 #line:415eaf
+    Bruce: 可我没有把这事告诉其他人。 #line:2e2efd
+    Bruce: 然后火光和怪声就消失了。 #line:9e0ac2
+        ->这事听起来可够怪的。 #line:066c0a
+            Bruce: 我去过不少地方了， #line:628e1a
+            Bruce: 也没什么东西能吓到我， #line:01c6c2
+            Bruce: 可水塔那儿出的怪事可真吓着我了…… #line:811a5c
+        ->出这事的地方在哪儿？ #line:fa3ae9
+            Bruce: 就在那边， #line:f96c88
+            Bruce: 水塔那儿。 #line:062cbf
+            Mae: 哦，知道了。 #line:0b87f6
+    Mae: 十几岁的小孩经常会去那儿闲逛的。 #line:e30e17
+    Bruce: 希望事情能像你说的这么简单吧。 #line:94782a
+    Bruce: 以我的经验来看， #line:bdd10f
+    Bruce: 出现奇怪的火和奇怪的声音 #line:8e0a03
+    Bruce: 一般都没什么好事。 #line:18023d
+    Mae: 我在想，这种事还会再发生吗……？ #line:40f363
+    Bruce: 希望不会再发生了。 #line:bc9518
+<<endif>>
+<<unlockDoodle BruceSketch>>
+<<set $met_bruce to 1>>
+<<set $bruce_done to 1>>
+===
+title: Pastor
+tags: 
+colorID: 0
+position: -369,285
+---
+<<if $met_pastor is 0>>
+    [[IntroPastor]]
+<<elseif $act is 2 and $day is 2>>
+    <<if $pastor is 0>>
+        <<set $pastor += 1>>
+        <<set $pastor_done to 1>>
+        [[PastorA2D2]]
+    <<endif>>
+<<elseif $act is 2 and $day is 3>>
+    <<if $pastor is 0>>
+        <<set $pastor += 1>>
+        <<set $pastor_done to 1>>
+        [[PastorA2D3]]
+    <<endif>>
+<<elseif $act is 2 and $day is 4>>
+    <<if $pastor is 0>>
+        <<set $pastor += 1>>
+        <<set $pastor_done to 1>>
+        [[PastorA2D4]]
+    <<endif>>
+<<elseif $act is 3 and $day is 1>>
+    <<if $pastor is 0>>
+        <<set $pastor += 1>>
+        <<set $pastor_done to 1>>
+        [[PastorA3D1]]
+    <<endif>>
+<<elseif $act is 3 and $day is 2>>
+    <<if $pastor is 0>>
+        <<set $pastor += 1>>
+        <<set $pastor_done to 1>>
+        [[PastorA3D2]]
+    <<endif>>
+<<elseif $act is 3 and $day is 3>>
+    <<if $pastor is 0>>
+        <<set $pastor += 1>>
+        <<set $pastor_done to 1>>
+        [[PastorA3D3]]
+    <<endif>>
+<<elseif $act is 3 and $day is 4>>
+    <<if $pastor is 0>>
+        <<set $pastor += 1>>
+        <<set $pastor_done to 1>>
+        [[PastorA3D4]]
+    <<endif>>
+<<elseif $act is 4 and $day is 3>>
+    <<if $pastor is 0>>
+        <<set $pastor += 1>>
+        <<set $pastor_done to 1>>
+        [[PastorA4D3]]
+    <<endif>>
+<<endif>>
+===
+title: Bruce
+tags: 
+colorID: 0
+position: 1201,158
+---
+<<if $met_bruce is 0>>
+    [[IntroBruce]]
+<<elseif $act is 2 and $day is 2>>
+    <<set $bruce_done to 1>>
+    [[BruceA2D2]]
+<<elseif $act is 2 and $day is 3>>
+    <<set $bruce_done to 1>>
+    [[BruceA2D3]]
+<<elseif $act is 2 and $day is 4>>
+    <<set $bruce_done to 1>>
+    [[BruceA2D4]]
+<<elseif $act is 3 and $day is 2>>
+    <<set $bruce_done to 1>>
+    [[BruceA3D2]]
+<<elseif $act is 3 and $day is 3>>
+    <<set $bruce_done to 1>>
+    <<if $knows_bruce_situation>>
+        [[BruceA3D3.Leaving]]
+    <<else>>
+        [[BruceA3D3.NotTalkingMuch]]
+    <<endif>>
+<<endif>>
+===
+title: BruceA3D3.Leaving
+tags: 
+colorID: 4
+position: 1711,513
+---
+Bruce: 嘿，你能帮我个忙吗？ #line:9603dd
+Mae: 当然能了。 #line:1a4942
+Bruce: 你能替我给凯特牧师带几句话吗？ #line:616ea3
+Mae: 没问题。 #line:3786a7
+Bruce: 但是要明天之后再告诉她。 #line:8ea9c5
+Bruce: 这事你能办得到吗？ #line:eed340
+Mae: 能。 #line:db64e2
+Bruce: 替我谢谢她。 #line:2de61d
+Bruce: 我给她添了这么多麻烦，我真的很对不住她。 #line:b9a2da
+Bruce: 可她要是为了我把工作给丢了，就太不值了。 #line:d530ce
+Bruce: 毕竟她是个牧师啊。 #line:f23f33
+Bruce: 大伙儿都需要她。 #line:ba21c2
+    ->我为什么要告诉她这些啊？ #line:d54898
+        Bruce: 因为到时候我就没法亲自告诉她了。 #line:c9734e
+    ->你……要走了吗？ #line:6106a2
+        Bruce: 没错。 #line:20ba82
+Bruce: 今天晚上，我就要上火车了。 #line:9b6df8
+Bruce: 然后，往东走。 #line:cd0d05
+Mae: 你要去哪儿啊？ #line:883cd6
+Bruce: 我要回家了。 #line:7defd0
+Mae: 哇哦，真的吗？ #line:0d91af
+Bruce: 不用再靠捡瓶子为生了， #line:db936c
+Bruce: 不会再孤孤单单一个人了。 #line:f87a25
+Bruce: 我就坐在我女儿家的门廊里， #line:2549b5
+Bruce: 看着我的外孙和外孙女在院子里面玩。 #line:726816
+Bruce: 我的家人全都在家里等着我呢。 #line:1da96e
+Bruce: 我得快点下火车， #line:fed97a
+Bruce: 我的孩子也会在家等着我。 #line:472e4f
+Bruce: 他们会自制一个欢迎牌。 #line:32c50e
+Bruce: 没有什么精美的装饰，用的是硬纸板和马克笔 #line:506e64
+Bruce: 上面写着“欢迎回家，爸爸"。 #line:258ac7
+Bruce: 我会回去的。 #line:a724c4
+Mae: 听起来好极啦，布鲁斯！ #line:91ad8f
+Bruce: 是啊，是啊。 #line:07a973
+<<if $bruce_familiarity >= 2>>
+    Bruce: 谢谢你能跟我聊天，能认识你真的很高兴。 #line:1a4647
+    Mae: 我也是，布鲁斯。 #line:2a0db0
+    Mae: 我会想你的。 #line:7626f1
+    Bruce: 咱们还会再见的。 #line:09d808
+    Mae: 希望如此吧。 #line:9f8537
+    Bruce: “希望"这东西很重要。 #line:af3781
+    Bruce: 它是你能拥有的最后一样东西。 #line:2b0727
+<<endif>>
+Mae: 你一定多保重。 #line:cc54cb
+Bruce: 你也多保重，梅。 #line:a8eb40
+Bruce: 你知道的，我肯定会好好的。 #line:2c95f3
+Bruce: 照顾自己这事，我可是老手了。 #line:8edb29
+Bruce: 我可能比自己想象的还要有经验。 #line:3f4ac5
+Bruce: 总之我会好好的。 #line:30e426
+Mae: 再见了，布鲁斯。 #line:aa8154
+Bruce: 再见，梅。 #line:199ac9
+<<set $knows_bruce_leaving to 1>>
+===
+title: BruceA3D3.NotTalkingMuch
+tags: 
+colorID: 4
+position: 1830,243
+---
+Bruce: …… #line:73bda7
+Mae: 怎么了？ #line:226316
+Bruce: 没什么。 #line:c0fcfe
+Mae: 那好。 #line:8fc566
+Bruce: 嗯。 #line:c30393
+===
+title: PastorA3D4
+tags: question!
+colorID: 4
+position: 97,552
+---
+//question: need a variable that lets mae apologize if you did the godcatconvo. here and a4d3. not sure how to set that up//
+
+Pastor: 我在想布鲁斯去哪儿了？ #line:af0368
+<<if $knows_bruce_leaving>>
+    Mae: 其实，我知道他去哪儿了。 #line:ba7070
+    Pastor: 真的吗？ #line:21cf1d
+    Mae: 是的。可他昨天让我先别告诉你…… #line:3c24ed
+    Pastor: 梅，快告诉我他都说什么了？ #line:c51e90
+    Mae: 布鲁斯回家啦！ #line:710057
+    Pastor: 他……你说什么？ #line:eff9c6
+    Mae: 他要回家和孩子一起生活去了。 #line:943693
+    Mae: 我猜，他的孩子肯定都在等他回去吧。 #line:fb210e
+    Pastor: 哦。 #line:693475
+    Mae: 他一提到这事好像就特别高兴。 #line:afa607
+    Pastor: 那好吧。 #line:4b1a6e
+    Pastor: 谢谢你，梅。 #line:287433
+    <<wait 3>>
+    Mae: 你难道不为他高兴吗？ #line:cd9f25
+    Pastor: …… #line:46c05b
+    Pastor: 谢谢你把事情都告诉了我。 #line:9f659e
+    <<set $told_pastor_bruce_leaving to 1>>
+<<else>>
+    <<if $met_bruce is 0>>
+        Mae: 布鲁斯是谁？ #line:aa9390
+        Pastor: 他是个心肠很好的人。 #line:9195f0
+        Pastor: 看来你是有点想他了。 #line:2d87cd
+        Pastor: …… #line:d90555
+    <<else>>
+        Mae: 我也不知道。 #line:52e8a8
+        Mae: 他真是来也匆匆去也匆匆，对吧？ #line:413ce3
+        Mae: 我是说，他没打算在树林里长住下去。 #line:32a82c
+        Pastor: 是……是，他确实没有。 #line:cbe431
+        <<wait 2>>
+        Pastor: 这世界可真该死。 #line:966e8c
+    <<endif>>
+<<endif>>
+<<set $pastor_done to 1>>
+===
+title: PastorA4D3
+tags: question!
+colorID: 6
+position: 337,388
+---
+Mae: 嗨。 #line:331d50
+Pastor: 你好啊，梅。 #line:ecc547
+Mae: 你在干什么呢？ #line:545825
+Pastor: 哦，我正在收拾呢。 #line:2d9385
+<<if $told_pastor_bruce_leaving>>
+    Mae: 市政会投票的事怎么样了？ #line:bf0767
+    Pastor: 我们输了。 #line:2e0b4e
+    Pastor: 是我输了。 #line:648dc8
+    Pastor: 说真的，只有我一个人在拼死拼活地操心这事。 #line:175f5d
+    Pastor: 我们本来能得到这片地的。 #line:cea9fc
+    Pastor: 有了这片空地， #line:58a60a
+    Pastor: 我们就能用它做很多事了。 #line:5fd5d6
+    Pastor: 可…… #line:083e92
+    Pastor: …… #line:3a0204
+    Mae: 你已经尽力了。 #line:44b977
+    Pastor: 等时机一到， #line:2e84df
+    Pastor: 我们就会变得无所不能， #line:bf3dbb
+    Pastor: 神也会降临。 #line:96d094
+    <<if $bruce_familiarity >= 2>>
+        Mae: 布鲁斯是我朋友。 #line:d133bd
+        Pastor: 他也是我的朋友。 #line:3fb6ca
+    <<endif>>
+<<elseif $knows_bruce_leaving>>
+    Pastor: 布鲁斯去哪儿了？ #line:7cefec
+    Mae: 我知道他去哪儿了。 #line:43c0ba
+    Pastor: 你真知道他去哪儿了？ #line:16d692
+    Mae: 是的。可他昨天让我先别告诉你…… #line:634500
+    Pastor: 梅，他想跟我说什么？ #line:63c0f8
+    Mae: 布鲁斯回家啦！ #line:7a352b
+    Pastor: 他……你说什么？ #line:c92a16
+    Mae: 他要回家和孩子一起生活去了。 #line:90cd25
+    Mae: 我猜，他的孩子肯定都在等他回去吧。 #line:937530
+    Pastor: 哦。 #line:b6c011
+    Mae: 他一提到这事就特别高兴。 #line:701aea
+    Pastor: 好吧。 #line:6dc685
+    Pastor: 谢谢你，梅。 #line:87c843
+    <<wait 3>>
+    Mae: 你难道不为他高兴吗？ #line:55eaeb
+    Pastor: …… #line:a5b660
+    Pastor: 谢谢你把事情都告诉了我。 #line:92013f
+    <<if $bruce_familiarity >= 2>>
+        Mae: 布鲁斯是我朋友。 #line:843b10
+        Pastor: 他也是我朋友。 #line:9ba1a0
+    <<endif>>
+<<elseif $knows_bruce_situation>>
+    Mae: 你知道布鲁斯去哪儿了吗？ #line:66a30d
+    Pastor: 梅，我也不知道他去哪儿了。 #line:3c19a7
+    Pastor: 真希望知道他去哪儿了。 #line:3b2927
+    <<if $bruce_familiarity >= 2>>
+        Mae: 我希望他能一切顺利，因为他是我的好朋友。 #line:4b183e
+        Pastor: 他也是我的朋友。 #line:33bb11
+    <<endif>>
+<<elseif $met_bruce is 0>>
+    Mae: 这外面堆的都是什么啊？ #line:59ca37
+    Pastor: 原来有个叫布鲁斯的人就住在这儿。 #line:74f91a
+    Mae: “布鲁斯"？ #line:e6ea84
+    Pastor: 他这个人很不错。 #line:97270b
+    Pastor: 看来你应该是没见过他吧。 #line:70918c
+    Pastor: …… #line:4cdc78
+<<else>>
+    Mae: 这么说……布鲁斯他走了？ #line:ff02ee
+    Pastor: 嗯。 #line:19c799
+    Pastor: 我真希望能知道他去哪儿了。 #line:bc1814
+    Mae: 他是不是在别的地方有自己的家啊？ #line:700926
+    Pastor: 有，没有，我也不知道。 #line:f2f162
+    Mae: 哦。 #line:4ef445
+    Pastor: …… #line:52add2
+<<endif>>
+Mae: 需不需要帮你把这儿收拾一下啊？ #line:1c46be
+Pastor: 那可就太好了，梅。 #line:898046
+Pastor: 教堂后面的棚子里有耙子。 #line:f0972d
+Mae: 哦，可我*现在*没法帮你。 #line:b35e5a
+Pastor: 哈哈哈。 #line:f5dd50
+Pastor: 梅，那就忙你的事去吧。 #line:9d3e28
+<<set $pastor_done to 1>>
+===
+title: PastorA2D2
+tags: 
+colorID: 3
+position: -1309,394
+---
+Mae: 又见面了。 #line:d11898
+Pastor: 嘿。 #line:609f4c
+Pastor: 你来这儿，你妈妈肯定会很高兴的。 #line:5e8f11
+Mae: 哦，我知道她会的，但别告诉她。 #line:eadf85
+Pastor: 你不经常来教堂做礼拜吗？ #line:d80d92
+    ->不经常来。 #line:b253a7
+        Pastor: 你是不是特喜欢睡懒觉啊？ #line:b2b838
+        Mae: 难道你不是吗？ #line:aa49cf
+        Pastor: 我已经忘了上一次睡懒觉是什么时候的事了。 #line:239c1a
+        Pastor: 好像是上周六睡过一次懒觉。 #line:302d87
+        Mae: 那也没过多长时间啊。 #line:951a15
+        Pastor: 可这个星期过得真漫长啊。 #line:048da2
+        Mae: 说实话，我也一样。 #line:31d7ad
+    ->我小时候经常来。 #line:944ba3
+        Pastor: 嗯，是你*必须*得来才对吧。 #line:1005a8
+        Mae: 没错。 #line:bd0c5b
+        Mae: 不过，我还是挺喜欢主日学校的， #line:ee4be6
+        Mae: 因为在那儿能吃到饼干，还能喝到橘黄色的饮料。 #line:7cd673
+        Pastor: 难道这种饮料就只有“橘黄色的饮料"这一个名儿吗？ #line:e30e20
+        Mae: 额，这我就不太清楚了。 #line:58988a
+        Pastor: 我突然意识到，我好像也一直管它叫这名儿。 #line:43f0ad
+        Pastor: “橘黄色的饮料"。 #line:947242
+        Mae: 一种颜色是橘黄色的饮料。 #line:9cf877
+Pastor: 你是从什么时候开始不来教堂的呢？ #line:b402d5
+Mae: 从我老妈不带我来教堂开始的， #line:fdbd5f
+Mae: 从我15岁左右的时候吧。 #line:94d6e1
+Pastor: 那是为什么呀？ #line:06f6a5
+Mae: 我也不知道。 #line:53088d
+Mae: 在教堂里不是坐着，就是站着。 #line:75ba81
+Mae: 还要唱圣歌，体会教义。 #line:fabac9
+Pastor: 嗯，体会其实能给你很多的启示…… #line:ab0a73
+Mae: 我可没觉得。 #line:b344b2
+Pastor: 嗯，我希望你能在某个星期天的时候来一趟。 #line:463c57
+Mae: 好啊。可我好像没见你布过道啊。 #line:9deaff
+Pastor: 哦，哇，你说“布道"是吧。 #line:79ffa6
+Pastor: 用这个词是不是有点贬义啊？ #line:d31bc4
+Mae: 那用“演讲"这个词呢？ #line:fb3b25
+Pastor: 这个可以。 #line:8a1995
+<<if $knows_bruce_situation>>
+    Mae: 嘿，布鲁斯的事忙得怎么样了？ #line:0edcf1
+    Pastor: 嗯…… #line:e4d363
+    Pastor: 我们都在祈祷能一切顺利，设备用品正在往这儿运， #line:dc45e9
+    Pastor: 但运的速度可不怎么快。 #line:9a2440
+    Pastor: 但只要神愿意，什么东西他都能搬得过来。 #line:54b91f
+    Pastor: 这么一想，我就能舒服很多。 #line:f62b7f
+    Mae: 我也希望事情能顺利进行！ #line:8bea8d
+    Pastor: 谢谢你，梅。 #line:daef11
+<<endif>>
+
+<<if $pastor_god_talk is 0>>
+    [[PastorGodTalk]]
+<<endif>>
+===
+title: PastorA2D3
+tags: 
+colorID: 3
+position: -1091,577
+---
+Pastor: 最近还好吗？ #line:ee63bf
+Mae: 还好，就是做了几个怪梦。 #line:1d1c97
+Pastor: 你想说说吗？ #line:42a82a
+Mae: 我不太想说。 #line:5f3a62
+Pastor: 我梦见过自己被困在了一堵墙里。 #line:9b3460
+Mae: 天哪。 #line:73c0b9
+Pastor: 不，也没什么的。 #line:d0503a
+Pastor: 因为我知道，救援队几个小时内就能赶过来了。 #line:9d44c5
+Pastor: 还有，困在墙里其实也挺舒服的。 #line:594d7b
+Pastor: 我还能打个盹，而且不用担心这么做会不会让自己有罪恶感。 #line:3ca655
+Mae: 你觉得打盹是有罪的吗？ #line:c3a6d5
+Pastor: 我希望不是这样。 #line:aa8c3c
+<<if $knows_bruce_situation>>
+    Mae: 布鲁斯的事怎么样了？ #line:ed2225
+    Pastor: 我觉得还是挺有希望的。 #line:4336b1
+    Mae: 这听起来， #line:ab5d01
+    Mae: 怎么像是没希望的人才会说的话呢。 #line:414315
+    Pastor: 哈哈。 #line:3cfdb6
+    Pastor: 没关系的，梅。情况会好起来的。 #line:af8f05
+<<endif>>
+
+<<if $pastor_god_talk is 0>>
+    [[PastorGodTalk]]
+<<endif>>
+===
+title: PastorA2D4
+tags: 
+colorID: 3
+position: -873,655
+---
+Pastor: 你好啊。 #line:7891a7
+Mae: 你在等人吗？ #line:7ce8d4
+Pastor: 额，我觉得我好像是让人给放鸽子了。 #line:4eddbd
+Mae: 你是在……约会吗？ #line:66a2a3
+Pastor: 才不是这回事呢。 #line:b7d807
+Pastor: 不过，说真的，我工作的大部分内容， #line:3ce9e4
+Pastor: 就是有人找我， #line:c1d136
+Pastor: 让我出来， #line:643251
+Pastor: 可最后一个人都见不着。 #line:6df982
+Mae: 你和你要等的人 #line:fe3abc
+Mae: 就约在这见面啊……这个……圣贤的雕像…… #line:7c52a0
+Pastor: 卢贝罗。 #line:a9cc6c
+Mae: 对，就是这个会喷火的家伙。 #line:3fb922
+Mae: 他还会吃人。 #line:a6ccf8
+Pastor: 这个描述太片面了。 #line:281848
+Mae: …… #line:22ce4e
+Pastor: 但基本上的确是这样。 #line:a67321
+Mae: 我的意思是说， #line:e9da0e
+Mae: 教堂外边能有这家伙的雕像还是挺酷的。 #line:106063
+Pastor: 嗯，我其实不想问这件事的， #line:16801e
+Pastor: 可咱们能从他身上学到点什么呢？ #line:5f8668
+    ->他会喷火。 #line:3749b9
+    ->他会吃人。 #line:e2f478
+Pastor: 是啊。 #line:a8f791
+Pastor: 这座雕像算得上是“鼓励犯罪活动"的一部分。 #line:449d83
+Mae: 说得没错！ #line:3d5950
+<<if $knows_bruce_situation>>
+    Mae: 进展如何啊？ #line:0f74ef
+    Pastor: 什么进展？ #line:50aee8
+    Mae: 就是布鲁斯的事。 #line:9cf76f
+    Pastor: 嗯…… #line:cba640
+    Pastor: 我们还在观望呢。 #line:397661
+    Pastor: 当然，我们也在祈祷。 #line:9b02d3
+<<endif>>
+
+<<if $pastor_god_talk is 0>>
+    [[PastorGodTalk]]
+<<endif>>
+===
+title: PastorA3D2
+tags: 
+colorID: 4
+position: -428,728
+---
+//pastor is gone this day//
+
+Pastor: 我今天特别不在状态！感觉这整件事就是个错误！ #line:5d268a
+
+<<if $knows_bruce_situation>>
+    Mae: 是指布鲁斯事件A3D2吗？ #line:a52a19
+    Pastor: 嗯。 #line:7d99d7
+<<endif>>
+
+<<if $pastor_god_talk is 0>>
+    [[PastorGodTalk]]
+<<endif>>
+===
+title: PastorA3D3
+tags: 
+colorID: 4
+position: -179,659
+---
+Pastor: 呃，今天真是压力山大啊。 #line:0f01b9
+Pastor: 有些时候，你最需要的就是上天的恩惠。 #line:8c1153
+<<if $knows_bruce_situation>>
+    Mae: 你做的这一切都是为了布鲁斯吗？ #line:87c11b
+    Pastor: 以前是为他做的。 #line:654490
+    Pastor: 现在也是。 #line:05be45
+    Pastor: 随便了。反正现在的情况我们已经管不了了。 #line:9d692c
+    Pastor: 但肯定有比我能力强的人。 #line:37020f
+    Mae: 嗯。 #line:05c737
+<<endif>>
+Pastor: 梅，你怎么样啊？ #line:d2157d
+Mae: 额…… #line:20f225
+Mae: 额额额额额…… #line:af810e
+Pastor: 听起来好像是很重要的事啊。 #line:fced32
+Mae: 可能吧。 #line:1cd9dd
+
+<<if $pastor_god_talk and $pastor_cat_god_talk is 0>>
+    [[PastorCatGodTalk]]
+<<endif>>
+===
+title: PastorGodTalk
+tags: temp
+colorID: 0
+position: -1274,997
+---
+Pastor: 嘿，听我说， #line:8273f4
+Pastor: 你知道吗， #line:ca53d7
+Pastor: 如果你想聊聊或者问一些关于…… #line:9cc390
+Mae: 是关于神的问题吗？ #line:c182f3
+Pastor: 没错。 #line:30e2b1
+Pastor: 这些事你都可以随时跟我聊。 #line:267d97
+Pastor: 这算是我工作职责内的事。 #line:50089d
+Mae: 没问题。 #line:4147ee
+<<set $pastor_god_talk to 1>>
+===
+title: PastorCatGodTalk
+tags: 
+colorID: 4
+position: -99,965
+---
+Mae: 话说…… #line:99f45b
+Mae: 最近什么事都很不顺。 #line:a5e62b
+Pastor: 我也觉出来了。 #line:22051f
+Pastor: 那你遇到什么问题了吗？ #line:7a7eb6
+Mae: 我觉得我见到了神。 #line:2d74f4
+Pastor: 你说什么？ #line:71224d
+    ->那只是个梦。 #line:c73ae1
+        Mae: 但是神就是这么和咱们交流的，对吧？ #line:c4c45b
+        Pastor: 对。 #line:e14fcc
+    ->我觉得那不是梦。 #line:a25341
+        Pastor: 哦，哇哦。 #line:4ca5e2
+        Mae: 会有这种情况的，对吧？ #line:9a8f09
+        Mae: 或者说，这种情况发生过。 #line:293320
+        Pastor: 没错。 #line:19168e
+Pastor: 你能给我讲讲你的梦吗？ #line:96bcfa
+    ->我当时在一片沙漠里。 #line:1eb205
+        Mae: 在那儿， #line:0aa21d
+        Mae: 我唯一能看见的 #line:7916f2
+        Mae: 只有 #line:288459
+        Mae: 孤零零的几棵树 #line:318282
+        Mae: 和看不到边的黄沙。 #line:10defb
+    ->我当时好像是在海边， #line:84957d
+        Mae: 我是在一片广阔而漆黑的大海的岸边。 #line:88056c
+        Mae: 我能看见 #line:951c74
+        Mae: 一望无际的天空。 #line:406c1d
+        Mae: 在它下面， #line:f29b12
+        Mae: 是一片沙漠。 #line:ce3af4
+        Mae: 我感觉， #line:d2a398
+Mae: 自己在沙漠里漫无目的地走着。 #line:2ee2b0
+Mae: 但我感觉，好像有什么东西在指引着我。 #line:77f36e
+Mae: 然后，我爬上一座…… #line:6a2022
+Mae: 用沙子堆起来的山应该叫什么来着？ #line:36a8f2
+Pastor: 沙丘。 #line:55217c
+Mae: 对，是沙丘。 #line:3c51e9
+Mae: 然后我看见沙丘上有个神。 #line:750d5d
+Mae: 他就坐那里，在另一座山上， #line:e62b27
+Mae: 或者是坐在沙丘上，管他呢。 #line:65bbfb
+Pastor: 他就只是到下面来逛逛吗？ #line:eac5d9
+Mae: 对。 #line:d84951
+Mae: 看样子，他好像*真的*就只是到下面来逛逛而已。 #line:2c46de
+Pastor: 那他说什么没有？ #line:6fc72d
+Mae: 说了。 #line:6373f5
+    ->他好像什么也不在乎。 #line:0d5122
+        Pastor: 你都到他面前了，他们还一点都不在乎吗？ #line:62db2c
+        Mae: 没错。总之， #line:625e29
+        Mae: 他根本什么都不在乎。 #line:f3a6bc
+    ->他就是个……白痴。 #line:3fa258
+        Mae: 我是说，他应该算是个彻头彻尾的王八蛋。 #line:695d65
+        Mae: 对不起，我能在教堂里说那个词吗？ #line:3396dc
+        Pastor: 哈哈。 #line:7e118a
+        Pastor: 我觉得你刚才说的这个词应该不会把楼震塌。 #line:3ced76
+Mae: 他还一直在说， #line:264093
+Mae: 总有人来找他问问题，人们从一开始就没理由地相信他是神， #line:ad66a4
+Mae: 这些事让他感觉很烦。 #line:278443
+Pastor: 嗯，我觉得那根本就不是神。 #line:0fc56b
+Mae: 为什么呢？ #line:891560
+Pastor: 如果有什么东西跟你说它不是神， #line:1de0be
+Pastor: 那你最好相信它才是真正的神。 #line:8ce8aa
+Mae: 不是这样的。我的意思是， #line:3a1298
+Mae: 那些咱们称之为“神"的东西， #line:3ad9e2
+Mae: 根本就不是神， #line:a2e759
+Mae: 它们只不过就是一堆东西罢了。 #line:f49749
+Mae: 而且，它们什么事也都不在乎。 #line:737091
+Pastor: 嗯。 #line:4cd0ec
+Mae: 他还说， #line:772faa
+    ->什么事都无足轻重。 #line:15fcef
+        Mae: 就比如，宇宙要毁灭了， #line:ece137
+        Mae: 万事万物最终都会被遗忘。 #line:a40931
+    ->万物的中心都有一个大洞， #line:456d8d
+        Mae: 所有东西的中心都有这样一个洞。 #line:b091d2
+        Mae: 而且，这个洞还会不断变大。 #line:b8f609
+Pastor: 这话听起来有种特别孤独的感觉。 #line:99cfa3
+Pastor: 你最近感觉很孤独吗？ #line:3258cc
+    ->有这感觉。 #line:4cd014
+        Mae: 我高中的时候就有这种感觉， #line:ce0e8c
+        Mae: 而且我还做过一些很不好的事。 #line:038dd8
+        Mae: 你可能也听说过吧。 #line:486314
+        Pastor: 你妈妈提过这事。 #line:324148
+        Mae: 是啊，我已经猜到了。 #line:de0df4
+        Mae: 从那以后，我就成这样了。 #line:fef455
+    ->没觉得孤独。 #line:b8bd2c
+        Mae: 一点都不觉得，因为我还有朋友呢。 #line:64dd8f
+        Mae: 自从我回了家，就每天都和他们泡在一起。 #line:9f0cbb
+        Mae: 可是……嗯…… #line:b0d125
+Mae: 自从那件事以后……那都是很多年以前的事了， #line:3b05f7
+Mae: 这么多年来， #line:43df8e
+Mae: 我的内心其实是很孤独的。 #line:89424d
+Pastor: 我当时在场。 #line:2d9d39
+Pastor: 我是说我一直都在那里。 #line:2c8c7d
+Pastor: 我觉得， #line:ebf7fc
+Pastor: 如果我们能打开心扉， #line:c84a69
+Pastor: 神就能更容易地走进我们的内心了。 #line:d8d351
+    ->可能是吧。 #line:b0b340
+        Pastor: 有时候，这样应该就是最好的结果了。 #line:895f85
+        Mae: 是吧。 #line:7b2fe4
+        Mae: …… #line:f00363
+        Pastor: 我感觉，这个回答对你来说可能不够好。 #line:c08035
+        Mae: 难道这个回答是万能的吗？ #line:c872ad
+    ->我觉得我一点都不相信神。 #line:9d6f6e
+        Pastor: 如果你想知道真实情况的话， #line:4cde3d
+        Pastor: 我可以告诉你， #line:1cf09c
+        Pastor: 每个人每天至少有几分钟会觉得自己很孤独。 #line:06c585
+        Mae: 嗯。 #line:c55433
+Pastor: 信仰是一种过程。 #line:830509
+Pastor: 你必须身体力行才可以。 #line:c51b80
+Mae: 你觉得神真的存在吗？ #line:a31dd2
+Mae: 就像是，真有什么人在天上听咱们的一言一语吗？ #line:f3e7c7
+Mae: 你真的完全相信他是真实存在的吗？ #line:609690
+Pastor: 嗯…… #line:6ec717
+Pastor: 我也不清楚。 #line:41b6df
+Mae: 哦。 #line:858787
+Pastor: 在我过得还不错的时候，我信有神存在。 #line:d57daa
+Pastor: 可现在，我又不信了。 #line:5aa762
+Mae: 可……可你每个星期天都要去教堂， #line:5c04a4
+Mae: 然后告诉大家你是相信神的啊！ #line:3be58c
+Mae: 难道连*你*也不相信有神吗？ #line:3e09c9
+Mae: 相信神可是你的*工作*啊。 #line:558a8d
+Pastor: 额，我觉得，我工作的大部分内容其实是服务别人…… #line:c29f6b
+Mae: 但你这是在骗人啊！ #line:11caf4
+Pastor: 这怎么会是骗人呢？ #line:33501c
+Mae: 你站在大家面前， #line:8cbaa1
+Mae: 让他们去相信一个连你都不信的东西。 #line:17d054
+Pastor: 梅，你可能是对的。 #line:c054b9
+Pastor: 我每个星期去教堂的时候， #line:b81135
+Pastor: 都应该让大家看看我这个星期一共相信了多少次神。 #line:e84769
+Pastor: 可这又有什么用呢？ #line:e022b8
+Mae: 可你是牧师啊， #line:e91c62
+Mae: 但你又没法确定神到底存不存在。 #line:94e95d
+Mae: 你也没法确定，到底有没有人在天上看着咱们， #line:c3708f
+Mae: 到底有没有人在天上一点也不在乎咱们。 #line:3d8d48
+Pastor: 不是这样的，可…… #line:de0b28
+<<dilate Mae .85 .2>>
+Mae: :( #line:430da3
+Mae: 你 还 有 什 么 想 说 的？ #line:7ff066
+Pastor: …… #line:e5630a
+<<dilate Mae 1 .2>>
+Mae: :| #line:c11d57
+Mae: …… #line:f82ed0
+Mae: 我得走了。 #line:9f895b
+Pastor: 好吧。 #line:1c07b1
+<<set $pastor_cat_god_talk to 1>>
+<<set $pastor_done to 1>>
+===
+title: BruceA2D2
+tags: 
+colorID: 3
+position: 769,473
+---
+Mae: 你能介绍一下自己吗？ #line:ebb5a5
+Bruce: 额，我没什么可介绍的。 #line:97e825
+Mae: 那你是从哪儿来的呢？ #line:4ff7c6
+Bruce: 我是从北边来的，东北那边。 #line:28abbd
+Bruce: …… #line:bed621
+Bruce: 我在铁路工作过， #line:ead59e
+Bruce: 做过矿工， #line:667074
+Bruce: 还去工地干过。 #line:f2ccbe
+Mae: 那你为什么会来这儿呢？ #line:7e2bee
+Bruce: 因为遇到了一堆倒霉事。 #line:54ae9c
+Bruce: …… #line:6189e2
+Mae: 不想说的话就别说了。 #line:4b55bb
+Bruce: 我不应该拒绝那份邀请的。 #line:25a556
+<<set $bruce_familiarity += 1>>
+===
+title: BruceA2D3
+tags: 
+colorID: 3
+position: 989,528
+---
+Bruce: 昨天晚上我看见树林那边有火光。 #line:2d63f7
+Bruce: 除了火光， #line:aeb540
+Bruce: 还有怪声。 #line:952291
+Bruce: 可我没出去凑热闹。 #line:c0239b
+Bruce: 然后火光和怪声就消失了。 #line:052048
+    ->这事听起来可够怪的。 #line:4670cb
+        Bruce: 我也去过不少地方了， #line:9abd9f
+        Bruce: 也没什么东西能吓到我， #line:e4f8c7
+        Bruce: 可水塔那儿出的怪事可真吓着我了…… #line:ba016f
+    ->出这事的地方在哪儿？ #line:0d42fe
+        Bruce: 就在那边， #line:5efe69
+        Bruce: 水塔那儿。 #line:9d2601
+        Mae: 哦，知道了。 #line:3139cf
+Mae: 十几岁的小孩经常会去那儿闲逛的。 #line:63abb6
+Bruce: 希望事情能像你说的这么简单吧。 #line:4279e4
+Bruce: 以我的经验来看， #line:558d44
+Bruce: 出现奇怪的火和奇怪的声音 #line:754457
+Bruce: 一般都没什么好事。 #line:9ae74d
+Mae: 我在想，这种事还会再发生吗……？ #line:43b6bc
+Bruce: 希望别再有这事了。 #line:9e806e
+<<set $bruce_familiarity += 1>>
+===
+title: BruceA3D2
+tags: 
+colorID: 4
+position: 1471,535
+---
+Mae: 天越来越冷了，嗯？ #line:3982db
+Bruce: 嗯，到了晚上可冷了。 #line:d6e9c6
+Mae: 我喜欢秋天天气变冷的时候。 #line:79e2cf
+Bruce: 我也喜欢秋天。秋天的景色也很漂亮。 #line:e35855
+Mae: 小时候，一到秋天，我就经常会冲着树大叫。 #line:640ee4
+Bruce: 为什么呀？ #line:58fa32
+Mae: 因为那些树太漂亮啦。 #line:d57f1b
+Bruce: 嗯，我女儿出生的时候，我的表现也和你一样。 #line:51a0c0
+Mae: 你有女儿？ #line:f57aab
+Bruce: 没错。 #line:61f6ca
+Mae: 那她在哪儿呢？ #line:946dc6
+Bruce: …… #line:335f7b
+Mae: 真抱歉。 #line:781ad3
+Bruce: 没什么的。 #line:17e7f1
+<<set $bruce_familiarity += 1>>
+===
+title: PastorInitLevel
+tags: 
+colorID: 0
+position: -389,-165
+---
+<<if $demo2 and $act is 2 and $day is 1 and $TowneCentreWest>>
+    <<show Pastor>>
+<<elseif $act is 2 and $day is 1 and $ChurchHill>>
+    <<show Pastor>>
+<<elseif $act is 2 and $day is 2 and $ChurchSanctuary>>
+    <<if $pastor_done>>
+        <<hide Pastor>>
+    <<else>>
+        <<show Pastor>>
+        <<warp Pastor PastorCouncil>>
+        <<flip Pastor -1>>
+    <<endif>>
+<<elseif $act is 2 and $day is 3 and $ChurchSanctuary>>
+    <<if $pastor_done is 1>>
+        <<hide Pastor>>
+    <<else>>
+        <<warp Pastor PastorCouncil>>
+        <<flip Pastor -1>>
+        <<show Pastor>>
+    <<endif>>
+<<elseif $act is 2 and $day is 4 and $ChurchHill>>
+    <<show Pastor>>
+    <<warp Pastor PastorStatue>>
+    <<sit Pastor>>
+    <<flip Pastor -1>>
+    <<setSpriteLayer Pastor BG1>>
+<<elseif $act is 3 and $day is 1 and $ChurchHill>>
+    <<show Pastor>>
+<<elseif $act is 3 and $day is 3 and $ChurchSanctuary>>
+    <<if $pastor_done is 1>>
+        <<hide Pastor>>
+    <<else>>
+        <<warp Pastor PastorCouncil>>
+        <<flip Pastor -1>>
+        <<show Pastor>>
+    <<endif>>
+<<elseif $act is 3 and $day is 4 and $ChurchHill>>
+    <<show Pastor>>
+<<elseif $act is 4 and $day is 1 and $ChurchSanctuary>>
+    <<show Pastor>>
+<<elseif $act is 4 and $day is 3 and $ChurchHill>>
+    <<show Pastor>>
+<<else>>
+    <<hide Pastor>>
+<<endif>>
+
+<<if $act is 2 and $day is 2 and $church_hill_background_a2d2_done is 0 and $ChurchHill>>
+    <<show Council1>>
+    <<show Council2>>
+    <<show Council3>>
+    <<show Council4>>
+    <<flip Council1 -1>>
+    <<flip Council2 -1>>
+    <<flip Council3 -1>>
+    <<flip Council4 -1>>
+<<elseif $act is 2 and $day is 3 and $ChurchSanctuary>>
+    <<if $council_a2d3_done is 0>>
+        <<show Council1>>
+        <<show Council2>>
+        <<show Council3>>
+        <<show Council4>>
+    <<else>>
+        <<hide Council1>>
+        <<hide Council2>>
+        <<hide Council3>>
+        <<hide Council4>>
+    <<endif>>
+<<elseif $act is 3 and $day is 3 and $ChurchSanctuary>>
+    <<if $council_a3d3_done is 0>>
+        <<show Council1>>
+        <<show Council2>>
+        <<show Council3>>
+        <<show Council4>>
+    <<else>>
+        <<hide Council1>>
+        <<hide Council2>>
+        <<hide Council3>>
+        <<hide Council4>>
+    <<endif>>
+<<else>>
+    <<hide Council1>>
+    <<hide Council2>>
+    <<hide Council3>>
+    <<hide Council4>>
+<<endif>>
+===
+title: BruceInitLevel
+tags: 
+colorID: 0
+position: 1199,-133
+---
+<<if $ChurchHill>>
+    <<if $act is 2>>
+        <<if $day is 1>>
+            <<show Bruce>>
+            <<warp Bruce BruceOutsideShelter>>
+            <<flip Bruce -1>>
+            <<setCanInteract Bruce false>>
+        <<elseif $day is 2>>
+            <<show Bruce>>
+            <<if $church_hill_background_a2d2_done is 1>>
+                <<warp Bruce BruceCamp>>
+                <<flip Bruce 1>>
+            <<else>>
+                <<warp Bruce BruceCamp>>
+                <<flip Bruce 1>>
+                <<setCanInteract Bruce false>>
+            <<endif>>
+        <<elseif $day is 3>>
+            <<show Bruce>>
+            <<warp Bruce BruceCliff>>
+        <<elseif $day is 4>>
+            <<show Bruce>>
+            <<warp Bruce BruceOutsideShelter>>
+            <<flip Bruce -1>>
+        <<else>>
+            <<hide Bruce>>
+        <<endif>>
+    <<elseif $act is 3>>
+        <<if $day is 1>>
+            <<show Bruce>>
+            <<warp Bruce BruceOutsideShelter>>
+            <<setCanInteract Bruce false>>
+        <<elseif $day is 3>>
+            <<show Bruce>>
+            <<warp Bruce BruceShelter>>
+        <<elseif $day is 4>>
+            <<hide Bruce>>
+        <<else>>
+            <<show Bruce>>
+        <<endif>>
+    <<else>>
+        <<hide Bruce>>
+    <<endif>>
+<<elseif $TowneCentreWest>>
+    <<if $demo2>>
+        <<show Bruce>>
+    <<else>>
+        <<hide Bruce>>
+    <<endif>>
+<<else>>
+    <<hide Bruce>>
+<<endif>>
+===
+title: BackgroundA2D1
+tags: 
+colorID: 3
+position: 2348,-322
+---
+<<if $pastor_background_a2d1 is 0>>
+    <<set $pastor_background_a2d1 to 1>>
+    <<if $demo2>>
+        [[BackgroundA2D1Demo2]]
+    <<else>>
+        Pastor: 你晚上住着还暖和吗？ #line:b0a730
+        Bruce: 还行。我能挺得住的。 #line:945863
+        Pastor: 嗯，我正在想办法帮你呢。 #line:eacdd4
+        Bruce: 噢，别为了我给自己添麻烦。我没事的。 #line:253f6f
+        Pastor: 没关系的。 #line:bbfd0f
+        Bruce: 天马上就要冷了。 #line:b1be04
+        Pastor: 我现在就能给你拿点毯子过来。 #line:92465d
+        Pastor: 因为某些原因，我们可有*一大堆*毯子呢。 #line:814a11
+        Bruce: 那可真是个恩赐啊！ #line:06bcde
+        Pastor: 嗯，我们总会为已经拥有了很多的东西而心怀感激。 #line:dde6b5
+        Bruce: 嘿嘿。 #line:f0f95d
+        Pastor: 我们可有一大堆毯子呢！ #line:8b85bc
+        Bruce: 哈哈哈！ #line:8d9c52
+        <<close>>
+        <<wait 1>>
+    <<endif>>
+<<endif>>
+<<if $demo2 is 0>>
+    [[EmoticonLoopA2D1]]
+<<endif>>
+===
+title: EmoticonLoopA2D1
+tags: temp
+colorID: 3
+position: 2646,-322
+---
+Pastor: {emote=stars} #line:8729e7
+Bruce: {emote=money} #line:23f68f
+[[EmoticonLoopA2D1]]
+===
+title: CouncilA2D3
+tags: 
+colorID: 3
+position: 2344,101
+---
+<<cameraLookAt PastorCouncilCamera 3>>
+Council1: 他人挺不错的。 #line:9d3f7a
+Pastor: 是啊，他可以成为搬到咱们镇的第一人！ #line:08e796
+Pastor: 这算是一次尝试吧。 #line:b9c74f
+Council2: 你打算让他住哪儿啊？ #line:1dd325
+Pastor: 哦，让他住地下室， #line:acd54d
+Pastor: 或者是让他住旧图书馆里怎么样？ #line:ec227a
+Council3: 是想让他和书住一起吗？ #line:567a31
+Pastor: 他又不会把书都给吃了的。 #line:34d270
+Council4: 凯特，这想法倒是挺有意思的。 #line:b1ca3c
+Council1: 是啊。谢谢你告诉我们这些。 #line:5c14b7
+Pastor: 我希望咱们能在这件事上一起努力。 #line:ac2616
+Council2: 这事我们会报给镇政会的。 #line:70f1af
+Pastor: 哦！！那真是太好啦！！ #line:bba23d
+Council1: 好啦，大伙儿！咱们走！ #line:a542f4
+<<close>>
+<<walk Council1 CouncilOffscreenLeft>>
+<<walk Council2 CouncilOffscreenLeft>>
+<<walk Council3 CouncilOffscreenLeft>>
+<<walk Council4 CouncilOffscreenLeft wait>>
+<<waitForMove Council3>>
+<<waitForMove Council2>>
+<<waitForMove Council1>>
+<<hide Council1>>
+<<hide Council2>>
+<<hide Council3>>
+<<hide Council4>>
+<<cameraFollowPlayer 3>>
+===
+title: BackgroundA3D1
+tags: 
+colorID: 4
+position: 2339,331
+---
+Bruce: 我感觉这事做得不对。 #line:8301fc
+Pastor: 我明白，可有时候，对的事也可能感觉是错的。 #line:2593a9
+Bruce: 我觉得……如果有人不想让你得到什么， #line:2b9eee
+Bruce: 那你得到了就是不对的。 #line:250b2d
+Pastor: 可能吧…… #line:1951dd
+Pastor: 我倒感觉，神对这件事的看法可能会不一样。 #line:b30485
+Pastor: 至少我是这么觉得的。 #line:ae2181
+Bruce: 嗯…… #line:6abf6f
+Bruce: 那是因为你是个好人。 #line:5004e8
+<<close>>
+<<wait 1>>
+[[EmoticonLoopA3D1]]
+===
+title: EmoticonLoopA3D1
+tags: temp
+colorID: 4
+position: 2628,334
+---
+Pastor: {emote=spiral} #line:deea3d
+Bruce: {emote=hotdog} #line:91f8b7
+[[EmoticonLoopA3D1]]
+===
+title: CouncilA3D3
+tags: 
+colorID: 4
+position: 2345,562
+---
+<<cameraLookAt PastorCouncilCamera 3>>
+Council2: ……因为孩子们还要到那儿去呢！ #line:0c3a11
+Council3: 而且那座教堂也是古迹啊。 #line:b838c9
+Pastor: 可那地方已经没什么东西啦！ #line:d02ce8
+Council3: 那就是你的问题啦，和我们一点关系也没有！ #line:9bfc19
+Pastor: 这地方的人越来越少。 #line:d88927
+Pastor: 你们要知道，这里不可能再像以前一样有那么多人了。 #line:cb5ddf
+Pastor: 咱们有闲置的地方，也有需要这些地方的人。 #line:4e5534
+Pastor: 咱们虽然有资源，可咱们还是没钱！ #line:2daa31
+Pastor: 咱们这儿也不是什么偏远地区，也不是什么大城市！ #line:583b31
+Pastor: 现在咱们要解决的问题就在这儿！问题就在街对面等着呢！ #line:590f34
+Council1: 凯蒂，打开咱们镇的市场 #line:daa677
+Council1: 才是现在最重要的事啊。 #line:158c56
+Council1: 有了市场，就会有工作。有了工作，就能吸引更多的人。 #line:cb4586
+Council1: 我们必须尽自己所能， #line:2bc577
+Council1: 获得市场的关注。 #line:5a2cff
+Council1: 而且，咱们还有一座堆满了垃圾，还半死不活的教堂…… #line:5f85f2
+<<wait 3>>
+Pastor: 谢谢你们能花时间过来。 #line:390398
+Council1: 我们会关注你明晚的投票的。 #line:c92ab7
+Council2: 谢谢你，凯特。 #line:0fd6f9
+Council4: …… #line:40cc55
+Council4: 你心可真好，凯特。 #line:d6a41f
+Pastor: 谢谢你们能来一趟。 #line:dc071d
+<<close>>
+<<walk Council1 OffscreenLeft>>
+<<walk Council2 OffscreenLeft>>
+<<walk Council3 OffscreenLeft>>
+<<walk Council4 OffscreenLeft wait>>
+<<hide Council1>>
+<<hide Council2>>
+<<hide Council3>>
+<<hide Council4>>
+<<cameraFollowPlayer 3>>
+===
+title: BruceA2D4
+tags: 
+colorID: 3
+position: 1235,560
+---
+Mae: 今天晚上的丰收节你要去转转吗？ #line:83bae1
+Bruce: 不知道，可能会去吧。 #line:b8530c
+Bruce: 我喜欢一个人待着。 #line:c55a6f
+Mae: 要是你去的话，就打声招呼！ #line:667a8e
+Mae: 我肯定会过去的。 #line:744a75
+Bruce: 好。 #line:d42561
+Bruce: 再说吧。 #line:75d50e
+<<set $bruce_familiarity += 1>>
+===
+title: PastorA3D1
+tags: 
+colorID: 4
+position: -645,674
+---
+Mae: 嘿，嘿。 #line:32800a
+Pastor: 又见面了。 #line:b8e2ad
+Bruce: 嘿。 #line:dadd11
+Mae: 我昨天晚上做了一个特别不爽的梦…… #line:8bda6d
+Pastor: 我也一样。 #line:a09b3c
+Pastor: 我梦见自己变成了一张披萨， #line:33e9b0
+Pastor: 害怕会有人把我给切了。 #line:864d49
+Mae: 天哪。 #line:98d657
+Pastor: 是啊。 #line:bf6b44
+Mae: 咱们这儿没有卖披萨的地方了，这让我很难过。 #line:838b8f
+Pastor: 现在只能去高速路边那家披萨店订披萨了。 #line:e0c836
+Pastor: 悲剧啊。 #line:229c7b
+Bruce: 我梦见过自己变成了一只往南飞的大雁。 #line:8df80c
+Bruce: 我得跟上其他大雁才行， #line:4d07c3
+Bruce: 要不我就该迷路了。 #line:29f2c8
+Mae: 这梦也太悲伤了吧。 #line:4aed31
+Bruce: 这梦的确不怎么样。 #line:161298
+Mae: 你们在聊什么呢？ #line:59c5a7
+Pastor: 大会要开始了。 #line:ed8c66
+Pastor: 市政会要开始了。 #line:58d786
+Bruce: 嗯。 #line:4e9b8e
+Mae: 这会是关于什么的…… #line:31bbd7
+Pastor: 是关于布鲁斯的！ #line:86da30
+Bruce: …… #line:cf1344
+Mae: 哇，那会上的气氛肯定很紧张。 #line:512c62
+Pastor: 我们会感谢你的祷告的。 #line:3595f1
+Pastor: 现在这个时候， #line:dc31ac
+Pastor: 神马上就要现身了。 #line:4c7206
+Bruce: 希望是这样吧。 #line:e3a90d
+Mae: 我也一样。 #line:2d0488
+<<set $knows_bruce_situation to 1>>
+===
+title: BackgroundA2D1Demo2
+tags: demo2
+colorID: 3
+position: 2528,-609
+---
+Bruce: 咱们能不能出去待一会儿啊？ #line:8543e6
+Pastor: 咱们不就是在嘎嘣脆嘛！ #line:72c0e5
+Pastor: 又不是在什么高档的地方。 #line:042092
+Pastor: 所以没人嫌弃你。 #line:051cad
+Bruce: 我知道……我只是…… #line:e0c16f
+Pastor: 没关系的。只要你愿意，咱们就在这儿站着吧。 #line:677065
+Pastor: 可我只能待到七点半。我一会儿还要主持祈祷仪式呢。 #line:bd65a4
+===
+title: PastorDemo2
+tags: 
+colorID: 3
+position: -953,-50
+---
+<<if $pastor is 0>>
+    Pastor: 嘿，你是梅吗？ #line:fdee90
+    Mae: 我是。怎么了？ #line:b314ed
+    Pastor: 你就是肯迪的女儿吧！ #line:b8baec
+    Mae: 对。 #line:63f9a1
+    Pastor: 我是凯特牧师。你妈妈就在我们教堂上班。 #line:e439f8
+    Mae: 是啊，她可是个职业接待……前台……还是接待吧。 #line:d4d8c4
+    Pastor: 你见过布鲁斯了吗？ #line:55de0e
+    Mae: 嘿，布鲁斯。 #line:7e043d
+    Bruce: 你好。 #line:90784a
+    Pastor: 布鲁斯还没来过嘎嘣脆呢！ #line:c72083
+    ->这怎么可能啊？ #line:c75aa6
+    ->你肯定会很满意的。 #line:f97210
+        Pastor: 看见了吗，布鲁斯？ #line:40bd42
+        Mae: 这顿饭肯定会很让你满嘴流油的。 #line:d66572
+        Mae: 服务员肯定会很生气的。 #line:b8e79e
+        Bruce: 这听起来和我们那边差不多啊。 #line:ae5fcf
+    Pastor: 布鲁斯是刚搬在镇上来的，所以还没来得及好好放松一下。 #line:7e41c7
+    Mae: 你就住在这附近吗？ #line:9ef439
+    Bruce: 嗯…… #line:e3bf10
+    Pastor: 布鲁斯是咱们的邻居，就住教堂那边儿。 #line:b0b9ed
+    Bruce: ……我就住在街对面…… #line:7546e0
+    Mae: 哦。 #line:b4e95e
+    Bruce: 我住在树林里。 #line:546f7e
+    Pastor: 但他不会在这儿住很久的！|现在，我们正在翻新和加固呢|，冬天之前应该就能完工了。 #line:d4e95a
+    Pastor: 我们也该承担一些事的，但神才是真正完成这些事的人。 #line:59209c
+    Bruce: ……我还在考虑，毕竟还有很多问题没…… #line:2b4f8f
+    Pastor: 听我说一句，没人说“爱你的邻居是件简单的事"这句话， #line:91bc98
+    Pastor:  而且，你就是我们的邻居。 #line:6248f3
+    Bruce: 谢谢你。 #line:d2a077
+    Pastor: 布鲁斯，我们每个人都有需要帮助的时候。 #line:4dc41e
+    Pastor: 在困难的时候需要帮助一点也不丢脸。 #line:3a1ac8
+    Mae: 嗯，很高兴认识你们两位！ #line:e40af4
+    Pastor: 有空就到教堂来看看我！ #line:bdf30a
+    Mae: 我会的！我也会顺便来看看我老妈的。 #line:0abf8d
+    Mae: 再见了，布鲁斯！ #line:9c52a8
+    Bruce: 好的。很高兴认识你，玛丽。 #line:ce519f
+    Mae: 我叫梅。梅·博罗夫斯基。 #line:f2cece
+    Bruce: 我叫布鲁斯，单名就叫布鲁斯。 #line:3093c9
+    Pastor: 我是牧师，凯特牧师。 #line:4983fe
+    <<unlockDoodle BruceSketch>>
+    <<set $pastor to 1>>
+<<elseif $pastor is 1>>
+    Mae: 你们是在等人吗？ #line:4b43e2
+    Bruce: 不是。 #line:eb5ed0
+    Pastor: 布鲁斯有点放不开。 #line:3f8673
+    Bruce: 我已经有段时间没到饭馆吃过饭了。 #line:26d878
+    Pastor: 你可以把这儿当成锻炼自己的好地方！ #line:f0aefd
+    Bruce: ……有时候，我是骑着马回家的…… #line:0c07a8
+    Mae: 在你们那边，你可能会在自己还没反应过来的时候就叫了一匹马。 #line:243cf6
+    Pastor: 梅…… #line:dbd361
+    Mae: 我说的是真的！ #line:2584ac
+    Bruce: 嘿嘿。 #line:cc5c47
+    <<set $pastor_done to 1>>
+<<endif>>
+===
+title: BackgroundA2D2
+tags: 
+colorID: 3
+position: 2341,-110
+---
+Council3: 哦，好吧。 #line:720e99
+<<set $church_hill_background_a2d2_done to 1>>
+Council2: 这么说，你应该算是个……流浪者吧？ #line:571369
+Bruce: 对，但这种情况只是暂时的…… #line:7a2fd2
+Council1: 那当然是啦！好了，我们只是想看看你在这儿住的好不好。 #line:b7d522
+Bruce: 还不错，凯特牧师人也很好。 #line:25bb26
+Council4: 我们想看看你的住处，可以吗？ #line:a02c86
+Council3: 莫莉，你有什么想说的吗？ #line:ffc965
+Molly: 嗯…… #line:89b1e8
+Bruce: 嗯…… #line:2aaa49
+Molly: 我觉得……还好吧。 #line:f7dbc6
+<<close>>
+<<playOneShot event:/ui/snap_animation Council1>>
+<<flip Council1 1>>
+<<wait .5>>
+<<playOneShot event:/ui/snap_animation Council2>>
+<<flip Council3 1>>
+<<wait .5>>
+<<playOneShot event:/ui/snap_animation Council3>>
+<<flip Council4 1>>
+<<wait .5>>
+<<playOneShot event:/ui/snap_animation Council4>>
+<<flip Council2 1>>
+<<wait .5>>
+//<<walk Council2 Council2Camp>>
+//<<walk Council3 Council3Camp>>
+//<<walk Council4 Council4Camp>>
+//<<walk Molly MollyCamp>>
+//<<walk Bruce BruceCamp>>
+//<<walk Council1 Council1Camp wait>>
+Council1: 哈哈！那好吧……布鲁斯，对吧？ #line:d3dfb5
+Bruce: 嗯。 #line:c6af9b
+Council3: 你觉得负鼠泉这儿怎么样啊？ #line:799853
+Bruce: 地方不错，人也好。 #line:459f28
+Council4: 布鲁斯，你到镇上多久了？ #line:2f0ec2
+Bruce: 我来了已经有段时间了…… #line:1e2fd9
+Bruce: 七十年代的时候我就来过这儿。 #line:48ac13
+Bruce: 当时那段时间，这儿正在招矿工。 #line:8eff59
+Council4: 布鲁斯啊，当时这里可是很繁忙的！ #line:59c818
+Bruce: 嗯。 #line:6d65da
+Council1: 你的帐篷挺不错的啊！ #line:af47d7
+Bruce: 啊， #line:0cb4e7
+Bruce: 谢谢。 #line:86be0e
+<<wait 1>>
+Council4: 布鲁斯，你能和我们聊上几句，我们就很高兴了。 #line:7b4ddb
+Council2: 见到你很荣幸！ #line:27397f
+Bruce: 是啊，我也很荣幸。 #line:00c432
+Council1: 好啦，大伙儿！咱们走！ #line:32087d
+<<close>>
+<<playOneShot event:/ui/snap_animation Council1>>
+<<flip Council1 -1>>
+<<wait .5>>
+<<playOneShot event:/ui/snap_animation Council2>>
+<<flip Council3 -1>>
+<<wait .5>>
+<<playOneShot event:/ui/snap_animation Council3>>
+<<flip Council4 -1>>
+<<wait .5>>
+<<playOneShot event:/ui/snap_animation Council4>>
+<<flip Council2 -1>>
+<<wait .5>>
+<<wait .5>>
+<<walk Council1 Council1Church>>
+<<walk Council2 Council2Church>>
+<<walk Council3 Council3Church>>
+<<walk Council4 Council4Church>>
+<<wait 1>>
+Council3: 再次感谢你，布鲁斯！ #line:0bc9cd
+<<close>>
+<<wait 1>>
+Molly: 谢谢你，布鲁斯。 #line:3aae0b
+Bruce: 没什么的。 #line:6b054b
+<<setCanInteract Bruce 1>>
+<<walk Molly MollyChurch>>
+Council3: 他的住处确实挺不错的。 #line:57b804
+Council2: 是啊。 #line:39db42
+Council4: 我跟我父亲露营的时候，搭的帐篷可没这么好。 #line:b52d49
+Council1: 哦，是吗？咱们当时可都是负鼠崖北边狩猎营的人啊。 #line:9266bb
+Council4: 我父亲对露营的看法还是很简单的。 #line:117cf6
+Council3: 不过他的帐篷真的还挺好的。 #line:89b4cc
+Council2: 他没有对治安造成威胁。 #line:a86ca9
+Council1: *叹气* #line:d622e9
+Council1: 这是个值得考虑的问题。 #line:274c9c
+Molly: 我还有事要忙。 #line:89c642
+<<close>>
+<<waitForMove Molly>>
+<<walk Molly OffscreenLeft>>
+<<wait 1>>
+Council3: 我居然不知道他还给咱们这儿出过力。 #line:4b23cc
+Council1: 可不管怎么说，他都不能在外面过夜。 #line:8c60af
+Council4: 咱们能不能找个地方坐下来谈啊？ #line:2f1b5d
+Council1: 那 就 去 嘎 嘣 脆 谈 吧！ #line:f5b0a0
+<<close>>
+<<walk Council1 OffscreenLeft>>
+<<walk Council2 OffscreenLeft>>
+<<walk Council3 OffscreenLeft>>
+<<walk Council4 OffscreenLeft>>
+===

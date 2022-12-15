@@ -1,0 +1,128 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: -1455,30
+---
+<<playerUpdateFallDuringInteract 1>>
+<<fadeIn 1 wait>>
+<<wait 2>>
+Mae: 格雷格？ #line:58ccea
+Mae: 嘿，你在哪儿呢？ #line:669335
+Gregg: 我 在 这 儿！！！ #line:1b0aef
+<<playerUpdateFallDuringInteract 0>>
+<<playerCanRun 0>>
+<<playerCanJump 0>>
+===
+title: GreggWantsLight1
+tags: 
+colorID: 0
+position: -971,72
+---
+Gregg: 嘿，你能让光往下照照吗？ #line:24eab3
+===
+title: GreggThanks1
+tags: 
+colorID: 0
+position: -680,121
+---
+Gregg: 好的，谢了。 #line:dadf42
+===
+title: GreggOMG1
+tags: 
+colorID: 0
+position: -411,90
+---
+<<flip Gregg -1>>
+Gregg: 我的天，那是什么？ #line:bc36a8
+===
+title: Nothing1
+tags: 
+colorID: 0
+position: -144,83
+---
+<<flip Gregg -1>>
+Mae: 没什么。 #line:a77b47
+Gregg: 嗯哼。 #line:3f0a8e
+<<flip Gregg 1>>
+Gregg: 嘿，请往我这里照照。 #line:fc5199
+===
+title: Owl
+tags: 
+colorID: 0
+position: 968,126
+---
+<<irisOut 1 wait>>
+<<scene MansionInterior>>
+===
+title: GreggCrack1
+tags: 
+colorID: 0
+position: 96,76
+---
+<<flip Gregg -1>>
+Gregg: 卧槽？ #line:be7755
+===
+title: Something1
+tags: 
+colorID: 0
+position: 348,61
+---
+Gregg: 好吧，这附近好像有什么东西。 #line:b41f68
+Mae: 我已经告诉过你了。 #line:73c2e7
+<<flip Gregg 1>>
+Gregg: 好吧，咱俩合作把这事儿搞定。|你一边帮我照亮，|一边还得盯着点我身后，|总的来说，|这两件事你都得做好。 #line:32af43
+===
+title: Hey1
+tags: 
+colorID: 0
+position: 623,49
+---
+<<flip Gregg -1>>
+Gregg: 嘿！说你呢！！！ #line:c0a065
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -1666,35
+---
+<<warp Mae MaeInTheWoods>>
+<<setCanInteract Gregg 0>>
+===
+title: FindGregg
+tags: 
+colorID: 0
+position: -1194,37
+---
+Gregg: 嗷，耶！ #line:b59673
+Gregg: 找 到 地 下 室 的 门 啦！ #line:9d2eb3
+Mae: 憋 憋 憋！！！ #line:0b32a1
+Gregg: 你说什么？ #line:fd652c
+Mae: 憋再叫啦！ #line:4c5969
+Gregg: 你为什么要这样说话？ #line:08bab5
+Mae: 如果你只发“TH"的音，鹅不发“ETH"的音，说话是很困难的。 #line:361964
+Mae: 对尤些人来说，他们在说“幽灵"这个迟的时候， #line:cb47e0
+Mae: 就会说成“有灵"。 #line:4ca6e9
+Gregg: 我真听不懂你在说什么。 #line:a7c83d
+Mae: 好了，接下来咱们得巧悄地行动，是不是？ #line:6ddbff
+Gregg: 哦，好吧，我听明白你在说什么了。 #line:12bdd1
+Mae: 谢 谢 啦。 #line:af55e9
+Gregg: 我可不想这么说话。 #line:cb4207
+Mae: 好吧。 #line:61748d
+Gregg: 安全，这儿没人。 #line:5ac50c
+Gregg: 灯没亮，门也都锁着。 #line:550ee0
+Mae: 那咱们该怎么办？ #line:31aa02
+Gregg: 我开锁的时候， #line:2c711a
+//hands mae flashlight <- how do we want to do this?//
+<<fadeOutInternal .5 wait>>
+<<warp Mae MaeWithFlashlight>>
+<<flip Mae -1>>
+<<fadeInInternal .5 wait>>
+Gregg: 你就拿着手电帮我照亮。 #line:02940a
+Mae: 我都忘了，你还会撬锁。 #line:6b891b
+Gregg: 是啊，姐们，我当然会啦。 #line:6e8b5c
+Mae: 真是棒极啦。 #line:f1b87b
+Gregg: 那必须的。 #line:2e388c
+Gregg: 干坏事，姐们。 #line:4f3fcd
+Mae: 干坏事，伙计。 #line:29db47
+<<tell FlashlightBrain Run>>
+===

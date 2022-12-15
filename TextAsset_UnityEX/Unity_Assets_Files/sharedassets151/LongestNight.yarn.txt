@@ -1,0 +1,516 @@
+title: Intro
+tags: 
+colorID: 0
+position: 79,208
+---
+<<wait 2>>
+<<speechBubbleSizeOverride .75>>
+Mae: 话说，我怎么一点都不冷啊？ #line:0b0a25
+Gregg: 因为有火。我们生了火。 #line:6ae5cb
+Angus: 我们的文明水平已经发展到会用火的地步了。 #line:177b30
+Mae: 哦，原来如此。 #line:0049f1
+Mae: 我好无～聊～啊～|感觉我们都在这儿|待了一辈子了。 #line:67a6a3
+Bea: 噢！我们可以来策划一个长至夜观星活动什么的！ #line:645c5d
+Mae: 哇，真的？ #line:8234b9
+Gregg: 我6岁以后就再没干过这种事了。 #line:f5ad4e
+Mae: 6岁以后，也没人会再弄这个了。 #line:4f8080
+Bea: 好吧，我都不记得我6岁那会儿是什么样的了。 #line:dc8c0a
+Mae: 是真的吗？ #line:a2596e
+Gregg: 真是这样吗？ #line:6cc063
+Bea: 真的，8岁半以前的事我都不怎么记得了。 #line:273e4a
+Angus: 这个岁数还挺精确的。 #line:a5bcbf
+Gregg: 碧娅其实是个人造人，|她的初始年龄设定|就是8岁半。 #line:9a90a5
+Mae: 这话听着倒是挺靠谱的。 #line:0bd1d0
+Mae: **哔哔～哔哔～碧娅。** #line:7103d1
+Gregg: **一一零 一 零，|算了，我不模仿了，|这太傻了。 #line:1a6f0a
+Bea: 咱们能开始想想观星活动的事了吗？ #line:54ee2d
+Gregg: 碧娅，咱们这几个里，|恐怕没人|懂那么多星座的事吧。 #line:8690ca
+Mae: 是啊，碧 娅。 #line:96276f
+<<close>>
+<<wait 2>>
+Angus: 我懂星座。 #line:33b99d
+Gregg: 你是什么时候开始懂星座的？ #line:c8c140
+Angus: 我一直都懂。 #line:d78e0f
+Angus: 现在听好了，小傻瓜们，我们开始上课了。 #line:983376
+Bea: 小天才安格斯课堂开课啦！ #line:63c209
+<<close>>
+<<tell ConstellationWheel to ZoomOut>>
+<<wait 4>>
+<<speechBubbleSizeOverride 0>>
+Bea: 可我什么也没看见啊。 #line:344078
+Angus: 星座猎手在此，咱们一起把星座都找出来吧！ #line:786245
+<<close>>
+<<tell ConstellationWheel to ShowStars>>
+===
+title: End
+tags: 
+colorID: 0
+position: 480,99
+---
+Angus: 嗯，这就是全部13个星座了。 #line:e9ccb9
+Bea: 哇！谢啦，安格斯！ #line:767867
+Mae: 真是太棒啦！ #line:664bb4
+Gregg: 船长，你可真是个大书呆子啊。 #line:d05243
+Angus: 没错， #line:03ec2e
+Angus: 我就是个大书呆子。 #line:730692
+Gregg: 你应该去当个教授吧。 #line:ce11e8
+Angus: 我觉得，我在音像店已经算得上是教授了。 #line:ddfb03
+Bea: 好了，也许我该回去了。 #line:5f9d82
+Mae: 等会儿。 #line:9e5811
+Mae: 我才想起来，碧娅，我已经好几年没有和你一起出去玩了。 #line:e556b5
+Bea: 什么？ #line:ff5bc0
+[[对，从初一开始，咱俩就不经常一起出去晃悠了，是不是?|Grade]] #line:b81d59
+[[咱们12岁那年，你和我大吵了一架！|Fight]] #line:06565a
+===
+title: Grade
+tags: 
+colorID: 0
+position: 798,377
+---
+Bea: 我想起来了。我是当事人啊。你那时候可混蛋了。 #line:ab7085
+Mae: 可为什么我还会在长至夜和你一块坐在篝火边呢？ #line:1bb040
+Bea: 因为你太太太想我了。 #line:aa25d2
+[[TheVeryEnd]]
+===
+title: Fight
+tags: 
+colorID: 0
+position: 480,378
+---
+Bea: 让我印象更深的，一是你不再跟我一块吃午饭了， #line:3eb766
+Bea: 二是不回我电话了， #line:8af59e
+Bea: 三是不回我信息了。 #line:f258f8
+Bea: 你后来总是和格雷格在一起，但对我却冷冰冰的。 #line:4a4b3e
+Gregg: 对不起，碧娅。我不是有意要做你俩友情的第三者的。 #line:5d5281
+Bea: 没事的，格雷格，事都过去好几年了。 #line:fbb863
+[[TheVeryEnd]]
+===
+title: TheVeryEnd
+tags: 
+colorID: 0
+position: 700,625
+---
+Mae: 等一下，咱们真的是在太空里吗？ #line:ac0714
+Angus: …… #line:57b04e
+Mae: 但我还有体温，也还能呼吸啊？ #line:022882
+Mae: 我是坐在什么上边啊？ #line:0ddee9
+Angus: 霸王龙座。 #line:d75088
+Mae: 什么玩意？ #line:a2248b
+Mae: 哦，我的天……我得有一年半没见过格雷格和安格斯了。 #line:3fed20
+Gregg: 真是又悔恨又空虚啊！ #line:68167b
+Mae: 长至夜的时候，我也没回过家。 #line:03e499
+Bea: 该洗衣服啦！ #line:301be4
+Gregg: 刚才吐完嘴里还有苹果汁的味道。 #line:09d274
+Bea: 你该给家里打个电话的。 #line:0be094
+Gregg: 你不想给家里打电话。 #line:d90818
+Angus: 你赶不上回来的公交车了。 #line:764055
+Bea: 今天，你是因为什么才想起我的呢？ #line:d2072b
+Gregg: 你才不想去坐公交车呢。这可是你的新生活。 #line:68d435
+Bea: 都一年半了，这还算新生活吗？ #line:b437b7
+Angus: 内衣没穿正！ #line:d7aad6
+Gregg: 明年又会是新的一年。 #line:bc95a2
+Bea: 你也会是新的你了。 #line:ac344e
+Angus: 压腿！ #line:d2abbf
+Mae: 啊，够了，真是越聊越扯了，我可是认真的。 #line:351855
+<<close>>
+<<tell LongestNight to End>>
+===
+title: MaeAlarm
+tags: 
+colorID: 0
+position: 687,907
+---
+Mae: 好吧，家可不会自己打电话…… #line:55926c
+===
+title: ConstellationAngelGator
+tags: 
+colorID: 0
+position: 1230,160
+---
+Angus: 谐律天使，哈蒙尼恩，天使唱诗班的领唱。 #line:ce7371
+Bea: 呃，原来是这个星座啊。 #line:8fd115
+Bea: 过去，我妈常说我长得像这个星座。 #line:884918
+Mae: 我能想象得出来！ #line:ad10ff
+Bea: 我可想象不出来。 #line:2d683d
+Mae: 你领着一大群脾气很怪的天使， #line:597c0f
+Bea: …… #line:d8cc6b
+Mae: 仰天 #line:41e77f
+Bea: …… #line:2e1706
+Mae: 长啸。 #line:8c7a37
+Bea: 好吧。 #line:7ac003
+Angus: 下～一～个～ #line:ba44a0
+===
+title: ConstellationBearKing
+tags: 
+colorID: 0
+position: 1486,163
+---
+Angus: 是小王侯，马尔曼德斯。 #line:78a1f4
+Angus: 他是个……怎么说呢……是个侏儒国王。 #line:01c3ab
+Angus: 我对这个星座一点都不了解。 #line:6527a9
+Bea: 很显然，在那个年代，出现一个小身板的国王可算是个大新闻。 #line:f6c160
+Bea: 我猜测，他的个头没有传说中的那么小。 #line:3bd677
+Angus: “不要再评论国王啦！" #line:1fb061
+Bea: “所以，这位就是国王了，是吗？" #line:364196
+Bea: “但是，记住了，他的个头只比你预想的小了一点点。" #line:e1721c
+Angus: “哇，他穿着小鞋子呢！我们要在夜空中永远纪念他！" #line:cf3fdb
+Mae: 我的个头也不大嘛！ #line:ae4ae4
+Gregg: 以梅·博罗夫斯基座来纪念梅。 #line:fa75c5
+Bea: 别再说了。 #line:d2686c
+Bea: 那些被当作星座的人现在都已经死透了。 #line:a56feb
+===
+title: ConstellationBell
+tags: 
+colorID: 0
+position: 1755,167
+---
+Angus: 末日之钟托尔梅特隆。 #line:d81ea7
+Angus: 世界末日来临时，它的钟声将会响起。 #line:d5e330
+Angus: 这时，世界之鱼门迪就会把世间万物从她的背上通通甩掉。 #line:d6bde6
+Angus: 而且，世间万物都会燃起熊熊烈火。 #line:1aae22
+Gregg: 这种说法在古代确实很有说服力。 #line:8db59c
+Mae: 古代人好像都蠢坏蠢坏的。 #line:b11e33
+Bea: 说得是啊。我不想说脏话，但那时候的人真的都蠢疯了。 #line:290ca4
+Angus: 但这种事都是相对而言的。 #line:76eebe
+Mae: 比较起来你会发现许多人都是蠢蛋。 #line:021de2
+Angus: 那也是一群迷人的蠢蛋。 #line:33b511
+===
+title: ConstellationBirdPope
+tags: 
+colorID: 0
+position: 2048,162
+---
+Angus: 教皇，卢贝罗，15世纪生人。那可真是个疯狂的年代啊。 #line:7e0dd4
+Bea: 啊，天啊，我就喜欢这个星座。 #line:4f0770
+Angus: 那时候，另外还有两个教皇，但这两个人是死对头。 #line:f5138c
+Angus: 后来，卢贝罗凭着自己的一张嘴，就胜过了那二位教皇。 #line:1284e3
+Angus: 之后，他从嘴里喷出火焰，把那两个人给烧死了， #line:0e9a6b
+Angus: 然后又把他们俩给吃了下去。 #line:2b182d
+Mae: 啥？ #line:ee3464
+Bea: 杀～～ #line:dbbb6d
+Gregg: 这个我听说过！ #line:7f665d
+Mae: 太精彩啦。 #line:5e4815
+Angus: 我想说的是，历史上，他的家族成员真的给一个人下过毒， #line:bbfbb5
+Angus: 另外还有一起命案，受害者先是被捅死，然后被抛尸到河里。 #line:596536
+Bea: 但他确实把那两个教皇给吞了。 #line:671089
+Angus: 没错，他确实把他们都给吞了。 #line:4f100e
+Mae: 这是我听过最牛逼的事啦！ #line:e0e976
+Bea: 哝，哝，哇哦我把你们都给吃啦。现在我就是教皇啦！ #line:80bf2a
+===
+title: ConstellationBrokenSnake
+tags: 
+colorID: 0
+position: 2326,189
+---
+Angus: 言语之祖，断蛇，万物之中第一个开口说话的生物。 #line:8c83ed
+Bea: 这个故事总是让我心烦意乱的。 #line:9c6a28
+Mae: 在主日学校，我就是那种，听这个传说会生气到怒吼的小孩。 #line:53a639
+Bea: 哦，我的天，这事我还记得！ #line:865291
+Bea: 你当时被送到了成人教堂，和你爸妈坐在一起！ #line:20288c
+Mae: 所以，我就没有潘趣酒和饼干吃啦！ #line:955b4f
+Gregg: 哇哦，这种事我八成是都错过了。 #line:b5e0ab
+Angus: 嘿，帅哥，你当时可在场啊。 #line:07a114
+===
+title: ConstellationCatBurglar
+tags: 
+colorID: 0
+position: 2650,155
+---
+Angus: 大盗，柯尔温。 #line:554996
+Angus: 他是个小偷，曾经偷过喷火教皇卢贝罗王冠上的钻石。 #line:8398df
+Angus: 可后来，他刚跑出教皇的大殿70米左右，就被乱箭射死了。 #line:020e84
+Mae: 所以，虽然叫这个星座大盗柯尔温，|但是柯尔温其实算不上是一个大盗。 #line:27395d
+Bea: 的确是这样。 #line:a0616a
+Gregg: 去他大爷的。就应该把那帮人的钻石都给偷光。 #line:db5c04
+ALL: 去他大爷的。 #line:51b35f
+Bea: 啊，是啊，这就是偏远城郊小鬼们的革命热情吧。 #line:4355e1
+Mae: 负鼠泉可不是什么偏远城郊！ #line:768412
+Angus: 是啊，要想有城郊，你得先有城吧。 #line:ce0e9a
+Mae: 咱们就住在一个不知名衰败小镇的中心地带。 #line:e719d4
+Mae: 想买个鞋，都得开个40分钟的车。 #line:a7b9ef
+Angus: 还有，我都21啦！已经不是小孩啦！我记得，你还比我小吧！ #line:46c2eb
+Gregg: 我也21啦。咱们都能去做全职工啦。 #line:0d2b7e
+Angus: 得了吧，在他们开始给咱们交社保之前， #line:27a72b
+Angus: 咱们永远都成不了全职工，最多只能算是无限接近全职工罢了。 #line:b659ee
+Mae: 我还有差不多4个月就20啦！ #line:e10b76
+Bea: 好了，好了。你们大家都已经是板着脸的大人了。 #line:d28f76
+Angus: 谢谢。 #line:7b0f68
+Gregg: 是啊，多谢了。 #line:742057
+===
+title: ConstellationCatKing
+tags: 
+colorID: 0
+position: 1523,462
+---
+Angus: 谐律天使，哈蒙尼恩，天使唱诗班的领唱。 #line:e97435
+Bea: 他们给人们带了来点小小的安慰，挺好的。 #line:7eb970
+Bea: 屈尊做了点超无聊的慰问。 #line:6ed2a7
+Angus: 是啊，下一个…… #line:87add8
+===
+title: ConstellationDeadFox
+tags: 
+colorID: 0
+position: 2768,682
+---
+Angus: 这是天狐卢西奥！ #line:39c4ac
+Gregg: 嗷，耶！ #line:0cf671
+[[这是谁来着？|FoxWho]] #line:249a45
+[[什么玩意？|FoxWhat]] #line:8ca27b
+===
+title: ConstellationFish
+tags: 
+colorID: 0
+position: 2400,675
+---
+Angus:这是大鱼座。 #line:234885
+Mae: ……还有呢？ #line:7bcb51
+Angus: 就是条鱼。鱼如其名。 #line:138c84
+Bea: 哈。 #line:e8b284
+Angus: 小知识：我的星座就是大鱼座。 #line:9926c5
+[[这可能代表你有很强的适应能力，而且还挺臭的。|FishAdaptable]] #line:ed7277
+[[我想这说明你就是条鲤鱼王，什么事都成不了。|FishFailure]] #line:bd3b4d
+===
+title: ConstellationFluteBird
+tags: 
+colorID: 0
+position: 1903,845
+---
+Angus: 音乐之祖，伊万涅鲁斯。 #line:8b018c
+Bea: 他这嘴可长得好啊。这让我想起了杰姆。 #line:2909a9
+Angus: 哈哈。 #line:c6fb07
+Gregg: 杰姆可没什么，或者说干脆就没有音乐细胞。 #line:3b5a03
+[[你们说的是谁啊？|BirdWho]] #line:a40a59
+[[杰姆？|BirdGerm]] #line:0c94b5
+===
+title: ConstellationGatorHead
+tags: 
+colorID: 0
+position: 2107,1481
+---
+Angus: 嗯……昆诺娜，她是被某个地方的国王给砍了头。 #line:78a5d4
+Angus: 她的头年复一年日复一日，控诉那些杀了她的人。 #line:e2e123
+Mae: 太美妙了。 #line:9901ee
+Bea: 呃。你是这么觉得的，对吧？ #line:67f639
+Bea: 但按故事里讲的，她可是个烦人的角色。 #line:392f86
+Bea: 比如说，她其实是个殉道者， #line:39fc3f
+Bea: 她确确实实也是殉道而死的。 #line:7f586f
+Bea: 最后，人们把她的头放进了一个大箱子，然后扔进了河里。 #line:74c2fd
+[[天哪！|GatorHeadGeez]] #line:9d4c4b
+[[她干了什么才落到这个地步？|GatorHeadWhatDidSheDo]] #line:a5471a
+===
+title: ConstellationGoat
+tags: 
+colorID: 0
+position: 2953,1721
+---
+Angus: 歌曲之祖，伊本，第一位歌唱家。 #line:4d9916
+Bea: 你们有看过这个传说改编的歌剧吗？ #line:1a4be7
+[[没看过。|GoatNo]] #line:41c054
+[[哦，看过！|GoatOhYeah]] #line:1e2cde
+===
+title: ConstellationMouseWriters
+tags: 
+colorID: 0
+position: 3615,1682
+---
+Angus: 书生鼠，书面语言的创造者。 #line:d69025
+Bea: 其实，书生鼠可不只一只，他们可是人数众多啊，是不是？ #line:14c638
+Mae: 听我说，天空的空间是有限的，书生鼠的数量是无限的。 #line:7a60ac
+Gregg: 我的星座就是书生鼠。 #line:ed74b1
+[[我想，这说明，你是成千上万个天才的集合体。|MouseWritersGeniuses]] #line:936af8
+[[我想，这说明，你这个人烂透了。|MouseWritersScrewed]] #line:b6c1be
+===
+title: ConstellationWhale
+tags: 
+colorID: 0
+position: 1741,1448
+---
+Angus: 世界之鱼，门迪。古时候，人们以为世界之鱼就是大鱼座。 #line:c510e3
+Angus: 你也知道，全世界都被扛在一条鱼的背上。 #line:200d5b
+Mae: 我的星座是世界之鱼。 #line:fab8c1
+Bea: 哦，老天。 #line:ba8216
+Bea: 那当然是你的星座了。 #line:fe6750
+Mae: 嘿！你说这话是什么意思啊？ #line:0e932a
+Gregg: 呜呜嗯嗯嗯！呜～嗯嗯嗯！ #line:595073
+Mae: 好吧，要是你打算说点什么的话， #line:4ff031
+Mae: 那这堆“呜嗯"就应该有点含义，可它没有。所以…… #line:9ca59f
+Mae: ……它没有任何意义。 #line:8d5044
+Gregg: 呜～嗯？呜呜呜嗯？ #line:1a106f
+Bea: 呜～嗯嗯！！！呜～～嗯嗯嗯！ #line:973572
+Mae: 你们干嘛呢？ #line:d7050e
+Gregg: 学鲸鱼叫。 #line:678ba1
+===
+title: FoxWho
+tags: 
+colorID: 0
+position: 3063,974
+---
+Gregg: 天狐！卢西奥！ #line:70ce61
+Gregg: 为了压制住他，人们用一支长枪把他钉在了地上！ #line:9bd84d
+Mae: 等一下，为什么要压制他呀？ #line:d5d0b8
+Gregg: 谁知道，管他呢！ #line:1fb79e
+[[FoxEnd]]
+===
+title: FoxWhat
+tags: 
+colorID: 0
+position: 2765,978
+---
+Gregg: 天狐卢西奥！ #line:009525
+Angus: 他是法国的乡野之灾！ #line:d2fa32
+Gregg: 是啊，这既是一件发生在法国的故事，又是一场大灾难。 #line:a541d6
+Mae: 为什么他会被一支枪给刺穿了呢？ #line:17df7e
+Gregg: 他就像一根比其他蜡烛都要亮的蜡烛，所以，枪刺出头狐！ #line:85fc39
+Angus: 解释得太好了。 #line:d68436
+[[FoxEnd]]
+===
+title: FoxEnd
+tags: 
+colorID: 0
+position: 2767,1275
+---
+Angus: 你现在应该能明白，为什么这个星座会这么受欢迎了吧。 #line:c5f36e
+===
+title: FishAdaptable
+tags: 
+colorID: 0
+position: 2243,1051
+---
+Gregg: 这两点你至少得了一点，对吧，船长？ #line:ce669d
+Angus: 看来，我终于闻到了一股男人味。 #line:576670
+Gregg: 你的味道闻起来*终于*和我给你的那股味儿差不多啦。 #line:cf4599
+Gregg: 冰鹰。那玩意上边印着一个冰鹰的图案。 #line:e6ab27
+Angus: 这让我闻起来更有男人味了。 #line:763b54
+Gregg: 就像冰鹰一样。 #line:aea8fd
+Bea: 我觉得你身上的味道还不错，安格斯。 #line:d98655
+Angus: 谢谢。 #line:a7ef0b
+Mae: 冰鹰到底是什么啊？ #line:ed489b
+===
+title: FishFailure
+tags: 
+colorID: 0
+position: 2481,1048
+---
+Angus: …… #line:4783d2
+Angus: …… #line:589878
+Gregg: 啊，船长，你不会是…… #line:e82862
+Mae: 啊，我的天，看来我真的伤到你了，|我不是故意的，对不起，|请不要哭，安格斯！ #line:de7fd8
+Bea: 安格斯，你人又好，又聪明，又那什么的。 #line:698ee9
+Gregg: 别听梅瞎说，她经常乱发脾气的。 #line:2a9c5c
+Mae: 好吧，我很抱歉，我会滚的。 #line:e0abcb
+<<close>>
+<<wait 2>>
+Mae: 我怎么走不了了？为什么我没被冻住啊？ #line:2f683e
+Angus: 没关系的，梅。只是今年事儿太多了，显得有些漫长。 #line:d81d5e
+Gregg: 嗷，帅哥，明年会更好的。 #line:0ffc06
+Mae:冲啊安格斯！我要加入安格斯小队！ #line:8b36aa
+Gregg: 我也是！我是小队队长，兼唯一指定亲热对象！ #line:b663a3
+Bea: 我也要加入！但我可不管亲热不亲热的事。那我就当……小队的会计怎么样？ #line:4346d8
+Angus: 我能做个吉祥物吗？ #line:da34b2
+===
+title: BirdWho
+tags: 
+colorID: 0
+position: 1761,1110
+---
+Gregg: 你说啥？吉祥物当然要让杰姆来当啦！|就是那个和我们一块玩的杰姆！杰姆！ #line:ad5e7c
+Bea: 他现在在哪儿呢？ #line:3ab7d8
+Gregg: 天知道他在和他那一家子怪胎干什么呢。 #line:3ef57f
+Bea: 我能想象得到，他平时的一切表现只不过都是伪装罢了…… #line:5aa90d
+Bea: ……其实，他私底下可能是个江湖巫师之类的人。 #line:ecdf8c
+Mae: 你们说的，我一句也听不懂。 #line:c070c5
+Gregg: 哦，不，梅开始晕太空啦！她已经失忆啦！ #line:117fe7
+Angus: 快把她从气闸里弹射出去！ #line:ad3165
+Bea: 梅，现在咱们不开玩笑了。|我们说的那个人就是杰姆。|你认识他的。他叫杰姆。 #line:9a1122
+Mae: 等等，我们是在太空里吗？为什么我一点也不冷呢？ #line:24348a
+===
+title: BirdGerm
+tags: 
+colorID: 0
+position: 1981,1100
+---
+Mae: 比如杰姆？那个怪人杰姆？ #line:f48ea8
+Gregg: ……是啊？ #line:3000b2
+Mae: 你怎么会认识…… #line:b72cb9
+Bea: 我觉得梅现在已经困得不行了。 #line:8a0ada
+===
+title: GatorHeadGeez
+tags: 
+colorID: 0
+position: 2106,1783
+---
+Bea: 她没头没脑地说胡话，还在公共场所大喊大叫。 #line:694509
+[[GatorHeadEnd]]
+===
+title: GatorHeadWhatDidSheDo
+tags: 
+colorID: 0
+position: 2534,1760
+---
+Bea: 这表现有点吓人，是吧？ #line:266a4b
+Mae: 哦，这就完了？ #line:dea747
+Bea: 我说的这些就足够让你喝一壶的啦！ #line:408a19
+[[GatorHeadEnd]]
+===
+title: GatorHeadEnd
+tags: 
+colorID: 0
+position: 2307,2036
+---
+Angus: 据说，如果你把自己的头放在意大利的某条河里， #line:ef4667
+Angus: 河就会告诉你是谁之前谋害了她。 #line:e9bc73
+Angus: 所以，当地人就把这条河的名字改成了“罪河"。 #line:2007cf
+Bea: 但这条河不但没有诉说出那些凶手的罪过， #line:1835e9
+Bea: 反而更像是在带你经历了一次悔罪之旅，|或者让你体验其他一些乱七八糟的破事。 #line:b3afea
+Mae: 所以，这个星座就是个渣渣。 #line:f750df
+Bea: 把我的头砍下来吧，然后我的头会把你的头也咬下来！ #line:b628b4
+Gregg: 各位，长至夜快乐！ #line:d5f8c8
+Angus: 下～一～个～ #line:f24e67
+===
+title: GoatNo
+tags: 
+colorID: 0
+position: 2952,2005
+---
+Bea: 哦，这部剧可是相当了得啊， #line:75d998
+Bea: 时长好像有21个小时。 #line:3fc21f
+Bea: 好像一百年前，光明湾那边也演过这部剧。 #line:760033
+Bea: 在演到伊本的气球撞上世界龙的时候，整个舞台突然爆炸了。 #line:4b4d8b
+Gregg: 太 精 彩 啦。 #line:0f8fca
+Mae: 有人死了吗？ #line:8b1fc4
+Bea: 好像死了一大堆人！ #line:7d31bd
+Angus: 哦。 #line:21e71d
+Bea: 听好了，要是这都不能让你笑出声的话，|那我就把这件事里|那些糟心的细节都说出来了。 #line:abf34f
+===
+title: GoatOhYeah
+tags: 
+colorID: 0
+position: 3207,2005
+---
+Mae: 当时，欧默斯老师请了两个星期的病假，|然后这部剧咱们也连着看了两个星期。 #line:3745d4
+Mae: 这剧实在是太长啦！ #line:53ffef
+Bea: 有一个情节很精彩：伊本把海水喝干，这让海里的鱼儿都哭了起来。 #line:eca6c9
+Bea: 然后，他终于听见了鱼儿的哭声。最后，伊本就教那些鱼儿唱歌。 #line:e77e45
+Gregg: 这算是我这辈子听过最蠢的事了。 #line:dbc8b3
+Bea: 是啊，可这种所谓的“蠢"是善意的蠢。 #line:9a526c
+Bea: 歌剧的剧情基本上都是这样的。 #line:be8755
+===
+title: MouseWritersScrewed
+tags: 
+colorID: 0
+position: 3894,1979
+---
+Gregg: 你说什么？！ #line:c3f3d7
+Mae: 如果你沿着食物链一直往下推的话， #line:e9f130
+Mae: 你就会发现，老鼠其实就是大自然给其他动物的小点心。 #line:398e37
+Mae: 你会找到老鼠的。 #line:736fa2
+Mae: 抱歉，小格雷格，但是你命不久矣。 #line:56a0f1
+Gregg: 老兄，这不可能。我可是不死之躯啊！ #line:c62334
+===
+title: MouseWritersGeniuses
+tags: 
+colorID: 0
+position: 3543,2001
+---
+Gregg: 我这么说可一点都没错。 #line:b1b312
+===

@@ -1,0 +1,118 @@
+title: Convo1
+tags: 
+colorID: 0
+position: 77,109
+---
+<<if $just_ate_crust>>
+    Gregg: 喔喔喔，你吃了我剩下的那块饼边儿。 #line:ac2344
+    Mae: 抱歉，拿错了。 #line:b95f71
+Gregg: 哦？看来某些人不光上过大学，把自己搞得很花哨，现在居然还会吃饼边儿了。 #line:a98ab2
+    <<set $crusts_eaten_at_diner += 1>>
+<<endif>>
+Angus: 这披萨不太好吃。 #line:458747
+Bea: 太难吃了。 #line:0255a8
+Gregg: 同志们，你们听说过“披萨量表"吗？ #line:1ba238
+[[什么表？|TheWhat]] #line:572433
+[[少扯了，披萨都很好吃。|PizzaGood]] #line:3d5cd2
+===
+title: PizzaGood
+tags: 
+colorID: 0
+position: 389,416
+---
+Gregg: 披萨量表大概就是这样的。 #line:6f765f
+Angus: 格雷格已经给我讲过好几次了。 #line:558cdd
+Angus: 就这样。 #line:eaf35e
+[[End]]
+===
+title: End
+tags: 
+colorID: 0
+position: 73,655
+---
+Mae: 我觉得这披萨挺好吃的。 #line:7669a1
+<<unlockDoodle PizzaScale>>
+<<tell GreggFoodPaw Reach>>
+<<tell AngusFoodPaw Reach>>
+<<tell BeaFoodPaw Reach>>
+===
+title: TheWhat
+tags: 
+colorID: 0
+position: -246,435
+---
+Gregg: 有这么一个披萨量表。 #line:d0f1ec
+Gregg: 一端是最难吃的披萨。 #line:0d18d6
+Gregg: 但在这条线以上的 #line:faaa8c
+Gregg: 都是还算不错的披萨。 #line:bd3958
+Bea: 那表的另一端是什么？ #line:7a60b4
+Gregg: 另一端依次代表最好吃的披萨。 #line:e57f96
+[[End]]
+===
+title: Diner
+tags: empty
+colorID: 0
+position: -529,742
+---
+Empty Text #line:22a818
+===
+title: Convo2
+tags: 
+colorID: 0
+position: 600,107
+---
+Bea: 我说，这儿可不是美味意面馆。 #line:540124
+Mae: 嗯……我好怀念美味意面馆啊。 #line:5ad58a
+<<if $just_ate_crust>>
+    <<set $crusts_eaten_at_diner += 1>>
+    <<if $crusts_eaten_at_diner >= 2>>
+        Gregg: 这么说，你现在又开始迷上 #line:87c028
+        Gregg: 各种饼边儿了是吗？ #line:3f47ec
+        Mae: 饼边儿多好吃啊。 #line:088beb
+        Gregg: 真是怪了。 #line:f14e15
+        <<unlockAchievement Crusty>>
+    <<else>>
+        Gregg: 嘿，你刚才是不是把我的饼边儿给吃了？ #line:dc5646
+        Mae: 我喜欢吃饼边儿！ #line:7d5694
+        Gregg: 哦？看来某些人不光上过大学，把自己搞得很花哨，现在居然还会吃饼边儿了。 #line:883a4d
+    <<endif>>
+<<else>>
+    Mae: 我可没打算碰那些饼边儿。 #line:47525a
+    Gregg: 我，也，一，样。 #line:418990
+<<endif>>
+Mae: 咱们应该去美味意面馆才对。 #line:959e11
+Gregg: 但这家店的氛围很好！！！！ #line:52d31e
+Angus: 座椅也很舒服。 #line:d2983a
+Bea: 虽然这里的饭菜不怎么样， #line:d2878d
+Bea: 但它还是有自己的魅力。 #line:87feed
+Gregg: 这家店配不上花哨的你了吗？ #line:ebfa83
+Mae: 伙计们， #line:cc387d
+Mae: 拜托。 #line:2d01e1
+Mae: 我就是在这家店里长起来的，而且是从小吃到大的。 #line:655d14
+Bea: 对，你是和成千上万只老鼠一起长起来的。 #line:b45f9d
+<<irisOut 1 wait>>
+<<scene Diner>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: -239,2
+---
+Angus: 嗯嗯嗯。 #line:cb1ddb
+Gregg: 我的天，太刺激了！对了，梅，你在学校的时候是不是也很想吃披萨？ #line:e58a54
+Mae: 学校里也能吃得到披萨。 #line:6e2329
+Gregg: 真不赖。 #line:3b8090
+<<tell GreggFoodPaw Reach>>
+<<tell BeaFoodPaw Reach>>
+<<tell AngusFoodPaw Reach>>
+===
+title: Convo1Short
+tags: cut
+colorID: 0
+position: 361,-60
+---
+Mae: 但不是经常能买得到！ #line:0b62ac
+<<tell GreggFoodPaw Reach>>
+<<tell AngusFoodPaw Reach>>
+<<tell BeaFoodPaw Reach>>
+===

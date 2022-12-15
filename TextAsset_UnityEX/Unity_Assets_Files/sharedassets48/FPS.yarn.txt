@@ -1,0 +1,403 @@
+title: EnterLevel
+tags: 
+colorID: 3
+position: -269,543
+---
+Mae: 哇哦，这玩意可比我想的沉多了。 #line:481cd0
+Gregg: 很沉，对不对？？ #line:729c3d
+Gregg: 所以，在扣扳机之前，你一定要把弓弦上好。 #line:f95cd2
+Mae: 然后我就可以想射哪儿就射哪儿吗？ #line:ba15a4
+Gregg: 只要别射到我就行。 #line:3559ad
+Mae: 没问题。 #line:68f55b
+===
+title: HitGround
+tags: 
+colorID: 3
+position: 67,594
+---
+<<if $fps_hit_ground is 0>>
+    Gregg: 好吧，射到地上了。 #line:4f6390
+    Mae: 是啊～ #line:969f6c
+<<elseif $fps_hit_ground is 1>>
+    Gregg: 还是地上。 #line:abdc49
+<<elseif $fps_hit_ground is 2>>
+    Gregg: 老妹儿，准星向上抬。 #line:c0e9dd
+<<elseif $fps_hit_ground is 3>>
+    Gregg: 往上瞄，往上，往上！ #line:678e4c
+<<elseif $fps_hit_ground is 4>>
+    Gregg: 姐们，你得把所有射到地上的箭都捡回来。 #line:601af5
+<<elseif $fps_hit_ground is 5>>
+    Gregg: 你能不射到地上大概是个*意外*吧。 #line:4251e0
+<<elseif $fps_hit_ground is 6>>
+    Gregg: 对于这种情况，已经没啥值得说的了。 #line:500227
+<<elseif $fps_hit_ground is 7>>
+    Gregg: 好吧。 #line:cbd4c0
+    Mae: 是啊。 #line:117186
+<<endif>>
+
+<<set $fps_hit_ground += 1>>
+===
+title: HitTree
+tags: 
+colorID: 3
+position: 190,361
+---
+<<if $fps_hit_tree is 0>>
+    Gregg: 哇哦！你把那棵树给射死啦。 #line:2a2e3c
+    Mae: 这就是这棵树的报应。 #line:0d101f
+<<elseif $fps_hit_tree is 1>>
+    Gregg: 干得好。 #line:bdc3cf
+    Mae: 所有树都是我的宿敌。 #line:723344
+<<elseif $fps_hit_tree is 2>>
+    Gregg: 又射树上了。 #line:8e4cd7
+<<elseif $fps_hit_tree is 3>>
+    Gregg: 你又射到那棵树了。 #line:33f37a
+<<elseif $fps_hit_tree is 4>>
+    Gregg: 额，我猜你射的又是那棵树吧。 #line:703f49
+<<elseif $fps_hit_tree is 5>>
+    Gregg: 我猜你一定很讨厌树吧。 #line:ed162b
+<<elseif $fps_hit_tree is 6>>
+    Gregg: 这就是名副其实的“虐树"。 #line:5e4b25
+<<elseif $fps_hit_tree is 7>>
+    Gregg: 好了，我觉得那棵树已经死透了。 #line:2fe07f
+<<endif>>
+
+<<set $fps_hit_tree += 1>>
+===
+title: OutOfRange
+tags: 
+colorID: 3
+position: 545,362
+---
+<<if $fps_out_of_range is 0>>
+    Gregg: 额，这一箭……射得确实有点远。 #line:4f6faf
+    Mae: 只求速度，不求准度。 #line:b599b0
+<<elseif $fps_out_of_range is 1>>
+    Gregg: 箭飞出去了。 #line:cac51c
+<<elseif $fps_out_of_range is 2>>
+    Gregg: 老妹儿。 #line:9bcbb2
+<<elseif $fps_out_of_range is 3>>
+    Gregg: 老妹儿啊。 #line:e1e7bf
+<<elseif $fps_out_of_range is 4>>
+    Gregg: 为什么会这样啊，老妹儿。 #line:125eae
+<<elseif $fps_out_of_range is 5>>
+    Gregg: 你会射到某些倒霉的动物的。 #line:a5b052
+<<elseif $fps_out_of_range is 6>>
+    Gregg: 箭又飞出去了。 #line:e132f4
+<<elseif $fps_out_of_range is 7>>
+    Gregg: 呵，这可真了不起。 #line:9a28e2
+<<endif>>
+
+<<set $fps_out_of_range += 1>>
+===
+title: HitBeastHead
+tags: 
+colorID: 3
+position: 389,639
+---
+<<if $fps_hit_beast_head is 0>>
+    Gregg:{width=8}一！箭！爆！头！ #line:daaa08
+    <<unlockAchievement Gregg_FQ3_Hit_Monster_in_Head>>
+<<elseif $fps_hit_beast_head is 1>>
+    Gregg: *砰砰砰* #line:0f6536
+<<elseif $fps_hit_beast_head is 2>>
+    Gregg: 直接把这家伙的头给射穿啦。 #line:d624b4
+<<elseif $fps_hit_beast_head is 3>>
+    Gregg: 好像在40年代的时候，有个人就是这样， #line:212789
+    Gregg: 他头部中了一箭， #line:583609
+    Gregg: 箭射穿了他的脑子。 #line:944a70
+    Gregg: 然后他居然没事？ #line:4bad67
+    Mae: 真是绝啦。 #line:ef504d
+    Gregg: 那人脑袋上的伤疤看起来应该特别酷。 #line:8cf9d7
+<<elseif $fps_hit_beast_head is 4>>
+    Gregg: 我在想，要是那支箭是从他眼睛里穿过去的会怎么样？ #line:64d6f1
+    Mae: 那这倒霉蛋的眼睛肯定就废了。 #line:e718a8
+    Gregg: 那他就会有个很酷的眼罩啦。 #line:f4ae69
+<<elseif $fps_hit_beast_head is 5>>
+    Mae: 眼罩超酷的。 #line:505016
+<<elseif $fps_hit_beast_head is 6>>
+    Mae: 我六岁的时候，眼睛划伤过，所以必须要戴眼罩。 #line:29215e
+    Gregg: 我好像还记得这事。 #line:e1b353
+<<elseif $fps_hit_beast_head is 7>>
+    Gregg: 我当时还和我妈说，你是个海盗。 #line:668ad9
+    Gregg: 然后我妈说， #line:35a140
+    Gregg: 把失明的人叫做海盗很不礼貌。 #line:926152
+    Mae: 嗯。 #line:3415fd
+    Mae: 他们可能经常被这么称呼。 #line:10b9f8
+    Gregg: 是啊。 #line:142956
+    Gregg: 我妈算是给我上了一课。 #line:025cf3
+    Gregg: 我的老天，你肯定要了这货的老命。 #line:0c46a6
+<<endif>>
+
+<<set $fps_hit_beast_head += 1>>
+===
+title: HitBeastNeck
+tags: 
+colorID: 3
+position: 646,666
+---
+<<if $fps_hit_beast_neck is 0>>
+    Gregg: 嘭！ #line:5bca7e
+<<elseif $fps_hit_beast_neck is 1>>
+    Gregg: 它玩完了。 #line:05792d
+<<elseif $fps_hit_beast_neck is 2>>
+    Gregg: 它挂了。 #line:1985ab
+<<elseif $fps_hit_beast_neck is 3>>
+    Gregg: 它废啦。 #line:99c9e0
+<<elseif $fps_hit_beast_neck is 4>>
+    Gregg: 它完蛋啦。 #line:cbda4f
+<<elseif $fps_hit_beast_neck is 5>>
+    Gregg: 它被灭啦。 #line:101097
+<<elseif $fps_hit_beast_neck is 6>>
+    Gregg: 它被射死啦。 #line:df021e
+<<elseif $fps_hit_beast_neck is 7>>
+    Gregg: 砰！ #line:552f9e
+    Gregg: 它“屎"了。 #line:ba6aa3
+<<endif>>
+
+<<set $fps_hit_beast_neck += 1>>
+===
+title: HitBeastBody
+tags: 
+colorID: 3
+position: 883,664
+---
+<<if $fps_hit_beast_body is 0>>
+    Gregg: 射死那只野兽！ #line:611eeb
+<<elseif $fps_hit_beast_body is 1>>
+    Gregg: 射 它。 #line:b5d944
+<<elseif $fps_hit_beast_body is 2>>
+    Gregg: 这 就 是 生 命 的 意 义。 #line:f12ab8
+    Mae: 我嗜血的欲望永远都没法满足。 #line:020c50
+    Gregg: 你说的“sated"（得到满足）是个啥意思？ #line:540987
+    Mae: 伙计，这可是咱八年级词汇测试上出现的词啊。 #line:ebe895
+<<elseif $fps_hit_beast_body is 3>>
+    Gregg: 不太像吧。说真的，快告诉我这词是什么意思啊。 #line:658dc6
+<<elseif $fps_hit_beast_body is 4>>
+    Gregg: 应该是读“sated"，还是读“saded"啊？ #line:dde8d3
+    Mae: 你不知道这个词的意思又有什么关系呢？ #line:429f6f
+<<elseif $fps_hit_beast_body is 5>>
+    Gregg: 姐们，你就告诉我这词到底是什么意思吧。 #line:44a32d
+    Mae: 这个词的意思是满意、满足。 #line:e34571
+    Mae: 也就是说，我很渴望鲜血。 #line:883f3a
+    Gregg: 嗯，好极啦。 #line:77327d
+<<elseif $fps_hit_beast_body is 6>>
+    Gregg: 吸血鬼永远都不会满竹的！ #line:3b3216
+    Mae: 嗯，是啊。 #line:ff1f98
+<<elseif $fps_hit_beast_body is 7>>
+    Gregg: 好了，我觉得丛林之神已经满竹了。 #line:8c7851
+    Mae: 嗯……对啊，的确是这样。 #line:e911c9
+<<endif>>
+
+<<set $fps_hit_beast_body += 1>>
+===
+title: HitBeastTail
+tags: 
+colorID: 3
+position: 1100,677
+---
+
+<<if $fps_hit_beast_tail is 0>>
+    Gregg: 哎哟，正中尾巴。 #line:3540d8
+<<elseif $fps_hit_beast_tail is 1>>
+    Gregg: 射 到 屁 股 上 喽。 #line:ac467e
+<<elseif $fps_hit_beast_tail is 2>>
+    Gregg: 爆 腚！！！ #line:7ffd5b
+<<elseif $fps_hit_beast_tail is 3>>
+    Gregg: 我 旁 边 这 姑 娘 就 讨 厌 这 屁 股！！！ #line:719a54
+<<elseif $fps_hit_beast_tail is 4>>
+    Gregg: 射 中 啦，射 中 屁 股 啦。 #line:d078fb
+<<elseif $fps_hit_beast_tail is 5>>
+    Gregg: *射爆*所有屁股。 #line:85ff8c
+<<elseif $fps_hit_beast_tail is 6>>
+    Gregg: 又——是——屁——股—— #line:d84d14
+<<elseif $fps_hit_beast_tail is 7>>
+    Gregg: 哈哈哈哈，太绝啦！ #line:031e8f
+<<endif>>
+
+<<set $fps_hit_beast_tail += 1>>
+===
+title: OutOfBolts
+tags: 
+colorID: 3
+position: 1057,356
+---
+<<close>>
+<<wait 1>>
+Mae: 箭用完了。 #line:7a5a35
+Gregg: 干得不错。 #line:1bae5b
+Mae: 太有意思啦。 #line:3eb05d
+Mae: 我现在可以去当吸血鬼了。 #line:fa8090
+Gregg: 当然可以啦。 #line:7fd318
+Gregg: 你可以去当负鼠泉的吸血鬼了。 #line:df3fb5
+Mae: 他们就在那里。 #line:adf7b8
+Mae: 你看他们的尖牙， #line:0fa752
+Mae: 泛着黑夜一般的光芒。 #line:2cae05
+<<set $gregg_fq3_woods to 2>>
+<<fadeOut 1 wait>>
+<<scene GreggFQ3Woods>>
+===
+title: HitBeastBetweenTheEyes
+tags: 
+colorID: 3
+position: 806,393
+---
+<<if $fps_hit_beast_between_the_eyes is 0>>
+    Gregg: 嘿，老 妹 儿。 #line:938f7d
+    Gregg: 你把它的头给爆啦。 #line:9a76d1
+    Mae: 那是当然。 #line:37f6a5
+<<elseif $fps_hit_beast_between_the_eyes is 1>>
+    Gregg: 爆头啦！ #line:dfa702
+<<elseif $fps_hit_beast_between_the_eyes is 2>>
+    Gregg:{width=8}爆！头！啦！ #line:128152
+<<elseif $fps_hit_beast_between_the_eyes is 3>>
+    Gregg: 老天。老妹儿，这种事你的确很在行啊！ #line:49b8aa
+    Mae: 我天生就是个杀手。 #line:2cd38c
+<<elseif $fps_hit_beast_between_the_eyes is 4>>
+    Gregg: 话说，那件事之后， #line:562d2a
+    Gregg: 大家是不是都叫你“杀手"呀？ #line:ce1a89
+    Mae: 对啊。 #line:cf8628
+<<elseif $fps_hit_beast_between_the_eyes is 5>>
+    Gregg: 这让你很苦恼，是吗？ #line:1f1781
+    Mae: 是啊，没错。因为到现在为止， #line:84076c
+    Mae: 那些人的想法还都是错的。 #line:e49801
+    Mae: 如果我手里有这玩意的话，我会变得更致命的。 #line:ca4717
+<<elseif $fps_hit_beast_between_the_eyes is 6>>
+    Gregg: 嘿，你没事吧？ #line:1a6613
+    Mae: *砰砰* #line:0d518e
+<<elseif $fps_hit_beast_between_the_eyes is 7>>
+    Gregg: 好啦，好啦，杀手，我觉得咱们到此为止吧。 #line:e2c886
+    Mae: 可……可我还想再来几箭…… #line:dacfbf
+<<endif>>
+
+<<set $fps_hit_beast_between_the_eyes += 1>>
+===
+title: HitBeastPupil
+tags: 
+colorID: 3
+position: 754,154
+---
+<<if $fps_hit_beast_pupil is 0>>
+    Gregg: 正中红心。 #line:32bb9f
+<<elseif $fps_hit_beast_pupil is 1>>
+    Gregg: 说真的，你射中的是红心中的红心。 #line:d53243
+<<elseif $fps_hit_beast_pupil is 2>>
+    Gregg: 正中牛眼！ #line:48d04f
+<<elseif $fps_hit_beast_pupil is 3>>
+    Gregg: 哈哈哈，太棒啦！ #line:90a5ef
+<<elseif $fps_hit_beast_pupil is 4>>
+    Gregg: *砰砰砰* #line:2fd9b8
+<<elseif $fps_hit_beast_pupil is 5>>
+    Gregg: 咻！ #line:18dda4
+<<elseif $fps_hit_beast_pupil is 6>>
+    Gregg: 铛！ #line:feedc0
+<<elseif $fps_hit_beast_pupil is 7>>
+    Gregg: 好了，我觉得它已经死了。 #line:d9af51
+<<endif>>
+
+<<set $fps_hit_beast_pupil += 1>>
+===
+title: HitBeastEye
+tags: 
+colorID: 3
+position: 1038,118
+---
+<<if $fps_hit_beast_eye is 0>>
+    Gregg: 我说的是射在两眼之间，不是射在眼睛上！ #line:d03a39
+    Mae: 但这也没差多远呀！ #line:26dd69
+    Gregg: 差一点就等于不够好，伙计。 #line:e36843
+<<elseif $fps_hit_beast_eye is 1>>
+    Gregg: 已经很接近啦。 #line:c2cc57
+<<elseif $fps_hit_beast_eye is 2>>
+    Gregg: 噢，我的天。 #line:656377
+    Mae: 嘿，这还真挺刺激的！ #line:354db9
+    Gregg: 噗…… #line:7897e8
+<<elseif $fps_hit_beast_eye is 3>>
+    Gregg: 嗯，说得对，这一箭射得的确很不错。 #line:4a8477
+<<elseif $fps_hit_beast_eye is 4>>
+    Gregg: 你瞄得挺偏， #line:a7a298
+    Gregg: 但偏得挺准。 #line:64a8c7
+    Mae: 所以请叫我一般偏下得准。 #line:5481ac
+<<elseif $fps_hit_beast_eye is 5>>
+    Gregg: 正中眼球。 #line:096ac6
+<<elseif $fps_hit_beast_eye is 6>>
+    Gregg: 老妹儿，你把这野兽给射瞎啦。 #line:22bf86
+<<elseif $fps_hit_beast_eye is 7>>
+    Gregg: 它挂啦。 #line:628dd3
+<<endif>>
+
+<<set $fps_hit_beast_eye += 1>>
+===
+title: HitSign
+tags: 
+colorID: 3
+position: 490,118
+---
+<<if $fps_hit_sign is 0>>
+    Gregg: 嘭！你射中那牌子啦，射得好。 #line:5329ce
+    Mae: 那必须的。 #line:1b6d2a
+<<elseif $fps_hit_sign is 1>>
+    Gregg: 耶！一击命中！ #line:025e72
+<<elseif $fps_hit_sign is 2>>
+    Gregg: 你肯定恨透那个牌子啦！ #line:b67964
+<<elseif $fps_hit_sign is 3>>
+    Gregg: 好了，这里的所有东西你都可以随便射！ #line:b93592
+<<elseif $fps_hit_sign is 4>>
+    Gregg: 要是那牌子惹着你或者怎么样了，我就把它挪走。 #line:7f1723
+<<elseif $fps_hit_sign is 5>>
+    Gregg: 老妹儿，那破牌子旁边还站着个怪物呢。 #line:95c234
+<<elseif $fps_hit_sign is 6>>
+    Gregg: …… #line:516744
+<<elseif $fps_hit_sign is 7>>
+    Gregg: 好了，好了，我觉得那牌子已经挂啦。 #line:244a49
+<<endif>>
+
+<<set $fps_hit_sign += 1>>
+===
+title: HitBarrel
+tags: 
+colorID: 3
+position: 241,148
+---
+<<if $fps_hit_barrel is 0>>
+    Gregg: 射那个桶。 #line:ed2f01
+<<elseif $fps_hit_barrel is 1>>
+    Gregg: 嗯哼，那儿的确有个桶。 #line:9d0a91
+<<elseif $fps_hit_barrel is 2>>
+    Gregg: 桶里面装的会是什么东西呢？ #line:046ff6
+<<elseif $fps_hit_barrel is 3>>
+    Gregg: 一定是有毒废料！！！！ #line:7b3c19
+<<elseif $fps_hit_barrel is 4>>
+    Gregg: 或者我猜，会有动物住在里面。 #line:3a750f
+<<elseif $fps_hit_barrel is 5>>
+    Gregg: 你为啥要破坏动物们的家呢？ #line:e3ddb6
+<<elseif $fps_hit_barrel is 6>>
+    Gregg: …… #line:02e98d
+<<elseif $fps_hit_barrel is 7>>
+    Gregg: 好吧，这太无聊啦。 #line:6a9d19
+<<endif>>
+
+<<set $fps_hit_barrel += 1>>
+===
+title: FailedToShoot
+tags: 
+colorID: 3
+position: 1297,328
+---
+<<if $fps_failed_to_shoot is 0>>
+    Mae: 嗯？没射出去。 #line:1f1901
+    Gregg: 哦，首先，你只需要扣下并扣住扳机就行。 #line:e0b942
+    Mae: 哦，明白了，所以我只需要扣下扳机，哈…… #line:38d200
+    <<set $fps_failed_to_shoot += 1>>
+<<elseif $fps_failed_to_shoot is 1>>
+    Gregg: 还是射不出去吗？你只需要…… #line:797e71
+    Mae: ……扣下扳机。是啊，这我知道。 #line:05f623
+    <<set $fps_failed_to_shoot += 1>>
+<<elseif $fps_failed_to_shoot is 2>>
+    Gregg: 如果你扣下扳机…… #line:72c4e6
+    Mae: 我知道怎么做啦！！！ #line:0b4e31
+    <<set $fps_failed_to_shoot += 1>>
+<<else>>
+    Mae: 好，就只需要扣下扳机就行…… #line:6a22b0
+<<endif>>
+===

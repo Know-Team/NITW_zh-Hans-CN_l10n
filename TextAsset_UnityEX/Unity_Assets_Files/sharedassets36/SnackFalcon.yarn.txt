@@ -1,0 +1,571 @@
+title: WalkToCounter_A1D1
+tags: 
+colorID: 2
+position: -315,969
+---
+Gregg: 老！天！哪！ #line:430e6d
+Mae: 你好啊，格雷格！ #line:d95005
+Gregg: 你怎么会在这儿啊？ #line:e3044e
+Mae: 我回来啦！ :| #line:1c1182
+Gregg: 就回来今天一天吗？ :) #line:eb57d8
+Mae: 当然是回来就不走啦！ #line:339191
+Gregg: 你没死在大学里真是太糟糕了。 #line:c76371
+<<wait 2>>
+Mae: :) #line:61b6c0
+Mae: 你没得肉食病真是太糟糕了。 #line:31c363
+Gregg: 你没加入邪教实在太糟糕了。 #line:039e1d
+Mae: 你双手没被卸实在太糟糕了。 #line:19c09a
+Mae: 比如在一个饮料机故障中。 #line:60ab5e
+Gregg: 老天，见到你可真高兴啊。 #line:0f02e4
+Gregg: 啊 啊 啊 啊 啊，太 棒 啦！！！ \o/ #line:9c2246
+Mae: 安格斯怎么样了？你们俩还在一起“搞基"吗？ #line:04bca3
+Gregg: _o_ #line:2caa6f
+Gregg: 等下！ #line:7b75d9
+<<close>>
+<<flip Gregg 1>>
+<<run Gregg OffRightBack wait>>
+<<warp Gregg OffRight>>
+<<flip Gregg -1>>
+<<setSpriteLayer Gregg MainCast4>>
+Mae: 你干啥去？ #line:037338
+Gregg: 换个BGM，一起燥起来！！！ #line:206644
+<<playOneShot event:/snack_falcon/switch_music Gregg>>
+<<fadeOutMusic 1>>
+<<wait 1>>
+<<playMusic Gregg>>
+<<wait 3>>
+<<run Gregg InFrontOfCounter wait>>
+Gregg: 你 说 啥？ #line:ec26de
+Mae: 我问“安格斯怎么样了"！ #line:700c72
+Gregg: 话 说，|你 回 来 是 想|干 什 么 呀？？？ \o/ #line:f29224
+Mae: 我住这儿啊！ #line:3f846f
+Gregg: 你是从什么时候开始住这儿的！！！ #line:ccaeef
+Mae: 大概是从昨天晚上11点开始的吧。 #line:0c4133
+Gregg: 简 直 是 爽 到 爆 啊！！！ #line:c5c44e
+Gregg: 来乐队排练吧！ _o_ #line:217aea
+Mae: 哇哦，我滴个神！乐队还在啊？ :o #line:ada5a9
+<<trigger Gregg Idle Shrug>>
+Gregg: 当然！ #line:260ae6
+Mae: 啥时候排练？ :| #line:90279e
+Gregg: 就现在！ #line:700714
+Mae: 那你啥时候下班呀？ #line:6d9478
+<<trigger Gregg Shrug>>
+Gregg: 就现在！ #line:91d6e4
+Mae: 真的？ :) #line:ae35ae
+Gregg: _o_ #line:3bbea2
+<<close>>
+<<run Gregg OffLeft wait>>
+Gregg: 啊 哈 哈 哈 哈 哈 哈 哈！！！！ #line:c649d1
+<<unlockDoodle Gregg1>>
+<<fadeOut 1 wait>>
+<<scene BandPractice>>
+<<end>>
+
+===
+title: WalkToCounter_A2D1
+tags: 
+colorID: 0
+position: -1048,1234
+---
+Gregg: 要来排练吗？给你两个选择：要还是来？ #line:58cf98
+[[当然要了。|Yes_A2D1]] #line:738512
+[[来呀。|Yes_A2D1]] #line:a6b997
+
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -966,881
+---
+<<show Gregg>>
+
+<<if $act is 1 and $day is 1>>
+    <<setCanInteract Gregg 0>>
+<<elseif $act is 1 and $day is 2>>
+    <<set $gregg_ear_cups to 1>>
+<<endif>>
+
+<<setSpriteLayer Gregg BG3>>
+<<warp Gregg BehindCounter>>
+
+===
+title: Yes_A2D1
+tags: 
+colorID: 0
+position: -1036,1843
+---
+Gregg: 你的选择很明智嘛！ #line:57571a
+<<fadeOut .5 wait>>
+<<scene BandPractice>>
+
+===
+title: Gregg_A1D2.1
+tags: 
+colorID: 2
+position: 10,972
+---
+Gregg: 嘿，梅。 #line:148d5e
+Gregg: 我在耳朵上套了两个杯子。 #line:e1a3c5
+[[哇哦。|Gregg_A1D2_Wow]] #line:aa92d6
+[[为啥要这么干呀？|Gregg_A1D2_Why]] #line:8228aa
+===
+title: Gregg_A1D2_Why
+tags: 
+colorID: 2
+position: 222,1325
+---
+Gregg: 我刚才在想着光明湾的沙滩， #line:9d854a
+Gregg: 然后我又想到了大海， #line:5e7f50
+Gregg: 最后我就把杯子套耳朵上了。 #line:c521b1
+Gregg: 这样就能听见大海的声音了。 #line:5e65b1
+Mae: 哇哦，天哪，你好像把我带到了海边似的。 #line:ac174e
+Mae: 可你好像……嗯……也没说什么吧…… #line:65cafc
+Mae: 你知道在哪儿能找到安格斯吗？ #line:d4502e
+Gregg: 他现在正在音像店上班呢！ #line:1c05d4
+[[Gregg_A1D2_Body]]
+===
+title: Gregg_A1D2_Wow
+tags: 
+colorID: 2
+position: -141,1312
+---
+Gregg: 我在杯子里听到了大海的声音诶。 #line:f410f2
+Mae: 吼吼，听起来不错哟。 #line:f8cdc6
+Mae: 你见到安格斯了吗？ #line:6729d4
+Gregg: 每 天 晚 上 。 #line:507c49
+Mae: 那是必须的。不过我想说的是 #line:99cb95
+Mae: “安格斯现在在哪儿？" #line:16555e
+Gregg: 他现在正在音像店上班呢！ #line:0fd04e
+[[Gregg_A1D2_Body]]
+
+===
+title: Gregg_A1D2_Body
+tags: 
+colorID: 2
+position: 26,1625
+---
+Gregg: 你找安格斯什么事啊？ #line:259389
+Mae: 电脑出了点问题。 #line:1216a6
+Mae: 我觉得他可能有办法。 #line:19bdc7
+Gregg: 他可是个黑客哦。 #line:3babd9
+Mae: 真的吗？ #line:939709
+Gregg: 很确定哦！ #line:ac2c22
+Mae: 哇哦。 #line:ced479
+Mae: 太厉害了吧！那咱们一会儿再聊吧。 #line:60cd36
+Gregg: 就这么定啦！你回来真是太好啦！！！ :) #line:6063a3
+Gregg: :| #line:3e72d1
+<<set $knows_angus_at_videostore to 1>>
+===
+title: Gregg_A1D2.2
+tags: 
+colorID: 2
+position: 5,1905
+---
+Gregg: 话说那胳膊，嗯哼？ #line:d3dad7
+Mae: 天哪，说的是啊，真是活见鬼了。 #line:07f0c6
+Gregg: 你觉得到底是出了什么事啊？ #line:5cb9a0
+Mae: 我也不知道。 #line:c90f2a
+Mae: 为什么人行道上会出现一只胳膊呢？ #line:d7997f
+Mae: 而且是在*负鼠泉*？ #line:8e68ac
+Gregg: 虽然感觉有点酷，但还是蛮诡异的哦，是不？ #line:47ff4d
+Gregg: 而且，发现胳膊的地儿离我和安格斯住的公寓也就有两层楼的距离吧。 #line:bd5bc4
+<<if $knows_apartment_location is 1>>
+    Mae: 是啊，你现在住在镇中心了，对吧？ #line:2f29a5
+<<else>>
+    Mae: 你说你现在住在镇中心了？ #line:adc1e3
+<<endif>>
+Gregg: 对啊，我和安格斯就住在隔壁那栋楼呀！ :) #line:00a29c
+Gregg: 哈哈，看来你离家真是有段时间了。 #line:c31538
+Mae: 确实。 #line:018e5b
+Gregg: :| #line:c03fea
+<<set $knows_apartment_location to 1>>
+
+===
+title: Gregg_A1D2.3
+tags: 
+colorID: 2
+position: 37,2178
+---
+Mae: 一会儿要出去逛逛不？ #line:bbd76f
+Mae: 我可得好好看看镇子的变化呢！ #line:54013f
+Gregg: 不了，我和家里约好了要一起吃饭。 #line:798386
+Mae: 这算是好事还是坏事？ #line:99091e
+Gregg: …… #line:470bd9
+Gregg: 应该算是件温馨有爱的事吧。 #line:eb4259
+===
+title: Gregg_A1D2.4
+tags: 
+colorID: 2
+position: 35,2442
+---
+ Gregg: 到六点了吗？ #line:2c7e3c
+===
+title: Gregg_A2D1
+tags: demo2
+colorID: 3
+position: 1088,440
+---
+<<if $gregg_day_intro is 0>>
+    <<set $gregg_day_intro to 1>>
+    Gregg: 呦～看看谁来啦！ #line:0e3f61
+    Mae: 是啊，又熬过了一天。 #line:c7e553
+    Gregg: 感觉怎么样？ #line:d3f254
+    Mae: 虽然感觉很难受，但我还是穿过整个镇子走过来了。 #line:e70895
+    Mae: 我也说不清楚是为什么，但这么做好像有点用。 #line:073c92
+    Gregg: 是因为外面有新鲜空气啊！或者就是这里的空气很清新！ #line:c2a0c9
+    Mae: 新鲜得都想让人咬一口了。 #line:534d77
+<<endif>>
+Gregg: 那你有什么打算？ #line:427a39
+->我只想在店里待会儿，一会儿就走。 #line:25bac4
+    Gregg: 那回头见了，老妹儿！ #line:63b4c3
+->咱们去乐队排练吧？ #line:0efd3c
+    [[BandPractice]]
+===
+title: LightBulbSmash
+tags: 
+colorID: 3
+position: 1458,341
+---
+<<close>>
+<<irisOut 1 wait>>
+<<scene LightBulbSmash>>
+===
+title: Gregg_A2D2
+tags: 
+colorID: 3
+position: 1206,874
+---
+<<if $gregg_day_intro is 0>>
+    <<set $gregg_day_intro to 1>>
+    Gregg: 嘿，嘿，梅，梅 。 #line:81260d
+    Mae: 今天怎么样啊，伙计。 #line:454073
+    Gregg: 我刚才在想进监狱的事呢。 #line:facf97
+        ->你是在考虑该怎么才能进监狱吗？ #line:a5f7eb
+            Gregg: 我觉得我可以从狱里逃出来。 #line:ee91a0
+            Gregg: 没准我应该 #line:f15927
+            Gregg: 测试一下我的逃脱技术。 #line:8faad6
+            Mae: 我感觉，这么干的风险可要比回报大得多。 #line:64547b
+            Gregg: 说的是呀。 #line:fe020e
+            Mae: 你是怎么想起来这种事的？ #line:6da47c
+            Gregg: 我做了个进监狱的噩梦， #line:91f025
+            Gregg: 梦见我某个兄弟或是姐妹进监狱了。 #line:cc5f68
+            Gregg: 我堂姐珍说，这种事在所难免。珍 #line:bf4c33
+            Mae: 哦，老兄，你其实是可以避免的。 #line:2b01c7
+            Mae: 哦，我是说*这种事*是可以避免的。 #line:213446
+            Gregg: 不不不，你说得不对。 #line:d8c127
+            Gregg: 我这人绝对是属于“在所难免"类型的。 #line:087cfb
+            Mae: 真是个“在所难免的格雷格"啊。 #line:dc6fd0
+            <<set $gregg_inevitable to 1>>
+        ->你害怕进监狱吗？ #line:08f711
+            Gregg: 我可能会被迫加入某个监狱帮派的。 #line:e72bb9
+            Mae: 是啊。 #line:620e6b
+            Gregg: 我可不想加入什么监狱帮派。 #line:24f0ec
+            Mae: 没错。 #line:4f016d
+            Gregg: 我跟安格斯聊过这事。 #line:182f6c
+            Mae: 是告诉他你害怕监狱帮派这事吗？ #line:7b6bef
+            Gregg: 结果他说： #line:e5c455
+            Gregg: “监狱帮派里的人都是些臭名昭著的罪犯。" #line:3f95ca
+            Mae: 嗯，这话听起来倒很有安格斯的范儿啊。 #line:32a89c
+    Mae: 安格斯今天在家吗？ #line:35cb5b
+    Gregg: 不在。他有点事要办。 #line:19c15c
+    Mae: 什么事啊？ #line:752149
+    Gregg: 嗯……家事。 #line:11f495
+    Gregg: 都是些不值一提的事。 #line:91609d
+    Mae: 嗯嗯。 #line:a43c03
+<<endif>>
+Gregg: 想出去玩玩不？ #line:db9393
+->今天还有不少事呢。 #line:83ceb6
+    Gregg: 好吧，那就再说吧！ #line:e870c1
+->好啊，兄弟！燥起来吧！ #line:dcc9e8
+    Gregg: 太他喵的对啦！ #line:3f083c
+    <<set $gregg_friendship_quest to 2>>
+    <<irisOut 1 wait>>
+    <<sectionTitle GreggFQ2Intro GreggAngusApartmentLobby>>
+===
+title: Gregg_A2D3
+tags: 
+colorID: 3
+position: 1796,837
+---
+<<if $gregg_day_intro is 0>>
+    <<set $gregg_day_intro to 1>>
+    Gregg: 嘿嘿嘿！ #line:ceca24
+    Mae: 嗨！ #line:3dd07d
+    Gregg: 咱们快走吧，走吧，走吧…… #line:1e170d
+    Mae: 吼吼！你怎么了？ #line:9c4e20
+    Gregg: 我想找点事干！！！！ #line:c5132a
+    Mae: 好的哟！ #line:93e9de
+        ->*所有*种类的咖啡你都喝过吗？ #line:2e4fc5
+            Gregg: 我不能喝咖啡，喝了会让我焦虑的。 #line:94b50b
+            Mae: 哦，哇哦，这也太糟了吧。 #line:4e81be
+            Gregg: 而且咖啡多难喝啊。 #line:77d4d7
+            Mae: 要是加上牛奶和糖，味道就不一样了。 #line:6e4ab2
+            Gregg: 为了能让咖啡变得好喝， #line:e2c55e
+            Gregg: 要费这么多力气，感觉好麻烦啊。 #line:500e6b
+            Mae: 好像有道理诶。 #line:5b4e80
+        ->你有过濒死的体验吗？ #line:ef7807
+            Gregg: 这工作就让我一直有这种感觉。 #line:01a658
+<<endif>>
+Gregg: 话说，梅～梅～梅～ #line:5c3520
+Gregg: 你想干～点～什～么～吗？ #line:f63f05
+->呃……老兄，我今天可没时间。 #line:e2a02a
+    Gregg: 啊，老 姐 啊。 #line:2332bb
+    Gregg: 不过没事，没关系的。 #line:aefbd6
+->好啊，哥们儿！走起。 #line:2a8bfc
+    Gregg: 哇 噢 噢 噢 噢 噢 哦 哦！！！ #line:beb08b
+    <<set $gregg_friendship_quest to 3>>
+    <<irisOut 1 wait>>
+    <<sectionTitle GreggFQ3Intro GreggMaeBike>>
+===
+title: Gregg_A2D4
+tags: 
+colorID: 3
+position: 2335,847
+---
+<<if $gregg_day_intro is 0>>
+    <<set $gregg_day_intro to 1>>
+    Mae: 哟吼，老哥！ #line:59df7a
+    Mae: 今天怎么样啊？ #line:4a931f
+    Gregg: 挺好的。在忙丰收节大促的事呢。 #line:88e0c4
+    Mae: 可店里一个人都没有啊。 #line:5bafe6
+    Gregg: 其实，“恐怖"刚来过店里。 #line:008f87
+    Gregg: 你只是没见到它罢了。 #line:282365
+    Mae: 哦。 #line:e3b8a0
+    Gregg: 我已经被吓到了。 #line:a73310
+        ->上班的时候被吓到最不爽了。 #line:446a5d
+            Mae: 我以前还有工作的时候， #line:c974be
+            Mae: 就赶上过长至夜节购物季。 #line:0da5ac
+            Gregg: 知道吗，你可从来都没提过你有过工作啊？ #line:a95b3b
+            Mae: 呃，那个事等有时间再说吧。 #line:43f75d
+        ->店里什么时候最忙啊？ #line:f05066
+            Gregg: 早上最忙， #line:88a2cc
+            Gregg: 午饭时间还凑合， #line:89ee43
+            Gregg: 我下班以后又会很忙。 #line:84458d
+            Gregg: 我走了之后，我们店的老板克里斯汀会来接我的班。 #line:4d1c2a
+            Mae: 我好像从来都没见过克里斯汀啊。 #line:f64c4e
+            Gregg: 我一般会在她上班之前就溜了。 #line:aae0be
+            Mae: 不错哟。 #line:e426dd
+    Gregg: 随便了。总之现在你在这儿，我也在这儿， #line:bdf684
+    Gregg: 而且天气又这么好，不如去砸点灯管吧。 #line:ab76a9
+    Gregg: 我原本还担心会不会只有我一个人 #line:925beb
+    Gregg: 来砸这些灯管呢。 #line:c1e62a
+<<endif>>
+Gregg: 怎么了哟？ #line:36121d
+<<if $light_bulb_smash_done>>
+    Mae: 没什么。 #line:a295aa
+    <<set $gregg_done to 1>>
+<<else>>
+    ->没什么。 #line:7f5e72
+        Gregg: 那就等会儿再见啦！ #line:fa29be
+    ->啊，我对砸灯管这事倒是很有兴趣。 #line:8d8fb0
+        Gregg: 真是棒极啦，老妹儿！！！ #line:bde4c5
+        [[LightBulbSmash]]
+<<endif>>
+===
+title: BandPractice
+tags: temp
+colorID: 0
+position: 1470,-8
+---
+<<close>>
+<<irisOut 1 wait>>
+<<scene BandPractice>>
+===
+title: Gregg_A3D1
+tags: 
+colorID: 4
+position: 2903,836
+---
+<<if $gregg_day_intro is 0>>
+    <<set $gregg_day_intro to 1>>
+    Gregg: 怎么样啊，梅？ #line:1bd580
+    Mae: 呃。 #line:1fce4d
+    Gregg: 呃？ #line:7f1ff1
+    Mae: 我昨天过了一个又漫长又古怪的夜晚。 #line:c43793
+    Gregg: 到底是什么情况啊？ #line:51bb00
+    Mae: 等排练的时候我再告诉你。 #line:3c3266
+    Gregg: 好啊。 #line:3839f7
+<<endif>>
+Gregg: 你干啥来了？ #line:2dc03d
+->只是过来问声好。 #line:c754a2
+    Gregg: 你好啊！ #line:a74ead
+->咱们去乐队排练吧？ #line:b0fc6b
+    Gregg: 好啊，来吧。 #line:336a7a
+    [[BandPractice]]
+===
+title: Gregg_A3D2
+tags: 
+colorID: 4
+position: 3253,830
+---
+<<if $gregg_day_intro is 0>>
+    <<set $gregg_day_intro to 1>>
+    Gregg: 咋样啊，熊孩子。 #line:7dfa4b
+    Mae: 你们店咋样啊？ #line:19509f
+    Gregg: 还那样儿。 #line:4268be
+    Gregg: 我刚才可可牛奶喝太多了， #line:b1f344
+    Gregg: 结果，在我等灯管运过来的时候， #line:bdaefa
+    Gregg: 我就吐了。 #line:d39254
+    Gregg: 所以我只能边吐边签收了。 #line:6c50c2
+    Mae: 我的天，那你没事吧？ #line:5e5a9c
+    Gregg: 嗯，我没事。 #line:dd6fd1
+    Gregg: 就是飞得离太阳太近了， #line:2ce66d
+    Gregg: 应该说是离可可牛奶太阳太近了。 #line:041b18
+<<endif>>
+Gregg: 你有啥事吗？ #line:da89ae
+->只是过来问声好。 #line:9be8f5
+    Gregg: 酷～那好吧。 #line:99c9bc
+->你想去砸灯管吗？ <<if $light_bulb_smash_done is 0>> #line:9f1c75
+    [[LightBulbSmash]]
+->你想到历史协会看看去吗？ <<if $did_gregg_investigation_quest is 0>> #line:f684d8
+    Gregg: 老妹儿，那就动起来吧！ #line:ca7d6a
+    [[InvestigationQuest]]
+===
+title: Gregg_A3D3
+tags: 
+colorID: 4
+position: 3529,822
+---
+<<if $gregg_day_intro is 0>>
+    <<set $gregg_day_intro to 1>>
+    Gregg: 怎么样啊，姐们儿。 #line:858dba
+    Mae: 嘿。 #line:645a2d
+    Gregg: 还好吗？ #line:19a35f
+    Mae: 我还活着。 #line:4a409f
+    Mae: 昨天晚上，我做了一个超怪的梦。 #line:326ba1
+    Gregg: 是吗？ #line:ad9f3d
+        ->我见到了神。 #line:edd75f
+            Gregg: 天哪。 #line:7fbfca
+            Mae: 可他就是个大混蛋。 #line:36e7cb
+            Gregg: 嗯。 #line:4dbbdc
+            Mae: 真的。我这个星期就是这么个情况。 #line:4c0b95
+            Gregg: 我能不能给你来一份免费沙冰啊？ #line:1f5bec
+            Mae: 你是想让我把神的事先放一放吗？ #line:2ef7ab
+            Gregg: 我能往沙冰里加点薯片吗？？？ #line:f9e452
+            Mae: 哈哈，我没事的。 #line:3cd830
+        ->我见到了几只太空虫子。 #line:2a3b4a
+            Mae: 不对，不是太空虫子…… #line:8a8c0a
+            Mae: 好像……不是虫子， #line:2d7c5e
+            Mae: 而且我当时也不是在太空里。 #line:790b4b
+            Mae: 我好像是在一个宇宙之外的地方 #line:7f7d6b
+            Mae: 看见了不是虫子的东西。 #line:841ed8
+            Gregg: 我躺沙发上看《凯茜法官》的时候睡着了。 #line:e4e6af
+            Mae: 哦，太棒啦。她可厉害啦。 #line:abcc1d
+            Gregg: 是啊，她确实厉害。 #line:213eee
+            Mae: 她可是*软硬不吃*啊。 #line:9bcf21
+            Gregg: 姐们儿，说的没错。 #line:e074f3
+<<endif>>
+Gregg: 话说，找我有事吗？ #line:eeef13
+->就是过来打个卡而已。 #line:1bb334
+    Gregg: 正式通知你一下，你已经打过卡了。 #line:284e9d
+    Gregg: 而且是我给你打的卡。 #line:b29e8b
+->你想出去逛逛吗？ #line:a49643
+    [[FriendshipQuest4]]
+===
+title: Gregg_A3D4
+tags: 
+colorID: 4
+position: 3804,829
+---
+<<if $gregg_day_intro is 0>>
+    <<set $gregg_day_intro to 1>>
+    Gregg: 嘿，老妹儿。 #line:45ad8d
+    Mae: 嘿…… #line:9e703b
+    Gregg: 你怎么了？ #line:6342d2
+    Mae: 头超疼， #line:41c6e7
+    Mae: 虽然我也没少睡， #line:4ca23d
+    Mae: 但感觉就跟没睡一样。 #line:8dab4d
+    Gregg: 天哪，你没事吧？ #line:e929da
+    Mae: 我也不知道有没有事。 #line:4b8ea9
+    Gregg: 我能帮你做点什么吗？ #line:6bb161
+        ->杀了我吧。 #line:54915f
+            Gregg: Piu～ #line:3def30
+            Gregg: 我把你打死了。 #line:9caa89
+            Mae: 谢了。 #line:1e94e5
+        ->让我清醒清醒吧。 #line:87b7fa
+            Gregg: 嘿 嘿 嘿～！！！！ D: #line:124f06
+            Mae: 哇哦！！！ #line:be13e5
+            Gregg: 清 醒 过 来 了 吧！！！！！！ D: #line:fdeec1
+            Mae: 好了好了，我终于清醒了。 #line:0a36c6
+<<endif>>
+Gregg: 话说，你今天准备干嘛呀？ :| #line:9db17d
+<<if $did_gregg_investigation_quest is 1>>
+    Mae: 就是来问个好。 #line:115ceb
+    Gregg: 嗯，你好哦！ #line:71a017
+    <<set $gregg_done to 1>>
+<<else>>
+    ->只是想过来问个好。 #line:7d798c
+         Gregg: 你好哦！ #line:465e92
+    ->你想去历史协会看看吗？ #line:1a4c50
+        Gregg: 你确定吗？你看起来……好像挺累的。 #line:a0a70b
+        Mae: 没事，来吧。 #line:b88e10
+        [[InvestigationQuest]]
+<<endif>>
+===
+title: InvestigationQuest
+tags: 
+colorID: 4
+position: 3460,1164
+---
+<<close>>
+<<irisOut 1 wait>>
+<<sectionTitle GreggIQ MansionExterior>>
+===
+title: FriendshipQuest4
+tags: 
+colorID: 4
+position: 3778,1165
+---
+<<if $dom_friend_gregg is 0>>
+    Gregg: 我和安格斯晚上还要过二人世界呢。 #line:f86471
+    Mae: 挺好的。那我去问问碧娅吧。 #line:ae717d
+    Gregg: 骚扰她去吧！ #line:51f6ae
+<<else>>
+    Gregg: 好啊，伙计！！！走着！ #line:beb02a
+    <<close>>
+    <<set $gregg_friendship_quest to 4>>
+    <<fadeOutMusic 3>>
+    <<irisOut 1 wait>>
+    <<scene GreggAngusApartment>>
+<<endif>>
+===
+title: Gregg_A4D3
+tags: 
+colorID: 5
+position: 4201,838
+---
+<<if $gregg_day_intro is 0>>
+    <<set $gregg_day_intro to 1>>
+Gregg: 哦，看看是谁还活得好好的啊。 #line:d2242b
+Mae: 你难道不惊讶吗？ #line:85a506
+Gregg: 不惊讶。 #line:57712d
+Gregg: 因为我感觉， #line:844940
+Gregg: 这些事之间都是有联系的。 #line:080e4f
+Mae: 那好吧，看来你也活得好好的。 #line:ad9b5a
+Gregg: 嗯。 #line:bc1919
+Mae: 嗯。 #line:ed30c4
+<<wait 3>>
+<<endif>>
+Gregg: 你想离开这儿， #line:ad4215
+Gregg: 然后参加乐队排练吗？ #line:af2ce2
+->还不想呢。 #line:a1622f
+->好啊。 #line:e1edb4
+    [[BandPractice]]
+===
+title: Gregg_A1D3
+tags: 
+colorID: 2
+position: 546,961
+---
+Gregg: 哦，派对～派对～派对时间到～！ #line:0d59ea
+Mae: 我的天，老兄，一听见有派对你就这么兴奋。 #line:2aec0c
+Gregg: 你居然回来啦！简直爽爆啦！ #line:fc66de
+Gregg: 老天啊，这星期过得真是太美妙啦。 #line:a6f77f
+Gregg: 你真的回来啦！！！！！ :) \o/ #line:0f2194
+Mae: 没错，我回来啦！ \o/ :) #line:02aa08
+<<wait 2>>
+Gregg: 我胳膊都晃酸啦！ #line:89801a
+Gregg: :| _o_ #line:22610d
+Mae: :| _o_ #line:f10052
+<<set $gregg_done to 1>>
+===

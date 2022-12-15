@@ -1,0 +1,1300 @@
+title: CoffinWolf_A1D1.1
+tags: 
+colorID: 0
+position: -1467,423
+---
+Adina: 你好。 #line:3d8777
+CoffinWolf: 你好啊！想看看棺材吗？ #line:4cc8c1
+Adina: 额。 #line:dc07b7
+[[你觉得我短期内用得上吗？|ShortTerm]] #line:b964de
+[[我可能很久以后才用得上吧？|LongRun]] #line:de0f27
+
+===
+title: ShortTerm
+tags: 
+colorID: 0
+position: -1342,660
+---
+CoffinWolf: 这可说不好！ #line:c5272a
+CoffinWolf: 现在的日子可不好过啊。 #line:408603
+CoffinWolf: 这片树林也会要了你的命。 #line:7bea87
+<<if $talkedToTreeCat is 1>>
+	Adina: 你是这片林子里第二个说我会死的人了。 #line:3d7c8a
+<<else>>
+	Adina: 可你们都还活着啊。 #line:cd7b16
+<<endif>>
+CoffinWolf: 想走出林子很简单，往西走就行了。 #line:2f87a1
+CoffinWolf: 难的是穿过去，去东边。 #line:7f8462
+[[CoffinWolf1Join]]
+
+===
+title: LongRun
+tags: 
+colorID: 0
+position: -1583,658
+---
+CoffinWolf: 现在日子不好过，白天越来越短，夜晚越来越长。 #line:71fc6a
+CoffinWolf: 而且冬天会永远持续下去。 #line:08218e
+Adina: 这话什么意思？ #line:4bfccb
+CoffinWolf: 意思就是，如果你还要继续往东走， #line:0e7136
+Coffinwolf: 你的未来就会很“光明"，你就会成为一具冻在雪墙里的尸体。 #line:7a3f24
+CoffinWolf: 所以，朝西走吧，西边才是你应该去的地方。 #line:e788a4
+[[CoffinWolf1Join]]
+
+===
+title: CoffinWolf1Join
+tags: 
+colorID: 0
+position: -1460,898
+---
+Adina: 好吧，可我要去的地方在东边，所以…… #line:c18223
+CoffinWolf: 这片树林里的树会动，它们会让你迷路的。 #line:e74481
+CoffinWolf: 这些树都屈服于丛林之神 #line:092c19
+CoffinWolf: 和[speed=.5][shake=.02]弓背女巫[/all]的魔力。 #line:1f8454
+CoffinWolf: 而如果你想穿过这片树林，他们俩是绝对不会同意的。 #line:2d875e
+Adina: 所以，这就是你打算卖给我棺材的原因吗？ #line:ec6f1e
+CoffinWolf: 我还可以提供一项服务：|要是你肯花钱，我到时候|就会把你尸体收回来，|送去你家人和亲戚那里。 #line:4d5a72
+Adina: 这项服务要提前收费吗？ #line:72c9e2
+CoffinWolf: 事后我也没法收费了呀。 #line:dfbbe0
+Adina: 哦，对哦。 #line:694ca4
+Adina: 好吧，我身上一分钱也没有。 #line:83638f
+CoffinWolf: 呃呃。那你就别想买到棺材啦。 #line:8f9678
+CoffinWolf: 你的灵魂肯定会很不高兴的。 #line:db0bdc
+Adina: 随便你怎么说吧。 #line:87683f
+
+===
+title: CoffinWolf_A1D1.2
+tags: 
+colorID: 0
+position: -1458,1129
+---
+Adina: 你说我的灵魂会怎么样？ #line:1ae4bb
+CoffinWolf: 那些死在森林里的人的尸体都躺在这儿，|他们的灵魂也被冰封住了。|可一旦受到打搅，这些灵魂就会苏醒。 #line:57f8fe
+Adina: 哦。 #line:aec388
+CoffinWolf: 他们留在这世上的东西，就只剩下埋在雪里的尸体 #line:acc096
+CoffinWolf: 和行李了。 #line:eff185
+CoffinWolf: 在这艰难的时刻，那些鬼魂会对我们说些什么呢？ #line:aed507
+Adina: 我能喝点东西吗？ #line:51a36c
+CoffinWolf: 不行。 #line:a59ebe
+
+===
+title: CoffinWolf_A1D1.3
+tags: 
+colorID: 0
+position: -1457,1361
+---
+CoffinWolf: 你知道吗，你每开一次门，冷风就会跟着钻进来。 #line:934a98
+
+===
+title: PassTreeSecondTime
+tags: 
+colorID: 0
+position: -2521,258
+---
+<<showTalkingHeads>>
+Mae: 您刚才说什么？ #line:03395e
+Granddad: 阿丁娜看到树枝上有个东西，而那个东西显然不是森林里的物件。 #line:bd7bb6
+Mae: 她应该爬到树上，把那个东西拿下来，别像个傻子似的光站在原地。 #line:c4430e
+Granddad: 像个傻子似的？ #line:06df01
+Mae: 是啊，她就在那儿傻傻地站着。她应该爬到树上去才对。 #line:764dc6
+Granddad: 阿丁娜可不是爬树高手。所以，她要想出个临时的方法…… #line:914d57
+
+===
+title: Lost
+tags: 
+colorID: 0
+position: -2524,13
+---
+<<showTalkingHeads>>
+Mae: 她“迷路"了吗？ #line:986465
+Granddad: 她确实是迷路啦！不管她走多远，还是走不出森林的边缘。 #line:79b545
+Mae: 真 是 太 怪 啦！ #line:0fb376
+Granddad: 森林里的树都不是普通的树，而是有具有魔力的树。 #line:87d6b5
+Mae:  这也太无聊了吧。 #line:7836e2
+Granddad: 森林里全是又危险又拥有魔力的树。 #line:4f5dcd
+Mae: 哦，对啊，这听起来就酷多了。 #line:9142a7
+Mae: 她是怎么穿过森林的呀？？？ #line:e52da7
+Granddad: 嗯，可能她得需要一些指引才行。 #line:1e0322
+Mae: 噢，可她一个人孤零零的，能从谁那儿得到指引呢？ #line:1f4163
+Granddad: 在你一个朋友都没有的时候，你就得去结交新的朋友。 #line:ef9898
+
+===
+title: NeedSnowmen
+tags: 
+colorID: 0
+position: -2516,495
+---
+Granddad: 那些从树上掉下来的雪， #line:6c0a6c
+Granddad: 也是有魔力的。 #line:6b4544
+Mae: 您是怎么知道的？<U+2028> #line:e56b4a
+Granddad: 嗯，你要是会堆雪人的话， #line:d7395e
+Granddad: 也可以用这些雪来堆个雪人。 #line:f886f7
+Mae: 就这些吗？也没什么神奇的嘛。 #line:ade612
+Granddad: 你这个听故事的小鬼还挺不好骗的嘛。 #line:f26f39
+Mae: 那 就 讲 个 好 点 的 故 事 吧！ #line:a81f61
+Granddad: 那我就再给你讲一遍《善心熊学会了分享哦》的故事吧。 #line:649fa7
+Mae: 不听，她这故事最没意思啦！ #line:1a036b
+Granddad: 好吧，那你继续往下听…… #line:595e06
+===
+title: FirstSnowmanBuilt
+tags: 
+colorID: 0
+position: -1738,-310
+---
+<<waitForPlayerFallToGround>>
+<<set $snowman0Intro to 1>>
+Snowman0:{angryWobble=5} 啊啊啊啊啊！ #line:9f3c35
+Adina: 我 的 天 哪！ #line:1e7fb0
+Snowman0:{angryWobble=7} 我 到 底 是 个 什 么 啊？！？！？！ #line:cb6a1d
+Adina: [shake=.01]出 什 么 事 啦？？？[/shake] #line:95e537
+Snowman0:{angryWobble=10} 我 到 底 是 个 什 么 啊？！？！？！ #line:1be364
+Adina: [shake=.05]救 命！！！[/shake] #line:53f9e8
+
+===
+title: Snowman0_A1D1.1
+tags: 
+colorID: 0
+position: -1512,-308
+---
+Adina: 你还好吗？ #line:05f2bb
+Snowman0: 我是个什么。 #line:62089e
+Adina: 你是个雪人啊？ #line:694450
+Snowman0: 我就是一滩水和垃圾！ #line:e5901d
+Adina: 那你怎么能开口说话啊？ #line:d70cac
+Snowman0: 我什么都不知道。 #line:e17c8a
+Adina: 你知道怎么找到林中之神吗？ #line:47577a
+Snowman0: 我是树林，也是天空。 #line:ef975f
+Adina: 你说话也太诗情画意了吧。 #line:73b019
+Snowman0:{angryWobble=5} 我 到 底 是 个 什 么？ #line:07bfc2
+Adina: 你本身就像是一首诗！ #line:62d4fa
+Snowman0:{angryWobble=15} 啊啊啊啊啊啊啊啊啊啊！ #line:380a71
+[[AfterFirstSnowman]]
+
+===
+title: Snowman0_A1D1.2
+tags: 
+colorID: 0
+position: -1280,-307
+---
+Adina: 那你是什么，灵魂吗？ #line:89a213
+Snowman0: 不……灵魂。 #line:72cb57
+Adina: 等一下，你是说你不是灵魂，还是说你没有灵魂呢？ #line:90c065
+Snowman0: 我是什么。 #line:8d7f32
+===
+title: Snowman0_A1D1.3
+tags: 
+colorID: 0
+position: -1058,-307
+---
+Adina: 你怎么样？ #line:0058ec
+Snowman0: [speed=.1][size=.5]什 么 怎 么 样 ？[/all] #line:42ca9b
+Adina: 好吧。 #line:e65e28
+===
+title: AfterFirstSnowman
+tags: 
+colorID: 0
+position: -1510,-73
+---
+<<showTalkingHeads>>
+Mae: 这个雪人一点忙都帮不上啊！ #line:c03374
+Granddad: 嗯，要是第一次你没成功…… #line:bc113a
+Mae: 那就毁了它！然后再堆一个更好的！ #line:0ab266
+Granddad: 嗯，对，这你倒是说对了一部分。 #line:0f95a4
+Mae: 我说对了哪部分？ #line:d1d3d4
+Granddad: 那就听我继续讲…… #line:5ebf9f
+
+===
+title: CoffinWolf_A1D2
+tags: 
+colorID: 0
+position: -1096,657
+---
+<<if $skeleton_arm is 2>>
+	CoffinWolf: 请离开这儿，炉子可不是像你这么用的。 #line:11ae1e
+<<elseif $skeleton_arm is 1>>
+	CoffinWolf: 你好，你想看点什么……|这 是 个 啥 东 西？ #line:7749ec
+	[[这是一只胳膊。再见啦！|Leave]] #line:3f065f
+	[[我想借用一下你的炉子……|Stove]] #line:da790f
+<<else>>
+	[[Market]]
+<<endif>>
+
+===
+title: Stove
+tags: 
+colorID: 0
+position: -1208,898
+---
+CoffinWolf: 等等，你在干嘛呢？ #line:f133c5
+Adina: 把这只骷髅胳膊放到你的炉子里啊。 #line:bc6c98
+CoffinWolf: 呃，不行。不，你不能这么干！ #line:e251aa
+Adina: [size=.75]嘘……[/size] #line:337a68
+<<close>>
+<<animate Adina LNGatorPutArmInFire 1>>
+<<wait 1.25>>
+<<tell FurnaceLight to Play>>
+<<set $skeleton_arm to 2>>
+<<set $skeleton_arm_fire to 1>>
+<<wait 1.75>>
+Adina: 好了。 #line:3d48be
+CoffinWolf: 真是弄得[shake=.1]一团糟啊。[/shake] #line:df3aeb
+Adina: 我知道。 #line:bbfa84
+CoffinWolf: 请你马上离开这儿。 #line:b5fd12
+
+===
+title: WanderingKings_A1D2.1
+tags: 
+colorID: 0
+position: -382,141
+---
+Adina: 您好！ #line:0a087b
+King: 吼，你好啊，旅行者！ #line:94fdc0
+<<setAnimInt King look -1>>
+Advisor: 你好！ #line:89c8b9
+Knight: 哼嗯嗯…… #line:9e13cf
+<<setAnimInt King look 1>>
+King: 你今晚到这里来有何贵干啊？ #line:e7a1ff
+[[我要到冰湖去。|KingFrozenLake1]] #line:84d6de
+[[不干什么，你们呢？|KingNotMuch]] #line:a6264f
+
+===
+title: WanderingKings_A1D2.2
+tags: 
+colorID: 0
+position: -354,859
+---
+Adina: 这里是你们的领地吗？ #line:8f9a3f
+King: …… #line:7014f0
+<<setAnimInt King look -1>>
+Advisor: …… #line:dafd93
+Knight: ……嗯哼嗯，呼呼呼…… #line:a73814
+Adina: 我刚才说过了，因为你是国王啊。 #line:c89da1
+<<setAnimInt King look 1>>
+King: 我或许会成为国王。 #line:11bd03
+<<setAnimInt King look -1>>
+Advisor: 您有机会当上国王的！ #line:1e26c3
+King: 但在我面前，还有其他的国王和众神。 #line:889f81
+Advisor: 是的，是的。 #line:af870f
+Adina: 哦。 #line:5baff0
+<<setAnimInt King look 1>>
+King: 在我还是国王的时候，我曾将这块土地封给了拉洛普西男爵夫人。 #line:97e8ae
+<<setAnimInt King look -1>>
+Advisor: 然后，她就去世啦！ #line:fb4055
+King: 是的！ #line:5272f9
+Advisor: 现在，拉洛普西庄园已经成了怪事层出的地方！ #line:97707b
+King: 是的！ #line:86d07d
+Advisor: 去年春天，不少旅行者都看见了她已经发白的尸体从沼泽里爬出来的情景。而且…… #line:c55e8d
+King: 好啦。咱们出发吧！各位，咱们的路还长着呢，路还长着呢。 #line:6a329e
+<<setAnimInt King look 1>>
+
+
+===
+title: SkeletonArm
+tags: 
+colorID: 0
+position: 282,-800
+---
+<<if $need_skeleton_arm is 0>>
+	<<if $try_pickup_skeleton_arm is 0>>
+		Adina: 哦，好吧。我敢肯定，这是个好兆头。 #line:08511b
+		Adina: …… #line:151e4f
+		Adina: 该死的神。 #line:827c53
+		<<set $try_pickup_skeleton_arm to 1>>
+	<<else>>
+		Adina: 嘿，骷髅。 #line:4b532a
+	<<endif>>
+<<elseif $need_skeleton_arm is 1>>
+	[[PickupSkeletonArm]]
+<<endif>>
+
+===
+title: PickupSkeletonArm
+tags: 
+colorID: 0
+position: 280,-541
+---
+Adina: 额，我需要一只胳膊， #line:80834f
+Adina: 然后这儿就有一只胳膊。 #line:049009
+Adina: 如果我比较走运的话，这个骷髅应该是个罪犯。 #line:4c5955
+Adina: 生前应该是个罪犯。 #line:93906b
+Adina: …… #line:d4c5e0
+Adina: 这胳膊以前可是在活人身上的。 #line:d7821f
+Adina: 现在，我得找一堆火，然后把它放到火里。 #line:f65071
+<<close>>
+<<animationTrigger Adina Pickup>>
+<<wait .5>>
+<<set $skeleton_arm to 1>>
+Adina: [size=.65]哦，天啊。[/size] #line:adccdb
+Adina: 太冷啦。 #line:5c956e
+
+===
+title: Leave
+tags: 
+colorID: 0
+position: -958,898
+---
+CoffinWolf: 再见！ #line:221fa4
+===
+title: Snowacle_A1D1.1
+tags: 
+colorID: 0
+position: -1021,-1003
+---
+Adina: 你好？ #line:d46f3b
+Snowacle: 你好。 #line:85db87
+Adina: 你还好吗？ #line:696f54
+Snowacle: 额，我刚刚是个死人。 #line:423995
+Snowacle: 现在我还是死人。所以也谈不上好吧。 #line:eeaaaf
+Adina: 哦，真是抱歉。 #line:36b08b
+Snowacle: 可能这就说明，我能离开这片森林了吧…… #line:d011d7
+Snowacle: 然后，我是不是就能去死人该去的地方了？ #line:7668bd
+Adina: 是这么回事吗？ #line:c8bc0c
+Snowacle: 我觉得我之前应该是处于一种麻痹的状态。 #line:d30d02
+Snowacle: 但这件事弄醒了我。 #line:33cd16
+Adina: 如果你想报答我的话，就帮我个忙。 #line:32ca9b
+Snowacle: 我能预知你的未来，我也能和死者交流…… #line:d7ca77
+Adina: 我需要找到林中之神，我得穿过这片森林。 #line:a5600f
+Snowacle: 哦，好的。第一步是很容易完成的。 #line:e3fa96
+Snowacle: 找到神殿，然后吟诵北方颂歌。 #line:69878b
+<<set $shrine_info to 1>>
+[[那是什么啊？|SnowacleCanticle]] #line:1e8c97
+[[我可不经常去教堂做礼拜……{width=8}|Churchgoer]] #line:8337fe
+
+===
+title: Shrine_A1D1
+tags: 
+colorID: 0
+position: 340,135
+---
+<<if $shrine_info is 0>>
+	<<if $talked_to_shrine_mouse is 0>>
+		ShrineMouse: 是香客啊！ #line:cf9f32
+		Adina: 你好啊！ #line:1f961a
+		ShrineMouse: 我是平心静气·勿忘神明神父。 #line:95c2b3
+		Adina: 哇 哦。这名字够可以的。 #line:d283b0
+		ShrineMouse: 这是我任职时被授予的名字。 #line:025a8b
+		Adina: 那你之前的名字叫什么？ #line:5ad324
+		ShrineMouse: 布奇·马德。 #line:0f16ef
+		Adina: 好吧，这名字变化也太大了吧。 #line:6b84e6
+		ShrineMouse: 你想不想在 #line:8ea43d
+		ShrineMouse: 曾指明通向深渊、殷红之钟和圣山之路 #line:13a7a8
+		ShrineMouse: 的林中之神 #line:f3d7c0
+		ShrineMouse: ——敬爱的圣·奥洛罗尼 #line:3a3ae3
+		ShrineMouse: 的神殿前祈祷呢？ #line:27d652
+		Adina: 你说这么多，居然连口气也没换！ #line:dad2a5
+		<<set $talked_to_shrine_mouse to 1>>
+	<<endif>>
+	[[ShrineWantToPrayQuestion]]
+<<elseif $shrine_info is 1>>
+	[[ShrinePass]]
+<<elseif $shrine_info is 2>>
+	[[ShrinePassQuick]]
+<<endif>>
+
+===
+title: Shrine_A1D2
+tags: 
+colorID: 0
+position: 850,-111
+---
+[[ShrinePassQuick]]
+===
+title: Shrine_A1D3
+tags: 
+colorID: 0
+position: 1109,-121
+---
+[[ShrinePassQuick]]
+===
+title: Snowacle_A1D1.2
+tags: 
+colorID: 0
+position: -779,-1005
+---
+Adina: 你是谁？ #line:52f1a0
+Adina: 我是说，你是鬼魂吗？ #line:39904c
+Snowacle: 我也不知道我是谁。 #line:c37973
+Adina: 你以前是什么人啊？ #line:7564cd
+Snowacle: 我以前是个算命的，也是个通灵师。 #line:e903a4
+Adina: 是真的吗？ #line:5536e6
+Snowacle: 千真万确。 #line:9825ce
+Adina: 是这样，我在树上找到了这个东西。|然后，不知是什么原因，|我知道要在这儿把你堆出来。 #line:8eae02
+Snowacle: 降神会的时候，我通常要拿着一件对死者很重要的物品。 #line:9a20c7
+Adina: 这么做有用吗？ #line:91e85e
+Snowacle: 有用。 #line:4c6242
+Snowacle: 至于为什么我会来到这儿，是因为…… #line:af6f51
+Snowacle: 有时候，坟墓是最适合和死者交流的地方。 #line:178613
+Adina: 哦，天哪。这是你的坟吗？ #line:4db8b4
+Snowacle: 这个可不是。这是别人的安息之地。 #line:2cc592
+Adina: 是谁把人埋在这地方的？ #line:a6f946
+Snowacle: 是雪埋的。 #line:af95d5
+===
+title: Snowacle_A1D2.1
+tags: 
+colorID: 0
+position: -1335,-1382
+---
+<<if $skeleton_arm is 2>>
+	Snowacle: 哇哦，把那玩意儿拿远点。我可不想被烤化了。 #line:6b3e55
+<<elseif $skeleton_arm is 1>>
+	<<if $snowacle_saw_skeleton_arm is 0>>
+		Snowacle: 好了，你已经从某个地方， #line:b8f588
+		Snowacle: 或是什么人那儿 #line:731872
+		Snowacle: 弄来了一条被冻住的胳膊。 #line:de2da8
+		Snowacle: 我可不想问这胳膊是从哪儿弄来的。 #line:3cff53
+		<<set $snowacle_saw_skeleton_arm += 1>>
+	<<else>>
+		Adina: 我现在得把这只胳膊放到火上。 #line:8c5cf0
+		Snowacle: 谢谢你的新消息。 #line:01eb8a
+	<<endif>>
+<<elseif $need_skeleton_arm is 1 and $skeleton_arm is 0 and $skeleton_arm_done is 0>>
+	[[SnowacleSearchingForSkeletonArm]]
+<<elseif $snowacle_warning is 0>>
+	[[SnowacleHuncher]]
+<<else>>
+	Snowacle: 祝你好运！ #line:8380fc
+<<endif>>
+
+===
+title: Snowacle_A1D3.3
+tags: 
+colorID: 0
+position: -47,-1377
+---
+Adina: 嘿，你……还好吗？ #line:0e9c30
+Adina: 我还没来得及问你的事呢。 #line:3322a6
+Adina: 你是怎么到这儿来的？ #line:8325c8
+Snowacle: 我好像要消失了…… #line:a80c4d
+Snowacle: 我已经听不清你的声音了…… #line:bc6a2f
+Adina: 哦。 #line:8290fd
+Snowacle: 对，我要消失了。 #line:8e8129
+Adina: 十分感谢。 #line:ab36af
+Adina: 你救了我的命，算命先生。 #line:58fa70
+Snowacle: 我以前可真的会算命，你知道吗。 #line:dfd8fb
+Snowacle: 即便是 #line:9e3a2b
+Snowacle: 我姐姐的尸体依然埋在雪墙里， #line:e1e69c
+Snowacle: 我还是能感觉到，她就在我身边。 #line:6e95c8
+Snowacle: …… #line:8083e6
+Adina: 喂？ #line:c955b0
+<<close>>
+<<wait 2>>
+Adina: 再见了，朋友。 #line:eb122f
+
+===
+title: NeedKeyItem
+tags: 
+colorID: 0
+position: -1978,-545
+---
+Adina: 嗯，我得找点比较特殊的东西来堆这个雪人才行。 #line:40f130
+Adina: 要不然，我肯定又要堆出不少只会哇哇叫的傻雪人了。 #line:857553
+Adina: 那样的话，可就不好了。 #line:03da55
+
+===
+title: Snowman0_A1D2.1
+tags: 
+colorID: 0
+position: -1280,-74
+---
+Adina: 嘿，杈杈！ #line:86216d
+Snowman0: “杈杈"是什么？ #line:52eb3a
+Adina: “杈杈"是我给你起的名字啊。 #line:434d10
+Adina: 给你起这个名字是因为…… #line:c15e3b
+Snowman0: 杈……杈…… #line:3ebf53
+Adina: ……你身上插的树杈。 #line:e7aaf7
+Snowman0: 杈 杈。 #line:6411d2
+Adina: 对。 #line:88996b
+Snowman0: 为什么要叫我“杈杈"？ #line:81455a
+===
+title: Snowman0_A1D3
+tags: 
+colorID: 0
+position: -1273,161
+---
+Snowman0: … #line:b4bddf
+Adina: 杈杈，你已经走了吗？ #line:fca4fc
+Snowman0: … #line:15f24c
+Adina: 杈杈，我真对不起你。 #line:ad335b
+
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: -1738,-544
+---
+<<wait 1>>
+<<if $snowman0HasFace is 1 and $snowman0Intro is 0>>
+	[[FirstSnowmanBuilt]]
+<<endif>>
+
+
+===
+title: SnowacleCanticle
+tags: 
+colorID: 0
+position: -904,-769
+---
+Snowacle: “羽翼之下，深林之中。" #line:c18de8
+Snowacle: “万物消亡，归于沉寂！" #line:f1e3d1
+Snowacle: “停止思索，灾难将至。" #line:da6774
+Snowacle: “丛林之神，指引我们。" #line:22143f
+Adina: 你是在哪儿学的这些啊？ #line:150006
+Snowacle: 这话我们每个星期要在教堂说两次， #line:e6a1b4
+Snowacle: 每天说五遍。 #line:ddb697
+Snowacle: 难道你不是吗？ #line:0f5761
+Adina: 我不是本地人。 #line:bde119
+Snowacle: 我以前也不是。 #line:0438a1
+Snowacle: 你听我说，我其实还保留着以前的一些感知能力。 #line:be8ba2
+Adina: 你说什么？ #line:6ddfb8
+Snowacle: 要是你迷路了，我会尽可能给你指清方向的。 #line:8e8b67
+Adina: 太谢谢你啦！ #line:c512a9
+
+===
+title: Churchgoer
+tags: 
+colorID: 0
+position: -1137,-771
+---
+Snowacle: 哦，你个小异教徒！ #line:41000c
+Snowacle: 我喜欢你这小姑娘，嘿嘿嘿。 #line:eaba6f
+Adina: 你知道祷词的内容吗？ #line:ef9fd8
+Snowacle: “羽翼之下，深林之中。" #line:880643
+Snowacle: “万物消亡，归于沉寂！" #line:9d3c78
+Snowacle: “停止思索，灾难将至。" #line:b789ff
+Snowacle: “丛林之神，指引我们。" #line:88829b
+Adina: 这儿的人都会这些吗？ #line:7bca1d
+Snowacle: 这儿的人每天都要说上几遍这话呢。 #line:3095c1
+Adina: 嗯。 #line:cb4f1f
+Snowacle: 你听我说，我其实还保留着以前的一些感知能力。 #line:71c46b
+Adina: 你说什么？ #line:446674
+Snowacle: 要是你迷路了，我会尽可能给你指清方向的。 #line:c06156
+Adina: 太谢谢你啦！ #line:58585c
+
+===
+title: KingNotMuch
+tags: 
+colorID: 0
+position: -495,387
+---
+King: 我们正在干很多事呢！ #line:f9f792
+<<setAnimInt King look -1>>
+Advisor: 跟我们一起走吧。咱们在一起能干很多事呢！ #line:0d3bcf
+Knight: …嗯 呼 呼嗯… #line:f678d0
+King: 史蒂文森，你说得对！她不能跟咱们走！ #line:5c5573
+Advisor: 您说的是啊！哈哈哈哈！ #line:c9e6ae
+Adina: 你们有什么计划啊？ #line:f106cf
+<<setAnimInt King look 1>>
+King: 我们要去拜见林中之神！ #line:2058b3
+<<setAnimInt King look -1>>
+Advisor: 我们有一条[speed=.75][color=aaaaaa]从罪犯身上取下来的胳膊[/all]和[speed=.75][color=aaaaaa]点这条胳膊的火！[/all] #line:7cb1f7
+<<set $need_skeleton_arm to 1>>
+[[你刚说你要拿什么点火来着？|WhatFire]] #line:a61c71
+[[嗯，听起来……等一下， 你是说一条胳膊吗？|WhatFire]] #line:a74170
+
+===
+title: KingFrozenLake1
+tags: 
+colorID: 0
+position: -260,384
+---
+King: 啊，这真是太巧啦！太巧啦！ #line:d61229
+<<setAnimInt King look -1>>
+Advisor: 这真是上天的安排啊！ #line:5a4f7b
+Adina: 你们知道出森林的路吗？ #line:a7bebc
+<<setAnimInt King look 1>>
+King: 当然知道啦！我们现在就要拜见林中之神去啦！ #line:f482f4
+<<setAnimInt King look -1>>
+Advisor: 之后，我们就有了一条胳膊[speed=.75][color=aaaaaa]和点胳膊的火！[/all] #line:c84054
+<<set $need_skeleton_arm to 1>>
+<<setAnimInt King look 1>>
+[[你刚才说要拿什么点火来着？|WhatFire]] #line:4eb298
+[[你们是在找弓背……等等， 你说一只胳膊？什么？|WhatFire]] #line:84c16d
+
+===
+title: WhatFire
+tags: 
+colorID: 0
+position: -358,638
+---
+King: 这是[speed=.75][color=aaaaaa]从一名死囚身上取下来的胳膊！[/all] #line:537e82
+<<setAnimInt King look -1>>
+Advisor: 当然，胳膊是他自愿捐献出来的。 #line:b033ec
+Knight: …哼嗯呼… #line:22984d
+King: 哈哈哈！ #line:2311c6
+Advisor: 哦，史蒂文森。 #line:9ddefb
+<<setAnimInt King look 1>>
+Adina: 你们是想把它给[speed=.75][color=aaaaaa]点着吗？[/all] #line:91a582
+King: 是的！ #line:2cb79b
+<<setAnimInt King look -1>>
+Advisor: 然后，火光就能照亮通向弓背女巫住处的路啦！ #line:5f6884
+Adina: 呃，这片林子啊。 #line:5e684c
+<<setAnimInt King look 1>>
+Adina: 那好，祝你们好运！ #line:24b0c0
+<<setAnimInt King look -1>>
+King: 祝各位都能好运！ #line:45c3cb
+<<setAnimInt King look 1>>
+Advisor: 也祝你好运！我们的运气好着呢，分你一点也没事。 #line:c14e0f
+===
+title: Market
+tags: 
+colorID: 0
+position: -848,659
+---
+<<if $market is 0>>
+	CoffinWolf: 你回来是想买口棺材吗？ #line:0f1854
+	Adina: 不是，就是想回来取取暖。 #line:b04fd4
+	CoffinWolf: 取暖也要收钱了。 #line:d09991
+	Adina: 我要是没钱买棺材， #line:26405e
+	Adina: 那又怎么会有钱来交取暖费呢？ #line:855e3a
+	CoffinWolf: 我也不知道，让市场规律决定吧。 #line:155fce
+	<<set $market to 1>>
+<<elseif $market is 1>>
+	Coffinwolf: 我屋里好不容易有了点热乎气，现在又都没了。 #line:b0a54a
+	Adina: 抱歉。 #line:0dbfd1
+	[[Leave]]
+<<endif>>
+===
+title: ShrineNo
+tags: 
+colorID: 0
+position: 592,-116
+---
+ShrineMouse: 我的孩子，感受林中之神的宁静吧。 #line:62362f
+
+
+===
+title: PrayerClueless
+tags: 
+colorID: 0
+position: 104,137
+---
+ShrineMouse: 等你准备好了，就可以祈祷了。 #line:a3f90a
+[[仁慈的树神啊，您的枝叶是如此茂盛。|TreeLord]] #line:9d8497
+[[高贵的熊王啊，您已加冕即位。|BearEnthroned]] #line:a4b9f6
+[[被施了魔法的鹿妖啊，你在夜色之中漫步。|DeerMonster]] #line:c44e15
+===
+title: ShrinePass
+tags: 
+colorID: 0
+position: 596,400
+---
+<<fadeOutMusic 3>>
+Adina: 嗯……你好？ #line:449dfd
+TreeCat: 晚上好。 #line:485e67
+<<if $saw_shrine_mouse is 0>>
+	Adina: 嘿，我之前是不是见过你？ #line:b1f41a
+	TreeCat: 嗯？ #line:42ecfc
+	Adina: 是不是在没进森林的时候见过？ #line:0fcb43
+	<<musicDialogueFaderOverride 1>>
+	<<tell ShrineMusic to Play>>
+	TreeCat: 没见过吧。 #line:93ffa6
+	Adina: 我觉得见过你。可你当时不戴帽子。 #line:b389c9
+	TreeCat: 那肯定不是我。因为我有帽子。 #line:e1e329
+	Adina: 嗯。 #line:468db1
+<<elseif $talked_to_shrine_mouse is 0>>
+	Adina: 一分钟之前，这儿是不是有只小老鼠啊？ #line:1e45e8
+	TreeCat: 没错。 #line:943288
+	<<musicDialogueFaderOverride 1>>
+	<<tell ShrineMusic to Play>>
+	Adina: 你是把它给吃了吗？ #line:9dc908
+	TreeCat: 没有。他只是把他的帽子给了我。 #line:354696
+	Adina: 哦。 #line:5c1896
+<<else>>
+	Adina: 那它在…… #line:7b964c
+	Adina: 我 的 天 啊。 #line:c9c134
+	Adina: 你 居 然 把 平 心 静 气 · 勿 忘 神 明 神 父 给 吃 啦？！ #line:fcecef
+	<<musicDialogueFaderOverride 1>>
+	<<tell ShrineMusic to Play>>
+	TreeCat: 我没有。他已经走了。 #line:6b7e61
+	Adina: 可 你 戴 着 他 的 帽 子 呢！ #line:cc560f
+	TreeCat: 帽子是他给我的。 #line:da94e8
+	Adina: …… #line:bb63e7
+	TreeCat: 我感觉，自己像个当官的。 #line:97041c
+	Adina: 我恨死你啦。 #line:f6f19b
+<<endif>>
+Treecat: 朝圣者，你想向我祈祷吗？ #line:057897
+Adina: 等等，你为什么要听我的祷告啊？ #line:340f1d
+<<if $saw_shrine_mouse is 0>>
+	TreeCat: 你的祷告不是说给我听的，而是说给神殿听的。 #line:226082
+<<else>>
+	TreeCat: 不是给我和那只老鼠听的，而是给神殿听的。 #line:df2325
+<<endif>>
+Adina: 嗯。 #line:179b0a
+TreeCat: [speed=.5][wave]咕噜噜。[/all] #line:40f2c7
+[[“羽翼之下，深林之中。"|InTheirWings]] #line:228b3e
+[[听我说，咱们非得这么干吗？|HaveToDoThis]] #line:af8578
+
+===
+title: Shrine_A1D1.2
+tags: 
+colorID: 0
+position: 587,132
+---
+<<if $shrine_info is 0>>
+	ShrineMouse: 迷途的孩子啊！你是来祈祷的吗？ #line:12af55
+	[[是的，我是来祈祷的！|PrayerClueless2]] #line:7dde57
+	[[不，我还不想做祷告呢。|ShrineNo]] #line:5ec3b0
+<<elseif $shrine_info is 1>>
+	[[ShrinePass]]
+<<endif>>
+===
+title: DeerMonster
+tags: 
+colorID: 0
+position: 329,666
+---
+<<setAnimInt ShrineMouse stern 1>>
+ShrineMouse: lu…… #line:5940fe
+ShrineMouse: 鹿…… #line:49471b
+ShrineMouse: 妖？！？！？！ #line:7ac381
+Adina: 好吧，我承认，这都是我猜的。 #line:1c7b87
+ShrineMouse: 你肯定不认识我们这里的林中之神吧。 #line:4e9d09
+Adina: 听我说，我不是本地人。还有…… #line:90b119
+ShrineMouse: 你走吧！等你学会了祷词再回来吧。 #line:923a02
+<<setAnimInt ShrineMouse stern 0>>
+
+===
+title: BearEnthroned
+tags: 
+colorID: 0
+position: 102,400
+---
+<<setAnimInt ShrineMouse stern 1>>
+ShrineMouse: 熊？ #line:df6ae6
+Adina: 我觉得林中之神可能是一头大熊。 #line:c88aa3
+ShrineMouse: 林中之神可不仅仅是头熊那么简单。 #line:9209ec
+ShrineMouse: 而且，林中之神根本也不是一头熊。 #line:3c6709
+Adina: 哦。 #line:887755
+ShrineMouse: 你走吧！等你学会了祷词再回来吧。 #line:5017a3
+<<setAnimInt ShrineMouse stern 0>>
+
+===
+title: TreeLord
+tags: 
+colorID: 0
+position: 99,665
+---
+<<setAnimInt ShrineMouse stern 1>>
+ShrineMouse: 林中之神可不是棵树！！！！ #line:b94738
+Adina: 知道吗，我以为林中之神和树是有关系的…… #line:350efd
+ShrineMouse: 树可成不了神！ #line:43fe9c
+Adina: 我可不赞同这种逻辑。 #line:65493f
+Adina: 那什么才*能*成为神呢？ #line:387aa8
+ShrineMouse: 显然，树肯定成不了神！ #line:d12e87
+ShrineMouse: 你走吧！等你学会了祷词再回来吧。 #line:ca250d
+<<setAnimInt ShrineMouse stern 0>>
+
+===
+title: PrayerClueless2
+tags: 
+colorID: 0
+position: 335,401
+---
+ShrineMouse: 等你准备好了，就可以祈祷了。 #line:08ea2e
+[[狼！狼！三只狼！|WolfWolfWolf]] #line:ad99e0
+[[可爱的小麋鹿，哦，温顺的麋鹿啊。|SweetBabyMoose]] #line:516ccb
+[[来自北方毛绒绒的猫啊，请听一听我的诉求吧。|WoolyCat]] #line:ac7b82
+===
+title: WolfWolfWolf
+tags: 
+colorID: 0
+position: 573,668
+---
+<<setAnimInt ShrineMouse stern 1>>
+ShrineMouse: 狼？狼？狼？ #line:0eddde
+Adina: 这难道不对吗？ #line:ed6ac1
+ShrineMouse: 你之前祈祷过吗？ #line:b4dc80
+Adina: 可能祈祷过吧。 #line:9beebe
+ShrineMouse: 你走吧！等你学会了祷词再回来吧。 #line:a0f061
+<<setAnimInt ShrineMouse stern 0>>
+
+===
+title: SweetBabyMoose
+tags: 
+colorID: 0
+position: 828,664
+---
+<<setAnimInt ShrineMouse stern 1>>
+ShrineMouse: 我都忘了该从哪儿说起了。 #line:240272
+Adina: 请别评论我的个人信仰。 #line:6ec070
+ShrineMouse: 你走吧！等你学会了祷词再回来吧。 #line:818332
+<<setAnimInt ShrineMouse stern 0>>
+
+===
+title: WoolyCat
+tags: 
+colorID: 0
+position: 1066,664
+---
+<<setAnimInt ShrineMouse stern 1>>
+ShrineMouse: 林 中 之 神 不 是 一 只 肮 脏 的 猫！ #line:1feab1
+Adina: 哦，不是吗？ #line:d682e6
+ShrineMouse: 你走吧！等你学会了祷词再回来吧。 #line:02d798
+<<setAnimInt ShrineMouse stern 0>>
+
+===
+title: Shrine_A1D1.3
+tags: 
+colorID: 0
+position: 827,137
+---
+<<if $shrine_info is 0>>
+	ShrineMouse: 我的孩子，你学会怎么祈祷了吗？ #line:324f31
+	[[……还没有……|ShrineNo]] #line:4efdb3
+<<elseif $shrine_info is 1>>
+	[[ShrinePass]]
+<<endif>>
+===
+title: ShrineWarp
+tags: 
+colorID: 0
+position: 1769,398
+---
+<<musicDialogueFaderOverride 0>>
+<<playOneShot event:/lost_constellation/teleport Adina>>
+<<fadeOut .5 1 1 1>>
+<<wait 1>>
+<<set $shrine_info to 2>>
+<<if $mae_gd_lostwoods_fgoutside is 0 and $day is 1>>
+	<<fadeColor 1 0 0 0>>
+	<<wait 1>>
+	<<fadeOutMusic 8>>
+	<<showTalkingHeads>>
+	Mae: 这么说，这些雪人什么都是鬼魂吗？ #line:e07167
+	Granddad: 嗯，是鬼魂进到了这些东西里面。 #line:1ce158
+	Mae: 世界上有鬼吗？ #line:3ba4f5
+	Granddad: 你觉得呢？ #line:485ae6
+	Mae: 不知道。您是怎么想的？ #line:dbf900
+	Granddad: 嗯，我觉得，有时候人死了以后，|还是会陪在你身边很长一段时间的。 #line:ce7979
+	Mae: 奶奶现在也变成鬼魂了吗？ #line:64e7af
+	Granddad: 哈哈哈。要是一切顺利的话，|你奶奶现在也应该已经变成鬼魂了。 #line:c9118e
+	Mae: 我可不想让您也变成鬼魂。 #line:ab97c7
+	Granddad: 哦，梅。我到时候会回来看你孩子的。 #line:d248de
+	Mae: 不会的，您肯定看不到那天了。 #line:25dbed
+	Granddad: 好吧，梅，你这话说得可不吉利啊。 #line:e28c0c
+	Mae: 我不是这意思。我是想说，我根本就不想要孩子。 #line:fcf42a
+	Mae: 我想养两只住在谷仓里的猫和一只老猎狗。 #line:bd41ff
+	Mae: 然后，我们几个就一起对着月亮大嚎！ #line:770acf
+	Granddad: 我的小梅梅啊，你真是一点都没变啊。 #line:4180cd
+	<<set $mae_gd_lostwoods_fgoutside to 1>>
+	<<hideTalkingHeads>>
+	<<wait 1>>
+<<endif>>
+<<scene LN2_FG_Outside>>
+
+===
+title: InTheirWings
+tags: 
+colorID: 0
+position: 827,402
+---
+TreeCat: 继续。 #line:b3b949
+[[“万物消亡，归于沉寂！"|AllThingsDie]] #line:55d982
+[[林中之神是森林里唯一的神吗？|OnlyGod]] #line:aba71d
+===
+title: HaveToDoThis
+tags: 
+colorID: 0
+position: 1065,137
+---
+TreeCat: 你要去见林中之神。 #line:f7da4f
+Adina: 对。 #line:ce47fe
+TreeCat: 你只有这么做才能见到林中之神。 #line:0d9da8
+TreeCat: 或者，至少只能说试试看吧。 #line:613248
+Adina: 试试看？ #line:dbd498
+TreeCat: 现在那老家伙可不是什么人都见了。 #line:f64b43
+TreeCat: 情况已经不同往日了。 #line:3e7a85
+Adina: 那我只需要说祷词就行了吗？ #line:a48830
+TreeCat: 没人知道你都想了什么，他们只知道你都说了什么。 #line:23497b
+Adina: 好吧。 #line:bae3d6
+Adina: “羽翼之下，深林之中。" #line:688ca4
+[[InTheirWings]]
+
+===
+title: OnlyGod
+tags: 
+colorID: 0
+position: 1296,141
+---
+TreeCat: 这片树林 #line:7994bd
+TreeCat: 从山脚一直延绵到山上。 #line:b66fa0
+TreeCat: 在山的高处，人们生起一堆篝火， #line:02bfcb
+TreeCat: 用它把雪烤化，让地面露出来， #line:f500e9
+TreeCat: 然后把逝者埋在那儿。 #line:84d7d8
+Adina: 哇哦。 #line:1b9950
+TreeCat: 这片森林的神就是这里的主宰。 #line:958992
+Adina: 明白。 #line:81ca27
+Adina: 好了……嗯…… #line:2cf12d
+Adina: “万物消亡，归于沉寂！" #line:df2067
+[[AllThingsDie]]
+
+===
+title: AllThingsDie
+tags: 
+colorID: 0
+position: 1066,398
+---
+TreeCat: 继续。 #line:ec851b
+[[“停止思索，灾难将至。"|CeaseAllCare]] #line:e369f4
+[[你为什么要帮我？|HelpingMe]] #line:634617
+===
+title: CeaseAllCare
+tags: 
+colorID: 0
+position: 1298,399
+---
+TreeCat: 继续。 #line:1b21e2
+[[“丛林之神，指引我们。"|CarryUs]] #line:8f0093
+[[我是不是应该有什么感觉才对呢？|FeelingSomething]] #line:b962b1
+===
+title: HelpingMe
+tags: 
+colorID: 0
+position: 1527,142
+---
+TreeCat: 谁说我要帮你了？ #line:a3fc37
+TreeCat: 我只不过就是戴着帽子， #line:66c073
+TreeCat: 在这儿坐着而已。 #line:f7b5a1
+Adina: …… #line:400265
+TreeCat: 继续说。 #line:6c3168
+Adina: “停止思索，灾难将至。" #line:80a963
+[[CeaseAllCare]]
+
+===
+title: CarryUs
+tags: 
+colorID: 0
+position: 1533,402
+---
+TreeCat: 很好。 #line:57307a
+Treecat: 再见了。 #line:3a74e1
+[[ShrineWarp]]
+
+===
+title: FeelingSomething
+tags: 
+colorID: 0
+position: 1766,143
+---
+TreeCat: 怎么了？ #line:80b5b5
+Adina: 这么做有什么效果吗？ #line:d2d3be
+TreeCat: 你没感受到一种强烈的敬畏感和奇幻的感觉吗？ #line:bbaf0f
+TreeCat: 你没感受到和某个比自己更宏大的事物之间产生了某种联系吗？ #line:5fd05d
+Adina: 没有。 #line:520fa2
+TreeCat: 真遗憾。 #line:9d7e7b
+Adina: 我只在观星的时候才有这种感觉。 #line:29f148
+Adina: 在现实世界，我的工作就和观星有关。 #line:419e34
+TreeCat: 咱们就在现实世界里，头上的星星也都是一样的。 #line:0e2db8
+Adina: 好了，咱们快点祈祷吧。 #line:430b23
+TreeCat: 来吧。 #line:58b421
+Adina: “丛林之神，指引我们。" #line:6f6c4d
+[[CarryUs]]
+===
+title: Snowman0_A1D2.2
+tags: 
+colorID: 0
+position: -1055,-76
+---
+Snowman0: 为什么要叫我“杈杈"？ #line:dfcc40
+===
+title: WanderingKings_A1D2.3
+tags: 
+colorID: 0
+position: -349,1079
+---
+King: 这片森林多漂亮啊，你觉得呢？ #line:07f340
+
+===
+title: Snowacle_A1D1.3
+tags: 
+colorID: 0
+position: -537,-1004
+---
+Adina: 我不是老调重提，但还是谢谢你的帮助。 #line:386a27
+Adina: 还有，你知道你下面埋的是谁的尸体吗？ #line:5b717e
+Snowacle: 不知道。埋的是谁都和我无关。 #line:abf73b
+Snowacle: 那只是个通向别处的媒介而已。 #line:31ef21
+Adina: 你……嗯……也是从别处来的吗？ #line:28e854
+Snowacle: 我也不知道。我觉得应该不是吧。 #line:cc86b6
+Snowacle: 你看起来一点也不真实。 #line:0b5534
+Snowacle: 这就像幻觉一样。 #line:eade09
+Adina: 这可够怪的。 #line:aa5791
+Snowacle: 是很怪。 #line:461065
+
+===
+title: Snowman0_A1D2.3
+tags: 
+colorID: 0
+position: -831,-75
+---
+Adina: 好吧，看来我不能就这么把你给拆了，可…… #line:4cd405
+Adina: 你疼吗？ #line:3ce891
+Adina: 杈杈，你好像很难过啊。 #line:9a7e4d
+Snowman0: [speed=.5][color=aaaaaa][size=.5]我什么都不是。[/all] #line:3dc7bd
+Adina: 你这话弄得我都不知道该怎么理解了。 #line:2b93da
+Adina: 你是因为心情不好才这么说的，还是你就是想说你是用树杈和雪堆在一起的啊？ #line:7ae170
+Snowman0: [speed=.5][color=aaaaaa][size=.5]我就是用树杈和雪堆起来的一坨东西。[/all] #line:fc5b3c
+Adina: …… #line:f8eb59
+Adina: 额，我还没找到能用的东西。杈杈，我还会回来的！ #line:5f3f25
+Snowman0: [size=1.2]杈杈……会回来的……[/all] #line:c84aea
+Adina: 杈杈，这么想就对啦！ #line:744b34
+===
+title: Snowman0_A1D2.4
+tags: 
+colorID: 0
+position: -596,-78
+---
+Snowman0: 杈……杈…… #line:b20419
+Adina: 没错，你就是杈杈！ #line:5fea40
+===
+title: CoffinWolf_A1D3
+tags: 
+colorID: 0
+position: -1009,387
+---
+Adina: 你就是个大骗子！ #line:35b935
+CoffinWolf: 额，你好啊！欢迎光临！ #line:2fba85
+Adina: 满树林都是被冻死的人！ #line:8f72b2
+Adina: 今天一晚上我已经和十几个死人说过话啦！ #line:b52f1e
+Adina: 所以要么根本就没人在你这儿买过棺材。 #line:aae6e7
+Adina: 要么就是你收了钱根本不办事！ #line:d53c3b
+Adina: 所以到底是哪种情况？ #line:203af4
+Adina: 哈？！ #line:c26dc1
+CoffinWolf: 你和那些鬼魂说话了吗？ #line:1f9446
+Adina: 当然说啦！我都和一帮鬼魂说过话啦！ #line:d99670
+CoffinWolf: 我觉得你是在树林里迷路了，然后冻懵了，最后就开始和雪说上话了。 #line:9c08f6
+Adina: 不可能！我一路从林中之神住的山上 #line:2e564c
+Adina: 走到了[shake=.01][color=aaaaaa]弓背女巫的住处。[/all]我必须这么做才行。 #line:9c4422
+CoffinWolf: 可你刚走了差不多一个小时就又回来了。 #line:3a4246
+Adina: …… #line:57c10f
+CoffinWolf: 你让屋里的热气都跑了，外面的冷风都进来了。 #line:8aa9c4
+CoffinWolf: 你今晚还挺忙的啊，嗯？ #line:2f1fac
+Adina: 哦，你去死吧，下地狱去吧。 #line:95d7ab
+CoffinWolf: 哈哈哈。 #line:287c2c
+CoffinWolf: 至少地狱还能暖和点。 #line:759eaa
+CoffinWolf: 晚安。 #line:12fc57
+<<set $kicked_out_of_coffin_house to 1>>
+
+===
+title: ShrineWantToPrayQuestion
+tags: 
+colorID: 0
+position: 101,-100
+---
+ShrineMouse: 你是来祈祷的吗？ #line:152711
+[[对，我是来祈祷的！|PrayerClueless]] #line:03002d
+[[不，我现在还不想祈祷。|ShrineNo]] #line:ec298b
+===
+title: ShrinePassQuick
+tags: 
+colorID: 0
+position: 350,-284
+---
+Adina: “羽翼之下，深林之中。" #line:160a59
+Adina: “万物消亡，归于沉寂！" #line:934c47
+Adina: “停止思索，灾难将至。" #line:46afe6
+Adina: “丛林之神，指引我们。" #line:5fc8c7
+[[ShrineWarp]]
+===
+title: HuncherKidLW
+tags: 
+colorID: 0
+position: -199,-514
+---
+<<flipTo Adina HuncherKidLW>>
+Adina: 孩子？ #line:102d27
+HuncherKidLW: 她已经走了。 #line:178156
+HuncherKidLW: 刚走。 #line:93a80c
+Adina: 刚走？ #line:86660d
+HuncherKidLW: 我只知道，她走了之后 #line:fb873e
+HuncherKidLW: 就出事了。 #line:763e06
+HuncherKidLW: 她也变得和以前不一样了。 #line:02349c
+HuncherKidLW: 我不知道她是死是活…… #line:9975a1
+HuncherKidLW: 可我身上也发生了一些变化。 #line:175797
+Adina: 你不能回家去吗？ #line:606e4d
+HuncherKidLW: 孩子，这就是我家啊。 #line:15a1ce
+Adina: 哦。 #line:8a1c9d
+HuncherKidLW: 不过，我正准备回我来的地方去看看。 #line:83a2a4
+Adina: 好啊！ #line:2d3fbe
+HuncherKidLW: 不，不，你没懂我的意思。 #line:635220
+HuncherKidLW: 以前，我希望那些知道我走了的人不会来找我。 #line:fe7557
+HuncherKidLW: 可现在，我却要反过来去找他们。 #line:0f7170
+HuncherKidLW: 镇上的人要是亲眼目睹了我都对他们干了什么，肯定会痛哭流涕的。 #line:8f4fb8
+HuncherKidLW: 他们入土为安之后，我会把他们再全都挖出来。 #line:e6d646
+HuncherKidLW: 放在爱人的床上。 #line:c218f5
+HuncherKidLW: 这样，当其他人看见那个破破烂烂的镇子的时候， #line:a12a4a
+HuncherKidLW: 他们就会说“这地方闹鬼"了。 #line:d49560
+Adina: 哦，孩子，听我说…… #line:992b3d
+HuncherKidLW: 哦，拜托，孩子。 #line:de7388
+HuncherKidLW: 一个小时以前，我还比你小。但现在，我可要比你大多了。 #line:8987ec
+HuncherKidLW: 你很善良，对我也很好。所以，我要报答你： #line:ea4b96
+HuncherKidLW: 咱们以后不会再见了。 #line:22bcdd
+<<spawn BAMF HuncherKidBAMF>>
+<<hide HuncherKidLW>>
+<<set $final_huncher_kid to 1>>
+===
+title: SnowmanBuildSpot.1
+tags: 
+colorID: 0
+position: -2306,-553
+---
+Adina: 嗯，这是什么？ #line:1a9374
+Adina: 这地方看起来好像很适合堆雪人…… #line:8c7285
+===
+title: Snowacle_A1D1.4
+tags: 
+colorID: 0
+position: -297,-1006
+---
+<<if $godtender > 0 and $snow_bridge is 0>>
+	<<if $snowacle_item_hint is 0>>
+		Snowacle: 这片树林里的树都很怪异。 #line:c90592
+		Snowavle: 天知道是什么东西附在这些树上了。 #line:94dc8d
+		Snowacle: [speed=.7][wave]看看这些树。[/all] #line:41eff4
+		<<set $snowacle_item_hint to 1>>
+	<<elseif $snowacle_item_hint is 1>>
+		Adina: 你说这些树怎么了？ #line:d98b0d
+		Adina: 有时候，我在树上只能看见雪。 #line:62a4f9
+		Snowacle: 奇怪的雪。 #line:0f671e
+		Adina: 奇怪的雪？ #line:c2151a
+		Snowacle: 奇，怪，的，雪。 #line:0860e9
+		Adina: 我会查清楚这到底是怎么回事的。 #line:a7f03e
+		<<set $snowacle_item_hint to 2>>
+	<<else>>
+		Snowacle: 我已经预见到了你的未来。 #line:a0bce4
+		Snowacle: [speed=.7][wave]它就隐藏在这片树林里。[/all] #line:1dcd23
+		Adina: 好吧，这话真是帮了我大忙了。 #line:380daa
+		Snowacle: 祝福你，我的孩…… #line:be4b6d
+		Snowacle: 哦，你是在讽刺我。 #line:73522c
+	<<endif>>
+<<else>>
+	Snowacle: …… #line:ceb15f
+<<endif>>
+
+===
+title: Snowacle_A1D3.4
+tags: 
+colorID: 0
+position: 217,-1399
+---
+Adina: …… #line:8035dd
+===
+title: CoffinWolf_A1D3_FT
+tags: 
+colorID: 0
+position: -780,389
+---
+Coffinwolf: 你好，想看看棺材吗？ #line:9e5f8f
+Adina: 不了。我敢肯定，我能活着走出这片森林。 #line:f1fc05
+Coffinwolf: 真不错！ #line:e5bc98
+Coffinwolf: 既然是这样，那就快给我出去吧！ #line:b1d4f0
+<<set $kicked_out_of_coffin_house to 1>>
+
+===
+title: Snowacle_A1D3.1
+tags: 
+colorID: 0
+position: -500,-1385
+---
+Adina: 嘿！ #line:048ad5
+Snowacle: 嘿，是你啊！你还活着呢，嗯？ #line:dcb81a
+Snowacle: 我刚才看见树林里的所有树都抖了一下， #line:86baa0
+Snowacle: 就像是排成了排一样。 #line:ac7600
+Snowacle: 然后你就过来了。 #line:8496f0
+Adina: 我觉得，这一定是通到冰湖的路！ #line:be9e7d
+Adina: 你觉得呢？ #line:3b97c7
+Snowacle: 我觉得，你应该赶快把这儿的事都忙完， #line:7e5619
+Snowacle: 然后赶快往东走！ #line:b53483
+Adina: 嗯，我还有什么事要做呢？ #line:fcde20
+Snowacle: 我也不知道。 #line:113ba7
+
+===
+title: SnowacleHuncher
+tags: 
+colorID: 0
+position: -1093,-1382
+---
+Snowacle: 你好啊。 #line:538129
+Adina: 我在找弓背女巫。 #line:e7a128
+Snowacle: 我从来就没找到过她。 #line:0d031c
+Snowacle: 这可能也是个好事。 #line:4e5205
+Snowacle: 她不是林中之神，所以她没有指明道路的权力。 #line:cb91bf
+Snowacle: 而且，她好像很……信奉虚无主义。是这个词吧？ #line:d3b1d9
+Adina: 嗯。 #line:b09190
+Snowacle: 她做事冲动，最后把自己也搭了进去。 #line:20fdaa
+Snowacle: 她肯定不是头一个这么干的人，但她肯定也不是最后一个。 #line:1dd8a0
+Adina: 什么意思？ #line:a13d06
+Snowacle: 哦，孩子，我只是在说这事罢了，但我也不知道这话是什么意思。 #line:f6146e
+Snowacle: 要是没东西辅助你的话，你根本就找不到她的藏身之处。 #line:678132
+Snowacle: 而且，我也一直都没找到那件能帮你的东西。 #line:ee92d4
+Adina: 不管怎么说，还是谢谢了。 #line:c90923
+Snowacle: 一定要小心，你要遇上事啦。 #line:8a0b4b
+<<set $snowacle_warning to 1>>
+
+===
+title: ExitLevel_A1D2
+tags: 
+colorID: 0
+position: -1573,-871
+---
+<<if $going_to_huncher is 1>>
+	<<set $going_to_huncher to 0>>
+	<<showTalkingHeads>>
+	Mae: 故事讲到这儿终于有意思啦。 #line:e2dedc
+	Granddad: 哦，你是喜欢玄幻的故事吗？ #line:614333
+	Mae: 您当然知道我喜欢这些啦。其他的我都不喜欢。 #line:ca79dd
+	Granddad: 嗯，其他的东西也很重要啊。你再坚持听一会儿吧。 #line:5e3dab
+	Mae: 好 吧，可 能 是 这 样 吧。 #line:eb285d
+	<<hideTalkingHeads>>
+	<<wait 1>>
+<<endif>>
+
+===
+title: Snowacle_A1D3.2
+tags: 
+colorID: 0
+position: -282,-1386
+---
+Adina: 一讲到冰湖的事，我就有点紧张。 #line:f84f90
+Snowacle: 你知道这事吗？ #line:3d0044
+Adina: 不太清楚。 #line:68be83
+Snowacle: 有传闻说，这片湖的湖水很深很深。 #line:87e7af
+Snowacle: 在湖底，有一座墓地。 #line:ec4d77
+Snowacle: 墓地里的死人会来到湖面 #line:0e21ec
+Snowacle: 和活人对话。 #line:9579f3
+Snowacle: 还有传闻说，这片湖水漆黑无比， #line:54f41c
+Snowacle: 连月亮的倒影都照不到湖面上。 #line:a4067c
+Snowacle: 月亮知道这件事后十分不满， #line:d3cf57
+Snowacle: 于是它说服太阳，让阳光永远都照不到这片湖上。 #line:43bf01
+Snowacle: 所以，这片湖才变成了冰湖。 #line:532c65
+Snowacle: 这就是为什么能在冰下面找到尸体的原因： #line:ab121d
+Snowacle: 因为这些人永远都逃不出这片湖。 #line:8f813c
+Adina: 这里哪件事是真实发生过的？ #line:ca4bfa
+Snowacle: 你已经去过那儿了， #line:506c81
+Snowacle: 应该你告诉我才对啊。 #line:b14851
+
+===
+title: SnowacleSearchingForSkeletonArm
+tags: 
+colorID: 0
+position: -1044,-1702
+---
+<<if $snowacle_skeleton_arm_search is 0>>
+	Snowacle: 你在找一只断臂…… #line:250027
+	Adina: ……对。 #line:031fa0
+	Snowacle: 然后，你要把它点着，是吗？ #line:ac8403
+	Adina: ……对。 #line:edcdfe
+	Snowacle: 这事我可真就无能为力了。不过，我也很庆幸。 #line:d0fe5b
+	<<set $snowacle_skeleton_arm_search to 1>>
+<<elseif $snowacle_skeleton_arm_search is 1>>
+	Adina: 我现在就去找胳膊。 #line:c7e3f8
+	Snowacle: …… #line:1097e9
+	Snowacle: 你是在拖延时间对不对。 #line:0e7667
+	Adina: [wave]*唉*[/all] #line:7536e8
+	<<set $snowacle_skeleton_arm_search to 2>>
+<<elseif $snowacle_skeleton_arm_search is 2>>
+	Snowacle: 胳膊可不会自己掉下来！ #line:9827cc
+	Adina: 好啦，好啦！ #line:e36cdd
+<<endif>>
+
+===

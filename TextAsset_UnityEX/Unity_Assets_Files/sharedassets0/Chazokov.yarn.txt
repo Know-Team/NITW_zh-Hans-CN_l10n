@@ -1,0 +1,592 @@
+title: Chazokov
+tags: 
+colorID: 0
+position: 24000,-3671
+---
+<<if $act is 4>>
+    [[Chazokov_Act4]]
+<<elseif $act is 2 or $act is 3>>
+    [[Chazokov_Act2_Act3]]
+<<elseif $act is 0 and $day is 0>>
+    [[Chazokov_Demo]]
+<<elseif $chazokov_done_act_1 is 0>>
+	<<if $chazokov is 0>>
+        <<set $chazokov += 1>>
+		[[Chazokov_000]]
+	<<elseif $chazokov is 1>>
+		[[Chazokov_001]]
+	<<endif>>
+<<endif>>
+
+===
+title: Chazokov_000
+tags: 
+colorID: 2
+position: 23871,-2985
+---
+Mae: 嗨，查佐科夫老师！ #line:f671f6
+Chazokov: 梅，你好啊！我最优秀的差生来了！ #line:595f46
+Mae: 哈哈，行吧。 #line:77eefa
+Mae: 我只是很喜欢天文和星座，但又很讨厌学校罢了。 #line:e7d705
+Chazokov: 嘿，可别对学校指指点点的，学校对你的前途可是相当重要啊！ #line:c08df7
+Chazokov: 话说，你怎么又回负鼠泉了？ #line:c18ef8
+Mae: 我退学了。 #line:0a5788
+Chazokov: 哦，不会吧。 #line:d14d8c
+Chazokov: 好吧，要是你还对星座感兴趣的话， #line:1af31a
+Chazokov: 过几天来我家屋顶吧，就是山坡下面那栋房子 #line:807544
+Chazokov: 那时候我的新望远镜应该组装好了 #line:ec8640
+Mae: 没问题！ #line:aa4ffd
+===
+title: Chazokov_001
+tags: 
+colorID: 2
+position: 24130,-2985
+---
+Chazokov: {emote=stars} #line:343f77
+
+===
+title: Chazokov_Demo
+tags: 
+colorID: 0
+position: 23582,-3122
+---
+<<if $chazokov is 0>>
+	[[Chazokov_calibrating]]	
+<<elseif $chazokov is 1>>
+	[[Chazokov_amazing]]
+<<elseif $chazokov is 2>>
+	[[Chazokov_meaning]]
+<<elseif $chazokov is 3>>
+	[[Chazokov_amateur]]
+<<elseif $chazokov is 4>>
+	[[Chazokov_loop]]
+<<endif>>
+===
+title: Chazokov_calibrating
+tags: demo
+colorID: 0
+position: 23337,-3128
+---
+Mae: <o> #line:4f07ae
+Mae: 嗨，查佐科夫老师！ #line:8fc4e0
+Chazokov: 你是从旁边那栋楼的天台跳过来的吗？ #line:847e4c
+Varney: {medianLocator} 梅，下次我可要叫警察啦！ #line:f9214d
+Mae: 随你。 #line:66e2b3
+Varney: {medianLocator} 你说什么？ #line:585894
+Chazokov: 梅，说实话，像屋顶这种地方，咱们是不应该爬上来的。 #line:957ed3
+Mae: 您是在用望远镜观测……嗯…… #line:1ad01c
+Mae: 观测太阳吗？ #line:4b1a99
+Chazokov: 当然不是啦！ #line:c93eda
+Chazokov: 我在为今晚的惊喜 [color=dddddd][wave]做校正[/all]! #line:02807b
+Mae: _o_ #line:f993bc
+<<set $chazokov to 1>>
+===
+title: Chazokov_amazing
+tags: demo
+colorID: 0
+position: 22841,-2849
+---
+Mae: <o> #line:50bb4b
+Mae: 是什么惊喜？ #line:cfb403
+Chazokov: 卡斯蒂斯会在天空的西北方出现！ #line:9561da
+Mae: 卡斯蒂斯是谁啊？ #line:2bc378
+Mae: 卡斯蒂斯是个啥？ #line:e134ed
+Chazokov: 卡斯蒂斯是一种薄暮星，这种天体隐隐约约地徘徊在夜空。 #line:b7367f
+Chazokov: 这颗星背后有这样一个故事：有个女人想要建造一座通往天堂的高塔 #line:551fd7
+Chazokov: 众神为此将她沉入深海。 #line:23256e
+Mae: 呃啊，这群烂货。 #line:ed496c
+Chazokov: 但无论在水里沉得有多深，她都不愿死去。 #line:460ac3
+Mae: :) #line:329208
+Mae: [size=1.2][shake=.01]这 就 对 啦！[/shake][/size] #line:521d6c
+Mae: :| _o_ #line:829414
+<<set $chazokov to 2>>
+
+===
+title: Chazokov_meaning
+tags: demo
+colorID: 0
+position: 23097,-2831
+---
+Chazokov: 你觉得这个故事有什么寓意？ #line:83c8b2
+<<set $chazokov to 3>>
+[[这故事告诉我们，办狠事，得永生。|refuse]] #line:e0b75c
+[[这故事告诉我们，所有的神都很该死，他们都是烂货。|gods]] #line:3e7c6c
+===
+title: Chazokov_gods
+tags: demo
+colorID: 0
+position: 23341,-2596
+---
+Chazokov: 众神只不过代表了那些我们无法轻易控制的事物。 #line:fa0ab3
+Chazokov: 例如水灾，癌症之类的。 #line:2a2122
+Mae: 嗯，这些事也都是烂货。 =_= #line:8a508e
+Chazokov: 我对此没有异议。 #line:b91f62
+Chazokov: 但我们也无法控制天上的星星。 #line:a76034
+Chazokov: 它们都比我们庞大明亮得多。 #line:089975
+Mae: 我可能会再来看你的望远镜。 o_o #line:39cf3d
+Chazokov: 我的屋顶一直为你敞开！ #line:a55d77
+<<addToJournal SpaceIsReallyCool>>
+<<unlockDoodle Telescope 1>>
+===
+title: Chazokov_refuse
+tags: demo
+colorID: 0
+position: 23585,-2597
+---
+Chazokov: 哈哈哈！ #line:c7233e
+Chazokov: 如果那么简单就好了。 #line:6b69a3
+Chazokov: 想想苹果鲍姆先生吧。 #line:8a0ce6
+Mae: 您是指那个雕像吗？ #line:972fe0
+Chazokov: 虽然他的雕像还在，但他本人和他的矿业公司却已经消失得无影无踪了。 #line:a93fec
+Mae: 好吧，我可是打算永生的哦。:) #line:de02d9
+Chazokov: 我知道你会的，梅。 #line:ab575d
+Mae: 我就是他喵的吸！血！鬼！ \o/ #line:90206c
+Chazokov: 天哪，好可怕哦！ #line:756e7e
+Mae: :| _o_ #line:ee4349
+<<addToJournal TodoHideSoul>>
+<<unlockDoodle Telescope 2>>
+===
+title: Chazokov_amateur
+tags: demo
+colorID: 0
+position: 23332,-2842
+---
+Mae: <o> #line:6fd2ac
+Mae: 你是一个占星师还是别的什么？ #line:f1daf4
+Chazokov: 我觉得你想说的应该是 [wave]天文学家[/wave]，不过我就是个爱好者而已。 #line:74f5ad
+Mae: 没人付你薪水，你还知道那么多。 #line:a58a14
+Chazokov: 你这话可实在是伤人啊。 #line:39be2d
+<<wait .5>>
+Mae: _o_ #line:c93ec4
+Mae: 对不起？ #line:976668
+Chazokov: 晚上再来吧，让我往你脑袋里塞点有关星星的东西。 #line:872a8f
+Mae: :) #line:46f60a
+Mae: 好的！ #line:08fcea
+Mae: :| #line:5d32d8
+<<set $chazokov to 4>>
+===
+title: Chazokov_loop
+tags: demo
+colorID: 0
+position: 23581,-2844
+---
+Chazokov: 我的屋顶一直为你敞开！ #line:3260df
+===
+title: ChazokovEnterUnderhillFromTelescope_A2D1
+tags: demo2
+colorID: 3
+position: 24802,-5019
+---
+<<if $found_ds_1 and $found_ds_2>>
+    <<set $telescope_visit_one to 1>>
+    Mae: 那实在太酷了。 #line:7d24a5
+    Chazokov: 两天后我们还能再看到这些。 #line:9d89af
+    Chazokov: 你会过来看吗？ #line:c5a6b3
+    ->如果我记得的话，当然了。 #line:a21f6e
+    ->可能不会吧。 #line:005bf2
+    Chazokov: 你会回来的。 #line:67b973
+    Chazokov: 没人能克服星星的吸引力。 #line:a50da4
+    Mae: 有点吓人了，查佐科夫老师。 #line:304062
+    Chazokov: 吼吼吼吼～ #line:3a5ef3
+    <<unlockDoodle DohrCastys>>
+<<else>>
+    [[GiveUpTelescope]]
+<<endif>>
+===
+title: Chazokov_Act2_Act3
+tags: 
+colorID: 0
+position: 25018,-4029
+---
+<<if $act is 2>>
+    <<if $day is 1>>
+        <<if $telescope_visit_one>>
+            [[ChazokovAfterTelescope_A2D1]]
+        <<elseif $met_chazokov is 0>>
+            <<set $met_chazokov to 1>>
+            [[ChazokovFirstIntro]]
+        <<else>>
+            [[ChazzyA2D1]]
+        <<endif>>
+    <<elseif $day is 3>>
+        <<if $telescope_visit_two>>
+            [[ChazokovAfterTelescope_A2D3]]
+        <<elseif $met_chazokov is 0>>
+            <<set $met_chazokov to 1>>
+            [[ChazokovFirstIntro]]
+        <<else>>
+            [[ChazzyA2D3]]
+        <<endif>>
+    <<endif>>
+<<elseif $act is 3>>
+    <<if $day is 1>>
+        <<if $telescope_visit_three>>
+            [[ChazokovAfterTelescope_A3D1]]
+        <<elseif $met_chazokov is 0>>
+            <<set $met_chazokov to 1>>
+            [[ChazokovFirstIntro]]
+        <<else>>
+            [[ChazzyA3D1]]
+        <<endif>>
+    <<elseif $day is 3>>
+        <<if $telescope_visit_four>>
+            [[ChazokovAfterTelescope_A3D3]]
+        <<elseif $met_chazokov is 0>>
+            <<set $met_chazokov to 1>>
+            [[ChazokovFirstIntro]]
+        <<else>>
+            [[ChazzyA3D3]]
+        <<endif>>
+    <<endif>>
+<<endif>>
+===
+title: ChazokovInitLevel
+tags: 
+colorID: 0
+position: 24074,-4439
+---
+<<if $act is 1 and $chazokov_done_act_1 is 0>>
+	<<show Chazokov>>
+    <<hide ChazokovTelescope>>
+	<<warp Chazokov ChazokovPorch>>
+	<<flip Chazokov 1>>
+<<elseif $act is 0 and $day is 0>>
+    <<show Chazokov>>
+    <<flip Chazokov -1>>
+<<elseif $act is 2 and $day is 1>>
+    <<show Chazokov>>
+    <<flip Chazokov -1>>
+<<elseif $act is 2 and $day is 3>>
+    <<show Chazokov>>
+    <<flip Chazokov -1>>
+<<elseif $act is 3 and $day is 1>>
+    <<show Chazokov>>
+    <<flip Chazokov -1>>
+<<elseif $act is 3 and $day is 3>>
+    <<show Chazokov>>
+    <<flip Chazokov -1>>
+<<elseif $act is 4 and $day is 3>>
+    <<show Chazokov>>
+    <<flip Chazokov -1>>
+<<else>>
+    <<hide ChazokovTelescope>>
+    <<hide Chazokov>>
+<<endif>>
+===
+title: ChazokovFirstIntro
+tags: demo2
+colorID: 3
+position: 24781,-4420
+---
+<<set $chazokov_day_intro to 1>>
+Chazokov: 梅·博罗夫斯基！你完全可以先敲敲下面的门。 #line:65c8ed
+Chazokov: 上别人的屋顶可不太礼貌。 #line:4af613
+Varney: 下次我可要叫警察啦！ #line:903270
+Mae: 随你的便。 #line:bde8e7
+Chazokov: 吼吼吼吼～！ #line:5eb604
+Chazokov: 无论如何，很高兴你能接受我的邀请！ #line:d9b95b
+Mae: 你在干什么啊？ #line:375644
+Chazokov: 捕捉黄昏星！ #line:9bf9b3
+->黄昏星是什么? #line:65e983
+	Chazokov: 是一些在晚上并不发光的游荡行星。 #line:2e4d7b
+	Mae: 这是什么原理？ #line:13bc38
+	Chazokov: 这是落日余晖与大气合作弄出的小把戏。 #line:44c0e3
+	Chazokov: 这些星星只能在每年春秋之际的几周里才能捕捉到，多么的美妙。 #line:32e63b
+	Mae: 酷啊。 #line:bcbd4e
+->黄昏星是我的盯鞋摇滚乐队的名字。 #line:f30d6e
+	Chazokov: 真的吗？ #line:3ee328
+	Mae: 当然是假的了。 #line:6abfa4
+	Chazokov: 这是一种盯着自己鞋子看的音乐风格？ #line:d20e4f
+	Mae: 当然还会运用各种混响。 #line:8f662a
+	Chazokov: 咱们怎么就聊到鞋子上了？ #line:89e1a0
+	Mae: 我也忘了。 #line:de6e3a
+Chazokov: 想来看看吗？ #line:1762ae
+->当然！ #line:7f3c22
+	Chazokov: 太棒了！！！ #line:0d77c0
+    <<close>>
+    <<irisOut 1 wait>>
+    <<scene Telescope>>
+->再说吧。 #line:a59dbc
+	Chazokov: 随便你喽，反正我整个下午都会待在这儿的。 #line:79fa3b
+	Mae: 再见了！ #line:309ad4
+===
+title: ChazokovEnterUnderhillFromTelescope_A2D3
+tags: 
+colorID: 3
+position: 25010,-5016
+---
+<<if $found_ds_3 and $found_ds_4>>
+    <<set $telescope_visit_two to 1>>
+    Mae: 哇哦，实在是太棒了。 #line:768d39
+    Chazokov: 欢迎下次再来哟！ #line:e31a00
+    Chazokov: 等过几天再来吧！ #line:77a138
+    Chazokov: 我们将猎取星星! #line:570267
+    Chazokov: 吼 吼 吼 吼～ #line:20c568
+    <<unlockDoodle SterlingSimone>>
+<<else>>
+    [[GiveUpTelescope]]
+<<endif>>
+===
+title: ChazzyA2D3
+tags: 
+colorID: 3
+position: 25568,-4161
+---
+<<if $chazokov_day_intro is 0>>
+    <<set $chazokov_day_intro to 1>>
+    Chazokov: 梅·博罗夫斯基！ #line:20f977
+    Mae: 到，老师！ #line:3eee4b
+    Chazokov: 你又跑我家房顶上来了！ #line:496119
+    Mae: 没错，老师！ #line:523388
+<<endif>>
+Chazokov: 你是来找黄昏星的吗？ #line:4821d5
+->当然是了！ #line:95e4c6
+    Chazokov: 那就来吧！ #line:64a039
+    <<close>>
+    <<irisOut 1 wait>>
+    <<scene Telescope>>
+->不了，谢谢！ #line:f00463
+    Chazokov: 随你喽！ #line:75cb49
+===
+title: ChazokovEnterUnderhillFromTelescope_A3D1
+tags: 
+colorID: 4
+position: 25234,-4999
+---
+<<if $found_ds_5 and $found_ds_6>>
+    <<set $telescope_visit_three to 1>>
+    Mae: 哇哦，真是太酷了。 #line:2d2999
+    Chazokov: 没错，过几天再来吧，还能看到哦。 #line:bdeff7
+    <<unlockDoodle BigSnakeGramercy>>
+<<else>>
+    [[GiveUpTelescope]]
+<<endif>>
+===
+title: ChazzyA3D1
+tags: 
+colorID: 4
+position: 25670,-3892
+---
+<<if $chazokov_day_intro is 0>>
+    <<set $chazokov_day_intro to 1>>
+    Chazokov: 梅·博罗夫斯基小姐！ #line:79e581
+    Mae: 到！ #line:0f4693
+    Chazokov: 哼哼！来感受下秋天的风！ #line:9ab366
+    Mae: 啊，真熟悉而令人怀念。 #line:a2719b
+    Chazokov: 一个人不应该只怀念一件事。 #line:dcaeee
+    Chazokov: 话说…… #line:9450cb
+<<endif>>
+Chazokov: 想过来看会儿星星吗？ #line:13f606
+->当然！ #line:eedc67
+    Chazokov: 来吧！ #line:54809e
+    <<close>>
+    <<irisOut 1 wait>>
+    <<scene Telescope>>
+->算了，谢谢！ #line:c986be
+    Chazokov: 随便你喽！ #line:f062f4
+===
+title: ChazzyA3D3
+tags: 
+colorID: 4
+position: 25644,-3582
+---
+<<if $chazokov_day_intro is 0>>
+    <<set $chazokov_day_intro to 1>>
+    Chazokov: 梅，是你啊！ #line:c111ca
+    Mae: 查佐科夫老师啊！ #line:21b8f9
+    Chazokov: 梅，你今天的状态可不大好啊。 #line:2035a4
+    Mae: 哦，我没事。 #line:c1a36a
+    Mae: 至少我还能跑到屋顶上来，是不是呀？ #line:30d252
+    Chazokov: 还是要小心点啊，可别掉下去了！ #line:482a9f
+    Mae: 我会小心的。 #line:94c25e
+<<endif>>
+Chazokov: 你到这儿是为了看星星吗？ #line:f4dc6a
+->您肯定知道我是怎么想的！ #line:a6f2e6
+    Chazokov: 那就过来看看吧！ #line:523d84
+    <<close>>
+    <<irisOut 1 wait>>
+    <<scene Telescope>>
+->算了，谢谢！ #line:1f8ea7
+    Chazokov: 随便你哦！ #line:bd3d70
+===
+title: ChazokovEnterUnderhillFromTelescope_A3D3
+tags: 
+colorID: 4
+position: 25487,-4990
+---
+<<if $found_ds_7 and $found_ds_8>>
+    <<set $telescope_visit_four to 1>>
+    Mae: 太可爱了。我是说这些星星。 #line:8a5de6
+    Chazokov: 你说的没错。 #line:513221
+    <<unlockDoodle KolAdina>>
+<<else>>
+    [[GiveUpTelescope]]
+<<endif>>
+===
+title: ChazokovAfterTelescope_A2D1
+tags: demo2
+colorID: 3
+position: 25354,-4430
+---
+Mae: 这么说的话，呃…… #line:aa9533
+Mae: 这些星座的故事是不是都有寓意什么的呢？ #line:214911
+Chazokov: 我想你可能需要自己来搞清楚了，梅。 #line:bfa9e1
+Mae: 如果它只是按照我希望的寓意来解读， #line:136019
+Mae: 那么也就没有什么寓意可言了，对吗？ #line:377c07
+Chazokov: …… #line:bfa214
+Mae: 怎么了？ #line:ecbab7
+Chazokov: 我得好好想想你刚才说的那句话。 #line:4e0ad4
+<<set $chazokov_done to 1>>
+
+===
+title: ChazzyA2D1
+tags: demo2
+colorID: 3
+position: 25083,-4449
+---
+Chazokov: 你改主意了吗？ #line:2c0d65
+->是啊……我的意思是……星星其实也挺酷的嘛。 #line:9c0fc1
+    Chazokov: 我当时的想法和你一样。也正是因为这个想法，才为我今后的事业奠定了基础。 #line:5bf62e
+    Chazokov: 快来看看吧！ #line:84f14a
+    <<close>>
+    <<irisOut 1 wait>>
+    <<scene Telescope>>
+->没，就是想过来看看您的望远镜而已。 #line:27b0d6
+    Chazokov: 她可是个大美人呀！ #line:40e9da
+===
+title: Chazokov_Act4
+tags: 
+colorID: 6
+position: 23998,-3990
+---
+Chazokov: 嗨，梅。 #line:c3f2e3
+Mae: 嗨，查佐科夫老师！ #line:9c152b
+<<if $met_chazokov is 0>>
+    Chazokov: 你怎么从大学回来了？ #line:d97670
+     Mae: 我退学了。 #line:0d450e
+    Chazokov: 哦。 #line:37af77
+    Mae: 嗯哼。 #line:6e4984
+    Chazokov: 你知道吗？我这几天经常看见你跑来跑去的。 #line:bac13c
+    Chazokov: 还有…… #line:55b1f1
+    Chazokov: 这是你回家之后咱们第一次谈话。 #line:e23c6d
+    Mae: 真怪诶。 #line:cf23fa
+    Mae: 您是经常到房顶上来吗？ #line:88c4d0
+    Chazokov: 嗯，没错。这个位置特别适合天文观测！ #line:8d7ba9
+    Chazokov: 你随时都可以过来，然后探索一下宇宙的奥秘！ #line:cc44ca
+    Mae: 听起来好像是个大计划呀，查佐科夫老师。 #line:309682
+    Chazokov: 保重，梅！ #line:7ddc81
+    <<set $chazokov_done to 1>>
+<<else>>
+    Mae: 现在还有咱们没看到过的黄昏星吗？ #line:27a81f
+    Chazokov: 还有一个！ #line:31fde3
+    <<close>>
+    <<irisOut 1 wait>>
+    <<scene Telescope>>
+<<endif>>
+===
+title: ChazokovEnterUnderhillFromTelescope_A4D3
+tags: 
+colorID: 6
+position: 25762,-4991
+---
+<<if $found_ds_9>>
+    <<set $telescope_visit_five to 1>>
+    Mae: 那之后我们干啥？ #line:867e6a
+    Chazokov: 超级月亮要来了！ #line:651273
+    Mae: 那是什么啊？ #line:a7d9c4
+    Chazokov: 天 上 会 出 现 一 个 超 级 超 级 大 的 月 亮！！！！！ #line:cfddda
+    Mae: 噢噢噢噢噢，光听名字就感觉它很大啊！ #line:80eedf
+    Chazokov: 等它出现的时候，你一定要过来看看。 #line:8636b3
+    Chazokov: 它应该会在半夜出现！ #line:9e6150
+    Chazokov: 到时候，其他爱好者也会爬到屋顶上赏月的。 #line:27a7fc
+    Chazokov: 你来的话，我会给你做热可可的。 #line:520922
+    Chazokov: 多 棒 的 夜 晚！！！！ #line:105580
+    Mae: 听起来感觉好棒诶！！！ #line:513f7a
+    Mae: 我也想看超级月亮！！！ #line:b0a188
+    Chazokov: 那 就 记 住 一 定 要 来 啊！ #line:f8410a
+    Mae: 待会见，查佐科夫老师。 #line:ec452f
+    Chazokov: 回头见，盯星者。 #line:92e638
+    <<unlockDoodle Erskine>>
+    <<set $chazokov_done to 1>>
+<<else>>
+    [[GiveUpTelescope]]
+<<endif>>
+===
+title: ChazokovAfterTelescope_A2D3
+tags: 
+colorID: 3
+position: 25880,-4199
+---
+Mae: <o> #line:449574
+Mae: 您是“占星师"吗？ #line:1396c3
+Chazokov: 你想说的应该是[wave]天文学家[/wave]吧。我其实只是个天文爱好者而已。（“占星师"英文为“astrologer"，“天文学家"英文为“astronomer"） #line:2c7011
+Mae: 学习这些又不赚钱，你居然还能知道那么多。 #line:24fc9e
+Chazokov: 这可是我听过最悲伤的话了。 #line:484289
+<<wait .5>>
+Mae: _o_ #line:12f096
+Mae: 真对不起啊。 #line:89f3f3
+Chazokov: 过几天再来吧，到时候我会往你脑袋里灌输点关于星座的知识的。 #line:c288ce
+Mae: :) #line:8d6962
+Mae: 好滴！ #line:3f106d
+Mae: :| #line:129ffc
+<<set $chazokov_done to 1>>
+===
+title: ChazokovAfterTelescope_A3D1
+tags: 
+colorID: 4
+position: 25916,-3840
+---
+Mae: 话说，天上到底有多少颗星星呀？ #line:d7ceeb
+Chazokov: …… #line:96c9d7
+Mae: 怎么了？ #line:c4c1db
+<<wait 1>>
+Mae: 我指的是咱们正在看的这些星星一共有多少颗！ #line:f0f8a5
+Chazokov: 应该有不少吧，但谁知道呢？ #line:59c763
+Chazokov: 我们能做的只是用望远镜去观察它们。 #line:d3559f
+<<set $chazokov_done to 1>>
+===
+title: ChazokovAfterTelescope_A3D3
+tags: 
+colorID: 4
+position: 25889,-3526
+---
+Chazokov: 就这样吧！ #line:046545
+Mae: 好吧。 #line:6a11de
+Chazokov: 看那星群！ #line:a1326c
+Mae: 看到了。 #line:f6e3bb
+Chazokov: 梅，你应该赶快回家睡觉去了。 #line:dd1785
+Mae: 用不着。 #line:710bff
+Chazokov: 至少从上面走下来吧 #line:430404
+Chazokov: 免的你掉下来把脖子摔断了。 #line:15de78
+Mae: 我没事的。 #line:3b1520
+Chazokov: 我得看着你离开， #line:e59d11
+Chazokov: 还得随时准备叫救护车。 #line:e5a654
+Mae: 谢谢，那就够好了。 #line:5df403
+Chazokov: 这是我唯一能做的了！ #line:6981c2
+<<set $chazokov_done to 1>>
+===
+title: GiveUpTelescope
+tags: 
+colorID: 0
+position: 25180,-4709
+---
+<<if $gave_up_telescope is 0>>
+    Mae: 好吧好吧，我放弃了。 :( \o/ #line:a51068
+    Chazokov: 你也放弃得太快了， 梅·博罗夫斯基！ #line:e9fb63
+    Mae: :| _o_ #line:e2deca
+<<elseif $gave_up_telescope is 1>>
+    Mae: 可恶，我根本不可能弄明白的。 :( \o/ #line:f5de97
+    Chazokov: 认真点，打起精神！ #line:48e634
+    Mae: :| _o_ #line:b8ae07
+<<elseif $gave_up_telescope is 1>>
+    Mae: 阿巴阿巴. :( \o/ #line:042671
+    Chazokov: 可能这星星并不是所有人都能看见…… #line:58dfe2
+    Mae: :| _o_ #line:df6596
+<<else>>
+    Mae: 呃啊啊啊啊。 :( \o/ #line:1f0d4c
+    Chazokov: 我对你很失望，梅。 #line:fc8a77
+    Mae: :| _o_ #line:a289a4
+<<endif>>
+<<set $gave_up_telescope += 1>>
+<<set $chazokov_done to 1>>
+===

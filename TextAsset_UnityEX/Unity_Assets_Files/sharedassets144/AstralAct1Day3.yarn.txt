@@ -1,0 +1,112 @@
+title: GraveDigger
+tags: 
+colorID: 0
+position: 852,76
+---
+GraveDigger: 嘿。 #line:fae61d
+Mae: 晚上好啊。 #line:65b23d
+GraveDigger: 刚挖完几个坑。 #line:ba87bb
+Mae: 好吧。 #line:8fa2d5
+GraveDigger: 该起床啦！ #line:be2afd
+<<fadeOut 1 wait>>
+<<endDay>>
+
+===
+title: ManOnHill
+tags: 
+colorID: 0
+position: 1144,39
+---
+ManOnHill: [color=2B81A9]我们不知主何时会带我们离开。[/color] #line:b57a04
+ManOnHill: [color=2B81A9]布莱恩他清楚矿井下的危险，[/color] #line:d655b9
+ManOnHill: [color=2B81A9]但他深爱着他的家人，[/color] #line:622bca
+ManOnHill: [color=2B81A9]他就和我们中的大多数人一样。[/color] #line:2bce78
+ManOnHill: [color=2B81A9]他把家人看得比自己的命还重要。[/color] #line:049cad
+ManOnHill: [color=2B81A9]但主不仅是天上的主，他也是矿道的主。[/color] #line:ce4e76
+ManOnHill: [color=2B81A9]我们将得以安心，因为[/color] #line:c1f98b
+ManOnHill: [color=2B81A9]布莱恩已经与天主在一起了。[/color] #line:e85a06
+Crowd: [color=2B81A9]阿门。[/color] #line:4ca3d3
+ManOnHill: [color=2B81A9]我们把布莱恩交归于尘土，投入主的怀抱。[/color] #line:8fd25c
+===
+title: ManOnFence
+tags: 
+colorID: 0
+position: 501,49
+---
+Mae:{align=middle,locator=MaeFenceTalk,width=2}哈喽？ #line:f98896
+ManOnFence: 怎么了？是谁在那儿？ #line:bc7d6e
+Mae:{align=middle,locator=MaeFenceTalk,width=2}我是梅·博罗夫斯基 。 #line:d083e6
+ManOnFence: 你来这儿干什么，鬼魂？ #line:b61fe2
+[[{align=middle,locator=MaeFenceTalk,width=2}我这是在哪儿啊？|ManOnFence_WhereAmI]] #line:001163
+[[{align=middle,locator=MaeFenceTalk,width=2}这是葬礼吗？|ManOnFence_IsThisAFuneral]] #line:2dac70
+===
+title: ManOnFence_WhereAmI
+tags: 
+colorID: 0
+position: 321,335
+---
+ManOnFence: 你现在在宾夕法尼亚负鼠泉的公墓。 #line:09bb14
+ManOnFence: 但你也肯定清楚 #line:f88c11
+ManOnFence: 你到这来就是为了缠着我 #line:5916a2
+ManOnFence: 在这个寂寞的午后。 #line:e3f0b1
+Mae:{align=middle,locator=MaeFenceTalk,width=2}我可没缠着你！ #line:3f8f67
+Mae:{align=middle,locator=MaeFenceTalk,width=2}再说了，我也不是鬼！ #line:acd788
+Mae:{align=middle,locator=MaeFenceTalk,width=2}而且现在已经是晚上了！ #line:820e82
+[[ManOnFence_2]]
+
+===
+title: ManOnFence_IsThisAFuneral
+tags: 
+colorID: 0
+position: 676,327
+---
+ManOnFence: 这是布莱恩·卢克的葬礼。他现在的情况和你差不多，鬼魂。 #line:530b5b
+Mae:{align=middle,locator=MaeFenceTalk,width=2}他出什么事了？ #line:d8dcca
+ManOnFence: 他在矿井里头闷死了。 #line:f38eba
+ManOnFence: 埃德·亚辛尼克三周前被他给绊倒了。 #line:fc8823
+ManOnFence: 被埋在煤渣里的他绊倒。 #line:dfec5f
+Mae:{align=middle,locator=MaeFenceTalk,width=2}唉，可真惨啊！ #line:67e7f9
+ManOnFence: 后来，其他人把他从煤堆里拉了出来， #line:11df27
+ManOnFence: 帮他清洗了身体 #line:a3438c
+ManOnFence: 有那么一阵子，他们注视着他 #line:c62a86
+ManOnFence: 可现在他又被埋进土里了。 #line:b3d0a0
+Mae:{align=middle,locator=MaeFenceTalk,width=2}唉，感觉挺荒诞的。  #line:becdf5
+[[ManOnFence_2]]
+===
+title: ManOnFence_2
+tags: 
+colorID: 0
+position: 464,659
+---
+ManOnFence: 你为什么要跟我说话，鬼魂？ #line:c99c07
+Mae:{align=middle,locator=MaeFenceTalk,width=2}我的老天爷啊，咱们到底在说什么啊？ :( #line:a6a04b
+ManOnFence: 是奶奶让你来的吗？让你来折磨我的吗？ #line:ec703b
+Mae:{align=middle,locator=MaeFenceTalk,width=2, mood=5}听我说，我现在可害怕极了。 #line:35f51a
+Mae:{align=middle,locator=MaeFenceTalk,width=2}我也不记得我是怎么到这儿来的了。 #line:1c3b6e
+Mae:{align=middle,locator=MaeFenceTalk,width=2}我是不是死了？ #line:599da9
+Mae:{align=middle,locator=MaeFenceTalk,width=2}难道我把自己和家都给烧了吗？ #line:d27013
+Mae:{align=middle,locator=MaeFenceTalk,width=2}哦，我的天……老爸老妈都…… #line:1e0ce2
+ManOnFence: 你为什么要缠着我不放？ #line:49b487
+Mae:{align=middle,locator=MaeFenceTalk,width=2}拜托帮帮我！！！  #line:81248d
+ManOnFence: 回去土地里安息吧，鬼魂。 #line:25c60e
+ManOnFence: 在那里，没有人会打扰你 #line:f17817
+ManOnFence: 安息吧……安息吧……安息吧…… #line:043131
+<<close>>
+<<trigger AstralAct1Day3 AstralFreakout>>
+<<wait 13>>
+<<fadeOut 1 wait>>
+<<endDay>>
+
+===
+title: Sign
+tags: 
+colorID: 0
+position: 1590,168
+---
+Mae: 看不清写的是什么了…… #line:a7f2cf
+Mae: 什么什么矿业公司…… #line:f2205c
+Mae: 我觉得这地方写的是 #line:ba9745
+Mae: 人口数：562吗？ #line:f12b09
+Mae: 哈。 #line:6d262c
+<<end>>
+===

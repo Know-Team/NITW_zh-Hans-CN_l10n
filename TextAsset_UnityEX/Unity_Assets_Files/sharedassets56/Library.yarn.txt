@@ -1,0 +1,527 @@
+title: Microfiche
+tags: 
+colorID: 0
+position: -56,93
+---
+<<if $microfiche_done is 0>>
+    Bea: 好啦，找着啦。 #line:14c89c
+    Mae: 好滴。 #line:c25fc6
+    <<fadeOutMusic 7>>
+    <<close>>
+    <<wait 3>>
+    Bea: 然后该干什么了…… #line:63cb26
+    Mae: 我不会用这玩意儿。 #line:d429d3
+    Bea: 你居然不会用？ #line:6ff6e7
+    Mae: 我对啥都一窍不通！ #line:13c5c3
+    Bea:{width=4}不好意思，到目前为止，你对整件事有什么贡献啊？ #line:c4e492
+    Mae: \o/ #line:b45923
+    Mae: 这所有的事都是我一个人的主意！ #line:428f8b
+    Bea:{width=4}算了吧。你的主意只是想要抓鬼。 #line:374685
+    Bea: 是我，想出来至少要调查点关于“鬼"的事。 #line:d415d2
+    Mae: :( #line:fbd8a8
+    Mae: 你要是觉得这事很傻，为什么还要跟着我来呢？ #line:6aa341
+    Bea: 你个傻缺，因为你是我朋友啊！ #line:cc4e07
+    <<close>>
+    <<wait 2>>
+    Mae: _o_ :) #line:b04c1c
+    Mae: 嗷～ #line:5d6498
+    Bea: 呃…… #line:cdfa1a
+    Mae: 噢，碧 翠 丝，咱 们 是 好 盆 友 吗？？？ #line:2c7d81
+    Bea: 让我来弄吧。 #line:7a32f8
+    Bea: 要是让你弄的话，咱们今天晚上可就走不了了。 #line:a269dc
+    Mae: o_o :| _o_ #line:a33453
+    <<set $microfiche_done to 1>>
+<<endif>>
+<<irisOut 1 wait>>
+<<scene Microfiche>>
+===
+title: EnterLevel
+tags: test
+colorID: 0
+position: -702,224
+---
+<<if $microfiche_done>>
+    <<set $librarian_done to 1>>
+    <<warp Mae MaeNextToElevator>>
+    <<warp Bea BeaNextToElevator>>
+    <<flip Bea 1>>
+    <<hide Librarian>>
+<<else>>
+    <<flip Mae -1>>
+    <<flip Bea -1>>
+<<endif>>
+<<follow Bea Mae>>
+<<setCanInteract Bea 0>>
+
+<<if $microfiche_done is 0>>
+    [[Intro]]
+<<else>>
+    [[Intro2]]
+<<endif>>
+===
+title: Elevator
+tags: 
+colorID: 0
+position: -385,81
+---
+->上楼！ #line:dbd3bd
+    <<set $elevator_choice to 0>>
+->下楼！ #line:c13a9f
+    <<set $elevator_choice to 1>>
+===
+title: Intro
+tags: 
+colorID: 0
+position: -828,506
+---
+<<cameraLookAt CameraMuralLook 4>>
+<<walk Mae MaeInFrontOfDoor>>
+<<walk Bea BeaInFrontOfDoor wait>>
+<<lookAt Bea LookMural>>
+<<setAnimInt Bea headSlant 2>>
+Bea: 快看！是工人工作的壁画哎！ #line:95c181
+Bea: 这感觉很奇怪， #line:f05d14
+Bea: 这画刚画完的时候，就感觉画里的人说的话是这样的： #line:8b2f40
+Bea: “嘿，快瞧瞧窗户外面啊！ #line:a4d173
+Bea: 大家伙儿都在辛勤工作呢！情况良好，一切顺利！" #line:30d04f
+Bea: 可现在呢， #line:28dae1
+Bea: 自从有人被车撞了，还是被枪崩了之后， #line:ba73b6
+Bea: 我就感觉这只不过就是幅大涂鸦壁画罢了。 #line:a7d4ef
+Mae: 看来这幅壁画让你感触良多啊。 #line:fa7aeb
+Bea: o_o #line:25cfc1
+Bea: 我都忘了，咱们俩根本就不是一个世界的人。 #line:4aa5f1
+Mae: 我的世界更美好一点。 #line:269b84
+<<cameraFollowPlayer 4>>
+<<lookNearest Bea>>
+<<setAnimInt Bea headSlant 0>>
+<<playMusic investigating>>
+===
+title: Librarian
+tags: 
+colorID: 0
+position: 177,417
+---
+<<if $library_desk is 0>>
+    <<set $library_desk to 1>>
+    <<lookAt Mae Librarian>>
+    Bea: 嗨！ #line:dcc002
+    Librarian: 两个小时之后闭馆。 #line:da253a
+    Bea: 嗯，好的。 #line:67d4e1
+    Mae: 请问微缩脚片在哪层？ #line:b03f8f
+    Bea: 是“微缩胶片"。 #line:64e700
+    Mae: :) #line:ca6d98
+    Mae: 微缩叫片。 #line:fe0add
+    Librarian: 微缩胶片在三层。 #line:e1f847
+    Bea: 好的，谢谢。 #line:fba0fb
+    Mae: 上两层楼就OK啦。 #line:72b410
+    Mae: :| #line:4323d8
+    <<loolNearest Mae>>
+<<elseif $library_desk is 1>>
+    <<set $library_desk to 2>>
+    <<set $librarian_done to 1>>
+    <<lookAt Mae Librarian>>
+    Mae: 晚上是不是很难熬啊？ #line:fb2819
+    Librarian: 是啊。 #line:366f8c
+    Bea: 一个人待在这儿是不是有点恐怖呀？ #line:2d4478
+    Mae: 我觉得很恐怖。 #line:c6ef43
+    Librarian: 嗯。 #line:c25c81
+    Librarian: 不过拉瑞现在正在馆里巡逻呢。 #line:e7fd2c
+    <<loolNearest Mae>>
+<<endif>>
+===
+title: DinosaurSkeleton
+tags: 
+colorID: 0
+position: -112,406
+---
+Mae: 图书馆是怎么得到这个东西的? #line:663064
+Mae: 看起来好像很……贵重啊。 #line:646f73
+Bea: 还很古老。 #line:83d825
+Bea: 这个好像是强盗大亨时期的东西。 #line:38f4df
+Bea: 据说其中一个人买到了一只恐龙。 #line:012526
+->真牛啊！ #line:ce09a4
+	Bea: 同意。 #line:e4c7a7
+->这玩意看起来可够怪的。 #line:e3ccbe
+	Mae: 我觉得这东西的姿势不太对。 #line:6ef44f
+	Bea: 那时候，人们是不可能抓到恐龙的。 #line:941442
+	Mae: 真有人抓到过恐龙吗？ #line:8b7e41
+<<set $dinosaur_skeleton_done to 1>>
+===
+title: Computers
+tags: 
+colorID: 0
+position: 252,94
+---
+Mae: 好像有人没关文档就走了。 #line:881bd4
+Bea: 是份简历。 #line:8f7196
+Mae: 鲍勃·塔尔格。 #line:d99ae7
+Mae: 1967年生人。 #line:d608e7
+Bea: 已经有五十岁了。 #line:1ffd4f
+Bea: 咱们来看看…… #line:a5b283
+Bea: 行业经验：矿业、建筑业、钻井业。 #line:d38c19
+Mae: 我根本就没想过等年纪大了以后还要去找工作。 #line:833f5e
+Bea: 五十岁也不算太老。 #line:662538
+Mae: 我的意思是， #line:7c3df2
+Mae: 到了这年纪，手里应该有不少积蓄才对吧？ #line:154bf7
+Bea: 理论上应该是这样。 #line:d7fc43
+Mae: 应该是……“肯定是这样"才对。 #line:a52975
+Mae: :\ #line:f9db76
+Mae: 一般情况下，肯定是这样才对。 #line:c599a3
+Mae: :| #line:230d71
+Bea: 你想进我们的聊天群吗？是个青年社会主义者的群。 #line:ad393b
+<<set $library_computers_done to 1>>
+===
+title: CharityBearity
+tags: 
+colorID: 0
+position: 549,113
+---
+<<if $library_charity_bearity is 0>>
+    <<set $library_charity_bearity += 1>>
+    Mae: 我勒个去。 #line:900726
+    Bea: 怎么了？ #line:6e61e7
+    Mae: 是善心熊。 #line:038bd7
+    Bea: 善心熊是什么？ #line:61eb9d
+    Mae: O_o #line:f81735
+    Mae: 你 居 然 不 知 道 善 心 熊？！ #line:bfd7c2
+    Bea: 我猜，学校里是不是提到过这东西啊？ #line:944a87
+    Mae: 我五岁上学前班的时候就知道它啦！ #line:c1604d
+    Bea: ……好吧。 #line:c6cdcc
+    Bea: 这么说，你小时候很喜欢它吗？ #line:eda6a5
+    Mae: o> #line:db9adb
+    Mae: 一 点 都 不 喜 欢！我 烦 死 它 啦！ #line:0c1b95
+    Bea: 它的模样还真是挺招人讨厌的。 #line:840823
+    Mae: o_o #line:cb77e7
+    Mae: 它给我的感觉就像是， #line:f5f2b0
+	->你让某个邪教组织绑架了， #line:365956
+		Mae: 然后， #line:59dc72
+		Mae: 那群人就开始给你洗脑。 #line:6c2f64
+		Mae: 他们可不会戴着面具，拿着波纹形的祭祀匕首 #line:991928
+		Mae: 到你面前施法的。 #line:6d1af1
+		Bea: 才不是……好吧，你继续说吧。 #line:db2aca
+		Mae: 他们会用善心熊这个粉色恶魔给你洗脑！ #line:90bd09
+		Bea: 这事你害怕吗？ #line:59b85e
+        <<setAnimint Mae headShaking 1>>
+		Mae:{width=8}当然不怕啦！我 只 是 感 觉 无 聊 极 啦。 #line:43afe4
+        <<setAnimint Mae headShaking 0>>
+		Mae: 这书里讲的永远都是什么要对人友善之类的东西。 #line:5c3749
+        Mae: 可是说起来容易做起来难，我根本不知道邻居家老头的发动机该怎么修。 #line:6bbf3a
+        Bea: 这听起来……也还好吧。 #line:50e46c
+        Bea: 《善心熊帮普朗科老先生修理气垫船》。 #line:8c7330
+        Mae: 呃，不，这是我最讨厌的地方：标题的发音永远都是押着韵的！ #line:deaeaf
+        Bea: 《善心熊哦：粉色噩梦哦》。 #line:3f1969
+        Mae: _o_ #line:3b8b83
+        Mae: 《善心熊哦：我无所谓哦》。 #line:aafc33
+    ->你中了某种诅咒， #line:728c9b
+		Mae: 然后就有个长得贼可爱的小东西围着你转， #line:369383
+		Mae: 无时无刻地跟着你。 #line:54c080
+		Mae: 它还会在你耳边大喊： #line:009268
+		Mae: 要懂得分享，不要乱扔垃圾， #line:90886a
+        Mae: 一定要记得交税。 #line:2992a3
+        Bea: 嗯，这些都是很重要的……额……生活技巧。 #line:90049e
+        Mae: 可 我 那 时 候 才 五 岁 啊！！！ #line:cf99d3
+        Mae: 我现在已经二十了，可我还是不交税！！！ #line:455060
+        Mae: _o_ #line:14a89a
+        Bea:{width=4}《善心熊参加州级基建预算会议》。 #line:592f83
+        Mae: 呃，我把最烦人的地方都给忘了：标题的发音永远都是押着韵的。 #line:b80bde
+        Bea: 《善心熊哦：哦，不！预算紧张哦》！ #line:f7f13e
+        <<set $austerity_bearity to 1>>
+        Mae: 那是什么鬼？ #line:7723c9
+        Bea:{width=4}进出萨尔茨镇的两座桥之所以还没开通，就是因为这个原因。 #line:e21d15
+        Mae: 哦，哇，萨尔茨镇……还是去不了吗？ #line:b0c60a
+        Bea: 你可以去试试！ #line:1f5947
+<<elseif $library_charity_bearity is 1>>
+    <<set $library_charity_bearity += 1>>
+    <<set $library_charity_bearity_done to 1>>
+    Bea: 我的妈呀，善心熊的书可真不少啊。 #line:a1a2ed
+    Mae: 我觉得这一系列书还没停印呢。 #line:329cd9
+    Bea: 这本看起来可够旧的。 #line:9fff03
+    Mae: 《善心熊哦：危险无处不在哦》。 #line:596a3e
+    Bea: 这意思可够含糊的，也挺瘆人的。 #line:89f448
+    Mae: 这本书倒应该一直加印下去才对。 #line:401e4a
+<<endif>>
+===
+title: LeaveThirdFloorElevator
+tags: 
+colorID: 0
+position: 809,126
+---
+Bea: *嗅**嗅* #line:b4dc5c
+Bea: 哦，这层的灰尘可真多。 #line:dda4de
+Mae: O_o #line:a9d378
+Mae: 这上面可够*旧*的。 #line:1e3bb9
+Bea: 是啊。 #line:9bdfec
+Bea: 没准你要找的……幽灵，就在这儿。 #line:541888
+Mae: o_o #line:43661a
+Mae: 对啊，幽灵。 #line:34ed1c
+Mae: 要么就是别的什么东西。 #line:e81f1c
+Mae: 不管那东西是什么， #line:ae8d3b
+Mae: 他居然能一边背着重物， #line:a00f58
+Mae: 一边穿过铁丝网做的栅栏， #line:611f61
+Mae: 或者从栅栏上飞过去， #line:4d749f
+Mae: 或者是用其他什么稀奇古怪的方法通过栅栏。 #line:76b766
+Bea: 哦，是啊，这事倒是挺神的。 #line:f56048
+Mae: 所以，咱们得找出这家伙是谁。 #line:a5d0eb
+Mae: 因为他绑架了一个人， #line:48f9f8
+Mae: 而且，这个人还和我最近遇到的事有关系， #line:c9d7d3
+Mae: 这可就不太妙啦。 #line:9c9591
+<<wait 2>>
+Mae: :\ #line:53c8c8
+Mae: 这事弄得我脑瓜子嗡嗡的。 #line:587256
+Bea: 没事的，会没事的。 #line:81fb46
+Mae: :| #line:d8b12a
+===
+title: Intro2
+tags: 
+colorID: 0
+position: -466,511
+---
+<<fadeOutMusic 3>>
+Mae: 所以，咱们才选出了几个调查重点。 #line:61c720
+Mae: 这个星期你能把车借我用用吗？ #line:cc8c1b
+Bea: 你有驾照吗？ #line:7a1a34
+Bea: 总之我是不会借你的。但是多问一句，你有驾照吗？ #line:baf92f
+Mae: 没有。 #line:318b25
+Mae: 我没驾照，没信用卡，也不拜金。 #line:ead042
+Bea: 你只是喜欢用别人的车，拜别人的金罢了。 #line:ac11d5
+Mae: 投胎成凡夫俗子又不是我能控制得了的。 #line:9f1a66
+Bea: …… #line:e22144
+Bea: 好吧，好吧。你也知道，我还要上班。 #line:2107eb
+Bea: 所以，我没法带你到所有的地方去。 #line:f67539
+Bea: 但墓地我还是能带你去的。 #line:9fe424
+Bea: 正好我也得去那儿一趟。 #line:22ed89
+Mae: :) #line:e6b4f2
+Mae: 太好啦！我还得问问格雷格想不想去另外两个地方调查调查。 #line:0b56ea
+Bea: 知道吗，其实有句话我不太想说： #line:f424b2
+Mae: :| #line:7b814b
+Bea: 虽然有些事已经发生过了， #line:01ea45
+Bea: 但这也不代表相同的事以后还会发生。 #line:dfbb7d
+Mae: o> #line:711066
+Mae: 嘿，书呆子，你听说过历史会重演这回事吗？ #line:097ea2
+Mae: 历史的确会重演。相同的事会一遍遍地重演。 #line:57e1e6
+Bea: 这么说，从祖先住在山洞里的那天起，咱们就已经陷到这个怪圈里了？ #line:160468
+Mae: _o_ #line:94a875
+Mae: 没错，这就是科学。 #line:3a0ea3
+Bea: 哦，我滴个神啊。 #line:29f8ff
+===
+title: PoetSociety
+tags: 
+colorID: 0
+position: 751,451
+---
+<<flip Bea 1>>
+<<walk Mae MaePoetry>>
+<<walk Bea BeaPoetry wait>>
+<<flip Bea 1>>
+MissQuelcy: 呃哼！ #line:fbd202
+Mae: 那是…… #line:e9a2e1
+//Librarian: Shhh!
+Bea: 那是奎茜老师吗？ #line:d6272f
+Mae: 哦，哇哦。毕业之后就没再见过她啦。 #line:bcd4ad
+Bea: 她这人可是又厉害又不好惹。 #line:362b7f
+Bea: 她在学校办了个艺术班，可学校没拨给她一分钱。 #line:e7abf3
+Bea: 但她最后还是把艺术班办下去了。 #line:32e115
+Bea: 在所有美术老师里，她可算得上是成功者啦。 #line:04f3b3
+Mae: 哇哦，我可没这么想过。 #line:480c58
+Bea: 我感觉，学校给她发的工资肯定少得可怜。 #line:51af9d
+<<if $austerity_bearity>>
+	Mae: 镇委会肯定是把节约下来的钱都投在了萨尔茨镇的修桥项目上。 #line:21c5b8
+	Bea: 确实是这样。 #line:991f58
+<<endif>>
+MissQuelcy: 谢谢各位参加 #line:11daf5
+MissQuelcy: 负鼠泉诗社举行的第二次活动。 #line:4a1cda
+Bea: 你想待在这儿听他们念诗吗？ #line:3c0d46
+->不了。 #line:0f72d5
+    Mae: :\ #line:401775
+	Mae: 在公共场所读诗可是违法的。 #line:56ff66
+	Bea: 你以前也遇见过这种情况？ #line:d6d342
+	Mae: 在大学的时候，我室友也这么干过。 #line:d272be
+	Bea: 你可从来都没提过你以前的室友。 #line:bf1bf9
+	Mae: 提起她可有讲不完的故事。 #line:3da30d
+    Mae: :| #line:d5b321
+	MissQuelcy: 打扰一下，你们两个也是来参加活动的吗？ #line:211445
+	MissQuelcy: 如果是的话，请到这边来。 #line:51de83
+    <<walk Mae MaeInFrontOfDoor>>
+    <<walk Bea BeaInFrontOfDoor>>
+	Mae: 不是！我俩都不是！ #line:78b6d9
+	Mae: 我们俩说话既不合辙，也不押韵。 #line:10eae0
+    <<close>>
+    <<waitForMove Mae>>
+    <<waitForMove Bea>>
+	MissQuelcy: 诗歌可不是非得押到韵才行！ #line:cf3288
+	Mae: 这是我听过最最最蠢的事啦。 #line:09e539
+	<<walk Mae MaeOut>>
+    <<walk Bea BeaOut>>
+    <<close>>
+->想！ #line:bdee13
+    <<close>>
+	//lights go down
+    //Mae hops up on library counter//
+    <<sit>>
+    <<cameraLookAt CameraPoetry 6>>
+    <<playMusic poetry_society>>
+    <<wait 1>>
+	MissQuelcy: 今晚，我、 #line:b687b2
+    MissQuelcy: “渔夫"琼斯， #line:e571be
+    <<if $selmers_poet >= 3>>
+        MissQuelcy: 和塞尔玛·安·福里斯特将给大家带来我们各自的新诗。 #line:80ea8b
+    <<endif>>
+    MissQuelcy: 先由我给大家带来我的新诗。 #line:079225
+    ->她是从大城市过来的，对吧？ #line:eefe3f
+        Bea: 没错。 #line:c8f336
+        Mae: 她怎么会到咱们这儿来的啊？ #line:254c96
+        Bea: 谁知道啊。 #line:eadc6c
+    ->学校不给她发工资是吗？ #line:c26ef4
+        Bea: …… #line:0ec945
+        Bea: 你说得对，你说的太对了。他们只发工，不发资。 #line:6d030e
+        Mae: 我只是开个玩笑而已！ #line:1df9d6
+        Bea: 好吧。 #line:9ea899
+    MissQuelcy: *啊咳* #line:b9a74c
+    MissQuelcy: 《写给我教过的最差学生的信》 #line:d25efa
+    MissQuelcy: 致我最差的学生： #line:e261f2
+    MissQuelcy: 在我回到家后， #line:f00f4f
+    MissQuelcy: 当我的朋友向我问及 #line:959ea3
+    MissQuelcy: 那关于人生的问题时， #line:35031f
+    MissQuelcy: 我提到了一个人。 #line:fa0bcc
+    MissQuelcy: 那人便是你。 #line:99f3d2
+    MissQuelcy: 我有所顾虑， #line:d5ecf3
+    MissQuelcy: 在我生命的最后一刻， #line:3da90e
+    MissQuelcy: 你将是我唯一能回想起的人。 #line:633b61
+    MissQuelcy: 你 #line:578640
+    MissQuelcy: 为什么要 #line:3cb609
+    MissQuelcy: 用钥匙划我的车？ #line:abffd4
+    MissQuelcy: 我知道， #line:00740d
+    MissQuelcy: 划我车的人 #line:9bc068
+    MissQuelcy: 就是你 #line:e44cfb
+    MissQuelcy: ——布莱恩。 #line:6ef51a
+    MissQuelcy: …… #line:21f635
+    MissQuelcy: 谢谢大家！ #line:35c12b
+    ->这样不违法吗？ #line:3e271e
+        Bea: 啥？ #line:3c53f9
+        Mae: 涉及学生的个人信息不违法吗？ #line:1834cc
+        Bea: 她又没提到人家的名字。 #line:0a48cf
+        Mae: 她说啦！ #line:5b1e9a
+        Bea: 好吧，她又没说出人家的*全*名。 #line:799e52
+    ->可怜的奎茜老师啊。 #line:9b27eb
+        Bea: 至少这样能让她消消气。 #line:467f9e
+    MissQuelcy: 下一位是“渔夫"琼斯。 #line:98a17c
+    //fisherman stands up//
+    MissQuelcy: “渔夫"琼斯为我们带来了一首诗…… #line:553b08
+    Fisherman: 是两首，两首诗。这两首诗都不长。 #line:483620
+    MissQuelcy: 两首诗！那请吧！ #line:69d033
+    Fisherman: 额……嗨，各位，谢谢。 #line:b478e8
+    Fisherman: 第一首诗叫《隧中鳝》。 #line:20735f
+    Fisherman: 鳝鱼鳝鱼水中游， #line:83fbc0
+    Fisherman: 吾竟未识其喜忧。 #line:035427
+    Fisherman: 深居暗处不见日， #line:3eb252
+    Fisherman: 生于泥沼几多稠。 #line:61cf34
+    Fisherman: 君不知我多歧路， #line:e31835
+    Fisherman: 莫辨其中何缘由。 #line:dbe7c0
+    Fisherman: …… #line:d526bb
+    Fisherman: 这是第一首诗。第二首稍微短一点。 #line:6ff167
+    Fisherman: 第二首诗叫《隧中蛙》。 #line:e09abf
+    Fisherman: 有蛙愚钝影中游， #line:a7c8af
+    Fisherman: 似见云雀多烦忧。 #line:1daf2a
+    Fisherman: 君欲渔猎江渚上， #line:b00be5
+    Fisherman: 试问天外几春秋？ #line:b24836
+    Fisherman: …… #line:166f1f
+    //fisherman sits down//
+    Fisherman: 我读完了。 #line:c87f28
+    MissQuelcy: 太棒啦！谢谢您，“渔夫"琼斯！ #line:898c2e
+    <<if $selmers_poet >= 3>>
+        ->这大叔可真替那些鱼操心啊。 #line:068f70
+            Bea: 那条隧道老是让我提心吊胆。 #line:4b0cd9
+        ->他确实能和鱼交流。 #line:9fd42b
+            Bea: 哦，八成是吧。 #line:e838aa
+        MissQuelcy: 最后，有请塞尔玛·安·福里斯特！ #line:60817a
+        //selmers stands up//
+        Mae: :) #line:1e7f61
+        Mae: 耶 啊，瑟 茉 斯！ #line:960b00
+        Selmers: 谢了，梅。 #line:ca2d26
+        Bea: 你认识她？ #line:e5c67f
+        Mae: o_o #line:3a8009
+        Mae: 老姐，她可是你邻居啊。 #line:bb64cd
+        Bea: 哦。 #line:b38c2d
+        Mae: 她老是写一些特好玩的小短诗。 #line:015255
+        Bea: 我倒很期待那些又短又好玩的东西！ #line:80b1ea
+        Selmers: 我诗的标题是 #line:f572ee
+        Selmers: 《负鼠泉无信号》。 #line:f96b2d
+        Mae: :) #line:a30d58
+        Mae: 哈哈哈！ #line:1c42a9
+        Bea: 她说得没错！ #line:280413
+        Selmers: *呃哼～啊咳～* #line:fd1fe6
+        Mae: :| #line:5d0e15
+        <<fadeOutMusic 5>>
+        Selmers: 此处 | 无 | 信号。 #line:827dc7
+        Selmers: 我向着天空，挥动着 | 手中的手机。 #line:8bdce4
+        Selmers: 它时而如同一簇火焰， | 时而如同一篇祷词。 | 可即便如此， | 此处依旧无信号。 #line:460e74
+        Selmers: 我在网上了解到， | APP上铺天盖地宣传的 #line:609a6f
+        Selmers: 富得流油的小鲜肉。 | 他们一天的收入， | 比我家里上下一百多代人 | 收入的总和 | 还要多得多， #line:ce35b7
+        Selmers: 这让我三观尽毁。 #line:ba8d2c
+        Selmers: 从此， | 世上所有想买房的人 | 都变成了房奴， | 都变成了 | 和家人同住的失业者。 #line:948b49
+        Selmers: 对那些小鲜肉 | 和那些亿万富翁而言， #line:fa85a2
+        Selmers: 金钱便是特权， | 金钱便是 | 通向仕途的通行证。 | 这些人等待着我们 | 撒手人寰的那天。 | 他们掌管着我们日常所需的 | 水、酒和药品。 #line:5a3cea
+        Selmers: 手机APP取代了 | 我的工作， | 也打破了我 | 买院子买房， #line:a8d663
+        Selmers: 在地下室里 | 放张沙发的梦想。 #line:632f32
+        Selmers: “未来是属于你们的！" #line:7e0076
+        Selmers: 这一席话， | 让多少创业者日夜奔波， | 不辞辛劳。 #line:0f154d
+        Selmers: 而我只想得到 | 我应得的工资 | 和属于我自己的生活。 #line:4eab98
+        Selmers: 我蜗居在地下室 | 的沙发上， | 而那些权贵 | 却高枕于庭院中的 | 豪宅里。 #line:a861f4
+        Selmers: 在某个夜晚， | 我将搭着公车， | 来到西海岸， #line:1ec35a
+        Selmers: 然后将那权贵所建的钢铁之城 | 付之一炬。 #line:cc403d
+        <<set $saw_selmers_deliver_poem_at_poets_society to 1>>
+        <<wait 2>>
+        <<unlockDoodle SelmersGoodPoet>>
+        Bea: 我勒个去！ #line:bff1e5
+        Mae: 哇哦，我去。 #line:657c5e
+        Bea: 嗯，“创业者"这个词她倒还押了个韵。 #line:6d4926
+        Mae: 那词是啥意思我都不知道。 #line:74852c
+        Selmers: 谢谢大家。 #line:7c08b4
+        Bea: 她平时也这样吗？ #line:a8982c
+        Mae: 不是。 #line:2082f3
+        Mae: 我的天哪。 #line:219a8d
+        Bea: 哈…… #line:6e9f11
+        MissQuelcy: 谢谢大家。咱们两周后再见。 #line:5fe8d5
+        <<lookAt Mae Selmers>>
+        Mae: 嘿，瑟 茉 斯！ #line:b255c1
+        Selmers: 怎 么 啦！ #line:2443fd
+        Mae: :) #line:0cfe8c
+        Mae: 你 的 诗 写 得 太 诡 异 啦，我 喜 欢！ #line:96058c
+        Selmers: 谢 谢，这 是 我 原 创 的！ #line:ee6b0c
+        Bea: 等一下，她说这话，是不是有的诗*不是*她自己写的…… #line:cb5f41
+        Mae: 色 魔 斯，写 得 不 赖！ #line:2c7e19
+        Selmers: 这 外 号 我 可 不 喜 欢！ #line:8411a9
+        Mae: o_o #line:13f747
+        Bea: 你们俩干什…… #line:04fe64
+        Mae: 不 好 意 思！ #line:879e3b
+        Selmers: 没 关 系！ #line:924bc3
+        Bea: 咱们能走了吗？ #line:63f235
+        <<unlockAchievement Poets_of_Possum_Springs>>
+    <<else>>
+        <<fadeOutMusic 5>>
+        MissQuelcy: 各位，今晚咱们就到此为止啦！ #line:017fb6
+        MissQuelcy: 咱们两周之后再见！ #line:cfa783
+        MissQuelcy: 欢迎大家到多纳狼报名加入负鼠泉诗社！ #line:8b8994
+        Mae: 多 纳 狼！！！！！ #line:91a9a5
+        Bea: 梅，咱们走啦。 #line:58359a
+        Mae: :( #line:358bb7
+        Mae: 嗷 呜！！！！！！ #line:f23d08
+    <<endif>>
+
+
+<<close>>
+<<fadeOut 1 wait>>
+<<scene GreggAngusApartment>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -1009,38
+---
+<<if $microfiche_done>>
+<<else>>
+    <<hide MissQuelcy>>
+    <<hide Fisherman>>
+    <<setCanInteract MissQuelcy 0>>
+<<endif>>
+===

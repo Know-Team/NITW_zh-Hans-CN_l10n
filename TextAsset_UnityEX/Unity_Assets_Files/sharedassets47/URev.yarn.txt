@@ -1,0 +1,508 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 1138,620
+---
+<<if $urev is 0>>
+    [[URevStart]]
+<<elseif $fort_lucenne_mall is 5>>
+    [[ReturnGoods]]
+<<elseif $fort_lucenne_mall is 2>>
+    [[StealingPart2]]
+<<elseif $urev is 1>>
+    <<warp Bea NearSteal>>
+    <<warp Mae Steal>>
+    [[AfterFirstSteal]]
+<<else>>
+    <<warp Bea Mae>>
+    <<follow Bea Mae>>
+<<endif>>
+===
+title: StealingPart2
+tags: demo2
+colorID: 0
+position: 1291,896
+---
+<<set $urev_collision_right to 0>>
+<<playerFace -1>>
+Mae: 好了，我会在你顺东西的时候帮你打掩护的。 #line:99fe84
+Bea: 你什么意思？ #line:6c24ea
+Mae: 我一会儿会去吸引店员的注意。我知道该怎么做。 #line:58d5d9
+Bea: 好吧，我承认，吸引注意力可是你的天赋之一。 #line:24c0a6
+Mae: 我最擅长干坏事啦。 #line:3d7858
+Bea: 可如果我要是被抓了该怎么办？ #line:57a92d
+Mae: 那是不可能的。要是有情况的话，我就会大叫。 #line:47fead
+<<close>>
+<<wait 1>>
+Bea: 这主意靠谱吗？ #line:02ac8f
+Mae: 开始行动。 #line:642ad0
+Bea: 好吧。如果出了事，责任都要你一个人担。 #line:4a5d22
+Mae: 责任咱们俩均摊。 #line:d657e9
+<<close>>
+<<cameraLookAt CameraBeaSteal 3>>
+<<walk Bea Steal>>
+<<walk Mae NearCounter wait>>
+<<set $urev_collision_right to 1>>
+[[Distract1]]
+===
+title: Steal
+tags: demo2
+colorID: 0
+position: 1639,622
+---
+Mae: 嗯…… #line:0ba1f5
+Bea: 哇哦，我已经有段时间没见到过这么多腰带扣了， #line:676d4d
+Bea: 我见到的差不多都是款式很普通的腰带扣。 #line:e755ed
+Bea: 我们店的麦克有一个腰带扣，上面的装饰是一条开中型货车的响尾蛇。 #line:a0cae4
+Mae: 好好好，我要动手了。 #line:5b2cff
+Bea: 动什么手？ #line:397ecd
+Mae: 快给我打掩护，我要顺走一个。 #line:95d568
+Bea: 你 说 什 么？！不 行！！ #line:89aae1
+Mae: 嘘！！！ #line:52cd2b
+Bea: 你可*不能*这么干。 #line:c1689b
+<<if $urev is 0>>
+    <<set $urev to 1>>
+<<endif>>
+<<irisOut 1 wait>>
+<<scene PawsModeStealing>>
+===
+title: AfterFirstSteal
+tags: demo2
+colorID: 0
+position: 1017,902
+---
+<<set $urev_collision_right to 0>>
+<<if $urev_theft is 0>>
+    Mae: 我没偷成。 #line:e9aba5
+<<else>>
+    Bea: 好了，你完事没？ #line:84f5a8
+    Mae: 嗷嗷嗷，完事啦。 #line:587bcb
+<<endif>>
+Bea: 把嘴闭上，咱们赶快走。 #line:3a7c09
+<<walk Bea Exit>>
+<<walk Mae Exit>>
+<<irisOut 1 wait>>
+<<scene FortLucenneMall>>
+===
+title: Distract1
+tags: demo2
+colorID: 0
+position: 2445,706
+---
+Mae: 嘿…… #line:f7c752
+URevClerk: 嗯哼？ #line:fae9b5
+Mae: 我想问个问题。 #line:0994e8
+URevClerk: T-恤衫打八折。 #line:3a1fbc
+Mae: 是的，我看见价格了。我还有别的问题…… #line:f0c310
+<<waitForMove Bea>>
+<<tell BeaStealPaw Show>>
+URevClerk: 请讲。 #line:d98240
+Mae: 这家店的名字…… #line:551577
+<<tell BeaStealPaw Neutral>>
+URevClerk: 名字怎么了？ #line:5e5a4a
+Mae: 哈哈，肯定有不少人都问过你这个问题。 #line:4a7c28
+URevClerk: 你说说看。 #line:362740
+<<shuffleNextOptions>>
+[[你们的店名是叫“YOU-Revolution"，还是叫“YOU'RE-Revolution"？|Distract1_1]] #line:c01574
+[[那……你什么时候下班呢？|Distract1_2]] #line:8a64f4
+===
+title: Distract1_1
+tags: demo2
+colorID: 0
+position: 2106,932
+---
+<<tell BeaStealPaw Distracted>>
+URevClerk: 知道吗，还没有人问过我这个问题呢，但我却“一直"都在想这个问题。 #line:b93e8c
+Mae: 说的是啊！ #line:af7c7d
+URevClerk: *我的天啊*！ #line:cd15bf
+URevClerk: 你知道我们店单据上的官方企业名称是什么吗？ #line:3fc35c
+URevClerk: 是UREVOLUTION:|RADICAL “UTH"|CULTURE UPRISING INC|（U革命：|激进“UTH"|文化暴动股份有限公司）。 #line:ebaf14
+<<shuffleNextOptions>>
+[[这也太无聊了吧。|Distract1_1_1]] #line:1cb285
+[[在这儿上班很酷，是不是？|Distract1_1_2]] #line:0a87d7
+===
+title: Distract1_1_2
+tags: demo2
+colorID: 0
+position: 2180,1219
+---
+<<tell BeaStealPaw Neutral>>
+URevClerk: 没觉得。对了，你想买点什么吗？ #line:68ebee
+Mae: 额……好吧…… #line:d5ebd4
+URevClerk: 你还好吗？ #line:777eb3
+<<shuffleNextOptions>>
+[[你有没有偷过什么比较酷的东西啊？|Distract1_1_2_1]] #line:35bf5b
+[[我觉得这家店还挺酷挺不错的。还有，你应该为自己有个工作感到高兴才对。|Distract1_1_2_2]] #line:f6a68d
+===
+title: Distract1_1_1
+tags: demo2
+colorID: 0
+position: 1693,1501
+---
+URevClerk: 哦，老天，这 我 当 然 知 道 啦。 #line:8c42d7
+URevClerk: 为什么我们这家店就不能像其他店一样，去卖一些受小青年欢迎的玩意呢？ #line:26f1cd
+Mae: 对啊，十几岁的小孩一见到这些东西就像疯了似的。 #line:d89951
+URevClerk: 但商场员工买东西是能享受优惠和折扣的，这还是相当不错的。 #line:757437
+Mae: 我以前有个工作， #line:4d6e74
+Mae: 能享受零折优惠。 #line:9ce7a9
+URevClerk: 嗯……哼？ #line:b052de
+Mae: [wave]因为只要我偷偷拿走，所有东西就都是免费的啦！[/wave] #line:e72f42
+URevClerk: 好吧，现在我才明白你之前的话是什么意思。 #line:005a0e
+Mae: 我敢说你肯定经常偷东西。 #line:ea449c
+URevClerk: 额，如果我真要偷了东西，上面肯定会给我安上各种罪名，所以我…… #line:45b106
+[[Success]]
+===
+title: Success
+tags: demo2
+colorID: 0
+position: 2612,2266
+---
+<<tell BeaStealPaw Hide>>
+Bea: 好了，我逛完了，咱们走吧。 #line:5cbf77
+<<walk Bea OutsideStore>>
+Mae: 啊 好 啦 好 啦 和 你 聊 天 很 高 兴 我 该 走 啦！{width=200} #line:3e69c5
+<<walk Mae OutsideStore>>
+URevClerk: 额……那欢迎再次光临。 #line:c88cd2
+<<set $urev to 2>>
+<<irisOut 1>>
+<<scene FortLucenneMall>>
+===
+title: Distract1_1_2_1
+tags: demo2
+colorID: 0
+position: 2018,1508
+---
+<<tell BeaStealPaw Distracted>>
+URevClerk: 你是不是店里派来暗访的啊？ #line:7367c0
+Mae: 我像暗访的人吗？ #line:70dae2
+URevClerk: 我们有时候会遇到暗访的人来检查工作。 #line:814271
+Mae: 他们肯定是来看你有没有偷东西的。 #line:ad47aa
+URevClerk: 是啊，如果我真偷了东西，上面肯定饶不了我。 #line:1cf124
+[[Success]]
+===
+title: Distract1_1_2_2
+tags: demo2
+colorID: 0
+position: 2261,1498
+---
+<<tell BeaStealPaw Alert>>
+URevClerk: 有什么事吗？ #line:b12eac
+Mae: 我也不太清楚。 #line:e0b570
+URevClerk: 要是有什么需要，就告诉我。 #line:d0c80b
+[[SecondAttempt]]
+===
+title: SecondAttempt
+tags: demo2
+colorID: 0
+position: 3662,1123
+---
+Mae: 怎么样了？ #line:804041
+Bea: 额啊…… #line:e658ea
+Mae: 嗯…… #line:bc9521
+<<shuffleNextOptions>>
+[[知道吗？去你的吧！|SecondAttempt_1]] #line:1309ce
+[[我想大叫一会儿。|SecondAttempt_2]] #line:d5b986
+===
+title: Distract1_2
+tags: demo2
+colorID: 0
+position: 2663,997
+---
+URevClerk: 额……你是在勾搭我吗？ #line:ccf91f
+Mae: 唔…… #line:7a6dd0
+<<shuffleNextOptions>>
+[[不好意思，我可不太擅长这个……|Distract1_2_1]] #line:ef8fdd
+[[可能是，也可能不是……我正在努力尝试……但我真的努力了吗？|Distract1_2_2]] #line:649035
+===
+title: Distract1_2_1
+tags: demo2
+colorID: 0
+position: 2531,1286
+---
+<<tell BeaStealPaw Distracted>>
+URevClerk: 噢，没什么的，我能觉的出来。 #line:80489e
+<<shuffleNextOptions>>
+[[我真的很菜，你说对吗？|Distract1_2_1_1]] #line:c52a5a
+[[哦，知道吗，在我刚进店的时候，我就*感觉*自己已经察觉到了什么。|Distract1_2_1_2]] #line:12ee5a
+===
+title: Distract1_2_2
+tags: demo2
+colorID: 0
+position: 2868,1259
+---
+<<tell BeaStealPaw Alert>>
+URevClerk: 女士，我还有工作要忙。 #line:addce5
+Mae: 可恶。 #line:c9d143
+[[SecondAttempt]]
+===
+title: Distract1_2_1_1
+tags: demo2
+colorID: 0
+position: 2519,1552
+---
+<<tell BeaStealPaw Distracted>>
+URevClerk: 其实这也没什么的。说实话，在认识丹尼斯以前我也很菜。 #line:00e8ee
+Mae: “丹尼斯"？ #line:dfa13f
+URevClerk: 就是他。他现在在布里德尔的监狱上班。 #line:10ebd6
+URevClerk: 他以前常常来我们店里发广告。 #line:ad947f
+URevClerk: 我们打算这几天找个日子把婚结了。 #line:85d462
+Mae: 等等，你说的丹尼斯，是住在负鼠泉的丹尼斯·达勒姆吗？ #line:d8e632
+URevClerk: 额……没错。你是怎么认识他的？ #line:8a0ae6
+Mae: 我觉得他已经和一个我认识的姑娘结婚了。 #line:cef9ef
+Mae: 他们现在应该还在一起，但具体情况我就不清楚了。 #line:69cb76
+URevClerk: 你 说 什 么？！ #line:705648
+[[Success]]
+===
+title: Distract1_2_1_2
+tags: demo2
+colorID: 0
+position: 2815,1548
+---
+<<tell BeaStealPaw Neutral>>
+URevClerk: 啊，好吧。 #line:015997
+Mae: 真该死。 #line:232242
+<<shuffleNextOptions>>
+[[真对不起，是我把气氛给搞得怪怪的。|Distract1_2_1_2_1]] #line:a94ac4
+[[你对这事的反应为什么这么大啊？|Distract1_2_1_2_2]] #line:99acf5
+===
+title: Distract1_2_1_2_1
+tags: demo2
+colorID: 0
+position: 2673,1814
+---
+<<tell BeaStealPaw Distracted>>
+URevClerk: 嘿，知道吗？这其实也没什么的。 #line:e7a97c
+Mae: 噢，那就好。 #line:28a429
+URevClerk: 真的不算什么。 #line:5a8d8e
+URevClerk: 刚开始的时候，你给我的感觉的确很奇怪。但现在我在想的是，为什么以前我就没遇到过这种情况呢？ #line:8490ae
+Mae: 我敢保证，总有一天会有某个顾客过来骚扰你的。 #line:15f11d
+URevClerk: 我真没想到，你居然会把这事和骚扰联想到一块儿。 #line:bb7acb
+Mae: 相信我，你很快就不会这么想了。 #line:a6b18b
+[[Success]]
+===
+title: Distract1_2_1_2_2
+tags: demo2
+colorID: 0
+position: 3099,1579
+---
+<<tell BeaStealPaw Alert>>
+URevClerk: 你是什么意思？ #line:f24066
+Mae: 你可真是个大美人儿！ #line:b8df16
+Mae: 咱们去美食街逛逛吧！ #line:3a64a5
+Mae: 咱们去看看员工专属的打折商品吧！ #line:c72e22
+URevClerk: 你……你平常就是这么勾搭别人的吗？ #line:e359be
+Mae: ……是啊。 #line:6cc171
+URevClerk: 你应该继续保持这种状态。 #line:10ca30
+Mae: 嗯。 #line:85b467
+[[SecondAttempt]]
+===
+title: SecondAttempt_1
+tags: demo2
+colorID: 0
+position: 3554,1446
+---
+URevClerk: 好吧，这些想法是从哪儿蹦出来的？ #line:c56868
+<<shuffleNextOptions>>
+[[你为什么还这么冷静啊？我刚才都告诉过你了，快滚吧！|SecondAttempt_1_1]] #line:97951d
+[[是从我这颗装满了奇怪想法的脑子里蹦出来的。|SecondAttempt_1_2]] #line:2b7b6a
+===
+title: SecondAttempt_2
+tags: demo2
+colorID: 0
+position: 4260,1453
+---
+Mae: 啊 啊 啊 啊 啊！！！！{width=400} #line:1aafec
+URevClerk: 呃啊…… #line:a9967d
+<<shuffleNextOptions>>
+[[啊 啊 啊 啊 啊！！！！{width=400}|SecondAttempt_2_1]] #line:6ff1f3
+[[啊 啊 啊 啊 啊？！？！？！{width=400}|SecondAttempt_2_1]] #line:a1a132
+===
+title: SecondAttempt_1_1
+tags: demo2
+colorID: 0
+position: 3414,1740
+---
+<<tell BeaStealPaw Neutral>>
+URevClerk: 你是不是……有什么问题？ #line:9c5bd3
+Mae: 不，我没有，但你确实有。 #line:6f5ca5
+<<tell BeaStealPaw Distracted>>
+URevClerk: 好吧……的确，我也遇到过各种各样的问题。 #line:2b5a4a
+URevClerk: 但当我向主祈祷，我的内心就能平静很多。 #line:07cf3d
+Mae: 哦，很好，很好。这就是我想要的。 #line:46bd25
+URevClerk: 你想要什么？ #line:b14651
+Mae: …… #line:7c8d73
+Mae: 我也不知道…… #line:4c3ed9
+Mae: 我的生活一直都很正常，可最近却开始变得不正常了。 #line:11b037
+Mae: 可到了现在，所有事全都乱啦。 #line:b29744
+URevClerk: 我能为你祈祷吗？ #line:23ae5a
+[[Success]]
+===
+title: SecondAttempt_1_2
+tags: demo2
+colorID: 0
+position: 3703,1734
+---
+<<tell BeaStealPaw Neutral>>
+URevClerk: 好，你有什么问题吗？ #line:e0c0db
+URevClerk: 你需要我帮你把什么人叫过来吗？ #line:07e660
+Mae: 别转移话题！ #line:3bec0b
+<<tell BeaStealPaw Distracted>>
+Mae: 去你的吧！ #line:25bb0f
+URevClerk: 你到底是什么毛病啊？！ #line:4099ab
+Mae: 我也不知道我怎么啦！但我还没迷失自我！ #line:fcfd3c
+URevClerk: 你到底在说些什么啊？！ #line:f26219
+[[Success]]
+===
+title: SecondAttempt_2_1
+tags: demo2
+colorID: 0
+position: 4068,1778
+---
+<<tell BeaStealPaw Neutral>>
+URevClerk: 额，好吧。我要叫保安啦。 #line:231fb7
+Mae: 啊 啊 啊 啊 啊！！！！{width=300} #line:0ea888
+<<tell BeaStealPaw Distracted>>
+URevClerk: 好吧，虽然我们这儿没保安，但我可以报警。 #line:26c229
+Mae: 别 别 别，千 万 别 叫 警 察！我 会 安 静 下 来 的！ #line:d68731
+URevClerk: 你到底是怎么啦？！？ #line:e6665d
+[[Success]]
+===
+title: SecondAttempt_2_2
+tags: demo2
+colorID: 0
+position: 4378,1756
+---
+<<tell BeaStealPaw Neutral>>
+URevClerk: 不管是我主，还是众天使，都改变不了我中立的态度和立场！ #line:a27aa3
+Mae: 不不不！我以上帝之名命令你！ #line:6c24c0
+<<tell BeaStealPaw Distracted>>
+URevClerk: 听啊！你这话究竟是什么意思啊？ #line:7940b5
+Mae: 主啊，因祢倾听祢那卑微仆人的祷告，所以我们要赞美于祢。 #line:494588
+URevClerk: 你到底给我下了什么咒啊？ #line:a4630e
+[[Success]]
+===
+title: ReturnGoods
+tags: demo2
+colorID: 0
+position: 1465,315
+---
+<<set $urev_collision_right to 0>>
+Bea: ……只因此人已不再“受到任何束缚"。 #line:d8c12a
+Bea: 虽然“那个人"（商店老板）并不会失去任何物品， #line:d5de2c
+Bea: 但如果咱们不把东西还回去的话，她就要有麻烦了。 #line:087255
+Mae: 她只不过是一部大机器里一颗小齿轮罢了，不是吗？ #line:ffb447
+Bea: 是啊，随你怎么说好了。快把东西还回去。 #line:29bb01
+Mae: 好好好，我这就去还。 #line:46084a
+<<close>>
+<<walk Mae MaeEndOfCounter wait>>
+Mae: 嗨，你好。 #line:8c4855
+Bea: 您好。 #line:eb30e9
+URevClerk: 你们又回来了。 #line:593664
+Mae: 是啊，因为我们偷了点东西。 #line:0e21e0
+Mae: 喏，这就是我们偷的东西。 #line:74bda6
+Mae: 我们不想因为这事让你在上司面前交不了差。 #line:f56b39
+Mae: 这并不是你的错。世界本来就这样。 #line:75b2f2
+URevClerk: 什么？你说这是你们从我们店里偷走的？ #line:6ca03c
+Mae: 你只是一部大机器里的一颗小齿轮而已。 #line:28b46e
+Mae: 责罚你就像是责罚某个整体中的某一个部分一样。 #line:1496de
+<<close>>
+<<wait 2>>
+URevClerk: 这么说，你们是来还被你们偷走的商品的？ #line:bfab63
+Mae: 总有一天，和你处境相同的人们会起来推翻那个“整体"的。 #line:8c0096
+URevClerk: 什么“整体"啊？ #line:08e3d0
+Mae: 就！是！那！个！整！体！ #line:49c85b
+<<lookAt Mae URevClerk>>
+Bea: 好了，咱们该走了。 #line:9fad59
+Mae: 满怀梦想的美丽少女啊，|你一定要坚强。|除你身上的枷锁，|你已再无任何|可失去之物了。 #line:56fb71
+//<<walk Bea Exit>>
+<<walk Mae Exit>>
+URevClerk: 你到底在说些什么啊？ #line:2e7e2d
+<<set $fort_lucenne_mall to 6>>
+<<irisOut 1 wait>>
+<<scene FortLucenneMall>>
+===
+title: URevClerk
+tags: demo2
+colorID: 0
+position: 692,475
+---
+<<set $urev_clerk_done to 1>>
+URevClerk: 嗨，两位女士。 #line:284dd2
+Mae: :) o/ #line:8676c6
+Mae: 你……好……啊，小姐姐。 #line:61496b
+Mae: _o_ #line:7adf08
+URevClerk: 知道吗，如果去买T-恤衫的话，我们可以打八折。 #line:c5d4a2
+Mae: 噢……！打折T-恤诶！ #line:88f647
+URevClerk: 没错。 #line:88dfa6
+Mae: 真是太感谢啦！ #line:9baa7c
+URevClerk: 不用客气。 #line:cd7c6f
+Mae: 回见啦！ o/ #line:6800c9
+URevClerk: 回见。 #line:d82a65
+Mae: _o_ #line:737dae
+===
+title: URevStart
+tags: demo2
+colorID: 0
+position: 710,691
+---
+<<set $urev_collision_right to 0>>
+<<walk Mae MaeEndOfCounter>>
+<<walk Bea BeaEndOfCounter>>
+Bae: 噢，我的个天哪！ #line:3bd20a
+Mae: 我…… =_= :) #line:aa24ee
+Mae: 勒个…… #line:23fa13
+Mae: 去…… #line:b705da
+Mae: <o> #line:c1de15
+Mae: 我感觉自己又回到14岁啦。 #line:afa3b5
+Bea: 哈哈，是啊。这里全都是些稀奇古怪的破玩意。 #line:3a8a25
+Mae: _o_ o_o #line:e76347
+<<close>>
+<<pointAt Mae Shirt>>
+<<wait .5>>
+Mae: 嘿，那不是…… #line:eedb5c
+Mae: =_= #line:7da473
+<<lookRight Mae>>
+<<wait .5>>
+Bea: 闭嘴。 #line:2db47d
+<<pointAt Mae>>
+<<lookNearest Mae>>
+Mae: o_o #line:98f595
+<<generateFollowPoints Mae Bea>>
+<<follow Bea Mae>>
+<<set $urev_collision_right to 1>>
+===
+title: CounterStuff
+tags: demo2
+colorID: 0
+position: 711,1166
+---
+Mae: 哈哈，很……好…… #line:ba21ec
+Bea: 这些是2017年版的疯玩小子贴纸吗？ #line:add2c3
+Mae: 我想他们可能又回归了。 #line:d1cf7f
+Bea: 嗯，那倒不错。 #line:e2cf3f
+Mae: 我敢打赌，你肯定听过他们的歌。 #line:e0242a
+Bea: 嗯，我听过。他们的歌确实不错。 #line:705ce4
+Mae: 的确，如果你现在已经30岁了，而且心情还很糟，那你肯定会很喜欢他们的歌。 #line:ff7d2c
+Bea: 我离那种状态已经不远了。 #line:04b5b4
+<<end>>
+===
+title: Witchdagger
+tags: demo2
+colorID: 0
+position: 951,1172
+---
+Mae: 这家店连一件和女巫之刃有关系的商品都没有。 #line:81c5b8
+Mae: 这里只有一堆 #line:a75ffe
+Mae: 13岁小孩才会喜欢的玩意。 #line:e02483
+Bea: 那儿不就有一张女巫之刃的海报吗？ #line:793d81
+Mae: 哦，哈。 #line:c87195
+Bea: 看来店里还是有一些和女巫之刃有关的东西。 #line:cb2942
+Bea: 我觉得咱们进这家店的时候，我倒看见了不少和女巫之刃有关的东西。 #line:c673b3
+Mae: 好吧，好吧。 #line:623aa2
+Bea: 你真应该找几个13岁的小孩一起出来玩玩。 #line:d056bd
+Mae: 别扯了。 #line:727763
+BeaL 因为你和那些孩子有很多共同点。 #line:a74136
+Mae: 我发誓我会把你的车偷了，然后把你一个人留在这儿。 #line:8d6a70
+Bea: 呵呵呵，说得就像你会开车似的。 #line:9d888c
+<<end>>
+===

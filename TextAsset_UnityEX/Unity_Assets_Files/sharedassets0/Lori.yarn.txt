@@ -1,0 +1,968 @@
+title: Lori
+tags: 
+colorID: 0
+position: 2473,1234
+---
+<<if $demo2>>
+    <<if $lori is 0>>
+        <<set $lori += 1>>
+        [[LoriDemo2_00]]
+    <<elseif $lori is 1>>
+        <<set $lori += 1>>
+        [[LoriDemo2_01]]
+    <<elseif $lori is 2>>
+        [[LoriDemo2_02]]
+    <<endif>>
+<<elseif $met_lori is 0>>
+    <<if $act is 4 and $day is 3>>
+        <<set $lori to 1>>
+    <<endif>>
+    [[LoriIntroConvo]]
+<<elseif $act is 1>>
+    [[A1.Emoticon]]
+<<elseif $act is 2 and $day is 1>>
+    <<if $lori is 0>>
+        <<set $lori to 1>>
+        [[A2D1.0]]
+    <<elseif $lori is 1>>
+        [[A2D1.Emoticon]]
+    <<endif>>
+<<elseif $act is 2 and $day is 2>>
+    <<if $lori is 0>>
+        <<set $lori to 1>>
+        [[A2D2.0]]
+    <<elseif $lori is 1>>
+        [[A2D2.Emoticon]]
+    <<endif>>
+<<elseif $act is 2 and $day is 3>>
+    <<if $lori is 0>>
+        <<set $lori to 1>>
+        [[A2D3.0]]
+    <<elseif $lori is 1>>
+        [[A2D3.Emoticon]]
+    <<endif>>
+<<elseif $act is 2 and $day is 4>>
+    <<if $lori is 0>>
+        <<set $lori to 1>>
+        [[A2D4.0]]
+    <<elseif $lori is 1>>
+        [[A2D4.Emoticon]]
+    <<endif>>
+<<elseif $act is 3 and $day is 1>>
+    <<if $lori is 0>>
+        <<set $lori to 1>>
+        [[A3D1.0]]
+    <<elseif $lori is 1>>
+        [[A3D1.Emoticon]]
+    <<endif>>
+<<elseif $act is 3 and $day is 2>>
+    <<if $lori is 0>>
+        <<set $lori to 1>>
+        [[A3D2.0]]
+    <<elseif $lori is 1>>
+        [[A3D2.Emoticon]]
+    <<endif>>
+<<elseif $act is 3 and $day is 3>>
+    <<if $lori is 0>>
+        <<set $lori to 1>>
+        [[A3D3.0]]
+    <<elseif $lori is 1>>
+        [[A3D3.Emoticon]]
+    <<endif>>
+<<elseif $act is 3 and $day is 4>>
+    <<if $lori is 0>>
+        <<set $lori to 1>>
+        [[A3D4.0]]
+    <<elseif $lori is 1>>
+        [[A3D4.Emoticon]]
+    <<endif>>
+<<elseif $act is 4 and $day is 3>>
+    <<if $lori is 0>>
+        <<set $lori to 1>>
+        [[A4D3.0]]
+    <<elseif $lori is 1>>
+        [[A4D3.Emoticon]]
+    <<endif>>
+<<endif>>
+===
+title: LoriInitLevel
+tags: 
+colorID: 0
+position: 1997,1219
+---
+<<if $night is 0 and $lori_day_done is 1>>
+    <<hide Lori>>
+<<else>>
+    <<if $act is 1 and $TowneCentreEast and $met_lori is 0>>
+        <<warp Lori LoriGround>>
+        <<show Lori>>
+        <<sit Lori>>
+    <<elseif $act is 3 and $day is 2 and $TowneCentreEast>>
+        <<show Lori>>
+        <<sit Lori>>
+    <<elseif $act is 2 and $day is 1 and $TowneCentreEast>>
+        <<warp Lori LoriRoof>>
+        <<show Lori>>
+        <<sit Lori>>
+    <<elseif $act is 2 and $day is 2 and $TowneCentreEast>>
+        <<warp Lori LoriRoof>>
+        <<show Lori>>
+        <<sit Lori>>
+    <<elseif $act is 2 and $day is 3 and $TowneCentreEast>>
+        <<warp Lori LoriRoof>>
+        <<show Lori>>
+        <<sit Lori>>
+    <<elseif $act is 2 and $day is 4 and $TowneCentreEast>>
+        <<warp Lori LoriGround>>
+        <<show Lori>>
+        <<sit Lori>>
+    <<elseif $act is 3 and $day is 1 and $TowneCentreEast>>
+        <<warp Lori LoriRoof>>
+        <<show Lori>>
+        <<sit Lori>>
+    <<elseif $act is 3 and $day is 2 and $TowneCentreEast>>
+        <<warp Lori LoriRoof>>
+        <<show Lori>>
+        <<sit Lori>>
+    <<elseif $act is 3 and $day is 3 and $TowneCentreEast>>
+        <<warp Lori LoriRoof>>
+        <<show Lori>>
+        <<sit Lori>>
+    <<elseif $act is 3 and $day is 4 and $TowneCentreEast>>
+        <<warp Lori LoriRoof>>
+        <<show Lori>>
+        <<sit Lori>>
+    <<elseif $act is 4 and $day is 3 and $TowneCentreEast>>
+        <<warp Lori LoriRoof>>
+        <<show Lori>>
+        <<sit Lori>>
+    <<elseif $Tracks or $OverheadTracks>>
+        <<show Lori>>
+        <<flip Mae -1>>
+    <<else>>
+        <<hide Lori>>
+    <<endif>>
+<<endif>>
+===
+title: LoriIntroConvo
+tags: 
+colorID: 3
+position: 1588,2031
+---
+<<if $act is 4 and $day is 3>>
+    Lori: 你好啊，杀手。 #line:afb663
+    Mae: 什么鬼！你是谁啊？ #line:8e0f0c
+    Lori: 我叫罗莉·M。 #line:44ab74
+    Mae: 你是从哪听说“杀手"这件事的？ #line:00a0fa
+    Lori: 对我们而言，你就是镇上的风云人物。 #line:48728f
+    Mae: 好吧。 #line:31955e
+    Mae: 我们之前见过吗？ #line:c304da
+    Lori: 我不知道，不过我平时总会到这儿来。 #line:8cbe8b
+    Mae: 嗯哼。 #line:24eb62
+    Lori: 嗯哼。 #line:efa133
+    Mae: 有缘再见了。 #line:af7f96
+    Lori: 再见了，杀手。 #line:d5c005
+    <<set $lori_done to 1>>
+<<else>>
+    Lori: 你好啊，杀手。 #line:195be6
+    Mae: 呃，别那样叫我。=_= #line:402264
+    Mae: 你是谁啊？ #line:2ce327
+    Lori: 我叫罗莉·M。 #line:9a7666
+    Mae: 你是从哪听来“杀手"这件事的？ #line:eb0cd8
+    Lori: 即使是我们这些中学生，对你做过的那些事也有所耳闻。 #line:04f253
+        ->好吧，那都是很久之前的事了。 #line:94ad48
+            Lori: 你为什么那么做？ #line:ee7d34
+            Mae: 我不知道。 #line:08d17b
+            Lori: 那是他自作自受吗？ #line:c28e9b
+            Mae: 不是。 #line:a6ad66
+            Lori: 家长们叮嘱我们最好别跟你搭话。 #line:f6c941
+            Lori: 因为没人知道你会不会再做出那种事。 #line:bf5518
+        ->你们听说什么了？ #line:3974a6
+            Lori: 你把他送进医院了。 #line:4b96a6
+            Lori: 而且没人知道你为什么那么做。 #line:347781
+            Lori: 那是他自作自受吗？ #line:3b79fe
+            Mae: 不是。 #line:974bd9
+            Lori: 家长们叮嘱我们最好别跟你搭话。 #line:3a44f1
+            Lori: 因为没人知道你会不会再做出那种事。 #line:27e5db
+    Mae: 好吧，替我跟你妈妈打个招呼。谢谢她的“关心"！ #line:b45d9d
+    Lori: 哦，她去世了。 #line:3274e9
+    Mae: 好吧，对不起。 #line:ebefeb
+    Lori: 没事的。 #line:df6038
+    Mae: 嗯呢。 :\ #line:df657a
+    Mae: :| o_o #line:d84604
+<<endif>>
+
+<<set $met_lori to 1>>
+===
+title: A2D1.0
+tags: 
+colorID: 3
+position: 1837,2027
+---
+Mae: 好啊。 #line:9c8c4d
+Lori: 哇哦，是你啊。 #line:734b8f
+Mae: 就是我。 #line:76f621
+Mae: 我要坐一会，老年人腿不行了。 #line:db6531
+Lori: 上来可不太容易吧？ #line:986657
+Mae: 是啊，老年人了，都20了。 :\ #line:ff8343
+Lori: 你看起来“一直"都这么老。 #line:db27c1
+Mae: 你多大了？ :| #line:7e234a
+Lori: 明年2月份就到15了。 #line:ee6c3c
+<<close>>
+<<sit>>
+Mae: 以前放学后我都会来这儿。 #line:cdd15a
+Lori: 真的吗？大多数孩子都不会来这儿吧。 #line:58d23b
+Mae: 哈哈，所以这地方才好嘛！ :) =_= #line:bf382d
+Lori: 比待在家里好多了！ #line:04af3a
+Mae: o_o :| #line:086d5c
+Mae: 你住哪儿？ #line:e7ed34
+Lori: 板栗街。 #line:29147f
+Mae: 是嘛，那是在铁轨另一边吧。 #line:ad3040
+Lori: 没错……所以我大概算不上是真正意义上“镇里人"。 #line:a6e4e8
+Lori: 我应该算是…… #line:cb8070
+Lori: “铁路人"。 #line:9dfe0d
+Mae: 我住在枫叶街。 #line:09d7b9
+Lori: 哇哦，住在那儿的可都是有钱人啊！ #line:891d77
+Mae: {emote=interrobang} #line:e5feb8
+    ->什么？ #line:8e8d58
+    ->额……其实情况真不是这样。 #line:51448c
+Lori: 噢，不好意思。 #line:8d9f88
+Lori: 我只是想说那里挺好的…… #line:b55c42
+Lori: *嘿吱**嘿吱* #line:8799bb
+Lori: 别在意，不好意思，对不起。 #line:216268
+//lori goes into panic animation//
+Mae: :( #line:e6e6fd
+Mae: 没事的，你冷静一点！ #line:543279
+Lori: 对不起，我有时候老是怪怪的，对不起。 #line:4d82ee
+Lori: *嘿吱**嘿吱**嘿吱* #line:bb10ec
+Mae: 只要你别再道歉了，我就原谅你！ #line:12c6d4
+Lori: *嘿吱**嘿吱* #line:686605
+Lori: 好吧。 #line:2161b9
+Mae: :| #line:c27e84
+//pause as transition back to lori normal//
+Mae: 铁轨那里挺酷的，我挺长时间没去过了。 #line:131803
+Lori: 每晚列车经过时，感觉我家都在晃。 #line:706b23
+Mae: 是啊，那声音我在冬天的时候总能听到。 :) #line:c30b58
+Mae: 那是我最喜欢的声音之一了。 #line:cb85a4
+Lori: 算了吧，你之所以能这么说，是因为你从床上醒来的时候 #line:78a5f6
+Lori: *嘿吱* #line:d0e8dc
+Lori: 没有震落的天花板碎片掉在你身上。 #line:7dc54b
+Mae: 说的是啊。 :| #line:dba546
+Mae: 好了， #line:7c41d0
+<<jump>>
+Mae: 我要走了！和你聊天挺愉快的！ #line:929c9f
+Lori: 我大多数时候都会在这儿。 #line:31d795
+Mae: 好的。 #line:3ff8a6
+Mae: 886！ o/ #line:8b491d
+Lori: 再见了，杀手。 #line:8544a8
+Mae: 呃…… =_= _o_ #line:450b02
+Mae: o_o #line:13dfc7
+<<set $can_do_lori_friendship_quest to 1>>
+<<if $knows_mural and $talked_to_lori_about_mural is 0>>
+    [[TalkAboutMural]]
+<<endif>>
+===
+title: A2D1.Emoticon
+tags: temp
+colorID: 3
+position: 2074,2027
+---
+Lori: {emote=crossbones} #line:41676d
+===
+title: A2D2.0
+tags: temp
+colorID: 3
+position: 2320,2033
+---
+Mae: 嗨～ #line:ce6e4a
+Lori: 你好啊～ #line:136ed6
+Mae: 我可以坐下吧。 #line:8d4cd6
+Lori: 当然可以。 #line:e868c8
+<<close>>
+<<sit>>
+<<wait 2>>
+Mae: 在干嘛呢？ #line:8a20a4
+Lori: 画画。 #line:0ac6ce
+Mae: 好吧，在画什么呢？ #line:4a2700
+Lori: 你知道电影里那些把刀插到人眼睛里的情节 #line:538e06
+Lori: 是怎么拍出来的吗？ #line:5cc0e2
+Mae: 哇哦，伙计，这我可不太知道。 #line:07853e
+Lori: 我现在就在设计这种效果和装扮。 #line:799ee0
+Lori:{emote=eye_stab} #line:0b4f4c
+Lori: 我在搞一部恐怖电影。 #line:042740
+    ->你是说“制作"一部恐怖电影？ #line:f1e865
+        Lori: 不算吧。 #line:c68b7b
+        Lori: 但也算是吧。 #line:6695fa
+    ->酷炫狂霸拽哦！ #line:a00756
+        Lori: 虽然我还没做出来， #line:9a183d
+Lori: 但总有一天我会做出来的。 #line:3679c4
+Lori: 从导演到剧本还有化妆都由我一人承担。 #line:087518
+Lori: 我尖叫起来也很在行的。 #line:d27868
+Mae: 是吗？ #line:9131c2
+Lori:{width=600}哇 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊！！！！ #line:b8349a
+Lori: 我想去上那种 #line:68396c
+Lori: 恐怖电影学校。 #line:b2e812
+    ->我觉得应该有这种学校。 #line:d502bc
+        Lori: 没错，那里会很酷的。 #line:8384ad
+    ->有这种学校吗? #line:fb02e9
+        Lori: 当然有啦！！！ #line:47a114
+Lori: 我已经知道怎么制造假血和残肢了。 #line:96194a
+Lori: 对不起，我说得很无聊吧。 #line:61a255
+Mae: 怎么会呢！ #line:0f2777
+Lori: 关于这些，我基本什么都知道。 #line:39a326
+Mae: 残肢吗？ #line:79a97f
+Lori: 恐怖电影。 #line:44588a
+Mae: 每一部吗？ #line:54f72e
+Lori: 绝大部分。 #line:9414e2
+Mae: 酷毙了。 #line:da15bb
+Mae: 好了，我得走了。 #line:88f75e
+<<jump>>
+Lori: 再见咯！ #line:65a455
+Mae: 好的哟！ #line:78e458
+<<set $can_do_lori_friendship_quest to 1>>
+<<if $knows_mural and $talked_to_lori_about_mural is 0>>
+    [[TalkAboutMural]]
+<<endif>>
+===
+title: A2D2.Emoticon
+tags: temp
+colorID: 3
+position: 2565,2033
+---
+Lori: {emote=tombstone} #line:77f79e
+===
+title: A2D3.0
+tags: 
+colorID: 3
+position: 2818,2016
+---
+Mae: 嗨，小不点，在干哈？ #line:1be514
+Lori: 嗨，老阿姨，没干哈。 #line:c9639d
+Mae: 真棒。 #line:04266b
+<<if $can_do_lori_friendship_quest>>
+    Lori: 我准备去铁轨那儿看看。 #line:d055f9
+    Lori: 一起不？ #line:781a8f
+    Lori: 对不起，这可能听着挺无聊的。 #line:a0b439
+    Lori: 你不必去的。 #line:91d03e
+    Lori: 我没事的。 #line:796d2a
+    Mae: 哈哈，小伙子，在你想象着我拒绝你之前，能不能让我先说句话。 #line:24b323
+    Lori: 嗯……好吧……你想去吗？ #line:eb2c6a
+    ->当然想啦！ #line:0e913e
+        Lori: 好的！那很好玩的！ #line:6eef04
+        Mae: 让我们躁起来。 #line:3d3c87
+        <<irisOut 1 wait>>
+        <<scene Tracks>>
+    ->其实，我确实有事去不了。 #line:0b6aaf
+        Lori: 哦，好吧。 #line:5b3a3b
+        Lori: 没事的，没事的。 #line:25136a
+        Lori: 反正那也挺无聊的。 #line:3580b6
+        Mae: 哎呀，我不是故意让你不开心的！ #line:b51de8
+        Mae: 我只是今天有点忙而已。 #line:0fc3e5
+        Lori: 没事没事没事。 #line:c6a252
+        Lori: 那下回见了！ #line:0becf1
+        Mae: …下…回…见…？ #line:c6a797
+<<else>>
+    Lori: 估计还可以去铁轨边上玩玩。 #line:a5e2e9
+    Mae: 好的。 #line:6a7769
+    Mae: 回见！ #line:d1ac25
+    Lori: 拜拜！ #line:8a7dc1
+<<endif>>
+===
+title: A2D3.Emoticon
+tags: temp
+colorID: 3
+position: 3048,2004
+---
+Lori: {emote=crossbones} #line:ad8fdb
+===
+title: A2D4.0
+tags: temp blocking
+colorID: 3
+position: 3298,2009
+---
+Mae: 你喜欢丰收节吗？ #line:4b1027
+Lori: 额，丰收节其实挺没意思的，是吧？ #line:327698
+Lori: 我准备看一些60年代的吸血鬼电影。 #line:8c803e
+Mae: 听起来挺酷的。 #line:1120df
+Lori: 没错，然后再给自己点份披萨。 #line:d0d56f
+Lori: 一人独享哦～ #line:8f90bf
+Mae: 哇哦，我在你这个年纪的时候，可没你想得明白。 #line:5a80ca
+Mae: 你知道自己想要什么。 #line:754cae
+Lori: 真的吗？ #line:eed0fd
+Lori: 你那时候在干嘛呢？ #line:641301
+    ->网上冲浪，都是些黑历史了。 #line:e29218
+    ->糟蹋自己的人生。 #line:5ce82c
+        Lori: 好吧。 #line:5a4eaf
+        Lori: 对不起，不小心就聊到这些了！ #line:f1b46f
+        Mae: 没事的，这种事也是难免的嘛。 #line:ce33e9
+        Lori: 哦，是啊，这种事。 #line:716627
+        Mae: 是的，听我一句劝。 #line:7675ea
+        Mae: 别搞暧昧，别碰恋爱。 #line:009639
+        Lori: 好的。 #line:2e3877
+Mae: 这就对了。 #line:0aba7a
+Lori: 再见哦！ #line:071c02
+Mae: 回见！ #line:f9bcf2
+//lori walks left offscreen//
+===
+title: A2D4.Emoticon
+tags: temp
+colorID: 3
+position: 3529,1982
+---
+Lori: {emote=tombstone} #line:6f0178
+===
+title: A3D1.0
+tags: 
+colorID: 4
+position: 1533,2803
+---
+Lori: 你去丰收节了吗？ #line:a49505
+Mae: 去了。唉…… #line:d3d976
+Mae: 但因为我朋友碧娅有些事情没处理好， #line:55e06f
+Mae: 所以在演话剧的时候，事情搞砸了。 #line:b24205
+Lori: 好吧，我那天一边吃披萨一边看《血蜥蜴》来着。 #line:6c0aac
+        ->酷啊。 #line:553d7c
+        ->《血蜥蜴》？ #line:2380b3
+            Lori:  大概是1980年拍摄的意大利电影。 #line:99af02
+            Lori: 虽然挺血腥的，不过那是为了整体效果！ #line:fea9d4
+            Lori: 况且戏剧表现很好！ #line:ed9cce
+            Lori: 在女子寄宿学校里的女孩 #line:f3245d
+            Lori: 被一大堆鬼魂绑架了， #line:46c016
+            Lori: 最后鬼把她们…… #line:46f692
+            Mae: 带到血蜥蜴那里？ #line:9832e4
+            Lori: 没错。 #line:da0b8b
+Mae: …… #line:3dbbce
+Lori: 有什么问题吗？ #line:7bd9ef
+Mae: 没问题，只是…… #line:146e3a
+Mae: 昨晚上我好像见鬼了。 #line:c7efd8
+Mae: 呃，其实我也不太确定。 #line:6c693e
+Lori: 这样听起来好像挺棒的？ #line:c10068
+Mae: 并不，刚好相反。 #line:52ee9d
+Lori: 好吧，对不起。 #line:5835bc
+Mae: 没事的，等会见吧。 #line:b57536
+Lori: 希望你能顺利解决那只鬼！ #line:d4ede3
+Mae: 谢了。 #line:3db907
+<<set $can_do_lori_friendship_quest to 1>>
+<<if $knows_mural and $talked_to_lori_about_mural is 0>>
+    [[TalkAboutMural]]
+<<endif>>
+===
+title: A3D1.Emoticon
+tags: temp
+colorID: 4
+position: 1765,2796
+---
+Lori: {emote=crossbones} #line:554170
+===
+title: A3D2.0
+tags: 
+colorID: 4
+position: 2006,2794
+---
+Mae: 在画什么呢？ #line:2f6cff
+Lori: 在为我的电影画一个反派。 #line:69e12f
+    <<close>>
+    <<sit>>
+    <<wait 2>>
+Mae: 你之前拍过电影吗？ #line:a373ae
+Lori: 我用手机拍过一点点。 #line:7fc347
+Lori: 我还看了几部盗版电影来学习借鉴一下。 #line:a673d9
+Lori: 这很不好。 #line:515335
+    ->你拍的电影讲了些什么？ #line:c37520
+        Lori: 嗯…… #line:3d4768
+        Lori: 有个女人在自己家的墙上发现了一扇窗户， #line:7af500
+        Lori: 然而之前那里什么都没有， #line:dd4eb9
+        Lori: 这扇窗正对着她家的后花园， #line:ee761d
+        Lori: 但是每当日落的时候， #line:200f32
+        Lori: 从窗子向外看，好像隐隐约约有个人站在那里。 #line:cb504a
+        Mae: 天哪，光听起来就够诡异的了。 #line:ca63ff
+        Lori: 是吗！！！ #line:e3e844
+        Mae: 我鸡皮疙瘩都起来了。 #line:6f4b5e
+        Lori: 哦，谢谢诶。 #line:672a51
+        Lori: 我以为这剧情很烂呢。 #line:aaf458
+            ->你这点子从来哪来的？ #line:873d57
+                Lori: 我喜欢暴力血腥的恐怖电影， #line:9c6a5f
+                Lori: 但是暴力血腥并不代表恐怖， #line:c2da6a
+                Lori: 所以我开始思考什么是真正的恐怖感， #line:b25e87
+                Lori: 不过我其实也不太清楚。 #line:f64c40
+                Lori: 比如当你在家的时候，突然有一个从没见过的玩意儿出现了， #line:3f2c29
+                Lori: 或者你之前没意识到它的存在，但它一直就在你家， #line:8d53b4
+                Lori: 而且你能感到某个陌生人就在附近， #line:ae010f
+                Lori: 然后就……我也说不太清楚了…… #line:51a668
+                Mae: …… #line:7ba3b9
+                Lori: 怎么了？ #line:a06b38
+                Mae: 没什么，这就够吓人的了。 #line:dd5422
+            ->那你具体是怎么拍的呢？ #line:d93342
+                Lori: 我是在家拍的， #line:2e51a5
+                Lori: 而且是我自导自演的。 #line:fffc0b
+                Lori: 有些镜头是电脑后期合成的动画， #line:f413b4
+                Lori: 但效果实在太差了！ #line:2fcdd2
+                Mae: 我想看！ #line:5b3626
+                Lori: 没人能看到它了。 #line:6dd986
+                Mae: 你还保留着它吗？ #line:4cb084
+                Lori: 是的，不过仅作为我羞耻的小秘密。 #line:f56ce1
+                Mae: 《我羞耻的小秘密》，不错的影片名。 #line:838171
+                Lori: 可恶。 #line:b047ab
+    ->我贝斯也弹的超烂的。 #line:e7eb39
+        Lori: 你弹了多久了？ #line:9cc422
+        Mae: 久到足够来证明我实在太差了。 #line:c2c6ce
+<<jump>>
+Mae: 好吧，我走啦。 #line:9e8b35
+Lori: 回见！ #line:25f81c
+Mae: 回见！ #line:a7e0a6
+<<set $can_do_lori_friendship_quest to 1>>
+<<if $knows_mural and $talked_to_lori_about_mural is 0>>
+    [[TalkAboutMural]]
+<<endif>>
+===
+title: A3D3.0
+tags: 
+colorID: 4
+position: 2465,2795
+---
+Mae: 嗨，小不点，在干哈？ #line:a118f4
+Lori: 嗨，老阿姨，没干哈。 #line:f69c69
+Mae: 不错呦。 #line:6f0659
+<<if $can_do_lori_friendship_quest>>
+    Lori: 我准备去铁轨那儿看看。 #line:e8ea5e
+    Lori: 一起不？ #line:4e4ae5
+    ->听起来不错 #line:29f98a
+        Lori: 噢，好好好…… #line:7c0e2e
+        Lori: 走喽。 #line:9302a0
+        Mae: 走着！ #line:a706c5
+        <<irisOut 1 wait>>
+        <<scene Tracks>>
+    ->其实，我确实有事去不了。 #line:b67baf
+        Mae: 我现在……挺累的。 #line:f11526
+        Lori: “现在"？ #line:897706
+        Mae: 我是指我人生现在这个阶段。 #line:6747af
+        Mae: 所以下次再约吧。 #line:c3ff80
+        Lori: 好吧，没关系的…… #line:157411
+         Mae: 再见！ #line:9644d1
+        Lori: 拜拜！ #line:c1a3af
+<<else>>
+    Lori: 我准备去铁轨那儿。 #line:da89c7
+    Mae: 小心点，别受伤了。 #line:fffa97
+    Lori: 我可是从生下来就在铁轨那边住。 #line:c02478
+    Lori: 在那里只有呆子和酒鬼才会被火车撞。 #line:201326
+    Mae: 这话听起来……也太没人情味了吧。 #line:d73c95
+    Lori: 这世界本来就没什么人情味。 #line:9a962d
+    Mae: …… #line:88b21e
+    Mae: 好吧，再见喽！ #line:0171d7
+    Lori: 拜拜！ #line:1a79cc
+<<endif>>
+===
+title: A3D2.Emoticon
+tags: temp
+colorID: 4
+position: 2236,2793
+---
+Lori: {emote=tombstone} #line:b58777
+===
+title: A3D3.Emoticon
+tags: temp
+colorID: 4
+position: 2707,2797
+---
+Lori: {emote=crossbones} #line:03bbe6
+===
+title: A3D4.0
+tags: 
+colorID: 4
+position: 2933,2796
+---
+Lori: 你没事吧？ #line:28eb97
+<<close>>
+<<sit>>
+Mae: 嗯…… #line:ffa63c
+Mae: 我感觉自己好像 #line:00139c
+Mae: 被掏空了一半。 #line:13d351
+Mae: 我只是……有点累了。 #line:d05424
+Lori: 你是身体不舒服吗？ #line:974b83
+Mae: 我已经搞不清楚自己到底怎么回事了。 #line:ec3ac0
+Lori: 你该吃点感冒药了， #line:b764a5
+Lori: 再来点苏打饼干和姜汁汽水， #line:e2a00f
+Lori: 最后躺在床上看点儿烂片。 #line:92b95b
+    ->谢谢医嘱，医生 #line:522053
+        Lori: 哪里哪里。 #line:77d5f5
+    ->你说的可能没什么用。 #line:b35a97
+        Lori: 有次我得了肺炎， #line:83eddd
+        Lori: 但我还是得去上学。 #line:611114
+        Mae: 肺炎不是会传染的吗？ #line:88c70c
+        Lori: 这我真不知道。 #line:6a20ff
+Mae: =_= #line:e46280
+//trigger hud2 drunk cam//
+Mae: 咳咳咳咳咳咳 #line:e568d5
+Mae: 咳咳咳咳咳咳 #line:316d60
+Mae: -_- #line:6e0d60
+Lori: 梅，你没事吧？ #line:1a02da
+Mae: 咳咳咳咳咳 #line:db2073
+Lori: 梅！！！ #line:e83d07
+//fade out//
+Mae: o_o #line:9e909e
+Mae: 呃，对不起。让我缓一下。 #line:65d3a3
+Lori: 你应该 #line:87cd7f
+Lori: 去看看医生。 #line:c9dc5e
+Mae: 我能撑过去的。 #line:5c063c
+Mae: 谢了。 #line:e6543a
+Lori: 额……不用谢…… #line:e77886
+<<jump>>
+Mae: 嗯，好了…… #line:33d118
+Mae: 但愿能再相见吧。 #line:747213
+Lori: “但愿"？ #line:b2bfc9
+Mae: 我想没什么是一定的吧。 #line:532296
+Lori: ……好吧 #line:935c63
+Mae: 回见。 #line:a6f329
+===
+title: A3D4.Emoticon
+tags: temp
+colorID: 4
+position: 3148,2790
+---
+Lori: {emote=tombstone} #line:dd41d4
+===
+title: A4D3.0
+tags: 
+colorID: 6
+position: 3413,2792
+---
+Lori: 嗨！ #line:b922e2
+Lori: 你还好吧？ #line:cffc2c
+<<close>>
+<<sit>>
+Mae: 嗨。 #line:d7c4c0
+Lori: 我听说你进医院了是吗？ #line:5e0f6b
+Mae: 哈哈，没错。 #line:b3a4c2
+Lori: 那你是因为什么原因才进的医院啊？ #line:2eea53
+Mae: 我晚上在林子里跑的时候掉沟里了！ #line:886973
+Lori: 为什么会掉沟里去啊？ #line:4c9fff
+Mae: 呃，我当时被一帮死亡教派的保守派大叔追了一路。 #line:484e83
+Lori: 好吧，你没必要告诉我的。 #line:9c2549
+<<if $did_lori_friendship_quest_1>>
+    <<wait 2>>
+    Lori: 话说回来，你真的没事吗？ #line:762b81
+    Mae: 没事，只是这几天有点怪罢了。 #line:11cf20
+    Lori: 好吧，我有点担心你诶。 #line:1e911e
+    Mae: 啊哈，我可是小强呢。 #line:1d0f57
+    Mae: 没有什么能打败我的。 #line:3510f6
+    Lori: 哦，那好吧，能听你这么说挺好的。 #line:841a16
+    <<wait 2>>
+    <<if $did_lori_friendship_quest_2>>
+        <<if $knows_mural>>
+            Mae: 我就想知道，他们到底查没查出是谁毁了《同志们》。 #line:95ae86
+            Lori: 什么“同志们"？ #line:0ee8bd
+            Mae: 就是隧道里的那幅壁画啊。 #line:2485c9
+            Lori: 啊，那是我干的。 #line:17d694
+        <<else>>
+            Lori: 咱们是朋友，对吧？ #line:7542b3
+            Mae: 当然是了。 #line:6a8080
+            Lori: 好耶。 #line:0f7e03
+            Lori: 那幅壁画是我弄坏的。 #line:225e61
+        <<endif>>
+        Mae: 什 么？！ :( #line:5b5e69
+        Mae: 你为什么要这么干啊？ #line:fc4bd4
+        Lori: 我也不知道！ #line:ab40d4
+        Mae: “我 也 不 知 道" 可 算 不 上 理 由 啊！！！ #line:1e4f3b
+        Lori: 你为什么这么关心这壁画啊？ #line:3ee884
+            ->那可是《同志们》啊！ #line:c5162c
+                Mae: 你怎么能对它搞破坏啊！ #line:cdb4b0
+            ->那可是《同志们》啊！多神圣啊！ #line:30cb46
+                Lori: 凭什么啊？ #line:e1d3e3
+        Mae: 它们就好像是这个镇子的一部分！ :| #line:8cdf2b
+        Lori: 这整个镇子都糟透了！ #line:2b3f9d
+        Lori: 而且也没人在乎这地方！ #line:156ca9
+        Lori: 我希望有人注意到这一切都糟透了。 #line:59a8a0
+        Lori: 这个镇子就像一部永不停映的恐怖电影 #line:0ffdf4
+        Lori: 而且这部电影还不怎么样！ #line:665e18
+        Mae: 是，它可能很糟！ #line:ac361f
+        Mae: 但这是“我们"的恐怖电影。 #line:5fd393
+            ->更何况它还有点酷，不是吗？ #line:51f09e
+                Lori: 是啊，可…… #line:eba835
+                <<wait 2>>
+                Mae: 嗯，我懂。 #line:53b0dc
+                Mae: 我心里也有和你一样的想法。 #line:4a371c
+                Lori: 一样的想法？ #line:c7c31c
+                Mae: 一样的想法。 #line:ca692f
+                Lori: 我感觉没有人在乎这些。 #line:fec021
+                Lori: 所有糟糕的东西就一直存在那里。 #line:f057fc
+                Lori: 事情会找到咱们头上， #line:1d1142
+                Lori: 让咱们给赶上。 #line:4439d9
+                Mae: 没错，可是…… #line:6ed69a
+                Mae: 我不是个擅长给别人提建议的人，可…… #line:8f1c94
+                Mae: 有时候就算事情变得再怎么严重， #line:67ff21
+                Mae: 你也无法杀死它们， #line:4ea261
+                Mae: 终究你会明白，生活总要继续。 #line:c07e28
+                Lori: 好吧，这并不能开导我。 #line:b5665f
+                Mae: 呵呵。 #line:02b102
+                Mae: 好吧，其实我也还在寻找更好的自我激励方式。 #line:b758ed
+                Lori: 哈哈哈，说的也是啊。 #line:83a97f
+            ->你希望是一部什么样的电影？ #line:1d8520
+                Lori: 我不知道。 #line:6a1a38
+                Lori: 爱情喜剧吧。 #line:0db77b
+                Lori: 所有人生活在一片干净明亮的地方， #line:833857
+                Lori: 所有人都很漂亮， #line:6b5a03
+                Lori: 他们还会幸福地相吻。 #line:a876d1
+                Mae: 可当你把电影全都看完，你会觉得每个角色都很讨厌。 #line:2ffb3c
+                Mae: 于是你会开始厌恶荧幕上出现的每一个角色。 #line:91b1f3
+                Lori: …… #line:f1cfb9
+                Lori: ……你说得对。 #line:1fa44d
+                Lori: 他们总是特别让人讨厌。 #line:2a7176
+                Mae: 憎恨他们也没什么的， #line:85b091
+                Mae: 他们又不是真实存在的人。 #line:a88aa4
+                Lori: 确实，再说那些角色也不在乎别人讨厌他们。 #line:784fa9
+                Mae: 我说的“令人讨厌"，指的是那些演员，不是角色。 #line:b80301
+                Lori: 我也是。 #line:235214
+        Mae: 嘿， #line:4cfb60
+        Mae: 你家里节假日会做什么庆祝吗？ #line:23d5cd
+        Lori: 我爸爸感恩节的时候总是不在家。 #line:cead84
+        Lori: 不过长至夜节的时候他倒是在家。 #line:11274c
+        Mae: 你可以来我家过感恩节呀！ #line:3488b8
+        Lori: 哦，不用了，算了算了算了。 #line:e0d7a4
+        Mae: 别拒绝得那么快。 #line:1f8f19
+        Mae: 我们家只有三个人，可是却有四把椅子。 #line:4e9087
+        Mae: 不坐白不坐嘛 #line:a804e9
+        Lori: 不不不，我还是算了。 #line:ec916c
+        Mae: 为什么不呢？ #line:5ede16
+        Lori: *嘿吱**嘿吱* #line:52b74f
+        Lori: 我这样挺好的。 #line:24e009
+        //Lori goes into panic attack mode//
+        Lori:{width=8}挺好的挺好的挺好的 #line:dc9d3c
+        Mae: 嘿，嘿，没事的。我们以后再聊。 #line:54ee80
+        Lori: *嘿吱**嘿吱**嘿吱* #line:a44241
+        Lori: 谢谢*嘿吱*你*嘿吱*…… #line:0d4cf2
+        Mae: 你还好吗？用我做些什么吗？ #line:af052a
+        Lori: 不用 ，|*喘*我还好*喘*，|就是*喘*得坐一下。 #line:288ca0
+        Lori: *呼吱* #line:f5b95b
+        Lori: 静一会。 #line:443923
+        Mae: 好的，那你自己休息一会吧。 #line:9a4cc9
+        Mae: 有缘的话，咱们明天再见。 #line:804e32
+        Lori: 梅？ #line:ab3a0b
+        Mae: 在哦！ #line:1a3be0
+        Lori: 谢谢你*呼吱*能和我一起出来玩。 #line:361128
+        Mae: 小case啦，小朋友。 #line:d89976
+        Mae: 不过这次可别再搞破坏了。 #line:df1bd4
+        Lori: 哈哈哈。 #line:c5e686
+        Lori: *呼吱* #line:9760b1
+        Mae: 回见喽！ #line:9baf35
+        <<unlockAchievement Horrorshow>>
+    <<endif>>
+    <<jump>>
+    <<wait 1>>
+<<else>>
+    <<wait 3>>
+    Lori: 不知道你……你愿不愿意下次再和我一起玩？ #line:f686f1
+    Mae: 这不就是我们现在正在做的嘛？ #line:d71992
+    Lori: 我是说比如一起看看恐怖电影。 #line:44ad0c
+    Lori: 我还能介绍我姐姐给你认识， #line:01a701
+    Lori: 她和你差不多大。 #line:9ca85a
+        ->她叫什么？我上高中时可能听说过她。 #line:e6b8da
+            Lori: 斯蒂夫·梅尔斯。不过你不认识她的。 #line:82d035
+            Lori: 她把别人打了，所以得转到另一所学校。 #line:a2d1da
+            Mae: 厉害呀，我们说不定能处得挺好。 #line:4a8b1e
+            Lori: 哈哈哈，可能吧。 #line:bf26f3
+            Lori: 她有时候挺冷酷的，不过人还是很好的。 #line:db336d
+            Mae: 那就好。 #line:7ec896
+        ->我应该不认识她。 #line:f189b5
+            Lori: 是的。 #line:4998ba
+            Lori: 她总不着家。 #line:dd43ec
+            Lori: 不过我可以……计划一下让你们碰面， #line:6cd1e9
+            Lori: 比如举办一个派对。 #line:15327d
+            Lori: 太棒了太棒了太棒了 #line:cab5cc
+            Mae: 听上去确实不错。 #line:862f35
+    <<jump>>
+    Mae: 我得走了。 #line:78639e
+    Mae: 这几天发生了太多奇怪的事了。 #line:f9857a
+    Lori: 奇怪是好事。 #line:4fc309
+    Mae: 可能吧。反正怪事已经发生了。 #line:c249a5
+    Lori: 下回见！ #line:df18f0
+    Mae: 回见，老妹儿。 #line:b2ae97
+    Lori: 再见，杀手。 #line:a3879a
+<<endif>>
+===
+title: A4D3.Emoticon
+tags: temp
+colorID: 6
+position: 3676,2793
+---
+Lori: {emote=crossbones} #line:237379
+===
+title: TalkAboutMural
+tags: 
+colorID: 0
+position: 3125,2268
+---
+Mae: 你有看到地下通道那里被涂鸦的壁画吗？ #line:f6eb6c
+Lori: 看到了，哈哈哈，太好玩了。 #line:fe778f
+Mae: …… #line:083e2e
+Lori: 啊不，我是说，太糟了，真是件怪事。 #line:407345
+Mae: 你觉得谁会是犯人？ #line:88aa00
+Lori: 不知道。 #line:10a437
+Lori: 毕竟有那么多有嫌疑的人。 #line:50e237
+Mae: 是的，镇子上谁都有可能干这事。 #line:685724
+<<set $talked_to_lori_about_mural to 1>>
+===
+title: A1.Emoticon
+tags: temp
+colorID: 0
+position: 1715,1779
+---
+Lori: {emote=tombstone} #line:7b9dbc
+===
+title: EnterTowneCentreEastFromTracks_A2D3
+tags: 
+colorID: 0
+position: 2828,2240
+---
+Lori: 再～再～再～！ #line:e032fd
+===
+title: EnterTowneCentreEastFromTracks_A3D3
+tags: 
+colorID: 0
+position: 2442,3033
+---
+Lori: 见～见～见～啦～啦～啦～{width=8} #line:daf63a
+===
+title: LoriDemo2_00
+tags: demo2
+colorID: 2
+position: 1129,1828
+---
+Lori: 你好啊，杀手。 #line:11cc47
+Mae: 呃，别那么叫我。=_= #line:7742cb
+Mae: 你是谁啊？ #line:e3f2a8
+Lori: 我叫罗莉·M。 #line:642058
+Mae: 你是从哪听来“杀手"这件事的？ #line:83c4ea
+Lori: 即使是我们这些中学生，对你做过的那些事也有所耳闻 #line:5fc494
+[[好吧，那都是很久之前的事了。|Lori_LongTimeAgo]] #line:fc9fb2
+[[你们听说什么了？|Lori_MiddleSchoolers]] #line:b83ed9
+===
+title: Lori_LongTimeAgo
+tags: demo2
+colorID: 2
+position: 917,2152
+---
+Lori: 你为什么要那么做？ #line:0ca106
+Mae: 我也不知道。 #line:aee15b
+Lori: 那是他自作自受吗？ #line:c2bfab
+Mae: 当然不是 #line:74bbd1
+Lori: 家长们叮嘱我们最好别跟你搭话。 #line:9894b1
+Lori: 因为没人知道你会不会再干出那种事了。 #line:55ea64
+[[Lori_00_End]]
+===
+title: Lori_MiddleSchoolers
+tags: demo2
+colorID: 2
+position: 1246,2143
+---
+Lori: 你把他送进医院了。 #line:f7a0d8
+Lori: 而且没人知道你为什么那么做。 #line:6bac83
+Lori: 那是他自作自受吗？ #line:b7fe54
+Mae: 当然不是 #line:74f6ce
+Lori: 家长们叮嘱我们最好别跟你搭话。 #line:3c8295
+Lori: 因为没人知道你会不会再干出那种事了。 #line:09aa43
+[[Lori_00_End]]
+===
+title: Lori_00_End
+tags: demo2
+colorID: 2
+position: 1118,2447
+---
+Mae: 好吧，替我跟你妈妈打个招呼。谢谢她的“关心"！ #line:c80d1a
+Lori: 我会的。 #line:f0cd56
+Mae: 呼哈。 :\ #line:021c81
+Mae: :| o_o #line:9522f9
+===
+title: LoriDemo2_01
+tags: demo2
+colorID: 3
+position: 440,1788
+---
+Mae: 我要坐下来，老年人腿不行了。 #line:970a9d
+Lori: 上来可不太容易吧？ #line:71f0f4
+Mae: 是啊，老年人了，都20了。 :\ #line:dc84ab
+Lori: 你看起来“一直"都这么老。 #line:8808ac
+Mae: 你多大了？ :| #line:83d25d
+Lori: 2月份就已经16岁了。 #line:a73c78
+<<close>>
+<<sit>>
+Mae: 以前放学后我都会来这儿。 #line:ba5b6d
+Lori: 真的吗？大多数孩子都不会来这儿吧。 #line:cca6f6
+Mae: 哈哈，所以这地方好嘛！ :) =_= #line:2db058
+Lori: 比待在家里好多了！ #line:c3b44c
+Mae: o_o :| #line:e9eae9
+Mae: 你住哪儿？ #line:8448e0
+Lori: 板栗街。 #line:2e0b44
+Mae: 是嘛，那是在铁轨另一边吧。 #line:889080
+Lori: 没错……所以我大概算不上是真正意义上“镇里人"。 #line:0c9148
+Lori: 我应该算是…… #line:455e76
+Lori: “铁路人"。 #line:ca56ab
+Mae: 我住在枫叶街。 #line:0aa43c
+Lori: 哇哦，住在那儿的可都有钱人啊！ #line:43988c
+Mae: {emote=interrobang} #line:293c04
+<<close>>
+    ->什么？ #line:33a308
+    ->额……其实情况真不是这样。 #line:648086
+Lori: 噢，不好意思。 #line:635a37
+Lori: 我只是想说那里挺好的…… #line:4ed887
+Lori: 别在意，不好意思，对不起。 #line:5bbbe8
+Mae: :( #line:ffc8b9
+Mae: 没事的，你冷静一点！ #line:ed8b26
+Lori: 对不起，我有时候老是怪怪的，对不起。 #line:54352d
+Mae: 要你别再道歉了，我就原谅你！ #line:1b52fb
+Lori: 好吧。 #line:20fef1
+Mae: :| #line:752649
+Mae: 铁轨那里挺酷的，我挺长时间没去过了。 #line:4ecfaf
+Lori: 每晚列车经过时，感觉我家都在晃。 #line:5b0586
+Mae: 是啊，那声音我在冬天的时候总能听到。 :) #line:b671d7
+Mae: 那是我最喜欢的声音之一了。 #line:c8b9f6
+Lori: 算了吧，你之所以能这么说，是因为你从床上醒来的时候。 #line:8aaebe
+Mae: 说的是啊。 :| #line:dbba2d
+Mae: 好了 #line:849859
+<<jump>>
+Mae: 我要走了！和你聊天挺愉快的！ #line:2b0efd
+Lori: 我大多数时候都会在这儿。 #line:1b8333
+Mae: 好的。 #line:ba6063
+<<if $knows_mural is 1 and $asked_lori_mural is 0>>
+    Mae: 要说没事的话，你看到隧道里的画被人涂鸦了吗？ #line:cbedba
+    Lori: 是啊，挺诡异的吧？ #line:283a0c
+    Lori: 镇委会和那个警察之前几乎把所有人都赶出隧道了。 #line:33ec8c
+    Mae: 我就想知道你们这群小朋友一般都在哪活动。 #line:81c19a
+    Lori: 哈哈哈，他们可不小，他们都比我大。 #line:33b574
+    Lori: 我姐姐总和他们一起出去。 #line:46eb89
+    Mae: <o> -_- #line:b3f214
+        ->也许我该问问你姐姐吧 #line:fd18fa
+            Lori: 我可不觉得她会知道的 #line:2676aa
+            Mae: 嗯，你可能是对的 #line:f77845
+            Mae: 你知道她通常会待在哪儿吗？ #line:518a6c
+            Lori: 嗯……她经常在隧道里待着…… #line:dfdecd
+            Lori: 警察不在那里巡逻的时候，她就去那儿。 #line:99b00a
+            Mae: 明白了。 #line:328a17
+        ->你知道会是谁做的吗？ #line:82aea3
+            Lori: 可能是那个人？史蒂夫？ #line:0e96bc
+            Mae: 史蒂夫？ #line:8dac24
+            Lori: 是的，他都被学校开除了 #line:2c4cc4
+            Lori: 不过他仍然会来参加学校的派对。 #line:8409a4
+            Lori: 还会打我班里的女孩子 #line:b9b151
+            Mae: =_= _o_ #line:66263f
+            Mae: 我滴个天，这不就是史蒂夫·斯克里金斯吗。 #line:b153fa
+             <<set $suspect_steve to 1>>
+            Lori: 没错，就是他。 #line:0cb166
+            Mae: 好吧，这就解释得通了。 #line:4e8e02
+            Lori: 你知道他经常在哪儿转悠吗？ #line:9b1b39
+            Mae: 不知道，我前几天才刚回镇上呢。 #line:294359
+    Mae: 谢了，老妹儿。 o_o #line:77996d
+    <<set $asked_lori_mural to 1>>
+<<endif>>
+Mae: 回头见！o/ #line:bfd689
+Lori: 再见了，杀手。 #line:81e28a
+Mae: 额啊……=_= _o_ #line:69a449
+Mae: o_o #line:45be52
+<<unlockDoodle LoriM>>
+===
+title: LoriDemo2_02
+tags: demo2
+colorID: 3
+position: 681,1852
+---
+Lori: {emote=music} #line:df953e
+===

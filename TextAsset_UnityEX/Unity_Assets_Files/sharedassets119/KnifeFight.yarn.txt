@@ -1,0 +1,163 @@
+title: Start
+tags: 
+colorID: 0
+position: 443,-315
+---
+Gregg: 敢扎我一下，就说明你是个臭不要脸的人。 #line:9433c9
+Gregg: 敢扎我三下，你就等着……哎呀！ #line:f370b1
+Mae: 好吧好吧好吧好吧。 #line:4fb7ca
+Gregg: 规则如下：每轮被扎三次就算出局。 #line:c0c310
+Mae: 好啦，好啦，我明白啦。别 再 耽 误 时 间 啦！ #line:ef1eba
+Gregg: 注意啦！ #line:e60fa0
+Mae: 我 被 扎 到 啦。 #line:7e2d91
+===
+title: MaeLose1
+tags: 
+colorID: 0
+position: 721,-317
+---
+Mae: 啊 啊 啊！ #line:d6b8f6
+Gregg: 哈 哈 哈，吃 我 一 刀！ #line:277033
+Mae: 我用刀的技术都生疏啦。 #line:e02381
+Mae: 我可不像你，我才没那么菜呢。 #line:707c14
+Gregg: 梅，不管你到哪儿，你都是最菜的那一个。 #line:e7e7d5
+Mae: 哦嚯嚯！既然你这么说， #line:51a7bd
+Mae: 那我就用这把刀把你扎到爽。 #line:f2fefa
+Gregg: 耶 耶 耶 耶 耶 啊！！！！ #line:a0e156
+[[StartAgain]]
+===
+title: GreggLose1
+tags: 
+colorID: 0
+position: 949,-348
+---
+Gregg: 啊 啊 啊 啊 啊！！！ #line:6c1458
+Mae: 哈 哈 哈 哈 哈 哈！ #line:69930a
+Gregg: 现在你就尽情笑吧，笑吧。 #line:165214
+Gregg: 等 你 被 刀 捅 了，你就不笑啦！ #line:2ff605
+Mae: 哦，不，你吓到我啦。 #line:6820e4
+Mae: 别老去扎树，来扎我啊！ #line:33e01b
+[[StartAgain]]
+===
+title: End
+tags: 
+colorID: 0
+position: 1866,196
+---
+Gregg: 好了好了，咱们今天就到此为止吧。 #line:6ecacc
+Mae: 咱们流的这些血会把食肉动物给引来的。 #line:2b5074
+Gregg: 说 的 是 啊。 #line:92b430
+<<close>>
+<<irisOut .5 wait>>
+<<scene GreggFQ3Woods>>
+===
+title: StartAgain
+tags: 
+colorID: 0
+position: 743,32
+---
+Gregg: 好了，好了， #line:102bc5
+Gregg: 准备好了没？ #line:29fe1f
+Mae: 嗯嗯嗯，准备好啦。 #line:9114b6
+Gregg: 好极啦，好极啦。 #line:3b03a6
+Mae: 开 始 开 始 开 始。 #line:c87f77
+===
+title: MaeLose2
+tags: 
+colorID: 0
+position: 1217,-328
+---
+Mae: 啊 啊 啊 啊 啊！ #line:95bebc
+Gregg: 你没事吧？ #line:275b9b
+Mae: 格 雷 格，不 要 手 下 留 情。 #line:517b6e
+Mae: 不 要 手 软。 #line:3f19ab
+[[StartAgain]]
+===
+title: GreggLose2
+tags: 
+colorID: 0
+position: 1458,-331
+---
+Gregg: 咻～ #line:2def5a
+Gregg: 呃 啊。 #line:53a995
+Mae: 哦，老天，你还好吗？ #line:32542c
+Gregg: 不 好。 #line:a48c84
+Gregg: 我 感 觉 很 不 好，知 道 吗？ #line:822d6c
+Mae: 其实，咱们可以去扎…… #line:e32c97
+Gregg: 用 不 着。再 来！ #line:d8cd80
+[[StartAgain]]
+===
+title: MaeLose3
+tags: 
+colorID: 0
+position: 1727,-355
+---
+Mae: 我 去 他…… #line:fcdaae
+Mae: 额 啊 啊 啊 啊 啊！！！ #line:5bae70
+Gregg: 我是不是扎到你的手指节啦？ #line:2d5ec8
+Mae: 哦，伙计，我这幅德性回家，肯定得和我爸妈解释啦。 #line:9bb3bb
+Gregg: 说你又被狗给咬了怎么样？ #line:59b276
+Mae: 这么说肯定不行，他们肯定会问，这狗是从哪儿弄来的刀啊。 #line:5c432f
+[[StartAgain]]
+===
+title: GreggLose3
+tags: 
+colorID: 0
+position: 1974,-293
+---
+Gregg: 好吧，这轮我输了。 #line:c03755
+Gregg: 可真疼啊！ #line:122cfb
+Mae: 真的很疼吗？ #line:67df8b
+Gregg: 假 的。 #line:2240b0
+Gregg: 咱 们 继 续。 #line:a2c8ec
+Gregg: 最 后 一 局 定 胜 负。 #line:ea0cca
+Mae: 准备受死吧。 #line:7b8051
+[[StartAgain]]
+===
+title: MaeLose4
+tags: 
+colorID: 0
+position: 1768,-69
+---
+<<playMusic knife_fight_defeat>>
+Mae: 好 啦 好 啦！天 哪！我 不 玩 啦！ #line:5d8f4c
+Gregg: 哈哈哈，你实在是太菜啦！ #line:f3a796
+Gregg: 你这么菜，是个人都比你强。 #line:2568fc
+Gregg: 不过话说回来，你没事吧？ #line:c8203d
+Mae: 我感觉有点晕乎乎的。 #line:bd0399
+Mae: 我猜你可能已经看出来了， #line:b0974a
+Mae: 其实我根本就没玩过几次小刀对决。 #line:c5209a
+Gregg: 要是我技术不到家的话，我也不会玩这个的。 #line:54fae9
+Mae: 额啊，我可怜的小手啊。 #line:4329ea
+===
+title: GreggLose4
+tags: 
+colorID: 0
+position: 2042,-34
+---
+<<playMusic knife_fight_victory>>
+<<set $won_knife_fight to 1>>
+Gregg: 好 吧！我 不 玩 啦！ #line:0e397f
+Mae: 你还好吗？ #line:91b176
+Gregg: 还好还好，我没事。 #line:b8c7e5
+Mae: 需要我去 #line:1f00a6
+Mae: 把你老妈叫过来吗？ #line:a8ce2a
+Gregg: 需要。 #line:23b862
+Gregg: 告诉我妈，她的宝贝儿子在树林里让人给捅啦。 #line:9f5565
+Mae: 咱们俩在一起的时候总是这样：不是你死，就是我亡。 #line:6e8d29
+<<unlockAchievement Gregg_FQ3_Win_Knife_Fight>>
+===
+title: MaeHurt1
+tags: 
+colorID: 0
+position: 132,507
+---
+Mae: 哎哟！ #line:c787d4
+===
+title: GreggHurt1
+tags: 
+colorID: 0
+position: 127,780
+---
+Gregg: 哎哟！ #line:e7659d
+===

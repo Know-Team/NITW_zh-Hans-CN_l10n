@@ -1,0 +1,138 @@
+title: EnterLevel
+tags: 
+colorID: 5
+position: 448,76
+---
+<<if $boss_convo is 0>>
+    [[Intro]]
+<<else>>
+    [[AfterBossConvo]]
+<<endif>>
+===
+title: InitLevel
+tags: 
+colorID: 5
+position: 149,97
+---
+<<setCanInteract Bea 0>>
+<<setCanInteract Angus 0>>
+<<setCanInteract Gregg 0>>
+<<playerCanRun 1>>
+
+<<if $boss_convo>>
+    <<warp Angus AngusAfterBossConvo>>
+    <<warp Bea BeaAfterBossConvo>>
+    <<warp Gregg GreggAfterBossConvo>>
+    <<warp Mae AngusAfterBossConvo>>
+    <<angusCarryMae>>
+<<else>>
+    <<setAnimInt Gregg crossbow 1>>
+    <<flip Mae -1>>
+    <<groupFollowElevator>>
+    <<set $death_walk to 1>>
+    <<playIdleAnimationPlayer>>
+<<endif>>
+===
+title: GetInElevator
+tags: 
+colorID: 5
+position: 549,688
+---
+<<cameraLookAt CameraAtElevator 2>>
+<<walk Bea BeaOnElevator>>
+<<walk Gregg GreggOnElevator>>
+<<walk Angus AngusOnElevator>>
+<<waitForMove Angus>>
+<<waitForMove Bea>>
+<<waitForMove Gregg>>
+<<tell MineElevator ParentGroup>>
+<<tell MineElevator MoveUp>>
+//they get in the elevator. As they go up there’s a big BUMP//
+<<cameraLookAt CameraElevatorShaft 15>>
+<<alwaysUseWaitTime 1>>
+Bea: 这儿到处都是各种各样的旧物件。 #line:896092
+<<alwaysUseWaitTime 0>>
+<<close>>
+<<irisOut 1 wait>>
+<<scene MineEntrance>>
+===
+title: Intro
+tags: 
+colorID: 5
+position: 275,392
+---
+Gregg: 嗯，咱们到了。 #line:58ec90
+<<close>>
+//mae walks out and doubles over//
+Mae: *咳咳* #line:aabefb
+Angus: 梅，你还好吗？我带了吸入器！ #line:32afda
+Mae: 不用了……我没事……我只是感觉…… #line:9e2eec
+Mae:  感觉……像是有什么很大的东西压在我身上一样…… #line:09d583
+Bea: 我想说，从严格意义上看，你的感觉是对的。 #line:aca3a8
+Angus: 这感觉和犯哮喘的感觉一样吗？ #line:46506f
+Angus: 犯哮喘就是这种感觉。 #line:b1578a
+Mae: 大块头，那可不是犯哮喘的感觉。 #line:49fbff
+Mae: 但还是谢谢你。 #line:6fac95
+<<close>>
+<<playAmbientSFX _AmbientSFX:eide_rock_noise>>
+Gregg: 嘘！ #line:552c90
+Gregg: 我听见这底下 #line:906783
+Gregg: 好像有什么动静。 #line:e2ac04
+Bea: 梅，你会没事的，是吗？ #line:9cc20a
+Mae: 是的，我没事。 #line:2c13e0
+Mae: 咱们应该保持安静。 #line:63eda0
+<<if $dom_friend_bea>>
+	Bea: 的确，咱们应该留着点力气，等会儿需要大叫的时候才能喊的出来。 #line:9c7b81
+	Mae: 嘿嘿嘿。 #line:8a138b
+<<else>>
+	Gregg: 说的是啊。咱们会变得悄无声息…… #line:878e4d
+	Mae: 咱们一会儿就都能变成幽灵了。 #line:b25119
+<<endif>>
+
+
+===
+title: Door
+tags: 
+colorID: 5
+position: 804,425
+---
+// walk through mine 2. Bad atmosphere getting slowly worse! You can’t double back past the screen as you go? The gang reaches the door(?) that’s down at the end//
+Angus: 这是扇门。 #line:c16e81
+Mae: 门。 #line:f9d769
+Bea: 是坑道。 #line:50eaf1
+Gregg: 管它是什么呢。 #line:ec1174
+Mae: 咱们继续走吧。 #line:80a098
+===
+title: AfterBossConvo
+tags: 
+colorID: 5
+position: 543,390
+---
+//fade in as they’re walking up to the elevator//
+<<walk Bea BeaBeforeElevator>>
+<<walk Gregg GreggBeforeElevator>>
+<<walk Angus AngusBeforeElevator>>
+<<if $dom_friend_bea>>
+	Bea: 对于发生的这一切，我一点头绪都没有。 #line:3e287c
+	Mae: 唯一能感觉到的……就只剩下恐惧了吗？ #line:b21b58
+    Angus: 你平时可很少会用“恐惧"这个词啊。 #line:df96b8
+	Mae: 这是我现在唯一能想到的词了。 #line:c74367
+	Mae: 我感觉我现在已经想不出其他的词了。 #line:a27b82
+	Gregg: 咱们还是赶紧从这鬼地方出去吧。 #line:69c15b
+<<else>>
+	Gregg: 我的脑子现在很乱。 #line:a5adac
+	Mae: 我现在脑子里一片空白， #line:93eee5
+	Mae: 什么都想不起来了。 #line:f39b36
+	Mae: 咱们接下来该怎么办？ #line:9f7f1e
+	Gregg: 等咱们从这儿出去了，咱们就把那个混蛋给弄死。 #line:ed1832
+<<endif>>
+Mae: 我不知道我是不是…… #line:819c27
+Angus: 嘘…… #line:972930
+Angus: 等会儿再说。 #line:eb90bd
+<<close>>
+<<waitForMove Angus>>
+<<waitForMove Gregg>>
+<<waitForMove Bea>>
+<<wait 1>>
+[[GetInElevator]]
+===

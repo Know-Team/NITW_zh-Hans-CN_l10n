@@ -1,0 +1,392 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 4833,396
+---
+<<if $miranda_basement is 0>>
+    <<warp Bea Bea1>>
+    <<warp Mae Mae1>>
+    <<flip Bea -1>>
+    <<playMusic miranda_house>>
+    <<walk Bea Bea2>>
+    <<walk Mae Mae2 wait>>
+    <<setCanInteract Bea 0>>
+    [[Dialogue1]]
+<<elseif $miranda_basement is 1>>
+    <<warp Bea BeaBehindFurnace>>
+    <<warp Mae MaeFurnace>>
+    <<playerFace 1>>
+    <<setCanInteract Bea 0>>
+    <<flip Bea 1>>
+<<elseif $miranda_basement is 2>>
+    <<warp Bea BeaBehindFurnace>>
+    <<warp Mae MaeFurnace>>
+    <<playerFace 1>>
+    <<setCanInteract Bea 0>>
+    <<flip Bea 1>>
+    <<playMusic miranda_basement>>
+    [[Dialogue2]]
+<<elseif $miranda_basement is 3>>
+    <<warp Bea Bea4>>
+    <<warp Mae Mae4>>
+    <<playerFace -1>>
+    <<setCanInteract Bea 0>>
+    <<flip Bea -1>>
+    [[Dialogue3]]
+<<endif>>
+===
+title: Dialogue1
+tags: 
+colorID: 3
+position: 5274,489
+---
+Mae: 哦，我的天，我就喜欢这种阴森森的地下室。 #line:04b688
+Bea: 是啊，你怎么可能会不喜欢这些呢。 #line:7cde4e
+Bea: 快来看看这堆东西啊……真是太壮观了。 #line:daacb4
+Mae: 老天，她家里囤的垃圾可真够多的。 #line:c780cf
+Mae: 没准她的其他几个老公就堆在某个角落里呢。 #line:503cfd
+Bea: 呵呵。 #line:4fdca0
+Bea: 好了，咱们赶紧干活，早完事早回家。 #line:19cc1b
+<<walk Bea Bea3>>
+===
+title: TriggerBea
+tags: 
+colorID: 3
+position: 5567,341
+---
+<<if $miranda_basement is 0>>
+    <<set $miranda_basement to 1>>
+    Mae: 话说，在屋里抽烟不是违法的吗？ #line:9b13f9
+    Bea: 确实违法。 #line:a3284e
+    Mae: <o> :) #line:2e9288
+    Mae: 哎哟哟，碧娅，你现在可是犯人了。 #line:90a9b3
+    Bea: 我抽的是仿真烟， #line:ce4610
+    Bea: 我现在正在戒烟呢。 #line:640a26
+    Bea: 所以我才会抽这玩意。 #line:ba3920
+    Mae: O_o #line:5598b3
+    Mae: 你说啥？ #line:ae0df6
+    Mae: _o_ #line:9bedaa
+    Bea: 这东西根本就没冒烟，一点烟都没有，注意到了没？ #line:352382
+    Mae: 但我以前可见你抽过真烟。 #line:f3b770
+    Bea: 没错，我是抽过真烟，可我从来没在屋里抽过。 #line:f255d4
+    Mae: :| #line:d85aaf
+    Mae: 可我感觉，你抽的肯定是真烟。 #line:f0aee9
+    Bea: 那你觉得我呼出来的烟都跑哪儿去了？ #line:ab6441
+    Mae: o_o #line:b3723e
+    Mae: 我觉得，你是不是……把烟都给吞了？ #line:72a99d
+    Bea: 梅，你知道吸烟的原理是什么吗？ #line:1ed2c4
+    Mae: :\ #line:8ec755
+    Mae: 哦，对不起！我对抽烟这事可是一窍不通，碧翠丝专家！ #line:7f24de
+    Bea: 我的老天爷啊，你还不知道什么啊？ #line:aa5f78
+    Mae: :( O_O \o/ #line:8a16a7
+    Mae: 抱歉，我可没有香烟学的学位！ #line:659b99
+    Mae: :| o_o _o_ #line:820951
+    Bea: 那你在大学里学的是什么专业？ #line:9411f2
+    Mae: =_= :) o> #line:61cbc6
+    Mae: 发泄与愉悦专业。 #line:3919f9
+    <<wait 3>>
+    Mae: o_o :| #line:d4af4a
+    Mae: 这就是刚才提到的那个炉子吗？ #line:4698ab
+    <<lookLeft Bea>>
+    Bea: 对，就是这个炉子。 #line:281155
+    Mae: :) #line:235cce
+    Mae: 我决定管这东西叫“嘁哧咔嚓"。 #line:f6f02e
+    Bea: 好吧，随你。 #line:65c5fd
+    Bea: 你在这儿稍等一会儿， #line:f9010a
+    Bea: 我用不了多长时间就能把它修好了。 #line:8ad3d1
+    Bea: 还有，这儿的所有东西……别给弄坏了。 #line:3f9f9c
+    Mae: :| _o_ #line:1b7fb1
+    Mae: 我能毁点什么东西呢？ #line:fc3116
+    Mae: 这地下室里堆的全都是垃圾！ #line:b11e21
+    <<close>>
+    <<walk Bea BeaBehindFurnace wait>>
+    Bea: 哦，我的天，好了。 #line:0876f1
+    Bea: 不会耽误太长时间的。 #line:f96631
+    Mae: 要我帮帮你吗？ #line:2efcf0
+    Bea: 不需要！ #line:4c89f6
+    Mae: 那我来这儿干什么呀？ #line:0c31e8
+    Bea: 不是你非要跟我一起过来的吗！ #line:05c8bf
+    Bea: 冷静……冷静。 #line:6c99e1
+    <<tell _AmbientSFX:bea_fix_lp Play1>>
+<<endif>>
+===
+title: Dialogue2
+tags: 
+colorID: 3
+position: 5137,743
+---
+<<setSortingLayerName Player>>
+<<walk Bea BeaOutFromFurnace>>
+Bea: 我想我已经把它修好了。咱们来看看炉子怎么样了…… #line:45ec20
+<<waitForMove Bea>>
+<<flip Bea -1>>
+Mae: 耶，咱们把炉子修好啦！ #line:14079f
+Bea: *咱们？*你刚才都帮什么忙啦？！ #line:d17a0d
+<<close>>
+Mae: 我刚才设计出了一个简洁但又长效的解决方法。 \o/ #line:273a76
+<<close>>
+
+<<wait 2>>
+<<fadeOutMusic .25>>
+<<wait .2>>
+<<tell _AmbientSFX:snap_animation Play>>
+
+<<if $furnace_contraption is 1>>
+    <<setAnimInt Contraption_A_CorpseDriver state 2>>
+<<elseif $furnace_contraption is 2>>
+    <<setAnimInt Contraption_B_CaveHorse state 2>>
+<<elseif $furnace_contraption is 3>>
+    <<setAnimInt Contraption_C_RacketTurbine state 2>>
+<<elseif $furnace_contraption is 4>>
+    <<setAnimInt Contraption_D_DragRacer state 2>>
+<<elseif $furnace_contraption is 5>>
+    <<setAnimInt Contraption_E_GnomeTurbine state 2>>
+<<endif>>
+
+<<wait .35>>
+<<tell _AmbientSFX:furnace_contraption_break Play>>
+<<wait .15>>
+<<tell _AmbientSFX:snap_animation Play>>
+
+<<if $furnace_contraption is 1>>
+    <<setAnimInt Contraption_A_CorpseDriver state 3>>
+<<elseif $furnace_contraption is 2>>
+    <<setAnimInt Contraption_B_CaveHorse state 3>>
+<<elseif $furnace_contraption is 3>>
+    <<setAnimInt Contraption_C_RacketTurbine state 3>>
+<<elseif $furnace_contraption is 4>>
+    <<setAnimInt Contraption_D_DragRacer state 3>>
+<<elseif $furnace_contraption is 5>>
+    <<setAnimInt Contraption_E_GnomeTurbine state 3>>
+<<endif>>
+
+
+<<wait 3.5>>
+
+Mae: 真见鬼。 _o_ #line:54d732
+<<close>>
+Bea: 修得好，梅，下次别再修了。 #line:316a39
+Bea: 碰都别碰。 #line:c1154b
+Bea: 什么都别碰。 #line:9aa73d
+Mae: 唉，见鬼！！！ #line:f0b481
+Mae: 这东西刚才还好好的呢！！！ #line:1911a7
+Mae: 这也太寸啦吧。 #line:c8f6ef
+Bea: 我到门口看看去…… #line:0ea062
+<<close>>
+<<walk Mae Mae2>>
+<<flip Bea 1>>
+<<walk Bea Bea2NoCast wait>>
+Bea: 你在这儿等着。 #line:3a341d
+<<close>>
+<<walk Bea BeaTryExit wait>>
+<<playAmbientSFX _AmbientSFX:basement_door_locked>>
+<<wait 2>>
+Bea: 可恶。 #line:023e60
+<<close>>
+<<flip Bea -1>>
+<<walk Bea BeaHalfwayDownStairs wait>>
+<<wait 1.5>>
+Bea: 好吧，咱们被锁在底下了。 #line:811f27
+Bea: 啊啊啊，我就知道会出事。 #line:80e968
+Bea: 碧娅，你可真傻，真傻啊。 #line:67754a
+    ->你试试大叫，看会怎么样？ #line:73dc54
+        Bea: 这方法肯定不管用。 #line:fcc742
+        <<wait 2>>
+        Bea: 米兰达夫人人人！！！！！！！ #line:8c8fd6
+        <<wai 2>>
+        Bea: 这方法没用。 #line:df59a4
+    ->咱们可以在地板上开个洞啊！ #line:11c6b4
+        Bea: 用什么开啊？ #line:65db18
+        Mae: 没准能在这儿找到把破锯呢！ #line:6bc4a4
+        Bea: 然后，咱们就像动画片里演的一样， #line:97f28d
+        Bea: 把垃圾堆高，站在上面， #line:767886
+        Bea: 之后用锯在地板上锯个洞， #line:6db4a2
+        Bea: 是这样吗？ #line:865063
+        Mae: 是这个意思，但对这事的态度可不会像你*那样*。 #line:85beac
+Bea: 很好很好，这门把手看起来已经有些年头了，都松了。 #line:7b6287
+Bea: 没准我能……想出什么办法把门打开…… #line:3d8cb0
+Mae: 我也去周围看看！ #line:5969b1
+Bea: 对，你到那堆破烂周围去找找，看有什么能用的东西。 #line:7c4092
+<<close>>
+<<flip Bea 1>>
+<<walk Bea BeaTryExit wait>>
+<<playAmbientSFX _AmbientSFX:door_knob_fiddle>>
+===
+title: TriggerBea2
+tags: 
+colorID: 3
+position: 5575,713
+---
+<<if $miranda_basement is 2>>
+    <<if $miranda_furnace is 0>>
+        Bea: 啊啊啊。 #line:277810
+        Bea: 还是打不开。 #line:1bdfa6
+        Mae: 要我帮忙吗？ #line:25125a
+        Bea: 我也不太清楚，梅。你看你能帮点什么忙吗？ #line:03353d
+    <<endif>>
+<<endif>>
+===
+title: Furnace
+tags: 
+colorID: 3
+position: 5921,573
+---
+<<if $miranda_basement is 2>>
+    Mae: 嗯…… #line:1f5e35
+    Mae: 唯一*能*让那老太太听见动静的，应该就只有这个炉子了。 #line:d33a23
+    Mae: 等它一爆炸…… #line:f1f294
+    Mae: 她肯定就能听见动静了…… #line:35dae2
+    Mae: 坏了的东西就应该被……毁掉…… #line:cb1ec0
+    <<set $miranda_basement_look_for_bat to 1>>
+<<elseif $has_furnace_item_0 is 1 and $has_furnace_item_1 is 1 and $has_furnace_item_2 is 1 and $has_furnace_item_3 is 1>>
+    Mae: 好了，我的手已经没地儿了，拿不了其他东西了。 #line:084c89
+    Mae: 我觉得有这些物件应该足够了。 #line:71c229
+    <<set $miranda_basement to 2>>
+    <<irisOut 1 wait>>
+    <<scene FixFurnace>>
+<<elseif $num_furnace_items is 3>>
+    Mae: 我还需要再拿点别的东西吗？ #line:76a8ad
+    Mae: 我的确需要再拿点别的东西。 #line:0cdf4e
+<<elseif $num_furnace_items is 2>>
+    Mae: 这东西看起来不赖，真不赖…… #line:c1fcf8
+<<elseif $num_furnace_items is 1>>
+    Mae: 我在想，我还能再找点其他东西吗？ #line:aedfc1
+<<else>>
+    Mae: 我敢说，我肯定能从这堆……垃圾里找出点有用的东西来。 #line:8757ca
+    Mae: 老天啊。 #line:787cc8
+    Mae: 话说，谁会在家里囤这么多垃圾啊。 #line:c787a6
+    <<set $can_pickup_furnace_items to 1>>
+<<endif>>
+===
+title: Fan
+tags: 
+colorID: 3
+position: 6262,602
+---
+<<if $can_pickup_furnace_items is 0>>
+    Mae: 我的天，这儿有台旧电扇。 #line:fa6b33
+    Mae: 电扇是用金属做的，你的手指头可是会被它切掉的！ #line:09017c
+<<elseif $has_furnace_item_0 is 0>>
+    <<set $num_furnace_items += 1>>
+    Mae: 这东西对修炉子应该是有一定用处的。 #line:e00a0a
+    <<set $has_furnace_item_0 to 1>>
+    <<playOneShot event:/miranda_house/pickup_fan Mae>>
+<<endif>>
+===
+title: Gnome
+tags: 
+colorID: 3
+position: 6518,585
+---
+<<if $can_pickup_furnace_items is 0>>
+    Mae: 啊，这就是命啊。 #line:66927b
+    Mae: 卢修斯·冯·格诺梅奥教授。 #line:ae2c86
+<<elseif $has_furnace_item_1 is 0>>
+    <<set $num_furnace_items += 1>>
+    Mae: 教授，我现在要修这个破炉子，所以急需您的专业知识。 #line:65b568
+    <<set $has_furnace_item_1 to 1>>
+    <<playOneShot event:/miranda_house/pickup_gnome Mae>>
+<<endif>>
+===
+title: Racket
+tags: 
+colorID: 3
+position: 6777,580
+---
+<<if $can_pickup_furnace_items is 0>>
+    Mae: 嗯，羽冒球。 #line:8f47e8
+    Mae: 玉毛球。 #line:de5eab
+    Mae: 羽毛秋。 #line:c3b597
+    Mae: 球拍。 #line:3ac4e8
+<<elseif $has_furnace_item_2 is 0>>
+    <<set $num_furnace_items += 1>>
+    Mae: 嗯，这东西应该能派上用场。 #line:14e890
+    <<set $has_furnace_item_2 to 1>>
+    <<playOneShot event:/miranda_house/pickup_racket Mae>>
+<<endif>>
+===
+title: Rod
+tags: 
+colorID: 3
+position: 7071,567
+---
+<<if $can_pickup_furnace_items is 0>>
+    Mae: 鱼，鱼，鱼…… #line:7551f9
+<<elseif $has_furnace_item_3 is 0>>
+    <<set $num_furnace_items += 1>>
+    Mae: 这东西应该有点用。这东西应该有点用！ #line:db84f6
+    <<set $has_furnace_item_3 to 1>>
+    <<playOneShot event:/miranda_house/pickup_rod Mae>>
+<<endif>>
+===
+title: Notes
+tags: 
+colorID: 0
+position: 5081,178
+---
+// miranda_basement: 0 = first in
+// miranda_basement: 1 = bea has gone behind furnace
+// miranda_basement: 2 = "Fixed" the furnace
+===
+title: Bat
+tags: 
+colorID: 3
+position: 5991,205
+---
+<<if $miranda_basement_look_for_bat is 1>>
+    Mae: 嗯。 #line:6f8d3d
+    Mae: 太好啦，终于找着了一个我会用的工具。 #line:925fd0
+    Mae: 一个 #line:12bc0d
+    Mae: 能 #line:e65eba
+    Mae: 打烂 #line:5c0ccd
+    Mae: 所有东西的 #line:7db42b
+    Mae: 工具！！！！！！！！！！！！！ #line:481714
+    <<getBat>>
+    <<playOneShot event:/miranda_house/pickup_bat Mae>>
+    <<wait 1>>
+    <<playMusic break_furnace>>
+<<endif>>
+===
+title: FurnaceDefeated
+tags: 
+colorID: 3
+position: 5412,95
+---
+<<freezePlayer>>
+<<fadeOutAmbientSFX _AmbientSFX:door_knob_fiddle 1>>
+<<wait 4>>
+Mae: 哈哈哈哈哈哈哈！ #line:a0a231
+Mae: 去吃屎吧，你个破炉子！ #line:1fd41f
+Bea: 哇哦，噪音实在是太大啦！ #line:c6ec60
+Mae: 是啊，天哪。 #line:c17116
+Bea: 我在镇上居然从来都没听见过这种声音，真是怪啦。 #line:d70d1a
+Bea: 谢天谢地她终于来了。 #line:f418ee
+Mae: 唔，是在谢我吗？好像是吧？ #line:f51bf7
+Bea: 嘿，米兰达夫人！您把我们锁在地下室里啦！ #line:8b133e
+<<close>>
+<<fadeOutMusic 1>>
+<<set $miranda_basement to 3>>
+<<set $miranda_furnace to 10>>
+<<set $has_bat to 0>>
+<<irisOut 1 wait>>
+<<scene MirandaYard>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 4760,134
+---
+<<if $miranda_basement is 2>>
+    <<if $furnace_contraption is 1>>
+        <<setAnimInt Contraption_A_CorpseDriver state 1>>
+    <<elseif $furnace_contraption is 2>>
+        <<setAnimInt Contraption_B_CaveHorse state 1>>
+    <<elseif $furnace_contraption is 3>>
+        <<setAnimInt Contraption_C_RacketTurbine state 1>>
+    <<elseif $furnace_contraption is 4>>
+        <<setAnimInt Contraption_D_DragRacer state 1>>
+    <<elseif $furnace_contraption is 5>>
+        <<setAnimInt Contraption_E_GnomeTurbine state 1>>
+    <<endif>>
+<<endif>>
+===

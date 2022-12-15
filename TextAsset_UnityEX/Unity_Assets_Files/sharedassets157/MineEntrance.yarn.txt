@@ -1,0 +1,300 @@
+title: InitLevel
+tags: 
+colorID: 5
+position: -1183,-592
+---
+<<setCanInteract Bea 0>>
+<<setCanInteract Angus 0>>
+<<setCanInteract Gregg 0>>
+
+<<set $death_walk to 1>>
+<<playIdleAnimationPlayer>>
+
+<<if $mine_boards>>
+    <<warp Mae MaeMineBoards>>
+    // warp other characters too
+<<elseif $boss_convo>>
+    <<warp Angus AngusOnElevator2>>
+    <<warp Bea BeaOnElevator2>>
+    <<warp Gregg GreggOnElevator2>>
+    <<angusCarryMae>>
+    <<cameraLookAt CameraElevator>>
+<<else>>
+    <<tell MineEntranceLever SetDown>>
+    <<setAnimInt Gregg crossbow 1>>
+    <<flip Mae -1>>
+    <<groupFollow>>
+    <<tell MineElevator SetDown>>
+<<endif>>
+
+===
+title: MineBoardsOff
+tags: 
+colorID: 5
+position: -802,-1
+---
+Angus: 哦，好了。 #line:56db02
+Bea: 安格斯！你救了我们！ #line:28987d
+Angus: 额，我只是找到了能呼吸到新鲜空气的地方罢了。 #line:9093a1
+Angus: 也可能只是换了个好点的地方饿死而已。 #line:9cd5ad
+Mae: 死在哪儿都比死在这鬼地方强。 #line:1a80fc
+Bea: [wave=.05]我只想死在别的什么地方，而不想死在这儿。[/wave] #line:15192a
+Mae: 唱得好。 #line:29e11a
+Gregg: 唱得好。 #line:0b40a7
+Angus: 唱得好。 #line:a9de12
+<<close>>
+<<irisOut 1 wait>>
+<<scene MineWellTunnel>>
+===
+title: EnterLevel
+tags: 
+colorID: 5
+position: -797,-307
+---
+<<if $mine_boards>>
+    [[MineBoardsOff]]
+<<elseif $boss_convo>>
+    [[Elevator]]
+<<endif>>
+===
+title: LookAtElevator
+tags: 
+colorID: 5
+position: -1146,10
+---
+//when they reach the elevator//
+<<flip Angus -1>>
+<<flip Bea -1>>
+<<flip Gregg -1>>
+Angus: 看样子，那个人是坐着电梯下去的。 #line:80446b
+Angus: 所以说，那个人能在短时间之内消失得无影无踪就是因为这个电梯，也不过如此嘛。 #line:788dbf
+Angus: 那个人肯定在一英里之外就能听得到咱们的动静。 #line:884f45
+Bea: 咱们真要这么干吗？ #line:5af88f
+Gregg: 当然啦。梅，你确定要这么干吗？ #line:1a9301
+Mae: 伙计们，我不知道你们能不能明白一件事…… #line:65861a
+Mae: *咳咳* #line:e1b5cb
+Mae: 我脑海里总是出现那个人的形象。 #line:31226c
+Mae: 这样的话，我什么事都做不了。 #line:f4d05c
+Mae: 这感觉就像是，万物都在凋亡或是已经凋亡了。 #line:174329
+Mae: 如果咱们下去的话，我……我真不知道会发生什么…… #line:98a2ff
+<<if $dom_friend_bea>>
+	Bea: 好吧。 #line:9aad73
+	Bea: 咱们会一起弄清楚是怎么回事的。 #line:ac3405
+<<else>>
+	Gregg: 好了， #line:eaca55
+	Gregg: 咱们下去吧。 #line:a5f95a
+<<endif>>
+<<walk Angus LeverAngus wait>>
+<<fadeOut 0>>
+<<tell MineEntranceLever SetUp>>
+<<playOneShot event:/finale/pull_lever Angus>>
+<<flip Angus -1>>
+<<wait 3>>
+<<fadeIn 1>>
+//angus pulls lever. Elevator comes up//
+<<tell MineElevator MoveUpToOriginalPosition>>
+Mae: 哦，这电梯看起来可真够旧的。 #line:b6b740
+Bea: 这座矿井好像已经废弃了……很多年， #line:e13175
+Bea: 甚至是几十年几百年了。 #line:382b15
+Gregg: 你现在又做起咱们的导游来了？ #line:b0801e
+<<close>>
+<<destroy BlockElevator>>
+<<stopGroupFollow>>
+<<waitForMineElevatorUpToOriginalPosition>>
+<<wait 1>>
+//they all get into the elevator//
+<<walk Mae MaeOnElevatorLeft>>
+<<if $dom_friend_bea>>
+    <<walk Bea Char1OnElevatorLeft>>
+    <<walk Gregg Char2OnElevatorLeft>>
+<<else>>
+    <<walk Gregg Char1OnElevatorLeft>>
+    <<walk Bea Char2OnElevatorLeft>>
+<<endif>>
+<<walk Angus Char3OnElevatorLeft>>
+<<waitForMove Mae>>
+<<waitForMove Bea>>
+<<waitForMove Gregg>>
+<<waitForMove Angus>>
+Bea: 我们店里有负鼠泉的旅游手册。 #line:4987c2
+Bea: 但我对这个不怎么感兴趣。 #line:d4ffa0
+Mae: 旅游手册里难道还有关于这座*矿井*的介绍吗？ #line:7d8e5b
+<<wait 1>>
+//note to self- remember to set up this joke in the intro bus station//
+//elevator descends//
+<<tell MineElevator ParentGroup>>
+<<tell MineElevator MoveDown>>
+<<wait 3>>
+<<fadeOut 1 wait>>
+<<scene MineBottom1>>
+===
+title: Intro
+tags: 
+colorID: 5
+position: -1173,-243
+---
+<<if $dom_friend_bea>>
+	Bea: 好吧，这其实也没什么危险的嘛。 #line:d793a4
+	Mae: 哈哈。 #line:e9b11e
+    Mae: 其实到了下面也没什么好害怕的，那只不过就是个聚会而已嘛。 #line:f8dfd2
+    Bea: :) #line:4609c1
+    Bea: 呵呵。 #line:2b5aa2
+	Bea: 咱们现在去蹚这浑水还不算太晚。 #line:d8b822
+    Bea: :| #line:8a1d3f
+<<else>>
+	Gregg: 老天，太恐怖了。 #line:4d65f5
+	Mae: 我觉得现在咱俩就别抱怨关于“恐怖"的事了。 #line:e0fba4
+	Mae: 咱们之前把咱们那个宝贝机器人放在树林里，那才叫恐怖呢。 #line:2f841d
+    Gregg: :) #line:08c121
+	Gregg: 不不不，姐们儿。咱们那是创造出了一个奇迹。 #line:15299c
+	Bea: 你们俩到底在说什么呢？ #line:982e33
+	Mae: 我这几天过的比较诡异。 #line:536725
+    Gregg: :| #line:89760e
+<<endif>>
+===
+title: Elevator
+tags: 
+colorID: 5
+position: -477,-3
+---
+//all come out of the elevator//
+<<walk Bea BeaOffElevator2>>
+<<walk Gregg GreggOffElevator2>>
+<<walk Angus AngusOffElevator2>>
+<<waitForMove Bea>>
+<<waitForMove Angus>>
+Angus: 好了，看来我得让你们俩住会儿嘴了，可以吗？ #line:fefef1
+Mae: 好吧。 #line:4129e0
+<<close>>
+<<setAmbientSFXFadeWithScreenTransitioner _AmbientSFX 0>>
+<<fadeOut 1 wait>>
+//angus lays mae on the ground//
+<<angusDropMae>>
+<<flip Bea -1>>
+<<flip Gregg -1>>
+<<flip Angus -1>>
+<<warp Angus AngusOffElevator3>>
+<<warp Mae MaeOffElevator3>>
+<<wait 1>>
+<<fadeIn 1 wait>>
+<<setAmbientSFXFadeWithScreenTransitioner _AmbientSFX 1>>
+Gregg: 这么说，凯西他…… #line:3305e6
+Bea: 是啊。 #line:23a58f
+Gregg: 我…… #line:561688
+Bea: 好吧。 #line:532cc0
+Gregg: 这到底都是因为什么啊！ #line:5a72dd
+Mae: 我……我觉得我可能知道是怎么回事了。 #line:19dd6a
+Angus: 哇，是真的吗？ #line:407d58
+Mae: 虽然我很累，不想解释这事，但…… #line:aaa6fd
+Mae: 这一切就好像是 #line:3dce27
+Mae: 现实情况和那些人的预期南辕北辙， #line:ea9a47
+Mae: 他们想把一切都恢复成很久以前美好的样子， #line:e61e6d
+Mae: 或者说是他们想象中的美好的样子。 #line:394f86
+Mae: 还有，发生在他们身上的事情…… #line:dcee14
+Mae: 还有，凯西和那个我在丰收节上见到的孩子…… #line:7960fb
+Mae: …… #line:c1b8e4
+Mae: 抱歉，我的思路断了。 #line:d4de72
+Angus: 这个解释比我的合理多了。 #line:02b610
+Mae: 他们一定很悲伤。 #line:a0fa1b
+Mae: 所有的一切也都很悲伤。 #line:9e9e27
+Gregg: 安格斯，你准备好继续走了吗？ #line:6218bd
+Angus: 准备好了。真是抱歉。 #line:d4893f
+Bea: 等 等，大 家 都 别 出 声。 #line:3a2b77
+<<close>>
+<<playAmbientSFX _AmbientSFX:eide_rock_noise>>
+<<wait 3>>
+Angus: 怎么了？ #line:08fda9
+Bea: 嘘……我觉得我…… #line:a7052c
+<<close>>
+<<tell EideFightRig Run>>
+===
+title: AfterEideFight
+tags: 
+colorID: 5
+position: -51,-35
+---
+<<wait 5>>
+<<warp Angus AfterFightAngus>>
+<<warp Mae AfterFightMae>>
+
+<<if $dom_friend_bea>>
+    <<warp Bea AfterFightDomFriend>>
+    <<warp Gregg AfterFightOtherFriend>>
+    Gregg: 我勒个去！ #line:a76a66
+	Angus: 大家都还好吗？ #line:364784
+	Bea: 梅！梅！你还好吗？ #line:691ee2
+	<<close>>
+	<<wait 2>>
+	Bea: 梅！！说句话啊！！！ #line:91ec52
+	Mae: 嘿…… #line:970a68
+	Mae: 嘿嘿嘿…… #line:529c21
+	Mae: 嘿嘿嘿……哈 哈 哈 哈 哈 哈 哈…… #line:529234
+	Bea: 梅，你这是怎么了？ #line:2d4131
+	Mae: 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈…… #line:e23284
+	Mae: 哈…… #line:f70135
+	Mae: 嘿…… #line:7d7a38
+	Mae: *吸鼻子* #line:25e233
+	Mae: *抽泣* #line:7ee918
+	Bea: 嘘……没事了。 #line:2a619b
+	Bea: 已经没事了，我就在你身边陪着你。 #line:7d20c6
+	Bea: 那个人已经不在了。 #line:cfd3b3
+	Gregg: 真该死。咱们该怎么出去啊。 #line:b8627a
+	Bea: 嘘……给她点时间，让她缓缓。 #line:9b62c3
+	<<close>>
+	<<wait 4>>
+<<else>>
+    <<warp Gregg AfterFightDomFriend>>
+    <<warp Bea AfterFightOtherFriend>>
+    Bea: 我 的 老 天 啊。 #line:ed8c7a
+	Angus: 大家都没事吧？ #line:ee1dda
+	Gregg: 梅！梅！ #line:a3fed2
+	<<close>>
+    <<wait 2>>
+	Gregg: 梅！！你倒是说句话啊！！！ #line:14166f
+	Mae: 嘿…… #line:040d8f
+	Mae: 嘿嘿嘿…… #line:b62321
+	Mae: 嘿嘿嘿……哈 哈 哈 哈 哈 哈 哈…… #line:47083c
+	Gregg: 哈 哈 哈 哈…… #line:404b2a
+	Mae: 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈…… #line:957823
+	Gregg: 哈 哈 哈 哈 哈 哈 哈 哈 哈…… #line:b26d0a
+	Bea: 话说，咱们为什么要笑啊？ #line:ead7e7
+    Mae: 哈…… #line:9ce634
+	Mae: 嘿…… #line:6ca0a0
+	Mae: *吸鼻子* #line:f8da6e
+	Mae: *抽泣* #line:1aa7e6
+	Gregg: 老妹，现在已经没事了。 #line:af115b
+	Gregg: 咱们刚才已经把那家伙给收拾了一顿，他肯定不会再来了。 #line:abc259
+	Gregg: 你肯定会没事的。 #line:242b58
+	Bea: 话说，咱们该怎么出去啊。 #line:b0be88
+	Gregg: 嘘，让梅歇一会儿。 #line:ae9105
+	<<close>>
+	<<wait 4>>
+<<endif>>
+Angus: 我能感觉到什么地方有气流吹过来。 #line:139c95
+Angus: 这样的话，咱们就不会被憋死啦！ #line:eb3205
+Bea: 真是太好了，听你这么一说，感觉好多了。 #line:980812
+Gregg: 你是怎么……？ #line:b8dd3c
+Angus: 格雷格，我以前可是童子军啊。 #line:571d01
+Angus: 童子军。 #line:e5ecdf
+Gregg: 嘿，安格斯。 #line:fbe6c3
+Angus: 怎么了？ #line:9bd6b1
+Gregg: 我爱你。 #line:55f55a
+Mae: 赫啊啊啊…… #line:d85475
+Bea: 欢迎回来，梅。 #line:23d954
+Gregg: 你还好吗？ #line:ceca73
+Mae: 现在感觉好多了。我刚才差点就没命了。 #line:a9b642
+Mae: 而且是“又"差点没命了。 #line:39267b
+Mae: 简直……太怪了。 #line:4c9efc
+Mae: *咳咳* #line:1adfce
+Mae: 我感觉，这好像是这两天里第三次出现这种情况了。 #line:03065a
+Gregg: 俗话说，事不过三嘛。 #line:9353f7
+Angus: 各位，气流是从后面吹过来的…… #line:3239f4
+Mae: 好了，我起来了。 #line:b2fbc0
+Bea: 你确定你要站起来吗？ #line:4ae415
+Mae: 当然了。我觉得我至少路还是能走的。 #line:56bf3e
+Angus: 这里让木板给封上了，而且还是很久以前就被封上的。 #line:bd23fe
+Gregg: 咱们能从这儿钻过去吗？ #line:a02529
+Angus: 试试就知道了。 #line:426949
+<<fadeOut 1 wait>>
+<<scene PawsModeMineBoards>>
+===

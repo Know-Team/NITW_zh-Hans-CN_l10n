@@ -1,0 +1,28 @@
+{
+    "0 TextMesh Base": 
+    {
+        "0 PPtr<GameObject> m_GameObject": 
+        {
+            "0 int m_FileID": 0,
+            "0 SInt64 m_PathID": "3"
+        },
+        "1 string m_Text": "在经历了近一年全职开发《林中之夜》之后，我们决定暨《长至夜》后再开发一款新的小游戏。\r\n我们希望它能继承第一款游戏的精神，就是在很短的期限之内做出一款我们都觉得很酷的小游戏。\r\n不仅如此，在《林中之夜》太多想付诸现实的玩法和灵感，都能通过这款小游戏来测试和实验以及完成其他的工作。\r\n和《长至夜》一样，有时候你只需要一个目标去完成一些事。\n\n在2014年末，《失落的星座》从概念设计到真正完成只花了5周的时间。",
+        "0 float m_OffsetZ": 0,
+        "0 float m_CharacterSize": 0.0500000007,
+        "0 float m_LineSpacing": 1,
+        "0 SInt16 m_Anchor": 4,
+        "0 SInt16 m_Alignment": 0,
+        "0 float m_TabSize": 4,
+        "0 int m_FontSize": 0,
+        "0 int m_FontStyle": 0,
+        "1 bool m_RichText": true,
+        "0 PPtr<Font> m_Font": 
+        {
+            "0 int m_FileID": 2,
+            "0 SInt64 m_PathID": "5"
+        },
+        "0 ColorRGBA m_Color":  {
+            "0 unsigned int rgba": 4294967295
+        }
+    }
+}

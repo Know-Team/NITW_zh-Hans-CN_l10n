@@ -1,0 +1,73 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 657,380
+---
+<<if $bathroom_mirror is 0>>
+    Mae: =_= #line:d361b8
+    <<wait 8>>
+    Mae: 这一点也不好玩。 #line:49c23f
+    Mae: 真是糟透啦。 #line:07ac91
+    Mae: 为什么所有事都这么诡异。 #line:bdb3a4
+    Mae: 为什么我会这么难受。 #line:61f060
+    Mae: 所有的事都蠢爆了。 #line:8b211d
+    <<wait 4>>
+    <<lookleft Mae>>
+    <<wait 2>>
+    Mae: 我得搞点破坏。 #line:5b7aaa
+    <<close>>
+    <<fadeOutMusic 6>>
+    <<wait 6>>
+    <<set $bathroom_mirror to 1>>
+    <<fadeOut .1>>
+    <<wait 1>>
+    <<scene BathroomVandalism>>
+<<elseif $bathroom_mirror is 1>>
+    Mae: =_= #line:9eb47c
+    Gregg: 你在干什么？ #line:d18b34
+    Mae: 你觉得我在干什么？ #line:bd423b
+    <<wait 3>>
+    Gregg: 好吧，这是个…… #line:646848
+    Mae: ……愚蠢的问题。 #line:1457c4
+    Gregg: 好吧，那你*为什么*要这么做啊？ #line:10f1a1
+    Mae: 我*需 要*|什么理由吗？ #line:cb81cc
+    Gregg: 当然需要啦！你这么做肯定是有原因的！ #line:d1eaad
+    Mae: 什么时候起发泄还需要事先找好说辞了？ #line:395be9
+    Mae: 而你又为什么会在这儿？ #line:f6e6bd
+    Gregg: 当然是找你啊！ #line:a12d77
+    Mae: 我自己知道怎么走！ #line:32544a
+    Gregg: 随你便！ #line:6f5aab
+    Mae: 随你便！ #line:8b3c19
+    Gregg: 随你便！ #line:109645
+    Mae: 随你便！ #line:dec74e
+    Gregg: 我这儿有个可能听起来比较奇怪的问题，可…… #line:e19b4d
+    Gregg: 你来这儿*之前*是不是已经决定好要搞破坏了 #line:f69801
+    Gregg: 或者是…… #line:def917
+    Mae: *我 的 天 哪*，|格雷格。|我之前根本就没有|想上洗手间。 #line:e34608
+    Gregg: 好好好！老天！ #line:cc4120
+    <<wait 3>>
+    Mae: 但 我 现 在 想 上 了。 o_o :( \o/ #line:992a85
+    Gregg: 等你完事了，我们会给你留个位置的。 #line:969692
+    Mae: 快 出 去。 #line:9efd67
+    Gregg: 好吧，好吧。 #line:860f2a
+    <<close>>
+    <<irisOut 1 wait>>
+    <<scene DonutWolfInterior>>
+<<endif>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 632,147
+---
+<<lookOut Mae instant>>
+
+<<if $bathroom_mirror is 0>>
+    <<hide Gregg>>
+<<else>>
+    <<warp Mae MaeWithGregg>>
+    <<show Gregg>>
+<<endif>>
+
+<<wait .5>>
+===

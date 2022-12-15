@@ -1,0 +1,34 @@
+title: InitLevel
+tags: 
+colorID: 0
+position: 208,278
+---
+<<set $paw_shake to 4>>
+===
+title: CoffinOpen
+tags: 
+colorID: 0
+position: 858,275
+---
+<<runNextLinesTogether 2>>
+Mae:{width=8}啊 啊 啊 啊 啊！！！ #line:48a0ae
+Bea:{width=8}啊 啊 啊 啊 啊！！！ #line:f0cd74
+<<close>>
+<<set $did_bea_coffin to 1>>
+<<irisOut 1 wait>>
+<<scene BeaIQOldSection>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: 500,267
+---
+<<fadeOutMusic 10>>
+Bea: 好了。 #line:6bc54b
+Mae: 嗯。 #line:07b182
+Bea: 我从一数到三。 #line:7e1b6d
+Mae: 好的。 #line:0a85b0
+Bea: 1。 #line:473154
+Bea: 2。 #line:3eea16
+Bea: 3！！！ #line:14aa0a
+===

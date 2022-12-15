@@ -1,0 +1,388 @@
+title: InitLevel
+tags: 
+colorID: 0
+position: -1847,539
+---
+<<if $act is 2 and $day is 4 and $did_harfest_play is 0>>
+    <<show Crusty1>>
+    <<show Crusty2>>
+    <<show OldHobo>>
+<<endif>>
+
+<<if $act is 3 and $day is 1>>
+    <<if $trigger_molly_a3d1_done is 0>>
+        <<show Molly>>
+    <<endif>>
+<<else>>
+    <<hide CopCar>>
+<<endif>>
+
+<<if $act is 3 and $day is 3 and $crusty_3_done is 0>>
+    <<show Crusty3>>
+<<endif>>
+
+<<if $act is 2 and $day is 1 and $gregg_friendship_quest is 1>>
+    <<show Gregg>>
+    <<warp Mae GreggFQ1Mae0>>
+    <<warp Gregg GreggFQ1Gregg0>>
+    <<cameraLookAt GreggFQ1CameraStart>>
+    <<playerFace -1>>
+<<endif>>
+
+<<if $act is 3 and $day is 4>>
+    <<if $walking_up_to_the_woods>>
+        <<show Angus>>
+        <<show Bea>>
+        <<show Gregg>>
+
+        <<warp Angus WalkUpStartAngus>>
+        <<warp Bea WalkUpStartBea>>
+        <<warp Mae WalkUpStartMae>>
+        <<warp Gregg WalkUpStartGregg>>
+    <<endif>>
+<<endif>>
+===
+title: EnterLevel_A2D1
+tags: 
+colorID: 3
+position: -1256,735
+---
+<<if $gregg_friendship_quest is 1>>
+    [[GreggFQ1]]
+<<endif>>
+===
+title: GreggFQ1
+tags: 
+colorID: 3
+position: -1015,680
+---
+<<fadeIn 2 wait>>
+<<wait 1>>
+
+<<walk Mae GreggFQ1Mae1>>
+<<walk Gregg GreggFQ1Gregg1 1>>
+<<wait 1>>
+Gregg: 后来，他们居然在垃圾场后面找到了他！ #line:84d577
+<<close>>
+<<wait .5>>
+
+<<waitForMove Gregg>>
+
+Mae: 好揪心啊。 #line:3d3707
+Gregg: 他在那地方已经待了有段时间了。 #line:9cf991
+Mae: 唉，听着可真不是滋味。 :\ =_= #line:924b69
+Gregg: 你真这么觉得吗？ #line:ab868e
+Gregg: 我倒觉得这事巨给劲儿。 :) #line:8c1de7
+Mae: 不是，我是说已经废弃了的老驴生鲜。 o_o #line:03e63b
+Gregg: 是啊，我知道这个，对吧？这的确让人很惊讶。 :| #line:b1febc
+<<rotateHead Mae -10 .5>>
+Mae: 我还记得，二年级的时候，咱们给感恩节要用的画上过色。 :| o> #line:65a81b
+Mae: 画的主题就是老驴生鲜。 #line:c9b407
+<<lookUp Mae>>
+Mae: 后来，这些画都放在了老驴生鲜的窗户上。 #line:08c647
+Gregg: 我还记得！ #line:019da0
+<<lookNearest Mae>>
+Gregg: 他们居然把一头驴打扮成了一只火鸡的样子！ #line:84ab4c
+<<lookOut Mae>>
+<<dilate Mae .85 1>>
+Mae: 是啊！多吓人啊！ :< #line:235af5
+Gregg: 真的，真的太吓人啦。 #line:fb1945
+Mae: :| _o_ #line:0e8960
+<<close>>
+<<cameraLookAt GreggFollow 1>>
+<<rotateHead Mae 0 .5>>
+<<wait 2>>
+<<lookNearest Mae>>
+<<dilate Mae 1 .5>>
+
+<<walk Gregg GreggFQ1Gregg2 1>>
+<<wait .5>>
+<<walk Mae GreggFQ1Mae2 1>>
+<<extraZoom -5 7>>
+<<cameraLookAt GreggFQ1Focal 7>>
+<<lookLeft Gregg>>
+Mae: 后来，那些没卖出去的货都是怎么处理的？ #line:11eb5c
+Gregg: 老驴-火鸡把它们都给收走了。 #line:cd961d
+Mae: 驴火鸡。 #line:d45b3f
+<<lookNearest Gregg>>
+Gregg: 老驴鸡。 #line:863de7
+<<close>>
+
+<<waitForMove Mae>>
+<<wait .5>>
+<<lookRight Gregg>>
+Mae: 话说，咱们为啥要来这儿啊？ #line:946c35
+Gregg: 干 坏 事。 =_= #line:8d279b
+Mae: 好吧，我现在就是你的同伙了。 :) #line:852d51
+Gregg: 梅，我的手可干净了，从来没干过坏事。 #line:b1bf01
+Mae: 说得……对极啦。 =_= <o> #line:c58032
+Gregg: 这个镇可是咱们说了算。 #line:caabfd
+Mae: 咱们为什么不进去啊？ o_o :| #line:fca771
+Gregg: O_O D: \o/ #line:7cf6d5
+Gregg: 嘿！！！！！ #line:8f14c0
+<<close>>
+<<wait 1>>
+Mae: 靠，你干什么呢？ _o_ #line:b8172e
+Gregg: o_o :| #line:a96adc
+Gregg: 我觉得我……嗯，太好了，他听见我了。 #line:a1e74e
+Mae: 你说什么呢？ #line:a80b2f
+<<close>>
+
+<<wait 1>>
+Gregg: _o_ #line:12f440
+Gregg: 啊，太好了，他来了。 #line:1c1d60
+Mae: 谁来了？ #line:d2502b
+Gregg: 我觉得你应该知道他是谁。 #line:b6f5c7
+Mae: 就别让我猜了。 #line:c9963f
+<<close>>
+
+<<trackAllSpeechBubblesToCharacters 0>>
+<<speechBubbleDistanceOverride 0>>
+
+<<irisOut 1 wait>>
+<<scene FoodDonkeyInterior>>
+===
+title: TriggerMolly
+tags: 
+colorID: 0
+position: -1483,452
+---
+<<lookAt Molly Mae>>
+Molly: 昨天晚上你来这里做什么？ #line:132996
+    ->我看见有个小孩被人绑架了。 #line:6cec57
+        <<wait .5>>
+    ->那“你"昨天晚上来这儿又是为什么啊？ #line:aa3974
+        Molly: 我们接到报案，说这里有闲杂人员出现。 #line:0009a7
+        Molly: 所以我就过来了 #line:561fb3
+        //(waves hand at council)
+        Molly: 就这么简单。 #line:930906
+        Molly: 大概是有人看见你跑到这儿来了。 #line:8d9c59
+        Molly: 该你解释了。 #line:6dfa97
+        Mae: 我看见有人被绑架了。 #line:1605b8
+Molly: 再说一遍，你看见什么了？ #line:71450b
+Mae: 我看到了一个穿着旧大衣的家伙，身上还背着一个人。 #line:82a5c9
+Molly: 嗯哼。 #line:4c4122
+Molly: 然后你就一直跟着追到了这里，是吗？ #line:979c6f
+Mae: 对。等我到栅栏这边的时候，他们已经跑上山钻进树林里去了。 #line:291d3a
+Molly: 好的。谢谢你，梅。 #line:de7646
+Mae: 呃，我就知道，你肯定不会把我的话当回事的。 #line:232c68
+Molly: 梅，我们可没接到过有关人口失踪的报案。 #line:4d02ec
+Molly: 我们就连*类似*这类的报案都没接到过。 #line:f7addb
+Molly: 靠，反倒是接到了6通电话说自己家孩子在外头玩的太晚了。 #line:b809b6
+Molly: 要是真有人失踪，肯定会有人报警的。 #line:eb3a90
+Mae: 我 要 报 案！！|这边！这边有人报案！|有人报案！ #line:cccb36
+Molly: 梅，可栅栏上连个破损的地方也没有啊。 #line:e0da91
+Mae: 所以呢？ #line:8f7676
+Molly: 所以，唯一的解释就是，那个嫌疑人背着个孩子…… #line:86ef66
+Molly: 从栅栏上跳了过去…… #line:22e9fc
+Molly: 而且，这个孩子失踪以后，还没人来报案…… #line:ad90ec
+Mae: …… #line:20492a
+Molly: 梅，你还有什么想说的吗？ #line:66def8
+Mae: …… #line:599271
+    ->没了。 #line:71b70c
+    ->那个人可能是背着孩子从栅栏边上绕过去的！ #line:073d95
+        Molly: 梅，有件事我不太明白： #line:28c91a
+        Molly: 这段栅栏是沿着停车场建起来的， #line:579398
+        Molly: 差不多到铁轨那儿才到头。 #line:48551c
+        Molly: 而你当时一直跟着那个人， #line:ba6c86
+        Molly: 然后，那个人就像变戏法似地瞬间跑到了栅栏对面，是这样吗？ #line:676ee7
+        Mae: 呃 啊 啊 啊 啊 啊。 #line:dc0473
+Molly: 我已经折腾了大半夜， #line:94628d
+Molly: 先是处理了一帮小青年的破事， #line:3707e8
+Molly: 之后又解决了一起有人害怕晾衣绳和噪音的案子。 #line:f2244b
+Mae: 我……你……你……啊啊啊！！！ #line:2422a7
+Mae: 你是*打算*让恐怖片里的情节在此上演吗？ #line:57859a
+Mae: 没人相信那个女孩看见了幽灵！ #line:b4a644
+Mae: 好吧，我来告诉你一个坏消息，在恐怖片里面- #line:8b6265
+Mae: 警 察 一 般 都 会 死。 #line:fa510b
+Molly: 不好意思，咱们现在不是在聊那个“幽灵"的事吗？ #line:42d39d
+Mae: 那个人当时可能真的穿过栅栏了吧？？ #line:207abe
+Molly: 梅，你能确定吗？ #line:804da1
+Mae: 不能！能！其实我也不清楚！ #line:c37108
+Mae: 我现在真的太累了。 #line:84dec7
+Molly: 是啊，我早就想到这个结果了。 #line:c5f153
+<<close>>
+<<lookNearest Molly>>
+<<walk Molly MollyToRight wait>>
+Mae: 那你至少应该去树林里检查一下吧？ #line:246f85
+<<lookAt Molly Mae>>
+Molly: 梅，昨晚听了“你"的话之后， #line:1a4674
+Molly: 我和丹·麦康纳今天早上就去山上检查了一番。 #line:cbbb37
+Molly: 我们把从栅栏到旧矿井的每个地方都查了一遍。 #line:fccb09
+Molly: 结果呢，我们只发现了一对在破床垫上亲热的小情侣， #line:324f05
+Molly: 几头神色慌张的鹿， #line:dd75e1
+Molly: 和一个没抓准时机的猎鹿人。 #line:234a0e
+Mae: 不可能啊。 #line:dd1faa
+Molly: 可事实就是如此。 #line:a88ec6
+<<close>>
+<<walk Molly MollyOffRight wait>>
+<<hide Molly>>
+<<hide CopCar>>
+Mae: 警 察 一 般 都 会 死！ #line:72bfdb
+===
+title: PreInitLevel
+tags: 
+colorID: 0
+position: -1851,225
+---
+<<hide Gregg>>
+<<hide Molly>>
+<<hide Crusty1>>
+<<hide Crusty2>>
+<<hide Crusty3>>
+<<hide OldHobo>>
+===
+title: EnterLevel_A2D4
+tags: 
+colorID: 3
+position: -673,389
+---
+<<if $did_harfest_play>>
+    <<hide Germ>>
+    <<warp Mae MaeRight>>
+    [[Harfest]]
+<<else>>
+<<endif>>
+===
+title: Harfest
+tags: 
+colorID: 3
+position: -469,705
+---
+<<playMusic after_kidnapping>>
+<<run Mae MaePastFoodDonkey wait>>
+Mae: *呼呼* #line:26bd61
+Mae: 那人到底跑哪儿去了？ #line:146826
+<<playOneShot event:/harfest/chain_fence_clang ChainFenceSFX>>
+Mae: 该死。 #line:a44eac
+<<close>>
+<<set $harfest_block_right to 1>>
+===
+title: TriggerLeftSide
+tags: 
+colorID: 3
+position: -207,586
+---
+//camera pulls back/pans up so you can see the miner with the kid draped over his
+//shoulder. there’s a solid few seconds of frozen poses here as the wind blows
+//leaves around etc//
+<<playMusic eide>>
+<<cameraLookAt CameraLookAtEide 3>>
+<<wait 10>>
+//a flashing pops on behind Mae and the camera pulls back down to normal view,
+//losing the guy on the hill//
+<<cameraLookAt CameraBackToMaeAfterEideHill 3>>
+//<<extraZoom 2 3>>
+<<wait .5>>
+<<close>>
+<<warp Molly MollyOffRight>>
+<<show Molly>>
+<<walk Molly MollyToRight wait>>
+<<lookAt Molly Mae>>
+Molly: 梅。 #line:6a0776
+Molly: 给我回家去。 #line:59dcaf
+<<lookNearest Molly>>
+<<hide EideHarfestStand>>
+Mae: 山上还有个人呢！ #line:f4ad8a
+Mae: 他绑架了一个孩子？ #line:4f4752
+Mae: 他看起来像是个幽灵！ #line:6eb0b3
+//molly shines a light up//
+Molly: 幽灵，是吗？ #line:77075e
+Mae: 也可能是别的什么类似的东西？ #line:4727f4
+//molly shines light back at mae//
+Molly: 梅，不管你想干什么， #line:b8a05e
+Molly: 你都不该到这来。 #line:c0a5f2
+Mae: 没 错！谁 都 不 该 到 这  来！ #line:c5e56a
+Mae: 可那个家伙- #line:c717e8
+Molly: 梅，我开车送你回家吧。 #line:75459b
+Mae: 不 要！ #line:2c344c
+Molly: 梅！跟 我 走！ #line:041410
+<<close>>
+<<irisOut 1 wait>>
+<<set $harfest_costume to 0>>
+<<scene BlackoutWoods>>
+===
+title: EnterLevel_A4D2
+tags: 
+colorID: 5
+position: 443,111
+---
+<<if $night and $boss_convo>>
+    [[FromWellWoods]]
+<<elseif $night>>
+    [[LimpIn]]
+<<endif>>
+===
+title: FromWellWoods
+tags: cut
+colorID: 5
+position: 690,408
+---
+Mae: 当时，咱们是在枯井附近的树林里道的别。 #line:8c9e5a
+Angus: 是的。 #line:e0165e
+Gregg: 没错。 #line:8d162d
+Bea: 对。 #line:9ffb88
+<<close>>
+<<irisOut 1 wait>>
+<<scene MaeHouse left>>
+===
+title: LimpIn
+tags: 
+colorID: 5
+position: 337,398
+---
+<<set $death_walk to 1>>
+<<playIdleAnimationPlayer>>
+<<cameraLookAt CameraInFrontOfFoodDonkey 0>>
+<<warp Mae MaeLimpInFrom>>
+<<walk Mae MaeLimpInTo wait>>
+<<cameraFollowPlayer 2>>
+===
+title: MidwayThroughBasketBallCourt
+tags: 
+colorID: 5
+position: 306,636
+---
+<<fadeOut 1 wait>>
+<<scene MineWoods left>>
+===
+title: EnterLevel_A3D4
+tags: temp
+colorID: 4
+position: -12,165
+---
+<<if $walking_up_to_the_woods>>
+    <<walk Angus WalkUpEndAngus>>
+    <<walk Bea WalkUpEndBea>>
+    <<walk Mae WalkUpEndMae>>
+    <<walk Gregg WalkUpEndGregg>>
+    Mae: 咱们当时还在聊到树林里去的事。 #line:a36df0
+    Bea: 对，咱们当时属于边走边聊。 #line:d4b3a9
+    Angus: 对。 #line:abc5b8
+    Gregg: 是这样。 #line:e2ce10
+    <<set $walking_up_to_the_woods to 0>>
+    <<fadeOut 1 wait>>
+    <<scene MineWoods>>
+<<endif>>
+===
+title: FarLeftFence.1
+tags: 
+colorID: 0
+position: -939,-258
+---
+Mae: 他是怎么穿过这玩意的？ #line:0e82a5
+Mae: 这栅栏连我都跳不过去，更别说他了。 #line:8bd861
+Mae: 而且，栅栏上也没有破洞， #line:4b8a13
+Mae: 那他是怎么过去的呢？ #line:881d81
+===
+title: FarLeftFence.2
+tags: 
+colorID: 0
+position: -697,-261
+---
+Mae: 我猜，他可能真的是个幽灵。 #line:89f906
+Mae: 我觉得他就是个幽灵。 #line:b8ba65
+Mae: 呃。 #line:b742e3
+Mae: ……到底发生了什么？ #line:8e7922
+<<end>>
+===

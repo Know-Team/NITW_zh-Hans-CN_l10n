@@ -1,0 +1,1516 @@
+title: TunnelTeens
+tags: 
+colorID: 0
+position: 7467,-9822
+---
+<<set $tunnel_teens_done to 1>>
+<<if $met_tunnel_teens is 0>>
+    [[TunnelTeens_Intro]]
+<<else>>
+    // A1D1, A1D3, A2D2, A2D4, A3D1, A3D3, A4D3 //
+    <<if $act is 1 and $day is 1>>
+        [[TunnelTeens_A1D1]]
+    <<elseif $act is 1 and $day is 3>>
+        [[TunnelTeens_A1D3]]
+    <<elseif $act is 2 and $day is 2>>
+        [[TunnelTeens_A2D2]]
+    <<elseif $act is 3 and $day is 1>>
+        [[TunnelTeens_A3D1]]
+    <<elseif $act is 3 and $day is 3>>
+        [[TunnelTeens_A3D3]]
+    <<elseif $act is 4 and $day is 3>>
+        [[TunnelTeens_A4D3]]
+    <<endif>>
+<<endif>>
+===
+title: Old_TunnelTeenStairs
+tags: 
+colorID: 0
+position: 7053,-8551
+---
+<<if $tunnel_teens_no_talk is 1>>
+    <<set $tunnel_teens_no_talk to 1>>
+    Mae: 如果我想到这下面来逛逛的话， #line:1b6f23
+    Mae: 可能真要抓个小孩儿来当翻译才行了。 #line:272291
+    Mae: 我的天，我才20岁，居然就和那帮小孩儿格格不入了。 #line:538acb
+    Mae: 唉，我这把老骨头啊。 #line:2c9446
+<<endif>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: 8999,-11125
+---
+<<if $act is 2 and $day is 1 and $tunnel_west_city_council_a2d1_done is 0>>
+    <<setCanInteract Molly 0>>
+    <<setCanInteract Council1 1>>
+    <<show Council1>>
+    <<if $demo2>>
+        <<hide Council2>>
+        <<hide Council3>>
+        <<hide Council4>>
+    <<else>>
+        <<show Council2>>
+        <<show Council3>>
+        <<show Council4>>
+    <<endif>>
+<<else>>
+    <<hide Council1>>
+    <<hide Council2>>
+    <<hide Council3>>
+    <<hide Council4>>
+<<endif>>
+
+<<if $act is 2 and $day is 1 and $tunnel_west_city_council_a2d1_done is 0>>
+    <<show Molly>>
+<<else>>
+    <<hide Molly>>
+<<endif>>
+
+<<if $act is 3 and $day is 2>>
+    <<show Germ>>
+<<else>>
+    <<hide Germ>>
+<<endif>>
+
+// A1D1, A1D3, A2D2, A2D4, A3D1, A3D3, A4D3 //
+<<if $act is 1 and $day is 1>>
+    // show TunnelTeens
+<<elseif $act is 1 and $day is 3>>
+    // show TunnelTeens
+<<elseif $act is 2 and $day is 2>>
+    // show TunnelTeens
+<<elseif $act is 3 and $day is 1>>
+    // show TunnelTeens
+<<elseif $act is 3 and $day is 3>>
+    // show TunnelTeens
+<<elseif $act is 4 and $day is 3>>
+    // show TunnelTeens
+<<else>>
+    <<hide TunnelTeen1>>
+    <<hide TunnelTeen2>>
+    <<hide TunnelTeen3>>
+    <<hide TunnelTeen4>>
+<<endif>>
+
+<<hide MissQuelcy>>
+<<hide Fisherman>>
+
+<<if $act is 0>>
+    <<show MsQuelcy>>
+    <<set $cook_done to 1>>
+<<endif>>
+
+<<if $act is 1 and $day is 2>>
+    <<show Fisherman>>
+    <<setAnimInt Fisherman sitting 1>>
+    //<<show Rosa>>
+<<endif>>
+
+<<if $act is 2 and $day is 1>>
+    <<show Fisherman>>
+    <<setAnimInt Fisherman sitting 1>>
+<<endif>>
+
+<<if $act is 2 and $day is 3>>
+    <<show Fisherman>>
+    <<setAnimInt Fisherman sitting 1>>
+<<endif>>
+
+<<if $act is 3 and $day is 2>>
+    <<show Fisherman>>
+    <<setAnimInt Fisherman sitting 1>>
+<<endif>>
+
+<<if $act is 3 and $day is 4>>
+    <<show Fisherman>>
+    <<setAnimInt Fisherman sitting 1>>
+<<endif>>
+
+<<if $act is 4 and $day is 3>>
+    <<show Fisherman>>
+    <<setAnimInt Fisherman sitting 1>>
+<<endif>>
+
+<<if $act is 4 and $day is 3 and $did_birdland_quest>>
+    <<show Saleem>>
+    <<show Sadie>>
+    <<setCanInteract Saleem 0>>
+    <<setCanInteract Sadie 0>>
+<<else>>
+    <<hide Saleem>>
+    <<hide Sadie>>
+<<endif>>
+
+<<if $rosa_sequence > 2>>
+    <<hide Rosa>>
+<<elseif $act is 1 and $day is 2>>
+    <<show Rosa>>
+<<elseif $act is 2 and $day is 1>>
+    <<show Rosa>>
+<<elseif $act is 2 and $day is 3>>
+    <<show Rosa>>
+<<elseif $act is 3 and $day is 1>>
+    <<show Rosa>>
+<<elseif $act is 4 and $day is 3>>
+    <<show Rosa>>
+<<else>>
+    <<hide Rosa>>
+<<endif>>
+
+
+<<if $act is 2 and $day is 4>>
+    // show PumpkinHeadGuy
+<<else>>
+    <<hide PumpkinHeadGuy>>
+<<endif>>
+
+<<if $act is 3 and $day is 2>>
+    // show Salvi and his TunnelBoat
+    <<sit Salvi>>
+<<else>>
+    <<tell TunnelBoat Hide>>
+    <<hide Salvi>>
+<<endif>>
+===
+title: TunnelTeen1
+tags: 
+colorID: 0
+position: 7248,-10182
+---
+[[TunnelTeens]]
+===
+title: TunnelTeen2
+tags: 
+colorID: 0
+position: 7483,-10239
+---
+[[TunnelTeens]]
+===
+title: TunnelTeen3
+tags: 
+colorID: 0
+position: 7723,-10204
+---
+[[TunnelTeens]]
+===
+title: Old_TunnelTeens_01_00
+tags: 
+colorID: 0
+position: 6757,-8589
+---
+Mae: 嘿，小朋友们！ #line:8ccea4
+TunnelTeen1: 嘿，大人！ #line:4160c2
+Mae: 额，我比你们大不了几岁。 #line:90f44c
+TunnelTeen2: 嗯哼。 #line:41c23c
+Mae: …… #line:e50599
+Mae: 好吧，有缘再见啦！ #line:d31f18
+===
+title: TunnelTeen4
+tags: 
+colorID: 0
+position: 7987,-10128
+---
+[[TunnelTeens]]
+===
+title: TriggerCityCouncil_A2D1
+tags: 
+colorID: 3
+position: 12033,-10521
+---
+<<if $demo2>>
+    [[CityCouncil_A2D1_Demo2]]
+<<else>>
+    Council1: 因为这壁画可是历史的见证啊，莫莉！ #line:7c8548
+    Council1: 我们现在有什么线索吗？ #line:29635c
+    Molly: 目前为止只知道作案时间是在晚上。 #line:cf3a9c
+    Molly: 当时有人用断线钳剪开了大门上的锁。 #line:2733ca
+    Molly: 然后下到了这里。 #line:e7aac8
+    Council1: 他们到底是用什么弄的，难道是油漆刷吗？ #line:fdeb3e
+    Molly: 看起来应该是。 #line:196769
+    Council3: 这上面写着他们准备要核平负……？ #line:96dcec
+    Molly: 我觉得这应该是某个小孩干的。 #line:faeac1
+    Molly: 之前我也看见过写着“核平负鼠泉"的涂鸦， #line:f19d28
+    Molly: 可作案者涂到一半可能感觉无聊，所以就不再涂了。 #line:7c4408
+    Council4: 我们要把这次事件看作是一次恐怖袭击。 #line:400863
+    Molly: 不好意思……您说什么？ #line:fe793b
+    Council1: 你要知道，这壁画可是历史遗迹！ #line:b8e45d
+    Molly: 好吧，我会把我遇到的所有……嗯……“恐怖分子"都抓住的。 #line:ce527d
+    Council3: 你要抓住所有在镇子上闲逛的臭小子和无业游民， #line:209549
+    Council1: 还得到废弃的老驴生鲜那里检查一下， #line:52d186
+    Council4: 那些人有可能是坐火车来的。 #line:3c406d
+    Molly: 我正在调查呢。 #line:5ea37d
+    Council1: 莫莉。 #line:02e553
+    Molly: 什么事？ #line:777076
+    Council1: 一定要查出是谁干的。 #line:8614bd
+    Molly: 明白。 #line:26ff20
+    Council1: 我想亲眼看见那些人被活活吊死。 #line:6f4006
+    Molly: 我觉得他们最多就是交个罚款，在监狱里蹲几天吧。 #line:58b1fb
+    Council3: 这以前可是历史遗迹啊！ #line:e67308
+    Council4: 没了这壁画，我真不知道还有什么理由再让这个地方继续开下去了…… #line:8694fa
+    Council3: 是啊，我们都知道你是怎么想的，凯斯琳。 #line:dac75c
+    Council4: 你说什么呢？你觉得我想看见现在这种情况吗？ #line:ccac06
+    Council4: 你们从来没在这个地方的开发上花过心思！ #line:bf8789
+    Council1: 凯斯琳，我们可不想把养老院建在这儿！ #line:bf12ad
+    Council4: 可这么一来，这里的地方不就浪费了吗！ #line:2c74dd
+    Council4: 再说，大家伙每天不都要来车站报刊亭歇歇脚的吗！ #line:3c0b17
+    Council2: 那我们也不想把我们的老年生活和这个破洞联系在一起！ #line:9dfd60
+    Council1: 没错，科琳！ #line:659914
+    Molly: 把这里关了的话，至少就不需要我再派人来巡逻了。 #line:2ce43f
+    Council3: 谢谢，莫莉，这主意不错。 #line:d7b28d
+    Molly: 如果你们几位已经讨论完了，那我就走了，还有事要忙。 #line:57c7ef
+    <<close>>
+    <<walk Molly MollyOffRight>>
+    <<wait 3>>
+    Council1: 嗯，好吧。 #line:4ea11f
+    Council3: 这以前可是历史遗迹啊。 #line:d96047
+    Council2: 是啊，这确实是一幅好画。 #line:534ad1
+    <<close>>
+    <<walk Council1 CouncilOffLeft>>
+    <<walk Council2 CouncilOffLeft>>
+    <<walk Council3 CouncilOffLeft>>
+    <<walk Council4 CouncilOffLeft wait>>
+    <<hide Council1>>
+    <<hide Council2>>
+    <<hide Council3>>
+    <<hide Council4>>
+    <<waitForMove Molly>>
+    <<hide Molly>>
+<<endif>>
+===
+title: Old_TunnelTeens_A2D3
+tags: 
+colorID: 3
+position: 4526,-8688
+---
+<<set $talked_to_teens_a2d3 to 1>>
+TunnelTeen1: 嘿，你认识罗莉吗？ #line:861b69
+Mae: 认识。 #line:3422c7
+TunnelTeen1: 噢，好吧。 #line:a22e6b
+TunnelTeen2: 我想你应该认识她。 #line:9ee21e
+TunnelTeen3: 这么说，你是个大学辍学生了，是吧？ #line:db66bf
+->管好你自己的破事吧！ #line:28a955
+    TunnelTeen2: 好吧好吧。 #line:5e41c9
+->算是吧。 #line:9aa66e
+    TunnelTeen3: 到底是怎么回事啊？ #line:6c395b
+    TunnelTeen4: 你是不是成绩跟不上呀？ #line:ee8f3b
+    ->先管好你自己的破事吧！ #line:54b3df
+        TunnelTeen4: 好吧。 #line:e22045
+    ->就是不太适应学校的环境吧。 #line:e31ebe
+        TunnelTeen4: 那是什么意思啊？ #line:5baea2
+        TunnelTeen1: 对啊，什么意思啊？ #line:f6708a
+        Mae: 因为我有慢性神经衰弱。 #line:02643c
+        TunnelTeen1: 天。 #line:5ffa96
+        Mae: 嗯……就是这样。 #line:ce81ce
+        <<set $intro_teens to 1>>
+===
+title: UNUSED
+tags: 
+colorID: 0
+position: 8791,-10187
+---
+Mae: 嘿！嘿！把所有蝴蝶饼都交出来！ #line:0137c0
+<<wait .9>>
+Mae: [size=1.25]嘿！[/all] #line:775644
+<<wait .9>>
+Mae: [shake=.05][size=1.5]嘿！[/all] #line:3ea00d
+Table1: 你不介意吧？他[speed=.5]吃波兰饺子吃晕了[/speed]。等会儿再来吧。 #line:ca30e6
+Mae: 我经常来这儿，可还从来没见过有吃波兰饺子吃晕的人呢。 #line:3b6337
+Table1: 他当时正在弄一些[speed=.5]“特殊配料"[/speed]，[wave]我的天。[/wave]他放波兰饺子里的东西，以前听都没听说过。 #line:328a7b
+Mae: 呃，[color=aaaaaa]我的乖乖啊。[/all] #line:4fcf2b
+===
+title: Cook_00_00
+tags: demo2
+colorID: 0
+position: 9646,-10664
+---
+Mae: 嘿，话说我才刚回来， #line:03fd4c
+Mae: 而最让我怀念的就是…… #line:607bda
+Cook: 嘿！ #line:534b49
+Cook: 我 记 得 你！ #line:a16e3d
+Mae: :) o/ #line:48e2bc
+Mae: 你好哇！ #line:fb0997
+Cook: 小 偷！ #line:ed9f4d
+Mae: :| _o_ #line:854336
+Mae: 哎 呀，拜 托！ #line:af9a82
+Mae: 那都是多少年前的事啦！ #line:f1550d
+Cook: 一 日 为 贼，|终 身 为 贼。 #line:51f1f6
+Mae: 好吧，你知道个啥啊？ =_= #line:84d0b4
+[[我不是小偷！你把你刚说的话给我收回去！|Cook_NotAThief]] #line:d05de7
+[[你这地方连个餐厅都算不上！|Cook_IsntEvenARestaurant]] #line:7d4b3c
+===
+title: Cook
+tags: 
+colorID: 0
+position: 9726,-10977
+---
+<<if $cook_sequence is 0>>
+    <<if $cook is 0>>
+        <<set $cook += 1>> 
+        <<set $cook_done to 1>>
+        [[Cook_00_00]]
+    <<endif>>
+<<endif>>
+===
+title: Cook_NotAThief
+tags: demo2
+colorID: 0
+position: 9411,-10408
+---
+Mae: 我偷过东西的地方可比你这儿好多啦！ o_o #line:bdc9b2
+Mae: 我才不会自降身份偷这里的东西呢！ #line:ebee8b
+Cook: 对 对 对！ #line:7c8593
+Cook: 快 跳 河 去 吧 #line:6072ab
+===
+title: Cook_IsntEvenARestaurant
+tags: demo2
+colorID: 0
+position: 9843,-10366
+---
+Mae: 你这就是个开在地下，一文不值的破小吃摊！ #line:d0f84e
+Cook: 我这店已经开了50年啦！ #line:6a5ecd
+Mae: 那 你 这 破 店 就 是 个|开 了 5 0 年 的 狗 不 理！ o_o #line:49561e
+Mae: 你知道还有什么东西和你这家店的时间一样长吗？ #line:59ead1
+Mae: \o/ :( #line:424ebe
+Mae:那 就 是 5 0 年 前|死 在 这 里 的 人！|(原意为“死在上世纪|60年代的人") #line:6f2889
+Cook: 你这人真没教养！知道什么是尊重吗！尊重！尊重！尊重！ #line:2a8003
+Mae: 你 就 好 好 留 着 你 那 堆 破 蝴 蝶 饼 #line:77b7f6
+Mae: 和 那 堆 烂 饺 子 吧！ #line:894620
+Mae: _o_ :| #line:4d695f
+Cook: 对 对 对， #line:620a02
+Cook: 快 跳 河 去 吧 #line:14aac3
+===
+title: RightBench
+tags: demo
+colorID: 0
+position: 10068,-9941
+---
+Mae: 以前经常会有人来这儿钓隧道里的鱼，因为不钓白不钓。 #line:bbea82
+Mae: 那场洪水之后，没被水淹的地方变少了，鱼游来游去的地方也就变大了。 #line:f8bf8f
+<<set $tunnel_east_right_bench_done to 1>>
+===
+title: Stairs
+tags: demo
+colorID: 0
+position: 8997,-8702
+---
+<<if $tunnel_east_stairs is 0>>
+    <<set $tunnel_east_stairs += 1>>
+    [[Stairs00]]
+<<elseif $tunnel_east_stairs is 1>>
+    <<set $tunnel_east_stairs += 1>>
+    [[Stairs01]]
+<<elseif $tunnel_east_stairs is 2>>
+    <<set $tunnel_east_stairs += 1>>
+    <<set $tunnel_east_stairs_done to 1>>
+    [[Stairs02]]
+<<endif>>
+===
+title: Stairs00
+tags: demo
+colorID: 0
+position: 8866,-8420
+---
+Mae: 真不敢相信，就算洪水把电车都冲走了，这里居然还能正常开放。 #line:6fa3f0
+Mae: 所以，永远不要低估那些大爷大妈去要州援助金的能力。 #line:4f12f3
+Mae: 这也就是镇上战争纪念碑的数量远多于战争次数的原因。 #line:d76973
+===
+title: Stairs01
+tags: demo
+colorID: 0
+position: 9143,-8342
+---
+Mae: 洪水来的时候，我们正在卢塞纳堡的珍妮特阿姨家。 #line:c82d7b
+Mae: 可当我们回来的时候，发现家里的客厅已经积了两尺深的水。 #line:475b25
+Mae: 泥石流毁了山下区的好几所房子。 #line:bcd38b
+Mae: 凯西·哈特利坐着她老爸的船从我家前面划了过去。 #line:23569e
+Mae: 格雷格总想着在水里骑自行车，结果却被困在了狗屋上。 #line:f385a3
+===
+title: Stairs02
+tags: demo
+colorID: 0
+position: 9440,-8551
+---
+Mae: 洪水来的时候，我们正在卢塞纳堡的珍妮特阿姨家。 #line:671492
+Mae: 可当我们回来的时候，发现家里的客厅已经积了两尺深的水。 #line:5ddb88
+Mae: 泥石流毁了山下区的好几所房子。 #line:3285c3
+Mae: 凯西·哈特利坐着她老爸的船从我家门前经过。 #line:6a5994
+Mae: 格雷格总想着要在水里骑自行车，结果却被困在了狗屋上。 #line:a47e94
+===
+title: LeftSideLocked
+tags: demo
+colorID: 0
+position: 8400,-10448
+---
+<<if $tunnel_east_left_side_locked is 0>>
+    Mae: {align=middle,nearestLocator}嗯，如果我不能吃到蝴蝶饼的话，这里只不过就是个阴冷潮湿的地下老年之家罢了。 #line:7d9387
+    Mae: {align=middle,nearestLocator}隧道的其他地方现在也进不去了，不过这和以前的情况也差不多。 #line:8f9caf
+    Mae: {align=middle,nearestLocator}这里全是些十几岁的小破孩。 #line:513692
+    <<set $tunnel_east_left_side_locked to 1>>
+<<else>>
+    Mae: {align=middle,nearestLocator}额，小破孩啊。 #line:436e0e
+<<endif>>
+===
+title: Stand
+tags: demo
+colorID: 0
+position: 10078,-8870
+---
+<<if $tunnel_east_stand is 0>>
+    <<set $tunnel_east_stand += 1>>
+    [[Stand00]]
+<<elseif $tunnel_east_stand is 1>>
+    <<set $tunnel_east_stand += 1>>
+    [[Stand01]]
+<<elseif $tunnel_east_stand is 2>>
+    <<set $tunnel_east_stand_done to 1>>
+    [[Stand02]]
+<<endif>>
+===
+title: Stand00
+tags: demo
+colorID: 0
+position: 9878,-8591
+---
+Mae: 每天这个时候这里都是空荡荡的。 #line:8b67b9
+Mae: 真搞不懂为什么那些人不能把这地方给关了，然后等到大家吃晚饭的时候再开。 #line:c21a7a
+Mae: =_= #line:69be3b
+Mae: 不过无所谓了，就让这地方烂掉算了。反正也不会有人再卖给我蝴蝶饼了。 #line:6a6ae8
+Mae: o_o #line:c82bad
+===
+title: Stand01
+tags: demo
+colorID: 0
+position: 10132,-8570
+---
+Mae: 这都是多少年前的事了。 #line:06790c
+Mae: 再说，那不就是个蝴蝶饼吗。 #line:aa127a
+Mae: 我才不是小偷呢。 #line:1e2d1b
+Mae: 只不过我当时实在是[shake=.01][size=1.2]太 饿 了 啊[/all]！ #line:e422bf
+Mae: 莫非他们是想把我[size=1.2]饿 死[/all]吗？ #line:76ee3a
+Mae: =_= #line:d12ac6
+Mae: 他们可能就想这么干吧。 #line:71c377
+Mae: 真是群魔鬼啊。 #line:a035ed
+Mae: o_o #line:233934
+===
+title: Stand02
+tags: demo
+colorID: 0
+position: 10398,-8622
+---
+Mae: 我偷过的地方可比你这破店好多啦！ #line:9aefbe
+===
+title: Fisherman_A1D2
+tags: 
+colorID: 2
+position: 11650,-10116
+---
+Fisherman: 鱼儿鱼儿，洁白如玉。 #line:356a8a
+Fisherman: 唾手可得，味美浓郁。 #line:593266
+Mae: 这诗真不错诶。 #line:152cc4
+Fisherman: 吓死我了，你居然在听我读诗。 #line:814af4
+<<set $fisherman_done to 1>>
+===
+title: Rosa
+tags: 
+colorID: 2
+position: 11269,-10298
+---
+<<if $act is 4 and $day is 3 and $met_rosa is 0>>
+    <<set $met_rosa to 1>>
+    Rosa: 嗯……你是梅。 #line:a5e1c8
+    Mae: 没错。 #line:f59c36
+    Mae: 我认识您吗？ #line:a49365
+    Rosa: 你还是个小不点的时候我就认识你了。 #line:bfb207
+    Rosa: 叫我罗莎女士。 #line:3d1c0c
+    Mae: 噢……嗯…… #line:dd72ab
+    Mae: 不好意思。 #line:034a3b
+    Rosa: 没事的。 #line:eb7a96
+    Rosa: 逝者如斯夫 #line:27650e
+    Rosa: 你知道吗，我认识你爷爷。 #line:d7f529
+    Mae: 噢，真的吗？ #line:caa9f5
+    Rosa: 真的。我很久以前就认识他了。 #line:acec7b
+    Rosa: 如果你想听他的故事， #line:e81b46
+    Rosa: 在我和他去天堂相见前， #line:380f8d
+    Rosa: 我可有一大堆过去的故事可以讲述。 #line:09fb51
+    Rosa: 哈哈…… #line:d6a248
+    Mae: 噢。 #line:529049
+    Mae: 好啊，我当然想听了！ #line:522c46
+    Rosa: 我会一直待在这儿的， #line:8e54a7
+    Rosa: 你随时都可以过来。 #line:a77842
+    Rosa: 然后我会把我知道的事都告诉你。 #line:4899e7
+    Rosa: 因为历史是要靠人才能流传下去的。 #line:2d56f9
+    Mae: 这听起来好像是个大计划呢，罗莎女士。 #line:aa0060
+    Rosa: 下回见了，梅·博罗夫斯基。 #line:633866
+<<elseif $met_rosa is 0>>
+    <<set $met_rosa to 1>>
+    Rosa: 哦，你好啊，梅！ #line:45e550
+    Mae: 嗯。 #line:522bd8
+    Mae: 我认识您吗？ #line:81c22b
+    Rosa: 我也不知道你还记得我吗？我是罗莎女士。 #line:c6dea4
+    Mae: 嗯…… #line:3aa253
+    Rosa: 我认识你爷爷。 #line:979604
+    Rosa: 你刚出生的时候我还去看过你呢。 #line:34ef0a
+    Rosa: 那时候你可小啦。 #line:4b4c2e
+    Mae: …… #line:6866c3
+    Rosa: 看来有些事是不会变的，是吧？ #line:0e51bb
+    Mae: 您是怎么认识我爷爷的？ #line:ab54ca
+    Rosa: 我大多数时候都在这儿，你为什么不顺路过来坐坐 #line:4dd1d7
+    Rosa: 那时候我会告诉你所有关于他的事儿。 #line:e6d453
+    Rosa: 那些你可能不知道的事儿。 #line:026872
+    Mae: 好啊，您把我的兴趣给勾起来了。 #line:2ca22f
+    Rosa: 可爱的好奇小猫。 #line:8cf83d
+<<else>>
+    <<if $rosa_sequence is 0>>
+        <<set $rosa_sequence += 1>>
+        Rosa: 嗯，你好啊？ #line:c4e171
+        Mae: 嗨，是我啊，梅。 #line:1afe75
+        Rosa: 啊，我记得的。阁楼上的旧钟可不会就此停摆的。 #line:82ad6b
+        Mae: 您想给我讲我爷爷的哪些事呢？ #line:4637f1
+        Rosa: 好吧，如果你真想听的话，我会给你讲的…… #line:1978ca
+        	->哈哈哈，当然了，我当然想听了。 #line:ca01bf
+        	->难道我爷爷的事很难以启齿吗？ #line:e90f7f
+        		Rosa: 哦……我倒没这感觉。 #line:39b3ea
+        		Rosa: 我都这把年纪了，还有什么事需要遮遮掩掩的呀。 #line:963a9c
+        		Mae: 人到老年时都会这么想吗？ #line:4c96eb
+        		Rosa: 哈哈……那就要看你经历了什么样的生活了。 #line:485f75
+        		Mae: 好吧，随便啦…… #line:e33e43
+        Rosa: 你们家啊，有着历史悠久的闯祸血统呢， #line:caddbf
+        Rosa: 确切来说是你父亲这一系哦 #line:6db481
+        Mae: 哦？ #line:38b10c
+        Rosa: 追溯到很久之前， #line:788acf
+        Rosa: 你会发现你的祖辈们亲历了那个工人们起义反抗地方军队的， #line:4b9bd6
+        Rosa: 真正艰苦的年代啊。 #line:415aff
+        Mae: 没错，我好像对那个年代有点印象吧。 #line:79ccb7
+        Mae: 曾曾曾曾爷爷辈之类的 #line:eaf034
+        Mae: 应该没那么多“曾" #line:5bb080
+        Rosa: 你爷爷和我就已经生活在一个相对和平的年代 #line:3c6b97
+        Rosa: 那个年代则是我们出生之前了 #line:b0d842
+        Rosa: 也不对，我们那时也见识到大浪淘沙 #line:8fcf09
+        <<wait 4>>
+        Mae: ……然后呢？ #line:a3061f
+        Rosa: 咱们下次再说吧。 #line:7f5dc7
+        Rosa: 我累了。 #line:4485b7
+        Mae: 嗯，好。 #line:d9c98b
+        Mae: 用我给您买点什么吗？ #line:8cbac2
+        Mae: 可我没钱。 #line:bc297a
+        Rosa: 不必了，梅，我没事的。 #line:efcdf5
+        Rosa: 咱们下次再聊吧。 #line:5027d6
+        Mae: 好的！再见！ #line:258a17
+    <<elseif $rosa_sequence is 1>>
+        <<set $rosa_sequence += 1>>
+        Mae: 嘿，罗莎女士！ #line:015c6a
+        Rosa: 啊，你好，梅。 #line:e296d0
+        Mae: 您今天感觉如何啊？ #line:2d9b71
+        Rosa: 唉，这里面真是又冷又潮啊。 #line:aaa98d
+        Rosa: 不过我这风湿算是老毛病了，所以到哪儿感觉都一样。 #line:63c86f
+        Rosa: 所以也没什么关系。 #line:49bf9b
+        Mae: 您今天想聊聊我爷爷的事吗？ #line:7be390
+        Rosa: 啊，当然可以了。上次我讲到哪儿了？ #line:691c58
+        	->好像是大浪淘沙什么之类的？ #line:480e40
+        		Rosa: 这是什么意思来着？ #line:ee0b68
+        		<<wait 3>>
+        		Rosa: 啊，对了。 #line:4f368f
+        		Rosa: 那句话是个隐喻。 #line:51b0c6
+        		Mae: 我听出来了。 #line:806e6f
+        	->我们家都是惹祸精？ #line:30a408
+        		Rosa: 没错。 #line:fab242
+        Rosa: 那时候有许多地方可供我们聚在一起 #line:d5a0ae
+        Rosa: 至少能供我们几个人三五成群的混一起 #line:32c9fb
+        Rosa: 在那高耸的旧烟囱 #line:023601
+        Rosa: 有大狗熊， #line:a57954
+        Rosa: 在那林间的废旧小屋 #line:889bbb
+        Rosa: 还有那教堂和工会 #line:41b1fa
+        Rosa: 以及那H-Bee里， #line:3147bc
+        Rosa: 有不间断的舞会 #line:8875da
+        Rosa: 我就是在那里遇见的你爷爷，唉，转眼一辈子就这样过去了。 #line:6a2633
+        Mae: 我爷爷那时候是个什么样的人？ #line:f2de62
+        Rosa: 许多方面都平平无奇吧。 #line:9a1b03
+        Rosa: 还是个忧郁青年。 #line:857c08
+        Rosa: 不过幽默风趣，甚至有时候莽撞冲动 #line:0f45f3
+        Rosa: 还时不时让人刮目相看吧，我记得应该是这个词。 #line:acf927
+        Mae: 嗯哼。 #line:da1122
+        Rosa: 你爸爸是怎么评价你爷爷的？ #line:5cc8f6
+        	->严厉的慈父？ #line:f8379e
+        		Rosa: 哈哈， #line:c98154
+        		Rosa: 说他严厉真是有趣 #line:8b1db0
+        		Mae: 为什么？ #line:0b159b
+        	->冷漠但尝试亲近？ #line:bdb42c
+        		Rosa: 听起来就是他 #line:cde141
+        		Rosa: 这听起来…… #line:e7d367
+        <<wait 4>>
+        Mae: 您没事吧，罗莎女士？ #line:f79b63
+        Rosa: 啊，没事。 #line:fde926
+        Rosa: 咱们下次再聊吧。 #line:81d3db
+        Mae: 好。 #line:13a23f
+        Mae: 希望您的身体能好起来。 #line:0bc78f
+        Rosa: 噢，梅啊。 #line:c2ccda
+        Rosa: 噢，我可爱的梅啊…… #line:409879
+    <<elseif $rosa_sequence is 2>>
+        <<set $rosa_sequence += 1>>
+        Mae: 啊，您好啊，罗莎女士！ #line:515558
+        Rosa: 嗯，你好，梅。 #line:feef58
+        Mae: 感觉好点了吗？ #line:49d375
+        Rosa: 我感觉应该好多了。 #line:0428dd
+        Mae: 那就好。 #line:59f0c7
+        Mae: 不知道您想不想聊一聊关于…… #line:4a54a0
+        Rosa: 你爷爷的事。 #line:c78c1b
+        Mae: 对。 #line:e3d81c
+        Rosa: 负鼠泉是我们和先辈几代人的双手和血汗建立起来的 #line:d014ad
+        Rosa: 那时候，公司发给员工的都不是现金， #line:5a20f6
+        Rosa: 而是印着公司名字的工资券。 #line:c3753d
+        Rosa: 工资券只有在公司的内部商店才能用， #line:b7cb2b
+        Rosa: 而且只能买公司自产的商品。 #line:c0969d
+        Mae: 我上学的时候，学校给我们展示过这些东西。 #line:afa498
+        Mae: 感觉他们住的地方、用的东西都怪怪的。 #line:f66788
+        Rosa: 你爷爷记得这些，因为他的父亲是第一代经历这些的人。 #line:59d664
+        Rosa: 矿场老板有次驾驶着他的大豪车来到镇上。 #line:9b1518
+        Rosa: 那天晚上我去和你爷爷碰面 #line:5692e6
+        Rosa: 那老板是个真正的混蛋，愿上帝原谅他。 #line:914272
+        Rosa: 你爷爷从舞会跑出来， #line:56fef0
+        Rosa: 我觉得他有点喝醉了，也可能他就是这么鲁莽吧 #line:93fc9a
+        Rosa: 然后他大喊了一句：“你们这些当官的一个个都是什么胆子啊！" #line:b6ed1a
+        Rosa: 之后，他又突然掏出一把不知道从哪儿找来的猎刀， #line:6f9492
+        Rosa: 把他们老板的车胎给扎了。 #line:ca8b12
+        Mae: :) #line:64e8b9
+        Mae: 哈哈哈哈，是吗！ #line:1a629a
+        Rosa: 后来，他还用石头砸了老板那辆车的挡风玻璃。 #line:adddf0
+        Rosa: 然后他就爬到车顶上…… #line:8ab294
+        Rosa: 抱歉，这部分就有点女士不宜了…… #line:bfde1f
+        Mae: 我 勒 个 去！继 续 说，别 停！ #line:1da57c
+        Rosa: 他往砸的洞尿尿 #line:7cae4b
+        Mae: 这也太爽了吧！ #line:a75959
+        Mae: :| #line:b245e8
+        Mae: 他们后来把爷爷抓起来了吗？ #line:51dc79
+        Rosa: 没有，只有我和其他几个人目击了全过程。 #line:9b2bab
+        Rosa: 我一路小跑到你爷爷身边，然后我们就顺着小巷溜走了。 #line:3ba892
+        Rosa: 我们经过完美药房， #line:0b1d16
+        Rosa: 现在已经是停车场了 #line:530860
+        Rosa: 我们头顶的星星又大又亮 #line:201da9
+        Rosa: 我想我们俩个都有点醉了 #line:127455
+        Rosa: 一件事牵动着另一件事， #line:30ab83
+        Mae: 哦，是吗。 #line:d9dc0f
+        Mae: 等等……这是什么时候的……？ #line:f96ca7
+        Rosa: 那是……很久以前的事了。 #line:30fcb9
+        Mae: 那他有没有…… #line:47a05d
+        Rosa: …… #line:161616
+        Mae: …… #line:273cc9
+        Rosa: …… #line:47f6cb
+        Mae: 那车最后怎么样了？ #line:07819e
+        Rosa: 被拖走了。 #line:27fd76
+        Rosa: 警方也找不到证人。 #line:788d27
+        Rosa: 我们可不是什么告密的人。 #line:b534a8
+        Mae: 就该如此 #line:318a67
+        Rosa: 就像我说的 #line:e99989
+        Rosa: 你可是有闯祸精的血统啊。 #line:bd58bd
+        Rosa: 哈哈哈…… #line:48023d
+        Mae: 天哪，我居然不知道还有这种事。 #line:da3ee2
+        Rosa: 我觉得这事可能连你爸都不知道。 #line:399dca
+        Mae: 我觉得他应该也不知道。 #line:f5080d
+        Rosa: 那你会告诉他吗？ #line:9f90de
+        ->会吧。 #line:9c76b0
+        	Mae: 我可能 #line:23f9fd
+        	Mae: 会挑个时候再告诉他吧。 #line:b26f30
+        ->不会。 #line:3cd986
+        	Rosa: 你也想做一个和我一样会保守秘密的人，对吧？ #line:dd72aa
+        	Mae: 我就觉得这会是场很怪的谈话 #line:1c1be4
+        	Rosa: 也许未来你发现这一切都不奇怪了 #line:058542
+        Rosa: 我想把这个故事传承给你 #line:6eba23
+        Rosa: 在你的爷爷的一生中，有无数夜晚做过数不清的事， #line:1478ed
+        Rosa: 而这只是其中一个晚上他所做的事。 #line:babef5
+        Rosa: 你到底如何对待它，现在已经成为你故事的一部分了 #line:4eb94d
+        <<wait 4>>
+        Rosa: 我今天不能再说什么了。 #line:480cb8
+        Mae: 我还想多知道点关于他的事！ #line:36753c
+        Mae: 这太疯狂了。 #line:7ece1c
+        Rosa: …… #line:26536d
+        Rosa: 咱们还会再见的，梅。 #line:ba208b
+        Rosa: 早晚会再见的。 #line:bd8072
+        Mae: 好的。 #line:3e97d8
+        Mae: 拜，罗莎女士！ #line:82eab4
+        Rosa: 回见，梅·博罗夫斯基。 #line:4ed2a3
+    <<endif>>
+<<endif>>
+<<set $rosa_done to 1>>
+===
+title: Fisherman_A1D3
+tags: 
+colorID: 2
+position: 11879,-10111
+---
+Fisherman: 吾妻早日去，吾儿亦不孝。 #line:f325d0
+Fisherman: 唯有水中鱼，常来游此道。 #line:65e724
+Mae: 哈哈哈，太棒了。 #line:8330f6
+Fisherman: 哦，天啊，求你别听了。 #line:97e0a8
+<<set $fisherman_done to 1>>
+===
+title: MissQuelcy
+tags: 
+colorID: 0
+position: 8162,-9206
+---
+<<if $act is 0 and $day is 0>>
+    [[MissQuelcy_Demo]]
+<<endif>>
+===
+title: MissQuelcy_Demo
+tags: demo
+colorID: 0
+position: 8138,-8801
+---
+<<if $miss_quelcy is 0>>
+    <<alwaysLookAt Mae MissQuelcy>>
+    <<wait .25>>
+    Mae: o/ #line:a51855
+    Mae:{locator=MaeQuelcy}嗨！奎茜老师！您是在打……电话吗？ #line:c779a2
+    Mae: _o_ #line:75cef1
+    MissQuelcy:{locator=MaeQuelcy}梅，我好像找到信号了。 #line:c8ac5f
+    Mae:{locator=MaeQuelcy}我的天啊。 #line:9483bb
+    MissQuelcy:{locator=Quelcy}梅，我理解你的心情，我很理解。 #line:53296d
+    [[{locator=MaeQuelcy}今年的艺术课办得如何？|MissQuelcy_Demo_ArtClass]] #line:6169b0
+    [[{locator=MaeQuelcy}您居然带着个手机在镇子上乱逛。好像还没人这样干过呢。|MissQuelcy_Demo_Phone]] #line:d17f4c
+<<elseif $miss_quelcy is 1>>
+    MissQuelcy: 梅，你把信号都吓跑了。 #line:5e0053
+<<endif>>
+===
+title: MissQuelcy_Demo_Phone
+tags: demo
+colorID: 0
+position: 8413,-8493
+---
+MissQuelcy: 我有一个全覆盖的内置数据库，能搜索到所有未加密的WIFI热点。 #line:808ccb
+Mae:{locator=MaeQuelcy}蹭网这种事太不道德了吧。 #line:75fda4
+MissQuelcy: 和我这周看到的无耻事相比，我蹭WIFI实在是太道德了。 #line:f3d1fd
+Mae:{locator=MaeQuelcy}啊？ #line:b5e212
+MissQuelcy:{locator=Quelcy}我这周在艺术教室后面抓到了几个学生，他们居然在看……那种视频。 #line:46fd76
+Mae:{locator=MaeQuelcy}这样啊…… :\ #line:538a0e
+MissQuelcy:{locator=Quelcy}他们就别再管手机叫什么“智能机"啦，干脆直接叫“看片神器"算啦。 #line:2b8478
+Mae:{locator=MaeQuelcy}没错，确实应该这么叫才对。 :| #line:1090d3
+MissQuelcy: 学生拿手机干这种事和负鼠泉没信号可是两码事。 #line:b882a5
+MissQuelcy: 如果我看到有孩子带着手机，我就会不由自主地想到他看片的情景。 #line:337dde
+[[MissQuelcy_Demo_End]]
+===
+title: MissQuelcy_Demo_ArtClass
+tags: demo
+colorID: 0
+position: 7913,-8526
+---
+MissQuelcy: 嗯，我们现在为了画人体，所以正在教学生人体结构呢。 #line:4cc2a8
+MissQuelcy: 可我还想试试把人体结构和性结合到一起。当然了，这件事学校肯定是不会同意的。 #line:d94428
+Mae:{locator=MaeQuelcy}放心，我会保密的。 :) #line:30806e
+MissQuelcy: 我想，要是其他人都失败了，咱们俩也可以合伙试一试。 #line:7ebf6b
+Mae: :| #line:b2bc4b
+[[MissQuelcy_Demo_End]]
+===
+title: MissQuelcy_Demo_End
+tags: demo
+colorID: 0
+position: 8144,-8231
+---
+Mae:{locator=MaeQuelcy}好吧，希望您能信号满格！ #line:c3461b
+MissQuelcy: 对了，梅。我知道你才回来不久，所以我想给你提个免费的建议。 #line:033831
+Mae:{locator=MaeQuelcy}什么建议呢？ #line:8a81cb
+MissQuelcy: 趁着还有机会，赶紧离开这里。 #line:9ba70a
+Mae:{locator=MaeQuelcy}嗯，谢谢提醒。 :\ #line:b6b315
+Mae:{locator=MaeQuelcy}您既然讨厌这里，为什么还要待在这儿呢？ #line:a63569
+MissQuelcy: 孩子啊，是有人花钱雇我来这儿的。 #line:ac6b0d
+Mae:{locator=MaeQuelcy}好吧，谢谢您了。 #line:368f8b
+MissQuelcy: 跑吧，跑得远远的吧。你可以到很远的地方去找份工作，也可以参加个马戏团周游世界。只要别留在这儿就行。 #line:b9a88f
+Mae:{locator=MaeQuelcy}…… :| #line:8c1954
+MissQuelcy: 不用谢我。 #line:0d56da
+<<set $ms_quelcy to 1>>
+===
+title: Old_TunnelTeens_A2D4
+tags: 
+colorID: 3
+position: 5739,-8851
+---
+//THIS IS THE PUMPKIN HEAD GUY!!!!//
+<<if $tunnel_teens is 0>>
+    <<set $tunnel_teens += 1>>
+    <<set $tunnel_teens_done to 1>>
+    Mae: 其他人都去哪儿了？ #line:15f908
+    TunnelTeen3: *嗯**嗯* #line:a64cf3
+    Mae: 你说啥？ #line:3cd8e3
+    TunnelTeen3: *嗯 嗯**嗯 嗯* #line:da3668
+    Mae: 哦，我滴神啊，我们以前就老这么干，太绝啦。 #line:c14f80
+    TunnelTeen3: *嗯**嗯**嗯* #line:595545
+    Mae: 好吧，以后我家那条街你就可以随便走了，有姐罩着你。 #line:7d3a01
+    TunnelTeen3: *嗯**嗯嗯嗯* #line:ea0c64
+    Mae: 就这么定啦。 #line:b5e871
+    <<set $knows_mischief to 1>>
+<<endif>>
+===
+title: Old_TunnelTeens_A3D1
+tags: 
+colorID: 3
+position: 6055,-8801
+---
+<<if $tunnel_teens is 0>>
+    <<set $tunnel_teens += 1>>
+    <<set $tunnel_teens_done to 1>>
+    <<if $knows_mischief is 1>>
+    	Mae: 哇哦， #line:08d078
+    	Mae: 你们几个可真敢在我的地盘上捣乱啊。 #line:32816f
+    	TunnelTeen3: 我们可什么都没做。 #line:043e79
+    	TunnelTeen2: 你又没证据。 #line:7682fc
+    	Mae: 这是我邻居家的南瓜。 #line:eb0dc9
+    	TunnelTeen2: 这两个南瓜根本就不一样嘛。 #line:57663c
+    	Mae: …… #line:3e41d0
+    <<endif>>
+    <<if $intro_teens is 0>>
+    	TunnelTeen1: 嘿，你认识罗莉吗？ #line:3aa32a
+    	Mae: 认识。 #line:326946
+    	TunnelTeen1: 哦，好的。 #line:366e4e
+    	TunnelTeen2: 我感觉你应该认识她。 #line:be9c7f
+    	<<set $intro_teens to 1>>
+    <<endif>>
+    Mae: 对了……额……我有件事要问， 这事听起来虽然会很怪，不过…… #line:7497e6
+    Mae: 有人失踪吗？ #line:48ba36
+    TunnelTeen3: 什么？ #line:c312a6
+    Mae: 你们知道有谁昨天晚上出去过， #line:056643
+    Mae: 但最后却没回来吗？ #line:914b89
+    TunnelTeen2: 额…… #line:c8a7a2
+    TunnelTeen4: 好像没人失踪吧。 #line:c5c2a5
+    TunnelTeen1: 出什么事了？ #line:1acc37
+    Mae: 没什么，我感觉好像看见了什么东西。 #line:b7cae9
+    TunnelTeen3: 好吧……额…… #line:d421bd
+    TunnelTeen1: 如果真出了什么事，你应该告诉我们才对。 #line:3f6e18
+    Mae: 总之，你们一定要小心，好吗？留点神好吗？ #line:3a296d
+    Mae: 如果你们看见了什么比较怪的东西，一定要告诉我，好吗？ #line:29c8bd
+    <<set $teen_sleuth to 1>>
+    Mae: 还有，你们最好从现在开始就结伴外出。 #line:39a69b
+    Mae: 这样比单独一个人更安全！ #line:3d9106
+    TunnelTeen1: …… #line:853785
+<<endif>>
+===
+title: Old_TunnelTeens_A3D3
+tags: 
+colorID: 3
+position: 6241,-8929
+---
+<<if $tunnel_teens is 0>>
+    <<set $tunnel_teens += 1>>
+    <<set $tunnel_teens_done to 1>>
+
+    <<if $no_lori is 1>>
+    	TunnelTeen1: 你快给我走吧。 #line:d3b7ef
+        <<stop>>
+    <<endif>>
+    <<if $intro_teens is 0>>
+    	TunnelTeen1: 嘿，你认不认识罗莉啊？ #line:de4c3d
+    	Mae: 认识。 #line:722e5d
+    	TunnelTeen1: 哦，那好吧。 #line:f36d62
+    	TunnelTeen2: 我觉得你可能认识她。 #line:5c0a27
+    	<<set $intro_teens to 1>>
+    <<else>>
+    	Mae: 嗨，小年轻们。 #line:46740a
+    	TunnelTeen3: 嗨。 #line:c8d6fa
+    <<endif>>
+    Mae: 话说……你们几个*总是*待在一起吗？ #line:a9ebd2
+    TunnelTeen1: 嗯，好像是吧。 #line:90c4ac
+    Mae: 挺好，有朋友是好事。 #line:fef9b8
+    Mae: 这样更安全。 #line:13fece
+    TunnelTeen3: 更安全？ #line:b09941
+    Mae: 没错，这就叫结伴嘛。 #line:5f4cd9
+    Mae: 人越多越安全嘛！！！ #line:67f399
+    TunnelTeen4: 你好像有点神经质了，你知道吗？ #line:71c7e3
+    Mae: 小子，你根本就不知道出什么事了好吗。 #line:042644
+    <<if $teen_sleuth is 1>>
+    	Mae: 你们有谁听到过有人失踪的消息吗？ #line:833a41
+    	TunnelTeen3: 额，的确有人失踪了。 #line:cd7cd4
+    	TunnelTeen3: 我网上认识过一个女生， #line:98bef4
+    	TunnelTeen3: 可丰收节之后她就再也没上过线了。 #line:cd3ed1
+    	Mae: 好吧，我还想再多了解点她的情况。 #line:e33a4d
+    	TunnelTeen3: 行。 #line:3772a0
+    	Mae: 她是这儿的人吗？我可以问问我姨妈去…… #line:48eade
+    	TunnelTeen3: 她好像是从一个叫“默维"的地方来的。 #line:f8a7de
+    	Mae: !!!! (eyes dilate, big frown)  #line:9392a0
+    	Mae: *默维*？ #line:626dc9
+    	Mae: 你认识从*默维*来的人是吗？ #line:32417b
+    	TunnelTeen3: 可能认识吧。 #line:e1c6b4
+    	Mae: 那你知道默维在什么地方吗？ #line:c9625f
+    	Mae: 那你知道默维是个*什么地方*吗？ #line:f85801
+    	TunnelTeen3: 不知道…… #line:da75bb
+    	TunnelTeen1: 我听说过这地儿。 #line:3cdc60
+    	TunnelTeen1: 我老爸是运面包的， #line:ad7cc2
+    	TunnelTeen1: 他以前送货，有一站就在默维。 #line:d22eb6
+    	Mae: 那后来怎么样了？ #line:6a89e0
+    	TunnelTeen1: 他不再往那儿运货了。 #line:5c56ec
+    	TunnelTeen1: 公司又花钱雇了个人来干这事。 #line:c03ae9
+    	Mae: 那就对了。 #line:4300eb
+    	TunnelTeen3: 默维到底是个什么地儿啊？ #line:629257
+    	TunnelTeen1: 我这周末带你去那儿看看吧。 #line:2e23dc
+    	Mae: 千万别去。 #line:7fe33c
+    	TunnelTeen1: 没事的，我们只是从那儿路过而已。 #line:1926d3
+    	Mae: …… #line:74a197
+    	Mae: 我得赶快出去晒晒太阳了。 #line:9251d1
+        <<set $munroy to 1>>
+    <<else>>
+    	Mae: 说起来……我可不想你们的吊胃口，可…… #line:b4a8d3
+    	Mae: 你们知不知道有谁这几天失踪了吗？ #line:152964
+    	TunnelTeen1: 好像没有吧。 #line:bb7f5e
+    	TunnelTeen4: 没，我认识的人里没一个失踪的。 #line:4fd750
+    	Mae: 好吧，如果你发现有人失踪了，一定要告诉我。 #line:6259da
+    	TunnelTeen3: 你真有点吓到我了。 #line:3b47d3
+    	Mae: 小子，咱俩可都被吓着啦。 #line:b6ef2c
+    	<<set $teen_sleuth to 1>>
+    <<endif>>
+<<endif>>
+===
+title: Old_TunnelTeens_A3D4
+tags: 
+colorID: 3
+position: 6468,-8865
+---
+<<if $tunnel_teens is 0>>
+    <<set $tunnel_teens += 1>>
+    <<set $tunnel_teens_done to 1>>
+    <<if $no_lori is 1>>
+    	TunnelTeen1: 赶快滚一边去吧。 #line:5c4be8
+    <<else>>
+        <<if $intro_teens is 0>>
+                 TunnelTeen1: 嘿，你也认识罗莉吗？ #line:a0e7a7
+        	Mae: 没错。 #line:705235
+        	TunnelTeen1: 噢，那好吧。 #line:a1fd37
+        	TunnelTeen2: 我觉得你应该认识她。 #line:9c454f
+        	<<set $intro_teens to 1>>
+        <<else>>
+        	Mae: 嗨，小朋友们。 #line:95615f
+        	TunnelTeen3: 嘿。 #line:79867f
+        <<endif>>
+        Mae: 嘿，你们几个。 #line:5fdac2
+        TunnelTeen2: 怎么了？ #line:f99c5e
+        Mae: 注意安全，好吗？ #line:14328f
+        TunnelTeen3: 哇哦，好的，谢谢老妈。 #line:e71046
+        TunnelTeen4: 你是我们的新老妈吗？ #line:e08973
+        Mae: 当然是了。 #line:986caa
+        Mae: 唉，孩子们，这就是生活。 #line:2483fc
+        TunnelTeen1: 但生活过得很慢。 #line:d7226e
+        Mae: 小子，生活过得可不慢。 #line:031c7e
+        Mae: 一点也不慢。 #line:8d1e22
+    <<endif>>
+<<endif>>
+===
+title: PawsModeStealingPretzel
+tags: 
+colorID: 0
+position: 10930,-11012
+---
+<<if $mallard_rats>>
+    //interaction shoudl be deactivated if this variable is set
+    //Mae: My precious rat babies have left the nest! no need for Momma to feed 'em anymore.
+    //Mae: ...they grow up so fast...
+<<elseif $rats_fed_today is 1 >>
+    Mae: 我的宝宝们都吃饱了，麻麻今天不用再给你们偷东西吃了。 #line:fd69b8
+<<elseif $paws_mode_mallard is 0>>
+    Mae: 美味的蝴蝶饼啊…… #line:1570f6
+<<elseif $paws_mode_mallard is 1 and $pretzel is 0 and $pretzel_steal_attempt is 0>>
+    Mae: 我打赌老鼠宝宝一定很喜欢美味的蝴蝶饼…… #line:43eb5b
+    <<set $pretzel_steal_attempt to 1>>
+    <<irisOut 1 wait>>
+    <<scene PawsModeStealingPretzel>>
+<<elseif $paws_mode_mallard is 1 and $pretzel is 0 and $pretzel_steal_attempt > 0>>
+    Mae: 呃……今天估计是没什么机会了。该死。 #line:403955
+<<elseif $paws_mode_mallard is 1 and $pretzel > 0>>
+    Mae: 一个蝴蝶饼足够喂饱我的亲爱的小脏鼠宝宝了。 #line:6aea7d
+<<endif>>
+===
+title: MuralVandalism
+tags: demo2
+colorID: 3
+position: 11629,-10944
+---
+Mae: {emote=exclamation} #line:6a9b17
+Mae: 见 鬼。 #line:4d5b94
+Mae: 同志们啊！有人把《同志们》给毁了！ #line:ca137a
+Mae: 这……是……谁……干……的？ #line:c2d109
+Mae: 那些人为什么要这么干啊？ #line:b6990d
+<<set $knows_mural to 1>>
+<<set $mural_vandalism_done to 1>>
+<<unlockDoodle NukePossumSprings>>
+===
+title: Fisherman_A2D1
+tags: demo2
+colorID: 3
+position: 12133,-10105
+---
+Fisherman: 茫茫矿工幼与长， #line:43ff0a
+Fisherman: 家在胸中煤在膛。 #line:7e693b
+Fisherman: 载矿工者谓车夫， #line:a6ee6b
+Fisherman: 送进矿洞又复出。 #line:e26a2a
+Fisherman: 但此洪流风暴狂， #line:7f6cd9
+Fisherman: 给予鱼儿……一栋房。 #line:8e1a8b
+Mae: “一栋房？" :) #line:4168d5
+Fisherman: 请你别再听了。 #line:7e29d3
+Mae: :| #line:9bf4b9
+<<set $fisherman_done to 1>>
+<<unlockDoodle HoneyImHorm>>
+===
+title: TrolleyWonder
+tags: demo2
+colorID: 3
+position: 10426,-10721
+---
+<<lookOut Mae>>
+Mae:{locator=TrolleyWonder}一想到这堆东西过去还能正常使用就会感觉很惊讶。 #line:3d2a8d
+Mae:{locator=TrolleyWonder}而且一看到它们还都堆在这里，也会感觉很不可思议。 #line:30317f
+Mae:{locator=TrolleyWonder}可能是没人能把它们都运出去吧。 #line:ce4491
+Mae:{locator=TrolleyWonder}这地方可有年头了。 #line:c6f58d
+<<lookNearest Mae>>
+<<set $trolley_wonder_done to 1>>
+===
+title: AboutTunnelDemo2
+tags: demo2
+colorID: 3
+position: 10728,-10716
+---
+Mae: 我真没想到，这地方居然还能对外开放。 #line:46b469
+Mae: 我猜，这里应该是个历史遗迹吧。 #line:e32628
+Mae: 不过我倒觉得，有可能是因为大爷大妈喜欢这里的波兰饺子摊，|所以才会让这地方继续对外开放的吧。 #line:68f5f9
+Mae: 永远不要低估那些讨州援助金大爷大妈的实力。 #line:19f14d
+<<end>>
+===
+title: Council1
+tags: demo2
+colorID: 0
+position: 12187,-10828
+---
+<<if $council1 is 0>>
+    Council1: 真是太可耻啦！ #line:98d2f6
+    <<set $council1 += 1>>
+<<elseif $council1 is 1>>
+    Council1: 这可是历史遗迹啊！ #line:389d5f
+    <<set $council1 += 1>>
+<<elseif $council1 is 2>>
+    Council1: 要是没了它，我真不知道咱们还有什么理由让这个地方再继续开下去…… #line:dc34ec
+    <<set $council1 += 1>>
+<<else>>
+    Council1: {emote=cloud_rain} #line:6dcdd4
+<<endif>>
+
+===
+title: CityCouncil_A2D1_Demo2
+tags: demo2
+colorID: 3
+position: 11790,-10463
+---
+<<set $council1_done to 1>>
+Council1: 因为这壁画可是历史遗迹啊，莫莉！ #line:dd8664
+Council1: 我们现在有什么线索了？ #line:120ce6
+Molly: 到目前为止，只能确定作案时间是在晚上。 #line:2e613b
+Molly: 当时有人用断线钳剪开了门锁， #line:526d97
+Molly: 然后才进来的。 #line:4ce8e4
+Council1: 他们到底是用什么弄的啊，难道是用油漆刷弄的吗？ #line:f75c78
+Molly: 看起来是这样。 #line:76b5d6
+Council1: 这上面写着他们要核平负……什么的？ #line:f1616b
+Molly: 我觉得这可能是某个小孩干的。 #line:364c8f
+Molly: 之前我也见到过几个“核平负鼠泉"的涂鸦， #line:22f6a0
+Molly: 但作案人可能是觉得无聊了，所以画了一半就不画了。 #line:d7e9bc
+Council1: 我们要把这件事当作是一次恐怖袭击。 #line:d97445
+Molly: 不好意思……您说什么？ #line:dec852
+Council1: 这壁画可是历史遗迹啊！ #line:358775
+Molly: 好吧，我会把我见到的所有“恐怖分子"……额……都给抓住的。 #line:e17187
+Council1: 你要抓住镇子上所有闲逛的臭小子和无业游民， #line:52adf2
+Council1: 还得检查一下老驴生鲜， #line:31c864
+Council1: 那些人有可能是坐着火车过来的。 #line:67a36c
+Molly: 我已经开始调查了。 #line:526ee7
+Council1: 莫莉。 #line:5703d4
+Molly: 什么事？ #line:a65a29
+Council1: 一定要查出是谁干的。 #line:3b2db5
+Molly: 明白。 #line:c5f1f0
+Council1: 我想看着那些人被活活吊死。 #line:5ceca2
+Molly: 我觉得他们最多也就交个罚款，然后在监狱里蹲几天吧。 #line:2f2527
+Molly: 不过，如果我们有了任何进展，我会第一时间通知你们的。 #line:4e7b68
+<<close>>
+<<set $council1_done to 0>>
+<<walk Molly MollyOffRight>>
+<<wait 3>>
+===
+title: Old_TunnelTeens_A4D3
+tags: 
+colorID: 6
+position: 6270,-8527
+---
+<<if $tunnel_teens is 0>>
+    <<set $tunnel_teens += 1>>
+    <<set $tunnel_teens_done to 1>>
+    <<if $no_lori is 1>>
+    	TunnelTeen1: 赶快滚吧。 #line:fd36f2
+        Mae: 不不不，今天应该是*你*滚才对吧。 #line:5d132d
+        TunnelTeen1: 真是见了鬼了，姐们儿。 #line:01f483
+    <<else>>
+        <<if $intro_teens is 0>>
+        	TunnelTeen1: 嘿，你也认识罗莉？ #line:50a9c9
+        	Mae: 是啊。 #line:b4889e
+        	TunnelTeen1: 哦，好吧。 #line:91761a
+        	TunnelTeen2: 我想你可能也认识她。 #line:e69c1c
+        	<<set $intro_teens to 1>>
+        <<else>>
+        	Mae: 嗨，小朋友们。 #line:48cb38
+        	TunnelTeen3: 嗨。 #line:6678a6
+        <<endif>>
+        Mae: 啊唷。 #line:6c5c55
+        TunnelTeen1: 啊唷？ #line:788d2f
+        TunnelTeen2: 你没事吧？ #line:8ffc93
+        Mae: 应该没事吧。 #line:3283f5
+        TunnelTeen3: 你之前说过你多大来着？ #line:96be13
+        Mae: 20。 #line:cab2fe
+        TunnelTeen4: 已经告诉过你们她没法给咱们买啤酒了。 #line:8cc868
+        Mae: 你们要啤酒想干什么？ #line:65a829
+        Mae: 啤酒可让人讨厌了。 #line:1a33ed
+        Mae: 而且一点也不好喝。 #line:5847c2
+        TunnelTeen1: 生活可不一直都是美好的，老妈。 #line:f4d04b
+        TunnelTeen2: 还以为你长这么大，应该早就明白这些了呢。 #line:e82d3b
+        Mae: 这两件事根本就没什么关系嘛。 #line:112cf4
+        Mae: 不过，我听说也有味道还不错的酒。 #line:01b4a1
+        Mae: 可我不知道那是什么酒。但喝果汁潘趣酒，肯定会让你追悔莫及的。 #line:164807
+        TunnelTeen3: 说的是啊。 #line:e828e9
+        Mae: 我是不是又不酷了？ #line:312f8a
+        TunnelTeen4: 你从来都没酷过，老妈。 #line:e62e78
+        Mae: 该死。 #line:853117
+        TunnelTeen1: 不过，生活中也不是所有事都很酷。 #line:c773ab
+        TunnelTeen2: 生活就像一团垃圾。 #line:a258af
+        TunnelTeen3: 但是管他呢，没人在乎。 #line:4c1af5
+        TunnelTeen4: 是啊，我们都是一堆小垃圾。 #line:d17499
+        TunnelTeen1: 我们只属于这里。 #line:23486f
+        Mae: 好了好了，快停下你们这些叛逆期的大聪明发言吧。 #line:fe6d7b
+        Mae: 拜拜啦。 #line:fa2585
+    <<endif>>
+<<endif>>
+===
+title: Fisherman_A2D3
+tags: 
+colorID: 3
+position: 12399,-10113
+---
+Fisherman: 吾妻早日去，吾儿亦不孝。 #line:19a2a9
+Fisherman: 唯有水中鱼，常来游此道。 #line:ef6ce8
+Mae: 哈哈，确实如此。 #line:e5a2c6
+Fisherman: 哦，天啊，求你别听了。 #line:6e6e02
+<<set $fisherman_done to 1>>
+===
+title: Fisherman_A3D2
+tags: 
+colorID: 4
+position: 12648,-10102
+---
+Fisherman: 我欲将鲨鱼细细窥详， #line:4673a2
+Fisherman: 谁料巨怪竟在暗中躲藏。 #line:f2d829
+Mae: 我勒个去！ #line:95fd19
+Fisherman: 说真的，我可没在这儿见过鲨鱼。 #line:cf0ecf
+Fisherman: 请你不要再听了。 #line:751531
+<<set $fisherman_done to 1>>
+===
+title: Fisherman_A3D4
+tags: 
+colorID: 4
+position: 12921,-10097
+---
+Fisherman: 水中的鱼儿是否会长留于此？ #line:da20c2
+Fisherman: 隧道中的水是否会长流不止？ #line:a1cbd0
+Fisherman: 鱼儿远去，我会将它们思念。 #line:351f76
+Fisherman: 归来归来，是我不变的执念。 #line:bbb0d4
+Mae: 有人想把隧道里的水都抽干吗？ #line:8c50d6
+Fisherman: 没人想把水抽干。这就是首诗而已，好吗？ #line:1991c1
+Fisherman: 我正在创作呢！ #line:d5858c
+Fisherman: 请别听我读诗啦！！！ #line:abbe03
+<<set $fisherman_done to 1>>
+===
+title: Fisherman_A4D3
+tags: 
+colorID: 6
+position: 13212,-10085
+---
+Fisherman: 当冬日来临，湖水沉息 #line:04a4e0
+Fisherman: 鱼儿在众神庇佑下安然休憩 #line:3a54dc
+Fisherman: 当甬道无恙，洪水未袭 #line:664e2d
+Fisherman: 万物于此家园肆意栖寄 #line:ec09fe
+Mae: 那必须的，这话没毛病。 #line:5b5e8b
+Fisherman: 请离我远点。 #line:ebac7c
+<<set $fisherman_done to 1>>
+===
+title: TunnelTeens_A1D1
+tags: 
+colorID: 2
+position: 6937,-9585
+---
+Mae: 居然还有人在这里闲逛，真棒啊。 #line:6880e0
+Mae: 我高中的时候就经常和别人到这儿来。 #line:835914
+TunnelTeen1: 嗯哼。 #line:ab47a2
+Mae: 其实我也没毕业几年。 #line:616b04
+TunnelTeen2: 你多大了？ #line:81578c
+Mae: 20！ #line:c41ff6
+TunnelTeen2: 哦，这么说，你还没到能买啤酒的年龄诶。 #line:20415f
+Mae: ……嗯。 #line:a71896
+TunnelTeen1: 那你有车吗？ #line:6cb424
+Mae: ……嗯。 #line:341679
+TunnelTeen2: 嗯哼。 #line:9c988e
+===
+title: TunnelTeens_A1D3
+tags: 
+colorID: 2
+position: 7194,-9576
+---
+Mae: 嗨，小子们！ #line:b11054
+TunnelTeen1: 嘿，大人。 #line:9d5b7f
+Mae: 嗯……我其实只比你们大几岁而已。 #line:800563
+TunnelTeen2: 嗯哼。 #line:abc5eb
+Mae: …… #line:11d420
+Mae: 好吧，再见啦！ #line:01f821
+===
+title: TunnelTeens_A2D2
+tags: 
+colorID: 3
+position: 6936,-9343
+---
+Mae: 今天是下雨天哦。 #line:523021
+TunnelTeen3: 不过这里可没雨。 #line:421e25
+Mae: 你们这群小子是不是把你们的小秘密藏在这里了。 :) #line:8c9f6f
+TunnelTeen2: 切。 #line:3c2744
+TunnelTeen3: 随便了。 #line:465d19
+Mae: :| #line:fc1013
+Mae: 在我小时候…… #line:2a7da3
+TunnelTeen2: 说真的，没人在乎你那些事好吗。 #line:f8e041
+<<wait 1>>
+Mae: 好吧…… :( #line:ade1ea
+TunnelTeen3: 随便你了。 #line:ccd323
+<<wait 1>>
+Mae: …… :| #line:a05cf2
+Mae: 哦，那好吧。 #line:cccfb9
+===
+title: TunnelTeens_A3D1
+tags: 
+colorID: 4
+position: 6930,-9099
+---
+Mae: 对了……额……|我有件事要问， |这事听起来虽然会很怪，|不过…… #line:e8f392
+Mae: 有谁失踪了吗？ #line:981f4e
+TunnelTeen3: 什么？ #line:0e1b86
+Mae: 你们知道有谁昨天晚上出去过， #line:be441e
+Mae: 但最后却没回来吗？ #line:03c06b
+TunnelTeen2: 额…… #line:7d21e5
+TunnelTeen4: 好像没有吧。 #line:eb14ed
+TunnelTeen1: 出什么事了吗？ #line:9b2bff
+Mae: 没什么，我感觉好像看见了什么东西。 #line:916d24
+TunnelTeen3: 好吧……额…… #line:14a58c
+TunnelTeen1: 如果真出了什么事，你应该告诉我们才对。 #line:0aeed8
+Mae: 总之，你们一定要小心，好吗？留点神好吗？ #line:54d3d2
+Mae: 如果你们看见任何怪异的东西，一定告诉我，好吗？ #line:33082c
+Mae: 还有，你们最好从现在开始就结伴外出。 #line:3517ac
+Mae: 这样比单独一个人更安全！ #line:0108fc
+TunnelTeen1: …… #line:1f1846
+===
+title: TunnelTeens_A3D3
+tags: 
+colorID: 4
+position: 7186,-9097
+---
+Mae: 话说……你们几个*总是*待在一起吗？ #line:db4082
+TunnelTeen1: 好像是吧。 #line:7c3641
+Mae: 挺好，有朋友是好事。 #line:558028
+Mae: 这样更安全。 #line:fff818
+TunnelTeen3: 更安全？ #line:f2d0bf
+Mae: 没错，这就叫结伴嘛。 #line:385cbb
+Mae: 人越多越安全嘛！！！ #line:141e0b
+TunnelTeen4: 你好像有点神经质啊，你知道吗？ #line:a9ebd9
+Mae: 小子，你根本就不知道出什么事了好吗。 #line:cebf1b
+Mae: 你们有谁听到过人员失踪的消息吗？ #line:af8537
+TunnelTeen3: 额，确实有人失踪了。 #line:2223c7
+TunnelTeen3: 我在网上认识过一个女生， #line:874900
+TunnelTeen3: 可丰收节之后就没见她再上线了。 #line:80c9fe
+Mae: 好吧，我想我还得多了解一点她的情况。 #line:688ac3
+TunnelTeen3: 好。 #line:d375a2
+Mae: 她是这儿的人吗？我可以去问问我姨妈…… #line:f74cd2
+TunnelTeen3: 她好像是从一个叫“默维"的地方来的。 #line:7fe46c
+Mae: ！！！！ #line:da48dd
+//(eyes dilate, big frown)
+Mae: *默维*？ \o/ #line:83c091
+Mae: 你认识从*默维*来的人是吗？ #line:9bf72b
+TunnelTeen3: 可能认识吧。 #line:8e7d07
+Mae: 那你知道默维在什么地方吗？_o_ #line:f2cc36
+Mae: 那你知道默维是个*什么地方*吗？ #line:999b13
+TunnelTeen3: 不知道…… #line:02e37d
+TunnelTeen1: 我听说过这个地儿。 #line:c0b0fd
+TunnelTeen1: 我老爸是运面包的， #line:76a820
+TunnelTeen1: 他以前送货，有一站就在默维。 #line:708afc
+Mae: 那后来怎么样了？ #line:3d8a94
+TunnelTeen1: 他不再往那儿送货了。 #line:372f4c
+TunnelTeen1: 公司又花钱找了个人来干这事。 #line:37cb9d
+Mae: 那就对了。 #line:091f18
+TunnelTeen3: 默维到底是什么地儿啊？ #line:11456d
+TunnelTeen1: 我这周末就带你去那儿看看吧。 #line:fb0716
+Mae: 千万别去。 #line:0b655d
+TunnelTeen1: 没事的，我们只是从那儿路过而已。 #line:1d9fbf
+Mae: …… #line:31aba9
+Mae: 我得赶快出去晒晒太阳了。 #line:7752fa
+===
+title: TunnelTeens_A4D3
+tags: 
+colorID: 6
+position: 7460,-9339
+---
+Mae: 嘿，你们几个。 #line:a064da
+TunnelTeen2: 什么事？ #line:d9fef9
+Mae: 注意安全，好吗？ #line:b096d7
+TunnelTeen3: 哇哦，好的，谢谢老妈。 #line:840142
+TunnelTeen4: 你是我们的新老妈吗？ #line:642fad
+Mae: 当然是了。 #line:ef8502
+Mae: 唉，这就是生活。 #line:543b34
+TunnelTeen1: 但过得很慢。 #line:5afe1e
+Mae: 小子，生活过得可不慢。 #line:63cbec
+Mae: 还是算了。 #line:1a6200
+<<wait 1>>
+<<if $did_birdland_quest>>
+    TunnelTeen1: 我真希望这俩玩乐器的人别再TM制造噪音啦。 #line:28e261
+    Mae: 嘿！ #line:412fea
+    TunnelTeen1: …… #line:13a205
+    Mae: 说话注意点。 #line:d4ef65
+<<endif>>
+===
+title: TunnelTeens_Intro
+tags: 
+colorID: 0
+position: 6949,-9843
+---
+Mae: 嗨，小年轻们。 #line:58bf4e
+TunnelTeen1: 嘿。 #line:b1571a
+Mae: 你们干什么呢？ #line:6511d1
+TunnelTeen1: …… #line:909b3f
+Mae: …… #line:e8744b
+TunnelTeen1: 啥事也没干。 #line:e29b2d
+Mae: 酷啊！ #line:529cab
+<<wait 1>>
+<<set $met_tunnel_teens to 1>>
+
+// A1D1, A1D3, A2D2, A2D4, A3D1, A3D3, A4D3 //
+<<if $act is 1 and $day is 1>>
+    [[TunnelTeens_A1D1]]
+<<elseif $act is 1 and $day is 3>>
+    [[TunnelTeens_A1D3]]
+<<elseif $act is 2 and $day is 2>>
+    [[TunnelTeens_A2D2]]
+<<elseif $act is 2 and $day is 4>>
+    [[TunnelTeens_A2D4]]
+<<elseif $act is 3 and $day is 1>>
+    [[TunnelTeens_A3D1]]
+<<elseif $act is 3 and $day is 3>>
+    [[TunnelTeens_A3D3]]
+<<elseif $act is 4 and $day is 3>>
+    [[TunnelTeens_A4D3]]
+<<endif>>
+===
+title: PumpkinHeadGuy
+tags: temp
+colorID: 3
+position: 8359,-9802
+---
+Mae: 大家都去哪儿了？ #line:3f471a
+PumpkinHeadGuy: *嗯**嗯* #line:7c289e
+Mae: 你说什么？ #line:c7d1be
+PumpkinHeadGuy: *嗯 嗯**嗯 嗯* #line:d69376
+Mae: 哦，我的天，我们以前就老这么干。太棒啦。 #line:72bc8c
+PumpkinHeadGuy: *嗯**嗯**嗯* #line:96f37e
+Mae: 好吧，以后我家那条街你就可以随便走了，姐罩着你。 #line:a6661f
+PumpkinHeadGuy: *嗯**嗯嗯嗯* #line:10de5a
+Mae: 一言为定。 #line:8c41ea
+<<set $pumpkin_head_guy_done to 1>>
+===
+title: Salvi
+tags: 
+colorID: 0
+position: 9046,-10803
+---
+<<lookAt Mae Salvi>>
+<<if $did_tunnel_boat_ride>>
+    Salvi: 谢谢了，能在我工作的时候过来陪我！ #line:7564a1
+    Mae: 感觉棒极啦！ #line:4aeb03
+    Mae: 我完全可以胜任这份工作诶！ #line:a1c9f9
+    Salvi: 哦，不是吧！这就多了个竞争者！ #line:7ff9d8
+    Mae: 我要给自己搞来一艘船， #line:df7f92
+    Mae: 然后去找点垃圾， #line:0049e3
+    Mae: 最后再卖给有钱的笨蛋。 #line:d329b9
+    Salvi: 就是这样！ #line:17f5e8
+    Salvi: 保重！ #line:2a4d59
+    Mae: 你也是！祝好运！ #line:034733
+    <<set $salvi_done to 1>>
+<<else>>
+    <<if $salvi_boat_intro is 0>>
+        <<set $salvi_boat_intro to 1>>
+        Mae: 哇哦，下面的，你好啊。 #line:455fdf
+        Salvi: 哈耶，我在这儿，梅！ #line:a7e55e
+        Mae: 哈哈哈，这不是萨尔维先生吗？ #line:5ce510
+        Mae: 太阳都快落山了， #line:5c4620
+        Mae: 你一个人跑进隧道里 #line:47a89b
+        Mae: 待在船上干什么呢？ #line:fc5aaa
+        Salvi: 你怎么从学校回来了？ #line:238d47
+            ->你先回答我的问题！ #line:62dc37
+            ->我退学啦！ #line:b05fc9
+                Salvi: 哦，我的个天啊，梅。 #line:5fee52
+                Mae: 嗯，额，对不起。 #line:95f545
+                Salvi: 为什么要给我道歉啊？ #line:7aca1e
+                Mae: 我不知道！ #line:352b73
+                Mae: 话说你在这下面干什么呢？ #line:4f107c
+        Salvi: 当然是干副业了！ #line:24b64e
+        Salvi: 我干的是“萨尔维废品收购"。 #line:611dbf
+        Mae: 那是啥意思？ #line:5dd65b
+        Salvi: 梅，这话的意思就是，我是个收废品的。 #line:e8c519
+        Mae: 你不去给人修草坪了吗？ #line:ad6dcc
+        Salvi: 啊，没有，景观美化我还在做呢。 #line:f17320
+        Salvi: 不过呢，对于眼光敏锐的古董爱好者来说， #line:589183
+        Salvi: 我也算是个古玩供货商。 #line:add514
+        Mae: 好吧，那是你的副业，没错。 #line:4a1fc4
+        Salvi: 想不想和我一起来呀？ #line:d78a02
+        Salvi: 咱们一起坐船进隧道里转转怎么样？ #line:a4fd5f
+        Salvi: 虽然今天的旅程会很短， #line:ddf75d
+        Salvi: 不过应该也会很有意思吧。 #line:9f65f1
+            ->嗯……当然可以了！ #line:93a82d
+                Mae: 额…… #line:58756b
+                Mae: 这可不太明智吧。 #line:de2d60
+                Salvi: 这很安全的。 #line:4d1be8
+                <<set $salvi_second_pair_of_hands to 1>>
+                Salvi: 我刚好需要有人来搭把手。 #line:664de5
+                Salvi: 我经常会在这儿找个小孩儿过来帮我的。 #line:e52d18
+                Mae: 嗨，孩子们！ #line:9d3b4d
+                Teen3: 嗯，怎么了？ #line:aab74d
+                Mae: 我准备要上这艘船了！ #line:e2620a
+                Teen1: 然后呢？ #line:1fe27e
+                Teen4: 我们早就上过这艘船啦！ #line:802923
+                Teen3: 你可不是头一个坐过这船的人！ #line:da38cb
+                Mae: 说说而已！就想着谁会想问问！ #line:4f2f45
+                Mae: 我准备和萨尔维先生一起在这里登船喽！ #line:341747
+                Teen2: 我们才不在乎呢！ #line:f60656
+                Mae: 好吧，谢啦！ #line:b0f007
+                <<wait 2>>
+                Salvi: 怎么回…… #line:f64ca5
+                Mae: 没事，咱们走吧。 #line:fa9a82
+                <<set $did_tunnel_boat_ride to 1>>
+                <<fadeOut 1 wait>>
+                <<scene TunnelBoatRide left>>
+            ->嗯……算了吧！ #line:f56fd3
+                Mae: 额，我……我感觉这周过得怪怪的。 #line:15bf90
+                Mae: 怪得我都不想上什么船了。 #line:52b97c
+                Mae: 现在就算和家人朋友一起， #line:5b4389
+                Mae: 我也不想坐着船跑到隧道里去。 #line:7e61d2
+                Mae: 这么做感觉好怪。 #line:a27388
+                Salvi: 随便你了！那下次再说吧！ #line:ea64a0
+                Mae: 好，没问题！ #line:6a881c
+                Mae: 回见啦！ #line:38da38
+    <<else>>
+        Salvi: 又改主意了？ #line:aab5af
+        ->没有。 #line:978aca
+            Salvi: 那就下次再说吧！ #line:855b0e
+        ->嗯。 #line:5dc599
+            <<if $salvi_second_pair_of_hands is 0>>
+                Salvi: 太好了，我刚好需要有人过来给我搭把手。 #line:b748c0
+                <<set $salvi_second_pair_of_hands to 1>>
+            <<endif>>
+            Salvi: 上船吧！ #line:69b13d
+            Mae: 啊嘿，啊嘿，好好好！ #line:5cf4b9
+            <<set $did_tunnel_boat_ride to 1>>
+            <<fadeOut 1 wait>>
+            <<scene TunnelBoatRide left>>
+    <<endif>>
+
+<<endif>>
+===

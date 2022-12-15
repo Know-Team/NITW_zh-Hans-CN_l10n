@@ -1,0 +1,64 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: 211,280
+---
+[[HomeQuest]]
+===
+title: HomeQuest
+tags: 
+colorID: 0
+position: 489,317
+---
+<<hide Collision:Right>>
+<<hide Collision:Left>>
+
+<<warp Mae Mae0>>
+<<warp Germ Germ0>>
+
+<<walk Mae Mae1>>
+<<walk Germ Germ1>>
+
+<<waitForMove Mae>>
+
+//germ and mae walk in. GermMom is in the FG//
+Germ: 嘿，妈！ #line:005ccd
+Germ: 这位是梅！ #line:afb41d
+Germ: 她要在咱们家吃个饭！ #line:792f65
+<<lookLeft Germ>>
+Mae: o/ #line:23d7dd
+Mae: 额，嗨。 #line:3aa9c7
+Mae: :) #line:5c42de
+GermMom: 你好啊，梅。 #line:eaf6e7
+Mae: _o_ #line:845258
+GermMom: 希望你喜欢吃邋遢乔！ #line:ca3b97
+Mae: 谁不喜欢吃呢？ #line:d2616c
+GermMom: 这屋子里可没人不喜欢吃它。 #line:fd916f
+Germ: 我觉得你们俩真应该在晚饭前互相认识认识！ #line:a2ded3
+GermMom: 杰里米，你想得还真周到啊。 #line:2dc50d
+Germ: 我要给我奶奶介绍一下梅！ #line:9156e1
+GermMom: 喔，就这些吗？ #line:423007
+Mae: 什么意思？ #line:f979c6
+Germ: 我能不能带梅去见我奶奶了？ #line:5655ac
+GermMom: 你用不着问我。 #line:d08553
+GermMom: 出了什么情况反正都是你的事。 #line:b86bcf
+Mae: :| #line:15a92e
+Mae: 这什么情况啊？ #line:5f8dc1
+Germ: 跟我来吧！ #line:14b6aa
+<<walk Germ Germ2>>
+->很高兴见到您！ #line:8010d2
+	GermMom: 我也很高兴，梅！ #line:d57b3f
+->…… #line:2f3ad3
+    GermMom: 怎么了？ #line:f751b8
+    Mae: 我……额……根本就没想过杰姆会有个妈妈。 #line:880caf
+    GermMom: 这孩子总是让人很意外。 #line:34d0f5
+    Mae: 的确如此！ #line:a3b57a
+    GermMom: 杰姆的奶奶正等着你呢，别让她等太久了。 #line:1cde44
+    Mae: 噢，说的是啊。 #line:8a16cb
+<<close>>
+<<walk Mae Mae2>>
+<<waitForMove Mae>>
+
+<<irisOut 1 wait>>
+<<scene GermLivingRoom -1>>
+===

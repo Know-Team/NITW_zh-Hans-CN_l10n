@@ -1,0 +1,996 @@
+title: GermInitLevel
+tags: 
+colorID: 0
+position: -14586,-1905
+---
+<<if $TowneCentreWest>>
+    <<if $act is 2 and $day is 1>>
+        <<show Germ>>
+        <<warp Germ GermSnackFalcon>>
+    <<else>>
+        <<hide Germ>>
+    <<endif>>
+<<elseif $Outskirts>>
+    <<if $act is 2 and $day is 2 and $germ_done is 0>>
+        <<show Germ>>
+    <<elseif $act is 2 and $day is 3 and $germ_done is 0>>
+        <<show Germ>>
+        <<if $germ_friendship_quest_1>>
+            <<warp Player MaeGerm>>
+            <<flip Germ -1>>
+        <<endif>>
+    <<elseif $act is 2 and $day is 4>>
+        <<show Germ>>
+        <<warp Germ GermBBallCourt>>
+    <<elseif $act is 3 and $day is 1 and $germ_done is 0>>
+        <<show Germ>>
+    <<elseif $act is 3 and $day is 2 and $germ_done is 0>>
+        <<show Germ>>
+        <<if $germ_friendship_quest_2>>
+            <<warp Player MaeGerm>>
+            <<flip Germ -1>>
+        <<endif>>
+    <<elseif $act is 3 and $day is 3 and $germ_done is 0>>
+        <<show Germ>>
+    <<elseif $act is 3 and $day is 4 and $germ_done is 0>>
+        <<show Germ>>
+        <<if $germ_friendship_quest_3>>
+            <<warp Player MaeGerm>>
+            <<flip Germ -1>>
+        <<endif>>
+    <<else>>
+        <<hide Germ>>
+    <<endif>>
+<<elseif $Bridge>>
+    <<if $germ_friendship_quest_2>>
+        <<show Germ>>
+        <<if $hobo_code_1>>
+            <<warp Mae MaeInTunnel>>
+            <<warp Germ GermInTunnel>>
+            <<flip Mae -1>>
+        <<else>>
+            <<noFallThrough Collision:BridgeMiddle 0>>
+            <<warp Mae MaeEnterQuest>>
+            <<warp Germ GermEnterQuest>>
+            <<cameraLookAt CameraBridgeStart>>
+        <<endif>>
+    <<else>>
+        <<hide Germ>>
+    <<endif>>
+<<endif>>
+===
+title: Germ_A2D1_00
+tags: demo2
+colorID: 3
+position: -17909,-1171
+---
+Mae: 嘿……杰里米？ #line:37c669
+<<set $met_germ to 1>>
+Mae: 你是杰里米·沃顿吗？ #line:5543e0
+Germ: 别人都不这么叫我。 #line:d6adf9
+Mae: 应该叫你杰姆，对吧？ #line:b08616
+Germ: 杰姆·沃费尔。 #line:cba336
+Mae: 这名儿够给力的，哈？ #line:652231
+Germ: 没错。 #line:685ff8
+Mae: 这名字确实不赖。 #line:b9b012
+Germ: 你叫梅。 #line:b808e4
+Mae: 对。 #line:989856
+Germ: 这名儿也不错。 #line:1b2e75
+Mae: 是啊。 #line:88a1b0
+<<unlockDoodle Germ1>>
+===
+title: Germ_A2D1_01
+tags: demo2
+colorID: 3
+position: -17648,-1138
+---
+Mae: 你是不是比我小一岁？ #line:12ed8f
+Germ: 小两岁。 #line:561a17
+Mae: 这么说，你是大一新生喽？ #line:9a5831
+Germ: 我有时候会跟格雷格一起出去逛， #line:807f36
+Germ: 一起骑车出去玩。 #line:5b9b99
+Germ: 我很擅长骑车。 #line:64bf4c
+Mae: 嗯。 #line:f85a65
+Germ: ！！！ #line:6bf45c
+Mae: 怎么了？ #line:e75a44
+Germ: 前几天，我看见了一只特别狂躁的负鼠。 #line:7572a2
+Mae: 是吗？在哪儿看见的？ #line:9c720f
+Germ: 它当时正在过马路。 #line:822b66
+Mae: 那它有没有被车撞到啊？ #line:0193c4
+Germ: 没有，它只是很狂躁而已。 #line:f688e6
+Mae: 它之前遇到过什么事吗？ #line:8ec90a
+Germ: 它以前让车给撞过。 #line:b1980e
+Mae: 哇哦。 #line:5cb1e1
+Germ: 这就像是…… #line:5e3c2a
+Germ: 一首诗。 #line:ee3ac3
+<<set $like_a_poem to 1>>
+Mae: 好吧。 #line:7a7316
+===
+title: Germ_A2D1
+tags: 
+colorID: 3
+position: -17623,-1576
+---
+<<if $germ is 0>>
+    <<set $germ += 1>>
+    [[Germ_A2D1_00]]
+<<elseif $germ is 1>>
+    <<set $germ += 1>>
+    <<set $germ_done to 1>>
+    [[Germ_A2D1_01]]
+<<endif>>
+===
+title: Germ_A2D2_00
+tags: 
+colorID: 3
+position: -17080,-1250
+---
+Mae: 嘿，杰姆。 #line:144835
+Mae: 干嘛呢？ #line:fa00d2
+Germ: 没干嘛， #line:4d0d75
+Germ: 刚才和几个脏皮士玩了一会儿。 #line:cb78b4
+Mae: 什么东西？ #line:cc42a3
+Germ: 就是硬皮朋克族。他们总是到处流浪。 #line:e41968
+Mae: 哦，明白了，就和靠扒火车到各处去的家伙差不多。 #line:0f8bc6
+Germ: 那些人知道咱们这儿没什么警察。 #line:8dbf91
+Mae: 我真是太怀念*这些*酷炫的东西啦。 #line:dedf46
+Germ: 他们中有个人还养了只狗。 #line:6ae2a7
+Germ: 这些人基本上都是会养狗的。 #line:41f02a
+Germ: 有一次，我见到过一个少了一只脚的脏皮士。 #line:f37c04
+Mae: 那个人怎么了？ #line:99cb3d
+Germ: 那个人在上下火车的时候摔了下来，然后掉到了车和什么东西之间。 #line:c7a314
+Mae: 太惨啦。 #line:853ac5
+Germ: 扒火车就是有各种缺胳膊断腿的事。 #line:495df7
+Mae: 我们前几天就看见过一只胳膊！ #line:bdd3b8
+Mae: 你觉得那只胳膊会不会是某个脏皮士的啊？ #line:ee0996
+<<set $crusty_clue to 1>>
+Germ: 不可能。 #line:52a91d
+Germ: 其实…… #line:e8b9f5
+Germ: 我也不知道。 #line:0c1f68
+Mae: 嗯哼。 #line:6cb2f6
+===
+title: Germ_A2D2_01
+tags: 
+colorID: 3
+position: -16760,-1293
+---
+Mae: 这么说…… #line:b6f19f
+Germ: 我 已 经 在 这 儿 待 了 好 几 天 了。 #line:7e476e
+Mae: 嗯，我刚才想说…… #line:e63fbe
+Germ: 我现在得走了。 #line:465f4c
+Mae: 拜拜！ #line:3bf122
+[[WalkGermOut]]
+===
+title: Germ_A2D2
+tags: 
+colorID: 3
+position: -16949,-1563
+---
+<<if $germ is 0>>
+    <<set $germ += 1>>
+    [[Germ_A2D2_00]]
+<<elseif $germ is 1>>
+    <<set $germ_done to 1>>
+    [[Germ_A2D2_01]]
+<<endif>>
+===
+title: Germ_A2D3_00
+tags: 
+colorID: 3
+position: -16361,-1114
+---
+Mae: 嘿，杰姆。 #line:5084ca
+Germ: 嘿～ #line:bfcae6
+Germ: 想一块儿逛逛吗？ #line:b1fc23
+Mae: 我不知道。今晚还准备跟格雷格或者碧娅出去呢。 #line:744565
+Germ: 天，不用这样吧，我又没叫你和我私奔去结婚。 #line:19388d
+->不用了。 #line:82eecf
+    Germ: 好吧，那拜拜啦！ #line:5859a0
+    Mae: 拜！ #line:7c140a
+    <<set $germ_done to 1>>
+->没问题。 #line:ed5183
+    <<set $germ_friendship_quest_1 to 1>>
+    Mae: 好了，你打算去干点啥呢？ #line:b79572
+    Germ: 跟我来！ #line:e9d4e9
+    <<irisOut 1 wait>>
+    <<scene ParkingLot>>
+===
+title: Germ_A2D4_00
+tags: 
+colorID: 3
+position: -15859,-1113
+---
+Mae: 嘿，杰姆！ #line:852beb
+Germ: 嘿，梅。 #line:6ce945
+Crusty1: 嘿！我叫斯卡姆兹。 #line:9b07b5
+Mae: 你叫骗局？（梅把Skamz听成了scams（骗局）） #line:31a6bb
+Crusty1: 这位是詹娜。 #line:07e5ac
+Crusty2: 嗨！ #line:5976d4
+Mae: 嗨！ #line:dc0dd7
+OldHobo: 我叫比尔·唐。 #line:c0fc32
+Germ: 我叫杰姆！ #line:ca0322
+Mae: 我叫梅。 #line:edaebd
+<<close>>
+<<wait 1>>
+Mae: 我都忘了要说什么了。 #line:dc1f28
+
+===
+title: Germ_A2D4_01
+tags: 
+colorID: 3
+position: -15607,-1088
+---
+Mae: 嘿，杰姆，你要参加丰收节吗？ #line:a4651a
+Germ: 额，可能会去吧。 #line:17a096
+Mae: 你们也想一起来吗？ #line:0ab565
+Crusty1: 可以，我们没准会去的， #line:ce3da1
+Crusty1: 顺便到晚会上检查检查。 #line:3f6205
+Crusty1: 我的意思是，你们都在这儿见到过幽灵，是吗？ #line:5437a9
+<<set $knows_legend_hobo to 1>>
+Germ: 是的。 #line:a7953f
+Mae: 什么东西？ #line:430f32
+Germ: 你知道小乔吗？ #line:cec606
+Mae: 伙计，这我当然知道啦。他可是咱们这儿的传奇人物啊。 #line:e538f6
+Crusty1: 我在光明湾 #line:85e357
+Crusty1: 有个叫绦虫的朋友。 #line:a82845
+Crusty1: 他跟我说，他从来都没在这个镇下过火车， #line:bf06fb
+Crusty1: 因为这儿有鬼！ #line:cdf4ab
+OldHobo: 噢，真扯淡。 #line:2ce323
+Crusty1: 他还会溜进火车调度站去偷好东西。 #line:f69d41
+OldHobo: 好了，你们这帮孩子虽然游手好闲，不学无术，可胆子倒不小。 #line:28b79d
+Crusty1: 见鬼，你个老古董！我们的手可都干净着呢！ #line:708d35
+Mae: 啊，好了，我猜我还能在丰收节那天再见到你们！ #line:ac79b9
+Mae: 见到你很高兴！ #line:6f4974
+Crusty1: 我也很高兴，女士！ #line:0926ba
+Mae: …… #line:91c885
+Mae: 回见，杰姆！ #line:d3fecf
+Germ: 再见。 #line:68ddaa
+===
+title: Germ_A2D4
+tags: 
+colorID: 3
+position: -15635,-1447
+---
+<<if $germ is 0>>
+    <<set $germ += 1>>
+    [[Germ_A2D4_00]]
+<<elseif $germ is 1>>
+    <<set $germ += 1>>
+    [[Germ_A2D4_01]]
+<<elseif $germ is 2>>
+    [[Germ_A2D4_02]]
+<<endif>>
+===
+title: Germ_A2D4_02
+tags: 
+colorID: 3
+position: -15362,-1228
+---
+Germ:{emote=pentagram} #line:e5bfd7
+<<close>>
+Germ:{emote=ghost} #line:4db23f
+<<close>>
+===
+title: Germ_A3D1_00
+tags: 
+colorID: 4
+position: -14926,-1211
+---
+Mae: 嘿。 #line:da78ac
+Germ: 你好啊，小不点。 #line:64cd4a
+Germ: *嗅 嗅* #line:5d7aca
+Germ: 你身上的味道有点奇怪啊。 #line:a23997
+<<if $knows_council_bball is 0 and $trigger_molly_a3d1_done is 0>>
+	Mae: 我姨妈的警车怎么在这儿？ #line:25438c
+	Germ: 那个是你姨妈？ #line:7c5c29
+	Mae: ……是啊…… #line:4e4264
+	Germ: 哦，真是怪了。这么说，你是不是也算是半个警察啊？ #line:7465a1
+	Germ: 你 永 远 都 抓 不 到 我，连 根 毛 也 别 想 抓 住，有 一 半 血 统 的 小 警 察，啊 啊 啊！！！ #line:1b65cb
+	Germ: 哈哈哈哈哈哈哈哈哈哈！ #line:9a5b8c
+	Mae: …… #line:699000
+	Germ: 我不知道他们在那边儿干什么呢。 #line:4afaeb
+	Mae: 嗯。 #line:438cc9
+<<endif>>
+Mae: 你要去丰收节吗？ #line:9919d9
+Germ: 不去了。 #line:b0c461
+Mae: 酷。我最近经历了不少怪事。 #line:3904d7
+Mae: 应该说是又怪又糟糕的事。 #line:e8cf6c
+Germ: 这段时间确实是很怪，也很糟。 #line:049bf3
+Mae: 没错。 #line:ff4894
+<<if $knows_legend_hobo is 1>>
+	Mae: 昨天来这儿的那些人还在吗？ #line:c4c0ff
+	Germ: 我也不清楚。 #line:dc00ba
+	Germ: 我们不是那种……关系特别好的朋友。 #line:63b210
+	Mae: 哦，这样。我以为你知道他们在哪，现在想想这想法也没什么根据。 #line:db0288
+	Mae: 我在想，那些人会不会在什么地方 #line:62d993
+	Mae: 见到过凯西。 #line:b3563a
+	Germ: 我可以帮你去问问。打听消息这事我擅长。 #line:506efd
+	Mae: 我可不希望他一个人在外，无依无靠。 #line:1d8968
+	Germ: 噢，凯西可没那么娇气，他肯定一点事也没有。 #line:7e6549
+	Germ: 只要你想离开这里，你就一定能找到办法离开！ #line:d2f86e
+	Mae: 嗯，可能是这样吧。 #line:129c95
+<<endif>>
+Germ: 好了，乐队排练的时候再见啦！ #line:43a1c7
+Mae: 实话实说：你真的喜欢看我们排练吗？ #line:a1d7ba
+Germ: 当然啦！我是说，虽然你贝斯弹得不太好，但我还是喜欢看。 #line:e87dc9
+Germ: 但这不是我喜欢的风格。 #line:f1afc5
+Mae: 那你喜欢什么风格呢？ #line:79befc
+Germ: 我喜欢黑金属乐，额，快节奏重金属摇滚乐和嘻哈乐。 #line:42c7f4
+Mae: 我喜欢女巫之刃！这里面也有金属元素。 #line:e59467
+Germ: 哦，对啊，里面是不是还有什么末日之类的东西？ #line:2c8c6e
+Germ: 哒-哒-嘟嘟嘟咔！！！ #line:bff56a
+Mae: 必须的！ #line:09872d
+Germ: …… #line:59e5e1
+Mae: 怎么了？ #line:4aa159
+Germ: 你知道吗，有一次，在回家的时候，有个家伙尾随我。 #line:b28edf
+<<set $germ_followed to 1>>
+Germ: 那个人好像是顺着铁轨过来的。 #line:928796
+->还有这事？好了，随便吧，我要走了。 #line:8d0d41
+    Germ: 拜拜。 #line:2d006b
+->你当时是怎么办的？ #line:ddbcb1
+    Germ: 我是在夏天的某天晚上遇见这事的。 #line:135fdf
+    Germ: 当时，我能用余光看见那家伙。 #line:be8513
+    Germ: 他就站在我身后十五六米的地方， #line:d021e2
+    Germ: 然后，他从停车场里走了出来， #line:a8f919
+    Germ: 之后，慢慢往山上走。 #line:cf62db
+    Germ: 但我并不想和那个人对视。 #line:699516
+        ->啊啊啊…… #line:20fed8
+        ->啊啊啊啊啊…… #line:71b185
+    Germ: 后来，我就在树林里绕圈，然后躲在了一棵树上。 #line:76c69c
+    Germ: 天虽然越来越黑， #line:89cac2
+    Germ: 但我还是能看见，那个人一直都站在路边 #line:faa137
+    Germ: 等我从树上下来。 #line:eee35d
+        ->哦，我的天啊。 #line:d4d48e
+        ->我靠。 #line:5ed2c1
+    Mae: 后来你是怎么办的？ #line:cfdd1b
+    Germ: 等天黑了以后，我从树上爬了下来， #line:a16d33
+    Germ: 然后用最快速度跑上了山。 #line:08c936
+    Mae: 啊 啊 啊 啊 啊！！！ #line:56b9c5
+    Germ: 是啊，那可真是一段又诡异又可怕的经历啊。 #line:c7b845
+    Mae: 啊啊啊…… #line:627d21
+    Mae: 我现在感觉很忐忑。 #line:51dd04
+    Germ: 哈哈，我就知道你会这样，对吗？ #line:1f5add
+    Germ: 拜拜！ #line:6dfc6c
+    <<set $germ_followed to 2>>
+[[WalkGermOut]]
+===
+title: Germ_A3D2_00
+tags: 
+colorID: 4
+position: -14690,-1187
+---
+Mae: 嘿。 #line:53706f
+Germ: 嘿…… #line:bc42fd
+Mae: 怎么了？ #line:44a688
+Germ: 想一起逛逛吗？ #line:f5c166
+Mae: 我已经有安排了…… #line:6adb1d
+Germ: 啊，好吧。虽然我不觉得咱俩一起逛逛会让你被人绑架或者怎么着的。 #line:915f60
+->不想。 #line:b12331
+    Germ: 好吧，好吧。 #line:d5cc51
+    Germ: 那就再见啦！ #line:d59988
+    <<set $germ_done to 1>>
+->好啊！ #line:487af1
+    Germ: 上车！ #line:236e92
+    Mae: 真要上吗？咱们要去哪儿啊？ #line:0a2988
+    Germ: 咱们就是到老驴生鲜后面转一圈而已！ #line:bfe035
+    Germ: 我觉得你应该能跟在我车后面跑过来。 #line:02d68b
+    Mae: 那好吧。 #line:69a37c
+    <<set $germ_friendship_quest_2 to 1>>
+    <<irisOut 1 wait>>
+    <<scene Bridge>>
+===
+title: Germ_A3D3_01
+tags: 
+colorID: 4
+position: -13941,-1318
+---
+Mae: 你们一路上情况怎么样啊？ #line:743eeb
+<<lookAt Germ Crusty3>>
+Crusty3: 还可以，还可以。 #line:3842a3
+Crusty3: 我们不会在同一个地方待很长时间的。 #line:c77ef1
+<<lookAt Germ Mae>>
+Mae: 我的情况正好和你们相反。 #line:7ffe40
+<<lookAt Germ Crusty3>>
+Crusty3: 好了，伙伴们，时间差不多了，该走啦！ #line:02f860
+Germ: 回见啦，安吉尔！ #line:b8fd32
+Mae: 保重！ #line:eaf330
+Crusty3: 再见啦！ #line:3da911
+<<close>>
+<<walk Crusty3 BehindStairs>>
+<<wait 2>>
+<<hide Crusty3>>
+<<set $crusty_3_done to 1>>
+<<lookAt Germ Mae>>
+Germ: 嗯，见面就这么结束了。 #line:eb20db
+Mae: 你觉得无聊了？ #line:aab46b
+Germ: 对，又变得无聊了。 #line:8a08c6
+<<lookNearest Mae>>
+===
+title: Germ_A3D4
+tags: 
+colorID: 4
+position: -13209,-1455
+---
+<<if $germ is 0>>
+    <<set $germ += 1>>
+    [[Germ_A3D4_00]]
+<<elseif $germ is 1>>
+<<endif>>
+===
+title: GermEnterParkingLot_A2D3
+tags: 
+colorID: 3
+position: -16360,-893
+---
+<<wait 5>>
+Germ: 咱们到啦！ #line:a93425
+Mae: 咱们这不是在停车场里吗。 #line:a9c5a8
+Germ: 没错！ #line:3bcdd1
+Mae: 咱们才走了差不多15秒钟。 o> #line:c554fb
+Germ: 这地方可真大啊。 #line:7b3f8f
+Mae: 我可以把石头扔到咱们刚才站的地方。 #line:db2366
+Germ: 你在这儿抬头就能看见整片天空。 #line:f40502
+Mae: 哦，哇哦，你当然能了。 #line:5088a7
+<<wait 5>>
+Mae: 好了。不过，说真的，咱们这不就是站在停车场里看风景吗？ _o_ #line:7cb173
+Germ: 有时候是。 #line:ecb61b
+Mae: “有时候是"？ #line:8abc52
+Germ: 有些时候， #line:73d3af
+Germ: 要是你在早上的时候爬上山， #line:b623ba
+Germ: 你就能看见一大片雾笼罩在停车场上空， #line:e05224
+Germ: 就像大海一样。 #line:c5a36b
+Germ: 而且，还会有鹿从雾里面穿过， #line:414fd0
+Germ: 所以感觉特别奇幻。 #line:24d4e6
+Mae: 哇哦。 #line:1949d4
+Germ: 咱们这儿为什么需要这么多停车位呀？ #line:b165fc
+    ->因为咱们这儿有铁路。 #line:54a939
+        Mae: 这里以前是个大火车站， #line:9f25b9
+        Mae: 人们坐火车都得来这儿才行。 #line:e27ada
+        Mae: 就是说，这儿的人流量很大。 #line:8f75a2
+        Mae: 而且，这儿原来还有一家餐厅。 #line:9afe30
+    ->因为工作的原因。 #line:0ffce5
+        Mae: 以前，人们会到这附近的玻璃厂上班。 #line:d1dec4
+        Mae: 我猜，现在可能还有人在这儿的缝纫厂上班呢。 #line:1c627c
+        Mae: 而且，其他一些工厂也都在这附近。 #line:b4ff3a
+    ->因为这儿有很多商店。 #line:9e96a8
+        Mae: 以前，这里有老驴生鲜、 #line:687d3f
+        Mae: 二手货商店 #line:7e99eb
+        Mae: 和鞋店。 #line:5985ad
+        Mae: 而且，这附近以前还有一家唱片行。 #line:4b0cfb
+Germ: 但现在，这些地方都没有了。 #line:e0d257
+Mae: 是啊。现在，这里只剩下了满地的沥青、杂草和一地碎玻璃。 #line:e82b3a
+Germ: 这种景色还是挺漂亮的，我很喜欢。 #line:075d88
+Mae: 嗯。 #line:0cad20
+Germ: 你知道吗，要是没人再来打理这片地方， #line:107755
+Germ: 那很多很多年之后， #line:5a59f9
+Germ: 这里就会重新变成一片普普通通的荒地。 #line:484b2b
+    ->哇。 #line:162485
+    ->那停车场会变成什么样啊？ #line:6f578e
+        Mae: 我的意思是指，停车场中间的这片空地会怎么样呢？ #line:862518
+Germ: 大自然存在的时间比任何事物都要长，它会静静等待其他事物消亡的。 #line:7ced60
+Mae: 这话听起来有点吓人。 #line:e98298
+<<wait 3>>
+Germ: 好了，咱们完啦！ #line:c46ef3
+Mae: 你说什么？ #line:115b36
+Germ: 咱们走吧！ #line:9fac1b
+//germ starts walking away//
+Mae: 嘿！ #line:3d54f5
+<<irisOut 1 wait>>
+<<scene Outskirts>>
+===
+title: GermEnterOutskirts_A2D3
+tags: 
+colorID: 3
+position: -16363,-684
+---
+<<if $germ_friendship_quest_1>>
+    Mae: 嗯，我一直…… #line:77ad61
+    Germ: 我现在得走啦！ #line:c61e4a
+    <<set $germ_done to 1>>
+    Mae: 那就拜拜啦！ #line:245f3d
+    <<set $germ_friendship_quest_1 to 0>>
+    <<unlockDoodle GermFQ1>>
+    <<set $did_germ_friendship_quest_1 to 1>>
+    [[WalkGermOut]]
+<<endif>>
+===
+title: Germ_A2D3
+tags: 
+colorID: 3
+position: -16353,-1351
+---
+<<if $germ is 0>>
+    <<set $germ += 1>>
+    [[Germ_A2D3_00]]
+<<elseif $germ is 1>>
+<<endif>>
+===
+title: Germ_A3D2
+tags: 
+colorID: 4
+position: -14559,-1421
+---
+<<if $Bridge and $germ_friendship_quest_2>>
+    [[Germ_Bridge]]
+<<elseif $germ is 0>>
+    <<set $germ += 1>>
+    [[Germ_A3D2_00]]
+<<endif>>
+===
+title: Germ_A3D1
+tags: 
+colorID: 4
+position: -14933,-1486
+---
+<<if $germ is 0>>
+    <<set $germ += 1>>
+    [[Germ_A3D1_00]]
+<<endif>>
+===
+title: Germ_A3D3_00
+tags: 
+colorID: 4
+position: -14178,-1478
+---
+Mae: 嘿。 #line:39bade
+<<lookAt Germ Crusty3>>
+Germ: 嘿，安吉尔，这是我朋友，梅。 #line:560b32
+Crusty3: 嘿，梅，你好啊。 #line:7a0be0
+<<lookAt Germ Mae>>
+Mae: 你的名字很酷啊。 #line:0a9d7d
+<<lookAt Germ Crusty3>>
+Crusty3: 谢谢，过奖了。 #line:0a9fef
+<<lookAt Germ Mae>>
+Germ: 安吉尔才刚从火车上下来到咱们镇。 #line:5952f7
+<<lookAt Germ Crusty3>>
+Germ: 之后你是不是要往西走啊？ #line:35df59
+Crusty3: 没错，然后我再往南走，到那儿过冬去。 #line:e0415f
+Crusty3: 我就像是一只脏了吧唧的小鸟， #line:0944a2
+Crusty3: 又能飞到海湾里， #line:d7a286
+Crusty3: 又能享受阳光， #line:9b896c
+Crusty3: 还能吃到小龙虾。 #line:143433
+<<lookAt Germ Mae>>
+Mae: 安吉尔，其实，我想问你个问题： #line:6e1c30
+<<lookAt Germ Crusty3>>
+Crusty3: 问吧，哥们儿。 #line:3136a5
+<<lookAt Germ Mae>>
+    ->你听说过镇上有幽灵的事吗？ #line:28c6b4
+        Germ: 安吉尔确实听说过这事。 #line:f826e9
+        <<lookAt Germ Crusty3>>
+        Crusty3: 在你来之前，我们正聊这事呢。 #line:be45e2
+        <<lookAt Germ Mae>>
+        Mae: 真的？ #line:34a2b0
+        <<lookAt Germ Crusty3>>
+        Crusty3: 对啊。就因为这事，所以没人想在这儿多待一分钟。 #line:145d90
+        Crusty3: 但这可不是什么迷信。 #line:beefdb
+        Crusty3: 在西海岸的时候，我为了保住半块披萨， #line:691ad1
+        Crusty3: 打过一个警察 #line:3e84b3
+        Crusty3: 和他带的警犬。 #line:a0a557
+        <<lookAt Germ Mae>>
+        Mae: 哇哦，找块披萨也犯法吗？ #line:187190
+        <<lookAt Germ Crusty3>>
+        Crusty3: 哥们儿，只要他们说你犯了法，你就真犯了法，说什么也没用。 #line:223858
+        Crusty3: 我好像说跑题了。 #line:f8f841
+        <<lookAt Germ Mae>>
+        Mae: 对啊，那幽灵的事怎么着了？ #line:cb06ae
+        <<lookAt Germ Crusty3>>
+        Crusty3: 嗯，不少没脑子的人都说，幽灵会专抓好人。 #line:89a2fa
+        Crusty3: 但我不是什么好人，所以，我根本用不着害怕。 #line:3232a8
+        Crusty3: 你懂我的意思吧？ #line:df0d87
+        <<lookAt Germ Mae>>
+        Mae: 明白。 #line:3d51d8
+        <<lookAt Germ Crusty3>>
+        Germ: 那好的标准又是什么呢？ #line:a25ef5
+        Crusty3: 该死，哥们儿，我怎么知道啊。 #line:5a3aae
+        Crusty3: 但不管怎么样，我还是会做这些事的： #line:1fcacf
+        Crusty3: 我虽然不相信有鬼魂存在，但我信有神存在。 #line:f501c8
+        Crusty3: 他会在天上注视着自己千千万万的子女。 #line:66c676
+        Crusty3: 而且，我还会为你祈祷七次， #line:dd8dbd
+        Crusty3: 让那个讨厌的幽灵远离你。 #line:fcbd99
+        <<lookAt Germ Mae>>
+        Mae: 哇哦，真是多谢啦。 #line:b35a28
+        Mae: 你人真是太好啦。 #line:da97fb
+    ->你这一路上遇到过一个叫凯西的人吗？ #line:d55163
+        <<lookAt Germ Crusty3>>
+        Crusty3: 嗯，让我想想。 #line:7a1899
+        Crusty3: 你知道那个叫凯西的人长什么样子吗？ #line:3f0688
+        <<lookAt Germ Mae>>
+        Mae: 我要找的凯西是个男孩。|他的样子和我差不多，|但比我高一点。|他的毛色是橘黄色的。 #line:3e81ff
+        <<lookAt Germ Crusty3>>
+        Crusty3: 哥们儿，我没见过他。我不记得见过这样的人。 #line:d3ce21
+        Crusty3: 但我一路上倒是见过不少其他人。 #line:71f0e4
+        <<lookAt Germ Mae>>
+        Mae: 没关系的。 #line:0ed130
+        <<lookAt Germ Crusty3>>
+        Crusty3: 但你听我说， #line:b84bf3
+        Crusty3: 我会去打听他下落的。如果我找到了他， #line:9ba83f
+        Crusty3: 或者找到了见过他的人， #line:3c09d3
+        Crusty3: 我会告诉他，负鼠泉的梅正在找他。 #line:a78532
+        <<lookAt Germ Mae>>
+        Mae: 真是太谢谢啦，你的帮助对我太重要啦。我欠你一个大人情。 #line:7f0f12
+<<lookAt Germ Crusty3>>
+Crusty3: 不用谢，不用谢。 #line:430ab0
+Crusty3: 很多烂人操控着这个世界， #line:b1c0b9
+Crusty3: 结果让世界变得冷冰冰的。 #line:656f61
+Crusty3: 好人也不知道会因为什么原因而死去。 #line:d0a00c
+Crusty3: 但你知道吗，我们应该肩负起我为人人的责任。 #line:17867f
+<<lookAt Germ Mae>>
+Mae: 说的没错。 #line:d96688
+Mae: 我要再次感谢你。 #line:f22bed
+<<lookNearest Germ>>
+===
+title: Germ_A3D3_02
+tags: 
+colorID: 4
+position: -13665,-1462
+---
+Germ: 出了一些不太好的事。 #line:e86796
+Mae: 我知道。 #line:605ab5
+Mae: 杰姆，那确实是个幽灵，一个出现在现实生活中的幽灵。 #line:6ad8ab
+Germ: 那根本就不是什么幽灵， #line:569e65
+Germ: 因为幽灵是一种非实体化的存在。 #line:d711fa
+Mae: 你是怎么知道的？ #line:f894ff
+Germ: 我兄弟以前就见过幽灵。 #line:5e3793
+<<wait 2>>
+Mae: 天哪。 #line:71d53e
+Germ: 唔，该吃晚饭去啦！ #line:13e181
+Germ: 再见啦！ #line:116bd5
+[[WalkGermOut]]
+===
+title: Germ_A3D3
+tags: 
+colorID: 4
+position: -13958,-1822
+---
+<<if $germ is 0>>
+    <<set $germ += 1>>
+    [[Germ_A3D3_00]]
+<<elseif $germ is 1>>
+    <<set $germ += 1>>
+    [[Germ_A3D3_01]]
+<<elseif $germ is 2>>
+    [[Germ_A3D3_02]]
+<<endif>>
+===
+title: Germ_A3D4_00
+tags: 
+colorID: 4
+position: -13196,-1163
+---
+Mae: 嘿，杰姆。 #line:33c4eb
+Germ: 嘿，梅。 #line:6e8aec
+Germ: 最近怎么样啊？ #line:1a992c
+Germ: 这还看不出来吗。 #line:c18849
+Germ: 你看起来也……还行嘛。 #line:814887
+Mae: 我看起来有什么变化吗？ #line:39c595
+Germ: 对我来说，你的确是有变化。 #line:44d741
+Mae: 谢谢你还注意我身上的变化。 #line:2a1448
+//<<set $germ_done to 1>>
+[[Germ_A3D4_QuestCheck]]
+===
+title: GermEnterBridge_A3D2
+tags: 
+colorID: 4
+position: -14417,-1039
+---
+<<if $germ_friendship_quest_2>>
+    <<if $germ_bridge is 0>>
+        <<walk Germ GermToBridge>>
+        <<walk Mae MaeToBridge>>
+        <<cameraLookAt CameraBridgeEdge 6>>
+        Mae: 你确定把自行车放在那儿没事吗？ #line:0002b3
+        Germ: 能确定。已经有很多年没人在那个车棚里停车了。 #line:ccd736
+        Germ: 把你从车上摔下来，真是太对不起啦。 #line:a680ac
+        Mae: 没关系的，我还活得好好的呢。 #line:136728
+        Germ: 像这样的擦伤一般都没什么大事。 #line:40ac4d
+        ->我胳膊肘被擦伤了。 #line:2f5e6e
+        	Germ: 像这种比较重的伤， #line:8aad76
+        	Germ: 我应该骑车把你送到医院去。 #line:5ffe74
+            Mae: 别忘了在你车上安个警笛。 #line:fa4728
+        ->我头摔得可不轻。 #line:4d9927
+        	Germ: 你脑子没摔坏吧？ #line:f09e3b
+        	Mae: 没摔坏。我的头骨可厚实了。 #line:f4cb4c
+        	Germ: 那就好。 #line:4f2ac2
+        <<toggleBlinks Germ 0>>
+        <<close>>
+        <<walk Germ GermOnBridge>>
+        <<wait 1>>
+        <<walk Mae MaeOnBridge>>
+        <<cameraLookAt CameraBridgeMiddle 6>>
+        <<waitForMove Germ>>
+        //they walk out onto the bridge and Germ jumps up onto the railing.
+        <<playOneShot event:/mae/footsteps/metal/footstep_metal_jump Germ>>
+        <<jumpThroughUp Germ>>
+        <<wait 2>>
+        //We’ll need a Germ balancing idle here//
+        <<lookAt Mae Germ>>
+        Mae: 那咱们在这儿干什么呢？ #line:dd7b49
+        <<lookAt Germ Mae>>
+        Germ: 你相信我吗？ #line:8d5fee
+            ->当然信了。 #line:eb61d0
+                Germ: 真信吗？ #line:52ff73
+                Mae: 我觉得我应该是信吧。 #line:6fbf4f
+            ->我以前从来都没想过这个问题。 #line:145602
+        Germ: 好吧， #line:237a34
+        <<lookForward Germ>>
+        Germ: 拜。 #line:67f48e
+        <<close>>
+        <<wait 1>>
+        //Germ jumps off the bridge//
+        <<jumpThrough Germ>>
+        <<wait 1.5>>
+        <<warp Germ GermOnBottom>>
+        Mae: 哦，我 的 天 啊，杰 姆！！！ #line:45ed00
+        Mae: ……哦，老天，伙计…… #line:75968d
+        Germ: 嘿！ #line:001ba5
+        Mae: 我 靠，你 到 底 在 干 什 么 呢，伙 计？ #line:faefaf
+        <<resetRig Germ>>
+        Germ: 快 跳 下 来！没事的！ #line:a6e01d
+        Mae: 哦，真没事吗？ #line:67e353
+        //<<trigger Germ Blink>>
+        <<toggleBlinks Germ 1>>
+        <<flip Germ -1>>
+        <<cameraFollowPlayer 2>>
+    <<endif>>
+<<endif>>
+===
+title: Germ_Bridge
+tags: 
+colorID: 4
+position: -14547,-731
+---
+<<if $germ_bridge is 1>>
+    Mae: 好吧…… #line:cd7ee6
+    Germ: 我是从几个月之前才开始来这儿的。 #line:8cec05
+    Germ: 我来这儿……就是为了逛一逛，散散心。 #line:bd86c8
+    Mae: 嗯。 #line:c1c228
+    <<warp Rabies RabiesTunnelExit>>
+    <<walk Rabies RabiesTunnelEnter>>
+    Germ: 后来，我注意到…… #line:77fb24
+    <<lookAt Germ Rabies>>
+    Germ: 哦！嘿，狂犬！ #line:209820
+    <<playerFace 1>>
+    <<lookForward Mae>>
+    Mae: 啊 啊 啊！！ #line:a68bc3
+    <<lookAt Germ Mae>>
+    Germ: 狂犬是我住在下水道里的朋友。 #line:1783cb
+    Mae: 它的名字叫狂犬？ #line:0c8f52
+    Germ: “他"的名字叫狂犬。 #line:4bab40
+    <<lookAt Mae Rabies>>
+    Mae: “他"的名字真的叫狂犬？ #line:d5006d
+    <<lookAt Germ Rabies>>
+    Germ: 我第一次发现他，还是在洪水退了以后，也就是几个月之前， #line:1fae68
+    Germ: 当时，其他负鼠正把他从这里给拖出去。 #line:3b7a3d
+    Mae: 哦，真是不幸啊。 #line:09053e
+    Germ: 他当时浑身都湿透了，心情肯定也很低落，而且还很饿。|所以，我就给了他一点薯条和冰淇淋。 #line:4c6483
+    Mae: 是啊。 #line:98968a
+    Germ: 而且，我也不想让其他负鼠去招他。 #line:63f06b
+    Germ: 所以，我就给他起了一个其他负鼠都闻风丧胆的名字。 #line:813703
+    Mae: 这是我听过最精彩的故事了。 #line:1f1635
+    <<lookAt Mae Rabies>>
+    <<lookAt Germ Rabies>>
+    Germ: 他可真酷啊。 #line:c24113
+    Germ: 嘿，狂 犬 鼠！ #line:5649a2
+    Germ: 说 几 句 话！ #line:e12afe
+    <<playOneShot event:/bridge/possum_speak Rabies>>
+    Rabies: 呃 呃 呃 啊 咯 咯！！！ #line:2f375c
+    Mae: 哦，我的个神啊。 #line:ad3247
+    Germ: 总有一天，他能成为这条溪谷的统治者。 #line:2e4914
+    Germ: 狂犬鼠，你一定要对梅好一点，知道吗！ #line:ca0645
+    <<close>>
+    <<walk Rabies RabiesTunnelExit>>
+    Mae: 我真是太喜欢他了。 #line:215d0c
+    <<lookAt Mae Germ>>
+    <<lookAt Germ Mae>>
+    Germ: 你养过什么宠物吗？ #line:c21fba
+    <<if $times_fed_rats >= 2>>
+    	Mae: 我在市中心养了几只老鼠。 #line:ba15b3
+    	Germ: 听起来不错。 #line:5740a9
+    <<else>>
+        Mae: 其实也不怎么好…… #line:a66506
+        Germ: 你应该选一只当你的宠物。 #line:187779
+        Mae: 可我老爸养了一只鸟。 #line:99cc2f
+        Germ: 鸟这种宠物真是一点用都没有。 #line:c77b1a
+        Mae: 那你跟我说说为什么会这么觉得。 #line:801a40
+    <<endif>>
+    <<wait 2>>
+    Mae: 这地方的墙上……好像有点什么奇怪的东西…… #line:fdc170
+    Germ: 那些是洞穴壁画。 #line:a277ac
+    Mae: 这些壁画看着倒是挺老的。 #line:388500
+    Germ: 你觉得这些壁画是什么意思呢？ #line:78a317
+        ->应该是说，如果你要是在这儿睡觉，你可能会被淹死。 #line:d4332c
+            Germ: 这倒是真的。 #line:c5f77d
+            Mae: 那一定会很悲惨。 #line:80d09b
+            Germ: 是啊。不过，虽然听起来很悲惨， #line:9fb68f
+            Germ: 但最后却变得更诡异，而不是悲惨了。 #line:3f5594
+            Mae: 可能吧。 #line:33510a
+            Mae: 感觉就像是 #line:344512
+            Mae: 一群人渣睡在这里然后被淹死，这很诡异。 #line:1a74f6
+            Mae: 而不是无家可归的人睡在这里，然后被淹死，这很悲惨。 #line:1b900a
+            Germ: 这太扯了吧。 #line:ad5675
+        ->可能是说，狂犬鼠是真正的垃圾王。 #line:a89efe
+            Germ: 那是个预言。 #line:11a621
+            Mae: 是很久以前的流浪汉写下的预言。 #line:7ee4a2
+    Germ: 这地方 #line:dbd97a
+    Germ: 就和镇子周围其他的秘密地点一样。 #line:e49f0a
+    Germ: 我可能会成为唯一一个画出这地方位置的…… #line:1199b0
+    <<close>>
+    <<trigger Rabies Candy>>
+    <<warp Rabies RabiesTunnelExit>>
+    <<walk Rabies RabiesTunnelEnter>>
+    <<wait 2>>
+    <<lookAt Germ Rabies>>
+    <<lookAt Mae Rabies>>
+    Germ: 嘿，狂 犬 鼠！！你 是 怎 么 跑 到 那 儿 的？？？ #line:ec53e8
+    <<close>>
+    <<waitForMove Rabies>>
+    <<trigger Rabies SitUp>>
+    <<playerFace 1>>
+    Mae:{width=4}哦，我的个天啊啊啊啊啊！ #line:5db4a9
+    Mae: 那是一根菲亚斯科能量棒吗？ #line:105481
+    Germ: 老兄，你是想让我帮你把包装打开吗？ #line:937913
+    <<close>>
+    <<trigger Rabies Unwrap>>
+    <<wait 1>>
+    Mae: 我 勒 了 个 去！！！ #line:adf4de
+    Germ: 他！是！最！棒！的！ #line:ff3b14
+    <<lookAt Mae Germ>>
+    <<lookAt Germ Mae>>
+    Mae: 你真应该把他带回家！ #line:e46c09
+    Germ: 肯定不行。他肯定会在我家里到处撒尿的， #line:5d6e18
+    Germ: 他肯定也会在我家的墙上打洞，然后住在里面的。 #line:b54ea9
+    Mae: 哦，说的是啊。 #line:a54639
+    <<lookAt Germ Rabies>>
+    Germ: 狂犬鼠是在野生环境里生活的，咱们应该让他继续保持野性才对。 #line:bc88f4
+    <<lookAt Mae Rabies>>
+    <<close>>
+    <<trigger Rabies Bite>>
+    <<wait 2>>
+    Mae: 啊 啊 啊！快 看 啊，他 在 吃 那 东 西 呢！！！ #line:85e238
+    [[GermBridgeEnding]]
+<<endif>>
+===
+title: Landed
+tags: 
+colorID: 4
+position: -14298,-814
+---
+<<flip Mae 1>>
+Mae: 伙计，你真是吓死我啦！ #line:73ff22
+Germ: 你为什么会害怕呢？你不总是从各种地方往下跳吗！ #line:88eafd
+Mae: 是跳过，可那……是在镇子上跳的，镇子的地面都很平坦的。 #line:4ea313
+Mae: 就算是这样，也不代表我就能随便从悬崖上往下跳啊。 #line:f61ede
+Germ: 哦，对啊。我都忘了你是在镇上长大的了。 #line:2b6b6b
+Mae: 咱们来这儿要干什么啊？ #line:0893eb
+Germ: 我经常会来这儿。 #line:4ae308
+Germ: 我想给你看点东西。 #line:19a215
+    ->你就在这下水管上闲逛吗？ #line:905225
+        Germ: 不是的。我是说，我不会只来这地方逛。 #line:8f80cc
+    ->你是想让我来看下水道吗？ #line:605a62
+        Germ: 我还以为你会对这种地方比较感兴趣呢。 #line:6ddcb2
+Germ: 我在这底下看见了差不多十只老鼠！ #line:faf809
+Mae: 好吧，还挺酷的。 #line:95c133
+<<close>>
+<<walk Germ GermInTunnel 1>>
+<<wait 5>>
+<<set $germ_bridge to 1>>
+===
+title: GermEnterOutskirts_A3D4
+tags: 
+colorID: 4
+position: -13197,-912
+---
+<<if $germ_friendship_quest_3>>
+    Germ: 我得走了。 #line:06e815
+    <<set $germ_done to 1>>
+    Mae: 拜！ #line:a68faf
+    <<unlockDoodle GermFQ3>>
+    <<set $germ_friendship_quest_3 to 0>>
+    <<set $did_germ_friendship_quest_3 to 1>>
+    <<unlockAchievement He's_From_Somewhere>>
+    [[WalkGermOut]]
+<<endif>>
+===
+title: WalkGermOut
+tags: 
+colorID: 4
+position: -13682,-173
+---
+<<close>>
+<<walk Germ BehindStairs>>
+<<set $germ_done to 1>>
+===
+title: GermEnterOutskirts_A3D2
+tags: 
+colorID: 4
+position: -14123,-419
+---
+<<if $germ_friendship_quest_2>>
+    Germ: 再见！ #line:0cbf3d
+    <<set $germ_done to 1>>
+    <<set $germ_friendship_quest_2 to 0>>
+    <<unlockDoodle GermFQ2>>
+    <<set $did_germ_friendship_quest_2 to 1>>
+    [[WalkGermOut]]
+<<endif>>
+===
+title: GermBridgeEnding
+tags: 
+colorID: 4
+position: -14828,-642
+---
+<<irisOut 1 wait>>
+<<scene Outskirts>>
+===
+title: UnusedGermAndRabiesStuff
+tags: unused
+colorID: 0
+position: -15079,-638
+---
+        Mae: 你觉得那是不是勉强靠点谱啊？ #line:459a87
+        Germ: 咱们永远都不可能知道答案了。 #line:278064
+        Mae: 我觉得也是。 #line:3c9dfe
+        Germ: 好像有不少人……都丢了性命。 #line:b52d25
+        Mae: 真惨啊。 #line:b5e169
+        Mae: 那真有人死在这儿了吗？ #line:93c658
+        Germ: 有。那件事发生在夏天，而且…… #line:a00cc7
+        <<close>>
+        <<trigger Rabies Candy>>
+        <<warp Rabies RabiesTunnelExit>>
+        <<walk Rabies RabiesTunnelEnter>>
+        <<wait 2>>
+        Germ: 嘿，狂 犬 鼠！！你 是 怎 么 跑 到 那 儿 的？？？ #line:92232a
+        <<close>>
+        <<waitForMove Rabies>>
+        <<trigger Rabies SitUp>>
+        <<playerFace 1>>
+        Mae:{width=4}哦，我的个天啊啊啊啊啊！ #line:a50bec
+        Mae: 那是一根菲亚斯科能量棒吗？ #line:caae38
+        Germ: 老兄，你是想让我帮你把包装打开吗？ #line:d4f817
+        <<close>>
+        <<trigger Rabies Unwrap>>
+        <<wait 1>>
+        Mae: 我 勒 了 个 去！！！ #line:c432f5
+        Germ: 他！是！最！棒！的！ #line:688964
+        Mae: 你真应该把他带回家！ #line:cb81f2
+        Germ: 肯定不行。他肯定会在我家里到处撒尿的， #line:fa7055
+        Germ: 他肯定也会在我家的墙上打洞，然后住在里面的。 #line:82cc9f
+        Mae: 哦，也对啊。 #line:ad6ed2
+        Germ: 狂犬鼠是在野生环境里生活的，咱们应该让他继续保持野性才对。 #line:c045ef
+        <<close>>
+        <<trigger Rabies Bite>>
+        <<wait 2>>
+        Mae: 啊 啊 啊！快 看 啊，他 在 吃 那 东 西 呢！！！ #line:9189f9
+        <<irisOut 1 wait>>
+        <<scene Outskirts>>
+===
+title: Germ_A3D4_QuestCheck
+tags: 
+colorID: 4
+position: -12954,-1170
+---
+<<if $did_germ_friendship_quest_1 and $did_germ_friendship_quest_2>>
+	Germ: 你想一块儿来吗？ #line:ccecf7
+	Germ: 一起来玩蹦床吧！ #line:b73797
+	->哦，呃。 #line:e63ab6
+        Mae: 不了，我有点不太舒服。 #line:90f671
+        Germ: 那好吧。那就再见啦！ #line:cafcf4
+        [[WalkGermOut]]
+	->当然想啦！ #line:7650b6
+        Germ:  那好，咱们快走吧！ #line:81478b
+        <<set $germ_friendship_quest_3 to 1>>
+        <<irisOut 1 wait>>
+        <<scene GermHouse>>
+<<else>>
+    Germ: 没问题！ #line:8bf985
+    Germ: 我要回家了。 #line:ce33dc
+    Mae: 你家在哪儿啊？ #line:a277cf
+    Germ: 我家在停车场对面的山上， #line:988109
+    Germ: 树林后面。 #line:1833aa
+    Mae: 嗯，我没去过那儿。 #line:f852fe
+    Germ: 我去过！ #line:3ddc59
+    Mae: 是啊，你当然去过啦。 #line:50aedb
+    Germ: 再见！ #line:6fb421
+    [[WalkGermOut]]
+<<endif>>
+===

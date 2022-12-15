@@ -1,0 +1,216 @@
+title: EnterLevel
+tags: 
+colorID: 0
+position: -90,111
+---
+<<if $gregg_friendship_quest_2 < 2>>
+    <<set $gregg_friendship_quest_2 to 1>>
+    [[GreggFQ2Intro]]
+<<elseif $gregg_friendship_quest_2 is 2>>
+    [[AfterDisconnect]]
+<<endif>>
+===
+title: GreggFQ2Intro
+tags: 
+colorID: 0
+position: 170,129
+---
+<<playMusic gregg_manic>>
+<<walk Gregg GreggEnter>>
+<<walk Mae MaeEnter>>
+//walking across to the car, which is on the right//
+Mae: 雨过天晴了。 #line:622cf7
+Gregg: 天气变得对咱们有利了。 #line:dbede0
+<<lookAt Mae Gregg>>
+Mae: 话说，我拿球棒来到底有什么用呀？ #line:859413
+<<close>>
+<<waitForMove Mae>>
+<<waitForMove Gregg>>
+<<lookAt Mae Gregg>>
+<<wait 2>>
+//they stop in front of the car//
+<<lookRight Mae>>
+Gregg: 嗒 哒！！！！ #line:83fa25
+Mae: 呜啦啦！ #line:001074
+Gregg: 列兵博罗夫斯基！去把那辆车砸啦！ #line:bb547f
+<<lookAt Mae Gregg>>
+Mae: 那么…… #line:a742ba
+->你难道就是想把我带到这里来，然后看着我用球棒砸车吗？ #line:dfc5d4
+	Mae: 这是不是很像电影里的情节？人们都超喜欢砸车。 #line:38f542
+	Gregg: 一点也不像。而且我也没看过那部电影。 #line:a2f1cf
+	Mae: 你可以去查查那部电影。 #line:0a73c5
+	Gregg: 嗯，好吧。 #line:0dc541
+->为什么要这么做？ #line:f1329d
+	Gregg: 这需要什么理由吗？ #line:579793
+	Mae: 虽然不需要，但我还是想要一个。 #line:2d8c6c
+	Gregg: 说的也是。 #line:ccc9d9
+Gregg: 理由就是，咱们要把这辆车的蓄电池拿走。 #line:faa107
+Mae: 要蓄电池干什么？ #line:47b7dd
+Gregg: 列兵，这是最高机密，无可奉告。 #line:0d6a91
+Mae: 别再叫我列兵了。 #line:1f031e
+->我至少也算是个指挥官才对啊。 #line:2cb846
+	Gregg: 不不不，*我*才是指挥官。 #line:8fce2d
+	Gregg: 因为我有头盔。 #line:f6591a
+	Mae: 战争可真愚蠢。 #line:7fba3b
+	Gregg: 看看这顶头盔！正是因为战争，我才有机会得到了它！ #line:23d325
+->我才不是你手下的兵呢。 #line:7b1009
+	Gregg: 可你已经入伍了。 #line:9c971f
+	Mae: 这也……太不公平了吧。 #line:a13243
+	Gregg: 列兵博罗夫斯基，这世界本来就不公平！ #line:bd33ac
+<<lookRight Mae>>
+Mae: 好吧，可万一还有人想要这辆车怎么办？ #line:a5b1c8
+Gregg: 我觉得没人再会想念这辆车了，所以尽管放心。 #line:f37615
+Mae: 可能是这样吧。我猜，这辆车里可能都已经长出树来了。 #line:739f17
+<<lookAt Mae Gregg>>
+->那咱们就开砸，直到把引擎盖打开为止，怎么样？ #line:861af1
+->你怎么不来帮忙？ #line:0b30f1
+	Gregg: 我可以负责把蓄电池搬回去！ #line:5bd7c9
+	Gregg: 分工合作嘛！ #line:b0ca7d
+	Gregg: 最有意思的砸车环节就交给你了。 #line:054d6d
+	Mae: 妙啊！ #line:cdb784
+Gregg: 芜湖！开砸吧！ #line:63b606
+<<lookRight Mae>>
+Mae: 砸碎一切！ #line:7352ba
+Gregg: 砸烂资本主义！ #line:428af8
+Mae: 砸烂官僚政府！ #line:d8e528
+Gregg: 砸烂这辆汽车！ #line:18c6a4
+Mae: 呀啊啊啊啊啊！！！！ #line:387bbb
+<<lookNearest Mae>>
+<<set $gregg_angus_parking_lot_block_left to 1>>
+===
+title: CarDestroyed
+tags: 
+colorID: 0
+position: 2704,105
+---
+<<fadeOut .1 wait>>
+<<playerUpdateFallDuringInteract 1>>
+<<warp Mae MaeStandForGregg>>
+<<flip Mae 1>>
+<<fadeIn .5 wait>>
+Gregg: 干得好。 #line:747afe
+Mae: 谢谢，确实很棒。 #line:df728d
+Gregg: 你想亲自见证这无上的荣耀时刻吗？ #line:0cb5b8
+Mae: 我会被电死吗？ #line:7920c1
+Gregg: 不用担心。 #line:88bc0c
+Gregg: 这辆车里长出了一棵树。 #line:2f4686
+Gregg: 说明这辆车可能已经没电了。 #line:24e99b
+Mae: 等等。可…… #line:abe254
+Gregg: 你到底是干还是不干？ #line:e1f70f
+Mae: …… #line:4aa9d3
+Mae: 干。 #line:173d07
+<<close>>
+<<set $has_bat to 0>>
+<<irisOut 1 wait>>
+<<scene PawsModeBatteryDisconnect>>
+===
+title: AfterDisconnect
+tags: 
+colorID: 0
+position: 211,397
+---
+Mae: =_= #line:e71cee
+//mae is on the ground, gregg is standing on top of the car//
+Gregg: 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈！ #line:4c1fb3
+Mae: 啊啊啊…… #line:8f3af9
+Gregg: 哦，见鬼。 #line:043fe9
+Gregg: 你还好吗？ #line:1ebd5f
+->我以为我死了。 #line:061076
+->一点也不好。 #line:229227
+Mae: 我晕了多久？ #line:4b80d5
+Gregg: 大概晕了五秒钟吧。 #line:457f2d
+Mae: 哦，真是太诡异了， #line:2f52b8
+Mae: 我昏过去的时候，感觉时间好像被延长了。 #line:8458d4
+Gregg: 宇宙就是这么神秘莫测。 #line:02944f
+Mae: 准备好搬着电池回去了吗？ #line:fbbfca
+Gregg: 当然！ #line:7cc1ee
+Gregg: 出发，回公寓！ #line:c77c6b
+Mae: ……我现在满嘴的金属味…… #line:2ce982
+<<set $hasBat to 0>>
+<<irisOut 1 wait>>
+<<scene GreggAngusApartment>>
+===
+title: InitLevel
+tags: 
+colorID: 0
+position: -347,90
+---
+<<if $gregg_friendship_quest_2 < 2>>
+    <<getBat>>
+    <<warp Gregg GreggOffLeft>>
+    <<warp Mae MaeOffLeft>>
+    <<set $gregg_angus_parking_lot_block_left to 0>>
+<<else>>
+    <<warp Gregg GreggTopOfCar>>
+    <<flip Gregg -1>>
+    <<setAnimInt Mae layingSide 1>>
+<<endif>>
+<<set $gregg_hat to 1>>
+<<setCanInteract Gregg 0>>
+===
+title: CarDamage00
+tags: 
+colorID: 0
+position: 422,87
+---
+Gregg: 对！砸 了 这 辆 法 西 斯 开 的 车！ #line:e401d7
+===
+title: CarDamage01
+tags: 
+colorID: 0
+position: 688,69
+---
+Gregg: 革 命 开 始 啦！ #line:9a17d6
+===
+title: CarDamage02
+tags: 
+colorID: 0
+position: 929,99
+---
+Gregg: 呀 啊 啊 啊 啊 啊！！！ #line:dc7826
+===
+title: CarDamage03
+tags: 
+colorID: 0
+position: 1164,134
+---
+Gregg: 破车，你的末日到啦！！ #line:53d31e
+===
+title: CarDamage04
+tags: 
+colorID: 0
+position: 1398,87
+---
+Gregg: 破车，做临终祷告吧！ #line:624965
+Gregg: 你们这些破车，尽管向神祈祷吧！ #line:575271
+===
+title: CarDamage05
+tags: 
+colorID: 0
+position: 1632,119
+---
+Gregg: 幽灵吸血虎在月圆之夜复活啦！！！ #line:81de1b
+//Mae: What?
+//Gregg: I dunno! I go where the moment takes me!
+===
+title: CarDamage06
+tags: 
+colorID: 0
+position: 1883,94
+---
+Gregg: 血！！！给我血！！！！！ #line:a047ae
+===
+title: CarDamage07
+tags: 
+colorID: 0
+position: 2114,131
+---
+Gregg: 最 后 一 击！！！ #line:171d6c
+===
+title: CarDamage08
+tags: 
+colorID: 0
+position: 2362,77
+---
+Gregg: 毁！了！它！！！ #line:23765e
+===

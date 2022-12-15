@@ -1,0 +1,47 @@
+title: Convo1
+tags: 
+colorID: 0
+position: -225,802
+---
+Mae: 我晕过去之后，发生了什么事？ #line:cab3be
+Bea: 我们报了警。 #line:ba6580
+Bea: 然后是你姨妈和其他几个人把你从树林里带出来的。 #line:2b83dd
+Angus: 你当时好像是昏迷了。 #line:c635c2
+Gregg: 你当时是死过去了吗？ #line:02bae2
+Mae: 没有，我只是感觉自己睡了一个大大的觉。 #line:2342a6
+Gregg: 听起来不错。 #line:e629a8
+Bea: 呃， #line:7f6506
+Bea: 是啊，感觉不错。 #line:7b5857
+<<close>>
+<<tell GreggFoodPaw AnotherBite>>
+<<tell AngusFoodPaw AnotherBite>>
+<<tell BeaFoodPaw AnotherBite>>
+<<tell GermFoodPaw AnotherBite>>
+===
+title: Convo2
+tags: 
+colorID: 0
+position: 29,798
+---
+Mae: 我做了一个梦， #line:d40185
+Mae: 或者说是看到了某种景象， #line:36722f
+Mae: 再或者，是我经历了一次时间旅行。 #line:29f270
+Mae: 但我也不知道到底发生了什么，因为我一会儿清醒，一会儿恍惚的。 #line:7c100b
+Gregg: 你想吃点什么吗？ #line:2d55d6
+Bea: 你应该吃点东西。 #line:5a6781
+Mae: 我不知道还能不能吃得下东西。 #line:c46f81
+<<irisOut 1 wait>>
+<<set $night to 1>>
+<<scene GreggAngusApartment>>
+===
+title: EnterLevel
+tags: 
+colorID: 0
+position: -490,806
+---
+<<wait 1>>
+<<tell GreggFoodPaw Reach>>
+<<tell BeaFoodPaw Reach>>
+<<tell AngusFoodPaw Reach>>
+<<tell GermFoodPaw Reach>>
+===
