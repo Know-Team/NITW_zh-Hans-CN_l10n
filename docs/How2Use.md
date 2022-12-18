@@ -37,9 +37,10 @@ UTF8 编码下一个中文字用 3 个字节表示，一个英文字用 1 个字
 #### 具体修改细节
 
 Dump 时选择以 json 文件导出，需要替换的名称是：
-> 0 vector m_SubMeshes
-> 0 vector m_IndexBuffer
-> 1 VertexData m_VertexData
+
+* 0 vector m_SubMeshes
+* 0 vector m_IndexBuffer
+* 1 VertexData m_VertexData
 
 至于用什么来替换呢，在 [common/spriteSwitch.txt](/common/spriteSwitch.txt) 里的内容是游戏里一张 1920 x 1080 的不透明图片的 Sprite 渲染选项。目前使用这个来替换是没有问题的。
 
