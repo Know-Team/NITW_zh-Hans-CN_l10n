@@ -17,8 +17,7 @@ LeanderLin
 
 文本：（按平台贡献排名，贡献量太低不予录入）
 Prophet-La
-BWBOX (AnBox)
-LeanderLin
+AnBox
 lmrux
 zerozakialayashiki
 deepblue404
@@ -26,9 +25,9 @@ deepblue404
 Hans0609
 EdwardZZH49
 鲟鱼子
-Tan-gle （蝎子莱莱）
+Tan-gle（蝎子莱莱）
 leohanwer
-GhostuW (Ghostu)
+GhostuW(Ghostu)
 SouthFox09
 
 技术：
