@@ -49,7 +49,7 @@ claireZhang
 爱发电用户_4mMg
 岚岚懒周日
 
-如果你认同且支持我们的工作，可以上[爱发电](https://afdian.net/a/KnowTeam)，链接：https://afdian.net/a/KnowTeam 支持我们。
+如果你认同且支持我们的工作，可以上[爱发电](https://afdian.net/a/KnowTeam)支持我们。
 
 如果有署名有问题，可以随时提出修改。
 
