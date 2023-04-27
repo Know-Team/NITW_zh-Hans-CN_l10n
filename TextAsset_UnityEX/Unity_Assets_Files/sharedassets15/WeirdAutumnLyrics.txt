@@ -1,0 +1,78 @@
+Weird Autumn
+00.000|8|0
+00.375|7|0
+00.750|6|0
+01.125|5|0
+01.500|4|0
+01.875|3|0
+02.250|2|0
+02.625|1|0
+
+02.778|Some people are one way|0
+04.815|that’s how they staaaaaay|0
+08.519|Some people find one life|0
+10.741|they live that waaaaaay|0
+
+14.815|Hey man have you seen her around?|0
+16.667|Have you seen her today?|0 
+18.148|Weird|0
+18.519|Autumn|0
+19.630|Weird|0
+20.000|Autumn|0
+20.741|I only knew her a week|0
+22.593|Before she went away|0
+24.074|Weird|0
+24.444|Autumn|0
+25.556|Weird|0
+25.926|Autumn|0
+
+26.481|Sometimes you can’t see someone|0
+28.519|until they’re gooooone|0
+32.222|But some people never stop|0
+34.444|they’re always moving ooooon|0
+37.778|now|0
+
+38.519|Hey man have you seen her around?|0
+40.370|Have you seen her today?|0 
+41.852|Weird|0
+42.222|Autumn|0
+43.333|Weird|0
+43.704|Autumn|0
+44.444|I only knew her a week|0
+46.296|Before she went away|0
+47.778|Weird|0
+48.148|Autumn|0
+49.259|Weird|0
+49.630|Autumn|0
+
+50.370|Out on Arbor Street|0
+52.222|I saw Autumn leave|0
+53.704|her family drove awaaaay|0
+
+56.296|they can't sell that house|0
+58.148|so empty it staaaays|0 
+
+62.222|I never knew why that was|0
+64.074|neighbor kids say it's because|0
+65.556|Autumn was weird in a waaaay|0
+68.148|that stayed in the house and|0
+70.000|weird it remains|0
+
+74.074||0
+
+85.926|Hey man have you seen her around?|0
+87.778|Have you seen her today?|0 
+89.259|Weird|0
+89.630|Autumn|0
+90.741|Weird|0
+91.111|Autumn|0
+91.852|I only knew her a week|0
+93.704|Before she went away|0
+95.185|Weird|0
+95.556|Autumn|0
+96.667|Weird|0
+97.037|Autumn|0
+
+97.778||0
+
+105.00|
