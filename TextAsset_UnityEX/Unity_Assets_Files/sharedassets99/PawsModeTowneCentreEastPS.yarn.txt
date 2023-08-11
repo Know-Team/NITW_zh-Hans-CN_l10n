@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 220,270
 ---
-MaePaws: 哦，天呐！丰收节马上就要到啦。 #line:3474bc
+MaePaws: 哦，天呐！丰收节马上到了。 #line:3474bc
 MaePaws: 我得准备一套好看的衣服才行。 #line:3f83d2
 MaePaws: 丰收节上，可以吃到南瓜派和玉米糖。 #line:ea7b3b
 MaePaws: 还可以骑一骑摇摇晃晃的假马。 #line:9d2396

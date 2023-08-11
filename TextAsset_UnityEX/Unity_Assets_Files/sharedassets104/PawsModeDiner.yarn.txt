@@ -21,8 +21,8 @@ colorID: 0
 position: 389,416
 ---
 Gregg: 披萨量表大概就是这样的。 #line:6f765f
-Angus: 格雷格已经给我讲过好几次了。 #line:558cdd
-Angus: 就这样。 #line:eaf35e
+Angus: 他给我讲过好几次了。 #line:558cdd
+Angus: 就是这样。 #line:eaf35e
 [[End]]
 ===
 title: End
@@ -30,7 +30,7 @@ tags:
 colorID: 0
 position: 73,655
 ---
-Mae: 我觉得这披萨挺好吃的。 #line:7669a1
+Mae: 披萨都很好吃的。 #line:7669a1
 <<unlockDoodle PizzaScale>>
 <<tell GreggFoodPaw Reach>>
 <<tell AngusFoodPaw Reach>>
@@ -69,7 +69,7 @@ Mae: 嗯……我好怀念美味意面馆啊。 #line:5ad58a
         Gregg: 这么说，你现在又开始迷上 #line:87c028
         Gregg: 各种饼边儿了是吗？ #line:3f47ec
         Mae: 饼边儿多好吃啊。 #line:088beb
-        Gregg: 真是怪了。 #line:f14e15
+        Gregg: 奇怪。 #line:f14e15
         <<unlockAchievement Crusty>>
     <<else>>
         Gregg: 嘿，你刚才是不是把我的饼边儿给吃了？ #line:dc5646
@@ -83,13 +83,13 @@ Mae: 嗯……我好怀念美味意面馆啊。 #line:5ad58a
 Mae: 咱们应该去美味意面馆才对。 #line:959e11
 Gregg: 但这家店的氛围很好！！！！ #line:52d31e
 Angus: 座椅也很舒服。 #line:d2983a
-Bea: 虽然这里的饭菜不怎么样， #line:d2878d
+Bea: 虽然这里的食物不怎么样， #line:d2878d
 Bea: 但它还是有自己的魅力。 #line:87feed
 Gregg: 这家店配不上花哨的你了吗？ #line:ebfa83
 Mae: 伙计们， #line:cc387d
 Mae: 拜托。 #line:2d01e1
 Mae: 我就是在这家店里长起来的，而且是从小吃到大的。 #line:655d14
-Bea: 对，你是和成千上万只老鼠一起长起来的。 #line:b45f9d
+Bea: 对，和成千上万只老鼠一起长起来的。 #line:b45f9d
 <<irisOut 1 wait>>
 <<scene Diner>>
 ===
@@ -99,7 +99,7 @@ colorID: 0
 position: -239,2
 ---
 Angus: 嗯嗯嗯。 #line:cb1ddb
-Gregg: 我的天，太刺激了！对了，梅，你在学校的时候是不是也很想吃披萨？ #line:e58a54
+Gregg: 说得太对了！梅，你想念披萨吗？ #line:e58a54
 Mae: 学校里也能吃得到披萨。 #line:6e2329
 Gregg: 真不赖。 #line:3b8090
 <<tell GreggFoodPaw Reach>>

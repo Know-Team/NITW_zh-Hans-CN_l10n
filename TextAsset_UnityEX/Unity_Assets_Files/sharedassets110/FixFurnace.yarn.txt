@@ -3,19 +3,19 @@ tags:
 colorID: 0
 position: 423,-24
 ---
-Mae: 这么一来……我找到了一个小塑像、一根鱼杆、一个羽毛球拍和一台电扇。 #line:e9c9c8
-Mae: 还找到两个轮子……和一个没轮子……但能转的玩意 #line:0b6f84
+Mae: 这么一来……我找到了一个格诺梅奥、一根鱼杆、一个羽毛球拍和一台电扇。 #line:e9c9c8
+Mae: 还找到两个轮子和一个……没有轮子的……但可以转动的玩意。 #line:0b6f84
 Mae: 可能只需要转动这玩意…… #line:9a1389
 ->……来打开导热管。 #line:22a47e
     Mae: 嘁哧咔嚓可能是堵了，热量积聚在里面排不出来。 #line:b8cfe2
 ->……来点着火。 #line:b5bd4b
     Mae: 嘁哧咔嚓可能是没法把火给烧旺，看来得帮帮它才行。 #line:d95dc0
     Mae: 可怜的嘁哧咔嚓，我们来救你啦！ #line:b81038
-Mae: 来让嘁哧咔嚓热到焦头烂额。 #line:d02dcc
+Mae: 重新把嘁哧咔嚓热到焦头烂额。 #line:d02dcc
 Mae: 咱们要教会嘁哧咔嚓如何去爱。 #line:820874
 Mae: 我敢说，我能……嗯…… #line:2d6325
-[[我觉得，小塑像应该可以放在把手上来代替那个缺失的轮子。|GnomeyBite]] #line:8e477d
-[[可以把球拍当把握柄用。|RacketHandle]] #line:796054
+[[我觉得，格诺梅奥应该咬住可以转动的玩意，代替那个缺失的轮子成为一个把手。|GnomeyBite]] #line:8e477d
+[[可以把球拍当把手用。|RacketHandle]] #line:796054
 ===
 title: DoneSetup
 tags: 
@@ -32,9 +32,9 @@ colorID: 0
 position: 1416,254
 ---
 Mae: 嗯，对，就是这样。 #line:5fa811
-Mae: 应该能……带得动他吧？ #line:7fd69d
-[[可我们也不可能老过来转他吧……|NotAlwaysGoingToBeHereToPull]] #line:43ed1d
-[[我觉得，狠狠地转它一下应该就可以维持住了。|OneGoodHardPull2]] #line:7ed2f5
+Mae: 应该能……卡住他吧？ #line:7fd69d
+[[可我们也不可能总去卡住他吧……|NotAlwaysGoingToBeHereToPull]] #line:43ed1d
+[[我觉得，用劲把他卡在上面应该就可以维持住了。|OneGoodHardPull2]] #line:7ed2f5
 ===
 title: RacketHandle
 tags: 
@@ -42,8 +42,8 @@ colorID: 0
 position: -369,308
 ---
 Mae: 没错，应该能管用。 #line:02931f
-[[可我们也不可能老过来拉它吧……|NotAlwaysHereToPullIt]] #line:f63942
-[[狠狠转它一下应该就能维持着了。|OneGoodHardPull]] #line:25c1c6
+[[但我们也不可能总卡住它吧……|NotAlwaysHereToPullIt]] #line:f63942
+[[用劲把它卡在上面应该就可以维持住了。|OneGoodHardPull]] #line:25c1c6
 ===
 title: NotAlwaysHereToPullIt
 tags: 
@@ -87,7 +87,7 @@ Mae: 答案就是，小行星撞地球。|因为那样会变得超级热。 #lin
 Mae: 这也是恐龙灭绝的原因。 #line:4c5fbd
 Mae: 好吧，我之前在干嘛来着？ #line:ab0e4c
 [[恐龙帅炸了。|DinosWereRad2]] #line:b86c9a
-[[在地下室里用小塑像做个涡轮机。|BasementTurbineOutOfAGardenGnome]] #line:b67a91
+[[在地下室里用格诺梅奥做个涡轮机。|BasementTurbineOutOfAGardenGnome]] #line:b67a91
 ===
 title: DinosWereRad2
 tags: 
@@ -95,8 +95,8 @@ colorID: 0
 position: 1929,1065
 ---
 Mae: 海里面也有恐龙！ #line:74a210
-Mae: 幸亏我不是一条那时候的鱼。 #line:f13cc5
-Mae: 话说，当时世界上有鱼吗？如果有的话，会不会叫“恐鱼"呢？ #line:bf70f0
+Mae: 幸亏我不是一条远古时期的鱼。 #line:f13cc5
+Mae: 话说，那时候世界上有鱼吗？如果有的话，会不会叫“恐鱼"呢？ #line:bf70f0
 [[不，梅，鱼就是鱼。振作点。|FishAreFish2]] #line:60e2a4
 [[可是它们过去应该就是叫恐鱼，对吧？|DinosaurFish2]] #line:f4e4e2
 ===
@@ -118,15 +118,15 @@ position: 1752,1904
 Mae: 嗯，这地下室没什么风。 #line:092f2f
 Mae: 但我可以把电扇放到小人的屁股上， #line:2fb828
 Mae: 这样，电扇就能让小人转起来了…… #line:cd4cab
-Mae: 用球拍做配重。 #line:336cc7
+Mae: 用球拍做扇叶。 #line:336cc7
 Mae: 然后用鱼线把所有东西都绑在一起……哇哦…… #line:7deb73
 <<close>>
 <<set $furnace_contraption to 5>>
 <<animationTrigger Contraption_E_GnomeTurbine Build>>
 <<wait 4>>
 Mae: 我真该去开一家公司， #line:bbb19e
-Mae: 名字就叫：可 持 续 垃 圾 涡 轮 机 公 司！！！ #line:836737
-Bea: 好了，弄完啦！ #line:b0ac3b
+Mae: 名字就叫：可持续垃圾涡轮机公司！！！ #line:836737
+Bea: 好了，弄完了！ #line:b0ac3b
 Mae: 你说什么？！ #line:ce22b2
 [[DoneSetup]]
 ===
@@ -156,9 +156,9 @@ position: -915,1697
 ---
 Mae: 嗯，这地下室没什么风。 #line:0c2efe
 Mae: 好吧，我们把这小塑像插地上 #line:483e73
-Mae: 对不起了，土地神 #line:50102f
+Mae: 对不起了，格诺梅奥。 #line:50102f
 Mae: 把电扇放在他扁扁的屁股上。 #line:940621
-Mae: 土地神，我知道这很疼。我也有过这种体会。 #line:c1da23
+Mae: 格诺梅奥，我知道这很疼。我也有过这种体会。 #line:c1da23
 Mae: 然后像这样把球拍给固定住…… #line:6214f4
 <<close>>
 <<set $furnace_contraption to 3>>
@@ -166,8 +166,8 @@ Mae: 然后像这样把球拍给固定住…… #line:6214f4
 <<wait 4>>
 Mae: 嘿，好啦！ #line:1493c3
 Mae: 我真该去开一家公司， #line:0f0353
-Mae: 名字就叫：可 持 续 垃 圾 涡 轮 机 公 司！！！ #line:85b63d
-Bea: 好了，弄完啦！ #line:b02c30
+Mae: 名字就叫：可持续垃圾涡轮机公司！！！ #line:85b63d
+Bea: 好了，弄完了！ #line:b02c30
 Mae: 你说什么？！ #line:3016fb
 [[DoneSetup]]
 ===
@@ -177,12 +177,12 @@ colorID: 0
 position: -575,979
 ---
 Mae: 能去那条“狼"那里吃点东西了. #line:08cee8
-Mae: 那条多～纳～狼～ #line:75f7ba
-Mae: 我记得网上有个视频，是关于他家龙舌兰鸡尾酒蛋糕机的。 #line:c7cedf
-Mae: 我大半夜睡不着就靠这个视频来助眠。 #line:f508a3
+Mae: 那条多～纳～狼～～～ #line:75f7ba
+Mae: 我记得网上有个视频，是关于龙舌兰鸡尾酒蛋糕机的。 #line:c7cedf
+Mae: 我在学校有一半的夜晚都是靠这个视频助眠的。 #line:f508a3
 Mae: 就看那台又大又复杂的机器不停在做好吃的蛋糕。 #line:ee63e5
 Mae: 我根本想象不出来， #line:49d0a7
-Mae: 人们怎么能造得出这种看着很怪，但能够完美运作的机器 #line:2c1ca0
+Mae: 人们怎么能造得出这种看着很怪，但能够完美运作的机器。 #line:2c1ca0
 Mae: 就像是有人随便弄了个东西， #line:1183d4
 Mae: 最后却不知怎么的，创造了奇迹。 #line:432784
 [[WingThisToo]]
@@ -192,19 +192,19 @@ tags:
 colorID: 0
 position: -278,969
 ---
-Mae: 我以前电视上看到过这东西，|是一个有关海底洞穴里|水肺潜水的节目。 #line:9fb3a1
+Mae: 我以前在电视上看到有人在洞穴里水肺潜水。 #line:9fb3a1
 Mae: 对于我的钱包来说，这么玩实在是太傻了。 #line:a65af3
-Mae: 就是，普通地游泳你都有可能淹死 #line:c841e2
+Mae: 就是，普通游泳你都有可能淹死。 #line:c841e2
 Mae: 更别提在海底洞穴里了，还得带着马和装备。 #line:b0d752
 Mae: “马"？我是说“管子"。|（马 horse；管子 hose） #line:b2db5f
 Mae: 为什么我会想到马呢？ #line:b0f7e7
-Mae: 我 的 天！ #line:130095
-Mae: 穴 居 马。 #line:7e3d0a
+Mae: 我的天！ #line:130095
+Mae: 穴居马。 #line:7e3d0a
 Mae: 你要是被一匹穴居马给抓住了该怎么办呢？ #line:c3efe2
 Mae: 我在想，它会怎么把人从洞里拖出来呢？ #line:8397d2
-Mae: 可能它只能临场发挥，做出一些又大又复杂的东西 #line:31bfaf
+Mae: 可能它只能临场发挥，做出一些又大又复杂的东西。 #line:31bfaf
 Mae: 虽然没人知道在洞穴里会发生什么事， #line:dd6ad3
-Mae: 但我还是无法想象这世界上某一台机器的功能就是帮穴居马把人类从洞里拖出来。 #line:c43324
+Mae: 但我还是无法想象这世界上某一台机器的功能就是帮穴居马把水肺潜水员从洞里拖出来。 #line:c43324
 Mae: 啊啊啊！梅，集中精力！ #line:2f34a9
 [[WingThisToo]]
 ===
@@ -214,24 +214,24 @@ colorID: 0
 position: -380,1527
 ---
 Mae: 我是不是也应该来个即兴发挥呢？是不是应该别想太多，直接干呢？ #line:54b3a5
-Mae: 好 吧，开 始！ #line:aca66f
-Mae: 好了，先把球拍绑到把手上，然后再把它们一块绑到电扇上。等等…… #line:aa9b4d
+Mae: 好吧，开始！ #line:aca66f
+Mae: 好了，先把球拍绑到可以转动的那个玩意上，然后再把它们一块绑到电扇上。等等…… #line:aa9b4d
 Mae: 怎么样让现在的风扇转起来的时候不像一条鱼在旋转呢？ #line:6f5ce2
-Mae: 对不起了，土地神。我只能把你像吸血鬼一样倒着放了。 #line:bab180
+Mae: 对不起了，格诺梅奥。我只能把你像吸血鬼一样倒着放了。 #line:bab180
 Mae: 我记得，古代人埋吸血鬼的时候会把棺材倒立着放。 #line:837777
-Mae: 这样，即使吸血鬼想从棺材里爬回地面，|他们也只会一直往地下挖啦。|哈哈哈哈，笨蛋吸血鬼。 #line:f49b6b
-Mae: 你已经身处地球中心啦，还有，你也挂啦。 #line:20b4d5
-Mae: 第二次了。 #line:47966d
+Mae: 这样，即使吸血鬼想从棺材里爬回地面，|他们也只会一直往地下挖。|哈哈哈哈，笨蛋吸血鬼。 #line:f49b6b
+Mae: 你这吸血鬼已经身处地球中心，还有，你也挂啦。 #line:20b4d5
+Mae: 又一次。 #line:47966d
 <<close>>
 <<set $furnace_contraption to 2>>
 <<animationTrigger Contraption_B_CaveHorse Build>>
 <<wait 4>>
 Mae: 嘿，看起来真是棒极啦！ #line:834097
-Mae: 我简直就是个……工程师啊！ #line:4dd478
+Mae: 我简直就是个伟大的……工程师啊！ #line:4dd478
 Mae: 或者是其他随便什么会造机器的职业！ #line:b2e2b5
-Mae: 机械工程师？ #line:0d6f7c
+Mae: 机器工程师？ #line:0d6f7c
 Mae: 好了，咱们来给这小宝贝一个…… #line:e8dd5b
-Bea: 好了，弄完啦！ #line:d91a0f
+Bea: 好了，完成！ #line:d91a0f
 Mae: 你说什么？！ #line:f8ba84
 [[DoneSetup]]
 ===
@@ -248,10 +248,10 @@ tags:
 colorID: 0
 position: 2190,1400
 ---
-Mae: 那时候的鱼可能会：噢老兄，什么鬼啊。 #line:589e40
+Mae: 那时候的鱼可能会说：“噢老兄，什么鬼啊。" #line:589e40
 Mae: “我简直不敢相信未来的鱼类不用处理这种破事。" #line:85b368
 Mae: “鲨鱼？呵呵。我这儿可有一大堆得狂犬病的尼斯湖食人鱼呢。" #line:e9e21c
-Mae: 拍纪录片的人会： #line:f088a5
+Mae: 拍纪录片的人会说： #line:f088a5
 Mae: “数百万年前，海洋里遍布着尼斯湖狂犬食人鱼。" #line:65d40a
 Mae: 好了，集中注意力，梅。 #line:7ffc90
 Mae: 踏踏实实做一台涡轮机。 #line:9f38dc
@@ -262,8 +262,8 @@ tags:
 colorID: 0
 position: 1817,1357
 ---
-Mae: 嗯，我是说在那个时候，还有很多恐虫，恐树和恐便便。 #line:e12ac1
-Mae: 我希望能见到一头恐驼鹿。我猜那感觉肯定特棒。 #line:10e23b
+Mae: 嗯，在那个时候，还会有更多的恐虫，恐树和恐便便。 #line:e12ac1
+Mae: 我希望能见到一头恐驼鹿。我猜那肯定特棒。 #line:10e23b
 Mae: 好了，集中精力，梅。 #line:4f145f
 Mae: 踏踏实实做一台涡轮机。 #line:9656b8
 [[Join2]]
@@ -273,10 +273,10 @@ tags:
 colorID: 0
 position: -1410,1272
 ---
-Mae: 那时候的鱼可能会：噢老兄，什么鬼啊。 #line:4b1370
+Mae: 那时候的鱼可能会说：“噢老兄，什么鬼啊。" #line:4b1370
 Mae: “我简直不敢相信未来的鱼类不用处理这种破事。" #line:021e6b
 Mae: “鲨鱼？呵呵。我这儿可有一大堆得狂犬病的尼斯湖食人鱼呢。" #line:7e6c80
-Mae: 拍纪录片的人可能会： #line:52ac27
+Mae: 拍纪录片的人会说： #line:52ac27
 Mae: “数百万年前，海洋里遍布着尼斯湖狂犬食人鱼。" #line:449bc3
 Mae: 好了，集中注意力，梅。 #line:46c311
 Mae: 踏踏实实做一台涡轮机。 #line:731b3a
@@ -287,8 +287,8 @@ tags:
 colorID: 0
 position: -1088,1275
 ---
-Mae: 嗯，我是说在那个时候，还有很多恐虫，恐树和恐便便。 #line:486234
-Mae: 我希望能见到一头恐驼鹿。我猜那感觉肯定特棒。 #line:43c898
+Mae: 嗯，在那个时候，还会有更多的恐虫，恐树和恐便便。 #line:486234
+Mae: 我希望能见到一头恐驼鹿。我猜那肯定特棒。 #line:43c898
 Mae: 好了，集中精力，梅。 #line:da73c4
 Mae: 踏踏实实做一台涡轮机。 #line:716b1f
 [[Join1]]
@@ -299,8 +299,8 @@ colorID: 0
 position: 622,672
 ---
 Mae: 好了，得找个结实点的东西。 #line:8e0c5d
-Mae: 梅，动脑子好好想想…… #line:4e8c18
-[[我在想，格雷格现在在干啥？|WhatGreggsUpTo]] #line:7efecc
+Mae: 梅，好好想想…… #line:4e8c18
+[[想……格雷格现在在干啥？|WhatGreggsUpTo]] #line:7efecc
 [[那部电影叫什么来着？|NameOfThatOneMovie]] #line:5ec486
 ===
 title: WeGotPlentyOfRoom
@@ -308,9 +308,9 @@ tags:
 colorID: 0
 position: 1287,732
 ---
-Mae: 嗯……集中注意力，梅。 #line:45014b
+Mae: 额……集中注意，梅。 #line:45014b
 [[我在想，我会不会得到那辆摩托车呢。|GetThatMotorcycle]] #line:6302da
-[[我在想，凯西的船到底怎么了？|CaseysBoat]] #line:fff8aa
+[[我在想，凯西的船怎么样了？|CaseysBoat]] #line:fff8aa
 ===
 title: StopFan
 tags: 
@@ -318,17 +318,17 @@ colorID: 0
 position: 358,1809
 ---
 Mae: 哦，等会儿，怎么才能让电扇固定住呢？ #line:a3886a
-Mae: 球 拍！！！ #line:2a2339
+Mae: 球拍！！！ #line:2a2339
 <<close>>
 <<set $furnace_contraption to 1>>
 <<animationTrigger Contraption_A_CorpseDriver Build>>
 <<wait 4>>
 Mae: 不错，这东西看起来简直完美啊！ #line:a522fb
-Mae: 把小塑像当把手用， #line:cb355e
+Mae: 把格诺梅奥当把手用， #line:cb355e
 Mae: 电扇提供动力， #line:9893b0
 Mae: 然后用鱼线把它们都固定在一起， #line:d9216f
 Mae: 球拍就用来固定电扇。 #line:57b76a
-Mae: 简直棒极啦！ #line:da5108
+Mae: 棒极了！ #line:da5108
 Bea: 好了，搞定！ #line:3eac03
 Mae: 你说什么？！ #line:eedf9a
 [[DoneSetup]]
@@ -338,11 +338,11 @@ tags:
 colorID: 0
 position: 293,803
 ---
-Mae: 我在想，凯西最后有没有搞明白那件事…… #line:2ca9de
+Mae: 想……格雷格最后有没有搞明白那件事…… #line:2ca9de
 Mae: 还记得凯西当时在布里德尔附近一家叫汉堡熊的地方上班。 #line:0b6271
 Mae: 有一次，他直接让我们到柜台后面去自己DIY汉堡。 #line:8e3221
-Mae: 但，接着凯西的经理杰夫突然走了进来。|我们只得从自提窗口里跳出去 #line:a9cf44
-Mae: 格雷格的腿还被某种什么电线缠住了。 #line:346317
+Mae: 但凯西的经理杰夫突然走了进来。|我们只得从车道取餐窗口跳出去。 #line:a9cf44
+Mae: 格雷格的腿还被电线缠住了。 #line:346317
 [[有辆车差点从他身上轧过去。|CarAlmostRanOverHim]] #line:5e44b3
 [[他还吐了。|AndHePuked]] #line:d5a165
 ===
@@ -351,10 +351,10 @@ tags:
 colorID: 0
 position: 738,1127
 ---
-Mae: 被另一个人绑在机器上的那个家伙。 #line:457801
-Mae: 他差不多是，活生生被扯成了两半？ #line:04d416
-Mae: 就算那看起来像假的，也还是挺酷的。 #line:fb2850
-Mae: 我还记得，他炸开的时候， #line:6e46f1
+Mae: 一个人把另一个人绑在机器上。 #line:457801
+Mae: 他差不多是，活生生被撕成了两半？ #line:04d416
+Mae: 就算那看起来超～～～假的，也还是很酷。 #line:fb2850
+Mae: 我还记得，人整个炸开的时候， #line:6e46f1
 Mae: 炸出来的骨头可比他该有的骨头多了一倍。 #line:c6ac6b
 [[我在想，那玩意到底是怎么滑过去的？|WonderHowThatSlippedPastThem]] #line:75c221
 [[好了，梅，集中注意力。|FocusMae]] #line:90b7db
@@ -366,10 +366,10 @@ colorID: 0
 position: 1126,994
 ---
 Mae: 一辆好的自行车，骑起来不能太笨重，也不能太吵因为我耳朵受不了。 #line:b4f1eb
-Mae: 拉力赛。 #line:10905c
-Mae: 你能骑着自行车参加拉力赛吗？ #line:e73321
-Mae: 还是说，只有用汽车才能参加呢？ #line:f7a70b
-Mae: 有一部老电影，里面有一个怪兽拉力赛车手。 #line:9b5604
+Mae: 疯狂竞速赛。 #line:10905c
+Mae: 你能骑着自行车参加疯狂竞速吗？ #line:e73321
+Mae: 还是说只有汽车才能参加呢？ #line:f7a70b
+Mae: 有一部老电影，里面有一个怪兽竞速车手。 #line:9b5604
 Mae: 他有一顶很酷的头盔和一双很酷的靴子。|这是我见过的最炫酷的东西了。 #line:7189d9
 Mae: 嗯……或许骑着这小塑像也能参加拉力赛…… #line:070f84
 Mae: 然后用电扇来当车轮？ #line:3afb45
@@ -395,8 +395,8 @@ tags:
 colorID: 0
 position: 1238,1730
 ---
-Mae: 把它转起来之后，让它带动地精老弟怎么样？ #line:faf4bd
-Mae: 把地精老弟绑在球拍上，再把球拍绑在电扇上…… #line:6a4abb
+Mae: 把它转起来之后，让它带动格诺梅奥怎么样？ #line:faf4bd
+Mae: 把格诺梅奥绑在球拍上，再把球拍绑在电扇上…… #line:6a4abb
 <<close>>
 <<set $furnace_contraption to 4>>
 <<animationTrigger Contraption_D_DragRacer Build>>
@@ -434,7 +434,7 @@ position: 192,1479
 ---
 Mae: 然后我只得把他拿下来…… #line:402d35
 Mae: 之后，我们俩就笑个不停…… #line:67da8a
-Mae: ……可以把小地精绑在电扇上…… #line:91b1b9
+Mae: ……可以把小格绑在电扇上…… #line:91b1b9
 Mae: 向格雷格致敬。 #line:dcdbff
 [[StopFan]]
 ===
@@ -453,12 +453,12 @@ colorID: 0
 position: 693,1646
 ---
 Mae: 好了，咱们用鱼线 #line:164373
-Mae: 把地精老弟绑在电扇上。 #line:880353
+Mae: 把格诺梅奥绑在电扇上。 #line:880353
 Mae: 电扇应该能带得动他吧？ #line:f1ee4d
 Mae: 应该不至于会把他给扯成两半。 #line:60105f
-Mae: 地精老弟都没有骨头。 #line:3efb04
-Mae: 我想起来了！尸骨车手！ #line:cd222a
+Mae: 格诺梅奥都没有骨头。 #line:3efb04
+Mae: 我想起来了！灵车人！ #line:cd222a
 Mae: 这就是这部电影的名字。 #line:e7d016
-Mae: 我应该给这台机器取个名，就叫它尸骨车手吧。 #line:f1ae98
+Mae: 我应该给这台机器取个名，就叫它灵车人吧。 #line:f1ae98
 [[StopFan]]
 ===

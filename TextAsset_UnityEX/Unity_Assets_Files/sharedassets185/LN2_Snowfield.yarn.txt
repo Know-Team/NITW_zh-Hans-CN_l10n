@@ -17,7 +17,7 @@ position: 726,629
 ---
 Granddad: 他们当然过啦！ #line:11b5c3
 Mae: 那他们会送礼物吗？ #line:18ec16
-Granddad: 当然会啦！ #line:1680e4
+Granddad: 当然会！ #line:1680e4
 Mae: 他们应该都送才对。 #line:7ee2a4
 Granddad: 你在想……啊，是送礼。随便吧。 #line:851b6c
 ===
@@ -41,10 +41,10 @@ position: -75,399
 <<speechBubbleSizeOverride 1.3>>
 Adina: 猫咪！嘿，猫咪！ #line:4a0949
 Adina: 你住在这片森林里吗？ #line:5d7e05
-TreeCat: 差不多就在附近。 #line:a2e808
+TreeCat: 差不多。 #line:a2e808
 Adina: 我能问你个问题吗？ #line:bc6f14
-TreeCat: 今晚，你会死在这片森林里。 #line:5f1197
-Adina: 这话对我可没什么帮助啊。 #line:febd28
+TreeCat: 今晚，你会死在这里。 #line:5f1197
+Adina: 哇哦，这话对我可没什么帮助。 #line:febd28
 TreeCat: 是吗？ #line:399eca
 [[今晚你要到哪儿去？|WhereAreYouGoing]] #line:31968b
 [[快滚吧，臭猫！|GoAwayCat]] #line:3c430b
@@ -55,19 +55,19 @@ tags:
 colorID: 0
 position: -5,726
 ---
-TreeCat: 今晚我会去我亲戚家串门。但首先，我要去做礼拜。 #line:c75a3d
+TreeCat: 今晚我会去我亲戚家串门。但首先，我要去教堂。 #line:c75a3d
 Adina: 听上去，你长至夜节这天过得好像也挺普通的嘛。 #line:b1b9a8
-TreeCat: 在做礼拜之前，我要先抓一只小野鼠， #line:fd5a5e
+TreeCat: 在去教堂前，我要先抓一只小野鼠， #line:fd5a5e
 TreeCat: 然后吃掉它。 #line:275135
-TreeCat: 但在做这事之前，我会先看着你走进森林 #line:751c4b
-TreeCat: 去送死。 #line:582699
-TreeCat: 在那之前，我们会互道“再见"。 #line:797148
-Adina: 你能确定吗？ #line:77168e
+TreeCat: 但这些事之前，我会先看着你走进森林…… #line:751c4b
+TreeCat: 送死。 #line:582699
+TreeCat: 再在那之前，我们会互道“再见"。 #line:797148
+Adina: 你确定吗？ #line:77168e
 TreeCat: [speed=.5][wave]咕噜噜。[/all] #line:75fa20
-Adina: 那好吧，再见啦！ #line:b20d16
-TreeCat: 哈 哈 哈 哈。 #line:5a6877
-Adina: 你在干什…… #line:c846dc
-Adina: 哦，我明白了。 #line:f97ac3
+Adina: 那好吧，再见！ #line:b20d16
+TreeCat: 哈～哈～哈～哈～ #line:5a6877
+Adina: 你在笑什…… #line:c846dc
+Adina: 哦，明白了。 #line:f97ac3
 TreeCat: 再见。 #line:8fe2c5
 
 ===
@@ -78,18 +78,18 @@ position: -285,690
 ---
 TreeCat: 今晚，我要下趟山，但我还会回来的。 #line:fc358d
 TreeCat: 我就喜欢 #line:995c5a
-TreeCat: 从像你这么傻的死人口袋里 #line:769525
+TreeCat: 从你这么傻的死人口袋里 #line:769525
 TreeCat: 捡一些亮晶晶的东西。 #line:b3cb16
-Adina: 别来烦我啦！ #line:d189dc
+Adina: 别烦我！ #line:d189dc
 TreeCat: 我倒觉得，是你先来烦我的吧？ #line:2c2ce5
-Adina: 我要走啦！ #line:c2fb9a
-TreeCat: 我肯定能亲眼目睹这个傻瓜是怎么走错她人生中最后一步的那一刻。 #line:45afcd
-Adina: 哦，真是太好了。你这句话对我倒挺有用的。 #line:6e4c1d
+Adina: 要启程了！ #line:c2fb9a
+TreeCat: 我肯定能亲眼目睹这个傻瓜是怎么走错她人生中最后一步。 #line:45afcd
+Adina: 噢，真是太好了。你这句话对我倒挺有用的。 #line:6e4c1d
 Adina: ……臭猫…… #line:92308b
 TreeCat: [speed=.5][wave]咕噜噜。[/all] #line:54072d
-Adina: 好吧，祝你长至夜快乐！ #line:7ddaaf
-TreeCat: 在明早前，我就会翻遍你的口袋的！ #line:b319e4
-Adina: 好，那就谢啦！ #line:6b8e5e
+Adina: 好吧，长至夜快乐！ #line:7ddaaf
+TreeCat: 明早前，我就会翻遍你的口袋！ #line:b319e4
+Adina: 好，谢了！ #line:6b8e5e
 TreeCat: 再见！ #line:b8c7d3
 
 ===
@@ -106,20 +106,20 @@ tags:
 colorID: 0
 position: 1016,445
 ---
-Adina: 又见到你们啦！ #line:e4afb5
-King: 啊，我们又见面啦！ #line:c0ecda
+Adina: 又见到你们！ #line:e4afb5
+King: 啊，又见面了！ #line:c0ecda
 <<setAnimInt King look -1>>
 Advisor: 我希望你是来道别的！ #line:aa2915
 King: 我们正准备离开这里呢！ #line:9e1188
-Adina: 这是为什么呀？ #line:ec81fd
+Adina: 为什么？ #line:ec81fd
 <<setAnimInt King look 1>>
 Advisor: 因为王国需要国王！ #line:a53d2f
 King: 而这个国王需要他最信赖的顾问！ #line:145b64
-Adina: 你们那位剑士怎么了？ #line:f19ae1
-King: 他的名字叫|史 蒂 文 森！ #line:a16499
+Adina: 你们那个剑士怎么了？ #line:f19ae1
+King: 他叫史蒂文森！ #line:a16499
 <<setAnimInt King look -1>>
-Advisor: 他 有 名 字，这 你 是 知 道 的。 #line:26bc0a
-Adina: 真对不起！他到底出什么事了？还有，你们见到林中之神了吗？ #line:0baa23
+Advisor: 他有名字，你是知道的。 #line:26bc0a
+Adina: 对不起！他怎么了？你们见到林中神了吗？ #line:0baa23
 Advisor: 他叫史～蒂～文～森！ #line:eaedfe
 <<if $found_stevenson_head is 1>>
 	[[WK_StevensonHead]]
@@ -154,7 +154,7 @@ tags:
 colorID: 0
 position: 727,197
 ---
-SnowfieldNPC: 嗨，我在最后时刻记下了一些篇幅比较短的对话，内容是关于林中之神和群星的，他们都特别危险！ #line:794771
+SnowfieldNPC: 嗨，我在最后时刻记下了一些篇幅比较短的对话，内容是关于林中神和群星的，他们都特别危险！ #line:794771
 Adina: 哇哦，真不错啊！ #line:81aa70
 SnowfieldNPC: 是的，不过也可能只是一队小精灵在侃大山，说些不明所以的话。 #line:436d8a
 Adina: 好吧，咱们看看还有没有时间吧！ #line:6b29d3
@@ -167,12 +167,12 @@ position: 1099,728
 ---
 Adina: 我找到了他的...头盔。 #line:f7419b
 Advisor: 你是在哪儿找到的？ #line:a50cb5
-Adina: 在林中之神的那座山上。你们可以...... #line:0de2ea
+Adina: 在林中神的那座山上。你们可以...... #line:0de2ea
 <<setAnimInt King look 1>>
 King: 不……！ #line:be4eba
 <<setAnimInt King look -1>>
 Advisor: 千万不能回去！ #line:3ce3eb
-Adina: 他是攻击了林中之神吗？ #line:cd5d61
+Adina: 他是攻击了林中神吗？ #line:cd5d61
 <<setAnimInt King look 1>>
 King: 他绝对没有！我也绝对没有命令他这么做！ #line:997b9c
 <<setAnimInt King look -1>>
@@ -212,12 +212,12 @@ position: 1284,40
 <<if $mae_gd_snowfield is 0>>
 	<<set $mae_gd_snowfield to 1>>
 	<<showTalkingHeads>>
-	Mae: 这件事是在哪儿发生的呀？ #line:e57ea5
-	Granddad: 这件事发生在我爷爷奶奶以前住的地方。|但这件事发生的时间|可比他们生活的时间还要早不少。 #line:c4dbe3
+	Mae: 这件事发生在哪里呀？ #line:e57ea5
+	Granddad: 在我爷爷奶奶住的地方，但远早于他们出生前。 #line:c4dbe3
 	Mae: 他们也过长至夜吗？ #line:95b519
-	Granddad: 当然过啦！ #line:5099c2
+	Granddad: 当然了！ #line:5099c2
 	Mae: 他们管长至夜叫什么？ #line:99bda2
-	Granddad: 就叫长至夜。 #line:58d7ed
+	Granddad: 长至夜。 #line:58d7ed
 	Mae: 哦。 #line:a4bf6f
 	<<hideTalkingHeads>>
 	<<wait 1>>
@@ -232,15 +232,15 @@ position: 286,136
 <<if $adina_intro is 0>>
 	<<wait 1>>
 	Adina: 好了，已经离家很远了。 #line:24ca16
-	Adina: 应该能回去了吧…… #line:6ad78d
+	Adina: 也可以回去的吧…… #line:6ad78d
 	<<close>>
 	<<wait .5>>
 	Adina: 不行。 #line:61cfa5
-	Adina: 到现在，已经过了一年的时间。你之前承诺过， #line:a93191
-	Adina: 要让自己来掌控自己的命运。 #line:1e50d9
-	Adina: 你今晚是不会死在那片森林里的， #line:aa22fd
-	Adina: 你一定能再见到她的， #line:81af55
-	Adina: 你也一定会带着一颗星星回去的。 #line:fdc739
+	Adina: 已经过了一年的时间。你之前承诺过的。 #line:a93191
+	Adina: 要自己掌控自己的命运。 #line:1e50d9
+	Adina: 你今晚是不会死在那片森林里的。 #line:aa22fd
+	Adina: 你一定能再见到她的。 #line:81af55
+	Adina: 你也一定会带着星星回去的。 #line:fdc739
 	<<set $adina_intro to 1>>
 <<endif>>
 
@@ -251,10 +251,10 @@ colorID: 0
 position: 543,-61
 ---
 <<if $snow_chimes_glowing is 1>>
-	Adina: 我觉得，雾开始散了！ #line:2c9f43
+	Adina: 我觉得雾散了！ #line:2c9f43
 <<elseif $snowfield_fog is 0>>
 	Adina: 哇哦，这雾也太大了吧。 #line:0a91c6
-	Adina: 真是奇怪的雾啊。 #line:becd6d
+	Adina: 真是奇怪的雾。 #line:becd6d
 	Adina: 你要怎么让这怪雾散开呢？ #line:67b95f
 	<<set $snowfield_fog to 1>>
 <<elseif $snowfield_fog is 1>>

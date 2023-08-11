@@ -6,7 +6,7 @@ position: 124,124
 Mae: 我现在就在镇子的入口。 #line:ba6e88
 Mae: 等了老爸老妈很久很久。 #line:b190a5
 Mae: 在这又冷又黑的夜里发抖。 #line:023777
-Mae: 看来我只能孤身一人 #line:ea7dd4
+Mae: 看来我只能孤身一人、 #line:ea7dd4
 Mae: 向家行走。 #line:121249
 <<end>>
 ===
@@ -16,8 +16,8 @@ colorID: 0
 position: 355,120
 ---
 Mae: 哇哦。 #line:863c89
-Mae: 我都没想到我会这么想念那辆火车的声音。 #line:76d36f
-Mae: 在树叶飘零的冬夜 #line:349fa9
+Mae: 我都没想到我会这么想念火车的声音。 #line:76d36f
+Mae: 在树叶飘零的冬夜， #line:349fa9
 Mae: 每晚我都会伴着这声音入眠。 #line:a72496
 <<end>>
 ===
@@ -41,7 +41,7 @@ position: 796,119
 Mae: 好吧，我想我得徒步穿过这片林子了。 #line:af8d1b
 Mae: 穿过林子就是亲爱的家， #line:716f9a
 Mae: 温暖的床， #line:0cf24e
-Mae: 还有那失职的爹妈。 #line:1e2fe6
+Mae: 还有失职的爹妈。 #line:1e2fe6
 <<end>>
 ===
 title: Highway
@@ -49,9 +49,9 @@ tags:
 colorID: 0
 position: 909,396
 ---
-Mae: 我可不想再回高速路上了。 #line:581ad5
+Mae: 我可不想再回到高速路上了。 #line:581ad5
 Mae: 可能还会被车子啊什么的撞到。 #line:5bc855
-Mae: 嘿那个修理工去哪儿了？ #line:b7ccc4
+Mae: 嗯？那个修理工去哪儿了？ #line:b7ccc4
 Mae: 他已经走了吗？ #line:6091e6
 <<end>>
 ===

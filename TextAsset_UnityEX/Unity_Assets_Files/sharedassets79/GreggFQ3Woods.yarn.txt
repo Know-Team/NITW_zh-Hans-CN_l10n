@@ -10,14 +10,14 @@ position: -215,159
     <<walk Gregg Gregg1>>
     //enter from offscreen to the left and walk to locators we’ll set up when blocking happens//
     Gregg: 没，这些配件都能在网上买到。 #line:187637
-    Gregg: 然后，是我和杰姆一起装好的。 #line:8ded26
-    Mae: 所以，现在这辆车就成了一辆摩托车了。 #line:80c82c
-    Gregg: 不对，应该是一辆带马达的自行车才对。还是有区别的。 #line:4793c0
+    Gregg: 然后是杰姆陪我一起组装好的。 #line:8ded26
+    Mae: 所以它现在变成一辆摩托车了。 #line:80c82c
+    Gregg: 不，应该是一辆带马达的自行车才对。还是有区别的。 #line:4793c0
     Mae: 你为什么不买一辆山地车呀？ #line:91a808
     Gregg: 因为我现在已经是大人了，所以我得骑普通自行车了。 #line:3b711d
-    Mae: 那……咱们现在是在哪儿啊？ #line:f3f3ea
+    Mae: 那么……咱们现在是在哪儿啊？ #line:f3f3ea
     <<waitForMove Gregg>>
-    Gregg: 在 树 林 里 啊。 #line:74badb
+    Gregg: 树 林 里。 #line:74badb
     <<close>>
     <<lookForward Gregg>>
     //Gregg runs to the right//
@@ -65,13 +65,13 @@ Gregg: _o_ #line:54955b
 Mae: 这根木头快断了，咱们可能会把腿给摔断的。 _o_ #line:3c7a81
 Mae: 这样咱俩就只能爬回去了。 :| #line:b65301
 Gregg: 或者，咱们会被熊给吃掉，再或者就是被冻死。 _o_ :| #line:cd45cf
-Mae: 还记得咱俩以前经常玩的小刀对决吗？ :) #line:f2fc8e
+Mae: 还记得咱俩以前经常玩小刀对决吗？ :) #line:f2fc8e
 Gregg: 嘿嘿，当然记得。 :) #line:452846
-Mae: 咱们回家的时候，手上全是伤。 =_= #line:5b19b8
-Mae: 俩傻子回家，傻到家啦。 #line:0a2169
-Gregg: 嗯，我…… :| #line:7d60f7
+Mae: 等我们玩完回家的时候，手上全是伤口。 =_= #line:5b19b8
+Mae: 跟俩傻子一样。 #line:0a2169
+Gregg: 那个，我…… :| #line:7d60f7
 Mae: 怎么了？ :| o_o #line:0bfa1d
-Gregg: 还说呢，我正好带着刀呢。 #line:67ca1a
+Gregg: 顺带一提，我正好带着刀呢。 #line:67ca1a
 Mae: 哇，我靠。可以啊你。 :) #line:f80018
 Gregg: 每轮被扎三次就算出局。 #line:c7e07d
 Mae: :| #line:47df38
@@ -133,11 +133,11 @@ position: -198,460
 Mae: 等一下，你为什么要带两把刀啊？ #line:3cb5d4
 Gregg: 哈，问得好。 #line:452df5
 Mae: …… #line:0cfc03
-Gregg:  咱 们 来 把 这 根 木 头 弄 断 吧！！！！ :) #line:a61566
+Gregg:  咱们来把这根木头弄断吧！！！！ :) #line:a61566
 Mae: 你要带着刀干这事吗？ #line:0c7c19
-Gregg: 当 然 不 会 啦！ :| #line:26230c
+Gregg: 不！ :| #line:26230c
 //gregg runs into place and starts jumping//
-Mae: 这样的话，咱俩可能就没命啦！ #line:88c814
+Mae: 这样的话，咱俩可能就没命了！ #line:88c814
 Gregg: 不会有事的，姐们儿。 #line:7fb343
 Mae: 说的是啊。 #line:49c8cf
 //you can now jump, and then the log breaks, wooo//
@@ -161,14 +161,14 @@ position: 636,195
 Gregg: 咻咻咻…… #line:cd3f70
 Mae: 我还想说，看见你还留着这玩意儿，让我挺惊讶的。 #line:308a01
 Gregg: 是啊。 #line:efe752
-Gregg: 其实，我根本就不喜欢打猎。 #line:6fdd89
+Gregg: 其实，我不喜欢打猎。 #line:6fdd89
 Gregg: 可我想说的是， #line:68b596
 Gregg: 姐们儿， #line:657f5f
 Gregg: 打猎真那么*有意思*吗？ #line:c258d5
 Gregg: 你打过猎吗？ #line:594e59
-Mae: 没打过。我老爸对打猎也不感兴趣。 #line:4ee042
-Mae: 但我爷爷打猎。他肯定把打猎看成是男人必会的一件事情。 #line:21ae01
-Gregg: 嗯。 #line:028d27
+Mae: 没，我老爸对打猎也不感兴趣。 #line:4ee042
+Mae: 但我爷爷打，他肯定把打猎看成是男人必会的一件事情。 #line:21ae01
+Gregg: 嗯哼。 #line:028d27
 ->我觉得这事还好吧。 #line:f51122
 	Gregg: 我不怎么怀念打猎的时光。 #line:123202
 	Gregg: 我以前和我爸、我叔还有我堂姐一起打过猎。 #line:fb8103
@@ -190,14 +190,14 @@ Gregg: 嗯。 #line:028d27
 	Gregg: 我还以为你喜欢打猎呢。 #line:ce3408
 	Mae: 说真的，可能是喜欢吧。 #line:25e9cc
 	Mae: 我只是喜欢猎猎鹿什么的。 #line:efcff3
-	Gregg: 后天，猎鹿季就要开始啦！ #line:90775e
+	Gregg: 后天，猎鹿季就要开始了！ #line:90775e
 	Mae: 是啊。 #line:d0a709
 	Mae: 好吧，随便了。 #line:1eca45
 Mae: 至少有人问过我这个问题了。 #line:b823dd
 Gregg: 你想射这家伙吗？ #line:55319a
 //there’s gonna be a camera panning over joke here//
 Mae: 这是……什么啊？ #line:e11e25
-Gregg: 这是林中之神。 #line:6e81f4
+Gregg: 这是林中神。 #line:6e81f4
 Mae: 就是故事里那个林中之神吗？ #line:41f094
 Gregg: 没错。 #line:7e3829
 Mae: 看样子，你已经射过不少靶子和诱饵了。 #line:53e1e0
@@ -207,7 +207,7 @@ Gregg: 你就用啥。 #line:971d9c
 <<lookLeft Gregg>>
 Gregg: 姐们，你想试试吗？ #line:a8399a
 Mae: :) #line:e8b460
-Mae: 唔，当 然 想 啦。 #line:fdf288
+Mae: 唔，当然。 #line:fdf288
 Mae: 你就站在前面，然后我大概……会把箭从你头上射过去。 #line:9a3049
 <<close>>
 <<wait 2>>
@@ -231,15 +231,15 @@ Mae: 这么说…… #line:92766e
 <<wait 2>>
 <<tell AmbientSFX:tv FadeOut1>>
 <<wait 2>>
-Mae: 这儿是怎么啦？ #line:6f44c0
+Mae: 那里是什么情况？ #line:6f44c0
 Gregg: 嗯，这儿最近出了点事。 #line:95383e
-Mae: 出什么事啦？ #line:32fbf3
+Mae: 什么事？ #line:32fbf3
 Gregg: 被雷给劈了。 #line:117b00
 <<if $did_gregg_friendship_quest_2>>
 	Mae: 就和昨天晚上我被电死过两次差不多吧？ #line:afb95e
 	Gregg: 不一样。不过我觉得，一不一样，还得看你怎么想了。 #line:189920
 <<endif>>
-Mae: 嗯。 #line:0fc2e8
+Mae: 嗯呢。 #line:0fc2e8
 <<close>>
 <<playMusic sad_gregg 15>>
 <<walk Gregg GreggWatersEdge>>
@@ -254,9 +254,9 @@ Gregg: 最近的确遇到了点事，可…… #line:0aa034
 <<lookRight Gregg>>
 <<wait 3>>
 Gregg: 我……我算是个好人吗？ #line:00175e
-    ->当然算啦！ #line:df662a
+    ->当然啦！ #line:df662a
         Gregg: …… #line:46b519
-    ->怎么样才算“好"呢？ #line:980e8d
+    ->怎么样才算“好"？ #line:980e8d
 Gregg: 我不知道。 #line:0a34f8
 Mae: 伙计，你这是怎么啦？ #line:041cbe
 Gregg: 我已经很努力了。 #line:6dc21d
@@ -268,7 +268,7 @@ Gregg: 他特别特别需要一个格雷格。 #line:c09c92
         Gregg: 嗯。但安格斯更需要…… #line:1d6a9f
 Gregg: 他没过过好日子。 #line:5f3e6c
 Gregg: 他家里人也是一坨狗屁不如的垃圾。 #line:4ba95e
-    ->你为什么要这么说他们家啊？ #line:2dabc2
+    ->怎么回事？ #line:2dabc2
         Gregg: 我就是觉得， #line:d12713
         Gregg: 他们就是群混蛋， #line:16289b
         Gregg: 就是一群蠢蛋加混蛋。 #line:7d16a6

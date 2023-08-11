@@ -9,16 +9,16 @@ Gregg: 你怎么会在这儿啊？ #line:e3044e
 Mae: 我回来啦！ :| #line:1c1182
 Gregg: 就回来今天一天吗？ :) #line:eb57d8
 Mae: 当然是回来就不走啦！ #line:339191
-Gregg: 你没死在大学里真是太糟糕了。 #line:c76371
+Gregg: 好想你死在大学里。 #line:c76371
 <<wait 2>>
 Mae: :) #line:61b6c0
-Mae: 你没得肉食病真是太糟糕了。 #line:31c363
-Gregg: 你没加入邪教实在太糟糕了。 #line:039e1d
-Mae: 你双手没被卸实在太糟糕了。 #line:19c09a
-Mae: 比如在一个饮料机故障中。 #line:60ab5e
+Mae: 好想你得肉食病。 #line:31c363
+Gregg: 好想你加入邪教。 #line:039e1d
+Mae: 好想你失去自己双手， #line:19c09a
+Mae: 就在一场饮料机故障里。 #line:60ab5e
 Gregg: 老天，见到你可真高兴啊。 #line:0f02e4
-Gregg: 啊 啊 啊 啊 啊，太 棒 啦！！！ \o/ #line:9c2246
-Mae: 安格斯怎么样了？你们俩还在一起“搞基"吗？ #line:04bca3
+Gregg: 啊啊啊啊啊，太棒啦！！！ \o/ #line:9c2246
+Mae: 安格斯怎么样了？你们俩还在一起吗？ #line:04bca3
 Gregg: _o_ #line:2caa6f
 Gregg: 等下！ #line:7b75d9
 <<close>>
@@ -35,15 +35,15 @@ Gregg: 换个BGM，一起燥起来！！！ #line:206644
 <<playMusic Gregg>>
 <<wait 3>>
 <<run Gregg InFrontOfCounter wait>>
-Gregg: 你 说 啥？ #line:ec26de
+Gregg: 你说啥？ #line:ec26de
 Mae: 我问“安格斯怎么样了"！ #line:700c72
-Gregg: 话 说，|你 回 来 是 想|干 什 么 呀？？？ \o/ #line:f29224
-Mae: 我住这儿啊！ #line:3f846f
-Gregg: 你是从什么时候开始住这儿的！！！ #line:ccaeef
-Mae: 大概是从昨天晚上11点开始的吧。 #line:0c4133
-Gregg: 简 直 是 爽 到 爆 啊！！！ #line:c5c44e
+Gregg: 你在这里是做什么？？？ \o/ #line:f29224
+Mae: 我住这儿！ #line:3f846f
+Gregg: 从什么时候！！！ #line:ccaeef
+Mae: 大概从昨天晚上？11点开始？ #line:0c4133
+Gregg: 太棒了！！！ #line:c5c44e
 Gregg: 来乐队排练吧！ _o_ #line:217aea
-Mae: 哇哦，我滴个神！乐队还在啊？ :o #line:ada5a9
+Mae: 哇哦，我滴个神！乐队还在？ :o #line:ada5a9
 <<trigger Gregg Idle Shrug>>
 Gregg: 当然！ #line:260ae6
 Mae: 啥时候排练？ :| #line:90279e
@@ -55,7 +55,7 @@ Mae: 真的？ :) #line:ae35ae
 Gregg: _o_ #line:3bbea2
 <<close>>
 <<run Gregg OffLeft wait>>
-Gregg: 啊 哈 哈 哈 哈 哈 哈 哈！！！！ #line:c649d1
+Gregg: 啊哈哈哈哈哈哈哈！！！！ #line:c649d1
 <<unlockDoodle Gregg1>>
 <<fadeOut 1 wait>>
 <<scene BandPractice>>
@@ -68,7 +68,7 @@ colorID: 0
 position: -1048,1234
 ---
 Gregg: 要来排练吗？给你两个选择：要还是来？ #line:58cf98
-[[当然要了。|Yes_A2D1]] #line:738512
+[[要啊。|Yes_A2D1]] #line:738512
 [[来呀。|Yes_A2D1]] #line:a6b997
 
 ===
@@ -94,7 +94,7 @@ tags:
 colorID: 0
 position: -1036,1843
 ---
-Gregg: 你的选择很明智嘛！ #line:57571a
+Gregg: 明智选择！ #line:57571a
 <<fadeOut .5 wait>>
 <<scene BandPractice>>
 
@@ -277,7 +277,7 @@ Gregg: 想出去玩玩不？ #line:db9393
 ->今天还有不少事呢。 #line:83ceb6
     Gregg: 好吧，那就再说吧！ #line:e870c1
 ->好啊，兄弟！燥起来吧！ #line:dcc9e8
-    Gregg: 太他喵的对啦！ #line:3f083c
+    Gregg: 太他喵的对了！ #line:3f083c
     <<set $gregg_friendship_quest to 2>>
     <<irisOut 1 wait>>
     <<sectionTitle GreggFQ2Intro GreggAngusApartmentLobby>>
@@ -295,7 +295,7 @@ position: 1796,837
     Mae: 吼吼！你怎么了？ #line:9c4e20
     Gregg: 我想找点事干！！！！ #line:c5132a
     Mae: 好的哟！ #line:93e9de
-        ->*所有*种类的咖啡你都喝过吗？ #line:2e4fc5
+        ->“所有"种类的咖啡你都喝过吗？ #line:2e4fc5
             Gregg: 我不能喝咖啡，喝了会让我焦虑的。 #line:94b50b
             Mae: 哦，哇哦，这也太糟了吧。 #line:4e81be
             Gregg: 而且咖啡多难喝啊。 #line:77d4d7

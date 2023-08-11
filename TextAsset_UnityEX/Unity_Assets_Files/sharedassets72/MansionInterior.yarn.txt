@@ -38,7 +38,7 @@ position: 1472,-44
     <<wait 1>>
     <<playOneShot event:/mansion/elevator_bell BasementElevatorSFX>>
     <<wait 1>>
-    Mae: 见 鬼。 #line:a338f2
+    Mae: 见鬼。 #line:a338f2
     Gregg: 我继续开锁， #line:cf67ad
     Gregg: 你去看看咱们能不能从后门出去。 #line:7f4d90
     <<close>>
@@ -48,7 +48,7 @@ position: 1472,-44
     <<set $mansion_checked_locked_elevator to 1>>
 <<else>>
     Mae: 门锁上啦！ #line:31b641
-    Gregg: 该 死！ #line:57a453
+    Gregg: 该死！ #line:57a453
 <<endif>>
 
 ===
@@ -93,14 +93,14 @@ position: 1748,-56
     Mae: 电梯。 #line:98096c
     Gregg: 该死。 #line:a845e7
     Gregg: 真TM该死！ #line:dc9613
-    Mae: 快 点 啊！！！ #line:a8a71d
+    Mae: 快点啊！！！ #line:a8a71d
     <<cameraFollowPlayer 3>>
     <<setAnimBool Gregg lockPicking false>>
     Gregg: 我打开啦！ #line:214592
     <<close>>
     <<tell SceneLink6 Open>>
     <<wait 1>>
-    Mae: 快 走！！！ #line:27ccca
+    Mae: 快走！！！ #line:27ccca
     //they get in and they zoom down to the basement//
     <<tell SceneLink6 Activate>>
 <<elseif $has_paperclip>>
@@ -137,8 +137,8 @@ Mae: 这些日历上的画面看起来像是廊桥。 #line:f73494
 Gregg: 那边那个日历上印着著名的灾难事件。 #line:99598e
 Mae: 这张桌子的主人肯定很酷， #line:7c8c69
 Mae: 但另一张桌子的主人就很无聊。 #line:222c60
-Gregg: 我在想，他们俩会不会是朋友。 #line:43cb8d
-Gregg: 我的意思是，你和同事不一定会变成朋友。 #line:d99daa
+Gregg: 你说他们会不会是朋友。 #line:43cb8d
+Gregg: 虽然和同事不一定会变成朋友。 #line:d99daa
 Mae: 嗯，对啊。 #line:4858aa
 Gregg: 可能这间办公室也没那么无聊嘛。 #line:103359
 Mae: 不不不，我觉得这里无聊得要死。 #line:3a2d8e
@@ -150,7 +150,7 @@ tags:
 colorID: 4
 position: 2541,-1
 ---
-Mae: 找 到 啦！ #line:de3d42
+Mae: 找到啦！ #line:de3d42
 <<if $has_pliers>>
 	Gregg: 好的，咱们拿到需要的东西了。 #line:452217
 	Gregg: 咱们去开把电梯门，然后看看楼上有什么。 #line:eed9d3
@@ -303,8 +303,8 @@ colorID: 4
 position: 405,-370
 ---
 //Mae and Gregg are laying on the floor, having fallen down the stairs//
-Gregg: 该 死 的 #line:d3990d
-Gregg: 猫 头 鹰！ #line:9def13
+Gregg: 该死的 #line:d3990d
+Gregg: 猫头鹰！ #line:9def13
 Mae: 你没事吧？ #line:322f34
 Gregg: 我觉得没什么事。 #line:7cffe7
 Gregg: 那真是太悬啦！ #line:6ec1b5
@@ -337,7 +337,7 @@ position: 1204,-526
 <<set $looked_between_elevators to 1>>
 Gregg: 姐们，那是不是……有两部电梯啊？ #line:9ce589
 Gregg: 看起来，还挺新的。 #line:98593d
-Gregg: 而且还锁上了。 #line:1dabd2
+Gregg: 也锁上了。 #line:1dabd2
 Mae: 天哪。这地方估计全是电梯。 #line:497d64
 Gregg: 真是怪了，为什么这儿要弄两部电梯呢？ #line:a6f189
 Mae: 一部是给幽灵用的，另一部是给正常人用的。 #line:c0ef8a

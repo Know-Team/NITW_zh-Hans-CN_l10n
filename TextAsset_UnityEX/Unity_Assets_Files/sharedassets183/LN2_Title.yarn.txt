@@ -4,13 +4,13 @@ colorID: 0
 position: 536,234
 ---
 <<showTalkingHeads>>
-Mae: 我总有一天会当上抢银行大盗！ #line:2a3a77
+Mae: 我总有一天会当上银行大盗！ #line:2a3a77
 Granddad: 哈哈哈，你想在监狱里过长至夜节吗？ #line:4fba1c
 Mae: 我要一直抢到我金盆洗手！ #line:9e11c5
 Mae: 而且他们抓不住我！ #line:63822d
 Granddad: 天网恢恢，疏而不漏，我的孩子。 #line:388b95
 Mae: 什么是天网啊？ #line:bd471a
-Granddad: 就是一个能把你抓进监狱的东西哦。 #line:e4e6e4
+Granddad: 就是一个能把你抓进监狱的东西。 #line:e4e6e4
 Mae: 不会的，他们都不可能抓住我！ #line:a139d6
 Granddad: 好吧好吧，睡觉前想听故事吗？ #line:837055
 Mae: 我要听一个关于长至夜的故事！ #line:614c3b
@@ -18,9 +18,9 @@ Granddad: 当然了，我的小梅。 #line:da2e44
 Mae: 我可不要听善心熊那种傻傻的故事。 #line:33f32b
 Granddad: 依你，依你，那给你讲一个关于鬼魂的故事好不好？ #line:c9f572
 Mae: 哦！哦！哦！太棒了，爷爷真好！ #line:bf8e10
-Granddad: 好的，爷爷要开始了。 #line:490706
+Granddad: 好的，爷爷要开始了…… #line:490706
 Mae: 我希望故事里有一大堆的人死翘翘。 #line:2899a1
-Granddad: 安静哦，孩子，故事要开始了。 #line:ec4a29
+Granddad: 安静噢，孩子，故事要开始了。 #line:ec4a29
 Granddad: 很久很久以前，在那小山中…… #line:339fbe
 <<hideTalkingHeads>>
 <<fadeOut 4 0 0 0>>

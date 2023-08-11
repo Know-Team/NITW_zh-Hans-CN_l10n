@@ -24,11 +24,11 @@ position: 393,1283
 ---
 Mae: 嗯，我应该选点什么呢…… #line:0a9fe3
 <<shuffleNextOptions>>
-->煮玉米菜豆…… #line:f40611
+-> 欧式杂菜……哦是杂菜。 #line:f40611
     <<set $grocery_canned_goods to 1>>
-->绿豆豆 #line:5c56a7
+-> 绿豆豆 #line:5c56a7
     <<set $grocery_canned_goods to 2>>
-->奶油鸡肉汤。 #line:2c6f37
+-> 奶油鸡肉汤。 #line:2c6f37
     <<set $grocery_canned_goods to 3>>
 Mae: 嗯，感觉还不错吧？ #line:8972e1
 ->不好。 #line:3e1e2c
@@ -89,30 +89,30 @@ tags:
 colorID: 3
 position: 1248,244
 ---
-Dad: 啊嘿，姑娘们！ #line:b0f39c
+Dad: 诶嘿，姑娘们！ #line:b0f39c
 Mae: 老爸，你好啊！ #line:09a736
-Dad: 你好啊，碧娅，好久不见啦！ #line:a9a7d4
-Bea: 您最近过的怎么样，博罗夫斯基先生？ #line:d7c51c
-Dad: 好得很！ #line:82cd69
+Dad: 你好啊，碧娅，好久不见！ #line:a9a7d4
+Bea: 最近过得怎么样，博罗夫斯基先生？ #line:d7c51c
+Dad: 还不错！ #line:82cd69
 Dad: 这儿就只有我和这堆肉。 #line:e65545
 ->肉肉朋友。 #line:6bf390
     Dad: 这样也可以和大鱼大肉交朋友。|（“meat"和“meet"发音相同，|Mae的父亲理解成了“meet friends"） #line:d706c5
-->店里只有您一个人吗？ #line:1f44c2
-    Dad: 哦，店里也不总是我一个人。但今晚的确就我一个人。 #line:d3efcb
+-> 店里只有你一个人吗？ #line:1f44c2
+    Dad: 哦，不总是。但今晚就我一个人。 #line:d3efcb
     Dad: 这儿真是世界上最烂的地方了。 #line:78360b
-Bea: 对头。 #line:e8ffdc
+Bea: 没错。 #line:e8ffdc
 <<lookAt Mae Dad>>
 Mae: 在这儿见到你也是够怪的。 #line:830792
 Dad: 去他的下岗再就业吧！ #line:14bc89
 Mae: 我们进来的时候，我好像看见我以前的音乐老师了。 #line:a49e56
-Bea: 哦，没错。阿米斯特德先生*曾经*的确是音乐老师。 #line:5b9d35
+Bea: 哦，没错。*曾经*的阿米斯特德音乐老师。 #line:5b9d35
 Mae: 他现在的工作，好像就只是对顾客说“欢迎光临"吧？ #line:6d3895
-Dad: 对，体面点也可以叫“迎宾前台"。 #line:2c8bb0
+Dad: 对，叫做迎宾前台。 #line:2c8bb0
 Dad: 我就觉得好像在哪儿见过他。 #line:3d57c4
 Mae: 下岗再就业认识的？ #line:ff5ba3
 Dad: 不记得了。 #line:ccd6c3
 Mae: 哦。 #line:087c8d
-Dad: 那么两位可爱的女士，你们到这儿有何贵干呢？ #line:ccba89
+Dad: 那么两位可爱的女士，到这儿有何贵干呢？ #line:ccba89
 Bea: 我们来买点东西，准备回去做晚饭。 #line:b17b70
 Dad: 你爸最近怎么样？ #line:7796ad
 Bea: 还行。 #line:71d878
@@ -132,7 +132,7 @@ Bea: 可能是这样吧。 #line:126ebb
 Mae: 食～物～！ #line:f3d6c9
 Bea: 不过，老驴生鲜倒闭这事，和这儿的打工人没一点关系。 #line:dd0a34
 ->的确。 #line:75332c
-->老老老老驴驴驴驴！ #line:913892
+->老驴驴驴驴驴！ #line:913892
     Bea: 看来你让猎豹鲜生的人知道了谁才是老大。 #line:50cbfc
     Bea: 说真的， #line:7b7b9b
     Bea: 你知道吗，咱们的参议员就是猎豹鲜生董事会的人。 #line:7fcbab
@@ -142,8 +142,8 @@ Bea: 好吧。 #line:dc268f
 Bea: 我还是赶快把东西给买完算了。 #line:0519cd
 Mae: 噢，我还以为，咱们出来是为了好好玩一下呢。 #line:8e830f
 Bea: 呃。 #line:634095
-Bea: 咱们是出来了，但不是来玩的。 #line:d3152a
-Bea: 我只是想来这儿买点东西，然后回家给我和我老爸做顿晚饭罢了。 #line:b452f6
+Bea: 咱们只是一起出来。 #line:d3152a
+Bea: 我只是想来这儿买点东西，然后回家给我和我老爸做顿晚饭。 #line:b452f6
 Bea: 所以，今天晚上我可不想买太多东西。 #line:d1e3c7
 Mae: 让我去挑挑咱们今晚的食材！ #line:1c115a
 Bea: 哦，等等，你是想去我家吃晚饭吗？ #line:fb386d
@@ -153,29 +153,29 @@ Bea: 让我想想。 #line:8c9c2b
 Mae: 你是在委婉地邀请我吗？ #line:11de4c
 	Bea: 我可没有。 #line:eab27e
 	Bea: 但是不让你去我家吃饭的话，又感觉有点怪…… #line:5814f2
-Mae: 那我就去拿吃的啦！ #line:6371db
+Mae: 我去拿吃的啦！ #line:6371db
 <<close>>
 <<wait 1.5>>
 Bea: 等等，你不会是认真的吧？ #line:3eb3e7
-Mae: 当然是认真的啦！ #line:a8770f
-Bea: 那正好，我可不喜欢买东西。所以，还是你去买吧。 #line:3cecad
-Bea: 咱们做……一道主菜、两道副菜，应该就够了吧？ #line:f82c64
+Mae: 是的！ #line:a8770f
+Bea: 那正好，我不喜欢购物，所以你去吧。 #line:3cecad
+Bea: 咱们做……一道主菜、两道副菜？ #line:f82c64
 ->太棒啦！ #line:602e6e
     Bea: 额，我们家比较传统。 #line:c1b6e4
     Mae: 你们喜欢哪种主菜啊？ #line:93f378
 ->主菜是什么硬菜呀？ #line:10f4f1
 Bea: 等你都挑完了，咱们再去肉类区看看。 #line:0cd607
-Mae: 那甜点呢？ #line:e32ffb
+Mae: 甜点呢？ #line:e32ffb
 Bea: 我们已经不是小孩了。 #line:f6e596
-Mae: 那开胃菜呢？ #line:0302de
-Bea: 梅，我家最近资金比较紧张。 #line:57c74a
+Mae: 开胃菜呢？ #line:0302de
+Bea: 梅，最近资金比较紧张。 #line:57c74a
 Mae: 好好好，那你先逛着，我一会儿就回来。 #line:323b95
 Bea: 快去快回，别买乱七八糟的东西。还有，我老爸对西兰花过敏。 #line:9940ee
 <<if $did_bea_friendship_quest_1 is 1>>
     Bea: 哦，还有……这回你可别偷东西了。 #line:24d2aa
     Mae: 哦。 #line:c726dd
     Bea: 梅，我身上的钱可买不了太多东西。 #line:d0c4a4
-    Bea: 而且这里还有监控摄像头。 #line:506520
+    Bea: 而且这里还有监控。 #line:506520
     Mae: 说的是啊。 #line:383df7
 <<endif>>
 <<playMusic grocery_shopping 3>>
@@ -188,7 +188,7 @@ position: 710,-3
 <<if $grocery_canned_goods is 0>>
     Bea: 咱们得买点罐头。 #line:70d893
 <<elseif $grocery_box is 0>>
-    Bea: 可能还得买点盒装食品。 #line:69962d
+    Bea: 可能还得买点盒装食品吧？ #line:69962d
 <<elseif $grocery_cooler is 0>>
     Bea: 你可以去冰柜那儿看看，那儿应该有咱们想要的。 #line:356763
     Mae: 全是冷冻食品。 #line:186792
@@ -215,7 +215,7 @@ $grocery_canned_goods: #line:76a00b
 
 $grocery_box: #line:e1f87d
 1 - 芝士通心粉 #line:f257b6
-2 - 扇贝土豆 #line:1d1e3a
+2 - 扇形土豆 #line:1d1e3a
 3 - 土豆泥 #line:2dc6b6
 4 - 米饭 #line:121815
 
@@ -271,20 +271,20 @@ position: 2232,394
 
 <<fadeOutMusic 5>>
 <<lookAt Mae Dad>>
-Dad: 好了，姑娘们，让我看看你们都买什么啦！ #line:efe52f
+Dad: 好了，姑娘们，让我看看你们都买了什么！ #line:efe52f
 Dad: 嗯……嗯……不错，不错。 #line:bd6d5f
 <<if $grocery_quality is 1>>
-    Dad: 看来你们晚上想准备一顿大餐啊！ #line:cee0e9
+    Dad: 看来你们晚上准备大餐一顿！ #line:cee0e9
 <<elseif $grocery_quality is -1>>
     Dad: 嗯，这些东西买得……倒挺有意思的。 #line:c44a10
     Mae: 挺有意思？ #line:c8fcd7
     Dad: 可能是我的想法有点过时了吧。 #line:540b97
-    Dad: 祝你俩好运啦！ #line:39c13e
+    Dad: 祝好运！ #line:39c13e
 <<else>>
     Dad: 看起来100%没问题。 #line:c5754d
 <<endif>>
 
-Bea: 好的，谢谢您，博罗夫斯基先生！ #line:4119a8
+Bea: 好的，谢谢，博罗夫斯基先生！ #line:4119a8
 Dad: 代我向你父亲问好！ #line:9a4d5d
 Mae: 晚点见，老爸！ #line:1fd6fb
 Dad: 玩得开心点儿，姑娘们！ #line:f29948
@@ -299,8 +299,8 @@ colorID: 3
 position: 2226,744
 ---
 Mae: 嗯，我是不是要来点香酥脆呢？它和肉可是绝配。 #line:d51dba
-->不确定。 #line:730fac
-->确定。 #line:24851a
+-> 不要。 #line:730fac
+-> 好的。 #line:24851a
     <<set $grocery_bakey_shakey to 1>>
 ===
 title: Meat
@@ -315,7 +315,7 @@ position: 1562,149
 ->我要鸡肉。 #line:04a91c
     <<set $grocery_meat to 2>>
     Dad: 那肯定错不了！ #line:870377
-->请给我来一条您这儿最好的鱼！ #line:9a54e6
+->给我来一条这儿最好的鱼！ #line:9a54e6
     <<set $grocery_meat to 3>>
     Bea: 别要太好的。就准备三个人的饭就行，用不着买太贵的东西。 #line:01377d
     Dad: 没问题！ #line:048de0
@@ -323,10 +323,10 @@ position: 1562,149
     <<set $grocery_meat to 4>>
     Dad: 这个我们有！这个我们有！ #line:e5e4a4
 Mae: 嗯……到底要不要这肉呢？ #line:2a0093
-->不确定。 #line:202380
+-> 不要。 #line:202380
     Mae: 等一下，老爸……我改主意了。 #line:e1f3ac
     [[Meat]]
-->确定。 #line:c63c62
+-> 就这个。 #line:c63c62
     [[AfterMeat]]
 ===
 title: AfterMeat
@@ -335,18 +335,18 @@ colorID: 3
 position: 1896,293
 ---
 Dad: 碧娅，我们随时欢迎你和我们共进晚餐！ #line:2adcea
-Mae: 在这儿吃？猎豹鲜生？ #line:947f21
-Dad: 梅，当 然 是 请 碧 娅 到 咱 们 家 去 吃 晚 饭 啦。 #line:853382
+Mae: 在猎豹鲜生？ #line:947f21
+Dad: 梅，当然是请碧娅到咱家去吃晚饭。 #line:853382
 Dad: 我可以给你们做烧烤！ #line:f4db0e
 Dad: 店里的东西，想吃什么拿什么。 #line:7648fb
-Bea: 那真是太好了，谢谢您了。 #line:132b9f
+Bea: 那真是太好了，谢谢您。 #line:132b9f
 Mae: 没错！ #line:458233
 Mae: 好了，把肉给我们吧！ #line:5afa32
 Dad: 来咯！ #line:10b6bf
 <<lookAt Mae Bea>>
-Mae: 好！晚饭就这么定啦！ #line:973b42
+Mae: 好！晚饭就这么定了！ #line:973b42
 Bea: 我还没看你拿了哪些东西。 #line:ada333
-Bea: 我实在太累啦。 #line:e34641
+Bea: 我实在太累了。 #line:e34641
 Mae: 反正肯定会很不错的！ #line:3faaf0
 Bea: 好……吧，咱们接着逛吧。 #line:c05d42
 [[EndGroceries]]
@@ -356,7 +356,7 @@ tags:
 colorID: 3
 position: -98,655
 ---
-Mae: 欧式杂菜…… #line:a0ded5
+Mae: 欧式杂菜……哦是杂菜。 #line:a0ded5
 [[Confirm1]]
 ===
 title: Confirm2
@@ -364,8 +364,8 @@ tags:
 colorID: 3
 position: 762,1021
 ---
-->不确定。 #line:580a58
-->确定。 #line:fd473e
+-> 不要。 #line:580a58
+-> 就这个。 #line:fd473e
     Mae: 天哪，太好吃了。 #line:3b2d6d
     <<confirmGroceryChoice>>
 ===
@@ -374,8 +374,8 @@ tags:
 colorID: 3
 position: 1740,1012
 ---
-->不确定。 #line:3cfa5b
-->确定。 #line:5ff4e0
+-> 不要。 #line:3cfa5b
+-> 就这个。 #line:5ff4e0
     Mae: 呜啦啦。 #line:1e59e3
     <<confirmGroceryChoice>>
 ===
@@ -385,8 +385,8 @@ colorID: 3
 position: 1483,1554
 ---
 Mae: 嗯，我是不是该来点香酥脆呢？它和肉可是绝配。 #line:83b538
-->不确定。 #line:379c65
-->确定。 #line:30dcb7
+-> 不要。 #line:379c65
+-> 就这个。 #line:30dcb7
     Mae: 天啊，太美味了。 #line:b8fddc
     <<confirmGroceryChoice>>
 ===
@@ -411,8 +411,8 @@ tags:
 colorID: 3
 position: 76,936
 ---
-->不确定。 #line:eeadb2
-->确定。 #line:b8df7f
+-> 不要。 #line:eeadb2
+-> 就这个。 #line:b8df7f
     Mae: 美味。 #line:e8fc45
     <<confirmGroceryChoice>>
 ===
@@ -429,7 +429,7 @@ tags:
 colorID: 3
 position: 814,653
 ---
-Mae: 土豆！ #line:a8d956
+Mae: 美味土豆就你了！ #line:a8d956
 [[Confirm2]]
 ===
 title: VerifyBox3
@@ -445,7 +445,7 @@ tags:
 colorID: 3
 position: 1277,647
 ---
-Mae: 美味的米饭。 #line:57cd92
+Mae: 好棒的米饭。 #line:57cd92
 [[Confirm2]]
 ===
 title: VerifyCooler1

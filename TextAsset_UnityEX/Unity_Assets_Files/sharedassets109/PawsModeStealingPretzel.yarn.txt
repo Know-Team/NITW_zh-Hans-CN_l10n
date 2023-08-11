@@ -17,11 +17,11 @@ position: 505,248
     <<set $caught_stealing_pretzel += 1>>
 <<elseif $caught_stealing_pretzel is 2>>
     Cook: 这 些 东 西 可 都 是 要 用 钱 才 能 买 的，知 道 吗？ #line:62e28f
-    Mae: 我当然知道啦！ #line:15f80f
+    Mae: 我知道我知道！ #line:15f80f
     <<set $caught_stealing_pretzel += 1>>
 <<else>>
     Cook: 嘿！ #line:21cd1a
-    Mae: 啊，好 吧，好 吧。 #line:18699f
+    Mae: 啊，好吧，好吧。 #line:18699f
     <<set $caught_stealing_pretzel += 1>>
 <<endif>>
 <<irisOut 1 wait>>

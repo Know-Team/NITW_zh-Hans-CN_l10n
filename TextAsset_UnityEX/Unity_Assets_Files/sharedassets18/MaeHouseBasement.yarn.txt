@@ -6,12 +6,12 @@ position: 795,264
 <<if $safe_combination is 0>>
     <<if $tried_safe is 0>>
         // checking it out for the first time, no safe combo tho
-        Mae: 咦，这儿有个保险箱。 #line:1e7a2b
+        Mae: 哦豁，这儿有个保险箱。 #line:1e7a2b
         Mae: 怎么才能把它打开呢？ #line:0dd224
         Mae: …… #line:c3e5d3
-        Mae: 用炸药炸？ #line:9fbe3d
+        Mae: 用炸药？ #line:9fbe3d
         Mae: …… #line:9f2ae3
-        Mae: 这方法肯定不行。 #line:7a925c
+        Mae: 不行。 #line:7a925c
         <<set $tried_safe to 1>>
     <<else>>
         // repeated checking of the safe without the combo
@@ -19,14 +19,14 @@ position: 795,264
     <<endif>>
 <<else>>
     // opening the safe with the combination
-    Mae: 哦，等等。哈哈哈哈，我知道怎么打开了。 #line:ac3172
+    Mae: 噢，等等。哈哈哈哈，我知道怎么打开了。 #line:ac3172
     Mae: 向左转到45，然后向右转到100，再向左转到22，之后再向左转到90，最后向右转到15。 #line:fb6347
-    Mae: 哦，爷爷，真是太感谢了。 #line:ddae96
+    Mae: 爷爷，真是太感谢了。 #line:ddae96
     Mae: 啊哈……门开了。 #line:867fe3
     <<wait 2>>
     Mae: 我去，什么情况？ #line:e61f71
     Mae: 这是一颗……看起来很有年头的牙吗？ #line:1ae8f5
-    Mae: 没错，这的确是一颗牙。 #line:5cc668
+    Mae: 没错，就是一颗牙。 #line:5cc668
     Mae: 爷爷居然把一颗牙……放在了地下室……的保险箱里。 #line:3f42e7
     <<if $knows_tooth>>
         // if mae found out about the tooth from the microfiche already

@@ -19,9 +19,9 @@ Mae: 哇，这也太狗血了吧。 #line:eb71e2
 Chazokov: 但无论在海里沉得有多深，她也不愿死去。 #line:e1c648
 Mae: [shake=.01]那 必 须 的！[/shake][/size] #line:08d014
 Chazokov: 哦？你也是绝对不死的吗？ #line:3830cb
-    ->我想，某一天我还是会死吧。 #line:10b838
+    ->我想，在某天吧。 #line:10b838
     ->我不知道。 #line:648731
-    ->[shake=.05]当 然 不 可 能 啦！[/shake] #line:f15b59
+    ->[shake=.05]当然了！[/shake] #line:f15b59
         Chazokov: 吼吼吼吼～！ #line:125e56
         Chazokov: 看来你不仅会违抗众神的死亡诅咒，还会违抗卡斯蒂斯的不死诅咒，或许你应该叫“薛定谔的梅"。 #line:baf44b
 Chazokov: 众神在这些故事中只是意象， #line:fae4ed
@@ -62,7 +62,7 @@ Chazokov: 直到他准备去羞辱多尔的鸡仔。 #line:c4d6a6
 Chazokov: 多尔决定反击，他先杀害了国王的鸡群， #line:80c609
 Chazokov: 然后是他祖先的领地， #line:b42663
 Chazokov: 最后是他的家族。 #line:056f4c
-Mae: Giao！ #line:8fb487
+Mae: 靠！ #line:8fb487
 Chazokov: 当他来到国王面前的时候， #line:c33a1b
 Chazokov: 国王一言不发。 #line:828164
 Mae: 我想把这个家伙纹在我身上。 #line:15e138
@@ -163,7 +163,7 @@ Chazokov: 他们就应该被直接淘汰扔进垃圾桶里吗？ #line:206642
     ->不是。 #line:b487bd
         Chazokov: 那怎么办呢？ #line:a77050
         Mae: 我不知道。 #line:eaa7b1
-        Mae: emmmmm…… #line:9f8c72
+        Mae: 嗯…… #line:9f8c72
         Mae: 国王就不能给斯特林一份其他的工作吗？ #line:15c6fa
         Mae: 或者不如这样 #line:ca025a
         Mae: 为了活命他可以前往 #line:df515f
@@ -208,7 +208,7 @@ Chazokov: 随着她的事迹传到整片大陆， #line:e7c5f2
 Chazokov: 越来越多的人在晚上为她祈祷。 #line:94b3c9
 Chazokov: 他们认为西蒙娜是他们的救世主。 #line:cc484c
     ->她是吗？ #line:a4a096
-    ->她一个人得承受多大的压力啊 #line:2e8636
+    ->她一个人得承受多大的压力啊。 #line:2e8636
         Chazokov: 当然她并非独自战斗。 #line:7a5993
         Chazokov: 她其实只是组织中的一个成员， #line:50e2d7
         Chazokov: 但她成为一个标志。 #line:1e535e
@@ -509,7 +509,7 @@ Chazokov:谢谢你和我一起看星星。 #line:3d8a0b
     Chazokov: 一起发现了它们。 #line:88cc00
     Chazokov: 这不说明一些东西么? #line:138ad0
     Mae: 东西东西东西。 #line:264806
-    Mae: 我奶奶也曾经那么曰过。 #line:b5494d
+    Mae: 我爷爷也曾经那么说过。 #line:b5494d
     Mae: 故事里的一些事情已经真的发生了 #line:956dd7
     Mae: 因为故事已经被你听到了。 #line:853d0e
     Chazokov: 真不错。 #line:878ec9

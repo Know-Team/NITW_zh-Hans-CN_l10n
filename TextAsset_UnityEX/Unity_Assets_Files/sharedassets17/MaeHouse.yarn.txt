@@ -12,11 +12,11 @@ position: -2503,485
     <<wait 3>>
     <<walk Mae EnterMaePositionForDadCouchTalk wait>>
     <<set $door_blocker to 1>>
-    Mae: 当 当！|还 记 得 我 吗？ #line:b84625
-    Dad: 啊 啊 啊 啊 啊 啊！ #line:bd8966
-    Dad: 梅！你吓得我心脏病都要犯啦！ #line:1bc33d
-    Mae: 那 可 太 好 啦！/o\ #line:2c34f5
-    Dad: 你怎么回- #line:85bac5
+    Mae: 当当！|还 记 得 我 吗？ #line:b84625
+    Dad: 啊啊啊啊啊啊！ #line:bd8966
+    Dad: 梅！你吓得我要犯心脏病了！ #line:1bc33d
+    Mae: 那可太好啦！/o\ #line:2c34f5
+    Dad: 你怎么回…… #line:85bac5
     <<wait 2>>
     Dad: 噢噢噢噢！ #line:ab2e3d
     Mae: _o_ #line:851230
@@ -24,17 +24,17 @@ position: -2503,485
     Mae: 你以为错了！ \o/ #line:01859c
     Mae: _o_ #line:61a150
     Dad: 你怎么回来的？ #line:3cf7f3
-    Mae: 当 然 是 走 回 来 的 了，在 被 抓 之 前…… #line:c93f3e
-    Mae: 被 我 那 个 商 场 保 安 姨 妈 给 抓 了。 :\ #line:c366f8
-    Dad: 哦，你有替我向茉莉问好吗？ #line:146607
+    Mae: 当然是走回来的，在被逮捕前…… #line:c93f3e
+    Mae: 被那个商场保安姨妈给逮捕了。 :\ #line:c366f8
+    Dad: 哦，你有替我向莫莉问好吗？ #line:146607
     Mae: 没！ :( #line:3fb751
-    Mae: 我 才 不 替 别 人 问 好 呢！ #line:1efd12
-    Mae: 去 她 喵 的 条 子！ #line:a229ba
-    Mae: 我 要 上 床 睡 觉 啦！ #line:a6c3e8
-    Mae: 我 的 床 还 在 吗？ :o #line:14cfed
+    Mae: 我才不替别人问好！ #line:1efd12
+    Mae: 去她喵的条子！ #line:a229ba
+    Mae: 我要上床睡觉啦！ #line:a6c3e8
+    Mae: 我的床还在吗？ :o #line:14cfed
     Mae:还是说也要等到明晚才行？ #line:65941b
      Dad: 啊，梅。能再听到你的声音真是太好了。 #line:4ef869
-    Mae: 晚 安 喽！ :| \o/ #line:f920c0
+    Mae: 晚安喽！ :| \o/ #line:f920c0
     Mae: _o_ #line:c34560
     <<set $dad_done to 1>>
     <<unlockDoodle DadOlder>>
@@ -88,10 +88,10 @@ position: -914,1466
 ---
 Dad: 所以今晚准备干什么去？ #line:8c9eec
 <<if $did_gregg_friendship_quest_1 is 1>>
-    Mae: emmm…… #line:3a3c42
+    Mae: 嗯呣…… #line:3a3c42
     Mae: 要去帮格雷格搬东西。 #line:126fa6
     Dad: 瞧瞧你啊，真够朋友。 #line:c8a5ce
-    Dad: 帮着搬东西可是好朋友的标志行为。 #line:5ca061
+    Dad: 帮搬东西可是好朋友的标志。 #line:5ca061
     Mae: 是啊，我们是最要好的朋友， #line:cd5084
     Mae: 一向如此。 #line:ca0843
     Mae: 所以我觉得我们的关系应该不只是会帮忙搬东西的那种朋友。 #line:171b68
@@ -287,7 +287,7 @@ Mae: 我从锯木场那边穿过了山谷。 #line:a7dc4f
 Mae: 差点就挂掉了。 #line:eb2719
 Dad: 什么？ #line:a11663
 Mae: 嗯，那些原木差点把我砸死。 #line:4e953d
-Mae: 这些事都是家常便饭啦。 #line:f48a25
+Mae: 都是家常便饭啦。 #line:f48a25
 Dad: 好吧，我向你保证，我再也不会让你受困了。 #line:d39f3c
 [[Dad_A1D1_Continue]]
 ===
@@ -318,7 +318,7 @@ position: -2102,1317
 ---
 Dad: 你知道的，我记性不好。 #line:017338
 Mae: 是啊，我知道。 #line:40aacf
-Mae: 我是说，您做得已经很不错了。 #line:4f2054
+Mae: 我是说，你做得已经很不错了。 #line:4f2054
 Dad: 是啊，我还没忘怎么吃饭，怎么呼吸呢。 #line:55bc76
 Mae: 你记性确实不错，还记得怎么走路呢。 #line:de0a9b
 Dad: 都该给我发个金牌了。 #line:ed8a42
@@ -329,19 +329,19 @@ tags:
 colorID: 2
 position: -2110,1087
 ---
-Mae: 哦，对 啦！我 都 忘 了 跟 你 说 啦！ #line:d8e810
-Dad: 说什么啊？ #line:7f2de2
-Mae: 今 天 我 们 在 地 上 看 见 了 一 只 胳 膊！ #line:1fae59
+Mae: 哦，对啦！我都忘了跟你说啦！ #line:d8e810
+Dad: 什么？ #line:7f2de2
+Mae: 今天我们在地上看见了一只胳膊！ #line:1fae59
 Dad: 我们还在假装现在是昨天吗？ #line:fad85f
 Mae: 不！我们当时从嘎嘣脆披萨店走出来就看见那边有只胳膊！ #line:120009
 Dad: 就像……一只胳膊吗？ #line:ae3e71
-Dad: 你说什么？ #line:534a41
+Dad: 什么？ #line:534a41
 Mae: 之后那个商场保安姨妈来了，然后该怎样就怎样了！ #line:ce61c8
-Dad: 哦，我的老天。这也……太诡异了吧。 #line:3b7b6c
+Dad: 哦，老天。这也……太诡异了吧。 #line:3b7b6c
 Mae: 我还用棍子戳了它几下呢！ #line:257435
-Dad: 说真的，梅，别拿棍子去戳尸体。 #line:dee129
+Dad: 好的，梅，但别拿棍子去戳尸体。 #line:dee129
 Mae: 太晚喽！ #line:760504
-Dad: 哇哦。我得给莫莉发个邮件了。 #line:0b7183
+Dad: 哇哦。我得给莫莉发个邮件。 #line:0b7183
 Mae: 好了，这回是真的晚安了！ #line:ff0b17
 
 ===
@@ -356,7 +356,7 @@ Mae: 嗨，老爸老妈。 #line:dea1b4
 Mom: 我做了塔可。 #line:f897fe
 Dad: 等一下，是“我们"做了玉米卷饼。 #line:bbac7f
 Mae: 塔可吗？ #line:2a16dd
-Mom: 塔可哦！ #line:d1e12d
+Mom: 塔可噢！ #line:d1e12d
 Dad: 你要来点吗？ #line:2f4a74
 [[当然要。每天都要。三餐都要。|Mom_A1D3_IWantTacos]] #line:d9df46
 [[不了，等会我还要吃派对上的零食呢。|Mom_A1D3_NoGonnaSnackItUp]] #line:e4d797
@@ -370,7 +370,7 @@ Dad: 常吃塔可饼，亲情亲上亲。 #line:69194a
 Mae: …… #line:6f1187
 Mom: 亲爱的，这太…… #line:309aa3
 Dad: 怎么了？ #line:6806a4
-Mae:太蠢了，我要生气了。 #line:f8d0cd
+Mae: 我要生气了。 #line:f8d0cd
 Dad: 怎么都冲我来了。 #line:e07a25
 Mom: 梅梅小宝贝儿，你的塔可上面要涂奶油吗？ #line:58bbfb
 Mae: 我…… #line:956aa3
@@ -485,12 +485,12 @@ position: 186,-625
 	Mae: 怎么这种事我还记得？ #line:d590fb
 	<<set $mae_house_door_2 += 1>>
 <<elseif $mae_house_door_2 is 1>>
-	Mae: 他们有一个很渗人的裸体接吻的雕像 #line:5b0147
+	Mae: 他们有一个很渗人的裸体接吻的雕像， #line:5b0147
 	Mae: 就放在床尾的柜子上。 #line:ccb83a
 	Mae: 不。 #line:497686
 	<<set $mae_house_door_2 += 1>>
 <<elseif $mae_house_door_2 is 2>>
-	Mae: 老妈有一个外婆传给她的杉木箱子。 #line:b2f93b
+	Mae: 老妈有一个姥姥传给她的杉木箱子。 #line:b2f93b
 	Mae: 好像算是传家宝。 #line:aa6688
 	Mae: 我想，以前的时候，你应该把嫁妆放在这里头。 #line:e36902
 	Mae: 话说，嫁妆是个什么玩意呢？ #line:79f167
@@ -827,7 +827,7 @@ position: -396,2059
 ---
 <<set $dad_done to 1>>
 <<if $watched_tv_with_dad is 0>>
-    Dad: 快上来，我正在看《嘉宝和莫洛伊》呢。 #line:7c8930
+    Dad: 快来，我在看《嘉宝和莫洛伊》。 #line:7c8930
 <<elseif $watched_tv_with_dad is 1>>
     Dad: 时间刚刚好，《嘉宝和莫洛伊》要开始了。 #line:47cd7f
 <<endif>>
@@ -878,7 +878,7 @@ Dad: 我啊，挖过矿，开过机器， #line:1a903c
 Dad: 可现在我的工作变成了切肉排 #line:79a304
 Dad: 和切意大利肉肠。 #line:420af1
 Dad: 我想说的是，这份工比起以前那些肯定是要轻松许多。 #line:d68f09
-Mae: 可您喜欢这工作吗？ #line:52ea43
+Mae: 可你喜欢这工作吗？ #line:52ea43
 Dad: 只要有工资我就喜欢！ #line:70d00a
 Mae: 好吧。 #line:344e67
 Dad: 薪水是最香、最有油水的肉啦。 #line:d200fb
@@ -1006,14 +1006,14 @@ position: 781,873
 	Mae: 对。 #line:65d96b
 	Dad: 我还以为你们俩感情很好呢。 #line:7bf69d
     Mae: o_o #line:f32d0d
-        ->以前我们俩关系确实很好。 #line:8d4fbe
+        ->曾经是。 #line:8d4fbe
             Mae: 但我们俩现在也好好谈过了。 #line:5a3732
-        ->现在我们俩感情也很好啊。 #line:c746a1
-            Mae: 只是有一点小摩擦而已啦。 #line:6382eb
+        ->现在也是。 #line:c746a1
+            Mae: 只是有一点小摩擦而已。 #line:6382eb
             Dad: 你们俩啊，简直就是一个模子刻出来的。 #line:de964c
             Mae: 可能吧。 #line:06f609
             Mae: 我可是继承了你的淡定和我妈那又聪明又混……的聪明劲儿啊。 #line:ad7bad
-    Dad: 我可不想再看到你们俩吵架啦。 #line:3b73e4
+    Dad: 我可不想再看到你们俩吵架。 #line:3b73e4
     Mae: 没事了，我们已经和好了。 #line:a369d3
     <<if $money_trouble is 1>>
 		Mae: 话说，咱家是不是出现财政危机了？ #line:4fbdb7
@@ -1055,7 +1055,7 @@ position: 1312,917
 ---
 Mae: =_= #line:fa44da
 Mae: 哟，老爹。 #line:aef4d0
-Dad: 哟，是您老啊。 #line:0df9c9
+Dad: 哟，是你啊。 #line:0df9c9
 Dad: 你还好吗？ #line:5be292
 Mae: 还好。只是感觉今天晚上怪怪的。 #line:19893c
 Dad: 你看起来真的是累坏了。 #line:ffddec
@@ -1254,9 +1254,9 @@ TV: 大伙也知道咱哥几个就爱聊政治的 #line:0066f1
 <<animate TV MalloyTalk>>
 TV: 那你倒聊啊！快点啊！ #line:4b034d
 <<animate TV GarboTalk>>
-TV: 那书上写的那些个新法规您听说了吗？ #line:614191
+TV: 那书上写的那些个新法规你听说了吗？ #line:614191
 <<animate TV GarboTalk>>
-TV: 关于网上公开传播盗版影片，这事您有了解吗？ #line:72c9a6
+TV: 关于网上公开传播盗版影片，这事你有了解吗？ #line:72c9a6
 <<animate TV MalloyTalk>>
 TV: 有。 #line:80f050
 <<animate TV GarboTalk>>
@@ -1273,7 +1273,7 @@ TV: 你说，这传播盗版影片，传那种一级谋杀案的片子 #line:fe6
 <<animate TV MalloyTalk>>
 TV: 会不会比那种传大宗盗窃案片子的，在牢里会更有名望啊？ #line:43bdbd
 <<animate TV GarboTalk>>
-TV: 嘿，莫洛伊，您知道我对这个规定是怎么看的吗？ #line:08d37e
+TV: 嘿，莫洛伊，你知道我对这个规定是怎么看的吗？ #line:08d37e
 <<animate TV MalloyTalk>>
 TV: 怎么看？ #line:490b91
 <<animate TV GarboTalk>>
@@ -1324,14 +1324,14 @@ TV: 什么情况！ #line:c6798f
 <<animate TV GarboTalk>>
 TV: 我刚把我身上带的镜子都给砸了 #line:381273
 <<animate TV GarboTalk>>
-TV: 现在我转运啦，再也不用看见镜子里那个傻逼了！ #line:a291c6
+TV: 现在我转运了，再也不用看见镜子里那个傻瓜了！ #line:a291c6
 <<playOneShot event:/bus_station/tv_laughter_applause TV>>
 <<animate TV GarboLaugh>>
 <<wait 2>>
 <<animate TV MalloyTalk>>
 TV: 那确实，可我们怎么办？ #line:346f83
 <<animate TV GarboTalk>>
-TV: 什-？“啪啪打脸！" #line:63585b
+TV: 什……？“啪啪打脸！" #line:63585b
 <<playOneShot event:/bus_station/tv_laughter_applause TV>>
 <<animate TV MalloyLaugh>>
 <<wait 2>>
@@ -1523,7 +1523,7 @@ TV: 不能再难了，莫洛伊！ #line:b29882
 <<animate TV MalloyTalk>>
 TV: 你会经常去教堂吗，嘉宝？ #line:05a952
 <<animate TV GarboTalk>>
-TV: 别提啦，我上次去教堂的时候-他们还没创教呢！ #line:2f7b24
+TV: 别提了，我上次去教堂的时候，他们还没创教呢！ #line:2f7b24
 <<playOneShot event:/bus_station/tv_laughter_applause TV>>
 <<animate TV MalloyLaugh>>
 <<wait 2>>
@@ -1795,12 +1795,12 @@ position: -1942,-2432
 ---
 Mae: 爷爷把他那箱鬼故事留给我的时候，感觉真的太棒了。 #line:c9fd74
 Mae: 不知道为什么它们最后被放到这里来了。 #line:427374
-Mae: 《威戈斯博利的末日》。 #line:f66dad
-Mae: 《精致的尸骸》。 #line:d41c2a
-Mae: 《黑魔·史蒂文森》。 #line:192959
-Mae: 《死灵猫·卷一》。 #line:21b59a
-Mae: 《鲨鱼女》。 #line:08da5a
-Mae: 《绞架山之鼬》。 #line:ed2054
+Mae: 《威戈斯博利的末日》 #line:f66dad
+Mae: 《精致的尸骸》 #line:d41c2a
+Mae: 《黑魔·史蒂文森》 #line:192959
+Mae: 《死灵猫·卷一》 #line:21b59a
+Mae: 《鲨鱼女》 #line:08da5a
+Mae: 《绞架山之鼬》 #line:ed2054
 ===
 title: BookshelfAct1.2
 tags: 
@@ -1826,7 +1826,7 @@ Mae: 《北美的雀类》 #line:7d630e
 Mae: 《山雀的世界》 #line:6786dc
 Mae: 《白头翁全解：三卷本》 #line:6a910c
 Mae: 《猫头鹰真神奇！》 #line:558599
-Mae: 《狡诈之鹤》 #line:5ec17e
+Mae: 《狡诈的鹤》 #line:5ec17e
 Mae: …… #line:fda557
 Mae: ……白头翁是什么鬼？ #line:16aabc
 <<end>>
@@ -1859,7 +1859,7 @@ Mae: …… #line:fa8847
 Mae: …… #line:7dae04
 Mae: o_o #line:fd4542
 Mae: 哦，找到了，在这儿。 #line:7b26b9
-Mae: 《浮空岛及其他故事集》。 #line:1cc1cc
+Mae: 《浮空岛及其他故事集》 #line:1cc1cc
 Mae: 爷爷讲这本故事的时候基本不看着读。 #line:962fdf
 Mae: 他每次，都几乎是，把它给背出来了。 #line:7c1801
 Mae: 在这基础上再加以改编。 #line:4e0e09
@@ -1874,7 +1874,7 @@ tags:
 colorID: 3
 position: -1671,-1971
 ---
-Mae: 《浮空岛》。 #line:a5a6c7
+Mae: 《浮空岛》 #line:a5a6c7
 Mae: 天呐。 #line:031505
 Mae: 看来我真的老了。 #line:4b2304
 <<end>>
@@ -1893,9 +1893,9 @@ tags:
 colorID: 4
 position: -1446,-2199
 ---
-Mae: 那我们有没有-关于幽灵一类的书呢？ #line:e2ec5a
+Mae: 那我们有～～～没有关于幽灵一类的书呢？ #line:e2ec5a
 Mae: 就是关于现实中的鬼怪那种？ #line:0df97e
-Mae: 我们有没有-关于疯子的书呢？ #line:d89c21
+Mae: 我们有～～～没有关于疯子的书呢？ #line:d89c21
 ===
 title: BookshelfAct3.3
 tags: 
@@ -1925,7 +1925,7 @@ tags:
 colorID: 6
 position: -1168,-2180
 ---
-Mae:《超越宇宙面纱之形》。 #line:c99759
+Mae:《超越宇宙面纱之形》 #line:c99759
 Mae: 好，就选这本吧。 #line:52ea36
 ===
 title: BookshelfAct4.3
@@ -1937,7 +1937,7 @@ Mae: 我来看看封底都写了什么。 #line:89a7c6
 Mae: 出版于1937年， #line:642b76
 Mae: 对于哥特式怪奇小说来讲 #line:13c2ee
 Mae: 《超越宇宙面纱之形》既是起点，也是高峰。 #line:2ca8d9
-Mae: 它影响了一大批20及21世纪的恐怖小说、 #line:712f0e
+Mae: 它影响了一大批20～21世纪的恐怖小说、 #line:712f0e
 Mae: 科幻小说 #line:8c3e9b
 Mae: 及低俗文学。 #line:432e1d
 Mae:《超形》绝对会让你不禁思考 #line:6ece9b
@@ -1977,8 +1977,8 @@ Mae: {align=middle,locator=clock}好怪啊，为什么这种超大的钟现在 #
 Mae: {align=middle,locator=clock}变得好像奢侈品一样 #line:6891ec
 Mae: {align=middle,locator=clock}互联网和能看时间的屏幕真的改变了不少东西。 #line:d1b274
 Mae: {align=middle,locator=clock}从那时起，这种大物件就只有一个用处了。 #line:2aa4b9
-Mae: {align=middle,locator=clock}它们就好比是…… #line:2f5a6d
-Mae: {locator=clock}一个身份证明。 #line:3bb163
+Mae: {align=middle,locator=clock}它们就像是…… #line:2f5a6d
+Mae: {locator=clock}一种身份证明。 #line:3bb163
 ===
 title: GrandfatherClockAct2.2
 tags: 

@@ -6,7 +6,7 @@ position: 313,163
 <<set $huncher_intro to 1>>
 <<musicFadeOut 10>>
 <<speechBubbleSizeOverride 1.5>>
-HuncherOutside: 是谁在我家门廊上走来走去的？ #line:30571f
+HuncherOutside: 是谁在我家门廊上走来走去？ #line:30571f
 Adina: 你好？ #line:d131d2
 HuncherOutside: 哦，小姑娘，现在一切都结束啦。 #line:1bdf69
 <<close>>
@@ -58,7 +58,7 @@ HuncherInside: 然后，这病就会毁灭我们。 #line:d73926
 HuncherInside: 这在我们刚出生时就已经发生了。 #line:552b36
 Adina: …… #line:a9e4c8
 <<setTalkAnimType HuncherInside 2>>
-HuncherInside: [shake=.02]小 丫 头！|请你别再制造噪音了好吗？[/shake] #line:f87047
+HuncherInside: [shake=.02]小丫头！|请你别再制造噪音了好吗？[/shake] #line:f87047
 <<setTalkAnimType HuncherInside 1>>
 HuncherKid: 不好。 #line:7c4070
 HuncherInside: 好吧，好吧，你个小毛孩。 #line:e9986b
@@ -330,7 +330,7 @@ HuncherInside: 我以为你知道答案。你刚刚暴露了。 #line:b60dc5
 HuncherInside: 呃，我们都暴露在其中。 #line:900186
 HuncherInside: 保持这种状态是会出问题的。 #line:f4904e
 HuncherInside: 但你用不着担心。 #line:a4b55b
-HuncherInside: 对不对啊？ #line:e74338
+HuncherInside: 对不对？ #line:e74338
 [[你刚刚是不是非～常含糊地威胁了我一下？|VagueThreat]] #line:eb7b70
 [[其实我想去一趟冰湖。|NeedFrozenLake]] #line:79076f
 ===
@@ -342,8 +342,8 @@ position: 102,1083
 HuncherKid: 她？威胁很含糊？ #line:f422e9
 HuncherInside: 哦，我会把你搞明白的，小丫头。 #line:ad5b5d
 HuncherInside: 我会把你的残骸扔到一个与世隔绝的山洞里。 #line:bc82a4
-HuncherInside: 就随他们曝尸荒野！而且你也不会是最后一个哟。 #line:2ea9eb
-HuncherInside: 然后，剩下的工作就交给“她"来做啦！ #line:629129
+HuncherInside: 就随他们曝尸荒野！而且你也不会是最后一个。 #line:2ea9eb
+HuncherInside: 然后，剩下的工作就交给“她"来做！ #line:629129
 HuncherInside: 然后你家里人就永远都找不到你啦。 #line:e2e278
 HuncherKid: 哦，别，别这样。 #line:908ce2
 [[这就是你认为的事物之间正常的关系吗？|NormalDynamic]] #line:37e7a4
@@ -380,7 +380,7 @@ Adinda: 说真的，我还是第一次进天文台呢。 #line:e2bae1
 HuncherInside: 哦，亲爱的，天上的星星可都在你脑袋里装着呢。 #line:30e496
 HuncherInside: 可今晚，你脑子里的星星就会像蜡烛一样熄灭的。 #line:cdae20
 Adina: 你又是什么人？ #line:5655f6
-HuncherInside: 林中之神根本就不是神。 #line:9dd048
+HuncherInside: 林中神根本就不是神。 #line:9dd048
 HuncherInside: 我的块头可比他大上一倍， #line:2bd351
 HuncherInside: 我也要比他真实得多。 #line:120b58
 HuncherInside: 说实话，不管是谁，就算是你，也比他真实得多。 #line:199ef4
@@ -393,7 +393,7 @@ HuncherInside: 你也是什么情况都不知道。|我是从别处搬到这儿�
 HuncherInside: 在我来之前，也有个女人|和我一样来到了这儿。 #line:85cf5f
 HuncherInside: 我们找到了一座小木屋。|然后，|我们就在屋里生火做饭。 #line:5a9d58
 HuncherInside: 然后，我们俩就活了下来。|可最后，|只有我自己活了下来。 #line:a9bba5
-HuncherInside: 我和林中之神打了好几百年。 #line:b78a1f
+HuncherInside: 我和林中神打了好几百年。 #line:b78a1f
 HuncherInside: 直到最近，我们的冲突才结束。 #line:456415
 HuncherKid: 额…… #line:ba0c9c
 HuncherInside: 把 嘴 闭 上，|小 毛 孩。 #line:9d3ffe
@@ -479,7 +479,7 @@ HuncherOutside: 我也是身不由己啊！ #line:9c96a8
 HuncherSisterGhost: [wave][size=.85]我当时又冷又害怕。[/all] #line:ca211e
 HuncherOutside: 我得活下去！ #line:9a049e
 HuncherSisterGhost: [wave][size=.85]可我却死了。[/all] #line:fe3672
-Adina: 怎么回事啊？您是谁啊？ #line:08c26f
+Adina: 怎么回事啊？你是谁啊？ #line:08c26f
 HuncherOutside: 你还敢张嘴问话，你个没用的小女孩。 #line:bb98ed
 HuncherSisterGhost: [wave][size=.85]我们俩是双胞胎！我们是一起逃到森林里来的。[/all] #line:94f283
 HuncherSisterGhost: [wave][size=.85]我们什么地方都一模一样，可只有一点不一样。[/all] #line:0b3835

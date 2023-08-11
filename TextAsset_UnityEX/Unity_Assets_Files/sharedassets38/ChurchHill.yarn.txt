@@ -54,9 +54,9 @@ position: 618,161
 Mae: 哈， #line:ae67c7
 Mae: 门锁住了。 #line:079778
 Mae: 如果我需要 #line:62e620
-Mae:  一个能抵御吸血鬼的避难所， #line:61107c
-Mae: 那怎么办。 #line:b68e1c
-Mae: 所以，把门锁上真是太不负责任啦。 #line:7de9da
+Mae:  一个能抵御吸血鬼的圣所， #line:61107c
+Mae: 那怎么办？ #line:b68e1c
+Mae: 这也太不负责任了。 #line:7de9da
 <<end>>
 ===
 title: Cliff
@@ -76,7 +76,7 @@ Mae: 嗯， #line:e96c0c
 <<lookNearest Mae>>
 Mae: o_o #line:0f1e26
 Mae: 看来这里发生了点儿情况， #line:0d2d69
-Mae: 可能是小孩子们在给他们现在流行的神祭祀 #line:2d5385
+Mae: 可能是小孩子们在给他们现在流行的神祭祀。 #line:2d5385
 Mae: 可能吧…… #line:a44d9e
 Mae: -_- #line:6494ca
 Mae: 嗯…… #line:23e79f
@@ -91,10 +91,10 @@ colorID: 3
 position: 650,488
 ---
 Mae: 圣贤鲁比奥。 #line:f4f021
-Mae: 我以为，这家伙会喷火，还会吃人。 #line:a0eb3f
+Mae: 我以为，这家伙会喷火和吃人。 #line:a0eb3f
 Mae: 现在看来，他只不过是负鼠泉的 #line:7bdba6
 Mae: 一座雕像罢了。 #line:384a9e
-Mae: 因为有的时候生活就是很奇怪。 #line:55a0f2
+Mae: 因为有时候生活就是很奇怪。 #line:55a0f2
 <<end>>
 ===
 title: Quiet
@@ -133,34 +133,34 @@ Pam: 还是看见过一个在山上的幽灵？ #line:162344
 Karla: 还是看见过一支短了的箭？ #line:1aba64
 Mae: “短了的箭"？断了的箭吧。 #line:49c1bb
 Mae: 我……额……嗯…… #line:d2382d
-Mae: 话说，你们不就是几个差不多14岁的哥特吗？我干嘛要回答你们的问题啊？ #line:f1b9c7
+Mae: 话说，你们不就是几个14岁的哥特小子吗？我干嘛要回答你们的问题啊？ #line:f1b9c7
 <<close>>
 <<wait 2>>
 <<shuffleNextOptions>>
 ->我见过一艘沉船。 #line:583cd8
-	Mae: 我在回镇的路上，路过一个操场…… #line:f6cd67
+	Mae: 我在回镇的路上，到过一个游乐场…… #line:f6cd67
 	Mae: 那里有一艘旧船。 #line:45aa48
 	Mae: 话说，你们是怎么……？ #line:b977a6
 	[[Shipwreck]]
 ->我见过幽灵。 #line:3df4da
 ->我见过一支断了的箭。 #line:f688c2
-Britt: 错误 #line:66ac39
-Pam: 你失败了 #line:e70a79
+Britt: 错误。 #line:66ac39
+Pam: 你失败了。 #line:e70a79
 Karla: 我们帮不了你。 #line:28c5de
-Britt: 或许你还会与我们相遇一次， #line:60ed2a
-Pam: 但无法确定 #line:03741c
+Britt: 或许你还会与我们相遇， #line:60ed2a
+Pam: 但无法确定…… #line:03741c
 Karla: 在那之后，我们永不再见。 #line:873c94
 Mae: 好吧。 #line:432a9a
 Mae: 嗯， #line:a66ace
 Mae: 孩子们，祝你们玩得开心。 #line:47a867
-Britt: 我们 #line:a4d6cb
-Pam: 一直 #line:c24c30
+Britt: 我们…… #line:a4d6cb
+Pam: 一直…… #line:c24c30
 Karla: 都很开心。 #line:14b6eb
 Mae: 你们几个是不是一直在练习这么轮流说话啊？ #line:a7a775
 Karla: …… #line:d9afc1
 Britt: 你不会把我们跑到这儿的事 #line:aa9c94
 Pam: 告诉给牧师吧？ #line:1fb7c6
-Mae: 我不会告诉她的。 #line:bd2ee3
+Mae: 不会的。 #line:bd2ee3
 Karla: 酷，谢谢了。 #line:384fb7
 <<set $wyrd_teens_done to 1>>
 <<unlockDoodle WeirdTeens>>
@@ -170,11 +170,11 @@ tags:
 colorID: 3
 position: 1564,221
 ---
-Britt: 你答对了 #line:a12be0
-Pam: 我们会凝望你的命运 #line:ccd862
+Britt: 你答对了。 #line:a12be0
+Pam: 我们会凝望你的命运。 #line:ccd862
 Karla: 当黑暗降临， #line:5d2419
 Britt: 我们会尽各自所能，为你提供帮助。 #line:470f25
-->啥，你们是想说，夏令时快要结束了吗？ #line:9a7361
+->啥，你们是想说，白天要结束了吗？ #line:9a7361
     Pam: 哈～ #line:3ae68e
     Karla: 哈～ #line:30b401
     Britt: 哈。 #line:52c781
@@ -185,51 +185,51 @@ Karla: 在这个地方， #line:16653b
 Britt: 什么才能称之为神？ #line:cc1e61
 Mae: 哇哦，呃…… #line:e9712b
 Pam: 你认为，神的特质应该是： #line:8f0ad8
-Karla: 虽然关爱世人，但却在这世间缺席呢？ #line:adff0a
-Britt: 还是遥远又无情呢？ #line:ccd16d
-Pam: 再或是既邪恶又闲散呢？ #line:9bac76
+Karla: 虽然关爱世人，但却缺席于此世间呢？ #line:adff0a
+Britt: 还是无情又遥远呢？ #line:ccd16d
+Pam: 抑或是邪恶又散漫呢？ #line:9bac76
 Mae: 咱们能不能弄一个“既美好又乐于助人"的选项呢？ #line:5bcffa
 <<close>>
 <<wait 2>>
 Mae: 好吧，算了。 #line:4678bc
-->虽然关爱世人，但却总是缺席。 #line:e823cb
-	Karla: 说的很对 #line:f16139
+->虽然关爱世人，但却缺席于此世间。 #line:e823cb
+	Karla: 说得很对。 #line:f16139
 	Britt: 她仍在努力祈求， #line:1233b3
 	Pam: 希望神可以归来。 #line:3c917a
 	Mae: “她"？她是谁啊？ #line:53d713
 	Karla: 我们预见到了 #line:060379
-	Britt: 你未来会遇到的一些事情。 #line:a21a45
+	Britt: 你未来会遇到的一些事。 #line:a21a45
 	Pam: 我们预见到了！ #line:f8886b
 	Karla: 我们预见到了！ #line:471d32
 	Britt: 我们预见到了！ #line:388512
 	Mae: 好吧，又来了！天哪！ #line:80c5f7
     Pam: 如若天空变得空无一物 #line:be390a
     Karla: 那么， #line:55a186
-    Britt: 它还算是合格的守望者吗？ #line:78d1e6
-    Mae: 伙计们，你们到底是来预言未来的还是来提问的。 #line:5c538c
-->既无情又遥远。 #line:71978f
+    Britt: 还算是合格的守望者吗？ #line:78d1e6
+    Mae: 伙计们，你们到底是预言未来的还是过来提问的。 #line:5c538c
+->无情又遥远。 #line:71978f
 	Karla: 我可以看到， #line:1f9d14
-	Britt: 它就在群星之下， #line:4c9718
+	Britt: 与之相见。 #line:4c9718
 	Pam: 那遥远的岸边。 #line:069e83
 	Mae: 好吧。 #line:26069c
 	Karla: 我们预见到了 #line:d2c01b
-	Britt: 你未来会遇到的一些事情。 #line:347513
+	Britt: 你未来会遇到的一些事。 #line:347513
 	Pam: 我们预见到了！ #line:e9dfcf
 	Karla: 我们预见到了！ #line:59ffb2
 	Britt: 我们预见到了！ #line:31432b
 	Mae: 好吧，又来了！天哪！ #line:d8b86a
 	Pam: 你会游向大海， #line:d8db05
 	Karla: 在那遥远的岸边 #line:85ac12
-	Britt: 与它相见。 #line:f9a86b
-	Mae: 从咱们这儿到海边，差不多要用六个小时呢。 #line:0cde53
+	Britt: 与之相见。 #line:f9a86b
+	Mae: 从咱们这儿到海边，差不多要用6个小时呢。 #line:0cde53
 	Mae: 你们几个可真没常识啊。 #line:0ef01d
-->既邪恶又闲散。 #line:18a19d
+->邪恶又散漫。 #line:18a19d
 	Karla: 它会吞食掉我们的未来， #line:c3e7cc
 	Britt: 然后继续前行， #line:76b626
 	Pam: 而我们却只能在毁灭中苟延残喘。 #line:502bec
 	Mae: 嗯哼。 #line:2f9451
 	Karla: 我们预见到了 #line:b436c4
-	Britt: 你未来会遇到的一些事情。 #line:6bc2e0
+	Britt: 你未来会遇到的一些事。 #line:6bc2e0
 	Pam: 我们预见到了！ #line:34db72
 	Karla: 我们预见到了！ #line:5de1e6
 	Britt: 我们预见到了！ #line:ce5046
@@ -238,20 +238,20 @@ Mae: 好吧，算了。 #line:4678bc
 	Karla: 而另一些人 #line:5a3f15
 	Britt: 却沦为了牺牲品。 #line:122d97
 	Mae: 哇，酷，好吧， #line:13e60a
-	Mae: 这话说得，感觉好神秘啊。 #line:959f44
+	Mae: 这话说得，好神秘啊。 #line:959f44
 Mae: 咱们还是来个简单点的问题吧。 #line:0de556
 Mae: 今天晚上我会吃什么？ #line:93cfa4
 Pam: 不知道，也不在乎。 #line:1638f1
-Karla: 我想吃玉米卷饼。 #line:51ab7d
+Karla: 我想吃塔可。 #line:51ab7d
 Britt: 咱们马上就能吃到了。 #line:ad3459
-Pam: 咱们仨马上就能吃到了。 #line:4f155d
+Pam: 咱们仨马上都能吃到了。 #line:4f155d
 Mae: 好吧。我要走了。 #line:553176
-Karla: 别 走。 #line:207220
+Karla: 别走。 #line:207220
 Britt: 你看没看到 #line:1563af
 Pam: 刻在这块圣石上的神秘符号？ #line:3d227c
 ->你是说你们画的那个五芒星？ #line:2ec1cd
 	Karla: 是的。很好。 #line:e0f087
-->你是说你们几个小孩儿画的那个诡异的五芒星？ #line:976187
+->你是说你们几个小孩画的那个诡异的五芒星？ #line:976187
 	Karla: 注意措辞。那可是很神秘的玩意儿。 #line:63d90f
 Mae: 是吗？ #line:7afc0d
 Britt: 一共有三个这样的符号。这是第一个。 #line:805766
@@ -264,11 +264,11 @@ Mae: 你们几个可真是又可爱 #line:6e0d1e
 Mae: 又古怪。有意思的那种古怪。 #line:260d35
 Pam: 严肃点儿， #line:c49b21
 Karla: 不开玩笑， #line:f090ac
-Britt: 我们通常不在乎什么事 #line:eac1a2
+Britt: 我们通常不在乎什么事。 #line:eac1a2
 Pam: 但是， #line:eeb532
 Karla: 严肃点儿，朋友。 #line:384e3c
 Mae: 好的，好的，我会多留意 #line:f12387
-Mae: 剩下的那两颗五芒星的。 #line:44265f
+Mae: 剩下那两颗五芒星的。 #line:44265f
 Karla: 酷。 #line:da35fd
 Mae: 哈哈，你们终于不轮流说话了。 #line:d7b237
 Pam: 额，不是的。 #line:4619a8
@@ -277,7 +277,7 @@ Karla: 你有没有被吓到？ #line:cad314
 Mae: 再见了，你们几个古怪的哥特小孩儿。 #line:450b61
 Pam: 你不会把我们跑到这儿的事 #line:6f7320
 Britt: 告诉给牧师吧？ #line:a7fced
-Mae: 我不会告诉她的。 #line:5fa9fa
+Mae: 不会的。 #line:5fa9fa
 Karla: 酷，谢谢了。 #line:bfdac0
 <<set $pentagram_quest to 1>>
 <<set $wyrd_teens_done to 1>>
@@ -311,7 +311,7 @@ Karla: 是的。 #line:e627e0
 	Pam: 也许一点都不讽刺。 #line:1ce339
 	Karla: 可能我们是在隐藏自己的踪迹， #line:2f4e98
 	Britt: 这样我们就不会被人发现了。 #line:d13d4f
-	Mae: 你们还是没变，怪小孩们 #line:62ec7e
+	Mae: 你们还是没变，怪小孩们。 #line:62ec7e
 	Mae: 请就这样长成三个怪大人吧。 #line:570f95
 	Pam: 可能我们永远都不会变老。 #line:5147de
 	Karla: 可能我们会永远年轻。 #line:454ca1
@@ -319,14 +319,14 @@ Karla: 是的。 #line:e627e0
 	Mae: 再次感谢你们。 #line:35f0ac
 	Pam: 为什么要感谢我们？ #line:10e445
 	Karla: 我不记得自己做过什么。 #line:0074ed
-	Britt: 我都不记得这位女士是谁了。 #line:8c001d
+	Britt: 我都不记得你这位女士是谁了。 #line:8c001d
 ->咱们都经历了很多事。 #line:da0082
 	Mae: 我自己就经历了关于女巫的事。 #line:785254
 	Mae: 之前我有一面那种镜子， #line:05e6f0
 	Mae: 然后我没拿稳，镜子掉到地上，摔碎了。 #line:b3cbc9
 	Karla: 这可是个凶兆。 #line:3344e2
 	Britt: 确实是个凶兆。 #line:339b5f
-	Mae: 要是我当时知道这一点就好了 #line:3f262a
+	Mae: 要是我当时知道这一点就好了。 #line:3f262a
 	Mae: 嘿，你们之前说过的所有事 #line:1c2f53
 	Mae: 全都应验啦。 #line:96d6b7
 	Britt: 不错。 #line:f4ac5b
@@ -339,7 +339,7 @@ Karla: 是的。 #line:e627e0
 	Britt: 伙计，你说什么。 #line:101472
 	Pam: 我也不清楚。只是在随便编点什么东西。 #line:2afadc
 	Mae: 酷啊。行了， #line:d748f2
-	Mae: 待会再见 #line:1dd550
+	Mae: 咱们还会再见的。 #line:1dd550
 	Karla: 是的。 #line:46e21c
 	Britt: 很有可能会再见的。 #line:9d3743
 	Pam: 这个镇子就这么大。 #line:5f7a94
@@ -389,7 +389,7 @@ position: -18,441
 Mae: 谁会把教堂的门给锁上呢？看来老妈今天肯定出去了…… #line:1d638c
 Mae: 如果我需要 #line:a3a768
 Mae: 一个能抵御吸血鬼的避难所， #line:e5b2f3
-Mae: 怎么办。 #line:e294e0
+Mae: 那怎么办？ #line:e294e0
 Mae: 这也太不负责任了。 #line:61ae2d
 <<end>>
 ===
@@ -398,13 +398,13 @@ tags:
 colorID: 4
 position: 918,-7
 ---
-Mae: 嘿，詹！ #line:9961d4
+Mae: 嘿，珍！ #line:9961d4
 Jen: 嘿！你是梅·博罗夫斯基吗？ #line:d7c3aa
 Mae: 是我。 #line:6c9355
 Mae: 你怎么回来了？ #line:3a270f
 Mae: 格雷格知道你回来了吗？ #line:1277a5
 Jen: 他不知道。我就待一天。 #line:44eb7d
-Jen: 我只是拿点格雷格妈妈的东西， #line:2b9bff
+Jen: 我只是拿点格雷格母亲的东西， #line:2b9bff
 Jen: 然后今天晚上就回学校。 #line:6bb3d0
 Mae: 啊。 #line:37e936
 Jen: 话说，你不是去外地上学了吗？那*你*在这儿干嘛呢？ #line:f2b6bf
@@ -415,14 +415,14 @@ Jen: 话说，你不是去外地上学了吗？那*你*在这儿干嘛呢？ #li
 	Mae: 啊，没什么。 #line:aa76fa
 	Mae: 你打算干什么工作？ #line:35382e
 	Jen: 我想从事时尚设计的工作。 #line:6e0b1e
-	Mae: 你能得到这种工作？ #line:5ea7ba
+	Mae: 你可以找到设计工作吗？ #line:5ea7ba
 	Jen: 理论上应该能。 #line:f30ef5
 ->和你一样，回来侍一天。 #line:f74b7e
     <<set $jen_lie to 1>>
     //(track this variable - lie)
 	Jen: 你上的是哪所学校？ #line:b992d1
 	Mae: 杜尔基勒斯堡。 #line:eec8d9
-	Jen: 啊？ #line:18d7c0
+	Jen: 啊。 #line:18d7c0
 	Mae: 你是不是住在光明湾啊？ #line:b413d3
 	Jen: 对。 #line:8cd65b
 	Mae: 那儿怎么样？ #line:c9b9f6
@@ -438,10 +438,10 @@ Jen: 对。我还会去打点兔子什么的。 #line:93a97f
 Jen: 打的猎物都不大。 #line:c79677
 Jen: 在学校没什么机会能出去打猎。 #line:98f070
 Jen: 我刚才正在射那边那棵树， #line:784b8b
-Jen: 然后我发现，树后面有个哥们儿在睡觉， #line:890c1e
-Jen: 所以还是算了吧，不玩了。 #line:9c0386
+Jen: 然后我发现，树后面有个人在睡觉， #line:890c1e
+Jen: 所以还是算了吧。 #line:9c0386
 <<if $met_bruce>>
-	Mae: 噢，是吗。那个哥们儿是布鲁斯。 #line:0d6f10
+	Mae: 噢，是吗。他是布鲁斯。 #line:0d6f10
 	Mae: 人挺不错的。 #line:3850c8
 <<else>>
 	Mae: 哦，老天，是啊。 #line:be6787
@@ -451,20 +451,20 @@ Jen: 好吧。我没失手把箭射到他脸上，真是万幸啊。 #line:0b5da
 Mae: 哦，对啊。要真那样可就惨了。 #line:01f69e
 <<wait 2>>
 Mae: 嗯，见到你很高兴。 #line:719b44
-Jen: 你偶尔见得到格雷格吗？ #line:f3c6c3
+Jen: 你现在还是有时格雷格一起吗？ #line:f3c6c3
 <<if $jen_truth>>
-	Mae: 噢，当然了。经常能见到。 #line:19e9e6
+	Mae: 噢，当然了。经常在一起。 #line:19e9e6
 <<else>>
 	Mae: 哦，你也知道的，其实只有在我回来的时候才能偶尔见到他。 #line:343eae
 <<endif>>
 Jen: 那好。麻烦跟我弟说一声，他得去光明湾才能见到我了。 #line:f64c1b
 <<if $knows_bright_harbor>>
-	Mae: 哦，嗯，好的，这事包在我身上。 #line:9839d8
+	Mae: 嗯，好的，这事包在我身上。 #line:9839d8
 	<<wait 2>>
 	Mae: 可他还没打算从这儿搬走呢。 #line:d50780
 	Jen: 哦，这我还真不知道。我以为他会搬走的。 #line:d8a27f
 	Jen: 他应该去外面大展宏图。 #line:d9661a
-	Mae: 也没准他在这儿就过得蛮好。 #line:f2f7bd
+	Mae: 没准他在这儿就过得蛮好。 #line:f2f7bd
 	Jen:算了吧。 #line:bebbd1
     Jen: 格雷格对这小镇来说过于优秀了。 #line:b09873
 	Mae: 哈哈，这话倒是毋庸置疑。 #line:2c2022
@@ -472,7 +472,7 @@ Jen: 那好。麻烦跟我弟说一声，他得去光明湾才能见到我了。
 	Mae: 确实是这样！ #line:f3cc07
 <<endif>>
 Mae: 再见了。 #line:48d66d
-Jen: 再见！ #line:e54e00
+Jen: 保重！ #line:e54e00
 <<set $jen_done to 1>>
 <<unlockDoodle Jen>>
 ===

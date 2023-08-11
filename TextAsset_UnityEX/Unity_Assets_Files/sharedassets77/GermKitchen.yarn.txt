@@ -31,7 +31,7 @@ Mae: 额，嗨。 #line:3aa9c7
 Mae: :) #line:5c42de
 GermMom: 你好啊，梅。 #line:eaf6e7
 Mae: _o_ #line:845258
-GermMom: 希望你喜欢吃邋遢乔！ #line:ca3b97
+GermMom: 希望你喜欢吃碎肉乔三明治！ #line:ca3b97
 Mae: 谁不喜欢吃呢？ #line:d2616c
 GermMom: 这屋子里可没人不喜欢吃它。 #line:fd916f
 Germ: 我觉得你们俩真应该在晚饭前互相认识认识！ #line:a2ded3
@@ -46,7 +46,7 @@ Mae: :| #line:15a92e
 Mae: 这什么情况啊？ #line:5f8dc1
 Germ: 跟我来吧！ #line:14b6aa
 <<walk Germ Germ2>>
-->很高兴见到您！ #line:8010d2
+->很高兴见到你！ #line:8010d2
 	GermMom: 我也很高兴，梅！ #line:d57b3f
 ->…… #line:2f3ad3
     GermMom: 怎么了？ #line:f751b8

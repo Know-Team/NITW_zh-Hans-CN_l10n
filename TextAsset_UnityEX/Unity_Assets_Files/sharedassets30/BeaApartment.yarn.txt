@@ -39,19 +39,19 @@ BeaDad: 岩盐的事安排得怎么样了？ #line:21dd9b
 Bea: 嗯，应该没什么问题了。 #line:349e02
 BeaDad: 罗布还在开大货车吗？ #line:e9f0fe
 Bea: 据我所知还在开。 #line:04f987
-Bea: 好了，额，我还需要您签点东西。我已经把它们都放在吧台上了。 #line:2eb3f6
+Bea: 好了，额，我还需要你签点东西。我已经把它们都放在吧台上了。 #line:2eb3f6
 BeaDad: 我应该一会儿就去。 #line:699861
-Bea: 请您一定要签。这几天咱们就得把钱发给人家了。 #line:bd7687
+Bea: 一定要签。这几天咱们就得把钱发给人家了。 #line:bd7687
 BeaDad: 我用不着你来提醒我怎么做。 #line:00d1e5
 Bea: 我知道，可…… #line:06ecdf
-BeaDad: 不用提醒我了，碧翠丝。我问你，房契上写的是谁的名字？ #line:f6f489
-Bea: 写的是您的名字，爸。 #line:13de8b
+BeaDad: 不用提醒我了，碧翠丝。房契上写的是谁的名字？ #line:f6f489
+Bea: 你的名字，爸。 #line:13de8b
 BeaDad: 那支票上写的又是谁的名字？ #line:c1b54a
 <<close>>
 <<wait 1>>
 <<lookRight Bea>>
 <<wait 1>>
-Bea: 也是您的名字。 #line:da84d7
+Bea: 也是你的名字。 #line:da84d7
 Mae: …… #line:7c2b52
 <<close>>
 <<wait 2>>
@@ -61,7 +61,7 @@ Mae: …… #line:7c2b52
 <<elseif $grocery_quality is -1>>
 	BeaDad: 额，这顿晚饭可不怎么样啊。 #line:69714d
 <<endif>>
-BeaDad: 今晚熔炉队该出场啦。 #line:9acf12
+BeaDad: 今晚有熔炉队的比赛。 #line:9acf12
 Bea: 那我先带着梅到我房间去玩了。 #line:f95e3f
 Mae: 嗯…… #line:bf5557
 BeaDad: 你们俩好好玩！ #line:95dfde
@@ -85,9 +85,9 @@ position: 3211,10327
 ---
 <<if $bea_friendship_quest_3 is 0>>
     <<set $bea_dad_done to 1>>
-    Mae: 您喜欢熔炉队，是吗？ #line:261144
+    Mae: 你喜欢熔炉队哈？ #line:261144
     BeaDad: 你也是炉迷吗？ #line:c71ba2
-    ->我不是。 #line:82f748
+    -> 不算吧。 #line:82f748
         BeaDad: 那你知道你错过了多少好东西吗！ #line:8f3989
         Mae: 哦，相信我，我很清楚自己到底错过了多少精彩瞬间。 #line:0589f7
         Mae: 但我爸妈可是熔炉队的忠实粉丝。 #line:3af4a2
@@ -128,7 +128,7 @@ position: 3211,10327
         <<if $grocery_meat is 1>>
             BeaDad: ……这牛肉的味道……一定错不了…… #line:e5b126
         <<elseif $grocery_meat is 2>>
-            BeaDad: ……这顿饭上吃的鸡肉……就和老妈做的味道一样…… #line:2d2544
+            BeaDad: ……这顿饭上吃的鸡肉……就和母亲做的味道一样…… #line:2d2544
         <<elseif $grocery_meat is 3>>
             BeaDad: ……鱼啊鱼……它之前肯定也吃了不少鱼…… #line:042e54
         <<elseif $grocery_meat is 4>>
@@ -190,7 +190,7 @@ Bea: 晚饭时间到！ #line:52e3a5
         Bea: 不是这样的，不是的。 #line:b9930e
         Mae: 哦，不。好吧。 #line:c81a4c
         Mae: 比如你去炸鸡司令点一份7号套餐。 #line:b30713
-        Mae: 那 不 就 是 鸡 肉 配 鱼 肉 吗！ #line:932083
+        Mae: 那不就是鸡肉配鱼肉吗！ #line:932083
         Bea: 是有鸡肉和鱼肉，但这两样东西是分开做的，而且还是炸过的。 #line:3b6a80
         Mae: 呃啊。 #line:e4622c
     <<elseif $grocery_meat is 2 and $grocery_bakey_shakey is 1 and $grocery_canned_goods is 3>>
@@ -226,7 +226,7 @@ Bea: 晚饭时间到！ #line:52e3a5
     Bea: 梅，饭做得真不错。谢谢你。 #line:83f78d
     Mae: 肉和碳水的搭配肯定错不了。 #line:36f5ae
     BeaDad: 谢谢你，梅。 #line:d0a9b6
-    ->我超擅长做～饭的。 #line:059332
+    ->我超擅长做饭～～～的。 #line:059332
         BeaDad: 饭做得很好。 #line:1dcfac
         Bea: 是有时候做得还行。 #line:8ac959
         Mae: 有时候？！？！？ #line:996009
@@ -236,13 +236,13 @@ Bea: 晚饭时间到！ #line:52e3a5
     ->我不知道我提没提过这事， #line:96f2fe
         Mae: 我在高中的时候，家政学这门课的成绩可好了。 #line:1c4ec3
         Mae: 这件衬衣就是我自己做的！ #line:e7befc
-        BeaDad: 嘿，嘿，你能帮我补补裤子吗！ #line:9b3b1d
+        BeaDad: 哈哈，你能帮我补补裤子吗！ #line:9b3b1d
         Mae: 补裤子有酬劳吗？ #line:9813bf
         Bea: 爸，咱们可以去买新裤子啊。 #line:b80de5
 <<elseif $grocery_quality is 1>>
     BeaDad: 嘿，这做的很不错。 #line:ce918c
     Bea: 嗯，的确是……相当不错。 #line:c6f337
-    Mae: 谢谢啦！ #line:f001e0
+    Mae: 谢谢！ #line:f001e0
     <<if $grocery_meat is 1 and $grocery_bakey_shakey is 0 and $grocery_box is 1 and $grocery_canned_goods is 1>>
         BeaDad: 我妈妈以前就会做牛肉芝士通心粉， #line:c43cb6
         Bea: 真的很好吃。 #line:ae4d7a
@@ -251,11 +251,11 @@ Bea: 晚饭时间到！ #line:52e3a5
         Mae: 可能我就是你老妈呢。 #line:725b2b
         BeaDad: 你说什么？ #line:e46970
         Bea: 你说什么？ #line:78f678
-        Mae: 我不知道啊，这事有点尴尬了。 #line:8e2f9d
+        Mae: 我不知道啊，有点尴尬哈。 #line:8e2f9d
     <<elseif $grocery_meat is 4 and $grocery_box is 2 and $grocery_canned_goods is 2>>
         BeaDad: 香酥脆猪排！ #line:b2414a
         Mae: 我懂，我懂。 #line:691ff5
-        Mae: 我以前经常会把香脆酥刮下来， #line:a3ee20
+        Mae: 我以前经常会把香酥脆刮下来， #line:a3ee20
         Bea: 呃，不会吧。 #line:695f27
         Mae: 然后*只吃它们*。 #line:97e78e
     <<elseif $grocery_meat is 2 and $grocery_bakey_shakey is 0 and $grocery_canned_goods is 3 and $grocery_cooler is 1>>
@@ -294,7 +294,7 @@ Bea: 晚饭时间到！ #line:52e3a5
     Mae: 我可以做份沙拉！ #line:d8880e
     Bea: 老天。 #line:304013
     BeaDad: 嘿嘿，梅，做沙拉，说的是啊！ #line:7fd404
-    BeaDad: 哈 哈 哈 哈 哈！！！ #line:69c316
+    BeaDad: 哈哈哈哈哈！！！ #line:69c316
     <<if $did_bea_friendship_quest_2 is 1>>
         Bea: 这可比你昨天晚上在地下室做的不知道什么东西强太多了。 #line:a68ba0
         BeaDad: 你说什么？ #line:3a57e8
@@ -334,12 +334,12 @@ MaeLaptop: 你可以按自己想要的方式去努力， #line:ba0e3f
 MaeLaptop: 但整个宇宙依旧会按照它自己的模式运转。 #line:0c3e01
 MaeLaptop: 而且，我也不相信，咱们中的哪一个人就应该背负这一切。 #line:679494
 MaeLaptop: 这一切早在咱们出生很久之前就已经开始运作了， #line:79bb97
-MaeLaptop: 它运行的速度实在太快了，然后，你就陷进去了 #line:d7c564
+MaeLaptop: 它运行的速度实在太快了，然后，你就陷入其中了。 #line:d7c564
 MaeLaptop: 所以，你就拼命想要抓住些什么东西。 #line:fd8b94
 MaeLaptop: 今晚，是你们把我从湍流之中救了回来， #line:957b65
 MaeLaptop: 并且，你们为了救我还差点杀死了那个人。 #line:c6adf7
 MaeLaptop: 别觉得我会对此无动于衷哈。 #line:e68683
-MaeLaptop: 哈 哈 哈 #line:e3ee01
+MaeLaptop: 哈哈哈 #line:e3ee01
 <<fadeOut 1 wait>>
 <<overrideLoadingScreenType Blank>>
 <<scene GreggAngusApartment>>

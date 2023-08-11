@@ -9,7 +9,7 @@ Mae: o> #line:f0bfdb
 <<wait .5>>
 <<irisIn .5>>
 Mae: 看着还行。 #line:330b7e
-[[天啊，这件衣服显得我好胖，嗯？|Roundness]] #line:8d01f3
+[[天哪，这件衣服显得我好胖，嗯？|Roundness]] #line:8d01f3
 [[我的脸好丑啊。别人看了我这张脸，肯定会做噩梦的。|WorstFace]] #line:30f4d3
 ===
 title: Roundness
@@ -95,8 +95,8 @@ position: -544,882
 Mae: =_= #line:01712e
 Mae: 啊，是啊，你真应该好好去看看那条把我耳朵弄成这样的狗。 #line:42a6ec
 <<set $dog_bite_dead to 1>>
-Mae: 哦，等下，你再也见不到它了，因为它早就已经挂啦！ #line:1f2861
-Mae: 狗可不像人一样，能活这么长！ #line:59d4ce
+Mae: 哦，等下，你再也见不到它了，因为它早就挂啦！ #line:1f2861
+Mae: 狗可不像人一样活这么长！ #line:59d4ce
 <<rotateHead Mae 10 1>>
 <<dilate Mae .5 3>>
 Mae:把我的耳朵当作烟叶放进烟管，然后抽吧，狗子！\o/ o_o #line:a2ef20
@@ -131,7 +131,7 @@ Mae: 一个朋友也没有。 #line:3a5c82
 Mae: 其实，错也不在别人身上。 :\ #line:b477fb
 Mae: 事情有点…… #line:5b30dc
 Mae: …… #line:5614de
-Mae: 随他的便吧。 =_= :| #line:5e45d0
+Mae: 随便吧。 =_= :| #line:5e45d0
 [[ColeCheck]]
 ===
 title: YouDontLikePeople
@@ -145,7 +145,7 @@ position: -922,1821
 Mae:{locator=Right} 我在网上看见过一个测试： #line:07723e
 Mae: 最能让你感觉到幸福的时候， #line:70f7d2
 Mae: 就是大家都很喜欢你， #line:7359a8
-Mae: 但却基本不理你的时候。 #line:b4502f
+Mae: 但又不会打扰到你。 #line:b4502f
 Mae: 当然，他们来给你送吃的的情况除外…… #line:136970
 Mae: 这可不代表你可以一个人窝在屋里， #line:aacb60
 Mae: 然后等人来给你送饭。 #line:b57408
@@ -187,9 +187,9 @@ Mae: 没准他压根就没想到过我。 #line:761d7a
 Mae: 不过这也挺好的。因为说实话，我根本就不在乎。 #line:e1d233
 <<lookOut Mae>>
 Mae: 但我还是得求求某位碰巧路过的神仙，希望他今晚千万不要出现。 #line:2e3d9f
-Mae: 不管是哪个神，我都求求您了。 #line:2f83a5
+Mae: 不管是哪个神，拜托了。 #line:2f83a5
 <<set $whatever_god to 1>>
-Mae: 保佑我吧，可千万别让科尔参加今晚的聚会。 #line:851377
+Mae: 千万别让科尔参加今晚的聚会。 #line:851377
 [[Cole_2]]
 ===
 title: PromWasAMistake
@@ -233,7 +233,7 @@ Mae: o/ #line:0d707a
 <<newSpeechBubble>>
 <<dilate Mae .5 3>>
 [[{locator=Right}[wave]“嗨，我叫梅！近来可好啊？"[/wave]|HowsItGoing]] #line:2b55d3
-[[{locator=Right}[wave]“哦，嘿，我叫梅！您贵姓？"[/wave]|WhatsYourName]] #line:778dd4
+[[{locator=Right}[wave]“哦，嘿，我叫梅！你叫什么？"[/wave]|WhatsYourName]] #line:778dd4
 [[{locator=Right}[wave]“嗨！我叫梅！我这星期刚从大学正式退学啦！"[/wave]|IDroppedOut]] #line:19a577
 ===
 title: HowsItGoing

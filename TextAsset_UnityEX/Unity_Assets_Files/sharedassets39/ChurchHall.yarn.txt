@@ -3,7 +3,7 @@ tags: temp
 colorID: 4
 position: 435,718
 ---
-Mae: 哦，嗯。看起来老妈已经去教堂了。 #line:1a7062
+Mae: 嗯。看起来老妈已经去上班了。 #line:1a7062
 Mae: 好吧，老天。 #line:90cd6d
 Mae: 幸好我不用和教堂什么的扯上关系。 #line:6e4ee2
 ===

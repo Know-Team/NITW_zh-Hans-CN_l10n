@@ -16,9 +16,9 @@ VideostoreGirl: 等我妈下班回来才有时间吧？ #line:e18d25
 Mae: 唉，都是因为孩子啊。 #line:1fa758
 VideostoreGirl: 不过这工作也挺酷的，对吧？ #line:65e580
 VideostoreGirl: 又能看电影，又能吃糖果，还能遇见帅哥，对吧？ #line:e8130c
-Mae: 咦，帅哥嘛。 #line:d8fa21
+Mae: 恶，帅哥吗。 #line:d8fa21
 VideostoreGirl: 说“帅哥"有什么问题吗？ #line:7d2c2d
-Mae: 我说不清，但被称作“帅哥"的人一般都是言过其实吧。 #line:d88144
+Mae: 我说不清，但被称作“帅哥"的一般都是言过其实吧。 #line:d88144
 <<set $not_cute_ones to 1>>
 ===
 title: VideostoreGirl_00_02
@@ -46,7 +46,7 @@ position: -134,-14
 Angus: 嗨，梅！ #line:916eee
 Angus: 你的笔记本能用了吗？ #line:a500ad
 Mae: 一切正常！真是太感谢啦！ #line:d007d7
-Angus: 不用谢，很高兴为您服务。 #line:465ac4
+Angus: 不用谢，很高兴为你服务。 #line:465ac4
 ===
 title: Angus_A1D3_01
 tags: 
@@ -105,8 +105,8 @@ Angus: 我确实不是那种人。不对和格雷格一起去情况就不一样�
 Mae: 噢？为什么呢？ #line:ede6a3
 Angus: 你知道那种有时候只想待在角落里的感觉吗？ #line:10da2a
 Mae: 知道。 #line:eacca5
-Angus: 格雷格就是那个能让我有地方可站的人。 #line:6d7adf
-Mae: 嗷……太甜了吧…… #line:92ff49
+Angus: 格雷格就是我的那个角落。 #line:6d7adf
+Mae: 哇噢噢噢…… #line:92ff49
 Angus: 哈哈哈，别叫了好不好。 #line:f01675
 ===
 title: Angus_A1D3_03
@@ -165,7 +165,7 @@ tags:
 colorID: 2
 position: -1043,-734
 ---
-VideostoreGirl: 有什么能帮您的吗？ #line:bdbd4f
+VideostoreGirl: 有什么能帮你的吗？ #line:bdbd4f
 Mae: 安格斯在哪儿？ #line:ab4165
 VideostoreGirl: 哦，他是上白班吧？ #line:ec7fd4
 Mae: 现在好像就是白天吧？ #line:ff94f8
@@ -179,7 +179,7 @@ VideostoreGirl: 我好像是来早了？ #line:cd0ea2
 <<endif>>
 Mae: 等等，为什么你每句话听起来都像是问句呢？ #line:2e8683
 VideostoreGirl: 你不也一样吗？ #line:0a3398
-VideostoreGirl: 我只不过是没有对此发表意见吧？ #line:0ff568
+VideostoreGirl: 只不过我没有对此发表评论？ #line:0ff568
 Mae: 是吗？ #line:2549ae
 VideostoreGirl: 好像是吧？ #line:0be315
 Mae: 嗯哼？ #line:26e987
@@ -190,7 +190,7 @@ tags:
 colorID: 2
 position: -717,76
 ---
-VideostoreGirl: 有什么能帮您的吗？ #line:ff6184
+VideostoreGirl: 有什么能帮你的吗？ #line:ff6184
 Mae: 好像不需要…… #line:e59626
 ===
 title: PreInitLevel
@@ -368,9 +368,9 @@ position: 2501,-439
 <<if $did_gregg_friendship_quest_4>>
 	Mae: 哇哦，碧娅居然同意连续两晚把车借给你开？ #line:832fed
 	Angus: 是的。 #line:951300
-	Mae: 就算车胎瘪了，她还同意把车借给你，是吗？ #line:5fd753
-	Angus: 嗯，我想说的是，车胎瘪了的时候，你什么忙都没帮上。 #line:228165
-	Angus: 再说了，新车胎也是我给换上的。 #line:39a618
+	Mae: 就算那天车胎瘪了，她还同意把车借给你？ #line:5fd753
+	Angus: 嗯，我意思是，这也没办法。 #line:228165
+	Angus: 再说了，我也换了个新的上去。 #line:39a618
 	Mae: 哦，是啊。 #line:8122a4
 	<<close>>
 	<<wait 2>>
@@ -379,7 +379,7 @@ position: 2501,-439
         Mae: 你能借到她的车，简直棒极啦。 #line:06bc67
         Mae: 我和格雷格遇见那个鬼的时候， #line:cb5b12
         Mae: 只能骑着车跑才行。 #line:e6ab10
-        Angus: 我知道。格雷格得先弄个自行车驾照才行。 #line:4ea43f
+        Angus: 我知道。格雷格得先弄个驾照才行。 #line:4ea43f
         Mae: 我当时就从他车上掉下来了， #line:272e0a
         <<if $did_gregg_friendship_quest_3>>
             Mae: 当然，在那天以前，我*也*遇到了相同的事故。 #line:5acc80
@@ -394,7 +394,7 @@ position: 2501,-439
 <<endif>>
 
 <<if $completed_investigation_quests is 0 or $second_iq_and_dom_friend_bea>>
-	Mae: 我 真 是 太 兴 奋 啦！ \o/ #line:96a59f
+	Mae: 我真是太兴奋啦！ \o/ #line:96a59f
 	Angus: 是吗？ #line:a03e2e
 	Mae: 那可不！咱们还从来没单独出去过呢！ _o_ #line:2f7764
 	<<if $dom_friend_gregg>>
@@ -412,23 +412,23 @@ Angus: 好吧。 #line:075335
 Mae: 为什么就没人相信那是鬼吗？ #line:86e956
 Angus: 我得告诉你……鬼魂什么的根本就不存在。 #line:cde003
 Mae: 我很确定它们是真实存在的。 #line:5ca1b3
-Angus: 额……我需要看到证据。 #line:9c5113
+Angus: 额……我需要证据。 #line:9c5113
 Mae: 怎么样才算证据呢？ #line:f3bedc
 Angus: 比如，有只鬼走过来，说了句“你好"， #line:cf9b51
-Angus: 然后我回应一句“嘿，我已经查明你是个死人了。"这样才行。 #line:e236cc
-Mae: 那也有可能是丧尸或者是弗兰肯斯坦（科学怪人）呀。 #line:0e14ad
-Angus: 好吧，它们也有可能是由鬼魂类物质组成的。 #line:b180c0
+Angus: 然后我回应句“嘿，经核查，你是个死人。" #line:e236cc
+Mae: 那样也有可能是丧尸或者科学怪人。 #line:0e14ad
+Angus: 好吧，也可能是由《鬼怪那些事》编造的。 #line:b180c0
 Mae: 《鬼怪那些事》可以办成一个播客诶， #line:c0e403
-Mae: 话题可以是关于神啊鬼啊之类的。 #line:468308
+Mae: 主要讲鬼魂。 #line:468308
 Angus: *这集《鬼怪那些事》将带各位来到多纳狼餐厅。* #line:04b4cb
 <<if $did_gregg_friendship_quest_4>>
 	Mae: 算了吧，这也太逊了吧。 #line:527112
-	Angus: 真抱歉。 #line:43e2cb
+	Angus: 抱歉。 #line:43e2cb
 <<endif>>
 
 Mae: 欢迎收看《鬼怪那些事》。 #line:5bffa2
-Mae: 我是梅，我刚才看见了幽灵。|这位是安格斯，|他是个无神论者，|所以他不信我的话哦！ #line:ee2266
-Angus: 我是安格斯，这位是梅。我得告诉你们，她是个疯子。 #line:5fbb76
+Mae: 我是梅，刚看见了鬼。|而这位是安格斯，|但他不信我的话哦！ #line:ee2266
+Angus: 我是安格斯，这位是梅。她可是个疯子。 #line:5fbb76
 <<irisOut 1 wait>>
 <<sectionTitle AngusIQ ParkEntrance>>
 ===
@@ -442,7 +442,7 @@ Mae: 嗨，安格斯。你的影像之国怎么样啊？ #line:c6098d
 Angus: 还可以，还可以。 #line:bc92fd
 Angus: 万圣节购物季又要到了， #line:c070c0
 Angus: 又有一大堆不错的恐怖片上架了。 #line:3e6da0
-Mae: 真是太棒啦。 #line:f2f21b
+Mae: 不错。 #line:f2f21b
 Angus: 你最喜欢哪部？ #line:53665d
 Mae: 你是指恐怖片吗？ #line:1f2d4e
 Angus: 没错。 #line:e813a6
@@ -453,7 +453,7 @@ Angus: 没错。 #line:e813a6
         Mae: 应该说，*所有地方*都很漂亮。 #line:dbd34b
     ->《黑橡树》。 #line:9575bb
         Angus: 哦，这部电影很不错。而且还加入了女巫的元素，所以又很诡异。 #line:c407c2
-        Mae: 是啊，诡异到家啦， #line:8dbfcb
+        Mae: 是啊，诡异死了， #line:8dbfcb
         Mae: 还很吓人。 #line:d8edfd
         Angus: 是啊，这部电影 #line:54a162
         Angus: 好像还算是部历史剧。 #line:dd0465
@@ -470,7 +470,7 @@ position: 1655,-749
 Mae: 万～圣～节～快～乐！ #line:047443
 Angus: 哈哈。嘿，也祝你万圣节快乐。 #line:408f91
 Mae: 你害怕吗？ #line:75ad4a
-Angus: 哦，是啊，我害怕极啦。难道你没看出来吗？ #line:99e87c
+Angus: 哦，是啊，我很害怕。难道你没看出来吗？ #line:99e87c
 Mae: 那就做个惊恐的表情。 #line:502297
 <<wait 1>>
 Angus: :) #line:9b8963
@@ -479,7 +479,7 @@ Mae: :) #line:dd0651
 Mae: 安格斯，你这是在笑啊。 #line:6271dc
 Mae: 你这表情倒是挺可爱的，但一点也不吓人。 #line:a1ffaf
 Angus: :| #line:ae1e12
-Angus: 哦。 #line:9ac6b8
+Angus: 好吧。 #line:9ac6b8
 Mae: 但你已经努力了，干得不赖！ #line:d22323
 Angus: 嘿嘿。 #line:030b3f
 Mae: :| #line:02952d

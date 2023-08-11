@@ -50,7 +50,7 @@ Mae: 不管是什么时间，我都会穿着现在穿的这件衣服， #line:1c
 Mae: 因为这就是我的名片。 #line:e72877
 Donna: 我也没有别的场合穿这件衣服。 #line:dc9763
 [[好了，好好享受你的休息时光吧！|DonnaEnd]] #line:1348de
-[[我感觉这件衬衣很酷，因为它带有很多重意义在里面。|Donna30]] #line:0d1ea9
+[[我感觉这件衬衫很酷，因为它对我来说有很多意义。|Donna30]] #line:0d1ea9
 
 ===
 title: DonnaEnd
@@ -74,7 +74,7 @@ Mae: 一样！我也把这衣服当成我一人独享的。 #line:e4290b
 Donna: 下个星期我就该30岁了。 #line:a1e398
 Mae: 以前，我在家庭财政方面也算是个行家。 #line:3f1ed1
 Donna: 将来，我会在这小镇死去。 #line:982133
-Donna: 我希望他们能把穿着这衣服的我埋下去。 #line:5c86ba
+Donna: 我希望他们会把穿着这身衣服的我下葬。 #line:5c86ba
 Mae: 我也希望自己能穿着这件衣服下葬。 /o\ #line:7e84f9
 Donna: 梅，你的衬衣很好看。 #line:18a035
 Mae: [wave]谢谢！！！[/wave] #line:e83612

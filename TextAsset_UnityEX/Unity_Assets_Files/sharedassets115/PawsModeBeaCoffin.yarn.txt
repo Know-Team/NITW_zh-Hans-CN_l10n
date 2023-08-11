@@ -11,8 +11,8 @@ colorID: 0
 position: 858,275
 ---
 <<runNextLinesTogether 2>>
-Mae:{width=8}啊 啊 啊 啊 啊！！！ #line:48a0ae
-Bea:{width=8}啊 啊 啊 啊 啊！！！ #line:f0cd74
+Mae:{width=8}啊啊啊啊啊！！！ #line:48a0ae
+Bea:{width=8}啊啊啊啊啊！！！ #line:f0cd74
 <<close>>
 <<set $did_bea_coffin to 1>>
 <<irisOut 1 wait>>

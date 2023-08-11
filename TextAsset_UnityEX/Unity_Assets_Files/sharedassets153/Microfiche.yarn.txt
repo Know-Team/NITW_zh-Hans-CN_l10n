@@ -64,14 +64,14 @@ Bea: 墓地。这地方就交给我吧。 #line:e59b9f
 Mae: 要我说，如果你想找幽灵什么的， #line:45b6aa
 Mae: 就去那儿。那地方保证管够。 #line:848ad8
 Bea: 看起来，有人是在老墓区那块儿看见他的…… #line:758006
-Bea: 哦，太酷啦！他的墓就在那片地方！ #line:664040
+Bea: 哦，酷啊！他的墓就在那片地方！ #line:664040
 Bea: 我对这地方真的很有兴趣。 #line:03cbb7
 Mae: 那怎么样才能让你不感兴趣呢？ #line:61bcc4
 Mae: 这回可是真有特别危险的幽灵什么的！ #line:4509b7
 Bea: ……我很喜欢历史。 #line:aa2a16
 Mae: 你是喜欢幽灵和历史吧！ #line:c93adc
 Mae: 你还喜欢那些不是历史的历史！ #line:1af38f
-Bea: 哈哈哈，说得太好啦。 #line:5fa7cd
+Bea: 哈哈哈，说得太好了。 #line:5fa7cd
 [[AdvanceClue]]
 ===
 title: Clue3
@@ -138,7 +138,7 @@ colorID: 0
 position: 1036,311
 ---
 Mae: 哦，哇。这可没什么意思。 #line:59f5f7
-Mae: 太 棒 啦。 #line:e9f1b2
+Mae: 太棒啦。 #line:e9f1b2
 Mae: 哈哈哈哈。 #line:26f55c
 Mae: 哦，天哪。 #line:65bb54
 <<set $knows_tooth to 1>>

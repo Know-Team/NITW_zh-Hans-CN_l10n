@@ -6,11 +6,11 @@ position: 79,276
 <<setCanInteract Mom 0>>
 <<flip Mom -1>>
 <<flip Mae -1>>
-Mae: 我不记得我以前来过这里啊。 #line:a4b1d9
-Mom: 我们以前经常到这儿来啊。 #line:a23177
+Mae: 我好像之前没到过这儿。 #line:a4b1d9
+Mom: 我们以前经常到这儿来。 #line:a23177
 Mae: 是吗？ #line:fda458
-Mom: 当然不是了。我说的“我们"是指“像你这么大的时候的我和我的朋友"。 #line:01a5c7
-Mae: 哦，好吧。我还真有点不习惯你说的“我们"这个词。 #line:2c6347
+Mom: 不是，我说的“我们"是指“像你这么大的时候的我和我的朋友们"。 #line:01a5c7
+Mae: 好吧。我还真有点不习惯你口中的“我们"还会指代别人。 #line:2c6347
 Mom: 信不信由你，我已经有过不少“我们"了。 #line:705319
 Mae: 嗯哼。 #line:7ed2dd
 <<close>>
@@ -137,19 +137,19 @@ Mae: 嗯…… #line:0f72fd
                     Mae: 这简直是造孽啊，太过分啦。 #line:309408
                     Mom: 有谁还会记得那条可怜的鳗鱼呢？ #line:e369bc
                 <<else>>
-                    Mom: 大蛇。 #line:f833b1
-                    Mae: 大蛇。 #line:26d31b
-                    Mom: 以前，我在这儿被一条蛇咬到过，这可是真事！ #line:6ade41
-                    Mae: 我可没听你说起过这事。 #line:0fa95d
-                    Mom: 是啊，还没跟你说过这事。|那是一条铜头蝮，|当时它是从|一根原木下面窜出来的。 #line:6681bb
-                    Mom: 当时，那条蛇咬到了我的腿。|然后，我的前男友查理——|他可是个不错的帅小伙—— #line:5c0b91
-                    Mom: 想尽办法想要把我腿上的蛇毒吸出来。 #line:0cbbcf
+                    Mom: 巨蛇。 #line:f833b1
+                    Mae: 巨蛇。 #line:26d31b
+                    Mom: 对了，我还被一条蛇咬过呢！ #line:6ade41
+                    Mae: 我可没听你说过这事。 #line:0fa95d
+                    Mom: 是啊，那是一条铜头蝮。|从原木下面窜出来的。 #line:6681bb
+                    Mom: 那时候我的男朋友，|好像叫查理，|他可是个不错的帅小伙。 #line:5c0b91
+                    Mom: 他想尽办法把我腿上的蛇毒吸出来。 #line:0cbbcf
                     Mae: 哇，他可真是个大暖男啊！ #line:152dfd
-                    Mom: 后来，因为接触到了蛇毒，他的嘴失去了知觉，而且他的组织也受到了损伤。 #line:1ea290
-                    Mom: 即使如此，我还是得去医院接受正规治疗。 #line:7da71e
+                    Mom: 他的嘴因此失去了知觉，组织也受损了。 #line:1ea290
+                    Mom: 即使如此，我还是得去医院接受治疗。 #line:7da71e
                     Mae: 哦，哇哦。 #line:558949
                     Mom: 所以，宝贝，千万别用嘴去吸蛇毒。 #line:02a798
-                    Mae: 好的，我会记住的。 #line:aea9b7
+                    Mae: 好的。 #line:aea9b7
                     Mom: 因为这么做一点用都没有。 #line:7527b1
                     Mae: 了解。 #line:f727dc
                 <<endif>>
@@ -164,7 +164,7 @@ Mom: 然后，我开始跑了起来。但不管我怎么跑，我还是跑不出
 Mae: 嗯。 #line:7cfc68
 Mom: 你觉得这个梦是什么意思呢？ #line:7cde56
 Mae: 我也不太清楚。解释你的梦让我感觉很奇怪。 #line:37dbf2
-Mom: 这是为什么啊？ #line:edda17
+Mom: 为什么？ #line:edda17
 Mae: 因为你是我妈。 #line:c772a3
 Mom: …… #line:8b9fea
 Mom: 说的也是。 #line:f01897
@@ -176,17 +176,17 @@ Mom: 看来我只能把你留在这儿了。 #line:2bea1e
 <<close>>
 <<wait 1>>
 Mae: 老妈，你说话的时候，我看不见你的表情。 #line:dbe2a2
-Mom: 你是想看到我的表情吗？ #line:3df7ab
+Mom: 你想看吗？ #line:3df7ab
 <<close>>
 <<wait 1>>
 Mae: :) #line:d5d829
-Mae: 我不想了。 #line:e4057e
+Mae: 不了。 #line:e4057e
 <<close>>
 <<wait 2>>
 <<walk Mom MomWalkOff>>
-Mom: 好了，那咱们回家见吧！ #line:0a1abe
+Mom: 好了，家里见！ #line:0a1abe
 Mae: :( #line:31b1a4
-Mae: 嘿，老 妈！ #line:814338
+Mae: 喂！ #line:814338
 <<unlockAchievement Jenny's_Field>>
 <<wait 1>>
 <<unlockDoodle JennysField>>

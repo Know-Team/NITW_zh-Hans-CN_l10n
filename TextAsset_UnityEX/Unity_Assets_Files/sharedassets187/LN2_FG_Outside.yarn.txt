@@ -13,7 +13,7 @@ position: -2432,275
 	<<set $cliff_jumps += 1>>
 <<elseif $cliff_jumps is 1>>
 	Mae: 然后她又跳下了悬崖！ #line:453e21
-	Granddad: 不，她 没 有。 #line:0ca3a1
+	Granddad: 不，她没有。 #line:0ca3a1
 	<<set $cliff_jumps += 1>>
 <<elseif $cliff_jumps is 2>>
 	Mae: ……然后，她就跳了下去！！ #line:144259
@@ -27,7 +27,7 @@ position: -2432,275
 <<elseif $cliff_jumps is 4>>
 	Mae: 跳！跳！！跳！！！ #line:91feaf
 	Granddad: “在爱心镇，住着一头小熊， #line:e499b8
-	Granddad: 她的名字叫善心熊。” #line:60a171
+	Granddad: 她的名字叫善心熊。" #line:60a171
 	<<set $cliff_jumps += 1>>
 <<elseif $cliff_jumps is 5>>
 	Mae: 快～跳！ #line:ae8da3
@@ -58,7 +58,7 @@ position: -2432,275
 	Mae: 跳！！！！！！ #line:daf19c
 	Granddad: 一直“跳跳跳"地一点也不好玩。你都不会累的吗！ #line:22505a
 	Mae: 我讨厌善心熊！ #line:fe4216
-	Granddad: 这个故事可不是讲善心熊的啦！ #line:64abc4
+	Granddad: 这个故事可不是讲善心熊的！ #line:64abc4
 	<<set $cliff_jumps += 1>>
 <<elseif $cliff_jumps is 11>>
 	Mae: 然后，她就跳…… #line:4f6677
@@ -153,7 +153,7 @@ Adina: 额……我们…… #line:d52a73
 Adina: 大老远赶过来就是为了拜见林中之神啊！ #line:1077d8
 GodtenderBrown: 告诉你实话吧，但你一定要保守秘密，可…… #line:36c0c6
 GodtenderBrown: 可是…… #line:2974e0
-GodtenderBrown: 林中之神病了。他年岁大了，快不行了。 #line:3c8622
+GodtenderBrown: 林中神病了。他年岁大了，快不行了。 #line:3c8622
 GodtenderBrown: 所以，他不能见你。这会打扰到他的，所以我们不敢冒这个险。 #line:1acbd5
 [[他病了？|FGSick]] #line:2ccb03
 [[他快不行了？|FGDying]] #line:9ea2c9
@@ -181,7 +181,7 @@ position: -1246,514
 ---
 GodtenderBrown: 你好，旅行者！ #line:b473a0
 Adina: 这里可不止我一个人！ #line:dc3d17
-Adina: 我们请求拜见林中之神！ #line:13047b
+Adina: 我们请求拜见林中神！ #line:13047b
 GodtenderBrown: 我是侍神者布朗。你们是什么人？ #line:d2dcf0
 Adina: 我是阿斯拉女王。这位是我的皇家顾问，艾姆辛。 #line:b25992
 Snowthief: 您好，您好！ #line:0013a4
@@ -214,7 +214,7 @@ position: -642,767
 ---
 GodtenderBrown: 你好，旅行者！ #line:a2a1f3
 Adina: 这里可不止我一个人！ #line:769415
-Adina: 我们请求拜见林中之神！ #line:5f494b
+Adina: 我们请求拜见林中神！ #line:5f494b
 GodtenderBrown: 我是侍神者布朗。你们是什么人？ #line:64c6bf
 Adina: 我是阿斯拉女王。这位是我的皇家顾问，威廉姆斯。 #line:f0b382
 Snowdrunk: 幸会！ #line:c0c7c1
@@ -224,7 +224,7 @@ Snowblow: *嘟！* #line:7d5c90
 GodtenderBrown: 那是格伦丁号角的声音吗？ #line:c09e15
 Adina: 什么号角？ #line:61e959
 GodtenderBrown: 我上学的时候吹过！ #line:238947
-Adina: 啊，真是太巧啦！ #line:eab9d3
+Adina: 啊，好巧！ #line:eab9d3
 GodtenderBrown: 这位难道也被诅咒了吗？ #line:abe969
 [[这话是什么意思？|HornWhat]] #line:c025c6
 [[他没有。不过，这话是什么意思？|HornWhat]] #line:f58556
@@ -237,7 +237,7 @@ position: 161,536
 ---
 GodtenderBrown: 你好，旅行者！ #line:5f9f4c
 Adina: 我可不是一个人来的！ #line:fc7002
-Adina: 我们请求拜见林中之神！ #line:319f57
+Adina: 我们请求拜见林中神！ #line:319f57
 GodtenderBrown: 我是侍神者布朗。你们是什么人？ #line:e9912d
 Adina: 我是阿斯拉女王。这位是我的皇家顾问，威廉姆斯。 #line:245586
 Snowdrunk: 幸会！ #line:0f3999
@@ -255,7 +255,7 @@ position: 754,534
 ---
 GodtenderBrown: 你好，旅行者！ #line:eed34f
 Adina: 我可不是一个人来的！ #line:791ef9
-Adina: 我们请求拜见林中之神！ #line:a7d788
+Adina: 我们请求拜见林中神！ #line:a7d788
 GodtenderBrown: 我是侍神者布朗。你们是什么人？ #line:7b4497
 Adina: 我是阿斯拉女王。这位是我的皇家顾问，艾姆辛。 #line:018aac
 SnowThief: 幸会！ #line:53b064
@@ -266,7 +266,7 @@ Snowblow: *嘟！* #line:39dc0a
 GodtenderBrown: 那是格伦丁号角的声音吗？ #line:778840
 Adina: 什么号角？ #line:5cff5d
 GodtenderBrown: 我上学的时候吹过这种号角！ #line:1dd37d
-Adina: 啊，真是太巧啦！ #line:b25848
+Adina: 啊，好巧！ #line:b25848
 GodtenderBrown: 这位难道也被诅咒了吗？ #line:5ee087
 [[你说什么？|HornWhat2]] #line:526666
 [[他没有。不过，这话是什么意思？|HornWhat2]] #line:70f396
@@ -279,7 +279,7 @@ position: 1276,527
 ---
 GodtenderBrown: 你好，旅行者！ #line:8ed04a
 Adina: 我身边可还有人呢！ #line:1559d0
-Adina: 我们请求拜见林中之神！ #line:85e08f
+Adina: 我们请求拜见林中神！ #line:85e08f
 GodtenderBrown: 我是侍神者布朗。你们是什么人？ #line:6f35f7
 Adina: 我是阿斯拉女王。这位是我的皇家顾问，艾姆辛。 #line:cd02e0
 Snowthief: 嘿～ #line:72ea92
@@ -287,7 +287,7 @@ Adina: 这位是我的克兰西大主教！ #line:30e2e8
 Snowdog: *汪！* #line:6393e9
 Adina: 我们连夜长途跋涉才赶到这儿。能让我们过去吗？ #line:4ba4ec
 GodtenderBrown: 你的大主教是一只*狗*吗？ #line:b16ef5
-[[他感官可灵敏啦。是不是啊，克兰西？|FGPerceptive2]] #line:93685a
+[[他感官可灵敏了。是不是啊，克兰西？|FGPerceptive2]] #line:93685a
 [[他可不是狗！克兰西大主教说的可是动物的语言！|FGBeastLanguage2]] #line:f4274e
 ===
 title: SnowblowAndSnowdog
@@ -297,7 +297,7 @@ position: 1989,518
 ---
 GodtenderBrown: 你好，旅行者！ #line:eb91bc
 Adina: 我身边可还有人呢！ #line:9e11fc
-Adina: 我们请求拜见林中之神！ #line:08ce5e
+Adina: 我们请求拜见林中神！ #line:08ce5e
 GodtenderBrown: 我是侍神者布朗。你们是什么人？ #line:7eb948
 Adina: 我是阿斯拉女王。这位是我的使臣。 #line:93acb9
 Snowblow: *嘟！* #line:134808
@@ -306,7 +306,7 @@ Snowdog: *汪！* #line:18c68c
 GodtenderBrown: 那是格伦丁号角的声音吗？ #line:e6a4c1
 GodtenderBrown: 你的侍卫居然是只狗？ #line:21fe9b
 [[我怎么知道那到底是不是格伦丁号角呢？|HowHorn]] #line:97096f
-[[没错，克兰西可尽职尽责啦。|BodyDog]] #line:12053b
+[[没错，克兰西可尽职尽责。|BodyDog]] #line:12053b
 ===
 title: MissingSnowmenCombination
 tags: 
@@ -334,7 +334,7 @@ position: 2689,725
 	Snowdog: *呼**呼**呼* #line:02c3f8
 	Adina: 你的项圈上写着“克兰西"。这是你的名字吗？ #line:37e478
 	Snowdog: *汪！**汪！**汪！* #line:d28b53
-	Adina: 克兰西，我可不希望你把我的事给搞砸啦！ #line:bc2dea
+	Adina: 克兰西，我可不希望你把我的事搞砸！ #line:bc2dea
 	Adina: 但我也希望，你能快点完成任务， #line:2123fb
 	Adina: 然后和你的朋友们一起找到你们的归宿。 #line:21d06f
 	Snowdog: *汪！* #line:063466
@@ -356,7 +356,7 @@ position: 2701,203
 	Adina: 你好。 #line:a2416f
 	Snowthief: 呃，你想干嘛？ #line:067bd3
 	Adina: 不好意思打扰你了，但我想让你帮我个忙。 #line:b01071
-	Snowthief: 哦，见了鬼啦。我已经死啦，对不对？ #line:e1effb
+	Snowthief: 哦，见鬼。我已经死了？ #line:e1effb
 	Snowthief: 哈，真是俗套的人设。 #line:9bca0d
 	Adina: 你听我说，是我把你抬到这儿来的。 #line:6eb9e2
 	Adina: 我觉得你应该能走出这片树林， #line:de4615
@@ -385,14 +385,14 @@ position: 2702,451
 	Snowblow: *嘟！* #line:abfb26
 	Adina: 你是号角变成的幽灵吗？ #line:8ef3ef
 	Snowblow: *嘟！嘟！* #line:7fe73c
-	Adina: 那你就是吹响号角的人啦？ #line:3f71b6
+	Adina: 那你就是那个吹响号角的人？ #line:3f71b6
 	Snowblow: *嘟！* #line:e30f49
 	Adina: 听我说，是我把你抬过来的。 #line:c420ee
 	Adina: 我觉得你应该能走出这片树林， #line:e8cdc3
 	Adina: 找到自己该去的地方，然后做你身为鬼魂该做的事去吧。 #line:662d83
 	Adina: 这主意听起来还可以吧？ #line:36430b
 	Snowblow: *嘟～！* #line:c28b5e
-	Adina: 嗯，太好啦！跟我来。 #line:7288be
+	Adina: 嗯，太好了！跟我来。 #line:7288be
 	<<set $talked_to_snowblow to 1>>
 <<endif>>
 ===
@@ -410,8 +410,8 @@ position: 2713,-49
 	Snowdrunk: ……你好？ #line:cef413
 	Adina: 不好意思，打扰了，我想让你帮我个忙。 #line:6c18db
 	Snowdrunk: 等会儿，我这是在哪儿啊？ #line:f4c800
-	Adina: 你正在林中之神的山上呢。 #line:0b8968
-	Snowdunk: 哦！咱们是要去见林中之神吗？ #line:6bdd94
+	Adina: 你正在林中神的山上呢。 #line:0b8968
+	Snowdunk: 噢！咱们是要去见林中神吗？ #line:6bdd94
 	Snowdrunk: 因为我要去一趟冰湖。 #line:4613a3
 	Adina: 我也一样！ #line:89f935
 	Adina: 但你不是为了见林中之神才去那儿的。 #line:162ddf
@@ -431,7 +431,7 @@ tags:
 colorID: 0
 position: -2063,588
 ---
-GodtenderBrown: 哦，女王大人，林中之神的病还没好呢。 #line:543af1
+GodtenderBrown: 噢，女王大人，林中神的病还没好呢。 #line:543af1
 Adina: 太遗憾了。 #line:485296
 GodtenderBrown: 要是我知道他生病的原因就好了，那样我就能知道他的病还能不能好了。 #line:cddc0a
 GodtenderBrown: 谢谢您让您的随从留下来陪我，这对他也是个安慰。 #line:7cd12e
@@ -444,10 +444,10 @@ position: -2311,587
 ---
 <<if $forest_god_poison is 1>>
 	Adina: 侍神者布朗！ #line:caf979
-	GodtenderBrown: 女王大人！已经太迟啦！您为什么还在这儿啊？ #line:88bcbe
+	GodtenderBrown: 女王大人！已经太迟了！您为什么还在这儿啊？ #line:88bcbe
 	Adina: 你听我说，这件事很重要。 #line:35fe83
 	Adina: 我知道林中之神快不行的原因了。 #line:62cfb8
-	GodtenderBrown: 您……说什么？ #line:236c8a
+	GodtenderBrown: 什么？ #line:236c8a
 	Adina: 我看见了…… #line:ebef83
 	GodtenderBrown: 别说了，您一定要亲自把原因当面告诉给他。 #line:f92237
 	Adina: 你说什么？为什么啊？ #line:359c8a
@@ -460,8 +460,8 @@ position: -2311,587
 	<<wait 1>>
 	<<scene LN2_FG_Interior>>
 <<else>>
-	GodtenderBrown: 今年的长至夜是最糟糕的一次啦。 #line:97cded
-	GodtenderBrown: 但好日子就要来啦。 #line:bb5ac1
+	GodtenderBrown: 今年的长至夜是最糟糕的一次。 #line:97cded
+	GodtenderBrown: 但好日子就要来了。 #line:bb5ac1
 <<endif>>
 
 ===
@@ -472,8 +472,8 @@ position: -2376,1165
 ---
 Adina: 神怎么会生病呢？ #line:00b8d3
 GodtenderBrown: 我不知道。 #line:898861
-GodtenderBrown: [shake=.02]要是我知道到底出了什么事就好啦！！！！[/shake] #line:6851eb
-GodtenderBrown: 我们侍神者的职责就是照料林中之神。 #line:e76a5c
+GodtenderBrown: [shake=.02]要是我知道到底出了什么事就好了！！！！[/shake] #line:6851eb
+GodtenderBrown: 我们侍神者的职责就是照料林中神。 #line:e76a5c
 GodtenderBrown: 可这次的病，我们从来都没见过。 #line:5eeb9d
 GodtenderBrown: 从圣人塞西尔开始侍奉林中之神那天算起，|至今700年的记录中都没有见过这种病。 #line:c32e1a
 Adina: 哦，不会吧。 #line:95cd47
@@ -488,7 +488,7 @@ GodtenderBrown: 没了他，我真不知道我这辈子该怎么过了。 #line:
 Adina: 侍神者，我很抱歉。 #line:7a38c7
 GodtenderBrown: 女王大人，这件事您什么忙也帮不了。 #line:a4acb4
 GodtenderBrown: 作为林中之神的代表人， #line:74a66a
-GodtenderBrown: 我宣布，今年长至夜期间，林中之神的魔法将不会影响于你。 #line:44fc1a
+GodtenderBrown: 我宣布，今年长至夜期间，林中神的魔法将不会影响于你。 #line:44fc1a
 GodtenderBrown: 但至于[speed=.5][shake=.01]她[/all]，你只能听天由命了， #line:d6d873
 GodtenderBrown: 因为她是这片森林里最危险的生物。 #line:463755
 Adina: 谢谢你，侍神者布朗。 #line:361a57
@@ -503,8 +503,8 @@ position: -2614,1170
 ---
 Adina: 神怎么会死呢？ #line:e81cdd
 GodtenderBrown: 我不知道是怎么回事。 #line:7fee10
-GodtenderBrown: [shake=.02]要是我知道到底出了什么事就好啦！！！！[/shake] #line:4cf16b
-GodtenderBrown: 我们侍神者的职责就是照料林中之神。 #line:545caa
+GodtenderBrown: [shake=.02]要是我知道到底出了什么事就好了！！！！[/shake] #line:4cf16b
+GodtenderBrown: 我们侍神者的职责就是照料林中神。 #line:545caa
 GodtenderBrown: 可这次的情况，我们从来都没遇到过。 #line:ddb708
 GodtenderBrown: 从圣人塞西尔开始侍奉林中之神那天算起，|至今700年的记录中都没有见过这种病。 #line:da9f2d
 Adina: 哦，不会吧。 #line:29f8e8
@@ -519,7 +519,7 @@ GodtenderBrown: 没了他，我真不知道我这辈子该怎么过了。 #line:
 Adina: 侍神者，我很抱歉。 #line:1de590
 GodtenderBrown: 女王大人，这件事您什么忙也帮不了。 #line:f5defb
 GodtenderBrown: 作为林中之神的代表人， #line:352c32
-GodtenderBrown: 我宣布，今年长至夜期间，林中之神的魔法将不会影响于你。 #line:f022b3
+GodtenderBrown: 我宣布，今年长至夜期间，林中神的魔法将不会影响于你。 #line:f022b3
 GodtenderBrown: 但至于[shake=.01]她[/shake]，你只能听天由命了， #line:f7ae34
 GodtenderBrown: 因为她是这片森林里最危险的生物。 #line:f64aff
 Adina: 谢谢你，侍神者布朗。 #line:961361
@@ -540,7 +540,7 @@ Adina: 然后，他就得到了和动物交流的能力。 #line:38f23c
 GodtenderBrown: 那他为什么不跟咱们说话呢？ #line:179da6
 Adina: 嗯…… #line:c0f57a
 Snowdrunk: 嗯。 #line:75236c
-[[他最近忘了该怎么说话了，因为他工作实在是太投入啦。|FGForgotten]] #line:ca9e7c
+[[他最近忘了该怎么说话了，因为他工作实在是太投入了。|FGForgotten]] #line:ca9e7c
 [[他最近还和一只叫达特的皇家猎犬说过话呢。|FGDart]] #line:f79019
 ===
 title: FGPerceptive
@@ -550,11 +550,11 @@ position: -79,768
 ---
 Snowdrunk: …… #line:80350d
 Adina: 威廉姆斯？？？ #line:677c4c
-Snowdrunk: Yes, this dog has a straight line through to heaven. #line:11fa31
+Snowdrunk: 是啊，那条狗有直接聆听上天的能力。 #line:11fa31
 Snowdog: *汪！* #line:6ed170
 Adina: 他出生的时候，有一只耳朵的颜色和雪一样白。 #line:b8163e
 Adina: 他就是用这只耳朵去听天界的声音的。 #line:bdfade
-GodtenderBrown: 太神奇啦！ #line:145766
+GodtenderBrown: 真神奇！ #line:145766
 Snowdog: *汪！* #line:473062
 Snowdrunk: 是啊，我们都…… #line:943cc8
 Snowdog: *汪！**汪！* #line:6f21ce
@@ -571,10 +571,10 @@ tags:
 colorID: 0
 position: 368,1019
 ---
-GodtenderBrown: 哦，原来您身边也带着只狗啊！我可喜欢狗啦！ #line:4f1d1e
+GodtenderBrown: 哦，原来你身边也带着只狗啊！我超喜欢狗的！ #line:4f1d1e
 GodtenderBrown: 达特！说句话，达特！ #line:a1ac40
 Snowdog: *汪！* #line:5614a2
-GodtenderBrown: 哦，克兰西大主教，我想和您的狗说句话！ #line:3e6c22
+GodtenderBrown: 哦，克兰西大主教，我想和你的狗说句话！ #line:3e6c22
 Adina: 威廉姆斯！你能不能……让达特说句话？ #line:9bad48
 Snowdrunk: 哦，老天啊。 #line:52097b
 GodtenderBrown: 说话啊，达特！ #line:61b8f5
@@ -588,12 +588,12 @@ GodtenderBrown: 我还听出了老酒鬼说话的感觉。 #line:e17eb9
 Adina: 侍神者，你的感觉也挺灵敏的嘛！ #line:9da31f
 Snowdog: *汪！* #line:47f6f5
 Adina: 克兰西让可怜的达特过上了好日子！ #line:ffbb79
-Snowdrunk: 我恨死你们啦。 #line:d32276
+Snowdrunk: 我恨你们。 #line:d32276
 GodtenderBrown: 这话是什么意思？ #line:5fcb9d
 Adina: 天太冷了，我们能过去了吗？ #line:7ef561
 GodtenderBrown: 所有心地善良、道德崇高的主教 #line:0beb5f
 GodtenderBrown: 和所有正义勇敢的狗狗 #line:870d8b
-GodtenderBrown: 都有面见林中之神和接受他检验的权利。 #line:7d15f3
+GodtenderBrown: 都有面见林中神和接受他检验的权利。 #line:7d15f3
 Adina: 谢谢你，侍神者！ #line:3227d4
 [[EndSnowmenChat]]
 
@@ -605,7 +605,7 @@ position: 141,1015
 ---
 GodtenderBrown: 多 么 虔 诚 啊！ #line:e356cd
 Adina: 在我们那里，他还是圣徒候选人呢。 #line:af1a9c
-Snowdrunk: 侍神者，他可厉害啦。 #line:01d699
+Snowdrunk: 侍神者，他很厉害。 #line:01d699
 GodtenderBrown: 祝福他。那他还健在吗？ #line:af134c
 GodtenderBrown: 有谁听说过这件事吗？ #line:d58b59
 [[情况有些特殊。|FgCircumstance]] #line:c9c10b
@@ -621,7 +621,7 @@ Adina: 他是国王的私生子。 #line:0749d2
 Snowdog: *汪！* #line:b4b648
 Adina: 所以，他破格成为了圣徒。 #line:e23162
 Snowdrunk: 全都是暗箱操作。 #line:c88087
-GodtenderBrown: 太没天理啦！ #line:1f4939
+GodtenderBrown: 真没天理！ #line:1f4939
 Adina: 嘿，你们俩别干扰我的思路！ #line:1f0ec9
 Snowdrunk: 但这也不是他的错。 #line:8c3259
 Adina: 他人很好。 #line:5be2d1
@@ -642,7 +642,7 @@ colorID: 0
 position: 364,1261
 ---
 GodtenderBrown: 幽 灵？！？！？ #line:b2be0f
-GodtenderBrown: 实在抱歉，但这真吓到我啦。 #line:d17eaf
+GodtenderBrown: 实在抱歉，但这真吓到我了。 #line:d17eaf
 <<close>>
 <<walk GodtenderBrown Offscreen>>
 <<wait 1>>
@@ -683,7 +683,7 @@ GodtenderBrown: 未来有无限种可能，他怎么能预测到呢？ #line:773
 Adina: 他能预测出所有可能，他还知道哪种可能发生的几率最大！ #line:31a00b
 Snowdog: *汪！* #line:79320a
 GodtenderBrown: 我还有选择的余地吗？ #line:be1901
-Snowdrunk: 当然有啦！ #line:d216f5
+Snowdrunk: 当然有！ #line:d216f5
 Adina: 嘘！ #line:4c47ff
 Adina: 不是这个意思。命运预示了你会让我们通过的。 #line:ad4a34
 GodtenderBrown: 我现在感觉，发生什么事都是必然的。 #line:8606ff
@@ -721,7 +721,7 @@ GodtenderBrown: 你说什么？ #line:99bfdd
 Snowdog: *汪！* #line:5324c9
 Snowdrunk: 我能力有限，翻不了了。 #line:425f1c
 Adina: 我们要把这些奇闻转述给其他动物听， #line:5d7c2b
-Adina: 告诉给獾、白鼬、山雀、小熊它们听。 #line:ccf36e
+Adina: 告诉给狗獾、白鼬、山雀、小熊它们听。 #line:ccf36e
 GodtenderBrown: 祝福它们。 #line:08cc74
 GodtenderBrown: 咱们所有人居然都在长至夜这天见证了奇迹的出现。 #line:c6139b
 GodtenderBrown: 女王大人，您是最受上天眷顾的人。 #line:8cbc78
@@ -781,7 +781,7 @@ GodtenderBrown: 我很抱歉，但在圣山上，我们不能说嘲讽的话。 
 Snowdrunk: 好极了。 #line:c410de
 GodtenderBrown: 你们的王国肯定很愤世嫉俗，喜欢挖苦讽刺吧。 #line:af5d06
 Adina: 听我说，如果我们不再互相讽刺，不再愤世嫉俗， #line:0a9f6e
-Adina: 那我们能去拜见林中之神吗？ #line:0a7856
+Adina: 那我们能去拜见林中神吗？ #line:0a7856
 GodtenderBrown: 千万别在这里撒谎！ #line:22649d
 GodtenderBrown: 你们可以过去了。但一定要小心。 #line:847f62
 Adina: 谢谢你，侍神者！ #line:5c0eaf
@@ -803,7 +803,7 @@ Snowthief: 这三样东西， #line:ee141c
 Snowdrunk: 确实可怕。 #line:ce1dd2
 Adina: 我们能过去了吗？ #line:ddc8c2
 GodtenderBrown: 你们一路上已经遇到过很多恐怖的事了， #line:8132a0
-GodtenderBrown: 但在林中之神的领土上， #line:cf7dcf
+GodtenderBrown: 但在林中神的领土上， #line:cf7dcf
 GodtenderBrown: 咱们所说的恐怖的事并不会影响到每个人。 #line:1498ed
 GodtenderBrown: 你们可以过去了。 #line:1b1010
 Adina: 谢谢你，侍神者！ #line:c503ef
@@ -918,7 +918,7 @@ GodtenderBrown: 我父亲以前就在我面前吹过这种号角。 #line:ce25de
 GodtenderBrown: 哦，斯坦尼斯劳斯·格伦丁！你的号角已经给人们带来了痛苦！ #line:8b6f4b
 Adina: 因为我和我的皇家顾问威廉姆斯都受到了厄运的诅咒， #line:ec5aff
 Adina: 所以，请允许我们去寻求林中之神的智慧。 #line:b382e9
-GodtenderBrown: 咱们都受到了诅咒，所以我怎么能拒绝您的请求呢。 #line:412a04
+GodtenderBrown: 咱们都受到了诅咒，所以我怎么能拒绝你的请求呢。 #line:412a04
 Adina: 谢谢你，侍神者！ #line:345492
 [[EndSnowmenChat]]
 
@@ -948,7 +948,7 @@ Adina: 侍神者，你父亲的事，我很遗憾。 #line:c10852
 GodtenderBrown: 这就是我和我父亲吹过的号角。 #line:4cb690
 GodtenderBrown: 我们终有一死，这是咱们都会面临的事。 #line:a7f9e6
 Snowblow: *嘟嘟嘟* #line:4b7ce0
-GodtenderBrown: 但我在这里找到了新的家人。赞美林中之神。 #line:d4d085
+GodtenderBrown: 但我在这里找到了新的家人。赞美林中神。 #line:d4d085
 Snowblow: *嘟*！ #line:d08fb5
 Adina: 真是太好了。 #line:176644
 GodtenderBrown: 虽然我不想让别人代替我父亲的位置，但我还是交到了很多朋友。 #line:32f264
@@ -958,7 +958,7 @@ GodtenderBrown: 我认识了卡梅尔神父、佩帕神父、平心静气·勿�
 <<endif>>
 Snowthief: 不好意思，咱们能聊聊为什么别人不能说“爸比"这个词呢？ #line:b7e60f
 Adina: 侍神者，在你失去家人的时候，你又找到了新的家人。我们已经知道这件事了。 #line:64edaf
-Adina: 所以，我们能把我们的关心和对诅咒的了解告诉林中之神吗？ #line:d3c09f
+Adina: 所以，我们能把我们的关心和对诅咒的了解告诉林中神吗？ #line:d3c09f
 GodtenderBrown: 咱们都受到了这只号的诅咒。它已经诅咒过很多人了， #line:79810b
 GodtenderBrown: 它肯定还会诅咒更多人的。 #line:a3bc33
 GodtenderBrown: 所以，你们可以过去了。 #line:354292
@@ -982,7 +982,7 @@ Adina: 在你开始吹号角以前，你想过自己能长生不老吗？ #line:
 GodtenderBrown: 谁知道呢，世事难料啊。 #line:a5aac2
 SnowThief: 可至少有件事还是能肯定的。 #line:58afb7
 GodtenderBrown: 总有一天，咱们都会听到那号声的。而且，咱们已经都听过了。 #line:835b30
-Adina: 侍神者，我们能把我们的关心和对诅咒的了解告诉林中之神吗？ #line:a4380b
+Adina: 侍神者，我们能把我们的关心和对诅咒的了解告诉林中神吗？ #line:a4380b
 GodtenderBrown: 咱们终将都会灭亡。这就是这只号角带来的毁灭诅咒。 #line:daa7c9
 GodtenderBrown: 所以我怎么能拒绝“灭友"的请求呢？ #line:5ffe58
 Adina: 谢谢你，侍神者！ #line:9139ba
@@ -996,7 +996,7 @@ position: 1991,766
 ---
 GodtenderBrown: 铜做的，形状是弯弯曲曲的，还要从一端吹气的东西？ #line:e0caaa
 Adina: 我感觉，这东西很可能是个号角。 #line:be5ef8
-GodtenderBrown: 额，您可以在我介绍完之后再发表评论。所有格伦丁号角都是有诅咒的。 #line:56934c
+GodtenderBrown: 额，你可以在我介绍完之后再发表评论。所有格伦丁号角都是有诅咒的。 #line:56934c
 Snowhorn: *嘟*？！ #line:42f8a5
 Adina: 什么？！ #line:a12d88
 GodtenderBrown: 格伦丁号角会给所有听到号声的人带来厄运， #line:907210
@@ -1013,7 +1013,7 @@ GodtenderBrown: 谁知道呢。 #line:6c2b4f
 Adina: 我们能过去了吗？ #line:d0e01f
 GodtenderBrown: 咱们有很多共同点。 #line:d05913
 GodtenderBrown: 咱们都很冷，而且咱们都终有一死。 #line:38e9e0
-GodtenderBrown: 而且，您还受到了厄运的折磨。 #line:86bb73
+GodtenderBrown: 而且，你还受到了厄运的折磨。 #line:86bb73
 GodtenderBrown: 所以，你们可以过去了。 #line:63c78e
 Adina: 谢谢你，侍神者！ #line:49dc30
 [[EndSnowmenChat]]
@@ -1029,7 +1029,7 @@ Adina: 他的直觉可准了。 #line:3a4597
 Snowhorn: *嘟*！ #line:91fe06
 Snowdog: *汪*！ #line:7dd1ca
 Adina: 不，他叫一声代表“是"，叫两声代表“不是"。 #line:4b1ece
-GodtenderBrown: 哦！那您问他个问题！！！！ #line:2f25c2
+GodtenderBrown: 哦！快问他个问题！！！！ #line:2f25c2
 Adina: 嗯…… #line:77dffd
 Adina: 克兰西，侍神者布朗会让咱们过去吗？ #line:940b14
 Snowdog: *汪*！ #line:8eba58
@@ -1039,13 +1039,13 @@ Snowdog: *汪*！*汪*！ #line:26ac55
 GodtenderBrown: 他说什么？ #line:842304
 Adina: 他只是很兴奋而已。 #line:1561a7
 GodtenderBrown: 可以理解。 #line:22edbe
-GodtenderBrown: 克兰西，去见林中之神，你高兴吗？ #line:60c38e
+GodtenderBrown: 克兰西，去见林中神，你高兴吗？ #line:60c38e
 Snowdog: *汪*！*汪*！ #line:94150a
 GodtenderBrown: 等等，叫两声不是代表“不是"吗？ #line:04ff40
 Snowblow: *嘟*！ #line:e40129
 Snowdog: *汪*！*汪*！ #line:f9cbb2
 Adina: 我认为，这是双重否定的意思。 #line:6bb4b4
-GodtenderBrown: 能面见林中之神，他难道不高兴吗？ #line:91a72f
+GodtenderBrown: 能面见林中神，他难道不高兴吗？ #line:91a72f
 GodtenderBrown: 这样的话，我就不能不能不能让你们过去啦！ #line:131ea6
 Adina: 你那是……三重否定…… #line:08a323
 GodtenderBrown: 不对，我说的是，不能不能不能不能过去。是四重否定！ #line:a0e426
@@ -1084,22 +1084,22 @@ position: -94,109
 	Adina: 你好！ #line:96ee79
 	GodtenderBrown: 你好，旅行者！ #line:f83071
 	GodtenderBrown: 请问，你是谁啊？ #line:1c4db5
-	Adina: 我叫阿丁娜！我是个天文学家！我想拜见林中之神！ #line:b0fa9e
-	GodtenderBrown: 很抱歉，阿丁娜，林中之神是不会见你的。 #line:235bbd
+	Adina: 我叫阿丁娜！我是个天文学家！我想拜见林中神！ #line:b0fa9e
+	GodtenderBrown: 很抱歉，阿丁娜，林中神是不会见你的。 #line:235bbd
 	GodtenderBrown: 只有像国王、皇帝这些位高权重的人， #line:455342
 	GodtenderBrown: 我才会让他们过去。 #line:b27137
 	Adina: 可我也不是普通人啊！我是……女王！ #line:4989bf
-	GodtenderBrown: 我眼睛虽然蒙着布，但我能听得出来，您是一个人来的。 #line:22b485
+	GodtenderBrown: 我眼睛虽然蒙着布，但我能听得出来，你是一个人来的。 #line:22b485
 	GodtenderBrown: 女王是不可能单独一个人出门的。 #line:c9c28e
 	GodtenderBrown: 这不合常理。 #line:d594f1
 	Adina: 这也太讨厌了吧。 #line:10a63b
-	GodtenderBrown: 如果您真是女王，就请把您的随从带过来， #line:62979f
+	GodtenderBrown: 如果你真是女王，就把你的随从带过来， #line:62979f
 	GodtenderBrown: 然后咱们再来商量怎么办。 #line:4b43de
-	GodtenderBrown: 但在这之前，先祝您长至夜快乐！ #line:055133
+	GodtenderBrown: 但在这之前，先祝你长至夜快乐！ #line:055133
 	Adina: ……谢谢…… #line:493d90
 	<<set $godtender to 1>>
 <<elseif $godtender is 1>>
-	GodtenderBrown: 我还是没听见您随从的声音。 #line:701c91
+	GodtenderBrown: 我还是没听见你随从的声音。 #line:701c91
 	Adina: 哦哦，他们马上就到…… #line:3c4409
 <<endif>>
 
@@ -1163,10 +1163,10 @@ tags:
 colorID: 0
 position: 1777,1009
 ---
-GodtenderBrown: 哦，原来您身边也带着只狗啊！我可喜欢狗啦！ #line:368899
+GodtenderBrown: 哦，原来你身边也带着只狗啊！我喜欢狗！ #line:368899
 GodtenderBrown: 达特！说句话，达特！ #line:c3764f
 Snowdog: *汪*！ #line:b8c6fd
-GodtenderBrown: 哦，克兰西大主教，我想和您的狗说句话！ #line:c3a919
+GodtenderBrown: 哦，克兰西大主教，我想和你的狗说句话！ #line:c3a919
 Adina: 艾姆辛！你能不能……让达特说句话？ #line:f526c4
 Snowthief: 额额额啊啊啊。 #line:279fbc
 GodtenderBrown: 说话啊，达特！ #line:466e19
@@ -1185,7 +1185,7 @@ GodtenderBrown: 这话什么意思？ #line:c053a2
 Adina: 天太冷了，我们能过去了吗？ #line:cb8abc
 GodtenderBrown: 所有心地善良、道德崇高的主教 #line:743ea1
 GodtenderBrown: 和所有正义勇敢的狗狗 #line:712a59
-GodtenderBrown: 都有面见林中之神和接受他检验的权利。 #line:b9b9e8
+GodtenderBrown: 都有面见林中神和接受他检验的权利。 #line:b9b9e8
 Adina: 谢谢你，侍神者！ #line:95274c
 [[EndSnowmenChat]]
 ===
@@ -1209,7 +1209,7 @@ Adina: 但你“干得可不错"啊！ #line:35c3d9
 GodtenderBrown: 我希望这祝福能帮我弄明白这句话到底是什么意思。 #line:346d8d
 Snowthief: 别难为自己。 #line:59881c
 Adina: 我们能过去了吗？ #line:117945
-GodtenderBrown: 您随从的感知能力让我十分佩服。你们可以过去了。 #line:882933
+GodtenderBrown: 你随从的感知能力让我十分佩服。你们可以过去了。 #line:882933
 Adina: 谢谢你，侍神者！ #line:2a4b32
 [[EndSnowmenChat]]
 
@@ -1243,7 +1243,7 @@ Adina: 我们要把这些奇闻转述给其他动物听， #line:a7ccfd
 Adina: 告诉给獾、白鼬、山雀、小熊它们听。 #line:f6b754
 GodtenderBrown: 祝福它们。 #line:efbc36
 GodtenderBrown: 咱们所有人居然都在长至夜这天见证了奇迹的出现。 #line:d6196b
-GodtenderBrown: 女王大人，您是最受上天眷顾的人。 #line:a1f2fd
+GodtenderBrown: 女王大人，你是最受上天眷顾的人。 #line:a1f2fd
 GodtenderBrown: 你们可以过去了，但我请求你们给这里留下一些祝福和好运。 #line:eba6b9
 [[EndSnowmenChat]]
 ===
@@ -1268,7 +1268,7 @@ GodtenderBrown: 怎么了？ #line:4dddc4
 Adina: 你怕善良的幽灵吗？ #line:c7a61f
 GodtenderBrown: 怕。 #line:8d4b9f
 Adina: 哦，你能回来，让我们过去吗？ #line:b3a543
-GodtenderBrown: 您能保证您的幽灵不会再吓我吗？ #line:85573f
+GodtenderBrown: 你能保证你的幽灵不会再吓我吗？ #line:85573f
 Adina: 艾姆辛，你觉得呢？ #line:e1db06
 SnowthiefBrown: 当然可以了。我可戴着防吓帽呢。 #line:c9b20a
 Snowdog: *汪*！ #line:acd050
@@ -1310,7 +1310,7 @@ position: -1879,934
 Adina: 那是块蒙眼布吗？ #line:f8acac
 GodtenderBrown: 这是个眼罩。 #line:a15575
 Adina: 你为什么要戴它呢？ #line:5e0237
-GodtenderBrown: 因为人们可能会窥视到林中之神的真容， #line:0eeed4
+GodtenderBrown: 因为人们可能会窥视到林中神的真容， #line:0eeed4
 GodtenderBrown: 但这种行为属于亵渎神灵。 #line:2f8510
 GodtenderBrown: 所以，戴上眼罩，就能防止直视他了。 #line:49e06d
 [[在森林里经常能看到林中之神吗？|CommonProblem]] #line:2ad0a7
@@ -1321,7 +1321,7 @@ tags:
 colorID: 0
 position: -1631,1157
 ---
-GodtenderBrown: 我与信仰同行，我走的每一步都是林中之神设计好的。 #line:77807c
+GodtenderBrown: 我与信仰同行，我走的每一步都是林中神设计好的。 #line:77807c
 Adina: 哦，我猜你应该还在这儿呢。 #line:421647
 GodtenderBrown: 你看见了吗？ #line:965411
 ===
@@ -1508,7 +1508,7 @@ tags:
 colorID: 0
 position: -1647,936
 ---
-GodtenderBrown: 愿林中之神保佑您。 #line:ee133c
+GodtenderBrown: 愿林中神保佑你。 #line:ee133c
 ===
 title: DoForYou
 tags: 
@@ -1522,14 +1522,14 @@ GodtenderBrown: 我觉得，这个问题告诉了我一个只能从这里得知�
 GodtenderBrown: 每天我一起床就会想方设法地去找它。 #line:08335b
 GodtenderBrown: 感觉它就在某个地方，可我却不知如何到达那里。 #line:db1289
 GodtenderBrown: 所以，我就开始到处找它。 #line:8e9949
-Adina: 等等，林中之神现在不就在这儿吗？ #line:099fca
+Adina: 等等，林中神现在不就在这儿吗？ #line:099fca
 Adina: 你想找的那个神秘的东西到底在哪儿？ #line:ef38f0
-GodtenderBrown: 我想的事和林中之神做的事会有一些出入。 #line:5395d0
+GodtenderBrown: 我想的事和林中神做的事会有一些出入。 #line:5395d0
 GodtenderBrown: 我希望发生的事和现实发生的事之间的差别 #line:cfa8c9
 GodtenderBrown: 很神秘。 #line:205048
 Adina: 说的是啊。谢谢。 #line:a331c4
 GodtenderBrown: 不用谢。 #line:f791da
-GodtenderBrown: 我只能希望林中之神的病可以康复了。 #line:5386a5
+GodtenderBrown: 我只能希望林中神的病可以康复了。 #line:5386a5
 ===
 title: VeryVeryCold
 tags: 
@@ -1542,7 +1542,7 @@ GodtenderBrown: 我穿着世界上最厚的外衣， #line:656237
 GodtenderBrown: 戴着我们侍神者最暖和的帽子。 #line:724852
 GodtenderBrown: 一点冷风也吹不进来。 #line:eea4e6
 Adina: 哈哈哈，好吧。 #line:58c917
-GodtenderBrown: 您不冷吗？ #line:c82a6f
+GodtenderBrown: 你不冷吗？ #line:c82a6f
 Adina: 冷，真的冷。谢谢关心。 #line:d684bd
 
 ===
@@ -1579,7 +1579,7 @@ position: -2728,302
 	Granddad: 她没有，峡谷太宽了。 #line:272513
 	Mae: 不宽！我看见它有多宽啦。 #line:f17920
 	Granddad: 我也能看见。再说，这是我的故事。 #line:0d7138
-	Mae: 要是您能说她没跳，我就能说她跳啦！ #line:a331d1
+	Mae: 要是你能说她没跳，我就能说她跳啦！ #line:a331d1
 	Granddad: 呃…… #line:e1dd53
 	<<set $cliff_ski_jumps += 1>>
 <<elseif $cliff_ski_jumps is 4>>

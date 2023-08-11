@@ -37,16 +37,16 @@ Mae: 肯定会的，伙计。 #line:32e9d1
 Mae: 他们肯定还会给它编故事 #line:dad2eb
 Mae: 他们永远也不会知道这到底是个什么东西，还有它是从哪儿来的 #line:5578db
 Angus: 你们俩确定要这么做吗？ #line:da2f2a
-Gregg: 当然确定啦。把它放在这儿再合适不过啦。 #line:8fde6d
+Gregg: 当然确定啦，把它放在这儿再合适不过啦。 #line:8fde6d
 Mae: 就把它留给那些小孩儿吧。 #line:5673ea
 Mae: 就让它成为一段传说吧。 #line:d7a456
 Gregg: 嗯，没错。 #line:a22ea8
-Mae: 真可惜它没砸在你身上。 #line:fabe77
-Gregg: 真可惜你胳膊没卡齿轮里。 #line:5b5465
-Angus: 真可惜你们俩没在一场车祸中 #line:0875a1
-Angus: 一起被困在车里 #line:d6b5a3
-Angus: 然后直接在街上爆炸 #line:f0f10a
-Angus: 只能用一把铲雪的铁锹 #line:9ca1e9
+Mae: 好想它砸在你身上啊。 #line:fabe77
+Gregg: 好想你胳膊卡齿轮里。 #line:5b5465
+Angus: 好想你们俩在一场车祸中， #line:0875a1
+Angus: 一起被困在车里。 #line:d6b5a3
+Angus: 然后直接在街上爆炸， #line:f0f10a
+Angus: 只能用一把铲雪的铁锹， #line:9ca1e9
 Angus: 把你们的碎片铲到一起。 #line:7206fd
 Mae: 说得好。 #line:515a76
 Gregg: 说得真不赖，船长。 #line:a7f034
@@ -54,7 +54,7 @@ Angus: 嘿嘿。 #line:2377c3
 <<close>>
 <<wait 3>>
 Angus: 好了，那么 #line:1d08ac
-Gregg: 咱们走着…… #line:b506de
+Gregg: 走～～～喽…… #line:b506de
 <<close>>
 //they start walking offscreen to the right.
 <<walk Angus AngusNextToGregg>>

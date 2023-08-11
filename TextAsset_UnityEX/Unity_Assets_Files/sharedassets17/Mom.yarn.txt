@@ -34,7 +34,7 @@ Mom: 宝贝？ #line:3a50cb
 Mae: 嗯？ #line:8430cc
 Mom: 一切都顺利吗？ #line:300a04
 [[当然了！|Yeah_A1D1]] #line:6ed4c2
-[[您是什么意思？|What_A1D1]] #line:44e916
+[[什么意思？|What_A1D1]] #line:44e916
 
 ===
 title: Yeah_A1D1
@@ -42,12 +42,12 @@ tags:
 colorID: 2
 position: 4663,3762
 ---
-Mae: 当然了，老妈，都挺好的。 #line:e2e2bc
-Mom: 你来电话的时候，我和你爸都心里一紧。 #line:d8ddd6
-Mom: 还以为你出了什么事情。 #line:f7e093
+Mae: 当然了，老妈，挺好的。 #line:e2e2bc
+Mom: 你来电话的时候，我和你爸都有点担心。 #line:d8ddd6
+Mom: 还以为你出了什么事。 #line:f7e093
 Mae: 没有，就是学校里有点麻烦事而已。 #line:c8c659
 Mom: 到底是什么事，亲爱的？ #line:d6d3bb
-Mae: 咱们能下次再聊这个话题吗？ #line:18332e
+Mae: 咱们能下次再聊吗？ #line:18332e
 Mom: 当然可以了，宝贝。 #line:b40757
 Mae: 谢了，妈。 #line:2710da
 [[WheresGregg]]
@@ -59,15 +59,15 @@ tags:
 colorID: 2
 position: 4902,3782
 ---
-Mom: 小宝贝，没出什么事吧？ #line:97bf6b
+Mom: 亲爱的，没出什么事吧？ #line:97bf6b
 Mae: 我只是想回家了。 #line:33b7fb
-Mom: 好吧，宝贝，我想你应该知道我在担心什么… #line:c3a6db
-Mom: 你一个大二学生这样说走就走可不太对劲… #line:0fe0f0
+Mom: 好吧，宝贝，我想你应该知道我在担心什么…… #line:c3a6db
+Mom: 你一个大二学生这样说走就走可不太对劲…… #line:0fe0f0
 Mae: 我知道。 #line:b4e62b
 Mom: 宝贝，要是出了什么事就跟妈说。 #line:a51b78
 Mae: 妈，我没事，真的。 #line:4be09c
-Mae: 咱们能下次再聊这个话题吗？ #line:48a410
-Mom: 当然可以了，小宝贝。没关系的。 #line:bdeb2e
+Mae: 咱们能下次再聊吗？ #line:48a410
+Mom: 当然可以了，小宝贝。好的。 #line:bdeb2e
 Mae: 谢了，老妈。 #line:fccef9
 [[WheresGregg]]
 
@@ -77,11 +77,11 @@ tags:
 colorID: 2
 position: 5009,4203
 ---
-Mom: 我敢打赌，你那些老朋友见到你一定会很开心！ #line:aab850
-Mae: 你该不会刚好知道格雷格在哪吧，不会吧？ #line:d6338f
-Mom: 我还真知道！格雷格现在在猎鹰小吃店工作。 #line:2164dc
-Mom:就在镇中心那边，嘎嘣脆披萨店往西。 #line:1f20f1
-[[我想我该溜过去打个照面。|Thanks_A1D1]] #line:b58e68
+Mom: 你那些老朋友见到你一定会很开心！ #line:aab850
+Mae: 你该不会刚好知道格雷格在哪吧？ #line:d6338f
+Mom: 噢！没错！格雷格现在在猎鹰小吃店打工。 #line:2164dc
+Mom: 就在镇中心那边，嘎嘣脆披萨店往西。 #line:1f20f1
+[[我想我会跑过去打个招呼的。|Thanks_A1D1]] #line:b58e68
 [[咱们这儿居然开了家猎鹰小吃？|SnackFalcon]] #line:13bc9a
 
 ===
@@ -90,13 +90,13 @@ tags:
 colorID: 2
 position: 5046,4578
 ---
-Mom: 啊，是啊！有了这家店之后，确实方便了不少！ #line:36641c
-Mom: 你也知道的，自从老驴生鲜倒闭之后它就在这儿了。 #line:7a076a
+Mom: 啊，是啊！很方便的！ #line:36641c
+Mom: 而且尤其从老驴生鲜倒闭后…… #line:7a076a
 Mae: 老驴生鲜关门了？ #line:871f19
-Mom: 是啊！关了都快一年了吧。 #line:28e132
+Mom: 是啊！关了都快一年了！ #line:28e132
 Mae: 哇哦。那大家现在都会去哪儿买东西啊？ #line:c085c7
-Mom: 现在大家都会到高速路边上的猎豹鲜生去买东西了。 #line:151f47
-Mom: 我买完东西回来的时候看见你的那个小伙计格雷格了。 #line:51cb33
+Mom: 现在大家都会到高速路边上的猎豹鲜生了。 #line:151f47
+Mom: 我买完东西回来的时候就看见你那个好朋友格雷格了。 #line:51cb33
 Mae: 哇哦。老驴生鲜撤了。猎鹰小吃来了。 #line:484cde
 Mom: 已经天翻地覆了，宝贝。 #line:94b343
 Mae: 是啊，是啊。 #line:13a138
@@ -109,10 +109,10 @@ colorID: 2
 position: 5482,4563
 ---
 Mom: 在外边玩得开心！ #line:a3579f
-Mom: 有好多新东西你得去看看呢！看看镇上都有什么不一样吧！ #line:52cf60
+Mom: 有好多新东西得你去发现呢！看看镇上都有什么不一样吧！ #line:52cf60
 Mae: 我会的！ #line:d920d3
-Mom: 就是要小心点那些脚手架。 #line:aba759
-Mae:啊哈，负鼠泉不堆满脚手架，可不算入秋啊。 #line:f694e8
+Mom: 就是要小心那些施工点。 #line:aba759
+Mae:啊哈，负鼠泉不到处是施工点，可不算入秋啊。 #line:f694e8
 Mom: 这就是节日气息啊，宝贝。 #line:c13543
 Mae: 我晚点回来！ #line:7d0dd1
 Mom: 拜拜，宝贝！ #line:547365
@@ -126,16 +126,16 @@ position: 4926,3386
 ---
 Mae: 所以，镇子近来都有什么变化吗？ #line:947a85
 Mom: 嗯，让我想想…… #line:6d5f6a
-Mom: 你听说没，克兰格勒夫人去世了。 #line:b5cf6e
+Mom: 你知道克兰格勒夫人去世了吗？ #line:b5cf6e
 Mae: 谁？ #line:daccb6
-Mom: 你记得她的！她教你们这些女童子军跳的舞。 #line:344849
-Mae: 哦，哇哦。我记得她那时候就已经很老了吧。 #line:5321a1
+Mom: 你应该记得她的！就是她教你们这些女童子军跳舞。 #line:344849
+Mae: 哇哦，我记得她那时候就已经很老了吧。 #line:5321a1
 Mom: 噢，宝贝，她岁数可大了。我像你这么大的时候，她就已经很老了。 #line:197b58
 Mae: 她怎么死的？ #line:08913c
 Mom: 她古到作古了，宝贝。 #line:7c659c
-Mae: 她当时已经多大岁数了？ #line:8761d2
-Mom: 115岁。 #line:8551b4
-Mae: 哇 哦！ #line:98a133
+Mae: 她当时多大岁数了？ #line:8761d2
+Mom: 115。 #line:8551b4
+Mae: 哇哦！ #line:98a133
 Mom: 是啊。哇哦！要是有比谁命长的比赛的话，她赢定了！ #line:238439
 
 ===
@@ -144,15 +144,15 @@ tags:
 colorID: 2
 position: 5187,3394
 ---
-Mom: 宝贝，这书等我看完了你一定也得看看。 #line:c3c1ca
+Mom: 亲爱的，这书等我看完了你一定也得看看。 #line:c3c1ca
 Mae: 什么书？ #line:234f6e
 Mom: 《井里的男孩》，讲的是一个在井里长大的男孩，根据真实发生的故事写的。 #line:e423f9
-Mom: 他的爹妈不要他了，就把他扔进了井里。 #line:92623c
-Mom: 他是被鳗鱼给养大的。 #line:5ccc50
-Mom: 就在一口井里哦。 #line:911415
+Mom: 他的父母不要他了，就把他扔进了井里。 #line:92623c
+Mom: 他是被鳗鱼养大的噢。 #line:5ccc50
+Mom: 就在一口井里噢。 #line:911415
 Mae: 哇哦～ #line:8b2625
 Mom: 鳗鱼哟～ #line:668b12
-Mae: 鳗鱼呢！ #line:82a024
+Mae: 鳗鱼呢～ #line:82a024
 Mom: 是鳗～～～鱼～～～哟，宝贝。 #line:e1ecc8
 <<set $eels to 1>>
 <<camera lookOffset 0 0>>
@@ -164,7 +164,7 @@ tags:
 colorID: 2
 position: 5416,3389
 ---
-Mom: 鳗鱼啊，宝贝。鳗！鱼！ #line:7b59fd
+Mom: 鳗鱼啊，宝贝。鳗～鱼～ #line:7b59fd
 <<camera lookOffset 0 0>>
 ===
 title: MomHome_A2D2
@@ -176,56 +176,56 @@ position: 7292,3149
     <<sit>>
     Mom: 早上好～昨晚感受到什么了吗？ #line:7b2dac
         ->没……吧？ #line:a144f3
-            Mom: 但你知道我说的是什么，对吧？ #line:f9113b
+            Mom: 你知道我说的是什么的吧？ #line:f9113b
             Mae: 老妈，你就尽管说吧。 #line:6f833d
         ->感觉到什么？ #line:01c3d9
-    Mom: 隔着这里两条街的地方出了个落水洞！ #line:1243d5
+    Mom: 隔着这里2条街的地方出了个落水洞！ #line:1243d5
     <<set $knows_sinkholes to 1>>
-    Mae:哦，现在我们这里还会出现落水洞吗？ #line:063a10
+    Mae:哦，现在我们这里还会出现吗？ #line:063a10
     Mom: 咱们这里一直都会出现新的落水洞。 #line:e9830c
-    Mom: 有时在湿地土壤之类的地方，有时还会出现在河滩。 #line:5925bd
+    Mom: 比如沼泽地、河漫滩这种地方都会出现。 #line:5925bd
     Mae: 噢，真够怪的。 #line:ccf176
-    Mom: 我希望你不要跑到那附近去。 #line:8aa66c
+    Mom: 你可别跑到那附近去。 #line:8aa66c
     Mae: 我保证不会的，又不是没见过。 #line:482efe
-    Mom: 真的一点兴趣都没有吗？ #line:5ded2b
+    Mom: 你真的不感兴趣吗？ #line:5ded2b
     Mae: 老妈，那不就是些地上的大洞吗。 #line:5b9766
     Mae: 等什么时候有房子之类的东西掉进洞里了，再跟我说吧。 #line:45bf21
-    Mom: 要真出了这种事，咱俩可得一起看看去。 #line:33fd77
+    Mom: 要真出了这种事，我们可得一起看看去。 #line:33fd77
     Mae: 一言为定。 #line:0f65da
     Mom: 话说你昨晚干什么去了？ #line:b7f48b
     <<if $did_gregg_friendship_quest_1 is 1>>
     	Mae: 和格雷格闲逛去了。 #line:98b9ab
     	Mom: 你们都干什么了？ #line:ca6960
-    	Mae: 呃，去了趟杂货店。 #line:c2fb29
-        Mom: 听起来感觉很不错嘛！ #line:fc1210
+    	Mae: 嗯，去了趟杂货店。 #line:c2fb29
+        Mom: 听起来很不错嘛！ #line:fc1210
         Mom: 有没有什么特别的事呢？ #line:f01cfe
-        Mae: 噢噢噢噢噢伙计，当然有啦。 #line:df95d4
+        Mae: 噢噢噢噢噢老兄，当然有啦。 #line:df95d4
     <<elseif $did_bea_friendship_quest_1 is 1>>
     	Mae: 和碧娅逛商场去了。 #line:2f7ff2
     	Mom: 噢！是去卢塞纳堡了吗？ #line:f4fcd9
         Mae: 没错！ #line:19451c
-        Mom: 我都好几年没去过那儿了，那儿现在怎么样了？ #line:99c898
-        Mae: 里面基本都搬空了，感觉整个地方都要废弃了。 #line:30212e
+        Mom: 我都好几年没去过那里了，那儿现在怎么样了？ #line:99c898
+        Mae: 挺萧条落败的，空荡荡的。 #line:30212e
         Mom: 嗯，和我想的差不多。 #line:f1e7ab
-        Mom: 大家现在都到洲际公路边上的奥特莱斯买东西了。 #line:ede853
-        Mom: 去买，你懂的，鞋子什么的。 #line:11da61
+        Mom: 大家现在都到州际公路边上的奥特莱斯买东西了。 #line:ede853
+        Mom: 去买……鞋子什么的。 #line:11da61
     <<endif>>
     //after you jump down//
-    Mom: 对了，要是你到了教堂附近记得进来看看！ #line:8b72a2
+    Mom: 对了，要是你到了教堂附近，记得进来看看！ #line:8b72a2
     Mae: 遵命，老妈。 #line:3a7571
     Mae: 晚点见！ #line:5f9f09
-    Mom: 嗯嗯嗯，再见，宝贝儿。 #line:930356
+    Mom: 嗯哼，拜拜，宝贝儿。 #line:930356
     <<set $mom += 1>>
 <<elseif $mom is 1>>
-    Mom: 你啊，回来也不是一天两天了 #line:515dc8
+    Mom: 你啊，回来有几天了吧。 #line:515dc8
     Mae: 嗯哼？ #line:206a1c
-    Mom: 也许你该考虑找份工- #line:990dfe
+    Mom: 也许你该考虑找份工…… #line:990dfe
     Mae: 啊，妈，我要出去了！ #line:6a21c7
-    Mom: 哈哈。 #line:8127c1
-    Mom: 再见，宝贝儿。 #line:9bcea7
+    Mom: 哈哈哈。 #line:8127c1
+    Mom: 拜拜，宝贝儿。 #line:9bcea7
     <<set $mom += 1>>
 <<elseif $mom is 2>>
-    Mom: 嗯，嗯，嗯嗯嗯嗯嗯。 #line:3f7b75
+    Mom: 啦～啦～啦啦啦啦～～～啦啦～ #line:3f7b75
 <<endif>>
 
 ===
@@ -249,21 +249,21 @@ tags:
 colorID: 0
 position: 3386,3426
 ---
-Mom: {align=middle,locator=kitchen}你还记得苏西•卡什纳那件事吗? #line:5692c2
+Mom: {align=middle,locator=kitchen}还记得苏西·卡什纳后来怎么样了吗? #line:5692c2
 Mae: {align=middle,locator=kitchen}天，别啊，妈！ =_= #line:391b5e
-Mae: {align=middle,locator=kitchen}这事你说了就算没有1000次，也有800次了。 #line:db206f
-Mom: {align=middle,locator=kitchen}你还记得她和电线凑得太近 #line:8636cd
-Mom: {align=middle,locator=kitchen}结果发生了什么，对吧？ #line:36cad5
-Mae: {align=middle,locator=kitchen}她被当场电死了。 #line:170d2e
-Mom: {align=middle,locator=kitchen}电焦了，亲爱的。报纸上说她被电焦了。 #line:5d169d
+Mae: {align=middle,locator=kitchen}我绝对没听了快不下上千次。 #line:db206f
+Mom: {align=middle,locator=kitchen}你还记得她没有远离电线， #line:8636cd
+Mom: {align=middle,locator=kitchen}结果发生了什么吧？ #line:36cad5
+Mae: {align=middle,locator=kitchen}她触电了。 #line:170d2e
+Mom: {align=middle,locator=kitchen}是电焦了，亲爱的。报纸上说她被电焦了。 #line:5d169d
 Mae: {align=middle,locator=kitchen}就算这样，她还是完全康复了啊！ #line:7bc04b
-Mom: {align=middle,locator=kitchen}宝贝儿，她现在说不了形容词了，“好"、“坏"一类的词根本说不出来。 #line:ae9686
+Mom: {align=middle,locator=kitchen}宝贝儿，她现在说不了形容词了。 #line:ae9686
 Mom: {align=middle,locator=kitchen}她失去了大部分的语言能力。 #line:e9e679
 Mae: {align=middle,locator=kitchen}那可真够糟的。 #line:178367
-Mom: {align=middle,locator=kitchen}你的这句话可正好就是苏西怎么也说不出的那种句子。 #line:b85ed3
-Mom: {align=middle,locator=kitchen}所以最好还是离电线远点，好吗？ #line:7f1b9b
+Mom: {align=middle,locator=kitchen}你刚那句话苏西都无法说出来。 #line:b85ed3
+Mom: {align=middle,locator=kitchen}所以还是离电线远点，好吗？ #line:7f1b9b
 Mae: {align=middle,locator=kitchen}怎么又来了？ o_o :) #line:b127f4
-Mom: {align=middle,locator=kitchen}你是你妈的女儿，好吧。 #line:222e04
+Mom: {align=middle,locator=kitchen}因为你是妈妈的女儿。 #line:222e04
 Mae: :| #line:c99148
 <<addToJournal SuzieKushnerExistence>>
 <<camera lookOffset 0 0>>
@@ -275,7 +275,7 @@ colorID: 0
 position: 3198,3157
 ---
 Mom: {align=middle,locator=kitchen}这本书讲的是一个男孩，他是被井里的鳗鱼养大的。 #line:7a8663
-Mom: {align=middle,locator=kitchen}这书写得太悲太苦了，等我看完你也该看看，宝贝儿。 #line:f8feb8
+Mom: {align=middle,locator=kitchen}这书写得太悲惨伤心了，等我看完你也该看看，宝贝儿。 #line:f8feb8
 <<camera lookOffset 0 0>>
 
 ===
@@ -284,7 +284,7 @@ tags:
 colorID: 0
 position: 4000,3262
 ---
-Mae: {align=middle,locator=kitchen}嗨，老 妈。 #line:6c7178
+Mae: {align=middle,locator=kitchen}嗨，老妈。 #line:6c7178
 Mom: {align=middle,locator=kitchen,width=4}宝贝儿，我不知道你今晚有什么安排，但如果你晚上9点不忙的话…… #line:b961de
 <<set $mom to 1>>
 [[{align=middle,locator=kitchen}可能吧？|MomDemoIMightBe]] #line:673e11
@@ -384,20 +384,20 @@ tags:
 colorID: 2
 position: 5777,3439
 ---
-Mae: 早上好，妈。 #line:ca74e1
+Mae: 早上好妈。 #line:ca74e1
 Mom: 不，我是全天好妈。 #line:756be7
 Mae: 哈哈哈。 #line:fd741b
 Mom: 还有，现在都下午4点了，小宝贝。 #line:f3459b
 Mae: 好吧，我准备出去找安格斯。 #line:df5322
-Mom: 噢～他是你发小格雷格的男朋友吗？ #line:63319b
-Mom: 大块头？挺沉默寡言的？ #line:5661b0
+Mom: 噢～～～他是你发小格雷格的男朋友吧？ #line:63319b
+Mom: 大块头？话挺少的？ #line:5661b0
 Mae: 对，就是他。 #line:e4df2f
 Mae: 我想让他帮忙修下我的笔记本。 #line:d585c8
-Mom: 他最好能修。你可没钱再买个新的了。 #line:9519ef
-Mae: 等下，你都不认识安格斯吧？ #line:da24a9
-Mom: 你认识？ #line:e6b1f7
-[[算认识吧？|A1D2_0_Kinda]] #line:e1a161
-[[妈，我们是一个乐队的诶。多少算是吧。|A1D2_0_band]] #line:3a9ab7
+Mom: 他最好能修。你可没钱再买个新的了！ #line:9519ef
+Mae: 等下，你居然认识安格斯？ #line:da24a9
+Mom: 你不是吗？ #line:e6b1f7
+[[算是吧？|A1D2_0_Kinda]] #line:e1a161
+[[妈，我们是一个乐队的诶。算是吧。|A1D2_0_band]] #line:3a9ab7
 ===
 title: Mom_A1D2_1
 tags: 
@@ -406,18 +406,18 @@ position: 6009,3438
 ---
 Mom: 你姨妈莫莉打电话来了。 #line:33244a
 Mae: 呃。那个商场保安想干什么？ #line:9915a6
-Mom: 亲爱的，我真心希望你不要这样叫她。 #line:f85931
-Mom: 她工作很努力才能走到今天这一步 #line:6b1500
+Mom: 梅，我希望你不要这样叫她。 #line:f85931
+Mom: 她非常努力才有今天的成就。 #line:6b1500
 Mom: 这是份危险的工作。 #line:ca05c6
 Mae: 哦，是啊，负鼠泉实在是太～～～危险了。 #line:a3f912
-Mae: 总之她有跟你说我们看到的那条断手的事吗？ #line:701091
-Mom: 当然了，她有跟我说！ #line:89ba67
-Mom: 太吓人了。 #line:68db97
+Mae: 话说她有跟你说我们看到的那条断手的事吗？ #line:701091
+Mom: 当然了！ #line:89ba67
+Mom: 太可怕了。 #line:68db97
 Mae: 是啊，也许吧。 #line:8e1d6c
-Mom: 宝贝，我知道这儿是你老家 #line:996d78
+Mom: 宝贝，我知道这儿是你家， #line:996d78
 Mom: 但在外头还是要小心为妙。 #line:5cb6ff
 Mae: 我会的，妈。 #line:e489d4
-Mom: 如果你是一个人的话，天黑之前一定要回家 #line:d57165
+Mom: 如果你是一个人的话，天黑之前一定要回家。 #line:d57165
 Mom: 至少在他们查清楚这件事之前。 #line:4b3171
 Mae: 好的。 #line:175e4e
 Mom: 谢了，宝贝。 #line:359095
@@ -445,7 +445,7 @@ tags:
 colorID: 2
 position: 5779,3666
 ---
-Mom: 那么从现在开始执行哦。 #line:9da023
+Mom: 好吧，那现在就是个认识他的好时机哟。 #line:9da023
 Mae: 谢了，全天好妈。 #line:c13edd
 Mom: 全年无休好妈。 #line:751096
 ===
@@ -459,8 +459,8 @@ Mae: 对！昨晚我们排练去了！ #line:6679da
 Mae: ……不过我觉得我们不太可能再正式演出了。 #line:8225e1
 Mom: 嗯。 #line:268a52
 Mom: 听起来挺有趣的，宝贝！ #line:8677da
-Mae: 是啊，也许吧。 #line:709e94
-Mom: 这件事好像弄得你不太开心。 #line:b3c1dc
+Mae: 是啊……也许吧…… #line:709e94
+Mom: 听起来你不太高兴。 #line:b3c1dc
 Mae: 啊。 #line:05e7df
 Mae: 好吧，我要去找安格斯了！ #line:07d502
 Mom: 玩得开心，丫头！ #line:b35428
@@ -474,21 +474,21 @@ position: 6246,3435
 ---
 Mom: 对了，宝贝。 #line:a71eeb
 Mae: 嗯？ #line:120bcb
-Mom: *那只手长的什么样啊？* #line:68d475
+Mom: “那只手长什么样啊？" #line:68d475
 Mae: 它是刚好从手肘上面一点的地方切下来的。 #line:110654
-Mom: 现场有血迹什么的吗？ #line:a9698b
+Mom: 现场有血什么的吗？ #line:a9698b
 Mae: 一点点，一点点啦。 #line:7ecaa2
 Mom: 你说这会是谁的手？ #line:b85c68
 Mae: 嗯，这种事很容易就能查清的吧。 #line:0469ea
 Mom: 没错，哈哈。 #line:40ba7a
-Mom: "啊，你的手哪去了？"  #line:0c9050
-Mom: "我去餐厅的时候把它给弄丢了！"  #line:6f56ae
-Mae: 在这儿先生，我捡到您手了。 #line:59d822
+Mom: “啊，你的手哪去了？"  #line:0c9050
+Mom: “我去餐厅的时候把它给弄丢了！"  #line:6f56ae
+Mae: 在这儿先生，我捡到您的手了。 #line:59d822
 Mom: "谢谢，我还怕我再也看不到它了呢!"  #line:829c23
 Mae: 可不是所有人都会把捡到的手物归原主的。 #line:7ea7c7
 Mom: 真遗憾。 #line:80f04a
-Mae: 冷冰冰的世界。 #line:99adbe
-Mom: 世界就是这么冰冷，这么冰冷的啊，亲爱的。 #line:be277a
+Mae: 冷漠的世界。 #line:99adbe
+Mom: 这就是个很冷漠，很冷漠的世界，亲爱的。 #line:be277a
 ===
 title: MomHome_A2D1
 tags: demo2
@@ -499,77 +499,77 @@ position: 7031,3144
 <<if $mom is 0>>
     <<sit>>
     Mae: =_= #line:a91c46
-    Mom: 噢，宝贝！你怎么把自己弄得跟坨屎一样。 #line:7d2e41
+    Mom: 噢，宝贝！你看上去很糟！ #line:7d2e41
     Mae: 是啊！ #line:d1e8cb
     Mom: 昨晚没睡好？ #line:421ca7
-    ->没什么，累了而已。 #line:3839c1
-        Mom:好吧，放轻松…… #line:88a2b0
-        Mae:我会的。 #line:4f5921
+    ->没什么，只是有点累。 #line:3839c1
+        Mom:好吧，没事的…… #line:88a2b0
+        Mae: 好的。 #line:4f5921
     ->就这么明显吗？ #line:5b3138
         Mom: 不，我说你像坨屎，是因为我爱你啊。 #line:adbbfc
         Mae:谢了。 #line:7c298f
-        Mom:如果你想聊聊发生了什么的话…… #line:c957d4
+        Mom: 如果你想聊聊发生了什么的话…… #line:c957d4
         ->没事的妈。 #line:a7be0c
         ->去林子里参加派对的时候，我见到科尔了。 #line:431b84
-            Mom: 高中的那个科尔？ #line:a13e6c
+            Mom: 高三的那个科尔？ #line:a13e6c
             Mae: 是啊，他周末放假从学校回来了。 #line:084494
             Mom: 你和他说话了吗？ #line:76f62b
             ->我不记得了。 #line:a38a0c
-                Mom:哦，宝贝。 #line:795bdd
-                Mae:没事的。 #line:2deaf3
-                Mae:没有……不过是匆匆一瞥。 #line:3521e4
-                Mom:好吧，那就算很不错了 #line:ccf9d2
+                Mom: 噢，宝贝。 #line:795bdd
+                Mae: 没事的。 #line:2deaf3
+                Mae: 不是……不过是一次普通的偶遇罢了。 #line:3521e4
+                Mom: 好吧，那就很好。 #line:ccf9d2
                 Mae: =_= #line:11f3bf
-                Mae:随便吧。 #line:779063
+                Mae: 随便喽。 #line:779063
             ->大概，可能，我不清楚。 #line:a1aba6
-                Mom:嗯，他就是个小混蛋，宝贝。 #line:461811
-                Mae:不，他不是这样的。至少以前不是。 #line:a81870
+                Mom: 嗯，他就是个坏蛋，宝贝。 #line:461811
+                Mae: 不，他不是这样的。至少以前不是。 #line:a81870
                 Mae: 我不知道。 #line:48f11e
                 Mae: 随便吧。 #line:746b03
-    Mom: 貌似大部分检修工人已经从镇中心撤出去了。 #line:c702d2
+    Mom: 貌似大部分检修工已经从镇中心撤出去了。 #line:c702d2
     Mae: 终于啊。 o_o :) #line:36c2ef
-    Mom: 是啊，教堂的台阶已经都被他们修理好了 #line:315e1a
+    Mom: 是啊，通往山上教堂的台阶都修理好了…… #line:315e1a
     Mom: ……电线也都…… #line:9664c7
     Mae: 好耶！ #line:74de51
-    Mom: 宝贝，我*不想*让你再跳到那些东西上去了。 #line:2577a3
+    Mom: 亲爱的，我*不希望*你再跳到那些东西上去了。 #line:2577a3
     Mae: =_= :| #line:66e269
     Mae: 妈，我都20了。 #line:1a4840
     Mom: 啊哈，20岁代表他们可以把你给押去蹲号子了。 #line:c92853
-    ->没人会因为在电线上跑了一跑就被关进大牢的。 #line:eee3b0
+    ->没人会因为在电线上跑来跑去就被关进大牢的。 #line:eee3b0
         Mom: 会的。 #line:4041ce
         Mae: 是啊，要是条子真的是没别的事好做的话。 #line:c6348b
         Mom: …… #line:150607
-        Mae: 好吧，这算个好包袱。 #line:5b97a2
+        Mae: 好吧，听听这个。 #line:5b97a2
         Mae: :) #line:65cb73
-        Mae: 要能亲手逮捕我的话，莫莉姨妈会很开心的。 #line:fbed25
+        Mae: 要莫莉姨妈能亲手逮捕我的话，她会很开心的。 #line:fbed25
         Mom: 哈哈。没准是吧。 #line:fc13b0
     ->呸。他们这辈子别想抓住我。 #line:be14a9
-        Mom: 你的莫莉姨妈在山上就把你给逮着了 #line:28be9a
+        Mom: 你莫莉姨妈那时候不就把你给逮着了。 #line:28be9a
         Mom: 她还没说要怎么处理你呢。 #line:9b53a1
-        Mae: 我有没跟你说过，昨天我在门口跟她见过。 #line:bd69c4
+        Mae: 我有没跟你说过，昨天我在门口见过她。 #line:bd69c4
         Mom: 真的？ #line:b889fd
         Mae: 是啊，她整个人神经兮兮，遮遮掩掩的。 #line:ca46aa
-        Mae: 我也不清楚是怎么回事。今天迷糊得很。 #line:6af52d
+        Mae: 不知道，什么都乱七八糟的。 #line:6af52d
     Mae: :| #line:53c087
     <<unlockDoodle EffTheCops>>
     Mom: 不管怎么说，在电线上蹦很危险。 #line:ab0ae8
-    Mom: 你还记得苏西•卡什纳吧？ #line:9ac360
+    Mom: 你还记得苏西·卡什纳吧？ #line:9ac360
     Mae: 天啊妈，我怎么可能没听过。 #line:dc2274
-    Mae: 这事你说了就算没有1000次，也有800次了。 #line:6b3a81
-    Mom: 电焦了，宝贝。报纸上说她被电焦了。 #line:5a5868
-    Mom: 她现在说不了形容词了，“好"、“坏"一类的词根本说不出来。 #line:fc0495
+    Mae: 我绝对没听了1000遍。 #line:6b3a81
+    Mom: 电焦了，宝贝。报纸上说她电焦了。 #line:5a5868
+    Mom: 她现在说不了形容词了。 #line:fc0495
     Mom: 她丧失了大部分的语言能力！ #line:902150
     Mae: 天呐，妈，这真有够糟的。 #line:124019
-    Mom: 你的这句话可正好就是苏西怎么也说不出的那种句子。 #line:1437ac
+     Mom: 你刚那句话苏西都无法说出来。 #line:1437ac
     Mae: …… #line:88564e
     Mom: 所以，今天有什么打算吗？ #line:76f90c
     Mae: 不知道。我要先看看格雷格和碧娅有什么打算。 #line:4acb75
     Mom: 你们要一起搞活动吗？ #line:32f30c
-    Mae: 不清楚。我觉得他们俩在摆弄完我们的那些旧乐器之后 #line:32dfbb
-    Mae: 就不怎么一块晃悠了。 #line:1da3e1
-    Mom: 嗯，人生苦短，不可能什么都兼顾到。 #line:3a5c03
+    Mae: 不清楚。我感觉他们两个玩完音乐后， #line:32dfbb
+    Mae: 就不怎么一块玩了。 #line:1da3e1
+    Mom: 好吧，精力有限，不可能什么都兼顾到。 #line:3a5c03
     Mae: 是因为铁线虫入侵所以让你说话变得和幸运饼干一样了吗？ #line:edfc54
-    Mom: 培养友情这种事就跟种树差不多。 #line:adcdd7
+    Mom: 培养友情就跟种树一样。 #line:adcdd7
     Mae: 啊哈？ #line:b4a65b
     Mom: 你要常给它们浇水 ，它们才会生长。 #line:e396fd
     Mom: 而我们手头只有那么多水，不可能顾到所有的树。 #line:391a0e
@@ -588,34 +588,34 @@ position: 7031,3144
     //<<endif>>
     <<set $mom += 1>>
 <<elseif $mom is 1>>
-    Mae: 你看的什么书？ #line:4a0460
-    Mom: 这本书讲的是一个人在一艘渔船上长大，而船上没人知道 #line:7f59d6
+    Mae: 在看什么书？ #line:4a0460
+    Mom: 这本书讲的是一个人在渔船上秘密长大的人。 #line:7f59d6
     Mom: 他住在一个木桶里， 吃生鱼，螃蟹， #line:ad9d7d
-    Mom: 章鱼，鱿鱼，龙虾，海鸥，信天翁， #line:b7013f
+    Mom: 吃章鱼，鱿鱼，龙虾，海鸥，信天翁， #line:b7013f
         ->好，我知道了。 #line:0e78d5
-        ->哇！ #line:6c7c45
-            Mom: 鲨鱼，海豚，海椰子， #line:c668ec
+        ->哇噢！ #line:6c7c45
+            Mom: 鲨鱼，海豚，海参， #line:c668ec
             Mom: 海草，沙子，石头， #line:42a440
             Mom: 海带，我想海带和海草应该是同一种东西吧， #line:c9d369
               ->我想象得出那种画面了。 #line:8ab442
               ->哇哦！ #line:8abff4
-                Mom: 绳子，船帆，船上的某艘小艇，索具， #line:af0dbe
-                Mom: 水手鞋，水手帽，水手裤子， #line:6ecfeb
+                Mom: 吃绳子，船帆，某种小艇，索具， #line:af0dbe
+                Mom: 水手鞋，水手帽，水手裤， #line:6ecfeb
                 Mom: 水手服，水手内裤（洗过的那种）， #line:f2df1b
                     ->好的我了解了。 #line:2df358
-                    ->哇！ #line:2e01b5
-                        Mom: 鱼线，渔网，鱼竿…… #line:b1fcde
+                    ->哇噢！ #line:2e01b5
+                        Mom: 吃钓丝，渔网，鱼竿…… #line:b1fcde
                         Mae: 天，他吃得可真好。 #line:8cafb9
-                        Mom: ……他还吃了几只儒艮和一只海牛。 #line:e49e96
-                        Mom: 这两种还是有区别的，你知道吧。 #line:1afffd
+                        Mom: ……还有几只儒艮和一只海牛。 #line:e49e96
+                        Mom: 这两个还是有区别的，你知道吧？ #line:1afffd
                         Mae: 我知道。 #line:c8fa18
                         Mom: 以上就是他目前吃过的所有东西了。 #line:c933f5
-                        Mae: 鱼线该怎么吃？ #line:0b1ab8
+                        Mae: 钓丝该怎么吃？ #line:0b1ab8
     Mom: 船员都以为这船闹鬼了！ #line:60f79d
-    Mom: 但实际上并没有，那只不过是藏在桶中的男孩罢了。 #line:cf6d6f
+    Mom: 但是并没有，只不过是藏在桶中的男孩罢了。 #line:cf6d6f
     Mae: 这本书叫什么？ #line:0abc25
     Mom: 《桶里的男孩》。 #line:15a04e
-    Mae: 太古怪了，我现在想吃鱼肉棒了。 #line:875e30
+    Mae: 太怪了，我现在想吃鱼肉棒了。 #line:875e30
     Mom: 我也是，我会让你爸买些回来的。 #line:1aa679
     <<set $mom += 1>>
 <<elseif $mom is 2>>
@@ -677,35 +677,35 @@ position: 9641,3254
 // needs to be changed, A3D1 is the rainy day
 <<sit>>
 Mae: =_= #line:c28500
-Mom: 早上好！ #line:179db9
+Mom: 早上好，小太阳！ #line:179db9
 Mom: 你还好吗？ #line:7bb38e
-Mom: 你看上去有点疲。 #line:7531c5
+Mom: 你看上去有点疲惫。 #line:7531c5
 Mae: 是啊，呃，做怪梦了。 #line:0bc057
 Mae: :\ #line:168471
-Mae: 昨晚也很怪。 #line:e9b60f
+Mae: 怪怪的一晚。 #line:e9b60f
 Mom: 你说了好多次“怪"。 #line:e6574d
 Mae: 实话实说罢了。 #line:f116b1
 Mae: :| #line:9fb757
 Mom: 你有吃头痛药吗？ #line:50d822
 Mom: 就放在浴室的柜子里。 #line:48cd22
-Mae: 嗯，吃过了。它们有时有用，有时没用。 #line:a1611c
+Mae: 嗯，吃过了。有时有用，有时没用。 #line:a1611c
 Mom: 唔，也许你该再多睡会儿？ #line:1b74ef
-Mom: 我是说，不只睡10个小时，没准你已经睡了十几个小时了。 #line:d0e06a
+Mom: 在你已经睡了10小时的基础上，再多睡一点。 #line:d0e06a
 Mom: 你可一向都是妈妈的小瞌睡虫。 #line:b36fea
-Mae: 噢。 #line:9822e9
+Mae: 哎哟。 #line:9822e9
 Mom: 你昨晚干什么去了？ #line:005ef2
 Mae: o_o :| #line:bd74d5
 Mae: 和碧娅去了趟图书馆。 #line:348b56
 Mom: 听起来不错啊！ #line:44bfb9
 Mae: 那有点…… #line:e45937
 Mom: 怪？ #line:22009c
-Mae: 有点有趣。 #line:e62b21
+Mae: 有趣。 #line:e62b21
 Mae: 好了，我要出去了。 #line:35fb70
 Mom: 悠着点，宝贝！ #line:0c06f9
 Mom: 放轻松，你看着真的有点疲劳。 #line:a7a7ce
 Mae: 出去逛逛能让我感觉好受些。 #line:1e6a05
 Mom: 我也一样！ #line:5893a1
-Mom: 没准今天确实是个呼吸新鲜空气的好日子。 #line:e962d2
+Mom: 没准今天是个呼吸新鲜空气的好日子。 #line:e962d2
 Mae: 我会帮你看看是不是的！ #line:afa1d3
 Mom: 再见，宝贝。 #line:6ca552
 ===
@@ -755,8 +755,8 @@ position: 6537,3249
 ---
 Mae: 早上好，妈！ #line:a5ad72
 Mom: 全天好妈。 每天好妈。 #line:f0e44d
-Mom:今天有什么计划吗？ #line:1dfe6c
-Mae: 格雷格、安格斯和碧娅要参加一个聚会。 #line:ca3da8
+Mom: 今天有什么计划吗？ #line:1dfe6c
+Mae: 格雷格、安格斯和碧娅要去参加一个聚会。 #line:ca3da8
 Mae: 所以我大概会和他们一起去。 #line:b37c35
 Mom: 聚会，哈？瞧瞧你！ #line:e1a70e
 Mom: 才回来两天就成社交名媛了。 #line:12c743
@@ -770,12 +770,12 @@ position: 6785,3511
 ---
 Mom: 噢，你会没事的，宝贝！ #line:fc157b
 Mom: 快出去找他们去吧！ #line:e726b2
-Mae: 我想实际上来聚会的大多数都是高中老同学吧。 #line:d7d248
+Mae: 其实我在想去聚会的人大多是高中老同学吧。 #line:d7d248
 Mom: 不知道科尔会不会去呢 ？ #line:6f7731
 Mom: 我一直觉得你们俩挺般配的…… #line:d596f0
 Mae: 老妈，别说了。 #line:c15df6
 Mom: 哦，抱歉宝贝，我没想到这还是个敏感话题。 #line:1f5d88
-Mae: 这 不 是 敏 感 话 题。 #line:9370f9
+Mae: 并不是。 #line:9370f9
 <<set $knows_cole_will_be_there to 1>>
 [[Mom_A1D3_MorningEnd]]
 ===
@@ -791,7 +791,7 @@ Mae: 我会的！晚点见！ #line:f4a1a3
     Mae: 什么？ #line:fdd9bf
     Mom: 鳗鱼，宝贝。 #line:99b672
     Mae: :) #line:4c7297
-    Mae: 鳗～鱼～，老妈。 #line:de2bc9
+    Mae: 鳗鱼～～～～，老妈。 #line:de2bc9
     Mae: o_o :| #line:f59d1c
 <<endif>>
 <<set $mom_done to 1>>
@@ -801,9 +801,9 @@ tags:
 colorID: 2
 position: 6541,3507
 ---
-Mom: 你和你大学里的朋友们还有联系吗？ #line:95886d
-Mae: 其实，我在那没交到什么朋友？ #line:3f3654
-Mom: 室友里面也没有你的朋友吗？你开学遇到的那个不错的姑娘也不是吗？ #line:ffb95d
+Mom: 你和大学里的朋友还有联系吗？ #line:95886d
+Mae: 其实，我好像在那没交到什么朋友？ #line:3f3654
+Mom: 室友也不是吗？你迎新周遇到的那个不错的姑娘也不是吗？ #line:ffb95d
 Mae: 其实并不算。 #line:6edca3
 [[Mom_A1D3_MorningEnd]]
 
@@ -815,17 +815,17 @@ position: 7060,3836
 ---
 <<if $mom_church is 0>>
     Mom: 嘿，宝贝！ #line:cb4c09
-    Mae: 嘿，妈～ #line:8dc3ac
-    Mae: 哇，我得有好长一段时间没来过这儿了。 #line:07b3de
+    Mae: 嘿，妈～～～～ #line:8dc3ac
+    Mae: 哇噢，我有好长一段时间没来过这儿了。 #line:07b3de
     Mom: 我知道，宝贝。 #line:f01584
-    Mom: 能看到你在屋子里，而不是电线或者屋顶上，我就已经很欣慰了。 #line:e432cf
+    Mom: 能看你不是电线或者屋顶上，就很好了！ #line:e432cf
     Mom: 你见过新来的牧师了吗？ #line:a31fb0
     <<if $met_pastor or $pastor > 0>>
-    	Mae: 见过了！还见到了一个流浪汉！ #line:b07ccf
-    	Mom: 哦！好吧。 #line:fd7682
+    	Mae: 见过了！还有个流浪汉！ #line:b07ccf
+    	Mom: 噢！好的。 #line:fd7682
         Mom: 是街对面那位？ #line:06a2c1
         Mae: 对。布鲁斯。 #line:fff3b4
-        Mom: 噢，她能去见他可真是 #line:b67bdb
+        Mom: 噢，她能探望他可真是 #line:b67bdb
         Mom: 太好了。 #line:ed97ae
         Mae: 他们俩都很不错。 #line:62d638
         Mom: 这上面的人可都是群好人。 #line:098b1c
@@ -834,33 +834,33 @@ position: 7060,3836
     	Mom: 噢，她应该就在这附近。 #line:fd3285
         Mom: 没准在外边？ #line:4a2e54
         Mom: 她喜欢出去散步。 #line:76b3f0
-        Mae: 蛮好。我没准能和她碰见。 #line:606480
+        Mae: 酷酷。我没准能和她碰见。 #line:606480
     <<endif>>
     <<set $mom_church += 1>>
 <<elseif $mom_church is 1>>
-    Mae: 话说教堂的工作怎么样？ #line:4aa903
-    Mom: 还不错。基本上就是在这接电话。 #line:884a45
-    Mom: 还有搞各种数据库 。 #line:8af90c
-    Mom: 我得把那些东西全都给塞进一个集成app……之类的玩意。 #line:918c9b
-    Mom: 你知道吗？他们写了个程序，就只是为了给教堂做宣传。 #line:f4c12e
-    Mae: 我不知道！ #line:2050cb
-    Mom: 我正在网上看他们发的那个工作说明 #line:6ecb92
+    Mae: 话说教堂的工作如何？ #line:4aa903
+    Mom: 还不错。基本上就是在接电话。 #line:884a45
+    Mom: 还有输入各种各样的数据。 #line:8af90c
+    Mom: 我正在尝试把所有东西全塞进一个统一的app……之类的玩意。 #line:918c9b
+    Mom: 你知道吗？他们写了个程序，就只是为了教堂的行政管理。 #line:f4c12e
+    Mae: 不知道！ #line:2050cb
+    Mom: 我正在网上看他们刚刚发的操作说明， #line:6ecb92
     Mom: 但我看着看着就点去看犯罪实录了。 #line:0bf6ff
-    Mae: 妈，我声明一下-你在玩忽职守诶！ #line:a471b6
+    Mae: 妈，我声明一下：你在玩忽职守诶！ #line:a471b6
     Mom: 上帝会原谅我的。 #line:3fd2a3
     <<if $knows_mural>>
-    	Mae: 嘿，您有听说过《同志们》的那件事吗？ #line:d4a08b
+    	Mae: 嘿，你有听说过《同志们》的那件事吗？ #line:d4a08b
         Mom: “同志们"？ #line:1df3c8
         Mae: 就是隧道里的那幅壁画！ #line:a270ba
         Mom: 它怎么了，宝贝？ #line:130de5
         Mae: 有人把它给糟蹋了！ #line:ebc1f8
         Mae: 他们在上边写了个“核平负鼠泉"！ #line:5fb42f
-        Mae: 或者说……是本来想要这么写的。 #line:6e51cf
-    	Mom: 噢，不要！！！太糟了！ #line:df72d3
-        Mae: 那很有史料价值的！ #line:e7bcc4
-        Mom: 可不是！噢，太悲剧了。 #line:8b4461
+        Mae: 或者说……本来想写这句话的。 #line:6e51cf
+    	Mom: 哦，天哪！！！太糟了！ #line:df72d3
+        Mae: 那很有历史价值的！ #line:e7bcc4
+        Mom: 可不是！哦，太糟了。 #line:8b4461
         Mae: 妈，这都什么世道啊。 #line:327740
-        Mom: 这。都。什。么。世。道。啊 。 #line:10e127
+        Mom: 这。都。什。么。世。道。啊。 #line:10e127
     <<endif>>
     <<set $mom_church += 1>>
 <<elseif $mom_church is 2>>
@@ -878,28 +878,28 @@ position: 7304,3839
         Mae: 嘿，妈！ #line:8cce37
         Mom: 嘿，宝贝。 #line:c71350
         Mae: 我把圣所的位置给忘个精光了。 #line:3e25c8
-        Mom: emmm，你过来的时候会经过那道门的。 #line:a1b958
-        Mae: 噢，我想那道门上锁了。 #line:9b0387
+        Mom: 嗯，你过来的时候会经过那道门的。 #line:a1b958
+        Mae: 哦，我想那道门上锁了。 #line:9b0387
         Mom: 他们时不时就会上锁 。 #line:902b55
         Mom: 所有的门都会时不时上锁。 #line:03c859
-        Mae: 不像 #line:e0f944
-        Mae: 酒吧那种木板门一样。 #line:ab6ec8
+        Mae: 不像…… #line:e0f944
+        Mae: 西部酒吧里的那种木板门， #line:ab6ec8
         Mae: 牛仔碰都不用碰就能随意出入。 #line:1ed47d
         Mom: 那太野蛮了。 #line:ded1d3
-        Mae: 西部世代可是非常野蛮的。 #line:b5105a
-        Mom: 哥们！how-deee(近来可好)！ #line:e6925e
-        Mom: 啊来啊来啊，咱超野的！ #line:4052fc
+        Mae: 老西部时代可是非常野蛮的。 #line:b5105a
+        Mom: 侬做嘛子，老师傅！ #line:e6925e
+        Mom: 噢哟噢哟，啊啦老嘢的哟！ #line:4052fc
         Mae: O_o #line:fc3710
-        Mae: 那听着像是个 #line:12f2b0
+        Mae: 那听着像是个…… #line:12f2b0
         Mae:  美国南部的乡绅。 #line:cfc4b8
-        Mom: 他可拉高了这地儿的水准呢！ #line:75673c
+        Mom: 他可拉高了这地儿的档次呢！ #line:75673c
         Mae: o_o #line:9728b0
         <<set $church_sanctuary_open to 1>>
         <<set $mom_church += 1>>
     <<elseif $mom_church is 1>>
-        Mom: tarnation(该死的)！ #line:0c0b18
-        Mae:好了老妈，别再学牛仔说话了。 #line:bda3df
-        Mom: dadgummit(天杀的)！ #line:320236
+        Mom: 欠儿的！ #line:0c0b18
+        Mae: 好了老妈，别再学牛仔说话了。 #line:bda3df
+        Mom: 滚犊子！ #line:320236
         <<set $mom_church += 1>>
     <<elseif $mom_church is 2>>
         Mom: 我该继续工作了，宝贝。 #line:e1ffec
@@ -914,16 +914,16 @@ position: 7304,3839
         Mom: 噢，当然！ 你们俩会相处得很好的。 #line:a9d6ec
         Mae: 貌似她和所有人都处得很好。 #line:da586e
         Mom: 噢，她有时还挺会出鬼点子的。 #line:1dbfb1
-        Mom: 有些人会挑出她的错， #line:627190
-        Mom: 另外有些人一直在挑她的错。 #line:eb6f8e
-        Mom: 对这两种人她都很包容 #line:2ded40
+        Mom: 有些人会找她茬， #line:627190
+        Mom: 但这些人就是喜欢找茬的。 #line:eb6f8e
+        Mom: 不管怎样，她有一颗包容的心。 #line:2ded40
         Mom: 这一点很重要。 #line:39c7db
-        Mae: 我觉得我的心眼只有一般大。 #line:66633f
-        Mom: 心脏是很有弹性的，跟个大口袋似的 #line:fe2ad5
-        Mae: 好恶 #line:ca794b
-        Mom: 不，我的意思是，你塞得越多，它就能撑得越大 #line:b69b66
-        Mae: 我觉得这是常识。 #line:7e9773
-        Mom: 好吧，道理懂了就行。 #line:d3c80b
+        Mae: 我觉得我的心一般般吧。 #line:66633f
+        Mom: 心就跟个又大又弹口袋一样。 #line:fe2ad5
+        Mae: 好恶。 #line:ca794b
+        Mom: 不，我的意思是，你塞得越多，它就能撑得越大。 #line:b69b66
+        Mae: 我觉得这是医学事实。 #line:7e9773
+        Mom: 好吧，你能懂那个道理就行。 #line:d3c80b
         Mae: 哈哈，晚点见。 #line:7bcbaa
         <<set $mom_church_2 += 1>>
     <<elseif $mom_church_2 is 1>>
@@ -952,7 +952,7 @@ position: 8558,3865
 ---
 <<if $big_fight is 1>>
 	Mom: …… #line:5ed95e
-    Mom: 我很忙的。 #line:2931c2
+    Mom: 我在忙。 #line:2931c2
 <<else>>
     Mae: 嘿，妈。 #line:ff1f4a
     Mom: 嗯哼。 #line:c39ee6
@@ -962,66 +962,66 @@ position: 8558,3865
     ->有什么不对劲吗？ #line:1f6133
         Mom: 没什么不对劲。 #line:cc8023
     <<wait 2>>
-    Mae: 骗人 #line:17f80b
+    Mae: 骗人。 #line:17f80b
     Mom: 话说，宝贝，你现在想聊聊在学校的事吗？ #line:15dd24
     ->嗯……好吧 #line:9b4e8f
         Mom: 所以都发生了些什么？ #line:644326
-        Mae: 我只是觉得，那儿不是我该待的地方 #line:5acc00
-        Mom: “不是我该待的地方"？ #line:e51364
-        Mom: 你这是什么意思？ #line:2a1aa7
-        Mae: 呃，先别管了 #line:c72f90
-        Mae: 这个我们以后再说 #line:23ef47
-    ->老实说，不想 #line:04d60e
-    Mom: 什么时候想说了就来找我好吗？ #line:e65468
-    Mom: 我洗耳恭听 #line:296fea
-    Mom: 我真的很想搞懂 #line:c33992
-    Mom: 你为什么会突然决定要辍学，而且 #line:48fd38
-    Mom: 放弃咱们家之前做的那些规划 #line:3364ef
+        Mae: 我只是觉得，那儿不是我该待的地方。 #line:5acc00
+        Mom: “不是你该待的地方"？ #line:e51364
+        Mom: 那是什么意思？ #line:2a1aa7
+        Mae:  呃，先别管了。 #line:c72f90
+        Mae: 我们以后再说吧。 #line:23ef47
+    ->不太想…… #line:04d60e
+    Mom: 你对于自己什么时候想说有个想法吗？ #line:e65468
+    Mom: 我会对我的小宝贝洗耳恭听， #line:296fea
+    Mom: 而且我真的很想知道…… #line:c33992
+    Mom: 你为什么会突然决定要辍学， #line:48fd38
+    Mom: 而且放弃我们作为一家人之前做好的所有规划。 #line:3364ef
     Mae: :\ #line:b0e493
     Mae: 天呐，妈！ #line:7b487e
     Mae: 这都哪跟哪啊？ #line:802f1f
-    Mom: 你也知道，你是第- #line:422827
+    Mom: 你也知道，你是第…… #line:422827
     Mae: :| =_= #line:31bdc5
-    Mae: “第一个考上大学的博罗夫斯基！" #line:5c5749
-    Mae: 对，妈，我知道 #line:512d45
-    Mae: 我从6岁起就一直在听你们说这种话了 #line:a19f31
-    Mom: 好吧，宝贝，其实这个事在你出生那会儿我们就开始筹备了 #line:1b5d06
-    Mom: 我们花了整整18年 #line:6b61bb
-    Mom: 克服了那么多困难 #line:5eca80
+    Mae: “第一个要考上大学的博罗夫斯基！" #line:5c5749
+    Mae: 对，妈，我知道。 #line:512d45
+    Mae: 我从6岁起就一直在听你们说这种话了。 #line:a19f31
+    Mom: 好吧，宝贝，其实这事在你出生那会儿我们就开始筹备了。 #line:1b5d06
+    Mom: 我们花了整整18年， #line:6b61bb
+    Mom: 克服了那么多困难， #line:5eca80
     Mom: 就是为了你能有今天。 #line:08d074
-    Mom: 也许我们只是把我们的精力 #line:e2e0a1
-    Mom: 和金钱 #line:506c3a
-    Mom: 还有关心 #line:7c8c3d
+    Mom: 也许我们只是把我们所有的精力、 #line:e2e0a1
+    Mom: 金钱、 #line:506c3a
+    Mom: 还有关心， #line:7c8c3d
     Mom: 都给扔进无底洞去了。 #line:71e4a5
     <<wait 2>>
     <<fadeOutMusic 10>>
     Mae: 你又在乱发泄了吗？ #line:8a75b9
-    Mom: 呃，说的好像我是那个住在我们家的炸药包似的。 #line:683dae
+    Mom: 呃，说的好像我是那个住在我们家的炸药包。 #line:683dae
     Mae: 你就是住在我们家的那个炸药包。 #line:513f8e
-    Mom: 好吧，趁现在我们的家还能住，好好享受吧 #line:4a7984
+    Mom: 好吧，趁现在“我们家"还能住，好好享受吧。 #line:4a7984
     Mae: O_O #line:d59269
-    Mae: 什么鬼？！ #line:929eb0
-    Mae: 我们家的房子要出什么事啦？？？ #line:34f1cd
-    Mom: 也许这房子“不是我们该待的地方"。 #line:022018
+    Mae: 什么？！ #line:929eb0
+    Mae: 我们家房子要出什么事了？？？ #line:34f1cd
+    Mom: 也许这房子“不是我们本该待的地方"。 #line:022018
         ->妈，这不好笑。 #line:a35ed4
-            Mom: 别担心 #line:8c80be
-            Mom: 什么都别担心 #line:b767e3
+            Mom: 别担心、 #line:8c80be
+            Mom: 什么都别担心。 #line:b767e3
             Mom: 你怎么反倒现在开始担心起来了呢？ #line:afd8c4
-            Mom: 快给我出去，爱干嘛干嘛去。 #line:957741
-        ->你猜怎么着？我去你的。 #line:e565e6
-            Mom: “我去你的"？ #line:773972
-            Mom: 上帝啊，这孩子怎么这样 #line:9b9fcb
+            Mom: 走吧，去做你该做的事吧。 #line:957741
+        ->知道吗？去你的。 #line:e565e6
+            Mom: “去你的"？ #line:773972
+            Mom: 上帝啊，这孩子怎么这样。 #line:9b9fcb
     Mae: =_= #line:e0348a
-    Mae: 你猜怎么着？ #line:cbba5b
+    Mae: 你知道吗？ #line:cbba5b
     Mae: 也许我当初就不该去上学，你懂的， #line:12ba52
     Mae: 我就该去外面闯荡，自己干出点事业。 #line:e2b50c
-    Mom: 梅。 #line:85007a
-    Mom: 别来这套。 #line:dd390b
-    Mom: 你根本什么都不明- #line:405cfa
-    Mae: 也许你希望让我有能力从这里走出去 #line:7028d9
-    Mae: 不过是因为你自己怎么也做不到罢了。 #line:c6cac6
+    Mom: 不。 #line:85007a
+    Mom: 不。 #line:dd390b
+    Mom: 你根本什么都不明…… #line:405cfa
+    Mae: 也许你希望让我有能力从这里走出去， #line:7028d9
+    Mae: 因为你自己从来就没机会去做罢了。 #line:c6cac6
     Mae: o_o :| #line:743df3
-    Mae: 也许我只不过是我们家族的失败史里面 #line:7ff189
+    Mae: 也许我只不过是我们家族失败史里面 #line:7ff189
     Mae: 最近的一次失败罢了。 #line:997452
     <<wait 4>>
     Mae: 我要走了。 #line:0578a5
@@ -1038,12 +1038,12 @@ position: 8978,3881
 Mae: 嘿嘿，信徒老妈。 #line:0232c2
 Mom: 嘿，异端闺女。 #line:d9ae6c
 Mae: 噢，没准哪天我还是会入教的。 #line:4aa352
-Mae: 但是拜托，说实话，没人会乐意在周日早起吧。 #line:b20aa1
+Mae: 但是拜托，说实话，没人会愿意在周日早起吧。 #line:b20aa1
 Mom: 我发现这种情况越来越常见了。 #line:5bdeae
-Mom: 你爸就是这样……虽然有时他会偷懒。 #line:c1323b
-Mom: 但他还是有来， 这一点很重要！ #line:71fa04
+Mom: 你爸就这样……还特别多。 #line:c1323b
+Mom: 但他还是有来， 这点很重要！ #line:71fa04
 Mom: 而且他也知道，这对我来说很重要。 #line:fe83b4
-Mae: 好吧好吧，你成功勾起了我的罪恶感。 #line:5dd285
+Mae: 好吧好吧，你这样我超有负罪感的。 #line:5dd285
 Mae: 你居然*真的*在帮教堂做事。 #line:1e45e3
 Mom: 信仰可不是你想的那么回事 ，宝贝。 #line:4656b1
 Mom:  它的宽恕是要多于责难的。 #line:7e0f07
@@ -1072,13 +1072,13 @@ position: 9734,3870
 ---
 <<if $big_fight is 1>>
     Mom: 嘿。你有空吗？ #line:cfd68a
-    Mae: 也许吧。 #line:99c562
-    Mom: 要去来个小小的冒险吗？ #line:f1c66d
+    Mae: 也许吧? #line:99c562
+    Mom: 要来个小小的冒险吗？ #line:f1c66d
     Mae: 你不用工作吗？ #line:85e5c4
     Mom: 牧师不在，我想翘会儿班。 #line:f42849
 	->嗷，好啊！ #line:c32ab4
         Mae: 咱要翘班咯！ #line:172645
-        Mom: 只有我是在翘班，宝贝。 #line:3db1e7
+        Mom: 只有我在翘班，宝贝。 #line:3db1e7
         Mae: 好吧，别出声。 #line:99d730
         Mae: 我正在协助犯罪呢。 #line:ece42b
         Mom: 这也不是在犯罪，宝贝。 #line:ad3cae
@@ -1086,13 +1086,13 @@ position: 9734,3870
         <<irisOut 1 wait>>
         <<scene MomQuest>>
     ->现在不行。 #line:289be9
-        Mom: 噢。 #line:27e0b4
-        Mom: 没事的，宝贝。 #line:e116b4
+        Mom: 哦。 #line:27e0b4
+        Mom: 好的，宝贝。 #line:e116b4
 <<else>>
     Mom: 你今天应该是进不来的吧，宝贝。 #line:83aebd
     Mae: 地球OnLine出bug啦！ \o/ #line:615475
     Mom: 干的不错，宝贝。 #line:12ad26
-    Mae: 嗯。 _o_ #line:9b7d7a
+    Mae: 嗯哼。 _o_ #line:9b7d7a
 <<endif>>
 <<set $mom_church_done to 1>>
 ===
@@ -1105,78 +1105,78 @@ position: 8556,3418
 <<set $mom += 1>>
 <<sit>>
 Mae: 嘿，妈。 #line:fca772
-Mom:嗯哼。 #line:516347
+Mom: 嗯…… #line:516347
 Mae: 唔。 #line:e33324
     ->你还好吗？ #line:b2d252
         Mom: 当然了，宝贝。 #line:fdce22
     ->出什么事了？ #line:6cc490
         Mom: 没什么事。 #line:399892
 <<wait 2>>
-Mae: 骗人 #line:b60736
+Mae: 骗人。 #line:b60736
 Mom:  话说，宝贝，你现在想聊聊学校的事吗？ #line:29a5c7
-    ->嗯……好吧 #line:e1b0d6
+    ->额……好吧 #line:e1b0d6
         Mom:  所以都发生了些什么？ #line:f4746f
         Mae:  我只是觉得，那儿不是我该待的地方 #line:9c5e5b
-        Mom: “不是我该待的地方"？ #line:06f173
-        Mom:  你这是什么意思？ #line:3e6fb8
-        Mae:  呃，先别管了 #line:f4051b
-        Mae: 这个我们以后再说 #line:a0524e
-    ->老实说，不想 #line:6de7d6
-Mom:  什么时候想说了就来找我好吗？ #line:2d0564
-Mom:  我洗耳恭听 #line:827786
-Mom:  我真的很想知道 #line:fa0bc4
-Mom: 你为什么会突然决定要辍学，而且 #line:a54c09
-Mom: 放弃咱们家之前做的那些规划 #line:424df1
+        Mom: “不是你该待的地方"？ #line:06f173
+        Mom: 那是什么意思？ #line:3e6fb8
+        Mae:  呃，先别管了。 #line:f4051b
+        Mae: 我们以后再说吧。 #line:a0524e
+    ->不太想…… #line:6de7d6
+Mom: 你对于自己什么时候想说有个想法吗？ #line:2d0564
+Mom: 我会对我的小宝贝洗耳恭听， #line:827786
+Mom: 而且我真的很想知道…… #line:fa0bc4
+Mom: 你为什么会突然决定要辍学， #line:a54c09
+Mom: 而且放弃我们作为一家人之前做好的所有规划。 #line:424df1
 Mae: :\ #line:295fa2
-Mae: 天呐，老妈！ #line:eb0c7c
+Mae: 天呐，妈！ #line:eb0c7c
 Mae: 这都哪跟哪啊？ #line:9bfc85
-Mom: 你也知道，你是第- #line:b0cc22
+Mom: 你也知道，你是第…… #line:b0cc22
 Mae: :| =_= #line:c52676
-Mae: “第一个考上大学的博罗夫斯基！" #line:aea200
-Mae: 对，妈，我知道 #line:995187
-Mae: 我从6岁起就一直在听你们说这种话了 #line:90e34f
-Mom: 好吧，宝贝，其实这个事在你出生那会儿我们就开始筹备了 #line:7ad4f6
-Mom: 我们花了整整18年 #line:fc7e0f
-Mom: 克服了那么多困难 #line:0b98bc
-Mom: 就是为了能让你有选择的权利 #line:aad936
-Mom: 去选择要不要走出这个小镇。 #line:816794
-Mom: 也许我们只是把我们的精力 #line:4d660b
-Mom: 和金钱 #line:6924b9
-Mom: 还有关心 #line:1d0438
+Mae: “第一个要考上大学的博罗夫斯基！" #line:aea200
+Mae: 对，妈，我知道。 #line:995187
+Mae: 我从6岁起就一直在听你们说这种话了。 #line:90e34f
+Mom: 好吧，宝贝，其实这事在你出生那会儿我们就开始筹备了。 #line:7ad4f6
+Mom: 我们花了整整18年， #line:fc7e0f
+Mom: 克服了那么多困难， #line:0b98bc
+Mom: 就是为了能让你有选择的权利。 #line:aad936
+Mom: 你却宁愿窝在这镇子里。 #line:816794
+Mom: 也许我们只是把我们所有的精力、 #line:4d660b
+Mom: 金钱、 #line:6924b9
+Mom: 还有关心， #line:1d0438
 Mom: 都给扔进无底洞去了。 #line:2d00d1
 <<wait 2>>
 <<fadeOutMusic 10>>
 Mae: 你又在乱发泄了吗？ #line:f3f84a
-Mom: 呃，说的好像我是那个住在我们家的炸药包似的。 #line:4c4d32
+Mom: 呃，说的好像我是那个住在我们家的炸药包。 #line:4c4d32
 Mae: 你就是住在我们家的那个炸药包。 #line:3e2113
-Mom: 好吧，趁现在我们的家还能住，好好享受吧 #line:9984ed
+Mom: 好吧，趁现在“我们家"还能住，好好享受吧。 #line:9984ed
 Mae: o_o :| #line:46eb13
 <<close>>
 <<jump>>
 <<wait 1>>
 Mae: O_O :| #line:a93e6f
 Mae: 什么鬼？！ #line:493d77
-Mae: 我们家的房子要出什么事啦？？？ #line:fd78d5
-Mom: 也许这房子“不是我们该待的地方"。 #line:e5f2b7
+Mae: 我们家房子要出什么事了？？？ #line:fd78d5
+Mom: 也许这房子“不是我们本该待的地方"。 #line:e5f2b7
     ->妈，这不好笑。 #line:6eccf5
-        Mom: 别担心 #line:40c465
-        Mom: 什么都别担心 #line:56a959
+        Mom: 别担心。 #line:40c465
+        Mom: 什么都别担心。 #line:56a959
         Mom: 你怎么反倒现在开始担心起来了呢？ #line:dedcef
-        Mom: 快给我出去，爱干嘛干嘛去。 #line:18a161
-    ->你猜怎么着？我去你的。 #line:33db99
-        Mom: “我去你的"？ #line:f63171
-        Mom: 上帝啊，这孩子怎么这样 #line:ba5981
+        Mom: 走吧，去做你该做的事吧。 #line:18a161
+    -> 知道吗？去你的。 #line:33db99
+        Mom: “去你的"？ #line:f63171
+        Mom: 上帝啊，这孩子怎么这样。 #line:ba5981
 Mae: =_= #line:2803a4
-Mae: 你猜怎么着？ #line:f826a7
+Mae: 你知道吗？ #line:f826a7
 Mae: 也许我当初就不该去上学，你懂的， #line:16d5cc
 Mae: 我就该去外面闯荡，自己干出点事业。 #line:bbf86e
-Mom: 梅。 #line:38a7ac
-Mom:别来这套。 #line:8af691
-Mom: 你根本什么都不明- #line:1cb5af
-Mae: 也许你希望让我有能力从这里走出去 #line:98c277
-Mae: 不过是因为你自己怎么也做不到罢了。 #line:66dbdf
+Mom: 不。 #line:38a7ac
+Mom: 不。 #line:8af691
+Mom: 你根本什么都不明…… #line:1cb5af
+Mae: 也许你希望让我有能力从这里走出去， #line:98c277
+Mae: 但其实因为你自己从来就没机会去做罢了。 #line:66dbdf
 Mae: o_o :| #line:7169c6
-Mae: 也许我只不过是我们家族的失败史里面 #line:e8dbb2
+Mae: 也许我只不过是我们家族失败史里面 #line:e8dbb2
 Mae: 最近的一次失败罢了。 #line:f18525
 <<wait 4>>
 Mae: 我要走了。 #line:8589df
@@ -1190,23 +1190,23 @@ colorID: 3
 position: 7654,3517
 ---
 <<sit>>
-Mae: *打哈欠* #line:8ae061
-Mom: 早安。昨晚很累吗？ #line:834e16
+Mae: *哈～欠～～* #line:8ae061
+Mom: 早安。失眠了吗？ #line:834e16
 <<if $did_gregg_friendship_quest_2>>
-	Mae: 是啊 #line:000492
-	Mae: 还记得老驴生鲜摆的那些大机器人吗？ #line:8e7f3c
+	Mae: 是啊。 #line:000492
+	Mae: 还记得老驴生鲜里面摆的那些大机器人吗？ #line:8e7f3c
 	Mom: 嗯哼。你以前啊，被这些玩意吓得， #line:adbe92
-	Mom: 那俩小眼珠子都要给哭出来咯。 #line:672af6
-	Mae:噢，没那么糟吧。 #line:a8c903
-	Mom: 嗯哼 #line:e2748e
+	Mom: 那俩小眼珠子的眼泪都哭出来咯。 #line:672af6
+	Mae: 噢，没那么糟吧。 #line:a8c903
+	Mom: 嗯哼。 #line:e2748e
 	Mae: 这些事我一点都记不起来了。 #line:41ce0c
-	Mom: 嗯哼 #line:52bf0d
+	Mom: 嗯哼。 #line:52bf0d
 <<else>>
-	Mae: 是啊 #line:b3534d
+	Mae: 是啊。 #line:b3534d
 	Mae: 我跟着碧娅上班去了。 #line:df33be
 	Mom: 噢，你要在那儿打工吗？ #line:3fd50b
 	Mae: 不是的，妈。我只是陪她一块去而已。 #line:6575ee
-	Mae: 但我确实是派上了大用场 。 #line:501ee9
+	Mae: 但我确实派上了大用场。 #line:501ee9
 	Mom: 嗯哼。 #line:242b9d
 	Mae: 全新的体验，很棒。 #line:1da120
 	Mae: 嗯哼。 #line:f2f75a
@@ -1218,8 +1218,8 @@ Mae: 什么样的大人事务？我也是个大人！ #line:70fe12
 Mom: …… #line:062e6b
 Mae: :| #line:710863
 Mae: ……？ #line:bb509d
-Mom: 预算，钞票，数字，这类的。 #line:c156a0
-Mom: 成年人基本上每天都要肩上扛着数字过生活。 #line:216b64
+Mom: 预算，账单，数字，这类的。 #line:c156a0
+Mom: 成年人基本上每天都要肩上扛着数字生活。 #line:216b64
 Mae: 那可太糟了。我数学可不太行。 #line:00c275
 Mom: 这我知道。 #line:e00f34
 Mae: 嗯，好吧，我要出去了。 #line:37d4a9
@@ -1238,7 +1238,7 @@ tags:
 colorID: 3
 position: 8127,4306
 ---
-Mom: 宝贝，我真的得专心工作了。 #line:7dc348
+Mom: 宝贝，我真得专心工作了。 #line:7dc348
 ===
 title: MomHome_A3D3_00
 tags: 
@@ -1249,44 +1249,44 @@ position: 10057,3572
 Mae: =_= #line:a8fb37
 <<wait 3>>
 Mom: 宝贝……你还好吗？ #line:bd764f
-Mae: 呃。今天早上有够难受的。 #line:56a4c6
+Mae: 呃。现在早上很难受。 #line:56a4c6
 Mom: 你是……怀孕了吗？ #line:505db3
 <<dilate Mae .85 .25>>
 Mae: O_O #line:6ae2cf
-Mae: 才没有！ #line:8f067b
+Mae: 没有！ #line:8f067b
 Mom: 噢，宝贝，你就是因为这个才回家的吗？ #line:11907d
 Mae: 没有！怎么可能！ #line:458f15
-Mom: 宝贝，你可以放心跟我说！妈妈以前也经历过！ #line:b6589b
-Mom:虽然这不过是大自然的规律，但那是因为上帝的祝福才让我们有了你！ #line:c416bf
+Mom: 宝贝，你可以放心跟我说！妈以前也经历过！ #line:b6589b
+Mom: 虽然是自然的规律，但也是有上帝的祝福才让我们有了你！ #line:c416bf
 Mom: 你是一个奇迹宝宝！ #line:08a521
 <<dilate Mae 1 .25>>
 Mae: =_= #line:5973ed
-Mae: 对啊，我确实是一个奇迹。 #line:4b2186
+Mae: 是啊，一个奇迹。 #line:4b2186
 Mom: 经历过几次流产之后，我们原本都快放弃希望了。 #line:b73fc0
 Mom: 接着我们就有了你！ #line:48a38d
 Mae: 然后我就在这儿了。 #line:42b042
 Mom: 所以你要是真的怀孕了， #line:53c8a6
 <<dilate Mae .85 .25>>
 Mae: o_o :| #line:f5e457
-Mae: 我 没 怀 孕！ #line:3cdd60
+Mae: 我没怀孕！ #line:3cdd60
 Mae: O_o #line:be7bcc
-Mae: 我根本就没有怀孕的条件！ #line:cba746
+Mae: 我根本就没有怀孕！ #line:cba746
 Mom: 好的！好的！ #line:19e24f
-Mom: 我只是想告诉你，你要是真的怀孕了，大可对我们敞开心扉。 #line:7d1faa
+Mom: 我只是想告诉你，无论怎样都可以对我们敞开心扉。 #line:7d1faa
 Mae: 好啦。我知道了。咱们能聊点别的吗？ #line:8efc2f
-Mom: 当然可以！ #line:d32e9e
+Mom: 当然了！ #line:d32e9e
 <<wait 4>>
-Mom: 那个，*假如*你真的怀了一个小宝宝， #line:ec67f1
+Mom: 那个……假如你*真的*怀了一个小宝宝， #line:ec67f1
 <<dilate Mae 1 .25>>
 Mae: o_o :| #line:45bf91
 Mae: 够啦！ #line:a8068e
 <<jump>>
-Mae: 我要出门了。 #line:02655a
-Mom: 哈哈哈。好的宝贝。 #line:09f963
+Mae: 我要出门了！ #line:02655a
+Mom: 哈哈哈。好的亲爱的。 #line:09f963
 Mom: 抱歉，我一想到自己要当姥姥了就兴奋得不行。 #line:f25d48
-Mae: 没事的。 #line:a75f9d
+Mae: 好了。 #line:a75f9d
 Mae: 我晚点回来。 #line:7ecae6
-Mom: 爱你哦！ #line:c211c2
+Mom: 爱你哟！ #line:c211c2
 Mae: 也爱你。 #line:bc7ab6
 ===
 title: MomHome_A3D3_01
@@ -1296,14 +1296,14 @@ position: 10387,3556
 ---
 Mom: 假如是个男孩的话，就取名叫加尔文。 #line:92a89a
 Mae: =_= #line:cd86d6
-Mae: 噢天呐，老妈 #line:cd436c
+Mae: 噢天呐，老妈。 #line:cd436c
 Mom: 要是个女孩的话，就叫她…… #line:88148b
 Mae: :) #line:25a149
 Mae: 垃圾小宝？ #line:b57d95
 Mom: 柯迪丽娅！ #line:dfd350
 Mae: o_o :| #line:baa576
 Mae: 我要不干脆生个小孩然后丢给你养吧。 #line:4217ac
-Mom: 噢！ #line:686342
+Mom: 噢～～～！ #line:686342
 Mae: 好了拜拜，我要走了。 #line:61dcb0
 ===
 title: MomChurch_A3D3
@@ -1328,18 +1328,18 @@ position: 9998,4245
 ---
 Mom: 嘿，宝贝。 #line:76351a
 Mom: 你现在头还痛吗？ #line:6a2ba3
-Mae: 痛，但出来逛了一圈之后还是有好一些。 #line:b81ee8
-Mom: 多亏了新鲜空气啊！ #line:9d5ef1
-Mom: 谢谢你来看我，宝贝 #line:e40c02
+Mae: 痛，但是出去走走还是会有帮助的。 #line:b81ee8
+Mom: 呼吸点新鲜空气！ #line:9d5ef1
+Mom: 谢谢你来看我，宝贝。 #line:e40c02
 Mom: 这给我的一天增色不少！ #line:6a7d6d
-Mae: 今天来这儿的时候感觉有点怪怪的。 #line:cf164e
-Mae: 感觉……这里变得好空旷。 #line:a1ed0c
-Mom: 周日再来！那时人就多起来了！ #line:b21c01
+Mae: 今天来这儿的时候感觉怪怪的。 #line:cf164e
+Mae: 感觉……这里好空旷。 #line:a1ed0c
+Mom: 周日再来！那时就不空了！ #line:b21c01
 Mae: 我想也是！ #line:8f18e7
 <<if $money_trouble is 1>>
-    Mae: 很抱歉，因为我们的财政危机，你现在又要上班了 #line:4056a5
-    Mom: 梅，我一直有在上班的 #line:c7a897
-    Mom: 现在不过是在打两份工 #line:7d2f15
+    Mae: 很抱歉，因为我们的财政危机，你现在又要上班了。 #line:4056a5
+    Mom: 梅，我一直有在上班。 #line:c7a897
+    Mom: 现在这是另一份工。 #line:7d2f15
 <<endif>>
 ===
 title: MomHome_A3D4_00
@@ -1349,46 +1349,46 @@ position: 10954,3589
 ---
 <<sit>>
 Mae: =_= #line:7e7add
-Mom: 早上好～ #line:4946e9
+Mom: 早上好～～～～ #line:4946e9
 Mom: 这不是我的小太阳花吗！ #line:6989ef
-Mom: 今天感觉有比昨天好些吗？ #line:4329bb
-Mae: 虽然我睡了很久，但好像感觉更糟了？ #line:ac5f37
+Mom: 今天有比昨天好些吗？ #line:4329bb
+Mae: 虽然睡了很久，但好像感觉更糟了？ #line:ac5f37
 Mom: 噢，好吧，我会帮你跟汉克医生预约一下的。 #line:d1b976
-Mae:天，妈，我好得很。 #line:614583
+Mae: 天，妈，我很好。 #line:614583
 Mom: 你看着可一点也不好，宝贝。 #line:daa907
 Mae: 我是个成年人了！我能自己做决定的。 #line:890fc3
-Mom: 只要你还在这儿，你就永远是我的宝贝。 #line:fac509
+Mom: 只要你还在这儿，你就永远是我的小宝贝。 #line:fac509
 Mom: 还有我要给你预约了。 #line:b5faf3
 Mom: 梅，宝贝……我很担心你。 #line:75296b
 Mae: 我没事，妈。 #line:86853a
 <<if $money_trouble is 1>>
-	Mae: 听着，我一直在想财政危机的事 #line:6dcfcc
-	Mae: 房子的事 #line:173c17
+	Mae: 听着，我一直在想财政危机的事、 #line:6dcfcc
+	Mae: 房子的事。 #line:173c17
 	Mae: 我好担心…… #line:08fe36
 	Mae: 你……我们…… #line:ebd3f6
 	Mae: 要是我没这么混蛋的话，事情就不会变成这样了。 #line:5f3cd9
 	Mae: 我现在就想着赶紧来个大坑，让我摔死在里头。 #line:3b07fd
-	Mom: 梅！没事的！真的！我们想得到办法的！ #line:2698ed
-	Mom: 这不全是你的错！很抱歉，我把事情讲得好像是都是你的错。 #line:7151ee
+	Mom: 梅！没事的！真的！我们能想到解决办法的！ #line:2698ed
+	Mom: 这不是你的错！很抱歉，我把事情讲得好像是你的错。 #line:7151ee
 	Mom: 过去的都过去了，不管怎么样我们都是一家人。 #line:7632d7
-	Mom: 别再为这事操心了！ #line:db93ee
+	Mom: 别再为这事担心了！ #line:db93ee
 	Mae: 不管发生什么，我都希望你记住，我爱你。 #line:efe7a6
 	Mom: 我也是！ #line:650669
     Mae: :( #line:25ed60
 	Mae: …… #line:87dfdb
-	Mae: *吸鼻涕* #line:d8494e
+	Mae: *鼻子一酸* #line:d8494e
 <<endif>>
 <<wait 3>>
 Mae: o_o :| #line:dcddda
-Mae: 好吧。我该走了。 #line:0ff5c0
+Mae: 好吧。我要走了。 #line:0ff5c0
 Mom: 你真的不想待在家里好好歇着？ #line:2d61cf
-Mae: 不了。有好多事要做呢。 #line:5251f4
+Mae: 不了。还有事要做呢。 #line:5251f4
 Mom: 你有什么事非做不可？ #line:05de3f
 Mae: 说实话我也不知道。 #line:501457
 Mom: 噢，宝贝。 #line:0999ad
-Mom: 放轻松点。 #line:dc5a5f
+Mom: 放松点。 #line:dc5a5f
 Mae: 我会的。 #line:4bf3a6
-Mom: 爱你！ #line:9ca995
+Mom: 爱你哟！ #line:9ca995
 Mae: 我也爱你。 #line:0e463e
 ===
 title: MomHome_A3D4_01
@@ -1396,13 +1396,13 @@ tags:
 colorID: 4
 position: 11196,3593
 ---
-Mom: 我床头柜里有些治头疼的处方药，效果很好。 #line:705e35
+Mom: 我床头柜里有些治头疼的效果很好的处方药。 #line:705e35
 Mom: 我能给你半粒。 #line:071dbe
 Mae: :) #line:8733a8
 Mae: 才半粒？ #line:ed2556
 Mom: 宝贝……你个子有点……你也知道…… #line:6f6699
 Mae: :| #line:0223f4
-Mae: 个子有点小？ #line:283585
+Mae: 短？ #line:283585
 Mom: 一半的量就够了。 #line:5d86c8
 Mae: 没事的，妈。 #line:fcada0
 Mom: 好！需要帮忙的话就跟我说一声！ #line:b7da37
@@ -1447,38 +1447,38 @@ Mae: 嘿，妈。 #line:2fdc0e
 Mom: 感觉怎么样？ #line:054ea7
 <<sit>>
 Mae: 挺好，还能活蹦乱跳的。 #line:a10fa9
-Mom: 能帮我个小忙吗？乖乖待在家里。 #line:0bdd27
+Mom: 能帮我个小忙吗？今晚乖乖待在家里。 #line:0bdd27
 	->当然可以，妈。 #line:084806
 	->为什么？ #line:6db2fa
 		Mom: 就是……我…… #line:79a249
-Mom: 我……你已经长大 #line:de2352
-Mom: 你自己想干什么都可以 #line:8671d7
-Mom: 但你住在这儿 #line:49d99b
-Mom: 你依然是，我的，宝贝。 #line:88fc35
+Mom: 我……你虽然是个成年人了， #line:de2352
+Mom: 你自己想干什么都可以。 #line:8671d7
+Mom: 但你还住在这里。 #line:49d99b
+Mom: 你依然是、我的、小、宝贝。 #line:88fc35
 Mae: 嗷，妈。 #line:fdcb2c
-Mom: 我们该制定几条门禁规定了 #line:791a02
-Mom: 因为 #line:cd633a
-Mom: 宝贝，昨晚你差点就死在外头了 #line:63a8fe
-Mom: 然后你还指望今晚和你的朋友一块出去瞎晃？ #line:6f4b2c
-Mae: 我 #line:3670e3
-Mae: 我 #line:64361e
-Mae: 我很对不起，妈。 #line:3ae1b7
+Mom: 我们该制定几条基本家规了。 #line:791a02
+Mom: 因为…… #line:cd633a
+Mom: 宝贝，那晚你差点就死在外头了。 #line:63a8fe
+Mom: 然后你还想和你的朋友一起出去瞎晃？？？ #line:6f4b2c
+Mae: 我…… #line:3670e3
+Mae: 我…… #line:64361e
+Mae: 我很抱歉，妈。 #line:3ae1b7
 Mom: 宝贝，你到底是怎么了？ #line:bd0a90
-	->今年对我来说很难过，妈 #line:4f2a60
-		Mom: 宝贝，你才难过了一*星期* #line:caa9c8
-		Mom: 我们也一样。 #line:1f7b2e
-		Mae: 没错，可是- #line:ea1e45
-	->我都不知道该不该跟你说 #line:50f69a
-		Mom: 为什么不能？我会理解的，我发誓。 #line:890d80
+	->今年对我来说很难，妈。 #line:4f2a60
+		Mom: 宝贝，你才难了*一星期*。 #line:caa9c8
+		Mom: 我们一直很难。 #line:1f7b2e
+		Mae: 没错，可是…… #line:ea1e45
+	->我都不知道该不该跟你说…… #line:50f69a
+		Mom: 为什么不能？我能理解的，我发誓。 #line:890d80
 		Mae: 我都不知道该怎么说，我压根没想过要说出来。 #line:6c2d55
-Mom: 在学校发生什么事了，宝贝？ #line:edc3b1
+Mom: 到底在学校发生什么事了，宝贝？ #line:edc3b1
 Mom: 不管那是什么事，我只是希望你能……告诉我。 #line:3cd0e3
 Mae: …… #line:c86697
 Mae: 你今天上班吗 ？ #line:8b323a
 Mom: 不，我和你爸今天都休息。 #line:206f16
-Mae: 今晚我会在这。我们能到时再说吗？ #line:43ef04
+Mae: 今晚我会回来。我们能到时再说吗？ #line:43ef04
 Mom: 当然。 #line:49adb5
-Mom: 我们可以把早餐的菜式挪到晚餐来吃，就像以前那样。 #line:fd85c1
+Mom: 我们可以把我们可以晚饭做早餐吃的东西，就像以前那样。 #line:fd85c1
 Mae: 老爸会让煎饼做空翻呢！！！ :) #line:4d034d
 Mom: 哈哈哈。当然了。 #line:64ce95
 <<wait 2>>
@@ -1487,7 +1487,7 @@ Mae: 是啊。 #line:0151a7
 Mom: 你能乖乖待在镇里吗？别跑太远？ #line:6ea765
 Mae: 好的，妈。 :| #line:d2515c
 Mom: 我想他们正在外面妆点整个镇子，给长至夜做准备。 #line:be8643
-Mae: 哇。 #line:87d467
+Mae: 哇噢。 #line:87d467
 Mom: 还得再来点雪。 #line:26849a
 Mae: 真快啊。 #line:7e2189
 Mom: 什么真快？ #line:89687b
@@ -1506,7 +1506,7 @@ tags:
 colorID: 6
 position: 13734,3430
 ---
-Mom: 嗯，嗯，嗯嗯嗯嗯嗯嗯。 #line:dbe445
+Mom: 啦～～啦啦～啦～～啦啦～啦啦啦～～～ #line:dbe445
 ===
 title: MomHome_A4D3_01
 tags: 
@@ -1514,7 +1514,7 @@ colorID: 6
 position: 13476,3460
 ---
 Mae: 你还在看那一本书吗？ #line:771daa
-Mom: 哦，不是！这是另外一本。 #line:dee574
+Mom: 噢，不！这是另外一本。 #line:dee574
 Mom: 这本讲的是，关于这附近矿井里面死的那些人的故事。 #line:3aa4df
 Mae: 噢，酷啊。 #line:81947b
 Mom: 是啊，很有趣。 #line:21bee1
@@ -1538,8 +1538,8 @@ Mom: 要听吗？ #line:0185a4
     Mae: 挺不错。 #line:c92233
     Mom: 是啊。挺不错的。 #line:a4252d
     Mae: o_o :| #line:a159a4
-->晚点再听吧，大概 #line:a1526e
-	Mom: 吃早式晚餐的时候我们能唱一唱。 #line:60b5c9
+->晚点再听吧 #line:a1526e
+	Mom: 吃早式晚餐的时候我们能唱一下。 #line:60b5c9
 	Mae: 一言为定 #line:15022d
 ===
 title: MomChurch_A2D3_00
@@ -1550,12 +1550,12 @@ position: 7735,4278
 Mae:嘿，妈。 #line:ca29f6
 Mom: 今儿没空聊天，有好多事要做呢。 #line:4f48bb
 Mae: 真的？ #line:83e689
-Mae: 发生什么事了？ #line:a150b1
-Mom: 嗯，宝贝，我们镇议会今天要开会了。 #line:f2bab7
-Mom: 开完这个会，还要在地下室开个会，有关十二步项目——就那个戒瘾协会。 #line:a37697
+Mae: 能有什么事发生啊？ #line:a150b1
+Mom: 嗯，宝贝，我们镇议会今天要开了。 #line:f2bab7
+Mom: 之后在地下室有个12步戒瘾法的活动。 #line:a37697
 Mae: 哇哦。 #line:680abf
-Mom: 然后我还得做一下教堂的预算安排，还有我们家的预算安排 #line:d2900a
-Mom: 同时做。 #line:1ea04d
+Mom: 然后我还得做一下教堂的预算安排，还有我们家的预算安排。 #line:d2900a
+Mom: 同时做噢～ #line:1ea04d
 Mae: 那我就不打扰了！ #line:125e6d
 Mom: 谢了，宝贝。 #line:e33a1a
 ===
@@ -1572,7 +1572,7 @@ position: 8887,3543
     Mom: 你看上去挺累的 。 #line:4672c4
 	Mae: 你看着也是啊。 #line:1d33d4
     Mae: :\ #line:c9c926
-    Mae: 我有些偏头痛。 #line:67dd39
+    Mae: 我的头还特别疼。 #line:67dd39
     Mom: 嗯，这鬼天气好像也和你差不多。 #line:15946b
     Mom: 昏天黑地的，下着毛毛雨。 #line:cf8c53
     Mae: 我今天要出去淋会小雨。 #line:449f05
@@ -1582,9 +1582,9 @@ position: 8887,3543
     Mae: 哈？ #line:ae6dc3
     Mom: 昨天真抱歉。 #line:34dc32
 	Mae: 我也很对不起。 #line:35930b
-    Mae: 我说了些伤人的话 #line:b0be2d
-    Mae: 那并不是真心的。 #line:f12b11
-	Mom: 好吧，不管你是不是真心的 #line:e6798d
+    Mae: 我说了那些话。 #line:b0be2d
+    Mae: 我真的不是故意的。 #line:f12b11
+	Mom: 好吧，不管你是不是故意的， #line:e6798d
     Mom: 我们的沟通方式不该是这样的。 #line:15c341
     Mom: 我并不想要搞冷战。 #line:967fb1
     Mom: 我不过是……不想再跟几年前那次一样了。 #line:e03ad6
@@ -1595,30 +1595,30 @@ position: 8887,3543
     <<jump>>
 	Mom: 嘿，梅……你还好吗？ #line:3c95dc
 	Mae: 还好。我大概也是压力太大了。 #line:1d6be5
-    Mae: 昨晚看到怪东西了 #line:1cba8f
-    Mae: 或者说我以为我看到了。 #line:cbeca9
+    Mae: 昨晚看到怪东西了， #line:1cba8f
+    Mae: 或者说我觉得我看到了。 #line:cbeca9
     Mom: 想和我说说吗？ #line:c51687
-    Mae: 晚点再说这个。我现在还在试着理清头绪。 #line:51d168
-	Mom: 咱能聊聊学校的事吗？ #line:5cdc43
-	Mae: 这个也以后再说。 #line:b13d2b
+    Mae: 以后吧。我现在还在试着理清头绪。 #line:51d168
+	Mom: 那能聊聊学校的事吗？ #line:5cdc43
+	Mae: 也以后吧。 #line:b13d2b
 <<else>>
     <<sit>>
     Mae: =_= #line:044743
 	Mom: 嘿，宝贝！丰收节上玩得开心吗？ #line:27427c
 	Mae: 当然了。 #line:cfc164
-	Mae: 你看上去有点累。 #line:e0cd54
-	Mom: 你看上去有点累。 #line:5f1891
-	Mae: 是啊，我想是吧。头有点疼。 #line:a4466e
+	Mae: 你看起来很累。 #line:e0cd54
+	Mom: 你看起来也很累。 #line:5f1891
+	Mae: 是啊，我想是吧。头疼了。 #line:a4466e
 	Mom: 你还好吗？ #line:737049
-	Mae: 还好，大概吧。 #line:ff590c
-	Mom: 你想聊聊学校的事吗？ #line:3c47f4
+	Mae: 还好……吧。 #line:ff590c
+	Mom: 想聊聊学校的事吗？ #line:3c47f4
 	Mae: 还不想。 #line:8bc539
-	Mom: 你在……等待某个时机吗？ #line:912976
-	Mae: 不。只不过是……这个我们*以后*会谈的，可以吗？ #line:d06327
-	Mae: 我跑不了的。 #line:f80411
+	Mom: 在……等待某个时机吗？ #line:912976
+	Mae: 不。只是……我们*以后*再谈，好吗？ #line:d06327
+	Mae: 我又跑不了的。 #line:f80411
     Mae: o_o :| #line:c77375
 	Mom: 好吧，那也行。 #line:d578c6
-	Mae: 我要出去了。 #line:6c747e
+	Mae: 我要走了。 #line:6c747e
 	Mom: 好吧！玩得开心，宝贝！ #line:bd27ac
 <<endif>>
 ===
@@ -1628,35 +1628,35 @@ colorID: 4
 position: 9138,3583
 ---
 <<if $big_fight>>
-    Mae: 所以你的压力是因什么而来的？ #line:f2b869
-	Mom: 嗯，我想你已经长大了。 #line:76dfad
+    Mae: 所以你的压力是因什么而来？ #line:f2b869
+	Mom: 嗯，既然我想你已经是个成年人了。 #line:76dfad
     Mae: =_= #line:ec167c
-    Mae: 尽管说吧，妈妈。 #line:08dd0c
-    Mom: 几年前你出事的时候 #line:7bdebc
+    Mae: 老妈，你就快说吧。 #line:08dd0c
+    Mom: 几年前你出事的时候， #line:7bdebc
     Mae: o_o #line:02ff43
-    Mom: 你知道的，当时为了摆平这个事，我们去借了点钱。 #line:616f36
-    Mae: 天，一想到这事我还是觉得挺对不住的。 #line:17deca
-    Mom: 这都是过去的事了，咱们不要再计较了。 #line:35c612
-    Mae: 好的 #line:09dce7
-    Mom: 等到要送你上大学的时候 #line:ffc7ef
-    Mom: 我们去做了抵押贷款，弄了一笔钱 #line:ad0e97
-    Mom: 保证你在那儿能过得好好的。 #line:9bf08f
+    Mom: 你要知道，当时为了摆平这个事，我们去借了点钱。 #line:616f36
+    Mae: 天，我现在还是觉得很对不起。 #line:17deca
+    Mom: 过去的就过去吧，我们就不要再回顾了。 #line:35c612
+    Mae: 好的。 #line:09dce7
+    Mom: 到了你要上大学的时候， #line:ffc7ef
+    Mom: 我们去做了房屋抵押贷款。 #line:ad0e97
+    Mom: 这是为了保证你在那儿能过得好好的。 #line:9bf08f
     Mae: O_o #line:507de4
-    Mae: 这真的好吗？ #line:7dbaea
-    Mom: 嗯，总之后来证明这不是什么好主意 #line:e7c2c1
-    Mom: 然后……我觉得我们当时真的好蠢…… #line:20e8b9
+    Mae: 这……真的好吗？ #line:7dbaea
+    Mom: 嗯，后来证明这不是什么好主意。 #line:e7c2c1
+    Mom: 然后……我觉得我们当时真的好傻…… #line:20e8b9
     Mom: 他们就喜欢把钱借给那些 #line:838e01
-    Mom: 经济状况一般 #line:872b47
-    Mom: 又没怎么搞过抵押贷款的人。 #line:651acd
+    Mom: 经济状况一般， #line:872b47
+    Mom: 又没怎么搞过贷款的人。 #line:651acd
     Mae: :\ #line:54c5b7
-    Mae: 为什么？ #line:51a59b
-    Mom: 因为银行想占我们便宜。 #line:4ce4a3
-    Mom: 我们的房子现在在他们手上，我们的欠款可要比房子的价高得多。 #line:730944
-    Mae: 这表示？ #line:166a34
+    Mae: 怎么了？ #line:51a59b
+    Mom: 因为银行想占我们的便宜。 #line:4ce4a3
+    Mom: 我们的房子现在在他们手上，我们的欠款却还要比房子本身多。 #line:730944
+    Mae: 这是什么意思？ #line:166a34
     Mom: 这表示我们不确定这房子我们还能住多久。 #line:5a37bd
     <<set $money_trouble to 1>>
 	Mae: O_O :| #line:54759c
-    Mae: 该死，我们有麻烦了，对吧？我是个大混蛋吧？ #line:2fdfa1
+    Mae: 我靠，我们有麻烦了，对吧？我就是个大混蛋！ #line:2fdfa1
     Mae: o_o :| #line:99d52f
 	Mom: 没事的，宝贝。别担心。 #line:3f579c
 <<else>>
@@ -1672,37 +1672,37 @@ tags:
 colorID: 4
 position: 9419,3548
 ---
-Mae: 你在看什么书？ #line:daf1bb
+Mae: 在看什么？ #line:daf1bb
 Mom: 讲谋杀疑案的。 #line:70c5c6
 Mae: 这些都是真的吗？ #line:a8601f
 Mom: 噢，我不知道。也许吧。大概。 #line:886887
-Mom: 这儿有个特别难的难题，要听听吗？ #line:244338
+Mom: 想听个特别难的难题吗？ #line:244338
 ->当然！ #line:6e522e
-	Mom: 好的，现在有个男人躺在厨房地上，死了 #line:29527f
-    Mom: 头上还有个弹孔 #line:9a6986
+	Mom: 好的，有个男人死在了厨房的地上， #line:29527f
+    Mom: 头上还有个弹孔。 #line:9a6986
     Mom: 他的旁边还有一个男人。 #line:73a85a
-    Mom: 他右手上还有血迹 #line:524a74
-    Mom: 现场没有枪。 #line:a05764
-    Mae: 哈。 #line:3b4755
-    Mom: 最后一点-死者的后脑勺上有一道疤。 #line:136e8b
+    Mom: 他右手上还有血迹， #line:524a74
+    Mom: 但现场没有枪。 #line:a05764
+    Mae: 啊哈。 #line:3b4755
+    Mom: 最后一点：死者的后脑勺上有道疤。 #line:136e8b
 	Mae: 你知道答案吗？ #line:e8a065
-	Mom: 我都不知道这题有没有准确答案。 #line:d71b57
-	Mom: 玩这个的目的就是为了让你思考 #line:43e574
+	Mom: 我都不知道这题有没有*一个*答案。 #line:d71b57
+	Mom: 可能就是为了让你思考。 #line:43e574
 	->思考怎么谋杀吗？ #line:4e4d7f
-		Mom: 要是连谋杀案都没有，那谈什么解决谋杀案！ #line:6861f5
-	->你真该去当个侦探 #line:0759b0
+		Mom: 要是连谋杀都没有，那谈什么解决谋杀呢！ #line:6861f5
+	->你真该去当个侦探。 #line:0759b0
 		Mom: 是啊。 #line:a112cd
 		Mom: 我会很乐意去做的。 #line:29fb0a
 	Mae: 好吧，我有个问题要问。 #line:790d38
     Mae: -_- #line:f272d7
 	->死者脑后的疤是什么样的呢？ #line:21a6ff
-		Mom: “一条直线，几英寸长，被头发盖着" #line:7e099a
-		Mae: 嗯。 #line:f66e75
+		Mom: “一条直线，几英寸长，被头发盖着。" #line:7e099a
+		Mae: 嗯哼。 #line:f66e75
 	->房间里的另一个男人是谁？ #line:ae89a6
-		Mom: “嫌疑人很明显是个中上层的精英" #line:94ba80
+		Mom: “嫌疑人很明显是个中上层的精英。" #line:94ba80
         Mae: 这个线索没多大用。 #line:b7d4d0
-        Mom: 没准他是用滑雪板把他绊倒，杀了他。 #line:fcc886
-        Mae: 是啊，他可以在他后院的按摩浴缸那里作案。 #line:8d2b92
+        Mom: 没准他是用滑雪板把他绊倒致死的。 #line:fcc886
+        Mae: 是啊，他可以在后院的按摩浴缸那里作案。 #line:8d2b92
 	->房间里还有什么？ #line:318f94
 		Mom: 都是一般物件，冰箱啊，微波炉啊，银制餐具啊。 #line:7e1fc6
 		Mae: 有刀吗？ #line:a2c92f
@@ -1711,9 +1711,9 @@ Mom: 这儿有个特别难的难题，要听听吗？ #line:244338
 	<<wait 3>>
     Mae: o_o #line:fb257a
     Mae: 好的，我想出来了！ #line:62e80e
-	Mom: 哇哦！你得出来个什么结论 ？？？ #line:f6c89f
+	Mom: 哇哦！快说一说 ？？？ #line:f6c89f
 	Mae: 房间里那个男的是个外科医生。 #line:8bd72d
-	Mae: 他在死者的头骨里埋了一块磁铁 #line:28531c
+	Mae: 他在死者的头骨里埋了一块磁铁。 #line:28531c
 	Mae: 那道疤就是这么来的。 #line:b27b1c
 	Mae: 随后，嫌疑人把一块超级磁铁之类的玩意 #line:ff60e9
     Mae: 抵在死者的额头上 #line:c41fbf
@@ -1721,21 +1721,21 @@ Mom: 这儿有个特别难的难题，要听听吗？ #line:244338
 	Mom: 哈哈！所以他才会有一只手沾着血！ #line:192e47
 	Mae: 是啊。而且我敢打赌，凶器就被他贴在冰箱上边， #line:1c7116
 	Mae: 用来吸住一张怪阿姨的照片。 #line:b134c9
-	Mom: 哦，大获全胜啊，宝贝！ #line:683c45
+	Mom: 哇哦，太棒了，宝贝！ #line:683c45
     Mae: :) #line:313cf2
-	Mae: 谢谢，谢谢。 #line:f9a59f
+	Mae: 谢谢，谢谢。（鞠躬） #line:f9a59f
 	Mom: 我们能组个侦探二人组。 #line:a8ec60
 	Mae: 在镇上开个事务所。 #line:a66308
     Mae: :| #line:314b50
-	Mae: 镇上的空掉的那个事务所大概能用。 #line:b0f6b1
-	Mom: 永远为罪恶克星效劳！ #line:f7b88d
+	Mae: 现在镇上大概就有给我们开的地方。 #line:b0f6b1
+	Mom: 我们是永远的罪恶克星！ #line:f7b88d
 	Mae: 好吧，我要走了。 #line:b5ed48
-	Mom: 爱你，小侦探闺女！ #line:66c188
+	Mom: 爱你哟，小侦探闺女！ #line:66c188
 	Mae: 也爱你，调查员老妈！ #line:75b991
     <<unlockDoodle MomMurder>>
-->现在没空，要走了。 #line:c8ee8a
+->现在不行，要走了。 #line:c8ee8a
 	Mom: 噢，好吧！ #line:3cc29a
-	Mom: 我们晚点再玩。 #line:4ae4ef
+	Mom: 我们晚点再解决一个。 #line:4ae4ef
 	Mae: 听着不错，老妈。 #line:32e409
 ===
 title: MomHome_A3D2_01
@@ -1746,19 +1746,19 @@ position: 9940,3233
 // needs to be changed, A3D1 is the rainy day
 Mom: 今儿天气真好，出大太阳了。 #line:05af05
 Mom: 我讨厌下雨天。 #line:bbd389
-Mom: 一下雨我就想赖床赖一辈子。 #line:5581ed
+Mom: 一下雨就想赖床赖一辈子。 #line:5581ed
 Mae: 我喜欢雨天。 #line:132bd2
 Mae: 灰蒙蒙的很漂亮。 #line:bd278f
 Mae: 有时阳光太刺眼。得来几片云才行。 #line:70a55b
 <<if $eels>>
     Mom: 你这条灰溜溜的小鳗鱼。 #line:71a36a
     Mae: :) #line:5e92bd
-    Mae: 鳗～鱼～ ，妈。 #line:48bff9
-    Mom: [wave]鳗～～鱼～～啊，宝贝[/wave] #line:eb6570
+    Mae: 鳗～～～鱼～ ，妈。 #line:48bff9
+    Mom: [wave]鳗～～～～～鱼～啊，宝贝[/wave] #line:eb6570
 <<endif>>
 Mae: o_o :| #line:109111
 Mae: 好吧，我要出去了。 #line:dc8ac8
-Mom: 再见，宝贝。 #line:78bfb1
+Mom: 拜拜，宝贝。 #line:78bfb1
 ===
 title: MomChurch_A3D3_01
 tags: 
@@ -1766,7 +1766,7 @@ colorID: 4
 position: 10379,4244
 ---
 Mom: 我该继续做手头的工作了，宝贝！ #line:777fed
-Mae: 回见，老妈妈 #line:79ac4e
+Mae: 回见，老妈妈。 #line:79ac4e
 Mom: 回见，小妮子。 #line:2e5317
 ===
 title: MomChurch_A3D4_00
@@ -1774,16 +1774,16 @@ tags:
 colorID: 4
 position: 11055,4176
 ---
-Mom: 看吧，你总是忍不住会来这儿的 #line:67c6a6
+Mom: 看吧，你总是忍不住会来这儿的。 #line:67c6a6
 Mom: 那是上帝在呼唤你！ #line:955b5f
 Mae: 噢，天呐。我敢说不是这样的。 #line:151e7d
 Mom: 上帝是很有耐心的，宝贝。 #line:ccd4d0
 Mom: 就像大自然一样。 #line:8e3230
-Mae: 这句话可有够渗人的。 #line:637d8e
+Mae: 这句话好渗人哟。 #line:637d8e
 Mom: 我觉得这句话让我很舒服。 #line:be2f31
-Mae: 我还是觉得这玩意渗人疯了 #line:53dc26
-Mae: 所以请无视我。 #line:e6c88a
-Mom: 好的，宝贝。有什么忙我帮得上的吗？ #line:4cd476
+Mae: 我还是觉得这话渗死个人了。 #line:53dc26
+Mae: 所以就无视我吧。 #line:e6c88a
+Mom: 好的，宝贝。要我帮什么忙吗？ #line:4cd476
 Mae: 并没有。 #line:f1d27e
 Mae: 我爱你！ #line:7f446d
 ===
@@ -1799,24 +1799,24 @@ Mae: 我大概是想把这个场景给刻进脑子里吧。 #line:ba0604
 Mom: 脑内相片！ #line:40f23d
 Mae: 哈哈，是啊。就像我小时候那会儿。 #line:f56f12
 Mom: 你爱在车上瞎闹腾，当时你爸哄你很有一手。 #line:accc17
-Mae: 那是，他用来哄我的那些游戏，我到现在还会做呢。 #line:438d60
+Mae: 当然了，而且他用来哄我的那些游戏，我现在还会玩呢。 #line:438d60
 Mom: *咔嚓* #line:6e9dd2
-Mom: 拍到你了 #line:a6b485
+Mom: 拍下你了。 #line:a6b485
 Mae: *咔嚓，咔嚓* #line:5c06b7
-Mae: 拍到你了。 #line:abcbbb
+Mae: 也拍下你了。 #line:abcbbb
 Mom: 我爱你，宝贝。 #line:3f915f
 Mae: 我也爱你，妈。 #line:09a987
 Mae: …… #line:e87cf9
 Mae: 我好累。 #line:0e402e
-Mom: 为什么不去图书室里打个瞌睡呢？ #line:985b4f
+Mom: 为什么不去图书室里小睡一觉呢？ #line:985b4f
 Mae: 噢，哇哦。 #line:c9d83f
-Mae: 我得有好几年没进去过了。 #line:b88b9e
+Mae: 我得有好几年没去过了。 #line:b88b9e
 <<set $church_library_unlocked to 1>>
-Mom: 最近那儿没怎么启用。 #line:3976c4
-Mom: 但那儿确实很不错，没什么声，让人感觉很平静。 #line:7e0c3f
+Mom: 现在那里没太大用了。 #line:3976c4
+Mom: 但那儿确实很不错，没什么声，又让人感觉很平静。 #line:7e0c3f
 Mae: 好的。我可能会去的。 #line:879a31
 Mom: 后边那道门已经开了，所以尽管去吧。 #line:fefae1
-Mom: 我就在外面。 #line:e05e32
+Mom: 我就在这里。 #line:e05e32
 Mae: 谢了，妈。 #line:27a41c
 Mom: 不用谢，宝贝。 #line:7e101e
 <<set $can_church_nap to 1>>

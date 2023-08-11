@@ -10,14 +10,14 @@ Adina: 可你猜错了。 #line:1276fb
 TreeCat: 我怎么错了？ #line:62cb99
 Adina: 我没把命丢在森林里。 #line:9955cf
 TreeCat: 你确实还活着。 #line:fabc52
-TreeCat: 不过话说回来，我也一样，|每次都能森林里活着回来。 #line:d4cda4
-TreeCat: 所以，不好意思，|我觉得这点小事|实在是没什么了不起的。 #line:8e9f06
+TreeCat: 不过话说回来，我也一样。 #line:d4cda4
+TreeCat: 不好意思，这点小事|实在是没什么了不起的。 #line:8e9f06
 Adina: 你可真混蛋。 #line:b963df
 TreeCat: 你今晚可惹了不少麻烦啊。 #line:efd792
-Adina: 我根本就没想惹什么麻烦，不过是想从森林里穿过去罢了。 #line:9b7b82
+Adina: 我不是故意的，不过是想从森林里穿过去。 #line:9b7b82
 TreeCat: 事情不都是这样的吗。 #line:e2de1f
-[[我该走了。|GoodbyeTreeCat]] #line:9269b6
-[[对了，你到底是谁啊？|WhoIsTreeCat]] #line:533a55
+[[我要走了。|GoodbyeTreeCat]] #line:9269b6
+[[对了，你到底是谁？|WhoIsTreeCat]] #line:533a55
 
 ===
 title: Astronomer
@@ -131,7 +131,7 @@ tags:
 colorID: 0
 position: 549,339
 ---
-TreeCat: 弓背女巫、|她的孩子、|林中之神……|这些都和你|一点关系也没有。 #line:d27dca
+TreeCat: 弓背女巫、|她的孩子、|林中神……|这些都和你|一点关系也没有。 #line:d27dca
 Adina: 我知道。 #line:1fea23
 TreeCat: 那就把这一切|都留在这里，|因为你在属于|他们的森林里。 #line:5009af
 Adina: 可我是个天文学家。 #line:41bebd
@@ -147,13 +147,13 @@ tags:
 colorID: 0
 position: 546,87
 ---
-TreeCat: 请你再说一遍。 #line:e4b796
-Adina: 你是魔法猫吗？|还是猫神？|还是巫师猫？|还是其他什么猫？ #line:04b65c
-TreeCat: 我就是一只普通的猫。 #line:b43f10
-TreeCat: 我住的地方离森林很近， #line:3fe4ab
-TreeCat: 我还喜欢亮晶晶的东西。 #line:a5c133
+TreeCat: 什么？ #line:e4b796
+Adina: 你是魔法猫？|猫神？|巫师猫？|还是什么？ #line:04b65c
+TreeCat: 我就是一只猫。 #line:b43f10
+TreeCat: 我住在森林附近， #line:3fe4ab
+TreeCat: 我喜欢亮晶晶的东西。 #line:a5c133
 TreeCat: 还有，我喜欢听人说话。 #line:c07dd1
-Adina: 哦。 #line:9ca337
+Adina: 噢。 #line:9ca337
 TreeCat: 该你说了。你是谁？ #line:30809d
 [[我是个天文学家。|ImAnAstronomer]] #line:7953d8
 [[我是个幸存者。|ImASurvivor]] #line:38f6d5
@@ -165,13 +165,13 @@ colorID: 0
 position: 312,337
 ---
 Adina: 我之所以来这儿，是因为天上少了点东西。 #line:4353d1
-Adina: 而只有到了这儿，我才能找到它。 #line:df0f65
+Adina: 我会在这里找到它。 #line:df0f65
 TreeCat: 你确定吗？ #line:991388
-Adina: 我现在又累又冷， #line:d26ec8
-Adina: 已经什么都没法确定了。 #line:1f9836
-TreeCat: 看来，这要么是个|特别悲伤的故事，|要么就是个|特别美丽动人的故事。 #line:11679e
-Adina: 的确是这样。 #line:5557bf
-Adina: 真是冷死我了。 #line:8bf758
+Adina: 但现在的我又累又冷， #line:d26ec8
+Adina: 无法承担任何确定的后果。 #line:1f9836
+TreeCat: 这不是非常悲伤，就是非常美丽。 #line:11679e
+Adina: 的确如此。 #line:5557bf
+Adina: 冷死我了。 #line:8bf758
 TreeCat: [speed=.5][wave]咕噜噜。[/all] #line:49aa4c
 [[GoodbyeTreeCat]]
 
@@ -181,18 +181,18 @@ tags:
 colorID: 0
 position: 311,90
 ---
-Adina: 我从哪里来的，今晚就到哪里去 #line:884e38
-Adina: 我活了下来。 #line:83c6cb
+Adina: 我从哪里来，今晚又该到哪儿去。 #line:884e38
+Adina: 至少我活了下来。 #line:83c6cb
 TreeCat: 能活下来就好。 #line:9b08be
-TreeCat: 偷别人的东西，|神不知鬼不觉。 #line:5cf983
+TreeCat: 偷走一切，|无人知晓。 #line:5cf983
 TreeCat: 吃老鼠，在暖和的|谷仓里睡觉。 #line:dd05ea
 Adina: 虽然我想的和你不一样，但是这个理儿。 #line:eab974
 TreeCat: 那你是怎么想的？ #line:fbdc6b
-Adina: 我只是想穿过这片破森林。 #line:c80d8a
+Adina: 只想穿过这片破森林。 #line:c80d8a
 <<close>>
 <<wait 2>>
-Adina: 我很喜欢天上的星星。它们就挂在那漆黑的夜空里。 #line:2062c7
-Adina: 这听起来很无聊，是吧。 #line:46e832
+Adina: 我喜欢星星，它们就挂在那漆黑的夜空里。 #line:2062c7
+Adina: 像无病呻吟吧。 #line:46e832
 Adina: 天越黑…… #line:3e568d
 TreeCat: [speed=.5][wave]咕噜噜。[/all] #line:cd94e8
 [[GoodbyeTreeCat]]
@@ -210,21 +210,21 @@ tags:
 colorID: 0
 position: 1210,604
 ---
-Adina: 特拉维斯？！？*你*在这儿干什么呢？ #line:87e132
+Adina: 特拉维斯？！？*你*在这里干什么呢？ #line:87e132
 Astronomer: 你怎么知道我是谁？ #line:800ce7
 <<showTalkingHeads>>
-Mae: 然后，特拉维斯训了她一顿…… #line:3bb422
+Mae: 然后，特拉维斯对她大喊大叫…… #line:3bb422
 Granddad: 特拉维斯是谁？ #line:f008eb
-Mae: 他是学校里一个特讨人厌的小破孩。 #line:fe92aa
+Mae: 学校里一个特讨人厌的小破孩。 #line:fe92aa
 Granddad: 那这个特拉维斯为什么会出现在过去呢？ #line:98bdc3
 Mae: 因为他偷了一台时间机器。 #line:a0dc9b
-Granddad: 好吧，好吧。 #line:ca5f9b
-Mae: 总之呢，后来，特拉维斯说道…… #line:a40602
+Granddad: 好吧好吧。 #line:ca5f9b
+Mae: 总之呢，后来特拉维斯说…… #line:a40602
 <<hideTalkingHeads>>
 Astronomer: ……我偷了一台时间机器。这就是我能到这儿来烦你的原因。 #line:9f5aa5
-Adina: 好……好吧。 #line:39ba6f
+Adina: 好……吧？ #line:39ba6f
 Astronomer: 所以，你该生气了。 #line:f2bc7c
-Adina: 没错，你的确是很烦人。 #line:40154b
+Adina: 没错，你的确很烦人。 #line:40154b
 <<close>>
 <<wait 1>>
 Adina: 好吧。 #line:850001

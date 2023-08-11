@@ -19,19 +19,19 @@ position: 775,258
 <<show Mae>>
 <<wait 2>>
 Mae: 这个地方。 #line:f77b21
-Mae: 哼嗯。 #line:fa2d27
+Mae: 嗯呣。 #line:fa2d27
 <<close>>
 <<walk Germ GermIn>>
 <<wait 1>>
 Germ: 嘿，梅。 #line:9d6f43
-Mae: 杰 姆？！ #line:e572da
+Mae: 杰姆？！ #line:e572da
 Germ: 是我！ #line:5adc5a
 Mae: 你在那边干什么呢？ #line:18550a
-Germ: 我就住在山上啊！ #line:f77d0e
+Germ: 我就住在山上！ #line:f77d0e
 Germ: 我刚才听见格雷格在嚷嚷！ #line:9aa16f
-Mae: 我们被困在井下面啦！ #line:9d0012
+Mae: 我们被困在井下面了！ #line:9d0012
 Germ: 你……你们在我家后院的枯井里面？ #line:1fdcd3
-Mae: 今晚简直糟糕透啦。 #line:52a1fe
+Mae: 今晚简直糟糕透了。 #line:52a1fe
 Germ: 听起来的确不怎么样。 #line:38c173
 Mae: 你有绳子之类的东西吗？ #line:4a7672
 Germ: 有！ #line:c70145
@@ -43,9 +43,9 @@ Mae: 那你能不能去拿一下？ #line:7fbb5e
 <<wait 2>>
 //friend bubbles come from the well//
 BeaWell: 嘿，梅！ #line:81e448
-Mae: 怎么啦？ #line:05f78e
-GreggWell: 那人……是杰姆吗？ #line:f97fda
-Mae: 没错，他去拿绳子啦！ #line:009de0
+Mae: 怎么了？ #line:05f78e
+GreggWell: 那……是杰姆吗？ #line:f97fda
+Mae: 没错，他去拿绳子了！ #line:009de0
 AngusWell: 他怎么会在这地方？ #line:fe6cdf
 Mae: 他家就在这儿！ #line:594b05
 BeaWell: 他住在树林里？ #line:323245
@@ -66,7 +66,7 @@ BeaWell: 他住在树林里？ #line:323245
 <<fadeIn 1 wait>>
 Angus: *呼呼呼* #line:e0463d
 Bea: 我全身疼得要命。 #line:0a3191
-Gregg: 这一路走的可真叫一个远。 #line:91e7af
+Gregg: 这一路走的可真～～叫一个远呐。 #line:91e7af
 Germ: 我带了几瓶汽水过来！ #line:7f3a73
 Mae: :) #line:7dd3f0
 Mae: 杰姆，你可真是个大好人。 #line:da8287
@@ -90,7 +90,7 @@ Mae: :| #line:3d54f0
 //everyone is standing//
 <<fadeIn 1 wait>>
 Mae: 哦，呃，有谁想离这口井远一点？ #line:133c19
-Bea: 我～ #line:782ecf
+Bea: 我～～～～～～ #line:782ecf
 <<lookAt Mae Germ>>
 Mae: 杰姆，你能不能……把这口井给封上？ #line:845534
 <<lookLeft Gregg>>
@@ -103,17 +103,17 @@ Bea: 你说什么？ #line:ce932f
 Germ: 噢，我是说，我可以去搞点炸药。 #line:bb9a5a
 Mae: 爆炸的威力能有多大？ #line:1dd0eb
 Germ: 我觉得…… #line:28c790
-Germ: 威力应该不会太小。 #line:f2b84a
+Germ: 不会太小吧？ #line:f2b84a
 Mae: 嗯，那就好。 #line:bfe13c
 Gregg: 谢啦，杰姆！ #line:58d49c
-Angus: 是啊，谢啦，老兄。 #line:79e218
-Germ: 嗯？好吧。 #line:7b5d12
+Angus: 是啊，谢了，老兄。 #line:79e218
+Germ: 嗯，没事。 #line:7b5d12
 Germ: 再见了，伙计们。 #line:9fa5a8
 <<close>>
 <<walk Germ GermOff>>
 <<wait 4>>
 <<lookRight Gregg>>
-Bea: 这家伙可真够怪的。 #line:a00699
+Bea: 那个相当奇怪的家伙走了。 #line:a00699
 Gregg: 可他救了咱们的命啊。 #line:76fc23
 Mae: 杰姆这人很不错，他是个大好人。 #line:7fdc11
 <<close>>
@@ -129,42 +129,42 @@ Mae: 杰姆这人很不错，他是个大好人。 #line:7fdc11
 <<walk Mae MaeWalk1>>
 <<wait 1>>
 <<lookNearest Mae>>
-Bea: 我突然想起来个事，刚才那些人可都被咱们埋在地底下了。是咱们害了他们。 #line:10b6e8
+Bea: 我突然想起来，刚才那些人可都被咱们埋在地底下了，是我们杀害了他们。 #line:10b6e8
 <<lookLeft Gregg>>
 Mae: 你为什么这么觉得？ #line:f7cf31
 <<lookRight Gregg>>
-Bea: 呃，我的意思是 #line:cdd182
+Bea: 你们想想看， #line:cdd182
 Bea: 矿井的电梯坏了，而且咱们还把矿井给弄塌了。 #line:6e2df1
-Gregg: 咱们那是自我防卫。 #line:06b474
+Gregg: 那是自我防卫。 #line:06b474
 Bea: 可能是吧。但咱们确实害了十几个人的性命。 #line:4787b8
 <<lookLeft Gregg>>
 Mae: 不不不！那些人现在还都在地底下活得好好的！ #line:5e682c
 <<wait 3>>
-Mae: 哦，天啊。 #line:c548dc
-Bea: 好吧。 #line:19e6ea
-Mae: 我的天。 #line:933db2
-Gregg: 不管怎么说，咱们都算无罪，因为是他们攻击咱们的。 #line:538b2b
+Mae: 啊，救命啊。 #line:c548dc
+Bea: 对吧。 #line:19e6ea
+Mae: 天哪～～～ #line:933db2
+Gregg: 不管怎么说，咱们都算无罪，因为是他们先攻击咱们的。 #line:538b2b
 <<lookRight Gregg>>
-Bea: 是他们*其中的一个人*攻击的咱们。 #line:dba1e7
-Mae: 那咱们是在顾虑什么呢……比如说…… #line:9a811a
-Bea: 良心上过意不去！ #line:1cfa86
+Bea: 只是*其中一个*先攻击的咱们。 #line:dba1e7
+Mae: 那咱们是在顾虑什么呢…… #line:9a811a
+Bea: 良心上过不去！ #line:1cfa86
 <<lookLeft Gregg>>
 Mae: 可咱们不是杀人凶手啊！ #line:0cf6a8
-Mae: 这就好比如果咱们当时有其他选择，就会留他们一命似的。 #line:5fab21
+Mae: 如果咱们当时有其他选择，肯定是不会这么做的。 #line:5fab21
 <<wait 2>>
-Angus: 我会选择灭了他们。 #line:0ca0b9
+Angus: 我还是会这么做的。 #line:0ca0b9
 <<wait 2>>
-Bea: 唔…… #line:da732e
-Angus: 怎么了？？？那些人都喜好取人性命！ #line:b46c3f
-Angus: 他们想拉拢咱们，然后让咱们去害其他人！ #line:4a0ae9
+Bea: 额…… #line:da732e
+Angus: 怎么了？？？那些人以杀人为乐！ #line:b46c3f
+Angus: 他们想让我们杀人！ #line:4a0ae9
 Angus: 去他们的吧！ #line:3e9b38
-Angus: 虽然我不相信有地狱这么一说，但我还是想说，让他们下地狱去吧。 #line:b1282f
-Gregg: 我的天啊，安格斯。 #line:c649ee
+Angus: 虽然我不相信有地狱这么一说，但我还是希望让他们直接下地狱。 #line:b1282f
+Gregg: 天哪，安格斯。 #line:c649ee
 Angus: 至少我是这么想的。 #line:e826a2
-Mae: 嗯……这些人的情况应该就和那些电车差不多了。 #line:d0b849
-Gregg: 什么电车？ #line:0de596
+Mae: 嗯……这像那个电车问题了。 #line:d0b849
+Gregg: 什么电车问题？ #line:0de596
 <<lookRight Gregg>>
-Bea: 好了，咱们还是先走吧。我会在路上给你们解释的。 #line:3e8ba2
+Bea: 好了，咱们还是先走吧，路上再跟你解释。 #line:3e8ba2
 <<close>>
 
 <<waitForMove Bea>>

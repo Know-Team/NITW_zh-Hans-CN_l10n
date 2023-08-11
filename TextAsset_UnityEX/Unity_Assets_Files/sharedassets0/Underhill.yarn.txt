@@ -145,8 +145,8 @@ position: -3094,11390
 ---
 StoopKid: 你想要多少血？ #line:2a6e3d
 Mae: 你全身的血我都要了，我要你身上每一滴无比甜～美～的～血。 #line:2bd53d
-StoopKid: 你是怪物姐吗？ #line:616bbd
-Mae: 我是所有姐里面最像怪物的那位。 #line:ed4479
+StoopKid: 你是怪物姐姐吗？ #line:616bbd
+Mae: 我是所有姐姐里面最“怪物"的那位。 #line:ed4479
 [[End]]
 ===
 title: End
@@ -177,7 +177,7 @@ Mae: 你说的是谁啊? #line:ece263
 Varney: 他！站在隔壁楼顶上那位！ #line:6a71ef
 Mae: 要是他真从楼顶掉下来，砸进你家窗户里， #line:9bb150
 Mae: 那你就得好好想想把地上的哪一块他告上法庭。 #line:d4fabb
-Varney: 当然是最大的那块儿啦。 #line:4705ba
+Varney: 当然是最大的那块儿。 #line:4705ba
 Chazokov: {align=middle,locator=icanhearyou}嘿，我可听得见你们在那儿说什么呢，知道吗！ #line:9a24a6
 <<set $varney to 1>>
 ===
@@ -262,8 +262,8 @@ Council3: 加里，你根本就没在听我说话。 #line:ec5f3d
 Council1: 安德鲁，别跟我说什么我没听你说话。 #line:a10555
 Council3: 这 个 根 本 不 是 什 么 历 史 名 胜。 #line:e17e10
 Council2: 你他妈才不是历史名胜呢！！！！ #line:1aaeb0
-Council4: 两位，两位，别吵啦。 #line:6264dd
-Council2: 看来咱们又得干一架啦。 #line:5bc381
+Council4: 两位，两位，别吵。 #line:6264dd
+Council2: 看来咱们又得干一架。 #line:5bc381
 Council1: 哦，是吗？你还记得上次是谁赢了吗？ #line:277766
 Council4: 咱们能继续说正事了吗？ #line:6a27fd
 Council1: 能。 #line:7cd579
@@ -301,7 +301,7 @@ Mae: <o> #line:0f8e1f
 Mae: 要是他真从楼顶掉下来，砸进你家窗户里， #line:8d9af5
 Mae: -_- #line:e73b60
 Mae: 那你就得好好想想把地上的哪一块他告上法庭。 #line:ddfcac
-Varney: 当然是最大的那块儿啦。 #line:2de9e5
+Varney: 当然是最大的那块儿。 #line:2de9e5
 Mae: o_o #line:2c0c05
 Chazokov: {align=middle,locator=icanhearyou}嘿，我可听得见你们在那儿说什么呢，知道吗！ #line:312fc9
 <<lookNearest Mae>>
@@ -389,7 +389,7 @@ tags:
 colorID: 3
 position: 108,10928
 ---
-Varney: 你把我家的狗都给弄紧张啦。 #line:372199
+Varney: 你把我家的狗都给弄紧张了。 #line:372199
 Varney: 她一紧张，拉的就多。 #line:c1a640
 <<set $varney_done to 1>>
 ===
@@ -407,7 +407,7 @@ colorID: 4
 position: -367,11381
 ---
 Varney: 这位小姐是不是把我家的门廊都“刷"了一遍呀。 #line:14e776
-Varney: 别用你的脏脚踩我家的门廊啦。 #line:c7eb38
+Varney: 别用你的脏脚踩我家的门廊。 #line:c7eb38
 <<set $varney_done to 1>>
 ===
 title: Varney_A3D2.1
@@ -423,7 +423,7 @@ Mae: 当然知道啊！ #line:3e0f00
 Varney: 那你认识汤姆·杜利吗？ #line:8acfe8
 Mae: 认识！我老爸特喜欢他的歌！ #line:7fedac
 Varney: 那你知道维勒花园吗？ #line:d295c9
-Mae: 这我就不知道啦！ #line:0d401e
+Mae: 不！ #line:0d401e
 Varney: 那好吧。 #line:e17cfe
 <<set $varney_done to 1>>
 ===
@@ -523,13 +523,13 @@ Council1: 岩盐的总量肯定不成问题！ #line:8267d1
 Council3: 可咱们没有足够的卡车来运它们啊！ #line:bee2c3
 Council1: 科琳！这破山周围上上下下的全都是车！ #line:e0a14e
 Council4: 那还不是因为风暴来了，要封路才造成的吗。 #line:5e2868
-Council2: 哦，是啊，就这么着吧。咱们干脆别干啦。 #line:d35b7f
+Council2: 哦，是啊，就这么着吧。干脆别干。 #line:d35b7f
 Council4: 科琳，这可不是干不干的问题！！！ #line:b0b03f
 Council4: 你老是动摇军心，我真是受不了了！ #line:78a6b6
 Council2: 这根本就不是什么动摇军心的事！是这主意本身就不怎么样！ #line:89ff8c
 Council3: 你这才叫动摇军心呢。 #line:36794e
 Council1: 对于这件事，我比较支持科琳的看法。 #line:9e04ce
-Council4: 好吧，太好啦！这么一来事就好办了，对吧！ #line:4aaa00
+Council4: 好吧，真好！这么一来事就好办了，对吧！ #line:4aaa00
 Council2: 好吧，好吧，咱们去把所有路都给封了得了！ #line:cbec18
 Council2: 咱们一起把这TM该死的镇子也给封了吧！ #line:d1ea51
 <<if $water_balloon_toss_percent > 50>>
@@ -540,7 +540,7 @@ Council2: 咱们一起把这TM该死的镇子也给封了吧！ #line:d1ea51
     Council2: 上次办这活动，差点没把我给冻死！ #line:288802
     Council3: 都到现在了，我感冒还没好呢。 #line:438857
     Council1: 我觉得咱们几个都觉得扔水球太冷了是吧。 #line:031e2f
-    Council2: 是啊，凯斯琳。比起其他馊点子，扔水球这烂主意实在是太“冻人"啦。 #line:c137c7
+    Council2: 是啊，凯斯琳。比起其他馊点子，扔水球这烂主意实在是太“冻人"了。 #line:c137c7
 <<endif>>
 Council4: 你去死吧，科琳！ #line:962d6c
 Council3: 其实咱们可以租几辆私人铲雪车嘛。 #line:8bc48d

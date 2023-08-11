@@ -30,17 +30,17 @@ tags:
 colorID: 0
 position: 720,345
 ---
-Salvi：……许多人都从别的地方会开着车过来， #line:8fe519
-Salvi: 然后停在卢塞纳堡和柳树街之间的古玩街边上。 #line:6d6c64
+Salvi：……许多人从别的地方会开车过来， #line:8fe519
+Salvi: 就在卢塞纳堡和柳树街之间， #line:6d6c64
 Salvi: 那些人可喜欢逛那里的古玩店了。 #line:57ea5d
-Salvi: 他们八成以为这些店里的东西个个都是精品呢。 #line:81c0f1
-Salvi: 但那其实都是些骗人的幌子。 #line:48d95c
+Salvi: 他们八成以为这些店里的东西个个是精品呢。 #line:81c0f1
+Salvi: 但那些都是骗人的。 #line:48d95c
 Mae: 哇哦。 #line:147c38
 Mae: 那些人知道这些“宝贝"其实都是垃圾吗？ #line:4ffe5b
-Salvi: 这些可不是“垃圾" #line:b1d52e
+Salvi: 这可不是“垃圾" #line:b1d52e
 Mae: 抱歉。 #line:79ff01
 Salvi: 看啊，咱们马上就要到第一个目的地了。 #line:7ebbb5
-Salvi: 到时候你就明白是怎么回事了。 #line:3df3dc
+Salvi: 到时候你就明白了。 #line:3df3dc
 <<close>>
 <<set $tunnel_boat_island to 1>>
 <<waitForTunnelBoatIsland>>
@@ -51,13 +51,13 @@ colorID: 0
 position: 1016,-2
 ---
 Mae: 这不还是一堆垃圾吗。 #line:689bf5
-Mae: 准确来说，应该是一座垃圾岛。 #line:d33500
-Salvi: 你眼里的垃圾对我来说可是无价之宝。 #line:a243db
-Salvi: 当然了，前提是先要它们把弄干净才行。 #line:247a3c
-Salvi: 到周围转转吧！看看能不能找到点什么！ #line:b7cebe
-Mae: 在这堆东西上走来走去真的安全吗？ #line:992fbd
-Salvi: 哦，当然安全了。这些石块和破烂都已经堆积在这儿很多年了。 #line:e13d5d
-Mae: 哈哈！你也承认它们是“破烂"啦！ #line:aa62dc
+Mae: 这就是座垃圾岛。 #line:d33500
+Salvi: 你眼里的垃圾可是我的无价之宝。 #line:a243db
+Salvi: 当然了，前提是把它们弄干净点才行。 #line:247a3c
+Salvi: 到周围转转！看看能不能找到点什么！ #line:b7cebe
+Mae: 走在这堆东西上真的安全吗？ #line:992fbd
+Salvi: 哦，当然了。这些石块和破烂已经堆积在这儿很多年了。 #line:e13d5d
+Mae: 哈哈！你也承认它们是“破烂"！ #line:aa62dc
 Salvi: 破烂可不算垃圾。 #line:c837cd
 ===
 title: Axe
@@ -66,18 +66,18 @@ colorID: 0
 position: 1093,313
 ---
 <<if $saw_tunnel_axe is 0>>
-    Mae:哈 ，一把大斧头。 #line:4cac74
+    Mae: 啊哈 ，一把大斧头。 #line:4cac74
     <<set $saw_tunnel_axe to 1>>
 <<endif>>
 Mae: 我要留这着这把大破斧头吗？ #line:3864a3
 <<if $tunnel_snowshoe>>
 	Mae: 还是说再找点……别的东西？ #line:770e01
 <<endif>>
-->留着它。 #line:b601e2
+-> 留着它。 #line:b601e2
     <<set $tunnel_axe to 1>>
     <<set $tunnel_snowshoe to 0>>
-	Mae: 这玩意儿又大又霸气。 #line:e293cc
-->算了。 #line:f3c8bf
+	Mae: 它又大又霸气。 #line:e293cc
+-> 算了。 #line:f3c8bf
 	Mae: 嗯。 #line:2d73ad
 ===
 title: Snowshoe
@@ -86,14 +86,14 @@ colorID: 0
 position: 1406,321
 ---
 <<if $saw_tunnel_snowshoe is 0>>
-    Mae: 哦，哇哦，这里还有个……什么东西呢！ #line:3a7768
-    Mae: 这是个雪橇吗？还是个已经烂了的船桨啊？ #line:05b082
+    Mae: 噢，哇噢，这里还有个……什么东西呢！ #line:3a7768
+    Mae: 雪橇？还是个烂到不成形的船？ #line:05b082
     Mae: 也可能是个破烂的迷你吊床吧？没准还能躺在上面睡一觉呢？ #line:4cf1b3
     <<set $saw_tunnel_snowshoe to 1>>
 <<endif>>
 Mae: 也许我应该把这个破吊床拿走？ #line:5d06fb
 <<if $tunnel_axe>>
-	Mae: 然后把那柄破斧头扔掉？ #line:6899bd
+	Mae: 然后扔掉那个破斧头？ #line:6899bd
 <<endif>>
 ->换掉。 #line:1677e6
     <<set $tunnel_axe to 0>>
@@ -111,15 +111,15 @@ Salvi: 找到什么好东西了吗？ #line:9e1bf8
 <<if $tunnel_axe is 0 and $tunnel_snowshoe is 0>>
     Mae: 还没呢。 #line:2f2f15
 <<elseif $tunnel_axe>>
-	Mae: 我找到一把夺命破斧头！ #line:ad7349
-	Salvi: 喔，棒极啦！ #line:e61e4a
+	Mae: 找到一把夺命破斧头！ #line:ad7349
+	Salvi: 喔，不错！ #line:e61e4a
 	Salvi: 这好像是把来历不明的旧消防斧呀。 #line:c5c135
 	Mae: 这把破斧头可是个杀人利器！ #line:a0e44e
 	Salvi: 没错，你确实可以用这玩意杀人。 #line:e14487
 	Salvi: 但先要把它磨得很锋利才行…… #line:ffa61c
 	Mae: 哦，我会把它磨好的。 #line:647fab
-	Salvi: 你是在考虑杀掉谁吗？ #line:81c8aa
-	Mae: 无可奉告！ #line:97531b
+	Salvi: 然后开始物色你的受害者吗？ #line:81c8aa
+	Mae: 谁都会是哦！ #line:97531b
 	Salvi: 哦，我的老天哪。 #line:96965d
 <<elseif $tunnel_snowshoe>>
 	Mae: 我找到了……这个！ #line:863b73
@@ -127,7 +127,7 @@ Salvi: 找到什么好东西了吗？ #line:9e1bf8
 	Salvi: 哦，那是个…… #line:c495dc
 	Mae: 这是个……破船桨吗？ #line:a41db1
 	Mae: 还是个打仗用的破盾？ #line:0ce5e3
-	Salvi: 这是只雪鞋。 #line:a1796f
+	Salvi: 是只雪鞋。 #line:a1796f
 	Mae: 噢。 #line:104844
 	Mae: 感觉自己从来没见过这东西。 #line:578076
 	Salvi: 如果运气好的话，你应该还能找到另一只鞋。 #line:f65e63
@@ -167,7 +167,7 @@ colorID: 0
 position: 1929,50
 ---
 Salvi: 对了，还记得我说过需要找人搭把手吗？ #line:5dcf59
-Mae: 噢，当然记得啦！要我怎么帮你？ #line:19b2c6
+Mae: 噢，当然！要我怎么帮你？ #line:19b2c6
 Salvi: 在你身后有个小控制器， #line:6a00a7
 Salvi: 替我操作一下它，用灯把前面照亮。 #line:33ca13
 Mae: 好的……等一下……为啥要这么做？ #line:c44492
@@ -178,11 +178,11 @@ Salvi: 但是蝙蝠喜欢吃小飞虫， #line:7767e4
 Salvi: 而小飞虫都是喜欢光的。 #line:518236
 Salvi: 所以你就要用光照亮四周，好让蝙蝠们都散开， #line:720015
 Salvi: 然后去抓小飞虫。 #line:4b40b0
-Salvi: 通常它们散开以后，短时间内是不会再飞回来的。 #line:96dd50
-Mae: 哦……明白了。 #line:b43bf5
-Salvi: 准备好啦，咱们前面可有一大堆蝙蝠呢。 #line:25f476
-Mae: 好，我知道啦！ #line:885bd6
-Salvi: 它们来啦！就在我头顶上！ #line:b8e94a
+Salvi: 通常它们散开后，短时间内是不会再飞回来的。 #line:96dd50
+Mae: 噢……明白了。 #line:b43bf5
+Salvi: 准备好，咱们前面可有一大堆蝙蝠呢。 #line:25f476
+Mae: 好，收到！ #line:885bd6
+Salvi: 它们来了！就在我头顶上！ #line:b8e94a
 <<tell TunnelBoatRide TriggerBats1>>
 ===
 title: AfterBats1
@@ -193,16 +193,16 @@ position: 2253,44
 Mae: 哇哦！ #line:5bb3d9
 Salvi: 他们都飞走了吗? #line:74fe76
 <<if $tunnel_bats_1_percent > 75>>
-	Mae: 应该都飞走啦！ #line:6cfbcd
-	Mae: 真的有好多蝙蝠啊。 #line:67c9b5
-	Salvi: 呃呃呃！我可讨厌它们啦！ #line:d04c7f
+	Mae: 是的！ #line:6cfbcd
+	Mae: 真的有好多蝙蝠。 #line:67c9b5
+	Salvi: 呃呃呃！我讨厌它们！ #line:d04c7f
 	Mae: 不过蝙蝠也挺可爱的！ #line:fc337c
-	Salvi: 一点都“不"可爱！ #line:a136e3
+	Salvi: “不"可爱！ #line:a136e3
 <<else>>
 	Mae: 是吗？ #line:472db9
 	Mae: 不至于吧？ #line:ff15bf
 	Mae: 怎么看都很可爱啊。 #line:b03a42
-	Salvi: 那好吧。 #line:f4bfa2
+	Salvi: 好吧。 #line:f4bfa2
 	Salvi: 咱们得准备个B计划了。 #line:b43738
 	Mae: 我好喜欢蝙蝠啊。 #line:ddf162
 	Salvi: 呃。 #line:8f258c
@@ -220,7 +220,7 @@ tags:
 colorID: 0
 position: 2608,-3
 ---
-Salvi: 好啦，咱们又到另一座垃圾岛啦。 #line:5a9535
+Salvi: 好的，咱们又到了另一座岛。 #line:5a9535
 Mae: 垃圾哟，嚯嚯嚯～！！！！！！！！ #line:70539d
 <<close>>
 <<set $tunnel_boat_island += 1>>
@@ -234,15 +234,15 @@ position: 2918,-69
 Salvi: 你想四处看看吗？ #line:48a151
 Mae: 不了，我还是待在船上吧。 #line:9f02d8
 <<wait 2>>
-Mae: 那还“用"说嘛！我要去看看！！！ #line:64801e
+Mae: *当然！*我四处看看！！！ #line:64801e
 Salvi: 嘿嘿嘿。 #line:00605a
 Salvi: 你说话的讽刺劲儿和你爸一模一样。 #line:7ef67e
 Mae: 你跟我爸还有联系吗？ #line:506644
-Salvi: 当然有啦！我一个星期之前还在他那儿买过肉呢！ #line:1bf81c
+Salvi: 当然！我一个星期之前还在他那儿买过肉呢！ #line:1bf81c
 Salvi: 去年秋天，我和你爸，还有几个工厂里的小伙 #line:1b04de
-Salvi: 还去斯塔特的老猎场打过猎呢。 #line:502b3a
-Mae: 那你们有什么收获吗？ #line:614afd
-Salvi: 埃德·格雷斯打到了一只特别棒的鹿。 #line:863035
+Salvi: 还去斯图特的老猎场打过猎呢。 #line:502b3a
+Mae: 有什么收获吗？ #line:614afd
+Salvi: 埃德·格雷斯打到了一只很棒的六角鹿。 #line:863035
 Mae: 不错不错。 #line:a4b178
 Salvi: 好了，走吧。咱们还有事要做呢。 #line:68cb6f
 ===
@@ -286,10 +286,10 @@ Mae: 我是不是应该带走这副吸血鬼牙， #line:09de83
 <<if $tunnel_coconut_monkey>>
 	Mae: 然后把我的椰子猴朋友丢掉呢？ #line:e340a2
 <<endif>>
-->布拉布拉，当然啦！！！！ #line:8bcfdb
+->捏嘿嘿嘿！！！ #line:8bcfdb
     <<set $tunnel_coconut_monkey to 0>>
     <<set $tunnel_dracula_teeth to 1>>
-	Mae: 吸血鬼为什么要说“布拉布拉"这个词呢？ #line:2dc6a0
+	Mae: 吸血鬼为什么要说“捏嘿嘿嘿！！！"这个词呢？ #line:2dc6a0
 	Mae: 如果我戴上它，应该就能明白了。 #line:4895ad
 	Mae: ……不过得先把这副牙刷干净才行…… #line:131288
 ->算了。 #line:5feb30
@@ -304,7 +304,7 @@ position: 3867,-89
 ---
 Salvi: 找到什么好东西了吗？ #line:515601
 <<if $tunnel_coconut_monkey is 0 and $tunnel_dracula_teeth is 0>>
-    Mae: 没有。 #line:abcd38
+    Mae: 没。 #line:abcd38
 <<elseif $tunnel_coconut_monkey>>
 	Mae: 我找到了一个椰子猴！ #line:853ec7
 	Salvi: 噢，哇哦。 #line:2c28da
@@ -312,7 +312,7 @@ Salvi: 找到什么好东西了吗？ #line:515601
 	Mae: 它有点软塌塌的， #line:4eef45
 	Mae: 还有一股下水道的味道。 #line:6e8f6c
 	Mae: 但是等我把它晾干以后， #line:0f85bf
-	Mae: 它就能成正式成为我们家的一分子啦！ #line:7525f3
+	Mae: 它就能成正式成为我们家的一份子啦！ #line:7525f3
 	Salvi: 哈，好呀。 #line:157f47
 	Mae: 你不会想把它偷走，然后放在自己的店里吧？ #line:527f01
 	Salvi: 额，肯定不会。 #line:586d0d
@@ -327,8 +327,8 @@ Salvi: 找到什么好东西了吗？ #line:515601
 	Mae: 人们总想着要变成吸血鬼呢。 #line:ad7799
 	Salvi: 我可不想变成吸血鬼。 #line:5d7777
 	Mae: 这可由不得你！看我把它戴上…… #line:e57ffb
-	Salvi: 哦，老天啊，拜托，别这么干。这玩意恶心死啦。 #line:8e099b
-	Mae: 我要咬你啦。 #line:d99ca2
+	Salvi: 哦，老天啊，拜托，别这么干。恶心死了。 #line:8e099b
+	Mae: 我要咬你咯。 #line:d99ca2
 	Salvi: 好了，咱们继续走吧。 #line:11265b
 	Mae: 布拉布拉布拉！！！！ #line:6cea97
 <<endif>>
@@ -348,7 +348,7 @@ position: 4194,-78
 Salvi: ……我就是这样拯救了长至夜节的。 #line:d57b22
 Mae: 哈哈，哇哦。 #line:264505
 Mae: 你和你孩子说过这事吗？ #line:76ead8
-Salvi: 啥？我可没和他们说过。告诉他们真相的话多煞风景啦。 #line:2035c1
+Salvi: 啥？我可没和他们说过。告诉他们真相的话多煞风景。 #line:2035c1
 Mae: 他们就没注意到你脖子上的伤疤吗？ #line:6693bd
 Salvi: 要是他们看见了伤疤，肯定就会问这事了。 #line:0729fb
 Mae: 那么警察抓到那家伙了吗？ #line:e07970
@@ -360,7 +360,7 @@ Salvi: 好啦，咱们又碰上一个蝙蝠窝了…… #line:438afb
 Mae: 蝙蝠还有窝吗？ #line:c0737f
 Salvi: 管它有没有呢。准备好灯光，把它们都赶跑！ #line:16444e
 Mae: 遵命，长官。 #line:034d0f
-Salvi: 它们来啦！！！ #line:487918
+Salvi: 它们来了！！！ #line:487918
 <<tell TunnelBoatRide TriggerBats2>>
 ===
 title: AfterBats2
@@ -369,7 +369,7 @@ colorID: 0
 position: 4473,-67
 ---
 Mae: 哇哦！ #line:936323
-Salvi: 它们是不是基本上都飞走啦？ #line:24508f
+Salvi: 它们是不是基本上都飞走了？ #line:24508f
 <<if $tunnel_bats_2_percent > 75>>
 	Mae: 应该是吧！ #line:acdd61
 	Mae: 都解决啦。 #line:efdc78
@@ -389,7 +389,7 @@ Salvi: 它们是不是基本上都飞走啦？ #line:24508f
 	Salvi: 扑腾着翅……翅……翅膀， #line:aba225
 	Salvi: 倒挂在上面呢！！！ #line:1b027f
 	Mae: 你为什么这么讨厌蝙蝠啊？ #line:41ffec
-	Salvi: 就是因为它们太吓人啦！ #line:797422
+	Salvi: 就是因为它们太吓人！ #line:797422
 <<endif>>
 [[BeforeIsland3]]
 ===
@@ -398,7 +398,7 @@ tags:
 colorID: 0
 position: 4757,-79
 ---
-Salvi: 咱们又到了一个垃圾岛啦。 #line:484a67
+Salvi: 又到一个垃圾岛。 #line:484a67
 Mae: 这里一共有多少座垃圾岛啊？ #line:989ae7
 Salvi: 哦，这我还真没数过。 #line:54f031
 Salvi: 每次过来都能发现新的垃圾岛， #line:aeeb8a
@@ -426,7 +426,7 @@ Salvi: 又大又漂亮，还很有法式风格。 #line:c12f6c
 Mae: 看起来真挺漂亮的。 #line:e12c39
 Salvi: 嗯，车厢的美感还在呢。 #line:e9c029
 Salvi: 你想去周围看看吗？ #line:5fb4e5
-Mae: 当然啦。 #line:c216a8
+Mae: 当然。 #line:c216a8
 ===
 title: Pennant
 tags: 
@@ -455,7 +455,7 @@ Mae: 我要不要拿走它呢？ #line:09d4bc
 	Mae: 然后，我再查查它是干什么用的。 #line:89d8ec
 	Mae: 可以，可以，相当可以。 #line:002eb1
 ->算了。 #line:97e8d6
-	Mae: 这东西太烂啦，而且我对体育也不感兴趣。 #line:fac83b
+	Mae: 这东西太恶心啦，而且我对体育也不感兴趣。 #line:fac83b
 	Mae: 一点兴趣也没有。 #line:cf605d
 ===
 title: FootballHelmet
@@ -508,7 +508,7 @@ Salvi: 找到什么好东西了吗？ #line:94df9c
 	Mae: 哦，这东西也…… #line:1ad157
 	Mae: 有点年头了。 #line:8e6595
 	Mae: 咱们那时候有冰球队吗？ #line:e2e977
-	Salvi: 当然有啦！ #line:b657a0
+	Salvi: 当然有！ #line:b657a0
 	Salvi: 曾经还有个冰球场的建在现在猎豹鲜生的旁边。 #line:1dd2c2
 	Mae: 妈呀，以前这地方有的东西还不少啊。 #line:98e9ce
 	Salvi: 虽然有很多东西一直留到现在， #line:bfa086
@@ -528,7 +528,7 @@ Salvi: 找到什么好东西了吗？ #line:94df9c
 	Salvi: [shake=.025]我 不 想 要 这 东 西。[/all] #line:3e3938
 	Mae: [shake=.05]我 也 不 想 要 —— 拿 着 吧！[/all] #line:8f6fc7
 	Salvi: [shake=.05]这 是 你 的 东 西！[/all] #line:c9f72c
-	Mae: [shake=.075]真 是 见 了 鬼 啦！这 破 头 盔 你 拿 走 吧！[/all] #line:25b038
+	Mae: [shake=.075]真见鬼！这破头盔你拿走吧！[/all] #line:25b038
 	Salvi: [shake=.075]我 不 要！！！[/all] #line:175711
 	Mae: [shake=.1]啊 啊 啊 啊 啊！你 死 去 吧！！！！！[/all] #line:d606db
 	<<wait 4>>
@@ -551,7 +551,7 @@ colorID: 0
 position: 6035,-156
 ---
 Mae: 还有蝙蝠需要我来赶跑吗？ #line:d5c782
-Salvi: 没有啦。它们不会到这么远的地方来休息的。 #line:25fa00
+Salvi: 不用。它们不会到这么远的地方来休息的。 #line:25fa00
 Salvi: 要是来之前你没把它们全都赶跑， #line:d7274c
 Salvi: 它们就都会飞过来的。 #line:46ff97
 Mae: 咱们这是在哪儿啊？ #line:6b5c84
@@ -582,7 +582,7 @@ position: 6501,-163
 ---
 Salvi: 洪水来的时候，幸亏我没待在隧道里，真是谢天谢地啊。 #line:440078
 Mae: 河水是不是涨得特别快？ #line:427548
-Salvi: 是啊。洪水太可怕啦，整条河的水都会漫上来，然后到处流。 #line:eb0c09
+Salvi: 是啊。洪水真可怕，整条河的水都会漫上来，然后到处流。 #line:eb0c09
 Salvi: 这事应该也和水库有一定关系，我也记不太清了。 #line:307648
 Mae: 我猜这事是前不久刚发生过的吧。 #line:9fdc2d
 Mae: 一想到河水会到处流，我就感觉很怪很诡异。 #line:2375fb
@@ -702,7 +702,7 @@ Salvi: 找到什么好东西了吗？ #line:34340d
 	Salvi: 好主意。 #line:fb4656
 	Mae: 它可真漂亮啊。 #line:b609ec
 	Mae: 把它扔在这儿真是可惜啦。 #line:b39673
-	Salvi: 可你救了它。 #line:7ead52
+	Salvi: 你救了它。 #line:7ead52
 	Mae: 我可是大英雄喔。 #line:3ebf8b
 	Salvi: 我要给报社打个电话。 #line:c5dc3b
 <<elseif $tunnel_lock>>
@@ -752,7 +752,7 @@ Mae: 那几个小孩，肯定是那几个小孩干的。 #line:c47512
 Salvi: 哈哈哈。 #line:301f24
 Salvi: 这帮小孩来之前，世界上是没有路可走的。 #line:d1760c
 Mae: 哦，我的妈呀……这床垫…… #line:10c549
-Salvi: 呃，太恶心啦。 #line:9d50be
+Salvi: 呃，太恶心了。 #line:9d50be
 Mae: 也不知道是谁想的主意，居然会到这地方嗑药，喝个烂醉，然后再啪啪啪什么的。 #line:50e26b
 Mae: 居然有人会到这地方来。 #line:58d9fa
 Salvi: 而且到这儿的路看起来也不好走呀。 #line:b6b3c9
@@ -781,7 +781,7 @@ Mae: 我在想，五百年之后， #line:3c2d6f
 Mae: 考古学家会不会发现这个地方， #line:3f74bb
 Mae: 然后猜测这幅画是什么意思。 #line:974d9b
 Salvi: 有时候我觉得，五十年之后，肯定就没人知道这幅画的含义了。 #line:596eb9
-Mae: 时过境迁，这些地方也不能让人们永远记住它们。 #line:60e0de
+Mae: 它们无法决定自己会以何种方式被记住。 #line:60e0de
 Mae: 然后，它们就……孤零零地留在原地…… #line:b38616
 Mae: 最后就沦为了废墟。 #line:da1848
 <<wait 4>>

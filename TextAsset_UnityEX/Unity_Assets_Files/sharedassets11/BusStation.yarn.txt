@@ -3,23 +3,23 @@ tags:
 colorID: 0
 position: -1343,690
 ---
-Mae: 嘿，看哪，这儿有几本小册子！ #line:a08787
+Mae: 嘿，瞧，这里有几本小册子！ #line:a08787
 ===
 title: excuse
 tags: 
 colorID: 0
 position: 639,796
 ---
-Mae: 不好意思，但请问大家都去哪里了？ #line:89e929
-Janitor:{width=4}现在是10：45，这里已经关门了。 #line:7da177
-Janitor: 如今这些日子，可没什么人会坐末班车来负鼠泉了。 #line:9d6e9b
-Janitor: 只有你。 #line:c1a7ed
+Mae: 你好，请问大家都去哪里了？ #line:89e929
+Janitor:{width=4}现在已经10：45了，这里已经关门了。 #line:7da177
+Janitor: 现如今可没什么人会搭乘末班车来负鼠泉了。 #line:9d6e9b
+Janitor: 除了你以外。 #line:c1a7ed
 <<close>>
 <<setAnimInt Janitor drilling 1>>
 <<wait 2>>
 <<set $janitor to 1>>
 [[前台不该有人吗？|someone]] #line:b64380
-[[话说，你是门卫之类的吗？|something]] #line:cf1de5
+[[那么你是门卫之类的吗？|something]] #line:cf1de5
 
 
 ===
@@ -85,7 +85,7 @@ position: 1091,733
 ---
 <<setAnimInt Janitor drilling 2>>
 <<wait 1>>
-Mae: 一罐免费可乐。 #line:58f01d
+Mae: 免费可乐来啦。 #line:58f01d
 <<close>>
 <<trigger Janitor GrabbyHand>>
 <<setHoldItem SodaCan>>
@@ -96,16 +96,16 @@ Mae: 一罐免费可乐。 #line:58f01d
 <<wait 5>>
 <<lookNearest Mae>>
 Janitor: 真好喝啊。 #line:7c8a0a
-Janitor: 那么，你来这儿做什么呢？ #line:449b6d
+Janitor: 那么，你来这里要做什么呢？ #line:449b6d
 <<setAnimInt Janitor drilling 1>>
-Mae: 我就住这儿。 #line:3bbe4b
+Mae: 我就住在这儿。 #line:3bbe4b
 Mae: 好吧，以前住这儿。 #line:ab4751
 Janitor: 哦，真是怪了。 #line:581921
-Mae: 你觉得那门什么时候能修好？ #line:7902db
+Mae: 那扇门什么时候才能修好？ #line:7902db
 <<close>>
 <<setAnimInt Janitor drilling 2>>
 <<wait 1>>
-Janitor: 现在。 #line:88ccdb
+Janitor: 就现在。 #line:88ccdb
 <<close>>
 <<setAnimInt Janitor drilling 0>>
 <<wait .75>>
@@ -131,7 +131,7 @@ position: 1041,1014
 ---
 Janitor: 关门了。 #line:d1c54a
 Mae: 那为什么灯还亮着？电视还开着？ #line:c1a449
-Janitor: 因为要是我一个人待在这儿，我会害怕。 #line:2b734d
+Janitor: 因为我害怕自己一个人待在这里。 #line:2b734d
 Mae: 哦。 #line:52d276
 
 ===
@@ -155,7 +155,7 @@ position: 87,705
 Mae: 能借光让我挤过去吗？ #line:8b1e12
 Janitor: 不行，这破门坏了。 #line:320604
 Mae: 你觉得这门什么时候能修好？ #line:d1ed74
-Janitor: 你从那机器里把菲亚斯可乐给我拿来的时候。 #line:981491
+Janitor: 等你从饮料机里把菲亚斯可乐给我拿来的时候。 #line:981491
 Mae: …… #line:ca5497
 Mae: 要我自掏腰包吗？ #line:dd2baf
 Janitor: 我经常会在下班以后给饮料机做点手脚。 #line:26a4e0
@@ -171,7 +171,7 @@ tags:
 colorID: 0
 position: -1306,427
 ---
-Mae: 这是售票处。 #line:a6e72c
+Mae: 这里是售票处。 #line:a6e72c
 ===
 title: TV
 tags: 
@@ -202,9 +202,9 @@ TV: 而这是众所周知的经济衰退的证据！ #line:d1750a
 <<playOneShot event:/bus_station/tv_laughter_applause TV>>
 <<wait 2>>
 <<animate TV MalloyTalk>>
-TV: 我的天呐，嘉宝，我们涉及到政治咯！ #line:342f8c
+TV: 天呐，嘉宝，我们谈及到政治咯！ #line:342f8c
 <<animate TV GarboTalk>>
-TV: 偶尔也得谈谈政治嘛。 #line:903a92
+TV: 偶尔也得谈一谈政治嘛。 #line:903a92
 <<animate TV MalloyStare>>
 <<playOneShot event:/bus_station/tv_laughter_applause TV>>
 <<wait 2>>
@@ -219,10 +219,10 @@ TV: 在互联网确实能找到真爱。 #line:df8e7d
 <<playOneShot event:/bus_station/tv_cough TV>>
 <<wait 3>>
 <<animate TV GarboTalk>>
-TV: 嘿，有没有可爱的女士在寻找一位合意的白马王子？ #line:fceaf6
+TV: 嘿，有没有可爱的女士正在寻找一位合意的白马王子？ #line:fceaf6
 TV: 请联系我哦！ #line:658baf
 <<animate TV GarboLaugh>>
-TV: 如果我找到了，我一定通知各位的！ #line:22bd27
+TV: 如果我找到了，我一定通知各位！ #line:22bd27
 <<animate TV MalloyStare>>
 <<playOneShot event:/bus_station/tv_laughter_applause TV>>
 <<wait 3>>
@@ -237,20 +237,20 @@ colorID: 0
 position: 539,251
 ---
 <<if $janitor >= 2 and $soda is 0>>
-	Mae: 搞什么？ #line:75143a
-    Mae: 这里明明有菲亚斯科青柠汽水他却只要菲亚斯科可乐？ #line:3716b2
-    Mae: 简直是暴殄天物。 #line:058ebb
+	Mae: 搞什么啊？ #line:75143a
+    Mae: 这里明明有菲亚斯青柠汽水，他却只要菲亚斯可乐？ #line:3716b2
+    Mae: 真是浪费吖。 #line:058ebb
 	<<close>>
 	<<wait 1>>
 	<<tell VendingMachine to Vend>>
 	<<wait 5.5>>
     <<set $can_grab_soda_can to 1>>
     <<set $vending_machine_done to 1>>
-    Mae: 好了，只需要拿出来就行了。 #line:94d4e3
+    Mae: 好，只要把它取出来就行了。 #line:94d4e3
 	//<<set $soda to 1>>
 	//Mae: Got it!
 <<else>>
-	Mae: :) -_- 菲亚狐，你有点过于美妙了。 #line:867df6
+	Mae: :) -_- 菲亚斯狐，你真美妙。 #line:867df6
     <<eyes Mae Neutral>>
     <<mood Mae Neutral>>
     <<set $vending_machine_done to 1>>
@@ -276,8 +276,8 @@ colorID: 0
 position: -562,1273
 ---
 Mae: 等游客到了这儿，肯定会特失望。 #line:48c736
-Mae: 踏上此地的人啊,准备迎接失望吧！ #line:8702a8
-Mae: 咱们镇子的格言。 #line:e47578
+Mae: 踏入此地的人啊，准备迎接失望吧！ #line:8702a8
+Mae: 听听咱们镇的格言。 #line:e47578
 <<set $bus_station_mural to 2>>
 ===
 title: forest
@@ -297,8 +297,8 @@ colorID: 0
 position: -114,1046
 ---
 Mae: 瞧瞧那矿车。 #line:1ecaf7
-Mae: 早就不见了吧。 #line:88f64b
-Mae: 这是时间旅行者做的吗？ #line:e1e5ae
+Mae: 早不见了。 #line:88f64b
+Mae: 是时间旅行者干的吗？ #line:e1e5ae
 <<set $bus_station_mural_done to 1>>
 ===
 title: reception
@@ -307,7 +307,7 @@ colorID: 0
 position: 78,366
 ---
 Mae: 公用电话公司在负鼠泉运营一定很轻松，因为这里手机根本收不到信号。 #line:8773a7
-Mae:现在要是能给我爸妈打个电话就好了。 #line:a122a1
+Mae:现在要是能给爸妈打个电话就好了。 #line:a122a1
 Mae: 但居然有个混蛋把听筒给拽走了。 #line:adbeea
 Mae: 怎么会有人偷听筒啊？ #line:c22b41
 <<set $bus_station_phone to 1>>
@@ -318,10 +318,10 @@ colorID: 0
 position: -196,433
 ---
 Mae: 真好奇那些家伙会拿这听筒做什么。 #line:eee3e1
-Mae: 晚上和它一起睡觉。 #line:9ba608
-Mae: 带它一起散步。 #line:2752ca
+Mae: 睡觉时带着它。 #line:9ba608
+Mae: 散步时拿着它。 #line:2752ca
 Mae: 紧紧地抱着它。 #line:3724ad
-Mae: 对着它讲话 #line:319501
+Mae: 再对着它讲话。 #line:319501
 Mae: 就算另一头根本没人。 #line:7a2782
 Mae: 最后法式湿吻它。 #line:4f7c9b
 <<set $bus_station_phone_done to 1>>
@@ -343,8 +343,8 @@ position: 346,-40
 	<<setAnimInt Janitor drilling 1>>
 <<endif>>
 Mae: 好嘛，棒极了。 #line:f53579
-Mae: 我也没指望能有个欢迎派对什么的， #line:31f06f
-Mae: 但是好歹应该*有人*过来接我吧。 #line:f25ef7
+Mae: 虽然我也没指望能有个欢迎派对什么的， #line:31f06f
+Mae: 但是好歹应该*有个人*过来接我吧。 #line:f25ef7
 Mae: …… #line:9b299a
 Mae: 欢迎回家，梅。 #line:64c8e8
 ===

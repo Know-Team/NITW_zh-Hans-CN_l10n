@@ -46,9 +46,9 @@ Mae: 我忘了。 #line:4043c9
 Angus: 嗯…… #line:24fe31
 Angus: 梅，这没什么的，你不用觉得尴尬…… #line:503b12
 <<lookNearest Mae>>
-Mae: 我没觉得尴尬呀。 #line:13f450
+Mae: 才没有。 #line:13f450
 Angus: 我是说，其实大家都…… #line:4664a3
-Mae: 别说了，我懂。 #line:52104c
+Mae: 别说了，知道了。 #line:52104c
 [[Angus_A1D2_End]]
 ===
 title: NothingJustThings
@@ -69,7 +69,7 @@ tags: temp
 colorID: 2
 position: -34649,16392
 ---
-Angus: 嗯……我来看看我能做点什么…… #line:2e9ca2
+Angus: 嗯……让我来看看能做点什么…… #line:2e9ca2
 <<close>>
 <<walk Angus BedroomAngus 1 wait>>
 <<tell _AmbientSFX:rummage_usb Play>>
@@ -77,13 +77,13 @@ Angus: 嗯……我来看看我能做点什么…… #line:2e9ca2
 Angus: 好了，我找到能帮你的东西了。 #line:539a1b
 <<close>>
 <<walk Mae BedroomMae wait>>
-Angus: 把它插到USB接口上，然后重启电脑， #line:a12dcc
+Angus: 把它插到USB接口上，然后重启电脑。 #line:a12dcc
 Angus: 这样就能把电脑里的流氓程序清除掉了。 #line:1947bc
 Angus: 但也有可能会删除掉一些你的旧文件。 #line:6879db
-Mae: 哇哦，谢谢啦，伙计！ :) #line:a454df
+Mae: 哇哦，谢啦，伙计！ :) #line:a454df
 Angus: 不用客气。 #line:7cce0b
 Mae: 我该回家了。 #line:893b8a
-Mae: 看看你的魔法是不是管用。 #line:4dd2be
+Mae: 看看你的魔法管不管用。 #line:4dd2be
 Angus: 这可不是魔法， #line:bffc91
 Angus: 这只不过是一堆0和1罢了。 #line:2d673e
 Angus: 而且，咱们也只是一堆原子。 #line:a394db
@@ -151,16 +151,16 @@ colorID: 4
 position: -32683,15800
 ---
 Mae: 好了，谢谢大家都能过来。 :) #line:37d003
-Angus: 我们就住在这儿啊。 #line:b14126
+Angus: 我们就住在这里。 #line:b14126
 Mae: 说得是啊。 #line:ca77f1
 Gregg: 你找到关于那个幽灵的线索了吗？ #line:0410bb
 <<setAnimInt Mae nodding 1>>
-Mae: 当然找到啦！ #line:1761e1
-Mae: 碧娅，你来告诉他们！ #line:cefb71
+Mae: 找到了！ #line:1761e1
+Mae: 碧娅，告诉他们！ #line:cefb71
 <<setAnimInt Mae nodding 0>>
-Bea: 有几份剪报上的确提到了关于幽灵的事。 #line:25a174
+Bea: 有几份剪报上提到了关于幽灵的事。 #line:25a174
 <<setAnimInt Mae nodding 1>>
-Mae: 而且，那还不是*一般*的幽灵！那可是小乔啊！ <o> #line:6069eb
+Mae: 而且，那还不是*一般*的幽灵！小乔啊！ <o> #line:6069eb
 <<setAnimInt Mae nodding 0>>
 <<wait 2>>
 Angus: 我实在是记不起关于小乔的事了。 #line:7ad66a
@@ -168,9 +168,9 @@ Mae: 他就是那个幽灵矿工！而且，他的死因也是扑朔迷离！ #l
 Gregg: 哇哦！ #line:c8478c
 Mae: 是啊，哇哦。扑朔迷离！ #line:332f94
 Bea: 看你这么兴奋，我还以为你说的怕鬼， #line:ae55f5
-Bea: 是真的害怕的那种怕鬼。 #line:b6634b
+Bea: 是真的害怕那种怕鬼。 #line:b6634b
 <<setAnimInt Mae nodding 1>>
-Mae: 我是真害怕啊！ \o/ #line:9eaab8
+Mae: 我是真老害怕了！ \o/ #line:9eaab8
 <<setAnimInt Mae nodding 0>>
 Bea: 好吧…… #line:ddb48a
 Mae: 剪报上提到了三个不同的地点，所以全都需要调查一下才行！ _o_ #line:cafd58
@@ -180,12 +180,12 @@ Mae: 你们不是经常撬班的吗！ o_o :\ #line:2e6135
 Bea: 或许，咱们可以 #line:550de0
 Bea: 分头行动。 #line:baf13b
 Mae: :| #line:fd5be0
-Bea: 轮流照顾这只菜鸡和她所谓的幽灵。 #line:00289c
+Bea: 这样就能轮流看护监管某人和某人口中的幽灵。 #line:00289c
 Gregg: 剪报上说的是哪三个地方？ #line:519e16
 Mae: 额，墓地…… #line:9e4ca5
 Bea: 那地方我来负责。 #line:9caeee
 Bea: 离得又近，又不会违法。 #line:2ba9ee
-Gregg: 有违法的选项可选吗？我有兴趣 :) #line:dceaec
+Gregg: 有违法的地方可选吗？ :) #line:dceaec
 Angus: …… #line:e991df
 Mae: 当然有啦！历史协会不就是吗！ :) <o> #line:7e2127
 Bea: 其实你们根本就用不着硬闯进去， #line:f8ee68
@@ -193,20 +193,20 @@ Bea: 只要花钱，那儿的工作人员就会带你看你想看的东西了。
 Mae: :| #line:7e4892
 Gregg: :| #line:763eab
 <<wait 2>>
-Mae: 你随便吧…… #line:c34359
+Mae: 总之…… #line:c34359
 Gregg: 我决定了，去历史协会。 #line:6424b0
 Mae: 太好啦！ :) #line:4f895f
 Angus: 那我去哪儿呢？ #line:89cbea
-Mae: 就只剩下负鼠崖啦！ #line:4a4c4a
+Mae: 负鼠崖！ #line:4a4c4a
 Angus: ！ :) #line:42d867
-Angus: 啊！负鼠崖！ #line:43eaf4
+Angus: 我知道负鼠崖！ #line:43eaf4
 Angus: 咱们以前还是童子军的时候，就去过那儿！ #line:01f7a1
 Mae: 完美！ #line:0b3cf4
-Bea: 好了，我得回家了， #line:858b31
+Bea: 好了，我真得回家了。 #line:858b31
 Bea: 还有工作要做。 #line:8cccfd
 <<dilate Mae .85 0>>
 Mae: \o/ #line:7f1149
-Mae: 这次的行动一定会很精彩的！！！！ #line:ed3190
+Mae: 这次的行动一定会很精彩！！！ #line:ed3190
 Mae: 当然，我也有可能会被吓死！！！ #line:5aa98a
 <<close>>
 <<irisOut 1 wait>>
@@ -269,9 +269,9 @@ Gregg: 安格斯要出去一趟，明天晚上才能回来。 #line:5f6518
 Gregg: 所以，我得查查怎么自己修自行车。 #line:020eb7
 Gregg: 这件事一会儿再说。 #line:6b4d4b
 Gregg: :) #line:249b4c
-Gregg: 吃饭，去吗？ #line:3295c7
+Gregg: 吃饭去吗？ #line:3295c7
 Mae: o_o :) \o/ #line:7cdec8
-Mae: 去！我快饿死了！ #line:b3e546
+Mae: 去！快饿死了！ #line:b3e546
 Mae: o_o :| _o_ #line:ca4f54
 <<fadeOut 1 wait>>
 <<scene Diner>>
@@ -282,76 +282,76 @@ colorID: 3
 position: -33750,16059
 ---
 <<playMusic gregg_not_as_manic 3>>
-Gregg: ……就算这过去*确实*是一顶法西斯钢盔，我也无所谓。 #line:b272a5
+Gregg: ……就算这*以前*是一顶法西斯钢盔， #line:b272a5
 Gregg: 现在，它又多了一个无政府状态的标志， #line:79153b
-Gregg: 这下这顶头盔就更好看了。 #line:324c83
+Gregg: 这下头盔就更好看了。 #line:324c83
 Gregg: 这儿还有个弹孔， #line:f9f785
 Gregg: 所以，之前戴这顶头盔的人肯定早就挂啦。 #line:837efe
 Gregg: 那样的话，现在我戴的这顶头盔就是件战利品。 #line:91448b
 Mae: =_= :) #line:ffdd6e
-Mae: 这么说，你承认这是顶法西斯钢盔啦！ #line:cf5924
+Mae: 这么说，你承认这就是顶法西斯钢盔！ #line:cf5924
 Gregg: 不！ D: #line:aa5607
-Gregg: 我没承认过！ #line:300d62
+Gregg: 完全没有！ #line:300d62
 Gregg: :| #line:40249f
 Mae: 好吧，好吧。 o_o #line:db675f
-Mae: 那咱们现在要去干什么呢？ #line:798fd9
+Mae: 咱们现在要去干什么？ #line:798fd9
 Mae: :| #line:7b73f8
 Gregg: 嗯，我想想…… #line:3c68d9
 <<if $did_gregg_friendship_quest_1 is 0>>
 	Mae: 等等，我有个问题。 #line:a3884d
 	Gregg: 问吧。 #line:eb88ce
     Mae: O_o #line:1122ec
-	Mae: 这倒底是个啥啊？ #line:b8f99a
-	Gregg: 你是说这东西吗？ #line:f21eeb
+	Mae: 这倒底是个嘛东西啊？ #line:b8f99a
+	Gregg: 这东西吗？ #line:f21eeb
     <<setAnimInt Mae nodding 1>>
-	Mae: 当然啦，说的就是这个“东西"。 #line:7a9d6a
+	Mae: 当然，说的这个“东西"。 #line:7a9d6a
     <<setAnimInt Mae nodding 0>>
     Mae: o_o #line:c4d119
 	Gregg: 你还记得吗， #line:1f3b5c
 	Gregg: 小时候老驴生鲜那里，那些像是从机器人动画里跑出来的大家伙？ #line:af7d5d
-	Mae: 当然记得啦！ #line:d10064
+	Mae: 当然！ #line:d10064
     <<dilate Mae .85 .5>>
-	Mae: 哦，我 的 天 啊！ :) #line:474f52
-	Mae: 难 道 这 就 是 其 中 之 一 吗？？？ #line:8a2cc7
+	Mae: 我的天！ :) #line:474f52
+	Mae: 难道这就是其中之一？？？ #line:8a2cc7
 	Mae: 咱们是要一起把它给拼好吗？ #line:7c126f
 	Gregg: 当然啦，老兄。 #line:8da11c
-	Mae: 这 简 直 棒 极 啦！ \o/ #line:643e40
+	Mae: 这简直棒极啦！ \o/ #line:643e40
 	Mae: 你到底是从哪儿找到这东西的？ #line:4bb2ca
     <<dilate Mae 1 .5>>
     Mae: _o_ #line:f95fe3
-	Gregg: 你认识史蒂夫·斯克里金斯吗？ #line:0f5e13
+	Gregg: 你知道史蒂夫·斯克里金斯吗？ #line:0f5e13
     Mae: :| #line:99d55b
 	->是那个把代课老师锁在杂物间的人吗？ #line:9d16ba
         Gregg: 哈哈，就是他。 #line:17ffc7
-        Mae: 老兄，他整个长至夜假期都没能从杂物间里出来， #line:48e0e1
-        Mae: 后来，他是靠喝胶水，吃西班牙语练习册才活下来的。 #line:c06bf6
-        Mae: 这个*史蒂夫·斯克里金斯*是不是就让你记住了这些事呢？ #line:70b315
+        Mae: 老兄，他被困了整整一个长至夜的假期。 #line:48e0e1
+        Mae: 他是靠喝胶水，吃西班牙语练习册才活下来的。 #line:c06bf6
+        Mae: 是*史蒂夫·斯克里金斯*给你的？ #line:70b315
 	->是那个在学校停车场开着小车绕着人兜圈子的家伙吗？ #line:10b6af
-        Mae: 它这么一来，圈里的人都不敢动了。 #line:0b5f86
+        Mae: 就这样把人困在圈里。 #line:0b5f86
 		Mae: 我记得他管这种玩法叫“车中营"。 #line:b6320d
 		Mae: 而且，那家伙还会冲你按喇叭。 #line:e276f5
-	Gregg: 是啊，这个家伙。 #line:4f03e6
-	Mae: 伙计，他这人烂透啦。 =_= :\ #line:ad0cf0
+	Gregg: 是啊，就是那个家伙。 #line:4f03e6
+	Mae: 伙计，他这人烂透了。 =_= :\ #line:ad0cf0
 	Gregg: 但是！自从老驴生鲜关门以后，他就一直在那里。 #line:7f422b
-	Gregg: 这个机器人也是他找到以后送我的。 #line:1c0bc0
+	Gregg: 这也是他帮我找出来的。 #line:1c0bc0
 	Mae: 这可算是史蒂夫干的第一件正经事啊。 :) #line:e3f120
 <<else>>
-	Mae: 哦，哇，是你一个人把它搬到沙发上的吗？ #line:c5a5de
+	Mae: 哇噢，是你一个人把它搬到沙发上的吗？ #line:c5a5de
 	Gregg: 是的！ #line:c7c4fe
-	Mae: 昨晚在楼梯上那么费劲之后，你还能自己把它搬上来？ #line:39127e
-	Gregg: 昨晚真是让人印象深刻啊。 #line:2172db
+	Mae: 甚至在昨晚楼梯一顿折腾“之后"？ #line:39127e
+	Gregg: 你对我真是刮目相看啊。 #line:2172db
 <<endif>>
-Mae: 好好好好好，接下来咱们该怎么办啊？？？ o_o #line:c3e52e
-Gregg: 咱们得把这块旧蓄电池装到老家伙身上。 #line:c1c65a
-Mae: 好的，这听起来倒不是很复杂。 :| #line:4fb1ea
+Mae: 啊是是是是，接下来咱们该怎么办啊？？？ o_o #line:c3e52e
+Gregg: 咱们得把这块旧电池装到老家伙身上。 #line:c1c65a
+Mae: 好的，听起来不太复杂。 :| #line:4fb1ea
 Gregg: 或许吧。这根本就是个垃圾堆。 #line:eda18c
-Mae: 真希望你让这堆垃圾给划了，然后得点什么病，但你没有，太可惜啦。 #line:59d9de
-Gregg: 本来以为你会在来的路上挂掉，可你却没挂，太糟啦。 #line:82cf25
-Mae: 真希望机器人里全是愤怒的毒蛇，然后把你咬死， :) =_= #line:28f720
-Mae: 但你没事，真烦啊。 #line:3c2fac
-Gregg: 我真希望你会被掉下来的电梯砸成肉饼， #line:0717c3
-Gregg: 可惜电梯没掉下来。 :) #line:83caff
-Mae: 哦，伙计，别说了。这事我都有心理阴影啦。 :| o_o #line:41b807
+Mae: 好想你让这堆垃圾给划了，然后得点什么病。 #line:59d9de
+Gregg: 好想你在来的路上就挂掉。 #line:82cf25
+Mae: 好想那个机器人里全是愤怒的毒蛇， :) =_= #line:28f720
+Mae: 然后把你咬死。 #line:3c2fac
+Gregg: 好想你会被掉下来的电梯 #line:0717c3
+Gregg: 砸成肉饼。 :) #line:83caff
+Mae: 哦，伙计，别说了。我对那真有恐惧症。 :| o_o #line:41b807
 Gregg: 情有可原。 :| #line:4617c7
 <<wait 2>>
 Mae: 咱们又该干什么了？ #line:e45a97
@@ -366,35 +366,35 @@ colorID: 3
 position: -33476,16076
 ---
 Mae: 天哪。 #line:46c4bc
-Mae: 这看起来也不怎么危险嘛。 #line:cc094b
-Gregg: 就因为你刚才死了 #line:dfba7d
-Gregg: 差不多5秒钟， #line:de5d3e
-Gregg: 你定义危险的门槛就提高了这么多吗？ #line:2bb22a
+Mae: 看起来很安全嘛。 #line:cc094b
+Gregg: 就因为你之前死了 #line:dfba7d
+Gregg: 5秒而已， #line:de5d3e
+Gregg: 现在就变得这么胆小无聊了？ #line:2bb22a
 Mae: 伙计。 =_= #line:8b8885
 Mae: 拜托。 #line:a2a7ec
-Gregg: 有些人早就已经挂了，而且是属于永别那类的！ #line:50b6f6
+Gregg: 有些人可是死了，永远地死了！ #line:50b6f6
 Gregg: 他们可抱怨不了什么“拜托"。 #line:484684
-Mae: 嗯…… #line:e6bf65
+Mae: 额…… #line:e6bf65
 Gregg: 没错， #line:c46b5d
-Gregg: 他们要么闭嘴干事， #line:e25a23
-Gregg: 要么就是变成鬼啦！ #line:d03776
+Gregg: 他们要么闭嘴埋头干事， #line:e25a23
+Gregg: 要么就是变成鬼了！ #line:d03776
 Mae: 你是说，如果我不想被人使唤得累死累活，那我就应该……变成鬼？ o_o #line:02706d
 Gregg: 是啊！Carpy Diem，|抓住当下，|学学《死亡诗社》嘛！|（正确拼写应为Carpe Diem，|拉丁文“抓住当下"） #line:51be39
     ->应该是读“Carp-ay Diem"吧。 #line:2b4391
         Gregg: 哦，快瞧瞧啊，看看谁又在造新词啦。（他俩谁也没说对） #line:b66c91
     ->“Carpy Diem"，|听着感觉好像是|一条叫Diem的鲤鱼啊。|（carp：鲤鱼） #line:a63ba7
         Gregg: 一条会告诉你“凑合着活吧"的鲤鱼。 #line:c5dc1d
-Mae: 好吧。咱们接下来要干什么呢？ <o> #line:2b2bc1
+Mae: 好吧。咱们接下来要干什么？ <o> #line:2b2bc1
 Gregg: 下面就是最精彩的环节啦。 #line:2a3fef
 Gregg: 咱们来把这个机械小怪兽给拼好。 #line:357ab4
 Mae: 你知道该怎么拼装吗？ #line:4d97b8
-Gregg: 咱 们 会 知 道 该 怎 么 做 的！！！ #line:4a2371
+Gregg: 咱们会知道的！！！ #line:4a2371
 Mae: 酷啊。 :| _o_ #line:af752e
 Gregg: 梅。 #line:b6dcd0
 Mae: 抱歉。 #line:9530a2
 <<dilate Mae .85 .5>>
 Mae: 酷～！！！！ :) #line:1fe9c1
-Mae:{width=8}噢 哦！！！！ \o/ #line:843c49
+Mae:{width=8}噢哦！！！！ \o/ #line:843c49
 <<dilate Gregg .85 .5>>
 Gregg:{width=8}噢～哦～！！！ D: \o/ #line:699b52
 <<irisOut 1 wait>>
@@ -424,35 +424,35 @@ Gregg: 我才发现，我开始想念几年前的那个格雷格了。 #line:db0
 Mae: 哈？ #line:8b468c
 Gregg: 就感觉我这几年把大部分时间都花在工作上了，但…… #line:0b4768
 <<if $did_gregg_friendship_quest_1 is 0>>
-	Mae: 那你为什么要那么玩命工作啊？ O_o #line:89a268
-	Gregg: 我和安格斯已经有了一个计划。 #line:805eb7
+	Mae: 那你到底为什么要那么玩命工作啊？ O_o #line:89a268
+	Gregg: 我和安格斯有个计划。 #line:805eb7
 	Mae: 啥计划？ #line:d738e6
     <<set $knows_bright_harbor to 1>>
-	Gregg: 搬到光明湾去！ :) #line:10ec1a
+	Gregg: 搬到光明湾！ :) #line:10ec1a
 	Mae: 光明……湾？ :| o_o _o_ #line:60dc1c
-    Mae: 你们是什么时候有这个想法的啊？ #line:cd5e6d
+    Mae: 什么时候有这个想法的？ #line:cd5e6d
     Gregg: 嗯……大概是在一年前吧。 #line:7bdbe9
     Gregg: 这就是我和安格斯每周上七天班的原因。 \o/ #line:1aec05
     Mae: 可是……你们打算什么时候走啊？ #line:ba1aa8
-    Gregg: 我觉得，可能会在明年春天走吧。 _o_ #line:114a08
-    Mae: 那好像……只剩几个月的时间了啊。 #line:7e7192
+    Gregg: 可能会在明年春天。 _o_ #line:114a08
+    Mae: 那好像……只剩下几个月了。 #line:7e7192
     Gregg: 没错！ #line:95970c
-    Mae: 哦，那好吧。 #line:2ee810
-    Gregg: 等我们都安顿好了，你一定要过来做客啊！ #line:74d55a
-        ->为什么要去光明湾啊？ #line:f657e3
+    Mae: 哦，好吧。 #line:2ee810
+    Gregg: 等我们都安顿好了，你一定要过来做客！ #line:74d55a
+        ->为什么是光明湾？ #line:f657e3
         ->光明湾那儿消费不是很高吗？ #line:82be2b
-            Gregg: 要是你住的地方很烂的话，你就不会觉得光明湾贵啦！ #line:cc7aac
-    Gregg: 哦，梅，那地方相当不错啊。 o_o :| #line:deab31
+            Gregg: 除非你现在就住在一个糟糕的社区！ #line:cc7aac
+    Gregg: 梅，那地方相当不错啊。 o_o :| #line:deab31
     Gregg: 我和安格斯夏天的时候去那儿看过了。 #line:5f2add
     Gregg: 那儿有很多的录像店和奇怪主题的酒吧， #line:4ff157
-    Gregg: 那儿的人也是又酷又……悠闲？或者说自由？ #line:45faf6
+    Gregg: 那儿的人也是又酷又……自由？ #line:45faf6
     Mae: 哦。 #line:658e28
     Gregg: 我就是在那儿纹的身！ #line:9c2839
     Mae: 什么？ #line:9e855a
     Gregg: 耶，你看！ #line:eef24e
     Gregg:{emote=sheep_tattoo} #line:a0a7c5
     <<close>>
-    Mae: 这是个羊的图案吗？ #line:1c78dd
+    Mae: 那是……羊吗？ #line:1c78dd
     Gregg: 没错。 #line:899fa5
     Mae: 为什么要纹一只羊呢？ #line:94c130
     Gregg: …… #line:598409
@@ -469,27 +469,27 @@ Gregg: 就感觉我这几年把大部分时间都花在工作上了，但…… 
 Gregg: 既然你又回负鼠泉了， #line:ba3619
 Gregg: 我想…… #line:f89e1c
 Gregg: 嘿，咱们再干点坏事吧。 #line:817327
-Mae: 嗷，伙计。 _o_ :) #line:b08ea5
-Gregg: 嗯哼。 #line:54fe2b
+Mae: 噢，伙计。 _o_ :) #line:b08ea5
+Gregg: 没～～～错。 #line:54fe2b
 Gregg: 我一直在想，该怎么做才能让这东西更有意义呢。 #line:34c74c
 Gregg: 后来，我想，应该把它带回来，送给安格斯！ #line:a6ba36
 Mae: 太好啦，伙计。 =_= #line:d6abd1
-Mae: 我敢说，他一定会很喜欢这个的。 #line:251e59
-Gregg: 希望他会喜欢吧。 #line:45e495
+Mae: 他一定会很喜欢这个的。 #line:251e59
+Gregg: 希望喽。 #line:45e495
 <<close>>
 <<wait 1>>
-Mae: 好吧。 o_o #line:13ac66
+Mae: 好喽。 o_o #line:13ac66
 <<playMusic gregg_not_as_manic>>
-Gregg: 好啦，现在咱们唯一要做的，就是启动它啦！ #line:044138
+Gregg: 好了，现在咱们唯一要做的，就是启动它！ #line:044138
 <<dilate Mae .85 .5>>
-Mae: 哦！哦！ :) #line:9cf378
+Mae: 哟！哟！ :) #line:9cf378
 Mae: 我想按开关，让我来按开关，让我来。 \o/ #line:7bdc17
-Gregg: 姐们，为了我最好的朋友梅， #line:3b5535
+Gregg: 姐们，为了我最好的朋友梅。 #line:3b5535
 Gregg: 也为了你起死回生的传奇经历，我把按开关的荣誉让给你。 #line:c54c72
 <<dilate Mae 1 .5>>
 Mae: 如果下次我又起死回生了，咱们就办一个披萨宴。 _o_ #line:241440
 Gregg: 姐们，就这么定了。 #line:e4367e
-Mae: 太 好 啦。 =_= #line:38b38c
+Mae: 太好啦～～～ =_= #line:38b38c
 <<irisOut 1 wait>>
 <<set $gregg_friendship_quest_2 to 5>>
 <<scene PawsModeFlipTheSwitch>>
@@ -514,7 +514,7 @@ Gregg:{width=4}耶～啊～！！！ #line:b0e590
 Gregg:{width=4}哇～哦～！！！ #line:f23c44
 Mae:{width=4}哈～嘎～嘎～嘎～嗯～！！！ #line:862ad5
 Gregg: D: #line:60969e
-Gregg: 它 活 过 来 啦！！！！ #line:576dfe
+Gregg: 它活过来啦！！！！ #line:576dfe
 Gregg: :) #line:0be0cf
 <<warp Angus AngusDoor>>
 <<flip Angus 1>>
@@ -537,7 +537,7 @@ Mae: 嘿……安格斯…… #line:592a7d
 Angus: 梅，最近怎么样？ #line:d5ebfb
 Mae: 挺好的！这次我的小命可没丢！ #line:a4f4c4
 Mae: 你怎么样？ #line:57533a
-Angus: 还不错，还不错。 #line:c487ce
+Angus: 不错，不错。 #line:c487ce
 Mae: 要是你不介意的话，我想在这儿待一会儿。 #line:b4ff82
 Angus: 没问题。 #line:472a0d
 <<close>>
@@ -569,27 +569,27 @@ position: -32322,15844
 <<if $did_gregg_friendship_quest_2>>
 	Mae: 咱们的小宝贝， :) #line:69be0d
 	Gregg: 嗯。 #line:483818
-	Mae: 咱们的儿子看起来不太好啊。 :\ #line:c9fbf3
+	Mae: 咱们的小宝贝看起来不太好啊。 :\ #line:c9fbf3
 	Gregg: 嗯，是啊。 #line:f75a84
 <<else>>
-	Mae: 呃，这东西就是咱儿子吗？ O_o #line:43bb0f
-	Gregg: 对，这东西就是咱儿子。 #line:8114c9
-	Mae: 那这勉强算是咱们的儿子吧。 #line:5542d0
+	Mae: 呃，这就是那堆东西吗？ O_o #line:43bb0f
+	Gregg: 对，这就是那东西。 #line:8114c9
+	Mae: 这勉强算是咱们的儿子吧。 #line:5542d0
 	Mae: 是咱们让他来到这个世上的。 #line:1ce890
 	Gregg:对啊，你[wave]也助了一臂之力。[/wave] #line:f6b4ab
 	Mae: 但味儿闻起来可有点怪。 :\ #line:8387ae
 <<endif>>
-Gregg: 不用管它是什么味儿。 #line:dee152
+Gregg: 别在意。 #line:dee152
 Mae: 那咱们今晚该干点什么呢？ :) o_o #line:092627
-Gregg: 我也不知道该干点什么。我们借到了碧娅的车。 #line:309b6c
-Mae: [wave]哦，是吗？[/wave] #line:0ffd4e
-Mae: [wave][shake=.01]那 咱 们 就 去 多 纳 狼 吧！！！[/all] #line:515663
-Gregg: 哦，对啊！ :) #line:488adf
+Gregg: 我也不知道。我们借到了碧娅的车。 #line:309b6c
+Mae: [wave]噢，是吗？[/wave] #line:0ffd4e
+Mae: [wave][shake=.01]那咱们就去多纳狼吧！！！[/all] #line:515663
+Gregg: 对啊！ :) #line:488adf
 Mae: 我回来以后，还没去过那儿呢！ #line:095088
 Mae: 我得“来"几个龙舌兰鸡尾酒蛋糕才行。 #line:0661d7
-Gregg: 不知道什么原因，他们现在也卖薄饼。 #line:fb4852
-Mae: 哦哦哦！！！ #line:4ff806
-Gregg: 嘿，船长！咱们去多纳狼怎么样？ o_o #line:fd902d
+Gregg: 不懂为啥，他们现在也卖薄饼。 #line:fb4852
+Mae: 哇噢噢噢噢！！！ #line:4ff806
+Gregg: 嘿呀，船长！咱们去多纳狼怎么样？ o_o #line:fd902d
 <<lookAt Mae Angus>>
 <<lookAt Gregg Angus>>
 <<close>>
@@ -608,16 +608,16 @@ Gregg: 那儿现在还卖薄饼呢！ :) #line:d99f16
 //angus walks across the screen and off the left//
 <<walk Angus AngusOffLeft>>
 <<wait 3>>
-Angus: 那好吧。 #line:ab16bb
+Angus: 好吧。 #line:ab16bb
 <<lookUp Mae>>
 <<lookUp Gregg>>
 Gregg: \o/ D: #line:c7077d
-Gregg: 上 战 车！ #line:d6e753
+Gregg: 上战车！ #line:d6e753
 <<dilate Mae .85 .5>>
-Mae: 向 甜 甜 圈 地 狱 前 进！！！ \o/ #line:e401fa
+Mae: 向甜甜圈地狱前进！！！ \o/ #line:e401fa
 <<runNextLinesTogether 2>>
-Mae: {width=8}[shake=.05]噢 哦 噢 噢！！[/shake] #line:00c4a4
-Gregg: {width=8}[shake=.05]噢 哦 哦 哦！！[/shake] #line:6f14bd
+Mae: {width=8}[shake=.05]GO！GO！GO！[/shake]啊嘞啊嘞啊嘞！！！ #line:00c4a4
+Gregg: {width=8}[shake=.05]啊嘞啊嘞啊嘞！！！[/shake] #line:6f14bd
 <<close>>
 <<irisOut 1 wait>>
 <<sectionTitle GreggFQ4Intro BeaCar>>
@@ -674,7 +674,7 @@ position: -30146,17598
 <<fadeIn 1 wait>>
 Mae: …… #line:9d0c70
 <<wait 3>>
-Mae: 拜拜啦，伙计们。 #line:cef57f
+Mae: 拜拜，伙计们。 #line:cef57f
 Mae: 爱你们哟。 #line:d9c1b3
 <<close>>
 <<irisOut 1 wait>>
@@ -688,14 +688,14 @@ position: -30199,15890
 <<cameraLookAt CameraVignetteStart 0>>
 <<cameraLookAt CameraVignetteEnd 30>>
 <<fadeIn 1 wait>>
-MaeLaptop: 我不知道自己知不知道到底发生了什么事。 #line:f63863
+MaeLaptop: 我不知道我能不能理解刚才发生的一切。 #line:f63863
 MaeLaptop: 但我希望一切都会结束。 #line:b98b0c
 MaeLaptop: 我现在唯一想做的事， #line:ae8134
 MaeLaptop: 就是紧紧地抱住你们大家。 #line:05160c
 MaeLaptop: 我这么做，不仅是因为我爱你们， #line:0b53ce
 MaeLaptop: 还因为我想把你们都留在我身边。 #line:3a856d
 MaeLaptop: 咱们紧紧地抱在一起，这样，就没人能伤害到我们了。 #line:152c24
-MaeLaptop: 抱歉，我又说这些不着边际的话了。 #line:533278
+MaeLaptop: 抱歉，我又说些不着边际的话了。 #line:533278
 //fade out. Fade in on germ in a parking lot. This will need to be a new scene called “GermVignette”//
 <<fadeOut 1 wait>>
 <<overrideLoadingScreenType Blank>>
@@ -717,12 +717,12 @@ MaeLaptop: 我们都被卷进来了。 #line:07d419
 MaeLaptop: 我猜，这件事会很可怕吧。谁知道会发生什么事呢？ #line:8d611c
 MaeLaptop: 但我觉得，人们有把不同事件串联起来的能力， #line:9ba43b
 MaeLaptop: 或者人的存在本身就会招来一堆事件。 #line:50f163
-MaeLaptop: 有些时候，人们需要有人来做他们的依靠， #line:c93f7c
+MaeLaptop: 有些时候，人们需要别人来做他们的依靠， #line:c93f7c
 MaeLaptop: 做他们本该有、却没有的依靠。 #line:65077c
 MaeLaptop: 今晚，是你们把我从湍流之中救了回来， #line:4999e0
 MaeLaptop: 你们为了救我，差点杀了人。 #line:40d790
-MaeLaptop: 我会为此感激你们的。 #line:783808
-MaeLaptop: 哈 哈 哈 #line:7e0a6c
+MaeLaptop: 别觉得我会对此无动于衷哈。 #line:783808
+MaeLaptop: 哈哈哈 #line:7e0a6c
 //fade in on bea, sitting in her living room doing bills as her dad is asleep on the couch.//
 <<fadeOut 1 wait>>
 <<overrideLoadingScreenType Blank>>
@@ -749,7 +749,7 @@ position: -31709,15825
     Gregg: 这游戏玩起来就和骑车一样简单。 #line:55e113
     Germ: 在我睡觉的时候，我会在脑海里重现这个游戏，然后用脑子去玩。 #line:1fcd57
     Bea: 嗯。我睡觉的时候，喜欢回忆之前看过的书上的情节。 #line:9f85b4
-    Germ: 哦，快来看啊，这有个聪明人。 #line:de1cae
+    Germ: 喔，快来看啊，这儿有个文化人。 #line:de1cae
     Gregg: 我会去记每一个我去过的地方。 #line:9a1169
     Gregg: 而且，我还能记住去过地方的先后顺序。 #line:938efb
     Bea: 哇哦。 #line:4107cf
@@ -829,7 +829,7 @@ position: -31726,16086
         Angus: 噢，其实我也不比别人好多少。 :| #line:cdbc4a
     <<else>>
         Gregg: 嘿，船长。 #line:a46361
-        Angus: 嘿，小兄弟。 #line:1d5b91
+        Angus: 嘿，宝贝。 #line:1d5b91
         Gregg: 你是不是一次做了三天的晚饭啊？ #line:e90833
         Angus: 布朗尼在烤箱里。 #line:903f6a
         Angus: 还是说你想吃千层面？咱们上次买了点儿，忘了做了。 #line:3b0e9f
@@ -1021,12 +1021,12 @@ Bea: 好吧，烂计划总比没计划好。 #line:0d86ff
 <<fadeIn 1 wait>>
 //on black screen//
 Mae: 哈喽？ #line:21e92a
-Bea: 快看看是谁醒啦！ #line:ab3780
+Bea: 看看是谁醒了！ #line:ab3780
 //buzzer rings//
 <<tell _AmbientSFX:intercom_buzz_short Play>>
 <<wait 1>>
 Angus: 是他！是平时送披萨的小哥！ :) #line:e64c00
-Gregg: 披 萨 到 啦！！ :) #line:b8d957
+Gregg: 披萨到！！ :) #line:b8d957
 <<set $night to 1>>
 <<irisOut 1 wait>>
 <<scene PawsModePizzaParty>>
@@ -1115,9 +1115,9 @@ position: -30777,16732
 	Mae: 可以这么说。 #line:07a314
 	Gregg: 等咱们把这事全都摆平了…… #line:b3a88a
 	Mae: 我觉得，咱们很有可能摆不平这事。 #line:922bfe
-	Gregg: 好吧，就算咱们没摆平， #line:013aad
-	Gregg: 还都把命丢了，变成了鬼， #line:106075
-	Gregg: 咱们也要多出去玩玩才行。 #line:605e18
+	Gregg: 好吧，就算咱们没摆平这件事， #line:013aad
+	Gregg: 还成了鬼魂， #line:106075
+	Gregg: 咱们也还要一起出去玩。 #line:605e18
 	Mae: 就这么定啦。 #line:99d146
 <<else>>
 	Gregg: 姐们，你确定你没事了吗？ #line:dcf68f
@@ -1192,7 +1192,7 @@ position: -29930,16664
     Mae: 这里的生活就和十九世纪一样。 #line:237524
     Bea: 嘿，梅？ #line:2e4868
     Mae: 怎么了？ #line:0afcdf
-    Bea: 看到你活着我很高兴。 #line:3075e6
+    Bea: 看到你还活着我真的很高兴。 #line:3075e6
     Mae: 我也是。 #line:9362c8
     Bea: …… #line:0b40a2
     Mae: …… #line:2ad170
@@ -1290,42 +1290,42 @@ position: -30142,17251
     Mae: 而且，它们永远都变不成真人。 #line:18a0fe
     Mae: 这让我有些伤感 #line:ec135b
     Mae: 就感觉我失去了现实中的人一样。 #line:1934b9
-    Mae: 所以，在游戏里，我就只剩……我自己了。只有孤零零的我。 #line:685853
-    Mae: 最后这种感觉从屏幕里跑到了我的现实生活中。 #line:6b98bb
+    Mae: 所以，我就只剩……我自己了。只有孤零零的我。 #line:685853
+    Mae: 然后这种感觉从屏幕里投射进了我的现实生活中。 #line:6b98bb
     Mae: 我屋外面有一棵树， #line:41a20a
     Mae: 我每天都会看看它。它就像是一个站在窗户外面的好朋友。 #line:003b76
-    Mae: 可现在，它就是一棵普普通通的树……就只是窗外的一棵树罢了。 #line:941c9f
-    Mae: 它和我见到的其他树一样， #line:e9728a
-    Mae: 吸收养分，慢慢地长大，永远待在同一个地方。 #line:a25282
-    Mae: 这和我印象当中的树没有任何差别。 #line:9e9efa
+    Mae: 可现在，它就是一个*事物*……就只是窗外的一个*事物* #line:941c9f
+    Mae: 它变得如同我对于树这种事物的理解一样， #line:e9728a
+    Mae: 吸收养分，慢慢长大，永远待在同一个地方。 #line:a25282
+    Mae: 我脑子里就只剩这些。 #line:9e9efa
     Mae: 当有人从我身边经过时， #line:7eaf72
     Mae: 在我眼里这个人只是一堆图形而已。 #line:278823
     Mae: 由一堆图形堆砌成的一个会移动的……东西而已。 #line:1b8138
     Mae: 然后，我哭了， #line:420373
     Mae: 因为所有的一切都和我无关了。 #line:d718f2
-    Mae: 一切就只是一大堆普普通通的东西，就是宇宙中的万物， #line:73f1de
-    Mae: 就这么……完了。 #line:5f9857
+    Mae: 一切就只是一大堆普普通通的东西，宇宙中的东西。 #line:73f1de
+    Mae: 就好像……全是死的 #line:5f9857
     Bea: 哇哦……这也……嗯…… #line:35e549
     Mae: 那是垒球比赛的前一天。 #line:f5915d
     Mae: 那是场练习赛，我上场的时候，安迪是投手。 #line:ecc63d
     Mae: 可他也只是一堆图形罢了。 #line:4ef3fb
-    Mae: 说的话也都是别人写上去的。 #line:0b251e
+    Mae: 他的话语只是别人写出的文本 #line:0b251e
     Mae: 感觉他就是个空壳。 #line:9e0969
-    Mae: 所以，我当时又害怕又生气，还……我不知道怎么形容那时的情绪。 #line:791cd0
-    Mae: 在我还没反应过来的时候，我就已经跳到了他身上， #line:e69168
-    Mae: 用球棒把他的脸给打了。 #line:97a9dc
+    Mae: 所以，我当时又害怕又生气，还……我不确定 #line:791cd0
+    Mae: 刚反应过来，我就已经在他身上了， #line:e69168
+    Mae: 用球棒击打着他的脸。 #line:97a9dc
     Mae: 然后，我眼前就迸出了一片红色的图形， #line:220b02
     Mae: 然后，它们就洒在了草地上。 #line:a0dbc1
     Bea: 哦，我的天，梅。 #line:1db181
     Bea: 你以前和别人说过这些吗？ #line:5ad820
     Mae: 出了那件事以后， #line:2d1b75
     Mae: 大家就让我去汉克医生那儿看病…… #line:0c3d62
-    Bea: 我～的～天。他的医术可是最差劲的啦。 #line:f65d14
+    Bea: 我～的～天。他可是最差劲的。 #line:f65d14
     Mae: 后来，他就让我去写日记。 #line:45fdac
     Bea: 日记？ #line:bde14b
     Mae: 没错。他说，写日记可以让我不胡思乱想。 #line:dc949b
     Bea: 这方法有用吗？ #line:9823ed
-    Mae: 可能有点用吧。 #line:5056d3
+    Mae: 可能有？不确定？ #line:5056d3
     Mae: 可这件事发生之后，每当我独自一人来到一个新环境， #line:6d03b6
     Mae: 所有的一切就全都会变成大大小小的图形，就和那次垒球比赛的感觉一模一样。 #line:586596
     Mae: 我在大学的时候，有段时间这种状况没有再发生过。 #line:eedce4
@@ -1334,11 +1334,11 @@ position: -30142,17251
     Mae: 这雕像特别难看，上面还锈迹斑斑的。 #line:cc7c76
     Mae: 它就是用一堆图形拼在一起的。 #line:98f619
     Mae: 它手朝下指着我。 #line:18dc6f
-    Mae: 我……害怕极啦……我连宿舍的门都不敢出啦。 #line:5c373d
-    Mae: 我当时要么是什么都吃不下，要么就是一口气能吃一整张披萨。 #line:bf2b38
-    Mae: 我每天都要喝咳嗽糖浆才能睡着。 #line:223714
-    Mae: 最后，我才鼓足勇气退了学。 #line:8fe6f5
-    Mae: 然后，我就回来了。回到家，我感觉一切都好极了。 #line:d3b2ec
+    Mae: 我……很害怕……我连宿舍的门都不敢出。 #line:5c373d
+    Mae: 我当时要么是什么都吃不下，要么就是一口气吃一整张披萨。 #line:bf2b38
+    Mae: 我用咳嗽糖浆灌自己，为了让自己能一直睡下去 #line:223714
+    Mae: 最后，我鼓足勇气退了学。 #line:8fe6f5
+    Mae: 然后，我就回来了。回到家，一切才都正常了。 #line:d3b2ec
     Mae: 我认识这里的所有人。他们都是活生生的人…… #line:91c30f
     Mae: 而不是一堆只会盯着我看的图形。 #line:8ac271
     Bea: 天哪。 #line:2025fb
@@ -1346,12 +1346,12 @@ position: -30142,17251
     Bea: 我不想去……算了，可…… #line:e0ee3d
     Bea: 听了这话，感觉你好像是遇到了什么特别严重的问题。 #line:7b2b4f
     Bea: 也许我能找别人帮帮你？ #line:ef3b82
-    Mae: 汉克医生已经帮过我啦！ #line:850753
+    Mae: 汉克医生试过了！ #line:850753
     Bea: 我觉得，他应该把重点放在家庭医疗、牙科 #line:a9f82d
     Bea: 和其他六七个项目上。 #line:de3073
     Bea: 然后把心理治疗相关的活儿， #line:f340de
-    Bea: 比如抑郁症、焦虑症，都留给其他人干， #line:cbc108
-    Bea: 还有……你正在经历的这些，这些不知道是什么，但是确实存在的问题。 #line:477a62
+    Bea: 比如抑郁症、焦虑症，都留给其他人处理， #line:cbc108
+    Bea: 还有……你经历的这些，虽然不清楚是什么，但确实是真实存在的。 #line:477a62
     Mae: 我……我感觉，在我回家的时候…… #line:718385
     Mae: 我只是…… #line:727210
     Mae: 觉得在这儿很有安全感， #line:312b0e
@@ -1384,57 +1384,57 @@ position: -30142,17251
     Gregg: 好像叫阿利斯特什么的。 #line:cb4f80
     Mae: 嘿嘿，是啊。 #line:c30b88
     Mae: 你超喜欢这个骷髅。 #line:7a3523
-    Mae: 我每天把所有时间都花在这游戏上啦。 #line:fb9c05
+    Mae: 我每天把所有时间都花在这游戏上。 #line:fb9c05
     Mae: 可到了某天下午，我就不玩了。 #line:262788
     Mae: 就感觉有什么东西突然坏了似的。 #line:bdd045
     Mae: 我指的是……像素之类的东西坏了。 #line:5af8f1
     Gregg: 你的电脑是不是坏了？ #line:268408
     Mae: 不是那种……物理意义上的坏了。 #line:e7b161
     Mae: 屏幕上出现的角色，我感觉我对它们很熟悉…… #line:86b3b0
-    Mae: 可它们都不是真人，它们只不过就是一堆图形罢了。 #line:3b090f
+    Mae: 可它们对我来说不再真实了，它们只不过就是一堆图形罢了。 #line:3b090f
     Mae: 它们的台词也都是别人写上去的。 #line:27b2bd
     Mae: 它们都是虚拟的，它们根本就没有感情。 #line:b41904
     Mae: 而且，它们永远都变不成真人。 #line:c47168
     Mae: 这让我有些伤感， #line:c8e17b
     Mae: 就感觉我失去了现实中的人一样。 #line:ed96aa
-    Mae: 所以，在游戏里，我就只剩……我自己了。只有孤零零的我。 #line:223ca1
-    Mae: 最后这种感觉从屏幕里跑到了我的现实生活中。 #line:6ca198
+    Mae: 所以，我就只剩……我自己了。只有孤零零的我。 #line:223ca1
+    Mae: 最后这种感觉从屏幕里投射进了我的现实生活中。 #line:6ca198
     Mae: 我屋外面有一棵树， #line:db13c6
     Mae: 我每天都会看看它。它就像是一个站在窗户外面的好朋友。 #line:a99e5c
-    Mae: 可现在，它就是一棵普普通通的树……就只是窗外的一棵树罢了。 #line:0f14ca
-    Mae: 它和我见到的其他树一样， #line:b7525b
-    Mae: 吸收养分，慢慢地长大，永远待在同一个地方。 #line:6e858e
-    Mae: 这和我印象当中的树没有任何差别。 #line:7b50a8
+    Mae: 可现在，它就是一个*事物*……就只是窗外的一个*事物*罢了。 #line:0f14ca
+    Mae: 它变得如同我对于树这种事物的理解一样， #line:b7525b
+    Mae: 吸收养分，慢慢长大，永远待在同一个地方。 #line:6e858e
+    Mae: 我脑子里就只剩这个念头。 #line:7b50a8
     Mae: 当有人从我身边经过时， #line:749c31
     Mae: 在我眼里这个人只是一堆图形而已。 #line:3df67c
     Mae: 由一堆图形堆砌成的一个会移动的……东西而已。 #line:c0552e
     Mae: 然后，我哭了， #line:d62b1e
     Mae: 因为所有的一切都和我无关了。 #line:f0f71f
-    Mae: 一切就只是一大堆普普通通的东西，就是宇宙中的万物， #line:5af3f5
-    Mae: 就这么……完了。 #line:5932e3
-    Gregg: 姐们，这事你为什么不告诉我呢？ #line:a72f1b
+    Mae: 一切就只是一大堆普普通通的东西，宇宙中的东西。 #line:5af3f5
+    Mae: 就这么……全死了 #line:5932e3
+    Gregg: 哥们儿，这事你为什么没告诉我呢？ #line:a72f1b
     Mae: 我也不知道是为什么。我该说什么呀？ #line:991b0b
     Mae: 这一切就发生在垒球比赛的前一天。 #line:32e586
     Gregg: 我当时就在看台上， #line:43f203
-    Gregg: 你干的事我都看见啦。我都快担心死啦。 #line:05d60a
+    Gregg: 我就看着你干那事。我都为你吓死了。 #line:05d60a
     Mae: 练习赛上，在安迪踏上本垒的时候，我感觉…… #line:22f6a3
     Mae: 他也变成了一堆图形。 #line:024d53
     Mae: 他说的话也都是别人写上去的。 #line:36e3e2
     Mae: 感觉他就是个空壳。 #line:480a31
-    Mae: 所以，我当时又害怕又生气，还……我不知道怎么形容那时的情绪。 #line:769401
+    Mae: 所以，我当时又害怕又生气，还……我不知道怎么说 #line:769401
     Mae: 在我还没反应过来的时候，我就已经跳到了他身上， #line:b9a2ae
     Mae: 用球棒把他的脸给打了。 #line:e60396
     Mae: 然后，我眼前就迸出了一片红色的图形， #line:b4beee
     Mae: 然后，它们就洒在了草地上。 #line:27d6ba
     Gregg: 他可没流*那么*多血。 #line:56f1ee
     Mae: 我的老天，格雷格。我可打得他满地都是血。 #line:d9b188
-    Mae: 我在想，他到底知不知道我为什么要这么干。 #line:c2b3cb
-    Mae: 我也不清楚他到底知不知道自己都干了什么。 #line:d276ea
-    Gregg: 他可能本来就是个王八蛋。 #line:93e446
+    Mae: 我在想，他肯定觉得莫名其妙的 #line:c2b3cb
+    Mae: 他自己都不知道自己干了啥 #line:d276ea
+    Gregg: 他可能是个王八蛋。 #line:93e446
     Mae: 不能这么说，伙计。你和我都不了解他这个人。 #line:b3fa77
-    Gregg: 不管他怎么样，你最后还是要去做心理治疗了。 #line:0faf10
-    Mae: 是啊。汉克医生就开始让我写日记啦。 #line:01df46
-    Gregg: 汉克医生给我补牙的时候，把我的一颗牙给补坏啦。 #line:b7caee
+    Gregg: 不管怎么说，你最后还是要去做心理治疗了。 #line:0faf10
+    Mae: 是啊，汉克医生就开始让我写日记。 #line:01df46
+    Gregg: 汉克医生给我补牙的时候，把我的一颗牙给补坏了。 #line:b7caee
     Mae: 嗯，他能力不过关。 #line:99d39f
     Mae: 他在专业方向上雨露均沾，所以，出点问题也情有可原。 #line:13fd25
     Gregg: 我还想问你来着，那个……写日记真的有用吗？ #line:5485fa
@@ -1447,18 +1447,18 @@ position: -30142,17251
     Mae: 我在大学的时候，有段时间这种状况没有再发生过。 #line:8cbd6c
     Gregg: 只有废柴才会去上大学呢。 #line:2d80cd
     Mae: 伙计，安静听我说，好吗？ #line:93d9f4
-    Gregg: 抱歉，梅。 #line:8e97b1
+    Gregg: 抱歉，伙计。 #line:8e97b1
     Mae: 我没有办法去和别人交朋友，因为我不敢出门，也害怕在人群里一个人孤零零的。 #line:81337e
     Mae: 然后，我看见外面有一座像是学校创始人的雕像。 #line:807f64
     Mae: 这雕像特别难看，上面还锈迹斑斑的。 #line:c30b70
     Mae: 它就是用一堆图形拼在一起的。 #line:caa006
     Mae: 它手朝下指着我。 #line:1fef4d
-    Mae: 我……害怕极啦……我连宿舍的门都不敢出啦。 #line:35bdb6
-    Mae: 我当时要么是什么都吃不下，要么就是一口气能吃一整张披萨。 #line:930995
-    Mae: 我每天都要喝咳嗽糖浆才能睡着。 #line:330a5b
+    Mae: 我……很害怕……我连宿舍的门都不敢出。 #line:35bdb6
+    Mae: 我当时要么是什么都吃不下，要么就是一口气吃一整张披萨。 #line:930995
+    Mae: 我用咳嗽糖浆灌自己，为了让自己一直睡下去 #line:330a5b
     Gregg: 兄弟…… #line:55721b
     Mae: 最后，我才鼓足勇气退了学。 #line:d14ec4
-    Mae: 然后，我就回来了。回到家，我感觉一切都好极了。 #line:b9c69f
+    Mae: 然后，我就回来了。回到家，我感觉一切都正常了。 #line:b9c69f
     Mae: 我认识这里的所有人。他们都是活生生的人…… #line:5379ee
     Mae: 而不是一堆只会盯着我看的图形。 #line:1daa42
     Gregg: 我的天哪，老兄。 #line:6444f3
@@ -1471,7 +1471,7 @@ position: -30142,17251
     Mae: 我都不知道为什么要这样。 #line:e1501c
     Mae: 长至夜的时候，我也没回过家。 #line:9911e6
     Mae: 我就一个人待在宿舍里， #line:2ff4de
-    Mae: 躺在床上，无所事事。 #line:b15010
+    Mae: 躺在床上 #line:b15010
     Gregg: 这……这也太可怕了吧，老妹儿。 #line:241229
     Mae: 我……我感觉，在我回家的时候…… #line:7b4d7f
     Mae: 我只是…… #line:4eb2d6
@@ -1623,7 +1623,7 @@ Gregg: 那……你知道发生什么事了吗？ #line:e5c3ee
 <<lookDown Mae>>
     ->总是有个幽灵在我脑子里乱晃。 #line:e3fcfa
         Mae: 就在有人被绑架的那晚， #line:e82197
-        Mae: 或者说，我想象有人被绑架的那晚，我就有这种感觉啦。 #line:508a85
+        Mae: 或者说，我想象有人被绑架的那晚，我就有这种感觉。 #line:508a85
         Mae: 那晚我做了一个梦，我只记得…… #line:11bb60
         Mae: 梦里有一个声音， #line:a68ddd
         Mae: 一个恐怖的声音， #line:a4a1cd
@@ -1664,9 +1664,9 @@ Mae: 我知道自己到底看见了什么。 #line:f1a9e1
 Mae: 如果你们不信我的话，那也没辙。 #line:fdb019
 Mae: 我自己一个人去。 #line:22b662
 Bea: 你真想从篮球场那儿穿过去吗？ #line:ef695c
-Gregg: 姐们，天色已经开始暗下来啦。 #line:f2e67a
-Mae: 你们管我干什么？ #line:265b37
-Mae: 再说了，你们也都不相信我。 #line:437c65
+Gregg: 姐们，很晚啦。 #line:f2e67a
+Mae: 怎么你们突然这么在乎了？ #line:265b37
+Mae: 反正你们没人相信我。 #line:437c65
 <<wait 2>>
 Angus: 我跟你去。 #line:73052d
 <<dilate Mae 1 1>>
@@ -1680,13 +1680,13 @@ Angus: 所以，咱们一起去找你说的那个幽灵吧。 #line:446cb8
 Bea: 我也想这么说来着， #line:8cd0e4
 Bea: 不过你表达的比我好多了。 #line:44ab78
 <<lookAt Gregg Mae>>
-Mae: 嗷……伙计们…… :) #line:d2d59b
+Mae: 噢……伙计们…… :) #line:d2d59b
 Bea: 现在可不是狩猎幽灵的季节。 #line:746a82
 Angus: 没错，现在应该是狩猎鹿的季节。 #line:b80ffd
 Bea: 所以，咱们都是盗猎者。 #line:50b80b
 Mae: 谢……谢谢你们…… #line:937135
 Mae: 能相信我。 #line:634407
-Bea: 最主要的是，我不想让你一个人 #line:fb2aaa
+Bea: 其实主要是，我不想让你一个人 #line:fb2aaa
 Bea: 大晚上的 #line:2de63f
 Bea: 去那个地方瞎晃。 #line:92a9de
 Mae: 差不多吧。 =_= #line:1c4421
@@ -1783,8 +1783,8 @@ position: -31709,17067
     <<if $gregg_angus_window is 0>>
         Bea: 我没看见外面有人。 #line:dcbab7
         Gregg: 等着就行。他会回来的。 #line:7aa99e
-        ->这么说，咱们还不知道这个人到底是谁，对吗？ #line:963842
-            Gregg: 额，这个人身材高大，穿着件脏外套什么的， #line:af50a4
+        ->这么说，咱们还不知道这人是谁？ #line:963842
+            Gregg: 嗯，这人身材高大，穿着件脏外套。 #line:af50a4
             Gregg: 也有可能不止一个人。这样他们就能轮流出现了。 #line:f7be83
             Gregg: 我也不能确定。 #line:a7f111
         ->那警察那边怎么样了？ #line:d39341
@@ -1808,7 +1808,7 @@ position: -31709,17067
     	->你报警了吗？ #line:bed066
     		Bea: 报了。 #line:2ca7da
             Bea: 他们派人来了。 #line:6fe2c1
-            Bea: 现在那人走了。 #line:be7f39
+            Bea: 然后人又走了。 #line:be7f39
             Bea: 他也说，站在街上不算犯法。 #line:3b5d3f
         <<set $gregg_angus_window += 1>>
     <<else>>
@@ -1823,7 +1823,7 @@ colorID: 5
 position: -31710,17333
 ---
 <<if $dom_friend_bea>>
-    Bea: 我太累啦。 #line:7c4813
+    Bea: 我好累。 #line:7c4813
     Bea: 我真想爬到他们床上睡一觉啊。 #line:c6c579
     Bea: 这儿应该是客厅吧。 #line:a609a6
 <<else>>
@@ -1909,7 +1909,7 @@ tags:
 colorID: 5
 position: -30149,16992
 ---
-Germ: 大伙儿，明天见啦！ #line:e88b2a
+Germ: 大伙儿，明天见！ #line:e88b2a
 Mae: 你确定直接出去不会有什么事吗？ #line:51b4dd
 <<if $did_germ_friendship_quest_1 and $did_germ_friendship_quest_2>>
     //walk mae and germ over by door//
@@ -1943,7 +1943,7 @@ Mae: 你确定直接出去不会有什么事吗？ #line:51b4dd
         Germ: 她有时候会神神叨叨的。 #line:ed9ab4
         Mae: 哇哦。 #line:3e5e95
         Germ: 我们有个蹦床。 #line:28a3f4
-        Mae: 嗷，你们真是太走运啦。 #line:febd77
+        Mae: 嗷，你们真走运。 #line:febd77
     <<endif>>
     Germ: 嘿，梅？ #line:9909e0
     Mae: 怎么了，杰姆？ #line:b66f08
@@ -1955,10 +1955,10 @@ Mae: 你确定直接出去不会有什么事吗？ #line:51b4dd
     Mae: 你也是，杰里米。 #line:ba44cb
     <<unlockAchievement He's_From_Somewhere>>
 <<else>>
-    Germ: 什么事都和我无缘， #line:57ab5a
-	Germ: 也没有怪人会跟踪我。 #line:4c52b1
-	Mae: 哦，说的是啊。 #line:ab7e58
-	Germ: 回见啦！ #line:3c11cb
+    Germ: 这件事和我可没关系 #line:57ab5a
+	Germ: 没有怪人来跟踪我。 #line:4c52b1
+	Mae: 哦，也是。 #line:ab7e58
+	Germ: 回见！ #line:3c11cb
 	Mae: 拜拜，杰姆。 #line:08d0d1
     //Mae: What a weird guy.
     //Gregg: Aw, Germ’s alright.

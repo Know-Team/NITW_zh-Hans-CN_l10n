@@ -66,7 +66,7 @@ position: -17909,-1171
 ---
 Mae: 嘿……杰里米？ #line:37c669
 <<set $met_germ to 1>>
-Mae: 你是杰里米·沃顿吗？ #line:5543e0
+Mae: 杰里米·沃顿？ #line:5543e0
 Germ: 别人都不这么叫我。 #line:d6adf9
 Mae: 应该叫你杰姆，对吧？ #line:b08616
 Germ: 杰姆·沃费尔。 #line:cba336
@@ -155,7 +155,7 @@ colorID: 3
 position: -16760,-1293
 ---
 Mae: 这么说…… #line:b6f19f
-Germ: 我 已 经 在 这 儿 待 了 好 几 天 了。 #line:7e476e
+Germ: 我已经在这儿待了好几天了。 #line:7e476e
 Mae: 嗯，我刚才想说…… #line:e63fbe
 Germ: 我现在得走了。 #line:465f4c
 Mae: 拜拜！ #line:3bf122
@@ -183,9 +183,9 @@ Mae: 嘿，杰姆。 #line:5084ca
 Germ: 嘿～ #line:bfcae6
 Germ: 想一块儿逛逛吗？ #line:b1fc23
 Mae: 我不知道。今晚还准备跟格雷格或者碧娅出去呢。 #line:744565
-Germ: 天，不用这样吧，我又没叫你和我私奔去结婚。 #line:19388d
+Germ: 老天，我又没叫你和我私奔去结婚。 #line:19388d
 ->不用了。 #line:82eecf
-    Germ: 好吧，那拜拜啦！ #line:5859a0
+    Germ: 好吧，拜拜！ #line:5859a0
     Mae: 拜！ #line:7c140a
     <<set $germ_done to 1>>
 ->没问题。 #line:ed5183
@@ -230,7 +230,7 @@ Crusty1: 我的意思是，你们都在这儿见到过幽灵，是吗？ #line:5
 Germ: 是的。 #line:a7953f
 Mae: 什么东西？ #line:430f32
 Germ: 你知道小乔吗？ #line:cec606
-Mae: 伙计，这我当然知道啦。他可是咱们这儿的传奇人物啊。 #line:e538f6
+Mae: 伙计，当然知道。他可是咱们这儿的传奇人物啊。 #line:e538f6
 Crusty1: 我在光明湾 #line:85e357
 Crusty1: 有个叫绦虫的朋友。 #line:a82845
 Crusty1: 他跟我说，他从来都没在这个镇下过火车， #line:bf06fb
@@ -285,7 +285,7 @@ Germ: 你身上的味道有点奇怪啊。 #line:a23997
 	Germ: 那个是你姨妈？ #line:7c5c29
 	Mae: ……是啊…… #line:4e4264
 	Germ: 哦，真是怪了。这么说，你是不是也算是半个警察啊？ #line:7465a1
-	Germ: 你 永 远 都 抓 不 到 我，连 根 毛 也 别 想 抓 住，有 一 半 血 统 的 小 警 察，啊 啊 啊！！！ #line:1b65cb
+	Germ: 你永远都抓不到我，连根毛也别想抓住，有一半血统的小警察，啊啊啊！！！ #line:1b65cb
 	Germ: 哈哈哈哈哈哈哈哈哈哈！ #line:9a5b8c
 	Mae: …… #line:699000
 	Germ: 我不知道他们在那边儿干什么呢。 #line:4afaeb
@@ -310,9 +310,9 @@ Mae: 没错。 #line:ff4894
 	Germ: 只要你想离开这里，你就一定能找到办法离开！ #line:d2f86e
 	Mae: 嗯，可能是这样吧。 #line:129c95
 <<endif>>
-Germ: 好了，乐队排练的时候再见啦！ #line:43a1c7
+Germ: 好了，乐队排练的时候再见！ #line:43a1c7
 Mae: 实话实说：你真的喜欢看我们排练吗？ #line:a1d7ba
-Germ: 当然啦！我是说，虽然你贝斯弹得不太好，但我还是喜欢看。 #line:e87dc9
+Germ: 当然！我是说，虽然你贝斯弹得不太好，但我还是喜欢看。 #line:e87dc9
 Germ: 但这不是我喜欢的风格。 #line:f1afc5
 Mae: 那你喜欢什么风格呢？ #line:79befc
 Germ: 我喜欢黑金属乐，额，快节奏重金属摇滚乐和嘻哈乐。 #line:42c7f4
@@ -367,7 +367,7 @@ Mae: 我已经有安排了…… #line:6adb1d
 Germ: 啊，好吧。虽然我不觉得咱俩一起逛逛会让你被人绑架或者怎么着的。 #line:915f60
 ->不想。 #line:b12331
     Germ: 好吧，好吧。 #line:d5cc51
-    Germ: 那就再见啦！ #line:d59988
+    Germ: 拜拜！ #line:d59988
     <<set $germ_done to 1>>
 ->好啊！ #line:487af1
     Germ: 上车！ #line:236e92
@@ -423,7 +423,7 @@ colorID: 3
 position: -16360,-893
 ---
 <<wait 5>>
-Germ: 咱们到啦！ #line:a93425
+Germ: 到了！ #line:a93425
 Mae: 咱们这不是在停车场里吗。 #line:a9c5a8
 Germ: 没错！ #line:3bcdd1
 Mae: 咱们才走了差不多15秒钟。 o> #line:c554fb
@@ -485,9 +485,9 @@ position: -16363,-684
 ---
 <<if $germ_friendship_quest_1>>
     Mae: 嗯，我一直…… #line:77ad61
-    Germ: 我现在得走啦！ #line:c61e4a
+    Germ: 我得走了！ #line:c61e4a
     <<set $germ_done to 1>>
-    Mae: 那就拜拜啦！ #line:245f3d
+    Mae: 拜拜！ #line:245f3d
     <<set $germ_friendship_quest_1 to 0>>
     <<unlockDoodle GermFQ1>>
     <<set $did_germ_friendship_quest_1 to 1>>
@@ -592,7 +592,7 @@ Crusty3: 问吧，哥们儿。 #line:3136a5
         Mae: 你人真是太好啦。 #line:da97fb
     ->你这一路上遇到过一个叫凯西的人吗？ #line:d55163
         <<lookAt Germ Crusty3>>
-        Crusty3: 嗯，让我想想。 #line:7a1899
+        Crusty3: 嗯哼，让我想想。 #line:7a1899
         Crusty3: 你知道那个叫凯西的人长什么样子吗？ #line:3f0688
         <<lookAt Germ Mae>>
         Mae: 我要找的凯西是个男孩。|他的样子和我差不多，|但比我高一点。|他的毛色是橘黄色的。 #line:3e81ff
@@ -611,7 +611,7 @@ Crusty3: 问吧，哥们儿。 #line:3136a5
 <<lookAt Germ Crusty3>>
 Crusty3: 不用谢，不用谢。 #line:430ab0
 Crusty3: 很多烂人操控着这个世界， #line:b1c0b9
-Crusty3: 结果让世界变得冷冰冰的。 #line:656f61
+Crusty3: 这个凉薄的世界。 #line:656f61
 Crusty3: 好人也不知道会因为什么原因而死去。 #line:d0a00c
 Crusty3: 但你知道吗，我们应该肩负起我为人人的责任。 #line:17867f
 <<lookAt Germ Mae>>

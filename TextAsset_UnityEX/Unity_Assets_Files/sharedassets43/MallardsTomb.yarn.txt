@@ -31,7 +31,7 @@ position: 30611,-14620
         <<set $mallards_bed_done to 1>>
         Mae: 除了一楼远信通的员工以外， #line:052470
         Mae: 这栋楼里就没几个人了。 #line:4958c0
-        Mae: 所以，晚上独自一个人在这里睡觉肯定很诡异。 #line:eec0d6
+        Mae: 晚上独自一个人在这里睡觉肯定很诡异。 #line:eec0d6
         Mae: 可能住这儿的人也会在这楼里上班吧。 #line:3a1230
         Mae: 他们可能会穿着睡衣走下楼， #line:5ba4eb
         Mae: 然后说，嘿，各位，我刚睡醒就在工位上啦。 #line:4ad49e

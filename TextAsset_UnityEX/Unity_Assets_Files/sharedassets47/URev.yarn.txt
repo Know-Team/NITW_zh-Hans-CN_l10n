@@ -93,7 +93,7 @@ Mae: 嘿…… #line:f7c752
 URevClerk: 嗯哼？ #line:fae9b5
 Mae: 我想问个问题。 #line:0994e8
 URevClerk: T-恤衫打八折。 #line:3a1fbc
-Mae: 是的，我看见价格了。我还有别的问题…… #line:f0c310
+Mae: 是的，我看见价格了。还有…… #line:f0c310
 <<waitForMove Bea>>
 <<tell BeaStealPaw Show>>
 URevClerk: 请讲。 #line:d98240
@@ -139,14 +139,14 @@ tags: demo2
 colorID: 0
 position: 1693,1501
 ---
-URevClerk: 哦，老天，这 我 当 然 知 道 啦。 #line:8c42d7
+URevClerk: 哦，老天，我当然知道。 #line:8c42d7
 URevClerk: 为什么我们这家店就不能像其他店一样，去卖一些受小青年欢迎的玩意呢？ #line:26f1cd
 Mae: 对啊，十几岁的小孩一见到这些东西就像疯了似的。 #line:d89951
 URevClerk: 但商场员工买东西是能享受优惠和折扣的，这还是相当不错的。 #line:757437
 Mae: 我以前有个工作， #line:4d6e74
 Mae: 能享受零折优惠。 #line:9ce7a9
 URevClerk: 嗯……哼？ #line:b052de
-Mae: [wave]因为只要我偷偷拿走，所有东西就都是免费的啦！[/wave] #line:e72f42
+Mae: [wave]因为只要我偷偷拿走，所有东西就是免费的！[/wave] #line:e72f42
 URevClerk: 好吧，现在我才明白你之前的话是什么意思。 #line:005a0e
 Mae: 我敢说你肯定经常偷东西。 #line:ea449c
 URevClerk: 额，如果我真要偷了东西，上面肯定会给我安上各种罪名，所以我…… #line:45b106
@@ -160,7 +160,7 @@ position: 2612,2266
 <<tell BeaStealPaw Hide>>
 Bea: 好了，我逛完了，咱们走吧。 #line:5cbf77
 <<walk Bea OutsideStore>>
-Mae: 啊 好 啦 好 啦 和 你 聊 天 很 高 兴 我 该 走 啦！{width=200} #line:3e69c5
+Mae: 啊好啦好啦和你聊天很高兴我该走啦！{width=200} #line:3e69c5
 <<walk Mae OutsideStore>>
 URevClerk: 额……那欢迎再次光临。 #line:c88cd2
 <<set $urev to 2>>
@@ -359,12 +359,12 @@ colorID: 0
 position: 4068,1778
 ---
 <<tell BeaStealPaw Neutral>>
-URevClerk: 额，好吧。我要叫保安啦。 #line:231fb7
+URevClerk: 额，好吧。我要叫保安了。 #line:231fb7
 Mae: 啊 啊 啊 啊 啊！！！！{width=300} #line:0ea888
 <<tell BeaStealPaw Distracted>>
 URevClerk: 好吧，虽然我们这儿没保安，但我可以报警。 #line:26c229
 Mae: 别 别 别，千 万 别 叫 警 察！我 会 安 静 下 来 的！ #line:d68731
-URevClerk: 你到底是怎么啦？！？ #line:e6665d
+URevClerk: 你到底有什么问题？！？ #line:e6665d
 [[Success]]
 ===
 title: SecondAttempt_2_2
@@ -396,7 +396,7 @@ Mae: 好好好，我这就去还。 #line:46084a
 <<close>>
 <<walk Mae MaeEndOfCounter wait>>
 Mae: 嗨，你好。 #line:8c4855
-Bea: 您好。 #line:eb30e9
+Bea: 你好。 #line:eb30e9
 URevClerk: 你们又回来了。 #line:593664
 Mae: 是啊，因为我们偷了点东西。 #line:0e21e0
 Mae: 喏，这就是我们偷的东西。 #line:74bda6

@@ -5,11 +5,11 @@ position: 769,192
 ---
 <<set $wb_target_1_hits += 1>>
 <<if $wb_target_1_hits is 1>>
-    Council1: 呜 呜 呜！|你砸中可怕的幽灵啦！ #line:46e274
+    Council1: 呜呜呜！你砸中可怕的幽灵啦！ #line:46e274
 <<elseif $wb_target_1_hits is 2>>
     Council1: 我是个可怕的幽灵，我被人砸中啦！ #line:487bb5
 <<elseif $wb_target_1_hits is 3>>
-    Council1: 为此，我会来找你的！ #line:daede7
+    Council1: 我会来找你算账的！ #line:daede7
 <<elseif $wb_target_1_hits is 4>>
     Council1: 我都湿透啦，可真冷啊！ #line:093b55
 <<elseif $wb_target_1_hits is 5>>
@@ -24,14 +24,14 @@ colorID: 0
 position: 508,101
 ---
 Council1: 等等…… #line:b5cb29
-Council1: 嘿，这东西要怎么穿？ #line:4cc111
+Council1: 科琳，这东西要怎么穿？ #line:4cc111
 <<wait 2>>
 Council1: 真该死。 #line:49146f
 <<wait 2>>
-Council1: 好了，我们都准备好了，准备好了。 #line:7b8022
+Council1: 好了，准备好了，准备好了。 #line:7b8022
 Council1: 欢迎参加丰收节鬼怪水球大战！ #line:fc7939
-Council1: 你知道该怎么做！ #line:6aafbc
-Council1: 如果你不知道，一会儿你也就明白该怎么做啦！ #line:40ad08
+Council1: 你知道该怎么玩！ #line:6aafbc
+Council1: 如果你不知道，马上就能明白该怎么玩！ #line:40ad08
 Council1: 好，开始！ #line:c4b147
 <<set $did_water_balloon_toss to 1>>
 ===
@@ -48,9 +48,9 @@ position: 1030,208
 <<elseif $wb_target_2_hits is 3>>
     Council2: 哎哟！我要诅咒你！ #line:111e00
 <<elseif $wb_target_2_hits is 4>>
-    Council2: 啊 啊 啊！ #line:7ae9e5
+    Council2: 啊啊啊！ #line:7ae9e5
 <<elseif $wb_target_2_hits is 5>>
-    Council2: 啊 啊 啊 啊 啊！ #line:7f8124
+    Council2: 啊啊啊啊啊！ #line:7f8124
 <<elseif $wb_target_2_hits is 6>>
     Council2: 哦不，我化啦！我得赶快撤啦！！！！ #line:ca49cb
 <<endif>>
@@ -62,11 +62,11 @@ position: 1278,215
 ---
 <<set $wb_target_3_hits += 1>>
 <<if $wb_target_3_hits is 1>>
-    Council3: 哎呀，我是南瓜怪。 #line:b81eba
+    Council3: 嘣，我是南瓜怪。 #line:b81eba
 <<elseif $wb_target_3_hits is 2>>
-    Council3: 你打中我南瓜怪啦。 #line:7fe12e
+    Council3: 你打我，你个南瓜怪。 #line:7fe12e
 <<elseif $wb_target_3_hits is 3>>
-    Council3: 你砸中我南瓜怪啦，我都湿透啦。 #line:c8c056
+    Council3: 你砸中我了，你个南瓜怪，湿透了。 #line:c8c056
 <<elseif $wb_target_3_hits is 4>>
     Council3: 哎哟，打得我南瓜怪好痛哟。 #line:59099e
 <<elseif $wb_target_3_hits is 5>>
@@ -109,7 +109,7 @@ Council1: ……凯斯琳，别…… #line:d3c910
 Council4: 可真像一汪清泉啊！ #line:67adcb
 Council1: …… #line:075255
 Council3: …… #line:45f497
-Council2: 好了，游戏结束啦。 #line:b7b331
+Council2: 好了，结束。 #line:b7b331
 <<wait 1>>
 <<irisOut 1 wait>>
 <<scene TowneCentreEast_Harfest>>

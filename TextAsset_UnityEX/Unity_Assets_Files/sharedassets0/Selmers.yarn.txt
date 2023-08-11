@@ -37,9 +37,9 @@ Selmers: 就是那种在监狱里自制的武器。 #line:9ae73c
 Selmers: 像刀的那种？ #line:cccac8
 Mae: 自制刀？ #line:88ff41
 Selmers: 我真希望丹尼斯上班时候被犯人用自制刀捅。 #line:47401e
-Selmers: 吓吓就好。狠狠的吓他一跳。 #line:01a93b
+Selmers: 吓吓就好。狠狠吓他一跳。 #line:01a93b
 Mae: 一定吓死他了。 #line:b0efae
-Selmers: 吓得他肾透支就行。 #line:11eb18
+Selmers: 吓得他肾衰就行。 #line:11eb18
 Mae: 好了，我得走了 #line:47d7a2
 Selmers: 真高兴见到你！有空再聊！ #line:e85d78
 ===
@@ -90,7 +90,7 @@ Selmers: 感觉这里有什么变化吗？ #line:f8b94d
         Selmers:我希望我能远走高飞。 #line:47dc45
         Mae: 你想去哪? #line:84a756
         Selmers: 我想搬到海边去， #line:243642
-        Selmers: 找一个薪水还不错的稳定工作。 #line:f73b3a
+        Selmers: 找一份薪水还不错的稳定工作。 #line:f73b3a
         Selmers: 平时去海边捡捡贝壳，再做成首饰卖出去。 #line:5b03c8
         Selmers: 还有，每天晚上都能唱唱卡拉OK。 #line:da9433
         Mae: 我能过去找你吗？ #line:8aec04
@@ -106,18 +106,18 @@ position: 967,-973
 Selmers: 嘿，梅。 #line:c46115
 Mae: 嘿，瑟茉斯。 o/ #line:85deca
 Mae: _o_ #line:662874
-Selmers: 前几天你是不是总带着本日记啊？ #line:fd025f
+Selmers: 前几天我好像看到你带着本日记？ #line:fd025f
 Mae: 没错，是医生让我拿的。 #line:b6b677
-Selmers: 看来咱俩一样，汉克医生也让我随身带着本日记来着。 #line:481ec4
-Mae: 噢？是吗？你也有易怒症吗？ #line:490531
+Selmers: 看来咱俩一样，汉克医生也让我随身带本日记。 #line:481ec4
+Mae: 噢？是吗？你也有易怒的问题吗？ #line:490531
 Selmers: 其实是因为我在猎鹰小吃偷过可待因咳嗽糖浆。 #line:5ea56e
 Mae: 哦，天哪。 #line:e3d192
 Mae: 看来，汉克医生是把日记当成包治百病的灵丹妙药了。 #line:0ad905
 Mae: 这方法有用吗？ _o_ #line:b8ea69
-Selmers: 没用。可我后来变得特别会写诗了。 #line:431c2c
+Selmers: 没用，可我后来变得特别会写诗了。 #line:431c2c
 Selmers: 想听一首吗？ #line:f3951a
 [[不了，我还要找格雷格呢。|Selmers_Demo_Naw]] #line:ab63c6
-[[想啊！|Selmers_Demo_Sure]] #line:42b42c
+[[当然！|Selmers_Demo_Sure]] #line:42b42c
 
 ===
 title: Selmers_Demo_Naw
@@ -146,7 +146,7 @@ Selmers: 与君相伴。 #line:35c06d
 Mae: 写得好浪漫啊。 #line:8e10e6
 Selmers: 这写的是我家的马。 #line:63c081
 Mae: :| #line:c8e1b1
-Mae: 哦。 #line:34e3a6
+Mae: 噢。 #line:34e3a6
 Selmers: 我和它只是普通朋友罢了。 #line:4f7c2e
 <<addToJournal SelmersPoetry>>
 ===
@@ -156,7 +156,7 @@ colorID: 0
 position: 605,-1121
 ---
 Selmers: 查佐科夫老师又跑房顶上去了。 #line:6c37ec
-Selmers: 我敢说，他肯定会掉下来把脖子给摔断的。 #line:95ecac
+Selmers: 他肯定会掉下来把脖子给摔断的。 #line:95ecac
 ===
 title: Selmers_A2D1_00
 tags: demo2
@@ -166,13 +166,13 @@ position: -2577,-1027
 Selmers: 嘿，梅。 #line:d5bda2
 Mae: 嘿，瑟茉斯。 o/ #line:343e3a
 Mae: _o_ #line:b339f5
-Selmers: 前几天你是不是总带着本日记啊？ #line:a6b381
+Selmers: 前几天我好像看到你带着本日记？ #line:a6b381
 Mae: 没错，是医生让我拿的。 #line:4f9263
-Selmers: 看来咱俩一样，汉克医生也让我随身带着本杂志来着。 #line:863c8e
-Mae: 噢？是吗？你也有易怒症吗？ #line:9f000a
+Selmers: 看来咱俩一样，汉克医生也让我随身带本日记。 #line:863c8e
+Mae: 噢？是吗？你也有易怒的问题吗？ #line:9f000a
 Selmers: 其实是因为我在猎豹鲜生的药店里偷过止疼药。 #line:e698a5
-Mae: 哦，我的老天。 #line:661cb8
-Mae: 看来，汉克医生是把杂志当成包治百病的灵丹妙药了。 #line:3ed789
+Mae: 哦，老天。 #line:661cb8
+Mae: 看来，汉克医生是把日记当成包治百病的灵丹妙药了。 #line:3ed789
 Mae: 这方法有用吗？ _o_ #line:436149
 Selmers: 没用。不过康复治疗的话，倒确实有点用。 #line:6a6a1a
 Selmers: 还有，后来我变得特别会写诗了。 #line:08117b
@@ -190,13 +190,13 @@ Selmers: 想听一首吗？ #line:5a8bc0
     Mae: 写得好浪漫啊。 #line:75fd92
     Selmers: 这写的是我家的马。 #line:015755
     Mae: :| #line:a7c41e
-    Mae: 哈。 #line:b9ed64
-    Selmers: 我和它只是普通朋友罢了。 #line:e5b1eb
+    Mae: 噢。 #line:b9ed64
+    Selmers: 我和它只是普通朋友。 #line:e5b1eb
     <<set $selmers_poet += 1>>
     <<unlockDoodle SelmersPoet>>
-->不用了。 #line:ca75cc
+->不了。 #line:ca75cc
     Selmers: 好吧，下次再说吧。 #line:fa082b
-    Mae: 下次一定听。 :) #line:55d9f0
+    Mae: 下次一定。 :) #line:55d9f0
     Mae: :| #line:18c01e
 <<set $knows_selmers_poet to 1>>
 <<unlockDoodle Selmers1>>
@@ -209,7 +209,7 @@ position: -2572,-1317
 ---
 <<lookAt Selmers Chazokov>>
 Selmers: 查佐科夫老师又跑房顶上去了。 #line:d55e17
-Selmers: 我敢保证，他肯定会掉下来把脖子给摔断的。 #line:14f10c
+Selmers: 他肯定会掉下来把脖子给摔断的。 #line:14f10c
 <<lookNearest Selmers>>
 ===
 title: Selmers_A2D2_00
@@ -219,36 +219,36 @@ position: -2276,-1087
 ---
 Selmers: 梅·博罗夫斯基。 #line:e0ec5e
 Mae: 瑟茉斯。 #line:00e88b
-Selmers: 现在，咱们都知道，展现自己最好的一面有多重要。 #line:f987dc
+Selmers: 现在，我们都知道展现自己最好的一面有多重要。 #line:f987dc
 Mae: 什么意思？ #line:2a22bd
 Selmers: 咱们的外表是咱们给别人的第一印象，也可能是最后印象！ #line:bb572f
-Mae: 瑟茉斯，你是不是入了什么邪教组织啊？ #line:e8222f
+Mae: 瑟茉斯，你是不是入了什么邪教组织？ #line:e8222f
 Selmers: 算你走运，我刚好是个有执照的经销商。 #line:4bf54b
 Mae: 哦，好吧。 #line:23266d
 Selmers: 我负责推销希尔维姆家的产品。 #line:7b8912
 Mae: 瑟茉斯，我身上可一分钱也没有。 #line:77cc2f
 Selmers: 哦，那好吧。 #line:34c789
-    ->你是不是一见到人就开始给他们推销啊？ #line:73a98f
+    ->你是不是准备给所有人都这样推销？ #line:73a98f
         Selmers: 这么干挺吓人的，是不是？ #line:f53f7e
-        Selmers: 我参加过一个视频研讨会，会上一老姐就是这么说的。 #line:dab6c5
+        Selmers: 我参加过一个视频研讨会，会上一老姐就是这么教的。 #line:dab6c5
         Mae: 她卖出货了没？ #line:2050e4
-        Selmers: 卖出去了。她有一个邻居特别捧她。 #line:703f9d
+        Selmers: 卖出去了，有个邻居特别捧她。 #line:703f9d
         Mae: 抱歉。 #line:70ce23
         Selmers: 所有人都是面带微笑，一个劲地笑。 #line:73d65c
-        Selmers: 所有人都是一边面带微笑，一边看着手里的护手霜。 #line:90ad9d
+        Selmers: 就只是又笑又嘻嘻哈哈的，一边看着手里的护手霜。 #line:90ad9d
         Mae: 要是你也需要这么干的话，我们也能给你陪笑。 #line:3ca126
-        Selmers: 还是算了吧。 #line:827689
+        Selmers: 算了吧。 #line:827689
     ->你卖出货没有？ #line:00362a
         Selmers: 我卖给了我妈一部分， #line:5b31b4
         Selmers: 还卖给艾比·克兰格勒一部分。 #line:42e6e5
-        Mae: 那是克兰格勒夫人的女儿吗？ #line:65672a
-        Selmers: 那是她孙女。 #line:f4e589
+        Mae: 是克兰格勒夫人的女儿吗？ #line:65672a
+        Selmers: 是她孙女。 #line:f4e589
         Selmers: 我在学校旁边的洗衣店见过她。 #line:3efcc9
         Mae: 有一次，格雷格就被关进了烘干机里。 #line:017e12
         Selmers: 他还活着吗？ #line:202926
-        Mae: 他想让我把烘干机的开关打开，可我怂了，没敢开。 #line:191dce
+        Mae: 他想让我把烘干机的开关打开，可我怂了。 #line:191dce
         Selmers: 要不然他肯定就一命呜呼了。 #line:af62b4
-        Mae: 要是我现在把实话告诉他，他肯定还会瞬间发飙。 #line:e5508b
+        Mae: 要是我现在把实话告诉他，他肯定还会发飙。 #line:e5508b
 Selmers: 想听诗吗？ #line:98ad60
 <<if $knows_selmers_poet is 0>>
 	Mae: 你是诗人吗？ #line:683786
@@ -256,11 +256,11 @@ Selmers: 想听诗吗？ #line:98ad60
 	Mae: 你还做过康复治疗呀？ #line:8ab6f0
 	Selmers: 没错。 #line:810e7c
     <<set $knows_selmers_poet to 1>>
-	Mae: 行吧，我会听你念诗的。 #line:32686d
+	Mae: 来吧，让我听听你的诗。 #line:32686d
     [[Selmers_A2D2_Poem]]
 <<endif>>
-->不了，下次再说吧。 #line:5cd9ee
-	Selmers: 好吧。 #line:250652
+->不了，下次吧。 #line:5cd9ee
+	Selmers: 好的。 #line:250652
 ->想！ #line:eb4791
 	[[Selmers_A2D2_Poem]]
 ===
@@ -273,7 +273,7 @@ Selmers: 有时有时， #line:51281a
 Selmers: 静静思索。 #line:13eb7d
 Selmers: 随即开始， #line:74d9be
 Selmers: 慢慢沉没。 #line:70af09
-Mae: 哦，不。 #line:d432b6
+Mae: 哦不。 #line:d432b6
 Selmers: 还没完呢。 #line:84712b
 Mae: 不好意思。 #line:2ef6c3
 Selmers: 恍然察觉， #line:1c8474
@@ -295,7 +295,7 @@ Selmers: 这让我很难受。 #line:5e75d5
 Mae: 我喜欢秋天！ #line:a5b6d7
 Selmers: 我喜欢秋天，可我又讨厌天黑。 #line:b6a0f6
 Mae: 我喜欢秋天！ #line:c4bb92
-Selmers: 你当然喜欢啦。 #line:c671a5
+Selmers: 当然应该喜欢了。 #line:c671a5
 ===
 title: Selmers_A2D2_02
 tags: 
@@ -306,7 +306,7 @@ Selmers: 我见到了一只浣熊。 #line:a92565
 Mae: 在哪儿见到的？ #line:4a7739
 Selmers: 就在镇中心那儿。 #line:02fd46
 Selmers: 它个头可不小。 #line:626b43
-Mae: 太酷啦。 #line:c8697b
+Mae: 酷哟。 #line:c8697b
 ===
 title: Selmers_A2D3_00
 tags: 
@@ -315,16 +315,16 @@ position: -2082,-504
 ---
 Mae: 咋样啊，瑟～茉～斯。 #line:4f76fd
 Selmers: 有什么不错的故事可以分享一下吗？ #line:dafc2e
-Mae: 张嘴就来。 #line:97fea4
-    ->比如上初中的时候来例假，但是血没沾在椅子上？ #line:a4bfd1
-    ->比如本来想吐到垃圾桶里，但结果吐自己身上了吗？ #line:4fffd5
-    ->比如在高中舞会上和别人接吻的时候误伤了其他人？ #line:9f4267
+Mae: 张嘴就来的那种？ #line:97fea4
+    ->不会是上初中的时候来例假，但是血沾在椅子上？ #line:a4bfd1
+    ->不会是本来想吐到垃圾桶里，但结果吐自己身上了吗？ #line:4fffd5
+    ->不会是在高中舞会上和别人接吻的时候误伤了其他人？ #line:9f4267
 Selmers: 嗯…… #line:3dd72f
 Selmers: 我刚才想说，我小时候吃过不少水果味的零食。 #line:13f434
 Selmers: 上小学的时候，我们就经常吃这个。 #line:888eca
-Mae: 哦，说得是啊！这东西挺好吃的。 #line:6ba74a
+Mae: 对哦！这东西挺好吃的。 #line:6ba74a
 Selmers: 你还遇到过其他什么事吗？ #line:eb790b
-Mae: 没有了。 #line:6e8b0b
+Mae: 没了。 #line:6e8b0b
 Selmers: 想听首新诗吗？ #line:e657f5
 <<if $knows_selmers_poet is 0>>
 	Mae: 你是诗人吗？ #line:d237dc
@@ -355,7 +355,7 @@ Selmers: 头戴耳机， #line:6dacdb
 Selmers: 随后走进， #line:966849
 Selmers: 果汁之地。 #line:42222c
 Mae: 我的妈呀，我现在正想着这些东西呢。 #line:da8f19
-Mae: 你的诗好有既视感啊。 #line:4e2ad4
+Mae: 你的诗好有既视感。 #line:4e2ad4
 Mae: 感觉我能从中尝到原子恐龙味的鸡块和蓝色洗碗机味的软糖。 #line:b18039
 Selmers: 谢谢。 #line:ac7042
 <<set $selmers_poet += 1>>
@@ -367,7 +367,7 @@ colorID: 3
 position: -1822,-398
 ---
 Selmers: 我觉得查佐科夫老师好像又上房了。 #line:21380b
-Mae: 哦，是吗？ #line:f93688
+Mae: 是吗？ #line:f93688
 Selmers: 总有一天他会掉下来的。 #line:ec7287
 ===
 title: Selmers_A2D3_02
@@ -434,7 +434,7 @@ colorID: 3
 position: -2658,-307
 ---
 Mae: 哇哦！看看这些装饰品啊！ #line:2c7d66
-Selmers: 妹子，万圣节这天你可别惹什么麻烦啊。 #line:0629ac
+Selmers: 老妹儿，万圣节这天你可别惹什么麻烦。 #line:0629ac
 Mae: 我去！ #line:298de8
 Selmers: 想听新诗吗？ #line:eaa795
 <<if $knows_selmers_poet is 0>>
@@ -543,9 +543,9 @@ position: -310,-2730
 ---
 Mae: 你有没有感觉 #line:b0ffd0
 Mae: 最近咱们这儿有点怪怪的？ #line:97fdec
-Selmers: 比如哪儿比较怪…… #line:8401d6
-    ->出现了像幽灵一样的人。 #line:85cf13
-        Selmers: 像幽灵一样的……人？ #line:4a05c5
+Selmers: 比如哪里…… #line:8401d6
+    ->幽灵人。 #line:85cf13
+        Selmers: 一个幽灵……人？ #line:4a05c5
         Mae: ……没错。 #line:824bd2
         Selmers: 不会是我说的那个吧……？ #line:8f1b26
         Mae: 我感觉我快疯了， #line:09a5ef
@@ -558,14 +558,14 @@ Selmers: 比如哪儿比较怪…… #line:8401d6
         Mae: 那你是幽灵吗？ #line:406b01
         Selmers: 嘿嘿，我还没到那地步呢。 #line:a902cc
     ->有孩子失踪了。 #line:1874fd
-        Selmers: 我觉得没这事吧。 #line:75117d
+        Selmers: 我觉得没这事吧？ #line:75117d
         Selmers: 至少最近这段时间没人失踪。 #line:30a3d0
         Selmers: 那个叫凯西的孩子是去年春天失踪的。 #line:fdde2e
-        Selmers: 可他的岁数也不小了，也不算孩子了。 #line:794b99
+        Selmers: 可他的岁数也不小了，不能算孩子。 #line:794b99
         Selmers: 也可能是别的镇的人失踪了吧？ #line:04f4e6
         Selmers: 这事我会记着的。 #line:6098da
         Mae: 你知道的，我虽然问过你这事了，但我还是不想让你知道。 #line:2ff4d9
-        Selmers: 我看过报纸啦！ #line:d780f8
+        Selmers: 我也看报纸！ #line:d780f8
 ===
 title: Selmers_A3D4_02
 tags: 
@@ -573,7 +573,7 @@ colorID: 4
 position: -203,-3099
 ---
 Selmers: 天气预报说，马上就要下雪了。 #line:6184e2
-Mae: 什么时候下啊？ #line:c69b9a
+Mae: 什么时候？ #line:c69b9a
 Selmers: 很快。天马上就要冷了。 #line:5c5311
 ===
 title: Selmers_A3D4_00
@@ -581,11 +581,11 @@ tags:
 colorID: 4
 position: -746,-2669
 ---
-Mae: 嘿……瑟茉斯。 #line:889dc0
+Mae: 嘿～～～瑟茉斯。 #line:889dc0
 Selmers: 老天，梅，你病了吗？ #line:e32149
-Mae: 我～没～事。 #line:598f64
+Mae: 没～～～事～～～ #line:598f64
 Mae: 就是感觉有点累，头还疼。 #line:03ef4c
-Selmers: 那你为什么还出来乱跑啊？ #line:32dff7
+Selmers: 那你怎么还出来乱跑？ #line:32dff7
 Mae: 病肯定会好的。 #line:85772f
 Selmers: 那必须的。 #line:336949
 Selmers: 别紧张，好邻居。 #line:9b8931
@@ -607,7 +607,7 @@ Selmers: 黑夜驶过辙两行， #line:40e6c2
 Selmers: 一路向前永不停。 #line:823a3a
 Mae: 说得没错，星星就是这样。 #line:b096eb
 Selmers: 我还给长至夜写了首诗。 #line:455e85
-Mae: 哦？ #line:eed075
+Mae: 哦豁？ #line:eed075
 Selmers: 长至夜， #line:960497
 Selmers: 长至夜。 #line:3d20ea
 Selmers: 深夜已至， #line:9d69d2
@@ -626,11 +626,11 @@ Mae: 他那个望远镜有没有从屋顶上掉下来过？ #line:ac0ae9
 Selmers: 哦，这事可没有过。真要这样，他非哭疯了不可。 #line:376511
 Selmers: 他在这玩意上花的心思可比花在他孩子身上的心思多多了。 #line:540cfd
 Mae: 他还有孩子？ #line:ae4e1b
-Selmers: 有。那孩子叫科林。 #line:b6f01b
+Selmers: 有。叫科林。 #line:b6f01b
 Selmers: 他每隔一段时间就会回来一趟。 #line:836a2a
 Selmers: 他简直帅爆啦！ #line:25f8c0
 Mae: 你和他搭过讪吗？ #line:067d65
-Selmers: 没。人家可是在大学的研究所上班的， #line:2684a6
+Selmers: 没。人家可是在大学的研究所上班， #line:2684a6
 Selmers: 对这种事……肯定一点兴趣也没有。 #line:fe2786
 Mae: 瑟茉斯…… #line:365426
 Selmers: 嗯。 #line:cf3f17
@@ -642,8 +642,8 @@ position: -1398,-2541
 ---
 Selmers: 嗨，梅。 #line:a02a07
 Selmers: 你还好吧？ #line:b29b22
-Mae: 我觉得还可以。干嘛问这个？ #line:9e9c8b
-Selmers: 你看起来 #line:6e6f8f
+Mae: 还可以。干嘛问这个？ #line:9e9c8b
+Selmers: 你看起来…… #line:6e6f8f
 Selmers: 像是刚从 #line:95b280
 Selmers: 调错设置的烘机里爬出来似的。 #line:2808df
 Mae: 哈哈，确实。 #line:5d2292
@@ -710,7 +710,7 @@ position: -1416,-2296
     Mae: 嘿，瑟茉斯！昨天晚上你可真是太太太牛啦！ #line:e157d4
     Selmers: 噢，谢谢！！！ #line:a5347d
     <<if $selmers_poet >= 3>>
-    	Selmers: 这也多亏了你的创意和点子。 #line:3c3553
+    	Selmers: 多亏了你的创意和点子。 #line:3c3553
     	Mae: 这方面我最拿手啦。 #line:f7680c
     <<endif>>
 <<endif>>
@@ -742,7 +742,7 @@ position: -1037,-2037
 ---
 Mae: 瑟茉斯，你怎么样啊？ #line:5faa47
 Selmers: 万圣节过得怎么样呀？ #line:bb008f
-Mae: 感觉怪怪的。我去丰收节逛了。 #line:e0cd2e
+Mae: 感觉怪怪的。我去丰收节了。 #line:e0cd2e
 Mae: 然后，我就遇见了一个特邪门，但感觉又特真的事。 #line:c09ed5
 Mae: 后来，我又做了个特吓人的噩梦。 #line:9f0f3f
 Selmers: 听起来够酷的。我就在家里一边吃糖一边看电视来着。 #line:5b8bc4
@@ -772,7 +772,7 @@ Selmers: 秋日的贼。 #line:459237
     <<wait 1>>
     Selmers: 可你却对自己的老婆撒谎。 #line:3e0025
     Mae: 嗯，说的是啊。这么干也太……额…… #line:498adc
-    Mae: 太自私啦。 #line:87bd12
+    Mae: 太自私了。 #line:87bd12
 ->什么才算是“秋日的贼"呢？ #line:9b95d1
     Selmers: 比如，在十一月的时候， #line:810ea4
     Selmers: 劫个加油站，然后再把它炸了。 #line:d98114
@@ -787,12 +787,12 @@ position: -1042,-1756
 ---
 <<lookAt Selmers Chazokov>>
 Selmers: 嘿，查佐科夫老师！ #line:4c7126
-Chazokov: 什么事啊，小瑟？ #line:d79c14
+Chazokov: 什么，小瑟？ #line:d79c14
 Selmers: 总有一天，你会掉下来把脖子给摔断的！ #line:dd9e21
 Chazokov: 我保证会砸你身上的！ #line:fb4ec5
 Selmers: 哈哈哈！好吧，我个头大，目标也大！ #line:a4780e
-Chazokov: 哈哈哈！我的块头可比你大多啦！咱俩肯定是躲不开啦！ #line:abb330
-Mae: 你 们 俩 可 真 那 什 么。 #line:e28b8d
+Chazokov: 哈哈哈！我的块头可比你大多了！咱俩肯定是躲不开！ #line:abb330
+Mae: 你们俩哟～ #line:e28b8d
 <<lookNearest Selmers>>
 ===
 title: Selmers_A3D1_02
@@ -899,7 +899,7 @@ tags:
 colorID: 3
 position: -2654,1
 ---
-Selmers: 丰收节太无聊啦。 #line:027c55
+Selmers: 丰收节真无聊。 #line:027c55
 Mae: 是吗？我可喜欢丰收节啦。 #line:317a30
 Selmers: 你现在还是八岁的小孩吗？ #line:b3a407
 Mae: 不是啊。 #line:b37415
@@ -923,8 +923,8 @@ Selmers: 那是因为药里有咖啡因。 #line:01cddc
 Selmers: 如果你吃了某种药之后老想上厕所， #line:5d9199
 Selmers: 就说明药里有咖啡因。 #line:ee0744
 Mae: 我还真不知道这事。 #line:18e507
-Selmers: 我原来可是在药店干过的。 #line:53122e
-Mae: 哦，说的是啊。 #line:96a196
+Selmers: 我原来可是在药店干过。 #line:53122e
+Mae: 说的是啊。 #line:96a196
 Mae: 那行吧，要是我再头疼， #line:689370
 Mae: 再总想上厕所， #line:15774d
 Mae: 我就来找你。 #line:552a6c

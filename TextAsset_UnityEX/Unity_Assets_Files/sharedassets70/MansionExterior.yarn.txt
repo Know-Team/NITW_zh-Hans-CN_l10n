@@ -23,11 +23,11 @@ Mae: 没事。 #line:a786fb
 <<endif>>
 Mae: 你的自行车没事吧？ #line:93dc84
 Gregg: 没关系的，我能把它修好，我可心灵手巧啦。 #line:92924d
-Gregg: 真希望你刚才被车给碾了，但你居然没事，真讨厌。 #line:103096
-Mae: 我希望你刚才一头撞在火车上，可惜没有，真糟糕。 #line:00bbfa
-Gregg: 我本来希望你的尸体会被食腐动物给吞了，但你还活得好好的，可惜了。 #line:3d1d1c
-Mae: 我还希望食肉动物把你生吞活剥了呢，不过也没有，倒霉。 #line:fbbdf2
-Gregg: 呵呵。 #line:fdc930
+Gregg: 好想你刚才被车给碾了。 #line:103096
+Mae: 好想你刚才一头撞在火车上。 #line:00bbfa
+Gregg: 好想你的尸体会被食腐动物给吞了。 #line:3d1d1c
+Mae: 好想食肉动物把你生吞活剥了呢。 #line:fbbdf2
+Gregg: 哈哈哈。 #line:fdc930
 <<close>>
 <<lookRight Gregg>>
 <<wait 1>>
@@ -59,12 +59,12 @@ Gregg: ……完全就像个鬼屋一样。 #line:ab7637
 <<lookAt Gregg Mae>>
 Mae: 的确。 #line:dcfa14
     ->这就和那部老电影里的房子一样。 #line:ae255f
-        Mae: 《鬼宅魅影》。 #line:14b788
+        Mae: 《鬼宅魅影》 #line:14b788
         Gregg: 呃，那部电影啊。 #line:8e9268
         Mae: 是啊，我知道那部电影， #line:dd6e65
         Mae: 那硕大老旧的别墅…… #line:b8ca65
     ->就和书封面上的房子一样。 #line:227e21
-        Mae: 《凉亭街惊魂》。 #line:1535f0
+        Mae: 《凉亭街惊魂》 #line:1535f0
         Gregg: 咱们镇不就有条叫凉亭街的街吗！ #line:5dab68
         Mae: 是啊。我小时候可被这本书吓得不轻。 #line:1201d7
         Mae: 巨大而阴森的房屋…… #line:7238cd
@@ -125,7 +125,7 @@ Mae: 干坏事。 #line:a9066f
     <<playAmbientSFX _AmbientSFX:mae_head_hurt 3>>
     <<wait 3>>
 	Mae: 啊 啊 啊！ #line:1707ea
-	Gregg: 姐 们！你 怎 么 啦？！ #line:363032
+	Gregg: 姐们！你怎么啦？！ #line:363032
 	Mae: 啊啊啊…… #line:2aca68
 	Mae: 呃啊啊啊啊啊…… #line:b016a4
 	Gregg: 姐 们！说 句 话 啊！ #line:6121e7

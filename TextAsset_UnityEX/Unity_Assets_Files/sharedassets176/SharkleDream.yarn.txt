@@ -26,7 +26,7 @@ Mae: 你在这儿干什么呢？ #line:ad0c54
 		Sharkle: 还有那个周末你打算换个新的操作系统。 #line:1a3713
 		Mae: 说得对，咱们共同经历过很多事。 #line:11b10a
 Mae: 鲨鱼君……我是死了吗？ #line:931e3e
-    ->对，你已经死了。 #line:9bcc49
+    ->是的。 #line:9bcc49
         Mae: 你是要把我带到其他世界去吗？ #line:946ed9
         <<playOneShot event:/sharkle_dream/sharkle_speak Sharkle>>
         Sharkle: [wave]是的。正如那些古老传说所述，[/wave] #line:1aef55
@@ -34,19 +34,19 @@ Mae: 鲨鱼君……我是死了吗？ #line:931e3e
         Sharkle: [wave]你的灵魂和你所犯下的所有罪孽已经在天平上进行了衡量。[/wave] #line:a4567a
         Mae: 嗯，那结果会是什么样的呢？ #line:687e56
             ->[wave]今晚，你将化为一颗星，并和你的先祖们团聚。[/wave] #line:0b0c6d
-                Mae: 这样啊……那很好啊。 #line:ab4ef0
+                Mae: 这样啊……那很好。 #line:ab4ef0
                 <<playOneShot event:/sharkle_dream/sharkle_speak Sharkle>>
                 Sharkle: 是的，是的，这样的确很好。 #line:c817ae
                 Mae: 我会见到所有的祖辈吗？ #line:b366f8
                 <<playOneShot event:/sharkle_dream/sharkle_speak Sharkle>>
                 Sharkle: 是的，你会和你所有的祖辈见面。 #line:cee85d
-                Mae: 由于物种的进化， #line:c54b37
+                Mae: 由于物种的衍变， #line:c54b37
                 Mae: 我甚至会见到还是鱼和恐龙模样的祖先们吗？ #line:83f4d4
                 <<playOneShot event:/sharkle_dream/sharkle_speak Sharkle>>
-                Sharkle: 是的，完全有这种可能。 #line:cb6be2
+                Sharkle: 是的，有可能。 #line:cb6be2
                 Mae: 那还是挺不错的。 #line:99e8e5
             ->唉……结果本应会更好的。 #line:9584a7
-                Mae: 啊，真该死。 #line:1c02e2
+                Mae: 啊，该死。 #line:1c02e2
                 <<playOneShot event:/sharkle_dream/sharkle_speak Sharkle>>
                 Sharkle: 我很抱歉，但你只能去地狱。 #line:5e799b
                 Mae: 真该死。 #line:b88052
@@ -58,13 +58,13 @@ Mae: 鲨鱼君……我是死了吗？ #line:931e3e
                 <<playOneShot event:/sharkle_dream/sharkle_speak Sharkle>>
                 Sharkle: 因为还有很多人都和你一样已经死了。 #line:76cb89
                 Mae: 我对自己做过的所有事都无怨无悔。 #line:856bf5
-    ->不是这样的。 #line:d776e7
+    ->不是。 #line:d776e7
         Mae: 哦，那就好。 #line:7ecd0f
 	    Mae: 我还有很多事要做。 #line:9f99d6
         <<playOneShot event:/sharkle_dream/sharkle_speak Sharkle>>
 	    Sharkle: [wave]你必须回到你之前的世界去，你注定要成就一番大事。[/wave] #line:3bd3e7
 	    Mae: 真的吗? #line:8f9694
-		    ->没错。 #line:92116f
+		    -> 是的。 #line:92116f
 			    Mae: 哇哦。 #line:dbf0d0
                 <<playOneShot event:/sharkle_dream/sharkle_speak Sharkle>>
                 Sharkle: 就是这样。 #line:435a86
@@ -72,7 +72,7 @@ Mae: 鲨鱼君……我是死了吗？ #line:931e3e
                 <<playOneShot event:/sharkle_dream/sharkle_speak Sharkle>>
                 Sharkle: 不可以。 #line:85c6c8
                 Mae: 那好吧。 #line:b745e4
-		    ->不是这样的，不是的。 #line:8ae8ab
+		    -> 不算是，假的。 #line:8ae8ab
                 Mae: 哦。 #line:bf2aae
                 <<playOneShot event:/sharkle_dream/sharkle_speak Sharkle>>
                 Sharkle: 真的，我不想对你说谎。 #line:d42496
@@ -87,7 +87,7 @@ Mae: 你怎么了？ #line:1f790c
 Sharkle: 哈哈哈。 #line:147737
 Mae: 喂，伙计。 #line:e4f4a5
 <<playOneShot event:/sharkle_dream/sharkle_speak Sharkle>>
-Sharkle: 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈…… #line:d73646
+Sharkle: 哈哈哈哈哈哈哈哈哈哈哈哈…… #line:d73646
 <<setOptionsCharacter Mae>>
 <<musicFadeOut .3>>
 <<fadeOut .3 wait>>

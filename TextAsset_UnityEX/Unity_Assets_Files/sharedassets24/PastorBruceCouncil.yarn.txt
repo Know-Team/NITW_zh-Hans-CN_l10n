@@ -8,22 +8,22 @@ position: -1326,62
 <<elseif $act is 4 and $day is 3>>
     Mae: 嘿！ #line:b7d8fe
     Pastor: 嘿！你是肯迪·博罗夫斯基的女儿吧？ #line:897066
-    Mae: 没错。请问你是谁啊？ #line:bd3da8
-    Pastor: 我是凯特牧师。 #line:282f6c
-    Mae: 哦，是啊。你是我老妈的上司。 #line:098040
-    Pastor: 哈哈，教堂理事会才是你妈妈的上司呢。 #line:b06798
-    Pastor: 当然了，理事会也是我的上级。 #line:fc58aa
-    Mae: 我真不知道还有这么一回事啊。 #line:97c40c
-    Pastor: 确实有这么回事。 #line:97d4e0
+    Mae: 没错。请问你是？ #line:bd3da8
+    Pastor: 凯特牧师。 #line:282f6c
+    Mae: 哦，是啊。我老妈的老板。 #line:098040
+    Pastor: 哈哈，教堂理事会才是你母亲的老板。 #line:b06798
+    Pastor: 当然也是我的老板。 #line:fc58aa
+    Mae: 原来还有这么一回事。 #line:97c40c
+    Pastor: 确实如此。 #line:97d4e0
     Mae: 你是新来的牧师吗？ #line:710643
-    Pastor: 我来了差不多有一年零四个月了。 #line:12e4f7
-    Mae: 哦。但至少我是头一次见到你。 #line:eb3e76
-    Pastor: 那你顺路的话可以经常来教堂看看啊？ #line:40792b
-    Mae: 我要是真能经常过来的话，我老妈可就乐坏了。 #line:6e5178
+    Pastor: 来了有16个月吧？好像是吧。 #line:12e4f7
+    Mae: 噢，至少我是头一次见到你。 #line:eb3e76
+    Pastor: 顺路的话可以经常来教堂逛逛？ #line:40792b
+    Mae: 我要是能经常来的话，我老妈可就乐坏了。 #line:6e5178
     Pastor: 我懂。 #line:9af399
-    Pastor: 我就是在给你增加额外的罪恶感。 #line:324522
+    Pastor: 我只是在给你增加额外的负罪感。 #line:324522
     Mae: 哈哈哈，谢了。 #line:fb6f59
-    Pastor: 嗯，嗯。 #line:fa421e
+    Pastor: 没事没事。 #line:fa421e
     Pastor: 在有能力的情况下， #line:934e7b
     Pastor: 我们会尽自己所能， #line:01aef2
     Pastor: 把事做到最好的。 #line:75c0fc
@@ -34,12 +34,12 @@ position: -1326,62
 	Mae: 嘿！ #line:67ac36
     Pastor: 嘿！ #line:a818c8
     Pastor: 你是肯迪·博罗夫斯基的女儿吧？ #line:125b84
-    Mae: 对。请问你是谁啊？ #line:665427
-    Pastor: 我是凯特。不过，你可以叫我K牧师。 #line:56e731
-    Mae: “凯特”是两个音节，“K牧师"……可有三个音节呢。 #line:58e3e4
+    Mae: 对，你是……？ #line:665427
+    Pastor: 凯特，不过你可以叫我K牧师。 #line:56e731
+    Mae: “凯特"是两个音节，“K牧师"……可有三个音节呢。 #line:58e3e4
     Mae: 你是新来的牧师吗？ #line:97d806
-    Pastor: 我来了差不多有一年零四个月了。 #line:3b9fb6
-    Mae: 哦。但至少我是头一次见到你。 #line:32a3e7
+    Pastor: 来了有16个月吧？好像是吧。 #line:3b9fb6
+    Mae: 噢，至少我是头一次见到你。 #line:32a3e7
     Pastor: 这位是布鲁斯。 #line:753560
     <<lookAt Mae Bruce>>
     Mae: 嘿。 #line:bd2c8a
@@ -47,25 +47,25 @@ position: -1326,62
     Pastor: 布鲁斯是刚搬到咱们社区来的！ #line:03c1d4
     Mae: 你就住在树林里吗？ #line:d4fa0b
     Bruce: …… #line:ba3c41
-    Bruce: 没错。 #line:9ce600
+    Bruce: 是的。 #line:9ce600
     <<lookNearest Mae>>
     Pastor: 但他不会在这儿住很久的！|现在，我们正在翻新和加固呢|，冬天之前应该就能完工了。 #line:856555
     Pastor: 我们也该承担一些事的，但神才是真正完成这些事的人。 #line:d9d33e
     Pastor: 他的力量可要比市政会大得多。 #line:729872
-    Bruce: ……我还在考虑，毕竟还有很多问题没…… #line:b88620
-    Pastor: 听我说一句，没人说“爱你的邻居是件简单的事"这句话， #line:050181
-    Pastor: 而且，你就是我们的邻居。 #line:a20bcb
-    Bruce: 谢谢你。 #line:f941bb
-    Pastor: 布鲁斯，我们每个人都有需要帮助的时候。 #line:eda89d
-    Pastor: 在困难的时候需要帮助一点也不丢脸。 #line:442cc6
-    Mae: 嗯，很高兴认识你们两位！ #line:c126e0
-    Pastor: 有空就到教堂来看看我！ #line:f23888
-    Mae: 一定！我也会顺便来看看我老妈的。 #line:c01fa3
+    Bruce: 感觉实在太麻烦你们为我…… #line:b88620
+    Pastor: 听我说，上帝都没说过“爱你的邻舍"这话容易做到。 #line:050181
+    Pastor: 但你是我们真正的邻居。 #line:a20bcb
+    Bruce: 我很感激。 #line:f941bb
+    Pastor: 布鲁斯，我们每个人都有需要一点点帮助的时候。 #line:eda89d
+    Pastor: 困难时需要他人帮助一点也不丢脸。 #line:442cc6
+    Mae: 好的，很高兴认识你们两位！ #line:c126e0
+    Pastor: 有空就来教堂看看我！ #line:f23888
+    Mae: 下次一定！我也会顺便来看看我老妈的。 #line:c01fa3
     <<lookAt Mae Bruce>>
-    Mae: 再见了，布鲁斯！ #line:7a1918
+    Mae: 再见，布鲁斯！ #line:7a1918
     Bruce: 好的，很高兴认识你，玛丽。 #line:56b8f4
-    Mae: 我叫梅。梅·博罗夫斯基。 #line:b7ae53
-    Bruce: 我叫布鲁斯，单名就叫布鲁斯。 #line:2cc35c
+    Mae: 是梅。梅·博罗夫斯基。 #line:b7ae53
+    Bruce: 布鲁斯，就布鲁斯。 #line:2cc35c
     <<lookNearest Mae>>
     Pastor: 我是牧师，凯特牧师。 #line:388713
     <<unlockDoodle BruceSketch>>
@@ -87,28 +87,28 @@ position: -1326,62
     Pastor: 你好。 #line:6530f9
     Mae: 你好。 #line:fbd0e3
     Pastor: 能不能帮我个忙， #line:55b86c
-    Pastor: 把你这最后一句“你好"先留住， #line:bb8c8a
+    Pastor: 把这句“你好"留心里， #line:bb8c8a
     Pastor: 然后说给布鲁斯听。 #line:3cb756
 	<<if $met_bruce>>
-		Mae: 哦，说的是啊！我已经见过他了。 #line:99576c
-        Pastor: 哦，那很好啊！ #line:e0b758
+		Mae: 对了！我已经见过他了。 #line:99576c
+        Pastor: 很好！ #line:e0b758
         Pastor: 布鲁斯是刚搬到咱们社区来的。 #line:955f22
-        Mae: 看样子，他好像已经在树林里待了一段时间了。 #line:760a03
-        Pastor: 他只待了几个星期而已。 #line:206ee0
-        Pastor: 但住在树林里 #line:20b608
-        Pastor: 确实和住在社区里很不一样。 #line:4928d2
-        Mae: 说的是啊。 #line:70bf7a
-        Mae: 他晚上的时候冷吗？ #line:c5a06b
-        Pastor: 哈哈，正在努力干呢。 #line:aed70d
+        Mae: 看样子他已经在树林里待了有一段时间。 #line:760a03
+        Pastor: 就几周而已。 #line:206ee0
+        Pastor: 但是住在树林里， #line:20b608
+        Pastor: 确实和住在社区里不一样。 #line:4928d2
+        Mae: 是啊。 #line:70bf7a
+        Mae: 那他晚上会不会感到冷？ #line:c5a06b
+        Pastor: 哈哈，正为此努力呢。 #line:aed70d
 	<<else>>
-		Mae: “布鲁斯"吗？ #line:24b2e6
+		Mae: 布鲁斯？ #line:24b2e6
         Pastor: 布鲁斯就住在街对面。 #line:222761
-        Mae: 他是住在树林里吗？ #line:95c051
-        Pastor: 至少现在是这样的。 #line:66ab5c
-        Mae: 你想让我到树林里去和一个陌生人说话吗？ #line:d7b862
+        Mae: 是树林里吗？ #line:95c051
+        Pastor: 至少现在是这样。 #line:66ab5c
+        Mae: 你想让我到树林里去和一个陌生人谈谈？ #line:d7b862
         Pastor: 布鲁斯可不是陌生人，他是我的朋友。 #line:c1869e
         Pastor: 而且，他也是咱们社区的一份子。 #line:dbeaf2
-        Mae: 好吧。 #line:bd870c
+        Mae: 好嘚嘞。 #line:bd870c
         Pastor: 谢谢你。 #line:90692e
         Pastor: 认识你很高兴！ #line:f72ad9
         Mae: 我也是！ #line:6891f1
@@ -117,47 +117,47 @@ position: -1326,62
 <<elseif $act is 3>>
 	<<if $day is 3>>
 		Pastor: 你好，梅。 #line:84cd43
-        Mae: 哇哦，啊。 #line:d8e4a3
+        Mae: 啊？嗯…… #line:d8e4a3
         Pastor: 哈哈。 #line:f203dc
         Pastor: 我在你妈妈的桌子上见过你的照片。 #line:c38a10
         Pastor: 我叫凯特，你也可以叫我K牧师。 #line:273a2e
         Mae: 你是新来的牧师吗？ #line:1b14be
         Pastor: 我来这儿差不多有一年零四个月了。 #line:54057b
-        Mae: 哦。但至少我是头一次见到你。 #line:a8dd2b
+        Mae: 噢，至少我是头一次见到你。 #line:a8dd2b
         Pastor: 你能过来，你妈妈肯定会很高兴的。 #line:3cdad1
         Mae: 哦，天啊，千万别告诉她。 #line:fd70d8
         Mae: 这样能给她留点……念想。 #line:97f031
-        Pastor: 额，可咱们是不可能拥有念想这东西的，命运是上帝定的。 #line:88a03c
+        Pastor: 好吧，可我们不应该拥有这个，毕竟上帝自有安排。 #line:88a03c
         Mae: …… #line:846f89
-        Mae: 你好像有点难过啊。 #line:58e11b
-        Pastor: 哦，是吗？ #line:df684a
-		Mae: 是啊。你是因为什么事才不开心的啊？ #line:e4b9f5
+        Mae: 你好像有点难过。 #line:58e11b
+        Pastor: 哦？是吗？ #line:df684a
+		Mae: 是啊。是因为什么不开心？ #line:e4b9f5
 		Pastor: 哦，没什么。 #line:e0aef0
         Mae: 是吗，我不信。 #line:973f73
         Pastor: 我从来都不擅长说谎， #line:0c0d53
         Pastor: 但我还是活得好好的。 #line:ef5e40
-        Pastor: 嘿，你见到布鲁斯了吗？他是咱们的新邻居。 #line:2a7069
+        Pastor: 嘿，你见到我们的邻居布鲁斯了吗？ #line:2a7069
 		<<if $met_bruce>>
-			Mae: 见到啦！ #line:8a8c5c
+			Mae: 是的！ #line:8a8c5c
             Mae: 就是那个住在街对面的人吗？ #line:328090
             Pastor: 就是他。 #line:862f3d
-            Mae: 他这人挺酷的。 #line:9fb3e3
+            Mae: 他挺酷的。 #line:9fb3e3
             Mae: 他晚上的时候会冷吗？ #line:1cd8be
-            Pastor: 我觉得他会的。 #line:f0d857
+            Pastor: 我想他会。 #line:f0d857
             Pastor: 但我们正在尽可能地帮他呢。 #line:8cc842
             Mae: 那好，再见了！ #line:9a9db7
             Pastor: 再见，梅。 #line:894606
 		<<else>>
-			Mae: 我好像没见过他。 #line:3e49d6
+			Mae: 我好像没见过。 #line:3e49d6
 			Pastor: 你应该和他打个招呼。 #line:c54f3e
             Pastor: 他就住在街对面。 #line:c461b0
-            Mae: 他是住在树林里吗？ #line:d42565
-            Pastor: 是啊，他的确……住在树林里。 #line:148a29
+            Mae: 在树林里吗？ #line:d42565
+            Pastor: 是啊，他就……住在树林里。 #line:148a29
             Mae: 这事让人感觉挺难受的。 #line:07d2b5
             Pastor: 不管怎么说，还是过去和他打个招呼吧。 #line:a35b46
             Pastor: 他很需要其他人的问候。 #line:b27ff3
-            Mae: 没问题。 #line:f934b1
-            Pastor: 谢谢你，梅。 #line:05a149
+            Mae: 好的。 #line:f934b1
+            Pastor: 谢谢，梅。 #line:05a149
 		<<endif>>
 		<<set $met_pastor to 1>>
 	<<elseif $day is 4>>
@@ -165,7 +165,7 @@ position: -1326,62
 		Pastor: 我是凯特牧师。 #line:c7e24e
         Mae: 你是新来的吗？ #line:88c599
         Pastor: 我来了大概有一年零四个月了。 #line:b16634
-        Mae: 哦。但至少我是第一次见到你。 #line:8cc2b5
+        Mae: 噢，至少我是头一次见到你。 #line:8cc2b5
         Pastor: 你是肯迪·博罗夫斯基的女儿吧？ #line:998724
         Mae: 对。 #line:1150c7
 		Mae: 你还好吗？ #line:0dca40
@@ -192,7 +192,7 @@ position: 768,254
 ---
 Mae: 你好，我叫梅·博罗夫斯基！ #line:0a6170
 <<if $met_pastor>>
-	Mae: 额……我是凯特牧师的朋友。 #line:2a3c67
+	Mae: 嗯呣……我是凯特牧师的朋友？ #line:2a3c67
 <<endif>>
 Bruce: 嘿，我叫布鲁斯。 #line:c73d39
 Bruce: …… #line:0e3f74
@@ -394,7 +394,7 @@ Pastor: 我在想布鲁斯去哪儿了？ #line:af0368
     Pastor: 真的吗？ #line:21cf1d
     Mae: 是的。可他昨天让我先别告诉你…… #line:3c24ed
     Pastor: 梅，快告诉我他都说什么了？ #line:c51e90
-    Mae: 布鲁斯回家啦！ #line:710057
+    Mae: 布鲁斯回家了！ #line:710057
     Pastor: 他……你说什么？ #line:eff9c6
     Mae: 他要回家和孩子一起生活去了。 #line:943693
     Mae: 我猜，他的孩子肯定都在等他回去吧。 #line:fb210e
@@ -457,7 +457,7 @@ Pastor: 哦，我正在收拾呢。 #line:2d9385
     Pastor: 你真知道他去哪儿了？ #line:16d692
     Mae: 是的。可他昨天让我先别告诉你…… #line:634500
     Pastor: 梅，他想跟我说什么？ #line:63c0f8
-    Mae: 布鲁斯回家啦！ #line:7a352b
+    Mae: 布鲁斯回家了！ #line:7a352b
     Pastor: 他……你说什么？ #line:c92a16
     Mae: 他要回家和孩子一起生活去了。 #line:90cd25
     Mae: 我猜，他的孩子肯定都在等他回去吧。 #line:937530
@@ -529,7 +529,7 @@ Pastor: 你不经常来教堂做礼拜吗？ #line:d80d92
         Mae: 不过，我还是挺喜欢主日学校的， #line:ee4be6
         Mae: 因为在那儿能吃到饼干，还能喝到橘黄色的饮料。 #line:7cd673
         Pastor: 难道这种饮料就只有“橘黄色的饮料"这一个名儿吗？ #line:e30e20
-        Mae: 额，这我就不太清楚了。 #line:58988a
+        Mae: 嗯哼，这我就不太清楚了。 #line:58988a
         Pastor: 我突然意识到，我好像也一直管它叫这名儿。 #line:43f0ad
         Pastor: “橘黄色的饮料"。 #line:947242
         Mae: 一种颜色是橘黄色的饮料。 #line:9cf877
@@ -600,7 +600,7 @@ position: -873,655
 ---
 Pastor: 你好啊。 #line:7891a7
 Mae: 你在等人吗？ #line:7ce8d4
-Pastor: 额，我觉得我好像是让人给放鸽子了。 #line:4eddbd
+Pastor: 呃，我觉得我好像是让人给放鸽子了。 #line:4eddbd
 Mae: 你是在……约会吗？ #line:66a2a3
 Pastor: 才不是这回事呢。 #line:b7d807
 Pastor: 不过，说真的，我工作的大部分内容， #line:3ce9e4
@@ -664,14 +664,14 @@ Pastor: 呃，今天真是压力山大啊。 #line:0f01b9
 Pastor: 有些时候，你最需要的就是上天的恩惠。 #line:8c1153
 <<if $knows_bruce_situation>>
     Mae: 你做的这一切都是为了布鲁斯吗？ #line:87c11b
-    Pastor: 以前是为他做的。 #line:654490
+    Pastor: 本来是的。 #line:654490
     Pastor: 现在也是。 #line:05be45
     Pastor: 随便了。反正现在的情况我们已经管不了了。 #line:9d692c
     Pastor: 但肯定有比我能力强的人。 #line:37020f
     Mae: 嗯。 #line:05c737
 <<endif>>
 Pastor: 梅，你怎么样啊？ #line:d2157d
-Mae: 额…… #line:20f225
+Mae: 呃…… #line:20f225
 Mae: 额额额额额…… #line:af810e
 Pastor: 听起来好像是很重要的事啊。 #line:fced32
 Mae: 可能吧。 #line:1cd9dd
@@ -900,7 +900,7 @@ Bruce: 嗯，到了晚上可冷了。 #line:d6e9c6
 Mae: 我喜欢秋天天气变冷的时候。 #line:79e2cf
 Bruce: 我也喜欢秋天。秋天的景色也很漂亮。 #line:e35855
 Mae: 小时候，一到秋天，我就经常会冲着树大叫。 #line:640ee4
-Bruce: 为什么呀？ #line:58fa32
+Bruce: 为什么？ #line:58fa32
 Mae: 因为那些树太漂亮啦。 #line:d57f1b
 Bruce: 嗯，我女儿出生的时候，我的表现也和你一样。 #line:51a0c0
 Mae: 你有女儿？ #line:f57aab
@@ -908,7 +908,7 @@ Bruce: 没错。 #line:61f6ca
 Mae: 那她在哪儿呢？ #line:946dc6
 Bruce: …… #line:335f7b
 Mae: 真抱歉。 #line:781ad3
-Bruce: 没什么的。 #line:17e7f1
+Bruce: 没事。 #line:17e7f1
 <<set $bruce_familiarity += 1>>
 ===
 title: PastorInitLevel
@@ -1118,8 +1118,8 @@ Council4: 凯特，这想法倒是挺有意思的。 #line:b1ca3c
 Council1: 是啊。谢谢你告诉我们这些。 #line:5c14b7
 Pastor: 我希望咱们能在这件事上一起努力。 #line:ac2616
 Council2: 这事我们会报给镇政会的。 #line:70f1af
-Pastor: 哦！！那真是太好啦！！ #line:bba23d
-Council1: 好啦，大伙儿！咱们走！ #line:a542f4
+Pastor: 哦！！太好了！！ #line:bba23d
+Council1: 好，大伙儿！咱们走！ #line:a542f4
 <<close>>
 <<walk Council1 CouncilOffscreenLeft>>
 <<walk Council2 CouncilOffscreenLeft>>
@@ -1169,8 +1169,8 @@ position: 2345,562
 <<cameraLookAt PastorCouncilCamera 3>>
 Council2: ……因为孩子们还要到那儿去呢！ #line:0c3a11
 Council3: 而且那座教堂也是古迹啊。 #line:b838c9
-Pastor: 可那地方已经没什么东西啦！ #line:d02ce8
-Council3: 那就是你的问题啦，和我们一点关系也没有！ #line:9bfc19
+Pastor: 可那地方已经没什么东西！ #line:d02ce8
+Council3: 那就是你的问题，和我们一点关系也没有！ #line:9bfc19
 Pastor: 这地方的人越来越少。 #line:d88927
 Pastor: 你们要知道，这里不可能再像以前一样有那么多人了。 #line:cb5ddf
 Pastor: 咱们有闲置的地方，也有需要这些地方的人。 #line:4e5534
@@ -1335,7 +1335,7 @@ Council3: 哦，好吧。 #line:720e99
 <<set $church_hill_background_a2d2_done to 1>>
 Council2: 这么说，你应该算是个……流浪者吧？ #line:571369
 Bruce: 对，但这种情况只是暂时的…… #line:7a2fd2
-Council1: 那当然是啦！好了，我们只是想看看你在这儿住的好不好。 #line:b7d522
+Council1: 当然！好了，我们只是想看看你在这儿住的好不好。 #line:b7d522
 Bruce: 还不错，凯特牧师人也很好。 #line:25bb26
 Council4: 我们想看看你的住处，可以吗？ #line:a02c86
 Council3: 莫莉，你有什么想说的吗？ #line:ffc965
@@ -1378,7 +1378,7 @@ Bruce: 谢谢。 #line:86be0e
 Council4: 布鲁斯，你能和我们聊上几句，我们就很高兴了。 #line:7b4ddb
 Council2: 见到你很荣幸！ #line:27397f
 Bruce: 是啊，我也很荣幸。 #line:00c432
-Council1: 好啦，大伙儿！咱们走！ #line:32087d
+Council1: 好，大伙儿！咱们走！ #line:32087d
 <<close>>
 <<playOneShot event:/ui/snap_animation Council1>>
 <<flip Council1 -1>>
@@ -1422,7 +1422,7 @@ Molly: 我还有事要忙。 #line:89c642
 Council3: 我居然不知道他还给咱们这儿出过力。 #line:4b23cc
 Council1: 可不管怎么说，他都不能在外面过夜。 #line:8c60af
 Council4: 咱们能不能找个地方坐下来谈啊？ #line:2f1b5d
-Council1: 那 就 去 嘎 嘣 脆 谈 吧！ #line:f5b0a0
+Council1: 那就去嘎嘣脆谈吧！ #line:f5b0a0
 <<close>>
 <<walk Council1 OffscreenLeft>>
 <<walk Council2 OffscreenLeft>>

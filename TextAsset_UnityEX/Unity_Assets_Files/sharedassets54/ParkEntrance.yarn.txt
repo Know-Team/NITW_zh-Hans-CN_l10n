@@ -9,13 +9,13 @@ position: -280,131
 <<set $angus_investigation_quest to 1>>
 <<fadeOutMusic 3>>
 Angus: 今晚天气不错。 #line:e1a015
-Mae: 是啊，天气是不错。 #line:3fb899
-Angus: 我妈过去经常带着我们到这儿来玩飞盘。 #line:649069
-Mae: 以前我的牙就被一个速度巨快的飞盘打到过。 #line:3c7723
-Angus: 我的妈呀。 #line:6c5edd
+Mae: 是啊，是不错。 #line:3fb899
+Angus: 我妈过去经常带着我们来这儿玩飞盘。 #line:649069
+Mae: 我的牙就被一个速度巨快的飞盘打到过呢。 #line:3c7723
+Angus: 天哪。 #line:6c5edd
 Mae: 我和凯西之前也经常互扔东西砸对方的头。 #line:4723e3
 Angus: 哦。 #line:bf2c46
-Mae: 但在我被飞盘砸到牙之后，我们俩就再也不互扔东西了。 #line:99e0dd
+Mae: 但在飞盘砸牙后，我们俩就不互扔了。 #line:99e0dd
 <<playMusic angus_climbs_the_hill 3>>
 [[Move1]]
 ===
@@ -31,26 +31,26 @@ tags:
 colorID: 4
 position: 16,200
 ---
-Angus: 公 告： #line:4f9ccc
-Angus: 严 禁 投 喂 #line:2ebf30
-Angus: 或 触 摸 #line:040e10
-Angus: 野 生 动 物。 #line:489796
+Angus: 公告： #line:4f9ccc
+Angus: 严禁投喂 #line:2ebf30
+Angus: 或触摸 #line:040e10
+Angus: 野生生命！ #line:489796
     ->这也太极端了吧。 #line:970fae
-        Angus: 我也不知道。 #line:ee6c94
+        Angus: 我不知道。 #line:ee6c94
         Angus: 你不可能跑到树林里 #line:6354df
         Angus: 和一堆树 #line:f7a8f5
-        Angus: 去聊天吧。 #line:e7b393
-        Mae: 可能是这样吧。 #line:928149
+        Angus: 聊天吧。 #line:e7b393
+        Mae: 是吧。 #line:928149
     ->是啊，那必须的。 #line:ac9f5f
 Angus: 有些人就住在山上的小屋里， #line:4d67bb
-Angus: 要是你乐意的话，你可以……额……去喂喂他们，或者摸摸他们。 #line:ac418b
+Angus: 要是你乐意的话，你可以……呃……去喂喂他们，或者摸摸他们。 #line:ac418b
 Mae: …… #line:4c4466
-Mae: 这地方可真是又古老又吓人啊。 #line:6ea760
-Angus: 这公园里可有一大堆特别诡异的事呢。 #line:97c4c5
-Angus: 而且，这片树林里也隐藏着不少过去的事呢。 #line:b9ee84
+Mae: 这地方可真是又古老又诡异。 #line:6ea760
+Angus: 这公园里处处流传着灵异事件。 #line:97c4c5
+Angus: 还有不少历史遗物留在这里。 #line:b9ee84
 Angus: 我想，等到了山顶，咱们就能看见我那会儿的童子军营地了。 #line:778cfe
-Mae: 这片林子倒还真热闹，什么事都有。 #line:4f2096
-Angus: 好了，咱们还是在天黑之前赶快上山吧。 #line:136ab1
+Mae: 好热闹的林子。 #line:4f2096
+Angus: 好了，最好在天黑前登顶。 #line:136ab1
 <<walk Angus AngusPillar1>>
 ===
 title: AngusPillar1
@@ -58,42 +58,42 @@ tags:
 colorID: 4
 position: 279,194
 ---
-Angus: *呼呼呼* #line:683a65
+Angus: *呼哧呼哧* #line:683a65
 Mae: 你还好吗？ #line:4dcaab
-Angus: 还好，我有哮喘。 #line:5ab150
-Angus: 实在抱歉，你得等我一会儿了。 #line:bdba73
+Angus: 还好，就是有点哮喘。 #line:5ab150
+Angus: 抱歉，你得等我一会儿了。 #line:bdba73
     ->你带吸入器了吗？ #line:91eca1
-        Angus: 带了，但我想先留着，等真有紧急情况的时候，我才会用。 #line:03b0d5
-        Angus: 走得慢又算不上是紧急情况。 #line:8dbd94
-    ->话说，上初中的时候，你不是参加过全国穿越赛吗？ #line:c3e1e2
-        Angus: 我是参加过，可我连一场比赛都没完成过。 #line:c67951
-        Mae: 那你为什么还要继续比赛呢？ #line:22e42e
-        Angus: 我也不知道到底是为什么。 #line:42ea66
-Mae: 这是什么东西？ #line:c4cf96
-Angus: 这好像是…… #line:72707b
-Angus: 我感觉这应该是个石灰窑。 #line:73ff32
+        Angus: 带了，但我想到紧急时候用。 #line:03b0d5
+        Angus: 走得慢又算不上紧急时候。 #line:8dbd94
+    ->话说，你初中有没有参加过越野跑活动？ #line:c3e1e2
+        Angus: 有，可我从来没有跑完过。 #line:c67951
+        Mae: 那你为什么还要坚持参加呢？ #line:22e42e
+        Angus: 我也不知道。 #line:42ea66
+Mae: 这是什么？ #line:c4cf96
+Angus: 好像是…… #line:72707b
+Angus: 应该是个石灰窑？ #line:73ff32
     ->石灰？ #line:eb53e0
     ->窑？ #line:269e15
-        Angus: 石灰窑和锻炉很像。 #line:e62ff2
-        Mae: 哦，那它又是做什么用的呢？ #line:ae111a
-Angus: 是用来锻造石灰岩的。 #line:137205
-Angus: 就比如说，你把某样东西放在炉子里， #line:be79a0
-Angus: 然后，炉子里就会生成另外一种东西。 #line:712943
-Mae: 噢，原来如此。 #line:e110d7
-Angus: 石灰岩这种物质很奇特， #line:34a234
+        Angus: 就像个熔炉。 #line:e62ff2
+        Mae: 噢，熔什么的呢？ #line:ae111a
+Angus: 造石灰岩。 #line:137205
+Angus: 就比如说，你把某样东西放里面， #line:be79a0
+Angus: 然后就会生成另外一种东西。 #line:712943
+Mae: 噢。 #line:e110d7
+Angus: 石灰岩很奇特， #line:34a234
 Angus: 因为它基本上都是由几百万年前的海洋生物遗骸 #line:c10413
-Angus: 转化而来的。 #line:c792e7
+Angus: 转化而来。 #line:c792e7
 Angus: 也就是说， #line:bacd2c
-Angus: 这地方以前全是海。 #line:e4f6e3
+Angus: 这里以前全在水里。 #line:e4f6e3
     ->哇哦。 #line:955baf
-        Angus: 哈哈，我明白你现在是什么心情。 #line:cccba4
+        Angus: 就是这样。 #line:cccba4
     ->不可能吧。 #line:d11138
-        Angus: 我的意思是，岩石是不会说谎的。 #line:82889f
+        Angus: 岩石不会说谎。 #line:82889f
 Angus: 就拿咱们脚下这块地儿来说吧， #line:f4d1de
-Angus: 以前，可怕的远古海怪很可能就来过这里。 #line:f8034c
-Mae: 这听起来真是又诡异又神奇啊。 #line:abc195
-Angus: 这……就……是……历史！ #line:31a677
-Angus: 好了，我休息够了，可以继续走了。 #line:01d220
+Angus: 这里以前就有着可怕的远古海怪。 #line:f8034c
+Mae: 真怪，又有点神奇。 #line:abc195
+Angus: 这！就！是！历史！ #line:31a677
+Angus: 好了，继续走吧。 #line:01d220
 <<walk Angus AngusPillar2>>
 ===
 title: AngusPillar2
@@ -101,30 +101,30 @@ tags:
 colorID: 4
 position: 525,205
 ---
-Angus: *呼呼呼* #line:d40ddf
-Angus: 咳咳。 #line:46539d
+Angus: *呼哧呼哧* #line:d40ddf
+Angus: 咳咳咳。 #line:46539d
 Mae: 需要再休息会儿吗？ #line:b6aaf5
-Angus: 我没事，没事的。 #line:d32dcb
+Angus: 我没事我没事。 #line:d32dcb
 Mae: 没关系的，你歇歇吧。 #line:a8ee8a
-Angus: *呼呼呼* #line:60af00
-Mae: 这么说，如果以前这里都是海的话， #line:9cdb8e
-    ->那现在海水都去哪儿了呢？ #line:d4c4c7
-        Angus: 我不知道。可能都流到大海里了吧。 #line:cdb1b3
+Angus: *呼哧呼哧呼哧* #line:60af00
+Mae: 这么说，如果以前这里都是水的话， #line:9cdb8e
+    ->水都去哪了呢？ #line:d4c4c7
+        Angus: 不知道，可能流向大海里了吧。 #line:cdb1b3
         Angus: 因为地壳总是在运动， #line:daf740
         Angus: 所以，曾经的平地， #line:384259
         Angus: 也会变成高山。 #line:60f085
-    ->为什么这儿没有远古鲨鱼的遗骸呢？ #line:a4c92c
-        Angus: 我也不知道。不过，我猜，这附近应该会有它们的遗骸。 #line:48094a
-        Angus: 但并不是所有遗骸都能变成化石。 #line:b194d2
-        Mae: 这是为什么呢？ #line:0bdd69
-        Angus: 我也不知道是为什么。我可不是这方面的专家。 #line:641af8
-        Angus: 但能肯定的是，很久以前，这里一定有过远古鲨鱼。 #line:90a6f5
-Mae: 一想到这些远古时期的怪事和好玩事， #line:a2416e
-Mae: 我就感觉，现在发生的事简直都无聊透啦。 #line:87298e
+    ->为什么这儿没有远古鲨鱼的骨头呢？ #line:a4c92c
+        Angus: 我不知道，可能有吧。 #line:48094a
+        Angus: 但并不是什么东西都能变成化石的。 #line:b194d2
+        Mae: 为什么？ #line:0bdd69
+        Angus: 我也不知道，我可不是这方面的专家。 #line:641af8
+        Angus: 但能肯定的是，很久以前，这里一定有古代鲨鱼。 #line:90a6f5
+Mae: 真奇怪，你看现在这么无聊， #line:a2416e
+Mae: 以前这里却有那么多疯狂有趣的事。 #line:87298e
 Angus: 怪事趣事总在发生， #line:192876
-Angus: 这就要等后人去发掘和探索了。 #line:99ad3d
-Angus: 好了，咱们继续走吧。 #line:f6278c
-Mae: 好滴，好滴。 #line:d71f75
+Angus: 只待后来才能觉察出来。 #line:99ad3d
+Angus: 好了，继续走吧。 #line:f6278c
+Mae: 好滴好滴。 #line:d71f75
 <<setSpriteLayer Angus BG3>>
 <<walk Angus AngusPillar3>>
 ===
@@ -133,39 +133,39 @@ tags:
 colorID: 4
 position: 794,227
 ---
-Angus: *呼呼呼呼呼* #line:deeafe
-Angus: *哧哧哧* #line:6e5525
+Angus: *呼哧呼哧呼哧* #line:deeafe
+Angus: *咳哧咳哧* #line:6e5525
 Mae: 你确定你还好吗？ #line:bcac5b
-Angus: 是的，我没问题……*呼呼* #line:f9adac
-Angus: ……真是抱歉……*呼呼呼* #line:a05b8f
-Mae: 说真的，你用不着道歉。 #line:4e1887
+Angus: 是的……*呼咳咳* #line:f9adac
+Angus: ……对不起……*呼哧呼哧* #line:a05b8f
+Mae: 说真的， 没事的。 #line:4e1887
 Mae: 赶快休息一会儿。 #line:cccc49
 Angus: 好。 #line:c6aee6
-Mae: 像远古海洋生物化石，还有那个什么岩之类的东西， #line:4258ba
-Mae: 其实我本来都是应该知道的。 #line:e981bf
-Angus: 是石灰……*呼呼*……岩…… #line:529035
-Mae: 在学校的时候，我本来选了一门关于恐龙的课。 #line:9fdc54
-Angus: 后来怎么样了？ #line:f76625
-Mae: 这门课早就已经报满啦！ #line:404439
-Mae: 这门课总是很抢手。 #line:158b16
-Angus: 可能是这样吧。 #line:107a43
+Mae: 本来这些远古海洋生物石头，还有那个什么岩的东西， #line:4258ba
+Mae: 我应该是知道的才对。 #line:e981bf
+Angus: 石灰……*呼哧*……岩…… #line:529035
+Mae: 我本来是要在学校选一门关于恐龙的课。 #line:9fdc54
+Angus: 后来呢？ #line:f76625
+Mae: 报满啦！ #line:404439
+Mae: 很抢手的一门课。 #line:158b16
+Angus: 当然了。 #line:107a43
     ->我可喜欢恐龙啦。 #line:443549
         Angus: 谁不是啊？ #line:1c3ae6
     ->恐龙可算是最有意思的动物啦。 #line:5fdd6d
-        Angus: 恐龙也是有羽毛的，这你知道吗？ #line:f9e133
-        Angus: 或者说，是一部分恐龙是有羽毛的。 #line:dfd5ec
-        Mae: 我可能知道吧。 #line:acb48a
-        Mae: 就像体型巨大的怪鸡一样。 #line:346b29
+        Angus: 你知道它们也有羽毛吗？ #line:f9e133
+        Angus: 或者说，一部分有？ #line:dfd5ec
+        Mae: 我知道啊。 #line:acb48a
+        Mae: 体型巨大的怪鸡。 #line:346b29
 Mae: 远古时期的生物长得都很古怪，但也很酷。 #line:8907ee
-Mae: 而且，咱们要是能回到那时候的话，最多也就能活个5分钟吧，哈哈哈…… #line:1b36d1
-Angus: 哦，是啊。远古生物想要吃了咱们肯定不成问题。 #line:76ab35
-Angus: 不过，幸好咱们和它们之间相差了几百万年。 #line:90b6e6
-Mae: 这设定真是绝了。 #line:675c56
-Mae: 伙计，这就是时间的力量。 #line:098026
-Angus: 时间会让危急的事变得不再那么危急。 #line:aa7ce9
-Angus: 至少对大多数事情来说是这样的。 #line:e8a9a9
-Mae: 好了，你准备好继续走了吗？ #line:3a60a2
-Angus: 准备好了。咱们就快到山顶了。 #line:502c11
+Mae: 我们穿越回去最多也就能活个5分钟吧，哈哈哈…… #line:1b36d1
+Angus: 是的，远古生物想要吃了咱们肯定不成问题。 #line:76ab35
+Angus: 不过，幸好咱们和它们之间差了几百万年。 #line:90b6e6
+Mae: 绝了。 #line:675c56
+Mae: 伙计，时间的力量。 #line:098026
+Angus: 时间会让危险的事变得不再那么危险。 #line:aa7ce9
+Angus: 至少对大多数事来说是这样的。 #line:e8a9a9
+Mae: 好了，走起来吧？ #line:3a60a2
+Angus: 好，咱们就快到山顶了。 #line:502c11
 <<hide Collision:LeftTop>>
 <<set $interaction_park_entrance_should_go_back_done to 1>>
 <<walk Angus AngusOffLeft>>
@@ -176,5 +176,5 @@ colorID: 4
 position: 149,488
 ---
 Mae: 嗯……我得回去找安格斯了。 #line:df8b7f
-Mae: 他会回来找我的。 #line:f442cd
+Mae: 他会在等我呢。 #line:f442cd
 ===

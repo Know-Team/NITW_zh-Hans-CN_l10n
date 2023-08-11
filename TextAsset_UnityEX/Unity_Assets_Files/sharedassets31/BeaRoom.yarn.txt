@@ -9,7 +9,7 @@ position: 607,237
 <<warp Mae MaeEnter>>
 <<set $bea_friendship_quest_3 to 1>>
 Mae: 你们是刚搬过来吗？ #line:e8cdac
-Bea: 我们十个月之前就搬来了。 #line:1ae338
+Bea: 我们10个月之前就搬来了。 #line:1ae338
 Mae: 那为什么这些行李都没打开？ #line:309650
 <<close>>
 <<wait 2>>
@@ -18,28 +18,28 @@ Mae: 那为什么这些行李都没打开？ #line:309650
     Mae: 到现在，唱片机还没过时。 #line:d8e324
     Bea: 这是我妈的唱片机。 #line:76670e
     Mae: :| #line:46364e
-    Mae: 我一张唱片也没有。 #line:442e1d
+    Mae: 我没有唱片诶。 #line:442e1d
     Mae: 而且我对这些也是一窍不通。 #line:88ad2d
     Bea: 我妈特别喜欢这些东西。 #line:133a75
-    Bea: 哈哈。在我老妈像我这么大的时候，唱片机又火起来了。 #line:950111
-    Mae: 现在唱片机也又流行起来了。 #line:34b452
+    Bea: 哈哈。在我妈像我这么大的时候，唱片机又火起来了。 #line:950111
+    Mae: 现在唱片机也流行起来了。 #line:34b452
     Bea: 复古时尚就是这样。 #line:9871b1
 ->你原来的房间好像更…… #line:5f4f65
     Bea: 更大？ #line:de08d6
     Mae: 更乱。真的很乱。 #line:579eab
     Bea: 呃。我小时候的确又懒又邋遢。 #line:834a2d
-    Mae: 看来各种箱子盒子就能把你这些问题给解决了。 #line:92eb7c
+    Mae: 看来各种收纳箱就能把你这个问题给解决了。 #line:92eb7c
     Bea: 才没有呢，我妈还因为这事吼过我。 #line:41e8ab
     Mae: :) #line:d6597f
-    Mae: 当妈的都这样，我说的对吧？ #line:ea0924
+    Mae: 当妈的都这样，对吧？ #line:ea0924
     Bea: 说得对。 #line:187f80
 <<close>>
 <<wait 2>>
 Mae: :| #line:3e72da
 Mae: 我有个问题。 #line:39bde1
 Bea: 嗯哼。 #line:448b6a
-->你老爸在店里到底*干*些什么事？ #line:13e069
-    Bea: 你是指最近一段时间吗？不怎么干事。 #line:79d750
+->你老爸在店里到底*做*什么事？ #line:13e069
+    Bea: 你是指最近一段时间吗？不怎么做事。 #line:79d750
     Bea: 唔。会做点管理方面的事吧。 #line:eca0c3
     Bea: 他负责招聘维修工…… #line:c587a5
     Bea: 有时他还会外出工作。 #line:f9a95a
@@ -50,12 +50,12 @@ Bea: 嗯哼。 #line:448b6a
     Bea: 很多时候甚至是同一天。 #line:9d2966
     Mae: 哈哈，格雷格也经常会遇到这种情况。 #line:082417
     Mae: 只不过事情……嗯……会变得更好笑。 #line:5b1456
-    Bea: 是啊，格雷格这人很极端。 #line:20dafe
-    Mae: 天，真得谢谢你，碧医生。 #line:a4fdea
-    Bea: 相比之下，我老爸这些年还没从之前的阴影里走出来。 #line:9897f7
-    Mae: 你现在一个人经营这一整家店，对不？ #line:e475a9
+    Bea: 是啊，格雷格这人挺双相横跳的。 #line:20dafe
+    Mae: 哦，谢谢你，碧娅医生。 #line:a4fdea
+    Bea: 相比之下，我爸这些年还没从之前的阴影里走出来。 #line:9897f7
+    Mae: 现在是你一个人经营整家店吗？ #line:e475a9
     Bea: 差不多。 #line:c6918f
-Mae: 但整家店和所有的东西还都归你老爸所有。 #line:f34c0f
+Mae: 但整家店和所有的东西还归你老爸所有。 #line:f34c0f
 Bea: 嗯。 #line:82def7
 Mae: 而且，什么事基本上都要你来负责。 #line:d3351c
 Bea: 嗯。 #line:1a4f00
@@ -64,17 +64,17 @@ Bea: 嗯。 #line:c8b856
 Mae: 我只是觉得你犯不着这样。 #line:569b20
 Bea: 好吧。 #line:716f40
     ->我觉得你好像是把自己给卖了。 #line:9f5f8b
-        Bea: 不好意思，啥？ #line:059d5e
+        Bea: 你说啥？ #line:059d5e
     ->如果是我的话，我很可能会直接走人。 #line:22fd92
-        Mae: 或者是全权接管这家店。 #line:bec99d
-Mae: 你好像根本就不是在经营这家店，你只是在给你爸- #line:fec487
+        Mae: 或者全权接管这家店。 #line:bec99d
+Mae: 你好像根本就不是在经营这家店，你只是在给你爸…… #line:fec487
 <<lookNearest Bea>>
 <<dilate Bea .85 .01>>
 Bea: 如果是你的话你真的会这么做？ #line:0263b8
     ->我觉得你应该为你自己做回主，或者干脆就……走人！ #line:f22375
         Bea: “走人"？ #line:1ac3fa
         Bea: 你真这么想？就这么走人。 #line:ea9982
-        Bea: 你已经和现实生活严重脱节啦。 #line:664f2d
+        Bea: 你已经和现实生活严重脱节了。 #line:664f2d
     ->我的意思是你不能就这么低头认输然后接受这一切。 #line:20b44f
         Bea: “接受这一切"？ #line:fc8fbe
         //shake text here//
@@ -85,18 +85,18 @@ Mae: :( #line:54d630
     ->什 么？！ #line:b96f27
         Bea: 你听见我刚说什么了。 #line:fb484a
     ->为什么？！ #line:e4d476
-        Bea: 啊 啊 啊。 #line:d5e4bf
+        Bea: 啊啊啊啊啊。 #line:d5e4bf
 Mae: 你到底是怎么回事？ #line:fc8a54
-Bea: 让我来带你看看现实世界： #line:626f2f
+Bea: 让我来带你认清现实： #line:626f2f
 Bea: 你认识克里克吗？就是店里那个维修工。 #line:eded91
 Mae: :| #line:a950b4
-    ->不怎么认识？ #line:f1e3d5
+    ->不太认识？ #line:f1e3d5
         Bea: 你之前见过他。 #line:253370
         Bea: 你们没少聊过天。他一直都在我们店工作。 #line:bb93e3
     ->……大概？ #line:237794
         Bea: 没错，就是咱们小时候你见过的那个。 #line:6688c4
-Bea: 我15岁那年，他还问过我爸他能不能教我学开车。 #line:2a3c6a
-Bea: 我爸说不行。后来还跟我说，别和克里克单独相处。 #line:5f675b
+Bea: 我15岁那年，他还问过我爸能不能让他教我学开车。 #line:2a3c6a
+Bea: 我爸说不行。后来还告诫我，别和克里克单独相处。 #line:5f675b
     ->我去…… #line:a9dba0
         Bea: 是啊，这是真事。 #line:7b3182
     ->我不太明白你的意思。 #line:233c30
@@ -111,81 +111,81 @@ Bea: 我没有开除员工的权利！ #line:9ac5ae
 Bea: 而且，就算有这个权利，我还是会留下他。 #line:1600a2
 Bea: 因为说实话，克里克是我们店里最好的员工，也是维修队的老大。 #line:3a6007
 Bea: 自从我爸什么都不干开始！ #line:061703
-Bea: 而且克里克有自己的家庭。而且他需要这份工作。 #line:ba6468
-->这也太烂了！ #line:3248ca
+Bea: 而且克里克有自己的家庭，他也需要这份工作。 #line:ba6468
+->真恶心！ #line:3248ca
     Mae: \o/ #line:6cfc04
-    Mae: 可这又不是你的责任要去- #line:74a597
-    Bea: 我 知 道！ #line:f3db23
+    Mae: 可这又不是你的责任…… #line:74a597
+    Bea: 我知道！ #line:f3db23
     Bea: 你以为我不知道？！ #line:7e5eec
     Mae: _o_ #line:60dfd8
 ->我感觉有点不舒服。 #line:e7e5eb
     Bea: 是 啊！|我 也 一 样！ #line:cfa497
-    Bea: 我 对 这 感 觉 可 深 有 体 会。 #line:cd700c
+    Bea: 我对这感觉可深有体会。 #line:cd700c
 Mae: :| #line:80b660
-Mae: 我想说的是，如果你要一直帮这些员工摆脱困境的话- #line:74e4ec
-Bea: 摆 脱 困 境？！ #line:3cf05c
+Mae: 我想说的是，如果你要一直帮员工摆脱困境的话…… #line:74e4ec
+Bea: 摆脱困境？！ #line:3cf05c
 Mae: 碧娅，你的能力不该用在这个上。 #line:351001
-Mae: 你那么……厉害又那么牛逼。 #line:5c4ca9
+Mae: 你那么……厉害又那么牛。 #line:5c4ca9
 Bea: 你……你……你…… #line:cce5c8
 <<close>>
 <<animationTrigger BeaLayRig GetUp>>
 <<dilate Bea 1 .01>>
 <<wait 2>>
-Bea: “牛 逼"？ #line:db4cf3
-Bea: 我 妈 妈 的 死 可 不 像 你 说 的 那 么 “牛 逼"。 #line:dd3047
-Bea: 现 在 待 在 这 房 间 里 的 我|也 没 你 说 的|那 么 “牛 逼"。 #line:368f91
-Mae: 好好好，我道歉，我- #line:ba2b8a
+Bea: “牛"？ #line:db4cf3
+Bea: 我妈的死可不像你说的那么“牛"。 #line:dd3047
+Bea: 现在待在这房间里的我|也没你说的|那么“牛"。 #line:368f91
+Mae: 好好好，我道歉，我…… #line:ba2b8a
 Bea: 你就是个大蠢蛋，知道吗？ #line:f08790
 Mae: :( #line:8b3226
     ->啊啊啊啊啊！ #line:bc738c
         Bea: “啊啊啊啊啊？"你“啊啊啊啊啊"什么？！ #line:de6408
     ->我去，你到底想干嘛？ #line:d9538d
-       Bea: “呃啊啊啊，你到底想干嘛"？！ #line:587e5e
-Bea: 大多数时间人们根本没有“选择"的权力。 #line:b8580b
-Bea: 不管他们认为这是不是正确的，他们都别无选择！ #line:9c0f4a
+       Bea: “呃啊啊啊，你到底想干嘛？！" #line:587e5e
+Bea: 很多时候，人们根本没有“选择"的权力， #line:b8580b
+Bea: 无法去做那些真正正确的事！ #line:9c0f4a
 Bea: 大多数时间人们只能按部就班， #line:9ca6dc
-Bea: 那是因为，他们根本没有其他的选择！ #line:93b922
+Bea: 因为他们根本没有其他的选择！ #line:93b922
 Mae: :| #line:60829c
     ->你*一直*都有别的选择。 #line:bfe41d
-        Bea: 有人觉得，像我这样的半大孩子不用工作 #line:5c582b
+        Bea: 有人觉得，像我这样的半大孩子不用工作， #line:5c582b
         Bea: 不用交租， #line:338929
-        Bea: 不用负任何责任， #line:7707ea
-        Bea: 也无足轻重。 #line:09fdea
+        Bea: 不用负责， #line:7707ea
+        Bea: 更不用为自己愚蠢行为承担任何后果。 #line:09fdea
     ->你有别的选择，*一向如此*。 #line:c22a4c
         Bea: 选择什么？ #line:b67b8f
         Bea: 说真的，告诉我。 #line:b08dd9
         Bea: 我的选择是什么？ #line:c7b8bf
-            ->你可以就直接离开！我也不知道！ #line:e829d8
-                Bea: 我…我…我… #line:8fc2c4
-                Bea: 你…你…你… #line:dc6b94
+            ->你可以直接离开！我也不知道！ #line:e829d8
+                Bea: 我……我……我…… #line:8fc2c4
+                Bea: 你……你……你…… #line:dc6b94
             ->去告诉你爸你不会再承受这一切了！ #line:c95c91
-                Bea: 告诉他什么？？？？ #line:a285cf
-                Bea: 你那些绝妙的想法 #line:064c96
+                Bea: 告诉他什么？？？ #line:a285cf
+                Bea: 你那些绝妙的想法， #line:064c96
                 Bea: 哪一个是有可行性的? #line:e937bc
 Bea: 我真想一拳把你脑子打出来。 #line:a19bc5
 Mae: :( #line:5c7a3c
-Bea: 你到这儿来，就是想告诉我*我*是怎么把事情搞砸的吗？ #line:4fe283
-Bea: 你就是想到这儿来然后告诉我 #line:75ce61
+Bea: 你到这儿来，就是想告诉我，*我自己*是怎么把事情搞砸的吗？ #line:4fe283
+Bea: 你到这儿来，就是想告诉我， #line:75ce61
 Bea: “哦，是啊，你只需要摆脱你那个 #line:bd9566
 Bea: 越来越老 #line:df7110
-Bea: 总是躺在沙发上不离半步的老爸就行了" #line:80347d
+Bea: 总是躺在沙发上不离半步的老爸就行了？" #line:80347d
 <<if $grocery_quality is 1>>
     Bea: [wave]哦，“晚饭做得不错"，梅！[/wave] #line:158f73
 <<endif>>
-Bea: 你就是想到这儿来然后告诉我 #line:2f3241
-Bea: “哦，是啊，只要照着我的爽文剧本走 #line:75d53d
-Bea: 然后你的生活就会更烂"？ #line:0e925d
+Bea: 你到这儿来，就是想告诉我， #line:2f3241
+Bea: “哦，是啊，只要照着我的爽文剧本走， #line:75d53d
+Bea: 然后你的生活就会更烂？" #line:0e925d
 ->这话可不对，我不是这么说的！ #line:8e97fc
     Bea: 是是是，是不对。这世上没有一件事是对的。 #line:3b8317
-    Bea: 这该死的世界也是错误的。 #line:e24fa1
+    Bea: 这该死的世界也是错的。 #line:e24fa1
 ->我可没这么说！ #line:1c2738
     Bea: 哦，那你说的是什么？ #line:c438fb
-    Mae: 啊 啊 啊！|我想不出来了！ #line:3beb75
-Bea: 打个比方在格雷格还在无所事事到处游荡的时候 #line:6ced6f
+    Mae: 啊啊啊！|我什么都不知道！ #line:3beb75
+Bea: 格雷格现在无所事事到处游荡的时候， #line:6ced6f
 Bea: 我却待在这儿做饭、算账、发工资。 #line:c0d243
 Bea: 你对我的生活*一无所知*。 #line:b2ba9f
-Bea: 你只知道告诉我，我“应该"去做什么。 #line:e09831
-Bea: 这次之后，我再也不会向任何人寻求建议了。 #line:0186d8
+Bea: 你只知道告诉我，我“应该"做什么。 #line:e09831
+Bea: 我以后再也不会向任何人寻求建议了。 #line:0186d8
 Mae: :| #line:e544bf
 Mae: 好了，好了，我向你道歉。 #line:c2e7dd
 Bea: 是啊，你觉得很抱歉，所有人都觉得很抱歉。 #line:24d163
@@ -193,21 +193,21 @@ Bea: 但你们根本不理解。 #line:2ca26e
 <<if $did_bea_friendship_quest_1 is 1 and $did_bea_friendship_quest_2 is 1>>
     Mae: 我还以为咱们之前一直都很嗨皮呢！ #line:6ed6d1
     Mae: 咱们一起去逛商场！一起被困在地下室里！ #line:d201b1
-    Bea: 是啊，是啊，这 些 就是你这几天的成果。 #line:272afe
+    Bea: 是啊，是啊，这些就是你这几天的成果。 #line:272afe
     Bea: 可能每天你刚睡醒的时候，我都已经工作6个小时了。 #line:fb6f62
     Bea: 等到每天和你玩完回来之后，我还要回家， #line:e007f8
-    Bea: 还要还账、算下一次需要发的工资， #line:36cdbd
+    Bea: 还要还账，算下一次需要发的工资， #line:36cdbd
     Bea: 与此同时我爸在沙发上睡觉。 #line:d81772
     Bea: 这可一点都不嗨皮。 #line:6f46a1
 <<elseif $did_bea_friendship_quest_1 is 1>>
     Bea: 你就和那天晚上一样，一直如此。 #line:16bc46
-    Bea: 到处闲逛，打扰其他路人，为所欲为。 #line:3f950d
+    Bea: 到处闲逛，打扰别人，为所欲为。 #line:3f950d
     Bea: 整个商场都快让你给拆了你也无动于衷。 #line:4cc459
     Mae: 我还以为当时你也很开心啊！ #line:1deac1
     Bea: …… #line:a2ed36
 <<elseif $did_bea_friendship_quest_2 is 1>>
     Bea: 比如昨天晚上， #line:e0730c
-    Bea: 你拿着一堆破烂一通折腾，毁了不少东西，然后一切问题就都解决了。 #line:41f5cf
+    Bea: 你拿着一堆破烂一通折腾，毁了不少东西，然后以为所有问题就解决了。 #line:41f5cf
     Bea: 而我却一个人在角落里修炉子。 #line:46c8b8
     Mae: 但我的确帮到忙了啊！ #line:0456e7
     Bea: …… #line:0132ad

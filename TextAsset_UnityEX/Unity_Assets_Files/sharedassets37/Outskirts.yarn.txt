@@ -86,7 +86,7 @@ Gregg: 他们居然把一头驴打扮成了一只火鸡的样子！ #line:84ab4c
 <<lookOut Mae>>
 <<dilate Mae .85 1>>
 Mae: 是啊！多吓人啊！ :< #line:235af5
-Gregg: 真的，真的太吓人啦。 #line:fb1945
+Gregg: 真的、真的巨恐怖。 #line:fb1945
 Mae: :| _o_ #line:0e8960
 <<close>>
 <<cameraLookAt GreggFollow 1>>
@@ -112,7 +112,7 @@ Gregg: 老驴鸡。 #line:863de7
 <<wait .5>>
 <<lookRight Gregg>>
 Mae: 话说，咱们为啥要来这儿啊？ #line:946c35
-Gregg: 干 坏 事。 =_= #line:8d279b
+Gregg: 犯罪。 =_= #line:8d279b
 Mae: 好吧，我现在就是你的同伙了。 :) #line:852d51
 Gregg: 梅，我的手可干净了，从来没干过坏事。 #line:b1bf01
 Mae: 说得……对极啦。 =_= <o> #line:c58032
@@ -167,26 +167,26 @@ Mae: 对。等我到栅栏这边的时候，他们已经跑上山钻进树林里
 Molly: 好的。谢谢你，梅。 #line:de7646
 Mae: 呃，我就知道，你肯定不会把我的话当回事的。 #line:232c68
 Molly: 梅，我们可没接到过有关人口失踪的报案。 #line:4d02ec
-Molly: 我们就连*类似*这类的报案都没接到过。 #line:f7addb
+Molly: 我们就连*类似*的报案都没接到过。 #line:f7addb
 Molly: 靠，反倒是接到了6通电话说自己家孩子在外头玩的太晚了。 #line:b809b6
 Molly: 要是真有人失踪，肯定会有人报警的。 #line:eb3a90
-Mae: 我 要 报 案！！|这边！这边有人报案！|有人报案！ #line:cccb36
+Mae: 我要报案！！|这边！这边有人报案！|有人报案！ #line:cccb36
 Molly: 梅，可栅栏上连个破损的地方也没有啊。 #line:e0da91
 Mae: 所以呢？ #line:8f7676
-Molly: 所以，唯一的解释就是，那个嫌疑人背着个孩子…… #line:86ef66
-Molly: 从栅栏上跳了过去…… #line:22e9fc
+Molly: 除非有人背着孩子…… #line:86ef66
+Molly: 从栅栏上跳过去…… #line:22e9fc
 Molly: 而且，这个孩子失踪以后，还没人来报案…… #line:ad90ec
 Mae: …… #line:20492a
-Molly: 梅，你还有什么想说的吗？ #line:66def8
+Molly: 梅，你有什么推论吗？ #line:66def8
 Mae: …… #line:599271
-    ->没了。 #line:71b70c
-    ->那个人可能是背着孩子从栅栏边上绕过去的！ #line:073d95
-        Molly: 梅，有件事我不太明白： #line:28c91a
+    ->没有。 #line:71b70c
+    -> 他们可能背着孩子从栅栏边上绕过去的！ #line:073d95
+        Molly: 梅，我不太明白： #line:28c91a
         Molly: 这段栅栏是沿着停车场建起来的， #line:579398
         Molly: 差不多到铁轨那儿才到头。 #line:48551c
-        Molly: 而你当时一直跟着那个人， #line:ba6c86
-        Molly: 然后，那个人就像变戏法似地瞬间跑到了栅栏对面，是这样吗？ #line:676ee7
-        Mae: 呃 啊 啊 啊 啊 啊。 #line:dc0473
+        Molly: 而你当时一直跟在后面， #line:ba6c86
+        Molly: 然后，那个人就像变戏法似地瞬间跑到了栅栏对面？ #line:676ee7
+        Mae: 呃啊啊啊啊啊。 #line:dc0473
 Molly: 我已经折腾了大半夜， #line:94628d
 Molly: 先是处理了一帮小青年的破事， #line:3707e8
 Molly: 之后又解决了一起有人害怕晾衣绳和噪音的案子。 #line:f2244b

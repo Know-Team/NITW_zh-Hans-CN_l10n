@@ -20,7 +20,7 @@ position: 520,253
 <<wait 6>>
 Mae: 你就不能不做上门服务吗？ #line:5ddbba
 Bea: 不能。 #line:ee0086
-Mae: 为什么啊？ #line:1093c0
+Mae: 为什么？ #line:1093c0
 Bea: 因为这叫工作。别人是花钱雇你来做事的。 #line:053aa2
 <<walk Bea BeaYard1>>
 Bea: 至少理论上是这样。 #line:f653d9
@@ -40,19 +40,19 @@ Bea: 是啊。 #line:3129f8
 <<waitForMove Bea>>
 <<walk Bea BeaYard2>>
 Mae: 以前我可没来过这儿。 #line:28d511
-Bea: 梅·博罗夫斯基，现在你不就来过这儿了嘛。 #line:25c7c9
+Bea: 梅·博罗夫斯基，现在你就来过这里了。 #line:25c7c9
 <<cameraLookAt IntroFocus2 6>>
 <<close>>
 <<waitForMove Mae>>
 <<walk Mae MaeYard2>>
 Mae: 好极啦！ #line:bcd23a
-Bea: 是啊，这只是一堆被人改造成房子的旧木屋 #line:2ce662
-Bea: 除了这些，这儿还有几个狩猎营。 #line:8be1a3
+Bea: 是啊，这只是一堆被人改造成房子的旧木屋。 #line:2ce662
+Bea: 除了这些，还有几个狩猎营。 #line:8be1a3
 <<close>>
 <<waitForMove Bea>>
 <<walk Bea BeaPorch1>>
 Bea: 所以，人们很少来这儿的原因是怕被枪崩到，或是担心出其他什么意外。 #line:caf859
-Mae: 再过几天，猎鹿季就要结束了，是吗？ #line:295c47
+Mae: 再过几天，猎鹿季就要结束了吧？ #line:295c47
 <<close>>
 <<waitForMove Mae>>
 <<walk Mae MaePorch1>>
@@ -90,20 +90,20 @@ Mae: 你还好吗？ #line:c76fcb
 Mae: 她还给咱们柠檬汁喝来着！ \o/ #line:8c44b5
 Bea: 是啊。 #line:e8fff1
     ->你不喜欢柠檬汁吗？ #line:763eb5
-        Bea: 当然喜欢了，那味道简直太爽啦。 #line:4b72d6
+        Bea: 当然喜欢，太太太太爽了。 #line:4b72d6
     ->今晚能和你一起出来真是太好啦！ #line:135e0f
-        Bea: 是啊，的确很不错。 #line:5c37de
+        Bea: 是啊。 #line:5c37de
 Mae: 然后呢？ _o_ #line:8298eb
-Bea: 然后就没然后了。工作了一整天， #line:f3a0e9
-Bea: 唯一的感觉就是 #line:24a87b
+Bea: 没然后了。工作了一整天， #line:f3a0e9
+Bea: 唯一感觉是 #line:24a87b
 Bea: 累极了。 #line:0e8cdc
 Mae: 可我感觉好嗨哟！ #line:681eb4
 Bea: 你高兴就好。 #line:f52d63
 Mae: 呃，你真是一点幽默感都没有。 #line:8d0cc9
-Bea: 我的确没什么幽默感。 #line:49d246
+Bea: 是的。 #line:49d246
 Mae: 看来需要给你施一些 #line:8c2754
-Mae: 魔法之类的东西， #line:edf6c2
-Mae: 好让你开拓一下新视野。 #line:a278f5
+Mae: 魔法， #line:edf6c2
+Mae: 让你开拓一下新视野。 #line:a278f5
 Bea: 要是这事真能成真，一定要马上告诉我。 #line:0b49c6
 Bea: 我可不想错过这么好的事。 #line:2854c0
 <<playMusic fireflies_on_the_porch 10>>
@@ -119,14 +119,14 @@ position: 810,51
 Bea: 哇哦。 #line:b34df5
 Bea: 哈哈哈。 #line:2c1f23
 Bea: 你真的是虫语者吗？你真能和萤火虫交流？ #line:e0ce60
-Mae: 我猜它们可能只是比较喜欢我罢了！ #line:c83ada
+Mae: 我猜它们可能只是比较喜欢我！ #line:c83ada
 Bea: 这…… #line:0c8cbd
-Bea: 梅·博罗夫斯基，你可真是个有趣的人啊。 #line:5cab60
+Bea: 梅·博罗夫斯基，你可真是个有趣的人。 #line:5cab60
     ->不，米兰达夫人才是个有趣的人呢。 #line:728f12
         Mae: 她喜欢把尸体做成干尸。 #line:f773d5
         Bea: 好吧，你真是越来越有意思了。 #line:b534fd
     ->我爷爷说过，保持风趣幽默是你唯一能做到的事。 #line:3e446e
-        Bea: 好了，任务完成了。 #line:2147be
+        Bea: 好了，任务完成。 #line:2147be
 Mae: 哟吼。 #line:5ee462
 <<wait 2>>
 Bea: 其实，你知道吗， #line:8d8999
@@ -136,7 +136,7 @@ Bea: 今晚恐怕就是我经历过的最无聊的一晚了。 #line:6cfa83
         Mae: 我觉得我在地下室里忙得可辛苦啦。 #line:baeb43
         Mae: 工资也应该有我的份才对。 #line:157702
         Bea: 想得美。你就是个没工资的实习生罢了。 #line:da54f2
-        Mae: 你要是这么说的话，我现在可真就要扁你一顿啦！ #line:609a5c
+        Mae: 你要是这么说的话，我现在可真就要跟你打一架啦！ #line:609a5c
     ->看见没？有我在你身边多好。 #line:9b6778
         Bea: 我的意思是，你居然能把别人家的炉子给干爆了。 #line:aa4d76
         Mae: 什么东西都能让我给干爆。 #line:9840ba
@@ -145,38 +145,38 @@ Bea: 把你的破坏力 #line:1acf6a
 Bea: 用到正地儿上才对。 #line:572af4
 Mae: 嗯，汉克医生之前也说过，我需要克制住自己。 #line:b96221
 Bea: 他说的是“克制"吗？他没说过像“学着去解决问题"之类的话吗？ #line:4476ae
-Mae: 他就特意强调了“克制"这两个字。 #line:d5c506
+Mae: 他特意强调了“克制"这两个字。 #line:d5c506
 Bea: 额，好吧，嗯。 #line:6a655d
 <<wait 2>>
-Mae: 那么，你觉得米兰达夫人她 #line:6d6800
+Mae: 那么，你觉得米兰达夫人她…… #line:6d6800
 Mae: 是不是把自己丈夫的内脏全都给掏出来了呢？ #line:4179ee
-Mae: 制作木乃伊不就有这个操作吗？ #line:8c25b0
+Mae: 那不就是在制作木乃伊吗？ #line:8c25b0
 Bea: 梅，这我可不知道。 #line:1dcf42
 <<close>>
 <<cameraLookAt CameraDriftAway 10>>
 //start drifting camera up into the skies
-Mae: 那你觉得如果让你这么做，你能受得了吗？ #line:67464f
+Mae: 你觉得你自己不会感到反“胃”吗？ #line:67464f
 Bea: 我可受不了。 #line:9b50a7
-Mae: 做这事可需要有很大勇气才行。 #line:ab7655
+Mae: 做这事可需要个大“心脏"。 #line:ab7655
 Bea: 这倒是。 #line:20c517
-Mae: 我真希望她能把这么做的原因“脾释"（解释）给咱们听。 #line:69b1f7
-Bea: 我懂你的意思了，梅。 #line:b6b2ae
-Mae: 她又重新登“肠"（登场）啦！ #line:d8e3c4
+Mae: 我真希望她能把这么做的原因给咱解释“胰"下。 #line:69b1f7
+Bea: 我已经懂你的笑料了，梅。 #line:b6b2ae
+Mae: 她又重新登“肠"啦！ #line:d8e3c4
 Bea: 好了好了，那东西应该还在它该待的地儿。 #line:1df370
-Mae: 是啊，那东西应该待在自己该待的“地肺"（地方）！ #line:8b2515
+Mae: 是啊，但那东西就应该待在地“腑"！ #line:8b2515
 <<setAnimInt sitting Bea 0>>
 <<warp Bea BeaSit>>
 <<walk Bea WalkOffLeft>>
 //walk bea off to the left//
-Bea: 我要回去了。 #line:3e6beb
-Mae: 嘿，你应该让你的人生变得“肝"（更）精彩才对！ #line:0360bd
-Bea: 拜拜啦，我走了。 #line:afa87a
+Bea: 我要走了。 #line:3e6beb
+Mae: 嘿，你得“肝"出更精彩的人生！ #line:0360bd
+Bea: 拜拜，走了。 #line:afa87a
 <<walk Mae WalkOffLeft>>
 //walk mae off to the left//
 Mae: 嘿！等等我！ #line:da951b
 Bea: 你就自己一个人走回去吧。 #line:fd4860
-Mae: 你胆儿肥啦，敢这么跟我说话！ #line:201245
-Bea: 我可要叫警察啦。 #line:a9435c
+Mae: 你“胆"儿肥啦，敢这么跟我说话！ #line:201245
+Bea: 我可要报警了。 #line:a9435c
 <<wait 3>>
 <<fadeOut 1 wait>>
 <<unlockDoodle BeaFQ2>>

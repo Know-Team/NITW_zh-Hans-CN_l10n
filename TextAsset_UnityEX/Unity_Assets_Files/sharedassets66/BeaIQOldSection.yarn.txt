@@ -38,12 +38,12 @@ Bea: 你有见到我妈吗？ #line:0eed6c
     Mae: 碧娅，她现在就在某个地方，并且过得很好。 #line:c965d3
     Bea: 谢谢。但我不知道你是不是在说谎， #line:c31602
     Bea: 也不知道这是不是你梦见的 #line:509674
-    Bea: 或者别的什么的。 #line:a83996
+    Bea: 其实是别的什么。 #line:a83996
     Bea: 但是……即使那都是你瞎编的 #line:0e8df7
     Bea: 你人真好。 #line:bb6304
     <<wait 2>>
 ->没见过。 #line:2b1572
-	Mae: 我是说，我也不太清楚。 #line:7e3881
+	Mae: 我是说，我也不太清楚？ #line:7e3881
     Mae: 我不觉得鬼会长得和 #line:9953bf
     Mae: 人一样? #line:1c833a
     Mae: 就好比，他们并不是变成鬼，待在这附近。 #line:51a588
@@ -56,23 +56,23 @@ Bea: 你有见到我妈吗？ #line:0eed6c
     Mae: 你老妈人多好啊， #line:5e0acf
     Mae: 她本应该好好地活着才对，而不是早早地被埋在这儿。 #line:5e00c5
     Bea: 哈哈，那可真…… #line:5f826b
-    Bea: 谢谢你，试着活跃气氛。 #line:8837c1
+    Bea: 谢谢你活跃气氛。 #line:8837c1
     Mae: 碧翠丝，我只是在尽我所能罢了。 #line:4a6583
 Bea: 好了，就这样吧。 #line:74d388
 Bea: 情况不太妙啊，咱们被这扇狗屁门 #line:ccb878
 Bea: 锁在外边了。 #line:aea9dd
 Mae: 呃，为什么要在墓地里放个大铁门啊？ #line:87762c
 Bea: 唔，可能是为了防止像你这样的人进去吧， #line:8299a2
-Bea: 还能防止你做你可能会做的那些事。 #line:456d4c
-Mae: 嗯。那也是你的猜测，咱们永远也不会知道这铁门是干什么用的了 #line:444fa8
+Bea: 还能阻止你做可能会做的那些事。 #line:456d4c
+Mae: 嗯。那也是你的猜测，咱们永远也不会知道这铁门是干什么用的了。 #line:444fa8
 Bea: 好吧，我可不想爬到门上去。 #line:e05635
-Bea: 上吧，这是你擅长的领域 #line:06b5b2
+Bea: 上吧，这是你擅长的领域。 #line:06b5b2
 Mae: 我擅长的领域？ #line:2d0426
-Bea: 这种事你最擅长啦！ #line:351ab8
-Bea: 暴力突破之类的鬼东西。 #line:484bba
+Bea: 这种事你最擅长！ #line:351ab8
+Bea: 暴力突破之类的。 #line:484bba
 Mae: 老天。什么事都得靠我。 #line:080755
 Bea: 是你要找的鬼！我只是个开车的。 #line:c1fb59
-Mae: 好好好。我去去就来。 #line:c82cfe
+Mae: 好好好。我摘几个橘子去，你就在此地，不要走动。 #line:c82cfe
 <<walk Bea BeaByGate>>
 <<setCanInteract Bea 0>>
 ===
@@ -91,14 +91,14 @@ Mae: 我不觉得门后边会有人。 #line:557ef2
 Mae: 而且现在已经很晚了。 #line:db814b
 Bea: 嗯哼。 #line:62fdc1
 Mae: 顺便一提，不用谢！ #line:ca8ee5
-Bea: 看到没？我就说这方面你很擅长的。 #line:d9ec66
+Bea: 看到没？我就说你很擅长这些的。 #line:d9ec66
 Mae: 我的背好痛。 #line:d6deed
 Bea: 所以我们需要干什么？ #line:1d8113
-Mae: 呃，我要去找小乔的坟 #line:8616d7
-Mae: 他要是不出来的话 #line:5d28ce
+Mae: 呃，我要去找小乔的坟。 #line:8616d7
+Mae: 他要是不出来的话， #line:5d28ce
 Mae: 我就敲他的墓碑敲到他出来。 #line:fee8c8
-Bea: 什么东西都不准弄坏，梅。 #line:3737dc
-Mae: 好好好！随便啦！咱走吧！ #line:ed5863
+Bea: 不准弄坏任何东西，梅。 #line:3737dc
+Mae: 好好好！随便吧！走吧！ #line:ed5863
 <<set $at_joes_grave_done to 0>>
 <<walk Bea BeaInPit>>
 ===
@@ -107,7 +107,7 @@ tags:
 colorID: 4
 position: 637,541
 ---
-Bea: “乔•谢德" #line:bd0ea8
+Bea: “乔·谢德" #line:bd0ea8
 Bea: 嗯，这就是他的坟。 #line:43ebdd
 Bea: 这儿的地面都软塌塌湿嗒嗒的。 #line:052773
 Mae: 呃，真恶心。 #line:0228ef
@@ -205,16 +205,16 @@ colorID: 4
 position: 1163,1206
 ---
 <<wait 2>>
-Mae: 这 也 太 蠢 了 吧！ #line:f2cc12
+Mae: 这也太蠢了吧！ #line:f2cc12
 Bea: 你本来还以为会有什么？ #line:d7caef
-Mae: 某 些 东 西 ！ #line:69f519
+Mae: 某些东西 ！ #line:69f519
 Mae: 可我感觉这么干……真 是 蠢 透 了！！！ #line:fc82cb
 Mae: 他 又 不 可 能 自 己 从 地 里 蹦 出 来！ #line:e8447d
 Bea: 这……这就是你的计划？ #line:4566df
-Mae: 真 是 蠢 透 了 ！ #line:a91e59
+Mae: 真是蠢透了！ #line:a91e59
 Mae: 我真想狂扁他一顿！ #line:195d4e
-Bea: 哇哦伙计，稳住稳住，别…… #line:6ff57e
-Mae: [shake=.05]小 乔 小 乔 快 显 灵 吧！！！[/shake] #line:f12eda
+Bea: 哇哦，伙计，稳住稳住，别…… #line:6ff57e
+Mae: [shake=.05]小乔小乔快显灵吧！！！[/shake] #line:f12eda
 <<playerCanRun 1>>
 <<playerCanJump 1>>
 <<setCanInteract Bea 0>>
@@ -237,9 +237,9 @@ position: 1748,1204
 <<warp Mae MaeSinkhole>>
 <<flip Mae -1>>
 <<freezePlayer>>
-Bea: 我 靠！ #line:05de66
-Mae: 我 靠！ #line:6d690f
-Bea: 你 都 干 了 什 么？？？ #line:d1cf74
+Bea: 我靠！ #line:05de66
+Mae: 我靠！ #line:6d690f
+Bea: 你都干了什么？？？ #line:d1cf74
 Mae: 你是对的！ #line:f169d8
 Bea: 对什么对？？？我不是跟你说了别这么搞吗？ #line:c4e71b
 Mae: 落水洞那件事你说的是对的！ #line:ed58c2
@@ -248,7 +248,7 @@ Bea: 等一下……那是…… #line:a19871
 Mae: 嗯，这是个棺材。 #line:aa0037
 Bea: 哦，我靠。 #line:b4c15d
 Mae: 那咱们要……把它打开……是吗？ #line:b54b04
-Bea: 不。咱们不开 #line:d3eb27
+Bea: 不。咱们不开。 #line:d3eb27
 Bea: 那棺材里可是有一具烂掉的尸体。 #line:e8848d
 Mae: 碧娅，已经过好久了。 #line:e91f91
 Mae: 他已经腐烂的不能再烂了。 #line:b838c3
@@ -311,12 +311,12 @@ position: 455,1133
 ---
 <<if $graveyard_need_bea is 0>>
     Mae: 我可不能把碧娅给丢下…… #line:f58345
-    Mae: 呃，碧翠丝。 #line:3d810d
+    Mae: 嘿，碧翠丝。 #line:3d810d
     Mae: 你也该学学怎么跳上来。 #line:03dfc8
-    Mae: 那双竹竿腿大概是做不到的。 #line:81708b
+    Mae: 不过你那双竹竿腿大概是做不到的。 #line:81708b
     Mae: 我要怎么把这门打开？ #line:136339
     <<set $graveyard_need_bea to 1>>
 <<elseif $graveyard_need_bea is 1>>
-    Mae: 嗯嗯嗯，肯定有办法能把这门破开的…… #line:300bba
+    Mae: 肯定有办法能把这门破开的…… #line:300bba
 <<endif>>
 ===

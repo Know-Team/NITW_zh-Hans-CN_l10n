@@ -106,7 +106,7 @@ position: -653,933
             SteveScriggins: 你们俩可真够怪的。 #line:face10
     Gregg: 好了，咱们选一个，然后把它偷走。 #line:d45b76
     Mae: 这算是偷吗？ #line:4f805d
-    Gregg: 把这看成是偷比较棒。 #line:907dd1
+    Gregg: 把这视作偷窃不是件更棒的事吗。 #line:907dd1
     Mae: 酷。 #line:70900d
     <<close>>
     <<wait .5>>
@@ -117,8 +117,8 @@ position: -653,933
         ->你没事吧？ #line:9ae45d
         ->伙计，咋啦？ #line:2b4fb7
     Gregg: {width=300}啊啊啊啊啊啊啊啊啊啊！！！ #line:3af4e2
-        ->伙 计！你 到 底 咋 啦！ #line:9c6b89
-        ->别 叫 了！！！ #line:2a09bd
+        ->伙计！你到底咋啦！ #line:9c6b89
+        ->别叫啦！！！ #line:2a09bd
     Gregg: 我选不出！它们看起来都很棒！ #line:6939b7
     SteveScriggins: 你只能挑一个，就这样。赶紧的。 #line:9f4197
     Mae: 哦，让我来选！我来选！ :) #line:8b2667
@@ -158,7 +158,7 @@ SteveScriggins: 呜哈哈哈。 #line:8db583
 <<close>>
 <<wait 2>>
 <<hide SteveScriggins>>
-Gregg: 听他那口吻好像朋克仔不是什么好东西一样。 #line:1e46a1
+Gregg: 听他那口气好像朋克仔不是什么好东西一样。 #line:1e46a1
 Mae: 我不在乎。 #line:c2da95
 Mae: 他就是个人渣加罪犯。反正我觉得他从来就不是什么好东西。 #line:9f6b9b
 Gregg: 嗯，没错。 #line:99b7af
@@ -188,12 +188,12 @@ position: -1896,1678
 ---
 Mae: 哦，天啊。这什么味儿啊？ #line:f6e088
 SteveScriggins: 胶水味儿。 #line:fad0f9
-Mae: 哦不。那是- #line:5d7fae
+Mae: 哦不。那是…… #line:5d7fae
 <<walk SteveScriggins SteveWalkIn>>
 SteveScriggins: [wave]姑娘们，你们好啊。[/wave] #line:abf7a2
 Mae: =_= #line:9ee1e3
 <<vo Mae dissapointed>>
-Mae: 呃啊。:( #line:904858
+Mae: 咦。:( #line:904858
 Mae: 他喵的史蒂夫·斯克里金斯。 #line:ec28b5
 SteveScriggins: *噗噗噗噗噗！！* #line:fa65df
 Mae: 你那是发出了屁音吗？ #line:ac2c40
@@ -208,17 +208,17 @@ SteveScriggins: 我敢说[wave]没有人[/wave]不记得你。 #line:9470de
     ->那老师告你了吗？ #line:53c672
         Mae: 高低得在停车场把你打一顿吧？ #line:74925f
         SteveScriggins: 哪个老师？ #line:b063c2
-        Mae: 就是那个长至夜假你锁在杂物间里的老师。 #line:1a29e0
-        SteveScriggins: 噗，那家伙现在连小一点的屋子都不敢进啦。 #line:6cb47f
+        Mae: 就是那个长至夜假被你锁在杂物间里的老师。 #line:1a29e0
+        SteveScriggins: 噗，那家伙现在连小一点的屋子都不敢进。 #line:6cb47f
         SteveScriggins: 他一直都是个胆小鬼，就差个人让他明白这一点。 #line:c1cad9
         Mae: …… O_O #line:72372f
         Gregg: …… O_O #line:adb578
     ->你来这儿干什么？ #line:27d830
-        SteveScriggins: 为了你妈。 #line:3d5d01
+        SteveScriggins: 照顾你妈。 #line:3d5d01
         Mae: 真能耐啊史蒂夫。 #line:cfe2ef
-        SteveScriggins: 各种意义上的。 #line:1dd2cd
-        Mae: 酷。 #line:e105bb
-        SteveScriggins: 我就是你的新爹啦。 #line:d8d1c3
+        SteveScriggins: 各方面的“照顾”。 #line:1dd2cd
+        Mae: 切。 #line:e105bb
+        SteveScriggins: 我就是你的新爹。 #line:d8d1c3
         Mae: 史蒂夫，说真的，你和我妈肯定成不了。 #line:976352
         SteveScriggins: 你是在挑战我吗？ #line:35ff2a
 Mae: o_o :| #line:a25e73
@@ -241,7 +241,7 @@ position: 264,380
 <<stopDialogue Gregg>>
 Mae: 怪不得这地方会关门， #line:df2ec4
 Mae: 这里遍地都是别人留下来的钥匙！ #line:ab556f
-Mae: 别介意。 #line:f2ee16
+Mae: 开找喽。 #line:f2ee16
 <<fadeOutInternal 0>>
 <<playOneShot event:/food_donkey/key_pickup Mae>>
 <<wait 1>>
@@ -258,13 +258,13 @@ Mae: 别介意。 #line:f2ee16
 <<flip Mae 1>>
 <<freezePlayer>>
 <<fadeInInternal 1 wait>>
-->找到钥匙啦！ #line:67715d
+-> 找到一些钥匙！ #line:67715d
     <<close>>
 	<<wait 2>>
 	Mae: 伙计们？ #line:3477ef
 ->我可是钥匙大师！ #line:42f95d
 	Mae: 让我来把你的屁股打开！ \o/ #line:0257c2
-	SteveScriggins: 嗯，我已经听说过这事啦！ #line:b50905
+	SteveScriggins: 嗯，知道了知道了！ #line:b50905
 Mae: _o_ #line:9aa625
 <<setCanInteract Gregg 1>>
 ===
@@ -273,17 +273,17 @@ tags:
 colorID: 3
 position: 118,1162
 ---
-Mae: 哦，又提到这个梗了。 #line:6dbf9c
+Mae: 老环保主义者了。 #line:6dbf9c
 Gregg: 我经常会做关于这个的梦。 #line:5475d3
 SteveScriggins: 是春梦吗？ #line:8665a2
-SteveScriggins: 可能吧。 #line:9ea776
+SteveScriggins: 就是春梦。 #line:9ea776
 SteveScriggins: 这是你能做的最好的梦了。 #line:3de628
-SteveScriggins: 可能吧。 #line:6e4c27
+SteveScriggins: 没错没错。 #line:6e4c27
 Mae: …… #line:6c1434
 Gregg: 青蛙会啪啪啪吗？ #line:906358
 Mae: 不会，因为它们是卵生的。 #line:49a952
 SteveScriggins: …… #line:dcb6a8
-SteveScriggins: 你们俩真是太太太无聊啦。 #line:8e1c7a
+SteveScriggins: 你们俩真是太蠢太蠢了。 #line:8e1c7a
 <<set $robot_head_0_done to 1>>
 <<set $num_checked_out_robot_heads += 1>>
 
@@ -321,7 +321,7 @@ tags:
 colorID: 3
 position: 655,1160
 ---
-Mae: 天哪，我怎么不记得这些东西这么恐怖。 #line:17cc92
+Mae: 天哪，我怎么不记得这东西这么恐怖。 #line:17cc92
 Gregg: 他们对当时的你来说太高了，看不见他们的脸。 #line:a4e94e
 SteveScriggins: 那让我来看看你们两位姑娘的脸吧。 #line:e34b39
 SteveScriggins: 呜嘿嘿嘿。 #line:b5421a
@@ -347,15 +347,15 @@ SteveScriggins: 天啊。为什么要让她来选? #line:6a5cbc
 SteveScriggins: 怎么会这样？ #line:0cc1d4
 SteveScriggins: 给她一辈子她都选不出来！ #line:d79109
 Mae: :( \o/ #line:3ff5dc
-Mae: [shake=.05]斯 克 里 金 斯！不 爽 你 就 来 啃 我 的 屁 股 吧！[/shake] #line:e8e72d
-SteveScriggins: 你 说 什 么？！ #line:497d4d
-Mae: [shake=.05]你 会 因 为 把 脸 埋 在 我 屁 股 里[/shake] #line:7f2b56
-Mae: [shake=.05]缺 氧 [/shake] #line:a31f92
-Mae: [shake=.05]而 死 ！[/shake] #line:6a859b
+Mae: [shake=.05]斯克里金斯！不爽就来啃我的屁股吧！[/shake] #line:e8e72d
+SteveScriggins: 你说什么？！ #line:497d4d
+Mae: [shake=.05]你会因为把脸埋在我屁股里[/shake] #line:7f2b56
+Mae: [shake=.05]缺氧 [/shake] #line:a31f92
+Mae: [shake=.05]而死！[/shake] #line:6a859b
 SteveScriggins: 我……我……啥？ #line:2b4f1d
 Gregg: 经典。 #line:a59bd1
-Mae: [shake=.05]没 错，史 蒂 夫！够 经 典 吧！[/shake] #line:58b520
-SteveScriggins: [shake=.05]哦，我 的 天 哪！咱 们 能 不 能 别 再 扯 这 个 啦！[/shake] #line:56728d
+Mae: [shake=.05]没错，史蒂夫！够经典吧！[/shake] #line:58b520
+SteveScriggins: [shake=.05]哦，天哪！咱们能不能别再扯这个！[/shake] #line:56728d
 Mae: :| _o_ #line:e04c44
 ===
 title: DecisionPoint
@@ -363,7 +363,7 @@ tags:
 colorID: 3
 position: -610,1588
 ---
-Mae: 好了宝贝们，我们就选…… #line:a60d14
+Mae: 好了，小不点们，我们就选…… #line:a60d14
 [[说真的，我还没想好呢…… |NotSure]] #line:a56e50
 <<if $robot_head_0_done is 1>>
     [[青蛙头。|PickRobotMascot0]] #line:ba2903
@@ -387,18 +387,18 @@ Gregg: 嗯，那倒是……这方面我倒很擅长。 #line:73bfd9
 Mae: 还记得提姆·惠特利是怎么开着拖拉机回家的吗？ #line:4d04d5
 Gregg: 绝对记得。 #line:bb0316
 Gregg: 那……你选好要哪个了吗？ #line:3ca941
-->伙计，再给我点时间。 #line:e17c53
+->伙计，再给点时间。 #line:e17c53
     Gregg: 呃，好吧。 #line:88a40e
     Mae: 伙计，这事很重要吗？ #line:c5db25
     Gregg: 这事很重要。 #line:372a1a
     Mae: 那好吧，那咱们就严肃对待吧。 #line:834257
-    Gregg: 但我饿了。 #line:dc3eed
-    Mae: 啊啊啊，我也饿啦。 #line:f704b7
+    Gregg: 我饿了。 #line:dc3eed
+    Mae: 啊啊啊，我也饿了。 #line:f704b7
     Gregg: 咱们还是等会吃比较好。 #line:23bfbd
     Mae: 可能吧。 #line:8ef300
     SteveScriggins: 我可有要去的地方，你们懂吗！ #line:622f69
 ->选好了。 #line:bb5c3d
-    Gregg: 哦，酷啊。 #line:b1368f
+    Gregg: 好耶。 #line:b1368f
     [[DecisionPoint]]
 ===
 title: TryToDecide01
@@ -407,13 +407,13 @@ colorID: 3
 position: -621,1275
 ---
 Gregg: 你想选哪个？ #line:6a0429
-->[shake=.05]再 多 给 我 几 秒。[/shake] #line:d2c879
+->[shake=.05]再多给我几秒。[/shake] #line:d2c879
     Mae: \o/ #line:2806f2
     <<dilate Mae .5 .25>>
-    Gregg: 老 兄，别 激 动。 #line:21f7d5
+    Gregg: 老兄，别激动。 #line:21f7d5
     <<dilate Mae 1 .5>>
     Mae: _o_ #line:15fa0d
-->嗯……好啦，我选好啦。 #line:5d67bc
+-> 嗯……好啦，我选好啦。 #line:5d67bc
     Gregg: 好极啦。 #line:a8057f
     [[DecisionPoint]]
 
@@ -424,9 +424,9 @@ colorID: 3
 position: -339,1279
 ---
 Gregg: 选好没？ #line:5a0765
-->没呢！ #line:c15a04
-->好啦！ #line:c49d0a
-    Gregg: 好 耶！ #line:3d3e24
+-> 没呢！ #line:c15a04
+-> 好啦！ #line:c49d0a
+    Gregg: 好耶！ #line:3d3e24
     [[DecisionPoint]]
 ===
 title: GreggScrigginsBG1
@@ -449,10 +449,10 @@ SteveScriggins: 你认识贝丝·霍斯特德吗？ #line:07041a
 Gregg: 认识。 #line:7c6086
 SteveScriggins: 六个月之前，她来到这个地方。之后她发誓听见这玩意儿说话了。 #line:f4826c
 Gregg: 哇哦。 #line:9901fa
-SteveScriggins: 都不用试，我赌这玩意不会说话。 #line:8a8c34
-SteveScriggins: 不过赌多少我就不太确定了。 #line:84f2c5
+SteveScriggins: 不用试，我赌这玩意不会说话。 #line:8a8c34
+SteveScriggins: 不过我也不知道该赌多少。 #line:84f2c5
 SteveScriggins: 你肯定认识贝丝。 #line:ac3deb
-Gregg: 差不多？ #line:6800f9
+Gregg: 应该认识吧？ #line:6800f9
 SteveScriggins: 这里面有一堆胶水。 #line:c3cf18
 Gregg: 可能吧。 #line:1a7b84
 <<set $gregg_friendship_quest_1 to 1>>
@@ -478,14 +478,14 @@ colorID: 3
 position: -1144,801
 ---
 <<flip SteveScriggins -1>>
-SteveScriggins: [shake=.05]真 是 见 了 鬼 啦！！！[/shake] #line:f42503
+SteveScriggins: [shake=.05]真是见了鬼！！！[/shake] #line:f42503
 Mae: 怎么了？ #line:22597a
-SteveScriggins: 有人把这破门给锁啦！ #line:7c7633
+SteveScriggins: 有人把这该死的破门给锁了！ #line:7c7633
 SteveScriggins: 见鬼！我敢保证，肯定是贝丝干的。 #line:5f6dd6
 SteveScriggins: 要么就是利维干的。 #line:bc8c87
 SteveScriggins: 要么就是火车上的垃圾把门堵上了。 #line:171a13
 Gregg: 所以说…… #line:433ee7
-SteveScriggins: 啊 啊 啊 啊 啊！ #line:08f274
+SteveScriggins: 啊啊啊啊啊！ #line:08f274
 SteveScriggins: 他们最好没从这儿偷东西。 #line:35fe96
 Mae: ……在一个没锁门的…… #line:78631e
 Mae: ……废弃杂货店里…… #line:08fe8e
@@ -493,7 +493,7 @@ Mae: 话说，门后面到底有什么啊？ #line:414a78
 SteveScriggins: 咱们应该把这门给炸开…… #line:53e27a
 Gregg: 或者我回去拿开锁工具。 #line:5dc5cc
 Mae: 我敢打赌，这地方肯定有钥匙什么的。 #line:a4ff55
-SteveScriggins: 随你怎么说啦。 #line:60fbb0
+SteveScriggins: 随你怎么说。 #line:60fbb0
 <<flip SteveScriggins 1>>
 <<setAnimInt SteveScriggins kickingDoor 1>>
 <<close>>
@@ -524,13 +524,13 @@ colorID: 3
 position: -817,445
 ---
 Gregg: 他们到底要用多少胶水啊？ #line:c14ced
-Mae: 伙计，要想生意做得好，就得把各方各面都给粘好才行。 #line:d53ad2
-Gregg: 额，可不是这么回事。 #line:7aa431
+Mae: 伙计，要想生意做得好，就得各方各面给粘好。 #line:d53ad2
+Gregg: 额，很明显不是这么回事。 #line:7aa431
 Gregg: 你干什么呢？ #line:2f3d51
 Mae: 我去楼上的办公室看看。 #line:f5f106
-Gregg: 酷啊。你可别让玻璃片给切死啦。 #line:d7a334
+Gregg: 酷。可别让玻璃片给切死啦。 #line:d7a334
 Mae: 这种死法也太蠢了吧。 #line:2c43c9
-Gregg: 这死法的确很蠢。 #line:bdc63d
+Gregg: 的确很蠢。 #line:bdc63d
 ===
 title: DoorUnlock
 tags: temp
@@ -538,9 +538,9 @@ colorID: 3
 position: -228,847
 ---
 <<setPlayerInteractLocator Gregg>>
-Mae: 哟，你们两个大傻子，别再踹门啦，小心把腿给踢折啦。 #line:6ac77f
-Gregg: 我可不是傻子。 #line:9998a3
-Mae: 说得是啊，抱歉。嘿，那个傻子，还有格雷格，你们别踹啦。 #line:0d8b6d
+Mae: 哟，俩大傻子，别踹门了，小心把腿给踢折了。 #line:6ac77f
+Gregg: 我可不是大傻子。 #line:9998a3
+Mae: 对哦，抱歉。嘿，那个傻子，还有格雷格，别踹了。 #line:0d8b6d
 Mae: 我找到钥匙了。 #line:7d4d5f
 <<setAnimInt SteveScriggins kickingDoor 0>>
 <<setAnimInt Gregg kickingDoor 0>>
@@ -554,8 +554,8 @@ SteveScriggins: 他们居然把钥匙随处乱放！ #line:61ec2e
 Mae: 和我想的一样。 #line:081083
 <<walk SteveScriggins SteveScrigginsDoor2 1>>
 <<walk Mae GreggDoor2>>
-Mae: 咱们俩想说的话都一样，让我有点不爽啊。 #line:262410
-SteveScriggins: 我觉得还好吧。 #line:cc94e2
+Mae: 咱俩想的一模一样，让我有点不爽啊。 #line:262410
+SteveScriggins: 不，我的想法比你高明些。 #line:cc94e2
 <<lookRight Mae>>
 Mae:{emote=food_donkey_key} #line:e5558a
 <<fadeOutMusic 5>>
@@ -573,12 +573,12 @@ Mae:{emote=food_donkey_key} #line:e5558a
 ->咱们为什么要跟这家伙一起干坏事呀？ #line:5ee8c4
 	Gregg: 强盗可没办法选择搭档。 #line:fe058b
 	<<walk Gregg Gregg2 -1>>
-	Mae: 其实强盗还是能选的。 #line:3b160d
-	SteveScriggins: 我可听得见你们俩在说什么，知道吗？ #line:a09ff1
-->额，当初为什么会选史蒂夫一起啊？ #line:49924c
-	Gregg: 因为他能进得来。 #line:3b3c2e
+	Mae: 其实他们可以。 #line:3b160d
+	SteveScriggins: 你们俩知道我能听见的，对吧？ #line:a09ff1
+->呃啊，这个搭档就非得是史蒂夫？ #line:49924c
+	Gregg: 因为他能进来。 #line:3b3c2e
 	<<walk Gregg Gregg2 -1>>
-	Mae: 什么能进得来？ #line:e58cdf
+	Mae: 什么能进来？ #line:e58cdf
 	SteveScriggins: 是我把前门给打开的。 #line:23f714
 <<playMusic food_donkey_faces 3>>
 <<set $gregg_friendship_quest_1 to 2>>
@@ -603,7 +603,7 @@ position: -1420,1661
     Mae: U_U 这真是个[wave]奇迹！[/wave] #line:cd174f
     <<lookUp Mae>>
     Mae: _o_ 让我好好享受一下这个时刻。 o_o #line:51e243
-    Mae: 不用理我…… #line:610c8d
+    Mae: 不用管我…… #line:610c8d
     <<fadeOut 2 wait>>
 <<else>>
     <<fadeOut .0001 wait>>

@@ -160,7 +160,7 @@ tags:
 colorID: 0
 position: 688,69
 ---
-Gregg: 革 命 开 始 啦！ #line:9a17d6
+Gregg: 革命开始啦！ #line:9a17d6
 ===
 title: CarDamage02
 tags: 
@@ -174,7 +174,7 @@ tags:
 colorID: 0
 position: 1164,134
 ---
-Gregg: 破车，你的末日到啦！！ #line:53d31e
+Gregg: 破车，这就是你的末日！！ #line:53d31e
 ===
 title: CarDamage04
 tags: 
@@ -189,7 +189,7 @@ tags:
 colorID: 0
 position: 1632,119
 ---
-Gregg: 幽灵吸血虎在月圆之夜复活啦！！！ #line:81de1b
+Gregg: 幽灵吸血虎在月圆之夜复活！！！ #line:81de1b
 //Mae: What?
 //Gregg: I dunno! I go where the moment takes me!
 ===

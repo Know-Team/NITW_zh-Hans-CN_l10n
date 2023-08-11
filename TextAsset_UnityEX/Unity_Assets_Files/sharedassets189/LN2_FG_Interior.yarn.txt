@@ -11,7 +11,7 @@ position: 91,-205
 	<<set $cliff_jumps += 1>>
 <<elseif $cliff_jumps > 0 and $cliff_jumps < 1000>>
 	Mae: ……然后，她就跳了…… #line:6b4635
-	Granddad: 不，梅，别再说了。 #line:d831aa
+	Granddad: 不，梅，别说了。 #line:d831aa
 	<<set $cliff_jumps = 1000>>
 <<elseif $cliff_jumps is 1000>>
 	Granddad: 唉。 #line:416c03
@@ -26,27 +26,27 @@ tags:
 colorID: 0
 position: 537,-178
 ---
-Adina: ……您好？ #line:8f9cb9
+Adina: ……你好？ #line:8f9cb9
 <<close>>
 <<wait 2>>
-Adina: 请问，您在吗？ #line:3901b9
+Adina: 请问，你在吗？ #line:3901b9
 ForestGod: 你来迟了。 #line:b3e896
-ForestGod: 而且，你也不是女王。 #line:69c6ca
-ForestGod: 我上一次和一个渺小而无足轻重的生物谈话还是几百年之前的事。 #line:7ee7ba
+ForestGod: 你也并非女王。 #line:69c6ca
+ForestGod: 我上次和一个渺小而无足轻重的生物谈话还是在几百年前。 #line:7ee7ba
 ForestGod: 我有处死你的权力。 #line:d3241b
 Adina: 我可不知道有这回事。 #line:a63ec6
-ForestGod: 接受现实吧。死亡是多么司空见惯的事啊。 #line:f2f5d0
-Adina: 为什么我要接受这个现实啊？ #line:3d4ed1
-ForestGod: 因为这就是自然规律。 #line:d5fb1d
-Adina: 真逗啊。你凭什么认为，有杀死我的权力 #line:e18a5e
+ForestGod: 接受现实吧。死亡是多么司空见惯。 #line:f2f5d0
+Adina: 为什么我要接受它？ #line:3d4ed1
+ForestGod: 这就是自然规律。 #line:d5fb1d
+Adina: 有趣，你凭什么认为，你有杀死我的权力 #line:e18a5e
 Adina: 就是自然规律呢？ #line:3a47c3
 ForestGod: 噗…… #line:2e4098
-Adina: 你根本就不是神， #line:6a33ef
-Adina: 你只不过是只块头很大的动物罢了。 #line:e788eb
+Adina: 你不是神， #line:6a33ef
+Adina: 你不过是只块头很大的动物罢了。 #line:e788eb
 <<animationTrigger ForestGod LightsUp>>
-ForestGod: 但其他人都称呼我为神。 #line:d19622
+ForestGod: 他们称我为神。 #line:d19622
 ForestGod: 所以，我就是神。 #line:1e0bfc
-ForestGod: 告诉我，你为什么要冒着失去生命的风险来找我呢。 #line:83d296
+ForestGod: 告诉我，你为什么要冒着失去生命的风险来找我。 #line:83d296
 [[因为我知道你将死的原因是什么。|FGKnowDying]] #line:b9b0c4
 [[因为我知道你生病的原因是什么。|FGKnowSick]] #line:4d74f1
 
@@ -140,8 +140,8 @@ ForestGod: 你 说 吧！！！！！ #line:b30e53
 Adina: 很显然， #line:01c2c9
 Adina: 是弓背女巫给你下了毒。 #line:f4f928
 ForestGod: 噗噗噗…… #line:7ab9f3
-ForestGod: 这是原来可和平安宁啦！但后来…… #line:a593d2
-Adina: 我知道，几百年前，这里确实很安宁。 #line:a1cdcb
+ForestGod: 这里原来一片安宁祥和！但后来…… #line:a593d2
+Adina: 我知道，几百年前确实如此。 #line:a1cdcb
 ForestGod: 但为什么会是这样呢？ #line:5101de
 Adina: 弓背女巫会活下来， #line:40b3a4
 Adina: 而你却不能。 #line:90b932
@@ -157,7 +157,7 @@ ForestGod:{width=8}噗啊啊啊啊啊！！！！！ #line:fc3b22
 <<wait 9>>
 <<hide ForestGod>>
 <<wait 4>>
-Adina: 再见啦。 #line:8e11f7
+Adina: 再见。 #line:8e11f7
 <<destroy Fire1>>
 <<destroy Fire2>>
 <<set $forest_god to 1>>
@@ -188,7 +188,7 @@ Mae: 爷爷，我困了。 #line:7c77dd
 Granddad: 梅，故事基本上全都讲完了。 #line:40e80d
 Mae: 哦，好的。我很喜欢这个故事。 #line:526754
 Granddad: 我就知道你会喜欢的。 #line:259686
-Mae: 您什么时候想和我一起抢银行都可以。 #line:67ea7d
+Mae: 你什么时候想和我一起抢银行都可以。 #line:67ea7d
 <<hideTalkingHeads>>
 <<wait 1>>
 <<scene LN2_LostWoods>>

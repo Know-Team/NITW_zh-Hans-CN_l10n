@@ -7,7 +7,7 @@ position: 657,380
     Mae: =_= #line:d361b8
     <<wait 8>>
     Mae: 这一点也不好玩。 #line:49c23f
-    Mae: 真是糟透啦。 #line:07ac91
+    Mae: 真糟糕。 #line:07ac91
     Mae: 为什么所有事都这么诡异。 #line:bdb3a4
     Mae: 为什么我会这么难受。 #line:61f060
     Mae: 所有的事都蠢爆了。 #line:8b211d
@@ -31,7 +31,7 @@ position: 657,380
     Mae: ……愚蠢的问题。 #line:1457c4
     Gregg: 好吧，那你*为什么*要这么做啊？ #line:10f1a1
     Mae: 我*需 要*|什么理由吗？ #line:cb81cc
-    Gregg: 当然需要啦！你这么做肯定是有原因的！ #line:d1eaad
+    Gregg: 当然！你这么做肯定是有原因的！ #line:d1eaad
     Mae: 什么时候起发泄还需要事先找好说辞了？ #line:395be9
     Mae: 而你又为什么会在这儿？ #line:f6e6bd
     Gregg: 当然是找你啊！ #line:a12d77
@@ -46,7 +46,7 @@ position: 657,380
     Mae: *我 的 天 哪*，|格雷格。|我之前根本就没有|想上洗手间。 #line:e34608
     Gregg: 好好好！老天！ #line:cc4120
     <<wait 3>>
-    Mae: 但 我 现 在 想 上 了。 o_o :( \o/ #line:992a85
+    Mae: 但我现在想上了。 o_o :( \o/ #line:992a85
     Gregg: 等你完事了，我们会给你留个位置的。 #line:969692
     Mae: 快 出 去。 #line:9efd67
     Gregg: 好吧，好吧。 #line:860f2a

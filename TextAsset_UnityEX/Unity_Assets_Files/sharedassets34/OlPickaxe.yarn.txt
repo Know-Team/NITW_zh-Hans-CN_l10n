@@ -342,7 +342,7 @@ Mae: :| #line:db69e6
 Mae: 演出什么时候开始啊？ #line:9af17e
 Bea: 嗯……我觉得……十分钟之后就该开始了吧。 #line:57c1fc
 Mae: “你觉得"？ #line:cd5432
-Bea: 呃，这简直就是噩梦啊。 #line:63cc2a
+Bea: 呃，这简直就是噩梦。 #line:63cc2a
 Bea: 我当初为什么要接这活啊？ #line:e3040b
 Bea: 商会可欠了我一个大人情。 #line:5cbe48
 Mae: 老天，我可听着呢。 #line:8f045a
@@ -351,11 +351,11 @@ Bea: …… #line:84a32a
 Mae: 怎么了？ #line:fe29e8
 Bea: 好了，有件事要你帮忙……你的台词不多…… #line:66722b
 Mae: 你说啥？！ #line:0d8cf7
-Bea: 我已经缺席了3次啦！ #line:11f677
+Bea: 我已经缺席了3次！ #line:11f677
 Mae: 为什么呀？ #line:48dffa
-Bea: 因 为 我 们 干 的 所 有 这 些 事 都 蠢 到 家 啦，而 且 也 没 人 会 在 意 这 些 的！！！ #line:9ea9d4
+Bea: 因为我们干的所有这些事都蠢到家，而且也没人会在意这些的！！！ #line:9ea9d4
 Mae: 碧娅…… #line:fb4e90
-Bea: 拜托啦，这其实挺有意思的！ #line:b03a36
+Bea: 拜托，挺有意思的！ #line:b03a36
 Mae: 碧娅。 #line:1f9399
 Bea: 怎么了？ #line:4a216b
 Mae: 我会帮你的。 #line:8bf53a
@@ -426,7 +426,7 @@ Dan: 树旁边……啊，有口泉！ #line:5e280c
 Bill: 史蒂文兄弟，上天真是在保佑咱们啊。 #line:77dfc0
 Bill: 说真的， #line:e592d7
 Bill: 带着这三百张河狸皮，还走了这么多难走的路， #line:901dbc
-Bill: 我早就已经口干舌燥啦。 #line:d48bf5
+Bill: 我早就已经口干舌燥。 #line:d48bf5
 Dan: 哦，好兄弟，那咱们就快点赶路吧！ #line:77f692
 <<close>>
 <<walk Mae MaeCounter wait>>
@@ -546,7 +546,7 @@ Mae: 这里也有你的戏份？ #line:3d9c55
 <<lookRight Gregg>>
 Gregg: 没错。 #line:35f35b
 <<lookLeft Gregg>>
-Dan: 啊 啊 啊！！女 巫 来 啦！！！ #line:4e5be7
+Dan: 啊啊啊！！女巫来啦！！！ #line:4e5be7
 Mae: 是我。 #line:3d4214
 Dan: 朋友，我向你保证， #line:962cf0
 Dan: 今天，这可怕的老妖婆 #line:9ee76b
@@ -564,7 +564,7 @@ Mae: 呃 呵 呵 呵呵呵！！！ #line:05c683
     <<lookLeft Gregg>>
     <<tell HarfestPlayWatchers Happy>>
     <<set $play_correct_responses += 1>>
-    Dan: 啊 啊 啊！我 要 不 行 啦！ #line:24dfc9
+    Dan: 啊啊啊！我要不行啦！ #line:24dfc9
     Dan: 史蒂文兄弟，我来找你啦！！！ #line:e24ebf
 ->诅咒你们这两个无礼的年轻人！ #line:f4dcf1
     <<tell HarfestPlayWatchers Grumble>>
@@ -671,12 +671,12 @@ Mae: …… #line:f643a7
 <<lookRight Bea>>
 <<warp Bea BeaBehindCounter>>
 <<walk Bea BeaAboveCounter wait>>
-Bea: *该 你 说 词 啦* #line:5a291f
+Bea: *该你说词* #line:5a291f
 <<close>>
 <<walk Bea BeaBehindCounter wait>>
 <<shuffleNextOptions>>
 <<lookAt Mae Janitor>>
-->林中之神啊，你在这儿可一点法力也没有！ #line:e26d18
+->林中神啊，你在这儿可一点法力也没有！ #line:e26d18
     <<tell HarfestPlayWatchers Happy>>
     <<set $play_correct_responses += 1>>
     Janitor: 可现在，你的末日已经到了。 #line:1e0a38
@@ -740,7 +740,7 @@ Bill: 因为河狸的数量在缩减。 #line:8a0049
 Bill: 所以，咱们镇现在出口最多的商品是玉米和南瓜！ #line:079a9d
 Gregg: 咱们这儿以前可是经济重镇啊！ #line:81b18c
 <<shuffleNextOptions>>
-->咿 嘻 嘻 嘻嘻嘻！！！ #line:43007f
+->咿嘻嘻嘻嘻嘻！！！ #line:43007f
     Mae: 实际上，邪恶女巫的传说 #line:8cea0a
     Mae: 是由数百年来的迫害演变而来的。而这些迫害则是由…… #line:326ef7
 ->在我诅咒你们所有人之前，都赶快离开这儿吧！！！！ #line:403ae1
@@ -809,7 +809,7 @@ Mae: 好的。 #line:a7227e
 Bea: 今天是不是该排练了？ #line:78f3cc
 Mae: 对啊。我正找格雷格呢。 #line:2317ce
 Bea: 想找到他应该没什么难度。 #line:d4efda
-Mae: 当然没什么难度啦，现在他不就在猎鹰小吃待着呢嘛。 #line:2f3d67
+Mae: 当然没有，现在他不就在猎鹰小吃待着呢嘛。 #line:2f3d67
 Bea: 我真搞不懂，那家伙到底是怎么保住工作的。 #line:1c471d
 Bea: 他老是偷东西，还靠毁东西取乐， #line:6eb7b8
 Bea: 上班的时候还想走就走。 #line:2ea899
@@ -901,7 +901,7 @@ position: 1470,9089
     <<set $bea_day_intro to 1>>
     Mae: 嗨，碧娅！ #line:4821a2
     Bea: 嗨，梅。 #line:35186b
-    Bea: 我想把这地方全都给烧啦。 #line:655d02
+    Bea: 我想把这地方全烧了。 #line:655d02
     Mae: 哦，那就太棒啦！ #line:914773
     Mae: 可这么干，能有什么结果吗？ #line:fab5e4
     Bea: 真这么干的话，我们就能拿到保险金了。 #line:e9df43

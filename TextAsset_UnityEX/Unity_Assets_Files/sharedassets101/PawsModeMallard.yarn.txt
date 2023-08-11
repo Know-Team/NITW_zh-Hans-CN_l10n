@@ -22,9 +22,9 @@ MaePaws: 这一定是个奇迹！ #line:d739ab
 MaePaws: 就像上天赐予给你一个孩子一样。 #line:f8ca8f
 MaePaws: 我勒个去！你们算得上是世上最可爱的害虫了。 #line:347002
 MaePaws: 谁才是最佳害虫？ #line:c9458b
-MaePaws: 当 然 非 你 们 莫 属！ #line:127e66
+MaePaws: 是你们哟！ #line:127e66
 MaePaws: 你们看起来已经饥肠辘辘了。 #line:b5230d
-MaePaws: 这就是你们……呃……无所事事的原因吗？ #line:035272
+MaePaws: 这就是你们……呃……做不了什么事的原因吗？ #line:035272
 MaePaws: 我会给你们带食物的！ #line:ba25d7
 MaePaws: 一定要好好活着！！！ #line:29907b
 <<unlockDoodle MiracleRats>>
@@ -35,7 +35,7 @@ colorID: 0
 position: 26450,-19889
 ---
 <<set $pretzel_intro to 1>>
-MaePaws: 好了，我可爱的小老鼠们！ #line:d7d051
+MaePaws: 好了，我亲爱的小奇迹宝宝们！ #line:d7d051
 MaePaws: 开饭啦！ #line:862536
 ===
 title: PretzelFall
@@ -50,7 +50,7 @@ position: 26209,-19291
     MaePaws: 我猜，现在我是不是可以做你们的妈妈了？ #line:d0ed7a
     MaePaws: 但我还不清楚自己有没有做好当妈妈的准备！ #line:231a2c
 <<elseif $times_fed_rats is 1>>
-    MaePaws: 哦，今天你们的数量又增加啦！ #line:1aaddf
+    MaePaws: 哇哦，今天你们的数量又增加啦！ #line:1aaddf
     MaePaws: 你们得需要更多的食物。没错，要有更多食物才行！ #line:ff025c
 <<elseif $times_fed_rats is 2>>
     MaePaws: 哇！你们的数量可真多啊！ #line:06f191
@@ -59,7 +59,7 @@ position: 26209,-19291
     MaePaws: 将来，当我们在大街上擦肩而过， #line:b36234
     MaePaws: 我还能认出你们吗？ #line:68dbe7
     <<wait 2>>
-    MaePaws: 小老鼠，我真爱你们。 #line:e7ef5d
+    MaePaws: 奇迹宝宝，我真爱你们。 #line:e7ef5d
 <<endif>>
 
 <<close>>

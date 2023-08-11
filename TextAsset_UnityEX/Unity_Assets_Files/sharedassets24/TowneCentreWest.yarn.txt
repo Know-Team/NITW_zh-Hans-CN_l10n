@@ -18,14 +18,14 @@ position: -208,858
 	Angus: 哦，我的天哪！ #line:302f95
     <<lookDirection Gregg .5 -.5>>
     <<lookDirection Bea .25 -.75>>
-	Bea: WTF #line:545131
-	Mae: 那是个啥？ #line:522550
+	Bea: 我靠。 #line:545131
+	Mae: 什么？ #line:522550
     <<lookDirection Mae .6 -.4>>
 	Angus: 那是条胳膊吗？ #line:1f8313
-	Bea: 那确实是条胳膊。 #line:72d8ab
-	Gregg: 大 家 都 别 动！ #line:a38ff1
-	Gregg: 让 我 找 根 树 枝 来 戳 戳 它。 #line:c6e5c2
-	Mae: 我 先 来！！！ \o/ #line:777a38
+	Bea: 就是条胳膊。 #line:72d8ab
+	Gregg: 大家都别动！ #line:a38ff1
+	Gregg: 让我找根树枝来戳戳它。 #line:c6e5c2
+	Mae: 我先来！！！ \o/ #line:777a38
 	<<fadeOut 1 wait>>
 	<<set $diner to 2>>
 	<<scene PawsModeSeveredArm>>
@@ -33,13 +33,13 @@ position: -208,858
     <<fadeOutMusic .01>>
     <<lookAt Gregg Molly>>
     Mae: 嗨，莫莉姨妈！我们发现了一只胳膊！ #line:f265df
-    Molly: 好了，梅，请你先把树枝放下，然后离这只胳膊远点。 #line:4660ea
+    Molly: 好了，梅，请先把树枝放下，然后离这只胳膊远点。 #line:4660ea
     Mae: 好吧好吧！可千万别用泰瑟枪电我哦。 #line:167204
-    Molly: 这我可不敢保证。 #line:c26569
-    Gregg: 哦，好了，我觉得我和安格斯该回家了。 #line:145fa8
+    Molly: 不敢保证。 #line:c26569
+    Gregg: 好吧，我觉得我和安格斯该回家了。 #line:145fa8
     Gregg: 明天见，梅！ #line:27f362
-    Molly: 好了，我可不想看见你们其中有任何一个人是独自回家的。 #line:ae2c9b
-    Molly: 一定要结伴走才行。最近发生了一些不太好的事。 #line:dc9066
+    Molly: 那么，我可不想看见你们其中有任何一个人是独自回家的。 #line:ae2c9b
+    Molly: 一定要结伴走，最近发生了一些不太好的事。 #line:dc9066
     Bea: 警官，我可以开车把梅送回家。 #line:6679cf
     Molly: 麻烦你了，碧娅。 #line:022a50
     Mae: 是啊，谢了碧娅！咱们走起吧！ #line:694872
@@ -104,7 +104,7 @@ Scout2: 没错，你好像不太关心时事啊？ #line:a8cff6
 <<endif>>
 <<set $current_events to 1>>
 Scout1: 现在就买9盒吧！ #line:66c440
-Scout2: 拜托啦！！！ #line:005e27
+Scout2: 拜托托托托！！！ #line:005e27
 Mae: 我可一分钱也没有。 #line:99773f
 Scout1: 那就赶快走吧，穷光蛋！ #line:f2909c
 ===
@@ -120,7 +120,7 @@ tags:
 colorID: 2
 position: -1084,1795
 ---
-Bargoer1: 快五点了！该走人啦! #line:40c34f
+Bargoer1: 快五点了！该走了! #line:40c34f
 Bargoer2: 带上啤酒，一起去看熔炉队吧！ #line:742ccb
 <<set $bargoers_done to 1>>
 ===
@@ -379,16 +379,16 @@ Mae: 什么…… #line:dca6a5
 Mae: 不 会 吧！ #line:0c146a
 Mae: 别别别别别别别别这样啊！ #line:a331c9
 Mae: 美味意面馆居然关门啦！！！！ #line:2d6e82
-Mae: 再无外卖披萨可吃啦！ #line:84e99c
-Mae: 再无特惠促销啦！ #line:2dd5b2
-Mae: 再无有趣的生日派对可言啦。 #line:059d9b
+Mae: 再无外卖披萨可吃！ #line:84e99c
+Mae: 再无特惠促销！ #line:2dd5b2
+Mae: 再无有趣的生日派对可言。 #line:059d9b
 Mae: 这可算是自洪水以来 #line:a24538
 Mae: 这个镇遇到的最糟糕的事了。 #line:bfc65a
 ->那个小小动物园 #line:ae6475
     Mae: 谢天谢地，当时镇上所有的动物都游到了安全的地方。 #line:9537e0
     Mae: 它们全都躲到了轮胎店的屋顶上。 #line:4eef22
     Mae: 谁能想到，山羊居然会是游泳健将呢？ #line:2a46c3
-->有冰激淋的迷你高尔夫店 #line:9efaa0
+->有冰淇淋的迷你高尔夫店 #line:9efaa0
     Mae: 从前，每到夏夜， #line:e51f9d
     Mae: 我们就会到这里来吃冰淇淋， #line:3251c1
     Mae: 打迷你高尔夫。 #line:46cf9e
@@ -417,10 +417,10 @@ position: 2361,1400
     Mae: 哇哦。 #line:83e261
     Mae: 这是我们自己的塔可店诶！ #line:b038e0
 <<else>>
-    Mae: 卧 了 个 槽！！！！！ #line:a0aed2
+    Mae: 啊啊啊！！！！！ #line:a0aed2
     Mae: 啊…… #line:cbcc73
-    Mae: 啊 啊 啊 啊 啊…… #line:3b8f53
-    Mae: 一 家 塔 可 店！！！！ #line:902b48
+    Mae: 啊啊啊啊啊…… #line:3b8f53
+    Mae: 一家塔可店！！！！ #line:902b48
 <<endif>>
 Mae: 这真是镇子上久违的好事，上一次还是 #line:e4cb82
 ->他们把蛇从食谱上抹去了！ #line:b15eda
@@ -672,8 +672,8 @@ tags:
 colorID: 0
 position: 1789,1861
 ---
-Mae: 嗨……你是CJ吗？|（全名为Cee Jay） #line:82a5a2
-CeeJay: 嗯？ #line:dff6d4
+Mae: 嗨……你是CJ吗？ #line:82a5a2
+CeeJay: 是啊？ #line:dff6d4
 Mae: 我上初中的时候，你好像已经上高中了。 #line:8da581
 CeeJay: 噢，嗯哼。 #line:f11471
 CeeJay: 我认识你吗？ #line:f040d9
@@ -682,22 +682,22 @@ Mae: 在我家那条街上玩特别呆的游戏。 #line:a2d32f
 CeeJay: 哈哈，特别呆的游戏。 #line:f8a464
 CeeJay: 这事你记得还挺清楚。 #line:efe13a
 Mae: 你还住这儿吗？ #line:4111dd
-CeeJay: 不住了，我就是回来看看。 #line:6b2cd9
+CeeJay: 不，就是回来看看。 #line:6b2cd9
 Mae: 是为了玩以前那个游戏才回来的吗？ #line:df0368
-CeeJay: 那就是个DIY的角色扮演游戏罢了。 #line:6845c9
+CeeJay: 那就是个纸笔角色扮演游戏罢了。 #line:6845c9
 Mae: 酷啊。 #line:e1c788
-CeeJay: 跟游戏无关，我就是回来看看家人。 #line:396f93
+CeeJay: 但不是，就是回来看看家人。 #line:396f93
 CeeJay: 我丈夫明天开车回来。 #line:d1a48a
-Mae: 你现在干的是什么工作？ #line:44e7e3
+Mae: 你现在在干什么？ #line:44e7e3
 CeeJay: 律师。 #line:de6a8c
-Mae: 哦，哇哦。 #line:c15198
-Mae: 我可以问你几个和法律相关的问题吗？ #line:12634e
+Mae: 哇噢。 #line:c15198
+Mae: 可以问你几个和法律相关的问题吗？ #line:12634e
 CeeJay: 虽然我回来不是来办公事的， #line:2e9004
 CeeJay: 不过当然可以了。 #line:abc791
-	->抢劫银行最好的办法是什么？ #line:a774d7
-		CeeJay: 这可不是个合法的咨询 #line:ec64d0
+	->抢银行最好的办法是什么？ #line:a774d7
+		CeeJay: 这算不上个合法咨询。 #line:ec64d0
 		Mae: 合法和法律一样吧？ #line:15ee95
-		CeeJay: 额 #line:e2fb84
+		CeeJay: 额。 #line:e2fb84
         Mae: 抢银行是犯罪，对吧？ #line:08cbe3
 		Mae: 罪犯是违抗法律的吧？ #line:52b04d
 		Mae: 这一切都是相关的。 #line:4b8b68
@@ -705,19 +705,19 @@ CeeJay: 不过当然可以了。 #line:abc791
 		Mae: 嗯，这些都做好了。 #line:c359b9
 	->离开监狱的最好方法是什么？ #line:e90034
 		CeeJay: 好吧，具体情况具体分析，你懂吧…… #line:3a07d8
-		Mae: 比如从墙上挖个洞离开 #line:e24d10
-		Mae: 或者击晕一个守卫拿走他的裤子和身份卡 #line:68c619
-		Mae: 再比如……我不知道……引发一场暴乱什么的？ #line:bae7a6
-		CeeJay: 哈哈哈 #line:9933f1
+		Mae: 是从墙上挖个洞离开， #line:e24d10
+		Mae: 还是击晕守卫拿走他的裤子和身份卡， #line:68c619
+		Mae: 再是……不知道……引发一场暴乱什么的？ #line:bae7a6
+		CeeJay: 啊。 #line:9933f1
 		Mae: *最好*的监狱帮派是哪个? #line:0f7d67
 		Mae: 如果*必须*让你选一个的话？ #line:6c9222
 CeeJay: 你要知道我们在法学院可不学这些。 #line:5eeef9
 Mae: 要是学不到有用的东西，那你上大学还有什么意义啊？ #line:012c79
 CeeJay: 法律可是很有用的。 #line:02e2f0
-Mae: 有用个PI，CJ！ #line:040d67
+Mae: 有用个屁，CJ！ #line:040d67
 <<wait 2>>
-Mae: 不好意思，总之欢迎回来，祝你看望愉快，拜 #line:c55b86
-CeeJay: 额，再见了。 #line:b63fae
+Mae: 抱歉，总之欢迎回来，祝你看望愉快，拜～ #line:c55b86
+CeeJay: 额，再见。 #line:b63fae
 <<set $cee_jay_done to 1>>
 ===
 title: IlyaSobin
@@ -731,39 +731,39 @@ IlyaSobin: 请问纪念品商店在哪里？ #line:7edb3c
 Mae: 你已经走过了。 #line:94b80d
 IlyaSobin: 什么？ #line:5bf4ee
 Mae: 你有口音诶。 #line:a0aeba
-Mae: 你是从哪儿来的啊？ #line:7ea757
+Mae: 你从哪儿来的？ #line:7ea757
 IlyaSobin: 俄罗斯。 #line:74e195
 Mae: 你这一路都是怎么过来的？ #line:8324c3
 IlyaSobin: 我一路沿着大东岸落叶道走到这里来的。 #line:ba7b89
-->哦，哇哦，这一路感觉如何？ #line:d6de11
-    IlyaSobin: 虽然很不容易，但整体的感觉却很不错。 #line:a4a54d
-    Mae: 这条路好像能横穿六个州，是吧？ #line:04afa0
+->哇噢，一路感觉如何？ #line:d6de11
+    IlyaSobin: 不容易，但一路很美。 #line:a4a54d
+    Mae: 这条路好像能横穿六个州吧？ #line:04afa0
     IlyaSobin: 这我没数过。 #line:da5244
-    Mae: 我可真想象不出走这么远的路是种什么画面。 #line:ca5354
+    Mae: 我无法想象走这么远的路。 #line:ca5354
 ->你路上见到过野熊吗？ #line:3881fc
-    IlyaSobin: 目前还没见过。 #line:9a074b
-    Mae: 它们有时候可是会吃人的。 #line:a5f416
-    IlyaSobin: 不过你们这里的熊 #line:a455d2
-    IlyaSobin: 大多都在翻垃圾吃诶。 #line:98b701
+    IlyaSobin: 目前没有。 #line:9a074b
+    Mae: 它们时不时会吃人的。 #line:a5f416
+    IlyaSobin: 不过你们这里的熊， #line:a455d2
+    IlyaSobin: 大多在翻垃圾吃诶。 #line:98b701
     Mae: 这话说的让我很没面子诶。 #line:a7d320
-IlyaSobin: 旅行指南上说，这里有一家商店，是吗？ #line:a4fb90
-Mae: 这里以前确实有一家商店，可早就搬走了。 #line:85f8b9
-Mae: 不过现在这里又新开了家猎鹰小吃！ #line:79016e
+IlyaSobin: 旅行指南上说，这里有一家纪念品店？ #line:a4fb90
+Mae: 以前有，可已经搬走了。 #line:85f8b9
+Mae: 不过现在这里新开了家猎鹰小吃！ #line:79016e
 IlyaSobin: 你知道我能在哪儿买到补给吗？ #line:7e87ed
 Mae: 我的意思是…… #line:387099
-Mae: 在猎鹰小吃就能买到补给啊，老兄。 #line:356a7c
+Mae: 猎鹰小吃诶，老兄。 #line:356a7c
 IlyaSobin: 我应该能在店里找到想买的东西吧…… #line:71d869
-Mae: 当然可以了，那里什么好东西都有。 #line:62629f
+Mae: 当然了，那里什么好东西都有。 #line:62629f
 IlyaSobin: 好东西也可能都是易变质腐烂的那种……嗯…… #line:1136d5
 Mae: 不是所有东西都会腐烂的？ #line:2bad13
 Mae: 我们每个人都会有死亡的那一天。 #line:a7ba2a
 Mae: 所有的一切也都会走向毁灭。 #line:e21951
 <<wait 2>>
 Mae: 不过它们应该也有卖格兰诺拉营养条吧 #line:32c085
-IlyaSobin: Spasibo！ #line:c5f6ea
-Mae: “spasibo"是什么意思？ #line:b1d11b
+IlyaSobin: 撕吧西吧！ #line:c5f6ea
+Mae: “撕吧西吧"是什么意思？ #line:b1d11b
 IlyaSobin: 是“谢谢"的意思！ #line:642048
-Mae: 对哦～原来是俄语哦！ #line:7413d6
+Mae: 对哦～俄语！ #line:7413d6
 <<set $ilya_sorbin_done to 1>>
 ===
 title: DmitryGavriluk
@@ -772,49 +772,49 @@ colorID: 0
 position: 1424,663
 ---
 Mae: 我认识你吗？ #line:f6bb5e
-DmitryGavriluk: 不认识。 #line:aadcad
+DmitryGavriluk: 不。 #line:aadcad
 Mae: 哦。 #line:29b384
 Mae: 你是格雷格的兄弟吗？ #line:4e7824
-Mae: 你和他兄弟长得很像诶。 #line:b6e314
+Mae: 你长得很像他的兄弟。 #line:b6e314
 Mae: 可你又不是他那个酷酷的堂姐珍， #line:27d186
 Mae: 难道你是他别的兄弟吗？ #line:91e808
 DmitryGavriluk: 不是。 #line:8265a9
-Mae: 那你是谁啊？你来这儿又想干什么呀？ #line:f48ea3
+Mae: 那你是谁？你怎么在这儿？ #line:f48ea3
 DmitryGavriluk: 我在找市政会。 #line:0acdc6
 Mae: 应该是“镇政会"才对，我们这儿是个镇。 #line:923fde
-DmitryGavriluk: 说得也是啊。 #line:949ba4
+DmitryGavriluk: 是的。 #line:949ba4
 Mae: 你为什么要找那地方啊？ #line:67252d
-DmitryGavriluk: 我想提议一个基础设施和市政服务管理计划。 #line:5ceed9
+DmitryGavriluk: 我想提议演示一个基础设施和市政服务管理计划。 #line:5ceed9
 Mae: 什么？ #line:5fb794
-DmitryGavriluk: 能够帮你们管理维护诸如除雪车和坏掉的消防栓之类的设施 #line:2ca485
-Mae: 是啊，有时候是会发生这样的事 #line:0e6c8d
-DmitryGavriluk: 我就是觉得我的计划会有帮助的。 #line:817255
-DmitryGavriluk: 也许吧，因为很多地方畏惧新事物。 #line:de24c0
+DmitryGavriluk: 能够帮你们管理维护诸如除雪车和坏掉的消防栓之类的设施。 #line:2ca485
+Mae: 是啊，有时是会发生这样的事。 #line:0e6c8d
+DmitryGavriluk: 我觉得我的计划很有用。 #line:817255
+DmitryGavriluk: 也许吧，但很多地方畏惧新事物。 #line:de24c0
 DmitryGavriluk: 他们就希望把一切保持原状，与世隔绝。 #line:05d9ce
-DmitryGavriluk: 这真让人泄气 #line:16301f
-Mae: 你看起来对这事相当投入，哈哈 #line:238455
+DmitryGavriluk: 这真让人泄气。 #line:16301f
+Mae: 你看起来对这事相当投入，哈哈。 #line:238455
 DmitryGavriluk: 这是我的工作，所以…… #line:6b443d
-Mae: 我也曾有个工作，我就是装捡杂货的， #line:0cceee
-Mae: 你能编些程序什么的让那份工作不那么糟糕吗？ #line:127ef5
+Mae: 我也有个工作，就是装捡杂货的。 #line:0cceee
+Mae: 你能编些程序让那份工作不那么糟糕吗？ #line:127ef5
 DmitryGavriluk: 好吧，很多岗位马上就都是机器人了，所以…… #line:71edee
-Mae: 老天，说的是啊，哈哈。 #line:8ece76
+Mae: 老天，是啊，哈哈。 #line:8ece76
 <<wait 2>>
-Mae: 我想起来了！你是唐娜的堂兄！ #line:2f23e6
+Mae: 我想起来了！你是唐娜的堂亲！ #line:2f23e6
 DmitryGavriluk: 没错！ #line:5668ab
 Mae: 她还照顾过我呢。 #line:71e4c7
-DmitryGavriluk: 哦，哇，你是不是那个用锤子把鸟锤死的小孩啊？ #line:3eb8b5
-Mae: 那是个意外！那时候我才9岁！ #line:288128
+DmitryGavriluk: 哇噢，你是不是那个用锤子把鸟锤死的小孩？ #line:3eb8b5
+Mae: 那是个意外！那时我才9岁！ #line:288128
 DmitryGavriluk: 哈哈哈。 #line:66330b
 Mae: 我当时以为那是香水什么的呢！ #line:25f375
 Mae: 我还以为那只鸟会喜欢呢！ #line:af38b8
-DmitryGavriluk: 好吧，毕竟那时候你才9岁嘛。 #line:f97924
+DmitryGavriluk: 好吧，毕竟那时候你才9岁。 #line:f97924
 Mae: 它当时直接就死了。就…… #line:6f037d
-Mae: 嘎 一 下 子！砰 嗵 倒 在 了 地 上！ #line:595afb
-Mae: 然 后 就 死 翘 翘 了。 #line:ee187b
+Mae: 嘎一下子！砰嗵倒在了地上！ #line:595afb
+Mae: 就死翘翘了。 #line:ee187b
 DmitryGavriluk: 哈哈哈，我的老天哪。 #line:5e2732
-Mae: 好了，我得走了，祝好运哦。 #line:e71965
+Mae: 好了，得走了，祝好运哦。 #line:e71965
 DmitryGavriluk: 可别再随便杀生了！ #line:fc2244
-Mae: 这我可不敢保证。 #line:43e1f5
+Mae: 不敢保证哟。 #line:43e1f5
 <<set $dmitry_gavriluk_done to 1>>
 ===
 title: KevinClark
@@ -823,14 +823,14 @@ colorID: 0
 position: 1671,670
 ---
 KevinClark: 嗨！ #line:2a9cb6
-Mae: 哈喽！嘿！ #line:df988a
+Mae: 哈喽！嗨！ #line:df988a
 KevinClark: 咱们衣服的款式是一样的诶！ #line:cdc6fa
 KevinClark: 不过是相反的！ #line:aa11a7
-Mae: 嗯，是啊。好像是这样。 #line:cebe3a
+Mae: 嗯，是啊。真没想到诶。 #line:cebe3a
 KevinClark: 你这T恤从哪来的？ #line:480295
 Mae: "哪来的?"  #line:b574cc
 KevinClark: 是啊，这是个牌子还是什么？ #line:2453f8
-Mae: 不是，这是我高中时候自己在家做的。 #line:448494
+Mae: 不，这是我高中时候自己在家做的。 #line:448494
 Mae: 我只是单纯很喜欢这个符号。 #line:d3ac5a
 KevinClark: 这个符号代表“无"，对吧？ #line:5e467a
 Mae: 这我就不知道了。 #line:5de3b6

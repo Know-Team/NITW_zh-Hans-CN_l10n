@@ -59,11 +59,11 @@ Gregg: 你还记得这事吗？ #line:e11c0b
         Gregg: 也许因为他们都是一群混账东西吧？ #line:1ef52c
         Gregg: 导火索发生在有个孩子朝其中一个士兵扔了块石头， #line:d2cb8f
         Gregg: 结果士兵们就开枪了！ #line:58f3b9
-        Mae: 真TM该死！ #line:c496ae
+        Mae: 真他喵糟糕？ #line:c496ae
         Mae: 这件事是在哪儿发生的？ #line:74be83
         Gregg: 镇子西北角。 #line:1074f7
         Gregg: 那儿好像还有个地标吧。 #line:f1e3f1
-        Mae: 呃，真是太糟糕了啊。 #line:689241
+        Mae: 呃，真糟。 #line:689241
         Gregg: 权贵都不怎么样。 #line:55df18
         Mae: 他们都坏透啦。 #line:16a8c2
 Mae: 真是怪了，咱们凭什么要尊敬 #line:a93564

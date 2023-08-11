@@ -24,7 +24,7 @@ CatGod: 吾问何为神 #line:80720d
 CatGod: 他们回答了吾 #line:3ac4ac
 CatGod: 而他们所谓的神，却并非是吾 #line:ec8ecf
 CatGod: 他们的神并不存在 #line:335e0f
-->嗯，你确实看不见神 #line:08accd
+->你看不见神 #line:08accd
 	CatGod: 你们只看得见你们希望看见的事物，凡人 #line:ec83da
 ->嗯，我猜信仰这玩意就是得这样才会起作用的吧? #line:11b5f0
 	CatGod: 凡人们试图解读信仰 #line:597117

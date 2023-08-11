@@ -121,7 +121,7 @@ Bea: 我想我已经把它修好了。咱们来看看炉子怎么样了…… #l
 <<waitForMove Bea>>
 <<flip Bea -1>>
 Mae: 耶，咱们把炉子修好啦！ #line:14079f
-Bea: *咱们？*你刚才都帮什么忙啦？！ #line:d17a0d
+Bea: *咱们？*你刚才都帮什么忙了？！ #line:d17a0d
 <<close>>
 Mae: 我刚才设计出了一个简洁但又长效的解决方法。 \o/ #line:273a76
 <<close>>
@@ -283,7 +283,7 @@ position: 6518,585
     Mae: 卢修斯·冯·格诺梅奥教授。 #line:ae2c86
 <<elseif $has_furnace_item_1 is 0>>
     <<set $num_furnace_items += 1>>
-    Mae: 教授，我现在要修这个破炉子，所以急需您的专业知识。 #line:65b568
+    Mae: 教授，我现在要修这个破炉子，所以急需你的专业知识。 #line:65b568
     <<set $has_furnace_item_1 to 1>>
     <<playOneShot event:/miranda_house/pickup_gnome Mae>>
 <<endif>>
@@ -357,12 +357,12 @@ position: 5412,95
 <<wait 4>>
 Mae: 哈哈哈哈哈哈哈！ #line:a0a231
 Mae: 去吃屎吧，你个破炉子！ #line:1fd41f
-Bea: 哇哦，噪音实在是太大啦！ #line:c6ec60
+Bea: 啊，噪音太大了！ #line:c6ec60
 Mae: 是啊，天哪。 #line:c17116
-Bea: 我在镇上居然从来都没听见过这种声音，真是怪啦。 #line:d70d1a
+Bea: 我在镇上居然从来都没听见过这种声音，真怪。 #line:d70d1a
 Bea: 谢天谢地她终于来了。 #line:f418ee
 Mae: 唔，是在谢我吗？好像是吧？ #line:f51bf7
-Bea: 嘿，米兰达夫人！您把我们锁在地下室里啦！ #line:8b133e
+Bea: 嘿，米兰达夫人！你把我们锁在地下室里了！ #line:8b133e
 <<close>>
 <<fadeOutMusic 1>>
 <<set $miranda_basement to 3>>

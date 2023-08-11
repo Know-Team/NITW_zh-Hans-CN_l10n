@@ -45,7 +45,7 @@ position: -8156,1534
 		Bea: 又怎么了？ #line:de76da
 		Bea: 哦，老天， #line:29b05a
 		Bea: 你已经 #line:bd61a1
-		Bea: 喝醉啦。 #line:656ff2
+		Bea: 喝醉了。 #line:656ff2
 		Mae: 咱们来这儿不就是为了能喝个痛快吗？？？ #line:bd2ebf
 		Bea: 我可不这么觉得。我还得开车呢。 #line:97dbd0
 		Bea: 就算不开车，我也不会喝这么多…… #line:00d815
@@ -61,7 +61,7 @@ position: -8156,1534
 		Jackie: 哦，我的天。 #line:2b7435
 		<<set $bea += 1>>
 	<<elseif $bea is 2>>		
-		Bea: 梅，你已经醉啦。 #line:c58a41
+		Bea: 梅，你醉了。 #line:c58a41
 		Bea: 你应该到篝火边醒醒酒去了。 #line:f8fbc9
         Mae: :) #line:cb8d92
 		Mae: 我真想脱光了，然后在林子里跑几圈！！！！！ \o/ #line:b6caea
@@ -184,7 +184,7 @@ position: -7769,1470
 	Mae: 我跟你说，我可不会这么傻站着， #line:792f7b
 	Mae: 让他在那儿， #line:4575c5
 	Mae: 毁了老娘今晚的兴致！ #line:30532b
-	Gregg: 说的是啊！ #line:d17974
+	Gregg: 是啊！ #line:d17974
 	Mae: 我要过去和科尔说几句话。 #line:5b4146
 	Angus: 那就祝你今晚毁得开心啦！ #line:fbca8a
 	Gregg: 梅，聚会就算被毁，也该毁在你自己手里。 #line:2f98ae
@@ -267,7 +267,7 @@ position: -6862,1423
 <<elseif $beer_phase is 1>>
 	<<if $cole is 0>>
 		<<if $whats_your_name is 1>> 
-			Mae: 噢，嘿，我叫梅！您贵姓？ #line:2245fb
+			Mae: 噢，嘿，我叫梅！你贵姓？ #line:2245fb
 			Cole: 梅，是你吗？ #line:11a3d4
 			Mae: 噢，我觉得好像在哪儿见过你…… #line:2dbaa2
 			Cole: 呃，咱们是同一个高中的。 #line:a51d3b
@@ -365,7 +365,7 @@ position: -7417,1439
 		<<lookAt Gregg Mae>>
 		<<lookAt Mae Gregg>>
         Mae: :) #line:f52cc8
-		Mae: 谢啦，伙计们。 #line:1e977d
+		Mae: 谢了，伙计们。 #line:1e977d
         Mae: o_o :| #line:c3033d
 		<<lookNearest Gregg>>
 		<<lookNearest Mae>>
@@ -377,7 +377,7 @@ position: -7417,1439
 		Gregg: 是啊，姐们。让世界去死吧。 #line:0a8bfa
 		Angus: 没错，去死吧。 #line:6f6770
 		Mae: 天啊，早就应该有人把这个世界给毁了。 #line:fd6568
-		Gregg: 这个世界已经很久没出过大乱子啦。 #line:d90a9d
+		Gregg: 这个世界已经很久没出过大乱子。 #line:d90a9d
 		Angus: 说得没错，应该毁了这个世界。 #line:8f9c99
         Mae: o_o :| #line:a83f23
 		<<set $eff_the_world to 1>>
@@ -419,7 +419,7 @@ position: -7417,1439
 	Gregg: 我们俩会像鹰一样盯着你的。 #line:086fee
 	Angus: 我们现在就是你的“监护鹰"了。 #line:662a17
     Mae: :) #line:3ea21a
-	Mae: 谢啦，伙计们。 #line:3c9e9c
+	Mae: 谢了，伙计们。 #line:3c9e9c
     Mae: o_o :| #line:16c6f1
 	<<set $chaperone_hawks to 1>>
 	<<set $gregg_angus += 1>>
@@ -488,16 +488,16 @@ position: -7184,1435
 			Gregg: 你一直都在说“爸比"这个词！ #line:c00569
 			Gregg: 讨厌鬼现在弹的这首歌就是写某人“爸比"的！ #line:bd0e82
 			Gregg: 我真是受不了啦！ #line:f31b75
-            Gregg: 太肉麻了，我的皮都快从骨头上滑下来啦！ #line:514c0a
+            Gregg: 太肉麻了，我的皮都快从骨头上滑下来！ #line:514c0a
 		<<endif>>
 		Mae: 呲！ #line:14730a
 		Angus: 什么事？ #line:3463c3
 		Mae: 我老爸之所以把酒给戒了， #line:e421e9
 		Mae: 是因为他喝完酒以后，总是对我和我老妈撒酒疯。 #line:3d0bef
-		Mae: 哈 哈 哈 哈 哈 哈 哈 哈 哈！！！ #line:f7d196
+		Mae: 哈哈哈哈哈哈哈哈哈！！！ #line:f7d196
 		Gregg: 姐们。 #line:ef7a3b
 		Angus: 好了，梅，你一滴酒都不能再喝了。 #line:0fb41a
-		Angus: 绝对不能再喝啦。 #line:b276a8
+		Angus: 绝对不能。 #line:b276a8
         Mae: o_o :| _o_ #line:b9846f
 		<<set $gregg_angus += 1>>
 	<<else>>
@@ -562,26 +562,26 @@ Mae: o_o #line:14d4dc
 <<if $no_smooches is 1>>
 	Mae: 咱们连嘴都没亲过！ #line:a39a08
 	Cole: 咱们没亲过吗？ #line:1a510a
-	Mae: 没 有！根 本 就 没 亲 成！！ #line:af5327
+	Mae: 没有！根本就没亲成！！ #line:af5327
 	Cole: 我很……抱歉？ #line:151c68
-	Mae: 反 正 我 一 点 也 不 在 乎！ #line:2c9ec2
+	Mae: 反正我一点也不在乎！ #line:2c9ec2
 <<endif>>
 <<if $whatever_god is 1>>
-	Mae: 在 我 知 道 你 要 来 的 时 候，我 紧 张 坏 啦。 #line:20c4f7
+	Mae: 在我知道你要来的时候，我还很紧张。 #line:20c4f7
 	Cole: 噢。 #line:7ff89e
-	Mae: 我 可 是 向 那 个 什 么 什 么 神 祈 祷 过 的！！！ #line:b6abe0
+	Mae: 我可是向那个什么什么神祈祷过！！！ #line:b6abe0
 	Cole: 你说什么？ #line:f39ec1
-	Mae: 我 以 为 会 有 某 个 神 能 听 见 我 的 祈 祷！ #line:5aabb4
-	Mae: 但 根 本 就 没 有 一 个 神 听 见 了 我 的 祈 祷！ #line:382a1f
-	Mae: 因 为 你 来 啦！ #line:e638ea
+	Mae: 我以为会有某个神能听见我的祈祷！ #line:5aabb4
+	Mae: 但就是没有！ #line:382a1f
+	Mae: 你还是来了！ #line:e638ea
 <<endif>>
 <<if $not_cute_ones is 1>>
 	Mae: 音像店里的每个姑娘见了你都会说： #line:df7dd5
-	Mae: "呜呼！是帅小伙啊！！！" #line:2a4a6a
+	Mae: "呜呼！帅小伙啊！！！" #line:2a4a6a
 	Mae: 科尔，你确实很帅。 #line:6b8394
     Cole: 哦！谢谢你，梅。我…… #line:455afc
-	Mae: 可 我 就 讨 厌 长 的 帅 的 人！！！ #line:8cd589
-	Mae: 长 得 帅 什 么 的 简 直 糟 透 啦！！！ #line:a422b8
+	Mae: 可我就讨厌长的帅的人！！！ #line:8cd589
+	Mae: 狗屁的长得帅！！！ #line:a422b8
 <<endif>>
 Cole: 哦，好吧，我该走了…… #line:1c878c
 <<close>>
@@ -609,14 +609,14 @@ Mae: 这一切也不似我的错。我就是《废物之火》的主角！ #line
     Mae: 扎 扎 扎……！！！！ :| /o\ #line:5bae82
     Mae: 嘣！然后你们就死啦！ _o_ #line:39b37e
     Mae: 当警察赶到事发现场，你们早已经…… #line:38c706
-    Mae: {width=4}[color=aaa][shake=.01][wave]噩 梦 之 眼。[/all] #line:fb2c69
-    Gregg: 新 绰 号！ #line:8f860e
+    Mae: {width=4}[color=aaa][shake=.01][wave]噩梦之眼。[/all] #line:fb2c69
+    Gregg: 新绰号！ #line:8f860e
 <<elseif $dog_bite_dead>>
     Mae: 你们应该见到过那只咬过我耳朵的狗。 \o/ #line:76605e
     Cole: 你想说什么啊？ #line:f0c3c2
     Mae: 是啊，当时，它死死地抓住我，不让我挣脱！ #line:23776a
     Mae: 接着，它开始冲我狂叫。 #line:5965e0
-    Mae: 我以为我就要死啦！！！ #line:9bd12e
+    Mae: 我以为我要死了！！！ #line:9bd12e
     Mae: 可后来，我抓到了一根棍子！ #line:d026c1
     Mae: 然后，我就用它狠狠地打了那只狗的屁股！ #line:bdeed1
     Mae: 我也会用同样的方法来对付别人的！！！！ #line:62077d
@@ -626,13 +626,13 @@ Mae: 所 以，孩 子，|可 千 万 别 惹 我！ #line:ef43ee
 <<if $eff_the_world>>
 	Gregg: 去死吧，世界！ #line:7fc1fe
 <<endif>>
-Bea: 好啦，梅，你现在已经吓到大家啦。 #line:1ca115
+Bea: 好了，梅，你吓到大家了。 #line:1ca115
 <<if $body_posi>>
 	Mae: 不，碧娅，我的身体现在AT立场全开。 #line:982c15
 	Mae: 你 到 网 上 查 查 去！！！！ #line:902359
 <<elseif $eat_everything_i_see>>
 	Mae: 我要健身减肥，见谁打谁！ #line:552668
-    Mae: 我还要把所有人都吃啦！见谁吃谁！ #line:552bdf
+    Mae: 我还要把所有人都吃了！见谁吃谁！ #line:552bdf
 <<endif>>
 Bea: 梅，我觉得你应该…… #line:fb2482
 <<if $maes_the_best>>
@@ -678,11 +678,11 @@ Mae: o_o #line:01a00b
 Mae: :| #line:608a00
 Mae: 说这些还有意义吗？科里尔？ #line:5b133d
 Cole: 梅，我很抱歉。我没想惹你不开心的。 #line:ac5e3a
-Cole: 我还以为，你其实很…… #line:52284d
+Cole: 你其实是个很好…… #line:52284d
 <<lookUp Mae>>
-Mae: 又 要 回 家 啦！！！！ \o/ :) #line:b1f071
+Mae: 回家喽！！！！ \o/ :) #line:b1f071
 Gregg: 呜～！ #line:c011d7
-Mae: 呜 啊 啊 啊 啊 啊 :| #line:3a3605
+Mae: 呜啊啊啊啊啊 :| #line:3a3605
 <<close>>
 <<swapRig Player MaePuke>>
 <<trigger MaePuke Puke>>

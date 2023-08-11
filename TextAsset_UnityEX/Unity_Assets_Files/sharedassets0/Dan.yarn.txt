@@ -120,12 +120,12 @@ colorID: 0
 position: -47,468
 ---
 Mae: 我也没工作诶。 #line:4e663f
-Dan: 哦，很抱歉跟你唠叨个没完。 #line:cbb9f0
+Dan: 哦，抱歉跟你唠叨个没完。 #line:cbb9f0
 Dan: 那你怎么样呢？ #line:ea94b4
 Mae: 挺好的，我刚从学校辍学，和父母又住一起了。 #line:b07126
 Dan: 哦，好吧。 #line:e4bbc9
 Dan: 这么说，你又变回孩子了。 #line:a91e87
-Mae: 当 然 不 。 #line:8cc110
+Mae: 当然不是。 #line:8cc110
 Mae: 我只是个和爸妈一起住的大人罢了。 #line:7ab0a1
 Dan: 好吧。这么说的话，你就不算没工作的人了。 #line:a63fa1
 Dan: 你更像是缺少一份 #line:dfad55
@@ -152,7 +152,7 @@ tags: demo2
 colorID: 0
 position: 183,767
 ---
-Dan: 总会有人死 #line:e4db66
+Dan: 总会有人死， #line:e4db66
 Dan: 这样我就能接手他们的工作了。 #line:2fb23b
 Mae: 丹，你不会是要…… #line:631b43
 Mae: 去杀人吧？ #line:a51abb
@@ -199,7 +199,7 @@ colorID: 3
 position: -1401,266
 ---
 // olpickaxe
-Mae: 嗨老兄。 #line:af3eb6
+Mae: 兄嘚。 #line:af3eb6
 Dan: 你好。 #line:42c0fe
 Mae: 在这儿工作感觉怎么样啊？ #line:eadcac
 Dan: 还行吧，我也不太清楚。 #line:1308b7
@@ -222,7 +222,7 @@ position: -1150,271
 Mae: 嗨老哥！ #line:743654
 Dan: 嗯，好……是你啊？ #line:f75680
 Mae: 在这儿工作了哈？ #line:a85320
-Dan: 是啊。烂的要命。 #line:a1f16f
+Dan: 是啊。烂得要命。 #line:a1f16f
 Dan: 不过好在有工资拿。 #line:668985
 Mae: 提问：其他人会在这里买什么厨房用品吗？ #line:223d9b
 Dan: 几乎不。 #line:d9faf2
@@ -248,16 +248,16 @@ position: -885,273
 Mae: 那么你现在是个塔可专业户了？ #line:97e9dc
 Dan: 我只是被雇来做塔可专业户学徒的。 #line:147614
 Dan: 不过我觉得这只是意味着我要在雪地里举着这个牌子。 #line:47f2cb
-Mae: 外面的雪下得也没有很大。 #line:3d98f5
-Dan: 在下呢。有雪花在空中飘着了。 #line:9a6141
-Mae: 这里卖的塔可怎么样？ #line:f6bc88
+Mae: 外面的雪下得不算大。 #line:3d98f5
+Dan: 在下呢。都有雪花在空中飘了。 #line:9a6141
+Mae: 这里卖得塔可怎么样？ #line:f6bc88
 Dan: 还不错。我很喜欢塔可。 #line:d54f68
 Mae: 在上帝管理的土地上，还没有一个人不喜欢塔可的。 #line:24f0a6
 Dan: 插播坏新闻：我前任就讨厌塔可。 #line:ae73b6
 Mae: 再插播一条好新闻：她们现在是你的前任了。 #line:15153e
 Dan: 哈哈哈。 #line:8b8408
 Mae: 享受你和塔可的快乐时光吧。 #line:90e683
-Dan: 呃。只是为了钱罢了。 #line:768c3f
+Dan: 唉，只是为了钱罢了。 #line:768c3f
 <<set $talked_to_dan_about_taco_buck to 1>>
 ===
 title: DanA4D3_01
@@ -272,11 +272,11 @@ Dan: 别忘了给外卖小哥打赏哦！ #line:c8e3ae
 Dan: 最好的塔可就在这里喽！ #line:349429
 Dan: 想吃个披萨不？ #line:c49ec2
 Dan: 那何不来个披萨塔可尝尝？ #line:56f913
-Mae: 哇哦，听起来可真棒诶。 #line:14f6c1
+Mae: 哇哦，听起来很棒诶。 #line:14f6c1
 Dan: 你关心你的健康吗？ #line:826bb1
 Dan: 那就尝尝全生菜塔可吧！ #line:86d783
 Mae: 不。我拒绝。 #line:54cc23
-Dan: 得走了年轻人，我还在工作呢。 #line:d488e5
+Dan: 得走了，年轻人，我还在工作呢。 #line:d488e5
 ===
 title: DanIntro
 tags: 

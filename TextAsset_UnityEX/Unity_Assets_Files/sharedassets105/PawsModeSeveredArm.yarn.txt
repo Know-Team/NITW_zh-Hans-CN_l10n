@@ -17,7 +17,7 @@ colorID: 0
 position: 750,239
 ---
 <<fadeOutMusic 1>>
-Molly: 这里发生什么事啦！ #line:845fbc
+Molly: 这里发生什么事了！ #line:845fbc
 Gregg: [shake=.05]啊哦！[/shake] #line:f70f21
 <<fadeOut 1>>
 <<wait 1>>

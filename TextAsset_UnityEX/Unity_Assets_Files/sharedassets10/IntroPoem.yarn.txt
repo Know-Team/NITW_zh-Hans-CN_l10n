@@ -7,38 +7,38 @@ position: 96,614
 Mae: 爷爷去世那年， #line:e32925
 <<setIndentLevel 1>>
 <<shuffleNextOptions>>
-->我们经历了自九八年以来最大的洪水。 #line:664782
+->我们经历了自九八年以来最严重的洪水。 #line:664782
     <<setIndentLevel 2>>
     <<moveParameter WindSFX wind_intensity 1 1>>
-    Mae: 格雷格被困在了一座狗屋的屋顶上， #line:a727b1
+    Mae: 格雷格被困在了一间狗屋的屋顶上， #line:a727b1
     Mae: 电足足停了两天。 #line:5ce2bc
-    Mae: 凯西·哈特利坐着他爸爸的船从我家门前经过。 #line:5456ca
+    Mae: 凯西·哈特利坐着他爸爸的船从我家门前划过。 #line:5456ca
     Mae: 看到他时，我不禁笑出了声。 #line:3bdd32
-->镇上开通了高速公路。 #line:c399c8
+->高速公路延线通车了。 #line:c399c8
     <<setIndentLevel 2>>
     <<moveParameter WindSFX wind_intensity 1 1>>
-    Mae: 那条横穿负鼠泉的公路， #line:9640ac
-    Mae: 曾经是通往州立公园唯一的一条路。 #line:43c488
-    Mae: 高速公路的出现虽改变了这里的交通， #line:56d481
+    Mae: 那条穿过负鼠泉的公路， #line:9640ac
+    Mae: 曾是人们前往州立公园的必经之路。 #line:43c488
+    Mae: 高速公路的出现影响了这里的交通， #line:56d481
     Mae: 但也为我们带来了多纳狼餐厅。 #line:a21ab3
 <<setIndentLevel 0>>
 <<moveParameter WindSFX wind_intensity 3 1>>
 Mae: 爷爷给我留了满满一箱子的书。 #line:27ba7a
 Mae: 他很喜欢鬼故事， #line:fcf1c5
-Mae: 在医院的病床上，他还不停念叨着书里的句子： #line:04c9dc
+Mae: 当他躺在医院的病床上时，还不停念叨着书里的句子： #line:04c9dc
 <<setIndentLevel 1>>
 <<shuffleNextOptions>>
-->“他们出发去寻找众神， #line:55770c
+->“他们动身去寻找众神， #line:55770c
     <<setIndentLevel 2>>
     <<moveParameter WindSFX wind_intensity 5 1>>
-    Mae: 之后却死在荒郊野岭之中。” #line:f4444f
+    Mae: 之后却葬身荒郊野岭。” #line:f4444f
 ->“羽翼之下，深林之中。 #line:e7dd5e
     <<setIndentLevel 2>>
     <<moveParameter WindSFX wind_intensity 5 1>>
     Mae: 万物消亡，归于沉寂。” #line:42f07d
 ->“他们惧怕死亡， #line:25c4de
     <<setIndentLevel 2>>
-    Mae: 于是，他们就吞噬了那些年轻人。” #line:d24b51
+    Mae: 于是就吞噬了那些年轻人。” #line:d24b51
 <<setIndentLevel 0>>
 <<moveParameter WindSFX wind_intensity 7 1>>
 <<wrapPoem>>
@@ -47,28 +47,28 @@ Mae: 他猛地坐了起来， #line:7b0840
 Mae: 双眼圆睁，望向窗外。 #line:326767
 <<setIndentLevel 1>>
 <<shuffleNextOptions>>
-->他望着旧磨坊 #line:54cefc
+->他望着破败的磨坊 #line:54cefc
     <<setIndentLevel 2>>
     <<moveParameter WindSFX wind_intensity 8 1>>
-    Mae: 窗户半开着的旧磨坊， #line:11df12
-->他望向那破败的游乐场 #line:7bd73c
+    Mae: 只剩下半张窗户。 #line:11df12
+->他望着破败的游乐场 #line:7bd73c
     <<setIndentLevel 2>>
     <<moveParameter WindSFX wind_intensity 8 1>>
-    Mae: 已被大水冲得只剩下一半， #line:052bf6
-->他望着那些旧火车 #line:ca2e8b
+    Mae: 已被洪水冲毁过半。 #line:052bf6
+->他望着破败的火车 #line:ca2e8b
     <<setIndentLevel 2>>
     <<moveParameter WindSFX wind_intensity 8 1>>
-    Mae: 不知从哪儿来，又不知要上哪去， #line:08c0e1
-->他望着旧停车场 #line:442b05
+    Mae: 不知从何处驶来，又不知要驶向何方。 #line:08c0e1
+->他望着破败的停车场 #line:442b05
     <<setIndentLevel 2>>
-    Mae: 一望无际，闪闪发光，像海一般。 #line:8e5509
+    Mae: 像大海般一望无际，闪闪发光。 #line:8e5509
 <<setIndentLevel 0>>
 <<moveParameter WindSFX wind_intensity 10 1>>
-Mae: 然后，他扭过头， #line:0c5bf6
-Mae: 依然双眼圆瞪，对我爸爸说道： #line:005ede
-Mae: “房子里有鬼魂萦绕。” #line:ab7656
-Mae: 他这么说着， #line:c5b031
-Mae: 然后便离开了人世。 #line:2787b2
+Mae: 然后他转头看向我爸爸 #line:0c5bf6
+Mae: 依然双眼圆瞪， #line:005ede
+Mae: “这间房子闹鬼。” #line:ab7656
+Mae: 他这样说到， #line:c5b031
+Mae: 然后便咽了气。 #line:2787b2
 <<fadeOut 2 wait>>
 <<scene BusStation>>
 ===

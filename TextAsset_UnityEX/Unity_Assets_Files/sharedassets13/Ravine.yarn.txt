@@ -82,7 +82,7 @@ position: 913,250
 	<<elseif $ravineTopPipe is 10>>
 		Mae: 可能还要再多来点萤火虫才行。 #line:490d6c
 		Mae: 我倒不是很怕黑， #line:902918
-		Mae: 但还是有点怕。 #line:99a6c8
+		Mae: 好吧，还是有点怕的。 #line:99a6c8
 		Mae: 可能还得再多招点萤火虫吧。 #line:d7906a
 		<<set $ravineTopPipe to 11>>
 	<<elseif $ravineTopPipe is 11>>
@@ -109,7 +109,7 @@ position: 913,250
 		<<releaseFireflies>>
 		<<wait 3>>
 		Mae: 喔哦。 #line:e1fe48
-		Mae: 我真想吐个槽：上他喵什么大学！ #line:28fac7
+		Mae: 上他喵的大学！ #line:28fac7
 		Mae: 我可是虫语者啊！ #line:d126c6
 		Mae: 好啦！出发！ #line:61f12c
 		<<set $ravineTopPipe to 30>>

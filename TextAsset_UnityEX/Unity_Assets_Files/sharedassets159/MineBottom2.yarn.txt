@@ -14,14 +14,14 @@ position: 812,219
 <<flip Angus -1>>
 <<flip Bea -1>>
 <<fadeInInternal 1 wait>>
-Mae: 我知道你就在这儿。 #line:95531a
+Mae: 我知道你们在这儿。 #line:95531a
 <<wait 4>>
-Mae: 出来说句话吧。 #line:35ab6a
+Mae: 说点什么吧。 #line:35ab6a
 <<wait 2>>
 <<cameraLookAt BossCamCenter 3>>
 HeadMiner: 好吧，这样如何啊： #line:3672a0
-HeadMiner: 要是想死的话，你们就往前走一步试试。 #line:0ff9f8
-Bea: 你快出来吧！ #line:7a451c
+HeadMiner: 要想死的话，你们往前走一走试试。 #line:0ff9f8
+Bea: 快出来！ #line:7a451c
 Gregg: 是啊，你个王八蛋。我们四个可比你要可怕五倍呢。 #line:d1c8cb
 <<close>>
 <<if $pentagram_quest>>
@@ -36,46 +36,46 @@ Gregg: 是啊，你个王八蛋。我们四个可比你要可怕五倍呢。 #li
 <<wait 8>> 
 Eide: 他们在这儿啊！他们原来在这儿啊！ #line:d553d0
 Eide: 我要杀了他们！ #line:4ad601
-HeadMiner: 艾德，你可不能这么干。 #line:6abf34
-HeadMiner: 你现在已经失控了。 #line:b1d0ae
+HeadMiner: 艾德，你不能这么干。 #line:6abf34
+HeadMiner: 你已经失控了。 #line:b1d0ae
 Eide: 他……用……箭……射……我！ #line:853432
-HeadMiner: 不过，咱们也打了他们中的一个人。 #line:bc16b5
+HeadMiner: 其实我们扯平了。 #line:bc16b5
 HeadMiner: 几天前的那个晚上，咱们开枪打中了这个小姑娘。 #line:46a89a
-Miner1: 是的，很抱歉。 #line:46d252
+Miner1: 是啊，不好意思。 #line:46d252
 Mae: 你是在……道歉吗？ #line:444c0d
-Miner1: 是我不对，抱歉。 #line:c7f210
-Mae: 额，没事的。 #line:5f1527
-Mae: 子弹没打中我，所以…… #line:59d40a
-Mae: 等一下。我勒个……你们到底是谁啊？ #line:469e66
+Miner1: 那是个错误的决定，抱歉。 #line:c7f210
+Mae: 呃，没关系？ #line:5f1527
+Mae: 其实没打中我，所以…… #line:59d40a
+Mae: 等下。我勒个……你们到底是谁？ #line:469e66
 HeadMiner: 我们就是一群尽自己努力 #line:1d8e54
-HeadMiner: 去保护小镇和镇上居民的老家伙。 #line:cbad07
-Mae: 那……那你们后来为什么想杀了我呢？ #line:fa884f
+HeadMiner: 保护镇上居民的老家伙。 #line:cbad07
+Mae: 那……那你们为什么想杀了我呢？ #line:fa884f
 Miner2: 杀了你？！ #line:66b9b6
 Miner1: 根本没人想杀你！ #line:ea1422
 HeadMiner: 你们每个人都是这个镇的一部分， #line:a7807c
-HeadMiner: 你们可能是家属，也可能是辛苦工作的人。 #line:05eb39
-Miner2: 都是为建设小镇出力的人！ #line:af7ee4
+HeadMiner: 你们是家属，也可能是辛苦工作的人。 #line:05eb39
+Miner2: 建设出力者！ #line:af7ee4
 Mae: 嗯，好吧。 #line:fc789e
 Mae: 那我们可以走了吗？ #line:ef10ce
 HeadMiner: 嗯，*他*把你们带到这儿来是有原因的。 #line:fd42eb
 HeadMiner: 在他发话前，你们是不能离开的。 #line:3efbae
-Mae: 好吧，*他*肩膀上已经中了一箭， #line:e25179
-Mae: 所以，我觉得他应该也说不了什么了。 #line:055250
+Mae: 好吧，*他*肩膀上已经中了一箭。 #line:e25179
+Mae: 我可不认为他会什么好话。 #line:055250
 HeadMiner: …… #line:9e82ce
 Miner1: …… #line:f23b32
-HeadMiner: 等一下。这么说，你觉得艾德他…… #line:7ca5ae
+HeadMiner: 等下，这么说，你们觉得艾德他…… #line:7ca5ae
 Mae: 就是他在丰收节那天绑架了那个孩子！ #line:8afbe0
-Mae: 不知道为什么，我的脑子里……老会闪现出他的样子！ #line:e9dd70
-Mae: 我感觉一直很累！头还一直疼！ #line:d6a5d4
+Mae: 不知为啥，我的脑子里……会出现他的样子！ #line:e9dd70
+Mae: 我一直感觉很累！还经常头疼！ #line:d6a5d4
 Mae: 他一直都在跟踪我……跟踪我们所有人！ #line:1a48a8
 Mae: 他…… #line:ab4cc7
-HeadMiner: 哦，小姑娘， #line:f3527a
-HeadMiner: 你根本就不知道这是什么地方，对吧？ #line:475c24
+HeadMiner: 好了，小姑娘， #line:f3527a
+HeadMiner: 你不知道这是在哪里，对吧？ #line:475c24
 <<playMusic boss_conversation 6>>
-Mae: 你说什么？ #line:2dc609
+Mae: 什么？ #line:2dc609
 //miner lights another lantern and we can see the hole now. Camera backs up a bit to show more blackness around.
 //Camera does some light blur/swimmy stuff for a second.//
-Mae: 哦，天啊。 #line:420f34
+Mae: 天哪。 #line:420f34
 <<cameraLookAt BossCamCenterLow 8>>
 <<close>>
 <<wait 1>>
@@ -83,7 +83,7 @@ Mae: 哦，天啊。 #line:420f34
 <<extraZoom -5 8>>
 Mae: 我见到过这种场景， #line:e664cc
 Mae: 或者是，我……我有过这种感觉。 #line:2318c1
-HeadMiner: 20几年前， #line:5edb59
+HeadMiner: 二十多年前， #line:5edb59
 HeadMiner: 是埃德·斯库德和吉姆·多尼发现了这个地方。 #line:4fa2d8
 HeadMiner: 在布里德尔附近的西部矿井封矿以后， #line:2ba925
 HeadMiner: 最后一任矿主维斯特·舒马赫 #line:4069f7
@@ -111,7 +111,7 @@ HeadMiner: 小姑娘，我知道， #line:7537b6
 HeadMiner: 你在梦里和在清醒的时候，都听到过那个声音。 #line:832e35
 HeadMiner: 就是那个声音带你来到这里的。 #line:2c55bd
 	->那……那个声音什么啊？ #line:72418c
-		HeadMiner: 那是黑羊发出的声音。 #line:b32c2b
+		HeadMiner: 那是黑山羊发出的声音。 #line:b32c2b
 		HeadMiner: 不是普通的黑色， #line:38f3ac
 		HeadMiner: 是像宇宙一般虚无的黑。 #line:a804ee
 		HeadMiner: 现在，他就在这下面的洞里 #line:c11bb0
@@ -187,8 +187,8 @@ Mae: 你们已经……哦，天哪……哦，不…… #line:9a43d3
 	->有多少人死在这里面了？？？ #line:da0628
 		HeadMiner: 哦，我觉得可能有…… #line:265865
 		Miner1: 大概死了30多，不到40个人。 #line:a66c29
-		Miner2: 死了39个人。 #line:ff2fbb
-		Miner2: 我是不是唯一一个还在记人数的人啊？ #line:293c86
+		Miner2: 39个人。 #line:ff2fbb
+		Miner2: 难道只有我一个人在记数吗？ #line:293c86
 		HeadMiner: 现在我也记住了。我还以为，咱们都想忘了这事。 #line:f3d38f
         Miner1: 我还没失去同情心，我的心还会觉得疼。 #line:a39d79
         Miner2: 是啊，春天那会儿那个邋遢的小孩…… #line:049375
@@ -200,7 +200,7 @@ HeadMiner: 除了无数没见过亲生父亲的小孩子， #line:f05a29
 HeadMiner: 就是一串长长的犯罪记录。 #line:d75e7e
 HeadMiner: 所以，在这些悲剧发生之前， #line:ef33ad
 HeadMiner: 我们帮了他一个大忙。 #line:67895a
-Gregg: 是你们……杀……杀了……凯西吗？ :( #line:06bbe2
+Gregg: 是你们……杀……杀了……凯西？ :( #line:06bbe2
 Angus: 哦，我的老天啊。 #line:0e524e
 HeadMiner: 我们不会用“杀"这个字来形容这些事的。 #line:17fb63
 HeadMiner: 你们知道他和他兄弟一起工作的事吧？ #line:9b811c
@@ -223,7 +223,7 @@ Bea: 格雷格…… #line:023c70
 Gregg: 他 是 我 朋 友！！！！ D: #line:6414f9
 <<setAnimInt Miner1 raiseRifle 1>>
 //miner1 raises rifle//
-Miner1: 好了，现在马上把弩扔到地上，不然我就开枪啦。 #line:19cd99
+Miner1: 好了，现在马上把弩扔到地上，不然我要开枪了。 #line:19cd99
 Gregg: :) #line:501dbe
 Gregg: 呵呵…… #line:0dfe95
 Gregg: 要是我先射中你会怎么样呢？ #line:f963cd
@@ -237,10 +237,10 @@ Angus: 你们还把枪带过来了？ #line:8ce7d3
 Miner2: 晚上在林子里是很危险的，这是为了自保。 #line:167341
 Gregg: 我……我…… #line:3941cf
 Miner1: 孩子，把弩扔到地上。 #line:b6cf35
-Miner1: 别浪费时间啦。 #line:e45a89
+Miner1: 别浪费时间。 #line:e45a89
 Bea: 格雷格…… #line:1a4834
 <<wait 2>>
-Gregg: 去TMD。 #line:ac6de6
+Gregg: 去死吧。 #line:ac6de6
 //play Gregg_bod_Crossbow_drop//
 <<setAnimInt Gregg crossbow 1>>
 <<trigger Gregg DropCrossbow>>
@@ -248,7 +248,7 @@ Gregg: 去TMD。 #line:ac6de6
 <<setAnimInt Gregg crossbow 0>>
 <<wait 2>>
 <<playMusic boss_conversation 6>>
-Mae: 你们就是群魔鬼。 #line:be5aab
+Mae: 你们是魔鬼。 #line:be5aab
 Mae: 这一切都…… #line:1cd4c8
 Mae: 这一切都是不应该发生的。 #line:305a0c
 //at this point we start mae’s cosmic tumble animation which is just some camera effects and some sprite overlays.
@@ -257,7 +257,7 @@ Mae: 这一切都是不应该发生的。 #line:305a0c
 <<setAnimInt CosmicShit state 1>>
 <<extraZoom 0 20>>
 <<wait 3>>
-HeadMiner: 我们可不是什么魔鬼。 #line:617f7a
+HeadMiner: 我们不是魔鬼。 #line:617f7a
 HeadMiner: 我们这么做，是因为我们深爱着自己的家园。 #line:ffba8f
 HeadMiner: 只要我们继续做下去， #line:fec2b7
 HeadMiner: 负鼠泉就不会消失， #line:c423a5
@@ -333,8 +333,8 @@ HeadMiner: 你们想走就走吧，没人拦着你们。 #line:c87c94
 HeadMiner: 但记住一点，出了这里， #line:3b28f6
 HeadMiner: 虽然你们不知道我们是谁， #line:93e7f6
 HeadMiner: 可我们却知道你们都是谁。 #line:490c1f
-Eide: 我受了这么重的伤，结果就这么让他们走了，这也太不公平啦。 #line:4ee31d
-HeadMiner: 别说啦，艾德！ #line:5c3894
+Eide: 我受了这么重的伤，结果就这么让他们走了，太不公平了。 #line:4ee31d
+HeadMiner: 闭嘴，艾德！ #line:5c3894
 Eide: 你根本就不知道他想要什么！你也不知道他到底是谁！ #line:c58b78
 HeadMiner: 艾德，我向上天发誓！ #line:4949ab
 Bea: 咱们走吧。 #line:9c3188

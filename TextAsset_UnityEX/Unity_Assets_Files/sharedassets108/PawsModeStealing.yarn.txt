@@ -4,39 +4,39 @@ colorID: 0
 position: 515,200
 ---
 <<if $caught_stealing is 0>>
-    URevClerk: 女士，您需要帮助吗？ #line:7aa783
-    Mae: [shake=.01]哈 哈 哈 哈 哈 哈 哈，不 需 要，我 没 事。[/shake] #line:6ac045
+    URevClerk: 女士，你需要帮助吗？ #line:7aa783
+    Mae: [shake=.01]哈哈哈哈哈哈，不需要，我没事。[/shake] #line:6ac045
     <<set $caught_stealing += 1>>
 <<elseif $caught_stealing is 1>>
-    URevClerk: 您想看点什么？ #line:bf1234
-    Mae: [shake=.03]哈 哈 哈 哈，我 只 是 随 便 看 看，我 没 事。[/shake] #line:deb52a
+    URevClerk: 你想看点什么？ #line:bf1234
+    Mae: [shake=.03]哈哈哈哈，随便看看，我没事。[/shake] #line:deb52a
     Bea: *我记得你刚才说，她看你的时候，你就会一动不动。* #line:b20035
-    Mae: 别再说我啦！ #line:10c77a
+    Mae: 别说了！ #line:10c77a
     <<set $caught_stealing += 1>>
 <<elseif $caught_stealing is 2>>
-    URevClerk: 您好像真的需要帮助诶。 #line:64a29c
-    Mae: [shake=.05]哈 哈 哈 哈！没 事，一 切 正 常！[/shake] #line:5d366c
+    URevClerk: 你好像真的需要帮助诶。 #line:64a29c
+    Mae: [shake=.05]哈哈哈哈哈！一 切 正 常！[/shake] #line:5d366c
     <<set $caught_stealing += 1>>
 <<elseif $caught_stealing is 3>>
     URevClerk: 呃…… #line:79dd78
-    Mae: [shake=.06]我 只 是 看 看 商 品 而 已，哈 哈 哈 哈 哈 哈！[/shake] #line:0a7cc7
+    Mae: [shake=.06]我只是看看商品而已，哈哈哈哈哈哈！[/shake] #line:0a7cc7
     Bea: *这么说，你是想放弃你那个“一看你，你就不动"的计划了？* #line:846288
-    Mae: 快 闭 嘴，你 让 我 分 心 啦！ #line:f04ecc
+    Mae: 快闭嘴，你让我分心！ #line:f04ecc
     <<set $caught_stealing += 1>>
 <<elseif $caught_stealing is 4>>
-    URevClerk: 您确定您没…… #line:690c52
-    Mae: [shake=.08]嘿！哈 哈 哈 哈！[/shake] #line:92ef9e
-    URevClerk: 女士，您有什么觉得好笑的事吗？ #line:af9c0f
-    Mae: [shake=.02]哈 哈 哈！[/shake] #line:3eee96
+    URevClerk: 你确定你没…… #line:690c52
+    Mae: [shake=.08]嘿！哈哈哈哈！[/shake] #line:92ef9e
+    URevClerk: 女士，什么事那么好笑？ #line:af9c0f
+    Mae: [shake=.02]哈哈哈！[/shake] #line:3eee96
     <<set $caught_stealing += 1>>
 <<else>>
-    URevClerk: 您需要让我来…… #line:3efdec
-    Mae: [shake=.1]哈 哈 哈 哈！嘿！[/shake] #line:c1c740
-    URevClerk: 嗨？ #line:b5a3a4
+    URevClerk: 你需要让我来…… #line:3efdec
+    Mae: [shake=.1]哈哈哈哈！嘿！[/shake] #line:c1c740
+    URevClerk: 嘿？ #line:b5a3a4
     Bea: 嘿。 #line:0b1859
-    Bea: 你 完 事 没？ #line:b5b989
+    Bea: 你完事没？ #line:b5b989
     [[嘘……|NotDone]] #line:936c23
-    [[啊，完事啦。|Done]] #line:8cc399
+    [[啊，完事。|Done]] #line:8cc399
 <<endif>>
 ===
 title: Complete
@@ -44,7 +44,7 @@ tags: demo2
 colorID: 0
 position: 798,196
 ---
-Mae: 终 于 到 手 啦。 :) #line:91284e
+Mae: 终于到手啦。 :) #line:91284e
 // $urev_theft will be 1
 <<fadeOut 1 wait>>
 <<scene URev>>
@@ -92,8 +92,8 @@ tags: demo2
 colorID: 0
 position: 452,463
 ---
-Mae: 真 是 糟 透 啦。 #line:b15b8d
-Mae: 我 放 弃 了。 #line:907ed9
+Mae: 糟透了。 #line:b15b8d
+Mae: 我放弃了。 #line:907ed9
 // $urev_theft will be 0
 <<irisOut 1 wait>>
 <<scene URev>>

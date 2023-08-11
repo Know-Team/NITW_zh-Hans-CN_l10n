@@ -25,22 +25,22 @@ Mae: 我怎么从没来过这个地方呢？ #line:a63eb6
 <<setGenerateFollowPoints Bea 0>>
 <<moveLocator BeaReturn Bea>>
 <<walk Bea Bea1>>
-Bea: 是不是因为有栅栏挡着，你才没到这儿来过呀？ #line:77e169
+Bea: 因为有栅栏挡着？ #line:77e169
 Gregg: 不可能。这地方老有人来啊。 #line:249583
 <<close>>
 <<setGenerateFollowPoints Gregg 0>>
 <<moveLocator GreggReturn Gregg>>
 <<walk Gregg Gregg1>>
-Gregg: 我好像12岁的时候就来过这儿。 #line:eb746b
+Gregg: 我好像12岁就来过这儿。 #line:eb746b
 Mae: 这儿到底是怎么了？ #line:bdee89
 <<lookAt Mae Bea>>
 <<close>>
 <<waitForMove Gregg>>
-Gregg: 这儿就只有一堆垃圾、树林和动物罢了。 #line:a412c3
+Gregg: 这儿就只有一堆垃圾、树林和动物。 #line:a412c3
 <<wait 2>>
 <<walk Gregg GreggReturn -1>>
 <<wait 4>>
-Angus: 碧娅，你怎么了？ #line:956af8
+Angus: 碧娅，你在做什么？ #line:956af8
 <<wait 2>>
 Bea: 没什么。 #line:01e74e
 <<waitForMove Bea>>
@@ -50,9 +50,9 @@ Mae: 没什么？ #line:6fea25
 <<walk Bea BeaReturn -1>>
 <<waitForMove Bea>>
 <<waitForMove Gregg>>
-Bea: 我刚才在祈祷呢。 #line:5fcff4
+Bea: 我刚才在祈祷。 #line:5fcff4
 Mae: 哇哦哦哦哦哦。 o> :) O_o #line:ddf547
-Angus: 你真在祈祷吗？ #line:598add
+Angus: 真的吗？ #line:598add
 Bea: 是啊。咱们接着走吧。 #line:9ba261
 <<lookNearest Mae>>
 Mae: _o_ :| o_o #line:ebfed0
@@ -68,7 +68,7 @@ position: 277,-496
 Mae: 哇哦。 #line:d466ea
 <<lookLeft Mae>>
 <<wait 2>>
-Bea: 我觉得，这堆东西应该都搬到别处才对。 #line:f0ef1a
+Bea: 我觉得应该把这堆东西都搬到别处。 #line:f0ef1a
 Mae: 格雷格，你还记得你12岁的时候这里的样子吗？ #line:16e20a
 Gregg: 记得。我当时害怕极了。 #line:8c5340
 Angus: 这堆东西都是怎么运到这儿的呢？ #line:4f3969
@@ -120,7 +120,7 @@ Bea: 我的个天啊…… #line:ee11ae
 <<cameraLookAt MinerSceneCamera 3>>
 <<cameraZoom -10>>
 <<wait 3>>
-Miner3: 不 要！不 要 啊！ #line:dc0e5f
+Miner3: 不要！不要啊！ #line:dc0e5f
 Miner2: 啊，妈的，他醒了！ #line:a5465c
 Miner2: 谁还有乙醚？ #line:392a36
 Miner3: 别，别这样，伙计们…… #line:8a6e9d
@@ -128,8 +128,8 @@ Miner2: 噢，他娘的。 #line:fc0d38
 Miner3: 伙计们……伙计们……等等…… #line:9eb763
 Miner1: 鲁尔夫，你早该料道会是这种结果的。 #line:0d3afd
 Miner1: 在你把整件事都搞砸的时候，你应该就已经知道了吧。 #line:fcd8aa
-Miner1: 这次谁都帮不了你啦。 #line:cd1593
-Miner3: 我的确是*失手*啦！ #line:a34d1c
+Miner1: 这次谁都帮不了你。 #line:cd1593
+Miner3: 我的确是*失手*！ #line:a34d1c
 Miner3: 这我承认！ #line:323242
 Miner1: 鲁尔夫，这个错你*的确*得承认。 #line:14c2d5
 Miner3: 难道我连一次错也不能犯吗？ #line:df7196
@@ -137,10 +137,10 @@ Miner1: 一 次 错？？？？ #line:8e810c
 Miner1: 你 T M D 居 然 把 |[shake=.05]*一 只 胳 膊*[/shake]|落 在 了 嘎 嘣 脆 的 店 门 口！ #line:2a9153
 Miner1: 就因为你，鬼知道以后镇上会闹出什么事！ #line:8e1546
 Miner3: 那我当时还能怎么办？？？ #line:7b9d8f
-Miner1: 是 你 把 事 情 给 搞 砸 啦！ #line:e0b4ec
+Miner1: 是你把事情给搞砸的！ #line:e0b4ec
 Miner2: 呃，他的腿已经绑好了。 #line:2f3ce9
 Miner1: 你 完 全 可 以 叫 我 们 来 帮 忙 的！ #line:a082d9
-Miner3: 我当时被吓坏啦，好吗？我很紧张！ #line:851c03
+Miner3: 我当时吓坏了，好吗？我很紧张！ #line:851c03
 Miner1: 鲁尔夫，我其实很希望你当时能叫我们过去。 #line:6be160
 Miner1: 你觉得我们也想干这种破事吗？ #line:41f4b5
 Miner3: 伙计们，咱们可以把事情说清楚的。 #line:2f9fd9
@@ -166,7 +166,7 @@ Miner1: 你要是能别再让我们难堪的话，我就谢天谢地了。 #line
 <<setAnimInt Miner2 stoop 1>>
 <<wait 1>>
 Miner3:{locator=Miner3LookawayBubble}[shake=.05]不，不，不，不……[/shake] #line:9e0696
-Miner1:{locator=Miner1LookawayBubble}按 住 他！ #line:b8a8d3
+Miner1:{locator=Miner1LookawayBubble}按住他！ #line:b8a8d3
 Miner3:{locator=Miner3LookawayBubble}[shake=.07]不！[/shake] #line:33f301
 //horrible bone cracking noise//
 <<setAnimInt Miner1 stoop 0>>
@@ -175,7 +175,7 @@ Miner3:{locator=Miner3LookawayBubble}[shake=.07]不！[/shake] #line:33f301
 <<playOneShot event:/minewoods/miner_struggle Miner3>>
 <<wait 1>>
 Miner3:{locator=Miner3LookawayBubble, width=800}[shake=.1]啊啊啊啊啊啊啊啊啊啊！！！！[/shake] #line:c22c4e
-Miner1:{locator=Miner1LookawayBubble}按 住！要 是 这 么 着，能 容 易 点…… #line:dddb46
+Miner1:{locator=Miner1LookawayBubble}按住！要是这么着，能容易点…… #line:dddb46
 //horrible bone cracking noise//
 <<wait 1>>
 <<warp Miner3 MinerGround2>>
@@ -190,13 +190,13 @@ Miner2:{locator=Miner2LookawayBubble}好了，他解脱了。 #line:74490a
 <<wait 2>>
 Miner1: 鲁尔夫。 #line:39d045
 Miner3:{width=800}[shake=.1]啊啊啊啊啊啊啊啊啊啊！！！[/shake] #line:baf68e
-Miner1: 鲁 尔 夫。 #line:0f4427
-Miner1: 在这地方，没人能听得见你的喊声的。 #line:f02092
+Miner1: 鲁尔夫。 #line:0f4427
+Miner1: 在这里，没人能听见你的叫声。 #line:f02092
 Miner1: 你越叫，就越难受。还有…… #line:152c0e
 Miner3: [shake=.12]啊啊啊！！！啊啊啊啊啊！！！啊！[/shake] #line:05810f
 Miner1: 我……啊，娘的，咱们还是快点完事吧。 #line:9619a9
 Miner1: 鲁尔夫，希望你别把事情给弄复杂了。 #line:0efd7e
-Miner2: 呃，我的天哪，他的骨头都露出来啦。 #line:d70d05
+Miner2: 呃，我的天哪，他的骨头都露出来了。 #line:d70d05
 Mae:{locator=MaeOffscreenBubble}*喘息声* #line:8c24d6
 <<playOneShot event:/minewoods/mae_discovered Mae>>
 Miner2: 什么情况？ #line:68f5ab
@@ -355,7 +355,7 @@ Eide: {width=5}[wave][shrink]啊啊啊哦哦哦哦哦……[/all] #line:402d1a
 		Mae: 死在了树林里。 #line:8c15f8
 		Bea: 哦，你还做了一个梦？ #line:d9bf86
 		Bea: 难道这个梦能对咱们想办法有帮助吗？ #line:156aef
-			->我是在发生了这些事以后才开始做这种梦的……嗯？ #line:202686
+			->我是在发生了这些事以后才开始做这种梦的吧……？ #line:202686
 			->我不知道。 #line:4996c0
 	->这一切都是因为我造成的…… #line:2fdd64
 		Bea: 哦，不好意思。你就是那个穿着破衣服， #line:0b07e8
@@ -573,7 +573,7 @@ Angus: 那我就把所有靠近你的猫头鹰都狂扁一顿。 #line:41556a
 Gregg: 嗷，谢了，船长。 #line:f9802f
 Bea: 破坏大王格雷格居然怕鸟。 #line:5eefb6
 <<lookAt Gregg Bea>>
-Gregg: 我 差 点 就 死 在 那 只 猫 头 鹰 的 手 里 啦！！！ #line:1e46cf
+Gregg: 我差点就死在那只猫头鹰的手里！！！ #line:1e46cf
 <<lookNearest Gregg>>
 <<lookNearest Bea>>
 ===

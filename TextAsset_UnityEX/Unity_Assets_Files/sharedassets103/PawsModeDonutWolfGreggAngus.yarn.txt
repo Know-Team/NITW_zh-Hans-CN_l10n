@@ -46,7 +46,7 @@ colorID: 0
 position: 868,228
 ---
 <<playOneShot event:/paws_mode_pizza/mae_pizza_sick>>
-Mae: 呃，我的甜甜圈晕眩症又犯啦。 #line:5e9ab6
+Mae: 呃，我的甜甜圈晕眩症又犯了。 #line:5e9ab6
 <<wait 2>>
 Angus: 这味道闻起来可真…… #line:626ab5
 Gregg: 嘿，老兄。 #line:59774e

@@ -52,7 +52,7 @@ Bea: 不错。待会我们上边见。 #line:c156c7
 <<set $check_grave_2_done to 0>>
 <<set $check_grave_3_done to 0>>
 <<setCanInteract Bea 1>>
-Mae: 来看几个墓碑吧。 #line:fdc405
+Mae: 来看看这几个墓碑吧。 #line:fdc405
 <<playMusic graveyard_main_section 10>>
 ===
 title: Statue
@@ -64,8 +64,8 @@ Bea: 嗯，就是那座雕像了。 #line:d35d9d
 Mae: 噢噢噢！够吓人的！ #line:5b043e
 Bea: 我感觉你好像真的很害怕啊。 #line:04ffe6
 Mae: 我确实有点害怕，但…… #line:c82112
-Mae: 随便啦。 #line:f40779
-Bea: 那咱们就一直在这儿等着了？ #line:9b6682
+Mae: 随便吧。 #line:f40779
+Bea: 那咱们就一直在这儿等着？ #line:9b6682
 Mae: 没错。 #line:a04594
 Bea: 然后鬼就自己现身了？ #line:20f5a4
 Bea: …… #line:6f64af
@@ -78,21 +78,21 @@ Mae: 看过什么鬼故事吗？ #line:703fb5
 Bea: 都没什么印象了。 #line:dce1cc
 Mae: 好吧，那你觉得什么比较恐怖？ #line:bbf92c
 Bea: 呃。 #line:0d55a1
-Bea: 要我说，现在一切都糟透了 #line:a14e83
-Bea: 而且那些掌权者还屁事都不干 ，这比较恐怖 #line:9d51f3
-Bea: 或许就是他们在有意让事情变得更糟 #line:62a3e5
+Bea: 要我说，现在一切都糟透了。 #line:a14e83
+Bea: 而且那些掌权者屁事都不干 ，这比较恐怖。 #line:9d51f3
+Bea: 或许他们在有意让事情变得更糟。 #line:62a3e5
 Bea: 出于恶意，或为了利益。 #line:218398
-Mae: 哇 啊！天 呐！ #line:801160
+Mae: 哇啊！天呐！ #line:801160
 Mae: 我是指…… #line:39b988
 Mae: 骷髅之类的东西。 #line:6a6d56
-Bea: 噢，是啊，抱歉。 #line:008eaa
+Bea: 噢，是啊是啊，抱歉。 #line:008eaa
 Mae: 好好好。 #line:6bf60a
 Mae: 我们来个吓人比赛吧～ #line:d6fe4a
 Mae: 我先说一句话，然后你把它加工得更吓人。 #line:315ef1
 Bea: 行。 #line:d7274b
 Mae: 听听我这故事怎么样？ #line:ec7c38
     ->大半夜有个骷髅站在你家走廊里。 #line:36666e
-        Bea: 大半夜有个普通的陌生人站在你家走廊里 #line:1071a1
+        Bea: 大半夜有个陌生人站在你家走廊里 #line:1071a1
             ->他还带着把刀。 #line:444d6c
                 Bea: 而且他还是制药公司的CEO。 #line:ece074
                 Mae: 什么？ #line:c62647
@@ -108,14 +108,14 @@ Mae: 听听我这故事怎么样？ #line:ec7c38
             	Bea: 就是很复杂的机密文件。 #line:05d6b7
             	Mae: 碧娅，这可不好玩。 #line:c46ec7
             	Bea: ……他还是个鬼魂。 #line:552a09
-				Mae: 谢 谢 啦。 #line:d2b67a
-                Mae: 一个喃喃低语的鬼魂，一个……emmm…… #line:9aa010
+				Mae: 谢谢。 #line:d2b67a
+                Mae: 一个喃喃低语的鬼魂，一个……嗯呣…… #line:9aa010
 				Mae: 医保公司执行官？ #line:a48e8e
 	->有个骷髅站在你家窗户外面。 #line:743099
-		Bea: 有个普通的陌生人在你家窗户外面 #line:bfbbff
+		Bea: 有个陌生人在你家窗户外面 #line:bfbbff
 			->他在笑。 #line:dd8b53
 				Bea: 他在银行工作 #line:9fd32f
-				Mae: 哦，少来啦。 #line:7db2a5
+				Mae: 哦，又来了。 #line:7db2a5
 				Bea: 他过来通知你，他们要没收你的房子。 #line:99a415
 				Mae: 这也太无趣了 #line:f096e8
 				Bea: 他还是个丧尸。 #line:04713b
@@ -123,13 +123,13 @@ Mae: 听听我这故事怎么样？ #line:ec7c38
 				Mae: 银行丧尸！ #line:1d092e
             ->他皱着眉 #line:5eefb4
 				Bea: 而且他还是你的房东 #line:6a0790
-				Mae: 这一点都不- #line:c91e48
+				Mae: 这一点都不…… #line:c91e48
 				Bea: 你没交租 #line:34796c
 				Bea: 也交不起租 #line:38fe41
 				Bea: 他来这儿是要赶你出去 #line:3d8834
 				Mae: 天哪，碧娅。 #line:5060ac
 				Bea: 而且他还没有头。 #line:577d78
-				Mae: 无 头 房 东！！ #line:ec7b7b
+				Mae: 无头房东！！！ #line:ec7b7b
 				Mae: 头被残忍地砍下，他在大地上四处漫游 #line:f00157
 				Bea: 我可真他大爷的希望如此。 #line:f5d2e5
 Mae: 你害怕的东西都 [wave]好无聊[/wave]。 #line:599d79
@@ -151,7 +151,7 @@ Gravedigger: 你来这儿有什么事啊，姑娘？ #line:a78742
 Mae: 我在找一个幽灵，正好我朋友要来这儿看看她老妈，所以我也跟过来了。 #line:81d441
 Mae: 你呢？ #line:5ea877
 Gravedigger: 我又管挖坟，又管看坟，反正诸如此类的工作我都干。 #line:3c873a
-Mae: 我们能聊会儿你的老本行吗？ #line:47eda9
+Mae: 我们能聊下你的老本行吗？ #line:47eda9
 Gravedigger: 当然可以。 #line:76aa6f
     ->你是用铲子挖坟吗？ #line:96a546
         Mae: 就在这白森森的月光底下挖吗？ #line:a47a3d
@@ -162,16 +162,16 @@ Gravedigger: 当然可以。 #line:76aa6f
         Gravedigger: 不会。我在这儿工作呢。 #line:af46ec
         Gravedigger: 像这么一说这里可就一点不吓人了。 #line:67b379
 Mae: 这工作工资高吗？ #line:f9008c
-Gravedigger: 你也想上这儿来挖坑吗？ #line:d85362
+Gravedigger: 你也想上这儿来挖坟吗？ #line:d85362
 Mae: 得看工资高不高。 #line:e7df0d
-Gravedigger: 这活儿工资不高。 #line:d22983
+Gravedigger: 不多。 #line:d22983
 Mae: 哦。 #line:0288da
 Gravedigger: 我私底下还是个婚礼DJ。 #line:6c6fde
 Mae: 这也太他喵的棒了。 #line:b5760a
 Gravedigger: 我的DJ功力可不是吹的。特带劲。 #line:6cf14e
 Mae: 听着不错，加油。 #line:68ae8d
 <<wait 2>>
-Mae: 好吧，再见啦！ #line:e2b523
+Mae: 好吧，回见！ #line:e2b523
 Gravedigger: 祝你好运，希望你能找得到那个幽灵！ #line:a4cd2b
 <<set $gravedigger_done to 1>>
 <<unlockDoodle Gravedigger>>
@@ -190,7 +190,7 @@ Mae: 好吧，我猜…… #line:3ea6c2
         Mae: 他当时正往他心上人的屋子骑去， #line:09b948
         Mae: 准备求她不要离开小镇。 #line:b4a3c5
         Mae: 可是在过急弯时由于速度过快， #line:9b34ed
-        Mae: 他最后从悬崖上摔了下去。 #line:0b5f19
+        Mae: 他从悬崖上摔了下去。 #line:0b5f19
         Mae: 他的遗言 #line:8c970d
         Mae: 是对着雨点低声说出的 #line:ec8bc2
         Mae: 当时他在半空中 #line:c253d1
@@ -221,7 +221,7 @@ position: 886,-260
 Mae: 嗯。只是一般的墓碑，没什么好看的。 #line:8e47ab
 Mae: 宗教味儿太重了。 #line:47f590
     ->看着这个真的伤感不起来。 #line:88a735
-        Mae: 她这局地球OnLine打得真的很不错 #line:fba992
+        Mae: 她这局地球Online打得真不错。 #line:fba992
         Mae: 如果生活是一个街机游戏的话， #line:540564
         Mae: 这绝对能上高分榜。 #line:4541e8
     ->95岁。哇哦。 #line:a744ec
@@ -314,7 +314,7 @@ position: -236,515
 ---
 <<freezePlayer>>
 <<unlockDoodle BeaIQ>>
-Mae: 嗯，那事很奇怪 #line:e59dc1
+Mae: 嗯，那事很奇怪。 #line:e59dc1
 Bea: 奇怪？！那不叫奇怪！ #line:403508
 Bea: 那叫犯罪！ #line:c58cf0
 Mae: 你看见那个幽灵了吗？？？ #line:16974a
@@ -326,7 +326,7 @@ Bea: 梅，那可能是守墓人或者其他人吧。 #line:a09a88
 Bea: 可能正调查有没有人在糟蹋他的墓场！！！ #line:6c8f73
 Mae: 你怎么知道守墓人是男的？ #line:c7fb70
 Bea: 哦，闭嘴吧！！ #line:f6b131
-Mae: 呃 啊 啊 啊！我 看 见 那 该 死 的 鬼 啦！！！！ #line:a6a5b7
+Mae: 呃啊啊啊！我看见那该死的鬼啦！！！！ #line:a6a5b7
 <<set $night to 1>>
 <<set $did_bea_investigation_quest to 1>>
 <<if $act is 3 and $day is 2>>
@@ -334,7 +334,7 @@ Mae: 呃 啊 啊 啊！我 看 见 那 该 死 的 鬼 啦！！！！ #line:a6a
 <<endif>>
 <<set $completed_investigation_quests += 1>>
 <<if $act is 3 and $day is 4>>
-	Mae: 为 什 么 就 没 人…… #line:5cff48
+	Mae: 为什么就没人…… #line:5cff48
     //freakout animation and sound plays//
     <<close>>
     <<fadeOutMusic 2>>
@@ -345,26 +345,26 @@ Mae: 呃 啊 啊 啊！我 看 见 那 该 死 的 鬼 啦！！！！ #line:a6a
     <<wait 12>>
     <<playAmbientSFX _AmbientSFX:mae_head_hurt 3>>
     <<wait 3>>
-    Mae: 啊 啊 啊 啊 啊 啊！！！ #line:9fc816
+    Mae: 啊啊啊啊啊啊！！！ #line:9fc816
     Bea: 梅？！！！怎么啦？！！ #line:dc1c40
-    Mae: 啊 啊 啊 啊 啊 啊。 #line:c47760
+    Mae: 啊啊啊啊啊啊。 #line:c47760
     Bea: 天哪……呃…… #line:7a0dd1
     Mae: 呃，我的头……天呐……呃…… #line:820f39
     Bea: 咱们回车上去吧。车上有治偏头痛的药，然后我送你回家。 #line:8f6bc5
-    Mae: 不 用！ #line:f4dcfe
+    Mae: 不用！ #line:f4dcfe
     Mae: 我得把……今晚的事……告诉大家…… #line:ef8f2d
     Bea: 什么？ #line:2df55f
     Mae: 所有人。 #line:6680c3
     Bea: 好好好。 #line:2c0395
     Mae: 我要让每个人知道今天的事。 #line:3dd5e9
-    Bea: 别说啦！！！快上车！！！ #line:e49c87
+    Bea: 别说了！！！快上车！！！ #line:e49c87
     <<close>>
     <<fadeOut 1 wait>>
     <<scene GreggAngusApartment>>
 <<else>>
     Bea: 咱们确实看见了*某个人*， #line:e4fa41
     Bea: 可墓地里还有其他人呢，你知道吗？ #line:7ad5cb
-    Mae: 额，随便了 。 #line:04c8e8
+    Mae: 呃，随便了 。 #line:04c8e8
     Bea: 我们要在警察到之前先溜了。 #line:c2acd5
     <<close>>
     <<walk Bea BeaEnter>>
@@ -435,16 +435,16 @@ position: 309,25
     Bea: 我们买不起山丘上的墓地。 #line:9da81e
     Bea: 所以我很担心。 #line:60f5ea
     Mae: 你是担心地会塌陷吗？ #line:09b3da
-    Bea: “落 水 洞"|这仨字是哪个字|那么难理解？ #line:9bd19f
+    Bea: “落 水 洞"|这三字是哪个字|那么难理解？ #line:9bd19f
     Mae: 我们在墓园里呢！ #line:a9e29d
     Mae: 他们才不会在能出落水洞的地方建墓园的！ #line:977f63
     Bea: 是啊，那他们应该也不会把镇子建在会发大水的地方吧 #line:7bafea
     Bea: 但是事实就是咱们这还是发大水了。 #line:794681
     Mae: 好吧，你准备好了吗？ #line:9b581d
     Bea: 其实，我刚刚在这下边的时候 #line:e4538d
-    Bea: 我觉得我有听到山顶上传来了歌声 #line:4da3cb
+    Bea: 我觉得我有听到山顶上传来了歌声。 #line:4da3cb
     Bea: 还有……别的声音…… #line:95ccc2
-    Mae: 哈。那个有点……呃…… #line:f965f0
+    Mae: 哈。有点……呃…… #line:f965f0
     Mae: 吓人。 #line:eb2e2c
     Bea: 是啊。不好说那边到底发生了什么。 #line:59689d
     Mae: 咱们去查个明白。 #line:e1ac95
@@ -483,7 +483,7 @@ Britt: 然而你们将一无所获。 #line:54bfa6
 	<<wait 1>>
     <<lookNearest Mae>>
     <<wait 2>>
-	Mae: 好吧，所以- #line:4416e8
+	Mae: 好吧，所以…… #line:4416e8
 <<else>>
 	<<set $met_wyrd_teens to 1>>
 	Bea: 你们到底是什么人？ #line:048fb7
@@ -491,13 +491,13 @@ Britt: 然而你们将一无所获。 #line:54bfa6
 	Karla: 监察的 #line:d50d3d
 	Britt: 管闲事的 #line:097c8f
     <<lookAt Mae Bea>>
-	Mae: 一群小屁孩，还很怪。 #line:c0906d
+	Mae: 一群小屁孩，还搞怪呢。 #line:c0906d
     Bea: 哦。 #line:7dec61
 	<<close>>
 	<<wait 1>>
     <<lookNearest Mae>>
     <<wait 2>>
-	Mae: 好了，嗯- #line:e0e756
+	Mae: 好了，嗯…… #line:e0e756
 <<endif>>
 Pam: 我们是守门人 #line:007a0d
 Bea: 你们后边那玩意叫门？ #line:554119
@@ -518,9 +518,9 @@ Pam: 你 们 做 过 吗？ #line:70f223
         Pam: 你们都听见我的问题了。 #line:582f88
         Mae: 你们这些孩子都多大啊？ #line:781efa
     ->你直接说做爱不就得了。 #line:0cc9d9
-        Mae: 大家都是成年人了 #line:2037aa
+        Mae: 大家都是成年人了。 #line:2037aa
         Bea: 嗯，只有*咱们俩*是成年人。 #line:42bfbc
-Pam: 回 答 我！！ #line:3e3727
+Pam: 回答我！ #line:3e3727
     ->没有过。 #line:b2524b
         Mae: 这种事从来都和我沾不上边。 #line:3b1eae
     ->做过。 #line:cfbf85
@@ -544,8 +544,8 @@ Bea: 再加上一些露营活动。 #line:64316d
 Mae: 而且很明显还一直在做爱？！？ #line:5958dc
 Bea: 那可不是次有趣的体验。 #line:4235ca
 Bea: 尽管他在数学方面是个高手。 #line:68b725
-Pam: 好 无 聊。 #line:9d1b95
-Britt: 下 一 个 问 题！！！ #line:be7a24
+Pam: 好无聊。 #line:9d1b95
+Britt: 下一个问题！！！ #line:be7a24
 Bea: 天啊，好吧。 #line:095cd0
 Britt: 描述一下你梦想中的约会。 #line:f7c5dd
 Bea: 这些问题也太蠢了。 #line:9b5f40
@@ -557,7 +557,7 @@ Bea: 好吧好吧。 #line:487172
 Bea: 首先他人要高，穿得也要够酷， #line:5db4b6
 Bea: 其次人特别聪明，音乐品味还好。 #line:9e2799
 Bea: 接下来我们会去看电影。 #line:c242e5
-Britt: 真 无 聊。 #line:a2eecd
+Britt: 真无聊。 #line:a2eecd
 Britt: 你 呢？ #line:39b673
 Mae: 摔跤。 #line:f89063
 Bea: 是你们要摔跤还是要在一起看摔跤？ #line:5d762a
@@ -577,10 +577,10 @@ Bea: 是你们要摔跤还是要在一起看摔跤？ #line:5d762a
     Bea: 我根本不看摔跤。 #line:fab5b9
     Pam: 我看。 #line:2258e6
     Pam: 摔跤很好看。 #line:9fb5d6
-    Britt: 没 人 在 乎 这 些。 #line:d628aa
+    Britt: 没人在乎这些。 #line:d628aa
 ->我可以摔跤。 #line:4ac5b9
     Mae: 我才不管对面是男孩女孩呢。 #line:de8e4f
-    Mae: 但他们要会|“啊 啊 啊 啊 啊 啊"|的吼叫 #line:e4de4b
+    Mae: 但他们要会|“啊啊啊啊啊啊"|的吼叫 #line:e4de4b
     Mae: 因为我不会想和那种不会 #line:701c80
     Mae: “啊啊啊啊" #line:67085f
     Mae: 的人约会。 #line:9e0318
@@ -598,10 +598,10 @@ Karla: 下个问题 #line:6f0b18
 Karla: 你们最尴尬的经历是什么？ #line:ed1ca9
 Bea: 什么东西？！ #line:771e69
 Mae: 配合他们就行了。 #line:fca203
-Karla: 回 答 我！ #line:a0b82b
+Karla: 回答我！ #line:a0b82b
 Bea: 有一次，我当着全班的面放了一个屁。 #line:d86077
 <<wait 1>>
-Mae: 哈 哈 哈！ #line:ded57d
+Mae: 哈哈哈！ #line:ded57d
 Karla: 就这事？ #line:ff4946
 Bea: 不然你们还以为是什么？ #line:659871
 Karla: 好吧，那挺烂的。现在到你了。 #line:f99454
@@ -609,7 +609,7 @@ Mae: 额……哦……天哪…… #line:95a766
 <<lookAt Mae Karla>>
     ->初中的时候 #line:d87267
         Mae: 我……哦，天呐。 #line:7e0247
-        Karla: 说 吧。 #line:05093a
+        Karla: 说吧。 #line:05093a
         Mae: 当时我刚开始来月经。 #line:73de09
         Mae: 结果在科学课上我的血把椅子都给染红了。 #line:46593b
         <<fadeOutAmbientSFX _AmbientSFX:WyrdTeens .5>>
@@ -636,10 +636,10 @@ Mae: 额……哦……天哪…… #line:95a766
     ->高中的时候 #line:193c4a
         Mae: 我的年终舞会是和一个叫科尔的男生一块去的…… #line:595a02
         <<lookAt Mae Bea>>
-        Bea: 哇哦我已经想听这个故事很久了。 #line:f4b458
+        Bea: 哇哦，我已经想听这个故事很久了。 #line:f4b458
         <<lookAt Mae Karla>>
         Mae: 那个舞会很尴尬，尤其我还得穿着条裙子去。 #line:9e3ddf
-        Mae: 而且我不会跳慢舞 #line:7b9e39
+        Mae: 而且我不会跳慢舞。 #line:7b9e39
         Mae: 而且我感觉到他真的是个很好很好的人。 #line:2adf32
         Mae: 我本来试着亲吻他。 #line:59fd8d
         Mae: 但是不知道为什么我搞砸了，还整出了一场血案？ #line:49f86e
@@ -652,8 +652,8 @@ Mae: 额……哦……天哪…… #line:95a766
         <<wait .5>>
         <<lookAt Mae Karla>>
         Mae: 所以我立刻把他带到卫生间用纸巾帮他止血。 #line:eb49f6
-        Mae: 我往他嘴里猛塞卫生纸 #line:da751a
-        Mae: 我用力太猛了，他被噎到后就开始反抗 #line:8e95f8
+        Mae: 我往他嘴里猛塞卫生纸。 #line:da751a
+        Mae: 我用力太猛了，他被噎到后就开始反抗。 #line:8e95f8
         Mae: 我记得我当时好像还在一边嚼着杏仁糖。 #line:84c6cd
         <<lookAt Mae Bea>>
         Bea: 哪弄来的？？？ #line:0502ac
@@ -661,12 +661,12 @@ Mae: 额……哦……天哪…… #line:95a766
         <<lookAt Mae Karla>>
         Mae: 那些杏仁我嚼得很难受， #line:f80720
         Mae: 有一个还卡在我喉咙里了。 #line:e2b7f3
-        Mae: 可怜的科尔，他就一整个人直接跌在卫生间的墙上 #line:fcf32f
+        Mae: 可怜的科尔，他就一整个人直接跌在卫生间的墙上。 #line:fcf32f
         Mae: 我试着对自己用海姆力克急救法 #line:97eee0
         Mae: 也成功了，但是……但是…… #line:e16fa5
         Mae: 我吐得科尔满身都是 #line:a2f93b
         Mae: 奶酪火腿鸡排。 #line:af71ce
-        Karla: 太赞啦！ #line:0fb80f
+        Karla: 牛啊。 #line:0fb80f
         Mae: 正好有个人走了进来，看见科尔晕着头流着血噎着喉 #line:444c1c
         Mae: 还有我在往洗手盆里吐东西 #line:29f3f0
         Mae: 我把那些纸巾都从科尔嘴里拽了出来 #line:462ae0
@@ -678,10 +678,10 @@ Mae: 额……哦……天哪…… #line:95a766
         Mae: 而且那个舞会还是他载我去的。 #line:0ffc03
         <<lookAt Mae Bea>>
         Bea: 那你怎么回的家？ #line:d258eb
-        Mae: 那个叫乔什的小孩，他开拖拉机来的舞会 #line:bfe247
+        Mae: 那个叫乔什的小孩，他开拖拉机来的舞会。 #line:bfe247
         <<lookAt Mae Karla>>
         Mae: 于是我们慢慢朝我家驶去 #line:66065a
-        Mae: 我们后面的车慢下来，鸣喇叭 #line:dfc468
+        Mae: 后面的车必须慢下来，还不停地鸣着喇叭。 #line:dfc468
         Mae: 我坐在拖拉机后面，眼珠子都要哭出来了。 #line:896b01
         <<wait 2>>
         <<playAmbientSFX _AmbientSFX:WyrdTeens 5>>
@@ -697,8 +697,8 @@ Mae: 额……哦……天哪…… #line:95a766
     ->大学的时候 #line:5abab2
         Mae: 我在咖啡厅看到了一个很可爱的女孩 #line:585d32
         Mae: 一周能见到几次 #line:44181b
-        Mae: 我猜我们的时间表有重合吧，之类的 #line:d5c67d
-        Mae: 这就是大学奇怪的地方，它就像个小镇一样- #line:f8b61e
+        Mae: 我猜我们的时间表有重合吧。 #line:d5c67d
+        Mae: 这就是大学奇怪的地方，它就像个小镇一样…… #line:f8b61e
         <<lookAt Mae Britt>>
         Britt: 切重点。 #line:e6e3da
         <<lookAt Mae Bea>>
@@ -728,7 +728,7 @@ Mae: 额……哦……天哪…… #line:95a766
         <<lookAt Mae Bea>>
         Bea: 我去，伙计。 #line:ca7916
         <<lookAt Mae Britt>>
-        Britt: 继 续 说！ #line:bc3d0c
+        Britt: 继续说！ #line:bc3d0c
         <<lookAt Mae Karla>>
         Mae: 然后我挣扎着直到把垃圾桶打翻了…… #line:c4e485
         Mae: 然后我站了起来然后那个女孩她…… #line:9efc52

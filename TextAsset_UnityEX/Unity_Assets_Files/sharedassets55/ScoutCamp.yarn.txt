@@ -115,7 +115,7 @@ position: 371,81
     Angus: 那里是不是还有几张？ #line:96d2b5
     Angus: 我看见字条了。 #line:9408c4
     Mae: 太棒了！我这就看看去。 #line:95d0db
-    Angus: 好的，好的。 #line:984767
+    Angus: 好的好的。 #line:984767
 <<endif>>
 ===
 title: Notes

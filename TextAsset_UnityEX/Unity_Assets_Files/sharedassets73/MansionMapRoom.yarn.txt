@@ -7,9 +7,9 @@ position: -478,437
 <<trigger Map Button1>>
 <<set $map_switch_0_done to 1>>
 <<set $map_switches += 1>>
-Gregg: 哦，嘿，这不是我住的地方吗。 #line:1183d0
+Gregg: 哦，嘿，这不是我住的地方吗？ #line:1183d0
 Mae: 还有高速公路， #line:9db910
-Mae: 然而还没有猎豹鲜生。 #line:038f5b
+Mae: 但是还没有猎豹鲜生。 #line:038f5b
 Gregg: 这地图肯定是很早以前的了。 #line:e9d9b6
 [[CheckSwitches]]
 ===
@@ -23,8 +23,8 @@ position: -258,439
 <<set $map_switch_1_done to 1>>
 <<set $map_switches += 1>>
 Mae: 这里是墓地。 #line:a58efa
-Gregg: 还有咱们现 在 待的这栋楼。 #line:d8d5eb
-Mae: 感觉有点恐怖啊。 #line:460d3d
+Gregg: 还有咱们现在待的这栋楼。 #line:d8d5eb
+Mae: 有点恐怖。 #line:460d3d
 Mae: 就像是有人在监视咱们一样。 #line:fa2703
 [[CheckSwitches]]
 ===
@@ -37,8 +37,8 @@ position: -27,432
 <<trigger Map Button3>>
 <<set $map_switch_2_done to 1>>
 <<set $map_switches += 1>>
-Mae: 嘿，这是我家的位置！ #line:eac498
-Gregg: 哇哦，我敢说，这里面肯定住着一个迷你版的你。 #line:4cde74
+Mae: 嘿，这里是我家！ #line:eac498
+Gregg: 哇哦，这里面肯定住着一个迷你版的你。 #line:4cde74
 Mae: 哇哦，这可真…… #line:e42ab9
 Mae: 抱歉，这玩意儿让我感觉有点晕。 #line:7f0001
 Gregg: 我可是个危险人物。 #line:7364b4
@@ -53,7 +53,7 @@ position: 197,449
 <<trigger Map Button4>>
 <<set $map_switch_3_done to 1>>
 <<set $map_switches += 1>>
-Gregg: 这里是我们亲爱的镇中心， #line:552caf
+Gregg: 我们亲爱的镇中心， #line:552caf
 Mae: 镇子的中心位置。 #line:312f34
 Gregg: 安静，别说话。 #line:c39ab7
 [[CheckSwitches]]

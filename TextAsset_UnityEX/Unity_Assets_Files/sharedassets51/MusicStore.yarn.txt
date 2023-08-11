@@ -27,7 +27,7 @@ position: 479,-30
     <<walk Bea BeaCounter>>
     Bea: 哦，哇哦。 #line:ccaa6f
     Mae: o> #line:16efc5
-    Mae: [wave]你 好？！|有 人 吗？！[/wave] #line:d1cede
+    Mae: [wave]你好？！|有人吗？！[/wave] #line:d1cede
     <<waitForMove Bea>>
     <<walk Bea BeaTalk2>>
     Mae: 天哪。 #line:e49d26
@@ -42,9 +42,9 @@ position: 479,-30
     <<lookRight Mae>>
     Mae: 这么说……这就和咱们的国家一样吗？ #line:2c1a2b
     Mae: :) =_= #line:627f7c
-    Bea: 没 错～ #line:3d6ae8
+    Bea: 没错～ #line:3d6ae8
     Mae: o> #line:c36599
-    Mae: [hop]没 错。[/hop] #line:e25cfb
+    Mae: [hop]没错。[/hop] #line:e25cfb
     Mae: o_o :| _o_ #line:0657f9
     <<generateFollowPoints Mae Bea>>
     <<follow Bea Mae>>
@@ -68,11 +68,11 @@ position: 823,260
     Bea: 哪个乐队？ #line:1ed580
     Mae: 你懂的…… #line:08e275
     Mae: 你肯定记得这首歌。 #line:70a6ab
-    Mae: 当时，这歌的MV我可是单曲循环过无数次啊。 #line:3a4e2b
+    Mae:它的MV我可是单曲循环过无数次啊。 #line:3a4e2b
     Bea: 说真的，我真不知道你说的是什么。 #line:59e98a
     Mae: 那个MV里出现过一匹特奇怪的马。 #line:12cf32
     Mae: {emote=horse_stand} #line:ccb230
-    Bea: 哦，对了，我想起来了。MV里确实有一匹特别奇怪的马。 #line:03dbb7
+    Bea: 哦，对了，我想起来了。确实有一匹奇怪的马。 #line:03dbb7
     Mae: 哦，我的天，是啊。那匹马才是这部MV的灵魂。 #line:f1f6cc
     Mae: {emote=horse_dance1} #line:32d191
     Bea: 我想起来了。 #line:6c3a21
@@ -90,16 +90,16 @@ colorID: 0
 position: 544,469
 ---
 <<if $fort_lucenne_mall < 3>>
-    Bea: 我 的 老 天 啊。 #line:8da6b7
-    Bea: 真是一片狼藉啊。 #line:e78cd9
+    Bea: 我的老天啊。 #line:8da6b7
+    Bea: 这里真乱。 #line:e78cd9
     Mae: 咱们来看看这儿还剩点什么。 #line:45615c
-        ->《末日怪物卡车》。 #line:51e4b0
+        ->《末日怪物卡车》 #line:51e4b0
             Bea: 哇哦，这歌我的确听过。 #line:c4cc64
             Bea: 我当时只是为了弄明白歌名到底是什么意思才听的。 #line:256370
             Mae: 封面上印的是一辆改装卡车，这和我叔叔的那辆车很像。 #line:c82532
             Mae: 但这辆车也不太一样，它居然燃烧着从一条龙的脸上飞过。 #line:9a4139
             Bea: 看来是变得更高级了。 #line:81668d
-        ->《派对女孩：在录制超嗨混音版时的疯狂演奏》。 #line:3f3776
+        ->《派对女孩：在录制超嗨混音版时的疯狂演奏》 #line:3f3776
             Bea: 天哪，真有意思。 #line:ab89bb
             Mae: 那是什么意思啊？ #line:948d6a
             Bea: 意思就是，有个人参加了校园之夜的活动，她因此变得很嗨。 #line:2dbdf6

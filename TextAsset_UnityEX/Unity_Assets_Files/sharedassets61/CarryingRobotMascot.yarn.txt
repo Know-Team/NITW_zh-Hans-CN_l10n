@@ -6,8 +6,8 @@ position: 115,298
 <<if $stairs_gregg_start is 0>>
     Mae: 抱歉。 #line:863059
     Gregg: 哈哈，还挺爽的。 #line:9b70a9
-    Mae: 好吧，真高兴你没把小命给丢了。 #line:de3bf1
-    Gregg: 我要是挂了，就去附身这楼里所有的楼梯。 #line:5db036
+    Mae: 好吧，很高兴你没把小命给丢了。 #line:de3bf1
+    Gregg: 我要是挂了，就附身这楼里所有的楼梯。 #line:5db036
     Mae: 准备好了吗？ #line:54e8f4
     Gregg: 准备好啦！ #line:8dc4ee
 <<elseif $stairs_gregg_start is 1>>
@@ -17,30 +17,30 @@ position: 115,298
     Mae: 嗷，真该死。 #line:94a3b1
     Gregg: 走起！ #line:494bde
 <<elseif $stairs_gregg_start is 2>>
-    Gregg: 老 天 啊。 #line:157ded
+    Gregg: 老天啊。 #line:157ded
     Mae: 知道吗，这可真是个馊主意！ #line:a42412
     Gregg: 如果咱俩能配合好，那这就不是馊主意！ #line:d311ca
-    Mae: 我 尽 量 ！！！ #line:1c9380
+    Mae: 我尽量 ！！！ #line:1c9380
     Gregg: 好，咱们走。一！二！三！ #line:9e7876
 <<elseif $stairs_gregg_start is 3>>
-    Gregg: 行行行。咱们得重新考虑一下策略了。 #line:cfd365
+    Gregg: 等下等下等下。咱们得重新考虑一下策略了。 #line:cfd365
     Mae: 好，继续。 #line:01371e
-    Gregg: 别 告 诉 我这次你没差点要了我的命。 #line:2a4f31
-    Mae: 哦好极了，我都把别要了你的命这事给忘了。 #line:791f41
+    Gregg: 这次换成我说“很高兴你没让我把老命给丢了"。 #line:2a4f31
+    Mae: 对哦，我也可能让你把小命给丢了，谢谢提醒。 #line:791f41
     Mae: 下次注意。 #line:1b06aa
 <<elseif $stairs_gregg_start is 4>>
-    Gregg: 爬楼梯时，我都能看见走马灯在我眼前闪了 #line:fb1bac
+    Gregg: 爬楼梯时，我感觉整个人生在我眼前回闪了。 #line:fb1bac
     Mae: 这句话像是个暗喻。 #line:6b7c43
-    Gregg: 我 只 想 把 这 东 西 搬 上 楼！！！ #line:bb0852
-    Gregg: 神 为 什 么 要 这 么 对 我 啊？！？！ #line:dff678
+    Gregg: 我只想把这东西搬上楼！！！ #line:bb0852
+    Gregg: 神为什么要这么对我啊？！ #line:dff678
     Mae: 好了，咱们走。我真的越来越累了。 #line:8692a6
     Gregg: 好好好。 #line:ca9a66
 <<elseif $stairs_gregg_start is 5>>
     Gregg: 我现在很失望。 #line:de0d00
     Mae: 噢，老兄，千万别放弃希望。 #line:e8432b
     Mae: 我的意思是，咱们可以放弃把这玩意搬上楼，但别放弃希望！ #line:13c088
-    Gregg: 额 啊 啊 啊 啊 啊！！！！ #line:9a4421
-    Gregg: 走 着！！！ #line:3f6145
+    Gregg: 额啊啊啊啊啊！！！ #line:9a4421
+    Gregg: 走着！！！ #line:3f6145
 <<else>>
     [[ScrewIt]]
 <<endif>>
@@ -55,7 +55,7 @@ position: 633,-4
 <<if $stairs_gregg_wait is 0>>
     Gregg: 再坚持一下！ #line:acfc23
 <<elseif $stairs_gregg_wait is 1>>
-    Gregg: 喂嘿，好的，牛仔！ #line:59dca2
+    Gregg: 嘿哈，好的，牛仔！ #line:59dca2
 <<elseif $stairs_gregg_wait is 2>>
     Gregg: 坚持住！ #line:2b604c
 <<endif>>
@@ -67,14 +67,14 @@ tags:
 colorID: 0
 position: 633,226
 ---
-Gregg: 好的！好 极 啦！！！ #line:66c6cd
+Gregg: 好的！好极啦！！！ #line:66c6cd
 ===
 title: FallDownStairs
 tags: 
 colorID: 0
 position: 864,298
 ---
-Gregg: 啊 啊 啊 啊 啊 哦！！ D: #line:0c41e3
+Gregg: 啊啊啊啊啊哈！！ D: #line:0c41e3
 Gregg: _o_ :| #line:b46212
 ===
 title: NewFlightOfStairs
@@ -83,7 +83,7 @@ colorID: 0
 position: 1139,243
 ---
 <<if $stairs_gregg_new is 0>>
-    Mae: 伙计，我两只胳膊都没劲了。 #line:315394
+    Mae: 伙计，我两只胳膊都没劲啦。 #line:315394
     Gregg: 伙计，我整个人都没劲了。 #line:e90e80
     Mae: 呃呃呃啊～ #line:94b58d
     Gregg: 咱们快点把它搬上去吧！ #line:44059f
@@ -98,12 +98,12 @@ colorID: 0
 position: -77,65
 ---
 Mae: 哦，我的天，我还能闻到胶水味。 #line:dcf16d
-Gregg: 我家邻居肯定会觉得我嗑了药， #line:9b8614
-Gregg: 又或者只会觉得我在用胶水捣鬼。 #line:22fe99
+Gregg: 我邻居肯定觉得我嗑了药， #line:9b8614
+Gregg: 也可能觉得我在用胶水捣鬼。 #line:22fe99
 Mae: 是这样的， #line:41b047
 Mae: 咱们真要把这东西搬上楼吗？ #line:06de47
 Gregg: 一定会很刺激的。 #line:dc7b50
-Mae: 也一定会把你搞死。 #line:54dc19
+Mae: 也一定会把你累死。 #line:54dc19
 Gregg: 哈哈哈哈！ #line:6e79d7
 Mae: 你一定会被压成一块薄饼。 #line:4e5c80
 Gregg: 哈哈哈。 #line:56e3b7
@@ -128,15 +128,15 @@ colorID: 0
 position: 384,307
 ---
 <<if $stairs_gregg_start is 0>>
-    Mae: 太抱歉啦！！！ #line:8b14ad
-    Gregg: 啊 啊 啊！ #line:2ff466
+    Mae: 抱歉！！！ #line:8b14ad
+    Gregg: 啊啊啊！ #line:2ff466
 <<elseif $stairs_gregg_start is 1>>
     Mae: 额啊啊啊！ #line:23339e
-    Gregg: 啊，继 续 搬！ #line:7db9be
+    Gregg: 啊，继续搬！ #line:7db9be
 <<elseif $stairs_gregg_start is 2>>
-    Mae: 哇 啊 啊 啊！ #line:ce564e
+    Mae: 哇啊啊啊！ #line:ce564e
     Gregg: *呼**呼**呼* #line:c32a88
-    Mae: 哦嚯。 #line:c1dd1a
+    Mae: 呼哈。 #line:c1dd1a
     Gregg: 好了，咱们走。 #line:7adbcc
 <<elseif $stairs_gregg_start is 3>>
     Mae: 我想去死。 #line:03163f
@@ -146,8 +146,8 @@ position: 384,307
     Mae: 那咱们继续？ #line:4a4770
     Gregg: 对，继续。 #line:a7b17e
 <<elseif $stairs_gregg_start is 4>>
-    Mae: 我头已经晕了。 #line:b5ccb3
-    Gregg: 我人已经死了，快了。 #line:923693
+    Mae: 我头都晕了。 #line:b5ccb3
+    Gregg: 我人都快死了。 #line:923693
     Gregg: 开始。 #line:1b7152
 <<elseif $stairs_gregg_start is 5>>
     Mae: ……为什么会这样…… #line:cfe38a
@@ -165,11 +165,11 @@ colorID: 0
 position: 222,579
 ---
 Gregg: 去他的吧！咱们还是坐电梯去吧！ #line:d7010b
-Mae: 咱 们 是 不 是 早 就 应 该 去 坐 电 梯 啊？ #line:1e2a3e
+Mae: 咱们是不是早就应该去坐电梯啊？ #line:1e2a3e
 Gregg: 应该是吧。 #line:cff62f
-Gregg: 但这么走能离我们屋的门更近一点。 #line:9809b9
-Mae: 这 件 事 我 是 永 远 都 不 会 原 谅 你 的 。 #line:9e4630
-Gregg: 你 说 啥？？！ #line:7fb45e
+Gregg: 但这么走能离我们的门更近一点。 #line:9809b9
+Mae: 这件事我是永远都不会原谅你的。 #line:9e4630
+Gregg: 你说什么？！ #line:7fb45e
 <<irisOut 1 wait>>
 <<scene GreggAngusApartment>>
 ===

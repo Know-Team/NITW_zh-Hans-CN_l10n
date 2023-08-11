@@ -14,12 +14,12 @@ position: 171,988
 ---
 Mae: :) #line:cb425d
 Gregg: :) #line:77a674
-Mae: 真可惜你没被鲨鱼咬掉半截身子。 #line:cadbd5
-Gregg: 真可惜你没被连环杀人犯杀掉。 #line:319826
-Mae: 真可惜你没开始嗑药。 #line:48241d
+Mae: 好想你被鲨鱼咬掉半截身子。 #line:cadbd5
+Gregg: 好想你被连环杀人犯杀掉。 #line:319826
+Mae: 好想你开始嗑药， #line:48241d
 Mae: 然后因此而死。 #line:8fda41
 Gregg: 话说，不久前我们还真的磕了点。 #line:f98295
-Mae: 真可惜你没因磕过量而死。 #line:7e0581
+Mae: 好想你因磕过量而死。 #line:7e0581
 Angus: 行了你们俩闹够了吗？ #line:bb9a45
 Gregg: :| #line:efcec0
 <<close>>
@@ -27,7 +27,7 @@ Gregg: :| #line:efcec0
 <<walk Gregg GreggEnter>>
 <<walk Angus AngusEnter>>
 <<waitForMove Mae>>
-Mae: 终 于 到 啦！ #line:f2bbae
+Mae: 终于到啦！ #line:f2bbae
 Angus: 嗯，我们到了。 #line:19e2ac
 Gregg: 啊，太 好 啦！ #line:dda161
 Gregg: 咱 们 到 多 纳 狼 啦。 #line:36d635
@@ -44,12 +44,12 @@ Angus: 嗯哼。 #line:f34827
 <<playerFace -1>>
 DWCashier: 欢迎光临多纳狼餐厅。 #line:f98bef
 DWCashier: 本店招牌菜是战车之轮，今日特色餐品是尖叫枫糖薄饼。 #line:d29a19
-DWCashier: 您今天想品尝一下战车之轮吗？ #line:0e1125
+DWCashier: 你今天想品尝一下战车之轮吗？ #line:0e1125
 <<lookAt Gregg Mae>>
 Mae: 你好。 :) =_= <o> #line:0d5868
 Mae: 你们店的甜甜圈最棒啦。 #line:4b21ac
 <<lookAt Gregg DWCashier>>
-DWCashier: 谢谢您，女士。 #line:a642b6
+DWCashier: 谢谢你，女士。 #line:a642b6
 <<lookAt Gregg Angus>>
 Angus: 我们要六个发疯甜甜圈。 #line:cf1456
 Gregg: 嘿，老兄， #line:fc2a88
@@ -61,7 +61,7 @@ Mae: 我想点一份龙舌兰鸡尾酒蛋糕！ o_o #line:30bf3b
 DWCashier: 不好意思，我们的龙舌兰鸡尾酒蛋糕已经卖完了。 #line:b2d83c
 <<lookAt Gregg Mae>>
 Mae: 卖 完 啦？！ :( _o_ #line:5f9467
-Mae: 怎 么 会 卖 完 了 呢！？！？ \o/ #line:9c3a76
+Mae: 怎么会卖完了呢！？！？ \o/ #line:9c3a76
 Mae: 我 来 你 们 店 的|主 要 原 因 就 是 为 了|吃 这 个 蛋 糕！！！！ #line:58b748
 Angus: 你就点吧。 #line:f9f360
 Gregg: …… #line:548961
@@ -112,7 +112,7 @@ Angus: 好，我去找个座。 #line:4bf994
 <<wait 3>>
 <<lookAt Gregg Mae>>
 Mae: 我要去趟洗手间。 #line:8039c5
-Gress: ……好…… #line:e245b3
+Gregg: 好…… #line:e245b3
 <<close>>
 //Mae walks over to the bathroom. Camera stays on Gregg as she walks away. Poor Gregg. Or… poor Gregg???//
 //<<setCameraMode Stationary>>

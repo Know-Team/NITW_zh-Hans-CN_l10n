@@ -42,7 +42,7 @@ position: -4558,-507
     Mae: 怎么了，潘德森先生？ #line:aea6b9
     Penderson: {size=1.2,locator=Penderson}[shake=.04]你离我家房顶远一点！[/shake] #line:4ced07
     Mae: 我不明白你在说什么。 #line:bb2d9a
-    Penderson: {locator=Penderson}我都看见啦。[stomp]你又踩[/stomp]我家的房顶[hop]又跳到[/hop]我家烟囱上。 #line:d3985f
+    Penderson: {locator=Penderson}我都看见了。[stomp]你又踩[/stomp]我家的房顶，[hop]又跳到[/hop]我家烟囱上。 #line:d3985f
     [[好吧，好吧，我现在得走了…… |OnYellEnd]] #line:0dc153
     [[你怎么回事儿啊，潘德森？|OnYellClimbers]] #line:1f8959
 <<endif>>
@@ -184,7 +184,7 @@ position: -3071,194
 Twigmeyer: 我敢说，你还是那个小混球。 #line:9ef0f8
 Mae: 没错，我从生到死，这辈子都是100%纯钛合金小混球。 #line:3ce201
 Twigmeyer: 这就对了！ #line:4e92f9
-Mae: 再见啦，特维梅尔先生！ #line:cea924
+Mae: 再见，特维梅尔先生！ #line:cea924
 <<set $twigmeyer_done to 1>>
 ===
 title: Twigmeyer_00_IWasNever
@@ -367,7 +367,7 @@ Molly: 还很天真， #line:a473d3
 Molly: 行为处事还很单纯。这样虽然很美好， #line:afa181
 Molly: 可世界却不是这样的。 #line:466a19
 Molly: 它并不是虚无飘渺的， #line:36eb9a
-Molly: 而是真实存在在你眼前的。 #line:58cffa
+Molly: 而是真实存在你眼前。 #line:58cffa
 Mae: 好吧，就因为我要参加一个聚会， #line:5eaee7
 Mae: 你就想把我抓起来是吗？ #line:59b7c7
 Molly: 梅，一定要注意安全。 #line:46ad83
@@ -458,7 +458,7 @@ position: -6486,-966
     <<setSpriteLayer Harley1 CharacterFG>>
     <<setSpriteLayer Harley2 CharacterFG>>
     <<setSpriteLayer Harley3 CharacterFG>>
-    Harley1: 杀啊，杀啊，杀啊！ #line:3ce745
+    Harley1: 杀杀杀啊！ #line:3ce745
     Harley3: FBI，不许动！ #line:f30f6d
     <<trackAllSpeechBubblesToCharacters 0>>
 <<endif>>
@@ -531,9 +531,9 @@ Mae: 嗯？ #line:8cbe3b
 Molly: 我想告诉你件事， #line:c74ef4
 Molly: 我们已经对你们几天前找到的那条胳膊做了检测。 #line:93b26b
 Mae: o_o #line:75fd71
-Mae: 哦，是吗？？？ #line:652c8b
-Molly: 是的。我想你会对这事比较感兴趣的。 #line:a0b93e
-Mae: 当然感兴趣啦！ #line:202fd1
+Mae: 是吗？？？ #line:652c8b
+Molly: 是的，我想你会对此事比较感兴趣。 #line:a0b93e
+Mae: 当然了！ #line:202fd1
 Molly: 胳膊的主人 #line:858ace
 Molly: 是一名中等身材的中年男人。 #line:158df9
 Molly: 胳膊是在他死后被人取下来的。 #line:cb41ab
@@ -541,13 +541,13 @@ Mae: 哇哦。 #line:5fba78
 Mae: 那这就证明…… #line:3f5065
 Molly: 到目前为止，这只胳膊还证明不了什么。 #line:97114c
 Molly: 我只是觉得你很想知道这件事的发展罢了， #line:6dc399
-Molly: 因为你小时候一直都很喜欢侦探破案的故事。 #line:dc9c56
+Molly: 因为你小时候一直很喜欢侦探破案的故事。 #line:dc9c56
 Mae: 嗯，是啊，谢了。 #line:6ebca5
-Mae: 这个幽灵可真是麻烦啊。 #line:354fa4
-Molly: 你是在说幽灵吗？ #line:dcbb05
-Molly: 不管嫌疑人是谁，这件事都和幽灵一点关系也没有。 #line:03f148
-Mae: 是啊，是啊，没人相信我的话，这我知道。 #line:72f40c
-Molly: 梅，千万要小心。 #line:b0fd2c
+Mae: 这个幽灵可是个大麻烦。 #line:354fa4
+Molly: 幽灵？ #line:dcbb05
+Molly: 不管怎样，这件事都和幽灵一点关系也没有。 #line:03f148
+Mae: 是啊，是啊，没人相信我的话，我知道。 #line:72f40c
+Molly: 梅，注意安全。 #line:b0fd2c
 Molly: 最近出了不少怪事。 #line:ecb262
 Mae: 是啊，你不是已经告诉我了吗。 #line:f8367e
 Molly: 祝你今晚玩得开心，梅。 #line:34640a
@@ -559,11 +559,11 @@ colorID: 2
 position: -8994,-1077
 ---
 Mae: 我还记得上初三那会儿， #line:598a46
-Mae: 在我偷偷溜出家的时候，我可以从这儿看到汤姆·布拉姆维尔的卧室。 #line:0aa39c
+Mae: 偷偷溜出家的时候，|可以从这儿看到汤姆·布拉姆维尔的卧室。 #line:0aa39c
 <<wait .25>>
 Mae:{emote=butt} :\ #line:297dfe
 <<wait .25>>
-Mae: 是啊，这可是我亲眼所见。 :| #line:eea5c1
+Mae: 是啊，亲眼所见呢。 :| #line:eea5c1
 <<end>>
 ===
 title: Pole1Act2.1
@@ -571,8 +571,8 @@ tags: demo2
 colorID: 3
 position: -8999,-834
 ---
-Mae: 那一年发大水的时候，这根电线杆就让水给冲倒了。 #line:ed72bd
-Mae: 当时，我很害怕，害怕掉到水里的电线会把我们这一片的水都通了电。 #line:388fe4
+Mae: 那年发大水时，|这根电线杆被水冲倒。 #line:ed72bd
+Mae: 我当时害怕掉到水里的电线|会把这片的水都通上电。 #line:388fe4
 Mae: 后来，为了安全起见， #line:c64377
 Mae: 我一连几个星期都没敢洗澡， #line:1aa17c
 Mae: 也不敢开水龙头。 #line:4d1b8d
@@ -608,7 +608,7 @@ Dad: 我也没打算瞒这件事，其实我很讨厌这份工作。 #line:f48b3
 Mae: 啊，为什么呀，老爸？ #line:a5f444
 Dad: 我挖过矿，做过玻璃工，还做过其他很多工作， #line:999000
 Dad: 但在现在这个地方……那些人根本就不会因为你的工作而尊敬你。 #line:e7156f
-Mae: 他们不尊敬您吗？ #line:25d9a8
+Mae: 他们不尊敬你吗？ #line:25d9a8
 Dad: 工作应该是为了可以糊口， #line:43a1a2
 Dad: 工作应该是为了贴补家用， #line:3f27af
 Dad: 工作应该有正常的作息时间， #line:9d6b68
@@ -717,11 +717,11 @@ tags: demo2
 colorID: 3
 position: -8743,-842
 ---
-Mae: 我还记得，大水退了以后，你家的草坪漂到了我家院子里，在那儿待了两个星期， #line:8d78d2
-Mae: 就和一大片……尸体一样。 #line:540544
-Mae: 后来，又有人把它给搬了回去。 #line:dbd8e5
-Mae: 而且，晚上的时候，我还能从窗户里看见它。 #line:e1b9a3
-Mae: 不知道是什么原因，我老感觉这东西特别诡异。 #line:453016
+Mae: 洪水来袭后，|它在我家后院躺了整整2周。 #line:8d78d2
+Mae: 就像一个……巨大的尸体。 #line:540544
+Mae: 后来又有人把它竖回原位。 #line:dbd8e5
+Mae: 而且每当晚上我透过窗看到它时， #line:e1b9a3
+Mae: 不知为啥，|总感觉它特别诡异。 #line:453016
 ===
 title: Pole1Act2.3
 tags: demo2
@@ -730,7 +730,7 @@ position: -8498,-853
 ---
 Mae: 诡异的电线杆。 #line:01ea1c
 Mae: 亡灵朋友， #line:095f86
-Mae: 它就在牢笼之中注视着我。 #line:147e8b
+Mae: 在路边监视我。 #line:147e8b
 <<end>>
 ===
 title: Penderson_A2D1
@@ -770,7 +770,7 @@ tags:
 colorID: 6
 position: -2922,-985
 ---
-Dad: 当-嗒-当-当 #line:6a3a19
+Dad: 当～嗒～当～当～ #line:6a3a19
 ===
 title: Dad_A4D3_01
 tags: 
@@ -792,12 +792,12 @@ tags:
 colorID: 4
 position: -8991,-593
 ---
-Mae: 从这儿可以看见潘德森的房子。 #line:41e7b1
+Mae: 从这儿可以看见|潘德森的房子。 #line:41e7b1
 Mae: 那就是个看别人受罪，自己偷着乐的老家伙。 #line:701223
-Mae: 就因为我之前在他家房顶上放了个M80(一种响炮)， #line:004614
-Mae: 所以弄得他一直都很讨厌我。 #line:362e25
-Mae: 我觉得，这就像积怨一样， #line:9a77b8
-Mae: 在很久以前就已经出现了。 #line:cc7b7e
+Mae: 就因为我之前往他家|屋顶排水管里扔了个M80， #line:004614
+Mae: 弄得他一直很讨厌我。 #line:362e25
+Mae: 害，就这点小事。 #line:9a77b8
+Mae: 就能让他对我|一直耿耿于怀。 #line:cc7b7e
 <<end>>
 ===
 title: Pole1Act4.1
@@ -805,12 +805,12 @@ tags:
 colorID: 6
 position: -8995,-347
 ---
-Mae: 哦，哇哦，卡里姆家新养了一只狗诶！ #line:43cfe9
+Mae: 哇噢，卡里姆家|新养了一只狗诶！ #line:43cfe9
 Mae: 嘿，狗狗们！ #line:805fe5
 Mae: 啊，她看见我啦！ #line:4e2d7c
 Mae: 我从这儿可以看见你！ #line:2f43ff
 Mae: 我会一直盯着你的！ #line:715e1b
-Mae: 所以[shake=.05]你要小心啦[shake]。 #line:1853ca
+Mae: 所以[shake=.05]注意噢[shake]。 #line:1853ca
 Mae: 还有，要做一只乖狗狗。 #line:3a3139
 <<end>>
 ===
@@ -819,8 +819,8 @@ tags:
 colorID: 2
 position: -2577,-396
 ---
-Twigmeyer: 耙啊，耙啊，耙啊…… #line:99a772
-Mae: 耙啊，耙啊，耙啊？ #line:b7ada3
+Twigmeyer: 耙，耙，耙…… #line:99a772
+Mae: 耙，耙，耙？ #line:b7ada3
 Twigmeyer: 就要这么耙， #line:e32b28
 <<set $twigmeyer_done to 1>>
 ===
@@ -831,7 +831,7 @@ position: -2272,-389
 ---
 Twigmeyer: 才能把这些该死的叶子弄干净！ #line:8b8678
 Mae: “他（它）们"应该离你家的院子远点。 #line:d2fe12
-Twigmeyer: 梅·博罗夫斯基，这些别有用意的话，你还是留着回家用去吧。 #line:621e5d
+Twigmeyer: 梅·博罗夫斯基，把双关留回你家说去。 #line:621e5d
 Mae: 哈哈哈。 #line:9d6473
 <<set $twigmeyer_done to 1>>
 ===
@@ -845,7 +845,7 @@ Twigmeyer: 落在我院子里的叶子也越来越多了。 #line:133b66
 Mae: 这有什么可大惊小怪的？ #line:22e92e
 Twigmeyer: 落叶会害了我的草的！！！！ #line:e6ee96
 Mae: 好吧，好吧！我的天！ #line:2c268e
-Twigmeyer: 气死我啦！！！ #line:406ce3
+Twigmeyer: 烦死了！！！ #line:406ce3
 <<set $twigmeyer_done to 1>>
 ===
 title: Twigmeyer_A3D4
@@ -859,7 +859,7 @@ Twigmeyer: 我对人有了一些理解。 #line:6be9fc
 Twigmeyer: 然后，我觉得你的理解是错的。 #line:a44702
 Mae: 好吧，我可不想让真相影响到你。 #line:5bafef
 Mae: 可你的理解也是错的。 #line:285e18
-Twigmeyer: 嗯，咱们走着瞧吧。 #line:1df9cb
+Twigmeyer: 嗯，看着吧。 #line:1df9cb
 <<set $twigmeyer_done to 1>>
 ===
 title: Twigmeyer_A4D3
@@ -874,7 +874,7 @@ Mae: 啊，我很不爽。 #line:d8ada1
 Twigmeyer: 你一定要认真对待生活！ #line:a31905
 Twigmeyer: 因为生活不易，而且很容易就前功尽弃。 #line:36bc5f
 Mae: 不不不，我的生活一直都不怎么样。 #line:c3485c
-Twigmeyer: 呵呵，那可真是太好啦。 #line:c0b2f9
+Twigmeyer: 呵呵，那可真是太好了。 #line:c0b2f9
 <<set $twigmeyer_done to 1>>
 ===
 title: TriggerMollyTop_A3D4
@@ -901,32 +901,32 @@ colorID: 6
 position: -2486,-1400
 ---
 Mae: 嘿，你在这儿干嘛呢？ #line:3f59a7
-Molly: 梅，我在工作呢。 #line:6be4eb
+Molly: 梅，我在工作。 #line:6be4eb
 Mae: =_= #line:51e64f
-Mae: 当然是在工作了。 #line:9f01e6
-Molly: *叹气* #line:80dc27
+Mae: 当～～～然了。 #line:9f01e6
+Molly: *唉* #line:80dc27
 Mae: 怎么了？ #line:b26464
-Molly: 别提了。今天早上，我们接到了一大堆报警电话。 #line:7d2925
+Molly: 别提了，今天早上，我们接到了一大堆报警电话。 #line:7d2925
 Mae: o_o #line:6a34d2
 	->哦。 #line:000b03
-	->……都是关于什么的电话？ #line:dd897a
+	->……关于什么的电话？ #line:dd897a
 		Molly: …… #line:f635b3
 <<wait 2>>
-Molly: 我问你个问题： #line:a19d1d
+Molly: 问你个问题： #line:a19d1d
 Molly: 你有没有见过…… #line:2eac4b
 <<wait 2>>
 Molly: 算了。 #line:4d28f4
 Molly: 去忙你的事吧。 #line:19577d
-Mae: 好的，我这就走。 #line:0a0797
+Mae: 好的，我走了。 #line:0a0797
 Molly: 梅， #line:5a0ad4
 <<wait 2>>
 Mae: \o/ #line:467ae6
-Mae: 我已经提醒过你啦！ #line:4812c4
+Mae: 什么事就说吧！ #line:4812c4
 Mae: _o_ #line:1475e9
-Molly: 一定要小心。 #line:a9e679
-Molly: 一定要……小心。 #line:d39410
-Mae: 好的，我的天。在你说这事之前，我根本就从来没想过这些！ #line:490003
+Molly: 注意安全。 #line:a9e679
+Molly: 一定要……注意安全。 #line:d39410
+Mae: 好的，老天。在你说这事之前，我根本就从来没想过这些！ #line:490003
 Molly: 梅！ #line:fa59fe
-Mae: 好了，好了，谢谢了，拜拜。 #line:39a054
+Mae: 知道了知道了，谢谢拜。 #line:39a054
 <<set $molly_done to 1>>
 ===

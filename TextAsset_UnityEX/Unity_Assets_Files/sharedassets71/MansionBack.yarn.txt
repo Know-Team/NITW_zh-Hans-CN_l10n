@@ -94,7 +94,7 @@ colorID: 0
 position: -1194,37
 ---
 Gregg: 嗷，耶！ #line:b59673
-Gregg: 找 到 地 下 室 的 门 啦！ #line:9d2eb3
+Gregg: 找到地下室的门啦！ #line:9d2eb3
 Mae: 憋 憋 憋！！！ #line:0b32a1
 Gregg: 你说什么？ #line:fd652c
 Mae: 憋再叫啦！ #line:4c5969
@@ -105,7 +105,7 @@ Mae: 就会说成“有灵"。 #line:4ca6e9
 Gregg: 我真听不懂你在说什么。 #line:a7c83d
 Mae: 好了，接下来咱们得巧悄地行动，是不是？ #line:6ddbff
 Gregg: 哦，好吧，我听明白你在说什么了。 #line:12bdd1
-Mae: 谢 谢 啦。 #line:af55e9
+Mae: 谢谢啦。 #line:af55e9
 Gregg: 我可不想这么说话。 #line:cb4207
 Mae: 好吧。 #line:61748d
 Gregg: 安全，这儿没人。 #line:5ac50c

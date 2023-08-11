@@ -3,12 +3,12 @@ tags:
 colorID: 3
 position: -269,543
 ---
-Mae: 哇哦，这玩意可比我想的沉多了。 #line:481cd0
-Gregg: 很沉，对不对？？ #line:729c3d
-Gregg: 所以，在扣扳机之前，你一定要把弓弦上好。 #line:f95cd2
-Mae: 然后我就可以想射哪儿就射哪儿吗？ #line:ba15a4
-Gregg: 只要别射到我就行。 #line:3559ad
-Mae: 没问题。 #line:68f55b
+Mae: 哇，真没想到这玩意这么沉。 #line:481cd0
+Gregg: 有够沉吧？？ #line:729c3d
+Gregg: 所以在扣扳机之前，你一定要把弓弦上好。 #line:f95cd2
+Mae: 然后我就可以想射哪儿就射哪儿？ #line:ba15a4
+Gregg: 可别射我。 #line:3559ad
+Mae: 好的。 #line:68f55b
 ===
 title: HitGround
 tags: 
@@ -29,10 +29,10 @@ position: 67,594
 <<elseif $fps_hit_ground is 5>>
     Gregg: 你能不射到地上大概是个*意外*吧。 #line:4251e0
 <<elseif $fps_hit_ground is 6>>
-    Gregg: 对于这种情况，已经没啥值得说的了。 #line:500227
+    Gregg: 已经没啥好说的了。 #line:500227
 <<elseif $fps_hit_ground is 7>>
     Gregg: 好吧。 #line:cbd4c0
-    Mae: 是啊。 #line:117186
+    Mae: 嗯哼。 #line:117186
 <<endif>>
 
 <<set $fps_hit_ground += 1>>
@@ -43,21 +43,21 @@ colorID: 3
 position: 190,361
 ---
 <<if $fps_hit_tree is 0>>
-    Gregg: 哇哦！你把那棵树给射死啦。 #line:2a2e3c
-    Mae: 这就是这棵树的报应。 #line:0d101f
+    Gregg: 哇哦！你是准备谋杀那颗树吗！ #line:2a2e3c
+    Mae: 这就是那棵树的报应。 #line:0d101f
 <<elseif $fps_hit_tree is 1>>
     Gregg: 干得好。 #line:bdc3cf
-    Mae: 所有树都是我的宿敌。 #line:723344
+    Mae: 树是我的宿敌。 #line:723344
 <<elseif $fps_hit_tree is 2>>
-    Gregg: 又射树上了。 #line:8e4cd7
+    Gregg: 又射到树上了。 #line:8e4cd7
 <<elseif $fps_hit_tree is 3>>
-    Gregg: 你又射到那棵树了。 #line:33f37a
+    Gregg: 还是射到树上了。 #line:33f37a
 <<elseif $fps_hit_tree is 4>>
     Gregg: 额，我猜你射的又是那棵树吧。 #line:703f49
 <<elseif $fps_hit_tree is 5>>
-    Gregg: 我猜你一定很讨厌树吧。 #line:ed162b
+    Gregg: 你是很讨厌树吧。 #line:ed162b
 <<elseif $fps_hit_tree is 6>>
-    Gregg: 这就是名副其实的“虐树"。 #line:5e4b25
+    Gregg: 原来“虐树"是真的。 #line:5e4b25
 <<elseif $fps_hit_tree is 7>>
     Gregg: 好了，我觉得那棵树已经死透了。 #line:2fe07f
 <<endif>>
@@ -70,10 +70,10 @@ colorID: 3
 position: 545,362
 ---
 <<if $fps_out_of_range is 0>>
-    Gregg: 额，这一箭……射得确实有点远。 #line:4f6faf
+    Gregg: 这一箭……射得有点远。 #line:4f6faf
     Mae: 只求速度，不求准度。 #line:b599b0
 <<elseif $fps_out_of_range is 1>>
-    Gregg: 箭飞出去了。 #line:cac51c
+    Gregg: 飞走喽。 #line:cac51c
 <<elseif $fps_out_of_range is 2>>
     Gregg: 老妹儿。 #line:9bcbb2
 <<elseif $fps_out_of_range is 3>>
@@ -81,11 +81,11 @@ position: 545,362
 <<elseif $fps_out_of_range is 4>>
     Gregg: 为什么会这样啊，老妹儿。 #line:125eae
 <<elseif $fps_out_of_range is 5>>
-    Gregg: 你会射到某些倒霉的动物的。 #line:a5b052
+    Gregg: 你会射到某些倒霉动物的。 #line:a5b052
 <<elseif $fps_out_of_range is 6>>
-    Gregg: 箭又飞出去了。 #line:e132f4
+    Gregg: 又飞出去了。 #line:e132f4
 <<elseif $fps_out_of_range is 7>>
-    Gregg: 呵，这可真了不起。 #line:9a28e2
+    Gregg: 呵，真了不起。 #line:9a28e2
 <<endif>>
 
 <<set $fps_out_of_range += 1>>
@@ -103,30 +103,30 @@ position: 389,639
 <<elseif $fps_hit_beast_head is 2>>
     Gregg: 直接把这家伙的头给射穿啦。 #line:d624b4
 <<elseif $fps_hit_beast_head is 3>>
-    Gregg: 好像在40年代的时候，有个人就是这样， #line:212789
+    Gregg: 40年代的时候，有个家伙…… #line:212789
     Gregg: 他头部中了一箭， #line:583609
     Gregg: 箭射穿了他的脑子。 #line:944a70
     Gregg: 然后他居然没事？ #line:4bad67
-    Mae: 真是绝啦。 #line:ef504d
-    Gregg: 那人脑袋上的伤疤看起来应该特别酷。 #line:8cf9d7
+    Mae: 厉害了。 #line:ef504d
+    Gregg: 那人脑袋上的伤疤应该会很酷。 #line:8cf9d7
 <<elseif $fps_hit_beast_head is 4>>
-    Gregg: 我在想，要是那支箭是从他眼睛里穿过去的会怎么样？ #line:64d6f1
+    Gregg: 如果那箭是从他眼睛里穿过去呢？ #line:64d6f1
     Mae: 那这倒霉蛋的眼睛肯定就废了。 #line:e718a8
-    Gregg: 那他就会有个很酷的眼罩啦。 #line:f4ae69
+    Gregg: 但他就会有个很酷的眼罩。 #line:f4ae69
 <<elseif $fps_hit_beast_head is 5>>
     Mae: 眼罩超酷的。 #line:505016
 <<elseif $fps_hit_beast_head is 6>>
     Mae: 我六岁的时候，眼睛划伤过，所以必须要戴眼罩。 #line:29215e
-    Gregg: 我好像还记得这事。 #line:e1b353
+    Gregg: 我好像记得这事。 #line:e1b353
 <<elseif $fps_hit_beast_head is 7>>
     Gregg: 我当时还和我妈说，你是个海盗。 #line:668ad9
     Gregg: 然后我妈说， #line:35a140
-    Gregg: 把失明的人叫做海盗很不礼貌。 #line:926152
-    Mae: 嗯。 #line:3415fd
-    Mae: 他们可能经常被这么称呼。 #line:10b9f8
+    Gregg: 把失明的人叫做海盗可不好。 #line:926152
+    Mae: 嗯哼。 #line:3415fd
+    Mae: 他们可能经常被人这么叫。 #line:10b9f8
     Gregg: 是啊。 #line:142956
     Gregg: 我妈算是给我上了一课。 #line:025cf3
-    Gregg: 我的老天，你肯定要了这货的老命。 #line:0c46a6
+    Gregg: 老天，你肯定要了这货的老命。 #line:0c46a6
 <<endif>>
 
 <<set $fps_hit_beast_head += 1>>
@@ -165,27 +165,27 @@ position: 883,664
 <<if $fps_hit_beast_body is 0>>
     Gregg: 射死那只野兽！ #line:611eeb
 <<elseif $fps_hit_beast_body is 1>>
-    Gregg: 射 它。 #line:b5d944
+    Gregg: 射它。 #line:b5d944
 <<elseif $fps_hit_beast_body is 2>>
-    Gregg: 这 就 是 生 命 的 意 义。 #line:f12ab8
+    Gregg: 这就是生命的意义。 #line:f12ab8
     Mae: 我嗜血的欲望永远都没法满足。 #line:020c50
     Gregg: 你说的“sated"（得到满足）是个啥意思？ #line:540987
     Mae: 伙计，这可是咱八年级词汇测试上出现的词啊。 #line:ebe895
 <<elseif $fps_hit_beast_body is 3>>
     Gregg: 不太像吧。说真的，快告诉我这词是什么意思啊。 #line:658dc6
 <<elseif $fps_hit_beast_body is 4>>
-    Gregg: 应该是读“sated"，还是读“saded"啊？ #line:dde8d3
+    Gregg: 应该读“sated"，还是“saded"啊？ #line:dde8d3
     Mae: 你不知道这个词的意思又有什么关系呢？ #line:429f6f
 <<elseif $fps_hit_beast_body is 5>>
-    Gregg: 姐们，你就告诉我这词到底是什么意思吧。 #line:44a32d
+    Gregg: 姐们，就告诉我这词是什么意思嘛。 #line:44a32d
     Mae: 这个词的意思是满意、满足。 #line:e34571
     Mae: 也就是说，我很渴望鲜血。 #line:883f3a
-    Gregg: 嗯，好极啦。 #line:77327d
+    Gregg: 好极啦。 #line:77327d
 <<elseif $fps_hit_beast_body is 6>>
     Gregg: 吸血鬼永远都不会满竹的！ #line:3b3216
     Mae: 嗯，是啊。 #line:ff1f98
 <<elseif $fps_hit_beast_body is 7>>
-    Gregg: 好了，我觉得丛林之神已经满竹了。 #line:8c7851
+    Gregg: 好了，我觉得林中神已经满竹了。 #line:8c7851
     Mae: 嗯……对啊，的确是这样。 #line:e911c9
 <<endif>>
 
@@ -200,13 +200,13 @@ position: 1100,677
 <<if $fps_hit_beast_tail is 0>>
     Gregg: 哎哟，正中尾巴。 #line:3540d8
 <<elseif $fps_hit_beast_tail is 1>>
-    Gregg: 射 到 屁 股 上 喽。 #line:ac467e
+    Gregg: 射到屁股上喽。 #line:ac467e
 <<elseif $fps_hit_beast_tail is 2>>
-    Gregg: 爆 腚！！！ #line:7ffd5b
+    Gregg: 爆腚！！！ #line:7ffd5b
 <<elseif $fps_hit_beast_tail is 3>>
-    Gregg: 我 旁 边 这 姑 娘 就 讨 厌 这 屁 股！！！ #line:719a54
+    Gregg: 我旁边这姑娘就讨厌这屁股！！！ #line:719a54
 <<elseif $fps_hit_beast_tail is 4>>
-    Gregg: 射 中 啦，射 中 屁 股 啦。 #line:d078fb
+    Gregg: 射中啦，射中屁股啦。 #line:d078fb
 <<elseif $fps_hit_beast_tail is 5>>
     Gregg: *射爆*所有屁股。 #line:85ff8c
 <<elseif $fps_hit_beast_tail is 6>>
@@ -317,7 +317,7 @@ position: 1038,118
 <<elseif $fps_hit_beast_eye is 4>>
     Gregg: 你瞄得挺偏， #line:a7a298
     Gregg: 但偏得挺准。 #line:64a8c7
-    Mae: 所以请叫我一般偏下得准。 #line:5481ac
+    Mae: 所以请叫我一般偏下的准。 #line:5481ac
 <<elseif $fps_hit_beast_eye is 5>>
     Gregg: 正中眼球。 #line:096ac6
 <<elseif $fps_hit_beast_eye is 6>>

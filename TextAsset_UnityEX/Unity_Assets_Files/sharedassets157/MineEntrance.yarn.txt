@@ -38,7 +38,7 @@ Bea: 安格斯！你救了我们！ #line:28987d
 Angus: 额，我只是找到了能呼吸到新鲜空气的地方罢了。 #line:9093a1
 Angus: 也可能只是换了个好点的地方饿死而已。 #line:9cd5ad
 Mae: 死在哪儿都比死在这鬼地方强。 #line:1a80fc
-Bea: [wave=.05]我只想死在别的什么地方，而不想死在这儿。[/wave] #line:15192a
+Bea: [wave=.05]我只想埋骨他乡。[/wave] #line:15192a
 Mae: 唱得好。 #line:29e11a
 Gregg: 唱得好。 #line:0b40a7
 Angus: 唱得好。 #line:a9de12
@@ -136,7 +136,7 @@ position: -1173,-243
 <<if $dom_friend_bea>>
 	Bea: 好吧，这其实也没什么危险的嘛。 #line:d793a4
 	Mae: 哈哈。 #line:e9b11e
-    Mae: 其实到了下面也没什么好害怕的，那只不过就是个聚会而已嘛。 #line:f8dfd2
+    Mae: 其实下面也没什么好怕的，不过是个聚会而已嘛。 #line:f8dfd2
     Bea: :) #line:4609c1
     Bea: 呵呵。 #line:2b5aa2
 	Bea: 咱们现在去蹚这浑水还不算太晚。 #line:d8b822
@@ -146,7 +146,7 @@ position: -1173,-243
 	Mae: 我觉得现在咱俩就别抱怨关于“恐怖"的事了。 #line:e0fba4
 	Mae: 咱们之前把咱们那个宝贝机器人放在树林里，那才叫恐怖呢。 #line:2f841d
     Gregg: :) #line:08c121
-	Gregg: 不不不，姐们儿。咱们那是创造出了一个奇迹。 #line:15299c
+	Gregg: 不不不，兄弟们，我们创造了奇迹。 #line:15299c
 	Bea: 你们俩到底在说什么呢？ #line:982e33
 	Mae: 我这几天过的比较诡异。 #line:536725
     Gregg: :| #line:89760e
@@ -178,13 +178,13 @@ Mae: 好吧。 #line:4129e0
 <<wait 1>>
 <<fadeIn 1 wait>>
 <<setAmbientSFXFadeWithScreenTransitioner _AmbientSFX 1>>
-Gregg: 这么说，凯西他…… #line:3305e6
+Gregg: 所以……凯西他…… #line:3305e6
 Bea: 是啊。 #line:23a58f
 Gregg: 我…… #line:561688
-Bea: 好吧。 #line:532cc0
-Gregg: 这到底都是因为什么啊！ #line:5a72dd
-Mae: 我……我觉得我可能知道是怎么回事了。 #line:19dd6a
-Angus: 哇，是真的吗？ #line:407d58
+Bea: 嗯。 #line:532cc0
+Gregg: 这到底都是因为什么！ #line:5a72dd
+Mae: 我……我觉得我可能知道？ #line:19dd6a
+Angus: 哇，真的吗？ #line:407d58
 Mae: 虽然我很累，不想解释这事，但…… #line:aaa6fd
 Mae: 这一切就好像是 #line:3dce27
 Mae: 现实情况和那些人的预期南辕北辙， #line:ea9a47
@@ -198,8 +198,8 @@ Angus: 这个解释比我的合理多了。 #line:02b610
 Mae: 他们一定很悲伤。 #line:a0fa1b
 Mae: 所有的一切也都很悲伤。 #line:9e9e27
 Gregg: 安格斯，你准备好继续走了吗？ #line:6218bd
-Angus: 准备好了。真是抱歉。 #line:d4893f
-Bea: 等 等，大 家 都 别 出 声。 #line:3a2b77
+Angus: 是的，抱歉。 #line:d4893f
+Bea: 等等，大家静音。 #line:3a2b77
 <<close>>
 <<playAmbientSFX _AmbientSFX:eide_rock_noise>>
 <<wait 3>>
@@ -230,22 +230,22 @@ position: -51,-35
 	Mae: 嘿嘿嘿…… #line:529c21
 	Mae: 嘿嘿嘿……哈 哈 哈 哈 哈 哈 哈…… #line:529234
 	Bea: 梅，你这是怎么了？ #line:2d4131
-	Mae: 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈…… #line:e23284
+	Mae: 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈…… #line:e23284
 	Mae: 哈…… #line:f70135
 	Mae: 嘿…… #line:7d7a38
-	Mae: *吸鼻子* #line:25e233
+	Mae: *鼻子一酸* #line:25e233
 	Mae: *抽泣* #line:7ee918
 	Bea: 嘘……没事了。 #line:2a619b
 	Bea: 已经没事了，我就在你身边陪着你。 #line:7d20c6
 	Bea: 那个人已经不在了。 #line:cfd3b3
-	Gregg: 真该死。咱们该怎么出去啊。 #line:b8627a
-	Bea: 嘘……给她点时间，让她缓缓。 #line:9b62c3
+	Gregg: 该死，咱们该怎么出去。 #line:b8627a
+	Bea: 嘘……给她点时间缓缓。 #line:9b62c3
 	<<close>>
 	<<wait 4>>
 <<else>>
     <<warp Gregg AfterFightDomFriend>>
     <<warp Bea AfterFightOtherFriend>>
-    Bea: 我 的 老 天 啊。 #line:ed8c7a
+    Bea: 我的老天啊。 #line:ed8c7a
 	Angus: 大家都没事吧？ #line:ee1dda
 	Gregg: 梅！梅！ #line:a3fed2
 	<<close>>
@@ -254,13 +254,13 @@ position: -51,-35
 	Mae: 嘿…… #line:040d8f
 	Mae: 嘿嘿嘿…… #line:b62321
 	Mae: 嘿嘿嘿……哈 哈 哈 哈 哈 哈 哈…… #line:47083c
-	Gregg: 哈 哈 哈 哈…… #line:404b2a
-	Mae: 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈 哈…… #line:957823
-	Gregg: 哈 哈 哈 哈 哈 哈 哈 哈 哈…… #line:b26d0a
+	Gregg: 哈哈哈哈…… #line:404b2a
+	Mae: 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈…… #line:957823
+	Gregg: 哈哈哈哈哈哈哈哈…… #line:b26d0a
 	Bea: 话说，咱们为什么要笑啊？ #line:ead7e7
     Mae: 哈…… #line:9ce634
 	Mae: 嘿…… #line:6ca0a0
-	Mae: *吸鼻子* #line:f8da6e
+	Mae: *鼻子一酸* #line:f8da6e
 	Mae: *抽泣* #line:1aa7e6
 	Gregg: 老妹，现在已经没事了。 #line:af115b
 	Gregg: 咱们刚才已经把那家伙给收拾了一顿，他肯定不会再来了。 #line:abc259
@@ -271,7 +271,7 @@ position: -51,-35
 	<<wait 4>>
 <<endif>>
 Angus: 我能感觉到什么地方有气流吹过来。 #line:139c95
-Angus: 这样的话，咱们就不会被憋死啦！ #line:eb3205
+Angus: 这样的话，咱们就不会憋死了！ #line:eb3205
 Bea: 真是太好了，听你这么一说，感觉好多了。 #line:980812
 Gregg: 你是怎么……？ #line:b8dd3c
 Angus: 格雷格，我以前可是童子军啊。 #line:571d01

@@ -63,7 +63,7 @@ Angus: ……好了，你们准备好了吗？ #line:1e20b0
         <<lookAt Bea Angus>>
         Angus: 内啡肽。 #line:ffc818
         <<lookAt Bea Mae>>
-        Bea: 啊啊啊，好啦。 #line:ac0b01
+        Bea: 啊啊啊，好吧。 #line:ac0b01
         Mae: 在那儿！谢谢你。这些海豚。 #line:186e61
         Gregg: 好的，好的， #line:f1f163
         Gregg: 咱们可以骑着这些海豚从这儿逃出去。 #line:fdc2c8
@@ -71,7 +71,7 @@ Angus: ……好了，你们准备好了吗？ #line:1e20b0
         Mae: 不过这也没什么， #line:63acef
         Mae: 因为我可不想让你们活活饿死在这儿。 #line:bcdd57
         Gregg: 嗷，姐们。 #line:2e0e07
-        Bea: 谢谢了，梅，你人可真是太好啦。 #line:f7e2e9
+        Bea: 谢了梅，你人真好。 #line:f7e2e9
 Mae: 啊，我觉得我能办得到。 #line:7673f3
 Angus: 我们会支持你的。 #line:11d0b0
 Mae: 好吧。 #line:5b8c4b
