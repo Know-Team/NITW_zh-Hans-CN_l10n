@@ -1,102 +1,102 @@
-Tick Tock
+嘀嗒嘀嗒
 00.000||0
-05.053|Come along my children
-07.579|Come and sing with me
-10.105|Telling time is easy, count it
-12.632|One
-13.579|Two
-14.211|Three
-15.158|Come along my children
-17.684|Come and learn with me
-20.211|Tick
-20.842|Tock
-21.474|Tick
-22.105|Tock
-22.737|Tick
-23.368|Tock
-24.000|Toooock
-25.263|Telling time is easy
-27.789|This is what we say
-30.316|Each clock has a special face so
-32.842|Come and look their way
-35.368|Hour hand and minute
-37.895|Finely carved from wood - they'd
-40.421|crush you right between the middle
-42.947|if they only could
+05.053|来吧 我的孩子
+07.579|来吧 唱起来吧
+10.105|报时那么容易，就数一数
+12.632|一
+13.579|二
+14.211|三
+15.158|来吧 我的孩子
+17.684|来吧 学起来吧
+20.211|嘀
+20.842|嗒
+21.474|嘀
+22.105|嗒
+22.737|嘀
+23.368|嗒
+24.000|嘀嘀嗒
+25.263|报时就是那么容易
+27.789|这就是他们那么说
+30.316|每个种表面各不相同
+32.842|来看看它们
+35.368|时针与分针
+37.895|多么精雕细琢的木箭头
+40.421|他们把你夹在中间
+42.947|他们就想这么做
 
-45.474|Hey everybody - let’s look at the clock
-50.526|Ticking off the minutes till the hour’s struck
-55.579|Count the precious seconds, running out of luck
-60.632|Tick
-61.263|Tock
-61.895|Tick
-62.526|Tock
-63.158|Tick
-63.789|Tock
-64.421|Toooock
+45.474|嘿！大家，来看看这钟
+50.526|计时计时，直到钟声敲响
+55.579|运气也顺着时间流逝
+60.632|嘀
+61.263|嗒
+61.895|嘀
+62.526|嗒
+63.158|嘀
+63.789|嗒
+64.421|嘀嘀嗒
 
-65.684|Telling time is easy
-68.211|this is what they say
-70.737|look at every passing second
-73.263|till they’ve passed away
+65.684|报时就是那么容易
+68.211|这就是他们那么说
+70.737|一秒一秒过去
+73.263|看着他们流逝
 
-75.789|No one can avoid it
-78.316|time will come for you
-80.842|Best to make your peace - because there's
-83.368|nothing you can do
+75.789|没人能够逃避
+78.316|时间终将到来
+80.842|最好坦然面对
+83.368|因为你什么也做不了
 
-85.895|Time is running out
-88.421|and I’m prob’ly trapped in
-90.947|Time - still running out
-93.474|yet I’m feeling nothin’
+85.895|时间就此逝去
+88.421|我被困在时间里
+90.947|而它依旧前进
+93.474|我什么也感受不到
 
-96.000|Time is running out
-98.526|and I’m prob’ly trapped in
-101.053|Time - still running out
-103.579|yet I’m feeling nothin’
+96.000|时间就此逝去
+98.526|我被困在时间里
+101.053|而它依旧前进
+103.579|我什么也感受不到
 
-106.105|Time is all we've got
-108.632|but we don't have much and
-111.158|Time will soon run out
-113.684|yet I’m feeling nothin’
+106.105|我们只有时间
+108.632|但时间所剩无几
+111.158|时间马上流失殆尽
+113.684|我什么也感受不到
 
-116.211|Time is all we've got
-118.737|but we don't have much and
-121.263|Time will soon run out
-123.789|Oh yeah!
+116.211|我们只有时间
+118.737|但时间所剩无几
+121.263|时间马上流失殆尽
+123.789|好耶！
 
-126.316|Hey everybody - let’s look at the clock
-131.368|Ticking off the minutes till the hour’s struck
-136.421|Count the precious seconds, running out of luck
-141.474|Tick
-142.105|Tock
-142.737|Tick
-143.368|Tock
-144.000|Tick
-144.632|Tock
-145.263|Toooock
+126.316|嘿！大家，来看看这钟
+131.368|计时，直到钟声敲响
+136.421|运气也顺着时间流逝
+141.474|嘀
+142.105|嗒
+142.737|嘀
+143.368|嗒
+144.000|嘀
+144.632|嗒
+145.263|嘀嘀嗒
 
-146.526|Look out everybody - oh here comes the clock
-151.579|Stomping through the hallway now the hour's struck
-156.632|Time's got us running but we're really stuck
-161.684|Tick
-162.316|Tock
-162.947|Tick
-163.579|Tock
-164.211|Tick
-164.842|Tock
-165.474|Toooock
+146.526|大家当心 看时间流逝
+151.579|冲过走廊 现在整点报时
+156.632|时间促使我们奔跑，但我们死死困住
+161.684|嘀
+162.316|嗒
+162.947|嘀
+163.579|嗒
+164.211|嘀
+164.842|嗒
+165.474|嘀嘀嗒
 
-166.737|Now
-168.632|you've
-169.263|learned
-171.158|with
-171.789|meee
+166.737|现在
+168.632|你就
+169.263|领教
+171.158|我的
+171.789|本领
 
 174.316|
 
-174.947|Tick
-175.579|Tock
+174.947|嘀
+175.579|嗒
 176.211|
 
 179.368|

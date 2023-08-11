@@ -1,4 +1,4 @@
-die anywhere else
+埋骨他乡
 00.000|8|0
 00.364|7|0
 00.727|6|0
@@ -7,40 +7,40 @@ die anywhere else
 01.818|3|0
 02.182|2|0
 02.545|1|0
-02.909|Dust on this tired old street
-08.727|Mark corners where we used to play
-14.545|Dust trace our tired old feet - in
-20.364|circles as we pace our time away
+02.909|破旧老街尘土扬
+08.727|那是我们儿时玩耍的地方
+14.545|疲惫脚步尘土随
+20.364|随时光流逝，深处围城
 
-26.182|I just wanna diiiie anywhere else - if
-32.000|only I could diiiie anywhere else - so
-37.818|come with me, let’s diiiiie anywhere else
-43.636|An-y-where... just not here
+26.182|我只想埋骨他乡
+32.000|只求埋骨在他乡
+37.818|与我同行，埋骨他乡
+43.636|随便哪里，不是这里就好
 
-49.455|Stuck on this dead end street
-55.273|Where all the new kids come to play
-61.091|Stuck - where past and future meet
-66.909|Watching all our autumns drift away
+49.455|困在没有希望的死胡同
+55.273|未曾相识的孩子出现在我们的游乐场
+61.091|困在过去和未来
+66.909|眼看属于我们的秋天渐渐消散
 
-72.727|I just wanna diiiie anywhere else - if
-78.545|only I could diiiie anywhere else - so
-84.364|come with me, let’s diiiiie anywhere else
-90.183|An-y-where... just not here
+72.727|我只想埋骨他乡
+78.545|只求埋骨在他乡
+84.364|与我同行，埋骨他乡
+90.183|随便哪里，不是这里就好
 
-96.727|And if they ever hear my name
-99.636|Will they know I walked alone
-102.545|around these dusty streets - my
-104.727|tired old home
+96.727|若别人再听到我的姓名
+99.636|是否知晓我一直踽踽独行
+102.545|在灰茫茫的老街上
+104.727|在不堪重负的老屋中
 
-108.364|And will they ever stop to think
-111.273|What was here before, no
-113.455|they won’t remember that I’m gone
+108.364|他们是否停下来思考
+111.273|这里曾经是什么地方，哦不
+113.455|没人记起我的去向
 
-119.273|I just wanna diiiie anywhere else - if
-125.091|only I could diiiie anywhere else - so
-130.909|come with me, let’s diiiiie anywhere else
-136.727|An-y-where... just not here
+119.273|我只想埋骨他乡
+125.091|只求埋骨在他乡
+130.909|与我同行，埋骨他乡
+136.727|随便哪里，不是这里就好
 
-141.818|Oh no
+141.818|哦不
 
 142.545|
