@@ -13,10 +13,10 @@ position: -56,93
     Mae: 这玩意儿该怎么用？ #line:d429d3
     Bea: 你认真的？ #line:6ff6e7
     Mae: 我对啥都一窍不通！ #line:13c5c3
-    Bea:{width=4} 等下，到目前为止，你对整件事有什么贡献？ #line:c4e492
+    Bea:{width=4} 等下，到目前为止，|你对整件事有什么贡献？ #line:c4e492
     Mae: \o/ #line:b45923
     Mae: 整件事是我的主意！ #line:428f8b
-    Bea:{width=4} 算了吧，你的主意只是想要抓鬼。 #line:374685
+    Bea:{width=4} 算了吧，你的主意|只是想要抓鬼。 #line:374685
     Bea: 是我，想出来至少要调查点关于“鬼"的事。 #line:d415d2
     Mae: :( #line:fbd8a8
     Mae: 你要是觉得这事很傻，为什么还要跟我来呢？ #line:6aa341
